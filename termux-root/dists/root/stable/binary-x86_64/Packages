@@ -257,24 +257,6 @@ SHA512: 5077d8bba8ca9dba1dbe18d57ead6becda94e2fd7d8f873648e2da42d14aa5cdb4c92351
 Description: Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers
 Homepage: https://www.frida.re/
 
-Package: frida
-Installed-Size: 200736
-Maintainer: Henrik Grimler @Grimler91
-Architecture: x86_64
-Version: 15.1.25-1
-Replaces: frida-tools (<< 15.1.24-1), frida-server (<< 15.1.24)
-Depends: libiconv
-Conflicts: frida-tools (<< 15.1.24-1)
-Breaks: frida-server (<< 15.1.24)
-Filename: pool/stable/f/frida/frida_15.1.25-1_x86_64.deb
-Size: 58694216
-MD5sum: 93dc4209ed31d203a007a5ce11be8813
-SHA1: 25cfe82cba5b0ac649708e2428e1096052697242
-SHA256: 77125844f3b9ef49d0e465c49c503f583eaf14e4effbba0c5609b5fb86fc7d46
-SHA512: 1e23ac88e45bee095bed68ab061003b647ab0343e79896071aa64345ebbcf142632118dfcf59d8e118d1c6ccef1a412b9235503ba04344cf6ed550180c407533
-Description: Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers
-Homepage: https://www.frida.re/
-
 Package: frida-dev
 Installed-Size: 138900
 Maintainer: Henrik Grimler @Grimler91
@@ -292,23 +274,6 @@ SHA512: 2e28337342cb7ddd7e4eefc8e57033354d804f8f9c2d36e5cfbb0b1d9977d7ceb3aaca74
 Description: Development files for frida
 Homepage: https://www.frida.re/
 
-Package: frida-dev
-Installed-Size: 138896
-Maintainer: Henrik Grimler @Grimler91
-Architecture: x86_64
-Version: 15.1.25-1
-Replaces: frida-server (<< 14.2.13)
-Depends: frida (= 15.1.25-1)
-Conflicts: frida-server (<< 14.2.13)
-Filename: pool/stable/f/frida-dev/frida-dev_15.1.25-1_x86_64.deb
-Size: 33687564
-MD5sum: 08a8b54031fd5d66ee4b5d90e26b4efd
-SHA1: de4a35fca31ae0832e89c503bca374cb4f43f69f
-SHA256: 9abc15f94488f77d20e84c270153f7d4baee0741278f078cc02fc38088c956cd
-SHA512: d56a03e895bab00ccbfd77673d696ef212359872c234f669f8178bd89b70ed47d797ccfbff8bcf9b582e9b35b0a40926a3623c0c684a559bf9e4c29a8002e8d3
-Description: Development files for frida
-Homepage: https://www.frida.re/
-
 Package: frida-python
 Installed-Size: 97072
 Maintainer: Henrik Grimler @Grimler91
@@ -323,23 +288,6 @@ MD5sum: 9a0bcda3bd46474e0a39537d931a7b7e
 SHA1: 9f16ccff0bb6dac36f25e76b723424e4a7c27598
 SHA256: bd567f09f28347848b5be255e4045dcb9b220b62925414532e154a28ec6a7229
 SHA512: 69538bbcd40daf8a8eb67e51c1bf3809e57e33744ecd5a0315aafed63c41cda52fefd5af87f0121372a64f2020bb7d3de3f9ce494d00ee5a4a997a8236fdbc9c
-Description: Python bindings and CLI tools for Frida
-Homepage: https://www.frida.re/
-
-Package: frida-python
-Installed-Size: 97068
-Maintainer: Henrik Grimler @Grimler91
-Architecture: x86_64
-Version: 15.1.25-1
-Replaces: frida-tools (<< 15.1.24)
-Depends: python, frida (= 15.1.25-1)
-Conflicts: frida-tools (<< 15.1.24)
-Filename: pool/stable/f/frida-python/frida-python_15.1.25-1_x86_64.deb
-Size: 29381012
-MD5sum: fcf02dcbe9142cb0c773bd954b98d5d4
-SHA1: e91b656ff850434c74186be948487d19667f6793
-SHA256: 56d23165cf47f6d1923af7885a17c04c85cb0dd382efca37fd4e5d4b1fcc3ffc
-SHA512: d594298b56c9beab4e5655e8a67063f11e3a9b2a097fcb731759bcd428216fa9869af529ca9a26c2ae210f9fd3139f2eac740c69179593d7c23c3e8dbc686840
 Description: Python bindings and CLI tools for Frida
 Homepage: https://www.frida.re/
 
@@ -608,6 +556,21 @@ Package: libnetfilter-queue
 Installed-Size: 112
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.0.5-2
+Depends: libnfnetlink, libmnl
+Filename: pool/stable/libn/libnetfilter-queue/libnetfilter-queue_1.0.5-2_x86_64.deb
+Size: 12636
+MD5sum: 27189ae42cd5ada220a8fc079b488a95
+SHA1: 5f5092ade914d30c387ff4f87292f799419c71c0
+SHA256: f0f53373760d0df1c7c815a5cf2e9ceb7681c91caa2706de1fd14bcd2a29cc92
+SHA512: d429472ef217ea12cfc1240ab9a2ac581e02fa30cf7b7f2f7c1702a41c8e6eea66495ed2f48e6a1f9c0dad84cf9f22f0f72db6d783a7a2c35c07897729f1a765
+Description: libnetfilter_queue is a userspace library providing an API to packets that have been queued by the kernel packet filter.
+Homepage: https://www.netfilter.org/projects/libnetfilter_queue/index.html
+
+Package: libnetfilter-queue
+Installed-Size: 112
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.0.5-1
 Depends: libnfnetlink, libmnl
 Filename: pool/stable/libn/libnetfilter-queue/libnetfilter-queue_1.0.5-1_x86_64.deb
@@ -617,6 +580,21 @@ SHA1: c0c19ca97fd1dc446efe4c5e35aa5b6edbc3d51d
 SHA256: 8e1a6e50d8d8248c4b1adce226c759d2a02a6c17e937dde0f011fbca80699f83
 SHA512: 2e1f325aa99b7a385679a92f1fbab833d66a2f384bb2bc8db5380cf53de04a888b437059645f4038c38273c44d3b8030265392164aae9a4d737e558183cdcaea
 Description: libnetfilter_queue is a userspace library providing an API to packets that have been queued by the kernel packet filter.
+Homepage: https://www.netfilter.org/projects/libnetfilter_queue/index.html
+
+Package: libnetfilter-queue-static
+Installed-Size: 72
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.0.5-2
+Depends: libnetfilter-queue (= 1.0.5-2)
+Filename: pool/stable/libn/libnetfilter-queue-static/libnetfilter-queue-static_1.0.5-2_x86_64.deb
+Size: 9824
+MD5sum: 0cd917e5b5103c185593e0c0c924b0a9
+SHA1: 5b204338ecf1a1be33d72b1ad9ad49830dfbbf80
+SHA256: 14548d5436f76002c34a83b1c6cb157e95fef30eae37101481f92fa13b791a3e
+SHA512: dbc8a630d43401bc57c5ba806b494c146da6f1a88bf20c9f2da82fedc6f734a7a212733f41a63bb8791b5ab1584b322cfe6c0d97dbbdf350e8c84603e8aedf95
+Description: Static libraries for libnetfilter-queue
 Homepage: https://www.netfilter.org/projects/libnetfilter_queue/index.html
 
 Package: libnetfilter-queue-static

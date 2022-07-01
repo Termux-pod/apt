@@ -119,6 +119,23 @@ Description: An open and reliable container runtime
 Homepage: https://containerd.io/
 
 Package: cryptsetup
+Installed-Size: 860
+Maintainer: @termux
+Architecture: i686
+Version: 2.4.3
+Replaces: cryptsetup-dev
+Depends: json-c, libdevmapper, libgcrypt, libpopt, libuuid, util-linux, openssl, libiconv, argon2
+Breaks: cryptsetup-dev
+Filename: pool/stable/c/cryptsetup/cryptsetup_2.4.3_i686.deb
+Size: 274300
+MD5sum: e5bb8d11e0456efb15f672f91a8da3e9
+SHA1: eeaaaf1a543232b6207fbcaba5da519bb5d3b47a
+SHA256: b9f6f3a4d214febc88db4acd8b5a0dfee18669d43c6524f785d5498a2d00636e
+SHA512: 0cd5b7e49240266a5a1134849a20b50517c139d28d04842c6c971fe61e5fae2182624e600b8acbe2541c90afc661146cbe3c15e9d6e00207f951d73bdd186214
+Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
+Homepage: https://gitlab.com/cryptsetup/cryptsetup/
+
+Package: cryptsetup
 Installed-Size: 832
 Maintainer: @termux
 Architecture: i686
@@ -133,6 +150,21 @@ SHA1: d068427d2926a283c144032a3d2586bf0a509ebb
 SHA256: a85db89bcaf98a3cd5b6ab6d26aa45e8f8c0694369a2e675dcc73ca6035e3caf
 SHA512: fc3c98ea486f692116e6544d4b437f329604806ff99d62122135c12a8ebc5be50954a98ea5b8e8dffd83cdc43a798a158da2d84705c851d2eaced2925c1ad8ab
 Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
+Homepage: https://gitlab.com/cryptsetup/cryptsetup/
+
+Package: cryptsetup-static
+Installed-Size: 660
+Maintainer: @termux
+Architecture: i686
+Version: 2.4.3
+Depends: cryptsetup (= 2.4.3)
+Filename: pool/stable/c/cryptsetup-static/cryptsetup-static_2.4.3_i686.deb
+Size: 189796
+MD5sum: 26f40d971fcc4ade33b33f635f08f76c
+SHA1: 1cb460ed6805e58311b0327fc864c7ed7951a6da
+SHA256: 51930a89cf4b9f9476becfc541b25335d91ba9f4dfccfa2baae4e436dfc5cd9a
+SHA512: b739e1c426fec8fe79b737fb6e84ffbcf593543a446f9c5a3d55e7991555ac101039ee52c7bbfc755ec2a76ecb51138ba34a1b39713f893337ecd303f134c94f
+Description: Static libraries for cryptsetup
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
 
 Package: cryptsetup-static
@@ -492,6 +524,23 @@ Description: A generic USB CCID (Chip/Smart Card Interface Devices) driver and I
 Homepage: https://ccid.apdu.fr/
 
 Package: libdevmapper
+Installed-Size: 572
+Maintainer: @termux
+Architecture: i686
+Version: 2.03.16
+Replaces: libdevmapper-dev
+Depends: libandroid-support, libaio, readline
+Breaks: libdevmapper-dev
+Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.16_i686.deb
+Size: 166112
+MD5sum: 840640bda14aed0736e8e300279c7f9d
+SHA1: 3f8850ade64edc1173807977f8d362f64a9ab56f
+SHA256: 456ac52b612f5fb0da4bc3dd36c9fcad29a09c4649c62f70b9d848374afd5a61
+SHA512: f22d17994a267ab4d6b1ef45cb5d2c433e0dc30f06916858313d485728990dd1db5edd75ca638a26e066b0ba31288435714f7f2609d85bb13e939111ad2d50e8
+Description: A device-mapper library from LVM2 package
+Homepage: https://sourceware.org/lvm2/
+
+Package: libdevmapper
 Installed-Size: 568
 Maintainer: @termux
 Architecture: i686
@@ -567,21 +616,6 @@ SHA512: 4e10c8ecad5737a22b2765b6f5e199bb79c61be107c3d9a536420dcc2853d1ce2586ef1a
 Description: libnetfilter_queue is a userspace library providing an API to packets that have been queued by the kernel packet filter.
 Homepage: https://www.netfilter.org/projects/libnetfilter_queue/index.html
 
-Package: libnetfilter-queue
-Installed-Size: 108
-Maintainer: @termux
-Architecture: i686
-Version: 1.0.5-1
-Depends: libnfnetlink, libmnl
-Filename: pool/stable/libn/libnetfilter-queue/libnetfilter-queue_1.0.5-1_i686.deb
-Size: 11400
-MD5sum: 9f6b3dd1d7013cd2375823589a4bcc57
-SHA1: dbf81dbffc111365092612c96a548ddda7053814
-SHA256: 135d8781ca95d21af8b80c4a80f916058b9acc15b293d66c30904f97f49ef32e
-SHA512: b1a16bf1e399a3ff079be1e1903f1970fe58fdf09f0ff1e70cff030fd8f044e05f5882d7b5f9735b7f3de5059e2b349fd010c8a3d9833a62a2422779d76fdf87
-Description: libnetfilter_queue is a userspace library providing an API to packets that have been queued by the kernel packet filter.
-Homepage: https://www.netfilter.org/projects/libnetfilter_queue/index.html
-
 Package: libnetfilter-queue-static
 Installed-Size: 60
 Maintainer: @termux
@@ -594,21 +628,6 @@ MD5sum: af9a5fc73b8e093ce4970408b7bae77f
 SHA1: 857702932ad699061f1a7503e9495d0183543129
 SHA256: 5c6c2d1a8a6e23c4982dc6c7eae19fb274d178f6db682804538f110a698307e8
 SHA512: 2e4a509343b4f677284fb37673b07db442815b73b647657396e84bb82c0b2afb3112075e3cce81f2ede5dcc0242eb8c09a53ab70db5dc842ad61db71e629cd56
-Description: Static libraries for libnetfilter-queue
-Homepage: https://www.netfilter.org/projects/libnetfilter_queue/index.html
-
-Package: libnetfilter-queue-static
-Installed-Size: 60
-Maintainer: @termux
-Architecture: i686
-Version: 1.0.5-1
-Depends: libnetfilter-queue (= 1.0.5-1)
-Filename: pool/stable/libn/libnetfilter-queue-static/libnetfilter-queue-static_1.0.5-1_i686.deb
-Size: 8928
-MD5sum: 5d6e81dc0666dc6b987c21d323cecda6
-SHA1: 8a59e15e86264d93950b0995d26326a644d4b954
-SHA256: 126ddbce685c0faa6e863217781fd46aa2061076dc41d07b7017b37ce98a8a33
-SHA512: fd779fddb7bfbb79020649c4e711a2aaa1bcb8a9db8ab60d8919aeb816ac3e1e4ae012e31d7c323a5920a644c782a38e178ff8403197e28a81c6c473e67ffc1c
 Description: Static libraries for libnetfilter-queue
 Homepage: https://www.netfilter.org/projects/libnetfilter_queue/index.html
 

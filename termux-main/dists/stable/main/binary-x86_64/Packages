@@ -2778,6 +2778,23 @@ Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
 
 Package: clang
+Installed-Size: 149000
+Maintainer: @buttaface
+Architecture: x86_64
+Version: 14.0.6
+Replaces: libllvm (<< 11.0.0-1), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 14.0.6)
+Breaks: libllvm (<< 11.0.0-1), clangd
+Filename: pool/main/c/clang/clang_14.0.6_x86_64.deb
+Size: 25025336
+MD5sum: 5815278ecc05310c143b0d1a90ea008a
+SHA1: 77060f01ad14866c98f67ccbfdb40bf999b4b3dc
+SHA256: ee9cc73d0d8f055a3151b4d1077a38f16ec746969cc382344ee0e81b1dcd9b66
+SHA512: f428acd512f41cdeab0ee7903f50c699ad6465a3e34c1c2be42f23413b460fa2d303129d816d7211ae3d59106ed65ed7c5885939487fa18f67e1cd353e9c9813
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
+
+Package: clang
 Installed-Size: 148996
 Maintainer: @buttaface
 Architecture: x86_64
@@ -9810,22 +9827,6 @@ SHA512: d5e4b610d403a488fe75ea96bd97574f1bca63679e904e73b5a9534e2a08bb945d74271a
 Description: Collection of common network programs
 Homepage: https://www.gnu.org/software/inetutils/
 
-Package: inetutils
-Installed-Size: 1120
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.9.4-13
-Depends: readline
-Suggests: whois
-Filename: pool/main/i/inetutils/inetutils_1.9.4-13_x86_64.deb
-Size: 257924
-MD5sum: 126df46749e478411dd9ac85ec8790d1
-SHA1: 98a7169118f3610414b8331c684bfc8cb19e3c3a
-SHA256: 8dac8b8b39724a33f8d0149bdbacd06437c9b107b81f500f3bf7b4e4c05166bd
-SHA512: 127a8c0f2849f67150de9eff79de96c3801daabfa66ab94102f6810942cb812ba721c267662fe1f77e29178445aaa02106ea13734d3a2c5da9dbafb458141b3d
-Description: Collection of common network programs
-Homepage: https://www.gnu.org/software/inetutils/
-
 Package: influxdb
 Installed-Size: 182024
 Maintainer: @termux
@@ -10539,21 +10540,6 @@ MD5sum: ea4aaac9cb8ffdfd057c58fa249a5f26
 SHA1: b181bb194a5f66aff529685ac7d9f64bcd7f6ea9
 SHA256: 0e49798ec7f9b58ce371e5357dffcfc863d01208e957fe05de346943fa098d81
 SHA512: 0509d24ece236471a03340cf82f71e4d914d37d10a5a4f3e0d64e97982b62c8c8532a515e8243aa6342c1bc462c47ee3219e2dc462a8e0afd93a7bab802d69ef
-Description: A tool that optimizes PDF files for viewing on mobile readers
-Homepage: https://www.willus.com/k2pdfopt/
-
-Package: k2pdfopt
-Installed-Size: 772
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.51-6
-Depends: leptonica, libjasper, libjpeg-turbo, libpng, zlib
-Filename: pool/main/k/k2pdfopt/k2pdfopt_2.51-6_x86_64.deb
-Size: 347568
-MD5sum: 092c43682eca191a56912c6b2fa12f7b
-SHA1: ee5acda1ff7ef99fd478a2126817bfc63f7f1833
-SHA256: 0fd433bc8a66a8bbb7c58f35a11adc302bed95902e7d128e90065200f8ee7aec
-SHA512: 3195eb9df549cf3a01dd5eedfe4a1e02ea9eb978eb9c3c255c933183e5241d3e3ed959b8cde5a747546cc346fa03f1d064444b11728f9fb8539870a911fe5905
 Description: A tool that optimizes PDF files for viewing on mobile readers
 Homepage: https://www.willus.com/k2pdfopt/
 
@@ -12321,6 +12307,22 @@ SHA256: fa09b8ecdcf4b19f5f19da2694d7d927be7f8b8dd5bcf5d37683058fccf4817c
 SHA512: 6033fbe1227eb0df05da0bf19eb8c22af95d74775ac62ab00e8e8ec8d68c4bae04a16d0582e833131f6b7a893aa830f1c6a56bec6f7bc5a4df614922082d8ab8
 Description: A host of helper utilities for the java.lang API
 Homepage: https://commons.apache.org/proper/commons-lang/
+
+Package: libcompiler-rt
+Installed-Size: 30568
+Maintainer: @buttaface
+Architecture: x86_64
+Version: 14.0.6
+Depends: libllvm (= 14.0.6)
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_14.0.6_x86_64.deb
+Size: 3143924
+MD5sum: 371614846a92caa481ca4ea7782deeda
+SHA1: b0dda495a4ede8b7eab9bc7fb1465a62f0553ff5
+SHA256: 248e333c4493fe16b0590217c8fea81736f32a48f033976e209d1cd0d4237a8f
+SHA512: 304d5cd6c8e91e0a1c15326bcba76248bbf39d5e92d6ae725b71885b90d01bf17df14d942d33722995a7754f18a9a773aefef28e17fd8061bc7887ca0a445e6a
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
 
 Package: libcompiler-rt
 Installed-Size: 30568
@@ -14662,6 +14664,24 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
+Installed-Size: 131840
+Maintainer: @buttaface
+Architecture: x86_64
+Version: 14.0.6
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, ncurses, libffi, zlib, libxml2
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_14.0.6_x86_64.deb
+Size: 24618664
+MD5sum: 5a0bf2f34f30bb3f8a82367bcffba3db
+SHA1: b7fcd7d28931fbbeba02c86c6cd49576c319b504
+SHA256: 07a1897ca7b5dc5a5f99d088e84d4ac7e5cfb631b65ad12598b4c9f9dd5b32b9
+SHA512: e8a248a11022b0cb67f150f7e060796feaa7d5d1071e46c1b0851a13333305fc071770272255018d72d1af459593f505e3a84f9a2713d5160856141e6c63eec1
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
 Installed-Size: 131832
 Maintainer: @buttaface
 Architecture: x86_64
@@ -14677,6 +14697,21 @@ SHA1: 18415c69466af5ac8b81d14b174084aa21e57a4e
 SHA256: febaffccbbbffce2026fdacd2226ce7cc493e73b5569746ffcf4cc37e54a3596
 SHA512: 03f1c4d3327010a97a6575c76f70e44e2e934a4705637088e9a61c2351c1b226b7681ceed97122e62e608d9b3e88d31338ac950f7d96e516c4b431bf5532e53e
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 480900
+Maintainer: @buttaface
+Architecture: x86_64
+Version: 14.0.6
+Depends: libllvm (= 14.0.6)
+Filename: pool/main/libl/libllvm-static/libllvm-static_14.0.6_x86_64.deb
+Size: 57027904
+MD5sum: 765bed5edae78455eeb870b5b71145c4
+SHA1: 02dfa94520b672b1b807bb26a37c0c1c64428937
+SHA256: a1ae2c84789ec8ab6c2a8180fe41d2207835b1621a8a329012fa3b288179767e
+SHA512: 7d2f4cf67c9f80901f87763c1358ca51110be0a83b5567c1d26876f4d7d64d8536c397179de401ac2a69ccfc6440e6dde509fb0dafd527620914c773ea99cc56
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -14980,18 +15015,18 @@ Description: Static libraries for libluajit
 Homepage: https://luajit.org/
 
 Package: liblz4
-Installed-Size: 332
-Maintainer: Termux members @termux
+Installed-Size: 360
+Maintainer: @termux
 Architecture: x86_64
-Version: 1.9.3
+Version: 1.9.3-1
 Replaces: liblz4-dev
 Breaks: liblz4-dev
-Filename: pool/main/libl/liblz4/liblz4_1.9.3_x86_64.deb
-Size: 92400
-MD5sum: be3cf00cc064c147d139e1a8bc0ffec0
-SHA1: 6dc25cddeaf18c8ed8170134bc3e6c4a88d09fa5
-SHA256: 7f381572a821251556b19ae9310d8ea0b750d2a32a73cacfded909542da37f00
-SHA512: da4b3aaa659ae3f82108e567f57bc64090c6450ea05c8f77f438c5f5b984c9bea300d23f59a2148ff907cfe6d5ec158116d26c84624ffcf7f94483988a9d7b57
+Filename: pool/main/libl/liblz4/liblz4_1.9.3-1_x86_64.deb
+Size: 98260
+MD5sum: 1a6823162f655cb832717a3a0d56b750
+SHA1: e9a5bad0e63ece519ff52d8d618573b59a45a005
+SHA256: c4d9780e738c99b0d45d5394a53e91335cfc784768e70f36fea5d61aef5ffdf0
+SHA512: b4e0614fb9a0df5000bca9829dde702cedbf6a774ef2525ac1d5529948db7e769fb52ca940f68b364facb0fb390cc273806035aa674491d2ab96416638727fc3
 Description: Fast LZ compression algorithm library
 Homepage: https://lz4.github.io/lz4/
 
@@ -16817,6 +16852,21 @@ SHA256: c9336c8437adbfcb8c56e06a522e248018e4e37adef69a8c1f9c92b4b9108c48
 SHA512: 0055084f829982e0d843924c73e4e7c0a588fb2755d3f82c0c54bc88091d6f801317dfb01af4c38e1a9c6d79e5036ddc1b7ae6a7b4526b8ad4bb94a1247d7d67
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 6020
+Maintainer: @buttaface
+Architecture: x86_64
+Version: 14.0.6
+Depends: libllvm (= 14.0.6)
+Filename: pool/main/libp/libpolly/libpolly_14.0.6_x86_64.deb
+Size: 1396600
+MD5sum: 096f3cadc43841840a997b393a4c66f2
+SHA1: 30442b47d8980610fd4f7a7741db54d1dad5759f
+SHA256: 0a8707a2cee109f31744b415f53ec6974cbf2a11840c0f79efad3270de72361d
+SHA512: a4d7dcd08d252491043812434c5fb0bf4933514858208b94d3802f68a51f3a710834c4fec68aa503437008ef023e18fae7e404d971a88498b14d5422ce0356a7
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 6020
@@ -20425,6 +20475,21 @@ Package: lld
 Installed-Size: 16088
 Maintainer: @buttaface
 Architecture: x86_64
+Version: 14.0.6
+Depends: libllvm (= 14.0.6)
+Filename: pool/main/l/lld/lld_14.0.6_x86_64.deb
+Size: 2184716
+MD5sum: fbb912989e384cd3e54570231485a7e1
+SHA1: a592529b73bd20955882962357e0eb89f30856b1
+SHA256: be9fcae9ec8e004a10ece3eede76038b1c51784db0057944ccaf596d1493ad95
+SHA512: 1d263d79a0dc35019b1c3c8abd347b1e68b58acba48fcf0f0a3b557f2e31411e6ce7bedb600369c63511fb61d7bab695007f6dbd8c73b62d6c11ec62604cdc2a
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 16088
+Maintainer: @buttaface
+Architecture: x86_64
 Version: 14.0.5
 Depends: libllvm (= 14.0.5)
 Filename: pool/main/l/lld/lld_14.0.5_x86_64.deb
@@ -20434,6 +20499,23 @@ SHA1: 20b4b4ed0b15186c333b23ff9f4a0e5726459118
 SHA256: 44c35cccf25d5d7a9bb32f86abefab8d6c62a25a47e13e7e2b6fcb56f4e1bf34
 SHA512: 9c5f5b6782149784b81cf7896b1978525a7f21e05e140cfd3ea31d49c9c718760e41a4b8c8b987e393d3f1983fffe1fbcd93299d315b9850b829763d8fcf328f
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lldb
+Installed-Size: 22372
+Maintainer: @buttaface
+Architecture: x86_64
+Version: 14.0.6
+Replaces: lldb-dev, lldb-static
+Depends: libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 14.0.6)
+Breaks: lldb-dev, lldb-static
+Filename: pool/main/l/lldb/lldb_14.0.6_x86_64.deb
+Size: 4883848
+MD5sum: 4eb509f83dfc8b3df58c6606f3feb777
+SHA1: f3f2db944749d6f185703e1dc235ee1aac364b3c
+SHA256: ae7695665de11b725f853a1c4ca5f4accc6ff6a2e9f9a22cac4fb9f4c164aaba
+SHA512: bad4746edb4fb9289a6e2a5bf25f38fa2b302d40bfde815b22ee1b1780022540191a70fbfcaa917cbd4d3ba14a8ba8bb1b4ffc9df19a3a00e16c757901b1b709
+Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
 Package: lldb
@@ -20457,6 +20539,23 @@ Package: llvm
 Installed-Size: 40252
 Maintainer: @buttaface
 Architecture: x86_64
+Version: 14.0.6
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 14.0.6)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_14.0.6_x86_64.deb
+Size: 9761940
+MD5sum: cedb6204aed46ac8e590e377d594bbab
+SHA1: bfa1408a5c8457084f259507e60ad349e0a0d1db
+SHA256: 293a4acb362503a975d9259d73374ef534c378c35b1f83b97186ed4747a645b8
+SHA512: 3a26cb73cc34b3432dd783dead069a0368e789e913a907280802ee15dcc0c154b784b9c07e5e30281ef61dce0be41d34d930e23f3cf62d10cd5f81239dbfc459
+Description: LLVM modular compiler and toolchain executables
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 40252
+Maintainer: @buttaface
+Architecture: x86_64
 Version: 14.0.5
 Replaces: libllvm (<< 11.0.0-1)
 Depends: libllvm (= 14.0.5)
@@ -20468,6 +20567,21 @@ SHA1: 95c35cce543527d3ff3e46c9894db0795a275f5e
 SHA256: 7a947a846597dd455d35f929003035e9916cc7063b7551e01b5bb21de54778ab
 SHA512: 6b976dc89461d51631d314382792ec44f09071d555e35e1d67b3f07c87dc325467a14800bda7e56a418000e962078abe6898f30c7c278d4b29a4c79e0537e3ca
 Description: LLVM modular compiler and toolchain executables
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 11108
+Maintainer: @buttaface
+Architecture: x86_64
+Version: 14.0.6
+Depends: libc++, ncurses, zlib, libllvm (= 14.0.6)
+Filename: pool/main/l/llvm-tools/llvm-tools_14.0.6_x86_64.deb
+Size: 2155784
+MD5sum: 2274430e42cb9dc3b21693891b78c227
+SHA1: fa0dd59367ba9548b02797b5ba07ad4d97566e4e
+SHA256: 8042b8c0c187a40a042eb36ce43c0f03ec4c1be8ab7295645d8a13fce0655cba
+SHA512: ea2555834b8a7cdcf746b130f7e5df4e3f4ffbb37014435636a5b53cb73322ce4c089789a0e87809a366393a39737894bfd938abfc13a6fe5834d45f0c217798
+Description: LLVM Development Tools
 Homepage: https://clang.llvm.org/
 
 Package: llvm-tools
@@ -20829,17 +20943,17 @@ Description: The text web browser
 Homepage: http://lynx.browser.org/
 
 Package: lz4
-Installed-Size: 284
-Maintainer: Termux members @termux
+Installed-Size: 532
+Maintainer: @termux
 Architecture: x86_64
-Version: 1.9.3
-Depends: liblz4 (= 1.9.3)
-Filename: pool/main/l/lz4/lz4_1.9.3_x86_64.deb
-Size: 99494
-MD5sum: 1371608d8e82b9cea95379a8de91bb33
-SHA1: 0a930ccbddcedbe5f85f70b9c872e73eb9ffc256
-SHA256: c9d6ff27e1112a6b3864af740169d8a42a16544684297512106e4b41798f88d4
-SHA512: 2b83d19c06e80e0679bd70e4c721e923594d159487590344e9f9fba423dc0906fef21a829bc04fb955ff609e842ebe20a191e4f700db45269f0ee00453c08f57
+Version: 1.9.3-1
+Depends: liblz4 (= 1.9.3-1)
+Filename: pool/main/l/lz4/lz4_1.9.3-1_x86_64.deb
+Size: 101992
+MD5sum: 8304d64a99a679996d26a9734d97bb2e
+SHA1: 04dae9fe171796b32d0247428642c9c5c7ffef9b
+SHA256: 5f90d815aa113a4add494984d59f718a3a0a2894637d2b4183a6a1ab8ab54f29
+SHA512: 7d75686e40b9333a56e3fbed6d189d1ef011cbf95cf24949cbd39ac9e7b5382e8fc82a1004a93b8d898bbdd1df85aadcae5495dadc86e96c6e428f0735959f0b
 Description: Fast LZ compression algorithm tool
 Homepage: https://lz4.github.io/lz4/
 
@@ -21786,6 +21900,21 @@ SHA256: 980a10a7ec19b80c446dbfa074742c07f87eeed3528ec3ea37974a8473e0b57c
 SHA512: c80ea20aa64473393f66ba80824bb05839ec0f7e889513db3a92dc6e2870b81cdb328fa1b4ff5adcedfd20b3ff49723a720336d9ae736af4297368736c90e3e8
 Description: Set of tools to create, edit and inspect Matroska files
 Homepage: https://www.bunkus.org/videotools/mkvtoolnix/
+
+Package: mlir
+Installed-Size: 97952
+Maintainer: @buttaface
+Architecture: x86_64
+Version: 14.0.6
+Depends: libc++, ncurses, libllvm (= 14.0.6)
+Filename: pool/main/m/mlir/mlir_14.0.6_x86_64.deb
+Size: 14541868
+MD5sum: 2eb085fd40a5fdc92407d422acc516bc
+SHA1: a59f17a4d5dccb310af3f1bb211c09befb101138
+SHA256: dbea0b004a90f5ad2afd71499a2b14b257a41bb31fb5b919e63046fa205761eb
+SHA512: f74eecfc04078ecbbef204828136d661616b83e7a279af8969710514f3dd4d37e4d1953124667dc874e3ac2a07a05726d17040d8a3da604a0416975a78a683c2
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 97948

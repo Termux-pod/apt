@@ -960,6 +960,21 @@ Package: at
 Installed-Size: 208
 Maintainer: @termux
 Architecture: x86_64
+Version: 3.2.5
+Suggests: termux-services
+Filename: pool/main/a/at/at_3.2.5_x86_64.deb
+Size: 33656
+MD5sum: ca00ae510d4a4cfd35c9a3f86e6aa9ad
+SHA1: 3864202a90beccee1b34e6782dbb4da39c0b352c
+SHA256: 5fd42865c5b064c827eed693c7f55a69387366b262067300550c1decb3660c4b
+SHA512: 542665b1aa5e388a06bb2ae25b318027871d47758b823580416d5bb805a038ba3631a388cc94f506979657dde8461aea9eb0a655052adb161595e20fad31889f
+Description: AT and batch delayed command scheduling utility and daemon
+Homepage: https://salsa.debian.org/debian/at
+
+Package: at
+Installed-Size: 208
+Maintainer: @termux
+Architecture: x86_64
 Version: 3.2.2-2
 Suggests: termux-services
 Filename: pool/main/a/at/at_3.2.2-2_x86_64.deb
@@ -3182,20 +3197,6 @@ MD5sum: fa6cd9d766522d819fbf13ac3f48a2aa
 SHA1: ca6796ada639797882a85475801ac0356a5be463
 SHA256: b3c9d0e5a8c751434b9fa5c8168daaef8a14d5d879d0305ca7bdf9e1c8b81ce5
 SHA512: 85d30e6f0274653dd173fadf05daa2c5faa807b364fb41d7861643f3384fd3690fe970325c33f4d43aab0eecee3b602d6905d54f44ce789a08be855a8826c266
-Description: tool for static C/C++ code analysis
-Homepage: https://github.com/danmar/cppcheck
-
-Package: cppcheck
-Installed-Size: 9152
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.8
-Filename: pool/main/c/cppcheck/cppcheck_2.8_x86_64.deb
-Size: 1799016
-MD5sum: 4578022668032b4f388149083c139c26
-SHA1: 8e97e4aa5df1781645e26bd226be096196e71654
-SHA256: a22e122c27920adf3e11a68552ae148f28cd142e3844b30fc967b86898a33a0f
-SHA512: ee74d519fe6a529511b6b31cb1437c6dcc7f4a4fce282db452879ea65e31065d79cc767acf79e9697d7efb6c657809de37d59a0d03690849b80aa83fa6a6df9a
 Description: tool for static C/C++ code analysis
 Homepage: https://github.com/danmar/cppcheck
 
@@ -19127,6 +19128,23 @@ Package: libvpx
 Installed-Size: 2008
 Maintainer: @termux
 Architecture: x86_64
+Version: 1:1.12.0
+Replaces: libvpx-dev
+Depends: libc++
+Breaks: libvpx-dev
+Filename: pool/main/libv/libvpx/libvpx_1:1.12.0_x86_64.deb
+Size: 686544
+MD5sum: bd090dce2d914e23e279bce194d42706
+SHA1: 7b14ae43d90350f04cf472da5f0943484fd44e6b
+SHA256: 92987a9c418a1c38560d0a1064aa25b20a03358f5c8d4dfbd395e256c5521a49
+SHA512: 5ac63ddade812f12f075e7efeee25a146b45184e359b865d1229526c5a183844fa5e6ad86027bdb0a331f13830b997d29b7d9ed003d8705e9a3ffff10901ad24
+Description: VP8 & VP9 Codec SDK
+Homepage: https://www.webmproject.org
+
+Package: libvpx
+Installed-Size: 2008
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.12.0-rc1-0
 Replaces: libvpx-dev
 Depends: libc++
@@ -19138,6 +19156,21 @@ SHA1: a0b43d1091cc0722dff84d9eb586acfbd64248aa
 SHA256: 52599a99484b98fc0f3de60f8700c5a7b2827e2ab915be93c5580bc00b4178c2
 SHA512: 381abcc58b51a77361faa85848f4e697b334e642d3a2e24a0ad24fca37f9e4b35f09003aaf99697e27b7813a3bf237c7d1d22e837cfd6bcaea151788d327706e
 Description: VP8 & VP9 Codec SDK
+Homepage: https://www.webmproject.org
+
+Package: libvpx-static
+Installed-Size: 2748
+Maintainer: @termux
+Architecture: x86_64
+Version: 1:1.12.0
+Depends: libvpx (= 1:1.12.0)
+Filename: pool/main/libv/libvpx-static/libvpx-static_1:1.12.0_x86_64.deb
+Size: 744568
+MD5sum: c7d22416fb3688d1bc47a4296733b2d8
+SHA1: b3cdce97a459b4981982e03cb8ff2e7736903282
+SHA256: 23e508212d48a4a57dfe65d440efe92fa1703647193f7c34dcabe732b05ee71f
+SHA512: d05b49466a3b932d95136facd591f208616e59a43805f7249439ae8507762c36b8ee65ae7027fc5472c64c574f3a8188be2fc7ec7c4e6f90269caf666ce4adf1
+Description: Static libraries for libvpx
 Homepage: https://www.webmproject.org
 
 Package: libvpx-static
@@ -23322,21 +23355,6 @@ SHA512: f55b038e66abc7b6efa89443faefa62224da88f36d9ba2808c4e757e167ef279eaa73e6c
 Description: A new type of shell operating on structured data
 Homepage: https://www.nushell.sh
 
-Package: nushell
-Installed-Size: 18356
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.65.0
-Depends: openssl, zlib
-Filename: pool/main/n/nushell/nushell_0.65.0_x86_64.deb
-Size: 4220344
-MD5sum: 85c26c1a41103ba2fb4dba48d1c81242
-SHA1: 5343cc1aa93cb14987d836d6534ea2fabc44cc21
-SHA256: a4ec20c1b205b2625fd9be5f6d07c843d1d121183579507243f3fb6429f20a8c
-SHA512: b1821559770e7519f5f68fe2178775d0238eb1a62917c2583d7cfa5f02d4e85fe85eacc2931a3ffddaa2b25db59e26b8b4d201a9ee5a613f8a3574649e11530e
-Description: A new type of shell operating on structured data
-Homepage: https://www.nushell.sh
-
 Package: nyancat
 Installed-Size: 100
 Maintainer: Oliver Schmidhauser @Neo-Oli
@@ -25799,6 +25817,21 @@ SHA256: 73a31fbf22ed76caf3bc7ef0c919f1e0ad0afc760c1fdf21291dd6f0342bc4e8
 SHA512: 67e5a5778979cf3088d39f332d9653d205ecb5afbfc72cc254d664fea5fe4038b8dee64bc4cc7d34c8571c8577f2eb12b51b60e3cc38185f47dc7dd12fe67952
 Description: Emulate chroot, bind mount and binfmt_misc for non-root users
 Homepage: https://proot-me.github.io/
+
+Package: proot-distro
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
+Version: 3.1.1
+Depends: bash, bzip2, coreutils, curl, findutils, gzip, ncurses-utils, proot (>= 5.1.107-32), sed, tar, xz-utils
+Filename: pool/main/p/proot-distro/proot-distro_3.1.1_all.deb
+Size: 21276
+MD5sum: 2067b92ed3c9756d1a02ae168001a32c
+SHA1: 663f4b7f7ff3f74d7df797fac4eb3f77412a512e
+SHA256: 7662c6b6d48ca8a9f90fb788638e7423bf8fea78954ec8cfda1bba517742161e
+SHA512: 0f9a3d057a7aeea591c43ca422e55a9f8b823a88bac72bea8e51764ab1908391e9f3ffaf9d8924dd180156777b2b4723c2fd9eb0d9da0ab085ae01757fc5b107
+Description: Termux official utility for managing proot'ed Linux distributions
+Homepage: https://github.com/termux/proot-distro
 
 Package: proot-distro
 Installed-Size: 164
@@ -31190,21 +31223,6 @@ MD5sum: 1ab8069f00f96636bf26221b08250aa0
 SHA1: c66acf5e2305a9341cb585f2ef59d5133b03d74f
 SHA256: 555e7662baee468472b6f416c52bcc9a880edcf67296371fb0bc440292a241a7
 SHA512: 7832c1233e6a0dbb024b2ed3adea6d19f581d97e730fca739e424ecd1a4428aaa20dcec528321b60811cced0f3b1fac4df11309da230762c8734ede17e1ba1d6
-Description: Tools for working with zip files
-Homepage: https://sourceforge.net/projects/infozip/
-
-Package: unzip
-Installed-Size: 344
-Maintainer: Termux members @termux
-Architecture: x86_64
-Version: 6.0-7
-Depends: libbz2
-Filename: pool/main/u/unzip/unzip_6.0-7_x86_64.deb
-Size: 117960
-MD5sum: 51b6f654b4f152d98db673473c69996c
-SHA1: 4169345b3e295550759674e149a50988ec16a027
-SHA256: 96137ca49a7f7d82cc5ee197b1159eaa9b00183f6b50f95eba64be0253dd7075
-SHA512: 37c84fe9fd3861145b268613f2efe73468c60cc8f244fc01611641bd4dccc132e87afa0ee53f37b2dd29763abe590ba7e9db55fb7c87776b88ca7484b131e9a4
 Description: Tools for working with zip files
 Homepage: https://sourceforge.net/projects/infozip/
 

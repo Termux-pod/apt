@@ -1532,24 +1532,6 @@ SHA512: 661114dd9ee1aaa6ffff7fbf684c2aba67d4efdb0733144aa8f830c15eff79ed100e0757
 Description: Use llvm as binutils
 Homepage: https://github.com/trentbuck/binutils-is-llvm
 
-Package: binutils-is-llvm
-Installed-Size: 48
-Maintainer: @termux
-Architecture: i686
-Version: 0.2
-Replaces: binutils
-Provides: binutils
-Depends: lld, llvm
-Conflicts: binutils
-Filename: pool/main/b/binutils-is-llvm/binutils-is-llvm_0.2_i686.deb
-Size: 1916
-MD5sum: 35b54355bfbdce33c84e23e7d484511e
-SHA1: 64af8c855c4293c9d0028c0a88b272149aef9ab7
-SHA256: cc8d6a17e213ab6e1d7293ed91b6730e5c698b6c4241644836f9b9385f723808
-SHA512: a5ef6348b3cbfbf72c401347e62e5b060585da0c54adfb7d2d30c879b1943bfcb019671e85155cdf412c5d7814bc92e13915fd3b7eceb3ab849ec79289e3fc70
-Description: Use llvm as binutils
-Homepage: https://github.com/trentbuck/binutils-is-llvm
-
 Package: bison
 Installed-Size: 2608
 Maintainer: @termux
@@ -22576,18 +22558,18 @@ Description: Ambitious Vim-fork focused on extensibility and agility (nvim)
 Homepage: https://neovim.io/
 
 Package: neovim-nightly
-Installed-Size: 24820
+Installed-Size: 24796
 Maintainer: Aditya Alok <alok@termux.org>
 Architecture: i686
-Version: 0.8.0-dev+580-g45ba2e147-0
+Version: 0.8.0-dev+590-g8f36e538c-0
 Depends: libiconv, libuv, luv, libmsgpack, libandroid-support, libvterm, libtermkey, libluajit, libunibilium, libtreesitter
 Conflicts: neovim
-Filename: pool/main/n/neovim-nightly/neovim-nightly_0.8.0-dev+580-g45ba2e147-0_i686.deb
-Size: 4954624
-MD5sum: 8425cfe756053e23df69272d6aae6d82
-SHA1: c49d6f35b2609f801803fb26d5f3d114e27b203f
-SHA256: 54abf19a1545c10480ee02405615c7925179c9f75a240bdec36e6c6b39c6e29f
-SHA512: 080ac8938161ff4449a844a067a914fc5197f2f3b4e7fe1d0de9898df129cd1b87d8d3af7d7fbe36c24db1a6bdeab7935146b94842fc174246eaec33a451cdbf
+Filename: pool/main/n/neovim-nightly/neovim-nightly_0.8.0-dev+590-g8f36e538c-0_i686.deb
+Size: 4952872
+MD5sum: 9d444afa236b4427136d3b942b8d8802
+SHA1: 3ff7e8d1248e78b63decc5a5bff6a9c1eaed8402
+SHA256: d116147075212fb8f7449b0d8882125a524849fd33198dbf9a4011ce014f911c
+SHA512: e7ce72003c97e7ec8308a36c74f4d6da9d3c6fd7724cbeade431cc54e89eaf04902fd7b3d6a404a26515924d843d2a127645ed66e5966a03caa0a10d198529d7
 Description: Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)
 Homepage: https://neovim.io
 
@@ -31602,6 +31584,23 @@ Description: Display word differences between text files
 Homepage: https://www.gnu.org/software/wdiff/
 
 Package: weechat
+Installed-Size: 2332
+Maintainer: @termux
+Architecture: i686
+Version: 3.6
+Replaces: weechat-dev
+Depends: libiconv, ncurses, libgcrypt, libcurl, libgnutls, libandroid-support, zlib, zstd
+Breaks: weechat-dev
+Filename: pool/main/w/weechat/weechat_3.6_i686.deb
+Size: 677380
+MD5sum: de59f419a5ff5c765d1bf1ea6dea5637
+SHA1: 4454d3fafe562a620745a9e8b492098c21beffef
+SHA256: bd917d8162171e2e66875ccdb8f5ac192d8e12f29624783444404f51d1754459
+SHA512: ace14c795ee14136a145efb56ad084cb2ddadbec17eafb4f66d4c84b089c9a5b25dd7b0b0fb8a6a0c73c843270d43b6cb3544264445e48f4c9b77b64e3c8e871
+Description: Fast, light and extensible IRC chat client
+Homepage: https://weechat.org/
+
+Package: weechat
 Installed-Size: 2316
 Maintainer: @termux
 Architecture: i686
@@ -31616,6 +31615,21 @@ SHA1: aef25394d79e11be68a15d3124c109f266cdb86e
 SHA256: 2ba4823f03b9bd4ea0e96ceb6930395a84792c22f89b99f71a596cde8c23d6d1
 SHA512: 173d0f2ab39d7e661b0b4b464503b7c72fc2d4f30d09dc6d8930b693820b71180b060626417acdd3ab9d7843263c4b3fbb4f9ac9e478e49a8e685b339b1040e4
 Description: Fast, light and extensible IRC chat client
+Homepage: https://weechat.org/
+
+Package: weechat-lua-plugin
+Installed-Size: 200
+Maintainer: @termux
+Architecture: i686
+Version: 3.6
+Depends: liblua53, weechat (= 3.6)
+Filename: pool/main/w/weechat-lua-plugin/weechat-lua-plugin_3.6_i686.deb
+Size: 34776
+MD5sum: 71cd272fde14606d10ec6f42e698f72a
+SHA1: dc40b1638f370f76b451728e7784f4705da77e0f
+SHA256: b0cd9123f18a11bbb88802d2d5600ea8e07fe6dec285009604cab5224558b380
+SHA512: b7b8abfa399e00bbf1b5f25b51b0a9e2e8637ff30f6adc73cab3ec0f89d5aa5a863a0033f3e5b36fc9d91bec9e94455b24e12139d6a8f543ed63782b3667153c
+Description: WeeChat Lua Plugin
 Homepage: https://weechat.org/
 
 Package: weechat-lua-plugin
@@ -31637,6 +31651,21 @@ Package: weechat-perl-plugin
 Installed-Size: 320
 Maintainer: @termux
 Architecture: i686
+Version: 3.6
+Depends: perl, weechat (= 3.6)
+Filename: pool/main/w/weechat-perl-plugin/weechat-perl-plugin_3.6_i686.deb
+Size: 58852
+MD5sum: f35b5d815f23c41ac1b4285f8e5e8d3d
+SHA1: 788c90a01f91c582f7b3fddc192fe59e8dd7e8e4
+SHA256: 3ed0d7a600e42d62b5d60f6c3365493d72b764b8b4125cc8ab33f5b0b8668d8d
+SHA512: a4b6e4a6f5967babbe4c4ec39cc771bed9dd5402c95b1d781c5ef3d4279039c79c0ea57b47b788c0cd3df0feaa23db0f8e366d7ad5593b5b42a0d15170dcd790
+Description: WeeChat Perl Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-perl-plugin
+Installed-Size: 320
+Maintainer: @termux
+Architecture: i686
 Version: 3.5
 Depends: perl, weechat (= 3.5)
 Filename: pool/main/w/weechat-perl-plugin/weechat-perl-plugin_3.5_i686.deb
@@ -31652,6 +31681,21 @@ Package: weechat-python-plugin
 Installed-Size: 196
 Maintainer: @termux
 Architecture: i686
+Version: 3.6
+Depends: python, weechat (= 3.6)
+Filename: pool/main/w/weechat-python-plugin/weechat-python-plugin_3.6_i686.deb
+Size: 35428
+MD5sum: 9d1cc14fcd89c4b62cf037ef182a9564
+SHA1: 770edead00bc4f3b3be507263620a346c5624a3b
+SHA256: 62ec1408affbd681f5cb8186b20b768f45eca62388507a9b741f049e8dea2915
+SHA512: f51eb8114f5718bb707a53c28517f0d9f1734f8991a93ca300ba7c09cfd53cf314ad0970eb8c8f63f6fbcf08f0fbe39d2b4ba3aacca47652e676fb38edeb4fea
+Description: WeeChat Python3 Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-python-plugin
+Installed-Size: 196
+Maintainer: @termux
+Architecture: i686
 Version: 3.5
 Depends: python, weechat (= 3.5)
 Filename: pool/main/w/weechat-python-plugin/weechat-python-plugin_3.5_i686.deb
@@ -31661,6 +31705,21 @@ SHA1: cd59f8b74afdb63001e156d946f14c93a9ed9767
 SHA256: bf1de6533a5a1e5f72a756661efc6b503c50de4cd195635f4617d813c17a8f91
 SHA512: 7e0c497a24212aaee4ec980030ef3ff5bb2b1287f86f44186fcfe5f5bc6cfbead6e58cf8c4c2db6542085530ce0c671ba8d2532fcd097abcaf10c87b6bf91514
 Description: WeeChat Python3 Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-ruby-plugin
+Installed-Size: 220
+Maintainer: @termux
+Architecture: i686
+Version: 3.6
+Depends: ruby, weechat (= 3.6)
+Filename: pool/main/w/weechat-ruby-plugin/weechat-ruby-plugin_3.6_i686.deb
+Size: 41396
+MD5sum: eafbe1aa2efb677def9dffa3af0f6c95
+SHA1: e2c05e16d253e2aa816cf0c1ee8c49702aff0f13
+SHA256: 09593d0abd07a1806069b5eeb4dd86d4ebc2921da9063ae0144d272fc3f60a32
+SHA512: 96354ba7ef41ef428eb3d80b0a1da4d76ca2a3516baa06f1fa8c8b05a71893ff91cec5cba7495425af73a9ff92ff8aaa7392d215d6334ef79c6606c30d5caaea
+Description: WeeChat Ruby Plugin
 Homepage: https://weechat.org/
 
 Package: weechat-ruby-plugin

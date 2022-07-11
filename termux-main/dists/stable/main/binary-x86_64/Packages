@@ -5783,21 +5783,6 @@ SHA512: 02a20389b1b12d8737059f7685f66e3b8c8800109659d0e8ca65fdf4ade4020df470fa02
 Description: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet.
 Homepage: https://gofrp.org/doc
 
-Package: frp
-Installed-Size: 36
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.43.0
-Depends: frpc, frps
-Filename: pool/main/f/frp/frp_0.43.0_x86_64.deb
-Size: 912
-MD5sum: eeaf26cbaaa71bde730a38b0903b71f0
-SHA1: 7d0116ac7a5e78d9f831a8878c891beea8bbc112
-SHA256: 8a658c4bd9a5211ea6c5e9885bbbb5c10aa40337ed8bdb6e45f682e6eddae6fe
-SHA512: d9b9fa2abf94cefcbaa5b2162d00f18c109f40387725d6e0aca948da01fdacd18ba450a2782921196095774009a67b4af06b6b420f98ec920d47a7fa284d1d4c
-Description: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet.
-Homepage: https://gofrp.org/doc
-
 Package: frpc
 Installed-Size: 11696
 Maintainer: @termux
@@ -5812,20 +5797,6 @@ SHA512: 5c27426f4880f27d6e7a55f73c750e32119e55d6b4687084ba5c9ddd5466897a1e09369f
 Description: frp client
 Homepage: https://gofrp.org/doc
 
-Package: frpc
-Installed-Size: 11628
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.43.0
-Filename: pool/main/f/frpc/frpc_0.43.0_x86_64.deb
-Size: 3379136
-MD5sum: 7cefa3ffd4ae855829301b5ec7fdbadb
-SHA1: 16d8b58b29792f4030f5be27a5d774432576ced4
-SHA256: 1c674034486137b9ca2ab810bf6001a990f09678cfecb7908812ff50d2528007
-SHA512: 46f39e84333948c01bb3827d21ba158bc7f736967b9c6f1d59c8e5e4031ecdc5f24ec6753d5c35f70f2b2fd9c0ceb46c7546eeac5c6004b00933773fe58a0c20
-Description: frp client
-Homepage: https://gofrp.org/doc
-
 Package: frps
 Installed-Size: 14920
 Maintainer: @termux
@@ -5837,20 +5808,6 @@ MD5sum: 1eaba632271122aec42cf76b12361d26
 SHA1: d4fe34fd2304c23028b3bd7e22142586c412bb25
 SHA256: 8205bd4af0ade603205b1a2ddf0be03a45493ac98b9be458958a6458980a4ed8
 SHA512: dfc7998cbc312ef1ad5b5e1d6fb26d17033869ff280f09cb3e549aa20fea27856a4db7cfd99c78f946e7f77977ce58a1b76a78f63fcde4618ba51ec07f85cda5
-Description: frp server
-Homepage: https://gofrp.org/doc
-
-Package: frps
-Installed-Size: 14916
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.43.0
-Filename: pool/main/f/frps/frps_0.43.0_x86_64.deb
-Size: 4106680
-MD5sum: ad954890748f342b7b5b7e612887db82
-SHA1: 16f77a9d0521ee0a9d0f8f27ecbc8b844f99df6b
-SHA256: 32e43d3e5a1b3fed84e310b6e8dfda63908ab27e3b53c3988dcdd6619ec3e511
-SHA512: 385cb5250b168b5237bb60442fc416f028d43514dfd637126b2b4d151007d40fe119128fcb24aafd548fefb50c98358d39827546a7621a054a82077aba4b3247
 Description: frp server
 Homepage: https://gofrp.org/doc
 
@@ -16898,6 +16855,23 @@ Package: libprotobuf-c
 Installed-Size: 312
 Maintainer: Henrik Grimler @Grimler91
 Architecture: x86_64
+Version: 1.4.1
+Replaces: libprotobuf-c-dev
+Depends: libc++, libprotobuf, protobuf
+Breaks: libprotobuf-c-dev
+Filename: pool/main/libp/libprotobuf-c/libprotobuf-c_1.4.1_x86_64.deb
+Size: 76712
+MD5sum: f9c5b6569938ed961b3d9d0622a1a9ad
+SHA1: a31d8d8d7dc062ea0a5be2e0db626a3306be6f53
+SHA256: 0c3526b7fe5e32b7f229810365e95b01cae40d48c0fc84679f069ae7f180ec88
+SHA512: 6a2aa78eac7fb5be171991de97a5b1b22c55a590921f9cad32a8159efb20d2b4e2930becba9239c21234e82a58145403ea642caf8de47afd61a772c82b8a5a62
+Description: Protocol buffers C library
+Homepage: https://github.com/protobuf-c/protobuf-c
+
+Package: libprotobuf-c
+Installed-Size: 312
+Maintainer: Henrik Grimler @Grimler91
+Architecture: x86_64
 Version: 1.4.0
 Replaces: libprotobuf-c-dev
 Depends: libc++, libprotobuf, protobuf
@@ -16909,6 +16883,21 @@ SHA1: ff8dc25b9c55de2099a70de716b4967e131f608d
 SHA256: 3660f75be40b095c07540aaabd0f4da0b2f52c5aaa0b81be1d45b7440040b485
 SHA512: 39ac0847d648a9d6ce876e6dfe20340a821b75878860b015bcebdf23d6bd3cabb8817c9784c97da5532f59706fc28505eb429078d4eb9be83653405239c98421
 Description: Protocol buffers C library
+Homepage: https://github.com/protobuf-c/protobuf-c
+
+Package: libprotobuf-c-static
+Installed-Size: 68
+Maintainer: Henrik Grimler @Grimler91
+Architecture: x86_64
+Version: 1.4.1
+Depends: libprotobuf-c (= 1.4.1)
+Filename: pool/main/libp/libprotobuf-c-static/libprotobuf-c-static_1.4.1_x86_64.deb
+Size: 12248
+MD5sum: a75693d8000e9fba296e4e79db5d1ce8
+SHA1: ec6837120230bd5bb17e647d1930e52d710731f5
+SHA256: 4e6474124cf6db198c8368c5f5a025bffcab620c706f083f06ece78928210499
+SHA512: b3011f5840a1afd76d88181bde3b2065a4fe07026fdf002ef7bb1dca12a651b1c7c356a7ed90119f6893251cad25e23bc872bb589d289b2d3f5fd107e9acbd81
+Description: Static libraries for libprotobuf-c
 Homepage: https://github.com/protobuf-c/protobuf-c
 
 Package: libprotobuf-c-static

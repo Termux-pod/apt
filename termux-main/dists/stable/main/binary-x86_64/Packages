@@ -310,6 +310,20 @@ Package: alist
 Installed-Size: 35792
 Maintainer: 2096779623 <admin@utermux.dev>
 Architecture: x86_64
+Version: 2.6.3
+Filename: pool/main/a/alist/alist_2.6.3_x86_64.deb
+Size: 8425600
+MD5sum: 10f8d72267bc5ee5b7aa1f9a0167a69d
+SHA1: 6e5a440115ec21d1b1fd8358844d3dbd0e8f52a1
+SHA256: 0fb324b747889263ffd13ba3596abd67ecd748bc70a034219eb3646a23c2ce60
+SHA512: ae5cbd5b16039de9cb850e2f69e5fdb850a0ae24926a76a7b22f76b8e18ee80c2c062db00865c7d2d9d145fa546c28b052bc7c4446f03c03dc1ceab08a3786c7
+Description: A file list program that supports multiple storage
+Homepage: https://alist-doc.nn.ci
+
+Package: alist
+Installed-Size: 35792
+Maintainer: 2096779623 <admin@utermux.dev>
+Architecture: x86_64
 Version: 2.6.2
 Filename: pool/main/a/alist/alist_2.6.2_x86_64.deb
 Size: 8421680
@@ -12503,6 +12517,35 @@ SHA256: 1c00bc66bd915238e02b2ff3b97f0828d198c9e6764ba4ff82369eac5fad1824
 SHA512: 0b7f793160003ff23c42774a35775668f10719e0e26a9f5266c618fce68b6b6302cd7a2c800d2fc663bee225aee6ecbf2ad453933b1a69bcc75b3717183cb0c6
 Description: Static libraries for libconfuse
 Homepage: https://github.com/martinh/libconfuse
+
+Package: libcpufeatures
+Installed-Size: 176
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.7.0
+Filename: pool/main/libc/libcpufeatures/libcpufeatures_0.7.0_x86_64.deb
+Size: 22008
+MD5sum: 909ed6f35ddbfbfc7ccf37ed8a740b7a
+SHA1: 94b82896bfd0eeff53c6d0f68ade440d95d71a68
+SHA256: 9d6a522fa3a7c8509ae726d228715b607bcb3e4fc5b093c4ac45dd37883ef291
+SHA512: 994b99283723e6757a4da338f519ad32ca362af5a1820abe30a1806d8b1ffbf093ea7a308b354064d881e54d1f4e1fd8b8968d1515c247a9b5dacd9bcd5d5249
+Description: A cross-platform C library to retrieve CPU features (such as available instructions) at runtime
+Homepage: https://github.com/google/cpu_features
+
+Package: libcpufeatures-static
+Installed-Size: 172
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.7.0
+Depends: libcpufeatures (= 0.7.0)
+Filename: pool/main/libc/libcpufeatures-static/libcpufeatures-static_0.7.0_x86_64.deb
+Size: 13816
+MD5sum: 14362e8dacff8767351314b2e6adb584
+SHA1: aeff649e3ff1216f18a805053e4a0fffe34e4ba0
+SHA256: 8dd3f1233e12325b8ede6ce9a08d06d2a6d700b4725c180f178fa89418ddc982
+SHA512: c7758b0b56bae4d4ec09cbc152d8e9e261a0b55c03d9bab2944e58d5745f4267f0e7e2b78abda65fa826e03a99f4ff773b6197f9852fa154ba6530e235d597d8
+Description: Static libraries for libcpufeatures
+Homepage: https://github.com/google/cpu_features
 
 Package: libcroco
 Installed-Size: 472
@@ -29492,20 +29535,6 @@ SHA512: 38c57f3777504ba68a542c9538caed0d9c87da8e1c1fe94489bbfa3cd64c59468e9718ce
 Description: An opinionated Lua code formatter
 Homepage: https://github.com/JohnnyMorganz/StyLua
 
-Package: stylua
-Installed-Size: 5460
-Maintainer: @shadmansaleh
-Architecture: x86_64
-Version: 0.14.0
-Filename: pool/main/s/stylua/stylua_0.14.0_x86_64.deb
-Size: 1374656
-MD5sum: c40af2a8e1e7dba6d118cd732db538fd
-SHA1: 2bb3c79e4213f1f7ed7162429c3aff913b3bbb6b
-SHA256: 767fe2bfc11e747e2b85400331ab2f25a1ade050a32d7dca45473410cf3ac97f
-SHA512: 6ee4125e3156446387e1f212aae05d97e19b466b0fcf65c10e2fa222681b07e704d3b4a9d444896e4f1b86942877c122caae3bc53b0db72dc2083f4d36b29bc9
-Description: An opinionated Lua code formatter
-Homepage: https://github.com/JohnnyMorganz/StyLua
-
 Package: subtitleripper
 Installed-Size: 144
 Maintainer: @termux
@@ -30264,6 +30293,23 @@ SHA256: c8266830ca901a27d97eb7eaf1c21a00da34f91ef8151016ed00828c2d313c19
 SHA512: 1006eaa958b3ec9252d76e7880806cc7a1ce8961b72a4f10ed0bcdb9d3cfe8dee664ba5d3659811c80a266814ba1fd250ddbe031d4529e472f6e44eb53e034b0
 Description: Tool for analyzing control characters and terminal control sequences
 Homepage: https://www.gnu.org/software/teseq/
+
+Package: tesseract
+Installed-Size: 27260
+Maintainer: @termux
+Architecture: x86_64
+Version: 5.2.0
+Replaces: tesseract-dev
+Depends: leptonica, libandroid-glob, libandroid-posix-semaphore, libcpufeatures, libc++, libicu, libtool, libuuid, pango, zstd
+Breaks: tesseract-dev
+Filename: pool/main/t/tesseract/tesseract_5.2.0_x86_64.deb
+Size: 9477084
+MD5sum: fb990b545b6c66cb304bcad3395cc2ef
+SHA1: 843d0394345c4de082b204a15a155af695a400c1
+SHA256: ed95b8b578a456eb48a4b8b7ab5b013b3efa368045c0ac49e8749d7339a756e2
+SHA512: fb432ddd3c33d5d0246e764214422d26d757a78f3c1e6dcb103af3c0048d5b9330870c07b99b3677b29377b062ccb396fcc6332878b13b25d8a23b2fc8c6a90b
+Description: Tesseract is probably the most accurate open source OCR engine available
+Homepage: https://github.com/tesseract-ocr/tesseract
 
 Package: tesseract
 Installed-Size: 27320
@@ -33034,6 +33080,22 @@ SHA256: e1d09bdc9450c589caf84c07b04458e2483ed552705efd3d8a97b5c351bac1f6
 SHA512: 286441b6ece6ae699955f6b01b9f6ae80d74a47ef65f564157ca3ca926a84c6a1ee9d1c82661fc710f29a291c7b0bf355ef5dfb506a992374b2c74194d21b4b7
 Description: A lightweight and portable command-line YAML, JSON and XML processor
 Homepage: https://mikefarah.gitbook.io/yq/
+
+Package: ytfzf
+Installed-Size: 152
+Maintainer: @termux
+Architecture: all
+Version: 2.4.0
+Depends: curl, jq
+Recommends: fzf, mpv
+Filename: pool/main/y/ytfzf/ytfzf_2.4.0_all.deb
+Size: 37084
+MD5sum: 57cebc394f09c554b6046c1913197cc1
+SHA1: d5a3c9a7386a8e4ff8bf50ff429cfb77aa4dd4ab
+SHA256: ccea17c497e1f58b13a20d1ba36064f92f9adf790412b76bf019c30fb636054b
+SHA512: 72535f29d7109c667b5a6f039caaf26e7dbb3d4ac5f585a93e5cdee103bd69e3d9ec73bbc341cd66cb5b7f10600d451456ef5caf08b7c593ce9b487ede194a51
+Description: A POSIX script that helps you find Youtube videos (without API)
+Homepage: https://github.com/pystardust/ytfzf
 
 Package: ytfzf
 Installed-Size: 136

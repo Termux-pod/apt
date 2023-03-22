@@ -1,0 +1,29 @@
+name: Mirror
+
+on: 
+  schedule:
+    - cron: "0 */6 * * *" 
+  workflow_dispatch:
+  
+jobs:
+  Push-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+                
+      - name: Set git cred
+        uses: oleksiyrudenko/gha-git-credentials@v2.1
+        with:
+           global: true
+           name: 'Krishna Kanhaiya'
+           email: 'kcubeterm@gmail.com'
+           actor: 'kcubeterm'
+           token: '${{ secrets.KCUBETERM_GITHUB_KEY }}'
+      - name: Push updates 
+        env:
+            GH_TOKEN: ${{ secrets.KCUBETERM_GITHUB_KEY }}
+        run: |
+            echo "Jai ho"
+            bash ./scripts/trigger.sh            
+            

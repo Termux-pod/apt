@@ -47,6 +47,21 @@ Package: bubblewrap
 Installed-Size: 128
 Maintainer: @termux
 Architecture: arm
+Version: 0.8.0
+Depends: libcap, bash-completion
+Filename: pool/stable/b/bubblewrap/bubblewrap_0.8.0_arm.deb
+Size: 27456
+MD5sum: f794633c78740fb08279b7c465355722
+SHA1: 987c0a01858f54e535c70eee51f95ee3d2bee5a3
+SHA256: 39b7400e1c4bbe8a6c0a3a590c553d584ba26082f544402893d2c1f820fe84d8
+SHA512: 41ade4eec6f1c281c0fada7f89d099e18968340badeaf8fe9685774c23f007ca43b8896b27a02faf70acd3a7039dcfcf173b983c808a2b26d7acc154f96c8c78
+Description: Unprivileged sandboxing tool
+Homepage: https://github.com/containers/bubblewrap
+
+Package: bubblewrap
+Installed-Size: 128
+Maintainer: @termux
+Architecture: arm
 Version: 0.7.0
 Depends: libcap, bash-completion
 Filename: pool/stable/b/bubblewrap/bubblewrap_0.7.0_arm.deb
@@ -57,6 +72,21 @@ SHA256: 303828fc0cac733cc40a2b95296a9a36a237e3ce4f0fa1b43c43bab40275295c
 SHA512: 3359751ad6d4ba8a4ec16b1e089c515d12f4dccf36680688fd016b140f175ccf9802fa5b1fbd143a6e58cf390cddadf7c2f1fcafa1cfec43f5c0a8bc8e508a1c
 Description: Unprivileged sandboxing tool
 Homepage: https://github.com/containers/bubblewrap
+
+Package: containerd
+Installed-Size: 99256
+Maintainer: @termux
+Architecture: arm
+Version: 1.6.19
+Depends: runc
+Filename: pool/stable/c/containerd/containerd_1.6.19_arm.deb
+Size: 23082084
+MD5sum: 4a1f804e7404593c609f76fc34a15d63
+SHA1: f3d07af44110131a5bf05dcd5012b10f234ee860
+SHA256: 567ae04d4d13cbb7ed7dc5f6b1a77f8079c28cc16f3f2445fd713efdbdca6b8a
+SHA512: a9a45d1a50fd704600c87af403a17e00e8c67d1ed40d8dd528c428a3fb9486a03c137d3f67f7466ceeca8edad7ece1aa4595bdee0989d7c700a69374d5e93889
+Description: An open and reliable container runtime
+Homepage: https://containerd.io/
 
 Package: containerd
 Installed-Size: 98764
@@ -144,21 +174,6 @@ MD5sum: 872377ac4c16732c291c73d41a6340ff
 SHA1: bc6974a8189bddd6c3c7e793edc719ac41a74afd
 SHA256: a6ce112f588d9a51e02b5ee1bb7333e1e24735ced22ed5f7de843645bc548e20
 SHA512: 8c99021552985b1eb731c933d173bcbda81649f529d2adb4a520d85873ebf36523e15aab6a4d66440c1d611ba225ee338286039ab9fce230df67f52570522cef
-Description: Compose is a tool for defining and running multi-container Docker applications.
-Homepage: https://github.com/docker/compose
-
-Package: docker-compose
-Installed-Size: 47280
-Maintainer: @termux
-Architecture: arm
-Version: 2.16.0
-Depends: docker
-Filename: pool/stable/d/docker-compose/docker-compose_2.16.0_arm.deb
-Size: 9460904
-MD5sum: 13a2683ef82d1acad44bbb56f0c22b3c
-SHA1: 788271f51acd944eb46d5728a7a2dda06d677ade
-SHA256: d53e5d1e0d5fca1a25dbb9e474005a51b49d3eae87a7a4f988a2099bf86a26f5
-SHA512: a4b7665edb0380ca3af1798d621027c39bea17f19d1146ee751260d22cc742bc3860a310bbd85fa376131beae7084aaf94b4968efeeeac7e9a63046c07ec8214
 Description: Compose is a tool for defining and running multi-container Docker applications.
 Homepage: https://github.com/docker/compose
 
@@ -550,21 +565,6 @@ SHA512: 854b3e80629aa966cddc3963e66f2921f695b11ca9b6d5598d2e468720f1d50daba26fba
 Description: A device-mapper library
 Homepage: https://sourceware.org/lvm2/
 
-Package: libdevmapper
-Installed-Size: 500
-Maintainer: @termux
-Architecture: arm
-Version: 2.03.19
-Depends: libandroid-support
-Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.19_arm.deb
-Size: 170244
-MD5sum: c1556f0b81b039fc6fa43182fd31bcff
-SHA1: c9429fba0abec4f6863596774abaedae9295fec4
-SHA256: b99ed600c0ddf799c37b55f286429a1d51ea4250dded9866d01f615fc6373c39
-SHA512: 9f5f1e6a2aeed4c8f31a0550b9c0781f8313d8c96498027f17485516cd740d65cffdfc87b4c614ee68281824e94fbb75df978e2b05af34403699cc6c880f516f
-Description: A device-mapper library
-Homepage: https://sourceware.org/lvm2/
-
 Package: libfuse2
 Installed-Size: 416
 Maintainer: Henrik Grimler @Grimler91
@@ -761,23 +761,6 @@ MD5sum: d873bbbc510f152065231d9a3a0d9a2c
 SHA1: 729e501c775e01014d33610873080698b78bf27a
 SHA256: 39c5ff9c5a0697ab1b18c99e42f1b9bdcfe3eb8f51de9a4eb5538e85fd546dcc
 SHA512: 76270dce0f1063c90de02efa43972af43f3b11b19f238d533c1dd1a7011174501ababbf73ff877b716eb1043b0565a66a59812487c40f7d59966f764f9894438
-Description: A device-mapper library from LVM2 package
-Homepage: https://sourceware.org/lvm2/
-
-Package: lvm2
-Installed-Size: 2536
-Maintainer: @termux
-Architecture: arm
-Version: 2.03.19
-Replaces: libdevmapper-dev
-Depends: libaio, libandroid-support, libblkid, readline
-Breaks: libdevmapper-dev
-Filename: pool/stable/l/lvm2/lvm2_2.03.19_arm.deb
-Size: 1048192
-MD5sum: d29d00d3e225aedc40cc819392911f1a
-SHA1: 8b26317f31744cb4c7e4f0f2704194c2e70c2788
-SHA256: 994a09e645856a6b211f369f6899c3d8544fe0d6d1af396b5185a3202492be4a
-SHA512: d4609ecfa704f9d578c3f115ca2735f27b5339c8da492a28055e4371375a4d60b08f5ee10455adfa781b22449bcfbbb5284ece0a073073e0c300ef3727cd1ff6
 Description: A device-mapper library from LVM2 package
 Homepage: https://sourceware.org/lvm2/
 

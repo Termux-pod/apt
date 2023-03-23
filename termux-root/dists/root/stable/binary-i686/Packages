@@ -47,6 +47,21 @@ Package: bubblewrap
 Installed-Size: 140
 Maintainer: @termux
 Architecture: i686
+Version: 0.8.0
+Depends: libcap, bash-completion
+Filename: pool/stable/b/bubblewrap/bubblewrap_0.8.0_i686.deb
+Size: 29424
+MD5sum: 48d6a7e8cd61fe15f3a18b62479dcf78
+SHA1: 290c00048787f52caf13a58ecf7056c7c8753156
+SHA256: 19d69621fb07c236da556a2a7852c38529f94766037d75102e799fd809444009
+SHA512: d033b3d65208eba8d1754f73b702899976dd15f15f2b1c4f2ee059afb60656e9b950bb47c01bbab3309e119ef0c34b4f7f2d887419f7a79aa862b5fecdc165f3
+Description: Unprivileged sandboxing tool
+Homepage: https://github.com/containers/bubblewrap
+
+Package: bubblewrap
+Installed-Size: 140
+Maintainer: @termux
+Architecture: i686
 Version: 0.7.0
 Depends: libcap, bash-completion
 Filename: pool/stable/b/bubblewrap/bubblewrap_0.7.0_i686.deb
@@ -57,6 +72,21 @@ SHA256: 8b71d1d827754efbc7da9664f1cfd96a2795c3f705f4a4c1b6e4b22e84e79e77
 SHA512: d03dcc2db992a62b37b05e242dd6cf647a1721eb840566037dc639cae9b067ac66fe6af210ef189818969691910e4a4296c353fc7f893c65b842db84f1c1b594
 Description: Unprivileged sandboxing tool
 Homepage: https://github.com/containers/bubblewrap
+
+Package: containerd
+Installed-Size: 100900
+Maintainer: @termux
+Architecture: i686
+Version: 1.6.19
+Depends: runc
+Filename: pool/stable/c/containerd/containerd_1.6.19_i686.deb
+Size: 27307880
+MD5sum: 592342547a552883124aed96ab2c450b
+SHA1: 3ddc0feaff453dfa30d4568a13b295976fd8e461
+SHA256: 7f4fcf13d92f9ff35395a2def259e92ea13738858cd6150bc553d9f59cc7a518
+SHA512: 97a62997306d753e728689f8476c8ad083cded9a5f3ab6da945d9360ea00a6e3ffe939b796a9654b21d58908cacc52087fb07a001048633f3511793a28b63bc9
+Description: An open and reliable container runtime
+Homepage: https://containerd.io/
 
 Package: containerd
 Installed-Size: 100460
@@ -144,21 +174,6 @@ MD5sum: b237d209e7a744d4dc053f185382c820
 SHA1: 00c444f646817ad04fa0e0bf5a32b853e387ec57
 SHA256: 90a1cda4ae5c0c97e3e35da2c35e13b43036ce979538df9d38b5728c465e0022
 SHA512: 077f8ca408906fd235d5a80025b20be74e47f7d6525c83cc5a85087044819604532ff0982ef0ff1aff7703a15d1338d807e41f4fecce8ec13a960573157245ed
-Description: Compose is a tool for defining and running multi-container Docker applications.
-Homepage: https://github.com/docker/compose
-
-Package: docker-compose
-Installed-Size: 48136
-Maintainer: @termux
-Architecture: i686
-Version: 2.16.0
-Depends: docker
-Filename: pool/stable/d/docker-compose/docker-compose_2.16.0_i686.deb
-Size: 11254316
-MD5sum: 1c43c99124daacb825bf2ab1b9459775
-SHA1: c7c6c0ab102466215a8ef025b5ccfa3cca979b5d
-SHA256: 1b63a495444a4c4aa224390ba9cfc044c6fba92f13626e8283826d430d281983
-SHA512: 8ef322ecfce34cb9ecc3bdbeb6a73652344786cabcf521d0a65696674457aeedb3a183e17cda063076d9823ca6ebd4275d39f3357992930b9ea12bf6732bc4bd
 Description: Compose is a tool for defining and running multi-container Docker applications.
 Homepage: https://github.com/docker/compose
 
@@ -550,21 +565,6 @@ SHA512: 10717f3dbfcfaa39911e0676553511f22a8c1d68cbcdbb77b12d9cc4d68df9321daddc50
 Description: A device-mapper library
 Homepage: https://sourceware.org/lvm2/
 
-Package: libdevmapper
-Installed-Size: 588
-Maintainer: @termux
-Architecture: i686
-Version: 2.03.19
-Depends: libandroid-support
-Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.19_i686.deb
-Size: 175420
-MD5sum: b9d928938d3c09d7afd5e19627f2a40a
-SHA1: d2fc90569885493c527b208a413ef4600090a7f2
-SHA256: 8c9cf1799d56f45cb7eeb9a2ebba95a88105d059f8aacb4bade8d60d39dcd24f
-SHA512: 24ae0331e3c632351689122bff719c7f674e5add40105d72e1267d9cc8f4f14b70ca4f23c5a181b6d2efd4a80bc3adf3a3baa61368be664da987f717c3749c27
-Description: A device-mapper library
-Homepage: https://sourceware.org/lvm2/
-
 Package: libfuse2
 Installed-Size: 464
 Maintainer: Henrik Grimler @Grimler91
@@ -761,23 +761,6 @@ MD5sum: e9f9f653169468f54967063a5a8a0a26
 SHA1: 046d14c97b160e22c0bec63cf0af5d93dd52027f
 SHA256: b640f6fc7c638396466b438f18ad9ed375dd32eb0ff3142986ead040f0aa82f1
 SHA512: e68ab6c036d7b3304aaea1d28b0312e21babef714f209a4223605781184e91e442584c3f1fb9181835e4b0a1269caaf1214e136433d486253127221fb01a37bd
-Description: A device-mapper library from LVM2 package
-Homepage: https://sourceware.org/lvm2/
-
-Package: lvm2
-Installed-Size: 3008
-Maintainer: @termux
-Architecture: i686
-Version: 2.03.19
-Replaces: libdevmapper-dev
-Depends: libaio, libandroid-support, libblkid, readline
-Breaks: libdevmapper-dev
-Filename: pool/stable/l/lvm2/lvm2_2.03.19_i686.deb
-Size: 1083580
-MD5sum: 3c63f44f01484a76dee2edf7ee374077
-SHA1: cc02f3b5f4d476689d6bda9ed7d12a193006a7fc
-SHA256: 7986a6b6bec8016fe8caeda83665f253c8786babfc342bcf537057c0163b2ec8
-SHA512: 3e87ebef1511b93b78bacc215718698acc23898155e8a8a4c616f5c40734280971542064977f0783c4ebe5d4cd32f27fb36da6d5f2289ccff37215fcbea650cd
 Description: A device-mapper library from LVM2 package
 Homepage: https://sourceware.org/lvm2/
 

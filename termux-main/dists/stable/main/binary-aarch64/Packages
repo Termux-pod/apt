@@ -23835,22 +23835,6 @@ SHA512: 15596162964a34b87d12e5b8d3c954eaeccce286578b1187ffee5a81d79123eda2a95e36
 Description: CLI tool to download videos from various websites
 Homepage: https://github.com/iawia002/lux
 
-Package: lux
-Installed-Size: 18200
-Maintainer: @flosnvjx
-Architecture: aarch64
-Version: 0.17.1
-Recommends: ffmpeg
-Suggests: aria2
-Filename: pool/main/l/lux/lux_0.17.1_aarch64.deb
-Size: 4269224
-MD5sum: 206aeafe0582c6f67c4d0a27425c6021
-SHA1: ac41219dba80650e19a6366b7be49e7e22b36165
-SHA256: a68c7cc0eb0fda2cf4d6285428002a9c892209579832d6290222f026c662e43b
-SHA512: e3b1998defac1754c320aac941d45fa7bd62385f348fb3f4dc3233b4af1ef1000d17be8927494ac87c0ea9aaaa1d43f867f51d209be891881f774951343d9e66
-Description: CLI tool to download videos from various websites
-Homepage: https://github.com/iawia002/lux
-
 Package: lv2
 Installed-Size: 1444
 Maintainer: @termux
@@ -24790,6 +24774,24 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 45688
+Maintainer: @termux
+Architecture: aarch64
+Version: 23.0.1-1
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libexpat, libglvnd, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.0.1-1_aarch64.deb
+Size: 11273888
+MD5sum: c986a4409d0f973a072aea91d19bf87b
+SHA1: 3ad8be6c16a544870f15dcbf6bc1834be87f897d
+SHA256: 5a4f64ac726ddae627db00d15f8eac2bef880d056c041639bb9d7ca150ff2446
+SHA512: 3f66b2ed1d789e0b16f70956ca0c811fd5475578bb568add8b3063e91d8cec46d27e541d25de7c8e3f0f5245c97f52b7ea8ebbf309985b87c47d0d1ac7f52372
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 43932
 Maintainer: @termux
 Architecture: aarch64
@@ -24811,6 +24813,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 23.0.1-1
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.0.1-1_all.deb
+Size: 25068
+MD5sum: 8219ed344d7b992c6d3ad50c7899dfc8
+SHA1: f2a49112bfc0a390d4cd0e91d9267ba143612bf5
+SHA256: 01fd2270d9dc647bf1755cf629f91198970db521b63a9d401ab00357fcc2fccd
+SHA512: d4fadef09abbdc41e9397cb799377a54dfa7cf2ff034e1bd4fbebe0c73e724806ae76c0c995fc2a948ec10485c6133248bc1ca5a93b8bfe34cd2af41dfbcabb1
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 23.0.1
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -24822,6 +24841,21 @@ SHA1: 934167c1b37ac8792981130c0ac3b633afe18178
 SHA256: e377b78fbc5fd9305cab4ee8873276117482a50f02d052a9f75a0a4e414b34c2
 SHA512: 08c1c7d878ba756d6f42d58036da39bf8e65112cb8085f3e4d7976ae0e51a4330ed78ce791cea21eef5790f0a6c161f812a7a2ce6d53b61b3bea320135b79acf
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 46568
+Maintainer: @termux
+Architecture: aarch64
+Version: 23.0.1-1
+Depends: vulkan-loader-generic, mesa (= 23.0.1-1)
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.0.1-1_aarch64.deb
+Size: 11212340
+MD5sum: 47da0648f4a01c471ff55de32b41792e
+SHA1: c6e57b1a5166defefd1c7d0329b1758474294bd4
+SHA256: b54df190e52d6a826d7a09424443103a536fa9c6e78dee982a2c234bcb42f136
+SHA512: c1eaccaf16f9b0f5b6a75511d46afc282b1e60959f070d0beeebd13fc0ce4d4b6272473c2137ab8beee8e29f0458962a492e62766a735a6227386f617f80110c
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -27894,6 +27928,23 @@ Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
 
 Package: osmesa
+Installed-Size: 43876
+Maintainer: @termux
+Architecture: aarch64
+Version: 23.0.1-1
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.0.1-1)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.0.1-1_aarch64.deb
+Size: 10875704
+MD5sum: f0767db9ca92401658cf5a1db86a5f8d
+SHA1: 9005bdfeb145ffd34b3cf8d8686e4b7380975d8b
+SHA256: 45af74c1f32c0ca72e2563099432ffd8ce054e21fdac450058c39b570344668e
+SHA512: 24e11d3a244534b7281736d522b7e1ba8427af1276d7a3587f8227d154d9b786199392def5372eb47ae69630a5f84a989b5f711a2658e39b4120a24a30ba3de4
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
+
+Package: osmesa
 Installed-Size: 42120
 Maintainer: @termux
 Architecture: aarch64
@@ -29241,21 +29292,6 @@ MD5sum: 273ced5dcbff5a13b2be7bf09298a118
 SHA1: 6a6add7fbe12d1dc1d0e3687175e923d89361fd5
 SHA256: 2f5335c3e4d6f2fb1a3766f0bfca73f02f108d76bef3969d4626134a2b14e4ac
 SHA512: 93af91380fa3834086f348ff655c46d77e5d540b20c22236bf5f227b6da373d0013f92eb87ac9ee177636de49f4f8ba89e6a5092cf79383ad5aae9252fb60a5c
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
-Package: pocketbase
-Installed-Size: 46676
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.13.4
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.13.4_aarch64.deb
-Size: 9234732
-MD5sum: 931ab168286b559f5a8cf67ef7a58921
-SHA1: 677ceb6f5fd3139b7f709da2fb22a5d27ad059c6
-SHA256: c2fc65a34e36d859a73f0e463e3224249ea27c4a3bf28aff8ac3a2ef9f7b2da9
-SHA512: 21b405e04f24395844a0dd31c6846b8b31946449e2d4a58ef637b2a3eb87ad09d7d004f961acf4efffa7d0ba7b39f6523702f3f293d3c8c3b99e92659ce9772d
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
@@ -31489,14 +31525,14 @@ Package: redis
 Installed-Size: 3204
 Maintainer: @termux
 Architecture: aarch64
-Version: 7.0.10
+Version: 7.0.10-1
 Depends: libandroid-execinfo, libandroid-glob
-Filename: pool/main/r/redis/redis_7.0.10_aarch64.deb
-Size: 811084
-MD5sum: 3c417340a14f90e2566b8b5b62e47a24
-SHA1: 81e30932600ae3855ee510971168702a08713756
-SHA256: dd024016b4dc5943d9f9fac02246397a5c7d28a5ddb83bb3459bfe294406ca29
-SHA512: 7b89c215893ec9b722edeb738d9b08917f374e84723236a52095cc56453f26a26c95f8951de19f84a6f9ba8b4aed796788ee402f958fe5aee9dd4f7d5c5ae864
+Filename: pool/main/r/redis/redis_7.0.10-1_aarch64.deb
+Size: 809064
+MD5sum: 91f48e996b44325ef3a806af21cb4891
+SHA1: c93021d26e985495416c44de2b1dc4bc6adf875e
+SHA256: a5f07c77d15b75f5c8f00dcab6d24a1dcb5d62e6d89faf4c3e8cf829e1242f4a
+SHA512: e50c3abaa5db03bb71e1fb8ca05ba1e0ead948d92b3da870904ae07b636cf4b95563699373b5c3816e9fd4430d46b220468ead6a6757b1e2e69d610f411645ea
 Description: In-memory data structure store used as a database, cache and message broker
 Homepage: https://redis.io/
 

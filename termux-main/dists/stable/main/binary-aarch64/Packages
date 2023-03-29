@@ -3246,16 +3246,16 @@ Package: clang
 Installed-Size: 193672
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
+Version: 16.0.0-1
 Replaces: libllvm (<< 11.0.0-1), clangd
-Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 16.0.0)
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 16.0.0-1)
 Breaks: libllvm (<< 11.0.0-1), clangd
-Filename: pool/main/c/clang/clang_16.0.0_aarch64.deb
-Size: 30166448
-MD5sum: 96e9de87d7137543a734b0f701f44cc4
-SHA1: f0f97ebe872a11b4f87b7edc32d49cb791c1a64a
-SHA256: 5e97f57d5b19517aae4a5724ec5219c108b0607a895ecd48f96a078be8add069
-SHA512: 6a7a503a3e4bd07554b371908a796f145ed7dbfc1d713e9a84ba400b17a0d5c304c6c36269f7cd3258d588e1c17425c6537c9d5728ad073dc0ae3bd7457d46be
+Filename: pool/main/c/clang/clang_16.0.0-1_aarch64.deb
+Size: 30158992
+MD5sum: da565e116b9b01e87dff219f52df3f97
+SHA1: 629dc8fb74d1e57c00922cb8fa5c6850a8e5689d
+SHA256: 00fa39c2ee6bc1e9645e4ac6461cbe5413d25ce8e24a393ae6e89f94111b8ffe
+SHA512: 6d34d55624a90edb1243847d5bc15e4439690fcc80125d4adf30d5651ecb0722ea7ccdc263f5c1885e4b3d269b82b68062afd30bb6fd27dc91af37ddc78dbbb4
 Description: C language frontend for LLVM
 Homepage: https://clang.llvm.org/
 
@@ -6469,21 +6469,6 @@ MD5sum: 079d5b80d6f41a8e2891a9a708a8124c
 SHA1: b76abc38c601aff68bf5451496a82e79e2cfce07
 SHA256: 5607e895e02eea6fdbf416854c4a1578372f00321f40f4e27b6ea0d54650cfb0
 SHA512: f02b8cd6c55f345044a7e7f49868dca72888e4954f00d57de0aa0957893c7a531e277c53eaf93be74e110547359831febf092153f0a8afe22a30126536bc01b7
-Description: LLVM's Fortran frontend
-Homepage: https://flang.llvm.org/
-
-Package: flang
-Installed-Size: 522944
-Maintainer: @termux
-Architecture: aarch64
-Version: 15.0.7
-Depends: libc++, libllvm, clang, lld, mlir
-Filename: pool/main/f/flang/flang_15.0.7_aarch64.deb
-Size: 26998800
-MD5sum: 087f0bc2589a0296b19068749d85642f
-SHA1: b6c267061f87d2c69f9b1a5981ed5d5e766acfdd
-SHA256: 1d29cdc40088c0c6e1e4dcb0a015f0fa28277eb6cf5e1fac198d18cac976c2ce
-SHA512: 7176df269666a83d60b0247c1e6aa440ab3136e3ed0c2c4226298984845edf48f36159d39bbe9d51f8334471df3d0d3490400eeb1b1460b1ffce405589479a67
 Description: LLVM's Fortran frontend
 Homepage: https://flang.llvm.org/
 
@@ -13318,20 +13303,6 @@ SHA512: 8fe9b63c0987c09a748010e1b72e1163f354b10281e802386fed626985c1d50e6dfa09a1
 Description: Provides semi-portable access to hardware-provided atomic memory update operations
 Homepage: https://github.com/ivmai/libatomic_ops
 
-Package: libatomic-ops
-Installed-Size: 928
-Maintainer: @termux
-Architecture: aarch64
-Version: 7.6.14
-Filename: pool/main/liba/libatomic-ops/libatomic-ops_7.6.14_aarch64.deb
-Size: 72596
-MD5sum: a8378732b69514955aa21c333a662918
-SHA1: 740d4da65035ccbccab8ad5d4e8f0e49ead11338
-SHA256: dadd9717cb05ef3ae5206c05e57f0bca8a91e1557f0263c6b9dfd7add15ec1cd
-SHA512: 156524bd6ccb293efd17d8a6443f6f9e604a1cc79ebc0163d0da55b2b535b1c0b9a2b8349121989d98d6741d7925c67709c74f7cfd2050498c38eb10f242d3e7
-Description: Provides semi-portable access to hardware-provided atomic memory update operations
-Homepage: https://github.com/ivmai/libatomic_ops
-
 Package: libatomic-ops-static
 Installed-Size: 52
 Maintainer: @termux
@@ -13344,21 +13315,6 @@ MD5sum: 7b010a35a5eb3b0cda882b8f1fa35a68
 SHA1: 5ad89d9ca641f8bcfc782b9dc7f534ee8d54db27
 SHA256: 5e5fc6e1d643b0bcd9a046e49585eebd97db8d8a14f8ede20f58209421d4608a
 SHA512: b4a15525efb3f500df6fadcd6d7e56e3589516846f6a6469c86a5aa14dfcf5b197cb809ed31f393887fe6f77ec87bc80e1271b95bf1dfaf5d005ac4eb3558466
-Description: Static libraries for libatomic-ops
-Homepage: https://github.com/ivmai/libatomic_ops
-
-Package: libatomic-ops-static
-Installed-Size: 48
-Maintainer: @termux
-Architecture: aarch64
-Version: 7.6.14
-Depends: libatomic-ops (= 7.6.14)
-Filename: pool/main/liba/libatomic-ops-static/libatomic-ops-static_7.6.14_aarch64.deb
-Size: 3924
-MD5sum: a10bdf1b8f5b3d9b7f1a05230889ca2d
-SHA1: 34bb965842a96c3e837d4483cc178a757308b64e
-SHA256: b9df8976f17b5748ed84a247c7360e63abd039bf9c2f6cd970d72f7eb7f3bc94
-SHA512: e21579f38f6f2c3543235769019a00caf0165923fbc4610866d4bd0e87fb8ad975428d77b9e4428436c0e36e89b92d34f06d54eb33521db89c4c20fa16231c8e
 Description: Static libraries for libatomic-ops
 Homepage: https://github.com/ivmai/libatomic_ops
 
@@ -14083,15 +14039,15 @@ Package: libcompiler-rt
 Installed-Size: 32504
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
-Depends: libllvm (= 16.0.0)
+Version: 16.0.0-1
+Depends: libllvm (= 16.0.0-1)
 Conflicts: ndk-multilib (<< 23b-6)
-Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_16.0.0_aarch64.deb
-Size: 2479472
-MD5sum: 3b05a1ae47a176058d9982e58fa917b8
-SHA1: b81ce7770daf44c3c2b2369ace97306a5fc0ee30
-SHA256: cee80244227ea9858c14d6cdb36e5e7c78fa2a595b82a55bbe79b7708f9c3bdb
-SHA512: acb680f6e347747eb0cbc6a51552fa1168b9f7e7c5ada9bb79feaee2f1e37ab804a80bee771e58911793291ed8bf8d0a015f18481758840f5ac85f86c841f616
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_16.0.0-1_aarch64.deb
+Size: 2485988
+MD5sum: c2bc409bed6e35e5a777070540eddd9c
+SHA1: d1203d5be5d0e5f44bbc7007a9c518b0f78f782f
+SHA256: 7f4ca8ec0cbb3edb28cc5d4d3d5ac6ba15d5d1fc94cc8200f85e651e5c76e995
+SHA512: d738b85f933e6153825e7f6c3a2f15eedeaf2ec3ad2f70c78002ef5eef9a6f22924ed8bacbed8de6465c8dc68eb521684fdbebd750959e4d7341c6c8bd970dde
 Description: Compiler runtime libraries for clang
 Homepage: https://clang.llvm.org/
 
@@ -16825,32 +16781,32 @@ Package: libllvm
 Installed-Size: 138748
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
+Version: 16.0.0-1
 Replaces: gcc, libclang, libclang-dev, libllvm-dev
 Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
 Conflicts: gcc, clang (<< 3.9.1-3)
 Breaks: libclang, libclang-dev, libllvm-dev
-Filename: pool/main/libl/libllvm/libllvm_16.0.0_aarch64.deb
-Size: 24053060
-MD5sum: a8ddfd2890f817e4419dfc60e5f3b144
-SHA1: 56c23c14a306e246b6d0b54221a86860a093226a
-SHA256: caabf1ef0ac95cf5b01990c34753e6d8727f9cffccf9f023869aa8a86ba92a69
-SHA512: 6d920f4138c58cda2fe40352e919dec9737c3ac19f05fa20fc9d2d57f51e46d711f655f7f942fd9e8bdd8e2ba96b026e9be5c5deeea6d66ede74ebb9b1dc1b4a
+Filename: pool/main/libl/libllvm/libllvm_16.0.0-1_aarch64.deb
+Size: 24063892
+MD5sum: 131389f71c5aeae41ed39c0ab17b140d
+SHA1: 0503f6aeaaf9e82fda800a1c56bd94fdc33d1cb8
+SHA256: 97a9ab41dfe7aa9000d60e82f24e14569645a8dab7c2a6a9b55011f6e0e8c5d5
+SHA512: 8b47592a40fccd81f3a6ad7e2a9b8d61aebb44eff97583745691f1b09f50b13b04a2380eaf2f52312b4d46eb803c2efccaf75c416cb62a881a2d3ee0adc88474
 Description: Modular compiler and toolchain technologies library
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
-Installed-Size: 605772
+Installed-Size: 605776
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
-Depends: libllvm (= 16.0.0)
-Filename: pool/main/libl/libllvm-static/libllvm-static_16.0.0_aarch64.deb
-Size: 63691252
-MD5sum: 9ce0f226b8df636eeb39e4085ad2cd76
-SHA1: 70f72880c99d1184614d44124d536c6e3b36ec33
-SHA256: 2f830195b6676977c003e4ee789a90d591ad7d37b0aa92fd5b643fe0824e4f0b
-SHA512: 9f9e67f5867fe24f6d0816c43f390078dea009c75d2856a504dc5ae5619196a0d71a6822577b7c033477cf582128ba7d84b039f45c385db8ab76da02329077b7
+Version: 16.0.0-1
+Depends: libllvm (= 16.0.0-1)
+Filename: pool/main/libl/libllvm-static/libllvm-static_16.0.0-1_aarch64.deb
+Size: 63711084
+MD5sum: a8530a25be2c359a8c74dfba4739dbf1
+SHA1: ed559ab776b8e9124edf96386f23609bbfb46e0e
+SHA256: 10bc0edc7da3a4468a1f198b7b2661ba75ce85cb9c0011e4a776fdfe7164163a
+SHA512: bc390e1f668a33fc647fdbc5996d18361eae0ace06ddb8c40d7cac457bcfc4c5c480e566aa974138802c2d528cb9f7d5a4bb3f1ab484952fe0ee3ff1d59a62ae
 Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
@@ -19233,14 +19189,14 @@ Package: libpolly
 Installed-Size: 5692
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
-Depends: libllvm (= 16.0.0)
-Filename: pool/main/libp/libpolly/libpolly_16.0.0_aarch64.deb
-Size: 1184092
-MD5sum: 05414738bb96bce9b7f0c0cc443104dd
-SHA1: fb73b77728b40f5923e60a20936a6e25de844ab7
-SHA256: 394ac3e5e01ef3e4c55b913d72bcc7d266f0ed6b555805767683725e57361499
-SHA512: e871d0ad9c4a1c26f8b14e7786108fca78e2f8b8aaa5273e6e952ab41bd72113288b4b5c2a8c357e1928aef130cf5e0fc747bbeb6e5a07071eeb7744967e4391
+Version: 16.0.0-1
+Depends: libllvm (= 16.0.0-1)
+Filename: pool/main/libp/libpolly/libpolly_16.0.0-1_aarch64.deb
+Size: 1184660
+MD5sum: ef2ddcda3034b18bdbf8fee7849333d8
+SHA1: a1d03698e6c578091d770f746604eeaf964e27b2
+SHA256: 46630d94d14cdc5b81866ae4a087520d3169461d216b585ca74609d65d44a746
+SHA512: 96662f29bd1c5b2ed8f52c90539b5338c2b73fb7567a518dda2c5254bb58932a35b3c4e81e65c401fae066170c162de3a52b945063fe0140999b0c2bc63ea0f6
 Description: High-level loop and data-locality optimizer for clang
 Homepage: https://clang.llvm.org/
 
@@ -23358,14 +23314,14 @@ Package: lld
 Installed-Size: 15664
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
-Depends: libllvm (= 16.0.0)
-Filename: pool/main/l/lld/lld_16.0.0_aarch64.deb
-Size: 2114548
-MD5sum: 205a81a387e9f2e44fd99ae0544bc0d5
-SHA1: bfba6310209f50dddbb60b49dcd1123849720b21
-SHA256: 2c1a6838e729faff1e3b7ea6d1988eff9b3a686ca4e372a5517dc18a77555cbc
-SHA512: 7d19aa62c3557a18e8fae8ec802f15f4f745a9c0435bb5a1f5d2a1a7fe41237209dfbc7a77f8256965f7f266412264745dfe0388e3114031b7c835661f1c5fe9
+Version: 16.0.0-1
+Depends: libllvm (= 16.0.0-1)
+Filename: pool/main/l/lld/lld_16.0.0-1_aarch64.deb
+Size: 2115832
+MD5sum: b5ac8cae394e7d93f78d0d574b34cdba
+SHA1: 01dac2c36b23afb884700016d61dcfbc2584f5fb
+SHA256: 73e43d6ae1f3da83629ee588c9538ded7a699df392c64156ac04b9f4b2fecfb7
+SHA512: 5130bf9e089d6f974dc7a108bad8a07bef969016ddf85bfcb74c9698de074d8e5f63cf1cf6713d23d2a1d894ae0ae98ee295394c405d9bcc48b3e2cf45c64d2d
 Description: LLVM-based linker
 Homepage: https://clang.llvm.org/
 
@@ -23373,16 +23329,16 @@ Package: lldb
 Installed-Size: 22264
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
+Version: 16.0.0-1
 Replaces: lldb-dev, lldb-static
-Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 16.0.0)
+Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 16.0.0-1)
 Breaks: lldb-dev, lldb-static
-Filename: pool/main/l/lldb/lldb_16.0.0_aarch64.deb
-Size: 4464068
-MD5sum: ae5f590419a097751302a8a3e18a008c
-SHA1: 54dd75a9201b56d84a9bb9ec9d25c3638ee4002c
-SHA256: bd47516a15819aa16cd2be129e7bf0cf31fc60ef96b0213677bdae4711875519
-SHA512: 1a0378015614ca3722e10507c5d4281aa805f9530a34497fa450d8f9721f02cabdefaa4667b6556c3349ee5f04ae8c53ecad56c1a9083a32150305a419e0c197
+Filename: pool/main/l/lldb/lldb_16.0.0-1_aarch64.deb
+Size: 4468384
+MD5sum: dc2951d4b826cdc9805fa336fc48edcd
+SHA1: 30d8a0bbd9a875b2b554ca1fe9f95f9e48d16afa
+SHA256: a4d0049ad14783d07efa51a4a87b2ee9d0bf7e9b8a2facb3759afee7b9d84342
+SHA512: 60c2101ded6dbc37f4771d574260afec5947d687eeaef9f14b07a89ac67df886a8e57545b7b6c2f852aab9b4c0f839be1b1eecad36712a9b35d00d82e7dc372f
 Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
@@ -23390,47 +23346,47 @@ Package: llvm
 Installed-Size: 98412
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
+Version: 16.0.0-1
 Replaces: libllvm (<< 11.0.0-1)
-Depends: libllvm (= 16.0.0)
+Depends: libllvm (= 16.0.0-1)
 Breaks: libllvm (<< 11.0.0-1)
-Filename: pool/main/l/llvm/llvm_16.0.0_aarch64.deb
-Size: 17238616
-MD5sum: b1b4923681fb25adce235173cfeb5c3d
-SHA1: a0b38a577e3085a73f20d73adb932bc1180aa946
-SHA256: 9c20b7e113490bf604422dead9e9ec7f0f55a214a48e264ea9dfe0a53f648a6e
-SHA512: b5efd09873662e669f6adf123770c62c1f687e8b5a5ff46f3fceaa0cd253b870f6e6100c624c79dd16130cdd61592c64b6f298a3c98f522e31edf315d72fbce3
+Filename: pool/main/l/llvm/llvm_16.0.0-1_aarch64.deb
+Size: 17200508
+MD5sum: 01281207fd797d30a217637ab6fbfb75
+SHA1: 7c73b80d8da7d79894d6886b7d61b7e40445bd3f
+SHA256: 57f85334a1262f18cb50b7e92730ba0ea301d4ae0a85413c0392fced96761226
+SHA512: a3b2a6ad77fcfd45d6ed36e3f34fc76f4645e4a39451cfe8b067a1fa041096604f588313492604095917dc4067da1d31a13b1adb4d0532dd735914ac70e6502c
 Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm-mingw-w64
-Installed-Size: 96
+Installed-Size: 100
 Maintainer: @licy183
 Architecture: all
-Version: 20220906
+Version: 20230320
 Depends: clang, llvm, llvm-tools, llvm-mingw-w64-libcompiler-rt, llvm-mingw-w64-ucrt
 Recommends: llvm-mingw-w64-tools
 Conflicts: mingw-w64
-Filename: pool/main/l/llvm-mingw-w64/llvm-mingw-w64_20220906_all.deb
-Size: 10928
-MD5sum: 8c74102bcc63024db6618148441fded4
-SHA1: 8cfbcedc69dcdfba5ee553120bee713ba2a14fa3
-SHA256: 8014b7c04282788ea148c5f8900c8acc86300e7325eff1541fbffe63a5001c6b
-SHA512: c55eabdad7a6ca87eefd7ba8c39d0bf546d6b346a8031c8cabc61a2102875543664c8189226f280c23a9f3a954cf0fcdd1fb4b422b80c79632214d40cf457399
+Filename: pool/main/l/llvm-mingw-w64/llvm-mingw-w64_20230320_all.deb
+Size: 11380
+MD5sum: 9ba405b87c6b5a1362c2062e43a37e1a
+SHA1: 1018c795eb8d278d0368f583098be109c53200cb
+SHA256: 6236a2fd12f46d338692c9d6a11ecdbe22c70364bbbbecd74a8be8bd30db3251
+SHA512: 85fa79f37563d8055418794303b8e81c4f004b45fc384fec0f637a53f6deed2db0178228334504740f07c021a69e2fea8ac0f53f66c146f949838579ab93fa77
 Description: MinGW-w64 toolchain based on LLVM
 Homepage: https://github.com/mstorsjo/llvm-mingw
 
 Package: llvm-mingw-w64-libcompiler-rt
-Installed-Size: 17448
+Installed-Size: 18876
 Maintainer: @licy183
 Architecture: all
-Version: 20220906-1
-Filename: pool/main/l/llvm-mingw-w64-libcompiler-rt/llvm-mingw-w64-libcompiler-rt_20220906-1_all.deb
-Size: 2169816
-MD5sum: 466c518e45309a1a4c536f5d6daadefa
-SHA1: 590f725cdba661e14ce2a05cf08d3609ada3a55b
-SHA256: e281e97679f789c479ee75891749690837d21b618170203c98d79cbcedb9964b
-SHA512: 25078d650505dea4b84180de2dbcb779b5065382e91cfcd1ee018078a3d12c5280995d89b6fd9283c4a482baa98659fdef72ed4122d8a97cf60168d8755bea01
+Version: 20230320
+Filename: pool/main/l/llvm-mingw-w64-libcompiler-rt/llvm-mingw-w64-libcompiler-rt_20230320_all.deb
+Size: 2268384
+MD5sum: 73fd5dde802c51bbdedf115936a101eb
+SHA1: 981c4711780c2b24ace3f6f5a128bf3f809d09b7
+SHA256: 20238b5229fa6a3bdf3ebf3c8dea24f3fa1de603b7d61424a7f08c064cacd9e2
+SHA512: d26ca528d45cae7ced3e823e6220ece4e9185972b8a6a5b3de46eed8c4033f4b08733bbca2f54a4289eafe5461f4d641ebe348d52edbfdcf53d6e170902bfb25
 Description: Compiler runtime libraries for LLVM-MinGW
 Homepage: https://www.llvm.org/
 
@@ -23449,16 +23405,16 @@ Description: MinGW-w64 tools for LLVM-MinGW
 Homepage: https://github.com/mstorsjo/llvm-mingw
 
 Package: llvm-mingw-w64-ucrt
-Installed-Size: 207040
+Installed-Size: 217980
 Maintainer: @licy183
 Architecture: all
-Version: 20220906
-Filename: pool/main/l/llvm-mingw-w64-ucrt/llvm-mingw-w64-ucrt_20220906_all.deb
-Size: 20045740
-MD5sum: 3dd2446d0ac2fd1c27f567d410ec09c3
-SHA1: 62ff027db7a1a8bbce4b2ef21be68c550c1acedf
-SHA256: 0c683b2bfd1e6d17b9b0d5f3af661971a05f06ea5c9dd916d58677dfb8fb72a8
-SHA512: bc76d153da20216699a3af14d741fcc57b4d14c0887d62c89fd0f25de450b8384c08fb6132dfdb4aa8a293acf0761dfd1211c7a0fc0492c31aee514862fe6255
+Version: 20230320
+Filename: pool/main/l/llvm-mingw-w64-ucrt/llvm-mingw-w64-ucrt_20230320_all.deb
+Size: 21069740
+MD5sum: c6b885fa73a714bdab2b91b233203664
+SHA1: 0d366db22cd5c7d9b61495f89aa45acc0e66dfc6
+SHA256: e6f069c7ec456b36677eca983b08e18abf1f6fc771d879ddb3d02c0404852fcd
+SHA512: d69be9be2c7be4712a94c48cc310fe23cc4558a0f7e0e57e65945e1a592c1150f071975751476da716030d964e7ecdc00ec305a82f862302761b5c09baad0414
 Description: MinGW-w64 runtime for LLVM-MinGW
 Homepage: https://www.mingw-w64.org/
 
@@ -23466,14 +23422,14 @@ Package: llvm-tools
 Installed-Size: 10760
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
-Depends: libc++, ncurses, zlib, libllvm (= 16.0.0)
-Filename: pool/main/l/llvm-tools/llvm-tools_16.0.0_aarch64.deb
-Size: 2030484
-MD5sum: 1ad84684d62852bfffce14e90b9c7fd3
-SHA1: eda324c09509af0284954b00d4d8d815e1d909a8
-SHA256: a6c6ec905cb3a39bc93dd4ce6dc199301f57cbed9eef7891e0d237ef8efb3d40
-SHA512: f9bfc9737e1a5c59489b462f69eb3f984aaad0b6baf785aa7ba9d17e92049a58ad33acf8e634c5f5862e1a740b86e33ce526d01d02ed6f59de1037b15db90d6a
+Version: 16.0.0-1
+Depends: libc++, ncurses, zlib, libllvm (= 16.0.0-1)
+Filename: pool/main/l/llvm-tools/llvm-tools_16.0.0-1_aarch64.deb
+Size: 2031420
+MD5sum: 3098c28e72c5ff77fbc7fad11f411ec8
+SHA1: 9be7fc2bbbc241caa7c26926020e02e1f8886053
+SHA256: 410563aff7140b7ff816f23d2db50d686e4893122165496f46a27874ea1ea0d7
+SHA512: c106583fcd374564ca8b304a6556609d57b436196d85aec668855b36c0a17736d11c16e75c4498a9e886587bba38e25a6a956448dce1cf8678e0524677462b0e
 Description: LLVM Development Tools
 Homepage: https://clang.llvm.org/
 
@@ -23481,14 +23437,14 @@ Package: llvmgold
 Installed-Size: 104
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
-Depends: binutils-gold, libllvm (= 16.0.0)
-Filename: pool/main/l/llvmgold/llvmgold_16.0.0_aarch64.deb
-Size: 26384
-MD5sum: 56fb887e1418ba9c128ca8c2195bddfc
-SHA1: f89e868d3c83c27940d20c7c8c359b22ecdbebb9
-SHA256: c9eddf367c7319b9fb5d728c6d2f899f847d3c51f23775a916772be721e89431
-SHA512: 64065146cd03b1f328e39887bd332680ee320715590988e6b057ac343cd6a9f4ead250509272715e8796877de91276871936db0e8f65334cff4f7a9a17bb96f9
+Version: 16.0.0-1
+Depends: binutils-gold, libllvm (= 16.0.0-1)
+Filename: pool/main/l/llvmgold/llvmgold_16.0.0-1_aarch64.deb
+Size: 26368
+MD5sum: 120259eea6d92f2fd464cd6464ead9fa
+SHA1: 817bcd9d4e3caf5509e10df99122169ecf59d307
+SHA256: 2452b3c498444bfd6fa5a404b4bb659ef45cb06b2488d9e25576c882735402a4
+SHA512: 3a47ef090d7728171c90bac44585f00e97208826c8272b023548b7f6b1598c051cd44bb70d18f0db96ff6b5c87f6d548af65b8a6152129ebcd8e753ec65ef646
 Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
@@ -25235,17 +25191,17 @@ Description: Set of tools to create, edit and inspect Matroska files
 Homepage: https://www.bunkus.org/videotools/mkvtoolnix/
 
 Package: mlir
-Installed-Size: 172192
+Installed-Size: 172212
 Maintainer: @buttaface
 Architecture: aarch64
-Version: 16.0.0
-Depends: libc++, ncurses, libllvm (= 16.0.0)
-Filename: pool/main/m/mlir/mlir_16.0.0_aarch64.deb
-Size: 23903072
-MD5sum: 253bb4bdae72c49c8518413238979ae5
-SHA1: 3a2f77995eef3af246f869127805920f7d459854
-SHA256: 47e31500d4d1257c9962e0e882f0e5c51d6a369aff8e5aa64dd2452f192b006b
-SHA512: b2091a8f1095fd2cd95d5815057bc964678f67a89856904b68114f4aa30eb46004772a321424b0fde76ad6560f794fc6c201bbf2c5d7d89db7135e42aac96eb9
+Version: 16.0.0-1
+Depends: libc++, ncurses, libllvm (= 16.0.0-1)
+Filename: pool/main/m/mlir/mlir_16.0.0-1_aarch64.deb
+Size: 23898336
+MD5sum: e80886cb67ff493e40974efdf33c7e7a
+SHA1: 17d85d144d07433f877a1cf75dd0c6f834bd5456
+SHA256: 553d0dcd2ec23a09e018fed2f79d6fd9827f5b0cd2cbfc924bd9df5bc5868063
+SHA512: 5f546bba0fe67ed4725aabb48c6d0a729eb8dddafd178dced37a46590686efc87146cf222c4fb7a174488a5822544450b7f14539ee24ef9ec300fae1be59ec75
 Description: A Multi-Level Intermediate Representation for compilers from LLVM
 Homepage: https://clang.llvm.org/
 
@@ -26384,15 +26340,15 @@ Package: neovim-nightly
 Installed-Size: 25656
 Maintainer: Aditya Alok <alok@termux.org>
 Architecture: aarch64
-Version: 1:0.9.0-dev-1291+gbad218cd6-0
+Version: 1:0.9.0-dev-1292+geac75a971-0
 Depends: libiconv, libuv, luv, libmsgpack, libandroid-support, libvterm, libtermkey, libluajit, libunibilium, libtreesitter
 Conflicts: neovim
-Filename: pool/main/n/neovim-nightly/neovim-nightly_1:0.9.0-dev-1291+gbad218cd6-0_aarch64.deb
-Size: 4918220
-MD5sum: 1e1c4e1936d802c6e7fd4bb14ffe081a
-SHA1: 87d9bc2e08212a203f8f8271f738f521962edd17
-SHA256: c03bd48c29e29b1015a51a7cc56f6940c829c625e327002c41ed1d6b80d80b6c
-SHA512: b25bd98c188990915f7988661b8c6a3b7f47c6316cf40abef271baee35c55da7ccf0e6f930d44e9c9baab3f57304a268e089fb398175ee8f6d6febe038c10f24
+Filename: pool/main/n/neovim-nightly/neovim-nightly_1:0.9.0-dev-1292+geac75a971-0_aarch64.deb
+Size: 4917632
+MD5sum: d4a34f253e5d6923b786b33cd523c125
+SHA1: 4001d6d04c6febf77fbf20f7cabaeb6e25128dfc
+SHA256: 874c518fa6d72ff47e93ddb14967e5b034a3353e28a47744f3a9caa97cffc155
+SHA512: cbefa650bb265a51d7791888bd6ff53c31bcf0b818eed05d78f0fba588cb9d97da4f21989ed0c07d0ccec3526ded2f194cf627d8fd6bb2ba5a300999a8313422
 Description: Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)
 Homepage: https://neovim.io
 
@@ -29729,6 +29685,21 @@ SHA256: 3759db0a57c07a48ddaaa1dcf6d257a64dfe57518bc990cc8f1eb07c7440758e
 SHA512: c44e660c8d70d7bb2ac3eada71e64e3ad8028045d3c6cb412dbd404655f1177a6b7716770377a87ba90c03e6c81c3580e753b1baa34499f188e98565f59f8301
 Description: Emulate chroot, bind mount and binfmt_misc for non-root users
 Homepage: https://proot-me.github.io/
+
+Package: proot-distro
+Installed-Size: 188
+Maintainer: @termux
+Architecture: all
+Version: 3.7.0
+Depends: bash, bzip2, coreutils, curl, findutils, gzip, ncurses-utils, proot (>= 5.1.107-32), sed, tar, xz-utils
+Filename: pool/main/p/proot-distro/proot-distro_3.7.0_all.deb
+Size: 25456
+MD5sum: aacd9bcc75d219bbe09b647841126a50
+SHA1: b8d12cd9db91d886f3d99b5f53b5fda6655d69a9
+SHA256: bbce924f73b550db1d7b13caec7cc110cc8d42657f9f5535379ab4fbaf33f7ab
+SHA512: 54fc2ccd5389ce61129fb9b1948d1fb137695de9feca70fbc3ff3387b24a5f352da3f40d9c4645ecc0729386995beb861fbd86065abacbcd3ee65de9cbb13a13
+Description: Termux official utility for managing proot'ed Linux distributions
+Homepage: https://github.com/termux/proot-distro
 
 Package: proot-distro
 Installed-Size: 164

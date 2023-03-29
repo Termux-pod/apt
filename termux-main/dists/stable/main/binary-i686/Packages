@@ -13126,6 +13126,20 @@ Description: Static libraries for libassuan
 Homepage: https://www.gnupg.org/related_software/libassuan/
 
 Package: libatomic-ops
+Installed-Size: 1020
+Maintainer: @termux
+Architecture: i686
+Version: 7.8.0
+Filename: pool/main/liba/libatomic-ops/libatomic-ops_7.8.0_i686.deb
+Size: 86088
+MD5sum: aed3b485b306f37e19cedbf2e2304237
+SHA1: 682d3f3094eb6fecd73499f6ea0731b25c07a52a
+SHA256: 552999b52ef865aa2f917748648fa18f96838cc3ddeb6e032a41626c6689be98
+SHA512: 9b7e2aa372986aa0d385e1142a213446355bcc1420cb04c016fe71171bdb08b7ee0d088a6c381d298228bf054300c679a62a28bed40ec0be7ce7280dc167fd5c
+Description: Provides semi-portable access to hardware-provided atomic memory update operations
+Homepage: https://github.com/ivmai/libatomic_ops
+
+Package: libatomic-ops
 Installed-Size: 928
 Maintainer: @termux
 Architecture: i686
@@ -13137,6 +13151,21 @@ SHA1: 1db830dfcfb4b9011cd80f61cf6d727936580041
 SHA256: 246590f8f71674747ab9164ad445f419152219f3d48c234d7e8f65fbd9b7ff7f
 SHA512: f8dbaf64e48e3daf2b6d0c46d0a886e6e5a906ae5d28c90f07867058c3b6c26d602c9dcfc8147664677532f3b10679bd22a14090e9a4b8437819ae8972da9b2e
 Description: Provides semi-portable access to hardware-provided atomic memory update operations
+Homepage: https://github.com/ivmai/libatomic_ops
+
+Package: libatomic-ops-static
+Installed-Size: 48
+Maintainer: @termux
+Architecture: i686
+Version: 7.8.0
+Depends: libatomic-ops (= 7.8.0)
+Filename: pool/main/liba/libatomic-ops-static/libatomic-ops-static_7.8.0_i686.deb
+Size: 3768
+MD5sum: 3ef65893ba14ffa207dc5d893d38a634
+SHA1: fd1030f1e37858c25341fff8c3096656c12901a8
+SHA256: a01f79616295dc71f0b0063198d0511ad5cc6912e98b69ae352c528b0759e235
+SHA512: df74a2cdf5c25988b1ae4d192a0e9cf6c51a030c1efa058f43e8a2dfc49288ec52da4ef2e4b9752b3bee87a484862bad2dd17ce7673c5926776a46d9946c8416
+Description: Static libraries for libatomic-ops
 Homepage: https://github.com/ivmai/libatomic_ops
 
 Package: libatomic-ops-static
@@ -24554,24 +24583,6 @@ SHA512: 50fb5c28b496554658e55e36b2cd05b96ddecf68b8c0a7bdf416ae0b8d15c0690ef50b38
 Description: An open-source implementation of the OpenGL specification
 Homepage: https://www.mesa3d.org
 
-Package: mesa
-Installed-Size: 51444
-Maintainer: @termux
-Architecture: i686
-Version: 23.0.1
-Replaces: libmesa
-Depends: libandroid-shmem, libc++, libdrm, libexpat, libglvnd, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, zlib, zstd
-Suggests: mesa-dev
-Conflicts: libmesa, ndk-sysroot (<= 25b)
-Filename: pool/main/m/mesa/mesa_23.0.1_i686.deb
-Size: 13462868
-MD5sum: 58d4b3a63a9aceb00bfb140906fcfc65
-SHA1: b6695cdaaa3a2011f0f684ca2656aef2fa183cfc
-SHA256: daefac04d14ecb870586beb2fb8f03fc3c95e2f920fd49a6f823c79689d45f0a
-SHA512: 3b55eaa22562d6cb925535c1c8fb0402356380d172dcc16975c59999078993e3caca7bfe37130eaf50459c37c2739fa180643f2632e49974df9549d47090ee9e
-Description: An open-source implementation of the OpenGL specification
-Homepage: https://www.mesa3d.org
-
 Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
@@ -24589,23 +24600,6 @@ SHA512: d4fadef09abbdc41e9397cb799377a54dfa7cf2ff034e1bd4fbebe0c73e724806ae76c0c
 Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
-Package: mesa-dev
-Installed-Size: 164
-Maintainer: @termux
-Architecture: all
-Version: 23.0.1
-Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Depends: libglvnd-dev
-Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Filename: pool/main/m/mesa-dev/mesa-dev_23.0.1_all.deb
-Size: 25040
-MD5sum: acd95c75aecfb78aeaab7b79fca62de9
-SHA1: 934167c1b37ac8792981130c0ac3b633afe18178
-SHA256: e377b78fbc5fd9305cab4ee8873276117482a50f02d052a9f75a0a4e414b34c2
-SHA512: 08c1c7d878ba756d6f42d58036da39bf8e65112cb8085f3e4d7976ae0e51a4330ed78ce791cea21eef5790f0a6c161f812a7a2ce6d53b61b3bea320135b79acf
-Description: Mesa's OpenGL headers
-Homepage: https://www.mesa3d.org
-
 Package: mesa-vulkan-icd-swrast
 Installed-Size: 54380
 Maintainer: @termux
@@ -24618,21 +24612,6 @@ MD5sum: 53ab723752bfbb959b6d3994f3016a62
 SHA1: 980202a3ada7cf4ca00ee39a92943e3981da32c4
 SHA256: 339230c6795f7bbfd725dfca76c87edeae4678e341c7fb24a2011c7259100a41
 SHA512: 879cada57dad920b386c130f4d3bae18a3e58493e73eb584416bdae4e48e0bc8782b22966c24234bce5b41f6952a668e725bafe7806897c9bf2ffbd9eeeb6086
-Description: Mesa's Swrast Vulkan ICD
-Homepage: https://www.mesa3d.org
-
-Package: mesa-vulkan-icd-swrast
-Installed-Size: 52684
-Maintainer: @termux
-Architecture: i686
-Version: 23.0.1
-Depends: vulkan-loader-generic, mesa (= 23.0.1)
-Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.0.1_i686.deb
-Size: 13680540
-MD5sum: 5204fd191c7b50a676b5393859f5bc58
-SHA1: 6ef92f2e4c6573f27a6d6f3a4831b7cf7ddd2170
-SHA256: b1ac8782a6271425150577ccb2cad9b90672f013ffbf3d84773069450f8060a5
-SHA512: 84eef437e8d53bf27b4f21160aa2434726c6bb0e48eab8913959bad0f6a6b562227d4e1a01f13cbef901a445191b100dc3d7b703d679590cca7177b61a7d297e
 Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -27689,23 +27668,6 @@ MD5sum: 88199d5be9e2a0a61147cfa6545d7ee3
 SHA1: ad4b924de6ca73dcdeb6c45aee12d47b3a71bac8
 SHA256: c5833e3f949ae86db96eb01d51abf05aba2741c29432c8d029ccb7b582926be8
 SHA512: 6e0789151271b2ac372e1443d9da2f09123d07691d32d56777036b0e84e0df31a6d0191143d7b892e7d1b28e3733abe02208b4fe9e42c26a8b7606275ae44e8a
-Description: Mesa Off-screen Rendering Library
-Homepage: https://www.mesa3d.org
-
-Package: osmesa
-Installed-Size: 49860
-Maintainer: @termux
-Architecture: i686
-Version: 23.0.1
-Replaces: mesa (<< 22.3.1)
-Depends: mesa (= 23.0.1)
-Breaks: mesa (<< 22.3.1)
-Filename: pool/main/o/osmesa/osmesa_23.0.1_i686.deb
-Size: 13065164
-MD5sum: 857750814ac2957d99fcdef1734f2278
-SHA1: 6cdcccc16e9a275c882bafd958b522e7869f2e16
-SHA256: c06275922af098070dd541b9c6c53f765aaf433e52ba1c31dc7766eb144b93c2
-SHA512: 4a2b6b94cf4bfe933d98dd8a51a0b8c7d003b97e49a2a3aa61d53cec17d9526413ad259d6fb7fdf6a033710b9b7ff4e92999ea82036b905bd6cfebfd24edf3fe
 Description: Mesa Off-screen Rendering Library
 Homepage: https://www.mesa3d.org
 
@@ -37098,20 +37060,6 @@ MD5sum: 1f8c9da32a6a690c533f9340389a3752
 SHA1: 4808bff28fbdaf117c0c36d9d2e7e93fe39b815a
 SHA256: e85f6e36bc1d95a36b8f2dc79b4c1d23019009cf820f21bcb290f109f16fdad0
 SHA512: 58a2f8736c046463c6e7327fe0acd25f99657148f776b2f3d9eb90b5ca297fb901a9d40b3794eafe0ccc4b567cba45818c3b0839f3fe361067520267aca6014b
-Description: An advanced geospatial data analysis platform
-Homepage: https://github.com/jblindsay/whitebox-tools
-
-Package: whitebox-tools
-Installed-Size: 25480
-Maintainer: @termux
-Architecture: i686
-Version: 2.2.0
-Filename: pool/main/w/whitebox-tools/whitebox-tools_2.2.0_i686.deb
-Size: 4793496
-MD5sum: f6891c5b9c82642f6b67508ac82b1627
-SHA1: 965e9426f56a780f7aaa2641601aed389523d1d1
-SHA256: b034e972990c5e6b61406d46e85e9e6a13571c07e6ee2e6878e76b08f8e147d0
-SHA512: 4b21a8accb760f711daaed8d8a872d2f968b796c0876eb12e3d01b07f3855145546de4e943f4f0c37866658f917200286a21b61ffbe320c4762fbdbdd8d8f6fc
 Description: An advanced geospatial data analysis platform
 Homepage: https://github.com/jblindsay/whitebox-tools
 

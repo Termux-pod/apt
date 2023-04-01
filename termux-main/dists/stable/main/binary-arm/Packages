@@ -2147,21 +2147,6 @@ SHA512: c4ae6c7820774e4f0295581771d4a402218d7034959b5bbb3cc89badeb8d88dd73b24b1a
 Description: Linux Userspace x86 Emulator
 Homepage: https://ptitseb.github.io/box86/
 
-Package: box86
-Installed-Size: 8488
-Maintainer: @termux
-Architecture: arm
-Version: 0.2.8.20230330.075706g94f451c4
-Depends: libandroid-complex-math, libandroid-glob, libandroid-spawn, libandroid-sysv-semaphore
-Filename: pool/main/b/box86/box86_0.2.8.20230330.075706g94f451c4_arm.deb
-Size: 1650108
-MD5sum: bbe2182e9a4442aa3be16181e39208cb
-SHA1: 09126ebd4e6f8b68f46f7ce88a5b0084abf00b2e
-SHA256: 55bf49775ab772c077797091e41081baa901f7fbf4a06626bd5e5b142d8f8765
-SHA512: c6d96123d7ddfcacbdc5fd0c7e5afef05f1ce0af251b8047de5bc10c701b6e758bbf178d24c8f58a6e2b0b83aa9ee899d826a43db49bd2c9e6ee0465f55d252f
-Description: Linux Userspace x86 Emulator
-Homepage: https://ptitseb.github.io/box86/
-
 Package: boxes
 Installed-Size: 192
 Maintainer: @termux
@@ -3229,6 +3214,23 @@ Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
 
 Package: clang
+Installed-Size: 134560
+Maintainer: @buttaface
+Architecture: arm
+Version: 16.0.0-2
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 16.0.0-2)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_16.0.0-2_arm.deb
+Size: 29068164
+MD5sum: d6fee3bcc43a816105be407f25172237
+SHA1: e7b55fd95bc38137b93e6653fdbac61fd5661a40
+SHA256: ebb11af705a3ce05b9fe96ef4dd03b4288924a49ecc2a1b0a1340357afe883cb
+SHA512: 72a51707ec1450f38dd79f340a44826ec37c8e36a0f8556304dac9be9ccdd41e0f6330589ec3e6071433932eb1ddfb1f05ba2bb52b106cec9f9a5ad6f70d7832
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
+
+Package: clang
 Installed-Size: 134532
 Maintainer: @buttaface
 Architecture: arm
@@ -3390,22 +3392,6 @@ MD5sum: 69f97271f4f12a03ecc76ff3bef11e81
 SHA1: 7ed8b314c80a63b571054a20c1de686d3cad4726
 SHA256: faa15d234da7916919bfbae060733ad0151627d9eded6c3ca055cbd20e54b53c
 SHA512: 8e82480df6aa59966e7290797e236210e4984d490b4539c932dab3635165cb05e151e33aff6c665788ed467ca747d5cafe15a5eba0a4e6a72a2a76c4a31b07f6
-Description: Experimental implementation of OpenCL on Vulkan
-Homepage: https://github.com/kpet/clvk
-
-Package: clvk
-Installed-Size: 46372
-Maintainer: @termux
-Architecture: arm
-Version: 0.0.20230321.202528ge2f23619
-Depends: libc++
-Suggests: ocl-icd
-Filename: pool/main/c/clvk/clvk_0.0.20230321.202528ge2f23619_arm.deb
-Size: 15999676
-MD5sum: aa85061006d8f770bb77efe3741a28b7
-SHA1: a8f999390b951b486301dda6f3ce6663cb3a4f88
-SHA256: 72ae7a9195943f3a18a58288e0787ea04bee847860c28b6415275a872923eb43
-SHA512: 41e0605740e118ed50b2e66bdcca369b135ace4004bf510dd65366c54d4981f5019b860d77cd7643ca3868d8ea934dd56df580f8166e5ec477db8a275772a0b6
 Description: Experimental implementation of OpenCL on Vulkan
 Homepage: https://github.com/kpet/clvk
 
@@ -8235,6 +8221,24 @@ Package: gnupg
 Installed-Size: 4072
 Maintainer: @termux
 Architecture: arm
+Version: 2.4.0-3
+Replaces: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
+Depends: libassuan, libbz2, libgcrypt, libgnutls, libgpg-error, libksba, libnpth, libsqlite, readline, pinentry, resolv-conf, zlib
+Suggests: scdaemon
+Conflicts: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
+Filename: pool/main/g/gnupg/gnupg_2.4.0-3_arm.deb
+Size: 1242472
+MD5sum: dbe48609c2a76210ed1cc0b0359955d7
+SHA1: b6758baeed4509f48dd16c7a19b59fd8ffbf480c
+SHA256: ad42738dffe687726876e0940aab92d46ee9fd95b4940e3d7686142bf0c96c09
+SHA512: 5412c913bc96f22d1401be6de02c5992d5add3e4571f1f77578d3f4c627446cb9d69628c79d5edfb024589cee5b02848a95d58b2a455d7d05597059068b6e0bb
+Description: Implementation of the OpenPGP standard for encrypting and signing data and communication
+Homepage: https://www.gnupg.org/
+
+Package: gnupg
+Installed-Size: 4072
+Maintainer: @termux
+Architecture: arm
 Version: 2.4.0-2
 Replaces: gnupg2 (<< 2.2.9-1), dirmngr (<< 2.2.17-1)
 Depends: libassuan, libbz2, libgcrypt, libgnutls, libgpg-error, libksba, libnpth, libsqlite, readline, pinentry, resolv-conf, zlib
@@ -8741,6 +8745,21 @@ Package: gpgv
 Installed-Size: 340
 Maintainer: @termux
 Architecture: arm
+Version: 2.4.0-3
+Depends: libassuan, libbz2, libgcrypt, libgpg-error, libnpth, zlib
+Filename: pool/main/g/gpgv/gpgv_2.4.0-3_arm.deb
+Size: 163532
+MD5sum: 36054e43a07361fb919d2a76c30ac7f9
+SHA1: d83bd798a5d570139a4a1b6172ef7447ceea3a9f
+SHA256: ce0a98db2ce538416ad5bb7a8e9010321808a15077d85f2601b0e3b1178d1eef
+SHA512: e35e6a00500b969b6119293dc84ca2605768ef6ea1ae92c032b625b53a226dc5ea39916627bdebe248883ba34420f67c4bef903de62d3ee6c8bcf1c1bc02af80
+Description: GNU privacy guard - signature verification tool
+Homepage: https://www.gnupg.org/
+
+Package: gpgv
+Installed-Size: 340
+Maintainer: @termux
+Architecture: arm
 Version: 2.4.0-2
 Depends: libassuan, libbz2, libgcrypt, libgpg-error, libnpth, zlib
 Filename: pool/main/g/gpgv/gpgv_2.4.0-2_arm.deb
@@ -8905,6 +8924,22 @@ SHA256: 7f72ca738c40cb00540399fdba90b4b0c4b26445f66a3508f22f882f76a4378f
 SHA512: d30eb53d5f6bb8242137fe27e7544b892990a225148400fbc2cc3d603a44f27d191a0adce89ad08e657db3af72a0fb5339ee919ad0f6f3856b86023cef785a9f
 Description: Game where you try to eat as much as possible of the board before munching yourself into a corner
 Homepage: http://www.catb.org/~esr/greed/
+
+Package: grep
+Essential: yes
+Installed-Size: 328
+Maintainer: @termux
+Architecture: arm
+Version: 3.10-1
+Depends: libandroid-support, pcre2
+Filename: pool/main/g/grep/grep_3.10-1_arm.deb
+Size: 116604
+MD5sum: c77b7272ea7c5fcd17663de80a23ae99
+SHA1: 5e727bae7d080e44b41026e3b4e8feaf5bd4c2b2
+SHA256: ec7ed4b46bc5d40b8371ce4036a0e1a6fa557036e83c960e3dc54ab682659e8b
+SHA512: ea29933a6854f7d1b29edd17c739de4d66d32c3a0939650fd68b5ceae8e19bc9810a61627d84cea8416a6b606caa505f7336316f0bca0a3c1f3a117d44fd39c4
+Description: Command which searches one or more input files for lines containing a match to a specified pattern
+Homepage: https://www.gnu.org/software/grep/
 
 Package: grep
 Essential: yes
@@ -13904,6 +13939,22 @@ Description: A host of helper utilities for the java.lang API
 Homepage: https://commons.apache.org/proper/commons-lang/
 
 Package: libcompiler-rt
+Installed-Size: 14176
+Maintainer: @buttaface
+Architecture: arm
+Version: 16.0.0-2
+Depends: libllvm (= 16.0.0-2)
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_16.0.0-2_arm.deb
+Size: 1444768
+MD5sum: 684e252906b22c2a10b83d2261ed7619
+SHA1: 7811454aa75e50a08f6e6489b5ef4d07a2a59490
+SHA256: 22ebb816ffe0e5af64b3cd731ef42b301bd729ca61b219c359e71bc975078f5a
+SHA512: b21ddcbe90dbd3ddcdbd681e9e1fb14cbf6adcb7d78d44610ccfa286d42d6d2986db9a6c184fe41c1fd8c2d8e22752be91aca098e7ac9ecf11696c4e52541c97
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
+
+Package: libcompiler-rt
 Installed-Size: 14148
 Maintainer: @buttaface
 Architecture: arm
@@ -16616,6 +16667,24 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
+Installed-Size: 114732
+Maintainer: @buttaface
+Architecture: arm
+Version: 16.0.0-2
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_16.0.0-2_arm.deb
+Size: 24767332
+MD5sum: 9f4d6651473851252b89239faede80ee
+SHA1: e4769a15f35d63565836891ae8ce23a354aa286a
+SHA256: ebe30ca5d049f1b87ea3022281a7fc3a2c4b549402aac5bc3f88d4e38a4e9308
+SHA512: b12ed5d71c063aba722a9e9435d7ffa837b8081ceeb2a00d9a017d4a2000842625256a9c397822e47669e9e96e5160bf43ea621eb23710859023cc894cf329e3
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
 Installed-Size: 114720
 Maintainer: @buttaface
 Architecture: arm
@@ -16631,6 +16700,21 @@ SHA1: 194c43941efd4fcaa365e14f367368a9ce688a39
 SHA256: b163cdc05ed44631a98d41ad7417a77ea6d61bedef0e4b63705cb875de5bcbe0
 SHA512: 56bd5fa995ebc9c8c9374ced2db326a24fb42a6ca7ed405ad569a55e5fb4a68b4c8c3675c077f57e4634969488112a8456eb268ac68463d82523bee53667e840
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 519232
+Maintainer: @buttaface
+Architecture: arm
+Version: 16.0.0-2
+Depends: libllvm (= 16.0.0-2)
+Filename: pool/main/libl/libllvm-static/libllvm-static_16.0.0-2_arm.deb
+Size: 71113960
+MD5sum: 2564e2900f9e5b517be1f413753ab01e
+SHA1: 3bc72a58f647c19c7bc1066e0297ac73084ec4eb
+SHA256: aa986c0f25cabe5673aede36e9f04dbc969bacd8336be349e89c08256a7ac90d
+SHA512: 324cab0972b306a6a4da24e7cd4e857549846e14a0d9ed1518e4397fd1c1f854fb5d337f6960c6a1defbd70326e6db2061a563c696aa06de11d83ac60b48aeac
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -19022,6 +19106,21 @@ SHA256: 2e5dbe55d50553ebbb6c89f8bb9f7d3761a9357a1657486e049a1d4b4300cbfe
 SHA512: 2c0a04b29f5105755fa6ed887cf74ef24d574b87a5a150ce369f08b9dbcf48475ab0e35e33253534ec28a441e7c9182c6ee3ff9a61ed8c70f49c1ab51742f745
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 4372
+Maintainer: @buttaface
+Architecture: arm
+Version: 16.0.0-2
+Depends: libllvm (= 16.0.0-2)
+Filename: pool/main/libp/libpolly/libpolly_16.0.0-2_arm.deb
+Size: 1168716
+MD5sum: 01cb4583bc8ab4669874aae050eda0a9
+SHA1: 6f11186276235adf39fffbe796e05a13c5e945c2
+SHA256: 250644bcf700c5abfae90abf78ce5615abde5a3bd8c466b6c7f37e5cf3f78473
+SHA512: c72cf336fbf6584bfa3f2cf731c51480b77dca50575d46a9dfb1723da75eb748d6353b564b52888671ca14497caca6d56afcf9b67df2be9826dac49b691386d2
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 4372
@@ -23149,6 +23248,21 @@ Description: A low-level build system, used by the Swift Package Manager
 Homepage: https://github.com/apple/swift-llbuild
 
 Package: lld
+Installed-Size: 12120
+Maintainer: @buttaface
+Architecture: arm
+Version: 16.0.0-2
+Depends: libllvm (= 16.0.0-2)
+Filename: pool/main/l/lld/lld_16.0.0-2_arm.deb
+Size: 2124096
+MD5sum: 4927e06ea1c1f710b589d0f37008cef5
+SHA1: 1421e3728ce29ca552bc4427c571368b04e914f3
+SHA256: c47d5b1edc108f96142ba5a794ee012000a07a1db1c462d595f9a0d3c5c3697c
+SHA512: dc4bd027d7b46e7ccf960caa6a5b25ae7e85be005b1e2addc137ac8886f6956e437c6bc30217dab4cdfe98727eed983e0babd223ac5364e49bd30951f31dd80a
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
 Installed-Size: 12116
 Maintainer: @buttaface
 Architecture: arm
@@ -23167,6 +23281,23 @@ Package: lldb
 Installed-Size: 16608
 Maintainer: @buttaface
 Architecture: arm
+Version: 16.0.0-2
+Replaces: lldb-dev, lldb-static
+Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 16.0.0-2)
+Breaks: lldb-dev, lldb-static
+Filename: pool/main/l/lldb/lldb_16.0.0-2_arm.deb
+Size: 4181768
+MD5sum: 33478dba193428ef607f58f8d0110b9d
+SHA1: 930425ff4f64374dfeea8643b88e8d684142eb4e
+SHA256: 96200c388758d3162e199139345e9a9aacaff02a319a3cc09b424960f4f82eaf
+SHA512: 92646726a3aee316df60b3353f7c99f494d64eede1e10b184cbc04ae88c39729411b52f8d32b5df03b772570799a7165083832a287762acf2d8cacd5d021a6e2
+Description: LLVM-based debugger
+Homepage: https://clang.llvm.org/
+
+Package: lldb
+Installed-Size: 16608
+Maintainer: @buttaface
+Architecture: arm
 Version: 16.0.0-1
 Replaces: lldb-dev, lldb-static
 Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 16.0.0-1)
@@ -23178,6 +23309,23 @@ SHA1: d16ea69d71d78e7a78f5ea32f88aa48f071b262d
 SHA256: 57776aa6710267988dd60a6b6affa4c84b0254be54fe61c40d170069230d518b
 SHA512: 567d71d86280234dece2dfaa8c1b27926a9f50fbd321de4ee401191d5e456455b1b83edb67c4d8595e186eaa16fad87993b0efd838b1d01497899983f3606937
 Description: LLVM-based debugger
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 78072
+Maintainer: @buttaface
+Architecture: arm
+Version: 16.0.0-2
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 16.0.0-2)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_16.0.0-2_arm.deb
+Size: 17754244
+MD5sum: 3462fac70287a31d1f49e5930ba27049
+SHA1: 4b01ac178425c0cab4eb25e5f64a411b0025f6bd
+SHA256: 11c3f13736a465d178970239d4f1152f8baf816b3acf86d62a397fa820777c00
+SHA512: 1389584c2affa6a277da5fc889b4d3b8260b9e031bf35b1956aa3720a41a5617abfc688be3eaa38c4dd69e4fba34c261f09540b5166cf9219ed75501f70c5cb1
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -23260,6 +23408,23 @@ Package: llvm-tools
 Installed-Size: 7264
 Maintainer: @buttaface
 Architecture: arm
+Version: 16.0.0-2
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, libllvm (= 16.0.0-2)
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_16.0.0-2_arm.deb
+Size: 2011432
+MD5sum: 0f24bf8dcf1f973b843767f53a94d2d7
+SHA1: 8d84d6406a312d5099ba86f86bba89dc9c328e44
+SHA256: 966b11c3549617caa2ba59dd7b413f8d8c0dd5e86f38fa6b8e4d10649bc5593a
+SHA512: 6fac92aa171b6545d02f335e4aee2cdfc33cd80a69a9cb68cb517d06ee445bcb2efd01831a522edb778284866706eaba32bf603f5f56819fc5b0e44585f8c6c8
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 7264
+Maintainer: @buttaface
+Architecture: arm
 Version: 16.0.0-1
 Depends: libc++, ncurses, zlib, libllvm (= 16.0.0-1)
 Filename: pool/main/l/llvm-tools/llvm-tools_16.0.0-1_arm.deb
@@ -23269,6 +23434,21 @@ SHA1: ba4d4072fb7401b1e306d14fbf70a7eb600049d1
 SHA256: d474c3b4fbba1ceb255798d2c3fc0c53764e7e363104cace8ddd72c1a7fbd1dd
 SHA512: 217d500bedc334c0522c6e4b087420be59e32b0a316838090812292dbdcf2ec18b89f30a8554b872dabec5517867b84233fc7bcc472aa8c226eb0da5367130ae
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 80
+Maintainer: @buttaface
+Architecture: arm
+Version: 16.0.0-2
+Depends: binutils-gold, libllvm (= 16.0.0-2)
+Filename: pool/main/l/llvmgold/llvmgold_16.0.0-2_arm.deb
+Size: 23964
+MD5sum: ec9902de3c76f479b65a14560bee3be0
+SHA1: 5effed38a2c34b4aa86f52cdcae9087edf1a3a0e
+SHA256: 91b8462f2ac7a507fabd75faa0dfaf9c76444ce4742c4a1e9aebcafe99dcf8b8
+SHA512: 594c4ee47f12ee49bf2150d1eed3bd4af023a9239299a8c5c3a25c94c28c906084bbffd878749c9784d9abe95a68154ed4137bf0d906cf215aaad0dffb5f087a
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -25004,6 +25184,21 @@ Package: mlir
 Installed-Size: 120140
 Maintainer: @buttaface
 Architecture: arm
+Version: 16.0.0-2
+Depends: libc++, ncurses, libllvm (= 16.0.0-2)
+Filename: pool/main/m/mlir/mlir_16.0.0-2_arm.deb
+Size: 22378488
+MD5sum: ad21190f71ae3025177055149f0c0d8c
+SHA1: aa0de6087812c55649286b81f132d0338e77f80e
+SHA256: a242f3ad83f59e6b7e70e13c10a2d3b86a89e6a0a825aa469093cf4b1943fe04
+SHA512: 9c6b9998061c499b0f28466e8a4da97d7fe3e0c694cf6ce6c913b6c3af7321f0fa9d58e7bc1ecd496147a323d09a67cd5bba4390a98693d9ffcbe9c4db1b73cd
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
+
+Package: mlir
+Installed-Size: 120140
+Maintainer: @buttaface
+Architecture: arm
 Version: 16.0.0-1
 Depends: libc++, ncurses, libllvm (= 16.0.0-1)
 Filename: pool/main/m/mlir/mlir_16.0.0-1_arm.deb
@@ -25827,6 +26022,21 @@ SHA512: 3956bf2e5ffa0e99716081bf8d78015efff779a85f8e68bc850993748b6960b0e5faa1a9
 Description: An interactive cheatsheet tool for the command-line
 Homepage: https://github.com/denisidoro/navi
 
+Package: navidrome
+Installed-Size: 38956
+Maintainer: 2096779623 <admin@utermux.dev>
+Architecture: arm
+Version: 0.49.3
+Depends: taglib, ffmpeg
+Filename: pool/main/n/navidrome/navidrome_0.49.3_arm.deb
+Size: 10181040
+MD5sum: 52bdea8b6fb920c12c064769422303d3
+SHA1: a30af097356b554dd516391f904375dab78aa9cb
+SHA256: a1c7d24818d227cc211a82de37267037221b1e366f068c7990618dcd8d23eb09
+SHA512: 12fcc7a2678e7cddd0eb071b6ef6534f216849cda36e6c10a413dd2be27c9cf5fd3b05b5e311bf009d71dfa5071e3ef8f8e9ed1e8470c373279ca56f9dae4fa8
+Description: 🎧☁️ Modern Music Server and Streamer compatible with Subsonic/Airsonic
+Homepage: https://www.navidrome.org/
+
 Package: ncdc
 Installed-Size: 340
 Maintainer: @termux
@@ -26147,18 +26357,18 @@ Description: Ambitious Vim-fork focused on extensibility and agility (nvim)
 Homepage: https://neovim.io/
 
 Package: neovim-nightly
-Installed-Size: 24512
+Installed-Size: 24516
 Maintainer: Aditya Alok <alok@termux.org>
 Architecture: arm
-Version: 1:0.9.0-dev-1301+g5bf2f4b3c-0
+Version: 1:0.9.0-dev-1307+g75e1b1d5c-0
 Depends: libiconv, libuv, luv, libmsgpack, libandroid-support, libvterm, libtermkey, libluajit, libunibilium, libtreesitter
 Conflicts: neovim
-Filename: pool/main/n/neovim-nightly/neovim-nightly_1:0.9.0-dev-1301+g5bf2f4b3c-0_arm.deb
-Size: 4904452
-MD5sum: 376ec9b649050ffbb1228f8ca4fd5d05
-SHA1: 4e600015b06ca6ce5db76e71c49ae37cb8174ddd
-SHA256: bedc2dd145b8e0cc9b8c11838e74f221b69222279345a161716ed4e80d71a1d1
-SHA512: da2df728b11724b792c7f649cdce53929ad5e76c102141035df19b61332054cc0ad684d66a5ce7fd4f9179dd6acddc50256293200150a115035d9f100208e3ba
+Filename: pool/main/n/neovim-nightly/neovim-nightly_1:0.9.0-dev-1307+g75e1b1d5c-0_arm.deb
+Size: 4905212
+MD5sum: e5477620b52b81d9810da7d7fe6230ee
+SHA1: 2557353a11fc364a5105d2c852c71b6f04aaedb8
+SHA256: 852b676804eff24fbd2ee3cfab061ba4367dc2480fbd5da6dbee452f92beadd7
+SHA512: ef6241a75cd480b60f429ab5769333513b3cab52c63cbe4505f9f1ba6ba022bdfba837fdbcb242bd07649336113b385a292b533ccd1a1e7a6267095ecb119140
 Description: Ambitious Vim-fork focused on extensibility and agility (nvim-nightly)
 Homepage: https://neovim.io
 
@@ -28963,6 +29173,21 @@ SHA256: 6f8655232e2a0350e049341f280c64f82f40374920637ca39103ede2c792d528
 SHA512: ba59676479577c12ddfe2f17c51109802a3efacff59ac8d79d3fe969e59f8e3fa6c611aa7560a22ed8af6439c1f3ed664bc0607ca9938f9cbaec69ba76db84be
 Description: PNG image optimising utility
 Homepage: https://pngquant.org
+
+Package: pocketbase
+Installed-Size: 43628
+Maintainer: @termux
+Architecture: arm
+Version: 0.14.1
+Depends: resolv-conf
+Filename: pool/main/p/pocketbase/pocketbase_0.14.1_arm.deb
+Size: 9477896
+MD5sum: 0a42613291c9f7b7dfd6f1169d5a67f3
+SHA1: 31a2e1e128a56ad7f049730d77fed8491172ae66
+SHA256: 7e02489180bf356c228d9bb64eaaed7ba46d193b6966be08179d3d728faf4324
+SHA512: 72c179ff53426d00a9f0894241ba2d8889191d753b1d5ada0cbf4005290df69fdfebe22fde3434a0831114f81a72640b56529d6d22c61eecebb3b01982c43759
+Description: An open source Go backend
+Homepage: https://github.com/pocketbase/pocketbase
 
 Package: pocketbase
 Installed-Size: 43828
@@ -32105,6 +32330,23 @@ Package: scdaemon
 Installed-Size: 376
 Maintainer: @termux
 Architecture: arm
+Version: 2.4.0-3
+Replaces: gnupg (<< 2.3.3-2)
+Depends: libgcrypt, libksba, libgpg-error, libassuan, libnpth, libusb, gnupg (= 2.4.0-3)
+Conflicts: gnupg (<< 2.3.3-2)
+Filename: pool/main/s/scdaemon/scdaemon_2.4.0-3_arm.deb
+Size: 176620
+MD5sum: 6db93f69a7900ce2de27e6d0f453a59d
+SHA1: 15a066b3c845d1232d4c8a826bd3c2eda8a599ff
+SHA256: 0df96731f42ff41bc8375b0602c3553ca6b13994494e3b3e21b346ebf8af5b32
+SHA512: 741bd776046b50e66fffb90d813abbd4e4cbfa6151fc3ebdaecc745d73cf522d0a0042cc3fe50d9206e509b212c30e40cc5b8391c670e95ae0682293768faead
+Description: Daemon invoked by gpg to manage smartcards
+Homepage: https://www.gnupg.org/
+
+Package: scdaemon
+Installed-Size: 376
+Maintainer: @termux
+Architecture: arm
 Version: 2.4.0-2
 Replaces: gnupg (<< 2.3.3-2)
 Depends: libgcrypt, libksba, libgpg-error, libassuan, libnpth, libusb, gnupg (= 2.4.0-2)
@@ -32309,6 +32551,21 @@ SHA256: 984f78f80d057b7b721e45c2c8b128f1d25d7f08ca0961c06f0f63e65c35ab78
 SHA512: b0e7fbe07bf0b3550b4b599bea8ca131b6876092638ea6ec04d34bc362f566a1faec26f3578510a32f61430b07abb09b5f99310a0af620d4dcd9ba3195de43a9
 Description: Secure file, disk, swap, memory erasure utilities
 Homepage: http://www.thc.org/
+
+Package: sed
+Essential: yes
+Installed-Size: 364
+Maintainer: @termux
+Architecture: arm
+Version: 4.9-1
+Filename: pool/main/s/sed/sed_4.9-1_arm.deb
+Size: 111424
+MD5sum: 7e956107acc79ddc9e110a76da31f71b
+SHA1: 4f8b76bef798cc67d9f36623a4af828aa9584d07
+SHA256: 7d0cfa9e5f476cfb2f1bbdd518c64fe2aeb0e8312fb7e0ada25ed3530f0e48ee
+SHA512: 0460e6383a8584ea5685b143652a06a1a45874d6119825674cd44b4e2c96eee839786130e54a037ab0dcd5fcae338774328b58430ed490c438193bed6340b71a
+Description: GNU stream editor for filtering/transforming text
+Homepage: https://www.gnu.org/software/sed/
 
 Package: sed
 Essential: yes

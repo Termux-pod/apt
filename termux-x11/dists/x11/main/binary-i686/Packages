@@ -921,24 +921,6 @@ SHA512: b7e8ff2c98cb1a36413637b3858e9dcb7a5bf8ce43c051c7be790161c0cca7242d404428
 Description: Extensible, customizable text editor-and more
 Homepage: https://www.gnu.org/software/emacs/
 
-Package: emacs-x
-Installed-Size: 103444
-Maintainer: @termux
-Architecture: i686
-Version: 28.3-rc1-0
-Replaces: emacs
-Provides: emacs
-Depends: fontconfig, freetype, gdk-pixbuf, giflib, glib, harfbuzz, libgmp, libgnutls, libice, libjansson, libjpeg-turbo, libpng, librsvg, libsm, libtiff, libx11, libxaw, libxcb, libxext, libxfixes, libxft, libxinerama, libxml2, libxmu, libxpm, libxrandr, libxrender, libxt, littlecms, ncurses, zlib
-Conflicts: emacs
-Filename: pool/main/e/emacs-x/emacs-x_28.3-rc1-0_i686.deb
-Size: 36668572
-MD5sum: 2c40fe7859626b6fb2d84e997d69d0a5
-SHA1: 55c81425b0b0d521d3f77a4a39faae23176c2930
-SHA256: d740881017a4afdb6dc626e09cd39665d4c4a633276c93f64efacbd19e422eac
-SHA512: 8edee81266e94e42cd19247915575f17a08c83c617e543f621f580a14fccdca87425c2e1cc835629abfcc989f827128aa3273aa57ce8fab010421a2393e6e6ed
-Description: Extensible, customizable text editor-and more
-Homepage: https://www.gnu.org/software/emacs/
-
 Package: eog
 Installed-Size: 1272
 Maintainer: @termux
@@ -7407,6 +7389,22 @@ Package: tigervnc
 Installed-Size: 3728
 Maintainer: @termux
 Architecture: i686
+Version: 1.10.1-38
+Depends: libandroid-shmem, libc++, libgnutls, libjpeg-turbo, libpixman, libx11, libxau, libxdamage, libxdmcp, libxext, libxfixes, libxfont2, opengl, openssl, perl, xkeyboard-config, xorg-xauth, xorg-xkbcomp, zlib
+Suggests: aterm, xorg-twm
+Filename: pool/main/t/tigervnc/tigervnc_1.10.1-38_i686.deb
+Size: 1043020
+MD5sum: 66bdc2c62ec428f8448356e691cf26ed
+SHA1: f108ce283deef64fec22f6f175a3fa667520ec9a
+SHA256: 2ac7cd4558294d6fb1f9eeeccbf7986305ee5d4c1375c6ebbcd8398080b12f54
+SHA512: d0d93c8b297913422171e0a2f389e9e9fed577a81b2d32124d21be215128ef40fc6196afb2df5974f47c01653528013b2b639b104ab6756c536bb51c610c56b1
+Description: Suite of VNC servers. Based on the VNC 4 branch of TightVNC.
+Homepage: https://tigervnc.org/
+
+Package: tigervnc
+Installed-Size: 3728
+Maintainer: @termux
+Architecture: i686
 Version: 1.10.1-37
 Depends: libandroid-shmem, libc++, libgnutls, libjpeg-turbo, libpixman, libx11, libxau, libxdamage, libxdmcp, libxext, libxfixes, libxfont2, opengl, openssl, perl, xkeyboard-config, xorg-xauth, xorg-xkbcomp, zlib
 Suggests: aterm, xorg-twm
@@ -9121,6 +9119,22 @@ Package: xorg-protocol-txt
 Installed-Size: 60
 Maintainer: @termux
 Architecture: all
+Version: 21.1.8
+Replaces: xorg-server-xvfb (<< 1.20.11-8)
+Breaks: xorg-server-xvfb (<< 1.20.11-8)
+Filename: pool/main/x/xorg-protocol-txt/xorg-protocol-txt_21.1.8_all.deb
+Size: 6864
+MD5sum: c95cea6dae5e0da92337706c717e1a64
+SHA1: 1640429f5edfe0af04599c3525d14debfedd9f07
+SHA256: 94af2b915a53a9bef8f0eb41daf7c9268916dcf072583459e32e7603f3be53f9
+SHA512: 6eb59911005bfe9a9b541ea5e44535ba7f73a1692c0a6ad669839c280b756489d13d05c5a2ccfa8a642b359627d60607790c582b64644665185261ee89ed2c0b
+Description: X.Org protocol.txt file
+Homepage: https://xorg.freedesktop.org/
+
+Package: xorg-protocol-txt
+Installed-Size: 60
+Maintainer: @termux
+Architecture: all
 Version: 21.1.7-3
 Replaces: xorg-server-xvfb (<< 1.20.11-8)
 Breaks: xorg-server-xvfb (<< 1.20.11-8)
@@ -9137,6 +9151,22 @@ Package: xorg-server
 Installed-Size: 4832
 Maintainer: @termux
 Architecture: i686
+Version: 21.1.8
+Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxcvt, libxfont2, libxinerama, libxkbfile, libxshmfence, opengl, openssl, xkeyboard-config, xorg-protocol-txt, xorg-xkbcomp
+Recommends: xf86-video-dummy, xf86-input-void
+Filename: pool/main/x/xorg-server/xorg-server_21.1.8_i686.deb
+Size: 1182700
+MD5sum: 5de7f5e4b5d0bf439b376b41662987d3
+SHA1: 76317c2d09ecd4cb9794f7e455cc88dc17ada99f
+SHA256: 64b5ee1a2e16cccb9931b952100686967186cc49387156bf8a30a28d32f34f1d
+SHA512: 122c913a35fc7b0eccf4bdb7b2dec787534d5fba3b0cef08fb2ac1db8067e5b9e59b9ffeae4d21d687b6e54c43adf0847db3fb246ea0121ab9a81a2773577204
+Description: Xorg server
+Homepage: https://xorg.freedesktop.org/wiki/
+
+Package: xorg-server
+Installed-Size: 4832
+Maintainer: @termux
+Architecture: i686
 Version: 21.1.7-2
 Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxcvt, libxfont2, libxinerama, libxkbfile, libxshmfence, opengl, openssl, xkeyboard-config, xorg-protocol-txt, xorg-xkbcomp
 Recommends: xf86-video-dummy, xf86-input-void
@@ -9148,6 +9178,23 @@ SHA256: e1012ccf7c93f3637e5ac18029e682a2caa04b8e940cb2392080c9ca43efd3e1
 SHA512: 586b07598937c13a447e15e01f2f9dd8c123a9e5c99480cb9b1c265934b6dbf27036288a92f51d21cb9a7bf1dd6774e38af17d9918dc387d5c660664efb6af1b
 Description: Xorg server
 Homepage: https://xorg.freedesktop.org/wiki/
+
+Package: xorg-server-xvfb
+Installed-Size: 1856
+Maintainer: @termux
+Architecture: i686
+Version: 21.1.8
+Replaces: xorg-xvfb
+Depends: libandroid-shmem, libdrm, libpixman, libx11, libxau, libxfont2, libxinerama, libxkbfile, libxshmfence, opengl, openssl, xkeyboard-config, xorg-protocol-txt, xorg-xkbcomp
+Conflicts: xorg-xvfb
+Filename: pool/main/x/xorg-server-xvfb/xorg-server-xvfb_21.1.8_i686.deb
+Size: 668228
+MD5sum: d3c03a5c67e10c211e0c8198e389e9d4
+SHA1: e74be26b93d6dcc11d42ad2d78a5aedb6c4fc822
+SHA256: 5d67a7a23d8869bfc7a7cfb2de26830a96211a020de1e5bfb70c96766a7cc722
+SHA512: f617d47630eab2446510591604dad90837e56ec7eec3437320cc7edb9d2d62eaa7966b1c755d95422d0b60852ecaba816f140bda4572683d3af77c337a618e80
+Description: X virtual framebuffer
+Homepage: https://xorg.freedesktop.org/
 
 Package: xorg-server-xvfb
 Installed-Size: 1856

@@ -690,19 +690,19 @@ Description: APK signing tool from Android SDK
 Homepage: https://developer.android.com/studio/command-line/apksigner
 
 Package: apr
-Installed-Size: 1180
+Installed-Size: 1172
 Maintainer: @termux
 Architecture: arm
-Version: 1.7.2
+Version: 1.7.3
 Replaces: apr-dev
-Depends: libuuid (>> 2.38.1)
+Depends: libuuid
 Breaks: apr-dev
-Filename: pool/main/a/apr/apr_1.7.2_arm.deb
-Size: 226200
-MD5sum: 8e1fb4e2a20aea90a3570fcac85db7cb
-SHA1: 042707ff9e4b808a6dfd3f7589983d36db2771db
-SHA256: e975c05c8b01fd21dcfb9e5df43031c9554728e6e0845c451967c577154af7cd
-SHA512: 7d680262568df6557f996397643868935a306bf14247a5686d6e040f981957cd44ed81c0f716aee6eaa1fdbafccccb94bb3a56363e9fc922a5cd4e67b8ad2191
+Filename: pool/main/a/apr/apr_1.7.3_arm.deb
+Size: 223440
+MD5sum: 51f77dadfa07366b62b7a221d508a67c
+SHA1: 65a11c015abce54b5c2e9b3c381047a242dcc55a
+SHA256: 8d554e9f85d4f5d6f519e7c9d6eac516257ea56918ea6c180aa07f7591a173ae
+SHA512: 396f123ea91072db834ce5beb878b6335d66a3126da1e861c145ffff73b06b4097d5632d889c23b722b25d32a1f67517633c2c0a65c827f76e22a2f698889aa3
 Description: Apache Portable Runtime Library
 Homepage: https://apr.apache.org/
 
@@ -710,14 +710,14 @@ Package: apr-static
 Installed-Size: 292
 Maintainer: @termux
 Architecture: arm
-Version: 1.7.2
-Depends: apr (= 1.7.2)
-Filename: pool/main/a/apr-static/apr-static_1.7.2_arm.deb
-Size: 74632
-MD5sum: 43bc12477ac17dbb824c4ba12ad9c0ee
-SHA1: 5d204e7dc17214e9ab01711c49e8917bda8c72f9
-SHA256: 16e2109aa9e4b1dc0dad28f30af9f12bd77d9e4d7f40108f5c5d4a611ab4fc6a
-SHA512: a8b6fe480ec7637ddee4ee91ea1a451de16b6125df5bdf6ed27d23e808ee7fd29d12705584f9a2b6fec8c014b5a34bd049d822e1873696889fff11581b387ec6
+Version: 1.7.3
+Depends: apr (= 1.7.3)
+Filename: pool/main/a/apr-static/apr-static_1.7.3_arm.deb
+Size: 74708
+MD5sum: 82d7e965137b5c98bd615491e4f6ecf2
+SHA1: 58b0af963c80bcc4b03d4195ff92be798c1a5c7f
+SHA256: 7a246eaa1a3b743a3ea2f384f11ead85eac8714e7b06c67cd9b8c872dec3963f
+SHA512: ea8ef30d4c2217a70763c98d392bd73dc9306bc3b2eafc95afdaf3cb31fd96aa590d6519dd7bc9646f433a17171a4446dd58736140918ff216947662fd7d1e75
 Description: Static libraries for apr
 Homepage: https://apr.apache.org/
 
@@ -1352,6 +1352,21 @@ Package: avahi
 Installed-Size: 960
 Maintainer: @termux
 Architecture: arm
+Version: 0.8-6
+Depends: dbus, glib, libandroid-glob, libcap, libdaemon, libevent, libexpat, resolv-conf
+Filename: pool/main/a/avahi/avahi_0.8-6_arm.deb
+Size: 201732
+MD5sum: 0843c9c4333c9b02d1a76bdd02c677ee
+SHA1: c5aab9158b6f86678b70b2da62470a28189f48f2
+SHA256: 5bc526939c40b30a9519616f5c9050e38605ac05280a17bf2fd29149069c183f
+SHA512: 51dc3fb320eb0cfd366eb6b69eb2d1bb802c47174b877a8707d1d60439b884cefd01cba228c283da9e2c2a13e389faddb4445b25c68a7c57c7bea9bb1c4fd75d
+Description: A system for service discovery on a local network via mDNS/DNS-SD
+Homepage: https://www.avahi.org/
+
+Package: avahi
+Installed-Size: 960
+Maintainer: @termux
+Architecture: arm
 Version: 0.8-5
 Depends: dbus, glib, libandroid-glob, libcap, libdaemon, libevent, libexpat, resolv-conf
 Filename: pool/main/a/avahi/avahi_0.8-5_arm.deb
@@ -1361,6 +1376,21 @@ SHA1: f3fef97d4999d64cb8c26b3288aeab463632065e
 SHA256: 94eb884e3f7c80ee0b9984655b3505325513c58f12c313e90fe7653394e69262
 SHA512: 42a81e9bee72c93ab67f376d646d13d99c19274bd3909c329aceee8361bc5b8ff87f905d9bccb2f85517683f301917bafff07a36f25dca27728f2666cc1ec3a0
 Description: A system for service discovery on a local network via mDNS/DNS-SD
+Homepage: https://www.avahi.org/
+
+Package: avahi-static
+Installed-Size: 592
+Maintainer: @termux
+Architecture: arm
+Version: 0.8-6
+Depends: avahi (= 0.8-6)
+Filename: pool/main/a/avahi-static/avahi-static_0.8-6_arm.deb
+Size: 133516
+MD5sum: 3ce283e0179f2da65524c676715c302e
+SHA1: 75244a10140b4635d2b94ca2bc876d6f2dfeb36b
+SHA256: 3ed009d7de911bd729b6d71734433c3c28e59926b65aa186da704bacf8cd2223
+SHA512: 9a9c0a595931674cafb5f21336ca91a6ffb00ae203e86b748197a81a078dfa173da40c00190711c8eab44f3c8fdd031956db37ce9fee9698d542035026b5d26e
+Description: Static libraries for avahi
 Homepage: https://www.avahi.org/
 
 Package: avahi-static
@@ -2144,21 +2174,6 @@ MD5sum: dd824054b565596118ffb6cd8d7cdbbf
 SHA1: 7d5187c310ef564da7d6ff8f4d9b0fcf1c1a0beb
 SHA256: 1fc566c7a6c5687dfd66fe826f94986174f7373143520bffc3e5165f065c57ff
 SHA512: 0d88d89cc4888529d2c7bc5bf23b564f94209efb8fb2fcc4b975e647e3851f65a44c5f0f9ed38916b7ef4abde16b07c4b8d55f1aa766313ff8098c03100c3f80
-Description: Linux Userspace x86 Emulator
-Homepage: https://ptitseb.github.io/box86/
-
-Package: box86
-Installed-Size: 8488
-Maintainer: @termux
-Architecture: arm
-Version: 0.2.8.20230331.123350g4b212f91
-Depends: libandroid-complex-math, libandroid-glob, libandroid-spawn, libandroid-sysv-semaphore
-Filename: pool/main/b/box86/box86_0.2.8.20230331.123350g4b212f91_arm.deb
-Size: 1650072
-MD5sum: 4a737dcc43f5d329754054194e467725
-SHA1: b87dd3d923bac89cd25b786441d8274cd74248d4
-SHA256: ef489c879c714e0ed97ea358ba12937efb4bc5e59e0bbd54b515d1366c33698b
-SHA512: c4ae6c7820774e4f0295581771d4a402218d7034959b5bbb3cc89badeb8d88dd73b24b1a0d550e3612ee6ea90ea2720bc9a588679657877d6b6fd00ebf53f7a3
 Description: Linux Userspace x86 Emulator
 Homepage: https://ptitseb.github.io/box86/
 
@@ -6897,29 +6912,14 @@ Package: fzf
 Installed-Size: 3376
 Maintainer: @termux
 Architecture: arm
-Version: 0.39.0
-Depends: bash, findutils
-Filename: pool/main/f/fzf/fzf_0.39.0_arm.deb
-Size: 1025772
-MD5sum: 677d845ca4c4eaea8a6cade3d02a132d
-SHA1: 003630da9d7a8d5e43f251c490f1891f2bd0a139
-SHA256: 52e72ffda0475b1122893829906bcdf961093a3f1fe1f1811d899f21ffc4d940
-SHA512: 316ed5ab46593867eb9bc6e73ebe2cce5dcea5826f4d835481c331f3620f40425bbb1d598d44cf22d8a7de197e488b73853866e31306e32b55b79119239ecc46
-Description: Command-line fuzzy finder
-Homepage: https://github.com/junegunn/fzf
-
-Package: fzf
-Installed-Size: 3356
-Maintainer: @termux
-Architecture: arm
-Version: 0.38.0
-Depends: bash, findutils
-Filename: pool/main/f/fzf/fzf_0.38.0_arm.deb
-Size: 1019480
-MD5sum: 5d43092cc7de8ec0fc4bb75ade08aa6e
-SHA1: 662182928b8dd0966f9ae38c9d9608c00af3c33d
-SHA256: 184699b1323bb523a1ef79c835d8e24c18ec9921e573ddad3abf455a7a7153cd
-SHA512: 050016bca7adea5a4924ac87b542168fae2c96233be226821a8c85d1470d6640799698830995f8db5f307e79f5ea218579091426390d67729d52c641cdae884b
+Version: 0.39.0-1
+Depends: bash, findutils, ncurses-utils, tmux
+Filename: pool/main/f/fzf/fzf_0.39.0-1_arm.deb
+Size: 1025464
+MD5sum: d21b3194079721101111ad5c0d747a9f
+SHA1: eb6d2197c4d4b76454ea5e09cd66443c84f7aee5
+SHA256: 43e0cb4ebafd40c6b5ec5c25bda13f24f6789b9ad7bfebb8712e49553486023e
+SHA512: ddcb6dc50853a4cf9ebf701aad9fec094d77a91985ae63c89225214527d4eb3bd8dfd9af3970c934e7991796d4d86574497eb71d8d36504f379000e0ef7dec80
 Description: Command-line fuzzy finder
 Homepage: https://github.com/junegunn/fzf
 
@@ -11062,19 +11062,19 @@ Description: A command line id3v2 tag editor
 Homepage: http://id3v2.sourceforge.net/
 
 Package: imagemagick
-Installed-Size: 17776
+Installed-Size: 17816
 Maintainer: @termux
 Architecture: arm
-Version: 7.1.1.5
+Version: 7.1.1.6
 Replaces: imagemagick-dev, imagemagick-x
 Depends: fftw, fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, imath, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblzma, libpng, librsvg, libtiff, libwebp, libx11, libxext, libxml2, littlecms, openexr, openjpeg, pango, zlib
 Breaks: imagemagick-dev, imagemagick-x
-Filename: pool/main/i/imagemagick/imagemagick_7.1.1.5_arm.deb
-Size: 7513292
-MD5sum: 2a5a9f791aeefabd2da5c7f60307e4d7
-SHA1: 4f142e83aee820f251152e70b76a645304753a33
-SHA256: 79cc4ddb602c0bfa3b41de6c220fddc940a027c3bd6c48b635f459c37438a2da
-SHA512: 67b035796356a3c966817a50cfcc407e5a6b8ea74dfcbefd34679a9146e926625b77b9db6fb6e4b9758e306e63a02359b5151024fdbb48e34d738d16a6e99d81
+Filename: pool/main/i/imagemagick/imagemagick_7.1.1.6_arm.deb
+Size: 7551420
+MD5sum: 99587b3560ae115b6cc086c20690b9d6
+SHA1: 45bbb6e00d1fcfde63646f8c21c0940383c8b1b2
+SHA256: b4c87d2e1e9bcc1d236948de3b0dc10c5fc38c462ea99091fe52e2146f85321f
+SHA512: ed43ea17717ddd9450ed8dd4c0e8cc7c0e8b6153cc2b665fbc83e0842f471341217c9cc85b13bde1ecab7b7fbaebd73f6077ee41c433dfd8b90520054eb98fbf
 Description: Suite to create, edit, compose, or convert images in a variety of formats
 Homepage: https://www.imagemagick.org/
 
@@ -11082,14 +11082,14 @@ Package: imagemagick-static
 Installed-Size: 7944
 Maintainer: @termux
 Architecture: arm
-Version: 7.1.1.5
-Depends: imagemagick (= 7.1.1.5)
-Filename: pool/main/i/imagemagick-static/imagemagick-static_7.1.1.5_arm.deb
-Size: 1949404
-MD5sum: 1f781caa893e0f667bd6e1920b8a09b7
-SHA1: 6d7504a35fdf0ed1519c9b2a9b662f03eb7e3f1f
-SHA256: 1a6636b82caec0271e5da1b166bee2c6a6cd6a0610acfc76c33fd5cefc6e5260
-SHA512: 2e1d2670a09de3cc1aebbfd4abe89f29c6f1b420ce3fc283f1f2cc5e49e8c9d1ea960ca89daa6cda19b34477aa79b504b175ca86fed7b4ff164c003f4968893c
+Version: 7.1.1.6
+Depends: imagemagick (= 7.1.1.6)
+Filename: pool/main/i/imagemagick-static/imagemagick-static_7.1.1.6_arm.deb
+Size: 1949844
+MD5sum: ca4d4e9b61caebe3b40cd4ce1060cc6e
+SHA1: 774fd8e15d3cf796892af38ba05359f47af6f4d1
+SHA256: 200a3dc94cb851e381e541f8d6647171c17b2c7c067f7704c0d6be28320c74ee
+SHA512: 09c65e3eb58c3483ec2aae30258a2d43267536b13a362ff46726a59661e8aeb229144b9643b80b7ad19e4429bf68f750c6bc84433848c886cf46fc36ef4ca716
 Description: Static libraries for imagemagick
 Homepage: https://www.imagemagick.org/
 
@@ -11494,17 +11494,17 @@ Description: Static libraries for iverilog
 Homepage: http://iverilog.icarus.com/
 
 Package: iwyu
-Installed-Size: 7612
+Installed-Size: 7236
 Maintainer: @termux
 Architecture: arm
-Version: 0.19
-Depends: clang, python
-Filename: pool/main/i/iwyu/iwyu_0.19_arm.deb
-Size: 541816
-MD5sum: 7c13c478b0f61b896bc011047f5300ce
-SHA1: b53eec9fcc677df3a955f8564b44ca6a494f6fb3
-SHA256: ebf2eec8c7d5504b9a6ccea7c7e75af74e38f88aec7d9750cede4511d8941966
-SHA512: 5d5a3d1977f146c6fd9ee398ddeba28ec234c9cce00b1a178b8e419943a149ef1764ed7218e771a9b72c3122b183e1df03cd4fdb91debff414c722884798cb2f
+Version: 0.20
+Depends: clang, libc++, python
+Filename: pool/main/i/iwyu/iwyu_0.20_arm.deb
+Size: 505560
+MD5sum: 825b6f7f15c55a2f45bc21719dad806f
+SHA1: 215bf5dc3125ee9993dbb91b5dffb6ac4dc984ea
+SHA256: 9df567a17f2c39ae460e3083443ae1e72edcb7b40b6f4910f9458bbbe5426bd4
+SHA512: c4a97bb38da59bbe0bb50db884c15fd21500e6ee589bfaad5fce09e5c644bb94b9b9eff8bd29254f45a96a4248d94d136d2d2abefde812c956ce87ce3bb854c4
 Description: A tool to analyze #includes in C and C++ source files
 Homepage: https://include-what-you-use.org/
 
@@ -12944,6 +12944,21 @@ Package: libao
 Installed-Size: 320
 Maintainer: @termux
 Architecture: arm
+Version: 1.2.2-7
+Depends: pulseaudio
+Filename: pool/main/liba/libao/libao_1.2.2-7_arm.deb
+Size: 33684
+MD5sum: 8d464398cd80c46702ae262aa2433dfc
+SHA1: 5dad79c4dcf9423c39ebb84479355a4563982f83
+SHA256: fa421d78d2c86124beb217d5e9449dfd35d96f15482b04c6cca111d00d25fa34
+SHA512: 871ce6fa181e9faca9e6ffe12cbc0a5702ef3def38fc6da344b0fa154e16dfb2390c2d46fcc59cbe789b88c312d8196f10fb30691b421103e5c74b7cb4cbeff4
+Description: A cross platform audio library
+Homepage: https://www.xiph.org/ao/
+
+Package: libao
+Installed-Size: 320
+Maintainer: @termux
+Architecture: arm
 Version: 1.2.2-6
 Depends: pulseaudio
 Filename: pool/main/liba/libao/libao_1.2.2-6_arm.deb
@@ -12953,6 +12968,21 @@ SHA1: 7cad6e18f490594b1723343c03ddd9a52d20eb06
 SHA256: fd897e7c25005a1ee1e1e516d0e5cce0a5a69a4b2ecabbffacff857d6c7db721
 SHA512: c6c85650e8c670729a4b2710f4af3f73c70029816da8883fdf5a8990de65200433e7e34e0e321e66b82e22b310c94bd08dcb29dc90207157d31f6afbc05caa3a
 Description: A cross platform audio library
+Homepage: https://www.xiph.org/ao/
+
+Package: libao-static
+Installed-Size: 88
+Maintainer: @termux
+Architecture: arm
+Version: 1.2.2-7
+Depends: libao (= 1.2.2-7)
+Filename: pool/main/liba/libao-static/libao-static_1.2.2-7_arm.deb
+Size: 15772
+MD5sum: 508ef5c55278bdc33e3ee86870846f87
+SHA1: bdf93e7dd5c37385e74b14b69154355264120380
+SHA256: f589863d69cfe8de6d5dbc3d1317caf79b6c707eec8473d8482138d2483e950e
+SHA512: b34c1ecbb4df4923c51c85d1b0c6f589e781e3cd384c239b5f69b1a530807c18360084094ded9bc46be2624e39a7f99f38f356eefa3a4e6987f8e42f38fe8ab3
+Description: Static libraries for libao
 Homepage: https://www.xiph.org/ao/
 
 Package: libao-static
@@ -13922,31 +13952,31 @@ Package: libconfig
 Installed-Size: 348
 Maintainer: @termux
 Architecture: arm
-Version: 1.7.3-2
+Version: 1.7.3-3
 Replaces: libconfig-dev
 Depends: libc++
 Breaks: libconfig-dev
-Filename: pool/main/libc/libconfig/libconfig_1.7.3-2_arm.deb
-Size: 59876
-MD5sum: 5c8c92af9d3de0eca9c1bd57c7cf9766
-SHA1: 4dfbce0175080fdb27e9c9d485de8965c0362080
-SHA256: 3f82fbfa4fbaec1a3ef76ef26f2446e67fb3e724bf56692e2a9a845ea2918c3f
-SHA512: 3cdcfeebfbd9a6a6d1bb1c056882c986cadb7aeda122ef21a9c89cf688aa1108f30eecc5e25cf614ff25287178632c9bfef186edea8d06d996b72f1df7fbca47
+Filename: pool/main/libc/libconfig/libconfig_1.7.3-3_arm.deb
+Size: 60036
+MD5sum: 2701c52d3348164955c94678a55a4f52
+SHA1: a8c6687d928f1d32805dabfee276cbde27ff7958
+SHA256: 273b8b20c4ffda80af05a12a2e2ca96801fea2117268d47fe2547c1bfb2c5c82
+SHA512: 2b9db08d53d2545ff27d578f14ce570ee3f9fa01c3be00fb1011b0a9e21d87d14c3702d252f15d6783fe264528f4870a4d175d711ffcbf9cf16f61cfb22891b8
 Description: C/C++ Configuration File Library
 Homepage: https://github.com/hyperrealm/libconfig
 
 Package: libconfig-static
-Installed-Size: 204
+Installed-Size: 636
 Maintainer: @termux
 Architecture: arm
-Version: 1.7.3-2
-Depends: libconfig (= 1.7.3-2)
-Filename: pool/main/libc/libconfig-static/libconfig-static_1.7.3-2_arm.deb
-Size: 29272
-MD5sum: 38d8b924c34f44e39edb4f3798ef8985
-SHA1: 3738f1aca8a6fd13c2816457c4a9916a3096f7b8
-SHA256: 12050a08cb765fbc97196e8060f85b4057aa48766a084ec5a9b065dba3e27a03
-SHA512: a485b4dbdfe4f2148d1003af886d71693e82285ca6f8f523514dde8a4c5ddb6e76df783cc2bc645571fa1b194e4857cc0e23c17a27648f84f7d50ce17b004ba9
+Version: 1.7.3-3
+Depends: libconfig (= 1.7.3-3)
+Filename: pool/main/libc/libconfig-static/libconfig-static_1.7.3-3_arm.deb
+Size: 55796
+MD5sum: b5e90727aa1e0bd0f36b0d64db222175
+SHA1: 4341d6c3c821f043faa20ad3c8faa919c92c4104
+SHA256: 775d79bd624ae5fc5c428b8b95eee13fbd29663ede503d68c5fa58ecb8e459da
+SHA512: b83aa2a4e9033294e19e91e8e9f9639e94a6e857791ce7cc46d1bd9fc788bcb32b7b7c01ccc033131953f56111974858764c1c0e07f00720e463a371d9f3465c
 Description: Static libraries for libconfig
 Homepage: https://github.com/hyperrealm/libconfig
 
@@ -14365,6 +14395,21 @@ Package: libdns-sd
 Installed-Size: 144
 Maintainer: @termux
 Architecture: arm
+Version: 0.8-6
+Depends: avahi (= 0.8-6)
+Filename: pool/main/libd/libdns-sd/libdns-sd_0.8-6_arm.deb
+Size: 26332
+MD5sum: 2ac86b74679f516b596ce3d52b0dc27c
+SHA1: f9318cace46a82337c080dcd929afb28ec315b47
+SHA256: 90255fc0f22665eed0b887d18c292f6e073b28a85a7a8c1a20c7974f12570838
+SHA512: 807f6afb8cf006ce141f8f3fbafecc63eb098cd442c15c18ba39a666a310f3f36e3ed9debacacd2c25472acbf7af4b6e2608d29b8db8f695502a0731a8ce8900
+Description: Compatibility layer for libdns_sd
+Homepage: https://www.avahi.org/
+
+Package: libdns-sd
+Installed-Size: 144
+Maintainer: @termux
+Architecture: arm
 Version: 0.8-5
 Depends: avahi (= 0.8-5)
 Filename: pool/main/libd/libdns-sd/libdns-sd_0.8-5_arm.deb
@@ -14374,6 +14419,21 @@ SHA1: 46d59cdf8fc59b392a5fb4bc5560a622ab0c71f8
 SHA256: 4c1f02d936f58d1e8792dd1883db8d032fc4f7d07106d55f832ffc29e2f57b7a
 SHA512: 314f9c46066c579ce2222de10ab0421ae7affc81de9841d192c2f1289d3ecd70ebf18ca63c14e59a1efc925e1779f4b416cf18aabfb08cfc265c3047685e4d8c
 Description: Compatibility layer for libdns_sd
+Homepage: https://www.avahi.org/
+
+Package: libdns-sd-static
+Installed-Size: 68
+Maintainer: @termux
+Architecture: arm
+Version: 0.8-6
+Depends: libdns-sd, avahi (= 0.8-6)
+Filename: pool/main/libd/libdns-sd-static/libdns-sd-static_0.8-6_arm.deb
+Size: 12316
+MD5sum: 1409b97300ec8387da0b82a9f56eecc6
+SHA1: d3973525ef3a0bc33e87ffec1c63a364ef32fcad
+SHA256: 56b9f11cfb6ce026977507c4ae00bc24c356ef6c6fb3941b5e9e34766379b930
+SHA512: e11e9b5c02a07b174f7b28fc052f342f619d5b50fa8ffac739f42da66609fb6a44cb91efabcaf18e7588c6780163266bb9cf2a3e2b838673221a2b081405e164
+Description: Compatibility layer for libdns_sd (static library)
 Homepage: https://www.avahi.org/
 
 Package: libdns-sd-static
@@ -18071,15 +18131,15 @@ Package: libnl
 Installed-Size: 1348
 Maintainer: @termux
 Architecture: arm
-Version: 3.7.0-1
+Version: 3.7.0-2
 Replaces: libnl-dev
 Breaks: libnl-dev
-Filename: pool/main/libn/libnl/libnl_3.7.0-1_arm.deb
-Size: 245580
-MD5sum: 8b1fc0eb023bded9a99a7086a621a065
-SHA1: 4d44c68fdcfaae7339429df24050a8db600a7760
-SHA256: 3eded14c0f054381a73c682352340c0661888f5be5b779f8163a9e269ba731b1
-SHA512: 15bd772f502a45d8a7afbde4ad8efaf5faf35ca7fa534e8f7ad2b9aedbd4110ba6f162449b1c5488b3465fc295896d1be58ee3746378cb0a46a0b2ace3c70c5d
+Filename: pool/main/libn/libnl/libnl_3.7.0-2_arm.deb
+Size: 245064
+MD5sum: 0c804d1e783bfd39b082556111129401
+SHA1: 527fc592ec5fac3eb746d7b6dc1ac1614d4b8d62
+SHA256: b65cc2a054b48ced37f305ebeb0af176160a3029b9295dd67af128565bc14388
+SHA512: 783c0c5c9f9c23c71cae799182946b8aabb7ee8abf5dc74fab57662171ee794886f424ade2832231389ee23eec17ea9436ade99a89c040ada30216acdc15dcb5
 Description: Collection of libraries providing APIs to netlink protocol based Linux kernel interfaces
 Homepage: https://github.com/thom311/libnl
 
@@ -18087,14 +18147,14 @@ Package: libnl-cli
 Installed-Size: 572
 Maintainer: @termux
 Architecture: arm
-Version: 3.7.0-1
-Depends: libnl (= 3.7.0-1)
-Filename: pool/main/libn/libnl-cli/libnl-cli_3.7.0-1_arm.deb
-Size: 57092
-MD5sum: 04c4fda9ec0bcde49a8ea09b99c87427
-SHA1: 43309d3361d7eb4b26f82ea11e50cd5696843150
-SHA256: 667b8791d16e1752dbd82a48602b984ceb00576cb0f4c39828b535e70349bad5
-SHA512: 110bc373763e9ba8fc9aa862f805e170c2ff73cc23256665d88712d62a1efcca028ae54a4e1ec1a647fdc1e6979eb04cf215b3e5a3836f8aaf1fd98351df9b08
+Version: 3.7.0-2
+Depends: libnl (= 3.7.0-2)
+Filename: pool/main/libn/libnl-cli/libnl-cli_3.7.0-2_arm.deb
+Size: 57048
+MD5sum: f96448ba531ff9a0e93613ee8460df59
+SHA1: 0074538e55911178d622e83b945ee88cb76004fd
+SHA256: 1e04804879f0bf0733bd2484834e0433083738c04c1a77bf30596afe4b43eb2a
+SHA512: d5a2e9cccbf88932f269b930f7ffe171fcc9293ace6b9c14c132bd1852e06b5289eaa85ae42196bd1fa5bee18e6c2091713dfbc2b719b3006c9db9a63dd9da28
 Description: Command-line interface utilities for libnl
 Homepage: https://github.com/thom311/libnl
 
@@ -18102,14 +18162,14 @@ Package: libnl-cli-static
 Installed-Size: 188
 Maintainer: @termux
 Architecture: arm
-Version: 3.7.0-1
-Depends: libnl-cli, libnl (= 3.7.0-1)
-Filename: pool/main/libn/libnl-cli-static/libnl-cli-static_3.7.0-1_arm.deb
-Size: 18116
-MD5sum: 14ab9beb06deaaafe803ea9d941281d8
-SHA1: 9f92fd1642b1aba9e4f5180d68bf0e69201fdd97
-SHA256: 7c189e8e6ac8f8f81d53734eacb9c0e1bc512447c02f8a6c8679493721089465
-SHA512: 7825878ecf899a2e6d298acf3bf0354cd4d2e9f6e4de9e42433bb34f0cdfd1fdfa48ad5fa9b840db1cedc15308480360e5e08dadb21d2673be38688fc127162d
+Version: 3.7.0-2
+Depends: libnl-cli, libnl (= 3.7.0-2)
+Filename: pool/main/libn/libnl-cli-static/libnl-cli-static_3.7.0-2_arm.deb
+Size: 18052
+MD5sum: cae58d7b4ab099e0d1449a4dae9639c0
+SHA1: c6fef86c76d65d5bb11718455b3577d08884e078
+SHA256: 254c09efb4a713794352695b0706ac5d850c804f7bacb2978bf8c92777a09187
+SHA512: dcfb50e07f665510bb60c4c5c8d3b81966ffcee61f49d6c5ec9861f58829175e07ce543798a2b864ef9ec11b858aba8ff8d6f1bb671969d4c887e0a3323efd8b
 Description: Static libraries for libnl-cli
 Homepage: https://github.com/thom311/libnl
 
@@ -18117,14 +18177,14 @@ Package: libnl-static
 Installed-Size: 1220
 Maintainer: @termux
 Architecture: arm
-Version: 3.7.0-1
-Depends: libnl (= 3.7.0-1)
-Filename: pool/main/libn/libnl-static/libnl-static_3.7.0-1_arm.deb
-Size: 264832
-MD5sum: 5356109f12b2d8b5c7e4708345e75bfb
-SHA1: 1838806c19642f04a759c6f4d65e280673d77f20
-SHA256: 215f699a07e40104f84ab2bd2766aace0fc7c5741916a9972735110aaa3b7528
-SHA512: 1c6e85cb4a0cc920e74fd8c302caaf0beb0748e9aed4fa25301d5fea697dbe51714603697d440d549ff1dcd9be4dbcb2a895a4c7f212700ed2be479a41445543
+Version: 3.7.0-2
+Depends: libnl (= 3.7.0-2)
+Filename: pool/main/libn/libnl-static/libnl-static_3.7.0-2_arm.deb
+Size: 265008
+MD5sum: d7ddf2e6868293069e22688f9c336f84
+SHA1: 317d87f45cc4b3c54bc0f8bc63aafa9e3e48aa35
+SHA256: f101dcf7a5b2a2952df1a7f572c162c01c37cf11ca8757cc0e5dc6c73c2b7365
+SHA512: 963cb4bdd1a5f2aa77f46346b85e94c0a9592b67c84a4fc25226f3127c32dc4852fd857a6642344c190e4741a7a5d6601c9f8cca58f95f34df0d3b856eb54a7c
 Description: Static libraries for libnl
 Homepage: https://github.com/thom311/libnl
 
@@ -34268,6 +34328,23 @@ Description: A very fast implementation of tldr in Rust
 Homepage: https://dbrgn.github.io/tealdeer/
 
 Package: teckit
+Installed-Size: 1956
+Maintainer: Henrik Grimler @Grimler91
+Architecture: arm
+Version: 2.5.11-2
+Replaces: teckit-dev
+Depends: libc++, zlib
+Breaks: teckit-dev
+Filename: pool/main/t/teckit/teckit_2.5.11-2_arm.deb
+Size: 379036
+MD5sum: 3bc2120d048a30a1a8fa6afbaedae6ff
+SHA1: 297ed77730915fe13174aec8e41a11e15c0b3121
+SHA256: c517635ee5b141ec21c2403e6ebe7b4f8d8fb1e8777a372ef04a67f5872f0e8e
+SHA512: 24699994679c6f8dcc9d71abd8cda742015c99d764769966e6d5c159239f42bfe542842a93dfc8fd50bdd51ef653c86bfd54c6ce3ecd5221ce15fda033cfa7cd
+Description: TECkit is a library for encoding conversion
+Homepage: https://scripts.sil.org/teckitdownloads
+
+Package: teckit
 Installed-Size: 1948
 Maintainer: Henrik Grimler @Grimler91
 Architecture: arm
@@ -34282,6 +34359,21 @@ SHA1: 726bc0e7c21f1d031a7963a6d25409573f707485
 SHA256: 2fa2986ebc6644fd7c3d21943948ff5178e630bf71626de0e3a71a3b62a3eda7
 SHA512: f3274f54a9c1d70a24b3a49bb0d78d145e7d1834bd4a4db11ce309702a8c541a4a80ed7d99d4a2ee10239fd965ccca4526db91f1b9bc1d80cbf5b426cbe266ac
 Description: TECkit is a library for encoding conversion
+Homepage: https://scripts.sil.org/teckitdownloads
+
+Package: teckit-static
+Installed-Size: 2928
+Maintainer: Henrik Grimler @Grimler91
+Architecture: arm
+Version: 2.5.11-2
+Depends: teckit (= 2.5.11-2)
+Filename: pool/main/t/teckit-static/teckit-static_2.5.11-2_arm.deb
+Size: 294248
+MD5sum: 548a9de223bc874070077aa4f550ad95
+SHA1: 0c529f726c82a6094ecbba897f2ce19d8858e825
+SHA256: 996e3b2fb4dadfa3ed86971cfe4e3b98d5d533cab52bd5c34a2bceac0f6c7a0d
+SHA512: 24902ae1e5ddeea211eaedb615ce0ffc799e743793b533a831c4072844d1f70dc4939587acc3d9cc9c052b73c2bd7a80eb3214ceb750258af71451f7807965ac
+Description: Static libraries for teckit
 Homepage: https://scripts.sil.org/teckitdownloads
 
 Package: teckit-static
@@ -35729,21 +35821,6 @@ MD5sum: fa5aeeedea806cc3671784cd2965e28e
 SHA1: ec1b4099e6fc2af1a2ec668f80f647484f1e35d7
 SHA256: f7fe42a8d047b409317873dcc31080314dc10987b7edc199972deda3689697c2
 SHA512: 01790dbce6c767cbd502dfba76eadfc67364442b103ce6885f3a5db32709cd81eba2aed6b6903a278a98a5ec46253fc76b55a2bbb6ebf9f2e89bd4354a8a439c
-Description: A faster, user-friendly and compatible grep replacement
-Homepage: https://github.com/Genivia/ugrep
-
-Package: ugrep
-Installed-Size: 1952
-Maintainer: @termux
-Architecture: arm
-Version: 3.11.0
-Depends: libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
-Filename: pool/main/u/ugrep/ugrep_3.11.0_arm.deb
-Size: 222452
-MD5sum: 2a673089172a1d62723ad2059ee3f7d2
-SHA1: ecf6a98fd22ff36c1e70d835b990b860007c51b4
-SHA256: df8d3e48162c09f7b7c69a154095f00ed1ebe4f942278964ca6a1c3b33c0e477
-SHA512: 353b3f3515ec439d9de74b918937742ef73e1a4ed0ac4792377fffb7064d1738e0cd3e47350ef287ba384b7bcdea14f97bc7b810239d8695a86063af7423aeec
 Description: A faster, user-friendly and compatible grep replacement
 Homepage: https://github.com/Genivia/ugrep
 
@@ -38305,6 +38382,21 @@ SHA256: 5bd623b8e07ecd0f9fab3ca1cdb683f1012535f98186c92d9d9a4d30dd508bca
 SHA512: 6e2edd40b6eab1ce91ed7cf7f8ae130ec06a236b5ce0fe57d847e8ec52f2c52108abbdef135c47d1cf66f10c5262c5eb9f9c8f6704032f03e24d482f7b5be295
 Description: A file transfer program to download files from remote web servers
 Homepage: http://zsync.moria.org.uk/
+
+Package: zziplib
+Installed-Size: 348
+Maintainer: @termux
+Architecture: arm
+Version: 0.13.72-1
+Depends: zlib
+Filename: pool/main/z/zziplib/zziplib_0.13.72-1_arm.deb
+Size: 47792
+MD5sum: e5ad3ce4cf59aa864edd9df1454b41dd
+SHA1: d2af20eee3b485aaf8f0d7dc68e017ec19a85640
+SHA256: 642f302dc75dbd076512f6c9b668476a8f27c71af6d2d43c1fdd8276a684f1ef
+SHA512: de12cdbec5c2b3cc9464362d56768b57da937440863ba8c84ab534f15de386b63f8a549cf45802fc8934730fe6ddde2e2ea50707bf568d69c2493caf9d3b5f59
+Description: Provides read access to zipped files in a zip-archive, using compression based on free algorithms
+Homepage: http://zziplib.sourceforge.net/
 
 Package: zziplib
 Installed-Size: 400

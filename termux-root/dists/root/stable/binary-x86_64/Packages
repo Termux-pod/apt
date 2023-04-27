@@ -161,21 +161,6 @@ SHA512: 49fb59886d55d643e54b413eb9d2d5e5f1fccb64bd222d5a0236e8b0488b52c7f9540eed
 Description: Compose is a tool for defining and running multi-container Docker applications.
 Homepage: https://github.com/docker/compose
 
-Package: docker-compose
-Installed-Size: 51700
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.17.2
-Depends: docker
-Filename: pool/stable/d/docker-compose/docker-compose_2.17.2_x86_64.deb
-Size: 10454064
-MD5sum: af5eddc255383da9268a7c26f8e2bbf4
-SHA1: 75e2b87faabe7d4d2199f8d4e35e9a7aeaed23fd
-SHA256: 6b48d45ee19081ce59f84e3679b61e71686178a4383f8dab57c6a3fabaf31cb0
-SHA512: 1ed4c558918f9720112295c0e372093bb02c0149a09dd5a635560efa4040b5a048e74097fbca4e03e3923d98c147c1bc4ac751fd9d59669cbf70b099316154e5
-Description: Compose is a tool for defining and running multi-container Docker applications.
-Homepage: https://github.com/docker/compose
-
 Package: encfs
 Installed-Size: 1620
 Maintainer: @termux
@@ -550,6 +535,21 @@ Description: Static libraries for libcryptsetup
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
 
 Package: libdevmapper
+Installed-Size: 628
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.03.21
+Depends: libandroid-support
+Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.21_x86_64.deb
+Size: 189540
+MD5sum: 8041c003ba3aabdd1887b785eabae564
+SHA1: c139c74f030b07e689c8c9f00f2a4bbab4d10ef2
+SHA256: 332a0585760b59bb90510232807f0a849211e95634d252fe27276a664e457764
+SHA512: dcf0341bebe7f160e8efa031a9f5afb75f9d860abd71311b13d1f4f611cb5a63f93599292a6e84df96324371dad7531f0478340565a4f14adcd0f22e846d2571
+Description: A device-mapper library
+Homepage: https://sourceware.org/lvm2/
+
+Package: libdevmapper
 Installed-Size: 632
 Maintainer: @termux
 Architecture: x86_64
@@ -750,6 +750,23 @@ Package: lvm2
 Installed-Size: 3236
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.03.21
+Replaces: libdevmapper-dev
+Depends: libaio, libandroid-support, libblkid, readline
+Breaks: libdevmapper-dev
+Filename: pool/stable/l/lvm2/lvm2_2.03.21_x86_64.deb
+Size: 1148612
+MD5sum: 704e452223eec6ca6e44e7e761d88753
+SHA1: 1e31a81a06fadadb11adcff6bdd137c9d57fba95
+SHA256: c76e8506fc5eea6ad45336312dd3c90b6bf7338015255f9b576d4d15bff95d80
+SHA512: 03ffba743f20bf3c873a89ce280b0bfc47b332c9dcfa00eeb27d8e5f3279a0b7e516ffb32c0d1a608276536aabc77197057af8f3cdad61434c5084b6d1c94e40
+Description: A device-mapper library from LVM2 package
+Homepage: https://sourceware.org/lvm2/
+
+Package: lvm2
+Installed-Size: 3236
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.03.20
 Replaces: libdevmapper-dev
 Depends: libaio, libandroid-support, libblkid, readline
@@ -869,17 +886,17 @@ Description: An open source visual routing tool that pursues light weight
 Homepage: https://github.com/OwO-Network/nexttrace-enhanced
 
 Package: nfs-utils
-Installed-Size: 1468
+Installed-Size: 1528
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.6.2-1
+Version: 2.6.3
 Depends: keyutils, libblkid, libcap, libdevmapper, libevent, libmount, libsqlite, libtirpc, libuuid, openldap
-Filename: pool/stable/n/nfs-utils/nfs-utils_2.6.2-1_x86_64.deb
-Size: 325100
-MD5sum: 04176b4da4a3a784a4bd0678cc1601c1
-SHA1: 946de3d9fbbc11b13ab05d43674f101baed33ca7
-SHA256: 1e86a4048177c37be19a356a1ba27bc4b5422057bdd9e03dd7583a1cd01c87a1
-SHA512: b56cb79de869020703cdc015147479adb2e70471b0f9b53b89378a9ff72f1117dedf27ac49e4ba7b9b3bc3e7a04f20ea0ce0088a886542a42d09f843bf6dd534
+Filename: pool/stable/n/nfs-utils/nfs-utils_2.6.3_x86_64.deb
+Size: 336188
+MD5sum: 85ba738a3112ec43cc6bb3deaba90749
+SHA1: b82c726387515e7d47fc4bca60fae5cc79ac3c91
+SHA256: 482f2765ef3681c7b2d96301888661cb2ec94fa164c5e694adda30e8eb0e4797
+SHA512: 9b56fcee2dabae5220f0b297a9d0bfad20688124664fa48d5cfe6c07590c28ec5c9930132ac57b1a9537744d7ef9dd9bb6de66837a1932f8bf9addedbdc56c4c
 Description: Linux NFS userland utilities
 Homepage: https://linux-nfs.org/
 
@@ -887,14 +904,14 @@ Package: nfs-utils-static
 Installed-Size: 388
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.6.2-1
-Depends: nfs-utils (= 2.6.2-1)
-Filename: pool/stable/n/nfs-utils-static/nfs-utils-static_2.6.2-1_x86_64.deb
-Size: 34908
-MD5sum: 5986555c08dafda3b6a66b4c43e34043
-SHA1: e3d5ecbf4748d5814a332b6852520988b7c41bb9
-SHA256: 50598fb38af4476e5b5321a5d849c62fe35d279bcf532aa74f520a3c09f3e700
-SHA512: 1a1efee27b3725320aeef9c56f99280afceb126c989acff9c68dc018506e5c5007ad558f26287d208ecedec71a42397368228f07e2a5ede6b1869324ee64e3f5
+Version: 2.6.3
+Depends: nfs-utils (= 2.6.3)
+Filename: pool/stable/n/nfs-utils-static/nfs-utils-static_2.6.3_x86_64.deb
+Size: 34928
+MD5sum: 304f2a7e0f6ec00bdedff01c6b7f9115
+SHA1: c9a9c6c967621f888969c00ac65ecc98018f9bf8
+SHA256: 283de29c4966a457e23c41ac46745d81a9959fc9651453cf0c29924a46740a53
+SHA512: d0525700a78da643e501087a18964c6cd5ac6f1387d7dd5636eefc4db672b05832c939de9b96812a1bbb7c2ab962ff305d8b3c08c725981d4124a424f451eb42
 Description: Static libraries for nfs-utils
 Homepage: https://linux-nfs.org/
 

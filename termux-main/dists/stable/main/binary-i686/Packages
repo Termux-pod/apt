@@ -2467,6 +2467,23 @@ Package: c-ares
 Installed-Size: 492
 Maintainer: @termux
 Architecture: i686
+Version: 1.19.1
+Replaces: c-ares-dev
+Depends: resolv-conf
+Breaks: c-ares-dev
+Filename: pool/main/c/c-ares/c-ares_1.19.1_i686.deb
+Size: 123156
+MD5sum: a1aedcc38123bd17b1a5231fbccbbd92
+SHA1: 51995262eef634770edc0a5c94de188aeed35bc1
+SHA256: 2eb68a647ea6ddafc551d45c4f5af68f4652329118f6d61a95bbb4974eee67ee
+SHA512: 21d5cd424258209697dd9e08d219d7fc8b16e6e2b19da8c56621d868617d934cdca55687d00a7cb9cff0507d01ec7a8c32075f030afc6ddaefd7549ee4c01edb
+Description: Library for asynchronous DNS requests (including name resolves)
+Homepage: https://c-ares.haxx.se
+
+Package: c-ares
+Installed-Size: 492
+Maintainer: @termux
+Architecture: i686
 Version: 1.19.0
 Replaces: c-ares-dev
 Depends: resolv-conf
@@ -3241,6 +3258,23 @@ SHA256: 158e5f970b42902270c7ad1860a0690ded24f96b3f0e877985ec6201242aba0e
 SHA512: 9b9b096cfed80fa44ad5b99ccd417023d36297cdf55193d6c5ae8944e9767f1b086a1b10cb83fe32acf2b713d33b30010afa2b923dde27b9c8b1cc56438aecbc
 Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
+
+Package: clang
+Installed-Size: 190400
+Maintainer: @finagolfin
+Architecture: i686
+Version: 16.0.4-1
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 16.0.4-1)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_16.0.4-1_i686.deb
+Size: 34897000
+MD5sum: 058c1689d8f8e76281c25fc655149310
+SHA1: 007897d6646579667c3a01dbffc79aaf3566af59
+SHA256: 7da9c53587ef4bed0bf403865eb925ba15bd39ce62db55d3512eb31cea83cdab
+SHA512: fba8da65e4fd54c93635776a8e408ca7dda52c146c314f0a5eadf6487682f2a4d2a730df95326094c1dee2af60dcf0d8aa0570ff51462cc11723a0313371e671
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
 
 Package: clang
 Installed-Size: 190396
@@ -5503,6 +5537,22 @@ Description: Full-Featured Text WWW Browser
 Homepage: https://github.com/rkd77/elinks
 
 Package: elixir
+Installed-Size: 12292
+Maintainer: @termux
+Architecture: all
+Version: 1.14.5
+Depends: dash, erlang
+Suggests: clang, make
+Filename: pool/main/e/elixir/elixir_1.14.5_all.deb
+Size: 5225888
+MD5sum: a57321f85022668370c0b77cc080c99c
+SHA1: 41ac1c846f05db38fc3b46575720ef89cd06ce85
+SHA256: 57ac06ea6f6559e98f84bf11e4efd9e1f5df1167b4a980ccec4313c989601d8a
+SHA512: 74c04cf82a62d3f4870cfda2709354c5e7d78cec83c891998b1a1957ddeaaf158e910e005ad552bafbe071ba3a161f0874adf327c4a56ea5d84b95f3ceaf914e
+Description: Elixir is a dynamic, functional language designed for building scalable and maintainable applications
+Homepage: https://elixir-lang.org/
+
+Package: elixir
 Installed-Size: 12280
 Maintainer: @termux
 Architecture: all
@@ -5645,6 +5695,21 @@ Package: enchant
 Installed-Size: 260
 Maintainer: @termux
 Architecture: i686
+Version: 2.4.0
+Depends: aspell, glib, hunspell, libc++
+Filename: pool/main/e/enchant/enchant_2.4.0_i686.deb
+Size: 48804
+MD5sum: 12b044661a34280ff1642a90d8fc2d38
+SHA1: 40007e8534e8dabcdfb7a3a906c7e3c4054b60c2
+SHA256: b593ee3f5a3e00ea50daa7019b0b64c5bb413d45de7e599e5aa9b275c5373d9d
+SHA512: ba2ceed846c5394f07ab79eff5e8e3400f5e88f187d532eb71512e90ad77c3050529f97c744f76712ef2aa032e5887a0852a30fe8f3514981027d44830596eff
+Description: Wraps a number of different spelling libraries and programs with a consistent interface
+Homepage: https://abiword.github.io/enchant/
+
+Package: enchant
+Installed-Size: 260
+Maintainer: @termux
+Architecture: i686
 Version: 2.3.4
 Depends: aspell, glib, hunspell, libc++
 Filename: pool/main/e/enchant/enchant_2.3.4_i686.deb
@@ -5654,6 +5719,21 @@ SHA1: de53b929fd0e652606b2277d7140e1d4cd36e38a
 SHA256: 970e0b644b639a80d62b23b228b630c92459e831f6a826ed94821fd43bb20cc3
 SHA512: 48455cc1e0184a3def6b35c1ae70fb5aa08ae13d86464d262b21ddcc165e374ee254ca560322099a20da2aeb9d1d6ab16ce3f590f25b7f60490cefc2186506aa
 Description: Wraps a number of different spelling libraries and programs with a consistent interface
+Homepage: https://abiword.github.io/enchant/
+
+Package: enchant-static
+Installed-Size: 620
+Maintainer: @termux
+Architecture: i686
+Version: 2.4.0
+Depends: enchant (= 2.4.0)
+Filename: pool/main/e/enchant-static/enchant-static_2.4.0_i686.deb
+Size: 50424
+MD5sum: f100fe30c90f9d43a92ad4cccb25484c
+SHA1: 51759fd01b33c3ca2e86fddac5a7d5b10b7364f3
+SHA256: 0a885dafe1fbc9240efe41789189b966eb05112f24cb57546588a5439ef2acf0
+SHA512: 46fd8e0599debc089eb31d7b8701df04cda3ad572284bf5305e42cef671afa9b8533ef61f8fe46e153bb898082e5b7c278fb8441b325303b3b78710604110be1
+Description: Static libraries for enchant
 Homepage: https://abiword.github.io/enchant/
 
 Package: enchant-static
@@ -8749,20 +8829,6 @@ MD5sum: a808d205e138eee3d669488768eb77d8
 SHA1: a8f385f367f4b5f02351138b7942ff2f2a192d5e
 SHA256: d7d22267d8192794210fea52a87c29b17053eaac7bcd6dcef99cfd1508c2592f
 SHA512: c188b44870c11593561d20d6b159dc0d4c0cbd825dbc9ace4ca117b0fde05e73630777cd5d7e25e6549f5694d76daa8ddefa1dcc9462702e6fdc145a565eb12f
-Description: Ping, but with a graph
-Homepage: https://github.com/orf/gping
-
-Package: gping
-Installed-Size: 2152
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: i686
-Version: 1.8.0
-Filename: pool/main/g/gping/gping_1.8.0_i686.deb
-Size: 714804
-MD5sum: 4c46c8c848a96282506ffffb002c719d
-SHA1: 35f58730176514c16c7dba437673a43fdd59138c
-SHA256: 7843db2c4faa805792d88fd31cb16bcdeaad0d7f98e6b2c438402a6f843ad52c
-SHA512: 00e9b619b3253caa5011cd97cc9dc4282a2361459a76bde861c9c186e7e6f473a8206928d8c4ea36da8cd93dc5b080a65989b23c5efdf901d988de5df626d779
 Description: Ping, but with a graph
 Homepage: https://github.com/orf/gping
 
@@ -13951,6 +14017,22 @@ Package: libcompiler-rt
 Installed-Size: 12848
 Maintainer: @finagolfin
 Architecture: i686
+Version: 16.0.4-1
+Depends: libllvm (= 16.0.4-1)
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_16.0.4-1_i686.deb
+Size: 1321220
+MD5sum: a270042460aa0c16bdc984e555a58368
+SHA1: 6fd65bb4ed00e514b90d26d8f1aecd1fb3926f17
+SHA256: 07886aae6b31706537ea2c13a3045b6ad025636ea5f663513ed8d8d8539c1cdf
+SHA512: ae84f67a1fcbf55f6096f2d2b9b67e1ff1bbfb9e438c8c2d384105add9228665068c6bf6c4a7400760df1f64813c98a2a536f148313a9374191c579b420ec254
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
+
+Package: libcompiler-rt
+Installed-Size: 12848
+Maintainer: @finagolfin
+Architecture: i686
 Version: 16.0.4
 Depends: libllvm (= 16.0.4)
 Conflicts: ndk-multilib (<< 23b-6)
@@ -16675,6 +16757,24 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
+Installed-Size: 148648
+Maintainer: @finagolfin
+Architecture: i686
+Version: 16.0.4-1
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_16.0.4-1_i686.deb
+Size: 28672552
+MD5sum: 1d69e2f638c6499f86da0e57e054a097
+SHA1: f4a49aa0074c73d73abb95b3b201d49c779b343a
+SHA256: 838dd9141fc45a39677093eae036903748e69f0e24e2c7d596eaef37f8af8b5b
+SHA512: 0740d23de1f27336be569b16cff1f272a9454840db27ec23cc82e0b914cc4c5552f7a6b5bf209ec03d3ad68d3d6b5406f4c7699bff9ed7bce9667acf7fd20d51
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
 Installed-Size: 148652
 Maintainer: @finagolfin
 Architecture: i686
@@ -16690,6 +16790,21 @@ SHA1: 37aa012b66b848fc3a6b2dca0138ea213bc52ac2
 SHA256: 59c5e1c7d1e7033e446589b1212007d2c3b978e1fa67210bb0a239aa2bfa49a9
 SHA512: f9e9adfec52a8b73f4f1305253e2f4dc502fcb41637698ed162057c3e6bda8a457ad2b0269840a576e35dabdc8b02dc775d45acc81c67f6efc91876845d3c937
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 513440
+Maintainer: @finagolfin
+Architecture: i686
+Version: 16.0.4-1
+Depends: libllvm (= 16.0.4-1)
+Filename: pool/main/libl/libllvm-static/libllvm-static_16.0.4-1_i686.deb
+Size: 69009064
+MD5sum: a619da6df5a855107f45dd7ddb9cde1e
+SHA1: 0d78c243f2b6d5c5b701e06b19e96596ebfced8b
+SHA256: fda63cf7c3c8d34e8bb26ae16fb227d99c3fb716206f347f887870d7f83f356a
+SHA512: c222688af8df01dc49315f24ccea103ed5a33a8bff2a3b3721c92151b9b82871deb1d777e406221ee65a6b271996837449a040161f4f94ff048aa5eda549fa17
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -19096,6 +19211,21 @@ SHA256: 0107dfea4b61f041e799c320fcc95e5f96fb51b49f452d3941a367f1d3f3d5a0
 SHA512: 9d7477a74466e2a68a4d78bf31fdbad7e7e18992eabc1d5679da58ee3e75689a418038bfa3a2190504fbd966e6ea07677461a3a2da7480a7e73f6baca32dc60f
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 5948
+Maintainer: @finagolfin
+Architecture: i686
+Version: 16.0.4-1
+Depends: libllvm (= 16.0.4-1)
+Filename: pool/main/libp/libpolly/libpolly_16.0.4-1_i686.deb
+Size: 1406592
+MD5sum: a234020c2ce6002371b3fb64da654918
+SHA1: 417dbb2616bfef73e1753cd7f8f4634dedb72c40
+SHA256: b78bfaef10d856362184333ca392a354eaff565dfe5aea831f0243373a3af428
+SHA512: 41d43d187ba04e7057d6cef62bd42d523e21a6e68355af4f0438af047711c22105e5460d37b9d93950a78c09a44d1dd3483d7920e278d6a3640e5cb8d3e95928
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 5948
@@ -23271,6 +23401,21 @@ Package: lld
 Installed-Size: 14156
 Maintainer: @finagolfin
 Architecture: i686
+Version: 16.0.4-1
+Depends: libllvm (= 16.0.4-1)
+Filename: pool/main/l/lld/lld_16.0.4-1_i686.deb
+Size: 2366232
+MD5sum: dac249dacf66a275c53c56355eee3eab
+SHA1: fe3e2c9b14ee7a4031f25e1c12d520e2b31a9f33
+SHA256: 6269281c10bd36bc0bf186d49bd657f3f4eed9b4e6a196bd140d09f71d2fd384
+SHA512: 3325b19ed9a5f92d88a7a89b9759be8d22f5c4ef9806055c2e4930f13cfe95b380534001f9cdd53a5066b145fe5527848168eaefe82985c6d2772c9315cc6852
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 14156
+Maintainer: @finagolfin
+Architecture: i686
 Version: 16.0.4
 Depends: libllvm (= 16.0.4)
 Filename: pool/main/l/lld/lld_16.0.4_i686.deb
@@ -23280,6 +23425,23 @@ SHA1: 8b888d10d6c7b7a5d74a7f4f97de4541a4529fbf
 SHA256: 2140d16dbc712cc6e1922ba2dd8e11dd0c323715e1fe9b17bb576c47d8165ba2
 SHA512: b16b5240ad70b71b821ca2bc5e5fda45f1b495f522256844f321b06ca84b28d66641595cecac338b3c372a8d8144710827a94bac7ba9d37b4779f75f3819e41d
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lldb
+Installed-Size: 23060
+Maintainer: @finagolfin
+Architecture: i686
+Version: 16.0.4-1
+Replaces: lldb-dev, lldb-static
+Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 16.0.4-1)
+Breaks: lldb-dev, lldb-static
+Filename: pool/main/l/lldb/lldb_16.0.4-1_i686.deb
+Size: 5117064
+MD5sum: ae44db8e8724a620a87f7d6b659bc950
+SHA1: 6e96bf71702a6198c123a419eadb5d48c98404a7
+SHA256: 3ad281811f80c253b21affb650922bb610f94c367404e950ca95399798d61bf4
+SHA512: 40db04d073ef4e5f648f8fa7ab16b7e718be2046b03a48b74a444aeaad58c6795682bc14710b921e09bd2a5157420ee2220fa6005461396c05937c7d4df81285
+Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
 Package: lldb
@@ -23297,6 +23459,23 @@ SHA1: 97597f9d3ad3dd1da94cebbfdd37058a7160ea15
 SHA256: 1202adb2873d04d161d01c92e9dccaf0e8ba908bff73b479b373ff60891d32fe
 SHA512: 989248337f997c7fd9ae4d44f906b49db2f03915b9e573b68005741f366aeda10658683a1c516f6b978fb341670cc62002a45888afe634ebd662e3b20b8cbd72
 Description: LLVM-based debugger
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 106080
+Maintainer: @finagolfin
+Architecture: i686
+Version: 16.0.4-1
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 16.0.4-1)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_16.0.4-1_i686.deb
+Size: 20846796
+MD5sum: e3d6212e089d62ac528d58002bc4b05d
+SHA1: b2a27832f3031049e976922398e6df9590f3510f
+SHA256: f890802704bb8100d4ffe6ba25d42fe7522fe9f3660c202d122f3fce9ec5081d
+SHA512: 194b51c02ae9072e8be3ccf6df33d6430c8a86fa42981c62919bb45dae132161b563e220d6d3f906aacf487a85ed27ef339085fa5043820be540d33677d8526b
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -23379,6 +23558,23 @@ Package: llvm-tools
 Installed-Size: 11348
 Maintainer: @finagolfin
 Architecture: i686
+Version: 16.0.4-1
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, libllvm (= 16.0.4-1)
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_16.0.4-1_i686.deb
+Size: 2361952
+MD5sum: 72a8d0ef041e8d0de292c8bb72b445fa
+SHA1: 07d19524c7aad6f2f9d7e30a9c29e61e74502e7f
+SHA256: 04a38e1a9bdd98a38551c5fb2e821e31faf58687879ddcf6fce80235f5ee8c54
+SHA512: e60bcc69076af8d483fe1cb7f25db866089d7e2660899629a11dd147d83267a9ba8d47efafb31a32b7f283ece3b4baac6420aa466f6c5dcb67db34c1adb611c7
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 11348
+Maintainer: @finagolfin
+Architecture: i686
 Version: 16.0.4
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, libllvm (= 16.0.4)
@@ -23390,6 +23586,21 @@ SHA1: 6f72324b351a68607ec1ac9bfa1311dc85d1290c
 SHA256: 84a237ed24d34d32bf93744ae10a602f3a89e84773fc8505baacba4b052d79eb
 SHA512: fa9429703b9fb60373cd89809ae6384f72a9bdf0a9854c69274600d479c94adccb7913a255f67c51cf6355adfd796fe2618f42ace77d4e0b4b09955419a637db
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 108
+Maintainer: @finagolfin
+Architecture: i686
+Version: 16.0.4-1
+Depends: binutils-gold, libllvm (= 16.0.4-1)
+Filename: pool/main/l/llvmgold/llvmgold_16.0.4-1_i686.deb
+Size: 29204
+MD5sum: 5a0add6880b4f7f89f8c6620b86ef19e
+SHA1: 6c7d510389efdaf5ca2192512fc3641dc8264e60
+SHA256: 3287fb6e94171d8ab7dffc4414d5cd4938442e9dc64c89298cfa2c2ab2929b7f
+SHA512: 17155700227641cd21e5b718379f1b5d30b940c471609d8157e6d043a705f0f6f1ceb9de768df2c73b08c69308a3ae4091e696b204bfe24a1f2734e585b0d337
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -25119,6 +25330,21 @@ SHA256: ca9a54b5da2576d9c324bebea0ea8e83c5434c94a4cc6ce00ee8b99eaf53836f
 SHA512: 78e7e89c2290a3362ce5996334f903d50e778482caf4502e0fbe8f661ce8c27cd4ebaa6653c26a47d14f9c662b5296c8f5be4775dd803b2f24d8165b2696684f
 Description: Set of tools to create, edit and inspect Matroska files
 Homepage: https://www.bunkus.org/videotools/mkvtoolnix/
+
+Package: mlir
+Installed-Size: 184676
+Maintainer: @finagolfin
+Architecture: i686
+Version: 16.0.4-1
+Depends: libc++, ncurses, libllvm (= 16.0.4-1)
+Filename: pool/main/m/mlir/mlir_16.0.4-1_i686.deb
+Size: 26751368
+MD5sum: 47b7df75f6180b030068d16674a86259
+SHA1: 835218190bbf03646a8c23d9acb3e8e70df42e4b
+SHA256: 0921de94017d68c82170addc904a6c928f077ccd26e191ee2e0175b64e3ac140
+SHA512: f8d3f06537fc694319e9c679428ef8835643a680c5024deed9bd237d86f6ae3228c395c05dc73cd3f376b7739679cef7a0593253960285639cf3f0da526f0e22
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 184676

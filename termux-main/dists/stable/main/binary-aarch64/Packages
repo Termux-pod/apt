@@ -2497,6 +2497,23 @@ Package: c-ares
 Installed-Size: 492
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.19.1
+Replaces: c-ares-dev
+Depends: resolv-conf
+Breaks: c-ares-dev
+Filename: pool/main/c/c-ares/c-ares_1.19.1_aarch64.deb
+Size: 118864
+MD5sum: 1387b60cc1f7b2dee25102676fbe8074
+SHA1: e9b6332b7e4e064f758b3276881b3b85c8d34311
+SHA256: 429e5f9c835521b1d95ab50c96addf15c36dad27013feca572c08810f7c71d00
+SHA512: 2f7bf3f50eff80337cae0aad37e5aa93637f7e5385159c06b139e3ce7675364d00a0eb1844594eefd0b1008395dd45a8b06f573555c1fd3c67e8296e8f4763e3
+Description: Library for asynchronous DNS requests (including name resolves)
+Homepage: https://c-ares.haxx.se
+
+Package: c-ares
+Installed-Size: 492
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.19.0
 Replaces: c-ares-dev
 Depends: resolv-conf
@@ -3285,6 +3302,23 @@ SHA256: 53370246a9728374728c2c700f6fcb1698af3125fe8697da3f03900362f5f1c0
 SHA512: eb754b5b98cd8dcc8e0260f2588c00603774d44fd081956c8b09d17fb0975dc0290474914dd63d07551875faff8d381b8f48f6dfacb861a642dbb9d5f1bbd4c2
 Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
+
+Package: clang
+Installed-Size: 193680
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 16.0.4-1
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 16.0.4-1)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_16.0.4-1_aarch64.deb
+Size: 30235456
+MD5sum: a58eeeb55fc3041e74d341b12e33c2ce
+SHA1: 610afe26a8bd3fb2dcd879112f2f4f869e6d8697
+SHA256: d2587967c068c8ef7e08abd862432d98e8bc63d71b4b31d466fba26cfdc27196
+SHA512: 6623263484183a570912099569e02fcd525f7ff94fd5bcf98040e00a352850db8d2322f85073f6c8d5256e71a9bd8407c65764bb6eb29dcf8bcf5297355e00de
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
 
 Package: clang
 Installed-Size: 193680
@@ -5592,6 +5626,22 @@ Description: Full-Featured Text WWW Browser
 Homepage: https://github.com/rkd77/elinks
 
 Package: elixir
+Installed-Size: 12292
+Maintainer: @termux
+Architecture: all
+Version: 1.14.5
+Depends: dash, erlang
+Suggests: clang, make
+Filename: pool/main/e/elixir/elixir_1.14.5_all.deb
+Size: 5225888
+MD5sum: a57321f85022668370c0b77cc080c99c
+SHA1: 41ac1c846f05db38fc3b46575720ef89cd06ce85
+SHA256: 57ac06ea6f6559e98f84bf11e4efd9e1f5df1167b4a980ccec4313c989601d8a
+SHA512: 74c04cf82a62d3f4870cfda2709354c5e7d78cec83c891998b1a1957ddeaaf158e910e005ad552bafbe071ba3a161f0874adf327c4a56ea5d84b95f3ceaf914e
+Description: Elixir is a dynamic, functional language designed for building scalable and maintainable applications
+Homepage: https://elixir-lang.org/
+
+Package: elixir
 Installed-Size: 12280
 Maintainer: @termux
 Architecture: all
@@ -5734,6 +5784,21 @@ Package: enchant
 Installed-Size: 268
 Maintainer: @termux
 Architecture: aarch64
+Version: 2.4.0
+Depends: aspell, glib, hunspell, libc++
+Filename: pool/main/e/enchant/enchant_2.4.0_aarch64.deb
+Size: 45452
+MD5sum: 00fba9be103db0f23eb4eceddeee949e
+SHA1: 08a3635be29a6d5b41f0e2da8e1e8c6cd8c650c7
+SHA256: 60b40fcbc7a260cad3474d359f4fe7119e252dd6bcbca17f48c66db6577fc5cb
+SHA512: 85401ad7e5ce91d19f1a15067ce3de67f88da337b8c483d137e89155039625d35270dc3ed477fd1b58c7ce5826cde48e7fbcd0fe476da1d2dcc5bb410844cd13
+Description: Wraps a number of different spelling libraries and programs with a consistent interface
+Homepage: https://abiword.github.io/enchant/
+
+Package: enchant
+Installed-Size: 268
+Maintainer: @termux
+Architecture: aarch64
 Version: 2.3.4
 Depends: aspell, glib, hunspell, libc++
 Filename: pool/main/e/enchant/enchant_2.3.4_aarch64.deb
@@ -5743,6 +5808,21 @@ SHA1: 6bba92acd7a42c4096b2fc882bb3306cb354491e
 SHA256: 21314ff164e06545c0808b377e88c8676213409efd4e9479ba3fe401bd442153
 SHA512: 238ac661a65de853c165437510af61ceb95b2a4f3482a867b55d9ee6df9f0f3c04d78b8b32840e918c65c8569e02d35c6a9f251113a1cf8e250beb2e5212ffe4
 Description: Wraps a number of different spelling libraries and programs with a consistent interface
+Homepage: https://abiword.github.io/enchant/
+
+Package: enchant-static
+Installed-Size: 1480
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.4.0
+Depends: enchant (= 2.4.0)
+Filename: pool/main/e/enchant-static/enchant-static_2.4.0_aarch64.deb
+Size: 59196
+MD5sum: 33d40dc537fe67c32f89a71ce0b9c010
+SHA1: 45b82f6f7479cf7403b7da81b8a65b7904d80777
+SHA256: c53554abbe5dce45eaedf0377cdca61647981a600904df7a0c8faf73e7749484
+SHA512: 1de9af7c1d5b221c4694e6e5543520dff83c072797dfd24267edda4e89c63f3fedd1d090af7d85b854d5b0825bc6162e9040be9af034bcc118a0d9bcf6a31129
+Description: Static libraries for enchant
 Homepage: https://abiword.github.io/enchant/
 
 Package: enchant-static
@@ -6608,6 +6688,20 @@ SHA256: 78fdbd643bf02a8acb784ae2ea389af4d61c489ecd708b3a87ecafc20fd9102c
 SHA512: 49443eff3c83558c0376b62ec4a9027edd11e4d5e694c3586ebc7eb1ca812fb5250fbdf47f4cad2da8885e29364d9ac44e979c55ee554922979a684b55f2c77e
 Description: Software synthesizer based on the SoundFont 2 specifications
 Homepage: https://github.com/FluidSynth/fluidsynth
+
+Package: flyctl
+Installed-Size: 41528
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: aarch64
+Version: 0.1.10
+Filename: pool/main/f/flyctl/flyctl_0.1.10_aarch64.deb
+Size: 9389976
+MD5sum: 25a592df7687091ec89663085c0fddd9
+SHA1: 714db3c18ea854d79551093538acb5970275e449
+SHA256: 9faee6e35593e170a0977dc730c9c6d9bbaaa420df82082ff26d7f5269afda11
+SHA512: ac3f60bea2175c30543b4be81385821cee0281575c9f2a0c6394d0b555ef15fdee82656ed0463f66c64da4ab5188cfb556153c91c3a6e277ff5deb0b23e6eada
+Description: Command line tools for fly.io services
+Homepage: https://fly.io
 
 Package: flyctl
 Installed-Size: 41524
@@ -8897,20 +8991,6 @@ MD5sum: 20f1f9f40867816eefe2644cb935c35f
 SHA1: dfa78ff3949e541b6250533bb656f0938b8c5f1e
 SHA256: 9be177fdf807c9123466dcf1081bd141a39e5c53d66848e7cc554cb0ca5623f8
 SHA512: 42f32a05bd9e8f6c07aadd68d4d6ace321230224b85a9af5c9abbb58c1870f7cf0ab77e2414927fbbbac01f0c884de31ad5623e16d8a88ba2b43c3b628c4c5ec
-Description: Ping, but with a graph
-Homepage: https://github.com/orf/gping
-
-Package: gping
-Installed-Size: 2064
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: aarch64
-Version: 1.8.0
-Filename: pool/main/g/gping/gping_1.8.0_aarch64.deb
-Size: 613300
-MD5sum: a2f468139ac4bf86bb44f8c608380b75
-SHA1: d652fe274439331e4f69ac0bb44ebbffee07e5c8
-SHA256: 862244b6dcc523cf439be62b7e7ca4462cf544a55c49b1404115db36c8b0c5d8
-SHA512: 5608e7771b5c5d2cccf11f417db90680c3f74a8deb1cb66e5e3ae36eb64765b7bb2873517107a28f5a3c37da634e8e89bae99aa91fb6e2093a83015bfda678b1
 Description: Ping, but with a graph
 Homepage: https://github.com/orf/gping
 
@@ -14130,6 +14210,22 @@ Package: libcompiler-rt
 Installed-Size: 32608
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 16.0.4-1
+Depends: libllvm (= 16.0.4-1)
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_16.0.4-1_aarch64.deb
+Size: 2472124
+MD5sum: b18020d72db88406fd84290c1a11e246
+SHA1: f1c52a921b31a123de9c9971cfa0648f342182cf
+SHA256: ba26e7e87a833c96c2246f786ab00dff66efce3a0069eff6688aa30fbffc2612
+SHA512: 78bfcce48e45b536ce5934a2a273bf1c8a4db7d1263b5f4afecf31d32aea67f0ea8392cf35406a929252adcb23b6a9062e6bf6b7f4fc2f08b2b04a83fb664fd7
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
+
+Package: libcompiler-rt
+Installed-Size: 32608
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 16.0.4
 Depends: libllvm (= 16.0.4)
 Conflicts: ndk-multilib (<< 23b-6)
@@ -16902,6 +16998,24 @@ Package: libllvm
 Installed-Size: 138796
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 16.0.4-1
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_16.0.4-1_aarch64.deb
+Size: 24061924
+MD5sum: cb65efc1cdecdcbf6c018e06db7077de
+SHA1: a57a82e0cca495bdbcc466fd77a94f50c9f5361e
+SHA256: a1adea9c534010ae640da98521fc5b7ba6dfc07119377b570ada96472a4581cc
+SHA512: a2573792ca817bd2e1c8113bd71efd4a618708462ad59e4d87742286e49fe7ef91f77dd58e66c18915ef6137365a78b80ae428cc29362c50611f652dc8c513fb
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
+Installed-Size: 138796
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 16.0.4
 Replaces: gcc, libclang, libclang-dev, libllvm-dev
 Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
@@ -16914,6 +17028,21 @@ SHA1: 5a10c57f735d944193b6563b658da9c336877d27
 SHA256: b803eef1b069fd16794386c33f131ef7332d0d02f67ff6505aa406f19b0c701c
 SHA512: d4c8b3e0ba11dd2d35ab509de4a34573bcaf765fae38044e5037d4b5924aff33f9e5db5098f429265d24578938728d2a925712ca7d7410954add6275e3407c18
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 605856
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 16.0.4-1
+Depends: libllvm (= 16.0.4-1)
+Filename: pool/main/libl/libllvm-static/libllvm-static_16.0.4-1_aarch64.deb
+Size: 64020744
+MD5sum: 87c70e0db5bdf1c19fb8394d2cd05c5b
+SHA1: 4bf4e8c4ec99a13250509ba5247125c45240bc7d
+SHA256: e8736d46c8503e2acff592e4ce2bbe24e2a5b73b954f5b55cf7b4d59e2bf5a7b
+SHA512: 4ecb3a625ed6f547ecc1bede178d54dd691dd80446fd841f9d383264102aae2730aeea73c0d6a3962162978891710a5b22aa53f4958111a8df416ad80cf846a3
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -19320,6 +19449,21 @@ SHA256: e90e67bf2778b1268da1d24cecbab413132cffbd26eb8c72358edd117c32b150
 SHA512: 9061bb0e2f0f7d1a42510f2a6931f1b74780a7a508144765ad92906940a3a3ed6b14f0d615bd0e61c723502a11ea21fccfd52a8b4d5b065f20a736fa0be4e87a
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 5692
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 16.0.4-1
+Depends: libllvm (= 16.0.4-1)
+Filename: pool/main/libp/libpolly/libpolly_16.0.4-1_aarch64.deb
+Size: 1185280
+MD5sum: 287f70561b3f848412e22e633493f103
+SHA1: a7e13770871ef1b3c02df020ef376f46d6221015
+SHA256: 953a45a5b5c7c143007d1ec383e93bfa6432c0eed9ed66573997ab2c099b8878
+SHA512: 0c77b6a0f94e798b2376a0de02763334acbacc8b0e4326f2781545f8058bc5a7ae1261b539bc2d0e47464f9c4ae62831c2997844ef4369a57aa2e82e8ec39994
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 5692
@@ -23495,6 +23639,21 @@ Package: lld
 Installed-Size: 15664
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 16.0.4-1
+Depends: libllvm (= 16.0.4-1)
+Filename: pool/main/l/lld/lld_16.0.4-1_aarch64.deb
+Size: 2148972
+MD5sum: 1b54b1330e8c7526554a0321fa05235a
+SHA1: 90bd25ba1df392112e4e7036f79eeff1fa0762a5
+SHA256: 08c1cc44ac56311907d556d4c29db5514f00035d10c6ba8887e92fd0217200a5
+SHA512: 847e1c8949d49d355cc53c78228b631d16a5fab05ae3bd73780d096d71ec380bda86088d6709f8eb48c6af97e580dcdd110a6dd3335beaa3040d8df4212b052f
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 15664
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 16.0.4
 Depends: libllvm (= 16.0.4)
 Filename: pool/main/l/lld/lld_16.0.4_aarch64.deb
@@ -23504,6 +23663,23 @@ SHA1: 6c36f91e1b13bd4881c7816fe0aed82aa09ace66
 SHA256: f3f777ff6387ec7c1ad354ea4753bf5e9e12d0366f83cf2d8a48afbff3bc04ff
 SHA512: 8cd1b6116e6ac4790b707b60025cec6dd37453884045e0e5c5a91a214d158a2f33d5863b95635b554de691855a2cfa22b9a67662a9bfdecfa5abe61eeb9c50fd
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lldb
+Installed-Size: 22264
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 16.0.4-1
+Replaces: lldb-dev, lldb-static
+Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 16.0.4-1)
+Breaks: lldb-dev, lldb-static
+Filename: pool/main/l/lldb/lldb_16.0.4-1_aarch64.deb
+Size: 4456920
+MD5sum: ace02c069cdfbd6f9ae73b0a3fa928a9
+SHA1: ea2915d13b6e09041c9075fd2337c8010d5d67ef
+SHA256: eb8ed1035aba57521c6e8b1cb2127e4985475b9101e05ba889330f129e1f9674
+SHA512: de534a1be2f75e976b96896be198f2a4ad4fa262a6afb0d04c74838a8fcc95a002f352028701f27d0ce33c155fdd5250d6d5f35b0f07542ab5af41778cdafa31
+Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
 Package: lldb
@@ -23521,6 +23697,23 @@ SHA1: a1ba272f56f6bfdc374c9aa2def8fe87a49f27ed
 SHA256: 7bbe94ace1b6d1c77f1fa1de013bf597373fc2d3656e61d14645a10ab643092d
 SHA512: 09cf5d58c8562f31bcfa97d219dc741ff6cca8ab99933348fccda5ba327393c42a88a92a75d7a6e0788bcf261e4babb620dbb20a4e4021ebdd2447c95cf4d01a
 Description: LLVM-based debugger
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 98468
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 16.0.4-1
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 16.0.4-1)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_16.0.4-1_aarch64.deb
+Size: 17284972
+MD5sum: 834eb881dd2533c35d0c7b8242b80d4e
+SHA1: bf13a37916e44d1baedaf5aa729fbb443d3ec151
+SHA256: bdd0eeeedfcfed266ad0b1d41ac6abf139a5bd83b098a2ec584c603eaca83623
+SHA512: 1c596b83be4b321ad9f85fc444e6c04e7963c4192e44e0e0407b56c374987a587900087126e566f7360bba495204fb1a2ef7168f6d16d5f930f958a7b204744b
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -23603,6 +23796,23 @@ Package: llvm-tools
 Installed-Size: 10740
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 16.0.4-1
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, libllvm (= 16.0.4-1)
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_16.0.4-1_aarch64.deb
+Size: 2018972
+MD5sum: e2bd2f52281e78ee4921e57ef1beca41
+SHA1: 2c473fcada303cb5d524ae007799fb71f72396c4
+SHA256: 1d29192a660937e1f0d5c866a0d09b7b72379edb6104d4cd24ae6b139256e42d
+SHA512: c435efcefdbca55c984fda6e29ccbd033dcf6cc7bb5fbe766732794b56ba50ef554881c1774a098a4fc98dbaa56bb9316654ef7fc3e04c43abbc7a89d4c4807d
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 10740
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 16.0.4
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, libllvm (= 16.0.4)
@@ -23614,6 +23824,21 @@ SHA1: 43abd107f0b32e7dc95f969f14e6951e124b30bb
 SHA256: 1144eb5345ec3a3423cb2dd255076f6b6e6c0bb15bcd7ee3ccca1de870da3634
 SHA512: 999d01c049a2f4af266a6d4ca0b9b83d84ecba22025f333cfcaf72b154a660a40a38515d7a23e9ad26d4be046b9f3e33dade936f61e14f8a4f4caec6b793165c
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 104
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 16.0.4-1
+Depends: binutils-gold, libllvm (= 16.0.4-1)
+Filename: pool/main/l/llvmgold/llvmgold_16.0.4-1_aarch64.deb
+Size: 26376
+MD5sum: d92220851bfa653fb9966dbe3cb82159
+SHA1: 4924c58b214081b4838b4592840c0a072826a96c
+SHA256: 89b1c757008eb0702ae18cb02e53ac7e0eeaba99edfeff25ee5edd522a22c936
+SHA512: 7200353f79eece575c062f000f29f7bbd0c84a21cb535add93ef2e54a4570bb946bdef161acabd44be8b85380f668a388cc4b30ad78f562c84adea71e6c038cf
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -25371,6 +25596,21 @@ SHA256: 56c47de314207055412eac419d3517ff864672b130b451d1b90957a61ab7bc87
 SHA512: 5be327150f7e1f0a7a52377616946a9ecffd21bcbb6a0a7f7574703d013b487599769b29102574f97a21af3728e41f70ab15a9edb31e4cc718895d2de8ef7a1d
 Description: Set of tools to create, edit and inspect Matroska files
 Homepage: https://www.bunkus.org/videotools/mkvtoolnix/
+
+Package: mlir
+Installed-Size: 172192
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 16.0.4-1
+Depends: libc++, ncurses, libllvm (= 16.0.4-1)
+Filename: pool/main/m/mlir/mlir_16.0.4-1_aarch64.deb
+Size: 23840160
+MD5sum: 4e0f12f75e3f302e969ce4aae996e755
+SHA1: b5ec73f8e050d032cb3f9a8f6828aaf638c75569
+SHA256: 187bd6959248d820fc3221867de336e14e785f0912bf53043ceee0a5b0e47fc9
+SHA512: f33f5467038fb716f5e422cd3937c25cb03e87894e22f75953bfa47f1dd2af9be6be445647c73801ac8da36b16eb026754d2898236a56af5c484a0230840f54a
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 172192

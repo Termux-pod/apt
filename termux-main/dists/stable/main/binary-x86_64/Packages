@@ -7276,6 +7276,23 @@ Package: gdb
 Installed-Size: 14144
 Maintainer: @termux
 Architecture: x86_64
+Version: 13.2
+Replaces: gdb-dev
+Depends: guile, libc++, libexpat, libgmp, libiconv, liblzma, libmpfr, libthread-db, ncurses, python, readline, zlib, zstd
+Breaks: gdb-dev
+Filename: pool/main/g/gdb/gdb_13.2_x86_64.deb
+Size: 3677560
+MD5sum: 5359ba28171a146f0430f24ab6d39ae2
+SHA1: 36e315dcefa01380f3444736081d2e338c9afda2
+SHA256: d415f667bb1499cd879bd184612320f46976c07605a7b2ec273c9170f8c8a777
+SHA512: eaba2a504f753168a2984c9ce00573d0f2c784e7cd07b60dbff1cbf56d37edf61a2724827fb4b4faa83f27cc10aa33554cb6ebb90216692fc2ce6f2999281471
+Description: The standard GNU Debugger that runs on many Unix-like systems and works for many programming languages
+Homepage: https://www.gnu.org/software/gdb/
+
+Package: gdb
+Installed-Size: 14144
+Maintainer: @termux
+Architecture: x86_64
 Version: 13.1-1
 Replaces: gdb-dev
 Depends: guile, libc++, libexpat, libgmp, libiconv, liblzma, libmpfr, libthread-db, ncurses, python, readline, zlib, zstd
@@ -7320,6 +7337,23 @@ SHA256: 93b52a65b007dffb5c120107356e1340143bedbc2b58223c182c46b2f8d30e53
 SHA512: f70c9d8fb76601a31adae7e9a78713e8bed4958a6245a4a59db3131a39f3e5c156019d5061f449fffd978cb4b293ccea0cf650b7052c9b28ced5ba1c10bd9124
 Description: Static libraries for gdbm
 Homepage: https://www.gnu.org.ua/software/gdbm/
+
+Package: gdbserver
+Installed-Size: 596
+Maintainer: @termux
+Architecture: x86_64
+Version: 13.2
+Replaces: gdb (<< 13.1)
+Depends: libc++, libthread-db
+Breaks: gdb (<< 13.1)
+Filename: pool/main/g/gdbserver/gdbserver_13.2_x86_64.deb
+Size: 211076
+MD5sum: e08eb5c20439f2ca5882cbbd2c54eebd
+SHA1: 0ba8eb86bf0fa75c8a6e25de770ad6f2d505044d
+SHA256: 33e73597e825084e7bff7562a51d7303ad4afcd6d983f535700737e1d69f3743
+SHA512: 51b42d937b2a6f0b8a41f0f185731530a34730014e9a5bc8070063b5cf201e566355fb11c5cc14d79a1ba3f2e64dd409a8a6398275c07ea461a81055ebd69acc
+Description: The gdbserver program
+Homepage: https://www.gnu.org/software/gdb/
 
 Package: gdbserver
 Installed-Size: 596
@@ -14395,13 +14429,13 @@ Package: libdav1d
 Installed-Size: 1724
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.2.0
-Filename: pool/main/libd/libdav1d/libdav1d_1.2.0_x86_64.deb
-Size: 521996
-MD5sum: ab96a6ec94f3c6a0e16576e9cbe451b6
-SHA1: 49ac8b5576cb131b134a4dc0b377727c708a17ea
-SHA256: f1af5831cd225ab7efdfd1c8bcb214a0e40a25238b0d9fe93394b9c4c7f8f063
-SHA512: a58b6d4ac3018c17cf8cfbbbe5a59de622f77232080b611560bf5bd26945c952989964dbe6c08632c058802cc7899f480db4998f264bfabe9411e4356b3d0b54
+Version: 1.2.1
+Filename: pool/main/libd/libdav1d/libdav1d_1.2.1_x86_64.deb
+Size: 522520
+MD5sum: c0d1abcbd1c64c9d7dacf01cec725426
+SHA1: 2d086baf89931293d2c89b7c5bcc29a80fde9f05
+SHA256: 807441362b1921c389faf0d9c1b209486c56307d63e595e71249c1b28c1b0c4b
+SHA512: 8926ac5b0c443359c525b4dfc968ed0a232abbbad74019ac42854d321a90d280eed4773f64360ede7a3c7e989020b35ed96e4ace41c0d052e67d4ae21906c5f5
 Description: AV1 cross-platform decoder focused on speed and correctness
 Homepage: https://code.videolan.org/videolan/dav1d/
 
@@ -24912,6 +24946,24 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 52672
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.1.1
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libexpat, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.1.1_x86_64.deb
+Size: 13265504
+MD5sum: a19873795d81f2e64a4cd56d81f6fe79
+SHA1: fcbd8622f3ad5b31d1138dd0fae8ae2364b2c9f9
+SHA256: 18c8328b03b952ab650acb0c52bc9b1b8ff30b974b4e6e753fab662e9ce7daa8
+SHA512: 431e325aac6754839eb858b47a32c2fb18b207d544017753aa87e9bbc0a2e190c02615c083ddffd0761a9b5b5c16e4a6428eb16eee5ee4b753fad4b36a175336
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 51812
 Maintainer: @termux
 Architecture: x86_64
@@ -24933,6 +24985,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 23.1.1
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.1.1_all.deb
+Size: 25060
+MD5sum: eb1f6a2be862bb2455fa9e89ca146eb8
+SHA1: 2b40f19482fad6b47ca7770eeed23ecf4810fde8
+SHA256: 271b4d2a37b4b72fb073baaa2008f4abb9997100f9ed3ade02805ddda7896854
+SHA512: 7d58179aba3da5d3da38dc66d7b46229695d0146f16d74fe3a61d94e60e190bb4da7882d532d35e9a39831129c00381065a6733fe13aedd8d72cae031d6365c0
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 23.0.3
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -24944,6 +25013,21 @@ SHA1: f4ab859e39f2d6ff58f39c11c272baea70bee786
 SHA256: 8718d8c982d18a97e347d041ecc9c64ebd97be58cca70164c47a259ab1a31b2c
 SHA512: 37877ff07938da3346e800aa6031b36634c5b1f09ac47b222e50978223574151bf0a5eb402084c0f1809123eee7e4b277976111cf08fe3a4982a039ac94f5272
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 53520
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.1.1
+Depends: vulkan-loader-generic, mesa (= 23.1.1)
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.1.1_x86_64.deb
+Size: 13280516
+MD5sum: 0b98f69da42e20ecd3f39fa4050ef549
+SHA1: 40d8d98b21c8185e9d2089788de5b2967dc8f46b
+SHA256: b98123b67afbe964a3849bcb2abd6a3687f3f227dcd2fbee6118390b5d2f5088
+SHA512: 914b59d16bd2c71d1f78258c325d6f6b5e337415c6cfedbb0a8b0a39884e0d2d9346978b9f517fa3c2c81ea3cec1b80fd77949f34b877f77ff0c32a620334044
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -26488,21 +26572,6 @@ SHA512: 6f9dde11bdaf97ffe1dff56053f3899660afdbfd96bcdb09445ea270b5e794ab761d93cd
 Description: Ambitious Vim-fork focused on extensibility and agility (nvim)
 Homepage: https://neovim.io/
 
-Package: neovim
-Installed-Size: 25816
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.9.0
-Depends: libiconv, libuv, luv, libmsgpack, libandroid-support, libvterm (>= 1:0.3-0), libtermkey, libluajit, libunibilium, libtreesitter
-Filename: pool/main/n/neovim/neovim_0.9.0_x86_64.deb
-Size: 5060700
-MD5sum: 771527cfa6db0fc6f1c176ece1e3d743
-SHA1: d81b733303a01d823524f066dbbabf85179dcda9
-SHA256: 42777ebe4eaed06ecfe64e4b880b112ebafe11d69549de78af3c0d6c430dd550
-SHA512: fd7f21bd9812408a596ee5f63edd1abb3ac49cd38f44626c03ff7c9f162882feb97675686d6bd9846f28c54893326ac2d1601f478c4d930d213961b8850b7dcd
-Description: Ambitious Vim-fork focused on extensibility and agility (nvim)
-Homepage: https://neovim.io/
-
 Package: neovim-nightly
 Installed-Size: 25864
 Maintainer: Aditya Alok <alok@termux.org>
@@ -27147,6 +27216,22 @@ SHA256: 383aa5873f5bbaa8ae5522ac40e636ad28e7c7637878304da18610ce3b64b180
 SHA512: b5747c4031d2295fc34e72da1703037d392e09deb1ffa9763b974dba927a8bdc79927649a3365642daecde51e9aab074950000846d12548b920ec5a13dc1fb6a
 Description: The most efficient usenet downloader
 Homepage: https://nzbget.net/
+
+Package: o-editor
+Installed-Size: 9744
+Maintainer: Alexander F. Rødseth <xyproto@archlinux.org>
+Architecture: x86_64
+Version: 2.62.2
+Replaces: o
+Breaks: o
+Filename: pool/main/o/o-editor/o-editor_2.62.2_x86_64.deb
+Size: 2968408
+MD5sum: eafb3427dc24e8e66d8dc0f478c5a0f6
+SHA1: 2be4a04b49abbd8a8b89c41713e57adae9354ea8
+SHA256: e343d4c80a5bb6723b1504950a907ae0556d1338357915d57f8d650673437490
+SHA512: c11aaa9d4193adee46a1826d2f32e615595d923471009428b36805d738a66f86c17d79172b966e5687ed7896e00ac35068c84df60e31bef6051cb3dea57f58f2
+Description: Small, fast and limited text editor
+Homepage: https://github.com/xyproto/o
 
 Package: o-editor
 Installed-Size: 9712
@@ -28058,6 +28143,23 @@ SHA256: 495264b23e1bbcfba74133fd2ea880b3032214c7cdfc6278e083b8679352af58
 SHA512: 0d2dd86311d2a9ce3a2ca0ce3c8a9340b82ad982cde24d1d33b6026e6a0bf94c2154389a551837f57e16d6ba2166fff288653523c7c894284935011a283a9e30
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 50748
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.1.1
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.1.1)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.1.1_x86_64.deb
+Size: 12843632
+MD5sum: 88d9eaefed27166d227cd3976bdbb236
+SHA1: 44a9ae7075a320ba340d071da8b60ca51ab855df
+SHA256: 7af962a0dbb9332c868b26358857dd75d912524ad27400cbd8b66f6e1ca83605
+SHA512: 718ad87c6f7ee74e7077bc19f0e5b707b6a4ee6f23f0a6ec904d6e6c37ea683366e2498a9bebdf435568134dbab291041d68e49fdb928f9c8a3fb17cc224d51a
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 49932
@@ -32343,17 +32445,17 @@ Description: A cross-platform command-line tool for executing jobs in parallel
 Homepage: https://github.com/shenwei356/rush
 
 Package: rust
-Installed-Size: 387124
+Installed-Size: 385180
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.69.0
+Version: 1.70.0
 Depends: libc++, clang, openssl, lld, zlib, libllvm (<< 17)
-Filename: pool/main/r/rust/rust_1.69.0_x86_64.deb
-Size: 81709924
-MD5sum: d78591d040c4eb0503539124d64efb37
-SHA1: df93143d93ab97a1bc91b2127e089ce33e488c1d
-SHA256: 6890cb6de79cbaebfe071b37035a96a8ba6126d0a640e22e724b64ac945d2a78
-SHA512: bc17515d02b936833276f38a9517a4c3b9654705aaba2d07a15a58a8ffb4200bd352d31c6ab4dcd71327dbac928940cd2ccc4adfc58353929946fe7aed5e76ba
+Filename: pool/main/r/rust/rust_1.70.0_x86_64.deb
+Size: 81732076
+MD5sum: cc6e452c92517f8e253518e9691b843b
+SHA1: e9726403afb0b8379b22a456e6ee5afa9ca96943
+SHA256: 1d16c90d53881fd0a9345c7cdbfc0de3ea9fad968cce04aa3655470a9a07ff47
+SHA512: b4ea8aad9c9404b938c16b7ad5b5d28b3ab7d471c8a577feeed5f01c408f8bbbd3753002f3852524516c60dcd229ee1688fcbe414b727651735e95454a29be65
 Description: Systems programming language focused on safety, speed and concurrency
 Homepage: https://www.rust-lang.org/
 
@@ -32386,47 +32488,47 @@ Description: Automatically generates Rust FFI bindings to C (and some C++) libra
 Homepage: https://github.com/rust-lang/rust-bindgen
 
 Package: rust-docs
-Installed-Size: 659816
+Installed-Size: 659976
 Maintainer: @termux
 Architecture: all
-Version: 1.69.0
-Depends: rust (= 1.69.0)
-Filename: pool/main/r/rust-docs/rust-docs_1.69.0_all.deb
-Size: 26453284
-MD5sum: 843ae993f8a6a1a946b087468b0bfc49
-SHA1: 20efafbb6c7f5b3331ff3cbb9ded43e4876a5d20
-SHA256: 1a8cb2310f356f69efe68a25bbb41f3f29d5ed578c65e6c73989874ef4cad6c5
-SHA512: 8e310081e6161468e31cf3d209819341c2c57965b06fa7e72590aebf0229ca51b7dc7b5c13fbe2d932dc0f669eaf0abb1038f6bc7869bca87cbc60653dbda913
+Version: 1.70.0
+Depends: rust (= 1.70.0)
+Filename: pool/main/r/rust-docs/rust-docs_1.70.0_all.deb
+Size: 24560364
+MD5sum: 885f24691b453c528ee66d49ddc7e4b9
+SHA1: 175d8c96cf4ca97ddee48aadf52220f04ec2740c
+SHA256: 2f7029d86687e7ab6f9718a494e055efb90c860488b56a87f8200d8159d94395
+SHA512: df2d15408179eb29644a496d260b9b1ebf1bf669b3da53c213bf5b4856c81bdf54c9f222f2e9b6d35d0ed61f60e6cea29862c461525f854103f45ba64761579c
 Description: Rust documentation
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-wasm32
-Installed-Size: 85512
+Installed-Size: 79916
 Maintainer: @termux
 Architecture: all
-Version: 1.69.0
-Depends: rust (= 1.69.0)
-Filename: pool/main/r/rust-std-wasm32/rust-std-wasm32_1.69.0_all.deb
-Size: 17696632
-MD5sum: 9b768c312834a1f4a4f37dba2fd2b896
-SHA1: 7d926f6becf6419cbf08e672ca13c7a2e9ef79b5
-SHA256: 17f09971a1afee399f1e6add66c17eb922325ddc28746467586584a6b6b8d93c
-SHA512: 8bed66f8b25104f4fdcaa3d31785ff9ff9ed05a88ab45eaab71bf8e69b29ee1eecafc838421b91ba979d746a72cf77ba58625e082533b213cc11fd3580608e80
+Version: 1.70.0
+Depends: rust (= 1.70.0)
+Filename: pool/main/r/rust-std-wasm32/rust-std-wasm32_1.70.0_all.deb
+Size: 17301372
+MD5sum: cebc21fe2cff2008d29050c00d4cd0bc
+SHA1: abeccb1ba7cb098b4f18b755e6710151252ee571
+SHA256: 2596eede96174fb74ac864edeb76cf9114de406719a6b088985d8f687ef1bd4e
+SHA512: d13233b8af423bd0aad45e0d9c3f5d38ac9b5e14525925ec4572d31460be3b1d37a404d1c76766b2b976635b7da7f6ecd0898096332c1199acfd45dbe67edab3
 Description: rust std for wasm32-unknown-unknown target
 Homepage: https://www.rust-lang.org/
 
 Package: rustc-dev
-Installed-Size: 358200
+Installed-Size: 356176
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.69.0
-Depends: rust (= 1.69.0)
-Filename: pool/main/r/rustc-dev/rustc-dev_1.69.0_x86_64.deb
-Size: 68872372
-MD5sum: 37ab95b3b11e3cdceff9ee3558a8b8a1
-SHA1: c362dd19ad38cbd3e81f85b94160c4c88422eb46
-SHA256: c867b7b510bb9ba75b3e9052e52fe02a818235145b4d148ecd67241786726e1b
-SHA512: a1113a19d7afb4d2d5d13035caf83fbfc5e9eb9dfc92a6edfdd278aa257c4491c0cddc5b1260622c0210c78b9acac50a0b78d7e06e33d24196d252b991a47f60
+Version: 1.70.0
+Depends: rust (= 1.70.0)
+Filename: pool/main/r/rustc-dev/rustc-dev_1.70.0_x86_64.deb
+Size: 70096712
+MD5sum: 1b1e576d2f90b218d93c04d51ab0220a
+SHA1: a7c42b17be1c0d25eff32de03f261f838602b60c
+SHA256: 940f683d0dc3c71de708485cf6043267f20da2f0bebf6b7c089c7d504581594a
+SHA512: fdbffd998adaca802352194551cf88ff2ea75b62b9eff669236b9cd8789ee5d060ed9c32b06f41093ce6893575711172390f1e1875644eeb2651db8384de0b29
 Description: developer compiler libs
 Homepage: https://www.rust-lang.org/
 
@@ -36928,6 +37030,24 @@ Description: A platform for building proxies to bypass network restrictions
 Homepage: https://www.v2fly.org/
 
 Package: valac
+Installed-Size: 13408
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.56.8
+Replaces: valac-dev
+Depends: glib
+Recommends: clang, pkg-config
+Breaks: valac-dev
+Filename: pool/main/v/valac/valac_0.56.8_x86_64.deb
+Size: 1788236
+MD5sum: 5be864a1c0b8f1da3b51c4069e7e405d
+SHA1: 00a5dd9cda66b2601cf7eb6ffc19bca762e3fb15
+SHA256: 2f2a1e15d3232de0109d42bc4fb3e143799d3f7f5e18737f22f2564ddf4528b8
+SHA512: 8f0334c7814e37b094cf6e16f8a6b528b8b71f983e78e51b68a79134cc61903596b40a0b302f64e757737951a62d5d9f274abbb0948c427db5851b79a83da48c
+Description: C# like language for the GObject system
+Homepage: https://wiki.gnome.org/Projects/Vala
+
+Package: valac
 Installed-Size: 13404
 Maintainer: @termux
 Architecture: x86_64
@@ -36949,6 +37069,21 @@ Package: valac-static
 Installed-Size: 7068
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.56.8
+Depends: valac (= 0.56.8)
+Filename: pool/main/v/valac-static/valac-static_0.56.8_x86_64.deb
+Size: 923516
+MD5sum: e396a5616d42799bd11b20df6adaabfe
+SHA1: 1f7040ae61a01fcf2f84ce227b5ac502ac1623c1
+SHA256: d5e6ef297cd353e9070856e4aefe9f1ef1e5cde34abb8a3a1a660e0748b27ad5
+SHA512: f8ac31aec88d4e8c87c4d4eb038e680bc463ed2227f80640022172536c0c70d0990c6ab9a389593548e15863f0ad095289d368aa85a8fab7fc58d85620c4d2f6
+Description: Static libraries for valac
+Homepage: https://wiki.gnome.org/Projects/Vala
+
+Package: valac-static
+Installed-Size: 7068
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.56.7
 Depends: valac (= 0.56.7)
 Filename: pool/main/v/valac-static/valac-static_0.56.7_x86_64.deb
@@ -36964,6 +37099,21 @@ Package: valadoc
 Installed-Size: 1952
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.56.8
+Depends: graphviz, valac (= 0.56.8)
+Filename: pool/main/v/valadoc/valadoc_0.56.8_x86_64.deb
+Size: 372524
+MD5sum: 0f5e4a1b0573f7e4ebe10711110b9dac
+SHA1: 166c173df38285558188c8556c3d2cf44239941c
+SHA256: ba31898d944e8ea6faf1b1652e76a98641319cb9ca30710d94c0abb401359b32
+SHA512: 513d0160cfadad22247b3213c82513ca1677b0c034dce433285d15f31283346c92f751f77b375de4aa5a15bba419ec035b49dedaaf47ce246df557ee7aaddbc5
+Description: API documentation generator for vala
+Homepage: https://wiki.gnome.org/Projects/Vala
+
+Package: valadoc
+Installed-Size: 1952
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.56.7
 Depends: graphviz, valac (= 0.56.7)
 Filename: pool/main/v/valadoc/valadoc_0.56.7_x86_64.deb
@@ -36973,6 +37123,21 @@ SHA1: b090077249e691edeadaf6c40e138e7965b338a6
 SHA256: 4ad31d1fe39ff135df544c28edade84c0126129daa3ca3d177b6a4934ff24c9b
 SHA512: 5962211d7dbd76f0126fde8243b9d9c00f6691162de31ac741a896a7a9ef6d3ae6339a8a3353950bde7dfe0f8eaff36585416ccc3a8c274f6b2c95e9c449d9b8
 Description: API documentation generator for vala
+Homepage: https://wiki.gnome.org/Projects/Vala
+
+Package: valadoc-static
+Installed-Size: 2684
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.56.8
+Depends: valadoc, valac (= 0.56.8)
+Filename: pool/main/v/valadoc-static/valadoc-static_0.56.8_x86_64.deb
+Size: 362344
+MD5sum: 8fe0ee8100f7c163ebaeedad361f08c6
+SHA1: 8de52ec8605e04fe49282c24463f87ba68cc9c8c
+SHA256: 948f31d83d9d46b7e2b7c2bcb92ef7318d94ebed67fb29289343136f6dde9a37
+SHA512: 0cb8d20f8081b9f0e4071b889d342042ec9661fb968ca4c5ff995178150a4768028f1558e2409e50143da247b183010244547b13e62d1220a426df95011cf3d0
+Description: Static libraries for valadoc
 Homepage: https://wiki.gnome.org/Projects/Vala
 
 Package: valadoc-static
@@ -38416,16 +38581,16 @@ Description: XSLT command line processor
 Homepage: http://xmlsoft.org/libxslt/
 
 Package: xtrans
-Installed-Size: 320
+Installed-Size: 296
 Maintainer: @termux
 Architecture: all
-Version: 1.4.0-9
-Filename: pool/main/x/xtrans/xtrans_1.4.0-9_all.deb
-Size: 42780
-MD5sum: 4903f32ab424d316ee6c267b2970a77c
-SHA1: aee74377183fb92c2ec801c24e470bed59bb42ec
-SHA256: 3032bca152e81465542c493da10177c398e80cb6ed59b00bf4b0a02ca4ba1238
-SHA512: 11f39d43ccf07965c6771b2f6fce8362d452cb4b952d27a1982607ffd8dcc839705447c6378e3b0874b4482378fb14cd8250b558c806a4c2de1f6471f38ecf8a
+Version: 1.5.0
+Filename: pool/main/x/xtrans/xtrans_1.5.0_all.deb
+Size: 39628
+MD5sum: d98af2d574df84b0cc4a848769f4296f
+SHA1: b80fdb429cb838c44a180e3b12f72918a24cdacf
+SHA256: e2d3e171ed2903e21be97d885081ef3f9fad0c0813c6fd146078b4a686c3acb1
+SHA512: 7ff23e6a2286778a0e89a3ed6b26411927706d2cc9d6224bf3ea74e36fbcc6f97bd6124762b5312a873b8ab69fef7387a5cdf12b8eca492e7854cd1d9b5d4d2d
 Description: X transport library
 Homepage: https://xorg.freedesktop.org/
 

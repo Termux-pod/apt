@@ -3465,22 +3465,6 @@ SHA512: 3c1c26157b5e60d49ad320ed5c789cc8672bd6307a415027c6afa61dab7259d06d589d9a
 Description: Experimental implementation of OpenCL on Vulkan
 Homepage: https://github.com/kpet/clvk
 
-Package: clvk
-Installed-Size: 66220
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.20230530.161048gd52d82a7
-Depends: libc++
-Suggests: ocl-icd
-Filename: pool/main/c/clvk/clvk_0.0.20230530.161048gd52d82a7_aarch64.deb
-Size: 14850636
-MD5sum: cfa9722750afdbff73a942505e3900e3
-SHA1: 5cfe104facbcbd472a621a2a1ff40061e48cb86a
-SHA256: 83a775727a0d514f614cb1d6417b011f4f060776bc220c36235e5f64fed9245e
-SHA512: 5f18f7a723829b0a760ea8ae90c98292a533331a55423b61e368b92e110870caa698ac4929de50243d2902473f3cc52de6ea31afbf2a2e4e7704e5b2f0941158
-Description: Experimental implementation of OpenCL on Vulkan
-Homepage: https://github.com/kpet/clvk
-
 Package: cmake
 Installed-Size: 40272
 Maintainer: @termux
@@ -5685,6 +5669,22 @@ Description: Extensible, customizable text editor-and more
 Homepage: https://www.gnu.org/software/emacs/
 
 Package: emscripten
+Installed-Size: 67892
+Maintainer: @truboxl
+Architecture: all
+Version: 3.1.41
+Depends: emscripten-binaryen, emscripten-llvm
+Recommends: nodejs-lts | nodejs, python
+Filename: pool/main/e/emscripten/emscripten_3.1.41_all.deb
+Size: 12312572
+MD5sum: 18b5a4777831ec7647f8687c5c46d5bd
+SHA1: ad8661e7b39e28288aef8ddb3872efc87bf2d772
+SHA256: 2a0be3fb4dfa13ca94696a341997d51db6028392e670150e233f61de016bd82c
+SHA512: 62e0931e7d32785d6c310b3ae71d101cac5292b1cb217bd214d67d28e64522e8621bea2bc973411fd83b3791715a952fcecaf03f340781951db9042e3a49afed
+Description: Emscripten: An LLVM-to-WebAssembly Compiler
+Homepage: https://emscripten.org
+
+Package: emscripten
 Installed-Size: 67092
 Maintainer: @truboxl
 Architecture: all
@@ -5704,6 +5704,21 @@ Package: emscripten-binaryen
 Installed-Size: 23528
 Maintainer: @truboxl
 Architecture: aarch64
+Version: 3.1.41
+Depends: libc++
+Filename: pool/main/e/emscripten-binaryen/emscripten-binaryen_3.1.41_aarch64.deb
+Size: 3495080
+MD5sum: ca15bdea92f39f5fe65e911e7648e54e
+SHA1: 51ab2368319f4852efd126fa7c78e5976c5723f5
+SHA256: 7947b7f2218f8b8f594dbd576e35354eaf579196921d50c045e1a13b41144760
+SHA512: 4e80eb411d973f35f5aa7fcde275bef7bc84f036cff2c1187f310639b25eb587202f81b2b2d2e7fe6a0cece8baeb95cafb563b78296e9e4507dbf087b75caec9
+Description: Emscripten-compatible Binaryen
+Homepage: https://emscripten.org
+
+Package: emscripten-binaryen
+Installed-Size: 23528
+Maintainer: @truboxl
+Architecture: aarch64
 Version: 3.1.40
 Depends: libc++
 Filename: pool/main/e/emscripten-binaryen/emscripten-binaryen_3.1.40_aarch64.deb
@@ -5713,6 +5728,21 @@ SHA1: bbd8b0f17e3b80a547d7510d69da965819f99945
 SHA256: 9bc02c226890d193a75fe7700e1077db0f608aef2fc69020b2fb9b36e44ed427
 SHA512: ece1b20da0ac2ca23d5cc7d25965c87ae0c85da5eca010e69a7412790dc13286a79a70fce9bd9f5f700a1d8767e9be53da9d26fbbffc314517a4f80141816aad
 Description: Emscripten-compatible Binaryen
+Homepage: https://emscripten.org
+
+Package: emscripten-llvm
+Installed-Size: 178652
+Maintainer: @truboxl
+Architecture: aarch64
+Version: 3.1.41
+Depends: libc++
+Filename: pool/main/e/emscripten-llvm/emscripten-llvm_3.1.41_aarch64.deb
+Size: 30886484
+MD5sum: a79f17f0d4c6c6f7649d3268601a28d2
+SHA1: b823b6b4bc4f97e17b1ff6e00de5fdf5810a44d1
+SHA256: 9065c065b4640e3e7de0e046661693348412bfdb22fc1bcdff97177fd0457555
+SHA512: 1f935ae549f7a43bfe7404ee536979f5116c879bdd99a1028772c69e78f68d40d89d39ae9c5d77f9ba7c764c9b28618a8c62891e3e9157c3854a0bafa3286270
+Description: Emscripten-compatible LLVM
 Homepage: https://emscripten.org
 
 Package: emscripten-llvm
@@ -5728,6 +5758,21 @@ SHA1: dce4d599160c36ca54c21baf2cdf3a1227823a5f
 SHA256: 5d173e4ec37bff4e37219357d44a5273f367ee149967e8d5d1cd26044cdee57d
 SHA512: d59bd64f7dd4ef6980f3e8a182d966ed2d75427c2b425c21144ed5724208396df0620848b31f46712e19ae95781b083cde575eaea2dbe04128627f95a31e8d32
 Description: Emscripten-compatible LLVM
+Homepage: https://emscripten.org
+
+Package: emscripten-tests-third-party
+Installed-Size: 83252
+Maintainer: @truboxl
+Architecture: all
+Version: 3.1.41
+Depends: emscripten (= 3.1.41)
+Filename: pool/main/e/emscripten-tests-third-party/emscripten-tests-third-party_3.1.41_all.deb
+Size: 9706972
+MD5sum: d1514a5499e6cedf9eff0a0ef73ac0d2
+SHA1: e6cb9d52369cd10b1209834e909497c71ff70a38
+SHA256: a0fbac5f6c4aa7100e9eaf8f59d5ad80f1163d55ce957a3535cd4b72eec1e2e7
+SHA512: e2823b6b4ff8bf81e5e181c2ed1470ea4ce8be085e997594eafe33325f7684023903d7678ed95f10de581bbd68c25e5cd0469d21af6ebe46e414bdf3e04df238
+Description: Emscripten third party test suite files
 Homepage: https://emscripten.org
 
 Package: emscripten-tests-third-party
@@ -6640,16 +6685,16 @@ Description: Software synthesizer based on the SoundFont 2 specifications
 Homepage: https://github.com/FluidSynth/fluidsynth
 
 Package: flyctl
-Installed-Size: 41848
+Installed-Size: 41860
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: aarch64
-Version: 0.1.26
-Filename: pool/main/f/flyctl/flyctl_0.1.26_aarch64.deb
-Size: 9468340
-MD5sum: 0ce40efc61b96863fa16f28622f81326
-SHA1: d47dcb858a776ae1fd5921e1d26dfb71eadb9bdb
-SHA256: 9c621db0bcf938d9bb977ad865e50705f0bf44cb16d2de99ae0cd0fc99e47416
-SHA512: 57cbb8b8c8437f8e4cc24663a7b338a18186058b257123378868482bd006f35dd94f0e7c4c247d6cea5f3ed7e9912e59d5d931563c0c180cc1d7f16edcd1c736
+Version: 0.1.27
+Filename: pool/main/f/flyctl/flyctl_0.1.27_aarch64.deb
+Size: 9476796
+MD5sum: 50a8565e193c2c19b41367e8864c1f8f
+SHA1: fd1fc4ee14f21000d8abb290b40327d9fed3d573
+SHA256: 5cb39506f252408a0d6a74f443ecbbb3bb1a24fc8e4a311780610117f1267854
+SHA512: f504cfa16945bdd4d83a5277ed1cd056d6f46eb4eb6657b069977c36428f5b7ada4e9dc64ec4315d3304f06d69289afa9c4c8601b837c0b585ed07566375af53
 Description: Command line tools for fly.io services
 Homepage: https://fly.io
 
@@ -7420,13 +7465,13 @@ Package: gdu
 Installed-Size: 10132
 Maintainer: @termux
 Architecture: aarch64
-Version: 5.24.0
-Filename: pool/main/g/gdu/gdu_5.24.0_aarch64.deb
-Size: 2694240
-MD5sum: 0bd3c91c86d77a6eae37b6499565861d
-SHA1: ca0fd073238d6c582c94b37b50a2f3008b7dee34
-SHA256: f9e71afb74a24ec51a811d78b1870ba2b3d1a8525313ac654ab8f4f386224ba0
-SHA512: 6dec311fdc1266d20fddc5d9e2bb5ff050ba86aaacc133c0367d2f732ff42fe41d46d3f64b65385bb7a781d539d0bcf0ddaa525907e62b85e19e3085080ef8e0
+Version: 5.25.0
+Filename: pool/main/g/gdu/gdu_5.25.0_aarch64.deb
+Size: 2693864
+MD5sum: d585567779173abd61df50bcd536db4e
+SHA1: dd2cfed3a56e4827a7fb277a1b4d3006c83a219d
+SHA256: 6a863cadb58c0ee3c1144727223e95fa9c6a55b1d60dc3159f36b3a6457235b8
+SHA512: f607af33fe21a44e0a7c166de9952c79beb0d51ddb1aee6987e716b2e768dfbb75a3daafe5541ed8482305dcb6bfa5d7a1904a5a60e3e4516e7a4d2b71824852
 Description: Fast disk usage analyzer with console interface written in Go
 Homepage: https://github.com/dundee/gdu
 

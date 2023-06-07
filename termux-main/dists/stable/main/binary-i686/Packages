@@ -3421,22 +3421,6 @@ SHA512: 8a0953a1867c7b4203c3c4ed4e38b6df15a2aa9b0dc26e06b270c4b8326c157ff4d43b4b
 Description: Experimental implementation of OpenCL on Vulkan
 Homepage: https://github.com/kpet/clvk
 
-Package: clvk
-Installed-Size: 73364
-Maintainer: @termux
-Architecture: i686
-Version: 0.0.20230530.161048gd52d82a7
-Depends: libc++
-Suggests: ocl-icd
-Filename: pool/main/c/clvk/clvk_0.0.20230530.161048gd52d82a7_i686.deb
-Size: 18462336
-MD5sum: 563820229ca1d5bd11d82973e4f9b356
-SHA1: b8090548b34a99e6e5b0fae8b8c99ba5482f02d0
-SHA256: 19c3a129e1a288ca9621bd10f8f1763694ce7c172b5aa7a92cec0be89d3b9c7f
-SHA512: 07db8dc6389853bb200ab67709a739944a45f3e76b063268bd8216f63f32264d74b3dcd0a34798a70d653e7469c66ea83246b2377fa3bd5a654923515d58c0f9
-Description: Experimental implementation of OpenCL on Vulkan
-Homepage: https://github.com/kpet/clvk
-
 Package: cmake
 Installed-Size: 44288
 Maintainer: @termux
@@ -5596,6 +5580,22 @@ Description: Extensible, customizable text editor-and more
 Homepage: https://www.gnu.org/software/emacs/
 
 Package: emscripten
+Installed-Size: 67892
+Maintainer: @truboxl
+Architecture: all
+Version: 3.1.41
+Depends: emscripten-binaryen, emscripten-llvm
+Recommends: nodejs-lts | nodejs, python
+Filename: pool/main/e/emscripten/emscripten_3.1.41_all.deb
+Size: 12312572
+MD5sum: 18b5a4777831ec7647f8687c5c46d5bd
+SHA1: ad8661e7b39e28288aef8ddb3872efc87bf2d772
+SHA256: 2a0be3fb4dfa13ca94696a341997d51db6028392e670150e233f61de016bd82c
+SHA512: 62e0931e7d32785d6c310b3ae71d101cac5292b1cb217bd214d67d28e64522e8621bea2bc973411fd83b3791715a952fcecaf03f340781951db9042e3a49afed
+Description: Emscripten: An LLVM-to-WebAssembly Compiler
+Homepage: https://emscripten.org
+
+Package: emscripten
 Installed-Size: 67092
 Maintainer: @truboxl
 Architecture: all
@@ -5615,6 +5615,21 @@ Package: emscripten-binaryen
 Installed-Size: 23760
 Maintainer: @truboxl
 Architecture: i686
+Version: 3.1.41
+Depends: libc++
+Filename: pool/main/e/emscripten-binaryen/emscripten-binaryen_3.1.41_i686.deb
+Size: 3878808
+MD5sum: 75ce322f2b404286b7d4f3817be3c300
+SHA1: 87d243048068ff5d5f05645c5415ae7462efb48a
+SHA256: 9d8e1a72c950ae816e67c00b65112dfa20b113e55c358ab180edd6867d83ff34
+SHA512: a1085b4d1ce3974f629014d7ed254457b5a4251b859520d914b617f4ab94f374dc7d35c901bccca811dfe267a3ab62cb25802cb856f2e5df4c3a64a384021d06
+Description: Emscripten-compatible Binaryen
+Homepage: https://emscripten.org
+
+Package: emscripten-binaryen
+Installed-Size: 23760
+Maintainer: @truboxl
+Architecture: i686
 Version: 3.1.40
 Depends: libc++
 Filename: pool/main/e/emscripten-binaryen/emscripten-binaryen_3.1.40_i686.deb
@@ -5624,6 +5639,21 @@ SHA1: 4fedc260cd62b0aa831e2d3859fafd67008c45fc
 SHA256: bdbd5185c4548652369b44d0dacf482d856775acd57a4aebb0500d98eb261492
 SHA512: 42d582bcbc71b0d9271ec389b84a5750b27f1b43ce95d01a59765d50cf0b99331e4a682cf76562aca05d46e192a2702c3f24585102d937773ccd6740b3177245
 Description: Emscripten-compatible Binaryen
+Homepage: https://emscripten.org
+
+Package: emscripten-llvm
+Installed-Size: 170640
+Maintainer: @truboxl
+Architecture: i686
+Version: 3.1.41
+Depends: libc++
+Filename: pool/main/e/emscripten-llvm/emscripten-llvm_3.1.41_i686.deb
+Size: 34809980
+MD5sum: ab586c28348e3809034f273da5bf1832
+SHA1: 98b89e28a6f382c37b6092dac34f58a63c444316
+SHA256: a0b12a9c23c3a0fb09689e42f577e512ce3672ad39e06805422762a1946b50ac
+SHA512: 0d0275304c2ba700219cf6190c58f149e021fa2a35b355eab073be7c794c6a8098c304867d14e19c652d17e9fe4635258b8a4305f8323796df28a9da83da5ed9
+Description: Emscripten-compatible LLVM
 Homepage: https://emscripten.org
 
 Package: emscripten-llvm
@@ -5639,6 +5669,21 @@ SHA1: 6d42172b67b90910813690a29f1276514318475d
 SHA256: 97bb66fe1bf774a6e2f780d80eef273f3634fd115534bb182161b64501999826
 SHA512: 20320530cd22a354e58e4d744b55d29672a44bec371f82c4ff7909bf7069cb124da472f0c173a5a386fea7824740495e24dda6edf5b6672d7a2c6e959e795f6e
 Description: Emscripten-compatible LLVM
+Homepage: https://emscripten.org
+
+Package: emscripten-tests-third-party
+Installed-Size: 83252
+Maintainer: @truboxl
+Architecture: all
+Version: 3.1.41
+Depends: emscripten (= 3.1.41)
+Filename: pool/main/e/emscripten-tests-third-party/emscripten-tests-third-party_3.1.41_all.deb
+Size: 9706972
+MD5sum: d1514a5499e6cedf9eff0a0ef73ac0d2
+SHA1: e6cb9d52369cd10b1209834e909497c71ff70a38
+SHA256: a0fbac5f6c4aa7100e9eaf8f59d5ad80f1163d55ce957a3535cd4b72eec1e2e7
+SHA512: e2823b6b4ff8bf81e5e181c2ed1470ea4ce8be085e997594eafe33325f7684023903d7678ed95f10de581bbd68c25e5cd0469d21af6ebe46e414bdf3e04df238
+Description: Emscripten third party test suite files
 Homepage: https://emscripten.org
 
 Package: emscripten-tests-third-party
@@ -7269,16 +7314,16 @@ Description: Download a gdrive folder or file easily, shell ftw
 Homepage: https://github.com/Akianonymus/gdrive-downloader
 
 Package: gdu
-Installed-Size: 10160
+Installed-Size: 10164
 Maintainer: @termux
 Architecture: i686
-Version: 5.24.0
-Filename: pool/main/g/gdu/gdu_5.24.0_i686.deb
-Size: 3372688
-MD5sum: a14107f8fd9dbdd3869016e802305d6e
-SHA1: 735c899c842da1ec2404f827f5e66df962addece
-SHA256: 86b369a110c56ee2e2c81637f1b8cc269855aa1b3fced3542dca38c45a91a48b
-SHA512: a462ca7ed86279f2207658a35570ec424eec988ae2182df3c324f7d6a40da793118a11cc0a42fbf67bc1a13e57e4d74a1d9a5b283f806597a89dadeda8b99534
+Version: 5.25.0
+Filename: pool/main/g/gdu/gdu_5.25.0_i686.deb
+Size: 3374340
+MD5sum: 55ec57725774bcb659d0a2d5e0f06be9
+SHA1: ca5525cf9baa2425a88027495bc116594e685b6f
+SHA256: 01e7e7ef71f13f8d316a2a321ba9dad95315e08588e88568a7db86007ea90db2
+SHA512: 9d4188d916390509fff3c347e154037cb882fc105260ba305b4be605a49e29981810af890862b53c93ca5c87355a4fb93d43ff8d3a3df9a2f6f252d0719b48ce
 Description: Fast disk usage analyzer with console interface written in Go
 Homepage: https://github.com/dundee/gdu
 

@@ -46,14 +46,14 @@ Package: bindfs
 Installed-Size: 92
 Maintainer: @termux
 Architecture: arm
-Version: 1.17.2
+Version: 1.17.3
 Depends: libfuse2
-Filename: pool/stable/b/bindfs/bindfs_1.17.2_arm.deb
-Size: 22904
-MD5sum: ad97d568a196667fc4f824b2a2bff8bb
-SHA1: a08421d54f531c04dd001c935fdc9fb99ec40d09
-SHA256: 1cc311550f512ae4b9fb555612ff4733cd245605b676746d3bc7251f7bc4fe73
-SHA512: 0142502b2b11c33e3a7975cb4e78778075680764c0bc473c352219d8fb288bae99b6d2eb053baf96a18c8517a2e91c35d39470a29c625f85ec7082571ecc4867
+Filename: pool/stable/b/bindfs/bindfs_1.17.3_arm.deb
+Size: 22952
+MD5sum: 003c73ef335554eda68a360ce8688a2b
+SHA1: 25b8df3bc4d7540ec9884fcc1cbe41271be297f6
+SHA256: 90651cfcc393f484b2fb2496d213529157b55ffd81e2d2ccd3b97b1289e28354
+SHA512: c1999061dd7eefda4b7657e70098e1b506a9615bf368e9afe9e18d9663e529ce3f953162e518ffc7b7d9d86925517426cafa21ded004a81d4b00c306d99d0ea9
 Description: A FUSE filesystem for mirroring a directory to another directory.
 Homepage: https://bindfs.org/
 
@@ -259,17 +259,17 @@ Description: Python bindings and CLI tools for Frida
 Homepage: https://www.frida.re/
 
 Package: gocryptfs
-Installed-Size: 7084
+Installed-Size: 7080
 Maintainer: @termux
 Architecture: arm
-Version: 2.3.2
+Version: 2.4.0
 Depends: openssl
-Filename: pool/stable/g/gocryptfs/gocryptfs_2.3.2_arm.deb
-Size: 1576800
-MD5sum: d92312114cd0e1411cc6009f49aa1e06
-SHA1: 3e94a675b52e75684c7d680f1116f6e46333181e
-SHA256: 25b6cc08fb92e1853aa74e5f3bc65628e8dd49d6ef896064b36d2ded30dd1eaa
-SHA512: 0bc2112a2d11e29d040adeb4d1ce74975e5a3a7552364f5813cbbc3d6bbb1749a8a8973f57d4451a94e825744d879294044f4d76e235aded28515c82ab9b0db2
+Filename: pool/stable/g/gocryptfs/gocryptfs_2.4.0_arm.deb
+Size: 1583116
+MD5sum: f37b1d3812ea60ad9a8e2dff4bd1482a
+SHA1: 3b836c3ce6b665af79ede7c16c53af7a87d8a870
+SHA256: 7edb6c48378434bb8a4b62fdcc5434f296e199739ffd09d539df23e6367f1f3f
+SHA512: fcdb92e4836428b20822c1060fdf30f3262df8b1c339f08c8375e79a8b4e43f7aec748c9c2b0d7ddcadd628115c839131c4429e2be9c630b2d88a11c86207519
 Description: An encrypted overlay filesystem written in Go
 Homepage: https://nuetzlich.net/gocryptfs/
 
@@ -583,13 +583,13 @@ Package: libfuse3
 Installed-Size: 424
 Maintainer: Henrik Grimler @Grimler91
 Architecture: arm
-Version: 3.14.1
-Filename: pool/stable/libf/libfuse3/libfuse3_3.14.1_arm.deb
-Size: 95872
-MD5sum: fdb9f296205050e5144579e692665ab7
-SHA1: a0e77e9bcea84879822588df15939cc8fb037673
-SHA256: 9cce53112bf553176c6a2a21d77961c6eaecd3506f87b8e3b269ae15891ea804
-SHA512: 464a5c945a49805d751ce715f1e7567683322188312bd87a7648b33688667e18460a41471dce9941c19258c91402a6ba03625d9af75a8268296685f9406920a7
+Version: 3.15.0
+Filename: pool/stable/libf/libfuse3/libfuse3_3.15.0_arm.deb
+Size: 96496
+MD5sum: 9d7f43b699bb060555fc87ced7386eee
+SHA1: b779fc80f1026c8db662e0d412efc15a0e73ffb1
+SHA256: 150cb1efbc8187509d3c9ebb6d18535c9bae1f35897ed3a3045199471bc360aa
+SHA512: 83014ee54da3097855c9a8c2575c28424978ba5f2d9d25949f327929a5b010fdc2adcc5e16da8bab24cc788fc6d88514b7b30d5ebeebc942b944676d1d603d54
 Description: FUSE (Filesystem in Userspace) is an interface for userspace programs to export a filesystem to the Linux kernel
 Homepage: https://github.com/libfuse/libfuse
 
@@ -656,6 +656,23 @@ Package: libpcsclite
 Installed-Size: 288
 Maintainer: @termux
 Architecture: arm
+Version: 2.0.0
+Replaces: libpcsclite-dev
+Depends: python
+Breaks: libpcsclite-dev
+Filename: pool/stable/libp/libpcsclite/libpcsclite_2.0.0_arm.deb
+Size: 53832
+MD5sum: 7699d7f55d4b7d20c2a52dba3a02e25a
+SHA1: bef3cc334deed29807b4e195db02520345a07fc7
+SHA256: 4dac28dfa30a361b0c5ed8f32073a4d5f2c5b0cfa6298f7c1e70a3507695dccd
+SHA512: cdad0b9cfa279a0ac6cb143054ed7bfe515b697af8ebd6dacef7e7b58a2587b33cc10837d6a54d26b4f16451352ec2f890e4dcef6a456b84ece9787b6ac02176
+Description: Middleware to access a smart card using SCard API (PC/SC).
+Homepage: https://pcsclite.apdu.fr/
+
+Package: libpcsclite
+Installed-Size: 288
+Maintainer: @termux
+Architecture: arm
 Version: 1.9.9
 Replaces: libpcsclite-dev
 Depends: python
@@ -667,6 +684,21 @@ SHA1: af87b94e7707374870131ab45de435266e433ef7
 SHA256: 51e8b2c84c8698fb394310f77748d93ae9484d4499e98d4104ceebdd50b5147f
 SHA512: 104a7e2d29b29aa069fd59c29dc51fbf0aec915cce8eb275db9370fc9eb2db0d438e71dcc13cc5e44af2e6d7ae4741d7ebcb6bf156746293680bb05c7584b1d2
 Description: Middleware to access a smart card using SCard API (PC/SC).
+Homepage: https://pcsclite.apdu.fr/
+
+Package: libpcsclite-static
+Installed-Size: 92
+Maintainer: @termux
+Architecture: arm
+Version: 2.0.0
+Depends: libpcsclite (= 2.0.0)
+Filename: pool/stable/libp/libpcsclite-static/libpcsclite-static_2.0.0_arm.deb
+Size: 19652
+MD5sum: d0f927f8551c4a2a8933c40a089a44fd
+SHA1: 40ae0118a6abf6e50e976b9fdf70e5db5b5ffefc
+SHA256: 19f504175e660caa4df32a76a799dde773fd5f06b795837d2099b0468b815ed1
+SHA512: 1a7e9e3b86373ebcd209f2a59428fbba50ff63d6b80f248154fa033c6c80b0f0737decf5c23d0392400c2c53fac06a444fd36a55ad78ba1f1cdc00829be47af4
+Description: Static libraries for libpcsclite
 Homepage: https://pcsclite.apdu.fr/
 
 Package: libpcsclite-static
@@ -931,29 +963,14 @@ Package: openvpn
 Installed-Size: 1272
 Maintainer: @termux
 Architecture: arm
-Version: 2.6.4
+Version: 2.6.5
 Depends: libcap-ng, liblz4, liblzo, net-tools, openssl
-Filename: pool/stable/o/openvpn/openvpn_2.6.4_arm.deb
-Size: 439088
-MD5sum: c92538db0008a05fb30ef5d8ef9095ca
-SHA1: efad5edb5c0d977620342322f618cd0715190333
-SHA256: 3475e7e2a7cb5afa46a97e7c2e91ffff79e17e6973b6614df7eddb59fb1d858c
-SHA512: f1e17a39c17b2ff8318bada42d7ad8d99ecf1f89b581391f5ead62e51483d41efa11cab8e88f1b63bf298c26cb9776ce6eeeaa2476d682121983085c4d2743fc
-Description: An easy-to-use, robust, and highly configurable VPN (Virtual Private Network)
-Homepage: https://openvpn.net
-
-Package: openvpn
-Installed-Size: 1272
-Maintainer: @termux
-Architecture: arm
-Version: 2.6.3
-Depends: libcap-ng, liblz4, liblzo, net-tools, openssl
-Filename: pool/stable/o/openvpn/openvpn_2.6.3_arm.deb
-Size: 439084
-MD5sum: f80278a97d67299bf98e35ce29a64d07
-SHA1: 473e38fe05e41db8321cfcb07a32bb9a97531d8d
-SHA256: e75c2b8d5db6b0beda0f95169fe864f4d9183cfeea4a6fff37a0ce9d9dc85c0d
-SHA512: 94293b4fa44ecca6f22f19e5b6041d9654d7a70442c4bbdf937e8463302406121a1cff16992d826fb45d41dffda20641a43e324e15142f092053670c5abcc385
+Filename: pool/stable/o/openvpn/openvpn_2.6.5_arm.deb
+Size: 439252
+MD5sum: a6229d44ed846a76462e4756768cb274
+SHA1: 3d59e12437ea17cccd85513ecaedceac0cbb7781
+SHA256: f3ebf4b631889d05b859fad055fdf705f010725ba3c53a6ec8bbc4c84be9f9ea
+SHA512: d650d85eb873ad48762facdd87f46c460fb50d6fdf6b720f36f43434feaa2c7bc8528de7b6c4396f2ff183155a3aca9e3d34f9f57ff4a53f19adca58994e3add
 Description: An easy-to-use, robust, and highly configurable VPN (Virtual Private Network)
 Homepage: https://openvpn.net
 
@@ -971,6 +988,21 @@ SHA256: 3d1efb812e888ede9ce54d59ca55b2ac3e44417c0f0825bcc3bcf356cc3b8231
 SHA512: e9aa2e40041ca34ff100249affb63d2a401abd5a8e9d5da790a720ac84ed97cfde690fbed8f3e6e2bea8aeedb9d4d54229e43acb5da244d7d509f05548de27df
 Description: a collection of programs for inspecting and manipulating configuration of PCI devices
 Homepage: https://mj.ucw.cz/sw/pciutils/
+
+Package: pcscd
+Installed-Size: 128
+Maintainer: @termux
+Architecture: arm
+Version: 2.0.0
+Depends: libusb, libpcsclite (= 2.0.0)
+Filename: pool/stable/p/pcscd/pcscd_2.0.0_arm.deb
+Size: 39960
+MD5sum: 24e7787d8d4c2b3463cce24ba5417d13
+SHA1: 1df474df4fba5123d4c461d20ae1b8374b3c1716
+SHA256: c86b8b80bb2ea9d559d699d0ac6edac0fbe294893dacebe39f71c09a06132cf7
+SHA512: add045e91aded8736378def6c6e0b04b79a324e572167b243fb5ce8a314b9132623256aa97747a1d2d571b271e904ca03023798013db58d9349123f8d38a397b
+Description: Middleware to access a smart card using SCard API (PC/SC). (daemon side)
+Homepage: https://pcsclite.apdu.fr/
 
 Package: pcscd
 Installed-Size: 128

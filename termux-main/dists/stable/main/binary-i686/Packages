@@ -772,18 +772,18 @@ Essential: yes
 Installed-Size: 4104
 Maintainer: @termux
 Architecture: i686
-Version: 2.7.1
+Version: 2.7.1-1
 Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
 Provides: unstable-repo, game-repo, science-repo
 Depends: coreutils, dpkg, findutils, gpgv, grep, libandroid-glob, libbz2, libc++, libcurl, libgnutls, liblz4, liblzma, sed, termux-keyring, termux-licenses, xxhash, zlib, zstd
 Suggests: gnupg
 Conflicts: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
-Filename: pool/main/a/apt/apt_2.7.1_i686.deb
-Size: 1141008
-MD5sum: de917cfcc62adbb0bc934a83a074f1f2
-SHA1: aa80eab3975ffe664dde9663c67a20eeade2bd51
-SHA256: 045322e94a9b2fe31990965c11ff7f18d78a52afd832d10274ec6e76fdc25990
-SHA512: 454d754de7dcf434a0281c47c45066cdf8c7ceb8d547b0943f79387dff2c9425dbf9e443dfbe967d564ec0ea8c03f8e32bf6d77f1dc8aeb727eda5f5cbc243f3
+Filename: pool/main/a/apt/apt_2.7.1-1_i686.deb
+Size: 1139120
+MD5sum: 8c7b4860dc025facc777c9c69eba2f2c
+SHA1: de234b74b68e4256d8a85a2d56793ef8513cc86b
+SHA256: b025f1bb90fb5f325a0c125dbcc5b69d24bb51a6845776a2f35d526e30e91a38
+SHA512: d1779e9f8daeeb31cdee5fe260e4e5112882321f6e79d0c17df6b0001097e762cac512cf381507f649cce826dc77c6b1466681c74cb4e5811da4ab11ba65874c
 Description: Front-end for the dpkg package manager
 Homepage: https://packages.debian.org/apt
 
@@ -807,29 +807,29 @@ Package: apt-ftparchive
 Installed-Size: 368
 Maintainer: @termux
 Architecture: i686
-Version: 2.7.1
-Depends: libdb, apt (= 2.7.1)
-Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.1_i686.deb
-Size: 109084
-MD5sum: 4337d1eab8576508ec4093eab324126e
-SHA1: 82340e48862b3523972cdb0fb45bd20252462f33
-SHA256: 6006ef281f53435db9a8e3d01c17619cf099a380e37c61394ef0789a2403e6de
-SHA512: e7d18bb061e8356cad2d0192c6ba77bc2ef6d21c3cb34fd31d64b999b81b674e65bd94bba04ab098e5454120a56965a66a2baf912c93018b2e3f23cda8bcc5a6
+Version: 2.7.1-1
+Depends: libdb, apt (= 2.7.1-1)
+Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.1-1_i686.deb
+Size: 109056
+MD5sum: bef049c7ddbd0a83d69082a53d6b9eaf
+SHA1: 685c41f9b45ee5195142dda1088b2688a4154d03
+SHA256: 338a4865b8c2de47ef43e9c05e11d7c290ea4207eab951ac0ca1be07cef1fb0a
+SHA512: 3ce3dd7fca766fca57cd1b588e1f7bafd553550eceb3ac1663f43cc2cfc041e686a0db506192fa071b35aba12625f20d2c717903ceeb9fbd3cf2c316babd4425
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
 Homepage: https://packages.debian.org/apt
 
 Package: apt-transport-tor
-Installed-Size: 36
+Installed-Size: 44
 Maintainer: @termux
 Architecture: all
-Version: 2.6.0
-Depends: tor, apt (= 2.6.0)
-Filename: pool/main/a/apt-transport-tor/apt-transport-tor_2.6.0_all.deb
-Size: 884
-MD5sum: 8d57ef18abd799403bbe1c42c17e4434
-SHA1: 221a971b4a6949f786eadfbb08bec115cc11e2e4
-SHA256: c9aa4f3ca6dda39c073cc4c99ccb2c4f48353fbd82c8dee3cce4f99133d63eb2
-SHA512: 9abcf45d74108131192dd91e190c59f088353280632b5f4cfd9956d8d9f805a149d9924034235ba2a20611945103765951b2fa46dc4047f0e67c91d7864c2112
+Version: 2.7.1-1
+Depends: tor, apt (= 2.7.1-1)
+Filename: pool/main/a/apt-transport-tor/apt-transport-tor_2.7.1-1_all.deb
+Size: 940
+MD5sum: bba8f12874caf62ed924f7254b8b8fd4
+SHA1: f83eebd946d21e447c1aa20d30d43623823e4d9f
+SHA256: fe2ee720632036032bb74e267aa16a57b6d6cf61da8d6577ae130a09d8bdd699
+SHA512: f31f3d36cdfc4b0e5eee8dae99e4acc880acf52278b79227715ffe44301a7f32b973f628f15c55fb00de8cbbeecaa0c7303948c111dfe8646b2c20c13301acb6
 Description: APT transport for anonymous package downloads via Tor
 Homepage: https://packages.debian.org/apt
 
@@ -3121,6 +3121,20 @@ SHA256: b19cb8d621e9642824faa93cfdf24202a05781df79de2cf8401f219f912a549a
 SHA512: 67c45045c8cb2901afce0a9a554d16d15879e1153f69a8c64819e60ad24c6a3bb17efb44fc5982d1834d81dc0a0f658dcd63e954798afe0d5c118c3066cea297
 Description: Static libraries for check
 Homepage: https://libcheck.github.io/check
+
+Package: chezmoi
+Installed-Size: 30596
+Maintainer: Henrik Grimler @Grimler91
+Architecture: i686
+Version: 2.34.2
+Filename: pool/main/c/chezmoi/chezmoi_2.34.2_i686.deb
+Size: 8622072
+MD5sum: 6dc61ec27422c3e4810faa6d78dd8a63
+SHA1: d69d3e60fce8bc64ea645b45ac3aa5095f752fb8
+SHA256: b0f341eff8c947f22f7b171d6795c1a42b41c34c549abf59f0d0603333db67c0
+SHA512: 6c7112caf1016e6890d33da335a13dd8a4ae978030b3852596d39fdbffe753b20b95beed8889a1e5dbd1ce968003349af2822efcaab850fbc4fe9470427ade80
+Description: Manage your dotfiles across multiple machines
+Homepage: https://chezmoi.io
 
 Package: chezmoi
 Installed-Size: 30568
@@ -31071,17 +31085,17 @@ Description: Static libraries for ravencoin
 Homepage: https://ravencoin.org/
 
 Package: rbw
-Installed-Size: 7248
+Installed-Size: 14212
 Maintainer: @termux
 Architecture: i686
-Version: 1.7.1
+Version: 1.7.1-1
 Depends: pinentry
-Filename: pool/main/r/rbw/rbw_1.7.1_i686.deb
-Size: 2179824
-MD5sum: 87b3f7a59e3f74c5a78643b3c0debbff
-SHA1: 0874660c6cbc7284cda99696ef27e602ee557113
-SHA256: 3ebfcfbcdcf4e7e5e15409f1284fb48af2e6ace19a65442ea3e686add22a6fe2
-SHA512: 85debd9664d44c9abe8120bfd02740e485362632933fed1d8d9fec73e2cc55342c668846b05caaf7822d81798cd8842b033177209b0bb6c9da999859e1a330a0
+Filename: pool/main/r/rbw/rbw_1.7.1-1_i686.deb
+Size: 2945460
+MD5sum: f4b3a403a024023ab97a616edce8d08f
+SHA1: db0b2d5f6d4a46790623a3aaa0154a65ac481034
+SHA256: 0a1bb66cafd03bd555391898a1b45c4407afecc976650476ef3521a8bd77eea5
+SHA512: 4d8a892dbd5e4a4467960ef02e5930c5c0e61db28b66e7fbb0329b0267b35042b37d65f4de15e7a24083eabe0e5f0dd2af04044147dfa8c95a9ed8cdcadd0cea
 Description: An unofficial command line client for Bitwarden
 Homepage: https://github.com/doy/rbw
 
@@ -32902,6 +32916,20 @@ SHA256: 225bccc6fb9194725e0e572d0fc753453b65bf54745c65813428628a996d7e80
 SHA512: 453f5366c1c722681955674ecf6f2eb4beee1bc7a3c32f0ce1fdfcc3e3844b85bb68dc32b9d54b3412c974e440915eafcbeac1235992b1ebcee39e399b2a43f0
 Description: The universal proxy platform
 Homepage: https://sing-box.sagernet.org
+
+Package: skate
+Installed-Size: 18648
+Maintainer: @termux
+Architecture: i686
+Version: 0.2.2
+Filename: pool/main/s/skate/skate_0.2.2_i686.deb
+Size: 6043960
+MD5sum: 4c419273a71c8d4cf7d6efd8d0924c79
+SHA1: 18a4a08afbb7faaf623a9e49f38ae223bfa658c5
+SHA256: 86d80c79eb39661a94e8534cf9229cdc2720a17ed1ed2771495e17520fc690ad
+SHA512: 43583b71233f4c2eb6740186877664412c2586ce25d2c088815c43888d9d7e9c02a5cebd43800b3bf3cf94a9d8fd38318ed15b050ddb936581e4c0937466e911
+Description: A personal key-value store
+Homepage: https://github.com/charmbracelet/skate
 
 Package: skate
 Installed-Size: 18492
@@ -37126,21 +37154,6 @@ SHA512: bc510aa306d4f839e652c5770fc39377229dface16a2a77e42990e7392bd477f2bc1f2d2
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
 
-Package: vulkan-extension-layer
-Installed-Size: 2404
-Maintainer: @termux
-Architecture: i686
-Version: 1.3.253
-Depends: libc++, vulkan-loader
-Filename: pool/main/v/vulkan-extension-layer/vulkan-extension-layer_1.3.253_i686.deb
-Size: 306436
-MD5sum: 285290b539f681d019df5f94e33bcac0
-SHA1: 60ed93afe0bd4aa0728165f04d1f87a1ac61f2cc
-SHA256: c1c1d29bd5ed91cb2a7e6e69c9ee5c2b71dfecbc8ee064a47b1c68ee4e467333
-SHA512: ace1eac5807c2650605b4521a4ce0d619071389bed6c9e62bb4ccb6bbbc642d653d53d700d485bc2c7c2f5744b4c470bd884e65e3294333d6bb59e812a181d8b
-Description: Vulkan Tools and Utilities
-Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
-
 Package: vulkan-headers
 Installed-Size: 23684
 Maintainer: @termux
@@ -37197,22 +37210,6 @@ MD5sum: 81d93cfad62af77e41fda59ecc0919d6
 SHA1: 159a47fde0338c9061f802770ff7fab3de620507
 SHA256: 06892730b4352339f69b6e26168abe7127676a568480d23eecbc45a8bc543653
 SHA512: 43616b37b534dcf65f3a6f460d41d41553f49a0ec34525668174ec4639ecf328159f5c96d9b8b1b703e55e1263d0340bfd519d8df201bf635ef2567c178448d3
-Description: Vulkan Loader
-Homepage: https://github.com/KhronosGroup/Vulkan-Loader
-
-Package: vulkan-loader-generic
-Installed-Size: 540
-Maintainer: @termux
-Architecture: i686
-Version: 1.3.253
-Provides: vulkan-loader-android
-Conflicts: vulkan-loader-android
-Filename: pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.3.253_i686.deb
-Size: 118728
-MD5sum: 5d9893b71389400c5519e3cb4adcdc8d
-SHA1: a16b08bbcba383c1b76399354e9c96c1fe60adc5
-SHA256: 41863c7b14a39c0a3be86d0e51b8e8512f611a54bb8a59e372be84d1f4304402
-SHA512: 2ac0642f27dbb5d8bef4029ea663c70e1743e98ed1a0ee8570c869f9a59bb84d7f3c6679648b9bc5b9179017738596ba377870c008031503d175a8822d0273d7
 Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
 

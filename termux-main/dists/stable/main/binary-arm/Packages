@@ -3662,21 +3662,6 @@ SHA512: 0ce3b5dd73971abd175c00cccd65d21bd3e5e9d11ff39c6344e520c0fd0bc3188f20cab6
 Description: Suggest installation of packages in interactive shell sessions
 Homepage: https://github.com/termux/command-not-found
 
-Package: command-not-found
-Installed-Size: 312
-Maintainer: @termux
-Architecture: arm
-Version: 2.2.0-3
-Depends: libc++
-Filename: pool/main/c/command-not-found/command-not-found_2.2.0-3_arm.deb
-Size: 78896
-MD5sum: f77958ffabf3d185a78e150dfd5870c3
-SHA1: ee3a0ca262e6526bbe67aa848e599655fdae0fca
-SHA256: 219bc50754ac048e795bcdb1ecf9d2a6fc81c51130f5357dfa4f52f004c8d4fd
-SHA512: 52187067b675a21a6e65843fe08e405e9a91fe0de9613db3b22288522e8ec7376ea897c1065b0b9ce5ee6789b0e0506d3d7db3f5d0a177610d26a3234276f45f
-Description: Suggest installation of packages in interactive shell sessions
-Homepage: https://github.com/termux/command-not-found
-
 Package: composer
 Installed-Size: 2816
 Maintainer: @PuneetGopinath
@@ -8400,6 +8385,21 @@ SHA256: 2282d73994dd4848fdadd643c2fd5bdd86250e2388e32061ea092ea158daa4cd
 SHA512: 9aef50658f50070ca66181f47e87be00c20bf3431e8fddac0b43774aa16468824108ffeeb557ea3c7bb12e30daef9bce4a41b7a7e68b163b6ed275fbc37d0bc8
 Description: The GNUstep makefile package
 Homepage: http://www.gnustep.org
+
+Package: gnutls
+Installed-Size: 620
+Maintainer: @termux
+Architecture: arm
+Version: 3.8.0-1
+Depends: libgnutls (= 3.8.0-1)
+Filename: pool/main/g/gnutls/gnutls_3.8.0-1_arm.deb
+Size: 157344
+MD5sum: e4b2bac2e1988d105c581738e882e1f5
+SHA1: a9e7cdd9b1d071b75ad48446930e4e659c2e942e
+SHA256: e65e49aea02f78acbcfc24da7723b57b9601effd6ef08275d233d475814e783b
+SHA512: 9f3f68dadf1d94902956076f4b334b99d161a4f5e134f6914ef230c60859ea698ca3685b00014e48388a45e062bcc5b30f53769877bf80314db7bc6b6e237612
+Description: Commandline utilities for interfacing with the gnutls library
+Homepage: https://www.gnutls.org/
 
 Package: gnutls
 Installed-Size: 620
@@ -15615,6 +15615,23 @@ Package: libgnutls
 Installed-Size: 1820
 Maintainer: @termux
 Architecture: arm
+Version: 3.8.0-1
+Replaces: libgnutls-dev
+Depends: libc++, libgmp, libnettle, ca-certificates, libidn2, libunbound, libunistring
+Breaks: libgnutls-dev
+Filename: pool/main/libg/libgnutls/libgnutls_3.8.0-1_arm.deb
+Size: 674608
+MD5sum: 1a85d95c8f3a641963b2b66aacf1d01d
+SHA1: 13a774b83d3dace1215305b9e22a307fa434598f
+SHA256: 53ac82dc1191e46890d80c0e6e5954595298d964a191c5f76f3e762bf89b5674
+SHA512: 5c9f8cc0f4d926613c65852850892b9742142d1e23f585a67dc9b07153908f707b0f3631c39fce0a1a0f9899a89e3b427c61545a3b7d92db8cb10dd80b62ef8e
+Description: Secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them
+Homepage: https://www.gnutls.org/
+
+Package: libgnutls
+Installed-Size: 1820
+Maintainer: @termux
+Architecture: arm
 Version: 3.8.0
 Replaces: libgnutls-dev
 Depends: libc++, libgmp, libnettle, ca-certificates, libidn2, libunistring, unbound
@@ -15626,6 +15643,21 @@ SHA1: 11b2091507c35775caa7d0b71b36ebb1da1ed525
 SHA256: 4ccff1124905b36571596ead66376af0030aec3d2c6f4c5c1f8ecc39e67e390e
 SHA512: 49c40c349cf37227e2b5301f870af378a5f0dcecb24fe8fa83f19d04c3d6d1a5d6b714bc0f076bd90c1d5bc006ad1605697cfb37b1ebeb9243e38864fdfd89a2
 Description: Secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them
+Homepage: https://www.gnutls.org/
+
+Package: libgnutls-static
+Installed-Size: 2544
+Maintainer: @termux
+Architecture: arm
+Version: 3.8.0-1
+Depends: libgnutls (= 3.8.0-1)
+Filename: pool/main/libg/libgnutls-static/libgnutls-static_3.8.0-1_arm.deb
+Size: 753888
+MD5sum: eab8d88997aafae0f7595bac8c3833dc
+SHA1: f2b2b70f0ba4b7ecdded6ab455c44f9700b70c53
+SHA256: e220be6ef7e2e704180bec3d9f2f467540eebdbefa7bd92a8512913b1e4ff400
+SHA512: f8a27dcdf04978f81efa595e5188aaf16de97f9106160816ec92bd69c7718d9c61ed136a3cfc015d42ad43d1cd96c662f46fe55a9b5203bf1781f4055c3d7608
+Description: Static libraries for libgnutls
 Homepage: https://www.gnutls.org/
 
 Package: libgnutls-static
@@ -21355,6 +21387,38 @@ SHA512: 25108c4579b495edf50ac3a04713ee3463661798dec235965800fafc99479ecd800c6df2
 Description: Static libraries for libudfread
 Homepage: https://code.videolan.org/videolan/libudfread/
 
+Package: libunbound
+Installed-Size: 880
+Maintainer: @termux
+Architecture: arm
+Version: 1.17.1-1
+Replaces: unbound (<< 1.17.1-1)
+Depends: libevent, libnghttp2, openssl, resolv-conf
+Breaks: unbound (<< 1.17.1-1)
+Filename: pool/main/libu/libunbound/libunbound_1.17.1-1_arm.deb
+Size: 316148
+MD5sum: 2d0dfa16b36f97c3a10e527172285a54
+SHA1: a0f8cfeec4e71666b67502e6fc13bfd95e33ff05
+SHA256: 698dbc7f8a47d7bb12dcc9b045b7ff8ea938dffa89ebc1b9969b8597dbf5bdba
+SHA512: 4e0c480067dae617b0e8b27f96cdeb530faf787fcbfe753f4cc81f8b2921bbdbb651c5c3a4d26e3c68519a4c2a8f12947d932fbbfbac9f2c7db2c52ae1007637
+Description: A validating, recursive, caching DNS resolver
+Homepage: https://unbound.net/
+
+Package: libunbound-static
+Installed-Size: 1276
+Maintainer: @termux
+Architecture: arm
+Version: 1.17.1-1
+Depends: libunbound (= 1.17.1-1)
+Filename: pool/main/libu/libunbound-static/libunbound-static_1.17.1-1_arm.deb
+Size: 398420
+MD5sum: 49b4fb58a5786fa9419206a3e8de8e75
+SHA1: e8e58e85e3ce8603969ce3d61a5f61a94d0a354c
+SHA256: 3ebf02a4b4959bdf74f11ec32c04fe46b5733a0550ee21b88f7fd14c7d5e8f53
+SHA512: a9281319988952a12d01785ea641943a91533ef959f3402f226c5ac3932767123d2103f12674b3aa0e631a2f51b0b7b98a449d2b52584946e4e7cee9a23dc688
+Description: Static libraries for libunbound
+Homepage: https://unbound.net/
+
 Package: libunibilium
 Installed-Size: 120
 Maintainer: @termux
@@ -25208,6 +25272,21 @@ SHA256: 6a9882fc9edbe67ee37168ff2dcb0567ffb06ab43fecc467cf72cb3a9d4735a5
 SHA512: a024236998dbcd1b1f96d2f366d955b7a942e5c3e663d2eff53fa2edfafafe4223fecabcffd13ec3005ea6630a2b5449dc8eeaf2c28520c63fcb7edb9a5a403a
 Description: mold: A Modern Linker
 Homepage: https://github.com/rui314/mold
+
+Package: monero
+Installed-Size: 47956
+Maintainer: @termux
+Architecture: arm
+Version: 0.18.2.2-2
+Depends: boost, libc++, libprotobuf, libsodium, libunbound, libusb, libzmq, miniupnpc, openssl, readline
+Filename: pool/main/m/monero/monero_0.18.2.2-2_arm.deb
+Size: 10074416
+MD5sum: 078371c49e081e1d33b888023d97bddb
+SHA1: c6b002fe75d99b66d79e08bd750b589544480cbd
+SHA256: bf6dcd1918098ca540b1d6a6ed4a09ef6c2e28ab23f854366629d0d6060b7d46
+SHA512: 1b7d28440c8fc9e4858db0b52768aa0de4ad38d535d04165a6c93adc536aefd03f1b3007ecb437dcc9326f1114764ba49c0f6436fca5f794e387a85cc6faf785
+Description: A private, secure, untraceable, decentralised digital currency
+Homepage: https://getmonero.org/
 
 Package: monero
 Installed-Size: 47956
@@ -30436,6 +30515,22 @@ SHA256: ec4055fe179f5360b919697badde5f6fdf2c2fd2433a3d8c2604aa6e88e3d716
 SHA512: 4894edfbae5c64329f6679602a2105fe2708e7d7a01ebe5157c0df4c94d0701ecec36f8e27f97c17a95b459e6c47fa9703136b721cfd0280edf9dc0b7f73ce89
 Description: Static libraries for python2
 Homepage: http://python.org/
+
+Package: pyunbound
+Installed-Size: 200
+Maintainer: @termux
+Architecture: arm
+Version: 1.17.1-1
+Depends: python, libunbound (= 1.17.1-1)
+Conflicts: unbound (<< 1.15.0-1)
+Filename: pool/main/p/pyunbound/pyunbound_1.17.1-1_arm.deb
+Size: 34436
+MD5sum: d282b9e3f5b7b9af6f40cde51cfa63ac
+SHA1: de98fd254d953d8bb1cd881684796e75c4131be2
+SHA256: 63c189c45ffc1bf90c21ecfa0e980a9da22c3da30b22801193379f454879c704
+SHA512: 2aaaf07899671a305a6127abe076c65b29995e8438c854834e5bc42b45794f077ddba529573841c0f2b7b483e5aab01913dd78200eeaed95a6a60748f1c0bfe4
+Description: Python bindings for Unbound
+Homepage: https://unbound.net/
 
 Package: pyunbound
 Installed-Size: 200
@@ -36245,6 +36340,21 @@ Description: Command line tools for archive and file unarchiving and extraction
 Homepage: https://theunarchiver.com/command-line
 
 Package: unbound
+Installed-Size: 2220
+Maintainer: @termux
+Architecture: arm
+Version: 1.17.1-1
+Depends: libexpat, libunbound (= 1.17.1-1)
+Filename: pool/main/u/unbound/unbound_1.17.1-1_arm.deb
+Size: 497684
+MD5sum: 097faeaae0c41a5dcf0c9f1e3248be4e
+SHA1: 2788a4bc23a8ce0245b83f8c5d81119667cdab23
+SHA256: 2887f939d73b7ebdd8805c10efcd56eca6d9bea5f19556db358c0a0dd643596d
+SHA512: 38aeb3b58e661d99fb6ad3ed11ce3dd838da6e87df6fc3f5e397f3988bbee35bb05c8c6d1199002288bb65acc80859e3691d84d1f343d148dcb2babc86dc59d8
+Description: Unbound command-line tools
+Homepage: https://unbound.net/
+
+Package: unbound
 Installed-Size: 3068
 Maintainer: @termux
 Architecture: arm
@@ -37265,21 +37375,6 @@ SHA512: 828703b18fcc8ef78ae8a508d5c3403126562f0cd8f1b29ecb9c43d75956466ef589c6c6
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
 
-Package: vulkan-extension-layer
-Installed-Size: 1324
-Maintainer: @termux
-Architecture: arm
-Version: 1.3.254
-Depends: libc++, vulkan-loader
-Filename: pool/main/v/vulkan-extension-layer/vulkan-extension-layer_1.3.254_arm.deb
-Size: 211564
-MD5sum: 1990ffa171cd760fc982500530c200b6
-SHA1: e1c91218e4c6278621c55b38ea850c73a0e6b92a
-SHA256: 526b285f49d6878369317594506a96d109db6a670f091b2bac02908d1969b52f
-SHA512: 1fa641efd12191395429f8f1ed586db2b0c1b559e9b3d5b092a3413ddb3f525d8da876f64ce543e43bc80d6dc7b1a73918ccb2fcab612b86cce653a4b9adcf8a
-Description: Vulkan Tools and Utilities
-Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
-
 Package: vulkan-headers
 Installed-Size: 23684
 Maintainer: @termux
@@ -37352,22 +37447,6 @@ MD5sum: 9b88a0c6ff8bfd2f3686edf6b5ae7ef5
 SHA1: c9f60ec128f3336804233fcc9ff9a7b2366aa3de
 SHA256: 6c0554d0bbc14bc9163ef36164fae506d00f087ff84cd5c9efd0bbed62051d10
 SHA512: 6b92c3f4b5a063a24759f44d1d934e4093646743c7318d2f33fbef1869cb3d5044ba18ba3448ad089ac0930eef87d7106c079782fc31e0bd94cd127b1ca726c1
-Description: Vulkan Tools and Utilities
-Homepage: https://github.com/KhronosGroup/Vulkan-Tools
-
-Package: vulkan-tools
-Installed-Size: 1356
-Maintainer: @termux
-Architecture: arm
-Version: 1.3.251
-Depends: libc++, libx11, libxcb, libwayland
-Recommends: vulkan-loader
-Filename: pool/main/v/vulkan-tools/vulkan-tools_1.3.251_arm.deb
-Size: 249612
-MD5sum: f0b63d686dde1bfe3ae251cac42d9fb5
-SHA1: 43e6099ef34665d3bd03f6213750a08da9fdc4d0
-SHA256: 81531681031b0c9874fab45708397fc24a37c44a1c90e796229b34803ac90594
-SHA512: 4bfde16f0409af0fdb9886bc0c12932b60dea59a624bbfa1a4e1f876ad0f3a8ada30e57fa1fe0e682351fad2734db2419a4880e25c01740c52d98590b2412a9e
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
@@ -37655,6 +37734,21 @@ SHA256: 6e95b60520eb1979c41407e6c97291070d9fae5d0fae6f092b2f273052d859b5
 SHA512: 3d7d1239c43c95039f1814593cbe7579dc61684a528441114c0b4c8bc4614bad1109ab066e7cbbbbaebd1164f9e628a4b3fc499c69f0d0977b4d1b5148605882
 Description: weather app for the terminal
 Homepage: https://github.com/schachmat/wego
+
+Package: wget
+Installed-Size: 664
+Maintainer: @termux
+Architecture: arm
+Version: 1.21.4-1
+Depends: libandroid-support, libiconv, libidn2, libuuid, openssl, pcre2, zlib
+Filename: pool/main/w/wget/wget_1.21.4-1_arm.deb
+Size: 267312
+MD5sum: 4820df1b8e192d2a1446f890882b8cc5
+SHA1: 2c7e2334a11c7dd32eaddb0608769d99b085779c
+SHA256: 1a969f447aea7a26c9e56fc841b793371cc2d5d161950a9af592b6522ff010f9
+SHA512: 91ed6a724d64c1cc5426c7aca5cb55c78c1d9e85767055736a5710d770c801735d3a7b16d3e2ddd543cc7bceedbb1ae9022da33f72dab650bed8dbcd8696b95a
+Description: Commandline tool for retrieving files using HTTP, HTTPS and FTP
+Homepage: https://www.gnu.org/software/wget/
 
 Package: wget
 Installed-Size: 660

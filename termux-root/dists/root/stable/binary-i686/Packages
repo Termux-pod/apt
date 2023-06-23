@@ -27,6 +27,36 @@ SHA512: 37e73a31d3fec306ace470eea116f035e71c916814ba2ba743fda9033652e99c12cfe0a3
 Description: Bind sockets to privileged ports without root
 Homepage: https://www.chiark.greenend.org.uk/ucgi/~ian/git/authbind.git
 
+Package: avahi
+Installed-Size: 1080
+Maintainer: @termux
+Architecture: i686
+Version: 0.8-8
+Depends: dbus, glib, libandroid-glob, libdaemon, libevent, libexpat, resolv-conf
+Filename: pool/stable/a/avahi/avahi_0.8-8_i686.deb
+Size: 216012
+MD5sum: a4ffe08b8d6902c7acbdca764f004d94
+SHA1: bf77ce56206cb31e5cc757f4dab035f62c2ca5ef
+SHA256: ae16610f64d87d30675f1d9d68547700c65fb79b9074c7595aae39ca7fa202e2
+SHA512: 48a92d18b49fe13728276648c7fa0e24c056346b39bea2caacb27980c6181dbf77fe9ecfe0469d4cb7f8b6ad31cf296d04c394f5b0ce9622d090842c31f72b6e
+Description: A system for service discovery on a local network via mDNS/DNS-SD
+Homepage: https://www.avahi.org/
+
+Package: avahi-static
+Installed-Size: 632
+Maintainer: @termux
+Architecture: i686
+Version: 0.8-8
+Depends: avahi (= 0.8-8)
+Filename: pool/stable/a/avahi-static/avahi-static_0.8-8_i686.deb
+Size: 135356
+MD5sum: de8587292df0fb88d2167b861d5305e1
+SHA1: e0ddd1c8a6644aeef6aa512af946198cb1235bcd
+SHA256: 29d7605a72c7bdd6b9fed1ad0fdaac6f4badc28d47f6dd93fdd06c6608353f96
+SHA512: be4d0baed58e2a5d737b878f07fc15ae62fbdd4eebce01c3a37817191c540859c0d03a3e0763a69cc2434da4ad3e80c15aae2b17b13e5a48dae7067a538153dd
+Description: Static libraries for avahi
+Homepage: https://www.avahi.org/
+
 Package: avrdude
 Installed-Size: 1416
 Maintainer: @termux
@@ -549,6 +579,36 @@ SHA512: 6600098a8e36c5e4680af1ce26ea9049d953be9d8856d110af08b7010e443b8b7c0ee817
 Description: A device-mapper library
 Homepage: https://sourceware.org/lvm2/
 
+Package: libdns-sd
+Installed-Size: 152
+Maintainer: @termux
+Architecture: i686
+Version: 0.8-8
+Depends: avahi (= 0.8-8)
+Filename: pool/stable/libd/libdns-sd/libdns-sd_0.8-8_i686.deb
+Size: 27436
+MD5sum: 73a3abe0a6ee71fcc2f6ab3eedff8866
+SHA1: c33e5b891e1b961e927f5fbee3272cee03f05481
+SHA256: 881248e6ff6b6a8893190597e21b783758350fec6d33e19a5b76dffceb22ff53
+SHA512: 751d1e01d125322bbc174c3e12b2d6638698a23c75dcfafdbe451211996254adc6081c4da50643ede15b091ad38639ef579775a674ef0f08ce399887372d7ce0
+Description: Compatibility layer for libdns_sd
+Homepage: https://www.avahi.org/
+
+Package: libdns-sd-static
+Installed-Size: 72
+Maintainer: @termux
+Architecture: i686
+Version: 0.8-8
+Depends: libdns-sd, avahi (= 0.8-8)
+Filename: pool/stable/libd/libdns-sd-static/libdns-sd-static_0.8-8_i686.deb
+Size: 12408
+MD5sum: 0ac314089181c75a2ac619cb2e5ebc69
+SHA1: 9eb5d2f5c94dbd11b282bacb4526d7353d45b5db
+SHA256: 6d873c08edca3cf3bd8b7a92a096f13e18b5845cca5594ca7edc7f8e52e7865c
+SHA512: 49c36fb91f36a944649bf96657fbfd91a5572237b73b09f78a58538223fc246273a70e1feee6115991067010e2bbafced7c58198bfa9a9d8290e13f9028da14b
+Description: Compatibility layer for libdns_sd (static library)
+Homepage: https://www.avahi.org/
+
 Package: libfuse2
 Installed-Size: 464
 Maintainer: Henrik Grimler @Grimler91
@@ -669,23 +729,6 @@ SHA512: 612194428abbf0a2ab68a6a116e3db79baabc4d626eaa4c72c96d30efadcc502a7946e48
 Description: Middleware to access a smart card using SCard API (PC/SC).
 Homepage: https://pcsclite.apdu.fr/
 
-Package: libpcsclite
-Installed-Size: 300
-Maintainer: @termux
-Architecture: i686
-Version: 1.9.9
-Replaces: libpcsclite-dev
-Depends: python
-Breaks: libpcsclite-dev
-Filename: pool/stable/libp/libpcsclite/libpcsclite_1.9.9_i686.deb
-Size: 56032
-MD5sum: 10d02be3bd4caf586090094038fcffcf
-SHA1: 801ccb4398ddc0183b6205d157d87ed729805346
-SHA256: 27b345c289c02c6d5d4dc0cc0148e4652d1bdf404f5f18b68ae7332932b9346a
-SHA512: 7a9c86fb3872f7996b85fb7c1fcf2221a316bff9742203c4bf1f5fe7e99344f3987f9013479cfeba1b6dfcb5f2e6125494f80c73a8f5009a6fc94269add185f2
-Description: Middleware to access a smart card using SCard API (PC/SC).
-Homepage: https://pcsclite.apdu.fr/
-
 Package: libpcsclite-static
 Installed-Size: 104
 Maintainer: @termux
@@ -698,21 +741,6 @@ MD5sum: a6592dc37f5543b9cd24a3f5db6d2f38
 SHA1: 162603c528890a5972fd880127e0c4ba5431e162
 SHA256: 1790b0ac78880d3675bd828cc5450a50f68c9573ba7147a361bb635978b94de8
 SHA512: c3575abf95578ce694585bbabd0335145c2f830ee03d2b2d3f5b778dc0fb91c083b515a24ed8b280bc5ff70fe36426152a0c702fd7747e0d5ffc06fde6a6f267
-Description: Static libraries for libpcsclite
-Homepage: https://pcsclite.apdu.fr/
-
-Package: libpcsclite-static
-Installed-Size: 100
-Maintainer: @termux
-Architecture: i686
-Version: 1.9.9
-Depends: libpcsclite (= 1.9.9)
-Filename: pool/stable/libp/libpcsclite-static/libpcsclite-static_1.9.9_i686.deb
-Size: 20452
-MD5sum: 8f88603236f640de332f6f7916bdd515
-SHA1: 1ed2b4de92d638f5121601405e765ccd2095161f
-SHA256: f143e7c5c7eea102a3fcc3b3315b35f48b7f1af324b908156a21297571043bf3
-SHA512: 8f9f70a4d29b33959cb8db3f12f2cb25e24bf3011d438088bc187608be4683c01723f64dde50c9fd4190e12eb1ba9bdf2ed6f4bd39d454d81a4fb05f4cf49f8b
 Description: Static libraries for libpcsclite
 Homepage: https://pcsclite.apdu.fr/
 
@@ -1001,21 +1029,6 @@ MD5sum: 51d9ab79d6f4444c27e583c41d8c92ce
 SHA1: 124b98c96905bc266fcc29fac399b7579c7b8ed3
 SHA256: 7122aaf4147a89a0510d740d1990f20ebb30ec9aa6c75cddcdc570a966b00cbe
 SHA512: 3c9fac0974e59eba5ece4e27c0d5ffac8837a310ee06fa15af8decffc02cedf76cae6f0b2139b99118ad848b8967462d2a764dcdf091c1f4dd99e1fc94cb4379
-Description: Middleware to access a smart card using SCard API (PC/SC). (daemon side)
-Homepage: https://pcsclite.apdu.fr/
-
-Package: pcscd
-Installed-Size: 156
-Maintainer: @termux
-Architecture: i686
-Version: 1.9.9
-Depends: libusb, libpcsclite (= 1.9.9)
-Filename: pool/stable/p/pcscd/pcscd_1.9.9_i686.deb
-Size: 43076
-MD5sum: eebd81d91d06b67fdbd5206d83238fd4
-SHA1: cdc0c6f208d1ac3237aba2034aa115e74f414da2
-SHA256: 6563ba9b6f0193db65d90a561a6d74f787d6ccebc82c0f00e57b6186061ba22f
-SHA512: 95ed2f1bf414207a600bea02fb835cc996db49b75363a9c016a3408898d326906342006db780a80c29236b6ca370633703367cd273d676fd24a3ff619023162e
 Description: Middleware to access a smart card using SCard API (PC/SC). (daemon side)
 Homepage: https://pcsclite.apdu.fr/
 

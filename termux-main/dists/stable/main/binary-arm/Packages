@@ -24829,6 +24829,24 @@ Package: mesa
 Installed-Size: 31504
 Maintainer: @termux
 Architecture: arm
+Version: 23.1.3
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libexpat, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.1.3_arm.deb
+Size: 11208124
+MD5sum: 3eb44ebebbdea5e1447aa5ecbd3cc07f
+SHA1: 0937117917a74697b41557b2521d6923c8858ab2
+SHA256: b0334d0b571b13a39247f3df3fd9d2d5af6018f95c4eba4db0f125ce59f862d6
+SHA512: 74a44ad54b28ad70f9a321d98e9692859a301dbbb119f03b953e3eaf6ee55355fd0ca03ae8d1e6af54035c43e104b7cdc3db823234d784b1edd09ffc50b3fe1e
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
+Installed-Size: 31504
+Maintainer: @termux
+Architecture: arm
 Version: 23.1.2
 Replaces: libmesa
 Depends: libandroid-shmem, libc++, libdrm, libexpat, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, zlib, zstd
@@ -24847,6 +24865,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 23.1.3
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.1.3_all.deb
+Size: 25032
+MD5sum: f52e160867d5ad10412dd98762359df4
+SHA1: b6d39d93713baa5efa454c7dfe5a91a962a7c495
+SHA256: 042f0bc111ab3e001c0db06ff32bed58d69a6522ac0387c0f6687ec682dc28ac
+SHA512: b75fcff110691446a7932089ca514d0c4d5b9bdd9f78b9c1a163880760076ef26dfcc432dabd075a9100e9ce182a27d83328034194b5959a99d8a14ab700ca98
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 23.1.2
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -24858,6 +24893,21 @@ SHA1: 03ce47e7afe8590c157f52fe02727fe271854fbb
 SHA256: 0f569f10802b612c2c342ab2e24f6fe2fff8b16a272a78f72d3a9932aeafbf1e
 SHA512: f8aef62e4a5f7a4f92b2fc4e81a6ad5817ab86227723e7610ef647ff71647574915a75d504ea8bf19a78f84a47c4e27851409a13b8620fd16ce15b5ab4facf6c
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 32396
+Maintainer: @termux
+Architecture: arm
+Version: 23.1.3
+Depends: vulkan-loader-generic, mesa (= 23.1.3)
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.1.3_arm.deb
+Size: 11311328
+MD5sum: 9f6a48083f930aa11e4129bf35a11c3e
+SHA1: 2a9d5b507072a8469958e8c494b56a497c5e4eca
+SHA256: f3f3ca7bf031b515a6e50e69dec66fd0ac0cc908bb3bcccaa1351704c7d76a06
+SHA512: e20408b7c01add80cf57e71645811726bd16187e4e155920dd83e21801e8a82adb1536eebf87888ed023cbf65cafe3c43f89e8eacc6bee75737691885fb2df06
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -27947,6 +27997,23 @@ Package: osmesa
 Installed-Size: 30396
 Maintainer: @termux
 Architecture: arm
+Version: 23.1.3
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.1.3)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.1.3_arm.deb
+Size: 10874504
+MD5sum: 9eb421d2cea1b48aae1343d4ccf639ea
+SHA1: badc8786b4c0f90f7933f725ed6ccf12e975b742
+SHA256: deaf23f8b35be267d502f715ac9aa6b9a835ec33589d5101cbed29751a34d312
+SHA512: 67332feb5ec1f1c1265e5184051d54e49d92e21869fec73fbd026c6edd2581c3f21ac9a40b5449d636ab796c91dfe4f716a68813b5ea9168b2e393478cf6b0e9
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
+
+Package: osmesa
+Installed-Size: 30396
+Maintainer: @termux
+Architecture: arm
 Version: 23.1.2
 Replaces: mesa (<< 22.3.1)
 Depends: mesa (= 23.1.2)
@@ -29070,6 +29137,21 @@ SHA256: cd756ea85fcf2fb1d32fd1afcea7ef8eaadf1591cc42bdf070dd83388cd28980
 SHA512: 286530777c459ba0c6210c4d578968df4fa9af573d21661f2543468d598b4bc1aa2f22cc13f4e0117dd30be25ec5716ad50112d551aef8e4a9e753eb327d94ec
 Description: Animated pipes terminal screensaver
 Homepage: https://github.com/pipeseroni/pipes.sh
+
+Package: pipewire
+Installed-Size: 5788
+Maintainer: @termux
+Architecture: arm
+Version: 0.3.71-1
+Depends: ffmpeg, glib, libc++, liblua54, libopus, libsndfile, libwebrtc-audio-processing, lilv, ncurses, openssl, pulseaudio, readline
+Filename: pool/main/p/pipewire/pipewire_0.3.71-1_arm.deb
+Size: 1088116
+MD5sum: eb5473501c47ab27fe38d237ca701013
+SHA1: fbbb4fb1eae04fde283d27dcb70a3b7a74e990cb
+SHA256: 4f2f43b7069f3293c5e9d4eea0d3138a0ac9169f461ed145bb1493e81a27add4
+SHA512: 09eb67201882d600e65f0c6ca7b91d32b5c566f1fa46e3282d4475ac7e789c0837e80c8319ec22bbe9cfe404489e84727d905f2748b4964e56d853123b8958ba
+Description: A server and user space API to deal with multimedia pipelines
+Homepage: https://pipewire.org/
 
 Package: pipewire
 Installed-Size: 5904
@@ -33239,6 +33321,21 @@ Description: Eat as much as you want while avoiding walls
 Homepage: https://github.com/gogakoreli/snake
 
 Package: snapcast-client
+Installed-Size: 552
+Maintainer: @termux
+Architecture: arm
+Version: 0.27.0-1
+Depends: pulseaudio, libc++, libexpat, libflac, libopus, libsoxr, libvorbis
+Filename: pool/main/s/snapcast-client/snapcast-client_0.27.0-1_arm.deb
+Size: 207828
+MD5sum: 4a5963bc9b547151d9909729166185ca
+SHA1: 0b870bc8298d72c149da4c0dc2f2a023b47048d3
+SHA256: 072eb9eae5823e324bd52ed7b1b144b681e5430e2e7f5f077dfdced3a119c524
+SHA512: f54bc28a1df97102fded22f669e050a0b010f9c1a5e0a45caa7a5bb41167f0ca036b757d3d10dcc37f5f331ede2f354243f1d2efac3aa011a6ebedb17881931f
+Description: A multiroom client-server audio player (client)
+Homepage: https://github.com/badaix/snapcast
+
+Package: snapcast-client
 Installed-Size: 564
 Maintainer: @termux
 Architecture: arm
@@ -33251,6 +33348,21 @@ SHA1: ebbe551dcadee77e07c741116d4113697bedf4f0
 SHA256: 04a6d5f764d94ddbc60a0876644f0317989eece7d9b73e381de48ebfd1aa09e4
 SHA512: fe42fc38d9f1ae69bb78b67ad02682f8a57f9be0f68d511cf39adcbf085de4ec2ba130006bc4e1028f807a9332352551c0348b254b21a6486dc5efefcc2f7b5c
 Description: A multiroom client-server audio player (client)
+Homepage: https://github.com/badaix/snapcast
+
+Package: snapcast-server
+Installed-Size: 3500
+Maintainer: @termux
+Architecture: arm
+Version: 0.27.0-1
+Depends: libc++, libexpat, libflac, libopus, libsoxr, libvorbis
+Filename: pool/main/s/snapcast-server/snapcast-server_0.27.0-1_arm.deb
+Size: 942412
+MD5sum: f22e72e883462ed2ad4175090c0e9e48
+SHA1: 47a2b07d1c14c5544442f538a7633bcad55b37a8
+SHA256: 69af96cb286915927714e23079c3e29ed5ed9604a00649b292690284403ec21d
+SHA512: 81138d79f3ef9719166e23c4c5a59a0301602bfacf95ab7eb31f70056b70f64a5f9fdd6f4d39a99b8a84877c4cc69fbd084a423d22c95034071143260ff27ab8
+Description: A multiroom client-server audio player (server)
 Homepage: https://github.com/badaix/snapcast
 
 Package: snapcast-server
@@ -37223,6 +37335,21 @@ Description: A themeable LS_COLORS generator with a rich filetype datebase
 Homepage: https://github.com/sharkdp/vivid
 
 Package: vlc
+Installed-Size: 9568
+Maintainer: @termux
+Architecture: arm
+Version: 3.0.18-5
+Depends: chromaprint, dbus, ffmpeg, fluidsynth, fontconfig, freetype, fribidi, glib, gst-plugins-base, gstreamer, harfbuzz, liba52, libandroid-shmem, libandroid-spawn, libaom, libarchive, libass, libbluray, libc++, libcaca, libcairo, libcddb, libdav1d, libdvbpsi, libdvdnav, libdvdread, libebml, libflac, libgcrypt, libgnutls, libgpg-error, libiconv, libidn, libjpeg-turbo, liblua52, libmad, libmatroska, libnfs, libogg, libopus, libpng, librsvg, libsecret, libsoxr, libssh2, libtheora, libtwolame, libvorbis, libvpx, libx11, libx264, libx265, libxcb, libxml2, mpg123, ncurses, opengl, pulseaudio, samba, taglib, zlib
+Filename: pool/main/v/vlc/vlc_3.0.18-5_arm.deb
+Size: 2560816
+MD5sum: 58bf1620893b5efd80c1258eb5e53f56
+SHA1: a47724f57a1f6e29a8f0cc194bca3b608c26a2b5
+SHA256: c33ab25ea938c73691fb23f752006eda83e82df4d47968705a4c6db1b446d520
+SHA512: 4b28502bb32e911a2fd767113adb91c522a09d9a90b7e4f76f07910ed008421a943bb35baa2fc8e0da53ca697b5b17e61a19985c0c017568aaa37b2471f360f7
+Description: A popular libre and open source media player and multimedia engine
+Homepage: https://www.videolan.org/
+
+Package: vlc
 Installed-Size: 9612
 Maintainer: @termux
 Architecture: arm
@@ -37235,6 +37362,21 @@ SHA1: 8476ca38cf102a949d9166ca105731c08a54f6dd
 SHA256: d45de56c9309a9db65d0e504347d30a70f94ce287e56dc29075a73b8f08a8713
 SHA512: fcdd2a38c637bf8b5f24618fdcf51cdd3f75530d0010e4a5f6d26fa26a463771e27c64d1510705adfb8c6702b74bf29f5db7843dbe7f4898395f711ed8c495db
 Description: A popular libre and open source media player and multimedia engine
+Homepage: https://www.videolan.org/
+
+Package: vlc-static
+Installed-Size: 1492
+Maintainer: @termux
+Architecture: arm
+Version: 3.0.18-5
+Depends: vlc (= 3.0.18-5)
+Filename: pool/main/v/vlc-static/vlc-static_3.0.18-5_arm.deb
+Size: 16644
+MD5sum: 487827fcffc246dd8d0f96eae75678d7
+SHA1: 2ca374f083e866b9dcf64882e2ed4afde1e3e8d1
+SHA256: 9b15c7cf8c20e3f2e49eb9a41989f0f9d68ac94996d1cbb3480ac1cc89f27a3a
+SHA512: 1d7c88e61eeb50fe4ca722f6b2194660b15913e408dbc21879bd0e191a823f45ff430a8f990123a384f68c0f7e80286381416fcdc268faaafc7bee0a3d79639b
+Description: Static libraries for vlc
 Homepage: https://www.videolan.org/
 
 Package: vlc-static

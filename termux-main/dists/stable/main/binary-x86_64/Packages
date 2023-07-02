@@ -739,6 +739,23 @@ Package: apr-util
 Installed-Size: 592
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.6.3-1
+Replaces: apr-util-dev
+Depends: apr, libcrypt, libexpat, libiconv, libuuid
+Breaks: apr-util-dev
+Filename: pool/main/a/apr-util/apr-util_1.6.3-1_x86_64.deb
+Size: 113568
+MD5sum: 15d999f4a02ec83a915a20bc026b30aa
+SHA1: d02f2fb71f5fb73d920ff2d0c66a5630f1341757
+SHA256: a5fc85acaa90472706bb9ecf3213d3e4f1d4759c6ae382ecef0a0c5eae12c4e7
+SHA512: 616177fa5d283ae05efb40e286870fe1ed43d765dece603ae7a0f0e61a7fab623f89f25214f805337fe082c6874b843453f47710c2a3fea5f1ce8ebb25f7bea5
+Description: Apache Portable Runtime Utility Library
+Homepage: https://apr.apache.org/
+
+Package: apr-util
+Installed-Size: 592
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.6.3
 Replaces: apr-util-dev
 Depends: apr, libcrypt, libexpat, libiconv, libuuid (>> 2.38.1)
@@ -750,6 +767,21 @@ SHA1: 5d9addbc3cf66990db2159234578da6108904233
 SHA256: f1a5203c8cf648cc776590a8c2d7bb801bbeee07555d32f994dcd47a2110af76
 SHA512: 5a10e156f8c4702d9631dcee184035fb8459855a801b1628aa59033311692ac5df8c964d5e43cbb8a8b7d9b52ef239cff788f17b8d036719fd5787ecf5487056
 Description: Apache Portable Runtime Utility Library
+Homepage: https://apr.apache.org/
+
+Package: apr-util-static
+Installed-Size: 308
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.6.3-1
+Depends: apr-util (= 1.6.3-1)
+Filename: pool/main/a/apr-util-static/apr-util-static_1.6.3-1_x86_64.deb
+Size: 67344
+MD5sum: 0c83f1c47d30e1b3312e7fb93862999c
+SHA1: f64ddd08e06947354e6b3ce58353d4c0094e40c8
+SHA256: 880cb9bd16411ee8a09b91d81cc0a36060439c21bea224617fb9f8fcc4c58d26
+SHA512: d5089fd2a85f56324f4bbe4140dd76f006be1eed9c9a1b07180e7c9dd0e87efc3dcb8ec49a048bcdbdbed856a7b55e362dc9313184bef179c2260f0ab4cab2fa
+Description: Static libraries for apr-util
 Homepage: https://apr.apache.org/
 
 Package: apr-util-static
@@ -917,21 +949,6 @@ MD5sum: 72e1384599942d3e8812997c123c16ae
 SHA1: a017de0b3987777e9f97eb817202a1a821fda7ad
 SHA256: 26f43629a3119aef1ba1c639d1748214a2a9c8cd99c2c8e2bfeb958ef5417b97
 SHA512: 57db1fe5ac85529b39dccc74cc3af2972b331f37e42643e291a81b975b72debc4dec3d7f9f92db1ab624d6ba6d8006cf61604a90f6184b630c22179e8fc80f80
-Description: Download utility supporting HTTP/HTTPS, FTP, BitTorrent and Metalink
-Homepage: https://aria2.github.io
-
-Package: aria2
-Installed-Size: 2532
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.36.0-6
-Depends: libc++, c-ares, libgnutls, libxml2, zlib
-Filename: pool/main/a/aria2/aria2_1.36.0-6_x86_64.deb
-Size: 710932
-MD5sum: 323ec22292f221b91e1ce667ca828b33
-SHA1: afa0c7e2ba3f251e3edd07638e2f81bc04ba7a23
-SHA256: 32c19d02d218170fe3697a83a93b07240bb520641c0703cccb5e5bf9864d8a55
-SHA512: 2c4eaf9bdb36c58bcd688e5419c65ca714eb846484de8346dc9ef98ad810546bbb6bc18757c16d422337e64f6078c766f12f680e5b61d39bd3738f544ec7a798
 Description: Download utility supporting HTTP/HTTPS, FTP, BitTorrent and Metalink
 Homepage: https://aria2.github.io
 
@@ -2975,21 +2992,6 @@ SHA512: 467a280886ae8be04624566607244958fffac03815d9d77cc7d37695f8acdac1f9fbedcd
 Description: CFEngine is a configuration management technology
 Homepage: https://cfengine.com/
 
-Package: cfengine
-Installed-Size: 5564
-Maintainer: @craigcomstock
-Architecture: x86_64
-Version: 1:3.21.2
-Depends: libandroid-glob, liblmdb, libxml2, libyaml, openssl, pcre
-Filename: pool/main/c/cfengine/cfengine_1:3.21.2_x86_64.deb
-Size: 941792
-MD5sum: 7a16aac51b798aca23f89bd32d025a6b
-SHA1: 4b61fa6be8c1b6de9ca00bde6d8fd1864726a5c5
-SHA256: 0d6c9ebdd54aa1ff8775e607dde2d8fb461b457f6d18b2d0aba068c57709cc6d
-SHA512: bd1a31f21722fa09ced654a240cd9f9bba939346f2733cee0fa15e836e8a8264512535bbf16bd04a18c063820bda69ff8e253f1deade82c77964195d01a1f031
-Description: CFEngine is a configuration management technology
-Homepage: https://cfengine.com/
-
 Package: cfengine-static
 Installed-Size: 6904
 Maintainer: @craigcomstock
@@ -3002,21 +3004,6 @@ MD5sum: 82a4cad999794a42298b459a3bdb5e33
 SHA1: 3ba03a45e95ab48297631c14c3a71522c5a589b4
 SHA256: 914d6fc030fe60b9ea9d118857292107dd6d3b32220991f26ba2c4c10b11c4a0
 SHA512: 50163f32822e744e224afd264d072edc33b5487eaf117faeda0f4fe7bbd903c35f69f9ce6e55ca3c0db86530d800704cc3941145a8b0573f7ebaa6136e5daaf8
-Description: Static libraries for cfengine
-Homepage: https://cfengine.com/
-
-Package: cfengine-static
-Installed-Size: 6904
-Maintainer: @craigcomstock
-Architecture: x86_64
-Version: 1:3.21.2
-Depends: cfengine (= 1:3.21.2)
-Filename: pool/main/c/cfengine-static/cfengine-static_1:3.21.2_x86_64.deb
-Size: 1343808
-MD5sum: 403a4604be5b70e83bf132190daa9800
-SHA1: 0c06d7e93a7e6ac521530209b598739f386358f8
-SHA256: cb52ac16f7e3aaa72f1eff4627d0906383485eaf38f31f91a10be6276be8b50c
-SHA512: 117e6de125dc7400cd6e0b49a3d5090968b1aebeff29dddb375114252b1ea25edbf00d93964d00852ed0abadd2231fe11e3d664a3c699ea951630cbc831a2b8b
 Description: Static libraries for cfengine
 Homepage: https://cfengine.com/
 
@@ -3285,23 +3272,6 @@ SHA512: c032d928789b85ceca7119f22dd8f0dae4bce640236d019573a74fa05b5588bc33d2abf8
 Description: Anti-virus toolkit for Unix
 Homepage: https://www.clamav.net/
 
-Package: clamav
-Installed-Size: 20204
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.1.0
-Replaces: clamav-dev
-Depends: json-c, libandroid-support, libbz2, libc++, libcurl, libiconv, libxml2, ncurses, openssl, pcre2, zlib
-Breaks: clamav-dev
-Filename: pool/main/c/clamav/clamav_1.1.0_x86_64.deb
-Size: 3444100
-MD5sum: a4b40a82679b32ac3534b4407880ec93
-SHA1: da663d14938e0f1636acd6b21f8f8bfac8497e7a
-SHA256: 89b40fea535f881e319692d8f1ccddad58087deb570b01518f7311651e8fe75d
-SHA512: 5973498c49204c89ec40dddbe218f1574b5233d58363910581b88a317a31dd3777c0ea3b6698c65b9437fddfda2c6bd3b0bc97d52032d81c6c48c921056a3ce2
-Description: Anti-virus toolkit for Unix
-Homepage: https://www.clamav.net/
-
 Package: clamav-static
 Installed-Size: 4516
 Maintainer: @termux
@@ -3321,16 +3291,16 @@ Package: clang
 Installed-Size: 204648
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
+Version: 16.0.6-1
 Replaces: libllvm (<< 16.0.0), clangd
-Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 16.0.6)
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 16.0.6-1)
 Breaks: libllvm (<< 16.0.0), clangd
-Filename: pool/main/c/clang/clang_16.0.6_x86_64.deb
-Size: 33390548
-MD5sum: 4586f6ee7494ee143a63c6b8b35077ff
-SHA1: 6da19fcc2aecd6a5d1b33d8e2b03d5aa4b19c0ff
-SHA256: 89fd2d4eb95ccbd3746a8536c41f41e136fd5dd4059355ec08f064e2fc3dfdd0
-SHA512: f02df34f6958c556c6b31ad3dc5fb382971561f9324e025337900dcd02e1e4cec91704c35daf5e9f4013d8be9a42073f2b3b64011d8e34363c2d5ca3aa228941
+Filename: pool/main/c/clang/clang_16.0.6-1_x86_64.deb
+Size: 33398076
+MD5sum: 4cb1d281a54ad6d8f1e40eac7ec8525f
+SHA1: 588c39ea4b0ce620e2143b111f8b3fc9dc747751
+SHA256: b73abc175d11bda5c85e4f5c4329a9a7c7a4ffe431dd4b99e9ef214ae7eca4ea
+SHA512: 4bad94e182a2014e4406aeba92be1a8b299c37fbf195f0377a9546b6c21f328ec047e6d74337591bb010df4a0e1c7e400a09ea9e1d3f64841f41d7419671d917
 Description: C language frontend for LLVM
 Homepage: https://clang.llvm.org/
 
@@ -4085,21 +4055,6 @@ SHA512: 98d0163e74a6329b11c3d04f0c8927456662d72796aac6dc1e858931c289278059902e75
 Description: Universal ctags: Source code index builder
 Homepage: https://ctags.io/
 
-Package: ctags
-Installed-Size: 3300
-Maintainer: @termux
-Architecture: x86_64
-Version: 2:5.9.20221106.0
-Depends: libiconv, libjansson, libxml2, libyaml
-Filename: pool/main/c/ctags/ctags_2:5.9.20221106.0_x86_64.deb
-Size: 676324
-MD5sum: 82c13dba50b90f0b934ec2a0c0540cb7
-SHA1: 49ddf34aac69bc2a4383043abde92aaf4c159c96
-SHA256: d902aaa542c39fcb1ee1a79e740e5c822a44fa56b4fffc03a4f59d452fff75e4
-SHA512: 60f061e671faeb6cc5def779594a941bf3ce3bdf31a95b58aef115effe367dc6753a23e1952bb7b046f26fefeced52bce41f967b0d34accfab2b8dfbf7c5e16a
-Description: Universal ctags: Source code index builder
-Homepage: https://ctags.io/
-
 Package: ctypes-sh
 Installed-Size: 188
 Maintainer: @termux
@@ -4398,6 +4353,23 @@ Package: dbus
 Installed-Size: 1716
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.15.6-1
+Replaces: dbus-dev
+Depends: libexpat, libx11
+Breaks: dbus-dev
+Filename: pool/main/d/dbus/dbus_1.15.6-1_x86_64.deb
+Size: 448920
+MD5sum: 11e9a41c41a97b0e04155da929dca81f
+SHA1: 3b95a84bd74bd2f93a9d5e504070051af6e607ce
+SHA256: 456a1d37c6d34e7eb5f01fd0ba7cd78dcec74c879e91c464aad60e6f5b862928
+SHA512: 4ff88ff95ff6205fc88a8df3422c36c8eae9497e7850b57fce981c32e341af62a7ca6101fad24bd752561b7bc24930b3e8b400cb598b7e04612741a528e903b0
+Description: Freedesktop.org message bus system
+Homepage: https://dbus.freedesktop.org
+
+Package: dbus
+Installed-Size: 1716
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.15.6
 Replaces: dbus-dev
 Depends: libexpat, libx11
@@ -4430,6 +4402,21 @@ Package: dbus-static
 Installed-Size: 684
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.15.6-1
+Depends: dbus (= 1.15.6-1)
+Filename: pool/main/d/dbus-static/dbus-static_1.15.6-1_x86_64.deb
+Size: 132544
+MD5sum: 9ae9ef692d8f7582360aacf55d11e7e3
+SHA1: 2cb86d954c38b0ef3bb35f579f5dc3af9de8331a
+SHA256: 68dc169f669f6864c2f06a2f89c51f12a395d2fcd63496e2c81830a1a43596eb
+SHA512: c3b4869876d4dc78c77612f946414ff421a73e82a016ea32b67d6f13dd3e19197d433a05c01f6799e9556ff299da6b7661386ab364ce8f63f2a088e9c3ac865d
+Description: Static libraries for dbus
+Homepage: https://dbus.freedesktop.org
+
+Package: dbus-static
+Installed-Size: 684
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.15.6
 Depends: dbus (= 1.15.6)
 Filename: pool/main/d/dbus-static/dbus-static_1.15.6_x86_64.deb
@@ -4453,21 +4440,6 @@ MD5sum: 692f91203fc5f694dd67b7f928f2b064
 SHA1: feaca63d254bbb0a40b127447858ae5e3f775471
 SHA256: 5eeaed5c604976155bedf09816abb71c69e6ec255131ed207c4d37335c657ee7
 SHA512: 2a1e070ec4f6f1d2df49e823c85063860b221486976689669ed7ab81942ce3cbd75e2607282711079ec8e27e12b39f89ae607439ef239d8c143d9afd5e0fd07f
-Description: A collection of libraries and applications implementing large parts the DICOM standard
-Homepage: https://dicom.offis.de/dcmtk
-
-Package: dcmtk
-Installed-Size: 51076
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.6.7-3
-Depends: libc++, libiconv, libpng, libtiff, libxml2, openssl, zlib
-Filename: pool/main/d/dcmtk/dcmtk_3.6.7-3_x86_64.deb
-Size: 8007340
-MD5sum: bbdcc529637dd3ab8e3a7525f70034e8
-SHA1: 1eb8f77ebdb02dea29274f477ebcf6950859fda6
-SHA256: f996baa2beabea84645e94d4fb54534e6d3be6ac0fc4054a08190b87689e68bb
-SHA512: 4fe9a53ab9a767ead7dcc7dfb2e257167dc9180d7d88b03cead6503b54c5b7cadd8063e3f589c2dd61c5773e486af7b9aab51d9bb9654e85827316e054234f91
 Description: A collection of libraries and applications implementing large parts the DICOM standard
 Homepage: https://dicom.offis.de/dcmtk
 
@@ -5397,21 +5369,6 @@ SHA512: c066200adea258ee8bef08b31b4832752c54721f2040873f342f9b11b80b9badd8c9cf44
 Description: Generates a DVD-Video movie from a valid MPEG-2 stream
 Homepage: https://dvdauthor.sourceforge.net/
 
-Package: dvdauthor
-Installed-Size: 624
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.7.2-1
-Depends: fontconfig, freetype, fribidi, graphicsmagick, libdvdread, libpng, libxml2
-Filename: pool/main/d/dvdauthor/dvdauthor_0.7.2-1_x86_64.deb
-Size: 161668
-MD5sum: ff24374941809a495318e04b2e5aea81
-SHA1: 7b4fbdf9a4d91849ac2c66be5b0a165abe49b579
-SHA256: 168c97b19d6dc5bf65d6fdb58955773ed25305d8ea94dce95e2eddd778501ebd
-SHA512: 9eafca4294bd3303694cea269f3240a3c3c98d0cf4bca223b787f695649f412310bd970a884e368cd23a09c35e435eee7840b29c0b583decb7ac8b8839db8c08
-Description: Generates a DVD-Video movie from a valid MPEG-2 stream
-Homepage: http://dvdauthor.sourceforge.net/
-
 Package: dvtm
 Installed-Size: 140
 Maintainer: Termux members @termux
@@ -5697,23 +5654,6 @@ MD5sum: b7571ccd680448a24b6e6c4d52892a16
 SHA1: cc160449600ce95c93971a65d8654e072c8f7b71
 SHA256: 3042e7f623059c5e19c102a606206bb38fcceeb14bbd03515194283a4a6555ce
 SHA512: 260fb14677001175a481770ed68c482648e68dd5e61f36066f76deeda83bf5b561b891b853e6677efccef8c50e63f5fc3125078173beed4b15a69e56780cacb7
-Description: Extensible, customizable text editor-and more
-Homepage: https://www.gnu.org/software/emacs/
-
-Package: emacs
-Installed-Size: 104368
-Maintainer: @termux
-Architecture: x86_64
-Version: 28.3-rc1-0
-Replaces: emacs-dev
-Depends: libgmp, libgnutls, libjansson, libxml2, ncurses, zlib
-Breaks: emacs-dev
-Filename: pool/main/e/emacs/emacs_28.3-rc1-0_x86_64.deb
-Size: 36462616
-MD5sum: 365d155b7c660de6a0e4ba4eb8038927
-SHA1: 67205867952c78d3c7f05e5ecb3dac9e9706e144
-SHA256: a139988173e28d84b82c4c4fee0519b3049515736b56ca424be53d3700098717
-SHA512: 8f4e387871c030cfcf16cb7140b1295c3bd8184ca25f55d8283f2aa1640f732fb5fa5e7566a62ceceee48b368bbd54a6bdc11c5f19949f44d6bcd2c31ddaa0c7
 Description: Extensible, customizable text editor-and more
 Homepage: https://www.gnu.org/software/emacs/
 
@@ -6005,6 +5945,23 @@ Package: exiv2
 Installed-Size: 4684
 Maintainer: @termux
 Architecture: x86_64
+Version: 2:0.27.7-1
+Replaces: exiv2-dev
+Depends: libandroid-support, libc++, libexpat, zlib
+Breaks: exiv2-dev
+Filename: pool/main/e/exiv2/exiv2_2:0.27.7-1_x86_64.deb
+Size: 980300
+MD5sum: a89ba0d5217c1ad38df0d9ffbcbe9dd1
+SHA1: 08c34eca0889809b8844e2c2e14dd741188082da
+SHA256: 44780d9336405b32a482c3ff4dbc08fab43e856404e3a14d573ffed30e8fdc69
+SHA512: aa97ad4cd2b40c09dd692a3c3ae98b91e29d50d60bcf9ea9ee5d9e42ff962714dae55da32a2c5aaa8fdb0223717732d543aad19a0faa15b40f2bc3ccfae3ae07
+Description: Exif, Iptc and XMP metadata manipulation library and tools
+Homepage: https://exiv2.org/
+
+Package: exiv2
+Installed-Size: 4684
+Maintainer: @termux
+Architecture: x86_64
 Version: 2:0.27.7
 Replaces: exiv2-dev
 Depends: libandroid-support, libc++, libexpat, zlib
@@ -6016,6 +5973,21 @@ SHA1: b1f27fc55b0b4f201815a92752ac8cdda7278739
 SHA256: aef4b13b6c3f86943b3c75003d123eea18da35f0964f0b3d53b495296176b982
 SHA512: 65d473e002c16413f8083993d6a6102f9891a090239353d9b4d7c187fc752707b781df320c28b9401ae4cb4e2dd225335e6cab4050cc8fa70ceac1ebbdfe7463
 Description: Exif, Iptc and XMP metadata manipulation library and tools
+Homepage: https://exiv2.org/
+
+Package: exiv2-static
+Installed-Size: 748
+Maintainer: @termux
+Architecture: x86_64
+Version: 2:0.27.7-1
+Depends: exiv2 (= 2:0.27.7-1)
+Filename: pool/main/e/exiv2-static/exiv2-static_2:0.27.7-1_x86_64.deb
+Size: 138164
+MD5sum: eca8e7e2092681159ce0404ce11df96f
+SHA1: 4937aa04c0c32502c0c3c2d87e8176386d0f3d8c
+SHA256: 65f07e5dac9248a21066983365e9286e4dad285fc2dffc15999852eff3dff79d
+SHA512: 3af679d7481c3a83f5fd3302f3eb6e45335ef843179cdb12ff32726dae5253725a63d84b2ba51e909ddbb0dcddc5f0c8c8e43a335618b3f2cd3df5c84750a625
+Description: Static libraries for exiv2
 Homepage: https://exiv2.org/
 
 Package: exiv2-static
@@ -6107,6 +6079,21 @@ SHA256: 5ab82a7094d034c9d7152d544a3f2cb69905553e754e92b83dee44ad88249436
 SHA512: 33d01e97e8b9bc87d3f60ff006198e461782e04e5b5164940cf0b227260294db7710157a6188451ba62dbe9d2a4eef955a15bbf8d1c45547cd66e8ee511ee0d0
 Description: To fastly access files and folders
 Homepage: https://github.com/whjvenyl/fasd
+
+Package: fastfetch
+Installed-Size: 616
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.12.0
+Depends: vulkan-headers, vulkan-loader-android, freetype
+Filename: pool/main/f/fastfetch/fastfetch_1.12.0_x86_64.deb
+Size: 111372
+MD5sum: c0b1e137c986fdf16e9615150c5f759a
+SHA1: 6c536427e453a0ad76cc8a27b19fb4cbbea54189
+SHA256: 6d197cb22280446473f4ddbabb9f6e45acabdf4a816519a5342b2f99ee6994be
+SHA512: ff63988dbf7eda7ecd6d678f856f5f7ef4812efe9e6fa3402fe378552600acab46a1fec4704a523df60653ba9968ee61a590bee5948ecbdc4841d63030b19018
+Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
+Homepage: https://github.com/LinusDierheimer/fastfetch
 
 Package: fastfetch
 Installed-Size: 608
@@ -6474,23 +6461,6 @@ SHA512: b738316fc4c666dc80eb12c23f63a1ebe496e15ea9754851b2f346e12dc43328a49a7fc9
 Description: Text-based multi-protocol instant messaging client
 Homepage: https://pidgin.im/
 
-Package: finch
-Installed-Size: 3688
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.14.12
-Replaces: finch-dev
-Depends: glib, libgnt, libgnutls, libidn, libsasl, libxml2, ncurses
-Breaks: finch-dev
-Filename: pool/main/f/finch/finch_2.14.12_x86_64.deb
-Size: 926176
-MD5sum: 6f9649b563cab9cc4f48c9a457c69d96
-SHA1: 753180b89c47023ea19fb588d25adca4a813f1a8
-SHA256: 71211410e39e98f20c37752f8f5a6c6d4ff5bd642e458c6ab4def25c68355e5b
-SHA512: df500a2a27f956d1e6ce4943c0648e615a01a7937b19ec78c35850c22606632d277aadd1bc7ece8e546d03286180ee2b4da6fe58bdb63c74bc0c5f23827eb506
-Description: Text-based multi-protocol instant messaging client
-Homepage: https://pidgin.im/
-
 Package: finch-static
 Installed-Size: 15200
 Maintainer: @termux
@@ -6503,21 +6473,6 @@ MD5sum: 52bda1372b7608d1b4ce7d791e2aa14f
 SHA1: 6ebb287f64b57f6813df2a57a7dfcca6cca15bf1
 SHA256: 714da117bce259e75e876a5c2b76a216b2b586ae98fd70279c515feee3682099
 SHA512: a17bdf8450468e800af361271e20a113f5fce8443a8ed4bfdd26804eb03a4026817791519ea3bb2810e3ac09a440a04526466f5f8db3ca805b0201b13f0e5bc0
-Description: Static libraries for finch
-Homepage: https://pidgin.im/
-
-Package: finch-static
-Installed-Size: 14788
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.14.12
-Depends: finch (= 2.14.12)
-Filename: pool/main/f/finch-static/finch-static_2.14.12_x86_64.deb
-Size: 2467008
-MD5sum: b8ba3961183db3bc3351ca5ce3c21c35
-SHA1: 88c7e2551d5e93c03aa3310cb87d9f839e4327a1
-SHA256: 4b99470e2652ab7d499f4feb351af3f3d165795ed4efff38adc9a6dc8445f674
-SHA512: bc236487aa50776af3a76544dfe799537bbbb545d2f8d526672a131023062200a9548614670af6e1da4d38f17c2ab902e7bcc4b45e4162f4ae1f6657841d4594
 Description: Static libraries for finch
 Homepage: https://pidgin.im/
 
@@ -6720,6 +6675,23 @@ Package: fontconfig
 Installed-Size: 756
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.14.2-2
+Replaces: fontconfig-dev
+Depends: freetype, libexpat, ttf-dejavu
+Breaks: fontconfig-dev
+Filename: pool/main/f/fontconfig/fontconfig_2.14.2-2_x86_64.deb
+Size: 128748
+MD5sum: 4f1b1d520dbc9c893849c5118facbd7f
+SHA1: 7469f9fb74a9bcc447e957ec1dff13b3a31e39a1
+SHA256: 598665ab47100ee5ecaa755cf80779cceeb01c6161ab3a7bd183a0c56930676c
+SHA512: 43bd64e19f53ff47f1038a578d5cad18510498e450aced7e88e13e102bf9936be373d9232f010715f8f8b076afa6ad3962aeb1a32816d22b25340c533f24dc33
+Description: Library for configuring and customizing font access
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+
+Package: fontconfig
+Installed-Size: 756
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.14.2-1
 Replaces: fontconfig-dev
 Depends: freetype, libexpat, ttf-dejavu
@@ -6737,6 +6709,21 @@ Package: fontconfig-static
 Installed-Size: 516
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.14.2-2
+Depends: fontconfig (= 2.14.2-2)
+Filename: pool/main/f/fontconfig-static/fontconfig-static_2.14.2-2_x86_64.deb
+Size: 122544
+MD5sum: 877a4e662541c45d762f203cf5e07486
+SHA1: 8125275f9d898f82cfdfe45a5dd5ef22f6dc8f87
+SHA256: e5cfd31d4b16e69bb4f16dbb1228bfbda25057e38aa97d000087d79219488db6
+SHA512: ee7c855532e24e89b73c361e3032f575822b73a691b06b0639c95c4c2e20fc07c26ea44cb20b818a30de88a7d258f1e63602df4dd8d97bb530c925fe5ed20043
+Description: Static libraries for fontconfig
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+
+Package: fontconfig-static
+Installed-Size: 516
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.14.2-1
 Depends: fontconfig (= 2.14.2-1)
 Filename: pool/main/f/fontconfig-static/fontconfig-static_2.14.2-1_x86_64.deb
@@ -6746,6 +6733,21 @@ SHA1: bb94663bb1bf4f2fea4f4203d926fa633c138678
 SHA256: 51d32b0bd325950a21b7d7c3a22debcdc9ebdde0714e868cd35045b2acb47443
 SHA512: 54b4e170d23092a23ec46f2a36dd133b604002b163458b74e476776a0a9d1300c1f703ed8803a7a29ecf76febc40323077e8cdb481456db7b028d63ac09d7d81
 Description: Static libraries for fontconfig
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+
+Package: fontconfig-utils
+Installed-Size: 128
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.14.2-2
+Depends: fontconfig (= 2.14.2-2)
+Filename: pool/main/f/fontconfig-utils/fontconfig-utils_2.14.2-2_x86_64.deb
+Size: 15272
+MD5sum: dbc8b8a51da1bd5fe74c9ef646bdf507
+SHA1: 5a414022a65edb669d58150e182673638e06711d
+SHA256: a45514d4e7382990ae8efcffa5c93612c4c45d8123119359e1128be9401c73fa
+SHA512: 482e6450f944a8ea0a47d3d09ebd5d8b738e158846d48bf50985255a7459329ce83989905817efd27758d7747879cf0229762ec43669f1f3b457b7246b148335
+Description: Fontconfig binaries
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
 
 Package: fontconfig-utils
@@ -7338,23 +7340,6 @@ SHA512: 63cbb3f3fba120363fe6d4801b5dc8c46ba537762f5b943ae3cbf93e81dc0c563b5ef022
 Description: A translator library for raster and vector geospatial data formats
 Homepage: https://gdal.org
 
-Package: gdal
-Installed-Size: 28548
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.7.0-1
-Replaces: gdal-dev
-Depends: giflib, json-c, libc++, libcurl, libexpat, libfreexl, libgeos, libiconv, libjpeg-turbo, libjxl, liblzma, libpng, libspatialite, libsqlite, libwebp, libxml2, netcdf-c, openjpeg, openssl, proj, postgresql, zlib, zstd
-Breaks: gdal-dev
-Filename: pool/main/g/gdal/gdal_3.7.0-1_x86_64.deb
-Size: 7721900
-MD5sum: 7b282d6955c008f4751bd6bc9286d6ab
-SHA1: a52a9bc0c598b003eda4f08229cdd20313500114
-SHA256: c61005e72be5d74249b314e1f2fd54088a6845216390093eb535a9bd29047b65
-SHA512: 5c034ea224a4d8e0a8f2ac8aeb187bcd561cdae724aa95b964afcfe3b7f6f4f44dafdec1c597402d58d923b11da65cb659922c2bb5b98972843ad2b6c654a893
-Description: A translator library for raster and vector geospatial data formats
-Homepage: https://gdal.org
-
 Package: gdal-static
 Installed-Size: 62108
 Maintainer: @termux
@@ -7662,23 +7647,6 @@ SHA512: 3ef439da8b17cb9f02739fe9a479c3afb13f4b914a5bd5b118b5c8b6faddf7d6a38e8f88
 Description: GNU Internationalization utilities
 Homepage: https://www.gnu.org/software/gettext/
 
-Package: gettext
-Installed-Size: 14916
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.21.1
-Replaces: gettext-dev
-Depends: libc++, libiconv, libunistring, libxml2, ncurses
-Breaks: gettext-dev
-Filename: pool/main/g/gettext/gettext_0.21.1_x86_64.deb
-Size: 1772512
-MD5sum: fb4224284491f5087cfc3c40ed68a70f
-SHA1: 6aa94c32aaf81b5b1c74b1b6bbb43cbe88cdb013
-SHA256: 46d810609f1a9a01bcb8bfe37fa8b0017ac6810b8dae2522b5c046c7b7742b68
-SHA512: 248df142bab5f844e94a0838899d259e9f8acac51ce948e23f45d2dbcf843180438675a5501f4b5b6b3ae8e096054dcb14c505ba3909b5f6fa409d2ef4ca599c
-Description: GNU Internationalization utilities
-Homepage: https://www.gnu.org/software/gettext/
-
 Package: gettext-static
 Installed-Size: 1924
 Maintainer: @termux
@@ -7691,21 +7659,6 @@ MD5sum: 6a2f0d0ff9b082d9d4cba188db60480e
 SHA1: 1047220c7a2064855fcef7095cfa41dd0a0e8b39
 SHA256: 8ed19a992915c8022d3436641c13c48b4fe610457b5b4f0835328026249a4d95
 SHA512: 8f94629d07517d0580e7377396defb4e699a8910769a94466f4b75a62bb981183a6980fafb9f0c3e3c21c570b7317816ce1e4cefb0505f78aff295c194a1fcd7
-Description: Static libraries for gettext
-Homepage: https://www.gnu.org/software/gettext/
-
-Package: gettext-static
-Installed-Size: 1924
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.21.1
-Depends: gettext (= 0.21.1)
-Filename: pool/main/g/gettext-static/gettext-static_0.21.1_x86_64.deb
-Size: 381528
-MD5sum: 35c3ca89b396bea9727fbc8a9b146e24
-SHA1: c1ef8ea58b7e2f3dc68b9d2ad7a771fe15cbe1a6
-SHA256: 0bb5ca07feccc29ee761a2fff7d18a85bc123dde3ec2f9a784bf90895b8f3c67
-SHA512: 45cc7dadf42bb3cc4ae9de626c4a3e0bbe63b15f82291573f05f6cbfbc3959e10bfa9da1eee733bf517e909bf6055c39b5b949b25785e1d0786fdc1747b92cac
 Description: Static libraries for gettext
 Homepage: https://www.gnu.org/software/gettext/
 
@@ -8404,21 +8357,6 @@ SHA512: 8cfabf560733a92f12a6ec91bbc538cd57311235cb8836186755a9d76a1e433fa17388db
 Description: A free/libre COBOL compiler
 Homepage: https://gnucobol.sourceforge.io/
 
-Package: gnucobol
-Installed-Size: 2204
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.1.2-1
-Depends: json-c, libgmp, libvbisam, libxml2, ncurses
-Filename: pool/main/g/gnucobol/gnucobol_3.1.2-1_x86_64.deb
-Size: 585796
-MD5sum: 7b1e6970620f64cffa46a8726cca48db
-SHA1: 7aace1063968959eb19303ba1d518c9e26f7aaeb
-SHA256: fdd6979294f88fa9f6987ef58c34de4f5b44d95c6f96e9ea0366043f57f1857d
-SHA512: e5ab9e81d64bd606f4c484ea778aac2daff093b2ac7a3c31e4959f399bbfb4d9b80cc0f4bebf379d155a3976b4c510562fe3431f1f4b9a3769fdc18eabf0d542
-Description: A free/libre COBOL compiler
-Homepage: https://gnucobol.sourceforge.io/
-
 Package: gnucobol-static
 Installed-Size: 604
 Maintainer: @termux
@@ -8431,21 +8369,6 @@ MD5sum: 4215bb2488270600645fe3e7f3f6f0b2
 SHA1: 63e4f94dc157a720d9721d184cb1fd670f78f792
 SHA256: 39e8f4bed68c4dfd242be655de45a4d5c5abff0d209c0a56c7a3a3531abe3149
 SHA512: 55bdddd7dda4f1eba9f735d004b751be94d7489f496b26ec340a6ac5892d1fcae20a3cf1f674d9705cc6c8ad75206001c4e91c2c8f98e0c5643880ee13762e86
-Description: Static libraries for gnucobol
-Homepage: https://gnucobol.sourceforge.io/
-
-Package: gnucobol-static
-Installed-Size: 604
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.1.2-1
-Depends: gnucobol (= 3.1.2-1)
-Filename: pool/main/g/gnucobol-static/gnucobol-static_3.1.2-1_x86_64.deb
-Size: 148108
-MD5sum: a059d718debc72dfa882510e546f5e0b
-SHA1: fef36f79ddb424362d8d919d90a7f53a17069bd7
-SHA256: 9daf940fb4c2f0b8bf148590c5832ccae91dba16f71048b1afdc117c2dc33e7a
-SHA512: 70ad6b49dedc50246f9002e3ed32f393e2d8859db1c8c8d3b5ffba05edf9cdaa3ae328837c092bb004eaf30cf05709068fd415e1512cf65c2f06cd9e21007efc
 Description: Static libraries for gnucobol
 Homepage: https://gnucobol.sourceforge.io/
 
@@ -9141,6 +9064,23 @@ Package: graphviz
 Installed-Size: 9488
 Maintainer: @termux
 Architecture: x86_64
+Version: 8.0.5-1
+Replaces: graphviz-dev
+Depends: fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, libandroid-glob, libc++, libcairo, libexpat, libgd, libltdl, librsvg, libwebp, pango, zlib
+Breaks: graphviz-dev
+Filename: pool/main/g/graphviz/graphviz_8.0.5-1_x86_64.deb
+Size: 2960484
+MD5sum: 3ee89567f445d2f303aa6929d5b62201
+SHA1: 68672408239bd111005a46d46b693194a6619064
+SHA256: 360120bccd152a6f2e0888a3fda3a4145928ddb039d7531dde23b2d4c322499a
+SHA512: 81d5cf1aee23b2ed27f6089e7228935c5107b008abc23bef5da09757143d83cb1fdad9237297b98171cf27a39d14d9e20e490ff0acbf5407c1a23ea3d5c6056b
+Description: Rich set of graph drawing tools
+Homepage: https://www.graphviz.org/
+
+Package: graphviz
+Installed-Size: 9488
+Maintainer: @termux
+Architecture: x86_64
 Version: 8.0.5
 Replaces: graphviz-dev
 Depends: fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, libandroid-glob, libc++, libcairo, libexpat, libgd, libltdl, librsvg, libwebp, pango, zlib
@@ -9152,6 +9092,21 @@ SHA1: 727632d3a28f77b5b0ec6a80debab97442583434
 SHA256: 3269ed4b34fb23a9d31d6b5d6879b6044a37fcc63ee8f642fcef18acee0c12ec
 SHA512: 2dc602620f6c574d3600ea605c27a024b8f2f7a09795c309262dd917adb3efa0925f6d6d6f6015a757235b55c9068be0dd028f4d9f37e2fa4f8e1d8aad7e39fa
 Description: Rich set of graph drawing tools
+Homepage: https://www.graphviz.org/
+
+Package: graphviz-static
+Installed-Size: 7860
+Maintainer: @termux
+Architecture: x86_64
+Version: 8.0.5-1
+Depends: graphviz (= 8.0.5-1)
+Filename: pool/main/g/graphviz-static/graphviz-static_8.0.5-1_x86_64.deb
+Size: 868256
+MD5sum: ad6de62d415bb2d3aefe1a112e9daa8c
+SHA1: 190fa90afc45ecbde50f32fa701befffd2519a33
+SHA256: f06f792d715777a82f0e0d89fc7fbbaf8e55b56c3806fd61b4f3cecab61cbf37
+SHA512: 7500616df394a739e9a5b3e0efada45615837e9a40683c95c53f1eb64255d18153d570274467d4fc93925ec6e6104985253d6bd44f8840fc86cdfeb75b83e38e
+Description: Static libraries for graphviz
 Homepage: https://www.graphviz.org/
 
 Package: graphviz-static
@@ -9366,23 +9321,6 @@ SHA512: 2bab786aecfc1e9e3f0a267d0d1918ebfc40fdf8a448f9a23eb21245f39c51002daf682d
 Description: GStreamer Bad Plug-ins
 Homepage: https://gstreamer.freedesktop.org/
 
-Package: gst-plugins-bad
-Installed-Size: 7604
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.22.4
-Replaces: gst-plugins-bad-dev
-Depends: game-music-emu, glib, gst-plugins-base, gstreamer, libaom, libass, libbz2, libcairo, libcurl, libopus, librsvg, libsndfile, libsrt, libx11, libxml2, littlecms, openal-soft, openjpeg, openssl, pango
-Breaks: gst-plugins-bad-dev
-Filename: pool/main/g/gst-plugins-bad/gst-plugins-bad_1.22.4_x86_64.deb
-Size: 1993876
-MD5sum: 50d9411d58b9b8c40892d3ddb405fd1f
-SHA1: 92eca9b54f2b95e2f9eaa59c547edd415e639817
-SHA256: 0d03421f904189f9dc22ef8048aa64c11eec058d8b2b34bdc3884ce34c05c334
-SHA512: 71bd4b4f6e930721a24e154dc213a8e5902c85a7f6ce0b8f8b37e85c6529bece5782b6bff8e768715d7de3b4a572c6bcbfcc6771a180f34c85dd02d00de9a196
-Description: GStreamer Bad Plug-ins
-Homepage: https://gstreamer.freedesktop.org/
-
 Package: gst-plugins-base
 Installed-Size: 11928
 Maintainer: @termux
@@ -9429,21 +9367,6 @@ MD5sum: eb2606f21bb196f2476e41e0bc158661
 SHA1: 78785b8843ebde250f40af4a1aa4e127c65a16ef
 SHA256: 1a8fe14d84422c1474c27290c690dfc9c6a2c585d88fb51d3365716aae9b64ee
 SHA512: ca86529c2fd72dfa95bb3317797e2da013f41813be4ac47a40cb2b451a244255218862e566650e8ad2c63c995c4e34edab5bd34fc7c5a30b92b5ea69a39155f4
-Description: GStreamer Good Plug-ins
-Homepage: https://gstreamer.freedesktop.org/
-
-Package: gst-plugins-good
-Installed-Size: 5408
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.22.4-1
-Depends: glib, gst-plugins-base, gstreamer, libandroid-shmem, libbz2, libcaca, libflac, libjpeg-turbo, libmp3lame, libnettle, libpng, libvpx, libx11, libxext, libxfixes, libxml2, pulseaudio, zlib
-Filename: pool/main/g/gst-plugins-good/gst-plugins-good_1.22.4-1_x86_64.deb
-Size: 1634804
-MD5sum: 2e95796f1273f686289d0f0396a482f2
-SHA1: 4d0619a6e4cdd46db82e2a9609ff2afad884fead
-SHA256: e5857a49fde3bc8657b1903b772d9f54f82a5d45b00e124cc414b7acf9af645f
-SHA512: 0769021492463d9bbf4abb2fc9f31084ef86bf280529044fc3f3a3600c57e79f9ba11e698c5132fb873696979d2827c538e4041b0543715093372031e2e7c1c0
 Description: GStreamer Good Plug-ins
 Homepage: https://gstreamer.freedesktop.org/
 
@@ -10427,21 +10350,6 @@ SHA512: 3c2c4f1c0da1fad6471135ae35457f11710beba18a80fd287df33e02c096f1eb650e344a
 Description: Icecast is a streaming media (audio/video) server
 Homepage: https://icecast.org
 
-Package: icecast
-Installed-Size: 2260
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.4.4-3
-Depends: libcurl, libgnutls, libogg, libvorbis, libxml2, libxslt, mime-support, openssl
-Filename: pool/main/i/icecast/icecast_2.4.4-3_x86_64.deb
-Size: 1457812
-MD5sum: 3e30a890fcbe2b23c1754a25807696f7
-SHA1: f37907e12bbc82962f0fc078571eb5a4ae4df95e
-SHA256: 4920bf842448c41816d49b57137113b29f00de2cb72c38d81bce03ac4026cc15
-SHA512: e5cc0ab10586d1b778bcd94f437ac9652e10ff2a10ed8eca7cba60a63bda88d4961e3a02e40c1b519942ba1194d683b2dbadb0705ec984a8c684b0f0af602964
-Description: Icecast is a streaming media (audio/video) server
-Homepage: https://icecast.org
-
 Package: iconv
 Installed-Size: 56
 Maintainer: @termux
@@ -10564,23 +10472,6 @@ SHA512: e9a1d5b7dfc621399999274e030a1c1b4050014e15cae7b1a75fc832be38ec54f1ef9f5b
 Description: Suite to create, edit, compose, or convert images in a variety of formats
 Homepage: https://www.imagemagick.org/
 
-Package: imagemagick
-Installed-Size: 19196
-Maintainer: @termux
-Architecture: x86_64
-Version: 7.1.1.12
-Replaces: imagemagick-dev, imagemagick-x
-Depends: fftw, fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, imath, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblzma, libpng, librsvg, libtiff, libwebp, libx11, libxext, libxml2, littlecms, openexr, openjpeg, pango, zlib
-Breaks: imagemagick-dev, imagemagick-x
-Filename: pool/main/i/imagemagick/imagemagick_7.1.1.12_x86_64.deb
-Size: 7513932
-MD5sum: b54181aacd4b4f8952dcc9d1373889ba
-SHA1: d837d2b6c6e9da29e01c3f1a3b4a6dcddd598776
-SHA256: 141916d2731374bf299675ebea6a447135e9b24480e1f0deead0135ef07dd665
-SHA512: 579e1fda2dc48f52beaff0828e493b8f65d5099ef00410ca551ffd1f0d04ca38d000e4be9ae21873170c0e6b8c01ba6ab73a9d0ec89d6f3879847580d1323d98
-Description: Suite to create, edit, compose, or convert images in a variety of formats
-Homepage: https://www.imagemagick.org/
-
 Package: imagemagick-static
 Installed-Size: 12428
 Maintainer: @termux
@@ -10593,21 +10484,6 @@ MD5sum: e76a986dbba978cbeb9f965e99466083
 SHA1: ed7e496b00bf284581b844e56799df1338d142dc
 SHA256: 973399a41e5bb5074102138fa154f3e7cbfe0ed6240dba322e8d1040c3215a45
 SHA512: f9b96acf2db56a3e6fdc90a864877f4973141e0eac5371cf4b39141b079f10a40d886bbe84a52e9cf057d9af326df0c0835a5e3ce8475d50b6ae76b741389e34
-Description: Static libraries for imagemagick
-Homepage: https://www.imagemagick.org/
-
-Package: imagemagick-static
-Installed-Size: 12428
-Maintainer: @termux
-Architecture: x86_64
-Version: 7.1.1.12
-Depends: imagemagick (= 7.1.1.12)
-Filename: pool/main/i/imagemagick-static/imagemagick-static_7.1.1.12_x86_64.deb
-Size: 2056340
-MD5sum: b409126eccf5b78740e3c603a03d003e
-SHA1: fc09cedb01dff15c8422478a354abcccda3d290e
-SHA256: 4ee17e2a396e05d05c58c0b1ce9f7150fd468658e7d7e0cf0726d4ace9cceb20
-SHA512: 08d2288b8291136b9d3cb1ebffa579656abeceed4d78022dd1517588e752892f683c5db4ce8a060b7c568a93771de12539fd1bef92521bc2b35ae8c1645f4aab
 Description: Static libraries for imagemagick
 Homepage: https://www.imagemagick.org/
 
@@ -11773,22 +11649,6 @@ MD5sum: 49c2b1847f36b42371392c018998c5e1
 SHA1: 98466e82cabe9e7b9ded565850a16639f9d96270
 SHA256: 06efdf0badb348c987a28ce43b96cba552a67dc74c022a65f4de60f787fe50ab
 SHA512: c9e0c5cd53ce6d5dc62dfa32ba473fa81ad64e1766204362c4966d04acb25ea82b7f70ad89d230fe791d22511024354f8db0612cf7cce9d2478841c70382e54d
-Description: LastPass command line interface tool
-Homepage: https://lastpass.com/
-
-Package: lastpass-cli
-Installed-Size: 268
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.3.4
-Depends: libcurl, libxml2, openssl, pinentry
-Suggests: termux-api
-Filename: pool/main/l/lastpass-cli/lastpass-cli_1.3.4_x86_64.deb
-Size: 73340
-MD5sum: 7789e11cd342e06a71258b953adcecec
-SHA1: 0aad8728ff15ef5ece61c9a3990b5f687596bdf5
-SHA256: 719517df25c784086fa589721356dbc97da8717c884e51eabf7fb57db67c1e5b
-SHA512: d2af2a09e19029d1fd32896a31ef0ba791e153ac3a0bfc44241a3fb8d04c5487c5b7af2ba11238c8164911dd75fae728e0a83c9517f76450537a396717cad8b5
 Description: LastPass command line interface tool
 Homepage: https://lastpass.com/
 
@@ -13465,18 +13325,18 @@ Description: A host of helper utilities for the java.lang API
 Homepage: https://commons.apache.org/proper/commons-lang/
 
 Package: libcompiler-rt
-Installed-Size: 30952
+Installed-Size: 30956
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
-Depends: libllvm (= 16.0.6)
+Version: 16.0.6-1
+Depends: libllvm (= 16.0.6-1)
 Conflicts: ndk-multilib (<< 23b-6)
-Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_16.0.6_x86_64.deb
-Size: 2871920
-MD5sum: 91174a0a2d093ec7cc792a58d2bc4917
-SHA1: 09dc3439f019ed59dcb701345aaf01f6e42ddd1b
-SHA256: e2f1044dbb0e99f97aef07554dfd5557c7cf571b741f364a5f3789233dfdd545
-SHA512: fc11392ba88d623242294a663963c357afa47d69a03db25547ce5c1cd5573b86848ba55fdf6cb4781304b1c1ece19c452f7e81171e1f9feab9b362fd36b3511d
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_16.0.6-1_x86_64.deb
+Size: 2931556
+MD5sum: b9f591b597cc92d9d0a1cf8a3530dfaa
+SHA1: 8d50ba83d6cac6951c23373d6bc4aa5de61cb2be
+SHA256: 57cd13eb8c44a16bf7569b2e3a6b84e391fe608f011893973882fdf615927087
+SHA512: a13e97ec9c886f559165c03f6e2a633b14ce708c56b664f528f6b0d64c95910b64ced6c5a21143625a8dc838fe911795fdc1ce87d2efd807192c6c51729d85eb
 Description: Compiler runtime libraries for clang
 Homepage: https://clang.llvm.org/
 
@@ -13574,23 +13434,6 @@ SHA512: d8bea3ff805935de967a30806f4c9471fdb8e2f4e8b8944eb65b4113ad278bf720fffd5d
 Description: CSS parsing and manipulation library
 Homepage: https://gitlab.gnome.org/Archive/libcroco
 
-Package: libcroco
-Installed-Size: 472
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.6.13-7
-Replaces: libcroco-dev
-Depends: glib, liblzma, libxml2
-Breaks: libcroco-dev
-Filename: pool/main/libc/libcroco/libcroco_0.6.13-7_x86_64.deb
-Size: 92420
-MD5sum: 7ab008ccc77c5e2cd81f1fb82379e722
-SHA1: 9be6be55bbe6bf618240e2238d51a4a822e09648
-SHA256: 4a0e3f0d9227b9cfcd6bdda55213d6c982003e7a7c423cee35d3c00f2141f4fe
-SHA512: 5392753436063e1c63d473a5275ae281dd428f6ff987d125c22ac78bd2bc73afb8345c2895f1b506548b6f8a9775779cd2b291d1ac7719b260440800e10a3861
-Description: CSS parsing and manipulation library
-Homepage: https://gitlab.gnome.org/Archive/libcroco
-
 Package: libcroco-static
 Installed-Size: 496
 Maintainer: @termux
@@ -13603,21 +13446,6 @@ MD5sum: f46ef6d0d20877255ad501080e80e293
 SHA1: dcf7e382828ecdc91b231bd9a9ebbc1b3368866c
 SHA256: 0d1340622906ef7d7a6aab4e1d79a0fcd1d39b24b60a9e745654a32a67308af7
 SHA512: fef7a4d01ee4306b4785ec1a061f977b2aa54b590742a29326f436cbbaf5a8b5b60890a70c4836b50aa6bb3154eaa8f8ed3dd21079b8381419924a3708a60c06
-Description: Static libraries for libcroco
-Homepage: https://gitlab.gnome.org/Archive/libcroco
-
-Package: libcroco-static
-Installed-Size: 476
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.6.13-7
-Depends: libcroco (= 0.6.13-7)
-Filename: pool/main/libc/libcroco-static/libcroco-static_0.6.13-7_x86_64.deb
-Size: 81160
-MD5sum: 8d4fd10446352a012b10aad41dc5bf87
-SHA1: 2479e79e443ac492897c57f337f843e580599c42
-SHA256: 04d9d4fa27e3d08ed08fd88b6d0840164eff0ad54bac7823efa6a532bd5a8f85
-SHA512: 11e0dec7272d4ef9459d23e37ffaba21f4d6d9777a372588e86dbf763fd08f370f10a657ef147b80a32cab32823c1a863adad25011439c0f8b99f42c14045186
 Description: Static libraries for libcroco
 Homepage: https://gitlab.gnome.org/Archive/libcroco
 
@@ -15086,21 +14914,6 @@ SHA512: 0ef45c5da6e0a677717a191f11b42cdcec8f8ff6157a452e1ef9c4faf155cae950c91e30
 Description: A library of general-purpose, non-graphical Objective C objects
 Homepage: http://www.gnustep.org
 
-Package: libgnustep-base
-Installed-Size: 11484
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.29.0-2
-Depends: gnustep-make, libc++, libffi, libgmp, libgnutls, libiconv, libicu, libxml2, libxslt, zlib
-Filename: pool/main/libg/libgnustep-base/libgnustep-base_1.29.0-2_x86_64.deb
-Size: 1665152
-MD5sum: aa783418688e4155422f3677e6e845f2
-SHA1: 44a428636fd51319f5cdb77425e2e05cd480f949
-SHA256: dd126f658fd819acdbfa7df85082b1ccc86e8dde6742e912a0a42138e91a4743
-SHA512: 96603c486f6cb649bdb803284f167b335631e7e06d2c3cbc108a2ca2e8c63e2d37a3cfbcb58350c70dd5547bc40fa85aaced895f03615aafbe14b90e85a28355
-Description: A library of general-purpose, non-graphical Objective C objects
-Homepage: http://www.gnustep.org
-
 Package: libgnutls
 Installed-Size: 2412
 Maintainer: @termux
@@ -16209,35 +16022,35 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
-Installed-Size: 147632
+Installed-Size: 147628
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
+Version: 16.0.6-1
 Replaces: gcc, libclang, libclang-dev, libllvm-dev
-Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Depends: libc++, libffi, libxml2 (>= 2.11.4-2), ncurses, zlib, zstd
 Conflicts: gcc, clang (<< 3.9.1-3)
 Breaks: libclang, libclang-dev, libllvm-dev
-Filename: pool/main/libl/libllvm/libllvm_16.0.6_x86_64.deb
-Size: 26935580
-MD5sum: b794b434473af6835d9d02bdb03f3b20
-SHA1: 613bbdd688c80a28ec6ecde3674a38859e2c9d07
-SHA256: 61233d19db17c325c73da3c0126e0a7503c22f05be1b64f416dc3a6a1b905dc8
-SHA512: c1e95f11aba7ed07d3897c1c6aeb06a3d22b566397ccc69f1fabe85da0d8e1b772d2c410b3b91aa1931f13349bed31e9e09a9396ff361f5b3d00059975d932b1
+Filename: pool/main/libl/libllvm/libllvm_16.0.6-1_x86_64.deb
+Size: 26960704
+MD5sum: c17d0761210607e1d6918279af9339fb
+SHA1: 9576e7f5ce37fe6b65f3bc5d108e29f264c06914
+SHA256: ee373babf8a60591c6cfd43758833b6a53314650f95a8c196b1e4f5184cd4b99
+SHA512: ace801ece6daf35fec8a92065d1fa710514f0d28adc27ac5003290ee2cef60eee174283f8920b8290f4de17bc1d14be64bd1b7d2bb525e26cca2b73992b7f4dd
 Description: Modular compiler and toolchain technologies library
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
-Installed-Size: 621964
+Installed-Size: 621972
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
-Depends: libllvm (= 16.0.6)
-Filename: pool/main/libl/libllvm-static/libllvm-static_16.0.6_x86_64.deb
-Size: 67720096
-MD5sum: 760c4a6a1a177c7b94dff6ff51dca7f8
-SHA1: 4cb5284425afbd0bfa31becdc96181fa590fa362
-SHA256: c06f85945c658d0c6e01f1dd08dee68387db5983a0474fc281d362b5056aa363
-SHA512: 36f02481f2d9e4745ad2e72c0f10d58fa49ac9d6830f2131635d97029db403daeaa6a94af39149a29c57efee07341aa1fdd603d738626e839ce20410a52bb480
+Version: 16.0.6-1
+Depends: libllvm (= 16.0.6-1)
+Filename: pool/main/libl/libllvm-static/libllvm-static_16.0.6-1_x86_64.deb
+Size: 67701612
+MD5sum: 6be41e5cbb4d39acbb970b7fcaa49ed5
+SHA1: adf4f252f531b4fd32e83e53a42f620b6ce5db73
+SHA256: 4dd453be93d16b1efe510928f94ea82dcee0adda1564201fb28a57ff83b0510f
+SHA512: 86ba72ff7d8a82836524cb3a0a43e787cc4c09aff1515955256b3fad0b8e4978da53d86d71c7a18d1aa53c6a2ed4291238f29b1b7c2f962f20105d4c0ac7254b
 Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
@@ -16303,6 +16116,21 @@ Package: liblog4c
 Installed-Size: 304
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.2.4-1
+Depends: libexpat
+Filename: pool/main/libl/liblog4c/liblog4c_1.2.4-1_x86_64.deb
+Size: 38788
+MD5sum: 5c75ef74a609c4714503d4f54ee01d2b
+SHA1: edbdd44e369f13fc05dd2966f58a235addb841aa
+SHA256: d7f8550e8a827ebdc6383631b88812725ab9770beefb4e9297b10e15ccd6e867
+SHA512: b1252deddb1d29cca63ae41475366b660cd95945a76a1c6a7527530f8b3a13706e1a5a3d063dd6e7b1af24d283a5cfa3b1c87108f61313f8deaf96431ba17e0a
+Description: A C library for flexible logging to files, syslog and other destinations
+Homepage: https://log4c.sourceforge.net/
+
+Package: liblog4c
+Installed-Size: 304
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.2.4
 Depends: libexpat
 Filename: pool/main/libl/liblog4c/liblog4c_1.2.4_x86_64.deb
@@ -16313,6 +16141,21 @@ SHA256: 7a8740de9c333f02a025a6bb3e7b705757e3f1a42cba8e44d05ffb9f96818211
 SHA512: f19bdb30707b0e6ef05c4454ae9f4e186695e897791bed7c19e97e637ff983f1623fff450107ea3cd585635dc215507124250401d883223372c0e74c7b2514e1
 Description: A C library for flexible logging to files, syslog and other destinations
 Homepage: http://log4c.sourceforge.net/
+
+Package: liblog4c-static
+Installed-Size: 180
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.2.4-1
+Depends: liblog4c (= 1.2.4-1)
+Filename: pool/main/libl/liblog4c-static/liblog4c-static_1.2.4-1_x86_64.deb
+Size: 28108
+MD5sum: 74b509bac88f5af2808e42b34417d208
+SHA1: 04cfe1bd54adbfb296b0ea30f1d5568aa5449207
+SHA256: d32870e72eb10d69f5cbda021de7961467c22916c85d51ff60510719e9f01af4
+SHA512: a98468bc8cd41e965fbb335bc8b10e7d41fa5d735536e3ba28402e66b29d0c0df14339d6178c296ba91f6652e061119bfa2e616f458491bea8bbca4bb75de4e7
+Description: Static libraries for liblog4c
+Homepage: https://log4c.sourceforge.net/
 
 Package: liblog4c-static
 Installed-Size: 176
@@ -17357,21 +17200,6 @@ SHA512: eb740295ebdc11a24488e90c7059bcb972dfb184102608784e59ed22eb8a9489b78fe185
 Description: The MusicBrainz Client Library
 Homepage: https://musicbrainz.org/doc/libmusicbrainz
 
-Package: libmusicbrainz
-Installed-Size: 1028
-Maintainer: @termux
-Architecture: x86_64
-Version: 5.1.0-1
-Depends: libc++, libneon, libxml2
-Filename: pool/main/libm/libmusicbrainz/libmusicbrainz_5.1.0-1_x86_64.deb
-Size: 146352
-MD5sum: b51c6e409413d492a68775daf9c739b1
-SHA1: d5481d65861d41d0c2fbbf6c2129aab3fdf83751
-SHA256: ffa29ce549d7b5bdeeac13646ab645f372c056aa25600ab3e8974b1f1a22d12d
-SHA512: f6042b2042d3fabe2439810399759b5392f3b10accfb44cd014199500d31443a6abd6e121880ec47a2540b0852409cfa8b957d08d38b8cd6b5d5f072915f1bcf
-Description: The MusicBrainz Client Library
-Homepage: https://musicbrainz.org/doc/libmusicbrainz
-
 Package: libmypaint
 Installed-Size: 428
 Maintainer: @termux
@@ -17451,6 +17279,21 @@ Package: libneon
 Installed-Size: 1180
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.32.5-1
+Depends: libexpat, openssl, zlib
+Filename: pool/main/libn/libneon/libneon_0.32.5-1_x86_64.deb
+Size: 175740
+MD5sum: 3a9100f0ff5087e4230816e44bf16910
+SHA1: 0e4c23b32a94fb34ec00fcc3985a795132cb541d
+SHA256: a8073d3523c1a1abfe9161ed46e3a1f06e9992a916bf834325bece27817f3157
+SHA512: a0162de8632f20d0ee197a5ef0fb0338441e8956fc4120ee618d0a1af765e8d21cad787d842e4c0d0e21924e05ca6b740bbb094835c94664ab6d313edd5b0a1d
+Description: An HTTP/1.1 and WebDAV client library, with a C interface
+Homepage: https://notroj.github.io/neon/
+
+Package: libneon
+Installed-Size: 1180
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.32.5
 Depends: libexpat, openssl, zlib
 Filename: pool/main/libn/libneon/libneon_0.32.5_x86_64.deb
@@ -17460,6 +17303,21 @@ SHA1: 3b554feb3304c3a42b9da3bb04ca1ec47ede6c34
 SHA256: 6a9673c7d10950f303baaae43b36394cc3d2666a9784eb251554d4ed2203b548
 SHA512: cb5fee046846a13e8e75b3d1a5a970c55699c811469647edf4bd87a49eb8e2fbd6994e76d6ee1feb70068bb87cf93b13365ebb08658e5919390ba76a880278c8
 Description: An HTTP/1.1 and WebDAV client library, with a C interface
+Homepage: https://notroj.github.io/neon/
+
+Package: libneon-static
+Installed-Size: 308
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.32.5-1
+Depends: libneon (= 0.32.5-1)
+Filename: pool/main/libn/libneon-static/libneon-static_0.32.5-1_x86_64.deb
+Size: 66292
+MD5sum: 53d8e4990e4383e8667e8bc78ef7ab70
+SHA1: ab93925d8a9d7608a6597eaac2443ff307790e0f
+SHA256: 55ad022838fcc6d03409da2e9d7cbf78e36a732c7489fba24155ed645b63f7bb
+SHA512: e4d2f04fa278657b10f9d9727bf591389f69cc8fef72343cb67f4f817116f15fa513a27b54ed5085952218112bd66257c74e7b0e184e6199b829e2ff0352a97c
+Description: Static libraries for libneon
 Homepage: https://notroj.github.io/neon/
 
 Package: libneon-static
@@ -18635,6 +18493,21 @@ Package: libpoco
 Installed-Size: 17568
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.12.4-2
+Depends: libc++, libexpat, libsqlite, openssl, pcre2, zlib
+Filename: pool/main/libp/libpoco/libpoco_1.12.4-2_x86_64.deb
+Size: 2827588
+MD5sum: e71b239972c65225ad6bdb7ffd74c481
+SHA1: a27471be30044f316ce60f7b8497dfe48d5d4f59
+SHA256: 1b3da5e7faec290d93e4dae6b659c73bb40b6159d997df1356deb946aa7f4183
+SHA512: e338b4a51667ce4842353937a9d405f21f549231fb7387fbc346b24033c13c7d3afb59032572d19613846c9edfe3ec66d70f8109066f1e16c0a5037ac6f48a8a
+Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
+Homepage: https://pocoproject.org/
+
+Package: libpoco
+Installed-Size: 17568
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.12.4-1
 Depends: libc++, libexpat, libsqlite, openssl, pcre2, zlib
 Filename: pool/main/libp/libpoco/libpoco_1.12.4-1_x86_64.deb
@@ -18650,14 +18523,14 @@ Package: libpolly
 Installed-Size: 5936
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
-Depends: libllvm (= 16.0.6)
-Filename: pool/main/libp/libpolly/libpolly_16.0.6_x86_64.deb
-Size: 1374356
-MD5sum: 4994486e1ae4e0ae984c5c8b135a9650
-SHA1: c252c092283fea5290f677c4e19f334befe954b2
-SHA256: 021c64e1120831c131e9fb9636761615c8fbf5fcdfc53171e159948732b6a33d
-SHA512: f878a3281ca436e0b838a9b05fbf31c3b396df9be5cd5822519283c09c88b5bae02322371988e0f6cda4444d20497bb5b843bd3f8f087f7c739a5de43808bd24
+Version: 16.0.6-1
+Depends: libllvm (= 16.0.6-1)
+Filename: pool/main/libp/libpolly/libpolly_16.0.6-1_x86_64.deb
+Size: 1376812
+MD5sum: 6c8a1258af50aaadaae644d3d8a355f8
+SHA1: 5d76335f50f838be228737af181a85c935c9a6db
+SHA256: 5586f2877f11c86e89c233e20c5d8a83c5d446526b451e4516bbe028bb2a54df
+SHA512: 18fa137b035c42955f237c2f95880b8c63bb6afb78c313a6039aae9b04fd8a58d0c13100f5a4a4997991c2329a1571a62c98860e08aed507ac3003c4cd1a8ee1
 Description: High-level loop and data-locality optimizer for clang
 Homepage: https://clang.llvm.org/
 
@@ -18835,21 +18708,6 @@ SHA512: 5af5fd20fedb8d35a6bf981266db9adafe7ee1db5769b254797228bd2a385d2741ee001e
 Description: RDF Syntax Library
 Homepage: https://librdf.org/raptor/
 
-Package: libraptor2
-Installed-Size: 624
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.0.16-2
-Depends: libcurl, libicu, libxml2, libxslt, yajl
-Filename: pool/main/libr/libraptor2/libraptor2_2.0.16-2_x86_64.deb
-Size: 171632
-MD5sum: d350caa8abd2cbd048853749933c8468
-SHA1: fd92d58ac649f9044bc50677e0f4e1d5727ca0d8
-SHA256: 5579312bf304efd06a31bd2e6982337217cbcb2e79820f4d159f4dc741058d6e
-SHA512: 674d1476f97a569c9a9d4c0eca35241b7406a220e222d358798e0f3d2610f449f6247e9bf35bcb53d4e9bca674167cde5a800e958f9298301f85b3c1df6bd0aa
-Description: RDF Syntax Library
-Homepage: https://librdf.org/raptor/
-
 Package: libraptor2-static
 Installed-Size: 760
 Maintainer: @termux
@@ -18862,21 +18720,6 @@ MD5sum: 622277cd09c7688005e8155f6ff6a563
 SHA1: 02c595915393acec6106770681180cf9dabfd475
 SHA256: d91875352e344357abfc842cdd70f39d229e95def19ec4f927b468ce03e5c83b
 SHA512: 8522325f192430ddc8b5187998e605e0b5ceb2a3d683d926d017ddcd637b6dffac8b86aab6a427b9937ffbfdacd29b7609db78aa8680df06c07bb5647eb1d09e
-Description: Static libraries for libraptor2
-Homepage: https://librdf.org/raptor/
-
-Package: libraptor2-static
-Installed-Size: 760
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.0.16-2
-Depends: libraptor2 (= 2.0.16-2)
-Filename: pool/main/libr/libraptor2-static/libraptor2-static_2.0.16-2_x86_64.deb
-Size: 156428
-MD5sum: 4d93789334f50ec97538469620909259
-SHA1: a9670333945861a3b698ec2bfe7959bf33cb205c
-SHA256: 06b6708445be3866d17e990e2979e6beea7f713559d2936a4f6a9f3f46a835c1
-SHA512: bae05b714a64c4580084642485ab4794e0abe2851863f684774574b1d77dbeeef06463d753f0c07d54cf4c7593c1c4d5a361b210296700973ff43e822ef83d72
 Description: Static libraries for libraptor2
 Homepage: https://librdf.org/raptor/
 
@@ -19747,24 +19590,6 @@ SHA512: c6682a6e90d267d441a4fbaff3eb75caa0c071529579945b91297884ed019591f8b219f0
 Description: HTTP client and server library
 Homepage: https://wiki.gnome.org/action/show/Projects/libsoup
 
-Package: libsoup
-Installed-Size: 2620
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.74.3-1
-Replaces: libsoup-dev
-Depends: brotli, glib, libpsl, libsqlite, libxml2, zlib
-Recommends: glib-networking
-Breaks: libsoup-dev
-Filename: pool/main/libs/libsoup/libsoup_2.74.3-1_x86_64.deb
-Size: 360144
-MD5sum: be4a392a6514c353eb98216095944519
-SHA1: 7a1cd05c70f3d69c360688ea937cad5d4993a363
-SHA256: b6542bc4dffecb04ff41285dba3d85143d1422d9c5d0c7db2bb5582e0c665369
-SHA512: 6b5757cfd079e101633daf65c451540297d3b331fa2f38aef282fb1ce910c15ba0ca111560e4eca83545f12391e4f5f0e072d8d4451279a702f09379293c2090
-Description: HTTP client and server library
-Homepage: https://wiki.gnome.org/action/show/Projects/libsoup
-
 Package: libsoup3
 Installed-Size: 1808
 Maintainer: @termux
@@ -20102,6 +19927,21 @@ Description: Static libraries for libstemmer
 Homepage: https://snowballstem.org/
 
 Package: libstrophe
+Installed-Size: 248
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.12.2-1
+Depends: openssl, libexpat, c-ares
+Filename: pool/main/libs/libstrophe/libstrophe_0.12.2-1_x86_64.deb
+Size: 67056
+MD5sum: ae09919097be21c0d16e5a70a93739fd
+SHA1: 01db114a04cbb95de2d16ab4b8bd2c15eaaa63d5
+SHA256: 08d4662fada762753c9912ed12a54847c604b43f22f9493778daa5d1efce51ac
+SHA512: 1b241088ccd4ebd3a3c0afccbf1fcdab93d6067752d6c9dda4ef0cacbbd5ae69381afcbb413629ff9ed1bdddaf3734094460a9201349c4ff6a0b797b215d4c25
+Description: libstrophe is a minimal XMPP library written in C
+Homepage: https://strophe.im/libstrophe
+
+Package: libstrophe
 Installed-Size: 252
 Maintainer: @termux
 Architecture: x86_64
@@ -20114,6 +19954,21 @@ SHA1: ed9a14844828908f2b58a32703d24f3f78a46918
 SHA256: 29bda420b5da5d0869930ba95980163635f2b446036ff51916fff84d5b138f8f
 SHA512: c0aeb5ae064f72a94fd38729039412da944519ef048a94b3dfb6f029af73545e6ceb6ddbc462c6215527c6d1b19361e1eab5e70f2793b9df8fcefe382a2f827e
 Description: libstrophe is a minimal XMPP library written in C
+Homepage: https://strophe.im/libstrophe
+
+Package: libstrophe-static
+Installed-Size: 276
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.12.2-1
+Depends: libstrophe (= 0.12.2-1)
+Filename: pool/main/libs/libstrophe-static/libstrophe-static_0.12.2-1_x86_64.deb
+Size: 58540
+MD5sum: 39b1668e6ae00f8c59ece0fad7d13632
+SHA1: dfe908e7b3943ccfabc207bf6384ff2ba6de0013
+SHA256: 0d7a6095f317d96c0175a4210ac3a769027fbc0b23d86079d3a6c3560a5a19bf
+SHA512: 21f06300d136aee9cadb7eb82a618ad23978fa9be9b641347c331a39dc4f4e2dc7eb7bc1ebe6f084c9d6815a32390d0ad29a62a573f20b329087dd04df5827ac
+Description: Static libraries for libstrophe
 Homepage: https://strophe.im/libstrophe
 
 Package: libstrophe-static
@@ -21277,6 +21132,21 @@ Package: libvips
 Installed-Size: 3492
 Maintainer: Thibault Meyer <meyer.thibault@gmail.com>
 Architecture: x86_64
+Version: 8.14.2-3
+Depends: cgif, fftw, fontconfig, glib, imagemagick, libc++, libcairo, libexif, libexpat, libheif, libimagequant, libjpeg-turbo, libjxl, libpng, librsvg, libtiff, libwebp, littlecms, openexr, openjpeg, pango, poppler, zlib
+Filename: pool/main/libv/libvips/libvips_8.14.2-3_x86_64.deb
+Size: 1116560
+MD5sum: 43df96d8b2b91ee547f55ba3f6dcfaa1
+SHA1: 4c30ae768567f9b0d5e9b185f1eb30d55b5523ec
+SHA256: e1ebfcc6c9b236293146e428d684d328aceba7d939a7eaae44a996a85d0e87b3
+SHA512: a10a1a678a4d55bfdc14c35fc4c40a37825d86e4c72829199c1522c8fd6c45b92e4942213c1b18aad87d856f33f4cc926e02a280fc20731ba91d12582eb34ddc
+Description: A fast image processing library with low memory needs
+Homepage: https://libvips.github.io/libvips/
+
+Package: libvips
+Installed-Size: 3492
+Maintainer: Thibault Meyer <meyer.thibault@gmail.com>
+Architecture: x86_64
 Version: 8.14.2-2
 Depends: cgif, fftw, fontconfig, glib, imagemagick, libc++, libcairo, libexif, libexpat, libheif, libimagequant, libjpeg-turbo, libjxl, libpng, librsvg, libtiff, libwebp, littlecms, openexr, openjpeg, pango, poppler, zlib
 Filename: pool/main/libv/libvips/libvips_8.14.2-2_x86_64.deb
@@ -21472,21 +21342,6 @@ SHA512: 9abeb6b52f5b84132d39a280c9a3d4d1f322eb0a4cebec18b752424af90574251e96edb6
 Description: Wayland protocol library
 Homepage: https://wayland.freedesktop.org/
 
-Package: libwayland
-Installed-Size: 872
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.21.0-1
-Depends: libandroid-support, libexpat, libffi, libxml2
-Filename: pool/main/libw/libwayland/libwayland_1.21.0-1_x86_64.deb
-Size: 118908
-MD5sum: 3760e9588dab03054016b7e51a9b0590
-SHA1: 3fc9d152b3bcd2fe8f406fc73d1f4d87f90c9b92
-SHA256: 7bba3f4fadb980a3a5f23f4847e2f678b5ee10723f288a17bb9d67c5a2d4112d
-SHA512: b02f3a7aea8865bddfd660e746c79ed71da509c031052dd37db702f6952d6346a0e83aa5c1da638dfaee6a50e9448065b7eb6f4053fad67d389f2699d8632732
-Description: Wayland protocol library
-Homepage: https://wayland.freedesktop.org/
-
 Package: libwayland-cross-scanner
 Installed-Size: 360
 Maintainer: @termux
@@ -21499,21 +21354,6 @@ MD5sum: b320c9f373e57cb5b32c668bf4b30ca1
 SHA1: aa51ad1793f9cc0aec55223b6dfb5d1f9fc32c9d
 SHA256: ea2370250233d29ef04eca7435f7647a4e2d910d39942412a074d83a9bcfa25f
 SHA512: bd62c707d749f806c7252fca2f3ab94d983ba4dcf7881a0293e68bf1849ae5372682cd02dd2d196d8528998bd8b92df854921fabea01eb2b63e30f5841a01a57
-Description: wayland-scanner for host (NOT for Termux)
-Homepage: https://wayland.freedesktop.org/
-
-Package: libwayland-cross-scanner
-Installed-Size: 360
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.21.0-1
-Depends: libwayland (= 1.21.0-1)
-Filename: pool/main/libw/libwayland-cross-scanner/libwayland-cross-scanner_1.21.0-1_x86_64.deb
-Size: 80400
-MD5sum: 1c71635650efb7faca4bc2815a1ddbee
-SHA1: d7480e63b08a99b409ef28f0b777b2516f1adf76
-SHA256: d49358d19a2c9d54cd788520da82d36adbdd5c5279142e80c14cc2ad584cd6b2
-SHA512: 608b38aae113805f537369bf6fe93be85e4d6e3be797188a1262a5dcab8ddfd4eaaaff41f593557744b8e102a674661a5f1f31937e7ca4228c572ca934c10e3a
 Description: wayland-scanner for host (NOT for Termux)
 Homepage: https://wayland.freedesktop.org/
 
@@ -21670,21 +21510,6 @@ SHA512: dc3a4508ff9f3f9de1a37ebb9bbf8d4e4273497373fbfbac88896cf8faa952593fea3a47
 Description: A library which allows access to Microsoft Word files
 Homepage: http://wvware.sourceforge.net/
 
-Package: libwv
-Installed-Size: 2348
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.2.9-2
-Depends: glib, libgsf, libpng, libxml2, zlib
-Filename: pool/main/libw/libwv/libwv_1.2.9-2_x86_64.deb
-Size: 157316
-MD5sum: 3a90448ac041e5bb2439550427c7cc51
-SHA1: 8969fb843b6fb81fca82ca3ba39799745a699ffb
-SHA256: 2f36e8a7ce07cb27ba05d04d7dfae1c67f60d52b7030c76f9fdb5148d3977a9e
-SHA512: 37aab257692a6d9fc926abf602ad6f6983171b43128c623c65332c1ca7229c4fc2eb668731c752346eaddaa807a5021fc76dd67c795e2592310a50b011749080
-Description: A library which allows access to Microsoft Word files
-Homepage: http://wvware.sourceforge.net/
-
 Package: libwv-static
 Installed-Size: 644
 Maintainer: @termux
@@ -21697,21 +21522,6 @@ MD5sum: 9c8be7aa763cb5b3e1565bf24b9aba72
 SHA1: 3502187ad8dd0929fe33919c54413b63dae896b3
 SHA256: 9d6516946a2490574f1416a42380349c6be5a39a196fe8de15b763bb60fbabb7
 SHA512: 6d2b1896d459f40f6e8264abba288aa46a52bde1e11f09295467ddfd5b97d097656d17b8dca7bd546fa73f17834bcfacf0022b0bc3c3e63ec0855d4884c542cd
-Description: Static libraries for libwv
-Homepage: http://wvware.sourceforge.net/
-
-Package: libwv-static
-Installed-Size: 644
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.2.9-2
-Depends: libwv (= 1.2.9-2)
-Filename: pool/main/libw/libwv-static/libwv-static_1.2.9-2_x86_64.deb
-Size: 112244
-MD5sum: 120b23d0fff24cd757d0974256b49c52
-SHA1: 1e0e67a4f0453ded6c4249f6f8ab70a4650c064d
-SHA256: d8dcb70887479a5cadb7bca30a5603429743406eea39c0d4d07b37bd709a351c
-SHA512: 42cd9d7afcd4e384b896ac776b00292f574cc8837958ac91e1591bebb3c7e6945da18e335594f4c976ecef08a0d4c7ae91c4ec579d59423ab7a7bcd516cc3e56
 Description: Static libraries for libwv
 Homepage: http://wvware.sourceforge.net/
 
@@ -22183,19 +21993,19 @@ Description: A C library for creating Excel XLSX files
 Homepage: https://libxlsxwriter.github.io/
 
 Package: libxml2
-Installed-Size: 2368
+Installed-Size: 2364
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.11.4-1
+Version: 2.11.4-2
 Replaces: libxml2-dev
 Depends: libiconv, liblzma, zlib
 Breaks: libxml2-dev
-Filename: pool/main/libx/libxml2/libxml2_2.11.4-1_x86_64.deb
-Size: 577572
-MD5sum: 276ba7fccd5a93a16a49ae7af9734bf6
-SHA1: c8c3250740710b759848307e31506bbb00532fec
-SHA256: 74896fca0f7028d9a774180ded8eb4e6cc446541387b6bfa25b757d0d77e8ad7
-SHA512: df15d461f170f80fdac6b46f29130cb7a7f439f8070f5230aa9d3bc67c08c10f9f2452d6ed238dc78a070dba9404bfbde7d37c49a686f264ec3fe4d567e9708a
+Filename: pool/main/libx/libxml2/libxml2_2.11.4-2_x86_64.deb
+Size: 577896
+MD5sum: fcec4a57a1d7d8de4da1cb70d02479ee
+SHA1: cf8fa91ab64c3821359720746e3f7aac3fd5c3a0
+SHA256: 342f3a5185b70673bab218c6dfeb6a88b2ad0b81e1422f4c737b537df534b5f4
+SHA512: 55f042423f372fb153235f1328c4dd616e6a8daa2f9176d372fead21d3bace8a76d2df66662dff554a0616e93844a978cf1aa7cd02ef95985c6abc09d0d5bd3b
 Description: Library for parsing XML documents
 Homepage: http://www.xmlsoft.org
 
@@ -22203,14 +22013,14 @@ Package: libxml2-python
 Installed-Size: 2044
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.11.4-1
-Depends: python, libxml2 (= 2.11.4-1)
-Filename: pool/main/libx/libxml2-python/libxml2-python_2.11.4-1_x86_64.deb
-Size: 204452
-MD5sum: efc89cb3a18b96ffb9335f24d28b88ee
-SHA1: 4d12847edb485e6f14a18c20b67f69ff2cb827c8
-SHA256: 97e284538389936aea9854fe9c3a5e874abb2d2b645c2a410bf558a4dd22a93b
-SHA512: db03fc9d4afdc8cea8c4af4ecd63392a7613adb0c54121793485949c1ffd79f87f2a46ac80bf8db8e22ac798ff313b35e93debf8c71db810aa34bebe6b5c1e53
+Version: 2.11.4-2
+Depends: python, libxml2 (= 2.11.4-2)
+Filename: pool/main/libx/libxml2-python/libxml2-python_2.11.4-2_x86_64.deb
+Size: 204828
+MD5sum: 2d0870122381d9e8f60905e0f3645193
+SHA1: 8d619c12a496d90dcbba758b31187f7d470fb150
+SHA256: 99a015de7d9e8acb6bc32ed44101040107ba8800b2402777312edf5b97a5b1bf
+SHA512: 9043eb66eb02cc957d7e449bf537cfc60d9b430afa27fe33b115d28292cb1effbb4e3adaba5cd66d3d897b0b3020ee7a5d26bec50ebf464e70695b536fd1a35b
 Description: Python bindings for libxml2
 Homepage: http://www.xmlsoft.org
 
@@ -22218,14 +22028,14 @@ Package: libxml2-python-static
 Installed-Size: 656
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.11.4-1
-Depends: libxml2-python, libxml2 (= 2.11.4-1)
-Filename: pool/main/libx/libxml2-python-static/libxml2-python-static_2.11.4-1_x86_64.deb
-Size: 67724
-MD5sum: 2011164b91941c5e74e06a607db55c2d
-SHA1: d3dbdeafc9ec793f3548d05fe14210701ea04b38
-SHA256: 6512adc6ac1714ac64d0304962bea4208b98d8689cd02e56ab346a7acb2a34e8
-SHA512: 3d42175ef335db35944232134bc004ecbcf08ea4d2ca5034bc6eebda3a688f9f4a940c61c4421b38d632123138b2d227dbc5321602e8d34f36e09162d5ce7279
+Version: 2.11.4-2
+Depends: libxml2-python, libxml2 (= 2.11.4-2)
+Filename: pool/main/libx/libxml2-python-static/libxml2-python-static_2.11.4-2_x86_64.deb
+Size: 67756
+MD5sum: 018c37e0222a20ef3ddda207f4c1b33e
+SHA1: 7687efd371548b62bf27f124d89240ceb7d2d839
+SHA256: c88a03fff4a5f0f357c62247f27fbee28a9f5cdaa84a1726158a5960fac7b8ae
+SHA512: 9cba68c03fe7bc9acb24a4f0f6b3a080d40f963cb65ef0e951e5266fd3345d7b7392302b0d94ca063acad486d2d1327132a1947316535d233ce2cc897141fc2d
 Description: Static libraries for libxml2-python
 Homepage: http://www.xmlsoft.org
 
@@ -22233,14 +22043,14 @@ Package: libxml2-static
 Installed-Size: 2024
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.11.4-1
-Depends: libxml2 (= 2.11.4-1)
-Filename: pool/main/libx/libxml2-static/libxml2-static_2.11.4-1_x86_64.deb
-Size: 487752
-MD5sum: 4e1a4844c6a897684d55226ec1c6b263
-SHA1: ffa14eca9899f60a63febfd96b153f2a63712bd6
-SHA256: 48977f5f9e83fbdb7799b3758728e9059891e056d43bf2760c0051f0caf364f2
-SHA512: c0fcabc5266e3f778e911cef5d97a02b9fafad62ea0dcc865431e1b2864fffd83dbca6d5d31b0425820ecdb81be1bc46013f30258b6d78d2864620ac88634a0e
+Version: 2.11.4-2
+Depends: libxml2 (= 2.11.4-2)
+Filename: pool/main/libx/libxml2-static/libxml2-static_2.11.4-2_x86_64.deb
+Size: 488036
+MD5sum: 8a586b66b10394b89f3046c0d4baf415
+SHA1: 14a99e3816fccd6bb9a27c9abefcde40c7ac5bd8
+SHA256: 2092234df13a71a90c7596167a448a4b1861fc898345569b0dca8f08e2ae85dc
+SHA512: 682c47e66e4408de3101a1564a110ddba12983a9e70cdd3059282e4af06ecf9f6af9ec7d6c24aa0dc9adb7d59fce3ce503b8ac976d4c6ae9a7c10c873a64af1a
 Description: Static libraries for libxml2
 Homepage: http://www.xmlsoft.org
 
@@ -22248,14 +22058,14 @@ Package: libxml2-utils
 Installed-Size: 132
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.11.4-1
-Depends: libxml2 (= 2.11.4-1)
-Filename: pool/main/libx/libxml2-utils/libxml2-utils_2.11.4-1_x86_64.deb
-Size: 32128
-MD5sum: d1ca5900866a70283da1a5e38ec65c66
-SHA1: cae4f0778ca3130f32a314887e15df290d129b91
-SHA256: 9352b2b2e2db355e10ce427dd1001d80c07dfffa663a293e6138610ad39cf93b
-SHA512: 4c0951e7508e2063cb492ff4028b7f7add97e7694c26560077c45c8d4129040f44c68bfde8a8268262c712b726484e26694e70f77bd2fa605872eb7652097a94
+Version: 2.11.4-2
+Depends: libxml2 (= 2.11.4-2)
+Filename: pool/main/libx/libxml2-utils/libxml2-utils_2.11.4-2_x86_64.deb
+Size: 32044
+MD5sum: a1a14ff47982d4acd602d413dd46a0b6
+SHA1: 69546e1c0d7a924b5c2590a17d9cd0c00c24cfa0
+SHA256: 565ca061bcdf07a9c9900c82c7b18920b8c1b58c4b072575011e5ad5db3eb2d6
+SHA512: 8e9d4d5530b6c894ff4debc871336914297155d1d0f320602182262abe96e56557320b1a911e9656db2f2c77ef348f8576c7dd154b12043057e17f023bae7002
 Description: XML utilities
 Homepage: http://www.xmlsoft.org
 
@@ -22960,14 +22770,14 @@ Package: lld
 Installed-Size: 16580
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
-Depends: libllvm (= 16.0.6)
-Filename: pool/main/l/lld/lld_16.0.6_x86_64.deb
-Size: 2355912
-MD5sum: 02f353ba3976d77d7fa0cc5b8eb029b0
-SHA1: e18fc09d23d1eede04c9c83d6bd7ae3432306bfe
-SHA256: 9d6784c6632d9106944d581a2b34fb7eea7e6e224aee3008c376310ea2b97ec7
-SHA512: 257109f44c83554564e0248750ebbf890c2313fdbda1d95b46b2fdf49763e88c3e4e81557308fd7eb7d1150cb2531eb2953fbc39a56976d78438ca47d5241cd5
+Version: 16.0.6-1
+Depends: libllvm (= 16.0.6-1)
+Filename: pool/main/l/lld/lld_16.0.6-1_x86_64.deb
+Size: 2372476
+MD5sum: 24ee81f081ffdfba57c790c2fd2c6807
+SHA1: 9607dbb9c342a6b1bb0797fd46342b030a3cf9c4
+SHA256: de17beb33e9359e0f1b7b9138df463199b887355e5f570cb6d6a9ffee58e9539
+SHA512: 7fc26baa6a695f569c989c666e9fde0606da587637ef75801bcfe317a3f52ae825b93a2d0a6edbb6ac503375904d3c821b443ee8c304d1b57d2c6415146ca4ca
 Description: LLVM-based linker
 Homepage: https://clang.llvm.org/
 
@@ -22975,16 +22785,16 @@ Package: lldb
 Installed-Size: 23196
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
+Version: 16.0.6-1
 Replaces: lldb-dev, lldb-static
-Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 16.0.6)
+Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 16.0.6-1)
 Breaks: lldb-dev, lldb-static
-Filename: pool/main/l/lldb/lldb_16.0.6_x86_64.deb
-Size: 4927256
-MD5sum: e6ab8c9b2a7030469312d07ad7f106ea
-SHA1: c5ec1d5670909fd38fe3aaf552749365f55b4cef
-SHA256: fedb331ae3f8cd835d6bd2292f7264e09caca9c6c59f63bfd70d93749b836756
-SHA512: 4264366e20459cf08bbe5ee00b5716094f2f61bc6e1f07fa90d9dac78e3965bce7c50eea79cee8f0864eb22553996df2c38a59f07b27cbde21a22419ec96d53c
+Filename: pool/main/l/lldb/lldb_16.0.6-1_x86_64.deb
+Size: 4940300
+MD5sum: 193af26c5ab5fe66ca686ce187ec3745
+SHA1: b524375a2e970252a744acca2ad8dc925ee982e4
+SHA256: 987289ec310f60afc9dfe56b0e2c8a162f8d3dcdaaf2ddfb0d90c1f18a1dc509
+SHA512: c68989d721138c9c337097208a1ac6122c95666789956a0f02f20d217a37215556679fcb7a88270acae52e135dca24e6882fd38846076af45ccd5774a19baf80
 Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
@@ -22992,16 +22802,16 @@ Package: llvm
 Installed-Size: 106412
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
+Version: 16.0.6-1
 Replaces: libllvm (<< 11.0.0-1)
-Depends: libllvm (= 16.0.6)
+Depends: libllvm (= 16.0.6-1)
 Breaks: libllvm (<< 11.0.0-1)
-Filename: pool/main/l/llvm/llvm_16.0.6_x86_64.deb
-Size: 19641836
-MD5sum: 7d2a1bcdda934949aa55e5ea3b654732
-SHA1: 35632d3ccfe9eb953e32f75dae91db4b6adc4c73
-SHA256: 61109a3f2a28ae6a760feaba2f09aaac4bd9ca4dfddecfe0e356b4f2cec07040
-SHA512: 90e8d698a6fa12b824230f283212ba1fb8d79de988c42ce0f733e3f8524f64d0fb2e60025fefdab174c953dc6ba9afb19351967d090ca697b4cba1fd05adc561
+Filename: pool/main/l/llvm/llvm_16.0.6-1_x86_64.deb
+Size: 19532612
+MD5sum: 54dd06b033d854faeace5b5f1619be24
+SHA1: 76c53ea8ca88be66daec510160a9bb55f27c8635
+SHA256: 06fbaa356bfb5a51d90c79d7ef3a447a45db1d89ba11e46061a42e26ab8fe15a
+SHA512: 97cd85bf82981e9903c3d3b9f2e51c2e64713431390c2c5f05b964414e00da48c2f65bd78f42fe55420ecce01b15d7da8b0707a26fc1403229b63dd3c8b5e835
 Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
@@ -23068,16 +22878,16 @@ Package: llvm-tools
 Installed-Size: 11328
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
+Version: 16.0.6-1
 Replaces: libllvm (<< 16.0.0)
-Depends: libc++, ncurses, zlib, libllvm (= 16.0.6)
+Depends: libc++, ncurses, zlib, libllvm (= 16.0.6-1)
 Breaks: libllvm (<< 16.0.0)
-Filename: pool/main/l/llvm-tools/llvm-tools_16.0.6_x86_64.deb
-Size: 2262952
-MD5sum: 2a1851dd13c79a13a0b1f54a9fa7861a
-SHA1: 6c6c43d5465d7f169e3c3a973042286f3e12e5e6
-SHA256: d6425e05c407db28872f501773b286fb2e8f77d36c54fe7b1be55ac4539b74d1
-SHA512: 9aa7c10050064b3afaa892a5ec52aefa2a8ca35090683e5bf644c256725c195abf39f548da72a3b6cd4861cf1a31f59e5e9e9462cfa1103a3928cf31f201a11f
+Filename: pool/main/l/llvm-tools/llvm-tools_16.0.6-1_x86_64.deb
+Size: 2249940
+MD5sum: 37a56b12e0ee45476654cc38d4569e24
+SHA1: 2d5081efc8d7f1da1c84d029bbf5065770aa390d
+SHA256: 5031be053002876dba3476bec5b948aaf9def72f348196b48eb0d7e84e215661
+SHA512: 4e7f94891148a35774ddac48935a51d0bbb632b1841fdc3b64c782bb6846fff2578a8f24f39952a0a0b7fac18d91ba7a6670b514ed05a887e7e4effc9a18d23e
 Description: LLVM Development Tools
 Homepage: https://clang.llvm.org/
 
@@ -23085,14 +22895,14 @@ Package: llvmgold
 Installed-Size: 112
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
-Depends: binutils-gold, libllvm (= 16.0.6)
-Filename: pool/main/l/llvmgold/llvmgold_16.0.6_x86_64.deb
-Size: 28828
-MD5sum: 27a381db1e3d104ccd301e6af37ac5eb
-SHA1: e9e1384a3ddbb176708a19455b4e668430de8f95
-SHA256: 25f49906034c411899863f08210569fc2ab63660b6248b0eb9f89f95a7db0c49
-SHA512: a8bded12a2150723b26700e6c826473710ae2c2b0c566d1cf0668e3bb85370c595d273e642654319a8970bd9286f2e866166f7738867787425ddf5a746a827fe
+Version: 16.0.6-1
+Depends: binutils-gold, libllvm (= 16.0.6-1)
+Filename: pool/main/l/llvmgold/llvmgold_16.0.6-1_x86_64.deb
+Size: 28824
+MD5sum: 4895d16ba456b36b03ca7b7366eae62b
+SHA1: 35afbc6623081979c326cd748084f6d09066b471
+SHA256: 40ad54040dd8afa3b3a1ccd54345f511985dff03e82390fa9edd21049e5f8128
+SHA512: a29cb5ae8882128eaf356fafc0ff3e2463d7bdd056c58c0cbe14e9da3908ef2878488e0cf63241c3c4aa02811a17f921dae185670a54960db0c009be5212aa9f
 Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
@@ -23453,6 +23263,21 @@ Description: Deployment and management system for Lua modules
 Homepage: https://luarocks.org/
 
 Package: luv
+Installed-Size: 260
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.45.0-0-0
+Depends: libluajit, libuv
+Filename: pool/main/l/luv/luv_1.45.0-0-0_x86_64.deb
+Size: 50644
+MD5sum: 1c71343177e1aa8d5ee5a0d7543ea987
+SHA1: 270bbc6a7928fe07ab89241a894ea12e60ebeed1
+SHA256: fd694f64bd159a3708fffed62fb7528e9a4c4b856596a6500c1dee5b6821a412
+SHA512: 00e1e1139d6bf45e2b5dd9c52b8bd743ca9d7e2db30a6e2df610a549574c9b6516988252e3f7df8e00267e46a9074de907fb5281c98e9f15b55d6395dc121bd2
+Description: Bare libuv bindings for lua
+Homepage: https://github.com/luvit/luv
+
+Package: luv
 Installed-Size: 248
 Maintainer: @termux
 Architecture: x86_64
@@ -23786,23 +23611,6 @@ MD5sum: 4e9c99b839935699021d2572c9c9e69f
 SHA1: 2ee2cb622f09f48dc53231d8848a84720d99077a
 SHA256: 6861298ac0c54ecfa4cd1871923742a3026a1f37c078f56241bcff3a130f260b
 SHA512: ceb54c338ffa800d4d0fa4438bf2d79bb25a5ece03266a084a2330dac4edc9edbd8f99743b08b1d6594b9d17de2fd66d7c9ed538a2f6e69d0a16161663d22e7e
-Description: MapServer is CGI-based platform for publishing spatial data and interactive mapping applications to the web
-Homepage: https://mapserver.org/
-
-Package: mapserver
-Installed-Size: 7996
-Maintainer: Bjoern Schilberg @BjoernSchilberg
-Architecture: x86_64
-Version: 8.0.1-2
-Replaces: mapserver-dev
-Depends: freetype, gdal, libc++, libcairo, libcurl, libgeos, libiconv, libjpeg-turbo, libpng, libprotobuf-c, libxml2, proj
-Breaks: mapserver-dev
-Filename: pool/main/m/mapserver/mapserver_8.0.1-2_x86_64.deb
-Size: 1647896
-MD5sum: 6ea18ebc24acdec975b1fbed83de0c73
-SHA1: 8a503ccc346dec39f3f6be1a389f4ff9390aa925
-SHA256: f3d2a6b6404d62a250cab5e614018e3ed8a5ef4220b3a115643ee710f246c22f
-SHA512: 7027f7ab2c2fc8342e122982627e10ddbd5c8f3c5680822cb7cf790f850a7a6ff6527444063799c6ef46c80d778038157086c723b831496d7916322f095e5169
 Description: MapServer is CGI-based platform for publishing spatial data and interactive mapping applications to the web
 Homepage: https://mapserver.org/
 
@@ -24873,14 +24681,14 @@ Package: mlir
 Installed-Size: 181816
 Maintainer: @finagolfin
 Architecture: x86_64
-Version: 16.0.6
-Depends: libc++, ncurses, libllvm (= 16.0.6)
-Filename: pool/main/m/mlir/mlir_16.0.6_x86_64.deb
-Size: 26479092
-MD5sum: 48e6d0cccba31ae83eaffd3ecb04a74a
-SHA1: 2c0a7b8b81c332664cafb8967d598146a7fa0862
-SHA256: fa2fe1cc48fbecac1a7a84609f3cf1ac2d8f86a5889a45b497e124f23a1ad312
-SHA512: 8f66dfb3bc5933eac615d37e5cb5a2930bfeddd940f8c96ea9b020ca727b3a41c1ec550b76651e67ad1c9fef91739f861044b1feef713df92254060456b725ee
+Version: 16.0.6-1
+Depends: libc++, ncurses, libllvm (= 16.0.6-1)
+Filename: pool/main/m/mlir/mlir_16.0.6-1_x86_64.deb
+Size: 26552300
+MD5sum: 68fec065a4de72121b52b30094288b73
+SHA1: 555e0db57e46b58405f342365b594014e4a32930
+SHA256: c29f37bb7f607d9fbc348ae85a92f268c231689d96a45d694a90781caf88f2d1
+SHA512: ebada4b3a5c2484dc57cf4ce17b920aeb0a963d34b594321fda95b1a15be7de3d039c6801708258b5dc3c1d7e04cc306f0c5e9c2429e7c9ee151bceeb19488f6
 Description: A Multi-Level Intermediate Representation for compilers from LLVM
 Homepage: https://clang.llvm.org/
 
@@ -24941,21 +24749,6 @@ MD5sum: 7189b6dfcdc6fccf0f99c3a0cbcf2936
 SHA1: da15f6d31165caecc3062d6172db82a1e1465af1
 SHA256: a0a4bd7c957262aaf0195c9b2711a014f31bd19ea30f359f7c07e8e3400fc5fb
 SHA512: 1a1dc56bc6dac63c5296e3cee6b16c47cc15b266b5bb8c6e42175e36d51e04203e7d0fbe0619b689ffb7e997ef7df2818a064816208ad357e2ad581865d623ce
-Description: A high-performance database kernel for query-intensive applications
-Homepage: https://www.monetdb.org/
-
-Package: monetdb
-Installed-Size: 17952
-Maintainer: @termux
-Architecture: x86_64
-Version: 11.47.3
-Depends: libandroid-sysv-semaphore, libbz2, libcurl, libiconv, liblz4, liblzma, libxml2, netcdf-c, pcre, readline, zlib
-Filename: pool/main/m/monetdb/monetdb_11.47.3_x86_64.deb
-Size: 3963388
-MD5sum: e51acccc3abcca00364ce5772a2b0c05
-SHA1: cf2f42bef56139d5570f7903fc25ce529d4cf257
-SHA256: 46786bbf8ae639351a1da5bdaa16171b947214ba5631818833bb1dcefeb32623
-SHA512: 01ddb461a12ccb0da778e328a1134577910e8916ac3fd445ea6abd45bc199ae9bfa835c68677a9eb070207d3f14aad80dcd375ac76da0dfb3aa4fd1d2a793a09
 Description: A high-performance database kernel for query-intensive applications
 Homepage: https://www.monetdb.org/
 
@@ -25251,14 +25044,14 @@ Package: mpd
 Installed-Size: 2820
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.23.13
+Version: 0.23.13-1
 Depends: chromaprint, dbus, ffmpeg, game-music-emu, libao, libbz2, libc++, libcurl, libexpat, libflac, libicu, libid3tag, libmad, libmp3lame, libmpdclient, libnfs, libogg, libopus, libsamplerate, libsndfile, libsoxr, libsqlite, libvorbis, openal-soft, pcre2, pulseaudio, yajl, zlib
-Filename: pool/main/m/mpd/mpd_0.23.13_x86_64.deb
-Size: 719296
-MD5sum: a6745fc714629bc0aebb7cd209bfc7a8
-SHA1: bf03b77baa612961f0e6e591fe2e4dc87cce74d0
-SHA256: e395a9be8f086f324d24bab63f0d9fae8d96e37bb82bc642b3e21f24721e0880
-SHA512: f5a3c99f011f64a80b1bf8b74b54e76a45b55fb27cf9e29fbe391029049eb1cbba097d9dfebc5f3f741827f13a743734c6c3cef94597a4ede5c83aee30a447dc
+Filename: pool/main/m/mpd/mpd_0.23.13-1_x86_64.deb
+Size: 720748
+MD5sum: 53d6f309a255537025fcf49d8aae942e
+SHA1: cc804dc927a20f3d85bb090c09f5363776ff5be7
+SHA256: 56c2cf20451697bc99423b25a54624ebe9c35709b7136dd3d05ebc9a5bd899d7
+SHA512: 2a6402d39e575b3f22d4881c6f0b65ce9b8433c1c13b6eceb6507757da4234dadc9cd80cfa65f09cedf90ad2504cdce59f8541d803a4803bc72ed2b4de3f8275
 Description: Music player daemon
 Homepage: https://www.musicpd.org
 
@@ -26149,23 +25942,6 @@ SHA512: 0602c6b2857ddc7736ff4b9ee6482e366349c1512a1da872dd136eabb3dcc85e3c9ecbb8
 Description: Toolkit for manipulation of graphic images of different formats
 Homepage: https://netpbm.sourceforge.net/
 
-Package: netpbm
-Installed-Size: 6884
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:10.73.43-2
-Replaces: netpbm-dev
-Depends: libjpeg-turbo, libpng, libtiff, libx11, libxml2
-Breaks: netpbm-dev
-Filename: pool/main/n/netpbm/netpbm_1:10.73.43-2_x86_64.deb
-Size: 1116076
-MD5sum: 5ecff8e22779053fa40474c4589bb7e6
-SHA1: f3bc9b5001beabffa98708575e5fb2517528d462
-SHA256: 0ee0b2e179c8dccfe7afc877c73c76048d52752aa6daf7f37acf820b1b2ce167
-SHA512: 0ca73ba0a3c77b26f9bd3c76dd232403bf2bbdcc560804c5ef8c5b9acfd06e5bfacbf3c17d37d061f12ca00e65d8818a0be5796fbe2725414109883f5ebbdeb7
-Description: Toolkit for manipulation of graphic images of different formats
-Homepage: https://netpbm.sourceforge.net/
-
 Package: netsed
 Installed-Size: 64
 Maintainer: Leonid Plyushch <leonid.plyushch@gmail.com>
@@ -26209,23 +25985,6 @@ MD5sum: ed40e4bd1966d5e1981ad82c819f5506
 SHA1: 5dee391206f59a1ea8b2e9878a3f9bb09ea75347
 SHA256: 53579fc613e45e061ed9c05ee8fd92be4506d286c620409ccba54a58da723bbd
 SHA512: 9dd260aaaa8695444a9c6b63f1f334c5662fa0000fb070ace9a6c4334d99bc1ec2fb71b1f60584e8621e6c3d00ddf15959e6d4a8c173d18d308036d31dd56bbd
-Description: RSS/Atom feed reader for the text console
-Homepage: https://newsboat.org/
-
-Package: newsboat
-Installed-Size: 8168
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.32
-Replaces: newsbeuter
-Depends: json-c, libandroid-glob, libandroid-support, libc++, libcurl, libiconv, libsqlite, libxml2, ncurses, stfl
-Conflicts: newsbeuter
-Filename: pool/main/n/newsboat/newsboat_2.32_x86_64.deb
-Size: 1595192
-MD5sum: 3422b69de0aa1f2718ce0b6ad01f63ed
-SHA1: bf2b1f8f38d907e2e224051021a0f90cf3fcb7de
-SHA256: ec9188e91fbe54731fe31980803b43856f8bdc2dd96af9ac0edf78ed1b8b084d
-SHA512: 80742a96d5672d9abfa5e562dbd0bc46373b9d50b4e3001ffe89fb905d0b2fe0bf18e1793bb1853e18edb933dcd8380fd32b73cba62362228a3b199ae205d3c0
 Description: RSS/Atom feed reader for the text console
 Homepage: https://newsboat.org/
 
@@ -26690,22 +26449,6 @@ SHA512: 3adc27356284b1b6a19d3f96e3bad9d98141ee658ed9c597806898e640ac601a957d49d3
 Description: The most efficient usenet downloader
 Homepage: https://nzbget.net/
 
-Package: nzbget
-Installed-Size: 3380
-Maintainer: @termux
-Architecture: x86_64
-Version: 21.1-5
-Depends: libc++, libxml2, ncurses, openssl, p7zip, zlib
-Recommends: unrar
-Filename: pool/main/n/nzbget/nzbget_21.1-5_x86_64.deb
-Size: 948396
-MD5sum: f7cca5f57dc8f400b13f9e8a848e7586
-SHA1: 968f40cd80da38f4f68898ddb4013b3a91f12ead
-SHA256: 383aa5873f5bbaa8ae5522ac40e636ad28e7c7637878304da18610ce3b64b180
-SHA512: b5747c4031d2295fc34e72da1703037d392e09deb1ffa9763b974dba927a8bdc79927649a3365642daecde51e9aab074950000846d12548b920ec5a13dc1fb6a
-Description: The most efficient usenet downloader
-Homepage: https://nzbget.net/
-
 Package: o-editor
 Installed-Size: 9820
 Maintainer: Alexander F. Rødseth <xyproto@archlinux.org>
@@ -26739,23 +26482,6 @@ SHA512: c436074180fe6b1d2b3ea41559229376476650456646ffb5dbae97a3a01a5583e338ec81
 Description: One-time password components
 Homepage: http://www.nongnu.org/oath-toolkit/
 
-Package: oathtool
-Installed-Size: 928
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.6.7-1
-Replaces: oathtool-dev
-Depends: libxml2, xmlsec
-Breaks: oathtool-dev
-Filename: pool/main/o/oathtool/oathtool_2.6.7-1_x86_64.deb
-Size: 182872
-MD5sum: 6c25449126a25cd4723f6b64f35d45f2
-SHA1: 38d7d4ae302fbef134c1b9e48cf4e87a8dd3fb93
-SHA256: 45c1925d7fc8515f4e8e1c05206fd4075b331961e8fee2b5916e2c5ec440c606
-SHA512: 3e62031131fd919feec74bcdb054a2b3444d275cb18692f6405837306d754f615ee04c29b1876f724b04ca7abcc8cd8b95ce9f964a390cf25a1f18404f413e1e
-Description: One-time password components
-Homepage: http://www.nongnu.org/oath-toolkit/
-
 Package: oathtool-static
 Installed-Size: 276
 Maintainer: @termux
@@ -26768,21 +26494,6 @@ MD5sum: ea6768a53eb79a8cad24515d33b325bd
 SHA1: 909a1faa7e16430e89550fd6cb8d2ea1919ea385
 SHA256: 782f672164ea5a03efc3b28dce125ee57b854d0117419ebab15df364bcb3d88b
 SHA512: 95e8d10a1519bb9b8648bf2f215b563a1d73fcefb5fe57edabd9175dbf26579e24a5ab758c97599ef306917076154f140ad9b5dcebc925b672e2b684624eaef0
-Description: Static libraries for oathtool
-Homepage: http://www.nongnu.org/oath-toolkit/
-
-Package: oathtool-static
-Installed-Size: 276
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.6.7-1
-Depends: oathtool (= 2.6.7-1)
-Filename: pool/main/o/oathtool-static/oathtool-static_2.6.7-1_x86_64.deb
-Size: 51476
-MD5sum: 0a37e33ba95c927cea5adb714893e950
-SHA1: 253246da91463342a8f90003e70c4e23a56bdb8d
-SHA256: dba854c9c18afd169f18511f5788cae0df215e8788d568a17d9c81aa4cd79e95
-SHA512: 004ec5d244912e9e3c8dfa919d2d007df49d13eeb0a32a97f611f3e3132c7c4eda0c213ba6d8742ae3857c9aee996efcb0f54cc308bde38a2bcfc45bf02c0b9a
 Description: Static libraries for oathtool
 Homepage: http://www.nongnu.org/oath-toolkit/
 
@@ -27072,23 +26783,6 @@ SHA512: 26d7cc67648cb08bc501c3e07bff82111f2bbc24adf9d66883451ebfeb13a37214ceb7c2
 Description: Open Babel is a chemical toolbox designed to speak the many languages of chemical data
 Homepage: http://openbabel.org/wiki/Main_Page
 
-Package: openbabel
-Installed-Size: 21932
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.1.1-7
-Replaces: openbabel-dev
-Depends: libc++, libcairo, libxml2, eigen, boost
-Breaks: openbabel-dev
-Filename: pool/main/o/openbabel/openbabel_3.1.1-7_x86_64.deb
-Size: 4231880
-MD5sum: ddeea649c6175882d8789c05cbebe37c
-SHA1: 5b76bf31ee5cafc20742a021884ce0e2f6a43e7f
-SHA256: f6d8476e0208deb53cb1aae536624ec52ec43e56513b7c56d7d43da8f9a59fba
-SHA512: 4eea65887a7b089f9d916373c380008044b08011713d16c086be919900a1cba6b5423d2dae19d74056d362b62370bc809d0dc19a3f5b71769394168784e78e9e
-Description: Open Babel is a chemical toolbox designed to speak the many languages of chemical data
-Homepage: http://openbabel.org/wiki/Main_Page
-
 Package: opencc-tools
 Installed-Size: 384
 Maintainer: @termux
@@ -27147,6 +26841,21 @@ SHA256: 4d83f2fada455cb94f8061da31f1f0dbeedc40dd489f5eb4b075e1275debd45e
 SHA512: 18dbc9f66ae73819eccfe4a83ac4ec355017fe505b08f373d1881b24bf50d76871f745b9ea959b919dcaf42b69788ef6a40e39d1e4854da5935153f19928878e
 Description: OpenCL driver from system vendor
 Homepage: https://termux.dev
+
+Package: opencolorio
+Installed-Size: 5336
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.2.1-1
+Depends: imath, libc++, libexpat, libminizip-ng, libyaml-cpp, pystring
+Filename: pool/main/o/opencolorio/opencolorio_2.2.1-1_x86_64.deb
+Size: 1154440
+MD5sum: ffb7fd66634c793c8c26410685de285e
+SHA1: 8a14369052dca0accdc9ba3bc7b2f2c2a5ce74cf
+SHA256: 2dbbc0a30d347d891e957b3e14670a53ca501ab2d01aa853379723c68ec61fc4
+SHA512: 0586e9e6b8490ecfa0059d99ab3263180571b07ddd74933f6c8b033ca057250c5425514ba050cf0f9c5e8b59cd16a952a134c0f5f0eaebea9e2a391331cc693c
+Description: A color management framework for visual effects and animation
+Homepage: https://opencolorio.org
 
 Package: opencolorio
 Installed-Size: 5336
@@ -27442,21 +27151,6 @@ MD5sum: fa0c3848d86a1196eb74b49e99412993
 SHA1: 242ba983b5daae8c4de31e2b527f38ed7fe81c84
 SHA256: e8b29d8e1e03e97594805ba1f832be69eb839ce7b883b4b89b4bd69b8936dfcf
 SHA512: 0499223d43788aa71b4f5a9841c0a11bee85837f0f3e6f6ea6da78c71031f6eda8046b2675bf25bf0fa6e6357c68a201e73ab83b1885a34851471bce0002a0e8
-Description: The programmers solid 3D CAD modeller (headless build)
-Homepage: http://openscad.org/
-
-Package: openscad
-Installed-Size: 5804
-Maintainer: @termux
-Architecture: x86_64
-Version: 2019.05-12
-Depends: boost, double-conversion, fontconfig, freetype, glib, harfbuzz, libc++, libgmp, libmpfr, libxml2, libzip
-Filename: pool/main/o/openscad/openscad_2019.05-12_x86_64.deb
-Size: 1360860
-MD5sum: c36982873c8c3390f92e60a91b45b8e7
-SHA1: 8c6e38f8475b8b8debc2e4b4554b9e1c82f513fc
-SHA256: 2b5aeb6b364a704667dc09cb8b50026d9c07547f86927a6b705ae1c2d331dff2
-SHA512: b11c33b0cff1d07f2ad30ccc5a9821d6235cd9231697e9ff86a7c01576c20d79dbfc0a0157f6441e0d6b2f157f5e6a54b983e026e54a9c7133f1b711edf1fc28
 Description: The programmers solid 3D CAD modeller (headless build)
 Homepage: http://openscad.org/
 
@@ -28494,23 +28188,6 @@ SHA512: bc63dfba0dee8eb90680c2d1400790daf7a17163550dac307ac5d80d99726ac99cf815f4
 Description: Server-side, HTML-embedded scripting language
 Homepage: https://php.net
 
-Package: php
-Installed-Size: 53444
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Replaces: php-mysql, php-dev
-Depends: libandroid-glob, libandroid-support, libbz2, libc++, libcurl, libffi, libgd, libgmp, libiconv, libicu, libresolv-wrapper, libsqlite, libxml2, libxslt, libzip, oniguruma, openssl, pcre2, readline, tidy, zlib
-Conflicts: php-mysql, php-dev
-Filename: pool/main/p/php/php_8.2.7_x86_64.deb
-Size: 9232056
-MD5sum: 10bb78c1cd1055b33eec0c968dcc6410
-SHA1: 8771c199d2144f6022c7d3052ab301738eec92a8
-SHA256: 70ed10d20f48c0f7a1a2abcf224510802bb22ca6ea5ff2e00f7f99bffeeeb5d0
-SHA512: f5e9f412a27340e69e10661c5004e1ba025ba1736e62e99d48b156b4445b903eb52254e2a7e62fcfd8769ae16e3f0e2ff32efc6bcaeb7a28454ec79f1d8f9f4c
-Description: Server-side, HTML-embedded scripting language
-Homepage: https://php.net
-
 Package: php-apache
 Installed-Size: 15232
 Maintainer: @termux
@@ -28523,21 +28200,6 @@ MD5sum: d26aed46e8cf2d3aa20dcb009d46272f
 SHA1: 4d0aed6054550390d7bc3e3a7fcb27b53ae5045d
 SHA256: 7ce3f1ff488bb396a6e0f6567863677964e40a2afe4da92fd41a72dd60e7dd4f
 SHA512: d73072b0e017695f7c8d08aabbd842c2895df2f29a15c486f25fcb4ba13fb064774f7cc027725130e671dc2f6c4125b1593c8d2c993f3c969876859365e2ae48
-Description: Apache 2.0 Handler module for PHP
-Homepage: https://php.net
-
-Package: php-apache
-Installed-Size: 15232
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Depends: apache2, apr-util, php (= 8.2.7)
-Filename: pool/main/p/php-apache/php-apache_8.2.7_x86_64.deb
-Size: 2734944
-MD5sum: db5030fd29c3501cb2773b869deae780
-SHA1: 51fa03cfda528055a7732d6ed1c4372725d356d0
-SHA256: db97243f69edf1cd21713c8e2137d51a60fe7400a2aaf85f385908f6db25145b
-SHA512: 01d662cee7435ae71a672c9fde395e0d49327535afbada73090218d52b62a3436b29e2133495bc41f2e5370f662eb58b0452165145ba4ca3f576d933e5bb3459
 Description: Apache 2.0 Handler module for PHP
 Homepage: https://php.net
 
@@ -28556,21 +28218,6 @@ SHA512: a4aef8efca548825723bbb6dc76eb17e75fa1b23e6c4331fd154ca192c6df01d7e93b270
 Description: LDAP module for PHP/Apache
 Homepage: https://php.net
 
-Package: php-apache-ldap
-Installed-Size: 132
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Depends: openldap, php-apache, php (= 8.2.7)
-Filename: pool/main/p/php-apache-ldap/php-apache-ldap_8.2.7_x86_64.deb
-Size: 27200
-MD5sum: 681c43086a1ed600e961a13b728fd21c
-SHA1: 243da1f68d0c81ba847e99d266940ddd6dd4550a
-SHA256: b32bdf1d25039775c3ff2b662fcf54c9ea4c50dd2f4e24f160ef2a00b49dbe1f
-SHA512: 3a37c3d6b23ed39de1c9b5322a37187253f244eb26bcbcd4102aeab5a6e7126910ae2aea90ecd803f9ac097cded6aea248e47b9629cc83c4a34fc77c5b22bf18
-Description: LDAP module for PHP/Apache
-Homepage: https://php.net
-
 Package: php-apache-opcache
 Installed-Size: 976
 Maintainer: @termux
@@ -28583,21 +28230,6 @@ MD5sum: 721a9b1931caee4d41570260243373cd
 SHA1: 35b938ce13a3a4fe3a8929493083b88974e13df7
 SHA256: 55d8d59c91f1dd6f12c68229394472233dfd2b64c999385b1779cdfe350fd744
 SHA512: d63aaf5f994d7c40457a560a97f909d4e5a488b3ae28ef11e06311eccd2913e64f10633bdc0dd9994e19ed1597b76aa034be28242a854a9ca0f8339007ddb052
-Description: OPcache module for PHP/Apache
-Homepage: https://php.net
-
-Package: php-apache-opcache
-Installed-Size: 976
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Depends: php-apache, php (= 8.2.7)
-Filename: pool/main/p/php-apache-opcache/php-apache-opcache_8.2.7_x86_64.deb
-Size: 309672
-MD5sum: e573bda5b605152bcbb2cc020bcdfa59
-SHA1: 54d56310cf184a383cea73d492db39362699a7b3
-SHA256: 6c3c70430696bc5342d5bcde01a73765ecfea1822d039f593e39352e5ede5e27
-SHA512: 940d6df79b0c5b4be5e5c9fa78f82ceae1f32f3a55e1c9ef43f0f1b8ddbb8475598ad9e7ec16075b215f052042cef5c799543f73dcf452c799b380e732046ffa
 Description: OPcache module for PHP/Apache
 Homepage: https://php.net
 
@@ -28616,21 +28248,6 @@ SHA512: 1f081e941d013e0be6f2a66226d72afec1276e51761709ac84a86f00b3b40da03eb1fb10
 Description: PostgreSQL modules for PHP/Apache
 Homepage: https://php.net
 
-Package: php-apache-pgsql
-Installed-Size: 224
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Depends: php-apache, postgresql, php (= 8.2.7)
-Filename: pool/main/p/php-apache-pgsql/php-apache-pgsql_8.2.7_x86_64.deb
-Size: 48704
-MD5sum: 0dd0cf758cf1412698752a78574ac460
-SHA1: 0e30e11cd31352b25b293e3b71086e849eb4e8dc
-SHA256: 238879db29e066fca618c6cdccda0aa229b49b52ec5b02505af5b91e1fe17418
-SHA512: 0ceadc2264776711eabcb72422a89535abe3134468f65c31bf92bcffa3ccd76e60528fc19b37c2f8896b0772e70a4edbf771607d67981b9a1f9a206e07b97aed
-Description: PostgreSQL modules for PHP/Apache
-Homepage: https://php.net
-
 Package: php-apache-sodium
 Installed-Size: 148
 Maintainer: @termux
@@ -28643,21 +28260,6 @@ MD5sum: f7a253e27a2bd1a46e532b2666b32b44
 SHA1: dbb034cc4c6b5152cbb9ebd6705eb843feee82a5
 SHA256: 3ae43a8b7b7a409c43612181a40ab64f9518e17e4cfacbc6407a137c5bc2e8fc
 SHA512: 0efe5427bccbce013ed657aac14a749d5087c7768626571cfd9280d92306dd287995daa0df379935bb61e345d034d0f505cdd97d889d0870e1844443a2d52505
-Description: Sodium module for PHP/Apache
-Homepage: https://php.net
-
-Package: php-apache-sodium
-Installed-Size: 148
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Depends: libsodium, php-apache, php (= 8.2.7)
-Filename: pool/main/p/php-apache-sodium/php-apache-sodium_8.2.7_x86_64.deb
-Size: 22736
-MD5sum: 0ff10d3823ffe452aad22757917783b7
-SHA1: 558d6ed776b8347d93e849c954181300acc0f123
-SHA256: b8ccb05715a364db20a830303e7d2c489ae83fab4afbe78c1c47f672e5a4b815
-SHA512: ba7809992ccc9048636301022b220fe872929acc99aa90ddef1b0f39450b4fc5ecc38c4534fa8a883d157598c5065e120f5672d3e457e623a9cbd866b011c388
 Description: Sodium module for PHP/Apache
 Homepage: https://php.net
 
@@ -28693,23 +28295,6 @@ SHA512: 0c85a2b1d345ecd54468ea097280d114994eabc3d070872493b48d5c1936c19b13eb0fdb
 Description: FastCGI Process Manager for PHP
 Homepage: https://php.net
 
-Package: php-fpm
-Installed-Size: 15368
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Replaces: php (<< 8.1.12)
-Depends: php (= 8.2.7)
-Breaks: php (<< 8.1.12)
-Filename: pool/main/p/php-fpm/php-fpm_8.2.7_x86_64.deb
-Size: 2795556
-MD5sum: 64e908c341344519a29a9c18c41dda0e
-SHA1: cd3d00c3c65b6f6bcfc607ec62726c02e5c1cf7c
-SHA256: ab9f78820b5e99b60da5975adf0eeb50913c098b44bb9dd0775e9b7a282beb55
-SHA512: e6d943529e164df6197d42748ca8846bf219f5ac4c4f36ab915ae910935270159b93ec3e7240ec92957426e987b9238aee28968743580178b56b2d299a95e651
-Description: FastCGI Process Manager for PHP
-Homepage: https://php.net
-
 Package: php-imagick
 Installed-Size: 496
 Maintainer: ian4hu <hu2008yinxiang@163.com>
@@ -28740,21 +28325,6 @@ SHA512: 5afcf559886729ccd428c2ed18f27d93ecb836fe30b7711be685c1602c5db52b4b3eb14a
 Description: LDAP module for PHP
 Homepage: https://php.net
 
-Package: php-ldap
-Installed-Size: 120
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Depends: openldap, php (= 8.2.7)
-Filename: pool/main/p/php-ldap/php-ldap_8.2.7_x86_64.deb
-Size: 27064
-MD5sum: 7236214f5eecfa61956bd7c919b3bc7c
-SHA1: d6a679ef2c7d14c9f4167cb7d0d5b73dae1e354a
-SHA256: 6777314f2ca12e80ddd00e244134b1d7883012557c9b3b7beae28149e5f59b83
-SHA512: e563a31a9125b8edb8ae5353d1c26fbb07a501a1d8e5ead4be30ab1babf595c4d28c29c3618c4955bdac64965561f1800a865ba370c68a1e16e1520bc71cbfbb
-Description: LDAP module for PHP
-Homepage: https://php.net
-
 Package: php-pgsql
 Installed-Size: 196
 Maintainer: @termux
@@ -28767,21 +28337,6 @@ MD5sum: 3edd7cf4dc5ad8dab0cc200e7d8cc4ee
 SHA1: d9b7b1c0c07c606a1fc1a720ee6c49123338589d
 SHA256: 357d66c7396dd73d81acd564fe286537e51b1e3044dcf38f4eb2bfc898e7b29d
 SHA512: 8d35292a8be589ed3598751df5d5c4079673dbb2a643380dcfc3cae6e891be49551f7aa61b0ad6c535b141b651d63b15405c7e49550fcb70e13ed9935bc2e9da
-Description: PostgreSQL modules for PHP
-Homepage: https://php.net
-
-Package: php-pgsql
-Installed-Size: 196
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Depends: postgresql, php (= 8.2.7)
-Filename: pool/main/p/php-pgsql/php-pgsql_8.2.7_x86_64.deb
-Size: 48444
-MD5sum: 4918bd2ff7c0141b948f960cf5710b39
-SHA1: 74fa4744943a64e4dbf0567404a68d4ce655da9b
-SHA256: 9d655922d829c92247b51d911699a3f9821c6f39ea57430f217642443b6f4c68
-SHA512: 2ae17ced99b4a63b6225691da57a1a38cd2e0d0ee242b90bca57abed45e6f3a9b98b61413531598e8d6718a31fde073c94ac4a494830bdd0cf792ef6ffbb4c75
 Description: PostgreSQL modules for PHP
 Homepage: https://php.net
 
@@ -28827,21 +28382,6 @@ MD5sum: 950b98ea9ddd2d19c1b4b49e3cf885b8
 SHA1: e7ce3e3315524abe5850e4a5ddd8485741d696a2
 SHA256: 1108520a6bd6b9c35305080dfd9dd2809bc4af86ccde3038e5bcb2aa5b6b5820
 SHA512: 2e4b587ff0973f26fd66e594b3ca4a7e8d6cab227f8812b698d326d87a674d513f7d56c1f4aacc112261236960c247fb43400678123a402424cded0a31fc0d08
-Description: Sodium module for PHP
-Homepage: https://php.net
-
-Package: php-sodium
-Installed-Size: 132
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.2.7
-Depends: libsodium, php (= 8.2.7)
-Filename: pool/main/p/php-sodium/php-sodium_8.2.7_x86_64.deb
-Size: 22756
-MD5sum: 7b2aa7dbca41c6800d0a4a33bcefbfcc
-SHA1: dd41772e6889c1a7d6b4de2e79039dacbad78b4a
-SHA256: 2400a5d56c80be89487204094c6464df509cb148bd41306450f79b37d391a1aa
-SHA512: 0d2a98dc863d2a113061000422b18cdd5e81a8efbb276cf6c58ff48db22fd1d7f878113079bbc86915a798182b560c3bfda8810ff616eb318a5877456c344538
 Description: Sodium module for PHP
 Homepage: https://php.net
 
@@ -29377,21 +28917,6 @@ MD5sum: 5e7ba392a5b6bc61b63cff5a45d76790
 SHA1: fdd31295f2e51c25bc5d41c896012a4845788c64
 SHA256: 8eab0f87b35e9df08f97928ccdbfa5667c5f3e1c7a68ad8fb94aff85c3582bff
 SHA512: 24b6a7a27599b8c173c5beb1542dd58de4b73fee38f0a98e6c539de49f4a73aaf1daab41c25195a9b05fcc5f291e520aac36d6fae856228649e35730fb84646e
-Description: Spatial database extender for PostgreSQL object-relational database
-Homepage: https://postgis.net
-
-Package: postgis
-Installed-Size: 41908
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.3.3
-Depends: gdal, json-c, libc++, libgeos, libiconv, libprotobuf-c, libxml2, pcre2, postgresql, proj
-Filename: pool/main/p/postgis/postgis_3.3.3_x86_64.deb
-Size: 2545236
-MD5sum: 15e3c762a2b0f62449143fe50488b424
-SHA1: 59cee7766578352ae9a843485337ddcfbc50e802
-SHA256: c86024fd3d0e432fd23fb82db1d3b9e2bee9179591d3ce4b4762e3a371515f3f
-SHA512: 99668eabb49b7de72bdb68462ac3094301335109f9e3435724cb1690272fcbf00d55ab145db1ffc70fee712aa2025e6b2446e876847911b1b06110ebf9ef69e4
 Description: Spatial database extender for PostgreSQL object-relational database
 Homepage: https://postgis.net
 
@@ -30043,6 +29568,26 @@ Description: C++ functions matching the interface and behavior of python string 
 Homepage: https://github.com/imageworks/pystring
 
 Package: python
+Installed-Size: 61588
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.11.4-2
+Replaces: python-dev
+Provides: python3
+Depends: gdbm, libandroid-posix-semaphore, libandroid-support, libbz2, libcrypt, libexpat, libffi, liblzma, libsqlite, ncurses, ncurses-ui-libs, openssl, readline, zlib
+Recommends: python-ensurepip-wheels, python-pip
+Suggests: python-tkinter
+Breaks: python2 (<= 2.7.15), python-dev
+Filename: pool/main/p/python/python_3.11.4-2_x86_64.deb
+Size: 8083684
+MD5sum: 63ec56eb3f229e1bac6ad2d47a1931cf
+SHA1: 9c1afd3b6dc841ff35059876aaf0fc88cef06906
+SHA256: 0801daca1aeb490859c48e959714c69c2717349ae932bb58a2041c030d544c55
+SHA512: ca32fe52195d0682647eb1bfa7ac5e149ad4b8303d6cfdbdff600cec8b7428cfcda736b09fb797d628602c801cd2f6adc2a74cac6aff39186a929d4c04190aea
+Description: Python 3 programming language intended to enable clear programs
+Homepage: https://python.org/
+
+Package: python
 Installed-Size: 61584
 Maintainer: @termux
 Architecture: x86_64
@@ -30121,6 +29666,23 @@ SHA256: 22d9daa753822a672c13f5ae3f4f625407a610dec05d63f25510d797dad5c420
 SHA512: 223bed3b6b3f2e53538195d91e23048c5d38d3770bddf3b98487d3a788805eed1d5184ec41da6033f6f5e518323eadea0f3151749e46d59820a35a8f80c86686
 Description: Provides cryptographic recipes and primitives to Python developers
 Homepage: https://github.com/pyca/cryptography
+
+Package: python-ensurepip-wheels
+Installed-Size: 3264
+Maintainer: @termux
+Architecture: all
+Version: 3.11.4-2
+Replaces: python (<< 3.11.1-3)
+Depends: python (= 3.11.4-2)
+Breaks: python (<< 3.11.1-3)
+Filename: pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.11.4-2_all.deb
+Size: 2935296
+MD5sum: 7d904f58a7a0a472df70f91c0f40bddb
+SHA1: c5f2bf25a7d93a0961ea85fa33c35a9c5183bdf3
+SHA256: 3b6caff8fa589b7aa91a6b675879fc654d927dbb028c647f5d372b4d0c34eded
+SHA512: bf0bf505db81f2d715c7db511433ce8d8f8ccf5184a2dcbfe69c007a92a08a1dd07541f9f618af277b995822dd88e8893e01f913009bd471175a9e91bba4554a
+Description: Wheels for Python ensurepip
+Homepage: https://python.org/
 
 Package: python-ensurepip-wheels
 Installed-Size: 3264
@@ -30280,6 +29842,21 @@ Package: python-static
 Installed-Size: 32716
 Maintainer: @termux
 Architecture: x86_64
+Version: 3.11.4-2
+Depends: python (= 3.11.4-2)
+Filename: pool/main/p/python-static/python-static_3.11.4-2_x86_64.deb
+Size: 5212476
+MD5sum: 0bee8a06013c0a0b11e04fa49e7ace21
+SHA1: 0c5f1e2290a07557dff836181cfb4c16295657d7
+SHA256: 9d7a0d593a1682fc14fde904d669e1228e3665540f84b74b278d94d539955df2
+SHA512: e450abdfed659b114f3fde899126376c7182e257c72004a07674901c34200ab30389cf040c4167190bb3abaeb83683830c0cf1afe686fd94a5f13b6621ec018f
+Description: Static libraries for python
+Homepage: https://python.org/
+
+Package: python-static
+Installed-Size: 32716
+Maintainer: @termux
+Architecture: x86_64
 Version: 3.11.4-1
 Depends: python (= 3.11.4-1)
 Filename: pool/main/p/python-static/python-static_3.11.4-1_x86_64.deb
@@ -30289,6 +29866,23 @@ SHA1: bfe4bac31fa14e7bbb533ba513fc136e51138cf8
 SHA256: fa6e6f846ed01ba0f3b158670ecdadec307cc31e024d559d54b047edd2a85224
 SHA512: 59a219fea7ce09fc90ee8994d378fbd833d25a08677a60386ee72fcd245ea53869e00f81b91c0549a62f3b65792981a3c2d33ea02c64b83877d179b05349c5e2
 Description: Static libraries for python
+Homepage: https://python.org/
+
+Package: python-tkinter
+Installed-Size: 11692
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.11.4-2
+Replaces: python (<< 3.11.1-3)
+Depends: tcl, tk, python (= 3.11.4-2)
+Breaks: python (<< 3.11.1-3)
+Filename: pool/main/p/python-tkinter/python-tkinter_3.11.4-2_x86_64.deb
+Size: 1222940
+MD5sum: 6b21bc5a460528825f9d7e0d87ad04e5
+SHA1: f57ca5e1e18b7f376d958ad3d96182cc2d405d7e
+SHA256: 7fa5215e113d863759770145adbdec4c9dc7c2befcd16a1bf59e92a597491b62
+SHA512: 0f7e6c55be28b223ebc6077374fecbf8d324ae4c4a7099961a1bee61c8fa9dcecf1434bc36c8bf322972e8462ba6589e0d5f99e33f6241d66cd54021e747ce7f
+Description: Tkinter support for Python 3
 Homepage: https://python.org/
 
 Package: python-tkinter
@@ -30511,23 +30105,6 @@ SHA512: fc2c80e95332193452a5a68571d09fd52ef68c90134db95866ed2e6c063e6a5f7b2b613a
 Description: Powerful and easy to use command line calculator
 Homepage: https://qalculate.github.io/
 
-Package: qalc
-Installed-Size: 8028
-Maintainer: @termux
-Architecture: x86_64
-Version: 4.6.1
-Replaces: qalc-dev
-Depends: libc++, libcurl, libgmp, libiconv, libmpfr, libxml2, readline
-Breaks: qalc-dev
-Filename: pool/main/q/qalc/qalc_4.6.1_x86_64.deb
-Size: 1863832
-MD5sum: a3d25ade0685ecdb8561e9fcd8a723f5
-SHA1: 5900726ca4d20558c557783bb2312fbf1dd924ac
-SHA256: fa8d579709c2138ed29fc0f3189ced88c74a435c2c86b54362822c7d88f63710
-SHA512: d9c29414ae232054b5c9c63f313badba2d7621391756f19a89758794e55d0d3fb6c573bed04c974515145e3cde01444dc1bca7a747a4151ff28905c9c17ec466
-Description: Powerful and easy to use command line calculator
-Homepage: https://qalculate.github.io/
-
 Package: qalc-static
 Installed-Size: 11592
 Maintainer: @termux
@@ -30540,21 +30117,6 @@ MD5sum: 27cdd437bfb76da995e1c6a894a7f7eb
 SHA1: b6c635544e101ff1d6918d8094bb8090489c68ec
 SHA256: 4f9ef17e8a001a5132a76cef6abaeeaa8e893d7be940bec134e612bb24f8b98c
 SHA512: 7fef29397cf7a30b7515cb9a905d9d74fae6fa7df317a7634c6ee95dba70ffdbeac44afebc5fabb3a5d36ff3e370e336a18ce08ea97eedd7d26634ee09b59000
-Description: Static libraries for qalc
-Homepage: https://qalculate.github.io/
-
-Package: qalc-static
-Installed-Size: 11592
-Maintainer: @termux
-Architecture: x86_64
-Version: 4.6.1
-Depends: qalc (= 4.6.1)
-Filename: pool/main/q/qalc-static/qalc-static_4.6.1_x86_64.deb
-Size: 1588716
-MD5sum: 6d2b0d01799541e0815f30b15542bf06
-SHA1: fc0f96aa37fd0d293acefa40a2aaa3e3300b3ff2
-SHA256: 58ef2d99475fa16244f81d9c7f508707443b3f471f8fe563fb615b6f326085cf
-SHA512: 788307173d2bf00dac8a22f4af0623438512085a655658d1f31a8d5c71b305f5ef45e4bc2efa77441ebac1905b7a61522d82d58bbb2ccf07cd227a5600e63ea0
 Description: Static libraries for qalc
 Homepage: https://qalculate.github.io/
 
@@ -31341,21 +30903,6 @@ SHA512: 4dc0a8239d908231ba3f21b10edae78b6da33f094712c6203b91d4c35677e34074d42bf1
 Description: Command line tool to extract the main content from a webpage
 Homepage: https://github.com/eafer/rdrview
 
-Package: rdrview
-Installed-Size: 108
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:0.1
-Depends: libcurl, libiconv, libseccomp, libxml2
-Filename: pool/main/r/rdrview/rdrview_1:0.1_x86_64.deb
-Size: 23932
-MD5sum: f6c03677f7bce8186c5784505ef9cc4d
-SHA1: 652e3eb4dc95495120e7c326b5e510198dd13da2
-SHA256: c62a10cb2875c897a6e19ac7c0f6422460b385ce01e225a455b5f8927eb81b81
-SHA512: a3e6f7d3915a407194cdc3293e1490651631c645c1260df23a227bda3e017ee978e696d57ce1884b4c1569c9399541e87b122e0a653b442010d7fb7b4c408cf1
-Description: Command line tool to extract the main content from a webpage
-Homepage: https://github.com/eafer/rdrview
-
 Package: re2c
 Installed-Size: 2116
 Maintainer: ian4hu <hu2008yinxiang@163.com>
@@ -31448,21 +30995,6 @@ SHA512: 19311e8c9b22d2efa0381cd2cc49b867c49e205b21547a8f6dfe542078b344a9c2817282
 Description: Full-text search for your desktop
 Homepage: https://www.lesbonscomptes.com/recoll/index.html
 
-Package: recoll
-Installed-Size: 3732
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.34.7
-Depends: aspell, file, libc++, libiconv, libxapian, libxml2, libxslt, zlib
-Filename: pool/main/r/recoll/recoll_1.34.7_x86_64.deb
-Size: 1071344
-MD5sum: 11fdf46dd1ae33a582a04b92525d44d5
-SHA1: 3198f533ea11e8a334ee058adb1c869c7402e7cf
-SHA256: 5ece1db638cc044c365f51cb8a3fa3a028a5e3f084905566406bf80df6969bc2
-SHA512: 8e069b8a7dbcfbee3004051e5d3a271ec9ea943e97c70988bbbe01a385e1d7120f69677f8bb014b522d5d4e5376384932128065bc0126008cfb8af423fcea71b
-Description: Full-text search for your desktop
-Homepage: https://www.lesbonscomptes.com/recoll/index.html
-
 Package: recoll-python
 Installed-Size: 328
 Maintainer: @termux
@@ -31478,21 +31010,6 @@ SHA512: ff613963121d2d41c4d1945bdd99967b7e8842689ff81f9387cbb1a0e5eb34d4e815d4ca
 Description: Python interface for Recoll
 Homepage: https://www.lesbonscomptes.com/recoll/index.html
 
-Package: recoll-python
-Installed-Size: 328
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.34.7
-Depends: python, recoll (= 1.34.7)
-Filename: pool/main/r/recoll-python/recoll-python_1.34.7_x86_64.deb
-Size: 75228
-MD5sum: a2ff8bf257117e0e86d00ee6b5d0228e
-SHA1: dfc92e9f08e92a4099e1b360ee838c22a0446c8e
-SHA256: 1ce8fd74b1d6b2a03b027417cb13d1144b89e8738f1b854e0914b10dde1a8767
-SHA512: 25ef5a18c27389360a2fd930689ea414c3eeafb6fa1e326104e64c6624cf2d0f5f329699bad29e37857e910a60e5537bc6a24de8d0cd704207c7331ea7b6aaa4
-Description: Python interface for Recoll
-Homepage: https://www.lesbonscomptes.com/recoll/index.html
-
 Package: recoll-static
 Installed-Size: 11084
 Maintainer: @termux
@@ -31505,21 +31022,6 @@ MD5sum: d7cd6351681ad9835caf17038ca05424
 SHA1: e3560f3c2028dd422a866a05e14e0abbaa9103fd
 SHA256: 3eb10d74f2bd9d8f19c8fa9c6af5e8093b2919783b3ce8fbe3e13dcd8e135439
 SHA512: d0deb234e0cc215a02e2535d235b76af3e003b6ff6027eb6ae9fa9c40ddbfb7fe2adf6cacc27a051e10affc26ad23bf3fb75f4580dc3bda73d58f33f33366ac3
-Description: Static libraries for recoll
-Homepage: https://www.lesbonscomptes.com/recoll/index.html
-
-Package: recoll-static
-Installed-Size: 11084
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.34.7
-Depends: recoll (= 1.34.7)
-Filename: pool/main/r/recoll-static/recoll-static_1.34.7_x86_64.deb
-Size: 1170548
-MD5sum: c161daf56ad45eb0e94c56f87d033b27
-SHA1: 7466495029deda93243c788de115a89fcf54d16a
-SHA256: 9003f302b24e7961c3d0f6456696d08f03d74500842f3112076809f375541bba
-SHA512: 9ecca0cf0793bd4a4672f21a930339b6898c8d72ac515d38f39c397996fd5dd1f787b8e1537b6ca2e53a41331fc29fd42baa5d9f7066822aa803512041c7be1d
 Description: Static libraries for recoll
 Homepage: https://www.lesbonscomptes.com/recoll/index.html
 
@@ -32431,22 +31933,6 @@ MD5sum: 9ef2a3293949e2b08e0d6dda100a2e60
 SHA1: 3124ad82500dc5db0d043c0aed221854cde92229
 SHA256: 40901bc68fb2026dbfb25b6c87a4459a419961c94486e99728f0faf623f7d5a9
 SHA512: e15159189f08e598fc4ea519100c999659cbb96b24527c290e59942bc51c61b1b3181f09a0755f6a2f6b522125f2ccd066c62433310ac217c8b7b8f19da35e6b
-Description: An improved version of sc, a spreadsheet calculator
-Homepage: https://github.com/andmarti1424/sc-im
-
-Package: sc-im
-Installed-Size: 520
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.8.3
-Depends: libandroid-support, libandroid-wordexp, liblua51, libxls, libxlsxwriter, libxml2, libzip, ncurses
-Suggests: gnuplot
-Filename: pool/main/s/sc-im/sc-im_0.8.3_x86_64.deb
-Size: 167040
-MD5sum: 20bb4472185f6aea5f1a5b754f1d87ad
-SHA1: dc41618363c3cdc9cc3b0788d18235f29c6fd227
-SHA256: a1f9b0b52bb52f3a5ae0f34423bef9bc17680fb9fc6f8274167d891621404cc4
-SHA512: de382774730db7f9a59ef8e81ff9e3907de48ec3298d0b728d4e465435304bdb045872cec67e61593f69c88be597f62462424071a67d79f1d790a0700a55fc59
 Description: An improved version of sc, a spreadsheet calculator
 Homepage: https://github.com/andmarti1424/sc-im
 
@@ -33716,21 +33202,6 @@ SHA512: 640be5923c3a8e38fb08cbddf3db45d21900f6bfe4dbede289ee49baef15ddb08056a32d
 Description: Full-featured Web proxy cache server
 Homepage: http://www.squid-cache.org
 
-Package: squid
-Installed-Size: 15776
-Maintainer: @termux
-Architecture: x86_64
-Version: 5.9
-Depends: libc++, libcrypt, libexpat, libgnutls, libltdl, libnettle, libxml2, openldap, resolv-conf
-Filename: pool/main/s/squid/squid_5.9_x86_64.deb
-Size: 2142460
-MD5sum: 55dc9daad8449f420daae18f477f1249
-SHA1: 3f60ff085d1b4ffcc53edc0429f9721e24078993
-SHA256: 90347faba8c8019731d96ea6c278c5dbc0d34c0031a9da138ddcc20aacad3016
-SHA512: 570a5cb4c9eb17fe03f3a9d6e72b791d2d6bee7171b702c5f99bd7ed0e09700f746ea9f570d364313ce72d52a5d8b0893bff4f146f1f71208d15bd011d9e190d
-Description: Full-featured Web proxy cache server
-Homepage: http://www.squid-cache.org
-
 Package: sratom
 Installed-Size: 100
 Maintainer: @termux
@@ -34072,21 +33543,6 @@ SHA512: 259b43c39565071ed1b3aa28ec5910ec2d44b3a36de51fbaa3856bfeca9d64536c05a872
 Description: Software Token for Linux/UNIX
 Homepage: https://github.com/cernekee/stoken
 
-Package: stoken
-Installed-Size: 180
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.92
-Depends: libnettle, libxml2
-Filename: pool/main/s/stoken/stoken_0.92_x86_64.deb
-Size: 40312
-MD5sum: bf20ca520d4b2954474390cf64205e0e
-SHA1: 7847de4103cc24731ad62158e187531ef63f331e
-SHA256: 17dc520d7b4155f6134d0c900cd4c52812684e7533d4cd7527837af3f9af2916
-SHA512: 0ef612cd22b49add38bab4d9a8cf89d9d5b69f4f60307b4d7c578cbe919ab81274c2ed8dc5d82497e22005a8376425a564134e434106f5338dad5b5b95f6cfda
-Description: Software Token for Linux/UNIX
-Homepage: https://github.com/cernekee/stoken
-
 Package: stoken-static
 Installed-Size: 100
 Maintainer: @termux
@@ -34099,21 +33555,6 @@ MD5sum: dc60eea503fe6f2ada6592e48eb5529f
 SHA1: b19e477d3ab47f2d6cda2162d7ec8729f12458ab
 SHA256: cae0a1b83e4337d3134d92f0bdfb7f7df70ed72e318a8ff2e1f4f941b01fbf03
 SHA512: f301a780deda4a86e3b1b099ce1a34a28b56ff9ddd7af0454e006710b731d1a9def1d1c31d82c97b18b00137c5733248a835090ffd52797d2ed3d956f83e86b0
-Description: Static libraries for stoken
-Homepage: https://github.com/cernekee/stoken
-
-Package: stoken-static
-Installed-Size: 100
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.92
-Depends: stoken (= 0.92)
-Filename: pool/main/s/stoken-static/stoken-static_0.92_x86_64.deb
-Size: 21648
-MD5sum: ee6b19d9ef14a05afe0b2bc8495998c5
-SHA1: 134891968f6dba192c93596a11432f8f112f50e8
-SHA256: f2fa346b80f1138d73f52f63c923f3a052ab82a70997bfc6a2d58c8a0c135679
-SHA512: ac365ae8621cf83a8b9b39b8bbb56deee3bd5faaf1e6fc22aef35fc4c73d029e0c0e72cd21a52d1698b021d3f285f6d2b39265f48aefc1b3aac659468349d03c
 Description: Static libraries for stoken
 Homepage: https://github.com/cernekee/stoken
 
@@ -34269,6 +33710,23 @@ Package: subversion
 Installed-Size: 6328
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.14.2-4
+Replaces: subversion-dev
+Depends: apr, apr-util, serf, libexpat, libsqlite, liblz4, utf8proc, zlib
+Breaks: subversion-dev
+Filename: pool/main/s/subversion/subversion_1.14.2-4_x86_64.deb
+Size: 1504232
+MD5sum: f291e725ddeeefbf7213f3ffc8a8187b
+SHA1: b5f752de9af723bf22e2f4fe01bea6ba75c0bb40
+SHA256: dc46731075912f6525c07e4d1a3703075442edae9b65f52a0c6cbef10df3f3c2
+SHA512: 44335d2392ca59e06b5f005b44e40ab3af30b5700830c1dea782fbad8a4634fa544de6630fa87d43996df1946e1d49b5ffce297c593de158af629fa8b3c945d2
+Description: Centralized version control system characterized by its simplicity
+Homepage: https://subversion.apache.org
+
+Package: subversion
+Installed-Size: 6328
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.14.2-3
 Replaces: subversion-dev
 Depends: apr, apr-util, serf, libexpat, libsqlite, liblz4, utf8proc, zlib
@@ -34280,6 +33738,21 @@ SHA1: 0e984a6ca516401a50dbf31becbdf5b93e1bf4f4
 SHA256: 1b4194bd1f4eaae42cd4dd367eb8ffd4e533103260e6e387d4df0441b2696c95
 SHA512: b1140392f146d5d00e8584b989070bf9568d5df5fe548cb87e6ed1e57c3981bea4cdce8deae0884bc6b90c53767fcff9e6f1bfcf099e25a4b0518cbe28c77d76
 Description: Centralized version control system characterized by its simplicity
+Homepage: https://subversion.apache.org
+
+Package: subversion-perl
+Installed-Size: 4776
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.14.2-4
+Depends: perl, subversion (= 1.14.2-4)
+Filename: pool/main/s/subversion-perl/subversion-perl_1.14.2-4_x86_64.deb
+Size: 891052
+MD5sum: d0d6a0461752f6c5c25a208f9fc38613
+SHA1: f51d269d1fe03be5fb388556a6dbd2b6452f70a7
+SHA256: d5371fa1849afee660b627ed0d62e7561bfb9408fd96c194a1b6a47379c0ce4b
+SHA512: e52c9f5e0172781929d8972d3f2d6283532220ea6fee9ad8300966df0a61705a70aff6fe3369c08aa800e568a3df516177d3efa27daef557375b7de76ae4cf8f
+Description: Perl interface to Subversion
 Homepage: https://subversion.apache.org
 
 Package: subversion-perl
@@ -34301,6 +33774,21 @@ Package: subversion-perl-static
 Installed-Size: 96
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.14.2-4
+Depends: subversion-perl, subversion (= 1.14.2-4)
+Filename: pool/main/s/subversion-perl-static/subversion-perl-static_1.14.2-4_x86_64.deb
+Size: 15536
+MD5sum: 61b331732cc68ecb5cd4c33125f9ab37
+SHA1: 77060ebf4a9e01a374b3130b226b56f54a623ddb
+SHA256: a577d80bee64653c42e7ed641c4306f3c8f0300a74d00621c115a107da5ae2d0
+SHA512: a6019503ee909f766b92174ae2190c8f048b5dd5343a93c6c030b2a8275b513c40d34b13032c3d845bc6c6f8a69d91392df4f7da449563acefc3e70f8ae3ef9c
+Description: Static libraries for subversion-perl
+Homepage: https://subversion.apache.org
+
+Package: subversion-perl-static
+Installed-Size: 96
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.14.2-3
 Depends: subversion-perl, subversion (= 1.14.2-3)
 Filename: pool/main/s/subversion-perl-static/subversion-perl-static_1.14.2-3_x86_64.deb
@@ -34310,6 +33798,21 @@ SHA1: 368411d21bca700a6e0176f392e87925514f4e16
 SHA256: 4049a1d49e90756c4c70cb7f08a0da01cf0f4eec44657ec0cd8f5344223c0258
 SHA512: d21d84d1414098bb3214a8390a7df9727416a0059a1a47544131ca08960692a240c42ae780e1d7608ba54eecbd125273c93a299eedf9febb09515baeafb83c25
 Description: Static libraries for subversion-perl
+Homepage: https://subversion.apache.org
+
+Package: subversion-static
+Installed-Size: 5636
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.14.2-4
+Depends: subversion (= 1.14.2-4)
+Filename: pool/main/s/subversion-static/subversion-static_1.14.2-4_x86_64.deb
+Size: 1153328
+MD5sum: 04b87f79236aa474f9f6a65b68c7d6e3
+SHA1: 667176fc0771e185bb04410c337ac67d77ec455b
+SHA256: 31da73b579d9cabbe4db7321423498a96145fa7daa91cd549d334dfd327e35b2
+SHA512: 7943f3e393f633e7111658c3a4ea3bfede5020b67b8e11bba09b35f34b64a6bd129bba7efb1d816cf35fcb93f2bafa6661771f2a236c6bd6ec9dcea111007e06
+Description: Static libraries for subversion
 Homepage: https://subversion.apache.org
 
 Package: subversion-static
@@ -36785,21 +36288,6 @@ SHA512: 0cd1195e911b9a23a587c81db2149306e3fd56160d5ed888ad3a10b4ffdeebce36674d80
 Description: uWSGI application server container
 Homepage: https://projects.unbit.it/uwsgi
 
-Package: uwsgi
-Installed-Size: 1240
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.0.21-2
-Depends: libandroid-glob, libandroid-sysv-semaphore, libcap, libcrypt, libjansson, libuuid (>> 2.38.1), libxml2, openssl, pcre, python
-Filename: pool/main/u/uwsgi/uwsgi_2.0.21-2_x86_64.deb
-Size: 414956
-MD5sum: 9310dec49b9474cec2032a6a6e9f1925
-SHA1: 497b63785af2779fbdb94d81e8401335f5f4eee3
-SHA256: b6da1cd4cfe0396715148c5b390ec15d51010e4a56b6ff4ad8c1cb719f238ada
-SHA512: 5228be36fffc4803168452e0e463343884009b11833734f82df29a1c4266cd1b7a06cbc97993d7f45d86a5228725b27ed761ec554730b032e6c957ff85841522
-Description: uWSGI application server container
-Homepage: https://projects.unbit.it/uwsgi
-
 Package: v2ray
 Installed-Size: 38316
 Maintainer: @termux
@@ -37252,21 +36740,6 @@ SHA512: f908d37122f08548bf19619b538a0ed854882c5922d828e608236a4fc1d7e45c17b0cc5a
 Description: A popular libre and open source media player and multimedia engine
 Homepage: https://www.videolan.org/
 
-Package: vlc
-Installed-Size: 12808
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.18-6
-Depends: chromaprint, dbus, ffmpeg, fluidsynth, fontconfig, freetype, fribidi, glib, gst-plugins-base, gstreamer, harfbuzz, liba52, libandroid-shmem, libandroid-spawn, libaom, libarchive, libass, libbluray, libc++, libcaca, libcairo, libcddb, libdav1d, libdvbpsi, libdvdnav, libdvdread, libebml, libflac, libgcrypt, libgnutls, libgpg-error, libiconv, libidn, libjpeg-turbo, liblua52, libmad, libmatroska, libnfs, libogg, libopus, libpng, librsvg, libsecret, libsoxr, libssh2, libtheora, libtwolame, libvorbis, libvpx, libx11, libx264, libx265, libxcb, libxml2, mpg123, ncurses, opengl, pulseaudio, samba, taglib, zlib
-Filename: pool/main/v/vlc/vlc_3.0.18-6_x86_64.deb
-Size: 2926692
-MD5sum: 5756a1fb74d0106f6951ea250da24997
-SHA1: 4800906ed0e8afc08134db2b1169b4eb9bdf0c8d
-SHA256: 34b128cd789d6ae4788b4c93da861286ed37215b6b9cbb6d55eaac9b06a435e9
-SHA512: cb09b4efcf450a0f118b0c0d125f85d949ec2d5682ece094bb91498cf3f472c174a6bac2970847c589699b706c44c08e09d9eb10cf650d4ee6314e870c8b08d4
-Description: A popular libre and open source media player and multimedia engine
-Homepage: https://www.videolan.org/
-
 Package: vlc-static
 Installed-Size: 1516
 Maintainer: @termux
@@ -37279,21 +36752,6 @@ MD5sum: 19f4b6c8af178527835318775a01eb40
 SHA1: f78ee2a0519b779aa6bd907f1a12cbf36efee319
 SHA256: 14999398e4c0ebc2948c1639f26a250f707afafebf337a5d5f12bd7a84dcd0dc
 SHA512: f6c5da654f5d2b4eba1ed8a55bb77117ae920ded9efaac7cbca1d93434247acdf5d4fb9c85deab81f830379144d38fcf35d72d6effdde790eb4e9a1ea3f28a58
-Description: Static libraries for vlc
-Homepage: https://www.videolan.org/
-
-Package: vlc-static
-Installed-Size: 1516
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.18-6
-Depends: vlc (= 3.0.18-6)
-Filename: pool/main/v/vlc-static/vlc-static_3.0.18-6_x86_64.deb
-Size: 16976
-MD5sum: be1c1caec0a2af94b052e6d5157e6dc5
-SHA1: d7e088e327b824b8128661d70c39e51f12225add
-SHA256: e80cd16d75114bf4428dea2c401864f4304ca6d5e760a8357297962adf1320fb
-SHA512: 1168dd8dcedea546452c575985403d10f88fe2b891f95ad398aca05e30e7696acf40574384d138eb048dff03d088ae3ad044fd2c94a606d3fac77936fd34fa9d
 Description: Static libraries for vlc
 Homepage: https://www.videolan.org/
 
@@ -38045,21 +37503,6 @@ SHA512: 0f178e248627d6a85410f1f981b2da03570915621de8fc7087604c74e5f3df052bcccabf
 Description: Command-line tools for libwv
 Homepage: http://wvware.sourceforge.net/
 
-Package: wv-tools
-Installed-Size: 232
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.2.9-2
-Depends: libwv (= 1.2.9-2)
-Filename: pool/main/w/wv-tools/wv-tools_1.2.9-2_x86_64.deb
-Size: 27688
-MD5sum: 3fb5aca35d38664693006acf98c2b796
-SHA1: 705ac9b9fdea2800f5c1006a2f112b2869533942
-SHA256: a3881d3eac53add58f610e89e069f1999564c7e245ff673e78d7f11daa3cc7d9
-SHA512: 40c1e25af5e677030d3707ca0f5d6e670df51c3c65f73e650742315865874e41bfa7b1de877924d47976d9717dc8900ece287c24cac188065587e6c195d37151
-Description: Command-line tools for libwv
-Homepage: http://wvware.sourceforge.net/
-
 Package: x11-repo
 Installed-Size: 52
 Maintainer: @termux
@@ -38242,21 +37685,6 @@ SHA256: 6493392c9aa88200489e3bca51e85424a51982a8e2c2ef565f47f694d356c1d2
 SHA512: 4cef28f1041e3cf6ea42da6540a3a5111fc41eb156a82d830b935a9e3132cea215a046d5e37c7cb05a7a03fc07481f365884d0367c7709d8394cf328f16af288
 Description: Command line XML toolkit
 Homepage: https://xmlstar.sourceforge.net/
-
-Package: xmlstarlet
-Installed-Size: 240
-Maintainer: Termux members @termux
-Architecture: x86_64
-Version: 1.6.1-4
-Depends: libxslt, libxml2
-Filename: pool/main/x/xmlstarlet/xmlstarlet_1.6.1-4_x86_64.deb
-Size: 43874
-MD5sum: b3c94d4a0820293f634acea5c700a91c
-SHA1: db9fdbedbb19a699e10260d9d37759d656b609e1
-SHA256: 99b036b4a6597eff3f32b1e1b22c2c416928ce19dc72d9b7de6533a5f1296f63
-SHA512: 65f17b250ace9ad5962f0e7bdbcb5275dff40ab08ba507ad8b8161817efe81c702304ab9cf5f7ad54e4b1845dcd6f639f064f1dbf843d47257dba7dcac95b3d3
-Description: Command line XML toolkit
-Homepage: http://xmlstar.sourceforge.net/
 
 Package: xmlto
 Installed-Size: 264
@@ -38667,21 +38095,6 @@ SHA512: 6babfc33226838720cea999f4f9f8f46cfbbdbec6b5f73cae64c4d37cb1d250c2cfe766f
 Description: Provides an opensource YANG API in C
 Homepage: https://yuma123.org/
 
-Package: yuma123
-Installed-Size: 4996
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.13
-Depends: libssh2, libxml2, openssl, readline
-Filename: pool/main/y/yuma123/yuma123_2.13_x86_64.deb
-Size: 911028
-MD5sum: f27d37fef3a1711e759e43f7c1a305fa
-SHA1: f92d971db2f9b61cc74a9999ce9a64d334de985b
-SHA256: d95d006a78bb6f12651aa73d4b47e5d4170f1f70b52ee7ac4b4624a40237f2a3
-SHA512: 8a782f74a3e2cef8535925f2145cd39d23aef5ea5bd9b4aa78d80d1eec25041798dfc41a7c7f8fa7bccb5352a5995530987aa95860b6dbd780f7179140992893
-Description: Provides an opensource YANG API in C
-Homepage: https://yuma123.org/
-
 Package: yuma123-static
 Installed-Size: 13392
 Maintainer: @termux
@@ -38694,21 +38107,6 @@ MD5sum: db0d3e7a0c72e53327f4e1ba275b3bc0
 SHA1: 55be3f54ec8eead505a638a0c66837a2b7dcf5b9
 SHA256: 0e5f6132fa0c8226141720704284364f0632851bbb72e751f003af513b6f01ab
 SHA512: e40514bdaa620227a87cb403fd7a47fd8d37da371fa013ea4dec6e226966309c578e0e2d71dc175cf54751b8e7f8a2dadbd765526136b7df3effbb116fc1dd32
-Description: Static libraries for yuma123
-Homepage: https://yuma123.org/
-
-Package: yuma123-static
-Installed-Size: 13392
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.13
-Depends: yuma123 (= 2.13)
-Filename: pool/main/y/yuma123-static/yuma123-static_2.13_x86_64.deb
-Size: 2058252
-MD5sum: 8d12e8782bfa5127a28ba53f7f5a72f5
-SHA1: 29c72231face61aa7b41a736624b92d331ff37d2
-SHA256: 42c7180a6251340efca845944601628883a04a5c4751cc6a108e883b9cddaaee
-SHA512: 54addb8bf2178e27f4c6edaf6126beaaefc403b14db30059926f290bdec04f0e9fee8d8a74853e0e2c01d8a2c0892dd77ed2cf62ff6a5bf0f0accebc02eefd52
 Description: Static libraries for yuma123
 Homepage: https://yuma123.org/
 

@@ -31,6 +31,21 @@ Package: avahi
 Installed-Size: 1108
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.8-9
+Depends: dbus, glib, libandroid-glob, libdaemon, libevent, libexpat, resolv-conf
+Filename: pool/stable/a/avahi/avahi_0.8-9_aarch64.deb
+Size: 208688
+MD5sum: 4b872531f6e4cd56c6b749de3be9823b
+SHA1: 1e04c337b610e213cb41a19c4abce9a572ec926e
+SHA256: eeb8e15a6bc87132321beda769ceccf686be6e4411a7ff2b00edc13f54f301d2
+SHA512: fa7d404311e2a78e40ddcf3d855598de6daaae61f5a5e7d44605cb1c86abbc233491fade5aadbb207e0d62ea22e7bbfaeac74038fea58e06726db84d3968bfa2
+Description: A system for service discovery on a local network via mDNS/DNS-SD
+Homepage: https://www.avahi.org/
+
+Package: avahi
+Installed-Size: 1108
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.8-8
 Depends: dbus, glib, libandroid-glob, libdaemon, libevent, libexpat, resolv-conf
 Filename: pool/stable/a/avahi/avahi_0.8-8_aarch64.deb
@@ -40,6 +55,21 @@ SHA1: 57b669b4e37ba6a9d8e41517ef14064f729025d1
 SHA256: fc4c3e283b9c2a47f853cf5bfd4b661e205c210ec5e3a04612c78b53e387da81
 SHA512: 367c627bb8c78f9a2932f649cd084ad5f747ef564d92292e7d984236ee0ca290adae2bac49dad1b142cf39eed3e0758ba1943dc02cc143211d7ff5f0677e2295
 Description: A system for service discovery on a local network via mDNS/DNS-SD
+Homepage: https://www.avahi.org/
+
+Package: avahi-static
+Installed-Size: 848
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.8-9
+Depends: avahi (= 0.8-9)
+Filename: pool/stable/a/avahi-static/avahi-static_0.8-9_aarch64.deb
+Size: 138400
+MD5sum: 78d42e9841e3e553b20aeb1864270db3
+SHA1: cbcbdafc5c03c935c889173c9dec716621bbc4f0
+SHA256: 406b32d62c4d58308a00341ba0f2d3daa9a5e414796fd8246f0c189441ba30e0
+SHA512: e80546744adad0565e31efaa87b7504c07cb41e5bcfe5754eb0c83290447f35682c6ddf0c90e85789377502b202143400f238832a78f8ba97b88fea1346ab4c5
+Description: Static libraries for avahi
 Homepage: https://www.avahi.org/
 
 Package: avahi-static
@@ -583,6 +613,21 @@ Package: libdns-sd
 Installed-Size: 152
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.8-9
+Depends: avahi (= 0.8-9)
+Filename: pool/stable/libd/libdns-sd/libdns-sd_0.8-9_aarch64.deb
+Size: 27288
+MD5sum: 68fa32635caf737ecfd95b0f0a5f8192
+SHA1: 509b98f3eef9ef4903ca94968564f568890c489b
+SHA256: bec603bf4615690def235b271f976dd1e54f192a12bcdb55946084e22fd3e958
+SHA512: 1f059a8e8deac13759cd3c7dd6fb1b683aab8a767b121fd91262c1d23bf2951f4c0c4cd827254a500c763287069fe84d822dbb8573f91493ecc69463ba5f3920
+Description: Compatibility layer for libdns_sd
+Homepage: https://www.avahi.org/
+
+Package: libdns-sd
+Installed-Size: 152
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.8-8
 Depends: avahi (= 0.8-8)
 Filename: pool/stable/libd/libdns-sd/libdns-sd_0.8-8_aarch64.deb
@@ -592,6 +637,21 @@ SHA1: b0a1c4909bb2c682399d490a572c7e81c3236caa
 SHA256: 1c3a625dc5ec495c043d7faef237ad95c8d32272c6638a9ba1f23a55455b7fe7
 SHA512: 8f8ed83e91849372267471f600140dd02e56b241a3776eef5640074e8c25ce2b069a6bd9f432385dae128ea40647b999720d15fea508c9148565a59b6db4b395
 Description: Compatibility layer for libdns_sd
+Homepage: https://www.avahi.org/
+
+Package: libdns-sd-static
+Installed-Size: 84
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.8-9
+Depends: libdns-sd, avahi (= 0.8-9)
+Filename: pool/stable/libd/libdns-sd-static/libdns-sd-static_0.8-9_aarch64.deb
+Size: 12956
+MD5sum: 664de09ccc21694b56532e56454813c9
+SHA1: 2cf87f1e37a69fe882dffce8fc0203b1e93469fb
+SHA256: 31170195f2ab2b2835d8574e5494aa74890135dcb347c1da9f8cc40227954a85
+SHA512: 1d2527c8521ec38c4db8877899b72bd1a5b324af2ab28502d23db4cacb7d0af0ea3164dc094627d47c641b2c96b5c8bcd476ca5a0acffba3661b1b66225d92c3
+Description: Compatibility layer for libdns_sd (static library)
 Homepage: https://www.avahi.org/
 
 Package: libdns-sd-static
@@ -1045,21 +1105,6 @@ SHA512: 5093e0074ef04866436865286a7286104d872af3f553db26b75763f5196b99eaa89e2f2f
 Description: FUSE filesystem to mount squashfs archives
 Homepage: https://github.com/vasi/squashfuse
 
-Package: squashfuse
-Installed-Size: 324
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.1.105
-Depends: libfuse2, liblz4, liblzma, liblzo, zlib, zstd
-Filename: pool/stable/s/squashfuse/squashfuse_0.1.105_aarch64.deb
-Size: 39364
-MD5sum: bca0ef6e263f2da514c01c6887fad39e
-SHA1: 3fbaa4044b76e0297c48ac83786a31d7746e4f45
-SHA256: 8861ae066b8c78660b9deb8ace75a4599dc669217aba0ac57d69128588287ae3
-SHA512: c2130e03ceb45f08e563734795d0363aa0f75baab11c275a770d55653c51e454760d48b3ee14703dc6d3787bff3eddf1bfa7a480cf435cc49602632a365b3656
-Description: FUSE filesystem to mount squashfs archives
-Homepage: https://github.com/vasi/squashfuse
-
 Package: squashfuse-static
 Installed-Size: 192
 Maintainer: @termux
@@ -1072,21 +1117,6 @@ MD5sum: 57a4973afb6bd7cfadbc0957859fbd66
 SHA1: d68864028f9e26d0838cc2440089b6c97cbeb7f1
 SHA256: 38d843382a58e6872d8aa40a18169907b3a9625af71807f889c7ddb99116752a
 SHA512: 35a248040ab9bc7224b53bb7ef2ff57458628b54ddc1a937788adeba497e56744cc2b9a83db664f26219783a16799976c66a717758dd754ce9cde7683229e8a6
-Description: Static libraries for squashfuse
-Homepage: https://github.com/vasi/squashfuse
-
-Package: squashfuse-static
-Installed-Size: 180
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.1.105
-Depends: squashfuse (= 0.1.105)
-Filename: pool/stable/s/squashfuse-static/squashfuse-static_0.1.105_aarch64.deb
-Size: 19328
-MD5sum: f87fc3bd47683c9760ee592417e46646
-SHA1: 0e7eed6dd4bb0a11c0506366c7743f67cc1f5382
-SHA256: aefc098edba088d1ffccd451af76ea111512c94ec030ab0ed5e09a4d0db36d3a
-SHA512: ff4d0e7925bad6211963e2279c3e57c1f71f5e8a624a3a735780bb7f07c9641c1743a061fb9360fc1fc1925075053b8fafebce2ee807e1ec362614270f3f14d9
 Description: Static libraries for squashfuse
 Homepage: https://github.com/vasi/squashfuse
 

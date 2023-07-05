@@ -42,21 +42,6 @@ SHA512: 764c66c746ca1b1ffcba210aa2feded4f7988be1b483c1a346937f3c853bb6c9c0c4f65d
 Description: A system for service discovery on a local network via mDNS/DNS-SD
 Homepage: https://www.avahi.org/
 
-Package: avahi
-Installed-Size: 1140
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.8-8
-Depends: dbus, glib, libandroid-glob, libdaemon, libevent, libexpat, resolv-conf
-Filename: pool/stable/a/avahi/avahi_0.8-8_x86_64.deb
-Size: 231092
-MD5sum: 9413913f670cc522c12ad31b2dc6bb96
-SHA1: d82b723beb4900fb993d2ab9c57ebd8cc5fbc822
-SHA256: ad998a4aac69782bd19eaa015db2a42b7062b8db8cee96b24ad6844312ee2ce2
-SHA512: 5d70eb01d2ca7c09310814b8d6b7498a851d566042eea70315215223cd04aad20f1a5f919c844c83e8ced7a6e1cb32a59300e74c0e90061b7580301aa8f77564
-Description: A system for service discovery on a local network via mDNS/DNS-SD
-Homepage: https://www.avahi.org/
-
 Package: avahi-static
 Installed-Size: 836
 Maintainer: @termux
@@ -69,21 +54,6 @@ MD5sum: a0512acaac12c51e83ff6de0e9da7ebb
 SHA1: fc49b655f339f2728f2997f5e703f98d2e92aab0
 SHA256: 0754a18139d6702a46ec1eb02ba30337573aa051e5553885369ae4fb1daff20e
 SHA512: 340f978053bfb249e8308dfe9ec41c9f743508ef2bcefc410e9230f24baf005e2e6cb81b1e3a4abcbbb663c6d702af5060a06baa2e61cdb5fb8ccc45801fa941
-Description: Static libraries for avahi
-Homepage: https://www.avahi.org/
-
-Package: avahi-static
-Installed-Size: 836
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.8-8
-Depends: avahi (= 0.8-8)
-Filename: pool/stable/a/avahi-static/avahi-static_0.8-8_x86_64.deb
-Size: 142732
-MD5sum: 914b52e39bece5df3164d8275276a6ae
-SHA1: 6ac59ee240b0822b5f8674a13b1cb676378735a1
-SHA256: b1976b49adfd9ef1fb8ff023e95e85e3caba771077a7f1b7ab97d449154b1b9c
-SHA512: 0fc51ab1157c971f0dcee90de32e373ce71a6359896fb21ee31d6de425b9b33770c6451df1b29a1b7f683da6dd6152670ed8c60add7bd479cf2ede97a1c48001
 Description: Static libraries for avahi
 Homepage: https://www.avahi.org/
 
@@ -382,6 +352,23 @@ Package: hwinfo
 Installed-Size: 3820
 Maintainer: @termux
 Architecture: x86_64
+Version: 22.3
+Replaces: hwinfo-dev
+Depends: libandroid-shmem, libuuid, libx86emu
+Breaks: hwinfo-dev
+Filename: pool/stable/h/hwinfo/hwinfo_22.3_x86_64.deb
+Size: 858680
+MD5sum: b392540ca30ef1325b8d2ee4ff3856b9
+SHA1: e283bcd1f11cc18c52bc40a52d5a4181c49cc272
+SHA256: 48328b44b5c00660e044edd0b006a0459963fc2b5f2b7655787347588bda206e
+SHA512: 2ae8fbe2006aa7b1f814fc572404d96d8303e0c1f44fd9a89000c968af92182564b415fc2fa87ef7b8c28ff0c836c331165bb3c24ccff7fe0c406006a75eba3b
+Description: Hardware detection tool from openSUSE
+Homepage: https://github.com/openSUSE/hwinfo
+
+Package: hwinfo
+Installed-Size: 3820
+Maintainer: @termux
+Architecture: x86_64
 Version: 22.2
 Replaces: hwinfo-dev
 Depends: libandroid-shmem, libuuid (>> 2.38.1), libx86emu
@@ -624,21 +611,6 @@ SHA512: 83449700436a7f14a080ad3a139ec47ce724859f3f2a64c615a094eadad2c4117f63a6c2
 Description: Compatibility layer for libdns_sd
 Homepage: https://www.avahi.org/
 
-Package: libdns-sd
-Installed-Size: 156
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.8-8
-Depends: avahi (= 0.8-8)
-Filename: pool/stable/libd/libdns-sd/libdns-sd_0.8-8_x86_64.deb
-Size: 28356
-MD5sum: 3655fad6d3aeb39ec6b96027357ec91c
-SHA1: 92d361605c692f7a10cec58f0290a6acae49f691
-SHA256: 14b70c6fabac1657e67bebedd91f620e8e93060c21b5b610fda0f12dfef0b6b9
-SHA512: e1207bfae31f3e0053a2325e9f9996195f0b66801aac59176ef728ab820dd070e2283dfe9d1c17ac41c1b0e71618dc73943246a3fa6718eda75afdb25ae03a9d
-Description: Compatibility layer for libdns_sd
-Homepage: https://www.avahi.org/
-
 Package: libdns-sd-static
 Installed-Size: 84
 Maintainer: @termux
@@ -651,21 +623,6 @@ MD5sum: ee402eca291cc8b8812f4bfd57a3cc84
 SHA1: 13f2ea4fa74d1a24278469615ceef0b1697708c3
 SHA256: becb2eb9b96a8ad53a9efaad6e43e4070f492ae642716f4fd326d746f618d9e5
 SHA512: dc00f51932aa0026970c0a8e9794b2f194ce894367bfca0ef32cf1559cebd274b4c3f2f9d0ddf61cb56b6081c5ad66e57e5c9bd01bda027669af8932ea08e57b
-Description: Compatibility layer for libdns_sd (static library)
-Homepage: https://www.avahi.org/
-
-Package: libdns-sd-static
-Installed-Size: 84
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.8-8
-Depends: libdns-sd, avahi (= 0.8-8)
-Filename: pool/stable/libd/libdns-sd-static/libdns-sd-static_0.8-8_x86_64.deb
-Size: 13124
-MD5sum: 7e53397a9c58d1ae76d037082da43884
-SHA1: bc5f5707b87cca58de5cf5f13bcfd13ea7bf2ced
-SHA256: 846dd0a0d7469a9aed60a9970c49c23457a7e1491e92a34ac7e9299bff05629f
-SHA512: ca9c56491151355c9666b406f961ffd70406031484f3033c3a54ab62e87440be19719fee0ff70dd4f0fb15fb1efdcf679d6b5c8ec4474bc79cf5b16838999751
 Description: Compatibility layer for libdns_sd (static library)
 Homepage: https://www.avahi.org/
 

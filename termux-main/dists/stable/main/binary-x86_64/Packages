@@ -772,6 +772,26 @@ Essential: yes
 Installed-Size: 4140
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.7.2
+Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Provides: unstable-repo, game-repo, science-repo
+Depends: coreutils, dpkg, findutils, gpgv, grep, libandroid-glob, libbz2, libc++, libcurl, libgnutls, liblz4, liblzma, sed, termux-keyring, termux-licenses, xxhash, zlib, zstd
+Suggests: gnupg
+Conflicts: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Filename: pool/main/a/apt/apt_2.7.2_x86_64.deb
+Size: 1126692
+MD5sum: a5a839522d7654d38d41cdf7376817bf
+SHA1: 5d69234e947cb7fe2586cfd5aabb8cb1bd3f5700
+SHA256: 12d30c77b8fed7b928b0c6b1a1878439de34062e1e641e6d7380186fc3414468
+SHA512: eb6227faaacdf51e3c40d89902719837f41c3f870eedc15ae9d0bf58ff96cc7d38870709288f92ed6e7bdd6aacbb04dd285342fbb1d616c5d8a4252cd52252dc
+Description: Front-end for the dpkg package manager
+Homepage: https://packages.debian.org/apt
+
+Package: apt
+Essential: yes
+Installed-Size: 4140
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.7.1-1
 Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
 Provides: unstable-repo, game-repo, science-repo
@@ -807,6 +827,21 @@ Package: apt-ftparchive
 Installed-Size: 356
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.7.2
+Depends: libdb, apt (= 2.7.2)
+Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.2_x86_64.deb
+Size: 105640
+MD5sum: 59da0ff8aca9c7bb770f859ec5e50345
+SHA1: 5b0ca95382bca7916b9c0153f29249255aa938be
+SHA256: 4aec9d22c5ad4debfe7d4f8bbcc4015e5aa60c92028b7a7a6b9a010bc8c58932
+SHA512: 3091a6a98a4f1ecb55570469d21399359f4ef54f11d0882fdb2eaf018fb8f2113adb48012c9994ea2c46944f3f7d86931346de2653c71257e00491541588c1d5
+Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Homepage: https://packages.debian.org/apt
+
+Package: apt-ftparchive
+Installed-Size: 356
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.7.1-1
 Depends: libdb, apt (= 2.7.1-1)
 Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.1-1_x86_64.deb
@@ -816,6 +851,21 @@ SHA1: df2943e7cac9e190f9e6140dd78ecc65b81b92a9
 SHA256: 3822ce4a7422b1f8754a0fe906125fe286662ee754741903977e3afa3925528f
 SHA512: a6d336ae9c078d6b9beb6383cc7c23f0c3106baa72ec1009f35ac2b98e44e50f2e1ffc98a0455dfbc3922b40a6f777bc72e08ee7d8c6f9e050b740f7904d3a23
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Homepage: https://packages.debian.org/apt
+
+Package: apt-transport-tor
+Installed-Size: 44
+Maintainer: @termux
+Architecture: all
+Version: 2.7.2
+Depends: tor, apt (= 2.7.2)
+Filename: pool/main/a/apt-transport-tor/apt-transport-tor_2.7.2_all.deb
+Size: 936
+MD5sum: ed1b3e6a0390d2878f86fefe77262ae9
+SHA1: 252ddbee517414bcc5077c53805e443b38078a9c
+SHA256: ddb8ac8576a57a1c446bc724b9203d56f1a9a64bec7fc8dc76e43204163eae09
+SHA512: e46c574340a39a2d40615d2ff88b20f95d7ea386b980bcbaa5fefb82718811de02e74e565e9e25f69fcb042651242b5300039c90c9a2d6ed520d2abad046bae3
+Description: APT transport for anonymous package downloads via Tor
 Homepage: https://packages.debian.org/apt
 
 Package: apt-transport-tor
@@ -5754,20 +5804,6 @@ MD5sum: 2168fdf1c7fbb698792495c353b398fe
 SHA1: 0c59966388aeda18ba9b0e2d4d56f792f34d8b72
 SHA256: 8c9cdbf881d63d3d213298c1020d2316018f84be03153b6039c865e88051c659
 SHA512: f6e9959cb8f91f1ba4f3129076068c61f7343e13e1de7331308f7125b0e5c88bb6b7ce6a9578bf55fc75063dcbba87b91fe62e654f822ded0f3cd06c2d8634c4
-Description: An extremely fast JavaScript bundler
-Homepage: https://esbuild.github.io/
-
-Package: esbuild
-Installed-Size: 9944
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.18.11
-Filename: pool/main/e/esbuild/esbuild_0.18.11_x86_64.deb
-Size: 3102536
-MD5sum: 38d68079c9a227aa97eaa3c8054b51ad
-SHA1: 60a83df5f37ad96dfaa78445560d59083c1158df
-SHA256: 71e62f5d16e1f39e22af347c1643bd6499d57e99b8320ecd314a0bace3c71cc5
-SHA512: 600da4f5deaa751a1cabfec7873fcd64c3799531356840ccc4d6fc2cf213618069e641aa90be53bb0b719a042680932f4ca57b3ad5c34e5a46293ce9cca73578
 Description: An extremely fast JavaScript bundler
 Homepage: https://esbuild.github.io/
 
@@ -10994,6 +11030,20 @@ SHA256: 98bb0c45ed9a2c1cad1f7893c6439551747bd6e515809b5ce03c643db99fe8f7
 SHA512: cbb7c7140f8f8c4883b3b80c36389928d92685e1584aff2c2ce1cc6ed955f4ef47c9573165e5ff5bf5d3e768d7081be131014d63ed4b7cbcb306ab72936e0d07
 Description: Static libraries for jq
 Homepage: http://stedolan.github.io/jq/
+
+Package: jql
+Installed-Size: 800
+Maintainer: @termux
+Architecture: x86_64
+Version: 7.0.1
+Filename: pool/main/j/jql/jql_7.0.1_x86_64.deb
+Size: 293968
+MD5sum: ed6853ffc8da09d8b2a1748173007df1
+SHA1: 92593934d9f990a3ff3e5cf99fbe2bf8e13c3726
+SHA256: af62de62636de66caa9d002f38351241d55df59eec3cc5db71acb449069afaf4
+SHA512: c1d1d1b7ea833b6d37cdcfc1bee677512aedb2e9a16cf56d4a8e34f9dbd93c002adc1ce53f186df9130b2e3a5da6e802a38a835bf858933bbb5f26a2b73789c7
+Description: A JSON Query Language CLI tool
+Homepage: https://github.com/yamafaktory/jql
 
 Package: jql
 Installed-Size: 800
@@ -21171,6 +21221,20 @@ Description: Lightweight C websockets library
 Homepage: https://libwebsockets.org
 
 Package: libwolfssl
+Installed-Size: 4068
+Maintainer: @termux
+Architecture: x86_64
+Version: 5.6.3
+Filename: pool/main/libw/libwolfssl/libwolfssl_5.6.3_x86_64.deb
+Size: 648036
+MD5sum: d13845a1cda13c9c83cca27e41d0dc62
+SHA1: 91b6b0fdca6ca9ee1a7a370700114fc4a9c852dc
+SHA256: 42dddb273e79416dac0ec571694e0c00a6637d1f080b02b8874ca9afa1877b7c
+SHA512: 8e595b1999e0271e25b6a9b0cff37ac5bd2d8811fca52a45b9a35e8edf96dcc4487cd6f9f51bf7fe9d2abfd8ab06b3a41958a4f4a223ca258fde0eeb00fd7f70
+Description: A small, fast, portable implementation of TLS/SSL for embedded devices to the cloud
+Homepage: https://www.wolfssl.com/
+
+Package: libwolfssl
 Installed-Size: 4092
 Maintainer: @termux
 Architecture: x86_64
@@ -27772,6 +27836,21 @@ SHA256: f798f782bdfdced7785ae408c2038817aae37f398c81a5c4ee9f0a2106bd0b99
 SHA512: b930fc4e1d03831782c5e794e400f046b0e00a5771033a75917d7251748b993ef72d332cdacfdb1a6c32771aa475abdd8a48fc56f55859669104143d59c8e638
 Description: Capable, feature-rich programming language
 Homepage: https://www.perl.org/
+
+Package: perl-rename
+Installed-Size: 72
+Maintainer: @ELWAER-M
+Architecture: all
+Version: 1.14
+Depends: perl
+Filename: pool/main/p/perl-rename/perl-rename_1.14_all.deb
+Size: 9704
+MD5sum: fe633d41048b7c504f8efa5780662b45
+SHA1: 221a5927be4336c576a892fb070691f51af48bef
+SHA256: ae489c79e2aa58ccd7a1084fa4d293fdddca555e3b73de16affe10f5c1650c95
+SHA512: dba4b10771f27ff6969fcdfa6035dbcbca5f2aee2ce0c609e6921a301ad39f65d3c3cfbb2f47f1eac5e954c252f41a28fee222edde7ffbb25641f4e3cf0c38e1
+Description: renames multiple files using perl expressions.
+Homepage: https://search.cpan.org/~pederst/rename/
 
 Package: perl-rename
 Installed-Size: 72

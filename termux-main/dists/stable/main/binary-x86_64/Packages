@@ -7836,20 +7836,6 @@ SHA512: 7f907c8303410bb011af0fdf54a62228334b88b967e636a37e42295876db4783b56b9894
 Description: Git extension for versioning large files
 Homepage: https://git-lfs.github.com/
 
-Package: git-lfs
-Installed-Size: 11976
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.3.0-2
-Filename: pool/main/g/git-lfs/git-lfs_3.3.0-2_x86_64.deb
-Size: 3467124
-MD5sum: ca53505445c72f5593248ae6ad604b6e
-SHA1: 626b1083b62f40e161f66d4c61a615c242eb3214
-SHA256: 8229b79b686914f18a9e0f34b275a459ba3a070063a11801f0b564e06375a044
-SHA512: 31cffbf4bd2c466e4e441b71794b92350ee02430172bfc16c35aea0c7b86a61ecc0dc81cd87cb0262bee7e4a645d6ee9e9246260e887a2d0b786a34d03e09f70
-Description: Git extension for versioning large files
-Homepage: https://git-lfs.github.com/
-
 Package: git-sizer
 Installed-Size: 2792
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
@@ -24015,6 +24001,24 @@ Package: mesa
 Installed-Size: 52680
 Maintainer: @termux
 Architecture: x86_64
+Version: 23.1.4
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.1.4_x86_64.deb
+Size: 13248888
+MD5sum: 732011d56fe5fe83bf0b4b878225931c
+SHA1: 1e3c0d7ee4f26a06bcc11372581c500afe2c22d5
+SHA256: 3cf9dbc8167f81e7362b393001785d073c9d114b91e6d1eb713ef7fcdca9112b
+SHA512: e95b8c1aa112658c04a30eed16d4c69455c92f558d34150b3888f079835a3934e93e53104e13016cfe5d6cd372bcfe895fa351427a67cf7c2b34fb22db953678
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
+Installed-Size: 52680
+Maintainer: @termux
+Architecture: x86_64
 Version: 23.1.3-2
 Replaces: libmesa
 Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, zlib, zstd
@@ -24033,6 +24037,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 23.1.4
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.1.4_all.deb
+Size: 25056
+MD5sum: 08b0823b6f85cd78325e4b6bccfec26a
+SHA1: 41518683b0a8a6d72620affe3e4c8910420bde20
+SHA256: fef87381646fb2dc8dff4cf49be333b8229bbedf1cf4bacfe4a8ed8eb1856db1
+SHA512: a0847205f344de8954fbfd3c59e45d14c1344a19592ed9d62311bc7a6362a8a3791be150a102d5b0a44c016e4caa078ac3c3e567e2bb88c7f2a4f7b1e84d61da
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 23.1.3-2
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -24044,6 +24065,21 @@ SHA1: a919f82bfd3e2ba657fe1ba2f2b214fb64e9f0aa
 SHA256: 66deacad36483267918a78e36915a958cc6d01a45303e7b00e3c870b15ceafc0
 SHA512: 33b94b742b6bdb22f368ca193f9bd898c6219832695b6ed1810be0777f9d020f0c69dc804dcf448a7fa81fd095df3d52d7c99bdd82e16a4a6099314f609ccf1d
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 53524
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.1.4
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.1.4_x86_64.deb
+Size: 13279636
+MD5sum: 0b04723e7be1c86b5d73dd89b1b7123a
+SHA1: 4dddda2290f7b1752b12784e21982c01317c50bc
+SHA256: 7d2a72f5f465ed2845d8452744dcfb5c6ca0d7c84a4c86db0cb9feb82f01f593
+SHA512: ad0674f575e3cf99bcf103f228d0e043ec129e6660d616ad1454759d6965e5c871fdd248b96fcf494540537c610a2f8ad66c96f9991522f8491bfda8aaa700b1
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -27127,6 +27163,23 @@ SHA256: 495264b23e1bbcfba74133fd2ea880b3032214c7cdfc6278e083b8679352af58
 SHA512: 0d2dd86311d2a9ce3a2ca0ce3c8a9340b82ad982cde24d1d33b6026e6a0bf94c2154389a551837f57e16d6ba2166fff288653523c7c894284935011a283a9e30
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 50756
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.1.4
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.1.4)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.1.4_x86_64.deb
+Size: 12836056
+MD5sum: 7bc804bd3bbc8bbea83c13e65e4453d2
+SHA1: 9ced265dad786e2f051129c7fa111d3e2e99f71d
+SHA256: e95740f1a5e2bf4e625a30b94d0d776f8b238658b77f8dfd1c5db75f35b3cbda
+SHA512: cab68ae79ff2257ec9db725b4b1097017932f9829d9fb8012890f6b615b9bc4502cf407b04569723030b10eaa992b6f84aec91e0685351bb2cd8d60b7348178f
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 50748

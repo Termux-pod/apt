@@ -7763,20 +7763,6 @@ SHA512: e22de39da67d84b90e35df6acc137b9f82f71a78d362ad5058a68a7368c143b423face74
 Description: Git extension for versioning large files
 Homepage: https://git-lfs.github.com/
 
-Package: git-lfs
-Installed-Size: 11068
-Maintainer: @termux
-Architecture: arm
-Version: 3.3.0-2
-Filename: pool/main/g/git-lfs/git-lfs_3.3.0-2_arm.deb
-Size: 3081952
-MD5sum: 77ec42edb6e3235d2f1af5c4fc6fb83d
-SHA1: adc8a45ff797897ecde966975febd57b33bbd160
-SHA256: 989fc80869dc5aaea32ff3a0e71f0903681e2aaba256176cd45c20b6d469d05b
-SHA512: 5072e38aa7e4bc20090f5f4cbcc9f91359bb02c82bd4a8ed4fef5c8bf380d7293c675e7c75725e6f319b18a21584662903b7f049425082455c37680765a4fd17
-Description: Git extension for versioning large files
-Homepage: https://git-lfs.github.com/
-
 Package: git-sizer
 Installed-Size: 2608
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
@@ -23819,6 +23805,24 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 31508
+Maintainer: @termux
+Architecture: arm
+Version: 23.1.4
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.1.4_arm.deb
+Size: 11201484
+MD5sum: b2d926383578fe8e8b4679ff514c88e8
+SHA1: d92fa23cc7dc02fe6f6d5572976c125f55ed8e49
+SHA256: 9dc1b1327a4e81ea4861003143a76cbf67154f9e68b9b42a1ed4fcd122443d10
+SHA512: fd5956eb5ec7b4e5431f02f6ee41dcba6166f8a6e71c97183b2697e316c42b36c8f4bf3c8e621b8d1638b348fe7e9b1024d98d1189eb5d89f88b89e5b8d5b6a5
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 31504
 Maintainer: @termux
 Architecture: arm
@@ -23840,6 +23844,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 23.1.4
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.1.4_all.deb
+Size: 25056
+MD5sum: 08b0823b6f85cd78325e4b6bccfec26a
+SHA1: 41518683b0a8a6d72620affe3e4c8910420bde20
+SHA256: fef87381646fb2dc8dff4cf49be333b8229bbedf1cf4bacfe4a8ed8eb1856db1
+SHA512: a0847205f344de8954fbfd3c59e45d14c1344a19592ed9d62311bc7a6362a8a3791be150a102d5b0a44c016e4caa078ac3c3e567e2bb88c7f2a4f7b1e84d61da
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 23.1.3-2
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -23851,6 +23872,21 @@ SHA1: a919f82bfd3e2ba657fe1ba2f2b214fb64e9f0aa
 SHA256: 66deacad36483267918a78e36915a958cc6d01a45303e7b00e3c870b15ceafc0
 SHA512: 33b94b742b6bdb22f368ca193f9bd898c6219832695b6ed1810be0777f9d020f0c69dc804dcf448a7fa81fd095df3d52d7c99bdd82e16a4a6099314f609ccf1d
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-freedreno
+Installed-Size: 5500
+Maintainer: @termux
+Architecture: arm
+Version: 23.1.4
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_23.1.4_arm.deb
+Size: 993820
+MD5sum: 54afd104c18d0ecff335f1b2941831f6
+SHA1: ca3ae7926a25a595148c3bcd9a269c1682241b4b
+SHA256: a7f23b68b2d487ec854bfc9d6c2b16cd245130b089f9d386fd3aec1a47382523
+SHA512: bcbac428640accfb3775184db96bc3fc833e063df7742da9e06fe6b516aac751262b789dedf5ff649e10241d90c4420346d175a1ed66376f3561eaa60d53e7bd
+Description: Mesa's Freedreno Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-freedreno
@@ -23866,6 +23902,21 @@ SHA1: 314e995f1e96faea253a4b397dbfddb0d03c2a5f
 SHA256: 883c91a56f3e219af19e626b96dc6a9053c70086cb80565a6197d759a827d149
 SHA512: 458ece35d3691a2d494b9364a44f60e2e9a4db1909508230cafaef51cd2e8c52961919dca7865addf980aa31773175aa2b66b2cfb96eaa0806a358e0f6032b9b
 Description: Mesa's Freedreno Vulkan ICD
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 32400
+Maintainer: @termux
+Architecture: arm
+Version: 23.1.4
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.1.4_arm.deb
+Size: 11311300
+MD5sum: b255e8021ccfd63ddd6c6fd537b64efb
+SHA1: 15147748793a410e16972e56b03e8296dc92b088
+SHA256: 32f272fbe28d4e22dc8773dcad696d395f8520c25a5794ac85a7e1e76fdf35bd
+SHA512: 5ab9df3ad4913d921d639fc300e69750d045058e92cb6d7ec3eeb0a927ba99ef4c8053722fa34017756786099ed9a410839301745ef0956a341c0cc90610d3b2
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -26934,6 +26985,23 @@ SHA256: 4b18fe1b318578d25a25654d80d77dc0c4bd1f3bdb2a994ae770f0c31f04e9ff
 SHA512: 0990610e04a35f5fc073bcd012bfd6012122d60449a792a91ae8454026e80ea3e47141ca2a7e8369e6d3be936f0e24bd38efc3e7325fbcb9c9f58090368abe2f
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 30396
+Maintainer: @termux
+Architecture: arm
+Version: 23.1.4
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.1.4)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.1.4_arm.deb
+Size: 10874472
+MD5sum: 93e69c903500e1830aa9f8999f417f6c
+SHA1: 28e303561c36dc4d431f1d3b384ec5bf5d043835
+SHA256: bc07d98a9934ccaa74d800a3956a61efcf3e387a68207cb2b452d50dc0652326
+SHA512: f85992db56ffc489cf72cdb675ae9e941e0233bcc12440b4ac76b597e1605798a4e74856bf71a4b54b0699ac2d84406d6e61582ce20298a1a7b65976fe55674f
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 30396

@@ -8644,20 +8644,6 @@ SHA512: 7e541cb6e75722620cf1c036a4dbf3d7a5588393fa1befb5afafac32d0a660cff0cdea45
 Description: A database migration tool. Supports SQL migrations and Go functions.
 Homepage: https://pressly.github.io/goose
 
-Package: goose
-Installed-Size: 23708
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.14.0-1
-Filename: pool/main/g/goose/goose_3.14.0-1_x86_64.deb
-Size: 6221056
-MD5sum: c9e70a7a960b0645fe7eed7df1a3af8f
-SHA1: 2c4f63ec33455ab57e94f8b5f8209fa3016c128b
-SHA256: 2b9628c0549b8969bf2478c4ebcbdb0859354549ef076d4542813fdff6526a2f
-SHA512: c818e2902c6da30f51c955af28c8f8c3d662170ef9f133c36f715535ad039b83f6c5e10f3bac180c255ebc674d20e610c4776e59a62482360487a386d1c7b7e5
-Description: A database migration tool. Supports SQL migrations and Go functions.
-Homepage: https://pressly.github.io/goose
-
 Package: gopass
 Installed-Size: 22176
 Maintainer: @termux
@@ -19265,6 +19251,23 @@ Package: libsndfile
 Installed-Size: 760
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.2.2
+Replaces: libsndfile-dev
+Depends: libflac, libogg, libopus, libvorbis
+Breaks: libsndfile-dev
+Filename: pool/main/libs/libsndfile/libsndfile_1.2.2_x86_64.deb
+Size: 226456
+MD5sum: 160b31f9dee516a444c882516c602a6f
+SHA1: 6b7a8db2b5c36b7faaf5cdf82bf64da95af660c2
+SHA256: a6a033cd05faa94478408416bff9fed286763e2aa86b080262897d7cf2e746b8
+SHA512: 8358c89be9d9fa1f8d2d183145ab2ba7a83221ccf3c9f450f67753f91fc72d6536240368d9fb7bf9243c44a0885d0548f65205510ac243d221f4bf33616f135a
+Description: Library for reading/writing audio files
+Homepage: http://www.mega-nerd.com/libsndfile
+
+Package: libsndfile
+Installed-Size: 760
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.2.0
 Replaces: libsndfile-dev
 Depends: libflac, libogg, libopus, libvorbis
@@ -19276,6 +19279,21 @@ SHA1: ec77e179d498273408039c03ac66acddd10259c0
 SHA256: 5b3361cc07bbb35954943fc894d6191a7540f8028eccdb18842e4f79b1fc8272
 SHA512: b6eaa3d44d30a0c8328913b4eb8f9be1f08395b7d9fc2bee75092e9e34f7be0d1eb3c83336c323864ea1a9a9ed3b6ddbedf07ce0b384488104235055cacb1b12
 Description: Library for reading/writing audio files
+Homepage: http://www.mega-nerd.com/libsndfile
+
+Package: libsndfile-static
+Installed-Size: 884
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.2.2
+Depends: libsndfile (= 1.2.2)
+Filename: pool/main/libs/libsndfile-static/libsndfile-static_1.2.2_x86_64.deb
+Size: 192200
+MD5sum: 5d9c0b07263fadc0f3ec796f0ceb14f8
+SHA1: 0f6ba3a9e8226d8c0e639d9e02661bb408318614
+SHA256: 5a3d51c75582b2f24f2a0a9b3a3f3e13eec76e9814a2ae17bbe2c14a630f290b
+SHA512: 060027ce147f430e6a50705658f387029aac994eea658a8d0b4c9c65a947a3df8e7afb2c87212031a6c472903dedf294d846c2529ed1c5022092b60870beca9b
+Description: Static libraries for libsndfile
 Homepage: http://www.mega-nerd.com/libsndfile
 
 Package: libsndfile-static
@@ -24458,17 +24476,17 @@ Description: Tool to find files anywhere in the filesystem based on their name
 Homepage: https://pagure.io/mlocate
 
 Package: mold
-Installed-Size: 18780
+Installed-Size: 20928
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.0.0
+Version: 2.1.0
 Depends: libandroid-spawn, libc++, openssl, zlib
-Filename: pool/main/m/mold/mold_2.0.0_x86_64.deb
-Size: 1734676
-MD5sum: 1adc32f9062001e70a7b0f621018553e
-SHA1: b8893be3e11e03e625ef09d3f0e7b3b7d5371e0f
-SHA256: e81f276e0ecaea058bc68db279ae770afe04689422e839cd83c6a878f18654f4
-SHA512: e3f48203c6933129d6435fc9384f92339ae8dbc60573e74f0830a2350c43de5035f4d23d57971c07b74526492e24a4a65f58470bc3d8d0ced2a903d69287ad6b
+Filename: pool/main/m/mold/mold_2.1.0_x86_64.deb
+Size: 1891800
+MD5sum: 99c03e52bd93bd5f269fafd455b9b794
+SHA1: 63c88ad4c213f2f83355e1c2b6747bf4d3e29382
+SHA256: d2541ecdf6af12a09cd77681e9198899b3c12b54849386d8aeb700e6e659a64a
+SHA512: 093a2697d83f357e1e6cfabc206760a1d087b4292a1860bc9b04ac6bb2a6b16ed72ba90195e2e686d323f311b37878f6002aa156af8c742d8044fb086434fb70
 Description: mold: A Modern Linker
 Homepage: https://github.com/rui314/mold
 
@@ -26613,15 +26631,14 @@ Package: opencl-vendor-driver
 Installed-Size: 64
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.1
-Recommends: binutils | binutils-is-llvm, patchelf
-Suggests: ocl-icd
-Filename: pool/main/o/opencl-vendor-driver/opencl-vendor-driver_0.1_x86_64.deb
-Size: 2504
-MD5sum: 29b83f03007549649ae7bd0eb2b17671
-SHA1: 2b0d58aad735f388ab860fb8863cab10b286e6b4
-SHA256: 4d83f2fada455cb94f8061da31f1f0dbeedc40dd489f5eb4b075e1275debd45e
-SHA512: 18dbc9f66ae73819eccfe4a83ac4ec355017fe505b08f373d1881b24bf50d76871f745b9ea959b919dcaf42b69788ef6a40e39d1e4854da5935153f19928878e
+Version: 0.2
+Recommends: binutils | binutils-is-llvm, ocl-icd, patchelf
+Filename: pool/main/o/opencl-vendor-driver/opencl-vendor-driver_0.2_x86_64.deb
+Size: 2520
+MD5sum: 6036d8d8d3634c28eb88aa452ee67867
+SHA1: dffc55c2243ec03829ce505411e5e0de1c705ab9
+SHA256: 491f63f0886ff1383ac6a129c791e79b1f89b1ede3986197d2bec392f4ce07db
+SHA512: a9ae9d74f8702606c1c18a829f7049bc433eef8bab0ae2315508f51060dae7fa80d87aee1a1506235cbe6396e34df92b11459e1e758f4e441fd5d4f352a7dd28
 Description: OpenCL driver from system vendor
 Homepage: https://termux.dev
 

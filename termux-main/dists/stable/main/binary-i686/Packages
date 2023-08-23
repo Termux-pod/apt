@@ -2665,6 +2665,22 @@ Package: capstone
 Installed-Size: 7748
 Maintainer: @termux
 Architecture: i686
+Version: 5.0.1
+Replaces: capstone-dev
+Breaks: capstone-dev
+Filename: pool/main/c/capstone/capstone_5.0.1_i686.deb
+Size: 794668
+MD5sum: 9692fc240ffe4a6f740b663520a7e130
+SHA1: 94a6aab9df3ebffbf356bda9612fbbb32b2ac8c7
+SHA256: b22497775b028586458fd763dd2e81db0888260d7ffa49029b585de8dc823a79
+SHA512: a22857af23b79dfe075731346b4a82490f9fd2f19275be38af1f2668c7eb719136cad679059e3b52c6369a092ab01ca5a01411bb6149723f5ba98bf12222fcea
+Description: Lightweight multi-platform, multi-architecture disassembly framework
+Homepage: https://www.capstone-engine.org/
+
+Package: capstone
+Installed-Size: 7748
+Maintainer: @termux
+Architecture: i686
 Version: 5.0-post1-0
 Replaces: capstone-dev
 Breaks: capstone-dev
@@ -2675,6 +2691,21 @@ SHA1: 826d2446a7d7008480fed488f0060decc873b066
 SHA256: a89aba4b94c070b502e6eb62c3cf42d2d819e82e6e7b6db46acbf1952d9774ce
 SHA512: 279886907b2509028ebe3802af85649de5ca581c8df8d7a026148b2075ddfad5f9deae86fd0afba1865077bafcda136b7a893df8899c63f21b7f1f0da066e890
 Description: Lightweight multi-platform, multi-architecture disassembly framework
+Homepage: https://www.capstone-engine.org/
+
+Package: capstone-static
+Installed-Size: 7900
+Maintainer: @termux
+Architecture: i686
+Version: 5.0.1
+Depends: capstone (= 5.0.1)
+Filename: pool/main/c/capstone-static/capstone-static_5.0.1_i686.deb
+Size: 740164
+MD5sum: f27b36529dbe3e0533ccbcef7be4469c
+SHA1: 40eb690458802350d53eb1be1c27aedf7a8733c0
+SHA256: 8b9fea131c74f6cb8f813d249415499b30dba79c50509bd45a34be5424ed884d
+SHA512: 4015e3cf302f567667349ba885d97981ca5896e3a12b2d2d74cb42a2cc1e0df7748f04e9ef271771e6736ef7aaf5113aa2ba73931926d23b585d635d2a407897
+Description: Static libraries for capstone
 Homepage: https://www.capstone-engine.org/
 
 Package: capstone-static
@@ -10390,22 +10421,6 @@ SHA512: e963919f3001fa96e133959a730724132033a6d4cb8d88690ed76153b248e3db6dceaf01
 Description: Programs providing a simple interface to inotify
 Homepage: https://github.com/rvoicilas/inotify-tools/wiki
 
-Package: inotify-tools
-Installed-Size: 176
-Maintainer: @termux
-Architecture: i686
-Version: 3.22.6.0
-Replaces: inotify-tools-dev
-Breaks: inotify-tools-dev
-Filename: pool/main/i/inotify-tools/inotify-tools_3.22.6.0_i686.deb
-Size: 34284
-MD5sum: 4d745da33782503b926f00517e17a000
-SHA1: 48546fff72eebae872f8687357e6f700536e5fae
-SHA256: beeeebd04c28e6a349445e86609d9766692490d5735e1793dcf52b83c1f60603
-SHA512: 21f90e3e7ae23bb15b338f7f8551f63d31ff04090f6094e5668eb8aa130c9d8e091552a09be20352f6efbf20cce770d28ed254b98fed19293165fa4cf792e657
-Description: Programs providing a simple interface to inotify
-Homepage: https://github.com/rvoicilas/inotify-tools/wiki
-
 Package: inotify-tools-static
 Installed-Size: 76
 Maintainer: @termux
@@ -10418,21 +10433,6 @@ MD5sum: 4a09a7a6f1724d42f3c6f25f3c229904
 SHA1: 4a42536dc1bef7ccb5347a791aeaf1a53a2863a9
 SHA256: d0797baa96ebc34bbc80daeac0e31d734462b32102f067e54872c764cba7452a
 SHA512: f5657713fd319493359efde74bca66769642f1e38fa8ab623f68d016b27ce2f57932ff0fa7605a21b3eb1feea1c1e59c45a9be0eda57b89d83b021bd83f56809
-Description: Static libraries for inotify-tools
-Homepage: https://github.com/rvoicilas/inotify-tools/wiki
-
-Package: inotify-tools-static
-Installed-Size: 68
-Maintainer: @termux
-Architecture: i686
-Version: 3.22.6.0
-Depends: inotify-tools (= 3.22.6.0)
-Filename: pool/main/i/inotify-tools-static/inotify-tools-static_3.22.6.0_i686.deb
-Size: 12544
-MD5sum: d550a7e614026efe745ae1d0db03ddea
-SHA1: 36ee89d8d83bb383baeacdc9db3dc97ab83184d4
-SHA256: b132c7828ef2d01f58db294ef3489e292fdc1bba4404c51767c6895155322ae9
-SHA512: e02264c25ebaa8dbe570307e7e33d80380e89e9709508f78af67c0c233a57f8231fe4411d8dd987e4b109cda25045ff335958ef06e2e00aeb8a7e7cbde70da5a
 Description: Static libraries for inotify-tools
 Homepage: https://github.com/rvoicilas/inotify-tools/wiki
 
@@ -25993,21 +25993,6 @@ SHA512: 57547f0c677c59f8754458b09506004066c99e28ec248f5fa90d9d66330a397bbd095b6a
 Description: A new type of shell operating on structured data
 Homepage: https://www.nushell.sh
 
-Package: nushell
-Installed-Size: 54040
-Maintainer: @termux
-Architecture: i686
-Version: 0.83.1
-Depends: openssl, zlib
-Filename: pool/main/n/nushell/nushell_0.83.1_i686.deb
-Size: 11005680
-MD5sum: ccc5b2cdf9d542a2c5f8e2333a2c6d45
-SHA1: 6e6738b90c0b5bf7b6f1650f92f92d58303e5b4b
-SHA256: 56c82988ce87a8147a3dee832a88a3ed8c5fafc8608a7af0c6123e1c90892293
-SHA512: 42f1c4224e3530e75608dc6bdb580b909b9c26c82c3378e0266f4b92aa3cd9b44467316d9aead05e96ac6a0fd9aa134d2802bd3ad30d922ddcb22327190d921a
-Description: A new type of shell operating on structured data
-Homepage: https://www.nushell.sh
-
 Package: nwipe
 Installed-Size: 144
 Maintainer: @termux
@@ -30736,6 +30721,20 @@ Description: Search tool able to locate in PDFs, E-Books, zip, tar.gz, etc
 Homepage: https://github.com/phiresky/ripgrep-all
 
 Package: ripsecrets
+Installed-Size: 2836
+Maintainer: @termux
+Architecture: i686
+Version: 0.1.6
+Filename: pool/main/r/ripsecrets/ripsecrets_0.1.6_i686.deb
+Size: 888600
+MD5sum: 873b2f70161ad2536e113c60400415c4
+SHA1: bcc4f4b1eb0457381370b7f15ba90e142ff4430d
+SHA256: 389e389261928122c3351ca5a50c383ebb898e82ff8ec20eb4554afc62ba8ef8
+SHA512: 52fdc83474d9ceb6bf69f1fa69cbeb2ae9ada362911cf0e1296a65e0439449e00afb49e02b26f8b0b3dc62baa80db680834e902a06282c8f9326057903d0afa8
+Description: A command-line tool to prevent committing secret keys into your source code
+Homepage: https://github.com/sirwart/ripsecrets
+
+Package: ripsecrets
 Installed-Size: 2816
 Maintainer: @termux
 Architecture: i686
@@ -35157,21 +35156,6 @@ MD5sum: 41c393e4921849d5f88a5cf90c6a01fe
 SHA1: 58e63f962c6773b0cb3acace49c8d712a31033f8
 SHA256: 5b1aabd5c51a8c6932157e5d2e6323f1bce192ab0fa15b8c438c71c58e0867c5
 SHA512: c934eba4b2d35cb7694fde25d356519b56f404384389c456a1e62a48f534327a74b9b0cd59ed797dc6943094be2ec18c9d9741dc592e920b15a8ae0ed2415291
-Description: A faster, user-friendly and compatible grep replacement
-Homepage: https://github.com/Genivia/ugrep
-
-Package: ugrep
-Installed-Size: 2528
-Maintainer: @termux
-Architecture: i686
-Version: 4.0.1
-Depends: libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
-Filename: pool/main/u/ugrep/ugrep_4.0.1_i686.deb
-Size: 285140
-MD5sum: a2ca3d04e00cada15ad846b10158500c
-SHA1: 03a77c06e37fd05f9649a8a5d66fa8cf64d068e8
-SHA256: eeb98cbd41b71c6816323b16db157eebf5470959f1b5cdabf7ce861637ab9c0b
-SHA512: 0e7c6c52b25992d57338fdacd0e5f0b70106929840557e82dbc8c9c455d58be4d8d6bf6c9c88b77191e2e555b162ae05a4cdaf845ae17a693023ac765958cf0a
 Description: A faster, user-friendly and compatible grep replacement
 Homepage: https://github.com/Genivia/ugrep
 

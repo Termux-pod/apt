@@ -2680,6 +2680,22 @@ Package: capstone
 Installed-Size: 7316
 Maintainer: @termux
 Architecture: arm
+Version: 5.0.1
+Replaces: capstone-dev
+Breaks: capstone-dev
+Filename: pool/main/c/capstone/capstone_5.0.1_arm.deb
+Size: 755844
+MD5sum: a83ef00222f543f9ee32dd1e97af253a
+SHA1: 639a0dd84bd0e8a9a355a4c49cc7d5c6deeba36e
+SHA256: 1d870ab2dcbec262f1b6b467c89bedc3ef30b5907389614f3617b2cbf8fb8229
+SHA512: 4ed93f7a05df1ccb76ba7754ccfb17cab12eda4808d0ab77d8de70b4979932537484482aac47ab6f3361fa2aa90a4345e6a2bad225a1f50781c06151e8dda304
+Description: Lightweight multi-platform, multi-architecture disassembly framework
+Homepage: https://www.capstone-engine.org/
+
+Package: capstone
+Installed-Size: 7316
+Maintainer: @termux
+Architecture: arm
 Version: 5.0-post1-0
 Replaces: capstone-dev
 Breaks: capstone-dev
@@ -2690,6 +2706,21 @@ SHA1: 1d628265c6ce609200b6d1cad9fe0d764f764f45
 SHA256: 1ed08464d84737f128d6f7fa33965c6c08f9623f96067fdfbe790a800f44a416
 SHA512: e3359c151825c441e59114428341477d133f2b1dcecb95fdabf2a9f9954221eacfb9badabcd19bec28782c60f161124ba8d412fa6912c4731f2f059074413362
 Description: Lightweight multi-platform, multi-architecture disassembly framework
+Homepage: https://www.capstone-engine.org/
+
+Package: capstone-static
+Installed-Size: 7364
+Maintainer: @termux
+Architecture: arm
+Version: 5.0.1
+Depends: capstone (= 5.0.1)
+Filename: pool/main/c/capstone-static/capstone-static_5.0.1_arm.deb
+Size: 721484
+MD5sum: f42b726f84b962972f620659957c8de4
+SHA1: 09ad5f91ac61a969adbc4644aaf50c65ab442f6d
+SHA256: 738046e75b94e15d87c238af5d8feee96b83e979418f2fc48e8964c70d4248f4
+SHA512: f480ce824d228dbbe0db3b79f04d58a717359841eb9ada8cede7fe33124a77bcbcde9091a57f1c58cdc97df422edb73fbc81ba334bc5897b75ae73c8c3aa9f9d
+Description: Static libraries for capstone
 Homepage: https://www.capstone-engine.org/
 
 Package: capstone-static
@@ -10405,22 +10436,6 @@ SHA512: 9d40cd2fb2d4f1318086a4a1b1c0568a445fe20cbbf37728a5b55d40b2047434114fed2d
 Description: Programs providing a simple interface to inotify
 Homepage: https://github.com/rvoicilas/inotify-tools/wiki
 
-Package: inotify-tools
-Installed-Size: 172
-Maintainer: @termux
-Architecture: arm
-Version: 3.22.6.0
-Replaces: inotify-tools-dev
-Breaks: inotify-tools-dev
-Filename: pool/main/i/inotify-tools/inotify-tools_3.22.6.0_arm.deb
-Size: 32968
-MD5sum: 49e284cab8b196a05cb3afa2459ce47e
-SHA1: e4d908a533136c0d7ac89009e00a499e5b7246a4
-SHA256: 4fb05fc3f9362c7e64abb889851df68ebbc072dd16c9303bc0da78126d3a51fc
-SHA512: 3ed7391f3c4a98bd0b0ebb3a73ab754118471210f8609dff8c9cc2003cb6c8f2c2dac90a17a9624f54b4340a56fe4a0a204d566ca123d93c686fad9dd058ac7f
-Description: Programs providing a simple interface to inotify
-Homepage: https://github.com/rvoicilas/inotify-tools/wiki
-
 Package: inotify-tools-static
 Installed-Size: 68
 Maintainer: @termux
@@ -10433,21 +10448,6 @@ MD5sum: 6a529c915cf49faa7bf9affb495f152b
 SHA1: 34bfc8b20a8946d3141b31b951f968d9cb890f5b
 SHA256: ec148cab2c842c56ba62e22b3fab8a559cbc93da2f3ac4149447f9a4bf63937f
 SHA512: 54c7fe37e24a0bc339b5f12d48f12714863fa874e7ab805d0268271655e2a96fd62cf2b661dbd1537c5d72d8b948386b59f50daa3256496649869121d82103c4
-Description: Static libraries for inotify-tools
-Homepage: https://github.com/rvoicilas/inotify-tools/wiki
-
-Package: inotify-tools-static
-Installed-Size: 64
-Maintainer: @termux
-Architecture: arm
-Version: 3.22.6.0
-Depends: inotify-tools (= 3.22.6.0)
-Filename: pool/main/i/inotify-tools-static/inotify-tools-static_3.22.6.0_arm.deb
-Size: 12772
-MD5sum: 3367994ce0c8ff593c5f3ec0db68f3ad
-SHA1: b54a90de2bc8a0d777491898c541e737e3ecae93
-SHA256: 4a337102c3339f8b245ac53f6d49f89551ee44e9ae0e738e12daf39fe30c9c3f
-SHA512: 9b0a02e924b4762aa9972db18efedcfa17cc4428ca26331e78e855b870d15a4edce64824175443062589db404896843d4cb3df551080a48a0c215bb7feef6d70
 Description: Static libraries for inotify-tools
 Homepage: https://github.com/rvoicilas/inotify-tools/wiki
 
@@ -26069,21 +26069,6 @@ SHA512: 5dd5a3ee7563050df7d334113a358589aaef69e7dfb62c748fe18dcb2e4a7fdaab025264
 Description: A new type of shell operating on structured data
 Homepage: https://www.nushell.sh
 
-Package: nushell
-Installed-Size: 14412
-Maintainer: @termux
-Architecture: arm
-Version: 0.83.1
-Depends: openssl, zlib
-Filename: pool/main/n/nushell/nushell_0.83.1_arm.deb
-Size: 4652448
-MD5sum: df1483b036fc9f86e53b668cef71fa19
-SHA1: a060e2ed14ee57de5e872533c8c5dc4e8c6c9421
-SHA256: 5d9be8f8f8a4ae6dcc337c536eddfa3279fdaae60ca1b3829bcfd30bbe948482
-SHA512: ef03684ae301733359bb4372b0438893271b2fad5eb038bac1cfc76164d63a1ded3100e8f08e897a4f0a147eba619080c35af9fcdb3e525112860b66947ac66b
-Description: A new type of shell operating on structured data
-Homepage: https://www.nushell.sh
-
 Package: nwipe
 Installed-Size: 128
 Maintainer: @termux
@@ -30842,6 +30827,20 @@ Description: Search tool able to locate in PDFs, E-Books, zip, tar.gz, etc
 Homepage: https://github.com/phiresky/ripgrep-all
 
 Package: ripsecrets
+Installed-Size: 1656
+Maintainer: @termux
+Architecture: arm
+Version: 0.1.6
+Filename: pool/main/r/ripsecrets/ripsecrets_0.1.6_arm.deb
+Size: 704244
+MD5sum: 890549637d1eb3adac4f4e62e150fd9c
+SHA1: 52c5068c2334fbf02575935ddde851ee11a465ad
+SHA256: eeceefd0fc176cf4a8914072bc48958f3fc6d4b74be78d3f030499588e9a1d85
+SHA512: 9546f8d15f63367a6c62774624e499376cadaaf1e239856f7f2fef61e5343bd03d6554751b97594a3abf458ff2742313ccf7c508ad368019caee1de065bc3c4c
+Description: A command-line tool to prevent committing secret keys into your source code
+Homepage: https://github.com/sirwart/ripsecrets
+
+Package: ripsecrets
 Installed-Size: 1632
 Maintainer: @termux
 Architecture: arm
@@ -35308,21 +35307,6 @@ MD5sum: a3bad22fc8ff40851efd937ce5f223e5
 SHA1: b529016df135b78de0410d58a57122d63a3f4218
 SHA256: ea857879a9cb1aa6b2c93fab800482b55ab149006ad2253409ddb833252cba29
 SHA512: 0b5efbe14ce9d093a2f47146a70d08eeaff67c004b5baea1d8756a336ac919268fad00625020731eaf45106fe93b1b82ca67c3eb187d98a067252fd492d659cf
-Description: A faster, user-friendly and compatible grep replacement
-Homepage: https://github.com/Genivia/ugrep
-
-Package: ugrep
-Installed-Size: 2008
-Maintainer: @termux
-Architecture: arm
-Version: 4.0.1
-Depends: libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
-Filename: pool/main/u/ugrep/ugrep_4.0.1_arm.deb
-Size: 233916
-MD5sum: 8b139675d36059af2acb4a27f06ba145
-SHA1: 1e0e1ab5d5511f5a30b88bb643663bca508a24df
-SHA256: 0a48b5f1bc386451fad00331a1f5e8072aa1a5ca371bff9d8e3a59735b21cb02
-SHA512: 8d103fdafb1bd3f8daec923bed91a479246b1a6769fc37cf7618e7e958ebe1db255298539c3ee538fa366d95e94573b93d1d12deab0fc718615dec5fbb337728
 Description: A faster, user-friendly and compatible grep replacement
 Homepage: https://github.com/Genivia/ugrep
 

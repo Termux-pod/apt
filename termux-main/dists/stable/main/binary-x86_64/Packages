@@ -2870,6 +2870,21 @@ Description: A free compiler for 6502 based system.
 Homepage: https://cc65.github.io/
 
 Package: ccache
+Installed-Size: 1684
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.8.3
+Depends: libc++, zlib, zstd
+Filename: pool/main/c/ccache/ccache_4.8.3_x86_64.deb
+Size: 525292
+MD5sum: d39e49f2dc17787afe1235ed12fc46cd
+SHA1: 528062e0250fd6a0dfa06f612de04287c8ccb664
+SHA256: 6a65f4516c62e52cd8ae783ddff0cfe55930e5a4772b2729d5153700b3bfbd88
+SHA512: 24b681b59c58449d5a0e7c2539b5c382472a9ff8df5e246f6edf5e5edbf5c41862dbc82d0eb542f9febb9e3b7270d30d905c0af43e8b163c8500d16ee5c6b4ca
+Description: Compiler cache for fast recompilation of C/C++ code
+Homepage: https://ccache.samba.org
+
+Package: ccache
 Installed-Size: 1712
 Maintainer: @termux
 Architecture: x86_64
@@ -4300,20 +4315,6 @@ MD5sum: 2b9eedf61962229bc424290abde04728
 SHA1: da6e8678825e567e4097c0af6dfc1bc7ee9b4892
 SHA256: 698accdd3c4619b0cd61243cfaab3f4972d6cc320550212f60656eb9987c836b
 SHA512: 450b9b1e020438daab7ec078892c87be2b4890cd9d4bdf408145658517f1443b3b96dd6617b4f9f0741f3ee94a51bc7c8b13507a67b9082eaf129cf5f8aed5df
-Description: Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single utility
-Homepage: https://github.com/TomWright/dasel
-
-Package: dasel
-Installed-Size: 14048
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.3.4-1
-Filename: pool/main/d/dasel/dasel_2.3.4-1_x86_64.deb
-Size: 3287032
-MD5sum: ea71764fb635e6779bd1c698ab8a9b1d
-SHA1: 22de89b5ba6c5280fa757a88251f955bc995fdd6
-SHA256: 267c31b98472a172b999fa7ade560ef5e4574ead0e6b3c29fa3041476abec265
-SHA512: bd372e98889e19411dee2c2d98fd048bb0c03228957973cc0adba9d26cc1494a5350ade1a51767c3057dd16c92812e92397e07ad389b836249d64ed4cd530ae2
 Description: Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single utility
 Homepage: https://github.com/TomWright/dasel
 
@@ -29378,6 +29379,26 @@ Description: C++ functions matching the interface and behavior of python string 
 Homepage: https://github.com/imageworks/pystring
 
 Package: python
+Installed-Size: 61596
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.11.5
+Replaces: python-dev
+Provides: python3
+Depends: gdbm, libandroid-posix-semaphore, libandroid-support, libbz2, libcrypt, libexpat, libffi, liblzma, libsqlite, ncurses, ncurses-ui-libs, openssl, readline, zlib
+Recommends: python-ensurepip-wheels, python-pip
+Suggests: python-tkinter
+Breaks: python2 (<= 2.7.15), python-dev
+Filename: pool/main/p/python/python_3.11.5_x86_64.deb
+Size: 8185076
+MD5sum: d8f4cb4807d075441bfea0c10fee71db
+SHA1: 5df160da6da90b61607af5ce18c1bc296e19c217
+SHA256: ccc13e1de42c34609810860447b4066a9b7b56c1fa1936e359f9fda1b4efece0
+SHA512: 3f7e91a37516f390616c67f1111bb558a03f45df26e2083ac131767ec10e625142c87a7bdf642eb8edaa59ba4f54150f07f1ddd476ddcb204d8f6441a4ace16c
+Description: Python 3 programming language intended to enable clear programs
+Homepage: https://python.org/
+
+Package: python
 Installed-Size: 61588
 Maintainer: @termux
 Architecture: x86_64
@@ -29456,6 +29477,23 @@ SHA256: 5b1eab05eee56df29653c4c569fc3a3c3c7786d2125069ec351b12220ec54c66
 SHA512: 35b6c7d80cceedde47db77ed4003b7365622cef811113c651714e888fe9d87f1f5c6da85730022c3320bee529da9ae1fda3e1dc46a7d9074fcbadc9ebdea41bd
 Description: Provides cryptographic recipes and primitives to Python developers
 Homepage: https://github.com/pyca/cryptography
+
+Package: python-ensurepip-wheels
+Installed-Size: 3284
+Maintainer: @termux
+Architecture: all
+Version: 3.11.5
+Replaces: python (<< 3.11.1-3)
+Depends: python (= 3.11.5)
+Breaks: python (<< 3.11.1-3)
+Filename: pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.11.5_all.deb
+Size: 3007000
+MD5sum: eb9ad83f41ff8e4d5f46ed4c7b4c459e
+SHA1: 3e9c0c650727b4070f1e3c8b1d54628d0afc533b
+SHA256: 32fd903af3986ce4d3d9c6d922ae024ec791f373cc635c832cf7428d2ce50b5b
+SHA512: e9155bbc6c1d9932333663d6a074477acb52d9ea6c34f8925040aa52f88b8b13390cb124feb8e9c5dbc0d84767f2844fb78974f13bace7f3362bc8f2b80f3be5
+Description: Wheels for Python ensurepip
+Homepage: https://python.org/
 
 Package: python-ensurepip-wheels
 Installed-Size: 3264
@@ -29615,6 +29653,21 @@ Package: python-static
 Installed-Size: 32716
 Maintainer: @termux
 Architecture: x86_64
+Version: 3.11.5
+Depends: python (= 3.11.5)
+Filename: pool/main/p/python-static/python-static_3.11.5_x86_64.deb
+Size: 5214088
+MD5sum: 7849b4fd23d2d28c936f3258170c9541
+SHA1: a598d0db2af9fb4875a979ace0398412a3a88bd8
+SHA256: d73b5137ee5580a1cd91f5462638245a607e779d753a780ea01d3de36c5d0544
+SHA512: fe1d31becf8537d7beb9e08fded640cf346d2cfa1b46d2fc8c71a27e3a8b51424427494dcd8b62798ca7c7ccbb99fdc919ad8ba0a184bddbddd641f541c4d148
+Description: Static libraries for python
+Homepage: https://python.org/
+
+Package: python-static
+Installed-Size: 32716
+Maintainer: @termux
+Architecture: x86_64
 Version: 3.11.4-2
 Depends: python (= 3.11.4-2)
 Filename: pool/main/p/python-static/python-static_3.11.4-2_x86_64.deb
@@ -29624,6 +29677,23 @@ SHA1: 0c5f1e2290a07557dff836181cfb4c16295657d7
 SHA256: 9d7a0d593a1682fc14fde904d669e1228e3665540f84b74b278d94d539955df2
 SHA512: e450abdfed659b114f3fde899126376c7182e257c72004a07674901c34200ab30389cf040c4167190bb3abaeb83683830c0cf1afe686fd94a5f13b6621ec018f
 Description: Static libraries for python
+Homepage: https://python.org/
+
+Package: python-tkinter
+Installed-Size: 11672
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.11.5
+Replaces: python (<< 3.11.1-3)
+Depends: tcl, tk, python (= 3.11.5)
+Breaks: python (<< 3.11.1-3)
+Filename: pool/main/p/python-tkinter/python-tkinter_3.11.5_x86_64.deb
+Size: 1213784
+MD5sum: def6aa83d6b85b81cd3efa6b9d7ee9a0
+SHA1: fb71c01fd5b04bbc6aac24d302514b7c1acdbd0b
+SHA256: ba45af8763334acc672a97e008ee12a8ced5f56b09c26b918686808494a192bb
+SHA512: 7b60bf15d5a6bfffa4fdd4ce38bb9018345034cd83c2943a71369543c2856fb96d86b0f684d648399161847069d8812ca413d5976de9add20212029e9d518d82
+Description: Tkinter support for Python 3
 Homepage: https://python.org/
 
 Package: python-tkinter
@@ -32391,6 +32461,21 @@ Package: sleuthkit
 Installed-Size: 15100
 Maintainer: @termux
 Architecture: x86_64
+Version: 4.12.1
+Depends: libc++, libsqlite, zlib
+Filename: pool/main/s/sleuthkit/sleuthkit_4.12.1_x86_64.deb
+Size: 1520896
+MD5sum: eabeeed7130d55cf9634b2c1c841eb09
+SHA1: 1ad100ac7cb798e73234f5c53c8c2233902f4de4
+SHA256: bba6edd8ba68ee7ae0cf2a500e36261b0b9c58713ffee4061bb72d34a927b5ae
+SHA512: 6dd20797a1301e16690b1dbff4a92c1a74da9025cad5f2d170f3981bace8d122bbe0f2e4a644255dcbc478ac1fdf0a0295f45d6fca7f1db679ca158a3cdccd8f
+Description: The Sleuth Kit® (TSK) is a library for digital forensics tools. 
+Homepage: https://sleuthkit.org/
+
+Package: sleuthkit
+Installed-Size: 15100
+Maintainer: @termux
+Architecture: x86_64
 Version: 4.12.0
 Depends: libc++, libsqlite, zlib
 Filename: pool/main/s/sleuthkit/sleuthkit_4.12.0_x86_64.deb
@@ -32400,6 +32485,21 @@ SHA1: b4472fdf1a4387789a23a28165bc9edacaed8431
 SHA256: 06fb8c7c8472760cd255b46a720f956815ca8e598e4c4d3c1edd477ba424d6c1
 SHA512: 5bcd23b2b421ef1d09d6eff38744a34cf1c68d6c2aa814348c698795e2b4bc12b463bb0c484c8896c92ea307f6ba688b7e8dd2c5295fb9a86346f0f7999642c5
 Description: The Sleuth Kit® (TSK) is a library for digital forensics tools. 
+Homepage: https://sleuthkit.org/
+
+Package: sleuthkit-static
+Installed-Size: 2444
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.12.1
+Depends: sleuthkit (= 4.12.1)
+Filename: pool/main/s/sleuthkit-static/sleuthkit-static_4.12.1_x86_64.deb
+Size: 409596
+MD5sum: 05a1971d85179da478317d396eaefe75
+SHA1: 237568360cfd8110a739c64ad4747d6f2e564de1
+SHA256: e52cade2023ae6b5c8b17e3b002558ee4e1d472f127af3e2695b90d4b42a58e5
+SHA512: 2cef565b9419e7f7bced03011d95a26f57b73df0a6a0e92e85ceef17cfbbbc73bfd1673cb9ad7c8f626f49ec7404b7c65e63f9d77f9877ce77c4d96dbc42c642
+Description: Static libraries for sleuthkit
 Homepage: https://sleuthkit.org/
 
 Package: sleuthkit-static

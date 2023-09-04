@@ -2277,21 +2277,6 @@ SHA512: 0ffee53e741676f47d07c6b4f348a7071d85f2e141faca66767b11983da1ae99a3dbfd3b
 Description: A better way to navigate directories
 Homepage: https://github.com/Canop/broot
 
-Package: broot
-Installed-Size: 9416
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.25.0
-Depends: libgit2
-Filename: pool/main/b/broot/broot_1.25.0_x86_64.deb
-Size: 3351004
-MD5sum: 314d504f94a2d96a548c9aa420ca84a8
-SHA1: b285aa358f992531e5339004bc5143dccc625ad0
-SHA256: 1b38938adda40b8c0d2aa8d41516ecb5c07e678407e4f5bae2caa02615da18f9
-SHA512: b1e0862309ded58b68910eb48dfe5548b5765c2c9157af4716b5f8869d32e35757bf61cca10b7bab95ea2f34bf0b41be43d877e55a044a6fad23f16c1c2481a3
-Description: A better way to navigate directories
-Homepage: https://github.com/Canop/broot
-
 Package: brotli
 Installed-Size: 1120
 Maintainer: @termux
@@ -3147,20 +3132,6 @@ MD5sum: 2ba5d537cca1a3d08906ee14ceb90f73
 SHA1: a6bb42cb6927fdc390044fe2e322635e7425bc6f
 SHA256: 6e17ae4e7d4388f61ce05dd049a0aa3f4ba41716510afd20bd125d524cc134f5
 SHA512: 6f7b3b2469483334ee194dcb6edc1082554c63642095d64a0aed4b87d5be20a2442e3620212b9e0de83206e04caeed1a6651b23bd946886ce89451b66819ad84
-Description: Manage your dotfiles across multiple machines
-Homepage: https://chezmoi.io
-
-Package: chezmoi
-Installed-Size: 37372
-Maintainer: Henrik Grimler @Grimler91
-Architecture: x86_64
-Version: 2.38.0
-Filename: pool/main/c/chezmoi/chezmoi_2.38.0_x86_64.deb
-Size: 8643836
-MD5sum: 875fc4ee932101c198ade2d16f02b188
-SHA1: 433c329495d468b2e5ad85cad7feb97d6a766b04
-SHA256: 4307ea430d4db202cf751cda6fa38195bde2f4c91b22cbaedb7470827a81b54d
-SHA512: b11dd1112edc4a076a85f30e13a29025f98638d4e0f29783c95b040e144f1517d0f81a7a4dfa18be03474bc74fcefed2fe515f6101932ab2288c0d0593e8a02d
 Description: Manage your dotfiles across multiple machines
 Homepage: https://chezmoi.io
 
@@ -17390,6 +17361,22 @@ Package: libnghttp2
 Installed-Size: 484
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.56.0
+Replaces: libnghttp2-dev
+Breaks: libnghttp2-dev
+Filename: pool/main/libn/libnghttp2/libnghttp2_1.56.0_x86_64.deb
+Size: 100576
+MD5sum: 26969a3932efb497dec6e1f4df834164
+SHA1: e0150fd85cdab6255cfbec80d8bdf7daf0a09a02
+SHA256: 46dd8de0c57ef88e6f9e23146380e519e1b41b3ac2398dd4a14b33c11a3a50ed
+SHA512: 9f1b53b1c9756bb1a09c38b308bf82eaf65db489f7f36fb4cf640a097961b061ed7664dbfe7f75a546504cdb0e4a0b056ed971c7e322f678fbe81d1c39573845
+Description: nghttp HTTP 2.0 library
+Homepage: https://nghttp2.org/
+
+Package: libnghttp2
+Installed-Size: 484
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.55.1
 Replaces: libnghttp2-dev
 Breaks: libnghttp2-dev
@@ -17400,6 +17387,21 @@ SHA1: bee7a58e0d33097df0722e821bda2dd5c9933751
 SHA256: 4cb71b90bc776418fd6b65474648694b30803e3e7cb448fbc3e9da26b93b2baf
 SHA512: 41a3b68292114dbd698197e9fb84f2112debc5ea2f40aa77cf52f8085fda0f055f512581a870c654ab01f07fdeee26549e09c12b22b81e867be83f7955ed896e
 Description: nghttp HTTP 2.0 library
+Homepage: https://nghttp2.org/
+
+Package: libnghttp2-static
+Installed-Size: 336
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.56.0
+Depends: libnghttp2 (= 1.56.0)
+Filename: pool/main/libn/libnghttp2-static/libnghttp2-static_1.56.0_x86_64.deb
+Size: 69480
+MD5sum: 5ca54b1d3b91be0c50cf7f24e5085423
+SHA1: 8eaa32e738e1fa5fc0f162cc6e1cb1812dc2e1fa
+SHA256: 84761c4eb69862e70d9308ef46becdabefd23c0df4e984acbc1a64388f10968a
+SHA512: 61a7acd4f69f5f9b9618bf8897ddd9df8376525c0bd8504c3022368a9f287703ce00fec3fcd9804dc8d91275759f81b17ce3bd467dceffe38fd6e0396e1092b6
+Description: Static libraries for libnghttp2
 Homepage: https://nghttp2.org/
 
 Package: libnghttp2-static
@@ -17731,20 +17733,6 @@ MD5sum: 85933c1b3d3d9580e50daf684ff4b548
 SHA1: 1cf2a5f5d25308c96874569b987f60bf4d6ea691
 SHA256: aaab4d1b8c9e53b462ad31931416fca50e9253421237195a674e91bf44b3486a
 SHA512: 753c291c880c89c38b971f641004df293035c4edbc1be56ac9990ec8ef7dd534928a1c465e376fc039a1e06837d9809bc3bbfec761b5a6ab00a27db92e34adb8
-Description: An optimized BLAS library based on GotoBLAS2 1.13 BSD
-Homepage: https://www.openblas.net
-
-Package: libopenblas
-Installed-Size: 14796
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.3.23
-Filename: pool/main/libo/libopenblas/libopenblas_0.3.23_x86_64.deb
-Size: 3535960
-MD5sum: 3caec7b2df4ed0a2912b816ed495da42
-SHA1: a898a07e30d18ce6b17df9e490d30de98f83d26e
-SHA256: d86b2d6026786ad002fa1b3af64387c868a1369e715a38a50def1320039020ef
-SHA512: 1bb98ffea56c00b71b7cceeebf1016bf7934ddb8d6dde1bba22c9b160db5d3340397e59c43425d67b3ab3b272f55089f8fcf91ada2cca87610520f12d08450a1
 Description: An optimized BLAS library based on GotoBLAS2 1.13 BSD
 Homepage: https://www.openblas.net
 
@@ -30244,23 +30232,6 @@ SHA512: 3cdd66418df0a80ff92ca3a9e0ccbf59b765ff1cc9eaf43b86e72e890dc80f623377c1b9
 Description: Content-Preserving PDF Transformation System
 Homepage: http://qpdf.sourceforge.net
 
-Package: qpdf
-Installed-Size: 3924
-Maintainer: @termux
-Architecture: x86_64
-Version: 11.5.0
-Replaces: qpdf-dev
-Depends: libc++, libjpeg-turbo, zlib
-Breaks: qpdf-dev
-Filename: pool/main/q/qpdf/qpdf_11.5.0_x86_64.deb
-Size: 874740
-MD5sum: cc92680d93625577a57edadce455f588
-SHA1: cba646fe817a3a79cf13d42883049881212fba12
-SHA256: 026ea69bed006b9589a32a151e06eb16f4583a1698e35e10f0313a454d20c7e0
-SHA512: e825e6936ebae45f141eee1bf3427f33f92d6062d786e1c56663846b44c6ac67c676d27b25e59dbf4f40b8cfb462ddce35f0b78bf9118e3d2c913298e0e97686
-Description: Content-Preserving PDF Transformation System
-Homepage: http://qpdf.sourceforge.net
-
 Package: qpdf-static
 Installed-Size: 8504
 Maintainer: @termux
@@ -30273,21 +30244,6 @@ MD5sum: f35cfc931e0b6b21747c0cbc84b80ee1
 SHA1: 41cd05f1834004dedd3474b5bf7a1029d88c6922
 SHA256: c6c1db4223ec90bc8880edb6daefe3a87545c92aa8f5bddc179e284c54b447e6
 SHA512: 9d2bae66387539abb7bfaf6b47ee50ef88e9b134ea485576e94940cbc8570ca7eb748ea3d04c8238ada713fa1f6005820a1bd8b88302391610537ac6ce4839f6
-Description: Static libraries for qpdf
-Homepage: http://qpdf.sourceforge.net
-
-Package: qpdf-static
-Installed-Size: 8500
-Maintainer: @termux
-Architecture: x86_64
-Version: 11.5.0
-Depends: qpdf (= 11.5.0)
-Filename: pool/main/q/qpdf-static/qpdf-static_11.5.0_x86_64.deb
-Size: 1036628
-MD5sum: d13fdfa2ccc45d6b28108f50dca3b474
-SHA1: 1f9a948727a8e300eae3342ce3f81a18bc6b35f3
-SHA256: 89f9478990d4af57bd7de47a7039903a80c8f7b65f2a7266360f0eeda367798d
-SHA512: a60e8104474b897e050055d0490f5f16be7ad1537b57c0e81cd6544242e982205e9a7e52f5ca05ce7893a2abf43bd7f0225e761818253e26e25e6dc24a936a2d
 Description: Static libraries for qpdf
 Homepage: http://qpdf.sourceforge.net
 

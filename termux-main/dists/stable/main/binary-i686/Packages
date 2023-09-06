@@ -540,21 +540,6 @@ SHA512: 237364d98102331b4e5a243aae315ba1c2ab5c3681ab7053530a134bb3563fb6b3236a16
 Description: Android platform tools
 Homepage: https://developer.android.com/
 
-Package: android-tools
-Installed-Size: 9656
-Maintainer: @termux
-Architecture: i686
-Version: 34.0.1-1
-Depends: abseil-cpp, brotli, libc++, liblz4, libprotobuf, libusb, pcre2, zlib, zstd
-Filename: pool/main/a/android-tools/android-tools_34.0.1-1_i686.deb
-Size: 1741520
-MD5sum: 52ae11ff218a06d02602e24c3234fc60
-SHA1: 26b1100cd27541d71d3ef5476be137891ab911b6
-SHA256: faca169968e4d2774171e208596e72ced74573dee87f1c65410d193d5feb33fe
-SHA512: 8ec5aa09abf901af8c3f36ea0d4636977e36ecd0a924c56d330a0c6a553a4680d07d67f29606a21f0b5d2c19a06c6da3869c05377c7dff2ad5bb3195370deff8
-Description: Android platform tools
-Homepage: https://developer.android.com/
-
 Package: anewer
 Installed-Size: 968
 Maintainer: @flosnvjx
@@ -29860,6 +29845,23 @@ Package: qpdf
 Installed-Size: 3908
 Maintainer: @termux
 Architecture: i686
+Version: 11.6.1
+Replaces: qpdf-dev
+Depends: libc++, libjpeg-turbo, zlib
+Breaks: qpdf-dev
+Filename: pool/main/q/qpdf/qpdf_11.6.1_i686.deb
+Size: 891772
+MD5sum: 90c189dabe08254333fe8179f6c2aae8
+SHA1: 7e682c1f6a2518e3edb69ebfbd26b0fa216cacb3
+SHA256: 6d3101d9372847396ce5f98ab859596261c6ac32a430a4a4fa5a13e760e871ad
+SHA512: ddf69f47e0b0e201a4a84ca54d63a9914593e27a2c72672751d0d3ad46c5c8c05f9c0933b959e7618cc83752e3e4dd565c15d6f5eb1c1ab2773d9bb10cc63a9d
+Description: Content-Preserving PDF Transformation System
+Homepage: http://qpdf.sourceforge.net
+
+Package: qpdf
+Installed-Size: 3908
+Maintainer: @termux
+Architecture: i686
 Version: 11.6.0
 Replaces: qpdf-dev
 Depends: libc++, libjpeg-turbo, zlib
@@ -29871,6 +29873,21 @@ SHA1: 48bc277a5329d0e3489b5205d9fcfb45967ddace
 SHA256: 7c10e4900ed9dfa49459762661fa47b4309e7ecc05cbe1c9d1e4defb6f7c3dfb
 SHA512: f64fc3972f99d83cd65b09f7395aa49e96a29bda136abfa3fdd9299c2130dc692999d09a66380579011311fac7787aa2b81dcdb71a8b2f5cf74e6cc11daa899e
 Description: Content-Preserving PDF Transformation System
+Homepage: http://qpdf.sourceforge.net
+
+Package: qpdf-static
+Installed-Size: 6816
+Maintainer: @termux
+Architecture: i686
+Version: 11.6.1
+Depends: qpdf (= 11.6.1)
+Filename: pool/main/q/qpdf-static/qpdf-static_11.6.1_i686.deb
+Size: 1027636
+MD5sum: 096c3b57f20bb37acd6061137a5a462d
+SHA1: b79353e8b380173e52ba0749f6e5d01599701831
+SHA256: ab85478b5be76e6d8ec6805b984b1d1dd6ef8db55fc0d7fbc0a79762043167ad
+SHA512: bac6b27dcb6ce216c927955b78411758d750e5fa6c104c9b10557ce34868fe6065cf5ce35940f99073a594942fd1b08041abc47f47c416a70253256e7e6c236e
+Description: Static libraries for qpdf
 Homepage: http://qpdf.sourceforge.net
 
 Package: qpdf-static
@@ -32749,6 +32766,21 @@ SHA256: 5ea343c51c880084b37394d5a55cfdeeebef2e10d60250dd33bfd4b057161f81
 SHA512: b554abbe02c77dba81ea616e235af772eac02ff8950e95710a76ea072cadf7949b849e27185bd5ab9c50694705e8cfb284290f3b4101e7c541f448168f0cf5bb
 Description: measure character-echo latency and bandwidth for an interactive ssh session
 Homepage: https://github.com/spook/sshping
+
+Package: sslscan
+Installed-Size: 184
+Maintainer: @termux
+Architecture: i686
+Version: 2.1.0
+Depends: openssl
+Filename: pool/main/s/sslscan/sslscan_2.1.0_i686.deb
+Size: 39204
+MD5sum: 45ed534ce2f520b2cf0f6b7778418f70
+SHA1: 8911d4dd24d09dfbb6c686a62dd4cecfece4998b
+SHA256: 1792dfd0d59773f03166a876121db9b2905c1b3a43eb4839a4372af643802a23
+SHA512: 21a57e463e6dfc8efd4b7f4367dfa5dc646b4180fd3b3b46865851e174e6df98353f5ebf5d2e6abc09ca19e2d64e8679acb2b49ab235017f37af709fc5461fde
+Description: Utility to discover supported cipher suites on SSL/TLS enabled servers
+Homepage: https://github.com/rbsec/sslscan
 
 Package: sslscan
 Installed-Size: 184
@@ -36212,6 +36244,22 @@ Package: vulkan-loader-generic
 Installed-Size: 556
 Maintainer: @termux
 Architecture: i686
+Version: 1.3.263
+Provides: vulkan-loader-android
+Conflicts: vulkan-loader-android
+Filename: pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.3.263_i686.deb
+Size: 120980
+MD5sum: 09edd7d610ec28a553b5ef5bcd67d0d2
+SHA1: 8a1a1c51cd1a0599efa9111d2f90d8260c70eef1
+SHA256: abe9a0fb54c5e8745bd1222ac2f43e5ac35ec785bba7d6a22205350ca1514e74
+SHA512: 848688edbcf5811819f21e5f7c0cb40b3aa3a4780e225c0470a5e73f9c71641f3ba249095bdcd21731463391d67db56d00acfbfae98feddeaf234d1dd1f4490a
+Description: Vulkan Loader
+Homepage: https://github.com/KhronosGroup/Vulkan-Loader
+
+Package: vulkan-loader-generic
+Installed-Size: 556
+Maintainer: @termux
+Architecture: i686
 Version: 1.3.262
 Provides: vulkan-loader-android
 Conflicts: vulkan-loader-android
@@ -36223,6 +36271,21 @@ SHA256: 8fd38af1b93c7f8b4311b19beb8938cf5632661f93b677196b4f3d7171555af6
 SHA512: 2629d606b3e24061bec6f88d7e9856d9ed54eeeb377ed90e34cd70a46f1bf1cc04096773e81cf251545e6c2caffd9a54b68d3d3100887fd3f2b60abf4360be9e
 Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
+
+Package: vulkan-tools
+Installed-Size: 1764
+Maintainer: @termux
+Architecture: i686
+Version: 1.3.263
+Depends: libc++, libx11, libxcb, libwayland, vulkan-loader
+Filename: pool/main/v/vulkan-tools/vulkan-tools_1.3.263_i686.deb
+Size: 293800
+MD5sum: 0a0e5ba9fbccf4a5fb8a9940a12ce659
+SHA1: f795a0dd5f4eec884bfa00e0881f3eb0f7c9902d
+SHA256: 98f10ae730e82a1d0affa2155d12641368f2a02231e608634f1575fefc2c0b0b
+SHA512: 2639606a844b1344a4b806e054e0e2aba3327fa1a152468ef095a420a8fd96c4ba2f4a06bfb80f53d09dc8440de55392f451ffc9ab125d86945e22a99b5d2738
+Description: Vulkan Tools and Utilities
+Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
 Package: vulkan-tools
 Installed-Size: 1764

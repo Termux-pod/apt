@@ -598,21 +598,6 @@ SHA512: e232e1878d69f37821efbfe8b28bcbf29a17d23a48b8dad1e1e3b39a281cdbba94b354da
 Description: A cli to browse and watch anime
 Homepage: https://github.com/pystardust/ani-cli
 
-Package: ani-cli
-Installed-Size: 76
-Maintainer: @termux
-Architecture: all
-Version: 4.4
-Depends: aria2, ffmpeg, fzf, grep, sed, wget
-Filename: pool/main/a/ani-cli/ani-cli_4.4_all.deb
-Size: 7092
-MD5sum: 345eee3dac0f39dcfeac6a5fe15c86ec
-SHA1: 64d9283ce5e9e5a91d87f555f7269553a13217d4
-SHA256: b62e2b4aacbba022c064891a3f03e610d5ada8701bc837bcc7359ec69712cda2
-SHA512: 12f56b82d1aa66e85c4615630a18d67f093ca6b60df4aa11ada76984f17fff4f040c7bfa5cfb1cb66fe290aacb6c78d2fa13853830250b0e2c920a959315742d
-Description: A cli to browse and watch anime
-Homepage: https://github.com/pystardust/ani-cli
-
 Package: ansifilter
 Installed-Size: 240
 Maintainer: @termux
@@ -2290,22 +2275,6 @@ MD5sum: c5ce993e8f72b5048e47d07e776ac8c7
 SHA1: 207cc49cbf743a240c24f89ed48f5a287e717068
 SHA256: e35edf7700c801af54deb9225841b33a2e2200b65f2f90a1e332a0a537f30d16
 SHA512: afa24fe45ecf62c870d32add2903083970b7bcf39333e38c6329ea666dde7833867cbaba1361f411c0ebc54488f2d628d47bee5081f9b38d64f15e668dd7cdc6
-Description: lossless compression algorithm and format (command line utility)
-Homepage: https://github.com/google/brotli
-
-Package: brotli
-Installed-Size: 896
-Maintainer: @termux
-Architecture: arm
-Version: 1.0.9-1
-Replaces: brotli-dev
-Breaks: brotli-dev
-Filename: pool/main/b/brotli/brotli_1.0.9-1_arm.deb
-Size: 305152
-MD5sum: 3f607f08f6acd067e521810a8355e529
-SHA1: 5d0d2da12d45b0fcd7928287173540f85dc89ef1
-SHA256: 4d0123c341c8ca986a3ec81d2540d030c6b2976390dd5e2847df9ac673e92ba5
-SHA512: d9164fcd5128f012b2d527c4a63da6ddb6f6d0651866e5eac4e924e28b035030d5aa7ad442f292d64cb363894e4ccfa9ba1597f565d6a2d0cb8b292ce8922cfc
 Description: lossless compression algorithm and format (command line utility)
 Homepage: https://github.com/google/brotli
 
@@ -16613,36 +16582,6 @@ SHA512: 3b983774aeeeb86b1134bed6556c9163b5a58a0aed8812e4ed8e02ab1bd16320419d12c3
 Description: A zip manipulation library written in C
 Homepage: https://github.com/zlib-ng/minizip-ng
 
-Package: libminizip-ng
-Installed-Size: 260
-Maintainer: @termux
-Architecture: arm
-Version: 4.0.0
-Depends: libbz2, libiconv, liblzma, openssl, zlib
-Filename: pool/main/libm/libminizip-ng/libminizip-ng_4.0.0_arm.deb
-Size: 49376
-MD5sum: 97c2a9e5b2a475a4f1a3eecb84268073
-SHA1: 62b1958e3714ec76b5db57502c40ede058091ed4
-SHA256: 79dbfba608710a5b3f63ab4f71c93c437d541057def6a7b760867f9797601aa7
-SHA512: e1d76cd11a3a8cdef7b83da27795e96f1b65706f5ab82e846f9d3e3a52e5305ca2bd0e228dc7de28b91e6cb78bd6884c9721e23b628c4c3d0b6d17473d2b2055
-Description: A zip manipulation library written in C
-Homepage: https://github.com/zlib-ng/minizip-ng
-
-Package: libminizip-ng
-Installed-Size: 256
-Maintainer: @termux
-Architecture: arm
-Version: 3.0.10
-Depends: libbz2, libiconv, liblzma, openssl, zlib
-Filename: pool/main/libm/libminizip-ng/libminizip-ng_3.0.10_arm.deb
-Size: 48688
-MD5sum: aff3bea2dde3da75efbdb13fdbef171a
-SHA1: 4d65e2a7411f159e6731e1f93afe94dfa25639ef
-SHA256: 7b0776ab6af90e813e4fabb6f96e74b5d230d3d2446d1476c6f4bfd614e7b1c7
-SHA512: 81ea797a430ba2ba0a8b8bb848fc84873e0a14c6b5d2f9a9db9050892ae9787ffa9b5662e8392b11a17fc11a135b58ee47722d6ec9fab359e3c051bb7f090664
-Description: A zip manipulation library written in C
-Homepage: https://github.com/zlib-ng/minizip-ng
-
 Package: libminizip-static
 Installed-Size: 64
 Maintainer: @termux
@@ -23930,6 +23869,24 @@ Package: mesa
 Installed-Size: 32340
 Maintainer: @termux
 Architecture: arm
+Version: 23.1.8
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.1.8_arm.deb
+Size: 11512856
+MD5sum: ba52ea4216a6cb6540b4e4b93a7668af
+SHA1: 2b832e2a024d0b41e8a7a6a52639d9011d69720a
+SHA256: 00b5472e44b1f84efef495304605caa20f936d575f2f0d8bfb9ebde17a56cde7
+SHA512: a8f07b221339e78a842b32bb52e7c7ff5d45e0c0b3f5dcc217c832e0b593eeec139d5f285a246e5750df659279ff48fbd98f5a633177278e52837adf66862712
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
+Installed-Size: 32340
+Maintainer: @termux
+Architecture: arm
 Version: 23.1.6
 Replaces: libmesa
 Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
@@ -23942,6 +23899,23 @@ SHA1: 36127aa7d05a0fd1583e604f0a06b2e73050436b
 SHA256: 2dd9092251de191fc9e4ebcd0f5a6830ceb1ccb47b0c1361b87eb3f57630f6a6
 SHA512: 94a4ff10dc6962f40e9d395344c20c2f2320fe1bc7e5a8c1616ad2d528cf744bb7bb5fa7e20260a9a3c9d2d1732c6038254a9cdb6e0f3d571fe6664b51ed3897
 Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
+Version: 23.1.8
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.1.8_all.deb
+Size: 25000
+MD5sum: 09726e511f5f4c3e13d0bea4301bbaad
+SHA1: 06afc75b9f56164dd20ff04f439ee7657ef52e87
+SHA256: e1f5aa104efa32c875a9109a6925a621c51f6723c3347983574f7ff8a15b798b
+SHA512: a096e85ccd80427093e6e1e5ded5658d629866dc94c87fc6f4aa726859c146ee5d8ec15c25933f116d38c03cb9c068b2df00f778e69f6109c69a8fe1478f6d98
+Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
 Package: mesa-dev
@@ -23962,6 +23936,21 @@ Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-freedreno
+Installed-Size: 5492
+Maintainer: @termux
+Architecture: arm
+Version: 23.1.8
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_23.1.8_arm.deb
+Size: 994264
+MD5sum: 14f32399afd868a87475ecb4bcd20648
+SHA1: bc0d90199b26b76e590b2f1a84024987cf980c99
+SHA256: b36ab7b182e4391618b4418d8979d46fab88ecd5c0816bd2d90f339e4302329e
+SHA512: d1e0d5f01224423a76464e52ff3ed3827ddaa803152976676728d3134a51ff55f9f06ec40d208951d564e695281668a56efc455fc1cfd986ee0e86bf9c51c8c2
+Description: Mesa's Freedreno Vulkan ICD
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-freedreno
 Installed-Size: 5496
 Maintainer: @termux
 Architecture: arm
@@ -23974,6 +23963,21 @@ SHA1: 2b5f600eb1288ea2e61dbb3a0114140d12d8335d
 SHA256: 1e787c7552753b2a3314c85b19638e29cc3a163aac1441ab0001075a39590da9
 SHA512: 1372696494c71717df50b57042a50f31e18d1f1a57d637cfc40387b234489beb29e8acf9a8231f491d0bc09ec91768d2686b24848f90265ced6ad59bb15bb23a
 Description: Mesa's Freedreno Vulkan ICD
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 32392
+Maintainer: @termux
+Architecture: arm
+Version: 23.1.8
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.1.8_arm.deb
+Size: 11311512
+MD5sum: 960363dab7b348ee9120d56c8d8d4828
+SHA1: 076234188d9a51f19c2b433ebe1c10c53dd3537e
+SHA256: c8ae14148ec483892d4683064afb94cbf80e307eafe9468c81cc1886e6cee4ea
+SHA512: ea81bc3d07aff859f9fc710a84960a6672ed6c61a4c8813b0ac93cf3c852c32c4bb55b8d3e9653645296e0aded3d92b9b6ca9c65d6a8a5c335703400567695ff
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -26554,21 +26558,6 @@ SHA512: 6e66208da187d9cdcc3008ec0be25357d1696134cbbf7ff1862456274bef783ba8dab0c1
 Description: A color management framework for visual effects and animation
 Homepage: https://opencolorio.org
 
-Package: opencolorio
-Installed-Size: 3460
-Maintainer: @termux
-Architecture: arm
-Version: 2.2.1-1
-Depends: imath, libc++, libexpat, libminizip-ng, libyaml-cpp, pystring
-Filename: pool/main/o/opencolorio/opencolorio_2.2.1-1_arm.deb
-Size: 956696
-MD5sum: adfcb58663fd0c3a746759c855550192
-SHA1: 70cb8ca6606c7be08c5660389953f539251f6898
-SHA256: 16381ba769865d82645c81277b52bc843887b365fb112e89716dcf07adc69097
-SHA512: 83c65bdf489da87ffd2f48eefeb05cac1bfea1c3862a82cad91cbd9911b30408cb6929d30f22f5769f76649f61d51224983f6971d97923834f2df02e6cacf30f
-Description: A color management framework for visual effects and animation
-Homepage: https://opencolorio.org
-
 Package: opencolorio-static
 Installed-Size: 128
 Maintainer: @termux
@@ -27071,6 +27060,23 @@ SHA256: 4b18fe1b318578d25a25654d80d77dc0c4bd1f3bdb2a994ae770f0c31f04e9ff
 SHA512: 0990610e04a35f5fc073bcd012bfd6012122d60449a792a91ae8454026e80ea3e47141ca2a7e8369e6d3be936f0e24bd38efc3e7325fbcb9c9f58090368abe2f
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 30392
+Maintainer: @termux
+Architecture: arm
+Version: 23.1.8
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.1.8)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.1.8_arm.deb
+Size: 10878044
+MD5sum: de720a66612445e9a95056930f94380a
+SHA1: 81d201181aeaf2d3f80c5c9fc81b8d2438fa4e40
+SHA256: f2a1a181e63e7e5ed661235963fa65a7d04b0d22b3af2309273d738e64ecb064
+SHA512: de4718505e0ba9b94d4ea5785e1f8143f6797d29e22c995a6d6ebb37ccd1a5cc2277adf5b3e6ad9a414f261ea5e093e67b701694ced224fa2e649bcd5418ab2f
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 30396

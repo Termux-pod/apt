@@ -5640,6 +5640,23 @@ Package: emacs
 Installed-Size: 111980
 Maintainer: @termux
 Architecture: aarch64
+Version: 29.1-1
+Replaces: emacs-dev
+Depends: libgmp, libgnutls, libjansson, libsqlite, libxml2, ncurses, zlib, libtreesitter
+Breaks: emacs-dev
+Filename: pool/main/e/emacs/emacs_29.1-1_aarch64.deb
+Size: 39348752
+MD5sum: 16adc43d1321253a4665a3180551c18c
+SHA1: a027ba2ca66a5a01bb6eff064fd2d159f9dfc8ee
+SHA256: 2a6a50bf11fa35195a95f6b9552eea82b7d64aa26652d8d674a1aa7a8af55465
+SHA512: fe5af44b6031fadbd08e5f1f48b4be800875dfe0c53444882e1105a0968f9e8edb84b79922da92356a87c2569db08243194a001da31e186a58bc9c02ef98d62b
+Description: Extensible, customizable text editor-and more
+Homepage: https://www.gnu.org/software/emacs/
+
+Package: emacs
+Installed-Size: 111980
+Maintainer: @termux
+Architecture: aarch64
 Version: 29.1
 Replaces: emacs-dev
 Depends: libgmp, libgnutls, libjansson, libxml2, ncurses, zlib, libtreesitter
@@ -24152,24 +24169,6 @@ SHA512: dbaa51fc25b44bf78cf182e5763b5e2c6237006a367100faf17d27b4c10a5f24605c75e8
 Description: An open-source implementation of the OpenGL specification
 Homepage: https://www.mesa3d.org
 
-Package: mesa
-Installed-Size: 47672
-Maintainer: @termux
-Architecture: aarch64
-Version: 23.1.6
-Replaces: libmesa
-Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
-Suggests: mesa-dev
-Conflicts: libmesa, ndk-sysroot (<= 25b)
-Filename: pool/main/m/mesa/mesa_23.1.6_aarch64.deb
-Size: 11635984
-MD5sum: 984af38274ab89740d611c604e4266dc
-SHA1: 69f4f10acc5cf35cd54816968740adeaea59c9a8
-SHA256: 051e9669d5333b0c44093ebf4ba01baef0547312eb7c067ef08ed2bec9c2a2e5
-SHA512: 3a04e159b771e0f42645f35fb4bc8f6550acb9a4ccd6cb073aba35c6d8be3d499016760bb781b44fe349591884b55513bd7cfd0e202d8fd0606eb3f34bd0ceca
-Description: An open-source implementation of the OpenGL specification
-Homepage: https://www.mesa3d.org
-
 Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
@@ -24184,23 +24183,6 @@ MD5sum: 09726e511f5f4c3e13d0bea4301bbaad
 SHA1: 06afc75b9f56164dd20ff04f439ee7657ef52e87
 SHA256: e1f5aa104efa32c875a9109a6925a621c51f6723c3347983574f7ff8a15b798b
 SHA512: a096e85ccd80427093e6e1e5ded5658d629866dc94c87fc6f4aa726859c146ee5d8ec15c25933f116d38c03cb9c068b2df00f778e69f6109c69a8fe1478f6d98
-Description: Mesa's OpenGL headers
-Homepage: https://www.mesa3d.org
-
-Package: mesa-dev
-Installed-Size: 164
-Maintainer: @termux
-Architecture: all
-Version: 23.1.6
-Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Depends: libglvnd-dev
-Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Filename: pool/main/m/mesa-dev/mesa-dev_23.1.6_all.deb
-Size: 25056
-MD5sum: 875b9341122053b82408648ddea1c82a
-SHA1: 0212eccecf65a6734de37c86152740b2776e137f
-SHA256: 6d33bc7c55ff67cb184e10cf0161bd4f5bcfbb98391af02fa779a1e162f92dda
-SHA512: 641c3572f53ab451d7e7c0f55b418d68da6253f1bcde254117267920ed46431f83fe93efcfa34a5e7216ac885ca336a5a4e99ecc80fed36c54185de57a48a81c
 Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
@@ -24219,21 +24201,6 @@ SHA512: 243d51dc5a67a12d9b790e1b7ea80f2a63687bf6387a75382b92d25a1ac737b1ce0e8f4a
 Description: Mesa's Freedreno Vulkan ICD
 Homepage: https://www.mesa3d.org
 
-Package: mesa-vulkan-icd-freedreno
-Installed-Size: 6556
-Maintainer: @termux
-Architecture: aarch64
-Version: 23.1.6
-Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, vulkan-loader-generic, zlib, zstd
-Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_23.1.6_aarch64.deb
-Size: 1048452
-MD5sum: 43de9b2904710b09a9bba9b63ec7e369
-SHA1: c2819afb2d05f12f062516c81ad7a18d3bac96d7
-SHA256: 6f8c00c3d109aa463a6f94e1c05eac22f0a1a9c53a57754d8fae6f627cfb7123
-SHA512: a6648b935cd9236e973e21adac536cd140ad4aabc4fa252f78c42e039a8106f616d5f8d6626a8a1cd368c3bce82ade20a447141417b420b9b99edaa72a7c038e
-Description: Mesa's Freedreno Vulkan ICD
-Homepage: https://www.mesa3d.org
-
 Package: mesa-vulkan-icd-swrast
 Installed-Size: 47196
 Maintainer: @termux
@@ -24246,21 +24213,6 @@ MD5sum: b2b5140df93f635902119405c9d3c0bd
 SHA1: 79071a4ec614d669c453db83e5b5699937218e85
 SHA256: 0db1b8bd981f5468543869c38c0be46bfe18f13903dfd6baf2f9a0ef0df6337d
 SHA512: 680d6547269e0d1d2b6cedbf3dfc957cf5739ddd8791e90ae6810d59837c0631a8ce4a9dcc81a716d356e7bd75d3c83e621c5b012fd8622dd8ff6cca5add39ca
-Description: Mesa's Swrast Vulkan ICD
-Homepage: https://www.mesa3d.org
-
-Package: mesa-vulkan-icd-swrast
-Installed-Size: 47204
-Maintainer: @termux
-Architecture: aarch64
-Version: 23.1.6
-Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
-Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.1.6_aarch64.deb
-Size: 11247708
-MD5sum: d680f36a76f1372a1a72da796b96cee9
-SHA1: 3d77629b17908d2370800116341ec96f5f33e2f4
-SHA256: 340d7f3307b3212eeb6b80a9c534cd4947f3ea9bff5697e4fcf30835033a8c94
-SHA512: 348f4d79842fba38c9cdabe9c9d293bf2435cfa201178e057c6d75df3b5e219b21ffc511a34cbe745a346edf54759e09d2f32573146e23ccb258c530b2182809
 Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -27344,23 +27296,6 @@ MD5sum: 62ea33b34dfbd4c41e5a67ab514cb870
 SHA1: bc66982f2527c0d022a2c0715a3ce0e1b1a3ef9a
 SHA256: eda7203ca16b7b61cebc1c8403758612807bf6a8025564c5bc76d0aa24e084f1
 SHA512: 047a59bb2e368f1c5126039a1a0b7ea461cfab239d2f07344743afa7599aef9180cf396980b8ba3bd8a3f9f3900a28a96dd0a148ecfa673f41f8553016a681cf
-Description: Mesa Off-screen Rendering Library
-Homepage: https://www.mesa3d.org
-
-Package: osmesa
-Installed-Size: 44692
-Maintainer: @termux
-Architecture: aarch64
-Version: 23.1.6
-Replaces: mesa (<< 22.3.1)
-Depends: mesa (= 23.1.6)
-Breaks: mesa (<< 22.3.1)
-Filename: pool/main/o/osmesa/osmesa_23.1.6_aarch64.deb
-Size: 10955264
-MD5sum: ee991c1ab2ae155d3d8165a940979189
-SHA1: 406a275cc36804d8b437b797479aec4dfd791fb0
-SHA256: 88f2ec2f17a3a4845d06e10ae294bc14631ccd804e88469e78f5420ea7821759
-SHA512: 45972d1919160d5b4a44a271757580850280fc71594fdfadb6b44135cf1628b1d4ee50577f3490cc417fcbb7a6ac82e096124946bb8cbf3fb5d4236d5fcdfc41
 Description: Mesa Off-screen Rendering Library
 Homepage: https://www.mesa3d.org
 

@@ -10486,6 +10486,23 @@ Package: iperf3
 Installed-Size: 232
 Maintainer: @termux
 Architecture: arm
+Version: 3.15
+Replaces: iperf3-dev
+Depends: openssl
+Breaks: iperf3-dev
+Filename: pool/main/i/iperf3/iperf3_3.15_arm.deb
+Size: 71084
+MD5sum: 17179ba7f1a1f7043863fb4cc0a229ee
+SHA1: fc552ec6beb51298ac0023e445e24eec2d4176e0
+SHA256: a5dc0e9314fe976afef686abaf7b424f97fed8c3bd61920486219f6af2a1e1b1
+SHA512: ea2ccb90140fa16a968f33b91ec971529997388da4d92c7640d9084347e7073a86d5f8f7d06273e3f5b947e4934f74663aa466728367e8f6d6bad2bff394a265
+Description: TCP, UDP, and SCTP network bandwidth measurement tool
+Homepage: https://github.com/esnet/iperf
+
+Package: iperf3
+Installed-Size: 232
+Maintainer: @termux
+Architecture: arm
 Version: 3.13
 Replaces: iperf3-dev
 Depends: openssl
@@ -10497,6 +10514,21 @@ SHA1: cd71b9767d505eb7f7cc33d0ce2a4db09f79deed
 SHA256: 37c4c6972da7b302a3fc82ac861e5284188f5a44dfdd6224b8c3e6cd333888e4
 SHA512: 29ea4e3b91e174853d2af7329de99312ce3a43052bf0cf840dcb417a021f18a0f232eea2ca08762348d9716829b39d429c020dba3a344427a2c5b3a2dc3683b3
 Description: TCP, UDP, and SCTP network bandwidth measurement tool
+Homepage: https://github.com/esnet/iperf
+
+Package: iperf3-static
+Installed-Size: 216
+Maintainer: @termux
+Architecture: arm
+Version: 3.15
+Depends: iperf3 (= 3.15)
+Filename: pool/main/i/iperf3-static/iperf3-static_3.15_arm.deb
+Size: 61788
+MD5sum: 5c2094bf1ce42feb91c894f6aa2e4710
+SHA1: 7eb78bf72f392749bb32305e1e97d1c57cb6eb76
+SHA256: 86d65c3a415904a776238069caf3c9ed5f7835f8b27a79cceacd0052e82b2793
+SHA512: 573a2862df61b8ec68cd2f38a906cc5fc46041f397025ad03a23563dc1366fd33bee1a369be38d5bc66c323068a3fb9bb012cdc935bdd3ed765bf19efcc4792f
+Description: Static libraries for iperf3
 Homepage: https://github.com/esnet/iperf
 
 Package: iperf3-static
@@ -14841,6 +14873,23 @@ Description: handling and rendering XPS documents
 Homepage: https://wiki.gnome.org/libgxps
 
 Package: libhdf5
+Installed-Size: 63036
+Maintainer: @termux
+Architecture: arm
+Version: 1.14.2
+Replaces: libhdf5-dev
+Depends: libc++, zlib
+Breaks: libhdf5-dev
+Filename: pool/main/libh/libhdf5/libhdf5_1.14.2_arm.deb
+Size: 7621092
+MD5sum: af747bb1b981c2a4ef8b72b23c4cfa6a
+SHA1: 2144cb1bd7145be4946c02335b817018f4654d15
+SHA256: e22cabd02fd82048a80ba03ce4040d2f574ca5e835e0e0f92817a9ca576781b5
+SHA512: 83651b31658d97a310eea8bcd56377bf3c175c5d45d6ed838412106f963cdaef71b6dad346a831edafc4fa662f7c286371d9f8e677b6ade00176e713b96cb6b1
+Description: Hierarchical Data Format 5 (HDF5)
+Homepage: https://portal.hdfgroup.org/display/support
+
+Package: libhdf5
 Installed-Size: 61956
 Maintainer: @termux
 Architecture: arm
@@ -14855,6 +14904,21 @@ SHA1: 31fd1f88fad23bbdb2051f21ea4870310f24d4e3
 SHA256: 2b243315ec76bb1432e04b6b6aade299b524984bedd55e673a0ad1f062d5a487
 SHA512: 209ecc13c2b181431602bba08fba89e0cec18577f528fe217072c20b374dc8261e6e325acfe2b3a2523f4db67e113a0f3b597b1fe331cdd75c71f75a4e82efaa
 Description: Hierarchical Data Format 5 (HDF5)
+Homepage: https://portal.hdfgroup.org/display/support
+
+Package: libhdf5-static
+Installed-Size: 7560
+Maintainer: @termux
+Architecture: arm
+Version: 1.14.2
+Depends: libhdf5 (= 1.14.2)
+Filename: pool/main/libh/libhdf5-static/libhdf5-static_1.14.2_arm.deb
+Size: 1713936
+MD5sum: ecd06347f1516cb21a9e93642996402b
+SHA1: f8db2d02f68ae155dfc9eee1366ffb04f948c5df
+SHA256: 950a57297bedd22296ab99a8409ae794475b1f97d006813ed9d41f2a0c923766
+SHA512: 29a3afa0b5c53aaa23f6996b3d286d55e76c7f01477c11e5a876e594d71ced04ca394e764ef18bb8b20ac627f0a4ade03ade7a04347d4cc0461d5a2d893e8ce2
+Description: Static libraries for libhdf5
 Homepage: https://portal.hdfgroup.org/display/support
 
 Package: libhdf5-static
@@ -27962,21 +28026,6 @@ SHA512: cb71b023a06c9c3df45ad2863afbc6e2938cbc46f973ab8663ed9f9a8bcfb48549603419
 Description: PHP extension for interfacing with Redis
 Homepage: https://github.com/phpredis/phpredis
 
-Package: php-redis
-Installed-Size: 508
-Maintainer: @termux
-Architecture: arm
-Version: 6.0.0
-Depends: php
-Filename: pool/main/p/php-redis/php-redis_6.0.0_arm.deb
-Size: 135020
-MD5sum: d658e44e7aa3c31e49f132d41a09e5da
-SHA1: 2d9ffe2949211c0da6d71c0dcca2aeb0d630c746
-SHA256: a05fb4e27edc53653088c90b614a3bd10398e461848e1d5571e8804f2dfd44da
-SHA512: 41519ce0dbe65e96b56e767840048f628a22cf4859d8ecc618ee8b05587a4956c5ab248963fe2c7b65e85a61914b3e42c9841b77051b88b1476fe14a082e0448
-Description: PHP extension for interfacing with Redis
-Homepage: https://github.com/phpredis/phpredis
-
 Package: php-sodium
 Installed-Size: 100
 Maintainer: @termux
@@ -36344,20 +36393,6 @@ MD5sum: b4aef33f037a76e8a08b3d0484bbccc6
 SHA1: ec7a214f805eaad924db3fc357049e674a0ae9be
 SHA256: 1d4143c9c87e0510d4fb3075b29ec086cf24173c0add317ab8ae32e9f78906ee
 SHA512: 1bf719a0cb7c99a5872a93f467be6154025fc0bc0b7dc64b9444cb75b3d56acf92c0a99a286a1f58175933bfff81fb136b4e7fd79cd682cf50b2e6407992d194
-Description: Vulkan Header files and API registry
-Homepage: https://github.com/KhronosGroup/Vulkan-Headers
-
-Package: vulkan-headers
-Installed-Size: 24200
-Maintainer: @termux
-Architecture: all
-Version: 1.3.264-1
-Filename: pool/main/v/vulkan-headers/vulkan-headers_1.3.264-1_all.deb
-Size: 1226000
-MD5sum: 9108594160f1691382486c2b60cd45f0
-SHA1: d2a1f969bb0d8ae5a9ae0b56243a5f0c5818dd66
-SHA256: 02ee1bf4a0c15078d4f06bc3aec685a42e60ad3ae605ec233a38330f3a887bce
-SHA512: dc54bd1d8a70097fcd79727e641f44a027f04cc356224e00088292bd6ca11dce4d70ce4b8ca357f508e455a6dd3a3b9f24f50b5b4e0ee391ede3d526f24d287e
 Description: Vulkan Header files and API registry
 Homepage: https://github.com/KhronosGroup/Vulkan-Headers
 

@@ -784,6 +784,26 @@ Homepage: https://apr.apache.org/
 
 Package: apt
 Essential: yes
+Installed-Size: 2732
+Maintainer: @termux
+Architecture: arm
+Version: 2.7.6
+Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Provides: unstable-repo, game-repo, science-repo
+Depends: coreutils, dpkg, findutils, gpgv, grep, libandroid-glob, libbz2, libc++, libcurl, libgnutls, liblz4, liblzma, sed, termux-keyring, termux-licenses, xxhash, zlib, zstd
+Suggests: gnupg
+Conflicts: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Filename: pool/main/a/apt/apt_2.7.6_arm.deb
+Size: 942876
+MD5sum: 11a854b534497975213f1014e9ad13c8
+SHA1: 10180e121a7683ea0a6ec8faf4e5ba81109b5ece
+SHA256: 5308eb288e2bdaabdeebcddebf670ecaef4c7e367f4f4d0de2ea2153306d9fd5
+SHA512: c64a52773da6bd2eaaccb105b45e1182fdee381112db4c3073a20fe9c334bb508f449b5aa385cd13e50a28038e5313b9333633a8217b54bea5564ed0bbb596dc
+Description: Front-end for the dpkg package manager
+Homepage: https://packages.debian.org/apt
+
+Package: apt
+Essential: yes
 Installed-Size: 2728
 Maintainer: @termux
 Architecture: arm
@@ -822,6 +842,21 @@ Package: apt-ftparchive
 Installed-Size: 220
 Maintainer: @termux
 Architecture: arm
+Version: 2.7.6
+Depends: libdb, apt (= 2.7.6)
+Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.6_arm.deb
+Size: 80720
+MD5sum: da1aea9b7ced1dabf20c12ca499d6ead
+SHA1: 8b33977fd547b5cf11c824be0e290d2531c4b6a0
+SHA256: 720b4acc0c4962dcd306bc6394954fe8b8a2e77d51939463764597e909121321
+SHA512: 527d6138aecb24023641d04672b43d1ec75ecc15259da691008e6fb6d250bd18f88fec9fa7d2e444fcb0eddd5b629765d3deff2d617edb711063a7754922b52e
+Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Homepage: https://packages.debian.org/apt
+
+Package: apt-ftparchive
+Installed-Size: 220
+Maintainer: @termux
+Architecture: arm
 Version: 2.7.3
 Depends: libdb, apt (= 2.7.3)
 Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.3_arm.deb
@@ -831,6 +866,21 @@ SHA1: 58a37633864fa14f5c0739417e26a5f9b977a942
 SHA256: 44b9381ae0f1e21856bbeff10d11eca259233ebc411b221f1704df4dd7d547b9
 SHA512: 40f5c3597f8c9559fd793c834bcebbec8ce96bb8135f201e44ba3e9ddcd03c0e9cdb01a723ffbeb92d89429fe1756cee85a2c3c6dc8a4d2562fae9845ee0bd40
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Homepage: https://packages.debian.org/apt
+
+Package: apt-transport-tor
+Installed-Size: 44
+Maintainer: @termux
+Architecture: all
+Version: 2.7.6
+Depends: tor, apt (= 2.7.6)
+Filename: pool/main/a/apt-transport-tor/apt-transport-tor_2.7.6_all.deb
+Size: 940
+MD5sum: c66070b31d023d3da0db8baddfb4d224
+SHA1: 4762a0021036c97dcfb480c93ab21648638f5297
+SHA256: 615b345d776b0ac43c012478836e52eaf661685118a1c6208782f731a31f86d1
+SHA512: b20ff34778db5b6b6dfb26c2ffca42509080f6f45f17e46d4570ae45db5ef1becf4575d8c16347ecf6b3da364a09d9e408eb64712224d5de94e9b90adc4673ef
+Description: APT transport for anonymous package downloads via Tor
 Homepage: https://packages.debian.org/apt
 
 Package: apt-transport-tor
@@ -1086,21 +1136,36 @@ Description: Static libraries for aspell
 Homepage: http://aspell.net
 
 Package: assimp
-Installed-Size: 6912
+Installed-Size: 7128
 Maintainer: @termux
 Architecture: arm
-Version: 5.2.5
+Version: 5.3.0
 Replaces: assimp-dev
-Depends: boost, zlib
+Depends: libc++, zlib
 Breaks: assimp-dev
-Filename: pool/main/a/assimp/assimp_5.2.5_arm.deb
-Size: 2010500
-MD5sum: 25be0998e1865ad6e7acaac36def1e70
-SHA1: f2044e607b883a1ef879c2c9371dcfa6a9ce5328
-SHA256: b88d99b0da57a2deef328a7b2dada24cad8f13bd9cc939796abf7903ba5faba7
-SHA512: 2348ef616c538ec08f8544d38c385c2efae8a2e5599ca074b036c2a86599ac8a0e227428ee4629ce84dea028e1f80d1264c1830325577d6a37417bc3a8d808d2
+Filename: pool/main/a/assimp/assimp_5.3.0_arm.deb
+Size: 2096960
+MD5sum: aa1168a8b7df3055b3aeeb727da5e339
+SHA1: 8a4bb732fb5ce200409670f1ea4d70b6bb7c9ad9
+SHA256: 006f065c3f8dc0d31d763df17de350a46b0e8f9d9e8749a01f18f6f2525efe9f
+SHA512: b4a110011f22a3ca97f6c845f2b4162407851ee518983b23484382e18f3a4785c31706eb9d00b9adb5948307c76f2ca77fe4304c00f547decab8bde23ba8e83e
 Description: Library to import various well-known 3D model formats in an uniform manner
-Homepage: http://assimp.sourceforge.net/index.html
+Homepage: https://assimp.sourceforge.net/index.html
+
+Package: assimp-static
+Installed-Size: 120
+Maintainer: @termux
+Architecture: arm
+Version: 5.3.0
+Depends: assimp (= 5.3.0)
+Filename: pool/main/a/assimp-static/assimp-static_5.3.0_arm.deb
+Size: 39676
+MD5sum: 9b8056712acd6db315ae7a99a9a917a6
+SHA1: 4fe6d237733687c98fa1d94785d6543aa3f12843
+SHA256: 9b4ecd95842f6e6a522fe2b52618122153c69c22cdbc57d670012e714f6686b7
+SHA512: a413297a859aa17d6860953d9e3cc58e312504e8a2f723be3996cc0adc56ac80f42a312c65a3d5601cd7de4bca52257bd41a74fc5e9ff506ba85d00cdcba2104
+Description: Static libraries for assimp
+Homepage: https://assimp.sourceforge.net/index.html
 
 Package: astra-sm
 Installed-Size: 276
@@ -3630,6 +3695,21 @@ SHA256: bb17f2f4641fa7390e5602c32f47f05d12e23afa41a51db38fda113b6daeae7d
 SHA512: 73b54ef978e4196e09e4a402f39dc39f4820add433814fc7a72686bf5194063f42eee0129afe080a8efc01347348227af8d2a0331d4d09f3d2e16c586c796801
 Description: Tool to colorize 'diff' output
 Homepage: https://www.colordiff.org/
+
+Package: command-not-found
+Installed-Size: 312
+Maintainer: @termux
+Architecture: arm
+Version: 2.3.0-3
+Depends: libc++
+Filename: pool/main/c/command-not-found/command-not-found_2.3.0-3_arm.deb
+Size: 79412
+MD5sum: 386a45819109f9bbbb55d09a54420b6b
+SHA1: 50ccd1e8e1140e63fc49ea715b31d83a8a62a42f
+SHA256: f172a27d794574ae87cd634422e1e15b0d3c0fd0f068f77b7aaafa7045621552
+SHA512: 471ef561ba86c53381f8c3e7760c398b0b121b586a1dd75737e2b7d4119da10cdd861126d286393ba9f68984c1755085df8ca80e440ddabfe9ddb8d61f9211a9
+Description: Suggest installation of packages in interactive shell sessions
+Homepage: https://github.com/termux/command-not-found
 
 Package: command-not-found
 Installed-Size: 312
@@ -10256,6 +10336,23 @@ Package: imagemagick
 Installed-Size: 17660
 Maintainer: @termux
 Architecture: arm
+Version: 7.1.1.18
+Replaces: imagemagick-dev, imagemagick-x
+Depends: fftw, fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, imath, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblzma, libpng, librsvg, libtiff, libwebp, libx11, libxext, libxml2, littlecms, openexr, openjpeg, pango, zlib
+Breaks: imagemagick-dev, imagemagick-x
+Filename: pool/main/i/imagemagick/imagemagick_7.1.1.18_arm.deb
+Size: 7369772
+MD5sum: 0953975a1c5d507c2a14a10f78386191
+SHA1: 9d5eb8e7ce3e56eaaeef0136bf551c33a1ff2b51
+SHA256: 42fcd72b5bdc30badd57219acc678fe351bc89308bd70fda41a5b00115a42575
+SHA512: 52f3b2b6932511a30ebc3681ae10036b4f74061cbab5e525088af7eec987607b09b88b937fbab5cf35b73fe417a01eda56581dc4df7742bbbffa07392ae0e794
+Description: Suite to create, edit, compose, or convert images in a variety of formats
+Homepage: https://www.imagemagick.org/
+
+Package: imagemagick
+Installed-Size: 17660
+Maintainer: @termux
+Architecture: arm
 Version: 7.1.1.16
 Replaces: imagemagick-dev, imagemagick-x
 Depends: fftw, fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, imath, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblzma, libpng, librsvg, libtiff, libwebp, libx11, libxext, libxml2, littlecms, openexr, openjpeg, pango, zlib
@@ -10267,6 +10364,21 @@ SHA1: 1b50311ed0699a88f4f1e8d154d33b4acfa67711
 SHA256: f73d68d13165ddfba1d1902a702d22d50f9207f87ceb7ac2439b0e2021bbd295
 SHA512: 7f90de6f5f920b26375c53871147ada2ed410bd0c15ed6460ee4fbddc12669fc1438aa983206555d688fdd2eb2dcff1c794e25e9a7f9f03e6dde72cb6009c37a
 Description: Suite to create, edit, compose, or convert images in a variety of formats
+Homepage: https://www.imagemagick.org/
+
+Package: imagemagick-static
+Installed-Size: 7956
+Maintainer: @termux
+Architecture: arm
+Version: 7.1.1.18
+Depends: imagemagick (= 7.1.1.18)
+Filename: pool/main/i/imagemagick-static/imagemagick-static_7.1.1.18_arm.deb
+Size: 1957880
+MD5sum: 69a07e33e527a8cbaa5d1d69ef01aa23
+SHA1: e0f0ac7d4686f1e0ad44840f2428a5fd2d72bcee
+SHA256: 90e615d3faf3061b11ba4e2cd064bf31160765e2d52c2bdd3c49f779d539642e
+SHA512: 65202783f045b073d277a69938286012c9b943491ddf407aaecf8e8d9dc73a3db112ca4216b82bc674bd5d49d7068ac45b3b41d14476ac12b96d879e905e6333
+Description: Static libraries for imagemagick
 Homepage: https://www.imagemagick.org/
 
 Package: imagemagick-static
@@ -10499,23 +10611,6 @@ SHA512: ea2ccb90140fa16a968f33b91ec971529997388da4d92c7640d9084347e7073a86d5f8f7
 Description: TCP, UDP, and SCTP network bandwidth measurement tool
 Homepage: https://github.com/esnet/iperf
 
-Package: iperf3
-Installed-Size: 232
-Maintainer: @termux
-Architecture: arm
-Version: 3.13
-Replaces: iperf3-dev
-Depends: openssl
-Breaks: iperf3-dev
-Filename: pool/main/i/iperf3/iperf3_3.13_arm.deb
-Size: 70120
-MD5sum: 237a26348bf770e29de7bbf711f60001
-SHA1: cd71b9767d505eb7f7cc33d0ce2a4db09f79deed
-SHA256: 37c4c6972da7b302a3fc82ac861e5284188f5a44dfdd6224b8c3e6cd333888e4
-SHA512: 29ea4e3b91e174853d2af7329de99312ce3a43052bf0cf840dcb417a021f18a0f232eea2ca08762348d9716829b39d429c020dba3a344427a2c5b3a2dc3683b3
-Description: TCP, UDP, and SCTP network bandwidth measurement tool
-Homepage: https://github.com/esnet/iperf
-
 Package: iperf3-static
 Installed-Size: 216
 Maintainer: @termux
@@ -10528,21 +10623,6 @@ MD5sum: 5c2094bf1ce42feb91c894f6aa2e4710
 SHA1: 7eb78bf72f392749bb32305e1e97d1c57cb6eb76
 SHA256: 86d65c3a415904a776238069caf3c9ed5f7835f8b27a79cceacd0052e82b2793
 SHA512: 573a2862df61b8ec68cd2f38a906cc5fc46041f397025ad03a23563dc1366fd33bee1a369be38d5bc66c323068a3fb9bb012cdc935bdd3ed765bf19efcc4792f
-Description: Static libraries for iperf3
-Homepage: https://github.com/esnet/iperf
-
-Package: iperf3-static
-Installed-Size: 212
-Maintainer: @termux
-Architecture: arm
-Version: 3.13
-Depends: iperf3 (= 3.13)
-Filename: pool/main/i/iperf3-static/iperf3-static_3.13_arm.deb
-Size: 60660
-MD5sum: 9e5162b30aad838b0add0eb4c7e03385
-SHA1: 74fce4652bc3a36f0a0b451ea2e9c72c8822ccd4
-SHA256: 21c73919a648c4bc215f8195c3a65e59e9ecb6024066320d8b1c5ead248d297b
-SHA512: d3dc3558a7a55ef4d61013de1fcff89c8b13acb6ba806205d915d92163425951c5a1de710e14b1c6b4a46abe92cde1d20e775e2b0b41997cc529e2cdf8cf2e80
 Description: Static libraries for iperf3
 Homepage: https://github.com/esnet/iperf
 
@@ -14889,23 +14969,6 @@ SHA512: 83651b31658d97a310eea8bcd56377bf3c175c5d45d6ed838412106f963cdaef71b6dad3
 Description: Hierarchical Data Format 5 (HDF5)
 Homepage: https://portal.hdfgroup.org/display/support
 
-Package: libhdf5
-Installed-Size: 61956
-Maintainer: @termux
-Architecture: arm
-Version: 1.14.0
-Replaces: libhdf5-dev
-Depends: libc++, zlib
-Breaks: libhdf5-dev
-Filename: pool/main/libh/libhdf5/libhdf5_1.14.0_arm.deb
-Size: 7370836
-MD5sum: 10e17e9805d453ee413004eea6d3c685
-SHA1: 31fd1f88fad23bbdb2051f21ea4870310f24d4e3
-SHA256: 2b243315ec76bb1432e04b6b6aade299b524984bedd55e673a0ad1f062d5a487
-SHA512: 209ecc13c2b181431602bba08fba89e0cec18577f528fe217072c20b374dc8261e6e325acfe2b3a2523f4db67e113a0f3b597b1fe331cdd75c71f75a4e82efaa
-Description: Hierarchical Data Format 5 (HDF5)
-Homepage: https://portal.hdfgroup.org/display/support
-
 Package: libhdf5-static
 Installed-Size: 7560
 Maintainer: @termux
@@ -14918,21 +14981,6 @@ MD5sum: ecd06347f1516cb21a9e93642996402b
 SHA1: f8db2d02f68ae155dfc9eee1366ffb04f948c5df
 SHA256: 950a57297bedd22296ab99a8409ae794475b1f97d006813ed9d41f2a0c923766
 SHA512: 29a3afa0b5c53aaa23f6996b3d286d55e76c7f01477c11e5a876e594d71ced04ca394e764ef18bb8b20ac627f0a4ade03ade7a04347d4cc0461d5a2d893e8ce2
-Description: Static libraries for libhdf5
-Homepage: https://portal.hdfgroup.org/display/support
-
-Package: libhdf5-static
-Installed-Size: 7456
-Maintainer: @termux
-Architecture: arm
-Version: 1.14.0
-Depends: libhdf5 (= 1.14.0)
-Filename: pool/main/libh/libhdf5-static/libhdf5-static_1.14.0_arm.deb
-Size: 1691016
-MD5sum: 03a5e6e51006f24426232bfb3b577643
-SHA1: 4f290c1fe7b024230881cebc5e7a62ec57ebc1b6
-SHA256: 9d072e15839c9c1ebe65935f96acf5a65e366931ce909a7c6aeb88fc8fbc3d0f
-SHA512: 84ed9c4c66a51d95b7e3bfb4c0a1ff5673b7791d269b82b15dfd1adf0bc47a19b9c1b433b113e4de3fbe869775eea3c5878b02db89a883247bbbc978e703f6f4
 Description: Static libraries for libhdf5
 Homepage: https://portal.hdfgroup.org/display/support
 

@@ -2101,6 +2101,23 @@ Package: boost
 Installed-Size: 8064
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.83.0-1
+Replaces: libboost-python (<= 1.65.1-2), boost-dev
+Depends: libc++, libbz2, libiconv, liblzma, zlib
+Breaks: libboost-python (<= 1.65.1-2), boost-dev
+Filename: pool/main/b/boost/boost_1.83.0-1_x86_64.deb
+Size: 1559528
+MD5sum: 82ff253a22a8fdda7c337ccf404fd2db
+SHA1: 4dea7ca65462e81b5fbd148fcb29fcea2cc98c73
+SHA256: 479908f41870b8443ff69750f545ff16da8e8c14e84024d02113b4d3dd8493c5
+SHA512: fc13868af3d4086707dc0e1c8b9221aa2a3c7d7c4b12d9282add66fbe769c2b120685b728392313e80cbeb6478c3d0920da62c2203526cf551527acf0b479342
+Description: Free peer-reviewed portable C++ source libraries
+Homepage: https://boost.org
+
+Package: boost
+Installed-Size: 8064
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.83.0
 Replaces: libboost-python (<= 1.65.1-2), boost-dev
 Depends: libc++, libbz2, libiconv, liblzma, zlib
@@ -2118,6 +2135,21 @@ Package: boost-headers
 Installed-Size: 187128
 Maintainer: @termux
 Architecture: all
+Version: 1.83.0-1
+Depends: boost (= 1.83.0-1)
+Filename: pool/main/b/boost-headers/boost-headers_1.83.0-1_all.deb
+Size: 10016604
+MD5sum: 9d417d54ea03db64314218b775876c6c
+SHA1: 5fa1b6c54aa26bb44484a41e8a36eb087417e0e1
+SHA256: f66113556f99829672c6b162f7ae543b537828cce796da7726fd1fc56dd5dbcd
+SHA512: a62a845fd628926df0367886a15b062f0eb50430874a54c3bb282bdb4d236beeb8167365189536945df824054b6dd5b71faaca88a321af4b93840fc9aa83c6aa
+Description: Boost header files
+Homepage: https://boost.org
+
+Package: boost-headers
+Installed-Size: 187128
+Maintainer: @termux
+Architecture: all
 Version: 1.83.0
 Depends: boost (= 1.83.0)
 Filename: pool/main/b/boost-headers/boost-headers_1.83.0_all.deb
@@ -2127,6 +2159,21 @@ SHA1: 4e37bbfc8fa1ee6e576c435e267c8179fe78e6d8
 SHA256: 29abb9e567aabc4bb09444b51695de8435f9b2eabf45f41162ba508f296e710d
 SHA512: 3340d80ffdc1a14432bd1dcd0549dda6a2280356b361f830725b0c071ea6ee5e2c16b54742df869d86d87385e3298741a633b42d43df28f1ee8be939cf51b3a0
 Description: Boost header files
+Homepage: https://boost.org
+
+Package: boost-static
+Installed-Size: 40276
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.83.0-1
+Depends: boost (= 1.83.0-1)
+Filename: pool/main/b/boost-static/boost-static_1.83.0-1_x86_64.deb
+Size: 3261064
+MD5sum: 57eea651148a0e8744e107b911082d65
+SHA1: d936d3cdecfd2a6c747f5ca77cca610a17802429
+SHA256: e2ca38dee6a422d12250a0e0779fd0e9c772a0779ba350e93d89f59f15bd54a0
+SHA512: 50bcf5a220a40e52d13a021524f69fb8f89d05357902e43dbdace8180db06f67ccfed5b2066984f8d61d3cd9e1cdd16a688f1c77ecf5a9096bb56a2a5487dac6
+Description: Static libraries for boost
 Homepage: https://boost.org
 
 Package: boost-static
@@ -21241,21 +21288,6 @@ SHA512: 668e111049a49e2d694cba4fc5e70824dc0cb0f210641d630546d95e15399439e5c1738e
 Description: Wayland protocol library
 Homepage: https://wayland.freedesktop.org/
 
-Package: libwayland
-Installed-Size: 872
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.21.0-2
-Depends: libandroid-support, libexpat, libffi, libxml2 (>= 2.11.4-2)
-Filename: pool/main/libw/libwayland/libwayland_1.21.0-2_x86_64.deb
-Size: 119032
-MD5sum: 5c010a812a190b9dce9480d651504971
-SHA1: 643e7a289104dd52e0338dfdf304251974a19910
-SHA256: 3e387a852dc019d8a71a1cc75bee3781c22d5a6b66da43e70a61355dc03373e6
-SHA512: 9abeb6b52f5b84132d39a280c9a3d4d1f322eb0a4cebec18b752424af90574251e96edb6bfab0beeb59483baf2849e5eab72b15fffe7172c08c57c6e41081c78
-Description: Wayland protocol library
-Homepage: https://wayland.freedesktop.org/
-
 Package: libwayland-cross-scanner
 Installed-Size: 364
 Maintainer: @termux
@@ -21268,21 +21300,6 @@ MD5sum: 0736712c4156aba934ed74b28aac824b
 SHA1: 5cda3cecd0fa3a9bbabd7486e4b5065c8071c215
 SHA256: f2994743e6afeb5b1a6f0cbfc1c9ddc536f9ba1bfd5195a4e85fce1ec1c73939
 SHA512: 55d2e42a548d71dc1e2e658db06279d862af7c77dd40c09f0d191ae3cc9b523fd142f56baac5a055b535a8486452296982b05e492cfc1406d0d6632c5ce01923
-Description: wayland-scanner for host (NOT for Termux)
-Homepage: https://wayland.freedesktop.org/
-
-Package: libwayland-cross-scanner
-Installed-Size: 360
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.21.0-2
-Depends: libwayland (= 1.21.0-2)
-Filename: pool/main/libw/libwayland-cross-scanner/libwayland-cross-scanner_1.21.0-2_x86_64.deb
-Size: 80440
-MD5sum: b320c9f373e57cb5b32c668bf4b30ca1
-SHA1: aa51ad1793f9cc0aec55223b6dfb5d1f9fc32c9d
-SHA256: ea2370250233d29ef04eca7435f7647a4e2d910d39942412a074d83a9bcfa25f
-SHA512: bd62c707d749f806c7252fca2f3ab94d983ba4dcf7881a0293e68bf1849ae5372682cd02dd2d196d8528998bd8b92df854921fabea01eb2b63e30f5841a01a57
 Description: wayland-scanner for host (NOT for Termux)
 Homepage: https://wayland.freedesktop.org/
 
@@ -28614,21 +28631,6 @@ SHA512: ed8fa55c0635b86fc817bcfe9b345146850e9abd4cc1faee13cefaccc41fbe971ccff010
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
-Package: pocketbase
-Installed-Size: 47200
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.18.8
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.18.8_x86_64.deb
-Size: 10490144
-MD5sum: 01768d7764ad4d73e1a0926392c3ea52
-SHA1: 3235af79b85f942979a8576e77cd32a119afa59f
-SHA256: 98973acf13745a6161458f1ddc3c5c351a0be2914e6247226fa00c3764c5e552
-SHA512: 62652bf1544ccc2520a4e084b9d9b8d70916153ee8107d4f2a1f67bf06405c5a8a1c0cf27bfe14b2019da9b2a1071d75d02aae5fc7f3f10c033aa3b48872480c
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
 Package: poke
 Installed-Size: 3368
 Maintainer: @termux
@@ -34618,16 +34620,16 @@ Description: Documentation system for on-line information and printed output
 Homepage: https://www.gnu.org/software/texinfo/
 
 Package: texlab
-Installed-Size: 13428
+Installed-Size: 13956
 Maintainer: @termux
 Architecture: x86_64
-Version: 5.9.2
-Filename: pool/main/t/texlab/texlab_5.9.2_x86_64.deb
-Size: 8801720
-MD5sum: f8317791de26aa1fdea98e1e7fbde1e9
-SHA1: 153fad243ad32439b37b03a01e8b6d6c3b7c8ab5
-SHA256: 6c98e7c20cd2bc900644de269e79919ddabeb72e8444eabd4cf937f4a4b9fcf7
-SHA512: df14ee88c576188686b15d4f11b619bf8c5486772b92693fb609beec5693effadf8f7721aeaf93adc939ca59b0c85975fc474ba347c9b3d04207619cdda028d0
+Version: 5.10.0
+Filename: pool/main/t/texlab/texlab_5.10.0_x86_64.deb
+Size: 8939552
+MD5sum: c685c203acf913eefd89a3e26e21cb70
+SHA1: 7240b4570904f069309952e9139506ae54a75cb1
+SHA256: ecfafea4e784e1104b3aee25c1116e2596da287df4f28c98dc6bc95a5f60ee99
+SHA512: 5dd86488068c15b9ff5837d9d314248443d9b70c8205f5fdd755d92fe7177f9090aa28c69a2896f9e4c92a9e6b9e9564a248e119a5b901eaace89afb639c2a80
 Description: A cross-platform implementation of the Language Server Protocol providing rich cross-editing support for the LaTeX typesetting system
 Homepage: https://texlab.netlify.app/
 
@@ -36704,17 +36706,17 @@ Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
 
 Package: vulkan-tools
-Installed-Size: 1732
+Installed-Size: 1740
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.3.265
+Version: 1.3.266
 Depends: libc++, libx11, libxcb, libwayland, vulkan-loader
-Filename: pool/main/v/vulkan-tools/vulkan-tools_1.3.265_x86_64.deb
-Size: 303336
-MD5sum: e857b69f60c52c7e8e48ada7bf55dcc6
-SHA1: 7bdc572f851da1f957a365ec619d4e90dbf66e78
-SHA256: dbb09bf685ca9dea40fdb77ce0fe0d8ebbb21492dea9e8f356299d241c8ea6dd
-SHA512: e295b714bf240854e6bca8298d54ac76524725ae3fe6c9ceacbb4ef4a64b3dc08b845ffc0a99e259f35ece54c80b6a56135c38bbf7457a68af3726675001c770
+Filename: pool/main/v/vulkan-tools/vulkan-tools_1.3.266_x86_64.deb
+Size: 304240
+MD5sum: 59ffd4afefccba718c4a05139330eaa2
+SHA1: 0efc00c5c38b16906940d5c83100c53662d2d753
+SHA256: 3fbc517574af0b1854b76cb967088d5a8edce3dc33e74e0fadc4f06985fa40c6
+SHA512: b65a2bd387573ec561563defcee9295c562ab72452f113046a24c6f6cefbb39402787c86afe2956eb4293a4068fcef3e6d7617108ee6838ab9c167b901637407
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 

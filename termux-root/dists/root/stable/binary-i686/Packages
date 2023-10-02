@@ -87,21 +87,6 @@ SHA512: 3a970ad64d4440e6569de1684018196e9a86de42a417a0c49c9270ea0bd5112fb233be5a
 Description: A FUSE filesystem for mirroring a directory to another directory.
 Homepage: https://bindfs.org/
 
-Package: bindfs
-Installed-Size: 100
-Maintainer: @termux
-Architecture: i686
-Version: 1.17.3
-Depends: libfuse2
-Filename: pool/stable/b/bindfs/bindfs_1.17.3_i686.deb
-Size: 24932
-MD5sum: 400fe4cf51dcf00df9c0b3f88f71e6e4
-SHA1: c361828d8ffaa2531d7fe680834b3c43f36f51b5
-SHA256: 3e9dc529b9e4c4b71b95f857df675b2bbb9c750f02d29c8139ec3c95b529fa41
-SHA512: 1c31ccee6e999aa7c12e75da68ae95fccca629d35ad57718e8780d058a32f09737ddaef330fcf677c9bae182f4509b464d6911acffff3c766fefe3f0ca70f599
-Description: A FUSE filesystem for mirroring a directory to another directory.
-Homepage: https://bindfs.org/
-
 Package: bubblewrap
 Installed-Size: 140
 Maintainer: @termux
@@ -190,6 +175,21 @@ SHA256: 01a9c756ccf60df3af4232954462090fdc840a84723433dbbc187e581fcc612d
 SHA512: ef373dd648eae3f2f54af82dadf399fb1b5a744df657073d1a1985027a35b31a848176ae3d7efcb1535bbca2e1a7d85bcd7b618674e9306908f98b6d692020ab
 Description: Set of products that use OS-level virtualization to deliver software in packages called containers.
 Homepage: https://docker.com
+
+Package: docker-compose
+Installed-Size: 53152
+Maintainer: @termux
+Architecture: i686
+Version: 2.22.0
+Depends: docker
+Filename: pool/stable/d/docker-compose/docker-compose_2.22.0_i686.deb
+Size: 12160956
+MD5sum: 3cb003cab2ffcc828605b3d81a84aae8
+SHA1: 813cbea4fbe0ae30f32a7fd6c03d0a2fb7d3b334
+SHA256: 768cd3ae3d2dbeb3ef762dd904151a12db608d346f9a5e3e912500429fb153fb
+SHA512: 459e5126fefcbe2d2ebe079565d251bcc5f8bc7f32d7e690c747234abbd4547700ee6772a375d3223f15ed18e66395f6272a39dff1eba21d14c70d6e0a333527
+Description: Compose is a tool for defining and running multi-container Docker applications.
+Homepage: https://github.com/docker/compose
 
 Package: docker-compose
 Installed-Size: 52880
@@ -399,6 +399,23 @@ Package: ipset
 Installed-Size: 500
 Maintainer: Vishal Biswas @vishalbiswas
 Architecture: i686
+Version: 7.19
+Replaces: ipset-dev
+Depends: libmnl
+Breaks: ipset-dev
+Filename: pool/stable/i/ipset/ipset_7.19_i686.deb
+Size: 79160
+MD5sum: 3b43acab126ef600c474030e28d61e5a
+SHA1: b6c5331fa0816492100eef8c5a3ef3f13ff3ee43
+SHA256: 8c1981fe56f19c9fcb68f64e3aada7623a7b7acd6e91a387b65d3d1c094ebcb5
+SHA512: 750b42d2d3b7465df037ac0655036dcce4f442eaf8ec6ea0b9f2556cd93d4a91a298256cd8b11072877aed65fecd0162195419599aac4469b03f8abea693248a
+Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset
+Installed-Size: 500
+Maintainer: Vishal Biswas @vishalbiswas
+Architecture: i686
 Version: 7.17
 Replaces: ipset-dev
 Depends: libmnl
@@ -410,6 +427,21 @@ SHA1: 10bdc02f83c3c9981f63c346543aae266af01496
 SHA256: 9eb847afacd0f0b344064330fa18e08a1b920f77b203da2abecded817e4acf8b
 SHA512: 8eba528167f558445588cb2c8171e615e174b18af247a590f8d06c0406852d413d7b5dda68572652212154e1981c40679f9f8f39cb23eeb789f2b9dd1a4a44c0
 Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset-static
+Installed-Size: 256
+Maintainer: Vishal Biswas @vishalbiswas
+Architecture: i686
+Version: 7.19
+Depends: ipset (= 7.19)
+Filename: pool/stable/i/ipset-static/ipset-static_7.19_i686.deb
+Size: 47684
+MD5sum: c198a214299d3be517d4fa62834d1961
+SHA1: 2e17f3abea0453c152b7a867fa64fdebe6bba29f
+SHA256: d2762592aae51d2030287fa678838641b4a75a655d62dd4ebba0084f8d2b3dc6
+SHA512: dc147b0ed468e8b6a57c03a6701d8bde60ace2930678b0ac960908f537a0eb731f0e5a93ed422ffd4f6c1576613e155b6e3c1e69595fc416c64d93b2926508c2
+Description: Static libraries for ipset
 Homepage: https://ipset.netfilter.org
 
 Package: ipset-static
@@ -578,6 +610,21 @@ SHA256: 84f1c67490f4956cb7e50e290aab06b73e4c05134cf0fecf87b7421923bc677e
 SHA512: ae80478da6216833d03b3fd13bde9e078dda8b834fe5aaef3fd6a156f5798d850b49fe340e86e2731297f54d574895addcd9179458b93c2b55b32a1e5df95a6f
 Description: Static libraries for libcryptsetup
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
+
+Package: libdevmapper
+Installed-Size: 588
+Maintainer: @termux
+Architecture: i686
+Version: 2.03.22
+Depends: libandroid-support
+Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.22_i686.deb
+Size: 173852
+MD5sum: b312c5077fff6929eef4775b73dac1fd
+SHA1: 5f9135755635bbd457fb539aafee666b3c119d53
+SHA256: b3b04e83be50b8581b0cfe897fabc6075df7bb745d76e4691032d2344a3ebeb4
+SHA512: 6b9b4f0807e825a8bc217a47945eec7f5804923d9722fcc14e2d98c8e30807d6892feb713ca03fbcb1a1aa2ceb1eb20e8e6d3f16ecadb33ea34b7f23615004c1
+Description: A device-mapper library
+Homepage: https://sourceware.org/lvm2/
 
 Package: libdevmapper
 Installed-Size: 588
@@ -776,6 +823,23 @@ Description: x86 emulation library
 Homepage: https://github.com/wfeldt/libx86emu
 
 Package: lvm2
+Installed-Size: 3028
+Maintainer: @termux
+Architecture: i686
+Version: 2.03.22
+Replaces: libdevmapper-dev
+Depends: libaio, libandroid-support, libblkid, readline
+Breaks: libdevmapper-dev
+Filename: pool/stable/l/lvm2/lvm2_2.03.22_i686.deb
+Size: 1089852
+MD5sum: 13b323c0edca3d3e5ffc2cf27d2f8ad7
+SHA1: 3254ee1b15c8f24a1bf54c43f30055b57579c041
+SHA256: 1b073782bcf23b6d0e0c7bfd3a1e963d1a8777c706047b35d4c2b445472b944f
+SHA512: 54ebd8706a99216de90f4d8c7107fa3cd36af51bf81da755a425d6eba42cbb5b45cc3f8077c26dc23f48af58dbb5b7231e3a092bf17c4f522831e51e55146ab8
+Description: A device-mapper library from LVM2 package
+Homepage: https://sourceware.org/lvm2/
+
+Package: lvm2
 Installed-Size: 3012
 Maintainer: @termux
 Architecture: i686
@@ -837,6 +901,21 @@ SHA256: 4420c9d22161d76101dd52c231bc54c439a130e73b62511ca29a22483c50afb2
 SHA512: 40ab9d6a14be6ac6f8f05aeae4c1e5ae2bddd85a2833e771dab01566db8d8e3af70f7bc2bb53eadba5bc80b4e72062d0391f0eaaa5bd130ad95103cb71c10048
 Description: Utility that makes the maniputation of MAC addresses of network interfaces easier
 Homepage: https://github.com/alobbs/macchanger
+
+Package: minikube
+Installed-Size: 61584
+Maintainer: @termux
+Architecture: i686
+Version: 1.31.2
+Depends: docker, kubectl
+Filename: pool/stable/m/minikube/minikube_1.31.2_i686.deb
+Size: 13670068
+MD5sum: c6d4a9232ee07e38645191e505c2f5c7
+SHA1: 228b63a86921045b92d0bb28f86cc0100ced1e21
+SHA256: 10a0e781fe13aa811fd5de3963f1e8f1be7d41fd9cff94c00cd834167ae43969
+SHA512: c88536016b0d454ff449c4c653355dae57f2882e87fa1d9457f0df812d1a7a711c0e12b4cd00eff2d28ae1f7eda2d3a1e608932637472c8f450373b0cc21f0af
+Description: minikube implements a local Kubernetes cluster.
+Homepage: https://github.com/kubernetes/minikube
 
 Package: minikube
 Installed-Size: 59904
@@ -972,6 +1051,21 @@ Description: A C++ library to control Z-Wave Networks via a USB Z-Wave Controlle
 Homepage: https://github.com/OpenZWave/open-zwave
 
 Package: openvpn
+Installed-Size: 1484
+Maintainer: @termux
+Architecture: i686
+Version: 2.6.6
+Depends: libcap-ng, liblz4, liblzo, net-tools, openssl
+Filename: pool/stable/o/openvpn/openvpn_2.6.6_i686.deb
+Size: 477036
+MD5sum: ed2a567bab083f8810ff24ede9f0ec96
+SHA1: 460c333f169fb6a05b726d3d49de86b31fe0f89a
+SHA256: 285808a5ef8ffe4bbfe5ca046639ac343d76882a60af9a92d3bf5dc8ed645c48
+SHA512: e0eb76ab5f24a52167dcb10d3a4a9d1c6d7c03cb217516e3ba56e225eed4fda0d5390b0a3344e3b34434e4e44a1d53dcd63847f99755b315cfae058bbedcfb21
+Description: An easy-to-use, robust, and highly configurable VPN (Virtual Private Network)
+Homepage: https://openvpn.net
+
+Package: openvpn
 Installed-Size: 1480
 Maintainer: @termux
 Architecture: i686
@@ -1029,6 +1123,21 @@ SHA256: 3197cc19aa801884eb8952115d454c94d2e4b27a5cb89d94ed010f1b1461e7e3
 SHA512: 9356c30874a1da4363148b057d1ff81c3f508c0724154d6700b958852d5f7800b8592977c3382607f929b5af0e84df205266382163f35bd27cf536562c2287ea
 Description: An offline Wi-Fi Protected Setup brute-force utility
 Homepage: https://github.com/wiire-a/pixiewps
+
+Package: runc
+Installed-Size: 8764
+Maintainer: @termux
+Architecture: i686
+Version: 1.1.9
+Depends: libseccomp
+Filename: pool/stable/r/runc/runc_1.1.9_i686.deb
+Size: 2786364
+MD5sum: 38ad1036a0b94496f37d112c236e95a2
+SHA1: 17eee55cc7239af6ed3e8cba2b9906e59eaca7e9
+SHA256: 09a2d856df99b2d95c3488028f202ab59222d390d49f75489a3ff733af6ce041
+SHA512: 94fa2cdda21ce115270837cfacce5494b1e54346658238da31ea7c81c776d0f5f3af83d71b8e9a81cdebbfed09cb374c7346f64b0def853174ca241f23971924
+Description: A tool for spawning and running containers according to the OCI specification
+Homepage: https://www.opencontainers.org/
 
 Package: runc
 Installed-Size: 8764

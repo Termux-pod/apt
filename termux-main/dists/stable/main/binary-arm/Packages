@@ -2494,23 +2494,6 @@ SHA512: b29d8807848c66424241c4f0fd9d163b10788863bd1fb167c16fb6a93a8e7fdda935dc91
 Description: Library for asynchronous DNS requests (including name resolves)
 Homepage: https://c-ares.haxx.se
 
-Package: c-ares
-Installed-Size: 464
-Maintainer: @termux
-Architecture: arm
-Version: 1.19.1
-Replaces: c-ares-dev
-Depends: resolv-conf
-Breaks: c-ares-dev
-Filename: pool/main/c/c-ares/c-ares_1.19.1_arm.deb
-Size: 117720
-MD5sum: 86a3ccf879c64e08f92de419644a1d73
-SHA1: bd66bbe5930fc95dc6a898825b755a7f9b05d620
-SHA256: 0f4a9104e807041580404b92be18e7ad37aece8995f694ac8ee4aea14f6c10a6
-SHA512: e30f4cacffd9854fbadfc5641f047795bb1ae729020e13b4c5d85dc331224f2cac91d68c27e34ea92cf4d0a69eeb9912813eae8f562b368f06ba12216ad4d1a9
-Description: Library for asynchronous DNS requests (including name resolves)
-Homepage: https://c-ares.haxx.se
-
 Package: c-script
 Installed-Size: 52
 Maintainer: @termux
@@ -3663,6 +3646,21 @@ SHA256: bb17f2f4641fa7390e5602c32f47f05d12e23afa41a51db38fda113b6daeae7d
 SHA512: 73b54ef978e4196e09e4a402f39dc39f4820add433814fc7a72686bf5194063f42eee0129afe080a8efc01347348227af8d2a0331d4d09f3d2e16c586c796801
 Description: Tool to colorize 'diff' output
 Homepage: https://www.colordiff.org/
+
+Package: command-not-found
+Installed-Size: 312
+Maintainer: @termux
+Architecture: arm
+Version: 2.3.0-5
+Depends: libc++
+Filename: pool/main/c/command-not-found/command-not-found_2.3.0-5_arm.deb
+Size: 78928
+MD5sum: 924996b33f233e56b480f52045ffa43b
+SHA1: c3e98a60a0aa76830196b30e6c76d7aec89c3f57
+SHA256: eec5c6c9040bb179cd785c79632be615f6d359e12ed78df832745b1fb30321d4
+SHA512: 0bcfdbce6704d204412bb6114ad5dcf71d9acd0530edc3b0d5acae443fe12dd7b681e0c0b6de5a7170351a935abf73fc3ebf8c23b85afaf6825fd04fc77ee635
+Description: Suggest installation of packages in interactive shell sessions
+Homepage: https://github.com/termux/command-not-found
 
 Package: command-not-found
 Installed-Size: 312
@@ -30019,6 +30017,23 @@ Package: qpdf
 Installed-Size: 2788
 Maintainer: @termux
 Architecture: arm
+Version: 11.6.2
+Replaces: qpdf-dev
+Depends: libc++, libjpeg-turbo, zlib
+Breaks: qpdf-dev
+Filename: pool/main/q/qpdf/qpdf_11.6.2_arm.deb
+Size: 740252
+MD5sum: eab459fca5ade22871d9a1da12a6ed49
+SHA1: fed4d5602056481bc853ed3c89f269f07b4a50e6
+SHA256: 1d2bfbb4ca373bf2dd2cbaa14234cc7e25c23c912e4e62afa1c2fc80f990def8
+SHA512: 5ab43b22396c6d0f159b7614633046a01990ff85a5cc36ee92e9b71cc2e47d12aff6aef0421ee14226d4e29fd139b63718118eb214c8f6310d3b173a24c16b75
+Description: Content-Preserving PDF Transformation System
+Homepage: http://qpdf.sourceforge.net
+
+Package: qpdf
+Installed-Size: 2788
+Maintainer: @termux
+Architecture: arm
 Version: 11.6.1
 Replaces: qpdf-dev
 Depends: libc++, libjpeg-turbo, zlib
@@ -30030,6 +30045,21 @@ SHA1: b41059b02a7cdc24360ca1ad5a91d4973adae068
 SHA256: 7237b0ca82c386cd34208e0fbf0801913ac406724bf7a44e2fbec90dd834de50
 SHA512: 77572d1662b448db7b1bf1315131822409c2c79e26e67f3a33f2f64baf6dd6a7879f69ccaa944b48dff86677ca305eda203234197064715b6dfa25a41d583356
 Description: Content-Preserving PDF Transformation System
+Homepage: http://qpdf.sourceforge.net
+
+Package: qpdf-static
+Installed-Size: 6760
+Maintainer: @termux
+Architecture: arm
+Version: 11.6.2
+Depends: qpdf (= 11.6.2)
+Filename: pool/main/q/qpdf-static/qpdf-static_11.6.2_arm.deb
+Size: 1053816
+MD5sum: 7ab82c0c34146606b4625a0fd0092fb4
+SHA1: f0a0719de81282d629b95077d529800fc370f6fc
+SHA256: b14840e0cb1c467ed4187397dd0d5a05992804f1439bc02c96cccf82aa53c783
+SHA512: dbeb1d6a874eb2d2c1cebba1b0b25b5f432ee9b2c3e81740e484e77504da402d30477cee0f80f12a62e1906ea92df6bc4a7df6c46ef1fbba6cf660c21b195f64
+Description: Static libraries for qpdf
 Homepage: http://qpdf.sourceforge.net
 
 Package: qpdf-static
@@ -35346,21 +35376,6 @@ MD5sum: a917909a6bef6c9ecee6dee822780c39
 SHA1: ab95e1c796cbbee4d576cbad67299eca62048183
 SHA256: 003d2dd71465631f9a69f3f47a0c6655c95435028176837e6923dd12d7ec4cb0
 SHA512: 366c22937a48130c3d7f6266e1d934beb49273bb2200dd02dc998e5c992daec221684cc8f95e5b00c411843ef93c3f0c17196767b171f48e8b3ba0d6f83494c8
-Description: A faster, user-friendly and compatible grep replacement
-Homepage: https://github.com/Genivia/ugrep
-
-Package: ugrep
-Installed-Size: 2024
-Maintainer: @termux
-Architecture: arm
-Version: 4.2.0
-Depends: libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
-Filename: pool/main/u/ugrep/ugrep_4.2.0_arm.deb
-Size: 235996
-MD5sum: c4bb984fd76a38853b3fe813ba110668
-SHA1: 25a4d70f0737d36e10d132f66fe8ed54b963ebf4
-SHA256: 2da9e7100decc1dcaa31a2611c407f9f26cab970b8457bb9190fec54ad0b5c34
-SHA512: 5f516605428ad0a7e12bd9f2d6fd4dd8ac935df1de44ac6802f3e35cf26fab2b1030c29e4115be9ec45a1e463882e24fff976592ea46d61b536f2b1d7b8d4c43
 Description: A faster, user-friendly and compatible grep replacement
 Homepage: https://github.com/Genivia/ugrep
 

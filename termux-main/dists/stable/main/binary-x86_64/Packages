@@ -2753,21 +2753,6 @@ SHA512: 68e8a7b838b73137a3676d667ca1ca5daaa3691629ec9252617b147b13c437c8ee02f132
 Description: Cargo C-ABI helpers
 Homepage: https://github.com/lu-zero/cargo-c
 
-Package: cargo-c
-Installed-Size: 80604
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.9.24
-Depends: libcurl, libgit2, libssh2, openssl, zlib
-Filename: pool/main/c/cargo-c/cargo-c_0.9.24_x86_64.deb
-Size: 20774784
-MD5sum: d150298d51f5b0a4aebae903f20d97ba
-SHA1: d124357d1154856fc38cfa1e76be784945ad18b1
-SHA256: c6a56d9ee285fbe861ed9579b9aeaa45ac0777ca9a42c64ded00aa61713d5b35
-SHA512: 295333684778f7ac483fbe1fec5b70b8dc92bae5e24930823454f60524c13d83d23e737564433e339eda65c8039aeed40d6b77709ba81d3ff940db1ac52370a6
-Description: Cargo C-ABI helpers
-Homepage: https://github.com/lu-zero/cargo-c
-
 Package: catdoc
 Installed-Size: 788
 Maintainer: @termux
@@ -6927,22 +6912,6 @@ SHA512: bb9ee16235618874cedea049b7b7f777416e949c66874ac9c18263c8c4380ef2df2ba5da
 Description: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet
 Homepage: https://gofrp.org/doc
 
-Package: frp
-Installed-Size: 33020
-Maintainer: 2096779623 <admin@utermux.dev>
-Architecture: x86_64
-Version: 0.51.3-1
-Replaces: frpc, frps
-Breaks: frpc, frps
-Filename: pool/main/f/frp/frp_0.51.3-1_x86_64.deb
-Size: 9003104
-MD5sum: 526d0ae699feeb561d32ee768225442b
-SHA1: e0d386e9970b13e790e57efd41be5eefc473ad9e
-SHA256: 0c5cab0de73744005a86aed26a55645a162edf3274bd42256a3e4bc7c1f65263
-SHA512: d024ab4cf5b6d4264529e42221fd8e6c93bbd2a2b1756c3c6bc42d9ebfd59af0b6d9a03a2e793253fc85e421772228647feb498e679c31eb6b3630d4817a23a8
-Description: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet
-Homepage: https://gofrp.org/doc
-
 Package: frpc
 Installed-Size: 15000
 Maintainer: 2096779623 <admin@utermux.dev>
@@ -8039,6 +8008,23 @@ Package: glib
 Installed-Size: 6848
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.78.0-1
+Replaces: glib-dev
+Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib
+Breaks: glib-dev
+Filename: pool/main/g/glib/glib_2.78.0-1_x86_64.deb
+Size: 1346776
+MD5sum: 97bfc453d7e0c0a458016f1d88845eee
+SHA1: 78c1f86b17747458814656e4cc724ec5301b2cdb
+SHA256: 5f401f15972908f58342e3800dcccf27ddb2718f1ee4b6e06ec6e9b91166f08b
+SHA512: b10dcc89af6d35e8892e40bf2c8b376c54bdb46f5b194afc2a7b07ec91f184e49df4f57e24834f798ca5f16e051ba756baee1e1fe364b6267408f5dd08873fc4
+Description: Library providing core building blocks for libraries and applications written in C
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib
+Installed-Size: 6848
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.78.0
 Replaces: glib-dev
 Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib
@@ -8050,6 +8036,21 @@ SHA1: e1b0514aac9d23897decc431b2754b9851fb66ee
 SHA256: a3add163fe700c2c026ee2dbd84393000d4a88be96b33610cd8b2d3f9ef47f4e
 SHA512: 3eba5a7ebae60c5da20d88757c77dc26e2779be8c7343fb6536f1100a4c8a2b0281d4510688931c7fe1cfa783b30aa65b8dabcfb47f2a6d72606da723bb91797
 Description: Library providing core building blocks for libraries and applications written in C
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-bin
+Installed-Size: 452
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.78.0-1
+Depends: python, glib (= 2.78.0-1)
+Filename: pool/main/g/glib-bin/glib-bin_2.78.0-1_x86_64.deb
+Size: 100132
+MD5sum: a777ec23ce3f220dabfca646d5fca833
+SHA1: 0bbb315c8683ad31ee7638ba8b2f47a3d3b87cfa
+SHA256: 18bef73b3b00cb3e1bf4b751ec0e4f166ccf26b76f6ee3835f88b68cd7ab6eb8
+SHA512: eb5bf49f701e042cd0eef3d90fcb1ca1263726a420c6bf2f679b62e5760af6d4def162846eb1de778c645beb427467815ea2b18e45abf127b24fd31df1351f8b
+Description: Programs for the GLib library
 Homepage: https://developer.gnome.org/glib/
 
 Package: glib-bin
@@ -10236,20 +10237,6 @@ MD5sum: b14ef703aabdf818a12f96a1f33bd408
 SHA1: 8fe6b458aeb96b44df132f8cb269448ff957aa37
 SHA256: 4ee48a185b2e9b72c6e7ca9879f17c401ca49b2b27913523eca6846b85590a7c
 SHA512: c1862dbf31477f03ccbfaf3732287ba627f9426f40d48d8000eaf783de35c823b9925dfe857374ed0b3176035dfb0c49ec56e9b4f4aefa484fc5eea62d2a13ac
-Description: A high-performance and strong-extensibility Go HTTP framework that helps developers build microservices
-Homepage: https://www.cloudwego.io
-
-Package: hz
-Installed-Size: 12268
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.7.0
-Filename: pool/main/h/hz/hz_0.7.0_x86_64.deb
-Size: 3547416
-MD5sum: 11f48202552ff83d9a5532eeddebc8fc
-SHA1: fa4cb745f18fedb62beda3d7a2447cc14eac9ef3
-SHA256: 8822c4c140cdc3e9d5e4775b0c6ea61a64ea11bd18107cb566023068789d3edf
-SHA512: 5c8ce2bf9805de06276e300b086b9c407d068b35b7a02570a48da24500ad1b8e853540ca76ee62f8652d4adcd72c5389c2b88afca70234f5332958327c67cd7c
 Description: A high-performance and strong-extensibility Go HTTP framework that helps developers build microservices
 Homepage: https://www.cloudwego.io
 
@@ -17470,6 +17457,22 @@ Description: Static libraries for libnftnl
 Homepage: https://www.netfilter.org/projects/libnftnl/
 
 Package: libnghttp2
+Installed-Size: 488
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.57.0
+Replaces: libnghttp2-dev
+Breaks: libnghttp2-dev
+Filename: pool/main/libn/libnghttp2/libnghttp2_1.57.0_x86_64.deb
+Size: 101100
+MD5sum: edff02abee90b2902cb5383427cf3584
+SHA1: e0caf90262f619845d3455c7693ebc5f9147735b
+SHA256: c6782f1be10901cb4c51c901c47ebaf9845141d9937da4996378c7bf6f0ac90c
+SHA512: dcfad6d76141c10d8ebb9425e49c799ce80647379482ce62a588aca823c01c869d9de22f1b80e3de9af43bdd63ae376790f318046ff9d8f11a4c3af2f01a1a16
+Description: nghttp HTTP 2.0 library
+Homepage: https://nghttp2.org/
+
+Package: libnghttp2
 Installed-Size: 484
 Maintainer: @termux
 Architecture: x86_64
@@ -17483,6 +17486,21 @@ SHA1: e0150fd85cdab6255cfbec80d8bdf7daf0a09a02
 SHA256: 46dd8de0c57ef88e6f9e23146380e519e1b41b3ac2398dd4a14b33c11a3a50ed
 SHA512: 9f1b53b1c9756bb1a09c38b308bf82eaf65db489f7f36fb4cf640a097961b061ed7664dbfe7f75a546504cdb0e4a0b056ed971c7e322f678fbe81d1c39573845
 Description: nghttp HTTP 2.0 library
+Homepage: https://nghttp2.org/
+
+Package: libnghttp2-static
+Installed-Size: 340
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.57.0
+Depends: libnghttp2 (= 1.57.0)
+Filename: pool/main/libn/libnghttp2-static/libnghttp2-static_1.57.0_x86_64.deb
+Size: 70216
+MD5sum: 06fe66e1efb13c212cef903b128ac9b6
+SHA1: de0f936dafd423989025632fc5ee6c8581ab2d46
+SHA256: 53a80dd520ee24ff266084a22997ed90ff8bddb9013fafcf1692cc286c8183f5
+SHA512: f82b0a3a465b6b72c4dc7182803705de5899666e95aeaada1a3d5c256cb958a5af399a52851034c3b189a9172211b5a3839732910906d031cf51532dafbb1e12
+Description: Static libraries for libnghttp2
 Homepage: https://nghttp2.org/
 
 Package: libnghttp2-static

@@ -1078,21 +1078,6 @@ SHA512: a255bbef79c00bd531c0dd11ce425366c8f452fab48b84bb13b626b05fd2f14b34f7841e
 Description: Extra CMake modules (KDE)
 Homepage: https://www.kde.org/
 
-Package: extra-cmake-modules
-Installed-Size: 3052
-Maintainer: Simeon Huang <symeon@librehat.com>
-Architecture: x86_64
-Version: 5.110.0
-Depends: cmake
-Filename: pool/main/e/extra-cmake-modules/extra-cmake-modules_5.110.0_x86_64.deb
-Size: 359096
-MD5sum: bcdd438ccb71e66d0f8a1c66babae3a1
-SHA1: 9a4024a008280dba51e129f88bb7ee1781c30442
-SHA256: cd9f0822644dab41672dee1999512ff96a1043ece4684a3cbde330ddde0b658c
-SHA512: 2589f8b0bd4dbcb863dd4574e6f0e53e92779daf9c316326144a7b4c713390a065ac97ac345edb57161997e81656510a6e570c3a3af01be1c6e526e77b449a5e
-Description: Extra CMake modules (KDE)
-Homepage: https://www.kde.org/
-
 Package: far2l
 Installed-Size: 8312
 Maintainer: @spvkgn
@@ -3621,6 +3606,21 @@ SHA256: 321bb1b8d6960bddd709a0aa8715491571f8e0083f32747a9624f6a8eb78eb21
 SHA512: 30bf457122d009c574e85aa5b2f1a2613cfb4dee4241d4a48ef08bcabdf413baa8434747357fcf31d1dfc674488a378152cb12d7d6252b9670c0c6fa2bd3e16b
 Description: Static libraries for libmateweather
 Homepage: https://libmateweather.mate-desktop.dev/
+
+Package: libneatvnc
+Installed-Size: 172
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.7.0
+Depends: libaml, libdrm, libgmp, libgnutls, libjpeg-turbo, libnettle, libpixman, zlib
+Filename: pool/main/libn/libneatvnc/libneatvnc_0.7.0_x86_64.deb
+Size: 43900
+MD5sum: 73ce5a24d43f6e25aa11b1872d2237e0
+SHA1: 7912b73f5fde7775c653cc02c128136abb5f1d0d
+SHA256: d3b5cb81416f1d88525cf4c84ef62de58ab07edb57bdb7269d7dd0315c0ed124
+SHA512: dd452d5a83b0df2671af3a23f529b6f81761a0afa8da8a49a97d9755c3c775a5bae4fab73245bea3ad59d636f7c42ffed0887894a55a46bba3556e63cd1d9296
+Description: A liberally licensed VNC server library with a clean interface
+Homepage: https://github.com/any1/neatvnc
 
 Package: libnotify
 Installed-Size: 288
@@ -7235,6 +7235,22 @@ SHA512: 23396e57b4002f48e6ed43c3432d35d1b4eee3b38c2650b8a67432fb86ef51c7ad0eddae
 Description: A simple web browser based on WebKit2/GTK+
 Homepage: https://surf.suckless.org/
 
+Package: sway
+Installed-Size: 5744
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.8.1
+Depends: gdk-pixbuf, json-c, libandroid-wordexp, libcairo, libevdev, libwayland, pango, pcre2, wlroots
+Recommends: xwayland
+Filename: pool/main/s/sway/sway_1.8.1_x86_64.deb
+Size: 5036000
+MD5sum: 44fcbbd74b545af51e07f2babfdbe89c
+SHA1: e1cd165a984e1d6d5343ca08b3d0b0c6cef82332
+SHA256: 5fa0bf5eedc664d0ba055f663f5c3b4277793df7b149e229825f1712eeb72c94
+SHA512: ddaebc62ae72ca1530a7b22b64c78673353ca5aaffc83435e41e32381ef6256d32c66db848bb7626dabff597826d2eadcf07aa284fd026e22702632fac430964
+Description: i3-compatible Wayland compositor
+Homepage: https://github.com/swaywm/sway
+
 Package: sxhkd
 Installed-Size: 232
 Maintainer: @leapofazzam123
@@ -7774,6 +7790,22 @@ SHA512: 8c0b65dee855853e455fdd5327a7e38cf297a5b725d5e7a351f6987ee004a67cf133f296
 Description: Static libraries for vlc-qt
 Homepage: https://www.videolan.org/
 
+Package: wayvnc
+Installed-Size: 180
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.7.1
+Depends: libaml, libdrm, libjansson, libneatvnc, libpixman, libwayland, libxkbcommon
+Suggests: sway
+Filename: pool/main/w/wayvnc/wayvnc_0.7.1_x86_64.deb
+Size: 40480
+MD5sum: a4590ba27fe1904a5df73bdba006427b
+SHA1: 6b1fbe4747e21e8323d7f65e14a6002d1b023737
+SHA256: 923f24cc261dac9d311807fed050e2164102b4affc83bcbbcea46be0071a242f
+SHA512: c56332fe32c7ccdc814b2836024bbaecaaddf04c186565221aec5255b0b3bf731365ec276f10c9424195272f7824e32ea182b4a6ee05cd3e3b15199582f96454
+Description: A VNC server for wlroots based Wayland compositors
+Homepage: https://github.com/any1/wayvnc
+
 Package: webkit2gtk-4.1
 Installed-Size: 95936
 Maintainer: @termux
@@ -7852,6 +7884,22 @@ SHA256: 8ab7f46ea5ac703dcada18d4fee490a1cc1f2aee34f2376dbc2f8750ee6d80d7
 SHA512: 121f753ec1248c8e563d0e0a9cfaf86a7cb9592498ce24d6f803828cd0645cdae78b8dbb54292c1969b7a2f7e3435bf02d89f06702ec8b4f52086d61544b5a57
 Description: wkhtmltopdf and wkhtmltoimage are command line tools to render HTML into PDF and various image formats using the QT Webkit rendering engine.
 Homepage: https://wkhtmltopdf.org/
+
+Package: wlroots
+Installed-Size: 1264
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.16.2
+Depends: libdrm, libglvnd, libpixman, libwayland, libxcb, libxkbcommon, xcb-util-renderutil, xcb-util-wm
+Recommends: xwayland
+Filename: pool/main/w/wlroots/wlroots_0.16.2_x86_64.deb
+Size: 257192
+MD5sum: d433442ec077d916e34e05949c24602a
+SHA1: e95566d7d8840ca6f0f267d4c4236022dd67e489
+SHA256: 5ca0791db1f07f914fba5cd91130154502ccc42fbf75baef8fcd3a77c6b94d10
+SHA512: 9f9e0e32dd1b9f60fc7c6a3dc961d9a448ea74efd469ecb12e45503129bb36ecec60ec182db0dd19ba3369f554d5e78e4a9b11eae52a93aec1a7c8b8ae773d92
+Description: Modular wayland compositor library
+Homepage: https://gitlab.freedesktop.org/wlroots/wlroots
 
 Package: wmaker
 Installed-Size: 3896

@@ -6900,6 +6900,22 @@ Package: frp
 Installed-Size: 31956
 Maintainer: 2096779623 <admin@utermux.dev>
 Architecture: x86_64
+Version: 0.52.3
+Replaces: frpc, frps
+Breaks: frpc, frps
+Filename: pool/main/f/frp/frp_0.52.3_x86_64.deb
+Size: 8848984
+MD5sum: e18e6b20abcb56ccb4f2f0c400a9e14a
+SHA1: d8273a50ea8903a07ea089d8d5abdea41bbe0370
+SHA256: ee1076bc7776325c6c1fa83455f7138061825ef3299f35d6a3fa95c73eb18c80
+SHA512: 86d52bd90ce31a923dd095cfbef1d3b40555942fc4f0d716193781c639eb1c9d4bd0270d46f4e0c9e69937549d233eb35a9a789aea2de0678ef477475a128635
+Description: A fast reverse proxy to expose a local server behind a NAT or firewall to the internet
+Homepage: https://gofrp.org/doc
+
+Package: frp
+Installed-Size: 31956
+Maintainer: 2096779623 <admin@utermux.dev>
+Architecture: x86_64
 Version: 0.52.2
 Replaces: frpc, frps
 Breaks: frpc, frps
@@ -7782,6 +7798,20 @@ Description: Tool for creating, editing, and getting information about GIF image
 Homepage: https://www.lcdf.org/gifsicle/
 
 Package: gifski
+Installed-Size: 1456
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.13.0
+Filename: pool/main/g/gifski/gifski_1.13.0_x86_64.deb
+Size: 529168
+MD5sum: 337381b03aa9ab9bcb8e77cb3659f29e
+SHA1: c06b6d56e028c4f1f34a0cf8be800b5345a48563
+SHA256: f51877ff025642f84dc5a9e4b7eb65ae4f04edf456e8788fff65b520a4569548
+SHA512: a911a1e5000cba56b346bf7495f8d1f253a29030074e1dedd0b2ea470a86577f5f455242305f67a04cd07801818cb6e95ea610d379b58954d7ab78a519e70826
+Description: GIF encoder based on libimagequant
+Homepage: https://gif.ski/
+
+Package: gifski
 Installed-Size: 1492
 Maintainer: @termux
 Architecture: x86_64
@@ -8001,20 +8031,6 @@ MD5sum: ad7b31c538edf7d687025b8a783f54a6
 SHA1: 1841c5b6fe7bb86eddbf91cffe89ec04b9c84632
 SHA256: e141d036781eb6b3890fdca6e5ac0d96089cb637c2ddee09b190af7f3d1332a2
 SHA512: 78fe6ae7be72efbc724cf56be899a501665fcf973801b87b3917a72e03d4ca09c9513989f17e7480ca7e87f7f0b7ddac91f052dde578e72cf46ee67df1a1c114
-Description: A GitLab CLI tool bringing GitLab to your command line
-Homepage: https://gitlab.com/gitlab-org/cli
-
-Package: glab-cli
-Installed-Size: 26528
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.33.0
-Filename: pool/main/g/glab-cli/glab-cli_1.33.0_x86_64.deb
-Size: 6089864
-MD5sum: c82e032411865ccd08ca07c961dd54b9
-SHA1: f091cd52b54a260822093724b22e4d17f244ba21
-SHA256: 8085e9ef45eadaf69eaeaf60d98c30d6b7d473b6558ba38ad0ed03f3fce34704
-SHA512: 571aefb581b0c3d232cad414c93ab615c7151e3b89fed29d224957a685e394d7410ac10e0031f9a88be7d6e346c1a24df97dc3d2a34cda983ad47e80e67884c7
 Description: A GitLab CLI tool bringing GitLab to your command line
 Homepage: https://gitlab.com/gitlab-org/cli
 
@@ -24166,6 +24182,24 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 54500
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.2.1-1
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.2.1-1_x86_64.deb
+Size: 14027192
+MD5sum: a6a86d9e6401b83e0b93f8f4266a1b74
+SHA1: 9e153ecd24c62a987b0639a7129b08f9b5abfdae
+SHA256: 1884e86031bb4d834d17abb5bdd25e0e75ff2a9903b232ca3e5047fe0c401fc5
+SHA512: 87d9b798d0c1807ef0ba8b82a8e581405094f77fcec5ae0f199b33a0558621da9977ed601704041c0290f459227158cae86878e491ba8147465fe735d6722d45
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 54048
 Maintainer: @termux
 Architecture: x86_64
@@ -24187,6 +24221,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 23.2.1-1
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.2.1-1_all.deb
+Size: 25036
+MD5sum: 0229971685d485155158affa021ca6f9
+SHA1: 2da5e46d80ed998712677b6fe6ea310bf4d5106b
+SHA256: 3d8006424f945a05fc1a4d8791761d92c800a9cdbf3fec3ac925e63e0d1324bf
+SHA512: 76cd5f823f335dd95c8b3dd96672fd95361ec41b964f2e9695bd3357ee49b4ee011ca4b19d80a1f09dee91d9ff802fc1ee05cdd523ad954d6d14de516cceb480
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 23.2.1
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -24198,6 +24249,21 @@ SHA1: 2c699e974f41a9774f1732fb741b4821b3a6f08d
 SHA256: 7abf5b491abff80519fb96be37e71b45ee2bd398b62200c2f30ce6ad8d307874
 SHA512: f8fcc7f1c455d610cc4a8f51502684397d0f15bba043606ce673124f623575f60ed371ef8be917d09d8b90a216495a5743feee5d9c59f038a9a65b29c130689e
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 54212
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.2.1-1
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.2.1-1_x86_64.deb
+Size: 13753748
+MD5sum: eece1653114117557355a404d18b7435
+SHA1: ddb4c6c33f2457023b6ce8bd4c0799b441b370ef
+SHA256: aa3e28f892edd0d56ad116cc1a30afc6ec26c5bdfe387a9efd60d9e74daf8f32
+SHA512: 99ab86b1260ca95daf095a61d960ac8f89a3456d38063b867e06578f02c2b714ef0cbd10a5b062c28a33162d282bd3e76ccd62729e615ff9ae31d7776ee1cc5d
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -27297,6 +27363,23 @@ Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
 
 Package: osmesa
+Installed-Size: 51328
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.2.1-1
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.2.1-1)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.2.1-1_x86_64.deb
+Size: 13291892
+MD5sum: b548d4f15621a93d58ec3be93f291f1b
+SHA1: 2e444f377fd7a15e509bf5649dc4851362524cc0
+SHA256: a6b8df4caf8e38cd39547595499618dcb57ffa722bb0d53f443005a77347b2bf
+SHA512: 3eaf8295e92228fdc82a8a10b01867f152db3bbcc552c8540685ce3122b7e4ff993869394e3473c2ed65ccb906b5797d2d94c67b3d35bd22b6f6d489c902cd8b
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
+
+Package: osmesa
 Installed-Size: 50872
 Maintainer: @termux
 Architecture: x86_64
@@ -27566,21 +27649,6 @@ MD5sum: 3d8f28fb6f8c40ee2b0c64168a5a11e1
 SHA1: d69039f5222d3cc915f04a89ab2a4a76dbdbe382
 SHA256: f9346bd93f5cd65f4bdad833a75ae7e568cce882ad336fc95ce172b08e2ff608
 SHA512: a3cb4f73f9c98a8440c7a6ffc76bff780615325ea15ded138cc8f4dae4a1a1fedda8c25fcf9a5bacc3e55a5d0b0cea0eb4ffba50f1a60441838df0f0f4db65e7
-Description: GNU Parallel is a shell tool for executing jobs in parallel using one or more machines
-Homepage: https://www.gnu.org/software/parallel/
-
-Package: parallel
-Installed-Size: 4484
-Maintainer: @termux
-Architecture: all
-Version: 20230922-1
-Depends: perl
-Filename: pool/main/p/parallel/parallel_20230922-1_all.deb
-Size: 1982856
-MD5sum: 214c6aaa70c3b711fd43834ef21571c5
-SHA1: 46962796db01f47dde6c2ae69ec8d5c95b57f284
-SHA256: 9aa36ee8bcacdee441d25cb9595dce57c9596805917b2debd794fbde373278b2
-SHA512: 9f255098de9c1e9f6d0c22b6e5c9b03b5c1af4438ac30922aaff21acbeacf57a902a09c51144e3e62826085c283f39125a46483a925c1f8cf0516ecf532811a3
 Description: GNU Parallel is a shell tool for executing jobs in parallel using one or more machines
 Homepage: https://www.gnu.org/software/parallel/
 
@@ -34316,20 +34384,6 @@ SHA512: 67461da426cc6ed0f18ae63ae90b8fc9ed8a6a3f363497b634d41a79142a6c4a4b049e4e
 Description: Secure Access for Developers that doesn't get in the way
 Homepage: https://github.com/gravitational/teleport
 
-Package: teleport-tsh
-Installed-Size: 150772
-Maintainer: @termux
-Architecture: x86_64
-Version: 14.1.0
-Filename: pool/main/t/teleport-tsh/teleport-tsh_14.1.0_x86_64.deb
-Size: 27591960
-MD5sum: 77223d3e08e56ae53007c36215c184a3
-SHA1: c6bdc7ec587aec0b90ae8fd5fcc2cca80c7730e8
-SHA256: be6e3732224442257c5c233efce883534452106309c4253429a70d1477ca204f
-SHA512: f3d9b1729806583b5392ff571c0fe2ef622ee13083593ca8e01235931f8d0e0d27fdfc2d2fffd1aa5a5d00c8fe06ff77034edf97be882518fa621c309720c5f4
-Description: Secure Access for Developers that doesn't get in the way
-Homepage: https://github.com/gravitational/teleport
-
 Package: tenki-php
 Installed-Size: 232
 Maintainer: @termux
@@ -36957,20 +37011,6 @@ MD5sum: 145cf7723d2d1fd7883f2f0907e7cc36
 SHA1: 023fbf28733bb855d75e0d331bb6aa1c9521d18f
 SHA256: af4e7db8405b8decf71d78cfaa6e268460ab1868af9bf492f1553548f815975d
 SHA512: 30a22d8ec73cc095aa4800b309e21888704fd04b362b3e66a33f16501c5ddd53b79eab4fb1b3bb54cb2fa8104be5ac672dd7922b250568cf013ceb7c92a4b9cb
-Description: A standalone runtime for WebAssembly
-Homepage: https://wasmtime.dev/
-
-Package: wasmtime
-Installed-Size: 28788
-Maintainer: @termux
-Architecture: x86_64
-Version: 14.0.0
-Filename: pool/main/w/wasmtime/wasmtime_14.0.0_x86_64.deb
-Size: 5851180
-MD5sum: 2c43ce26de6f8a9b96c26f625be8bbac
-SHA1: 79ab8df145a6c401132b289306d864390eb7b5a5
-SHA256: 1acd324f88a531993153835eab45c50ccb25c5246e074abf028c8b1c3e60ee94
-SHA512: 056c5407fbed74df1cf4c8050817ad64c3885fe3d254a8158020acc4d8afec6f18445ef0ca6889395c2f5f3a8e10166ed88a2ac281a176fc484408e3feac8bd7
 Description: A standalone runtime for WebAssembly
 Homepage: https://wasmtime.dev/
 

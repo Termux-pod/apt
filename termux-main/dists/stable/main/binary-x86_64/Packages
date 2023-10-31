@@ -3301,6 +3301,23 @@ Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
 
 Package: clang
+Installed-Size: 201192
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 17.0.3-1)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_17.0.3-1_x86_64.deb
+Size: 34214324
+MD5sum: 18e3d7850424a1b9f8319c323e5c0ba5
+SHA1: 2ec1a18b1f9c80fddb63c9c18c11f1a7f468acc8
+SHA256: 75f164450b1b9e30486aa1cd9a457d3843672d15eaf422822ecd6e056ba973db
+SHA512: 5885a61f95df4764497c74dcaae0521fa3dd71fc8207d57daec9c6278aeec86936c8535c735d957194d32bf10d71d49f45380c03a58cf63c66219724318a96b4
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
+
+Package: clang
 Installed-Size: 202740
 Maintainer: @finagolfin
 Architecture: x86_64
@@ -4510,21 +4527,6 @@ MD5sum: b1c5debec72de555549267d064ee8178
 SHA1: a62b3bf9f7bac596b3dd56203bf2867ca2786550
 SHA256: aa5aa3c13634c26ea11e4eb4506857a477eb067274632a26f51501b65eba73fb
 SHA512: f993dee318e9c9cbd390a772c693151d354d282406c17a44c6031dd6d7cfb60bc1773b1121a6601e73ecb3daaba7e9353d2bdcfbd107da47d647be7f713612e1
-Description: A debugger for the Go programming language
-Homepage: https://github.com/go-delve/delve
-
-Package: delve
-Installed-Size: 14720
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: x86_64
-Version: 1.21.1
-Depends: golang, git
-Filename: pool/main/d/delve/delve_1.21.1_x86_64.deb
-Size: 4101792
-MD5sum: 463b22c0b930841d19aec1f6e3b16503
-SHA1: 78d2b9f57bf0aa5b67010b386257e863f6f51598
-SHA256: 11216b2f19755caf45152710c7ae6a2a3d3ec542b7789eb0fd3c08c3eada4bc0
-SHA512: c3c9aa1b4f58102ecc00709d8d883074a4648a77dc128b2f7172e37376bbd1f856c6d49c909f95263798fe0a327ba83c741bdbbc7466303fe749b0c601459994
 Description: A debugger for the Go programming language
 Homepage: https://github.com/go-delve/delve
 
@@ -6458,6 +6460,21 @@ Description: Static libraries for finch
 Homepage: https://pidgin.im/
 
 Package: findomain
+Installed-Size: 16576
+Maintainer: @termux
+Architecture: x86_64
+Version: 9.0.3
+Depends: resolv-conf
+Filename: pool/main/f/findomain/findomain_9.0.3_x86_64.deb
+Size: 4455940
+MD5sum: 874b11d51f05c20e292dc68aa9f58219
+SHA1: 9d30950a1d8e65ed978889643f991092e6a52973
+SHA256: f06d933e8d2b7a7237857b2abb1e4ef2a0cad736bf68c0231c1a9dfe0e487f5e
+SHA512: 55c7fdabfc93d976b87e7f310d574379e5934d5575c34ce0ecac7cf3e7a5b27f0320db7a3263daf774f651aa8090a33b86368eb1d10bd422863b3a828faa3d97
+Description: Findomain is the fastest subdomain enumerator and the only one written in Rust
+Homepage: https://findomain.app/
+
+Package: findomain
 Installed-Size: 16668
 Maintainer: @termux
 Architecture: x86_64
@@ -6621,20 +6638,6 @@ MD5sum: 2fcd18766820223ca83ca3e0ed4b399f
 SHA1: c854ece5a5ecae86c148b2f6c4a109c98e0d6a57
 SHA256: d78c3a3dda3d8f9ff8ab2406b9030438f51e52a93649a7d760550adcd1f00b25
 SHA512: aa76f78dbf4d110611c4f0928092178fe03d3349d89212a8be5632cbd8223aea86418b46ca27b78f3687e89c1d012a1374813dbcec7b6d788bd979a8f39aff0b
-Description: Command line tools for fly.io services
-Homepage: https://fly.io
-
-Package: flyctl
-Installed-Size: 55808
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Architecture: x86_64
-Version: 0.1.112
-Filename: pool/main/f/flyctl/flyctl_0.1.112_x86_64.deb
-Size: 13129072
-MD5sum: 267aa0e3407bbf8888221288cb7b8d9a
-SHA1: 83f4218641cb018dfe51727e84996edddce74f0d
-SHA256: ae333d9be7e90bc5eb9d2bf98d301032b788c8bda226b9ba7acad6e092d8e422
-SHA512: 95c7c68ec0c2374ee5933246e7e85cc4dcab1ff7f7f06d274956f9a189dfe0442e3ad0bfff8fb651b0ac06f98d4cb630fc51c601f449f427d70e404e765edcfc
 Description: Command line tools for fly.io services
 Homepage: https://fly.io
 
@@ -13318,6 +13321,22 @@ Description: A host of helper utilities for the java.lang API
 Homepage: https://commons.apache.org/proper/commons-lang/
 
 Package: libcompiler-rt
+Installed-Size: 33516
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Depends: libllvm (= 17.0.3-1)
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_17.0.3-1_x86_64.deb
+Size: 2929044
+MD5sum: f0d4f0115a0850fad52cef1b74d6b27d
+SHA1: 6bff5192c82888a0600f27b5c0718135f3ec9807
+SHA256: 0c1ab8b8d0ae26de4d4b1c069ceee0d7fc84621667be4445aa0535bd8d080530
+SHA512: 0fbe71dcb5e2c0167153902b2ff1bab219e295c2ef2d4417dc1ee2b790106f0de946c29553fd48086b25cf80f369cd995c431761ed0839236fc4cebcba090c14
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
+
+Package: libcompiler-rt
 Installed-Size: 32928
 Maintainer: @finagolfin
 Architecture: x86_64
@@ -15019,23 +15038,6 @@ SHA512: 8f547260659c2f11a72eea3b44dfd9f064d12a76b670bc874fca6e3c945badbeb163cf36
 Description: High performance, open source, general RPC framework that puts mobile and HTTP/2 first
 Homepage: https://grpc.io/
 
-Package: libgrpc
-Installed-Size: 20464
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.59.1-1
-Replaces: libgrpc-dev
-Depends: abseil-cpp, c-ares, ca-certificates, libc++, libprotobuf, libre2, openssl, protobuf, zlib
-Breaks: libgrpc-dev
-Filename: pool/main/libg/libgrpc/libgrpc_1.59.1-1_x86_64.deb
-Size: 4293392
-MD5sum: 77122700ea3d8d96c0e1b5ab30559809
-SHA1: e244317b4e72aea4238462fabd3932e561d81142
-SHA256: 05adda7c341b2adea30779c33cb290f6d4dacd7cd57fbf743ded7a9553aba32f
-SHA512: f238b5652a04a2cb09cf92ceca6e9a0229c170de5429e18686ab1f35a22cc3299d2e1c15eaa3e4e7a86a82c387c18fbbc20f3a2abd04b8cbc5430dbab91aa37b
-Description: High performance, open source, general RPC framework that puts mobile and HTTP/2 first
-Homepage: https://grpc.io/
-
 Package: libgsasl
 Installed-Size: 572
 Maintainer: @termux
@@ -16048,6 +16050,24 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
+Installed-Size: 147756
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_17.0.3-1_x86_64.deb
+Size: 27661832
+MD5sum: 279148b79c79ddeee68ea4ae14a8214f
+SHA1: 94b14219aa4791ebcf774e7be2f7b91cd1bcdf33
+SHA256: 58de56906ee8520eb73fcfde05745e9d3636ed22400a7270de06b2ecc1f11d8c
+SHA512: 4e3578c033c074927f53dddd8bc99b546cffda1d2e215a3c42c4e7f0516ce60dfae3ccce2399da178f699e403f2e667c7c4be7e660c27f1c9276f91d119ff162
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
 Installed-Size: 148452
 Maintainer: @finagolfin
 Architecture: x86_64
@@ -16063,6 +16083,21 @@ SHA1: 55d105ae0290d065b555fb66735017738cdbbded
 SHA256: b7f9e0f968f5a36d41309421bb63706f5e0d08e80aade0581a656d185154e9c5
 SHA512: 54f5b1c145cd50154593640c44f0e8c426b6bfd05e99c204cd7a87e22755da1a61bd0c1a74726d9665382b9d142af4736bdc499ede60a47e87670e72ca58748d
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 678996
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Depends: libllvm (= 17.0.3-1)
+Filename: pool/main/libl/libllvm-static/libllvm-static_17.0.3-1_x86_64.deb
+Size: 73002548
+MD5sum: a2dcd8be798f1f2e0bab7934723f6e7b
+SHA1: 5e6a0c6828d1ee25b7ab6d04730354611cc1d66d
+SHA256: 9f887a04bc56ae73bc8ae4eb2ce42bc785a185013937b223a55c757d6aaccd2e
+SHA512: 4595c2b1e97fab0c74e6c71e962c7a9ed32e4b1b290856dc2f72595862d772412afffd9e5d9de88b1e819dda021eb3bd9c63af66c21b0273955a0b7d92b65b61
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -18484,6 +18519,21 @@ SHA256: 8cdc50ae2aa499e9da5c071ce3feeee97d2f100531fe10a1f3fe2a7bdadbffc6
 SHA512: b3f6cb7bcf8292366bfdd5efd67e98e5ed4350e3f414ffea0d7f95a50da50e722c5b3321bd3b4998ca1ae899fe6f737f9aeada2979afc98da2448a8bb09416a8
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 5860
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Depends: libllvm (= 17.0.3-1)
+Filename: pool/main/libp/libpolly/libpolly_17.0.3-1_x86_64.deb
+Size: 1373540
+MD5sum: 52353aa917aaaab548838c0cef485d8d
+SHA1: ba505dc3ab7b813b5dfb8ead252af69c0e3f4400
+SHA256: de8a8f14817684ac5e2a161b03c60d6357159a80844933c84d1630a37dba76a4
+SHA512: 1de1926fb1445d56c0625a85aa74fed2f80170e397740f9a28a35c8d4551955073a23732e94e8cc5394895c53adab6181dfd268117fb320c5674c47d175e7116
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 5912
@@ -22584,6 +22634,21 @@ Package: lighttpd
 Installed-Size: 1028
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.4.73
+Depends: libandroid-glob, libbz2, libcrypt, openssl, pcre2, zlib
+Filename: pool/main/l/lighttpd/lighttpd_1.4.73_x86_64.deb
+Size: 285848
+MD5sum: c170fab0ed1a8d422f5e08c58d63b218
+SHA1: e66b69b3ab5c502ace9991d48b7a86e78d2a022d
+SHA256: 992913309c25ed2f90a1effefedd6e97e1954d1a86141e146357258b434c8bc4
+SHA512: 735e8378d51b61bcb125036782e945d4de2e2882afc717299f727d9dc8a8d6d1a005a207fe867be9db0fc12487eb764b4b5bebf7633d1ffcee42f937f2ad6481
+Description: Fast webserver with minimal memory footprint
+Homepage: https://www.lighttpd.net
+
+Package: lighttpd
+Installed-Size: 1028
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.4.72
 Depends: libandroid-glob, libbz2, libcrypt, openssl, pcre2, zlib
 Filename: pool/main/l/lighttpd/lighttpd_1.4.72_x86_64.deb
@@ -22746,6 +22811,21 @@ Description: A low-level build system, used by the Swift Package Manager
 Homepage: https://github.com/apple/swift-llbuild
 
 Package: lld
+Installed-Size: 16676
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Depends: libllvm (= 17.0.3-1)
+Filename: pool/main/l/lld/lld_17.0.3-1_x86_64.deb
+Size: 2344396
+MD5sum: 5a2e2fb0cad1814fccc4e5c991360720
+SHA1: 95083e2b8a836f0940816e1d1935286ae7ae0015
+SHA256: 0f6a172549927aeccc20b6b3c0336c370509a5de8f4dc713cd917d44e434565c
+SHA512: d25838b32472a3cabec226d1ff33d50e25ea199d9906a1c00a2d6b6d586ac82fb84511679a8c49242f1f97d6fdfb966af6978b129d00189a016f5e8d396ce34d
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
 Installed-Size: 16748
 Maintainer: @finagolfin
 Architecture: x86_64
@@ -22758,6 +22838,23 @@ SHA1: 98a521973dff35f342822539a33c205935ebd5fe
 SHA256: 2746e3afe028c6861fd68afeb3e9fc15004e85bd06ae95b5f19e0e6c2c896148
 SHA512: 8da75bc088dba34adb17001eee3720fce1b8de1eb6b33de0deb16be4c2d89e102696a99c94a58bd9fff5f0c2bd1aa972011fb3ac9bef41f0e48e418276336983
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lldb
+Installed-Size: 23584
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Replaces: lldb-dev, lldb-static
+Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 17.0.3-1)
+Breaks: lldb-dev, lldb-static
+Filename: pool/main/l/lldb/lldb_17.0.3-1_x86_64.deb
+Size: 5056856
+MD5sum: 0d6be428969d72dfb08848b427aa46ba
+SHA1: 1dfee992b3c9735548f4802e538063fcc4a6abce
+SHA256: 81aa2358fbd8fce5dbaa9d4c64bfee39bef3ee81aa07ea28315182b45bf6116f
+SHA512: 6ffb7adac5a1719e55bbc3e731cf4e77cf6775d785782e8d1a2ba7faadc7efa8d267d9732ecbe2754591fddf89fe55d785aa41c5d4c829411b86fcbd8beadc8b
+Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
 Package: lldb
@@ -22775,6 +22872,23 @@ SHA1: b1485ede3f63b13a7c3152e9cabb66cb5cff3f9c
 SHA256: 26523ae1c1ad35b01207718dd1477a79bbc3a209e0a2fdf03b7a2d4f8b29a42d
 SHA512: 694e204144390bd11c754b39dd69fe8d06b9484a7fa7d684e40ac39f2ea9ab52a9662a39eb5a7de1aa026201cded9e3ab7e2e0f493b420d6ac12554ba8704c69
 Description: LLVM-based debugger
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 105832
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 17.0.3-1)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_17.0.3-1_x86_64.deb
+Size: 20141516
+MD5sum: 5591c2bafd8a3398e7f562b1ce46e1c1
+SHA1: 2da8aac911fd202b2421afa73216c6b1311a6d81
+SHA256: 8728e7ce04d6f68d9411552f095317a7ae54077904238896f8160ac54316936b
+SHA512: 047d53217841ec021443bcf3bc56032023564f6f0ab47854c9dfa258adc7f015b32f3d9a8d273b3a3fde051d95ef1dfa1a688503fd3887e8784d0e10a99b7ee2
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -22854,6 +22968,23 @@ Description: MinGW-w64 runtime for LLVM-MinGW
 Homepage: https://www.mingw-w64.org/
 
 Package: llvm-tools
+Installed-Size: 11616
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, libllvm (= 17.0.3-1)
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_17.0.3-1_x86_64.deb
+Size: 2322228
+MD5sum: fe157033404cda5f1ae91a7bf98bab64
+SHA1: fb19eacc6bdd6c84294c1e0b82c82e84c5cc7ef0
+SHA256: 52c3bc65f831d627eee2de9015fee0e8924d111b1f54f6f8a507c040e23c7c50
+SHA512: 66983120ae80685cbbf5357fb4919fff5a0aab198fc7de8424a4184e2fbb0a451462f48e551a222371f61e1a33fe11ecdd9a2fbea05b00fafafe8aa884f701fb
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
 Installed-Size: 11652
 Maintainer: @finagolfin
 Architecture: x86_64
@@ -22868,6 +22999,21 @@ SHA1: 96cee8a48730a71ac9173796db5b00c3d24ed11e
 SHA256: 4a8f5eb75e5db5fa2b2af8f5d9acbed7d1d7c42d82a65595672782525c222270
 SHA512: 8a2ad98b97a95ab5bcd36c1e9a9bf55b2275ba5ea9c9dbe73f5bb15752dc6d37972bdbd1db3198b188117b9e656b01146b5f006fc4d4bf20e1f087c8520e25e9
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 108
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Depends: binutils-gold, libllvm (= 17.0.3-1)
+Filename: pool/main/l/llvmgold/llvmgold_17.0.3-1_x86_64.deb
+Size: 27744
+MD5sum: cae26fb6302f43d0480610294eba5332
+SHA1: eb14ef16bed4dc3e2dab573b3997e781edf140bb
+SHA256: 270d6791ab5c70823197620126cb8a170695d7b07521871e3b26589a8357003a
+SHA512: bb98c0ba3919052d3bcfd1bcdf34f44f814d1e8cf307f9b40fa2017db17876cd2e4f0013245b2667a03c4cb7fbe5da478ea954860ad44f1e5cdb05f9bb5ed479
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -24612,6 +24758,21 @@ SHA256: 989565efaef4dbf77ca1593e714f6e990913cd25eb60b6b33e48a77c6bc8bef5
 SHA512: a28d7ed82edac72419a7ee4a735e5d3c9bb335261fa8e95bdbc74320a6d9d1e5d58c4b2527ee14d9aa71743e84cca68069d3bbd3960b65753b9815ecd9e6e6f8
 Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
+
+Package: mlir
+Installed-Size: 278708
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 17.0.3-1
+Depends: libc++, ncurses, libllvm (= 17.0.3-1)
+Filename: pool/main/m/mlir/mlir_17.0.3-1_x86_64.deb
+Size: 39816136
+MD5sum: 3605fc244bb0d9a1b5de69af1f9f121a
+SHA1: 6b1dca5129226b84b6ef6ff8219e1032b1a5749a
+SHA256: 2c30bd43045a7a66923a5bbf7213c5c228094b25ee32991df425652da355f2a8
+SHA512: 44ca7c0238c076f005e30bbda5fe430a135a884c9fab4a0efe8316aef51a1b07cc71a4a772646858d8d6dbec68ae5ce1ef819effe1c44523951cd24213559fbc
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 280476
@@ -32504,6 +32665,20 @@ Description: A simple heat transfer simulator in pure Rust
 Homepage: https://github.com/file-acomplaint/simuwaerm
 
 Package: sing-box
+Installed-Size: 26044
+Maintainer: kay9925@outlook.com
+Architecture: x86_64
+Version: 1.6.0
+Filename: pool/main/s/sing-box/sing-box_1.6.0_x86_64.deb
+Size: 6659412
+MD5sum: b3f61fccf55892db857fe870c3a738a3
+SHA1: f303e53934785c77505c88ea9d9e6c5102c1e666
+SHA256: f7099d0225c21cc0ce871aa40cad80146705ba5f60d0e603990f1dbc2c5460a3
+SHA512: b92ef5790e083e88550477dbe6268caa54ae20bfdbc69aacf06685414ffe60ecdb773e7063a2c293ca6f91fa066b2b36ab48a76bfdda8eeba8c3d3342acb1374
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
+
+Package: sing-box
 Installed-Size: 25840
 Maintainer: kay9925@outlook.com
 Architecture: x86_64
@@ -35659,20 +35834,6 @@ SHA512: f8342bf53c86d402b71fa55247c111a1cb9c454d892f1f24c24110efd6c07a8f5256fac4
 Description: A new markup-based typesetting system that is powerful and easy to learn
 Homepage: https://typst.app/
 
-Package: typst
-Installed-Size: 28128
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.8.0
-Filename: pool/main/t/typst/typst_0.8.0_x86_64.deb
-Size: 9992368
-MD5sum: d2d0e4bdc70c97621fd28fbd768e53ec
-SHA1: 0dc6f0c7e072634a268f6659d5afa4790957966d
-SHA256: 44231a2d4bbcffae82f8a75cee079eccc2d2d64db11b71d03f5daa3146331c63
-SHA512: cefa4ed825bc5bbaab0d3273f602eb34328471e764371b81fe8e15e9ab9165fa65547665368b9d8d4041cdf4328b63ca5c6b20cbf332b3021e43df23b9fdd23a
-Description: A new markup-based typesetting system that is powerful and easy to learn
-Homepage: https://typst.app/
-
 Package: uchardet
 Installed-Size: 52
 Maintainer: @termux
@@ -36679,21 +36840,6 @@ SHA512: 6e27f33ec1299737655227a862db084abbf6c3ab89671168a452fbc3ab507bfa0e80690e
 Description: A popular libre and open source media player and multimedia engine
 Homepage: https://www.videolan.org/
 
-Package: vlc
-Installed-Size: 12848
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.19
-Depends: chromaprint, dbus, ffmpeg, fluidsynth, fontconfig, freetype, fribidi, glib, gst-plugins-base, gstreamer, harfbuzz, liba52, libandroid-shmem, libandroid-spawn, libaom, libarchive, libass, libbluray, libc++, libcaca, libcairo, libcddb, libdav1d, libdvbpsi, libdvdnav, libdvdread, libebml, libflac, libgcrypt, libgnutls, libgpg-error, libiconv, libidn, libjpeg-turbo, liblua52, libmad, libmatroska, libnfs, libogg, libopus, libpng, librsvg, libsecret, libsoxr, libssh2, libtheora, libtwolame, libvorbis, libvpx, libx11, libx264, libx265, libxcb, libxml2, mpg123, ncurses, opengl, pulseaudio, samba, taglib, zlib
-Filename: pool/main/v/vlc/vlc_3.0.19_x86_64.deb
-Size: 2938940
-MD5sum: 4430a2adc63fcc5ae69c338865478475
-SHA1: c7b2e585cc133090cf12a71303749d7ebdaf08e5
-SHA256: 41ab8a359dc758bd3a921a52df0f04fa332c75d26c11535d2222af8d75bcb8c5
-SHA512: 7d65244c4c300197283899d63ebbf6ede12c8af014f37fd84d7a727820b8bda87d32f7f7f96bc12491ea2c932a99664c98146c62675a45d6e5c6d943a1af34d6
-Description: A popular libre and open source media player and multimedia engine
-Homepage: https://www.videolan.org/
-
 Package: vlc-static
 Installed-Size: 1516
 Maintainer: @termux
@@ -36706,21 +36852,6 @@ MD5sum: 9e50467cd8c6d99836caff7399213029
 SHA1: 3fbce74ef04f3d5c6adcea3661befdc792ff6566
 SHA256: dffe13c5dbabfe51d3652b157ddacba44c6b85e15b644df57dc5dac8b3c8f04f
 SHA512: 312564c03d8ffffceb09d13b577d03699d4c44cd98e923c05ab1aa01ee7d0809cb5c6d8e4535fd1ea79d780c8299eb0df89e172747757748d5fb340ccdea5dcc
-Description: Static libraries for vlc
-Homepage: https://www.videolan.org/
-
-Package: vlc-static
-Installed-Size: 1516
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.19
-Depends: vlc (= 3.0.19)
-Filename: pool/main/v/vlc-static/vlc-static_3.0.19_x86_64.deb
-Size: 16844
-MD5sum: da9d9204d3efefc6099b839403a5c900
-SHA1: 5a050ecdb24ad0762d9749c960139e7eb7fb9412
-SHA256: c9dc262ef6a23cda99ec3b14796dcd9257ac9f1a17e6091907103e828dcfe0ee
-SHA512: 87e19de8e322e96561bae02ab3142956b7f3e9d8c4d09c55dfb7f4d408bc23244da7443de2f7f1e608845f6ce81fc93f2744893be2b728d71c9d2ea3a62594c8
 Description: Static libraries for vlc
 Homepage: https://www.videolan.org/
 

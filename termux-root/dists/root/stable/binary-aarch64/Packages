@@ -117,21 +117,6 @@ SHA512: d4453655a52e1f1f50f0bc2e104b0a4a9a6df5f34bae1164eb030fedbb9d601eb1d7dc55
 Description: An open and reliable container runtime
 Homepage: https://containerd.io/
 
-Package: containerd
-Installed-Size: 102328
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.6.21-1
-Depends: runc
-Filename: pool/stable/c/containerd/containerd_1.6.21-1_aarch64.deb
-Size: 22483568
-MD5sum: 85671baffa31b935895b2fac1f4543e9
-SHA1: ec0fb0a7994093eb2c5b17bfbca6ebaa8f368b7d
-SHA256: 3ca7175a3ffd0b34c99583a3a26ef98f3d5526a82b174fd0d085e0b01452095d
-SHA512: 1a8e1beb27f4cee7822773519a02eebfa66fa442d9a943d06ff828efedd13f119c57d7c845ca9abc81834dd56840ae94c73dbe425c506e99702b698c6602a59c
-Description: An open and reliable container runtime
-Homepage: https://containerd.io/
-
 Package: cryptsetup
 Installed-Size: 428
 Maintainer: @termux
@@ -188,21 +173,6 @@ MD5sum: 0361c965aa2fc6a4298de1e62f31c79f
 SHA1: e149cfb8457816760768012164816cd4b53c3196
 SHA256: 800d9458f7a2b71e46323edbf5324644ee931b416731c34072c20d2a9d02a444
 SHA512: c74c49d66effeb6db8296f2dfdea2b59a230e30e984da57bca344cd45aa575befb83b89ccf3504c2fb590f76ab1e85e1e541b9666332eb67251e6bc965b65e1d
-Description: Set of products that use OS-level virtualization to deliver software in packages called containers.
-Homepage: https://docker.com
-
-Package: docker
-Installed-Size: 95632
-Maintainer: @termux
-Architecture: aarch64
-Version: 1:20.10.24-1
-Depends: containerd, libdevmapper
-Filename: pool/stable/d/docker/docker_1:20.10.24-1_aarch64.deb
-Size: 19040300
-MD5sum: ea05338fbaa50330174d49aec2455459
-SHA1: 15f0f8b0ef5f723fb25077f9068cec4eebcf36c0
-SHA256: 737dc2b549cc9f7d2056a273fcc0e5ccee8b50942e92f272747c051eb1d0b1f3
-SHA512: 1ac66f9b0968b5c3e4d9de5ed3e2c7ac4571a1682f84892db660ef2094706f68376cd68d1c10a41079f24c825e03130009e6f2652c78188abc674e7c3637a94e
 Description: Set of products that use OS-level virtualization to deliver software in packages called containers.
 Homepage: https://docker.com
 
@@ -1046,19 +1016,34 @@ Description: An offline Wi-Fi Protected Setup brute-force utility
 Homepage: https://github.com/wiire-a/pixiewps
 
 Package: runc
-Installed-Size: 9252
+Installed-Size: 9256
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.1.9
+Version: 1.1.10
 Depends: libseccomp
-Filename: pool/stable/r/runc/runc_1.1.9_aarch64.deb
-Size: 2427056
-MD5sum: 9beaf924f5409be4ddb71a28c3b0db85
-SHA1: 34cfaa5a72fb88b917ae3adb172cfc8ed6090762
-SHA256: a8273e449e9cac9886ff77ed87d8d7dc733329c240b2d3933e1f1fa9c2020f07
-SHA512: d536c73f30f4d85ea2deefb3d93a705481f69953b4da696c10a908a5ce764f79741d5ed6358ee6f52077b9b43ea41bf52170baeb8d832ad3c38d03bcd2a2afaa
+Filename: pool/stable/r/runc/runc_1.1.10_aarch64.deb
+Size: 2429172
+MD5sum: d8e9ea6a6fdedb0dda2fe7a0ae37a1bd
+SHA1: e57380b3097ab08221dfe9a2bd0a874204a78df2
+SHA256: 45a9f84b70db97a6b6f20b2ff07f362137c9c3444987874fdf4365b60f89b709
+SHA512: 0b89d62f487b80ac622e2e5d668e264b564ce6ee11560c67e7397497a989b1ee09aae1ce78f57331baccf4fdcf318216935e4175a2cc0012805e7b67108e3645
 Description: A tool for spawning and running containers according to the OCI specification
 Homepage: https://www.opencontainers.org/
+
+Package: squashfuse
+Installed-Size: 356
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.5.0
+Depends: libfuse2, liblz4, liblzma, liblzo, zlib, zstd
+Filename: pool/stable/s/squashfuse/squashfuse_0.5.0_aarch64.deb
+Size: 48072
+MD5sum: 4923f8981db7bfabbd9298a1eff093bb
+SHA1: 06d03849a0f5d924bd6b4c5a9a065de65f078609
+SHA256: 77485df2dcee16666e185ab9f23123b6b6e4ae0360fac00206d66af8de2e50dc
+SHA512: 74066ec0594e1a60ba2780190d1d6ceb52a25a6df8f03ac64e3fd6c6fcb442d738dae838f3e920288ab747faed38510d74c614a9072e9775f5d4dd9d9d98bbf9
+Description: FUSE filesystem to mount squashfs archives
+Homepage: https://github.com/vasi/squashfuse
 
 Package: squashfuse
 Installed-Size: 336
@@ -1073,6 +1058,21 @@ SHA1: 5fd3e393403e37ace0cb79de9c520c7b7ad7d19d
 SHA256: 2b48a5994b03ac00292b5d58dff3d05a3a52527de5bf9171bcdff8f58d4686e1
 SHA512: 5093e0074ef04866436865286a7286104d872af3f553db26b75763f5196b99eaa89e2f2f93a525abaa372d4b79bf5d34d47317531527a04387a9deab96005585
 Description: FUSE filesystem to mount squashfs archives
+Homepage: https://github.com/vasi/squashfuse
+
+Package: squashfuse-static
+Installed-Size: 200
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.5.0
+Depends: squashfuse (= 0.5.0)
+Filename: pool/stable/s/squashfuse-static/squashfuse-static_0.5.0_aarch64.deb
+Size: 22300
+MD5sum: 8e7e2600a11fe6be03e3ee3933db8c74
+SHA1: 4dc6a1e2b67527c6b718003c7dedd6819acffade
+SHA256: a86788b76b3f099d8ec50f757df8cadb2e8bbcaf0b8867fa96f45a0258dcb116
+SHA512: 7df4b44a2764abb5cddea055db69e3cf410cae5ce0c8ebb5c7c447009476276760c3e0fa341dae95dc05c0c03a82789a026feff486d8f37b57635d4cf463f8d9
+Description: Static libraries for squashfuse
 Homepage: https://github.com/vasi/squashfuse
 
 Package: squashfuse-static
@@ -1241,6 +1241,21 @@ SHA256: 228083e174df4380928aa29538e9ecdb82476ebc043b66ad029231e95f9053f8
 SHA512: fdf6148bfdc14826b634f7f8e8e5311c2f1315bd647f877fb2eb27cecfacdf4f2297d6e741051b11ef4e0a459563f5a118239a6026bb0864e88a615f91a710aa
 Description: ifupdown integration for vlan configuration
 Homepage: https://salsa.debian.org/debian/vlan
+
+Package: wavemon
+Installed-Size: 184
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.9.5
+Depends: libcap, libnl, libnl-cli, ncurses
+Filename: pool/stable/w/wavemon/wavemon_0.9.5_aarch64.deb
+Size: 46368
+MD5sum: c350f355ef80ac08b4dd94763c637d84
+SHA1: 66a376ea788cbdaa997cf61130aba756dea661ad
+SHA256: d76f8d004c51a9359674cbf23116a60928cea52870d42a07547fcda5efd19643
+SHA512: 71a71f449ab3b04a38e3367122bb796e6287a77219583c35c49ea476118782b3000f2a0402b8ce1f2a746f50a5e871c848c0115e00b00cb1e42a85933ababb55
+Description: Ncurses-based monitoring application for wireless network devices
+Homepage: https://github.com/uoaerg/wavemon
 
 Package: wavemon
 Installed-Size: 180

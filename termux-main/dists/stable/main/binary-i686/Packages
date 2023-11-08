@@ -8770,20 +8770,6 @@ SHA512: 17d9d64c01c4b67dc6828f2294ee731bc4e91f872f4ac08d3649f5372e5ed800c385c0d8
 Description: Ping, but with a graph
 Homepage: https://github.com/orf/gping
 
-Package: gping
-Installed-Size: 2380
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: i686
-Version: 1.14.0
-Filename: pool/main/g/gping/gping_1.14.0_i686.deb
-Size: 761144
-MD5sum: f954c0bdfa4faa9a51ae2da029414694
-SHA1: 964921b6d07a4ae26848bd216307186396379b3d
-SHA256: 456de4e30c31cefe13c31cab37e479709f1b4e1eefe9a3ad6dbf4f8163b86b00
-SHA512: 8601abd7d92e415ea18689c89acdff3a114490db06c35a620a2215779a41879613ade7d9a150c6778b7f5f3d2599cd94fceec771ae0f4207d66550a52e6ebf98
-Description: Ping, but with a graph
-Homepage: https://github.com/orf/gping
-
 Package: gpsbabel
 Installed-Size: 1292
 Maintainer: @termux
@@ -16369,6 +16355,22 @@ Description: Matroska library
 Homepage: https://dl.matroska.org/downloads/libmatroska/
 
 Package: libmaxminddb
+Installed-Size: 104
+Maintainer: @termux
+Architecture: i686
+Version: 1.8.0
+Replaces: libmaxminddb-dev
+Breaks: libmaxminddb-dev
+Filename: pool/main/libm/libmaxminddb/libmaxminddb_1.8.0_i686.deb
+Size: 11496
+MD5sum: 2329fb61f947c241922e52ceafb9e3ef
+SHA1: 475c8a255e00481dc77ac2fae5dbc8ba23e6110c
+SHA256: b7935974a220e774a2a149ca397967fc9c5014bfef58ac26360ba7e62679f9d4
+SHA512: ed2ae2af20bcbf3832bad87ae1ca08d0d4c3cc7169c59a75290ef229a0982cc1a270f5b6d574d7f684d69a039bd7946a7712e4d975294e3942a5141863821fbe
+Description: MaxMind GeoIP2 database - library and utilities
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb
 Installed-Size: 108
 Maintainer: @termux
 Architecture: i686
@@ -16385,6 +16387,21 @@ Description: MaxMind GeoIP2 database - library and utilities
 Homepage: https://dev.maxmind.com/geoip/geoip2/
 
 Package: libmaxminddb-static
+Installed-Size: 100
+Maintainer: @termux
+Architecture: i686
+Version: 1.8.0
+Depends: libmaxminddb (= 1.8.0)
+Filename: pool/main/libm/libmaxminddb-static/libmaxminddb-static_1.8.0_i686.deb
+Size: 26160
+MD5sum: 2a33edd7647ff335d7e8c89daee8b4de
+SHA1: 0bc185eca13f9ed8b626a4490691a22b02e6727f
+SHA256: 819d9d698d190a1ecd5dd39d6106f7e6af8027d67a08d4ba95cc67d4ff2bcfb3
+SHA512: e51e7ef5309eedf7c8be992b88a5d56f109456a5ef51c5bcb3567fb7e0db512d727534d6f0b3515b9c265e73df32b0f0e7b6f4e3ef74f7a335ced499854050c8
+Description: Static libraries for libmaxminddb
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb-static
 Installed-Size: 96
 Maintainer: @termux
 Architecture: i686
@@ -16397,6 +16414,21 @@ SHA1: 136d793b124da4371c87c381d71a2987790ea0dd
 SHA256: 3208793dcf41c81831d22b30d40591bec9abbbc22503104c3fc2d4dbbb8217e6
 SHA512: 25d6fabb5874a6f96a3e8a75bbb170af2b48fc523a13df31f8dace98caf02b437a9d781d2a8aacc9f4fc31585556948bb09f15c6947aaa869703225df8eaf123
 Description: Static libraries for libmaxminddb
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb-tools
+Installed-Size: 44
+Maintainer: @termux
+Architecture: i686
+Version: 1.8.0
+Depends: geoip2-database, libmaxminddb (= 1.8.0)
+Filename: pool/main/libm/libmaxminddb-tools/libmaxminddb-tools_1.8.0_i686.deb
+Size: 6344
+MD5sum: 08e4bee8b1a696aac286e8feaf8e7453
+SHA1: ad16998d308376b1975a3b8c60752a22be51ce5d
+SHA256: ad7d2b62aec9814a700c7050ef2972c39e42239f4aca95afa0a084c68442c087
+SHA512: 2508d4b0459730b15d609bf91d5e78b3f8dfbe92e1a8d50321f55e19f153b0e37b1ee8da7e67a923373a5ecd267dfbea7b212d736b62132ab08299db3456f4bc
+Description: A geoip lookup utility for MaxMind DB
 Homepage: https://dev.maxmind.com/geoip/geoip2/
 
 Package: libmaxminddb-tools
@@ -31519,17 +31551,17 @@ Description: Counts physical the lines of code, blank lines, comment lines, and 
 Homepage: https://github.com/boyter/scc
 
 Package: sccache
-Installed-Size: 15700
+Installed-Size: 15704
 Maintainer: @termux
 Architecture: i686
-Version: 0.7.0
+Version: 0.7.1
 Depends: openssl
-Filename: pool/main/s/sccache/sccache_0.7.0_i686.deb
-Size: 4780352
-MD5sum: bb177f9c47305f8371efd512fe29931b
-SHA1: e39aea164b38dfede370e18e42e635cce0c6d2e6
-SHA256: 85d2f40d5442a37a187e359a1e41ae45b4775d246d69666498023952b53661c2
-SHA512: 19845089c40f628ddbd20d9ebf4dfd5161957bc373d6025ca9526dadfc37730055bd58e4c67a3799dfc1f29caee1ffc140cf6c3c2c0421cdfd0e5232b4a01549
+Filename: pool/main/s/sccache/sccache_0.7.1_i686.deb
+Size: 4782948
+MD5sum: fb5cec5e49f85fdb3bedac520ba331eb
+SHA1: e0b9e32e4cbc4a9425171e3afb3bdc2d93c72d5e
+SHA256: 7fad836262c179b372285a0433a9f6c9fdcba3c3fc7129807d294ec163f35f8e
+SHA512: a22d2707cbd60cce24ff78f44a77ddd94df6dc5650bc39bbb79536b259db1b65ee7550617df2c59797942c2773eb805d5949c21763a229cc41e7a6c26eb675a5
 Description: sccache is ccache with cloud storage
 Homepage: https://github.com/mozilla/sccache
 
@@ -37157,16 +37189,16 @@ Description: A command-line tool for converting XLS to CSV
 Homepage: https://github.com/libxls/libxls
 
 Package: xmake
-Installed-Size: 12768
+Installed-Size: 12880
 Maintainer: Ruki Wang @waruqi
 Architecture: i686
-Version: 2.8.3
-Filename: pool/main/x/xmake/xmake_2.8.3_i686.deb
-Size: 892828
-MD5sum: 4d9b0a64cafa269bf4667c00a1dedb6c
-SHA1: 691514405310002cd9dbb3410ce16d19c0ec7597
-SHA256: c4e030fae12a517b552b02805b0691f166e3e0d167323af8c86045543d470b7e
-SHA512: f4d692afb64094870600ef8b14895f498117cc20bee02707cebe0734db41b55662f3da2fcf71386f35d38dd7c2ccf8f49bff568927ac96bda0d47a8e77a6efd8
+Version: 2.8.5
+Filename: pool/main/x/xmake/xmake_2.8.5_i686.deb
+Size: 902496
+MD5sum: edef3a81db6bf242e70c6e70cdb0f2a8
+SHA1: c2ba36d38da0eac3f9ffd27c8b12421c0cc4a393
+SHA256: 2a27595c54e6b69fa12214f854fd5015ade3ab7a7b4c4c3ead97bf11381a8d03
+SHA512: 1874a5890fa2e193e90d60b8ad22736ec8b6605688166c1b7141acd8456e10fed48938d0921766db61ce28f7c255bed033c2141b002758176bc0c9037975850a
 Description: A cross-platform build utility based on Lua
 Homepage: https://xmake.io/
 

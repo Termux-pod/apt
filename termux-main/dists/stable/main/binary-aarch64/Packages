@@ -208,14 +208,14 @@ Package: abootimg
 Installed-Size: 68
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.6-1
-Depends: util-linux
-Filename: pool/main/a/abootimg/abootimg_0.6-1_aarch64.deb
-Size: 7660
-MD5sum: be8133d46d8b0b3b652df1c731628b8c
-SHA1: 942e91bfbcf91e131d015d9c16603a3cd970ff2a
-SHA256: cf30108ba5a3b052643be60fc0b25a61da890defcfb19d2b20fe56fa7249502d
-SHA512: 7d6d9776b01873eab1ecfc73b4bd67c638f4af77b57e43e559d416ada29b9e307e489f084d984a70e64c11959038704b016cb51aab03479a7dca9f6fdbd9100b
+Version: 0.6-2
+Depends: util-linux, libblkid
+Filename: pool/main/a/abootimg/abootimg_0.6-2_aarch64.deb
+Size: 7896
+MD5sum: bde59e9feb17b332eda8859839935eae
+SHA1: 974a411ae45ce1fbc17632d8a5a4c2caab5ec44c
+SHA256: 004e07879cd395f45a70a2accf5e148f048cf6ce74a5a2201fa40cfb9c6dccb2
+SHA512: c861a76fd89a7765df6621d5c69b482a4ac5304ff0538db50b49848825a45fba094ea57f77692cc3170798e5bb772e16e0ff6e445caafbf2715e7344a61cda78
 Description: Pack or unpack android boot images
 Homepage: https://gitlab.com/ajs124/abootimg
 
@@ -11316,6 +11316,20 @@ SHA256: 0209bbabbcb656829be4122dfe0e88d24defbe9a53292d6b11a4ac6cb6bc9c27
 SHA512: c7dbdf5f44b2e5041c8b250a75f0ebc909dfc72aadad99301d14eff81ef8d66113b384f8ea6e9642cee70a93a0dfb3eb6521e5f5617d7d11f138a47d208fba73
 Description: A tool that optimizes PDF files for viewing on mobile readers
 Homepage: https://www.willus.com/k2pdfopt/
+
+Package: k9s
+Installed-Size: 80656
+Maintainer: Krishna Kanhaiya @kcubeterm
+Architecture: aarch64
+Version: 0.28.1
+Filename: pool/main/k/k9s/k9s_0.28.1_aarch64.deb
+Size: 15041672
+MD5sum: 7f19dc26c90d2c960dd8d19123d4bc4a
+SHA1: 4e4cfb60a3b3d7af646de76e956f442559b592b3
+SHA256: 942a17797c5d6fd04e9e6cfd0c25f41c78596d47922ff8645de0496bdece2889
+SHA512: 2f7ae94bc0416d1249c8638b8773732b376e329a547cc6daf280494b9aba9c1fcb4900f668e74a09a4b0f8f001b7b5ab65d4a1794617e894cf7223647237c4e5
+Description: Kubernetes CLI To Manage Your Clusters In Style!
+Homepage: https://k9scli.io
 
 Package: k9s
 Installed-Size: 80688
@@ -25363,21 +25377,6 @@ SHA512: 0bc5f6835800637c6012d8e9ffe647ed41e1edf410181c03b63505e133a8df039dc368b0
 Description: A standalone and lightweight web-based MPD client
 Homepage: https://jcorporation.github.io/myMPD/
 
-Package: mympd
-Installed-Size: 1256
-Maintainer: @termux
-Architecture: aarch64
-Version: 13.0.3
-Depends: libflac, libid3tag, liblua54, openssl, pcre2, resolv-conf
-Filename: pool/main/m/mympd/mympd_13.0.3_aarch64.deb
-Size: 690616
-MD5sum: 78ef70d8f00197f0dfd25d26cf022bbb
-SHA1: ced34ee7d2f0f87d961e10a8216e9099522a60bc
-SHA256: 08b7a4a7cb80a2ae18137886c04f4118441acc23798be3a46ea5f6ba3337befe
-SHA512: 397bb8aa8b4048a6ddf4a47a24e8cc6493f1094efae8691aba40183ce83530fd7b2b1dcbd5ebf5f478b26ca48da2dae9f66437ac3c3c96058f657b561012eead
-Description: A standalone and lightweight web-based MPD client
-Homepage: https://jcorporation.github.io/myMPD/
-
 Package: mypaint-brushes
 Installed-Size: 3836
 Maintainer: @termux
@@ -28765,21 +28764,6 @@ SHA512: 0bacfe42f3bc21e956aa726a7ff3606438bd8ba978736f165c38a5f66789766a32e7791c
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
-Package: pocketbase
-Installed-Size: 46876
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.19.3
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.19.3_aarch64.deb
-Size: 9314860
-MD5sum: 589a25980379db44a5bd2845ff8c7ee1
-SHA1: 9fe7b4abc40fb3fd291f18bce4af78f7227ff02c
-SHA256: 3391606e3a7261c42830a12bc08cc9b8b8238db685ea52dded299887d07098ae
-SHA512: 9f08c7b185c0c43bd23f25185a39767de2187b8f2c69781055665ababc65577ff828c5b8ab23e543e95bce7de75d72182bd280d5dfff97bd057913d311a75dcc
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
 Package: poke
 Installed-Size: 3168
 Maintainer: @termux
@@ -29209,18 +29193,18 @@ Description: Generic coordinate transformation software
 Homepage: https://proj.org
 
 Package: proot
-Installed-Size: 288
+Installed-Size: 296
 Maintainer: Michal Bednarski @michalbednarski
 Architecture: aarch64
-Version: 5.1.107-61
+Version: 5.1.107-62
 Depends: libtalloc
 Suggests: proot-distro
-Filename: pool/main/p/proot/proot_5.1.107-61_aarch64.deb
-Size: 83092
-MD5sum: ccd4c98414df5682d45f158be30ee896
-SHA1: 8d7422fb47423f061893477e2f935ebba8bae1ed
-SHA256: 4aa5b4b94213aaeb707aec9198e369626982a0764b57463bab38c0e6d708ad86
-SHA512: 69b2dc3ac87a199dad2a7f927fc759a9bb9e69aca6adaa5daf4f33261446fc3a988a3f990aa8572623eecd8d52b40fa7fd136510735e783c3423663dec5d2ef5
+Filename: pool/main/p/proot/proot_5.1.107-62_aarch64.deb
+Size: 84088
+MD5sum: 4dc0cc1030058480bc4a552513d3ca56
+SHA1: ad04023ac8533f02cf90891e13f42d0dcdc9c7b3
+SHA256: 34759478ce02dc7c8e03a482eaaa282f730c269ebea9eaba084e700423fcdf43
+SHA512: 2da478d40adcaf4e474c9a28fc6f6de0d33e7f5698156a63ba2d028e88b0c828bf5e14408973456e71df5d68c7fa7cbbfe78d0499a1250d4e53914067a5b8d54
 Description: Emulate chroot, bind mount and binfmt_misc for non-root users
 Homepage: https://proot-me.github.io/
 

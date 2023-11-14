@@ -3152,6 +3152,20 @@ Description: Static libraries for check
 Homepage: https://libcheck.github.io/check
 
 Package: chezmoi
+Installed-Size: 36216
+Maintainer: Henrik Grimler @Grimler91
+Architecture: aarch64
+Version: 2.41.0
+Filename: pool/main/c/chezmoi/chezmoi_2.41.0_aarch64.deb
+Size: 7665628
+MD5sum: 05055606fc7332588bc1758450e59f67
+SHA1: d9346e7c66ddcfa1d4329d4a7fccd197d3f7f1e9
+SHA256: a47d61d1bab1522b258c83d72a055e5eb605e3febdd8e654eeaf05380e0012bf
+SHA512: bfb81e7956f291cad08e79df9e6e8d24c997d7e84f844f49c51d2b3a0a4faaaedef622c0788914a63a05017cf345a3608470e11d6266eac1ba74797a51ef6df6
+Description: Manage your dotfiles across multiple machines
+Homepage: https://chezmoi.io
+
+Package: chezmoi
 Installed-Size: 35900
 Maintainer: Henrik Grimler @Grimler91
 Architecture: aarch64
@@ -3303,6 +3317,23 @@ Package: clang
 Installed-Size: 195816
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 17.0.4-1
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 17.0.4-1)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_17.0.4-1_aarch64.deb
+Size: 31564792
+MD5sum: fbff0c3eda3ecd8a08eac06fc23d17c2
+SHA1: b14e351305f6e19383fa37b640596c5915a6b966
+SHA256: 9ccd8b03025557ff8981341cd989a9874c750092c8b6c5db9de8ce624a972ef7
+SHA512: 2adc2a7a716214815942e474f3ff2f118b6f90c4bd359312b023f77db2ed307782ac4d977355e827824c6972ed2217d84b6f37fdcd9a2628d3e57890a4048d19
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
+
+Package: clang
+Installed-Size: 195816
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 17.0.4
 Replaces: libllvm (<< 16.0.0), clangd
 Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 17.0.4)
@@ -3447,6 +3478,22 @@ SHA256: 3cbf75804da1248a86b78245148ea4af720f4d8761a643ceb1d41c7912ecb255
 SHA512: a6a0d0c1f69a5ebb96d87f05c0ebab5246c9751f3fe8ba8cf84c64c5054700b006bc1775d08d6cc21fbf67635a7d72e03baee9e87f73471e952db164a25b3c41
 Description: A tool which profiles OpenCL devices to find their peak capacities
 Homepage: https://github.com/krrishnarraj/clpeak
+
+Package: clvk
+Installed-Size: 72500
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.20231113.173330
+Depends: libc++, vulkan-loader
+Recommends: ocl-icd
+Filename: pool/main/c/clvk/clvk_0.0.20231113.173330_aarch64.deb
+Size: 15905140
+MD5sum: e9850fe30e26b9601ddc43f51f9126ce
+SHA1: d0bc1e83371138b4e1ead0333fd6a53a2cda83f2
+SHA256: 28ae055e818fba72979b250d3b2c3f0fa40324358a5170902ab4268db33ffee8
+SHA512: 2e493c0d7f58a13d764f56fc707e047609bc323fa1279577068663340ee17fce13861559f7973af0708743826d2aaf0515dbba104385c1103f4be220f920af68
+Description: Experimental implementation of OpenCL on Vulkan
+Homepage: https://github.com/kpet/clvk
 
 Package: clvk
 Installed-Size: 72036
@@ -6653,6 +6700,20 @@ SHA256: e20333475c20662a286511be1a286eb8948023e73e9fe441bb0620867f061fd7
 SHA512: ce15ce46da7dd29444561701ba6fcdddb367ce9bccf817c17db4ce3969e44552951c147cfb04cfdf274f7e46d217469b842306bbba31bc3ec7fa50db9434b8dd
 Description: Software synthesizer based on the SoundFont 2 specifications
 Homepage: https://github.com/FluidSynth/fluidsynth
+
+Package: flyctl
+Installed-Size: 53648
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: aarch64
+Version: 0.1.122
+Filename: pool/main/f/flyctl/flyctl_0.1.122_aarch64.deb
+Size: 11628616
+MD5sum: 68806c29d915ade6acf4c4be779264f2
+SHA1: 0f4486adcc5bc0dc8a336f5e77b2a0535d560ea9
+SHA256: bc37d3aa872885ef52c3dc808a520770dd420c414c6a6140560095caa48b9596
+SHA512: 1209fd3ae34a2982c5f013f42d5f3d3113e5753051e0d30b6f74b93b5b4821f352810dd508c2a5eb7825222f0f35cbe508769870ecf787e7aebf6e6021bd5ee6
+Description: Command line tools for fly.io services
+Homepage: https://fly.io
 
 Package: flyctl
 Installed-Size: 53640
@@ -10376,29 +10437,14 @@ Package: icu-devtools
 Installed-Size: 1008
 Maintainer: @termux
 Architecture: aarch64
-Version: 74.1
-Depends: libicu (= 74.1)
-Filename: pool/main/i/icu-devtools/icu-devtools_74.1_aarch64.deb
-Size: 217668
-MD5sum: b9330fbe4cf6ddb45fa564bc9c42dfbc
-SHA1: bad81f94fdb545e5a3b64a54e6aa0b4d67e263a3
-SHA256: 7a9c4aa1e79424f9464fc889aef1c6a8d2fa42fffa82de96d1607b0f3670012d
-SHA512: 4a297765b48c0a5731eff868c6206e502829809a9d5a84314db86c4b1d2035248cdec2719bc0f1d2634a0795589ea09e80c6f6dc468874d1259e30f4945af74a
-Description: Development utilities for International Components for Unicode
-Homepage: http://site.icu-project.org/home
-
-Package: icu-devtools
-Installed-Size: 996
-Maintainer: @termux
-Architecture: aarch64
-Version: 73.2
-Depends: libicu (= 73.2)
-Filename: pool/main/i/icu-devtools/icu-devtools_73.2_aarch64.deb
-Size: 214692
-MD5sum: e437563fde081fc79b4f64eadb072bc9
-SHA1: 868a4e0fc13838ca215559c1dd763509e43458d9
-SHA256: e28cadebb50ba32ca7e38d69234691b32df1a6856e6f5e12da930556d02315ad
-SHA512: 59cb278fb458d72440423d5990208b116ec54df8c4cbb87c408a4c9763cdffa59a336d24542a01d0072e45df1f286750ef00c5e9bbf08257ddae477aaeb0e49a
+Version: 74.1+real73.2
+Depends: libicu (= 74.1+real73.2)
+Filename: pool/main/i/icu-devtools/icu-devtools_74.1+real73.2_aarch64.deb
+Size: 218200
+MD5sum: 7373b7168f0f7cbeaa135318acfa9990
+SHA1: fe8becc18f6494dd98e9de4f82e8d357b418ce61
+SHA256: 34d9c4d9270e17ac18d6756d569e05e622c49d620f52061246a0bc6a5fa0018b
+SHA512: 9b73557f61fc125bfacd6143a9dae426cdccfb3032b4ae735e829484ae2f30b2f1fa3256bd91da0d0f6d1463543cb525fb7ec8bc9889e4274c809e8503eac55a
 Description: Development utilities for International Components for Unicode
 Homepage: http://site.icu-project.org/home
 
@@ -11587,16 +11633,16 @@ Description: The Kerberos network authentication system
 Homepage: https://web.mit.edu/kerberos
 
 Package: kubectl
-Installed-Size: 64136
+Installed-Size: 64144
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.28.2
-Filename: pool/main/k/kubectl/kubectl_1.28.2_aarch64.deb
-Size: 12207216
-MD5sum: 1726d85474193f2786f7cfd30fb41a2f
-SHA1: cbecdb160f7f3f790a95680967ea4076be2bff55
-SHA256: 228cdaba77b211121895ed56344e838faab1554201c253878055bdfd0a2f4a9d
-SHA512: a9fdf8c9e2ec14d7f3611064da7c11e914384656c5f95f88ce8dad07d73afbfbcb5aa40bde3c22850463307edc469fa43cea0c3d9c53acc47b19b583f5f7c633
+Version: 1.28.3
+Filename: pool/main/k/kubectl/kubectl_1.28.3_aarch64.deb
+Size: 12216588
+MD5sum: 0c4f4f31bf4a61b06e6534b76ad730a2
+SHA1: 83ffda782878b5362eb005bac953f9ccfd97eb4c
+SHA256: 2f8c4639d1f31ec9753cbd7eb991bc74ac719aa174956a29d159e82550cc7a87
+SHA512: 98091ea29c9c3d18eeb9954d7eaf9cfe9b500ddf6e84cd73b4ce2fe4cbeffd5ca8172ee98ddd2da46ffc440d85037d75f1aa21d17b0bd8883e85c6c36f0df4e7
 Description: Kubernetes.io client binary
 Homepage: https://kubernetes.io/
 
@@ -13361,6 +13407,22 @@ SHA256: 917b7fbf4eab27c71d0840127eaccb3a51fba33358fee5018bddd9acb8a07480
 SHA512: ee97281e15b7078e43c5b54131c4fc6971910f268d1def9b8e26acdc1e417d3b4310e73a88cd4ba13753354625cdb0df2fcb125ca499ca6cc5a6e97ddfa99a63
 Description: A host of helper utilities for the java.lang API
 Homepage: https://commons.apache.org/proper/commons-lang/
+
+Package: libcompiler-rt
+Installed-Size: 34936
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 17.0.4-1
+Depends: libllvm (= 17.0.4-1)
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_17.0.4-1_aarch64.deb
+Size: 2648828
+MD5sum: 22d773430ad8ecf01e484394bf5dd225
+SHA1: f2ffcc7422cc3c6e04c4f7a44af7422146cfb15d
+SHA256: 207d00ecba1c987453eaaa2b551f20eeb56d37587913e298ebdbef0dd974a06b
+SHA512: 0a59d2a5cdbdc13ad82e9e02f4d3d43be2bd8ea340fd5a549cf57fc649631aeca76069a76469d922ea2b7972e6f0475d5b332a49f9f8ae1fe5aa4d2f3a425e67
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
 
 Package: libcompiler-rt
 Installed-Size: 34936
@@ -15399,66 +15461,34 @@ Description: Static libraries for libiconv
 Homepage: https://www.gnu.org/software/libiconv/
 
 Package: libicu
-Installed-Size: 40660
+Installed-Size: 41780
 Maintainer: @termux
 Architecture: aarch64
-Version: 74.1
+Version: 74.1+real73.2
 Replaces: libicu-dev
 Depends: libc++
 Breaks: libicu-dev
-Filename: pool/main/libi/libicu/libicu_74.1_aarch64.deb
-Size: 9720376
-MD5sum: 8717360a3fb7db4accf41d28f4596cf0
-SHA1: 9f212ada25e0b493e3f0a856b593195975a6bbe4
-SHA256: 80efd4ae9c245eceace9fbce64e8105bf27fffd7d829083742948f84f146e3c3
-SHA512: 04938e33ef5fd3b7f0af86a9f8a3c990509cf814c66e1b64607331fca83890134c350f8624367e72bde26c876c5aac2608e05252007f3411b5ea40c51aa62b4d
-Description: International Components for Unicode library
-Homepage: http://site.icu-project.org/home
-
-Package: libicu
-Installed-Size: 41764
-Maintainer: @termux
-Architecture: aarch64
-Version: 73.2
-Replaces: libicu-dev
-Depends: libc++
-Breaks: libicu-dev
-Filename: pool/main/libi/libicu/libicu_73.2_aarch64.deb
-Size: 9704352
-MD5sum: 1569b8f6d91adf6dad42b85eccd9e013
-SHA1: ec8e1873e6805e8ff63f97f1397e0d69935e364e
-SHA256: aabd467ba6978399875525ed9da141172e003d54455dc5846f53c299aea28f10
-SHA512: ddf19f0e034ce2cfb51f74d611a964f4b9784cb4c9e9041abcf19724fa9c2007b55ba80b2d865903bfa9595ca0872af63365d0ec2cf1eaa29affe649e7812e12
+Filename: pool/main/libi/libicu/libicu_74.1+real73.2_aarch64.deb
+Size: 9753796
+MD5sum: 03b781285e98b122ee70fa4b74761eec
+SHA1: e7f70541731b043143abbdd9672fa471dc160494
+SHA256: 2955503a14c87221a4da1d4e43c78a7007917b7550582ab7411e3072dc123fb5
+SHA512: 69a3caa26d0ac0b553367a59f687e3fa0a007c5843549d3e37437a0e2abbf93532dd5ca14c57eb107328f8c8f563a77323b1efe871588d67649e54b1d2aeca3d
 Description: International Components for Unicode library
 Homepage: http://site.icu-project.org/home
 
 Package: libicu-static
-Installed-Size: 42980
+Installed-Size: 44084
 Maintainer: @termux
 Architecture: aarch64
-Version: 74.1
-Depends: libicu (= 74.1)
-Filename: pool/main/libi/libicu-static/libicu-static_74.1_aarch64.deb
-Size: 9558452
-MD5sum: 695cb8cffb28a67f3188fbb7a885dcc9
-SHA1: 67309fda37a8259cb3e430f796349f559cd7e77e
-SHA256: 624ae203d5de162714a1dacf15829243958f7288cc669d1c1eed3ce02b55531d
-SHA512: e111a0369a295dceff79e640ab705f3dd786cca009ab629bd0f61ad6d1c95d244e7709d2896e235005d128858d88b634108fce8cf3878daa9434afad8ab04fc3
-Description: Static libraries for libicu
-Homepage: http://site.icu-project.org/home
-
-Package: libicu-static
-Installed-Size: 44000
-Maintainer: @termux
-Architecture: aarch64
-Version: 73.2
-Depends: libicu (= 73.2)
-Filename: pool/main/libi/libicu-static/libicu-static_73.2_aarch64.deb
-Size: 9575588
-MD5sum: 67d6b8cf804ab71d03be2ee03b34d246
-SHA1: 1c4114f80fb07c1be7edfb0567f504ec5e908908
-SHA256: 152df3a6b79186affd9c60cc5c1b7b719c71d41eb36957a449bc40752f1d980c
-SHA512: 967c1c7c004f5b4430b42d98721f1de8ed41d2855fe902dea80be6321abc2ebec1cb9c4febecf8b0c748559e03e45bb7b9a931146ac5a1fe767438c8375b3ad6
+Version: 74.1+real73.2
+Depends: libicu (= 74.1+real73.2)
+Filename: pool/main/libi/libicu-static/libicu-static_74.1+real73.2_aarch64.deb
+Size: 9583972
+MD5sum: d4c338ac303017b2e9114eecb6b72df6
+SHA1: c24a2130787cd24811628f2d94eec3b5c6846d83
+SHA256: 7fac895c69f0ff6f3e42c983c23dd700cf57283163b7c5e14f60376a8f553ac2
+SHA512: 5d1ed05ffbf731710bc15f6ca168e77020def5c8133c2f1ff78329282db870fb5a9f5329c5e8333e4262bee1e20f249af708f37cd424d721dee709dbdbcfafe3
 Description: Static libraries for libicu
 Homepage: http://site.icu-project.org/home
 
@@ -16123,6 +16153,24 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
+Installed-Size: 141440
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 17.0.4-1
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_17.0.4-1_aarch64.deb
+Size: 25152212
+MD5sum: 0f87b345eef58b87c6e57201aacfab0b
+SHA1: 8ad51948898b5796e69d21ae787397091011e210
+SHA256: f24efbb3840c32e3c84c9e9752005f84a310c1001b19bd26f8f3cf5049a5c0ee
+SHA512: 419406ae4c0ab2e2129769ca2972470c2199cbbb105a6ef8c406e44e96104770be0f05f1d90085f8c523d834ec72ab5ab93193284b666d5a4d23b38b6e7a9b7c
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
 Installed-Size: 141444
 Maintainer: @finagolfin
 Architecture: aarch64
@@ -16138,6 +16186,21 @@ SHA1: 931fd7dc2721fbbc55885ffa5e4efafb3dbedf07
 SHA256: 76d002dc998225d1115b3d5ea20f261cb58fc99e437c95d5f901853917573e4d
 SHA512: 73bae229ae5b2ed590f5fcbf8948697930ab3a8022f7f057fa06ad54684ae574e1596c7efaba0b1ed5e6cb12724c74a4a6aea099420af62dc45171762ccf950a
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 680568
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 17.0.4-1
+Depends: libllvm (= 17.0.4-1)
+Filename: pool/main/libl/libllvm-static/libllvm-static_17.0.4-1_aarch64.deb
+Size: 70759932
+MD5sum: 65e062cc3ed56dfd9bf8937f2be60d7c
+SHA1: f95b701646ce4e3677cf471d0d88d0d78a5a5e54
+SHA256: a411478564d9c0546bb77c4d2c6715c72edce9700c3a58580a8c69270c4ef124
+SHA512: 67d1f7b320eb23cc2c42470ae1eaaa7c865171c6de507831b949bf55d1bb3e1181bbf83cb95c4570b8d5cb9cc7c76f793c1123b2f1166e4f51b9eeac958d3330
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -16934,14 +16997,14 @@ Package: libminizip-ng
 Installed-Size: 308
 Maintainer: @termux
 Architecture: aarch64
-Version: 4.0.2
+Version: 4.0.3
 Depends: libbz2, libiconv, liblzma, openssl, zlib
-Filename: pool/main/libm/libminizip-ng/libminizip-ng_4.0.2_aarch64.deb
-Size: 52188
-MD5sum: b64d4cf71920db9d2914c152f97be61f
-SHA1: 6f88a64fcfe97df063ac29e7880f751ba51d3d6b
-SHA256: 130e59307e383cb383a770fc91b3521096824bb59ba802dc46a5c60758a95824
-SHA512: 295f37f14b48f0913c910d397ada48feb4320f03c4536240d702ba23465f15ccdc097e4e63fb9533fdae6e2e1aea2b6a196aef2677f029e91dfc654d1da5473a
+Filename: pool/main/libm/libminizip-ng/libminizip-ng_4.0.3_aarch64.deb
+Size: 52228
+MD5sum: 08af94efc3a063191726e5b3485344b3
+SHA1: 044a7dfb1a5b335a445a352bcd32155286780324
+SHA256: 24120f868256ab9435d58e4108e82d97e688570d84ef6dd8e8ba0256354e8468
+SHA512: 648c6eb78fa6b2c8fe0e483a2a56cd1469ef9605aa217245a267e52acb6ab8b0a63795842b4d34b33288c2876f0f8640aced0434e342cdac1df2c238dcdc4a95
 Description: A zip manipulation library written in C
 Homepage: https://github.com/zlib-ng/minizip-ng
 
@@ -17831,21 +17894,6 @@ SHA512: bfb0087c49e5beafe2469184b9b26b9cd292d14af206c415fbdd1435ab0e3607a9f89cdf
 Description: An open source, high performance library for simulating rigid body dynamics
 Homepage: https://www.ode.org
 
-Package: libode
-Installed-Size: 1472
-Maintainer: Pooya Moradi <pvonmoradi@gmail.com>
-Architecture: aarch64
-Version: 0.16.2
-Depends: libccd
-Filename: pool/main/libo/libode/libode_0.16.2_aarch64.deb
-Size: 354952
-MD5sum: 1cdd31b4a44adfe23106298b05a33722
-SHA1: 9406c4e720eb71e6c08a60df66935cd1b7533871
-SHA256: 44f65e75d0296ba0bec30878f45a9fc69bed1774669678716c01deddfdb06901
-SHA512: 99a2758fcf88211bec4d8f6443759cbeb3b9f17f07d38814e9e415da32c22905b208e3957f9eb73d029b226053e578eb1847f74348d769c8b5cb369c04baecb1
-Description: An open source, high performance library for simulating rigid body dynamics
-Homepage: https://www.ode.org
-
 Package: libogg
 Installed-Size: 684
 Maintainer: @termux
@@ -18574,6 +18622,21 @@ SHA256: eff875b946da49eb2376617c2f33d0d97d297ba88e290b76db17a230d95c5d58
 SHA512: ad1005ca1670b9b2ed992afebc2cc5b09295e62416c9a2f24bb4eed271640caeac2adc681b21d9110a3cfc58b0f5345a5ce4336c504b8672bf8fffa23f8bbeb4
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 5868
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 17.0.4-1
+Depends: libllvm (= 17.0.4-1)
+Filename: pool/main/libp/libpolly/libpolly_17.0.4-1_aarch64.deb
+Size: 1220492
+MD5sum: ed180fc02a385b3f5e29ede07cfb1c34
+SHA1: 3f891c2416a5ce152e715c33aba97fe087c8c9fc
+SHA256: 92abadf847e0e99d2e4983c2ef5abe682dd2b026a245140858f14845ad43d404
+SHA512: 9efd138a8b167e01a73c86e9a2c79dedde54991c97e1daf40ef497e6b41531d4e82532e41d3ac4e630313d079c0cbd6312cc8eff16f98331f55fffdc2ecf5272
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 5868
@@ -22853,6 +22916,21 @@ Package: lld
 Installed-Size: 16244
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 17.0.4-1
+Depends: libllvm (= 17.0.4-1)
+Filename: pool/main/l/lld/lld_17.0.4-1_aarch64.deb
+Size: 2267856
+MD5sum: 86e4f749cfa3f37ddbc763a3a5abe6a0
+SHA1: a66584dbd79e37a48174951a951c622922dc5e3b
+SHA256: 568d11c780251a23df8893d5a5ebc275f406b1639128aa8ca7012fc21d6adc48
+SHA512: 4d96d08192df2245748dba7d492dafe2c11db6961446bd84bd17773bbfaafa24be335b7fd0696db84031724dc788b9d3a6085ae1291bf33194e270768ea854cb
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 16244
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 17.0.4
 Depends: libllvm (= 17.0.4)
 Filename: pool/main/l/lld/lld_17.0.4_aarch64.deb
@@ -22862,6 +22940,23 @@ SHA1: b3707d4d132ae36e7f5fe17058f71e7f78eec229
 SHA256: 3a88c86c7f014e14631af1ba15862e4aaf608bbe407c514c4bbf5fa24d024415
 SHA512: 37839695969b15a55e16994ea9d190ed4f86df9649d4d52fdc9b1af6587649b64365962fb45d9a3f9569200afc4334311d874e5416b42190d3dc5ca1ac938ddb
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lldb
+Installed-Size: 23316
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 17.0.4-1
+Replaces: lldb-dev, lldb-static
+Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 17.0.4-1)
+Breaks: lldb-dev, lldb-static
+Filename: pool/main/l/lldb/lldb_17.0.4-1_aarch64.deb
+Size: 4892852
+MD5sum: c6425e2abe79f6b85ce824bdd4057b1e
+SHA1: 4a405a535a4405825913e3b34d0ecee3b6a53f1d
+SHA256: aeb0c018006eed736b07dd307727dd67c592f547576565d4c423b3065bd14ed1
+SHA512: 2b9293404fd2882a573e1c6dc857fb87a0177a51b0daf4621d356c5aa40fe5fe61c24b100f390c8e5b6b076d5b35a7a2a32a3e5b8dd772e72a4b0bf26ad11bcd
+Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
 Package: lldb
@@ -22879,6 +22974,23 @@ SHA1: a3cc18b34968fc247aa3171a9762d14e4f3ee6ab
 SHA256: 3c7a30a687914f6fd8f4c56b1f6903e254a183eb641385676154935fe7ab0b2a
 SHA512: 4fc910ae3f4aa85c2823256ac38d258f457c09c44fd4755775a9f0378d3c5c8992721dbeeae2209614e1d19c7bbce4eb7c4ac7f3707b695d7ec38b4c1398d7cd
 Description: LLVM-based debugger
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 99784
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 17.0.4-1
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 17.0.4-1)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_17.0.4-1_aarch64.deb
+Size: 18066648
+MD5sum: 9ab0459a6e7589b1d95bc116e84d7e9f
+SHA1: 502cc45975d3edb003e8d9c5e336d235c37260bf
+SHA256: 7d7333da1a72c57c65ac03919d350bed662b7e5cd5870889258f0e3e94e36c44
+SHA512: 5d7a404418c456ca9bd1a575b50e6179fa40a18b99841a5e75314f62061c3daf29c13262105a9916750f55ac776b59d2bcfcc8d6a1e0716c464c2d08c9de6e9d
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -22961,6 +23073,23 @@ Package: llvm-tools
 Installed-Size: 11468
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 17.0.4-1
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, libllvm (= 17.0.4-1)
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_17.0.4-1_aarch64.deb
+Size: 2142152
+MD5sum: db8c584c77d404e0eb887ea8922c77df
+SHA1: 73f2e97431a94e682bad297ef9a93553dbda1547
+SHA256: 71de01400e6113f397a6013d48d55c7c63aa6ea407a2685822da641d80c83008
+SHA512: 19b431988b5d6ccfd6e0e8d85ce0221a97d37f2b4c156a9147d270547b834514215e202811c54d2647ee3531f93b60dda047eb8d8dc25bcd20aa6546752898ae
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 11468
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 17.0.4
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, libllvm (= 17.0.4)
@@ -22972,6 +23101,21 @@ SHA1: 4d552085e26c4869fdabe1bb4f5c23fee8494b8c
 SHA256: 246c6cff2e36e427aa8830226d7c6e85643b77d78693c26d3488c5a6af125b07
 SHA512: 4618868ecd5d3248006e3b7e889ca70afd2357c0a6f9f7a3683de263fb1cd9bbc7f6a7d22c2b965d0c4b0ec15a6357ce5dec62345618cbd96aff476c8c116a5c
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 104
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 17.0.4-1
+Depends: binutils-gold, libllvm (= 17.0.4-1)
+Filename: pool/main/l/llvmgold/llvmgold_17.0.4-1_aarch64.deb
+Size: 26960
+MD5sum: 34128c75da015ab72543cc667c93e1ad
+SHA1: 1c454e286d6b74bbfc80b0f8b6c207a3942b2a63
+SHA256: f5cbda1e6f9038cc75e45f2c1b530c27412961e63478ea63c2ae4ff51872b571
+SHA512: f309c44edefeba18e1828eafd3337ffa1981b8612607afb093b0a374b423d1a83b2649bd6aac55076903beb42c5fb1a23d12dceee0b89ec390b8bd3c2f6eeba0
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -24761,6 +24905,21 @@ SHA256: b6efcdc53ef592fe11d33c2b33f9c0a5336c4570c2f717c29798eb4d6acc8c78
 SHA512: fa06e653d689e0e94a5c3049ed68afc59e226464046de80020ca9c7822cdfa65e50ac23b664e8af57b491581b6744a438e30faee4fa585fe3966d32aaeb1f66a
 Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
+
+Package: mlir
+Installed-Size: 277240
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 17.0.4-1
+Depends: libc++, ncurses, libllvm (= 17.0.4-1)
+Filename: pool/main/m/mlir/mlir_17.0.4-1_aarch64.deb
+Size: 37144872
+MD5sum: 78b07ecfecc34c6addba4133f718cb66
+SHA1: 30d01bb901e19b3bad731ac3f18a1ee652cdedbe
+SHA256: bdaa3364639eaa0a965099e7dd050f1acce99251d070ee360ff1297725b16ae3
+SHA512: e48f5e201ac7d88d0fd9d0027d2dbf3d964b4dc2cfa42b8db00e44462cf71bfb6126ec81ac425f01377d89240b10ba1d2c0fbd7de759e61db28502f58d477c3c
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 277240
@@ -31835,20 +31994,6 @@ SHA512: 861db11b4666dbb3ecd735f157fa3fd08bb36b611d38c86a8492f22597e091d03d9135d5
 Description: A cross-platform command-line tool for executing jobs in parallel
 Homepage: https://github.com/shenwei356/rush
 
-Package: rush
-Installed-Size: 7496
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: aarch64
-Version: 0.5.3
-Filename: pool/main/r/rush/rush_0.5.3_aarch64.deb
-Size: 2104220
-MD5sum: fd508183790598cec90d441e7a827e96
-SHA1: 7a30682e04c2aeca7aa311ec990d4cbbe838c805
-SHA256: 981abf0f67ee5a8857c3b7d44d257df7fe0cd075bac5630235c68b3b1948baf8
-SHA512: 815deed78b42a93db92295287627b148ece7f43f5f58140f24b948be64da764f05ab265944c3a6676695abc2d596c7dbb5ee22c0b96576f8c02f56a9e406d77d
-Description: A cross-platform command-line tool for executing jobs in parallel
-Homepage: https://github.com/shenwei356/rush
-
 Package: rust
 Installed-Size: 362792
 Maintainer: @termux
@@ -32721,20 +32866,6 @@ MD5sum: 1d3e3c80d474850af545a6606be3747f
 SHA1: fe0a255edc49e146bf964510a36451ffa436d91e
 SHA256: 3325bd3cd3938f127dd7c34413651c6bb7e791842484ce700a9651acd409df49
 SHA512: bcb85a4a6e1a583a8e4438707968316a7df364fcfc27527a3f30ed8839de5d7d1d4016b29d98926fe1d9e204304c05a8d3a87605132d0f3399ef4cfc42f729eb
-Description: The universal proxy platform
-Homepage: https://sing-box.sagernet.org
-
-Package: sing-box
-Installed-Size: 24964
-Maintainer: kay9925@outlook.com
-Architecture: aarch64
-Version: 1.6.3
-Filename: pool/main/s/sing-box/sing-box_1.6.3_aarch64.deb
-Size: 5873136
-MD5sum: e28c602027a25eaa4f99141193f3d373
-SHA1: 4b8bfdfdd16bea0b4bf50bb04be7109150dbd267
-SHA256: 3f30c62a1f7fc9e8f65595ca41ca7341c89a022b04df9bba39c5196d5a0bd632
-SHA512: a8af220c7e212332d7488e9d4c871fb6df6fa557220a070bf77e71aa8b117c8769c9d146b47310560c91ae8ef194548ea51b1ec57225d6dc85cfd993ba61c3cf
 Description: The universal proxy platform
 Homepage: https://sing-box.sagernet.org
 

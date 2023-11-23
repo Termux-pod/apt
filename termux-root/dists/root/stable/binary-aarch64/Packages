@@ -191,21 +191,6 @@ SHA512: cd5028c48ac03e16b7f489e28b6535afb4b6ae72475e312de526a5f9bce53bef79450d64
 Description: Compose is a tool for defining and running multi-container Docker applications.
 Homepage: https://github.com/docker/compose
 
-Package: docker-compose
-Installed-Size: 54568
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.23.2
-Depends: docker
-Filename: pool/stable/d/docker-compose/docker-compose_2.23.2_aarch64.deb
-Size: 9956332
-MD5sum: 2b318e91f0385c241d876d8362c549ac
-SHA1: 7dcb7c3ea95542d9e7d3af9764ef2be4850f15b8
-SHA256: 64e5352d0dcaf4f7ae5142d9defc3a8daf4275b59bf7312c1f3cb582d575fdbf
-SHA512: 999952228e55afffb4a82840fff4f3323dbb3ee2411ae7d086b9382b970d194694822917dcbbd58739eda3dd052476f1d2513a29970bfcad9fc79f35a75109c4
-Description: Compose is a tool for defining and running multi-container Docker applications.
-Homepage: https://github.com/docker/compose
-
 Package: encfs
 Installed-Size: 1496
 Maintainer: @termux
@@ -595,6 +580,21 @@ Description: Static libraries for libcryptsetup
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
 
 Package: libdevmapper
+Installed-Size: 596
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.03.23
+Depends: libandroid-support
+Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.23_aarch64.deb
+Size: 169384
+MD5sum: ea8c1bfb95c80e3eb7092af80b5c3f86
+SHA1: 2d08d0b562d0e20729fb110fd1ce49bb75bb5a10
+SHA256: de5ec6aecacaaa958d5e00fce879dd17bef7c76dd25a01b12412ec5dd23cd018
+SHA512: eb0bbd7f83d0fde90a0f8b84f09b8959d8ed2d4f258f41a2780413478fe38783b88e2f3e76884933b63d92e10fb4aa44bf46a9f1b94735fea971960d33138f74
+Description: A device-mapper library
+Homepage: https://sourceware.org/lvm2/
+
+Package: libdevmapper
 Installed-Size: 580
 Maintainer: @termux
 Architecture: aarch64
@@ -789,6 +789,23 @@ SHA256: ac0c76c33088310ba6d6efe43e3f375c65270c552d576404cb0250725968d8dd
 SHA512: 922440686f76fb88af075ab35c472918789ec870f907a61d03cf56240fadd477f8822a1c422171e6d7508fa8e42930a389e66abf0e2d560d1b52240245238ff0
 Description: x86 emulation library
 Homepage: https://github.com/wfeldt/libx86emu
+
+Package: lvm2
+Installed-Size: 3064
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.03.23
+Replaces: libdevmapper-dev
+Depends: libaio, libandroid-support, libblkid, readline
+Breaks: libdevmapper-dev
+Filename: pool/stable/l/lvm2/lvm2_2.03.23_aarch64.deb
+Size: 1056176
+MD5sum: 59e801f5e61e04d988efaab8c6d8f17e
+SHA1: e1ccf0017ab775d349b2af5c016bbce0bd3525ce
+SHA256: 75573933ae87967f6bb3c52568458b6713c4265968eebf4ebe56676e2e4063d3
+SHA512: 3dda3ffca2fb1bb2d9493da5fb3bd1bdfcdcee5f70d9f6d40fe71280d6e5ff341e1716d5cf9c610f7928274ab51b5bd2b34e05be6074da64d816b0adb0ddcb76
+Description: A device-mapper library from LVM2 package
+Homepage: https://sourceware.org/lvm2/
 
 Package: lvm2
 Installed-Size: 2952

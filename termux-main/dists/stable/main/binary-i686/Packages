@@ -3271,19 +3271,19 @@ Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
 
 Package: clang
-Installed-Size: 195580
+Installed-Size: 195624
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
+Version: 17.0.6
 Replaces: libllvm (<< 16.0.0), clangd
-Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 17.0.5)
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 17.0.6)
 Breaks: libllvm (<< 16.0.0), clangd
-Filename: pool/main/c/clang/clang_17.0.5_i686.deb
-Size: 36388432
-MD5sum: 7d40a5291a7b2736fa4f750ac74a8d3c
-SHA1: 392a91382351f7535bbb7c0d304bdb2ea23b8d79
-SHA256: c53b2a74b986e41fe176786d9bdab8e2f9face65263233b6c3ee0c67b8a7f759
-SHA512: d168eeeef0186304862645f72a6fcfbbf75c01a8dae7eeaf07edb3816bab1ec5215c740fbfffec6ad8c2b543005fac26c5345bd3f9be7495cbbaee70518b0357
+Filename: pool/main/c/clang/clang_17.0.6_i686.deb
+Size: 36472464
+MD5sum: a3395d3413d2558d2ded03045b5c62c6
+SHA1: 30b3314480e81340f7a02bf16ca6fb94ec6e11e9
+SHA256: f702161e429dff1f8b03ca7b88573729212ec4405942aa1a5892b9cb26c856ab
+SHA512: e0df031ef93e3604de6fce0c4e742dbf9ab42afa69433d139e15c0ee0c9cb615ca07171f65e5e264215d256ddf86a45560c7a8105e7628e230fb838cb312bc89
 Description: C language frontend for LLVM
 Homepage: https://clang.llvm.org/
 
@@ -3436,6 +3436,22 @@ Description: Experimental implementation of OpenCL on Vulkan
 Homepage: https://github.com/kpet/clvk
 
 Package: cmake
+Installed-Size: 46792
+Maintainer: @termux
+Architecture: i686
+Version: 3.27.9
+Depends: libarchive, libc++, libcurl, libexpat, jsoncpp, libuv, rhash, zlib
+Recommends: clang, make
+Filename: pool/main/c/cmake/cmake_3.27.9_i686.deb
+Size: 8670412
+MD5sum: 7b01928624f6c2d19d125a1e3454fa45
+SHA1: 8a97db26542dde6b076be0dbdab6686aea367e40
+SHA256: e625b90149dfccf38fe2409344204357d22088d3cd20aae12ed0dda28d13def3
+SHA512: 8d2cd7fa1a4de57e56ba5900bac970d299939bc83dd5a11cc821f05e13ee6df7aca4c6ec98deb9bf36fcd8a4bb706fed0255bb4951748788e7ecccf5330f58f5
+Description: Family of tools designed to build, test and package software
+Homepage: https://cmake.org/
+
+Package: cmake
 Installed-Size: 46800
 Maintainer: @termux
 Architecture: i686
@@ -3449,6 +3465,21 @@ SHA1: 511601a512a2b4d4cdb146dd2779bb8d96ff96ff
 SHA256: 110502f73b86872d3abf95560fef95c9d2b0f8ac8e3862fe968f074238d35855
 SHA512: 56130ac2956ef8654e8ad725efd9285e10327370c3f7659ee3413b3d501f9be0130452ca723c2e1f5b17903e723b03483b0b7f3c8c181ed747a3f61e4ed40529
 Description: Family of tools designed to build, test and package software
+Homepage: https://cmake.org/
+
+Package: cmake-curses-gui
+Installed-Size: 8204
+Maintainer: @termux
+Architecture: i686
+Version: 3.27.9
+Depends: ncurses-ui-libs, cmake (= 3.27.9)
+Filename: pool/main/c/cmake-curses-gui/cmake-curses-gui_3.27.9_i686.deb
+Size: 2286240
+MD5sum: a46ceea433de59ef51420319dc9c7be5
+SHA1: c3127c5d86dbda2b43336a84c6fa95bfaa882801
+SHA256: d8db32ab4ec6280e74d93fc6b9db0caa1350c80f874ebac3555aa7e99e6712ef
+SHA512: 35503b03ac3f25047a563d7079ca5dd9934cbab92a767c90ff9ccc2c28920170f7b1f2f8c316ef626e2a6c13fe3d1a2d77b36e841f26997674a19f2dbfaad3f6
+Description: Curses based user interface for CMake (ccmake)
 Homepage: https://cmake.org/
 
 Package: cmake-curses-gui
@@ -4270,20 +4301,6 @@ MD5sum: 14aca4e547bd1b7f86b64a06fbfd5b7e
 SHA1: 8916142a51fd94d49eb5359ab7b4b653eb4baee9
 SHA256: 4cee4ad605c21dc22238da12caaebb18eedd072b2a32393f9f8cedcffd2f1aa3
 SHA512: 05a1d14693a34fac443d29f31536110dc02188025d680af79e408432d61b71a26691a5ae76c7b41f94a4667289b3b6be06229197fc7a3a73b5c507df3a6ed70c
-Description: Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single utility
-Homepage: https://github.com/TomWright/dasel
-
-Package: dasel
-Installed-Size: 9148
-Maintainer: @termux
-Architecture: i686
-Version: 2.4.1
-Filename: pool/main/d/dasel/dasel_2.4.1_i686.deb
-Size: 2769252
-MD5sum: fcbc95d9e1afaa733fefc72190073b45
-SHA1: 40cfe4d0089820117b3102c03f8b97f832bdf2a6
-SHA256: a34096def53814efdf2ff5ccfeb04f24f055bff6398682df3284dc6a7238d031
-SHA512: 0cc05043e42004e3d762a9d9b2bd25dc836100f052ba9197815cc073cce52b52ba7ae0b3a515523664cd027c5cfd4caa488f2a63fac09f037eb6efd79123eaad
 Description: Select, put and delete data from JSON, TOML, YAML, XML and CSV files with a single utility
 Homepage: https://github.com/TomWright/dasel
 
@@ -13185,15 +13202,15 @@ Package: libcompiler-rt
 Installed-Size: 13624
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
-Depends: libllvm (= 17.0.5)
+Version: 17.0.6
+Depends: libllvm (= 17.0.6)
 Conflicts: ndk-multilib (<< 23b-6)
-Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_17.0.5_i686.deb
-Size: 1371796
-MD5sum: 62e46db504fa9e5f5548942d074f4244
-SHA1: 6e9e281e5976fc9ef41c9c15173f15279f15ec41
-SHA256: dd82da2e8421af8fced07f429809d2d035bf69b4666b42678fd1db0341d22115
-SHA512: 96e5b8873f1848d1d0c25b22288806fddedb6f7ae058545f790579ea809b35509a7c48e04552aed2c3362bc9ae7fa5c7e281b0842f2cc74a4bad5b7860eef391
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_17.0.6_i686.deb
+Size: 1369704
+MD5sum: b343477c80245b02004840fc0df01083
+SHA1: 3d32b56733378ca6ac499d08bc282b1ebae8276f
+SHA256: 4f9e0e865a83eff5552d7fe45bf2ba209c7b8cba700f876872d60db4434e5c36
+SHA512: 8adead2b69e533b1309636933bbe1348d90e366bc0e086c1eefd3fd0e00818ca7d11c2355e811e2175fa31764e571aa28ecec6aa4b671a26c5fe27a8b30fef74
 Description: Compiler runtime libraries for clang
 Homepage: https://clang.llvm.org/
 
@@ -15608,6 +15625,23 @@ Package: libjasper
 Installed-Size: 1016
 Maintainer: @termux
 Architecture: i686
+Version: 4.1.1
+Replaces: libjasper-dev
+Depends: libjpeg-turbo
+Breaks: libjasper-dev
+Filename: pool/main/libj/libjasper/libjasper_4.1.1_i686.deb
+Size: 415968
+MD5sum: 195d2ddb62a1446601703ceae192195a
+SHA1: 05a956652b687931c13fe7a19a578e1d2a6e8cfc
+SHA256: 331fce9b43b2bf864b97f24b662279345872b7f63a2e239ae84ffee24e1a0392
+SHA512: 6d22160e213b969bac7e76bcb6c9afee25196824f3dbd58783fca00be8f860dd4b9c483d3595790415a557c2122987ccf889c3ded02a751c01a19a86d55c63fd
+Description: Library for manipulating JPEG-2000 files
+Homepage: http://www.ece.uvic.ca/~frodo/jasper/
+
+Package: libjasper
+Installed-Size: 1016
+Maintainer: @termux
+Architecture: i686
 Version: 4.1.0
 Replaces: libjasper-dev
 Depends: libjpeg-turbo
@@ -15619,6 +15653,21 @@ SHA1: 0bda4c9e0ccdfbc099626712030b7c1a0ac7002c
 SHA256: 8134fb2ffb1ca9cf9c28e0712843262c9ad9df28c811123eda18a09f925b96e0
 SHA512: c1a4a220b3525c9edb73c1110bb0eef7d1a9fbf4a25a9aad4fe31a4275dfd9c2fea42e690215436da7d74da11e1e437743ebc02b7dcee52f31bc5d9688d708c4
 Description: Library for manipulating JPEG-2000 files
+Homepage: http://www.ece.uvic.ca/~frodo/jasper/
+
+Package: libjasper-utils
+Installed-Size: 100
+Maintainer: @termux
+Architecture: i686
+Version: 4.1.1
+Depends: libjasper (= 4.1.1)
+Filename: pool/main/libj/libjasper-utils/libjasper-utils_4.1.1_i686.deb
+Size: 15800
+MD5sum: 64e0bde934abdf456fe7490c01c81bdf
+SHA1: b8bf8ae1064806b4f2aac6cb3b50cc8ec8fe6bd7
+SHA256: 30b6dcdf4110aeb3966afd4dbb08aa168758b73df0615a6e41c985d06b1083ce
+SHA512: 76b37c018e80e94b5dedec55b5b0757673a283cbd1671b501a65040fb5124fc9e188ecadfa959c1600174eab84883a7fe094e674a66c7564d19c1b4eeaa49935
+Description: JPEG-2000 utilities
 Homepage: http://www.ece.uvic.ca/~frodo/jasper/
 
 Package: libjasper-utils
@@ -15865,35 +15914,35 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
-Installed-Size: 154324
+Installed-Size: 154328
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
+Version: 17.0.6
 Replaces: gcc, libclang, libclang-dev, libllvm-dev
 Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
 Conflicts: gcc, clang (<< 3.9.1-3)
 Breaks: libclang, libclang-dev, libllvm-dev
-Filename: pool/main/libl/libllvm/libllvm_17.0.5_i686.deb
-Size: 29943248
-MD5sum: f540795115a0e3b78fbb1bc17eef35e5
-SHA1: f7e1403b1d5b288847e801c0c36ef25109e8923c
-SHA256: a87c37df1d218bc647ad9926ee0c5ed4bfb365bf96e3a2cd0ccb157b4e213ecb
-SHA512: 0f0bd0047eaa7937d5cf7f51ba671f2b133f21a99997908bd9a2b8951b7c377a84ecf6bdb2e971a64b7ee0ecab67e63f6cf4840be4f712bf2e0771d4fd3b2e4b
+Filename: pool/main/libl/libllvm/libllvm_17.0.6_i686.deb
+Size: 29955736
+MD5sum: 91606b9fb4d05760e049430023e9e7d4
+SHA1: a9fd26ec27fbd5c2fe3afe21670279f959f23fdf
+SHA256: 3654b6509b22b350e6d3dc697ef1228dd03d46f3049ed82a68585bef902135ef
+SHA512: 9b1cbea16ebc513260753e159fa7a4bfae33f5a31a93293abe3044e86619db2416741c2e04a480216af8539485ef7da49d6648d81637c1a908fbb521074d0b1a
 Description: Modular compiler and toolchain technologies library
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
-Installed-Size: 577660
+Installed-Size: 577676
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
-Depends: libllvm (= 17.0.5)
-Filename: pool/main/libl/libllvm-static/libllvm-static_17.0.5_i686.deb
-Size: 75837616
-MD5sum: 520680ab78a1d9c561359146f080a4b4
-SHA1: 38d674fe23679868145b2a9a0793fe2042cfa170
-SHA256: 922edd16a5949dbac97802ec3e25c90dc0a0e33e30971123d5fe5c06d363aa52
-SHA512: a483eb3993e2f1ecf9fd6079e843cc5a8199eab0face88ed05d810415082767f5c5141350d060ae4639f6829ced9d3228fe96f126d673507dafd476a2f64e77f
+Version: 17.0.6
+Depends: libllvm (= 17.0.6)
+Filename: pool/main/libl/libllvm-static/libllvm-static_17.0.6_i686.deb
+Size: 75900964
+MD5sum: 6546d42f24d681a534c8225114c77727
+SHA1: 7cff42bd5ebb9b8ea9a05c25e8dcf0270b61ac78
+SHA256: b3eddebef850ae6d7bc42f815581d6949f447338acb122b02bf31b2574c9477e
+SHA512: 99de18065cd486ab021efda6454848989f2c33cb7ec2d800d9b84261fd9b23318ef7df208fa4a6a1e9ab6653778500a699ff038a9416167cb866bd9a796d2401
 Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
@@ -18321,14 +18370,14 @@ Package: libpolly
 Installed-Size: 5944
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
-Depends: libllvm (= 17.0.5)
-Filename: pool/main/libp/libpolly/libpolly_17.0.5_i686.deb
-Size: 1415120
-MD5sum: 52137269aaf00920cc294d108739cb9a
-SHA1: 98a49d6d131237b5aed86a62e5044464a2516760
-SHA256: fdaa907f6d8cb69e98c20a95c29afeb4c8e3322b235cd1ac0a310f29bcfe05d2
-SHA512: 51e4acced62607507b41dad21ad4e9fbd4ee11a8999634f2cf37efe1910c74713cac03caac63f896a7654733e1462a7639d679445e0fca12c80c1a8efefa2c68
+Version: 17.0.6
+Depends: libllvm (= 17.0.6)
+Filename: pool/main/libp/libpolly/libpolly_17.0.6_i686.deb
+Size: 1413600
+MD5sum: b1e8bff394214c8f884f4b615ece1dd2
+SHA1: eceb9f3da3cd63dcfd50b5db4ff4829a86310f34
+SHA256: 93e34ddda5936b628bdadf4919a82e50e16882562ebe326073383f4a3b246fb9
+SHA512: 98333b0ec3cb14d784bb9880dd813672319da9a7d405f5813c2e70b33300379a0561563d2b70197dd09f117d5224a65f069221a7258c44867f6d0b91fa906f02
 Description: High-level loop and data-locality optimizer for clang
 Homepage: https://clang.llvm.org/
 
@@ -22595,31 +22644,31 @@ Package: lld
 Installed-Size: 14620
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
-Depends: libllvm (= 17.0.5)
-Filename: pool/main/l/lld/lld_17.0.5_i686.deb
-Size: 2475204
-MD5sum: b8c2e38c5408443255316e9b0dd0dafa
-SHA1: 4aeb5beb2a6a501a3a8bf0c61e8fffd9eab85f05
-SHA256: 6ffa003daf4f69bfdc0211f43e091301f39943064a776368de3d9fcce98e3374
-SHA512: 744769b6ba084d79212df0dec48aaac8fa801e1a0b9b5f6e731c481ee69e9fba90bd15a706999d4584cd0b59621f822ea45db73e1aa42d289448c4f48e195853
+Version: 17.0.6
+Depends: libllvm (= 17.0.6)
+Filename: pool/main/l/lld/lld_17.0.6_i686.deb
+Size: 2445024
+MD5sum: 968dc59fba08aa4b51a8e237f772e5fb
+SHA1: edadfd0ef12247fa59c63df8aba6a47779980e6a
+SHA256: 8180919dc87c16755e554b4190a4c789a5c1a53ebb53348250165ecf8b1e7eb9
+SHA512: c316c434a34e2eceddd809df1abad60954ada9df4c319b98b2d5da7359b35bdb861b11d8aff7de8f9755176a39193da8a29ee6de5ca1503876820e2be2702129
 Description: LLVM-based linker
 Homepage: https://clang.llvm.org/
 
 Package: llvm
-Installed-Size: 110772
+Installed-Size: 110768
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
+Version: 17.0.6
 Replaces: libllvm (<< 11.0.0-1)
-Depends: libllvm (= 17.0.5)
+Depends: libllvm (= 17.0.6)
 Breaks: libllvm (<< 11.0.0-1)
-Filename: pool/main/l/llvm/llvm_17.0.5_i686.deb
-Size: 21850200
-MD5sum: 823e11b9d55bbab57dc64c55fbb940b9
-SHA1: fced883d6ec71c7932aee9daaa86e5725752aad0
-SHA256: 0d9c5869e2b4e7a960bea86ff5aa0413aa87a195027631cca5667ab37f4812eb
-SHA512: 118a1ae46cec79813f29b0a05d0118c47e2967a0684ae0ac6de1f1b8686b8302220a395d46aacbdf8c3c93e3621277dd8bc40f4b408b8441a966d576d1edbcd5
+Filename: pool/main/l/llvm/llvm_17.0.6_i686.deb
+Size: 21762028
+MD5sum: a8debaa1b8680d0fb8a4e04e3c60c008
+SHA1: 2bec24609f14ff18d29877572e0d2f72765a1c69
+SHA256: f7d07952a2fb3f63726a540814cc059aed5b6ccac414bdd267b741be55ce3914
+SHA512: 592ddb6af1a2487d36becf6ee0f0db6f62c69cf2a77233b22914bf4a07eb84252b9dbb5ead76f49f6e5e5d92902b1245a7ff0a9217676d4aa44c6a8644f7e150
 Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
@@ -22686,16 +22735,16 @@ Package: llvm-tools
 Installed-Size: 11880
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
+Version: 17.0.6
 Replaces: libllvm (<< 16.0.0)
-Depends: libc++, ncurses, zlib, libllvm (= 17.0.5)
+Depends: libc++, ncurses, zlib, libllvm (= 17.0.6)
 Breaks: libllvm (<< 16.0.0)
-Filename: pool/main/l/llvm-tools/llvm-tools_17.0.5_i686.deb
-Size: 2482752
-MD5sum: 3f24ec8aa7d1391d711b31c1f5927e61
-SHA1: 496668f16efb27dfe6ed9eedc674572554f6d9f1
-SHA256: e81e7c556284e98d3f0dd00c035f3a9cd86f587faba4b353cd3e176943337bb9
-SHA512: 6843f9c02e2490b98869c79a4a39f79be22b785a36c09d478c35879b15f9bdb45515a7f7a7c358462f85eaeba32eaba952d8b684710f4c5fb1d0e67e0d93c0ea
+Filename: pool/main/l/llvm-tools/llvm-tools_17.0.6_i686.deb
+Size: 2498064
+MD5sum: 01f7b35b56764b11515db7f6bf045d11
+SHA1: a44cc0ab58755e28910c4b4a359edcccf075a106
+SHA256: d23e84a047c67c13f2fc836b8aa27520e090ecefab32fccc48ebca4cbca9ca81
+SHA512: fcd730a056463aa8cb6d5d66473bc799f3d42f1aaad7cff3a38d71ca38257f49bcc45fd11973db343a0ac48b5854c13bcd6f10efe1c400b251f1f0fb1555b441
 Description: LLVM Development Tools
 Homepage: https://clang.llvm.org/
 
@@ -22703,14 +22752,14 @@ Package: llvmgold
 Installed-Size: 108
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
-Depends: binutils-gold, libllvm (= 17.0.5)
-Filename: pool/main/l/llvmgold/llvmgold_17.0.5_i686.deb
-Size: 28268
-MD5sum: 5f5fe504b5b492bf8c7cc54eed49bad6
-SHA1: f02d5abc6a79d67b0d736c1ef434e5ee1bdbbdc8
-SHA256: 5987f4742bf618d89cff76f615c8fb14525522c5b74e4ae2c871c08f85b357c2
-SHA512: 90531e902f9868306dc3d93458b805aa25661c139f80f657bfb6333a0def4d499276bd1b8105fc65219b013e6636ac26236f2b116cb723cf6da1799f746868dc
+Version: 17.0.6
+Depends: binutils-gold, libllvm (= 17.0.6)
+Filename: pool/main/l/llvmgold/llvmgold_17.0.6_i686.deb
+Size: 28228
+MD5sum: e36f5aa25713b7e2db24fec98fc49206
+SHA1: 4ac6abb3b3994a5dd16053b06d62a9334ae613ca
+SHA256: ad7e9da37b209fb2af51a17db9e2d241c2844cc96b5fa9d7ab60cbbb05a3d384
+SHA512: 8abd812ab55736cc5142a66d6dadcd756e9761c59c1d30a8a1ef5614476e7a2d344de7530628f2fe882ea54d9ee8e9df03d4d962bcf650fecf657e3ea1c14824
 Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
@@ -24448,17 +24497,17 @@ Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
 
 Package: mlir
-Installed-Size: 309852
+Installed-Size: 309856
 Maintainer: @finagolfin
 Architecture: i686
-Version: 17.0.5
-Depends: libc++, ncurses, libllvm (= 17.0.5)
-Filename: pool/main/m/mlir/mlir_17.0.5_i686.deb
-Size: 42714516
-MD5sum: 22354518b507c44223d9d9a0b0e494de
-SHA1: 0973a6ca58df07a1ab1ab650522d4844f945d3c2
-SHA256: d46c653b57a8b5e903517cef5651223153f1bc9f775fb283e4ebafcb8b25de4d
-SHA512: b4719ec3c7d2b88373ef1ab4f57d2c7116d2156855b13a38ef9d3205fb3cd3c4db21ddc72ee5afb8924b991a378554fae42833a7f7bfe252aa8770ecb7e5b3c6
+Version: 17.0.6
+Depends: libc++, ncurses, libllvm (= 17.0.6)
+Filename: pool/main/m/mlir/mlir_17.0.6_i686.deb
+Size: 42241484
+MD5sum: 1cf72cfde37f45c4cc7395000fcb46d8
+SHA1: e867da221fb313f6b6ace24cc73ddcb9ba34e8b4
+SHA256: a8e16a313a1d1367f059425b3021b1e214231e342950c2cdb6f8d531ac2fb562
+SHA512: d5fd5263a87a31945ad33a816d46c41d74501fe6f329169eae95b899ce309e116a74ee4901190f32b20bc36aacaf1a8f49d15440c5bc660e269b622dd81ea02f
 Description: A Multi-Level Intermediate Representation for compilers from LLVM
 Homepage: https://clang.llvm.org/
 
@@ -28882,18 +28931,18 @@ Description: Emulate chroot, bind mount and binfmt_misc for non-root users
 Homepage: https://proot-me.github.io/
 
 Package: proot-distro
-Installed-Size: 216
+Installed-Size: 220
 Maintainer: @termux
 Architecture: all
-Version: 4.3.1
+Version: 4.4.0
 Depends: bash, bzip2, coreutils, curl, findutils, gzip, ncurses-utils, proot (>= 5.1.107-32), sed, tar, termux-tools, xz-utils
 Suggests: bash-completion, termux-api
-Filename: pool/main/p/proot-distro/proot-distro_4.3.1_all.deb
-Size: 28320
-MD5sum: 89578462db67bc1e8faa551a8a68368e
-SHA1: b450f7835c87863a40f0af9a3f57162131a94748
-SHA256: fb9276917b770890d7531ec3d5eafba32ffe6680731e6614e038644ad48300eb
-SHA512: 1de782fa98f5532f81281992d06c4fe76b02e22424a3bc190f664f50cf5b294a8b5c3345f8d6d2bdf7869d34a607221b8714c5abee1af276668073e21289633e
+Filename: pool/main/p/proot-distro/proot-distro_4.4.0_all.deb
+Size: 28452
+MD5sum: 097c6d5dd066d4f52e71a81ff5126cc5
+SHA1: 67827d73f70e3cbd9e7421f7d6699615929e6bf1
+SHA256: c68fe464f6c1fa1b19c1e6beb7e40b1498e750d88faa8d38dfd4ab2f318ab475
+SHA512: 30a1b8751e2e0b32171b07ca0bae13da4405db4c6a21076d733bf93f4239c318cd723d5f18742143802d76bf500ddab8ddc61e6ab7b324f219674ec32ba8f86c
 Description: Termux official utility for managing proot'ed Linux distributions
 Homepage: https://github.com/termux/proot-distro
 

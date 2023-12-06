@@ -6060,21 +6060,6 @@ SHA512: 2b4951ea17fe26b2eef0de146c94749fa0da08b28fbe2db4dcdd407da1d415d638b4d9b4
 Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
 Homepage: https://github.com/fastfetch-cli/fastfetch
 
-Package: fastfetch
-Installed-Size: 1876
-Maintainer: @termux
-Architecture: arm
-Version: 2.3.0
-Depends: vulkan-loader
-Filename: pool/main/f/fastfetch/fastfetch_2.3.0_arm.deb
-Size: 349520
-MD5sum: f8985f2bd3eb718bf2e745647dfdd37b
-SHA1: d5e66c66cbb37edd43d42968bef82f08be0d1e28
-SHA256: 3fef3937f9a45dcd7a2e05db86061d22617f68799d130b097a5f4c869da69d64
-SHA512: d2838a478a58701e83b210864fb068304647f5ee78b5bf1e614695d1d8179ce048d9c6dae9323e598ee52bc90455dbe1bbe01a84425ad4ea505bedff9f3c5f09
-Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
-Homepage: https://github.com/fastfetch-cli/fastfetch
-
 Package: fastmod
 Installed-Size: 2184
 Maintainer: @termux
@@ -6484,21 +6469,6 @@ MD5sum: b66c59fa15db571f26eb94e0ca656438
 SHA1: 67a6abb6a5a0f6488f5fbd74fc1b85aeda97bacc
 SHA256: af7c7b49f865766d2d8913977eb8a04cfbd9b077dcc541fde2c13f97e15e69fc
 SHA512: b8bebc3de8e9636419496013aa9a6c3ebc0310412ce31f8c51027dd3769befde6cb01c84d4f9420e24a75c4ad6c159b582ac7c9d18ee6d388c01a6c17d3eec46
-Description: The user-friendly command line shell
-Homepage: https://fishshell.com/
-
-Package: fish
-Installed-Size: 17496
-Maintainer: @termux
-Architecture: arm
-Version: 3.6.3
-Depends: libc++, ncurses, libandroid-support, ncurses-utils, man, bc, pcre2, libandroid-spawn
-Filename: pool/main/f/fish/fish_3.6.3_arm.deb
-Size: 1969008
-MD5sum: 58b92181910b7b69100de0b3f5c6db04
-SHA1: 0aaf141319041b19d53a7adb9764ce9f6356079c
-SHA256: e9aeadbfc7da631b7ac0cf46e52e442addda3887cb642dd7f8f23814f7d7f8e3
-SHA512: c7d72489365b3a5e211c18c4d40d985f65acead1c93323e23e6cc51e7b9fd683a051b1ac1938850b8d0f633072c189e563bf78e01bd4b7f58b3784aa1f6b6f75
 Description: The user-friendly command line shell
 Homepage: https://fishshell.com/
 
@@ -7993,6 +7963,23 @@ Package: glib
 Installed-Size: 5840
 Maintainer: @termux
 Architecture: arm
+Version: 2.78.2
+Replaces: glib-dev
+Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib
+Breaks: glib-dev
+Filename: pool/main/g/glib/glib_2.78.2_arm.deb
+Size: 1164000
+MD5sum: 57439737f5505bfa13e85fc83821897a
+SHA1: 675582f67e493d57ac2d497bfc53d7ccbe207198
+SHA256: fc363ac76628220f0f2a31f343653dfdcb6742a4e01abe6823888a43c7afdde9
+SHA512: c384c907e757250a17d47667e960c720c446e2335f711d61add2a22356cc82cf1519faceff96518ade059d65f9ef8cb3c31909c3716e12ffa3a41b5e45fb6471
+Description: Library providing core building blocks for libraries and applications written in C
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib
+Installed-Size: 5840
+Maintainer: @termux
+Architecture: arm
 Version: 2.78.1-1
 Replaces: glib-dev
 Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib
@@ -8010,6 +7997,21 @@ Package: glib-bin
 Installed-Size: 368
 Maintainer: @termux
 Architecture: arm
+Version: 2.78.2
+Depends: python, glib (= 2.78.2)
+Filename: pool/main/g/glib-bin/glib-bin_2.78.2_arm.deb
+Size: 88348
+MD5sum: 19304bb2e88bfa0eb80d2910dc716c2c
+SHA1: b8a01e7128fa91deffcccef4d5ca71ee3f35e8aa
+SHA256: 09f0be374a1c840fdfe220c50514584f92c7ec0c598627d533ad697f233081ef
+SHA512: 1353dd5c4580e84d3dc46d1a060b6514182b595885e777f44f6eb74bddeaa72f4038e9697cdd6dd349b73eef02c7ef4e123ff1bfa250d4bfc41d75c5c1868e26
+Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-bin
+Installed-Size: 368
+Maintainer: @termux
+Architecture: arm
 Version: 2.78.1-1
 Depends: python, glib (= 2.78.1-1)
 Filename: pool/main/g/glib-bin/glib-bin_2.78.1-1_arm.deb
@@ -8019,6 +8021,21 @@ SHA1: ab0996dd4a6fee8bfa87dab6d5535c8608693407
 SHA256: fd35443c77a4cf57f3a82dd512bdbde59d907ccb08e215a70057594e68328c12
 SHA512: fd043ee365f60f1d0a2cc3731e72cb0cce5304da6a083b0356249b658a1a9733d38640acb2e6fa37cfd85e2be2f8cf1736747961498755526ef25a213450c5c6
 Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-cross
+Installed-Size: 149068
+Maintainer: @termux
+Architecture: all
+Version: 2.78.2
+Depends: glib (= 2.78.2)
+Filename: pool/main/g/glib-cross/glib-cross_2.78.2_all.deb
+Size: 38585660
+MD5sum: 3da50a825ea8db5f4385f3abf3c9101f
+SHA1: d37c7b6373089321bf0b5f8c98d7814a407efb04
+SHA256: b141a4633f97050986e71a439c4c062f65cf427a1dd4500404f4e05afa67c694
+SHA512: 609e796fd2ba8b44cce8ef4854ab455855ed5221ba292719f29c4463b2dd19f7d3b256086e1752e9974c2dee64852951dded084f9081e4941283988ba555557a
+Description: glib for host (NOT for Termux)
 Homepage: https://developer.gnome.org/glib/
 
 Package: glib-cross
@@ -9446,6 +9463,21 @@ Description: Standard GNU file compression utilities
 Homepage: https://www.gnu.org/software/gzip/
 
 Package: haproxy
+Installed-Size: 3904
+Maintainer: @termux
+Architecture: arm
+Version: 2.9.0
+Depends: liblua53, openssl, pcre2, zlib
+Filename: pool/main/h/haproxy/haproxy_2.9.0_arm.deb
+Size: 1217408
+MD5sum: a77a0e1276f946d8c54ab7f035415299
+SHA1: 2c439d670b098e00bc05fe9ae0cd01033e7eda16
+SHA256: 7eb99b9cc79a74a49439e05095ffcec31cffcd18ea1bea2eea27bf5103ac80cd
+SHA512: 439e8d1606b956fa2ae3b1bb008e9fb79208821a36cef90a96c4751fd827b2537fea4f85d53de94a200d365359d12d5bb238437f5ee6106ceb9c90a744604385
+Description: The Reliable, High Performance TCP/HTTP Load Balancer
+Homepage: https://www.haproxy.org/
+
+Package: haproxy
 Installed-Size: 3756
 Maintainer: @termux
 Architecture: arm
@@ -9992,17 +10024,17 @@ Description: Command-line wrapper for git that makes you better at GitHub
 Homepage: https://hub.github.com/
 
 Package: hugo
-Installed-Size: 75156
+Installed-Size: 74780
 Maintainer: @termux
 Architecture: arm
-Version: 0.120.4
+Version: 0.121.0
 Depends: libc++
-Filename: pool/main/h/hugo/hugo_0.120.4_arm.deb
-Size: 13796316
-MD5sum: ca77a52efa37f179c32950bccd84e3ea
-SHA1: 237332141351df5a9401f6d2742423c3c13f1925
-SHA256: 8706d79ad8eb6065955b025785bac484ed79b365b058588bf5268c65f8183f72
-SHA512: 09a6bd3d367c524fc498a89262f2b142c215e66f5b3af123a4411f0a44e369d41b6292e1aebd62488309d0971d22ee78ce262cda78ad417065ea06c4e75900f0
+Filename: pool/main/h/hugo/hugo_0.121.0_arm.deb
+Size: 13685216
+MD5sum: e36f524d16a1c6c0d9abadcd914f4acd
+SHA1: cb5a034381925359c34dbf6f6470995e685178b3
+SHA256: 20e677891088ca3767c47f095668644b09b68f940127ef19539561533aea3306
+SHA512: db0664687e5c253b08f274129db40325533845d323f58b5c49ad0b6133185050afdfe3e3b401870f1586120cc8c974cc883924d3f9b5115dfc1b56aee0e9453c
 Description: A fast and flexible static site generator
 Homepage: https://gohugo.io/
 
@@ -12759,14 +12791,14 @@ Package: libc++utilities
 Installed-Size: 852
 Maintainer: @termux
 Architecture: arm
-Version: 5.24.2
+Version: 5.24.3
 Depends: boost, libc++, libiconv
-Filename: pool/main/libc/libc++utilities/libc++utilities_5.24.2_arm.deb
-Size: 142244
-MD5sum: 90a3aeb2764e5dd41ef49b0297628236
-SHA1: d918af0e333ce1dfe7521c3527115eb2c70d48c6
-SHA256: f923c5faa627bad0802dff262b86adf9dcd5191fb7edb01fdf44c0f690058d5a
-SHA512: 81a2cd2b66cfd83f7ac2596aa38241e007e260df88143e2bb2e6bc530959d18e5476b5df23755006da521897bf927e9537f69ab9bfbdda78e7fce4fb0bd7c323
+Filename: pool/main/libc/libc++utilities/libc++utilities_5.24.3_arm.deb
+Size: 142388
+MD5sum: c5f86caa651a04ac6d42dee247c3bdff
+SHA1: 04036c10e51c4294c9a1e0d3f44b3c0f70aff8f2
+SHA256: a51c6d6cfd15ab2b48bd6242c9f5e05cfb9005a82205a56cc99fed9c6075239f
+SHA512: 4c04ce49b60282944679cb8946f502e14e1012c36aa89155aeee6fcd8039db30810af8d7168a773bbda2dc9d08c905542e263c60dbafcb1ce1b1fc97387d409f
 Description: Useful C++ classes and routines such as argument parser, IO and conversion utilities
 Homepage: https://github.com/Martchus/cpp-utilities
 

@@ -5863,6 +5863,21 @@ Description: Event Notify Test Runner - run arbitrary commands when files change
 Homepage: http://eradman.com/entrproject/
 
 Package: erlang
+Installed-Size: 103276
+Maintainer: @termux
+Architecture: aarch64
+Version: 26.2
+Depends: libc++, openssl, ncurses, zlib
+Filename: pool/main/e/erlang/erlang_26.2_aarch64.deb
+Size: 38949688
+MD5sum: aa4c5f34631fa0901021128cc6f1e04e
+SHA1: fbdae80843f0e1725275963b0dfdf1b0aef839f8
+SHA256: beef3fac05f4b5817622562a468fc3966cf5230005f29403dd843b4d7ec7317c
+SHA512: 0cedbc89abc35cfd1dbc09774d61d414990b53cba88fbc4f3258714692462b561eb7bb4ef09922423061d19adf0c2204a42f9687095fca0174e0258ebb318a7e
+Description: General-purpose concurrent functional programming language
+Homepage: https://www.erlang.org/
+
+Package: erlang
 Installed-Size: 102940
 Maintainer: @termux
 Architecture: aarch64
@@ -11373,20 +11388,6 @@ MD5sum: 1d73295ca0f2f0fbf2b0cb7cec475d34
 SHA1: 095c18002d4394d995414fc966d8e6238b49639f
 SHA256: f64b6100e177b6441ec0563db318dd767d3af2affd6998ee88700886f4f107b7
 SHA512: 97cd1be5f5607cb548a91579986fcaae9a319417628a2d50ef8c58a2f6f9b3980991177b11e61e2afe4d9d0add00638f816085fd2d82a91d301342d0f8ed2706
-Description: Kubernetes CLI To Manage Your Clusters In Style!
-Homepage: https://k9scli.io
-
-Package: k9s
-Installed-Size: 126068
-Maintainer: Krishna Kanhaiya @kcubeterm
-Architecture: aarch64
-Version: 0.30.0
-Filename: pool/main/k/k9s/k9s_0.30.0_aarch64.deb
-Size: 24807964
-MD5sum: eff3a5d7f560cbb111e69f9efdecf6f2
-SHA1: f32b7dd41833fb47c7b7eb608240ccca0438ec3e
-SHA256: 3033fa72706c455e5d0d84021e641b520af512c999e179164a258c0e8c138dca
-SHA512: e0959b6c53410e8b1fac669f9721c21f535e2841393c924e03d1eb2efa158e826e3f6b428db749c91993eaeb066b85990402919151d46db0389dfba2e7bad4b7
 Description: Kubernetes CLI To Manage Your Clusters In Style!
 Homepage: https://k9scli.io
 
@@ -24392,6 +24393,24 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 50856
+Maintainer: @termux
+Architecture: aarch64
+Version: 23.3.1
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.3.1_aarch64.deb
+Size: 12348232
+MD5sum: ee382332bc2f02f58d07804b5d4c99cb
+SHA1: 24267d3f7cc34f12e36d734152316802ba5074a4
+SHA256: 3666fec12d2dc9c8bd276afda517b0a2654c4dff3d2acb4c126e89378dc43c4c
+SHA512: e496bb16773cecaf865dbc6d5db4d1857fa9ba7fe98ef994a28e70f9c7bbc89db64234c36cd41e8ace8516902e0e96c2a87667c63cfb61e14fce3a59d9323c09
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 49380
 Maintainer: @termux
 Architecture: aarch64
@@ -24413,6 +24432,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 23.3.1
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.3.1_all.deb
+Size: 25036
+MD5sum: 490ff8f705852759e791871f110f4a91
+SHA1: 7df8017024e3ae66444e93e8cdaefc61674e91f6
+SHA256: 8330316e496703504eb8a5bed551454c9ccb04a67bac7d87616da04b8142bd47
+SHA512: 39221f967edeb65d2ba568cf065191910d8c8ce83ad640beeb70f70d5a2d766d6367fcd8f26de09cd13b66322dc48f335618a33222ffba51263b0541276811a7
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 23.2.1-1
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -24424,6 +24460,21 @@ SHA1: 2da5e46d80ed998712677b6fe6ea310bf4d5106b
 SHA256: 3d8006424f945a05fc1a4d8791761d92c800a9cdbf3fec3ac925e63e0d1324bf
 SHA512: 76cd5f823f335dd95c8b3dd96672fd95361ec41b964f2e9695bd3357ee49b4ee011ca4b19d80a1f09dee91d9ff802fc1ee05cdd523ad954d6d14de516cceb480
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-freedreno
+Installed-Size: 7076
+Maintainer: @termux
+Architecture: aarch64
+Version: 23.3.1
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_23.3.1_aarch64.deb
+Size: 1154588
+MD5sum: ae697116bf1b477f2283aaff773ae719
+SHA1: fe740e10904017685d27de87d735cf0bd17c8db2
+SHA256: c0aaa854278be3387530d259897736fcb02b2ab3f1555e0c72e9c9fddee96cd6
+SHA512: b61864cc99b8916c1689ba17a75b4642f7ce4f6579c20e088fddf842105dafb09876d7df6bebf10646dc6fba95e13aa76997b73420691a1b5592f4f165354074
+Description: Mesa's Freedreno Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-freedreno
@@ -24439,6 +24490,21 @@ SHA1: e87dc6a2dc86bfaab7c81d54b1e4c9d8b4161bcb
 SHA256: 9bc7106b224cb38de2f41b51a68a4e2581501e33bb02af04a0ff3ee55c14a36d
 SHA512: d6b48926bc87188db94d0714bc17a0f7fe36235a89613493a5feb3c14ef3bdc4f1c26abf1237b2b83252d2509e247cc85afc85739e14e59e094aeb8effc2eda1
 Description: Mesa's Freedreno Vulkan ICD
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 50588
+Maintainer: @termux
+Architecture: aarch64
+Version: 23.3.1
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.3.1_aarch64.deb
+Size: 11952204
+MD5sum: 5df2a1dd98ad8273066a6608652257a2
+SHA1: e81c97510885947036839eb877a92ad33d8208a4
+SHA256: 3b14bc4bd42dd26b7ea7c20d12b098cbe19e8972271b2eb1d71e078e0bd33ede
+SHA512: 670e84c8ff4cd55927d900aa9cdbc3bbdbeab127a2a066c0e21a5bf2693f98c444cbdcdcad440d0b6cd5406b23b9caa05cdfaa201b0db4dcce0dd68b43954538
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -27582,6 +27648,23 @@ SHA256: 1f53f0eef922f2ef688f1eb66db81d10409c2edb25ad52c67a2ab97c523eb63d
 SHA512: 95732b7a63bf9122da3aff47208c34d24d39b4af02e2379818a5ee5e96bcaf94b9ee54147eb71d9a6b6dc0a37f6a380660d448d7f94a96bd6a72c13ba1747a96
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 47812
+Maintainer: @termux
+Architecture: aarch64
+Version: 23.3.1
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.3.1)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.3.1_aarch64.deb
+Size: 11609912
+MD5sum: 837255919053e6ffcd3f86bc4684fa27
+SHA1: 3f4ddb11599b6e5fdc7c5aa85026f56f9a648824
+SHA256: 76501f98ea00681022251282ed1ca2969c40922a736c63c9817b0a956d2d676c
+SHA512: 93d08f77b09d4d4c8ab70e14baf594f642b680a62e39e731dff7e50af4dea7756ace8e0163a387fe4f589b361d251f4e76569422f166aa8478fa8f3f27758a72
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 46352
@@ -35436,21 +35519,6 @@ SHA512: 5d3100ff3027bd3b36e21d7b6e7ae0cbd8a19b891322f4c2b539a98828c52534af993d0d
 Description: Command-line time tracker
 Homepage: https://timewarrior.net/
 
-Package: timewarrior
-Installed-Size: 948
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.6.0
-Depends: libandroid-glob, libc++
-Filename: pool/main/t/timewarrior/timewarrior_1.6.0_aarch64.deb
-Size: 262952
-MD5sum: 4f137866a98e6b337020eec9554c87a0
-SHA1: da83514b3df151432b67cdaf0ac5137f0e058518
-SHA256: d28256c23c3937f9e7ea9ebe049fa475b9ddf7241dacdae34b43b75a8670319b
-SHA512: 1cafca312f24bd40d6ff8082670a928d9e76dc515da563c1b1448d8d3e1865f7d61371dd1d7d360ec0474f0de2d5ddfbe9013cff469c3421e7101e36df5bba1d
-Description: Command-line time tracker
-Homepage: https://timewarrior.net/
-
 Package: timg
 Installed-Size: 228
 Maintainer: @termux
@@ -38610,20 +38678,6 @@ MD5sum: 5a747cf6c9416fd72b17f4d1d8c55bfb
 SHA1: 922408edfd49f041c41cb17c4c893b34706281e5
 SHA256: 7e578e14b34c044ddbd4cb0074dc3ec8d40d1c06000413ed06df93a4be507151
 SHA512: 12ec3998056fb6fa99147b1b4770a977592f77d7a25f01dc129510dd4ebc8f34d6d5b39e7beea58652f94f847ccd090b62c46fce556ea8aa65ff0d13c8ab4134
-Description: Download youtube video in Golang
-Homepage: https://github.com/kkdai/youtube
-
-Package: youtubedr
-Installed-Size: 15632
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: aarch64
-Version: 2.9.0
-Filename: pool/main/y/youtubedr/youtubedr_2.9.0_aarch64.deb
-Size: 3809836
-MD5sum: e3e1aea6eb12a457cc28c1a75f6f50b6
-SHA1: f9fd4c39a6e3dcea48f6b718fb0148ca825bce07
-SHA256: 5aa9e4b7c93ceffacc8b53af39bc97d6db9ca8bb9c313ee8aab2ca0c9dd1d871
-SHA512: 09427e0689b9b8539ec06894c7ba57a76ba4dbc14eccebee879040984e1b70a47950640a13a3c90cc7e50aa0884be78a3ee3ff85d15ee4c949b3e267af458f1a
 Description: Download youtube video in Golang
 Homepage: https://github.com/kkdai/youtube
 

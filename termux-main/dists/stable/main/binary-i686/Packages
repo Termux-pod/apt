@@ -16892,6 +16892,35 @@ SHA512: 141c5586d14d4d8b1da47ffa941d37d4046561c7795774ed62f57cb94a81cf16d418bebe
 Description: Asynchronous API library for interfacing MPD in the C, C++ & Objective C languages
 Homepage: https://www.musicpd.org/libs/libmpdclient/
 
+Package: libmpeg2
+Installed-Size: 364
+Maintainer: @termux
+Architecture: i686
+Version: 0.5.1
+Filename: pool/main/libm/libmpeg2/libmpeg2_0.5.1_i686.deb
+Size: 71604
+MD5sum: 6550bc5caa9d2120e6ca9664563c9e95
+SHA1: 9f394e973a640cc8ff628a97bb10e369dfca6ea8
+SHA256: 2ee967a31f068ad803c880858677e042b0c39a1de3a873eb00ccadb471bf4fe8
+SHA512: c49813ee08fc29d1e6b5657e661746cf267fbbf4dc488bda21f93621a10d02ae2ecc5bb50817c816e0f20584988ce70f6376989634a118eeb7a2894ef00973ce
+Description: MPEG-2 decoder libraries
+Homepage: https://libmpeg2.sourceforge.io/
+
+Package: libmpeg2-static
+Installed-Size: 280
+Maintainer: @termux
+Architecture: i686
+Version: 0.5.1
+Depends: libmpeg2 (= 0.5.1)
+Filename: pool/main/libm/libmpeg2-static/libmpeg2-static_0.5.1_i686.deb
+Size: 55092
+MD5sum: 39d381a30d1d58f464a665dfe763a321
+SHA1: 9a835f5826c5a3a566e34d5af7d9e3cafe40278b
+SHA256: 7b4baafae16da24b741fb94d1962c701826577f97bd06f0dec122da7d29d1552
+SHA512: 040f8fed45b9dd5da19c6b14bf4c126dc4fd2bed1b8516cbe73290666889a4bbab00979431291a04b8e4c50109c6e1be94a7453c3963324a0842ed841f6362cd
+Description: Static libraries for libmpeg2
+Homepage: https://libmpeg2.sourceforge.io/
+
 Package: libmpfr
 Installed-Size: 972
 Maintainer: @termux
@@ -34334,6 +34363,21 @@ Package: termux-am
 Installed-Size: 76
 Maintainer: Michal Bednarski @michalbednarski
 Architecture: all
+Version: 0.7.1
+Conflicts: termux-tools (<< 0.51)
+Filename: pool/main/t/termux-am/termux-am_0.7.1_all.deb
+Size: 25616
+MD5sum: 69dff6d88680703559f13447e180621f
+SHA1: 5ac1d05b0926988f0b11cf36c531a0705abcf937
+SHA256: ce4e97babaa525e6faeecaea438e458053a43dcba4fd375d45af0b807f00f62a
+SHA512: bdcc63ae82b5a0a116ffc45049569d7068931aaf543da98461a1ff9efc199d86f685b11735c7541f43fa531d75fc2f9efbfd2d0de5eb9dccfe6aa891671dbc26
+Description: Android Oreo-compatible am command reimplementation
+Homepage: https://github.com/termux/TermuxAm
+
+Package: termux-am
+Installed-Size: 76
+Maintainer: Michal Bednarski @michalbednarski
+Architecture: all
 Version: 0.7.0
 Conflicts: termux-tools (<< 0.51)
 Filename: pool/main/t/termux-am/termux-am_0.7.0_all.deb
@@ -34569,6 +34613,26 @@ SHA256: 15c3fff14cf80949ffda0ca1dbc3e4aa10d6c649fddc50fb292e498da310e16e
 SHA512: 7c24b07f9292a4c6c8283b796566d655845655759825684a346597fe7994a25153ece067cadaa9852edd6acc5a013094d085b6c4646c84b5daec50a901e1771a
 Description: Service daemon for Termux
 Homepage: https://github.com/termux/termux-services/
+
+Package: termux-tools
+Essential: yes
+Installed-Size: 484
+Maintainer: @termux
+Architecture: all
+Version: 1.40.1
+Depends: bzip2, coreutils, curl, dash, diffutils, findutils, gawk, grep, gzip, less, procps, psmisc, sed, tar, termux-am, termux-am-socket (>= 1.5.0), termux-exec, util-linux, xz-utils, dialog
+Recommends: ed, dos2unix, inetutils, net-tools, patch, unzip
+Suggests: termux-api
+Conflicts: procps (<< 3.3.15-2)
+Breaks: termux-keyring (<< 1.9)
+Filename: pool/main/t/termux-tools/termux-tools_1.40.1_all.deb
+Size: 29384
+MD5sum: fd6ba0f7dc2997723fdb9c0ea6500fa1
+SHA1: 4fa079d779979819ab45aee2e38116424f560b9b
+SHA256: 98d89cc9cc2ee31bf2bbd3b16b53ed80a17dc1dd2967587cb63be2746d8b2b5b
+SHA512: 5d64a20068956d8c5339803d4fe7dcd6edcdceeeca39cfd7b3b6b2e05b516423132b963509ae2594b5e0b09c35c853a932c68d83f03f52b3a33f8cd5a3e7fcc7
+Description: Basic system tools for Termux
+Homepage: https://termux.dev/
 
 Package: termux-tools
 Essential: yes
@@ -36575,32 +36639,32 @@ Description: A themeable LS_COLORS generator with a rich filetype datebase
 Homepage: https://github.com/sharkdp/vivid
 
 Package: vlc
-Installed-Size: 12172
+Installed-Size: 12192
 Maintainer: @termux
 Architecture: i686
-Version: 3.0.20-2
-Depends: chromaprint, dbus, ffmpeg, fluidsynth, fontconfig, freetype, fribidi, glib, gst-plugins-base, gstreamer, harfbuzz, liba52, libandroid-shmem, libandroid-spawn, libaom, libarchive, libass, libbluray, libc++, libcaca, libcairo, libcddb, libdav1d, libdvbpsi, libdvdnav, libdvdread, libebml, libflac, libgcrypt, libgnutls, libgpg-error, libiconv, libidn, libjpeg-turbo, liblua52, libmad, libmatroska, libnfs, libogg, libopus, libpng, librsvg, libsecret, libsoxr, libssh2, libtheora, libtwolame, libvorbis, libvpx, libx11, libx264, libx265, libxcb, libxml2, mpg123, ncurses, opengl, pulseaudio, samba, taglib, zlib
-Filename: pool/main/v/vlc/vlc_3.0.20-2_i686.deb
-Size: 2939732
-MD5sum: 3634382b9ef27f7e5d5d612f7bc1322d
-SHA1: 76110217dbd003b82954eeac1df61744102c813f
-SHA256: 8068343b500ec8a8d323696baf0d362c20446b1a2f4ae91f61a8a82900cca0c3
-SHA512: b09e87c85a33f13ba58c75d0ec08f7b08cd23976c9db0172b0f69b5da8b3997657a5d8b63363b9ac1fca710aa4e6b8a158655206bbbd74c7bf61cc75b9dde762
+Version: 3.0.20-3
+Depends: chromaprint, dbus, ffmpeg, fluidsynth, fontconfig, freetype, fribidi, glib, gst-plugins-base, gstreamer, harfbuzz, liba52, libandroid-shmem, libandroid-spawn, libaom, libarchive, libass, libbluray, libc++, libcaca, libcairo, libcddb, libdav1d, libdvbpsi, libdvdnav, libdvdread, libebml, libflac, libgcrypt, libgnutls, libgpg-error, libiconv, libidn, libjpeg-turbo, liblua52, libmad, libmatroska, libmpeg2, libnfs, libogg, libopus, libpng, librsvg, libsecret, libsoxr, libssh2, libtheora, libtwolame, libvorbis, libvpx, libx11, libx264, libx265, libxcb, libxml2, mpg123, ncurses, opengl, pulseaudio, samba, taglib, zlib
+Filename: pool/main/v/vlc/vlc_3.0.20-3_i686.deb
+Size: 2941964
+MD5sum: 117b0385bcf9b4946f910bf21eea38e3
+SHA1: 0aebac824463027314d5bfd3ab78a6b8786c122e
+SHA256: 4bd4432cca4d08023508a37192a1bc982c4d93e25301c577b0e0e91ad9d50f46
+SHA512: 43b105c5d4c19512d53b85e4c3f7c263027d197d73496067abddeb485470b31a1f1a32da3b9080c66434448d794a94ef7bb6ecc1adc7140bce9aa89b02a4b59d
 Description: A popular libre and open source media player and multimedia engine
 Homepage: https://www.videolan.org/
 
 Package: vlc-static
-Installed-Size: 1516
+Installed-Size: 1520
 Maintainer: @termux
 Architecture: i686
-Version: 3.0.20-2
-Depends: vlc (= 3.0.20-2)
-Filename: pool/main/v/vlc-static/vlc-static_3.0.20-2_i686.deb
-Size: 17000
-MD5sum: d46a1900ef91db50480b52aba12d5c9a
-SHA1: e403c7d347394267182b350a18c95e941639fcb0
-SHA256: 535d3ca32a1d33d4a3bd1ea58cbc10183b7714d79123594a49f1013b9cd00706
-SHA512: 237132060d1f1a63c887ba67b1dbec3a9fdc2e06644fbb9b964c14d74b4c4eeb596c68d715b3342dee4925f6cca8aae02da4c53af33ec04da088c13ea3cb4ca6
+Version: 3.0.20-3
+Depends: vlc (= 3.0.20-3)
+Filename: pool/main/v/vlc-static/vlc-static_3.0.20-3_i686.deb
+Size: 17028
+MD5sum: 234445c184f38484562cb02fe166289c
+SHA1: 6322212b179c1ca65c13b9e2ce776623ab662f82
+SHA256: 906a986d41d19f8af121ed1fc02641872ea53c4ca2420dc0db291529c357f51e
+SHA512: 4b09dc684e27dc6829757f731bb1ddca0abdca9192d1fcadd523b9854cfe427e133449aa9faba3302190d7eb30a0df44edabdaada90cc3b27176bfe95dd88bde
 Description: Static libraries for vlc
 Homepage: https://www.videolan.org/
 
@@ -36646,21 +36710,6 @@ MD5sum: 97eede2ca6a2241df0c88da55426f9c6
 SHA1: 992f2ba9d8c2136105981f37db6ef45dca6b4339
 SHA256: 6f81ab66d49abc800d06673008bd542cd4f1a7f857f33ead874d17ecad90641d
 SHA512: 31e433ab3263185bce63537333934027cc542c50916eca1c7036fe7098f3ce5a9cdbe85732d9fa4641c865355b571bb3e88f4b9889fc716e4a58306537b8377f
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://vtm.netxs.online/
-
-Package: vtm
-Installed-Size: 5760
-Maintainer: @termux
-Architecture: i686
-Version: 0.9.38
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_0.9.38_i686.deb
-Size: 1064296
-MD5sum: 598e65ccfe19baba95d1bda9c5736edd
-SHA1: 5722b3175cf1c040391c74c32fd67fb9518bef0e
-SHA256: 021d6975c8a6991c2ae234af960286257b00fd5ee5fcd9c08535bd87a09477ee
-SHA512: 5870cca5ec7061b9ac9f0dd8210e384f8ead2bca9a0b129f447f891eeb4f60af44b97bb2a7d574f48b4160ff9f97c98415fc27774c7ce1bf5678e431bcf51ec6
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://vtm.netxs.online/
 

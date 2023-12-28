@@ -4127,6 +4127,21 @@ Description: Pretty-printing CSV/TSV/xSV on terminal
 Homepage: https://github.com/wfxr/csview
 
 Package: ctags
+Installed-Size: 3500
+Maintainer: @termux
+Architecture: x86_64
+Version: 2:6.1.0
+Depends: libiconv, libjansson, libxml2, libyaml
+Filename: pool/main/c/ctags/ctags_2:6.1.0_x86_64.deb
+Size: 715316
+MD5sum: dd84870d36644ca0b8c3b9b1fd7a0bf2
+SHA1: 3c1ee4afb72e3ff43ebfd2a7935d8ac9f5253d58
+SHA256: 75bd87fb361c288bc221a8b067026c45fe43172d556b8e9f8dd4fa3f1e02548e
+SHA512: 3815550f8cde5c6d4735ef5ba7be0daab1d0ed75ba83178ec152e0dd0baa15a0284e1543ed9dff335846f894ea870b614779441a95892ed67c1831694f28b29a
+Description: Universal ctags: Source code index builder
+Homepage: https://ctags.io/
+
+Package: ctags
 Installed-Size: 3320
 Maintainer: @termux
 Architecture: x86_64
@@ -24331,6 +24346,24 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 54568
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.3.2
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.3.2_x86_64.deb
+Size: 13990288
+MD5sum: cf093c956d5f18f23a7c57a448967684
+SHA1: c23175abfdd01ba27b65c6721889e30a232fea38
+SHA256: 319f2a54d3eaffdc6136696b30462a15a58b0652b53f77768bf5ce7a4e82c63e
+SHA512: 0b5b76b2805760cacffe24f7a34c2c1aab564b27f71a11b9bf2fc2913df7fb2b2398d34292581597e22a4b636d8fa0b133a6cb8bdb4ace193a3c99cb40043fcb
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 54564
 Maintainer: @termux
 Architecture: x86_64
@@ -24352,6 +24385,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 23.3.2
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.3.2_all.deb
+Size: 25048
+MD5sum: 2cd4070ca60a5602569a10c00ae65553
+SHA1: 05e9657375d52c1fe11d22f7734ef71be55b8ef8
+SHA256: 76c8aca767cff1039f0758d8e9eb79f6e6ff7111db836f47e15d51e51d066f07
+SHA512: eaa61f9e522a2d7a14fd0ed4a8911e649ea2fcaec0359a6e7b400f7d7b00deb31bc37a4f0021f1c7492ffd92fc22bf0c9da1eeb5c375cb7b938f1e5fbd30f4bc
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 23.3.1-1
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -24363,6 +24413,21 @@ SHA1: 0bad44d33af09506f59522c1f082361739bf4539
 SHA256: 43f65e779c8174dc6ae8d2eb2c28c40b3814ce9fa20569ae5841076271e96522
 SHA512: 5a490c85f99744b143eb5f7739a706aff57b4f0e8e6087d15f48d6eb8e64859b466b5b2b536ce348e88d35dd64c101949a099cbb04278d682d902f603493334b
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 54312
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.3.2
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.3.2_x86_64.deb
+Size: 13701160
+MD5sum: b49ba9532a47561b88003d83462cece8
+SHA1: b2f42bf1a92cae80ba77f11d03258d951ecf7152
+SHA256: c776654ff65c229fcc0a60d7cc8582f631a04e27fd64f00fb8aed33d6537a5e0
+SHA512: cea779e42541910ca8c564710a14b8ed366c0056d0df157bdeeec4cd89572d02b91de928f92a03eba7edcf8d80c33af2ce8b2d9615c3d169b367e4bdf3fc165e
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -27526,6 +27591,23 @@ Package: osmesa
 Installed-Size: 51384
 Maintainer: @termux
 Architecture: x86_64
+Version: 23.3.2
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.3.2)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.3.2_x86_64.deb
+Size: 13223544
+MD5sum: 46ce239ab609303a53f9ef3356fd5d16
+SHA1: af67c8d981a021b0e569ed1006a7ef0cd2750354
+SHA256: ae2326da4fd589d97276e26d2dfebad642b1e0ea8f12cb66541eaedade140227
+SHA512: 5502c869b51b1fcd4800f4d300286836a1ae7d55d5cc941fea7a4e8cc23025d1ec654ae555ff6ead2ca425b4f0e540933e6c122e56c5ff5c508909c95363fd04
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
+
+Package: osmesa
+Installed-Size: 51384
+Maintainer: @termux
+Architecture: x86_64
 Version: 23.3.1-1
 Replaces: mesa (<< 22.3.1)
 Depends: mesa (= 23.3.1-1)
@@ -28618,21 +28700,6 @@ MD5sum: 443ec7e6287b6b94be91abab982517e0
 SHA1: d5c51122b8092e4e6a1204b43dac5da29a6d3ae6
 SHA256: fd7723dd401d7f900e22e948647331caa68cb65fa361e50aad8a3c9f09c72261
 SHA512: d85410ef9b7d8565b707dbecd0a3d7ae28088202b8bf42c7844d0006f6bb815ec12dc01592ba7c94032563c932e5e6734fc529617a9667ee0574ca315240ce3f
-Description: Lisp interpreter and application server framework
-Homepage: https://picolisp.com/wiki/?home
-
-Package: picolisp
-Installed-Size: 7288
-Maintainer: @termux
-Architecture: x86_64
-Version: 23.9
-Depends: libcrypt, libffi, openssl, readline
-Filename: pool/main/p/picolisp/picolisp_23.9_x86_64.deb
-Size: 1303600
-MD5sum: ac1154b218a016f94b31c9b10e833dd2
-SHA1: 4b45c79fa4c5a613192aae9dae72267c1cf566b5
-SHA256: 503dbee34689d56a79f53ce6c4bfcd34f348b2142c47d80dbfa72087c0689c3a
-SHA512: a4e012048d0d6b9f7e8bacb7abe302f6be14c3a72dbbf8d784d867d63bf446640dc635afaa0ef982ea4c336a684f399982355291ad18c307ae07acf959b85104
 Description: Lisp interpreter and application server framework
 Homepage: https://picolisp.com/wiki/?home
 

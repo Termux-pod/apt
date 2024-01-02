@@ -132,21 +132,6 @@ SHA512: 57c7f26e86f8b31f241036c80c3110e1f2d55b3afad4f4e2a0309304330cf91326e4866b
 Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
 
-Package: cryptsetup
-Installed-Size: 444
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.4.3-3
-Depends: libpopt, libblkid, libuuid (>> 2.38.1), libcryptsetup (= 2.4.3-3)
-Filename: pool/stable/c/cryptsetup/cryptsetup_2.4.3-3_x86_64.deb
-Size: 118532
-MD5sum: dc0f55a42f214c803be4098feb260236
-SHA1: a601fe3e220ddcfc3df23059b4bc3e6a42701f20
-SHA256: 9f583a5509bf48080ca322500df8f4bf5cdbf6561cd03937950523b6879d6640
-SHA512: 500c67370b264041d29f924a4e6d23dcd6d8538c41b99399746628c0e7a1e2840e69fb3b2b702da9cc0cd2fadfe08ff70bcfd2623ee34e52dee72cb6dff175cb
-Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
-Homepage: https://gitlab.com/cryptsetup/cryptsetup/
-
 Package: cryptsetup-static
 Installed-Size: 936
 Maintainer: @termux
@@ -579,23 +564,6 @@ SHA512: 066f1a946340d66327222b434191317c8bc4395c71847660f9863d2518c3e009196e1c57
 Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
 
-Package: libcryptsetup
-Installed-Size: 560
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.4.3-3
-Replaces: cryptsetup-dev, cryptsetup (<< 2.4.3-1)
-Depends: json-c, libblkid, libdevmapper, libgcrypt, libuuid (>> 2.38.1), openssl, libiconv, argon2
-Breaks: cryptsetup-dev, cryptsetup (<< 2.4.3-1)
-Filename: pool/stable/libc/libcryptsetup/libcryptsetup_2.4.3-3_x86_64.deb
-Size: 185476
-MD5sum: a4de25776be3507a373af9db44a0bbbb
-SHA1: 7d18a7376dfd76efc0120d0fdfea138c42dddc3b
-SHA256: 6ed8f611d9d54823558053469c6713c8ecb330ab6226dd47e0297c0d2eb9235f
-SHA512: 82b455d3dd1c79042c9572eeccc8a4521207071a5a08b7f7a9a10cbc2612fd7ca9d019b87bf5b81ac46f8f21395901f2699fd0b4b74d21cd1c542a0472f5a432
-Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
-Homepage: https://gitlab.com/cryptsetup/cryptsetup/
-
 Package: libcryptsetup-static
 Installed-Size: 1024
 Maintainer: @termux
@@ -608,21 +576,6 @@ MD5sum: 90391276fc7cfbc4509065220cb90aba
 SHA1: ff0947cb7af796357e35c50ff47151dab413b1fe
 SHA256: 960399900d4c00a97c06f29f06ad20d7e2a38df6ef94dabdfd7cfc9fff526cfb
 SHA512: 24b9764951044445ed7fd5974f6f3ad0de61a2b2e6e3d3e4859eba7c9dafb926c0431290ed764cef8c9e649f19348582edad35c4d6e94af1d9f87a1dcffa13b3
-Description: Static libraries for libcryptsetup
-Homepage: https://gitlab.com/cryptsetup/cryptsetup/
-
-Package: libcryptsetup-static
-Installed-Size: 936
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.4.3-3
-Depends: libcryptsetup (= 2.4.3-3)
-Filename: pool/stable/libc/libcryptsetup-static/libcryptsetup-static_2.4.3-3_x86_64.deb
-Size: 204844
-MD5sum: 9ca9110d2ddbb7648f5f8ed2cc8d2a4b
-SHA1: d24a3dfe9a877e4b1108f87639ba821d2509fdba
-SHA256: 7eaded6b63100da5a6288c32318055ce38cd48ca6ddba01a5f61dc4de6e0aa62
-SHA512: 66510d6f7c259b106c23a1c99c8e29946512ea28f7c33041c5589fda1a886686342f272c2d3672923d2d022ff66100482c279e0a83d8371c9f648f9191569e21
 Description: Static libraries for libcryptsetup
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
 
@@ -1076,6 +1029,21 @@ SHA256: 4d1f4b6d6954576c9fd1e6ed3800a2c7e096bf610406f46446f987d5b12c70d5
 SHA512: 356ef92b58e869d1571feb13a8eb36bc9dde955cad045d501b77455f789b5d57b876ab3cfcce58b83f12e8bc2fc65ad379899815e62c9c55f5d0a7b3d8ec47e0
 Description: An offline Wi-Fi Protected Setup brute-force utility
 Homepage: https://github.com/wiire-a/pixiewps
+
+Package: runc
+Installed-Size: 9580
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.1.11
+Depends: libseccomp
+Filename: pool/stable/r/runc/runc_1.1.11_x86_64.deb
+Size: 2761784
+MD5sum: d15db4afd6640a253a7bd4ce4495b1f7
+SHA1: 9c9664c011fe44af4d60ca3b8a7b3ebad609cd00
+SHA256: 97733bd76535c4d7fe636912b6e1dc517284c4ebf47c715cc9ced82663fd23a6
+SHA512: 81a048c28f70fe6f9693c3cfef60121b1e2ecabdc66d864a641bef8fd5f6443129aaefbdb9d30f074b989981b9b93941503472ac3e434c4c3901b6dec5c0de1d
+Description: A tool for spawning and running containers according to the OCI specification
+Homepage: https://www.opencontainers.org/
 
 Package: runc
 Installed-Size: 9572

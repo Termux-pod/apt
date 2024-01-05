@@ -424,16 +424,16 @@ Description: Small self-contained web server with Lua, Markdown, QUIC, Redis and
 Homepage: https://algernon.roboticoverlords.org/
 
 Package: alist
-Installed-Size: 69096
+Installed-Size: 65756
 Maintainer: 2096779623 <admin@utermux.dev>
 Architecture: x86_64
-Version: 3.29.1
-Filename: pool/main/a/alist/alist_3.29.1_x86_64.deb
-Size: 19790804
-MD5sum: 8210ef4a27f7904f764abb6f04e89306
-SHA1: c583bd39ab413328eaa4b60ea13497f9515a7611
-SHA256: 94d863b5ee7c917a1f73aa76317de9e0487df2b9e3df9e4faa3c2eabf243e6f2
-SHA512: ad6713b6f490e37825aeccd8ced3d006fa47da1ad9b2e818a07bd90a803686818c57216d5d9a9313e43faae7ddbf0c57321660c6509bf8031743ddba2cf8ac8b
+Version: 3.30.0
+Filename: pool/main/a/alist/alist_3.30.0_x86_64.deb
+Size: 19094332
+MD5sum: 862d0f0b59b0d3027ac472301d3055d0
+SHA1: 59b95dbaf9e10e7a6f6d3e2ff7eafacca5bd5c21
+SHA256: 50823e823122865dfbd011a57594780221e6bbd4e0cb11329cd9783d35a90866
+SHA512: f22e73a1858172f3ba9f14592e71f70ad41cae8cef31e217f9ccf329561d76d17a3a37696202bf21bdd53c28ddbbd357f5a4b3bf796681d3bc0f085ed6ba3fb7
 Description: A file list program that supports multiple storage
 Homepage: https://alist.nn.ci
 
@@ -5921,21 +5921,6 @@ SHA512: 8b944871a18228d1e782f09dd6fd2ef877ff15a13e69731e89250c1d27a0cd11fef41e3f
 Description: A remote shell that automatically reconnects without interrupting the session
 Homepage: https://eternalterminal.dev
 
-Package: et
-Installed-Size: 5552
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.2.8-2
-Depends: libc++, libsodium, openssl, protobuf, zlib
-Filename: pool/main/e/et/et_6.2.8-2_x86_64.deb
-Size: 872860
-MD5sum: c4cf9b405c0c5e9df736fe78ac363750
-SHA1: 10d622c1c379b7632dfb026749253a7a357afb58
-SHA256: bc38cafb65f40c986caf8c232f8d91d448065641ffa92e1f29f7e85a1c98da7a
-SHA512: f366d0195e823ba1c3440a885cbdbe93c91607561ae7d999226701cb63f20dd69c529b7105f83fecf757625eb11bbe8851aea4624eb7e6bf447fa9285ef99992
-Description: A remote shell that automatically reconnects without interrupting the session
-Homepage: https://eternalterminal.dev
-
 Package: etsh
 Installed-Size: 308
 Maintainer: @termux
@@ -8080,6 +8065,23 @@ Package: glib
 Installed-Size: 6844
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.78.3-1
+Replaces: glib-dev
+Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib
+Breaks: glib-dev
+Filename: pool/main/g/glib/glib_2.78.3-1_x86_64.deb
+Size: 1349896
+MD5sum: ccbac26700de8f6130a1a11838954db6
+SHA1: bf92eac9b29740053a87dcd5c42867eeec631292
+SHA256: f89538989a8d178dd67a091e82cba7d4907ce862a7c803f6b78d17df0d6f15e7
+SHA512: f33bbe0d7af65184d2d0ea93aafe3fcbfbd74b97930e573c56d3456d9f878b7533d0d0798cff7df3e55529a2fa095f5172227310492e8113ae6aadf10cb67ba3
+Description: Library providing core building blocks for libraries and applications written in C
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib
+Installed-Size: 6844
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.78.3
 Replaces: glib-dev
 Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib
@@ -8097,6 +8099,21 @@ Package: glib-bin
 Installed-Size: 452
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.78.3-1
+Depends: python, glib (= 2.78.3-1)
+Filename: pool/main/g/glib-bin/glib-bin_2.78.3-1_x86_64.deb
+Size: 99820
+MD5sum: 9ae8640dc963986fb9b59bf0dcf558b7
+SHA1: cd74e23fc134686b72953b1633d5f3f390b025ee
+SHA256: 87467cde0c8f5a5ad99358cc6fb1b1377dc9429e28cfdcc82505746504b42d95
+SHA512: 0fa5dab6e79a4ca692ba96c9a4ef79fc1de99eaa2c81bc6f49a0cde29d0a40a5e0da059db8fbf0854a985e639638a4b0c57a13f54114a85d6439bdfd89d21ae9
+Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-bin
+Installed-Size: 452
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.78.3
 Depends: python, glib (= 2.78.3)
 Filename: pool/main/g/glib-bin/glib-bin_2.78.3_x86_64.deb
@@ -8106,6 +8123,21 @@ SHA1: f181cdb5b2ad5700f4ab5cce5333fbbd9920cc97
 SHA256: fa4b4c760c18aeb6ade9c6bb6e75fee6baaae35fc8695ead11ed739edb9f03dc
 SHA512: b3e541c6bd4ac695a9a08b8ad5e574fcce3cf90043c823242c0537201cc43eecb7331515a44965e28d576f86f13033f5d05161acb8559a2ad02c1c29b3e2fb50
 Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-cross
+Installed-Size: 69276
+Maintainer: @termux
+Architecture: all
+Version: 2.78.3-1
+Depends: glib (= 2.78.3-1)
+Filename: pool/main/g/glib-cross/glib-cross_2.78.3-1_all.deb
+Size: 10175796
+MD5sum: 552e72fd84fe3445a816e4d1d4d8b7c7
+SHA1: 7c0a89fb110324036cbe84b26008140158114247
+SHA256: d0201c7249d545bf5329c8ec70bf6939dfc265f7a24c32241d333510f0785738
+SHA512: ff02b06ef69e82d12f25156d7d35eb603124dc3e961d28907803cd6543f427afee11a2a306c44f2b72f1872c48c80e6aa5ddb7277858779f3221ac26531000c0
+Description: glib for host (NOT for Termux)
 Homepage: https://developer.gnome.org/glib/
 
 Package: glib-cross
@@ -23221,6 +23253,21 @@ Description: Tracks runtime library calls in dynamically linked programs
 Homepage: http://www.ltrace.org/
 
 Package: lua-language-server
+Installed-Size: 10684
+Maintainer: Aditya Alok <alok@termux.org>
+Architecture: x86_64
+Version: 3.7.4
+Depends: libandroid-spawn, libc++
+Filename: pool/main/l/lua-language-server/lua-language-server_3.7.4_x86_64.deb
+Size: 1648888
+MD5sum: 20d22aa14895e87fd43d2b45ea39ae56
+SHA1: 4fa18f2da0c5ec8377d8d90af2b760a9eb47780c
+SHA256: 3ea099bf7d35fedfa83438744f616f835e708cb40719adca9566673b350f3fed
+SHA512: 5055999eb7f3a517b2a0b805c1cf9ab771755e609f2ece294821b18ff7aedbab77763e19a8956a9ce0a48295e53d07de42a47a8ae22a539fefdf333bc894b87f
+Description: Sumneko Lua Language Server coded in Lua
+Homepage: https://github.com/sumneko/lua-language-server
+
+Package: lua-language-server
 Installed-Size: 10688
 Maintainer: Aditya Alok <alok@termux.org>
 Architecture: x86_64
@@ -32143,6 +32190,21 @@ SHA256: b197f3eb89bf3f0d1cf91db1556b1694a9604f38e9acdf29f6119429cccec977
 SHA512: 232360c81d8b0d0a474e5481921eca834afc9d8298b311065cf56f69a95a7c5b8603fd22c0ffd8f2c0595c16dc4e1b75c8787bf0db138663c97ef5301f5c40fd
 Description: A custom system info fetching tool
 Homepage: https://github.com/Mangeshrex/rxfetch
+
+Package: sabnzbd
+Installed-Size: 7684
+Maintainer: @termux
+Architecture: all
+Version: 4.2.1
+Depends: python, python-cryptography, python-sabyenc3, termux-tools, par2, unrar, p7zip, unzip
+Filename: pool/main/s/sabnzbd/sabnzbd_4.2.1_all.deb
+Size: 1069112
+MD5sum: 5db03d4239bf5f036e5f3e0dde40238e
+SHA1: 388a34e5a4c6ec20cd108939f449e2ac1f2ae8d1
+SHA256: 9db72d48b1ef1f9a22eb9f8ce497ca951ef4d0133835261a42e4ee8a02ac3a25
+SHA512: c8e4c07f2bb7db2db316a3271b1723c560f12673f7fb0340213e0c7afd6a3bbd18eb9c6a1519d1880ffa01096ec03ebfbada124f8f3173037b6166460cb4f35d
+Description: Fully automated Usenet Binary Downloader
+Homepage: https://sabnzbd.org/
 
 Package: sabnzbd
 Installed-Size: 7696

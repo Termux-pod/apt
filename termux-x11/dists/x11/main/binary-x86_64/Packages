@@ -1323,6 +1323,21 @@ Description: File Roller is an archive manager for the GNOME desktop environment
 Homepage: https://wiki.gnome.org/Apps/FileRoller
 
 Package: firefox
+Installed-Size: 201156
+Maintainer: @termux
+Architecture: x86_64
+Version: 121.0.1
+Depends: ffmpeg, fontconfig, freetype, gdk-pixbuf, glib, gtk3, libandroid-shmem, libc++, libcairo, libevent, libffi, libice, libicu, libjpeg-turbo, libnspr, libnss, libpixman, libsm, libvpx, libwebp, libx11, libxcb, libxcomposite, libxdamage, libxext, libxfixes, libxrandr, libxtst, pango, pulseaudio, zlib
+Filename: pool/main/f/firefox/firefox_121.0.1_x86_64.deb
+Size: 51553648
+MD5sum: 0ec58264fb19820872dd7f1fb1de88d4
+SHA1: c98dbb2459c75c2ba85c54e4e6f9856b68b57c8f
+SHA256: 4666620a686f9d5ba7268d872ca0dedb8d10624f6b48d92fcdc8252aaec16c8b
+SHA512: 1171ec3f47d2a8057c3cfedc1d8581ee21044be36575df4aef7f5bc30043d493a85ade57336bc89487ab2d0bb6b0a28b52a1e8a66cc48aa5d6dcfd78c1993dd2
+Description: Mozilla Firefox web browser
+Homepage: https://www.mozilla.org/firefox
+
+Package: firefox
 Installed-Size: 200684
 Maintainer: @termux
 Architecture: x86_64
@@ -1885,34 +1900,34 @@ Description: glmark2 is an OpenGL 2.0 and ES 2.0 benchmark
 Homepage: https://github.com/glmark2/glmark2
 
 Package: glu
-Installed-Size: 468
+Installed-Size: 528
 Maintainer: @termux
 Architecture: x86_64
-Version: 9.0.2-3
+Version: 9.0.3
 Replaces: libglu
-Depends: libandroid-shmem, libc++, libdrm, libexpat, libx11, libxau, libxcb, libxdamage, libxdmcp, libxext, libxfixes, libxshmfence, mesa, zlib
+Depends: libc++, opengl
 Conflicts: libglu
-Filename: pool/main/g/glu/glu_9.0.2-3_x86_64.deb
-Size: 148680
-MD5sum: a99e9c61843c5dd6833349703e60f656
-SHA1: 53976d74d5995d2874f0e1fdf733c2ca2c2baae0
-SHA256: bf20c470feb52181434a10d47d087a88fe8fd5e8041709b6de66357cfab40de7
-SHA512: 3b3eb9d2bd36e52283988274072125886a105a9cf5df613b51e466498f27a597e8898bc0226ff21e29bd93921987a369027306e88613641ffc85d4b8d2a1ea01
+Filename: pool/main/g/glu/glu_9.0.3_x86_64.deb
+Size: 171164
+MD5sum: 4248e735c9475d0c7f8142d195214d45
+SHA1: fc6c6ebae939fbcd2d29a81a26ac4b8491d20cc5
+SHA256: 8099039786ce802306f46b96dd19ba8acbc0dcb6b677416a15e076d19ab3e8d4
+SHA512: 1d43f352bc0e5677465fdc2104de77817c72bec63f78ebcec73f95890f09e9cbb24588ffab24a95cf1f913a9b773b03e082eae32c346fb36e87f9425954a695d
 Description: Mesa OpenGL Utility library
 Homepage: https://cgit.freedesktop.org/mesa/glu/
 
 Package: glu-static
-Installed-Size: 852
+Installed-Size: 3312
 Maintainer: @termux
 Architecture: x86_64
-Version: 9.0.2-3
-Depends: glu (= 9.0.2-3)
-Filename: pool/main/g/glu-static/glu-static_9.0.2-3_x86_64.deb
-Size: 177912
-MD5sum: e9cef6da5c7c901548da716825145980
-SHA1: a21ecbe7ac0c83e63e275e34734e4b7b62b95abe
-SHA256: 7ff3258fc3a7a853420c860a387f43cb5ea21f15254b1c6697d9f44189b4baf7
-SHA512: 139a2e053dc139b814880d5f865fa6b92211d76c9be1058fa88d5eea9a86790f62f7fc37c8b2e1b03b974828a0187f736867f9537b02fa8adc2df720306277e3
+Version: 9.0.3
+Depends: glu (= 9.0.3)
+Filename: pool/main/g/glu-static/glu-static_9.0.3_x86_64.deb
+Size: 629772
+MD5sum: dbace2fb8ce948b91dd04d4f7a938f99
+SHA1: 2c65ba17d983dbb9bee53b63cc2278bcf0695af9
+SHA256: 5d0e402f623e45126fdea8e9f62259f796c71c915cd2f0325b92e75c03a34318
+SHA512: e6f32f0e4835614badfe54b8aea35659326fe8459890ecbaa8ba6d76bbe2239faff99a97748ead8875388fb69b7a55fe1c68a61bd0b898ce8378686470bc4f6c
 Description: Static libraries for glu
 Homepage: https://cgit.freedesktop.org/mesa/glu/
 
@@ -5032,21 +5047,6 @@ MD5sum: ba3b48abbd6b681f210d51959a46f46c
 SHA1: 8f0f89cb54d6a89e5072042fa67a65850481537b
 SHA256: 94b5a7bc4ada15fec07451be246c2f2490b0ef73a1fd34f5a6b7597e69f4e64e
 SHA512: 5d8edd2dd42d44929b1238365931be40716859f7c14e71c0cd8559e425f34c376dba099b88b11479a36d5c476a3d172cf1927bfa3058e926a2b39e7a5a2abdea
-Description: An emulator for running Game Boy Advance games
-Homepage: https://mgba.io/
-
-Package: mgba
-Installed-Size: 3620
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.10.2
-Depends: ffmpeg, libedit, libelf, liblua54, libpng, libsqlite, libzip, opengl, sdl2, zlib
-Filename: pool/main/m/mgba/mgba_0.10.2_x86_64.deb
-Size: 828024
-MD5sum: 070eab674e1519a225d36692c8e3defe
-SHA1: de89fd761604e429567731a4831a9a26d5756008
-SHA256: b2682894d54b3df990636a0421d6d36084ced2cf734b5195e1837f58b48f162b
-SHA512: 0617081dc21511d83afc128842ed1eff18fe736deaceb88b147e6a74ac2a8bd0dd03dc91d54c9e7c5155a6b67b4375f6f0b77d969693ef9371ff34b9d5c376d6
 Description: An emulator for running Game Boy Advance games
 Homepage: https://mgba.io/
 

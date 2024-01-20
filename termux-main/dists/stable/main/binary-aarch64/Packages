@@ -785,6 +785,26 @@ Homepage: https://apr.apache.org/
 
 Package: apt
 Essential: yes
+Installed-Size: 4024
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.7.10
+Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Provides: unstable-repo, game-repo, science-repo
+Depends: coreutils, dpkg, findutils, gpgv, grep, libandroid-glob, libbz2, libc++, libcurl, libgnutls, liblz4, liblzma, sed, termux-keyring, termux-licenses, xxhash, zlib, zstd
+Suggests: gnupg
+Conflicts: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Filename: pool/main/a/apt/apt_2.7.10_aarch64.deb
+Size: 1017896
+MD5sum: 08cac67a6a31022513849c88e10776bf
+SHA1: bb2f10b86e1fd429992893ecdcf111cb76949281
+SHA256: c621b268edd77944c6f0d0cf6fa953e0fd6089b2e85dfbfa2d4272fdbac20e2e
+SHA512: 5a9d87ef03a63e2d7aa6ccfd7370b45b1a438f065e17fae9f03cacc49e73f9406b69043aa2b68a34657a1efca31a872e6cb2890b7693623b57dc2ca97b34df9a
+Description: Front-end for the dpkg package manager
+Homepage: https://packages.debian.org/apt
+
+Package: apt
+Essential: yes
 Installed-Size: 3952
 Maintainer: @termux
 Architecture: aarch64
@@ -823,6 +843,21 @@ Package: apt-ftparchive
 Installed-Size: 316
 Maintainer: @termux
 Architecture: aarch64
+Version: 2.7.10
+Depends: libdb, apt (= 2.7.10)
+Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.10_aarch64.deb
+Size: 95652
+MD5sum: ed241d3a276b162ab46daa6f6a445245
+SHA1: bfb63066fbf729710df1a244484e2028c746d0c0
+SHA256: 6db9eb5ffd3f5790fd14caa4ea0b859a9290dddbbeb9580ce88350dcebb9b055
+SHA512: e23b97cb01ec273cdd2eb088f6879d2e124593888a9d42c9df37bd2740b8f3bdea940978636fd4494fc94b02cf954a8e2522b3356a44d4cfb5e7d406fd1fdcf9
+Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Homepage: https://packages.debian.org/apt
+
+Package: apt-ftparchive
+Installed-Size: 316
+Maintainer: @termux
+Architecture: aarch64
 Version: 2.7.7
 Depends: libdb, apt (= 2.7.7)
 Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.7_aarch64.deb
@@ -832,6 +867,21 @@ SHA1: cd4096cdb054dcb9e24240b6a48000cd42ac7164
 SHA256: 87541b37b25abfd24c3acb1cec6f83b7d8ec2976ec255b450e84d5a8e06b0346
 SHA512: 0af7a16c3a09df5becd76c9be3b271c3c5000a953bfd9bebcbf3d7c060d42a4a5a7e297b534864586690a78c35fcacaf3714a81445c2654426e813cb8d0ac348
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Homepage: https://packages.debian.org/apt
+
+Package: apt-transport-tor
+Installed-Size: 44
+Maintainer: @termux
+Architecture: all
+Version: 2.7.10
+Depends: tor, apt (= 2.7.10)
+Filename: pool/main/a/apt-transport-tor/apt-transport-tor_2.7.10_all.deb
+Size: 940
+MD5sum: e3ed344266f1d966e5b401d8160c522f
+SHA1: e6784804e649ea96ced0037e62d71a895be5f3cd
+SHA256: 94314c10198d4f7a598d514c0df732bd32ba86ace8fa6bc01d4ca231d482634f
+SHA512: cf11af19859046b59b42244fb908cb71f71cb24e384dfbd644f0925aee1041fbe670a3338bf4dc880af9ab9cb5fb7aa559f51ff80e36c8719c0421b2c8496226
+Description: APT transport for anonymous package downloads via Tor
 Homepage: https://packages.debian.org/apt
 
 Package: apt-transport-tor
@@ -31830,17 +31880,17 @@ Description: A remote filesystem snapshot utility
 Homepage: https://www.rsnapshot.org/
 
 Package: rsync
-Installed-Size: 560
+Installed-Size: 580
 Maintainer: @termux
 Architecture: aarch64
-Version: 3.2.7
-Depends: libiconv, liblz4, libpopt, openssh | dropbear, openssl, openssl-tool, zlib, zstd
-Filename: pool/main/r/rsync/rsync_3.2.7_aarch64.deb
-Size: 264340
-MD5sum: 972a71c89362893e3243cae9969d84e3
-SHA1: ff670e6367ae51cd21a3149276129b3534dfc14b
-SHA256: 57438914ab95f0ee76a89b74312ab258378a5897a70b0783826d0a2df2fc866c
-SHA512: 928cdebed5abf5736c79de3e677d6e40098a664975f8b399d6cc8ec49f962c4d680ef8d638da32fb7fa3dd2de57e70d9d09e8e19cf77e180a170a7a7c2eec2d1
+Version: 3.2.7-1
+Depends: libiconv, liblz4, libpopt, openssh | dropbear, openssl, openssl-tool, xxhash, zlib, zstd
+Filename: pool/main/r/rsync/rsync_3.2.7-1_aarch64.deb
+Size: 268184
+MD5sum: 997a74b1442122fbd990adb599c1b0ab
+SHA1: 7b4d647192757c232bc110b638c08047dc91616d
+SHA256: b774df65894ee2c59da128b0bbe619c4834ae2b752e9929a716e356c869b7211
+SHA512: 852c3ca629427bdcd44b6f8d11fcaed3466bd1b66d977ce3dd62b784b1d769e943aa9b9001725fb687fb2beb703b09a0719feb495771561766b90e696e0dec94
 Description: Utility that provides fast incremental file transfer
 Homepage: https://rsync.samba.org/
 
@@ -35407,20 +35457,6 @@ MD5sum: 91234c7c19512a8ba4693e280220ea3c
 SHA1: 8475314a0e3344e373bcb364a33488b0358d0ef3
 SHA256: a2a117a2f059c4a5b2f5929efbe62d1f351bc43062959e50ab9362d57467dc3d
 SHA512: db4b6cd6649e199b923c2a73c34b2a38766a82827a3f3b5da846323eb1fc1c62702a0f730f4b4d880ad5477d2db55e64902c8c3ab91b6a377894801166eaf079
-Description: A cross-platform implementation of the Language Server Protocol providing rich cross-editing support for the LaTeX typesetting system
-Homepage: https://texlab.netlify.app/
-
-Package: texlab
-Installed-Size: 13448
-Maintainer: @termux
-Architecture: aarch64
-Version: 5.12.1
-Filename: pool/main/t/texlab/texlab_5.12.1_aarch64.deb
-Size: 8738776
-MD5sum: 663ede9b6580dfdc3f305b2d98f25b99
-SHA1: bc9ecea01040d8f8e51818ea669d600dd664235c
-SHA256: 0f8f1be4c11296df38454250b674076ea8472d079b9b37549241d0e99c3bd6b3
-SHA512: 37c93c739a7ec3e631448a393b2bd12c62c042c021146c23e1794fb812690165a3c593844c68d5d808986efd1383a9f28f1911749edacab27ddbf353db09ec4c
 Description: A cross-platform implementation of the Language Server Protocol providing rich cross-editing support for the LaTeX typesetting system
 Homepage: https://texlab.netlify.app/
 

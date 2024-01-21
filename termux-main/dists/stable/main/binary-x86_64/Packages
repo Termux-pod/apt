@@ -803,26 +803,6 @@ SHA512: b658c924ac36bb14a4c0beb9fdaac46562d9adc1f12a6b44807a71c662f01842a5da7fcc
 Description: Front-end for the dpkg package manager
 Homepage: https://packages.debian.org/apt
 
-Package: apt
-Essential: yes
-Installed-Size: 4144
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.7.7
-Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
-Provides: unstable-repo, game-repo, science-repo
-Depends: coreutils, dpkg, findutils, gpgv, grep, libandroid-glob, libbz2, libc++, libcurl, libgnutls, liblz4, liblzma, sed, termux-keyring, termux-licenses, xxhash, zlib, zstd
-Suggests: gnupg
-Conflicts: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
-Filename: pool/main/a/apt/apt_2.7.7_x86_64.deb
-Size: 1129076
-MD5sum: aed9caa1b02ca11201111e6586175030
-SHA1: d230a395e41b994554567177c30b669651ec0a26
-SHA256: 1399ad95169de486a4a1bb29350a85d999794d87cd6c3a5644818301bbf384bf
-SHA512: fc6e04611d02098a48ad07c5bda9002d4bb6cfb1a16b2d808111788863e7d9a60cb03fe58aa8cd70e67035d2a1e1e8ae42163452b2a47c77c544bb67cddf55c6
-Description: Front-end for the dpkg package manager
-Homepage: https://packages.debian.org/apt
-
 Package: apt-file
 Installed-Size: 112
 Maintainer: @termux
@@ -854,21 +834,6 @@ SHA512: a517f83bda3e95c8ec62ccc185064385a38021d19e0979ec439d61dfb21f9ba370e2ea6a
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
 Homepage: https://packages.debian.org/apt
 
-Package: apt-ftparchive
-Installed-Size: 364
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.7.7
-Depends: libdb, apt (= 2.7.7)
-Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.7_x86_64.deb
-Size: 107964
-MD5sum: 028f7a6d7cfcba23517242d26bf7b9cc
-SHA1: ffa1e7d77ef128d71872ded37976660e43c2db1c
-SHA256: 768d2011b95971ee4f8e1ee1377f649ee36d551b11a9ef5dca44b7cb779b5250
-SHA512: ddbfc4e03d154c4dd48c4794f7f9c573808550dd896c81b703a19d6e5eac3f1c2d85f74614cabbbef3d32f07d4dbeab9aaf5e3c6b605e72ee808e1acd1065c4c
-Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
-Homepage: https://packages.debian.org/apt
-
 Package: apt-transport-tor
 Installed-Size: 44
 Maintainer: @termux
@@ -881,21 +846,6 @@ MD5sum: e3ed344266f1d966e5b401d8160c522f
 SHA1: e6784804e649ea96ced0037e62d71a895be5f3cd
 SHA256: 94314c10198d4f7a598d514c0df732bd32ba86ace8fa6bc01d4ca231d482634f
 SHA512: cf11af19859046b59b42244fb908cb71f71cb24e384dfbd644f0925aee1041fbe670a3338bf4dc880af9ab9cb5fb7aa559f51ff80e36c8719c0421b2c8496226
-Description: APT transport for anonymous package downloads via Tor
-Homepage: https://packages.debian.org/apt
-
-Package: apt-transport-tor
-Installed-Size: 44
-Maintainer: @termux
-Architecture: all
-Version: 2.7.7
-Depends: tor, apt (= 2.7.7)
-Filename: pool/main/a/apt-transport-tor/apt-transport-tor_2.7.7_all.deb
-Size: 932
-MD5sum: 1d51a9610a46552d678a009e64d602ea
-SHA1: f0ed8cb1ae42dbf480a7446734200ce3778286ee
-SHA256: 37e0963761ae9bfa02c6024b50624b47c3579b596e9c28fefed84daca5f6c894
-SHA512: 5aeaaba815f0962c29897278547b7c116e5256c28cef5c4ad6d494272ebcb9470d6b7e466fe33a0b7ae782d16ba5a19a798af30d0356abe132d1ed1733c3921a
 Description: APT transport for anonymous package downloads via Tor
 Homepage: https://packages.debian.org/apt
 
@@ -3818,6 +3768,21 @@ Package: command-not-found
 Installed-Size: 580
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.4.0-8
+Depends: libc++
+Filename: pool/main/c/command-not-found/command-not-found_2.4.0-8_x86_64.deb
+Size: 95272
+MD5sum: 24f83a5291ff774d827bbc8c395aeab1
+SHA1: 9abcae2a5253e3c2b7e92deaa0a9356f6bb29fc8
+SHA256: f28a9b44e49bab35938539a064cf4e75b6b3835fee9e84ce5cd1c56799632cf7
+SHA512: fda2fa1d06c72a0a554a1f83f850275e2d65a50b0a395f51404fe9d95c1fd2a529960e060982d8c9fc86dc907636ec0d0e1da7e17bcd131c1f7a8fbe9b434733
+Description: Suggest installation of packages in interactive shell sessions
+Homepage: https://github.com/termux/command-not-found
+
+Package: command-not-found
+Installed-Size: 580
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.4.0-7
 Depends: libc++
 Filename: pool/main/c/command-not-found/command-not-found_2.4.0-7_x86_64.deb
@@ -5776,48 +5741,48 @@ Description: Extensible, customizable text editor-and more
 Homepage: https://www.gnu.org/software/emacs/
 
 Package: emscripten
-Installed-Size: 70552
+Installed-Size: 70768
 Maintainer: @termux
 Architecture: all
-Version: 3.1.51
+Version: 3.1.52
 Depends: emscripten-binaryen, emscripten-llvm
 Recommends: nodejs-lts | nodejs, python
-Filename: pool/main/e/emscripten/emscripten_3.1.51_all.deb
-Size: 12461684
-MD5sum: 881d84473b51d7e29d9ec07b3b443253
-SHA1: f8c19f0b980ff8d01eaf82f888168068d45ed147
-SHA256: f58d7aee20526fa01cafbf6a75a43b40118cd14e3cc01e851adc97e143c718bc
-SHA512: 85b757374a4503854256a54c07a2717b4b17d96547dae25ce60bc21cf6e860880afe3d31422934ed2468951aa6fb17835cc677fd12d89d7755dd0e8f99e22788
+Filename: pool/main/e/emscripten/emscripten_3.1.52_all.deb
+Size: 12592324
+MD5sum: 9d64294bcaeb2246e39853834dd854c1
+SHA1: cbf1a0f53d1c8f8226e3fe1d8a94d940506550d5
+SHA256: d55caa07cbaf546313c25b9ded8edead122b880a43477c71c0502f781380a9dc
+SHA512: 25baa620847a0fe1275a2c087cf601e25b3389778ace27046d484155f117e4fd3e04564f2b1be268322a02aba7bd928861ed15f3f03cfa4332cbf5f629ba54d8
 Description: Emscripten: An LLVM-to-WebAssembly Compiler
 Homepage: https://emscripten.org
 
 Package: emscripten-binaryen
-Installed-Size: 19972
+Installed-Size: 20444
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.1.51
+Version: 3.1.52
 Depends: libc++
-Filename: pool/main/e/emscripten-binaryen/emscripten-binaryen_3.1.51_x86_64.deb
-Size: 3953168
-MD5sum: 0e5fb1392df391ef7263eefa898623c5
-SHA1: f45bb2d34919ade7163d6d3380135492cbe9c632
-SHA256: 4baaa221a12917ed15013fae3618f7dd1aff245b57b18ccf9f337143973e328b
-SHA512: de733950ae07816968afd10e3ec441fb97471f52475016912ebd7b154c5433a46ce8e9db3cb3d9df1a7d7b61b61753c9df1678aecbaa88b28e4af413a0566f25
+Filename: pool/main/e/emscripten-binaryen/emscripten-binaryen_3.1.52_x86_64.deb
+Size: 4029752
+MD5sum: 59ebe42a1864ed658ed87acccaa39896
+SHA1: b9425eccf8b5d55449d4b5b71995d143638e0799
+SHA256: b7b32c38192dd87ea357ef3d56241e79d4f00bed6a81122f19dc0304700fde0c
+SHA512: bb14432e4b2855f0965c21c3b953a8506eab7f836b0b36df28f568f6fa9f8b13a3f26ddb5545387617ebcb9a2becacfd112ddc7270c0211729e32eb88f50aa63
 Description: Emscripten-compatible Binaryen
 Homepage: https://emscripten.org
 
 Package: emscripten-llvm
-Installed-Size: 139900
+Installed-Size: 140948
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.1.51
+Version: 3.1.52
 Depends: libc++
-Filename: pool/main/e/emscripten-llvm/emscripten-llvm_3.1.51_x86_64.deb
-Size: 31689500
-MD5sum: 27039f180483ea410de831f952b57863
-SHA1: 38d5b9e5e3d8da3e81dc6d29045776e1fa151cf8
-SHA256: dc5b17013def98ccba37f889ec87cec1b0565814f3623f8631423bf4c0699bd3
-SHA512: 3dcbfe89115b8d31bdbbc7d23f5179df9dec10e668f3c5485e8601d578b44e73e80772533afc530d472576b51b66dd687a4eed876c0b5857be86ff5da6a6ee16
+Filename: pool/main/e/emscripten-llvm/emscripten-llvm_3.1.52_x86_64.deb
+Size: 31850720
+MD5sum: be7cdf3bd6ee2ec37cb627b8b1f90cc5
+SHA1: 4ce07a087cd46c906b15353edd4cf37705752861
+SHA256: 9f27c1ba356bef95f699c87274db4fc12491f81ca9742e6cf6257548a99075a6
+SHA512: 60c552909ac69276a8d2c8077a1e2bf1d7fad3972511fe000f6f4cc6889584cc0e84abe6d8f8c9ed2b321cc4534231b1bcfcf6c0d689709937b886cbb7c16f8a
 Description: Emscripten-compatible LLVM
 Homepage: https://emscripten.org
 
@@ -5825,14 +5790,14 @@ Package: emscripten-tests-third-party
 Installed-Size: 83268
 Maintainer: @termux
 Architecture: all
-Version: 3.1.51
-Depends: emscripten (= 3.1.51)
-Filename: pool/main/e/emscripten-tests-third-party/emscripten-tests-third-party_3.1.51_all.deb
-Size: 9371352
-MD5sum: a11d46eab8f144ecb4b519df8c67ad9e
-SHA1: c64729cdbe78f68fa106a14dd28384c130859ec8
-SHA256: af914bf1a38b064249d161dca1a764437f7a8af345dc470680a98012faf45676
-SHA512: 20de78f52f11f9f2608278dd0f50d5c5970d6f07529e080c1d562c30baa15b1543a2444709ab626dcd2e515171a80d4d86a8315383cb6f2973e74e961a63c020
+Version: 3.1.52
+Depends: emscripten (= 3.1.52)
+Filename: pool/main/e/emscripten-tests-third-party/emscripten-tests-third-party_3.1.52_all.deb
+Size: 9537272
+MD5sum: 907d420260353b83205fb286a7ba1c5f
+SHA1: 7430cd50af08ae45db0776cf96b23a48e152aaae
+SHA256: 7dec8a1816bb4913678d4b0f362c66a90c54f38bedad57cb1e7c7139583fbab7
+SHA512: f88e288e535429197be2b122cfb1829bf854cc0976bb4fdc7aa78e188707c8cbca8c26055572703afa544a989f431152cf8122858d1082d0e5d23595c42d6450
 Description: Emscripten third party test suite files
 Homepage: https://emscripten.org
 
@@ -6112,6 +6077,23 @@ Package: eza
 Installed-Size: 992
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.17.2
+Replaces: exa
+Depends: libgit2
+Breaks: exa
+Filename: pool/main/e/eza/eza_0.17.2_x86_64.deb
+Size: 329192
+MD5sum: acf891742ecb5f3146c171df611f0516
+SHA1: 4591a9b6cd5db5427a1525e319049c8a084b7245
+SHA256: 15a23a441d14a35853e7fa2db045e947468933cb0b3e751db5afe6c6d2b5ed3c
+SHA512: 22d9baef71da13db95b350bd277f189f8065532cd436be27081f07dddf845a36a7f4e903055ff6e7154fcff31cbeba782cb09bc8ddace9ffd9f8c732236e6f2f
+Description: A modern replacement for ls
+Homepage: https://github.com/eza-community/eza
+
+Package: eza
+Installed-Size: 992
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.17.1
 Replaces: exa
 Depends: libgit2
@@ -6184,17 +6166,17 @@ Description: To fastly access files and folders
 Homepage: https://github.com/whjvenyl/fasd
 
 Package: fastfetch
-Installed-Size: 2504
+Installed-Size: 2520
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.6.0
+Version: 2.6.1
 Depends: vulkan-loader
-Filename: pool/main/f/fastfetch/fastfetch_2.6.0_x86_64.deb
-Size: 362028
-MD5sum: a2f107c759b7ef67af080e746da56986
-SHA1: b9440dafa9a9b6a9c39c20db88063e01223097cf
-SHA256: f4ddad69a83d2c81b05bd99775f7c42971993e98dc83db3287037c6d8f3101e2
-SHA512: 72cb4f621ae21f0bc1082d76151904bdfe3929cb2c0925b9cea0846de8fb95b08065f8f72b3bfa9574831c4ce44c9ea47e168251780bf55197b526c214fdfb2b
+Filename: pool/main/f/fastfetch/fastfetch_2.6.1_x86_64.deb
+Size: 365824
+MD5sum: b6f067734164c4008c917d7643b0ddbb
+SHA1: 0096e5c68d11b0e07d499debbacbe1b4d9ff3062
+SHA256: 820bde02fdd3b5671cf8354040585bb0676699f6c33390c8497df9184678ab85
+SHA512: 546dba6a15ae5b8c492d313929e7eb70a8d6ccba9dab1b6c395d3a9139eccfb5d4ae167d2eae4a0630e68382bea7d97d484d741e5654bfbdca9423698f4f0aab
 Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
 Homepage: https://github.com/fastfetch-cli/fastfetch
 
@@ -34160,16 +34142,16 @@ Description: An open source STUN server
 Homepage: https://www.stunprotocol.org/
 
 Package: stylua
-Installed-Size: 7328
+Installed-Size: 7252
 Maintainer: @shadmansaleh
 Architecture: x86_64
-Version: 0.19.1
-Filename: pool/main/s/stylua/stylua_0.19.1_x86_64.deb
-Size: 1804248
-MD5sum: 6b49f65ff490351407d70e15ab5d8b35
-SHA1: e2895eb9b46fa90a5fa7208b4140b92dc9301812
-SHA256: 818809fb9e7ac3926804cf7ce6b6bf9fe7c3eb1a3c0929e90047c4d024ac7524
-SHA512: 4e1d6468b5fc257b85dfa195f4d36aadcc3187dd9a0f4161c6701f46bb789647273c1f7c5c0b5ef664bcc8a9ef10ba0b674d3f8a5607b2a93a1edc0be05e6790
+Version: 0.20.0
+Filename: pool/main/s/stylua/stylua_0.20.0_x86_64.deb
+Size: 1770220
+MD5sum: 87ee2b88d27a02666ae1b78aec82134b
+SHA1: 5c6f280999f43e1e751db65151955723060aedba
+SHA256: 451945ef1ae6fb9cb18ddbea463ec2e5a9777ffd9740030d98a67bce38dfcd36
+SHA512: de69858bdb36d3af1b9b97efea892dec14c670cfe11f0a0054785916c935d84920333d9dfd5bd0065005ef5db55a80e02bf98be4bee736d182d5f9470137077d
 Description: An opinionated Lua code formatter
 Homepage: https://github.com/JohnnyMorganz/StyLua
 

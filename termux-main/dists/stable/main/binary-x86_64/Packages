@@ -6148,21 +6148,6 @@ SHA512: e1351a320be4ba18ddc0d28abaea01a87b36c8b08ca9d7bfcdab588e2d13ac8e2916ef99
 Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
 Homepage: https://github.com/fastfetch-cli/fastfetch
 
-Package: fastfetch
-Installed-Size: 2520
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.6.2
-Depends: vulkan-loader
-Filename: pool/main/f/fastfetch/fastfetch_2.6.2_x86_64.deb
-Size: 365480
-MD5sum: e450da260daf0b0b00b6f9df1d6dc77c
-SHA1: 303da86d3b491def971f9763b746ab2b7ba1e364
-SHA256: a71d4cbf91ed321eea0172cd273009156e0e002a6f688211cddf753a562b746a
-SHA512: 53392a30f4adef1a13dafc34bc20debef86f5040c86b4beea937b7d46dd5059239018f9ae16c49c8835043265eabd7c8cfcc30c698bd70bab3b1a81622d07ecd
-Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
-Homepage: https://github.com/fastfetch-cli/fastfetch
-
 Package: fastmod
 Installed-Size: 3748
 Maintainer: @termux
@@ -8095,6 +8080,23 @@ Package: glib
 Installed-Size: 6844
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.78.4
+Replaces: glib-dev
+Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib
+Breaks: glib-dev
+Filename: pool/main/g/glib/glib_2.78.4_x86_64.deb
+Size: 1349144
+MD5sum: 2f77219d2e0da631daa3a17f203df01c
+SHA1: 0729c70b3e601dbb0eaab8d625c6aba2ce449bc2
+SHA256: 682c6a222b8d2c9bc065177d4518dd4dc485428b52ccd670bb6be2bb9a96c8c9
+SHA512: 888da1cc9413b12b9cf8b6d0d4cd023dd275aa4dd41a8d3176b383cbbb9c8c55d114dfd56ef254c6f5ae3a0640eb27c0c06adc2b29d3183d6e04243125cc6ce2
+Description: Library providing core building blocks for libraries and applications written in C
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib
+Installed-Size: 6844
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.78.3-1
 Replaces: glib-dev
 Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib
@@ -8112,6 +8114,21 @@ Package: glib-bin
 Installed-Size: 452
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.78.4
+Depends: python, glib (= 2.78.4)
+Filename: pool/main/g/glib-bin/glib-bin_2.78.4_x86_64.deb
+Size: 99520
+MD5sum: 3f1d20d2685da811139293c4bd20e7e5
+SHA1: 3e2784f9a3a29a8b83700da3bed5e786b9533b1a
+SHA256: 11fb734942f33a995a5dcc6e3ebf3e282b929f9392c8e9ad793e8a49dd684b56
+SHA512: 7672427c7f624b1d5749699df759aeccd3abf35c23f1df60ca332b842d507324e1c3afd35406a125fa577bec58bd670d98835cd2231aa0cd0661ab23f7e18aee
+Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-bin
+Installed-Size: 452
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.78.3-1
 Depends: python, glib (= 2.78.3-1)
 Filename: pool/main/g/glib-bin/glib-bin_2.78.3-1_x86_64.deb
@@ -8121,6 +8138,21 @@ SHA1: cd74e23fc134686b72953b1633d5f3f390b025ee
 SHA256: 87467cde0c8f5a5ad99358cc6fb1b1377dc9429e28cfdcc82505746504b42d95
 SHA512: 0fa5dab6e79a4ca692ba96c9a4ef79fc1de99eaa2c81bc6f49a0cde29d0a40a5e0da059db8fbf0854a985e639638a4b0c57a13f54114a85d6439bdfd89d21ae9
 Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-cross
+Installed-Size: 69276
+Maintainer: @termux
+Architecture: all
+Version: 2.78.4
+Depends: glib (= 2.78.4)
+Filename: pool/main/g/glib-cross/glib-cross_2.78.4_all.deb
+Size: 10174072
+MD5sum: 44c3cfd8feb79d1cbfbbe90346192038
+SHA1: 8c85aac108b6de66c9f352a41c88bc138f17cb05
+SHA256: 0f600794b998cc037ce75592ab0e5f8ee9a10cd85b1b3e168e1182f02d96cb17
+SHA512: 75b1fd2e836cbbe6e1ac2f3e3645827577553498e6d8669cfc8350423be30bcd560ee7a0729fffc53bf58def3d4588eeb48f6386fba1a733dd61c71625f02e0b
+Description: glib for host (NOT for Termux)
 Homepage: https://developer.gnome.org/glib/
 
 Package: glib-cross
@@ -17750,22 +17782,6 @@ SHA512: d1140b623ed13ee1523c0148aebbca2c8eaa2f48279f468b5e109a96dfa6edc03fe3bea9
 Description: New GNU Portable Threads Library
 Homepage: https://www.gnupg.org/related_software/npth/
 
-Package: libnpth
-Installed-Size: 92
-Maintainer: Fredrik Fornwall @fornwall
-Architecture: x86_64
-Version: 1.6-1
-Replaces: libnpth-dev
-Breaks: libnpth-dev
-Filename: pool/main/libn/libnpth/libnpth_1.6-1_x86_64.deb
-Size: 11244
-MD5sum: b421af3bf2bf7ca1665d6d4a471527fd
-SHA1: 16103910403d28fa8b901dab83d08ea9c466671e
-SHA256: ca421e2de926e84d0a606b28c0371831280046230facdd22ea52afd12a97465d
-SHA512: 95d9d1b22cb455e3f91de435160d6bfd86b777838a74bba253fbb6ab7ff9b5bad9350bda36d257f470f15a59bfe2d5ea1d3b74aaae68c6a798d7b70711e5ec7f
-Description: New GNU Portable Threads Library
-Homepage: https://www.gnupg.org/related_software/npth/
-
 Package: libnpth-static
 Installed-Size: 48
 Maintainer: @termux
@@ -17778,21 +17794,6 @@ MD5sum: 79a3fcabe6207e1e4ac236c9fe2124f3
 SHA1: 9baf7a741e9b6ade8e79909287d0bc9ed1dbdd99
 SHA256: 7b56b8426fa32e3f69edfc9d0f50602636b512a135b14084a0dcc821d174efc6
 SHA512: 8fb908ffb587af43ab058467153f54f221395906a5ba5cd327148f665f8a22710ad872139fccfbd550e4b2b0b01734a872c9f5d878da5ea39ca44f0413dbf56c
-Description: Static libraries for libnpth
-Homepage: https://www.gnupg.org/related_software/npth/
-
-Package: libnpth-static
-Installed-Size: 48
-Maintainer: Fredrik Fornwall @fornwall
-Architecture: x86_64
-Version: 1.6-1
-Depends: libnpth (= 1.6-1)
-Filename: pool/main/libn/libnpth-static/libnpth-static_1.6-1_x86_64.deb
-Size: 4464
-MD5sum: 98724d438dbaa1b52bb1102a80ed4fc6
-SHA1: 4d069447dc48a4bfd6a0f80f5db12a359cb7267e
-SHA256: 26d8b973404d7899c55be247c29b2ef6b3fcdae6a2be255fc6a1f14ed49d3737
-SHA512: 44d448e7bbb110d94fcb7f905f01e53f14e1761704a33cc20ad58a924d74bb21e337a8969eb99033da9577995b371d7cf89f39db879af14a86dfe8f6e2fcd7d8
 Description: Static libraries for libnpth
 Homepage: https://www.gnupg.org/related_software/npth/
 
@@ -24823,21 +24824,6 @@ SHA512: 76004f800d1eaea8d2dd851f824a4bb92445a8a5baa1bd3d6b2e36d5153d8b41768d419f
 Description: Generate vanity ed25519 (hidden service version 3) onion addresses
 Homepage: https://github.com/cathugger/mkp224o
 
-Package: mkp224o
-Installed-Size: 172
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.6.1-1
-Depends: libsodium
-Filename: pool/main/m/mkp224o/mkp224o_1.6.1-1_x86_64.deb
-Size: 66904
-MD5sum: 9ae56f55ff4f64654af67bbc2d9696b0
-SHA1: f46873b7de68557e9709a63f111523b5e97f7d13
-SHA256: 28caae51a5abb7239ad055c741a40138267e88f6e86de9da471468dd83d0c2cf
-SHA512: 981018282d343b411f94ede3065633bbebaf71039e8974c0238578fabaf0cf4c83bbc73718ee0adaa4bd7dfacb592b489a1f0268c3b6ce9fe84e6836d5844883
-Description: Generate vanity ed25519 (hidden service version 3) onion addresses
-Homepage: https://github.com/cathugger/mkp224o
-
 Package: mksh
 Installed-Size: 368
 Maintainer: @termux
@@ -25215,17 +25201,17 @@ Description: A command-line utility that wraps quickly two or more mp3 files in 
 Homepage: https://mp3wrap.sourceforge.net/
 
 Package: mpc
-Installed-Size: 736
+Installed-Size: 752
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.34-3
+Version: 0.35
 Depends: libiconv, libmpdclient
-Filename: pool/main/m/mpc/mpc_0.34-3_x86_64.deb
-Size: 162472
-MD5sum: 9d9cdee2e6e8dbfed01563606bfea9f4
-SHA1: ab8bc7a64bf4ed39ff75e94cc3246f9e278981a5
-SHA256: b7ddd4a070eaf8f627498d17364d91b31b3ba0a8a3f41377c1c70f4196c87695
-SHA512: 9c2020d11f9b73cfd947531f1fa181f2894a004b5d9640ca5c192a84056e77ad9a112c91bf2e81eac7a3d586130f3f74940b5d0b90df484c1fee0af7633edfef
+Filename: pool/main/m/mpc/mpc_0.35_x86_64.deb
+Size: 165864
+MD5sum: e6f8ab4ad41adfd15d503816d4ac2689
+SHA1: bfef9b77d08ab59a522f3f2bb4b64082ffb858fe
+SHA256: 42d2453e03b9edb29bd27d28e61d96d664d5047af73f89fd060b04f5740cc209
+SHA512: 18323a7e68522d68330d909c5d94bb5879278400c13d2e8fa43e4a343b73fea78ad929a52ca4ac5eff48acc8c9ee9a641f6a2d3b465a863c9f08ee08143b011b
 Description: Minimalist command line interface for MPD
 Homepage: https://www.musicpd.org/clients/mpc/
 
@@ -25722,6 +25708,21 @@ SHA256: 3f0be66c3be52a3602537f77c91b7506c2a17f391221ebf36705ecfc27de4ebd
 SHA512: ad3c39c94b463dd311fd1550750ed1ce8a0a0d6ff7f248df26a6686de2028c39e6e5f1f3fbe12b42c56cd89c50f4a254b6f56c5ed01a62b7f62d64fd8b3c2b1a
 Description: An interactive cheatsheet tool for the command-line
 Homepage: https://github.com/denisidoro/navi
+
+Package: navidrome
+Installed-Size: 42048
+Maintainer: 2096779623 <admin@utermux.dev>
+Architecture: x86_64
+Version: 0.51.0
+Depends: taglib, ffmpeg
+Filename: pool/main/n/navidrome/navidrome_0.51.0_x86_64.deb
+Size: 11044444
+MD5sum: 97e772e9b29edf04afa1849743afbf3c
+SHA1: 29b21b69c8e090d6f11228053b9e2b598108faa7
+SHA256: 65c0e650b910d655f52fe34850ce9e452723787c5927d0a1264b16e25d57bf94
+SHA512: 6001f0a0adf4b39832b374e4e40300199c0a63afaa08fbb5b68ef15d80781d13c201a41160a99aa43cfb631219469668750a07f984a20aaf7b469f6dbc68eed0
+Description: 🎧☁️ Modern Music Server and Streamer compatible with Subsonic/Airsonic
+Homepage: https://www.navidrome.org/
 
 Package: navidrome
 Installed-Size: 40892
@@ -38756,6 +38757,21 @@ SHA256: 8a1a3517dc336ba1c3c220cde40c6f0ccae4b8978303903f9a48b47b28c3273b
 SHA512: c0afc13830f3fce8c67e7d212380873fbbcb999c628fa3f3f8c836a66e57610f0761667d8c0df9bfbd0335e0ba9fd42637e21eb2749a7da88eb67eecf73e4b56
 Description: An open-source application to synchronize ActiveSync compatible devices and Outlook
 Homepage: https://z-push.org/
+
+Package: z3
+Installed-Size: 46316
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.12.5
+Depends: libc++
+Filename: pool/main/z/z3/z3_4.12.5_x86_64.deb
+Size: 12964104
+MD5sum: da36ec46428f83c9ab8ae41b904e3f35
+SHA1: 5a8fa2c47064a48d9413a33357b3920c1ac1e1e1
+SHA256: 95713153302bc2dd0372ca9e80273c589a115f9b252de41b1a1b7dbcdc2e39e0
+SHA512: 1af0b069985a3fc9d565d174f50511e6ca79b21fc3847b13e7155ce88caa7b1739711065eb82bebf3fb92b1d4f232dbe3cf0b8391ea8155e8dbae390bc026785
+Description: Z3 is a theorem prover from Microsoft Research
+Homepage: https://github.com/Z3Prover/z3
 
 Package: z3
 Installed-Size: 46056

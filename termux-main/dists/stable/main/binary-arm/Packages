@@ -7506,6 +7506,21 @@ Description: Utility to print configuration values
 Homepage: https://github.com/termux/getconf
 
 Package: geth
+Installed-Size: 41452
+Maintainer: @termux
+Architecture: arm
+Version: 1.13.11
+Suggests: geth-utils
+Filename: pool/main/g/geth/geth_1.13.11_arm.deb
+Size: 10474752
+MD5sum: 5403d13b51b50da3bae90e6d140c528a
+SHA1: fd05103659424678fbd123fa88016d3fb0ddb588
+SHA256: 1444b07a3491740a4cb1a53b09c753f5371a0493ebcbf69dde5014cfadd07772
+SHA512: b405c89ded40cda0f038c53344cfe6530c62eafe3258f4a8d72fd218aad90b325127773605745c840c5944dd37924047552bd637046860853c0c7c621e080108
+Description: Go implementation of the Ethereum protocol
+Homepage: https://geth.ethereum.org/
+
+Package: geth
 Installed-Size: 41424
 Maintainer: @termux
 Architecture: arm
@@ -7518,6 +7533,21 @@ SHA1: b2306813641347e66f70f68a4b84db378ca66e24
 SHA256: 796908c2f73dc82e2f44713ce19400965496e4b6b66305de50c16e296e465f63
 SHA512: 490d990c9bbb36e4a8b98cb7228325fcd6aeb24e540dbbb9504f9775eb6e6889bbd75cb92cf2b030857428d4c0e8aec9edc2439df1229f001deef4f5426fc8c7
 Description: Go implementation of the Ethereum protocol
+Homepage: https://geth.ethereum.org/
+
+Package: geth-utils
+Installed-Size: 191896
+Maintainer: @termux
+Architecture: arm
+Version: 1.13.11
+Depends: geth (= 1.13.11)
+Filename: pool/main/g/geth-utils/geth-utils_1.13.11_arm.deb
+Size: 49207496
+MD5sum: 502759b5b6a4e014d69eebd8f64234a6
+SHA1: 961452c83d161433e7b9ddc50faf167bb22fc81c
+SHA256: 40b4fc58eb46fcf743321f5fb79b60e25bc70cdfaa7b97a3042122d8c73ad7e2
+SHA512: ff20c117d1ec4fdfacdbc40cb0a700823aeb2d43c9f6f34a6f5a2931a485d4bf4f2c85c1df06881238def0697165c0ff0391892172e1adface7661c8657292b6
+Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
 Homepage: https://geth.ethereum.org/
 
 Package: geth-utils
@@ -22591,21 +22621,6 @@ SHA512: 1c192e4cea28a66c19350c27641a681217af6dce67e4d87ec20ba09dacb9fbc29f3e8d5e
 Description: A C library to make the use of LV2 plugins as simple as possible for applications
 Homepage: https://drobilla.net/software/lilv.html
 
-Package: lilv
-Installed-Size: 288
-Maintainer: @termux
-Architecture: arm
-Version: 0.24.22
-Depends: libsndfile, lv2, serd, sord, sratom
-Filename: pool/main/l/lilv/lilv_0.24.22_arm.deb
-Size: 53620
-MD5sum: 0015abb775c9104f12f1d306fce0215e
-SHA1: 9fabe71cbe66bbc26fece046c666396707ed4ce6
-SHA256: 245525286539ffb186770b0b832aacccd82c363e887ca56bce2b2ad0624c393c
-SHA512: fde2848672892482dc7948517d42f7ffe88e1dee88a9b2e76b92dadae9f4c43d134e97842982dfee660ab4fd0b94ddc120823e83a89e0665d785b1abe3674b7e
-Description: A C library to make the use of LV2 plugins as simple as possible for applications
-Homepage: https://drobilla.net/software/lilv.html
-
 Package: lilypond
 Installed-Size: 12420
 Maintainer: @termux
@@ -24196,20 +24211,38 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
-Installed-Size: 34200
+Installed-Size: 34204
 Maintainer: @termux
 Architecture: arm
-Version: 23.3.3-1
+Version: 23.3.3-3
 Replaces: libmesa
 Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
 Suggests: mesa-dev
 Conflicts: libmesa, ndk-sysroot (<= 25b)
-Filename: pool/main/m/mesa/mesa_23.3.3-1_arm.deb
-Size: 12114168
-MD5sum: e16ee28a1e8344c8bf75f6d92a829be2
-SHA1: 46630e56867aeba9f6ab3fd4fabd29245a712bd0
-SHA256: e3d0710c396e79041f7f450d333ba51255968a6ef199c305ffc10da9d2e13951
-SHA512: 23a10d6f67d9b695d952f058a5c4e27db5179137340b9bb0a780d78ceed8fb54309003c0c864bb7810f0865d60ba8ff3c6c78f8baad178ab7c0f467d741a1959
+Filename: pool/main/m/mesa/mesa_23.3.3-3_arm.deb
+Size: 12114164
+MD5sum: 96a547b2ffaa087f3434b7cb5a884501
+SHA1: dd0eba4d11f79dd4549cbf4cd0c5b5c567cf4773
+SHA256: d12979bf8eea3f7191a1b043c83a41d7eabc6c557f5f39e822c49b6f7937b38b
+SHA512: ac9fcf6049a64cf5b8b89c65024ac85498b03d13831d65e57769fdca9514ae9027870f75068cd8d2b83379c1b0e4eb8f11a968dd9470d50501030921fbe10a5f
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
+Installed-Size: 34200
+Maintainer: @termux
+Architecture: arm
+Version: 23.3.3-2
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_23.3.3-2_arm.deb
+Size: 12111412
+MD5sum: b6e0440401b83a46169d68af4b07819f
+SHA1: f215e299a96669a6eaf0c82819ca8393c71661ad
+SHA256: b945b687567c8c373eee0c04dd147b955d2c680a1701509d1a1c30a03ae255d5
+SHA512: 0b88a69b463ce0f1ec10af6360fe53c04b3e8f413ecd99ccf5634e2384f38c5dd8a494ce65defcff815da523b81b00e9efc4c773cc53df1180e01b8b4c8cc582
 Description: An open-source implementation of the OpenGL specification
 Homepage: https://www.mesa3d.org
 
@@ -24217,16 +24250,33 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
-Version: 23.3.3-1
+Version: 23.3.3-3
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
 Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Filename: pool/main/m/mesa-dev/mesa-dev_23.3.3-1_all.deb
-Size: 25044
-MD5sum: 90eb8b23155d3898b209e9865178b588
-SHA1: 096a0c9a6ad671e30bbf17a3f2a5ed5c39b564c0
-SHA256: f134326c06c82d2184d40f8456e59dacecd3059910d5accd035c43df1c43e841
-SHA512: 488e1a961dcb8edf2371c9cfa8d3a68f0416b69b0cbcb80111dbd60c4736c09c5856c3486474e77927011ae246984f7a5e92422c55c9bb5e17b93fd9040d5782
+Filename: pool/main/m/mesa-dev/mesa-dev_23.3.3-3_all.deb
+Size: 25036
+MD5sum: edde661fc089260451b9fae95499dfd2
+SHA1: 251c002ceab256a48ae08889ee85b345e6b8cf67
+SHA256: 8b289e263dc9dddcf3d86be9e0e0de2070a2a9c230407b50750d03a7e8c3d420
+SHA512: 7607027cf5d81b8dbcbc042a1073c5a90445668755751bd578aec72314c8c3725f265457d88f0fc859118c87396964ffa024f85853dd57bbc7e8c2db4f9a3633
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
+Version: 23.3.3-2
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_23.3.3-2_all.deb
+Size: 25040
+MD5sum: e1ec4dc5436901faefa8ce4e4746d671
+SHA1: 0af39f6f9b19ccd4bc74407f0e2fbb08cc073127
+SHA256: bbf2305cb4ac3b6ab3d4a95b00fdfe42e562eb76c40730db9daf2964e7f472df
+SHA512: d97c961ec15e629c4dcc1c51e58fdaf853ae752688064240efd796846e4a5cdc28ce85b5b2f9d49a587f3cdc23b846fb8e095d2c97b1eeac043e03ad55c23e64
 Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
@@ -24234,14 +24284,29 @@ Package: mesa-vulkan-icd-freedreno
 Installed-Size: 5896
 Maintainer: @termux
 Architecture: arm
-Version: 23.3.3-1
+Version: 23.3.3-3
 Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, vulkan-loader-generic, zlib, zstd
-Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_23.3.3-1_arm.deb
-Size: 1087548
-MD5sum: 1e1aadde3362a3d32227e61ea7736fd3
-SHA1: c28197da63d8edff99e5285d7e687bc62d4d0a19
-SHA256: cb8e9d97d89beaf8312759c79fae5738bf2a0dc1d7a097c3306f58371991b639
-SHA512: b7f1d7929166671d03e5afb34e9ec5613e552cb84e71dfb28e9c2a473e6fa8aa8363a645274b4991346cb069caf766793e055e30cbf9dde9c9ad78a09b907c38
+Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_23.3.3-3_arm.deb
+Size: 1088064
+MD5sum: 878abdaf8c4b4022b122dbbbdeb160be
+SHA1: 3bbbb1e517fc348cec32d4755e66bb758bc5f891
+SHA256: 0df86090b84bec5672c6e16fd2901373d0815cc9412769e5c2ccbf49aa13173b
+SHA512: 3c2582671de6bbd528f7faeedd66153817ad360b7951d5aba073ed3ef4fdb3dc65856f6d5e4697d8a1049baf0310f496619b17a310f0dfd7efb96c3941e1a2ae
+Description: Mesa's Freedreno Vulkan ICD
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-freedreno
+Installed-Size: 5896
+Maintainer: @termux
+Architecture: arm
+Version: 23.3.3-2
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_23.3.3-2_arm.deb
+Size: 1087536
+MD5sum: 595e91c4bba987fb77e6e7e213da032e
+SHA1: ed488412aa62de73baf5b343e97e6f8f278a85a7
+SHA256: 5abfda0c34ba4119d88fe79ba607d9d4408846e7607c5667d0318c375cd6aa58
+SHA512: 54d8f75ade63c053c16b77eef1616d2af02a9b0c9bb17a43af2632d722a9492aca1e436589a806ee3d4a0bc92f8adaeb8b10cb548b66d31c4ea8fd69f82a6508
 Description: Mesa's Freedreno Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -24265,14 +24330,29 @@ Package: mesa-vulkan-icd-swrast
 Installed-Size: 34476
 Maintainer: @termux
 Architecture: arm
-Version: 23.3.3-1
+Version: 23.3.3-3
 Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
-Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.3.3-1_arm.deb
-Size: 11967548
-MD5sum: edd1ab8e092becaa32ae1f92970363a5
-SHA1: 7d2a64212f657f8d0aa177a3b5f906e6d9fdecf0
-SHA256: dd1ff621e58bdad32fe27c8b418f012579dc31f735f9d19a2236acc9f07fc2fa
-SHA512: 4f0ea375f963e72871ebb31da00d5051e618875d2b2ddadbd15e509971ee9b36f47d7c0856d854e6e78dde1777cdd3c614b377ecb714d9ef46ebe8c0f4f0c4df
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.3.3-3_arm.deb
+Size: 11965428
+MD5sum: dbc5e5404bc21c9c84d320a23c978adb
+SHA1: 6cc37e6e06cf73f198bd4b95bac8c326ede7d5ea
+SHA256: aebeb9395ec890abeef815679e6eb7550e6d3932f1b2c63fed856f1403ee5aa3
+SHA512: 206b8b09517006b2eab17e1ed24f7f85d57247a66e4f6ddca053a1d2b60fca5fd7bc1675701c6c723ac98c9d97a165808e26a562e5c6898df2749a3547e31b3d
+Description: Mesa's Swrast Vulkan ICD
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 34476
+Maintainer: @termux
+Architecture: arm
+Version: 23.3.3-2
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_23.3.3-2_arm.deb
+Size: 11966544
+MD5sum: c2ba6ed36ae000205ab98e3ca980bddb
+SHA1: 458a8dfed8b25987626628630540b3b10ba924bf
+SHA256: ba795c90916eb07fa5906c58896ac800302dc0fa8d7ebbd04c4f0b0846296f94
+SHA512: cf576d2315005a04204da09acc313487e7785a830b3050edcad67398986a8c16af4e9a36f397de14da9399fb606a1b8e01578aed0040e32ec6dc3d39c43ccca6
 Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -25395,21 +25475,6 @@ MD5sum: da462200543c088788eff26dff8bbc89
 SHA1: c78e9fe3abebdfc1cd94c6088dfd2f5a7d1be23d
 SHA256: a4975a3bd6f41456f1bbd0bd0a3fb11f30b11ca7f0999a9375f5869578f5541a
 SHA512: 2c31bab2047433160d2d00c98ae444af86238fe4d816cb58cbaedf3915c079f29f35f661c09c5588a90e97cf8c7d47545036a57fc335fe9e144632c0a3883e4a
-Description: Commandline frontend for the apt package manager
-Homepage: https://gitlab.com/volian/nala
-
-Package: nala
-Installed-Size: 908
-Maintainer: @termux
-Architecture: all
-Version: 0.14.0-1
-Depends: python-apt, python-pip
-Filename: pool/main/n/nala/nala_0.14.0-1_all.deb
-Size: 208916
-MD5sum: 207b18e9fcc84211e3ca1fecef2a3fa0
-SHA1: 6caf709d9910c47fd4e3ba656d6c5eb52edf9faa
-SHA256: efe704080efb9f68e826067a7e0b21fc6bfde836271e51b60987a40180108b39
-SHA512: 7fe42bc24fe8de61d9d232fafef243a9bf38b491caaa767e43ff68c0e32fdc2e44114d6938aeb263f6381e53c9c98936172ce8d00f1d0697ce2f5e2f4311ed9e
 Description: Commandline frontend for the apt package manager
 Homepage: https://gitlab.com/volian/nala
 
@@ -27390,16 +27455,33 @@ Package: osmesa
 Installed-Size: 32196
 Maintainer: @termux
 Architecture: arm
-Version: 23.3.3-1
+Version: 23.3.3-3
 Replaces: mesa (<< 22.3.1)
-Depends: mesa (= 23.3.3-1)
+Depends: mesa (= 23.3.3-3)
 Breaks: mesa (<< 22.3.1)
-Filename: pool/main/o/osmesa/osmesa_23.3.3-1_arm.deb
-Size: 11462004
-MD5sum: 614e5ff232f0ce1a581d96375f6ef024
-SHA1: 1bf215682316cb16a9fdb71931bc4891e4beaa64
-SHA256: cc8f93aede1a5d8172b0d7231a0b359828713f78d878395c720526abe746fa35
-SHA512: b2af27fa84f412be3a7f5f02fe2ab366cc1975faf18d173248bd8ffbab45e1e6959595ca43f5abb21464b2e9acf48b3ce6be9af99272328cc6ece3aa5e5a0fc8
+Filename: pool/main/o/osmesa/osmesa_23.3.3-3_arm.deb
+Size: 11458760
+MD5sum: 4e2372d59d601770bca46d91171c495d
+SHA1: 204e84c2ed0483b4674d8fc081d0edba1f7ff01a
+SHA256: 379106baa0f3e3ec0b366d8097b4680a3e3a01471ae35f229cb5631546bd56a9
+SHA512: 4c04c566196eb678366526190cd6dd2d5723552e00280b6f80bdbc990e39b221c2308bcd9ae03925e85fecffc6b7f6cd39e4e04dd7c0610ed1687d9c4e9858d8
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
+
+Package: osmesa
+Installed-Size: 32196
+Maintainer: @termux
+Architecture: arm
+Version: 23.3.3-2
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 23.3.3-2)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_23.3.3-2_arm.deb
+Size: 11455208
+MD5sum: 4b515b2071183752a7cfae5150264cdf
+SHA1: 1ed51d5fb096a73b9874185985e9615ee6c5dae0
+SHA256: c7fbdc738b4cf49ab091ac307c8f00526f873f3828432a6c141cc654d0dfd191
+SHA512: cd00b62a46ad070e9a376b5e3aa4a24f5db5f53fcb432ddfd016b0780460e0287c00178cadc2499aad8c6ec26853d83e045ce5012796a2361477f055713d7581
 Description: Mesa Off-screen Rendering Library
 Homepage: https://www.mesa3d.org
 
@@ -27614,6 +27696,21 @@ SHA256: c71eafa0a9b4df350a86026fc725e2cb290fb6dd0e613caf5486eb6d3e53526b
 SHA512: ed08ca736c9a3e0fca0fc5cf04869bd8e2760ed23d7d2799b883598d2ab80393f32f4f47f6921f51939a72afe528031542327286c588f340a9f73bd8a8f53a31
 Description: par2cmdline is a PAR 2.0 compatible file verification and repair tool
 Homepage: https://github.com/Parchive/par2cmdline
+
+Package: parallel
+Installed-Size: 4560
+Maintainer: @termux
+Architecture: all
+Version: 20240122
+Depends: perl
+Filename: pool/main/p/parallel/parallel_20240122_all.deb
+Size: 2004064
+MD5sum: 69f19d92804691fe66c4e602fb5ea047
+SHA1: 74789490ea5af90fa1a5f1570bdfd50e9329d303
+SHA256: 027ddc3682f7395f7cb15428a6a3f0a2b506da11b45c27535abe0ed2b68317d9
+SHA512: d0f2eae277cdb761756c666136687687c4789ab4b66cb6f2ded2ded6370412dacd7d74781dd1ed08d0f023aa2e89383db35c0145f935efbedb9c473c30f456af
+Description: GNU Parallel is a shell tool for executing jobs in parallel using one or more machines
+Homepage: https://www.gnu.org/software/parallel/
 
 Package: parallel
 Installed-Size: 4512
@@ -28662,6 +28759,21 @@ SHA256: cb6aeb926729759c578cfb103d1bb3dc024f088d5b8f2baef1ac48aa1c662d19
 SHA512: f903b3b0f80aa56f6c1f9b47efe072e383181fefb50858424b6ccc83dd8126d1c715ce3128dd25c2f9f4caa8430c706cfc80da729f2a134302e0457734a1d35e
 Description: PNG image optimising utility
 Homepage: https://pngquant.org
+
+Package: pocketbase
+Installed-Size: 45516
+Maintainer: @termux
+Architecture: arm
+Version: 0.21.0
+Depends: resolv-conf
+Filename: pool/main/p/pocketbase/pocketbase_0.21.0_arm.deb
+Size: 9727016
+MD5sum: 3bd7c7c8bcf072c9d8e6a4c7b6e37ffe
+SHA1: 6c0068ee38c718d3730d2e306713cef943b0c534
+SHA256: 1601024ffb8efe64ac6cab17460242deacf58741651d30e87db296ddc8b12947
+SHA512: 500608dedcf6fdfd24d7312f3a19be9b2eff8b3c542729c7ae790de0bef9d76df8bbd145271a006f0d8afc67bb9572038f076a24af1d00fbbf6b8057c2a5d434
+Description: An open source Go backend
+Homepage: https://github.com/pocketbase/pocketbase
 
 Package: pocketbase
 Installed-Size: 45444
@@ -32346,20 +32458,6 @@ MD5sum: 0bf2dc0e22c2d3c439a9d55971bd062a
 SHA1: 188ee7db61797b043a93f7c36dcfd3c64774e538
 SHA256: 0a3476851e23841be37343d21fcfbbef2db2e0dfbc47f5583268d764aa1cef44
 SHA512: 9372f421fb049a7ab647e961ef6948353d94620b3caabd4abd64a644d62a1f5a7484ccf40fa748ea73c446164f99029b1516eef5a1dc9e35f77243ef23f7dc49
-Description: A lightweight C library for RDF syntax
-Homepage: https://drobilla.net/software/serd.html
-
-Package: serd
-Installed-Size: 168
-Maintainer: @termux
-Architecture: arm
-Version: 0.32.0
-Filename: pool/main/s/serd/serd_0.32.0_arm.deb
-Size: 36628
-MD5sum: 4976bf2e083ecc10c97be7c39803a515
-SHA1: fcd7dcdb724a3fa455af51062d8953bccc24ea5b
-SHA256: 6f107d641dde0019e2131807fd99ead2806b6a32ad65cff62cfefe69843dda12
-SHA512: 08d6632cd518e5186a4ec66a9ad31f3b9d833bf9684aae13c3a7597408fe016fea7b3496b53268b79bf8809e30f56c386fd9702058dfc0d9ccb825e392db9792
 Description: A lightweight C library for RDF syntax
 Homepage: https://drobilla.net/software/serd.html
 

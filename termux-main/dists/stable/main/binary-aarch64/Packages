@@ -2522,6 +2522,23 @@ Description: Tools for working with bzip2 compression
 Homepage: http://www.bzip.org/
 
 Package: c-ares
+Installed-Size: 932
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.26.0
+Replaces: c-ares-dev
+Depends: resolv-conf
+Breaks: c-ares-dev
+Filename: pool/main/c/c-ares/c-ares_1.26.0_aarch64.deb
+Size: 172516
+MD5sum: c3ab88bf604d72b58b6f195df0bbb094
+SHA1: f57f87fc2d67aa7f6442c8adcfeb65c0a402b523
+SHA256: 1c18e2bfd2504c7b8b3fc08666731a3a6c7a06f651f4d8bc72db4105df81be3f
+SHA512: 5a2be6e5029435f0694890df84eb90044a4fd949cf1e7bbbabcd9e437848f1bd56307fbcbc6a54e4f5ec4c587cc379a8539bf99b2ad5057db9d822e28154b468
+Description: Library for asynchronous DNS requests (including name resolves)
+Homepage: https://c-ares.haxx.se
+
+Package: c-ares
 Installed-Size: 916
 Maintainer: @termux
 Architecture: aarch64
@@ -16430,6 +16447,23 @@ Essential: yes
 Installed-Size: 1840
 Maintainer: @termux
 Architecture: aarch64
+Version: 5.4.6
+Replaces: liblzma-dev
+Breaks: liblzma-dev
+Filename: pool/main/libl/liblzma/liblzma_5.4.6_aarch64.deb
+Size: 245948
+MD5sum: 0d25cdadc8d9af42b5b9b1e64aa7d89c
+SHA1: 92d8ca9c9d2ee648906ff865a1a116bbaac434db
+SHA256: 24ce995c1d767a26ed196c406b56908a39427692100e6e3fc3acc540bedea2ba
+SHA512: be9827d8471a9b4f875437a672305eb6e7626dd879de8f890aa368c0d98768fd41704d5ca1293ca1a7cad16bc88f8e5b2fc04face1c90b2058754532f27b7b9c
+Description: XZ-format compression library
+Homepage: https://tukaani.org/xz/
+
+Package: liblzma
+Essential: yes
+Installed-Size: 1840
+Maintainer: @termux
+Architecture: aarch64
 Version: 5.4.5
 Replaces: liblzma-dev
 Breaks: liblzma-dev
@@ -16440,6 +16474,21 @@ SHA1: b1cea3b02b7239a54986250fcdddd633611b9743
 SHA256: f5eb472e558adda1ef9e3aaa024a57401aec987592717855f49897ba636c8625
 SHA512: 66b33c96105fa38ae014c39500fc21e7764ecb89787169198b215eb790067edc3bebb8c57d9b2be3a2f3278869bb7b3fe2d85a0fc7bd9a33fca65fd4f36f4654
 Description: XZ-format compression library
+Homepage: https://tukaani.org/xz/
+
+Package: liblzma-static
+Installed-Size: 360
+Maintainer: @termux
+Architecture: aarch64
+Version: 5.4.6
+Depends: liblzma (= 5.4.6)
+Filename: pool/main/libl/liblzma-static/liblzma-static_5.4.6_aarch64.deb
+Size: 87620
+MD5sum: 60fac24a76f2d21ec0ba203942f788a7
+SHA1: abd25d480c60bd5e41411d9a9eee7b3b2a259e47
+SHA256: 97399c4e097d304be572d8840343a0e784a8e21042fbb3ed91aaf176eea2461d
+SHA512: cd55cd37acbb172ff196c7af934be32073b8dd69a00a06bd33ae4561ca9fbf7336db573208a5ac4ade8a1875573e471919c39a725e14da2cc66ce97cb394a7fc
+Description: Static libraries for liblzma
 Homepage: https://tukaani.org/xz/
 
 Package: liblzma-static
@@ -23893,22 +23942,6 @@ SHA512: cdead3ae933f2a557d6824030ca26b412abc8220155a9d7c6214ea3d785148f4415fa2c6
 Description: Light-weight cryptographic and SSL/TLS library
 Homepage: https://tls.mbed.org/
 
-Package: mbedtls
-Installed-Size: 3364
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.5.1
-Replaces: mbedtls-dev
-Breaks: mbedtls-dev
-Filename: pool/main/m/mbedtls/mbedtls_3.5.1_aarch64.deb
-Size: 586176
-MD5sum: ad963d7a813894753bd69cd58f60e29b
-SHA1: fc9a7bda8f790e54a39ca4dc1cb9602813257bc5
-SHA256: 76ce934f9af47e87318344a23650a4254c0c49998a316db27d66e84cc994bcf5
-SHA512: 057ef9303254e18aef943231f40ec5e3d9ee42b79a385d63f5685ce5ffe7a10bd0eb5e2a01e9bc32e38c08625312667892a4170d95c58bc4512eafb122565233
-Description: Light-weight cryptographic and SSL/TLS library
-Homepage: https://tls.mbed.org/
-
 Package: mbedtls-static
 Installed-Size: 36
 Maintainer: @termux
@@ -23921,21 +23954,6 @@ MD5sum: 19d0c23034ced9a1633bd2018d3f72d3
 SHA1: f203a5297c687704e1cf7525dabd59c24f906460
 SHA256: 824283c51d70406dd7e56b2eb013ecc3ec6228d745598bba6ec11004265aa676
 SHA512: 48d4108a8623ac9f3e4de434e6c0a939d267cf937b447a9ab878ed56643aa6627702bf2cc796ff22ef6a056b9cc257bd266f821eab2a0571b8d197bbfd6cc4be
-Description: Static libraries for mbedtls
-Homepage: https://tls.mbed.org/
-
-Package: mbedtls-static
-Installed-Size: 36
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.5.1
-Depends: mbedtls (= 3.5.1)
-Filename: pool/main/m/mbedtls-static/mbedtls-static_3.5.1_aarch64.deb
-Size: 1316
-MD5sum: 9e736a6df0770f53b80d9da83badee9a
-SHA1: 6cfb9a392b1c13679e2914c816eace9199773bfc
-SHA256: de07175729452386e4420bbae511932906c08ee68247032df1f3a3c07782a8df
-SHA512: de32df43bf4e233bccb256efe8f592199a603052c05929d13847bbf2dc126cfebecc0168a0b58294988794b6e65125f7b625c3317f37cc884e33a0cebad6edd0
 Description: Static libraries for mbedtls
 Homepage: https://tls.mbed.org/
 
@@ -38334,6 +38352,22 @@ SHA256: c3d6db672dac244331894c3b77ec113edfabf21d7aded5330392b0e1fae07799
 SHA512: 640cb99f9a6a0c6f04c55c3113246bcca15f6427a844c7566b65ca38e4144a19e52dd623173f5b3dd28e01256e2dc06f571196ca6411dae73602579b12d98f5c
 Description: Static libraries for xxhash
 Homepage: https://cyan4973.github.io/xxHash/
+
+Package: xz-utils
+Essential: yes
+Installed-Size: 220
+Maintainer: @termux
+Architecture: aarch64
+Version: 5.4.6
+Depends: liblzma (= 5.4.6)
+Filename: pool/main/x/xz-utils/xz-utils_5.4.6_aarch64.deb
+Size: 64068
+MD5sum: cf26179f5211917f5c7d0d1547cbda37
+SHA1: b965da9e1af643fccfc4e4419d42f9ae7343b140
+SHA256: 5d58a557402904aaf2819e3ebc21fdec4dd7ada8dce8dcc15888c47422f19e44
+SHA512: fa724f50cc95f028509c602a523cbcd40393b93a12a124c801a7e8ff13126221343a44fc6a0d2cd9de707d1de38f229116c9726cf3bef89ad7fce5960a7d298a
+Description: XZ-format compression tools
+Homepage: https://tukaani.org/xz/
 
 Package: xz-utils
 Essential: yes

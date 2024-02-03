@@ -176,36 +176,6 @@ SHA512: 488563628757bdeb66689ccd248e105bc88209ce5f8ddb808b5042dd395ba773e343b8ca
 Description: Set of products that use OS-level virtualization to deliver software in packages called containers.
 Homepage: https://docker.com
 
-Package: docker
-Installed-Size: 81200
-Maintainer: @termux
-Architecture: i686
-Version: 1:24.0.6-1
-Depends: containerd, libdevmapper, resolv-conf
-Filename: pool/stable/d/docker/docker_1:24.0.6-1_i686.deb
-Size: 21519976
-MD5sum: bb6c70a03219e254742a4390c0d82955
-SHA1: 3a74aec38124bc2b6a23b426db826441a05725ed
-SHA256: be333be76d8a6e7ae777a32fa65610662cf8ac380adc5bee232c290a036c2db1
-SHA512: 6f376275dd88ad6ecaca8a5243ff11311e346d254cd1b45d9052d20e947fd4189f54b9010429bc059a250dc2e7f3c3ef47f22af379a64ac075998ce06a2046c8
-Description: Set of products that use OS-level virtualization to deliver software in packages called containers.
-Homepage: https://docker.com
-
-Package: docker
-Installed-Size: 81304
-Maintainer: @termux
-Architecture: i686
-Version: 1:24.0.6
-Depends: containerd, libdevmapper, resolv-conf
-Filename: pool/stable/d/docker/docker_1:24.0.6_i686.deb
-Size: 21462708
-MD5sum: f1673fd9b39e103b0ade3a80623557ee
-SHA1: 434077794b071dd83b260b36879a5b575310a787
-SHA256: 0255b7b965efd46cd7020a4ba944f882d8ad74d86dad15bfb976913769958849
-SHA512: ffd4cc174fb01f7ced1d3d9519752b0d0be1bbd287ee3b4404735a2923dde962f89038f0f121f7f2aaf86ccddc290047b303e4f3adcf97a81494c0fb24b6a99a
-Description: Set of products that use OS-level virtualization to deliver software in packages called containers.
-Homepage: https://docker.com
-
 Package: docker-compose
 Installed-Size: 54548
 Maintainer: @termux
@@ -429,6 +399,23 @@ Package: ipset
 Installed-Size: 500
 Maintainer: Vishal Biswas @vishalbiswas
 Architecture: i686
+Version: 7.20
+Replaces: ipset-dev
+Depends: libmnl
+Breaks: ipset-dev
+Filename: pool/stable/i/ipset/ipset_7.20_i686.deb
+Size: 79588
+MD5sum: 9e1a1cd27aac51bdc88dc91275aafbc7
+SHA1: 04170ca806b8c27c9ddcd04034a9f5bb0583bb2e
+SHA256: 7070342803b27f699e22bc01e6dfc445961dc31683a9ccff13c7dd269f86e845
+SHA512: 5ecc04e557cf4e8af3b20bfae290838d3b5a3bb0e4423a9fea35166886504987abfd2b4394bfffa907d4a2c927930c02d592ae61aaf1f13581278a84683b1982
+Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset
+Installed-Size: 500
+Maintainer: Vishal Biswas @vishalbiswas
+Architecture: i686
 Version: 7.19
 Replaces: ipset-dev
 Depends: libmnl
@@ -440,6 +427,21 @@ SHA1: b6c5331fa0816492100eef8c5a3ef3f13ff3ee43
 SHA256: 8c1981fe56f19c9fcb68f64e3aada7623a7b7acd6e91a387b65d3d1c094ebcb5
 SHA512: 750b42d2d3b7465df037ac0655036dcce4f442eaf8ec6ea0b9f2556cd93d4a91a298256cd8b11072877aed65fecd0162195419599aac4469b03f8abea693248a
 Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset-static
+Installed-Size: 256
+Maintainer: Vishal Biswas @vishalbiswas
+Architecture: i686
+Version: 7.20
+Depends: ipset (= 7.20)
+Filename: pool/stable/i/ipset-static/ipset-static_7.20_i686.deb
+Size: 47948
+MD5sum: 5510597d8e59760bbe8489c9893c724c
+SHA1: 3db88ba77b5b09ee5e73ad41eec3a0601af98074
+SHA256: 653c7f6cad24a288ac477585bb089ec901845aeb592f819244e1a37e73861519
+SHA512: 81c8019aef9a976ae1e3a1a3f558239ea95a184117ebc2b50dc2f7d852d90e1d7ff95b66f84bc4ab4c8c1cb47434f82d6fc074e5d3d93795ebef9e1147aa720a
+Description: Static libraries for ipset
 Homepage: https://ipset.netfilter.org
 
 Package: ipset-static

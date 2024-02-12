@@ -1260,16 +1260,16 @@ Description: Static libraries for attr
 Homepage: http://savannah.nongnu.org/projects/attr/
 
 Package: atuin
-Installed-Size: 20320
+Installed-Size: 20324
 Maintainer: @termux
 Architecture: x86_64
-Version: 18.0.0
-Filename: pool/main/a/atuin/atuin_18.0.0_x86_64.deb
-Size: 5280836
-MD5sum: 0bb4f23d6c3bd6e03a2f71301d1af686
-SHA1: 34a7532f70ebc0f52d0f4fbbc4bc62e7579ea055
-SHA256: a8d071dfe715b33dbc84469677e1b1cd46e05feaec0dd8bafe66643ce6f4181d
-SHA512: f1cdfee30d5d650ee3ec23291b4e19fa78727cfcf948749a8835909bc54f3e5b40acd9e98bef1ab4716fabc28a61a5834eac14909de5c49d81dd698d5ea3f0a3
+Version: 18.0.1
+Filename: pool/main/a/atuin/atuin_18.0.1_x86_64.deb
+Size: 5280604
+MD5sum: f15ed9dab9d52aef8a7ef595f091f6f8
+SHA1: 648f5d4a81106c2bd98c1125ccf4be76fa563c43
+SHA256: 1d9adf0fdd95f0ddf60b18f2fe7edf5f2dbe12efcaca85080d29de40e749f72b
+SHA512: e7b48ab15986a3fa54d5cb756c45c206a0f644b087c03402b220f61f17a34c90e99acfbc9dc227eb25e36f0ddbf3ec43e3920cd853afab8d7e8d017567fc0fca
 Description: Magical shell history
 Homepage: https://github.com/ellie/atuin
 
@@ -1799,6 +1799,22 @@ Package: binutils
 Installed-Size: 36
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.42
+Depends: binutils-bin
+Conflicts: binutils-is-llvm
+Filename: pool/main/b/binutils/binutils_2.42_x86_64.deb
+Size: 1164
+MD5sum: 45a2ee3b1c70a3d9475d97a565d07671
+SHA1: abbc23120b7894d06fb2b2f9a8f5a6d85012ec11
+SHA256: 85ffde6b765dd0fbddc90b68b092ea767d5b21fa0fa1b9401ac5e4d867500aa7
+SHA512: df2a9867a7f92d408a1ecc04c4ae8f69b7fc9a1113dad4fc9b928b6781b58bc6e9b4aec0e9ffb8858a713004aaf631c61da7d21afb58372f20c9c2177bc229ea
+Description: GNU Binutils (metapackage)
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils
+Installed-Size: 36
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.41
 Depends: binutils-bin
 Conflicts: binutils-is-llvm
@@ -1809,6 +1825,23 @@ SHA1: 956bde007ac802ae342ca1dd51ba732908e58933
 SHA256: f1d22e481819a8539cdb86c8c1b2cd2f07b68e717ed06daddd638c0619b36815
 SHA512: 3f84d7d71947862e84802e50ffcfa9cba24ce5cd65eac7575b843d5d9680526e77a975b6250aafcb42655bd634da106c092dc394867db6cd22ece16ebec83f98
 Description: GNU Binutils (metapackage)
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-bin
+Installed-Size: 8036
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.42
+Replaces: binutils (<< 2.39-3)
+Depends: libc++, binutils-libs (= 2.42)
+Breaks: binutils (<< 2.39-3)
+Filename: pool/main/b/binutils-bin/binutils-bin_2.42_x86_64.deb
+Size: 1880252
+MD5sum: 9945cb653d7693e2f93108c79a073ae3
+SHA1: 435e93798b589e0c412dec43ab6ef366c809901c
+SHA256: af8a3943a2d3f2e48b9ae9a6e569c9b46c5614c1141420c3bef7f4b618ab3c69
+SHA512: 261cfeaf4c7d587e261f53b581c907767db9ce38879a4e9d3afbd5e98b615924721406a9b937bc7303bbbd6730c183171398d192ac7c0b5c210908c4db005bd5
+Description: Collection of binary tools, the main ones being ld, the GNU linker, and as, the GNU assembler
 Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-bin
@@ -1829,6 +1862,20 @@ Description: Collection of binary tools, the main ones being ld, the GNU linker,
 Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-cross
+Installed-Size: 11656
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.42
+Filename: pool/main/b/binutils-cross/binutils-cross_2.42_x86_64.deb
+Size: 2048628
+MD5sum: 80be835d1f89ed0c63f389f914287cba
+SHA1: c8328c9929cce9fd12f15ce3d9a42278a401458e
+SHA256: d22d859d1988c2256e66b829d1d531a287098b74a2d47883c58d7b40d716f402
+SHA512: 8f16eb3870f724598eee621dcc438aa8e1c953ab5d08a4685e5a6abd0324020d05eefa8eb96a98a8f8229d988608126a881d4a5f291c173ed470e202bdda605e
+Description: GNU Binutils for cross build on the host (NOT for Termux)
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-cross
 Installed-Size: 11576
 Maintainer: @termux
 Architecture: x86_64
@@ -1840,6 +1887,21 @@ SHA1: 86f730c35c4e003f6572e86102fe41ff0c56ac12
 SHA256: 1d500650f7ce04a2f6f8b84234c231bbf4b523ef2511d1fe1a31152757d26d6b
 SHA512: 6ef29aad7b093c73d547ade1585ff70804624064eefff40f78c403e12e792c078d64c5a4a6c1fdd813f09fa7bb7d817ba88160bbcb05a0298b2232d5654942ab
 Description: GNU Binutils for cross build on the host (NOT for Termux)
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-gold
+Installed-Size: 4016
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.42
+Depends: libc++, zlib, zstd
+Filename: pool/main/b/binutils-gold/binutils-gold_2.42_x86_64.deb
+Size: 959852
+MD5sum: 7f11905f358c77fd5e06393671def43c
+SHA1: 5ba6a3bfd49c1e7ed73b08f51937515ce77db8b0
+SHA256: d1127a05575407893a2c0d91d3d8610f44f5e204b800e2f5a4dc0d2f5827ffeb
+SHA512: 7b007fb9019f39c61bb93bf6b7807fbf2399b58cf2ebe43778133f3d48e3857eba4fd991b6de6e970dee27cd5d6afd3bdd5564af445ec38572ddf736b6590439
+Description: gold linker
 Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-gold
@@ -1872,6 +1934,23 @@ SHA256: bfe956deb3c9f7906c52ab8a1cd53a9654fed82ccd9ba92f1ba440fcd10796e0
 SHA512: 3725ccbf4e242ba793a83e84536158b72945c437e877ccef36c05f195782124c0dcb2f49ad1eb747abf0d77aff4c0d66e1c2577fb0c4b8c6e8ea514c428e2717
 Description: Use llvm as binutils
 Homepage: https://github.com/trentbuck/binutils-is-llvm
+
+Package: binutils-libs
+Installed-Size: 8032
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.42
+Replaces: binutils (<< 2.39), binutils-dev
+Depends: zlib, zstd
+Breaks: binutils (<< 2.39), binutils-dev
+Filename: pool/main/b/binutils-libs/binutils-libs_2.42_x86_64.deb
+Size: 935904
+MD5sum: ccab2a1b5b21090ac10eb6fe5ed632b5
+SHA1: cd2db51c4e093dabd4548aae0b2a09181187779a
+SHA256: d3f01f8fc3cb771047f93a526ef8c247b57d77c7b7c55e68bccd74fa7402c7f7
+SHA512: 66f216a1caacde7e368ade9d9ccd8d1300e4678a2e8212cdd49eb955afa2794d88e8de8f224f19fd5a5916e1d0c444a7d47f33a23c9831593efaa94c8638386f
+Description: GNU Binutils libraries
+Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-libs
 Installed-Size: 7900
@@ -6103,21 +6182,6 @@ SHA512: 5b6e410b960ec8eecf26c5ad4ce7d2372fc4249dd927ddae1ccc1bfc0c01f859727cfc74
 Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
 Homepage: https://github.com/fastfetch-cli/fastfetch
 
-Package: fastfetch
-Installed-Size: 2568
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.8.2
-Depends: vulkan-loader
-Filename: pool/main/f/fastfetch/fastfetch_2.8.2_x86_64.deb
-Size: 372916
-MD5sum: 0f6d8f69a74d04bc063271937386cceb
-SHA1: 8a81e6bc415ba7ad9ea39631e9ff581990221fa0
-SHA256: 0f7d2737ad008105793edd17705360e1f0bc0506c4ec762f9c8372988d0dead8
-SHA512: bbcc5d3dc2dd56335c5bba005fa942952ee10bedb707e2770d4a6858fb26ca7ea4a78e61ed2173ffb79ec8b5f35e52da1f881213a9882de07b4b520dd1050cbf
-Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
-Homepage: https://github.com/fastfetch-cli/fastfetch
-
 Package: fastmod
 Installed-Size: 3748
 Maintainer: @termux
@@ -9040,34 +9104,34 @@ Description: Static libraries for graphicsmagick
 Homepage: http://www.graphicsmagick.org/
 
 Package: graphviz
-Installed-Size: 9436
+Installed-Size: 9380
 Maintainer: @termux
 Architecture: x86_64
-Version: 9.0.0
+Version: 10.0.1
 Replaces: graphviz-dev
 Depends: fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, libandroid-glob, libc++, libcairo, libexpat, libgd, libltdl, librsvg, libwebp, pango, zlib
 Breaks: graphviz-dev
-Filename: pool/main/g/graphviz/graphviz_9.0.0_x86_64.deb
-Size: 2947216
-MD5sum: d31ddfd1f6233cfb04cb158a74ad2f5c
-SHA1: 19d215d30d41ea1bb9c3aac8415472a313cfdc9d
-SHA256: 7100d62642edcdb59616a3ea3defd3f8e06906dcc56a6dc77f68cf478a094f62
-SHA512: 93b7251044bee9818130b046d775e5d01605d5d2d0cd104caa7ffc41ac27b145058403db1bbffc5dd939b4f53debde2fdddda80f45a4d5d56eff713cfb6cfec2
+Filename: pool/main/g/graphviz/graphviz_10.0.1_x86_64.deb
+Size: 2929500
+MD5sum: afdf07b6498b9977e62a3cf81b92c9e5
+SHA1: a3664b247afcf53b5cd01efc2353ed7ff4d0f883
+SHA256: e657ccf959aa66de73e8443c1a8b2f0962ea70022991c865c7e24d4ebb08803c
+SHA512: 78b2f0a13dc844d2118f71b70212552a734ba7d829817df3750670a6e75cdcf1543223de7d7ca48ecfb0236841d0f5e053a3c0337ae3d3c5d80a210a826898dd
 Description: Rich set of graph drawing tools
 Homepage: https://www.graphviz.org/
 
 Package: graphviz-static
-Installed-Size: 8380
+Installed-Size: 8236
 Maintainer: @termux
 Architecture: x86_64
-Version: 9.0.0
-Depends: graphviz (= 9.0.0)
-Filename: pool/main/g/graphviz-static/graphviz-static_9.0.0_x86_64.deb
-Size: 848836
-MD5sum: 89457e27a611041e02f5e771c08341f0
-SHA1: 3952f27ddb9f2aa6d146928977cd8b2ae71f2550
-SHA256: 61b47e26f1457d321c6a79f81702723ae5310eeeff26a66d5b038f86342812f4
-SHA512: a847ee6064207cb6a39af385b49ca97b6f7f1168c1d04eecf633e92d09ebe06f93f5bb64e882cba1a4cc064bd3844f5641cb9d7bf6b1448002e4b4ca78faea51
+Version: 10.0.1
+Depends: graphviz (= 10.0.1)
+Filename: pool/main/g/graphviz-static/graphviz-static_10.0.1_x86_64.deb
+Size: 829948
+MD5sum: 76fd98428e8ab747a613b352fe417b20
+SHA1: b6ed4a2136142b8976368b4da228461e9d14c376
+SHA256: 12167d3f4f05813f363e215555f8ce98f3d469dbc48eca2a1e2e7686e25bdd76
+SHA512: 5b6ecd8475aa0603ef4e19ff7397caab66fa9c8dfdd0c5bc5eaa844f7bb62dcbd10979a9542f606f8daa81d057918252c7a303c32ec43e83996796995dd2edd2
 Description: Static libraries for graphviz
 Homepage: https://www.graphviz.org/
 
@@ -31840,17 +31904,17 @@ Description: Systems programming language focused on safety, speed and concurren
 Homepage: https://www.rust-lang.org/
 
 Package: rust-analyzer
-Installed-Size: 33548
+Installed-Size: 33712
 Maintainer: @termux
 Architecture: x86_64
-Version: 20240205
+Version: 20240212
 Depends: rust-src
-Filename: pool/main/r/rust-analyzer/rust-analyzer_20240205_x86_64.deb
-Size: 6989224
-MD5sum: 271a2f53fed3cfb41f60962a79c427e4
-SHA1: 62ece088842608fee08eea7f99cdf86fc55cae69
-SHA256: 8c71c36c3a34302872c593e85bd74b95c711645061e6794937329782bf856faf
-SHA512: 14d0da5ec6dea290710069d1ab082e7c0d427df6297b774d219f9f69f90b6ea1d5fe171205784772fb46573eff014f378b1cdc805679afce2edc5881385699a9
+Filename: pool/main/r/rust-analyzer/rust-analyzer_20240212_x86_64.deb
+Size: 7011812
+MD5sum: 5c6102bcd957e72eff5717eb61b82ac7
+SHA1: b2f1f60ceaab677506b7c7175ec9fda3f5e43983
+SHA256: e562af7de31885910747f2b0748a71dbf7d001996bd150942b2225b80bd59a36
+SHA512: df53d4a5f1a08fed8fd5386913c089795e603749d16376be68cc7165e3cf2cff434f5ad273d0c97d6b679f3e9f1a4536d2e59478caa2866d57cfed134b197895
 Description: A Rust compiler front-end for IDEs
 Homepage: https://github.com/rust-lang/rust-analyzer
 
@@ -34943,6 +35007,20 @@ SHA256: fcbd2c5ffc04853567138a724483e0fecbceddddafec0a133824f70a5fac9c2c
 SHA512: ba17334ecc88695bf67dee9cc5a9120199b5bc442a8133e34f127f3cb217d185802d4d4f34e733fc7ebcfea168e40049104a051ecfd11591942a6114943da838
 Description: A bash library for Termux:GUI
 Homepage: https://github.com/tareksander/termux-gui-bash
+
+Package: termux-gui-c
+Installed-Size: 3916
+Maintainer: @tareksander
+Architecture: x86_64
+Version: 0.1.2
+Filename: pool/main/t/termux-gui-c/termux-gui-c_0.1.2_x86_64.deb
+Size: 783208
+MD5sum: 1dd8d35f576bdf640ae305f572cb034f
+SHA1: 5085f49c25912fd3aa883c4ac97fbf400712499e
+SHA256: a51c924cd4f9603a0e5f124279badc68fe6134fcdb2bbda62de7226c0e66a223
+SHA512: b36fb4b1eb21f738162e7bb7e1185e3e177109c9b78d21818ccaafb2cecca822bf7a900b0e3f02b4259bd2e05b0baf351656636501845d3f277e2b71435630f2
+Description: A C library for the Termux:GUI plugin
+Homepage: https://github.com/tareksander/termux-gui-c-bindings
 
 Package: termux-gui-c
 Installed-Size: 3864

@@ -9248,6 +9248,23 @@ Package: gstreamer
 Installed-Size: 8028
 Maintainer: @termux
 Architecture: arm
+Version: 1.22.10
+Replaces: gstreamer-dev
+Depends: glib
+Breaks: gstreamer-dev
+Filename: pool/main/g/gstreamer/gstreamer_1.22.10_arm.deb
+Size: 1246968
+MD5sum: 343fbb4c38e25dc604ee995a429510d8
+SHA1: 7ae493f01fa192cdcc536027b538868fc3b1a773
+SHA256: 156bdf57d42aee5b0d12194689909a5c084091697d1ba1241fb945267101a7e2
+SHA512: 585734d6941155466936b3a5d3f92b8531b34a0ebfada8d45cd68a07692bb4faf3e38e216e847c1d888d9d7361dfddd5cfd9d538dca5fa96b9a8c343e948ae43
+Description: Open source multimedia framework
+Homepage: https://gstreamer.freedesktop.org/
+
+Package: gstreamer
+Installed-Size: 8028
+Maintainer: @termux
+Architecture: arm
 Version: 1.22.9
 Replaces: gstreamer-dev
 Depends: glib
@@ -24306,6 +24323,21 @@ Description: General-purpose software audio FSK modem
 Homepage: http://www.whence.com/minimodem/
 
 Package: minio
+Installed-Size: 96864
+Maintainer: @termux
+Architecture: arm
+Version: 2024.02.13.15.35.11
+Depends: resolv-conf
+Filename: pool/main/m/minio/minio_2024.02.13.15.35.11_arm.deb
+Size: 25645384
+MD5sum: 98c379d5490ec2ef800cd36c9fdf004e
+SHA1: e13011166686994dfb63e74ed7c635c46f72e83e
+SHA256: 5dcecf5d5e201c53b4ca361d305aa6c09d34225306354b26f1ecbb410291d85a
+SHA512: 253c0a7094053f4b866454be3fbadfdef8848580528ddbd71b47931f2cd399a5d970f0ded530093d9030cb92a5b23a7fd588e005e5153a787e334ca9c4654310
+Description: Multi-Cloud Object Storage
+Homepage: https://min.io/
+
+Package: minio
 Installed-Size: 96860
 Maintainer: @termux
 Architecture: arm
@@ -36815,14 +36847,14 @@ Package: vulkan-loader
 Installed-Size: 4
 Maintainer: @termux
 Architecture: all
-Version: 0.0.2
-Depends: vulkan-loader-android | vulkan-loader-generic
-Filename: pool/main/v/vulkan-loader/vulkan-loader_0.0.2_all.deb
-Size: 736
-MD5sum: 2e7377c0b1caa477f1694b650b704ed0
-SHA1: 58cb2e86d62f234c33e4aa09c1d7fbcc59349ac3
-SHA256: 9be366b2a013bf211e165f0cb2fa0ae69b6b2a35a006b61d261f68cd127be9bf
-SHA512: 88f106e6f49214f0c6b78789a30c607950bc9dc6ec183e8f5fc6ac3ddf3c3f571efdc51c310f65d99304a349299ecabb26e36b05808a54f672945cc0f0c5a690
+Version: 0.0.3
+Depends: vulkan-loader-generic | vulkan-loader-android
+Filename: pool/main/v/vulkan-loader/vulkan-loader_0.0.3_all.deb
+Size: 732
+MD5sum: 4ed37a25ff663cee61a53c233fe961fd
+SHA1: 74291aa5fb4653871245a6c7a092235702c16b2e
+SHA256: d290a35afb15217b4da0858bb149d6900f92ee25970b5febd6ea4f2c6d29e2be
+SHA512: 47b9403574931154b356b47a65e2c102930203e718bab803f8160c70d92b84705534d48fdaddbec628604e479993406840a208001e7f447d798f275b104cdd3a
 Description: A metapackage that provides vulkan loader library
 Homepage: https://github.com/termux/termux-packages
 
@@ -37922,23 +37954,6 @@ SHA512: e7d0a37907c4239fbbeb53635eb21f1f4c1d38a7343774626daa77e4bcfbd0ed1f65134b
 Description: Tool aimed at helping malware researchers to identify and classify malware samples
 Homepage: https://github.com/VirusTotal/yara
 
-Package: yara
-Installed-Size: 696
-Maintainer: @termux
-Architecture: arm
-Version: 4.3.2
-Replaces: yara-dev
-Depends: file, openssl, libandroid-posix-semaphore
-Breaks: yara-dev
-Filename: pool/main/y/yara/yara_4.3.2_arm.deb
-Size: 173480
-MD5sum: 3a78ebb0bd91561c50c8f5e6400c6f2e
-SHA1: 7e39d742309661556f6c4f38b4f1ca460f3ec687
-SHA256: 29fbeee4e076f847426d8ef30e08521a6c0e6a3b45e31361c22decb1d919ec2a
-SHA512: cf55c118b0c59422d5902ad984dc282e88b287a667bc6ec5889b7428aeb9f1107b1605734d7b52ddd98c7dc0914e717da36967ed1ac3e6e0a16cb9eb0fb82742
-Description: Tool aimed at helping malware researchers to identify and classify malware samples
-Homepage: https://github.com/VirusTotal/yara
-
 Package: yara-static
 Installed-Size: 688
 Maintainer: @termux
@@ -37951,21 +37966,6 @@ MD5sum: 83d19978e7b2393b2c8a3d6b72538ab7
 SHA1: f4f253874da590c00659ecebe72af07ef2db3333
 SHA256: 3464ded8148372a3e977f563b44303b27d2a02e67d6eab5a0747b51134ccda3f
 SHA512: d784710d1dd470aad2e0b3347036670a4a79f19411b55eca1b3d86f25b7bd8efffe9fbd5f3593d3fe0518f9e259ca8b566916f568c73769613ba9a4abb8b1789
-Description: Static libraries for yara
-Homepage: https://github.com/VirusTotal/yara
-
-Package: yara-static
-Installed-Size: 676
-Maintainer: @termux
-Architecture: arm
-Version: 4.3.2
-Depends: yara (= 4.3.2)
-Filename: pool/main/y/yara-static/yara-static_4.3.2_arm.deb
-Size: 180232
-MD5sum: 2295d3f0652702be46ae4bed61098804
-SHA1: f39853f3a36a58d1d3fd365813f0dbb6f316a644
-SHA256: 525100bca4b05de1e814cc8612d8804bab1b357715895fde561a8b53e6d89ebf
-SHA512: 9ba7ecb22365240007bba78d55d528b869e38683f735e3c279c769259d15930c274fcf01391da2d4ceba5d3c8f7c6d64e8a7c2c850d98ee760b17a2146732012
 Description: Static libraries for yara
 Homepage: https://github.com/VirusTotal/yara
 

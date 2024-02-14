@@ -72,21 +72,6 @@ SHA512: 00bdfb3e3ea4766ebf38bc9afeb0b3a445b5d8897b7e314846ed9896ef2fc960deea9580
 Description: Software for programming Microchip (former Atmel) AVR Microcontrollers
 Homepage: https://avrdudes.github.io/avrdude/
 
-Package: avrdude
-Installed-Size: 2340
-Maintainer: @termux
-Architecture: aarch64
-Version: 7.2
-Depends: libusb
-Filename: pool/stable/a/avrdude/avrdude_7.2_aarch64.deb
-Size: 387732
-MD5sum: a570c121a9e2431b7c0917c3e5481155
-SHA1: 38705e306e75431be427c0ec942c64bf7cb3ecb6
-SHA256: eb2a9ab2fce500b6f38e90f50b87e50ef521fc5c05e537b88ae7166d1edb1829
-SHA512: f16cfc5e4ce87d8c3d7652d86813180e2b134d528de722040c4fb2ec62f49311e1027e9cae0ef9ecaa39504854a577555026aaae1b6060175a9965460669c110
-Description: Software for programming Microchip (former Atmel) AVR Microcontrollers
-Homepage: https://avrdudes.github.io/avrdude/
-
 Package: bindfs
 Installed-Size: 108
 Maintainer: @termux
@@ -414,6 +399,23 @@ Package: ipset
 Installed-Size: 568
 Maintainer: Vishal Biswas @vishalbiswas
 Architecture: aarch64
+Version: 7.21
+Replaces: ipset-dev
+Depends: libmnl
+Breaks: ipset-dev
+Filename: pool/stable/i/ipset/ipset_7.21_aarch64.deb
+Size: 78344
+MD5sum: afb5044e79052f0e97c9275a455cda3d
+SHA1: a1f94f5959aae9d32a61acc213d5c23fc143c6d9
+SHA256: 45e5eca99212eaa41298ca78a13ff43cef5dd65c4875dc737c328ec814cac317
+SHA512: 133961168fc4261d1025d547a10084dab8be4807e6da4a1c3192e5e1bc991fd5c2887e0bdae3b1b6875b9de56029f50dc55c577b8eda669144a1d93a2d153e60
+Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset
+Installed-Size: 568
+Maintainer: Vishal Biswas @vishalbiswas
+Architecture: aarch64
 Version: 7.20
 Replaces: ipset-dev
 Depends: libmnl
@@ -425,6 +427,21 @@ SHA1: 1078802a2f7a875ec1ee7561a8580e5bb2d0fd9c
 SHA256: 61486b4c12cf4372ecb5745c2f2344abd698dffb40f974f5bba5f4429fdf54f2
 SHA512: 4d85e8a8cfe80e9879976f9f7c4dc12b37d92a5d1befe09e23e2271d3aa56114e2cf810b24006782d7391fa0f8259170f23ebc4c91c23afc52e694bae63f6507
 Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset-static
+Installed-Size: 340
+Maintainer: Vishal Biswas @vishalbiswas
+Architecture: aarch64
+Version: 7.21
+Depends: ipset (= 7.21)
+Filename: pool/stable/i/ipset-static/ipset-static_7.21_aarch64.deb
+Size: 48560
+MD5sum: 08c2dd38190c6cb2bfba5db0119f6eda
+SHA1: 4991cc40b05773e53e7e34df79966d43e365c20c
+SHA256: b3505c19e53024b985da13432eeb0913a6643225bcbfc764f1c6d22c40bd9f73
+SHA512: f5f7975d870fcacc92f9134be6df2ea94d9d56cdaee44baff3b64df663bf592aa99dc1e3587ff5c68e47df063ea94fa8d5d7ac69e88d2f515303152d1c163085
+Description: Static libraries for ipset
 Homepage: https://ipset.netfilter.org
 
 Package: ipset-static

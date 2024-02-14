@@ -72,21 +72,6 @@ SHA512: bd82d7ff65f0fc1413214b831bdcdfca2ca1084cde3b31fa6fe5ceec997ae6e540deba13
 Description: Software for programming Microchip (former Atmel) AVR Microcontrollers
 Homepage: https://avrdudes.github.io/avrdude/
 
-Package: avrdude
-Installed-Size: 1876
-Maintainer: @termux
-Architecture: arm
-Version: 7.2
-Depends: libusb
-Filename: pool/stable/a/avrdude/avrdude_7.2_arm.deb
-Size: 405180
-MD5sum: d5451c9b6512ec37a1a53fb0a547b742
-SHA1: bc2bcb25e522f1adea7d5ad2b4b7d73dad98f26d
-SHA256: 80e20c492c05001c6531cfd688278c65a3fba77bb2882dbce7031790c1f44a9a
-SHA512: 19f0f547b2d39be653ab4fe8e28abd0447ece7997db40ed7f928dc229b7312dd5073fa0071339067eb3b1548861099f5ce7b4674e22c84d7bbf92577ce346c70
-Description: Software for programming Microchip (former Atmel) AVR Microcontrollers
-Homepage: https://avrdudes.github.io/avrdude/
-
 Package: bindfs
 Installed-Size: 92
 Maintainer: @termux
@@ -414,6 +399,23 @@ Package: ipset
 Installed-Size: 452
 Maintainer: Vishal Biswas @vishalbiswas
 Architecture: arm
+Version: 7.21
+Replaces: ipset-dev
+Depends: libmnl
+Breaks: ipset-dev
+Filename: pool/stable/i/ipset/ipset_7.21_arm.deb
+Size: 71128
+MD5sum: 700d320cf224ca90c9b22ec8b25a3feb
+SHA1: cd5c1b008cf4499dee9036ae6197f89913d99327
+SHA256: 13b4bcc4fc7d581fab23333a92d92f0b99ad7766e21127df3716832128934943
+SHA512: 5aaab595005edb5ea5093b1c926bd824e791b83e93dc517b620f2cd009bae7bc64de1613148445d5f4a168f896bce9877c539d113acd90261081d36baf1f898b
+Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset
+Installed-Size: 452
+Maintainer: Vishal Biswas @vishalbiswas
+Architecture: arm
 Version: 7.20
 Replaces: ipset-dev
 Depends: libmnl
@@ -425,6 +427,21 @@ SHA1: 2cf9b1dca4c7ed45af6d9d3e892c6f892c67de2f
 SHA256: 6687bb07d18aebd8065cd227fe953b12f0f7c881c3322ad7f9af19d16035f59d
 SHA512: 67bd6c74d409edc5db936b90c542f722ab4c6a15201051772b96a6201f811b56754c09fe3d3735603ff40cda507f843e3257260b601c835defcff106b06c2b73
 Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset-static
+Installed-Size: 240
+Maintainer: Vishal Biswas @vishalbiswas
+Architecture: arm
+Version: 7.21
+Depends: ipset (= 7.21)
+Filename: pool/stable/i/ipset-static/ipset-static_7.21_arm.deb
+Size: 45804
+MD5sum: 4acb7011368898c727b4f7a0f22c8f86
+SHA1: fb59d55c6b35bfb9bf0671f55296dfa821d41772
+SHA256: 34b40aca67a1d1c55ac6af593a832ba5b6112092e8dfcd45552a2d47cb2c4771
+SHA512: 02829c5a3d5a38f09510b7bf39f19697ce5f76733b8c5788527df24172c36909f603efc426a6666c7922ea0d21ff147b2db230b41bff97a0af13eb48ae2b0acb
+Description: Static libraries for ipset
 Homepage: https://ipset.netfilter.org
 
 Package: ipset-static

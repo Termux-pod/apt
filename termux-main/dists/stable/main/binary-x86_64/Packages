@@ -7673,20 +7673,6 @@ SHA512: b3d7ab06c2f6d518da496eaee20b944c442ab4ba25b61948504bb29142bced903a3f3913
 Description: GitHub’s official command line tool
 Homepage: https://cli.github.com/
 
-Package: gh
-Installed-Size: 46696
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: x86_64
-Version: 2.43.1
-Filename: pool/main/g/gh/gh_2.43.1_x86_64.deb
-Size: 8031264
-MD5sum: 74390d703f03493bb37d794b579036c7
-SHA1: 42f90cde47759070ed20360bee3e8a33668006dc
-SHA256: 0bc99da4f7840e5747ea03639b810f946e8247d2ed2fc93980c6317d147584ca
-SHA512: 900cafbe267d3e36bbf79862e2ce7bdae038cd4eb9f180c3502fd11a416570812bfa0f13792bb0f5b017fbed2b6174d7461125db0d02934d890cd2d0d5f1d037
-Description: GitHub’s official command line tool
-Homepage: https://cli.github.com/
-
 Package: ghc
 Installed-Size: 362408
 Maintainer: Aditya Alok <alok@termux.org>
@@ -7828,6 +7814,23 @@ Package: git
 Installed-Size: 20636
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.43.1-1
+Depends: libcurl, libiconv, less, openssl, pcre2, zlib
+Recommends: openssh
+Suggests: perl
+Filename: pool/main/g/git/git_2.43.1-1_x86_64.deb
+Size: 3910908
+MD5sum: a2da5237909ac9148afd8756a2f58599
+SHA1: 6463477fa79a3e3591819277afa94dc1e966d11c
+SHA256: b07b9a7f1f7482963cd3e94608ec5d50cbdf918535b453aae37604a6f426a726
+SHA512: f94295171a67163e8b9390a0469476730ab0000663cdba12f6e5e10d46e623c6fc3b1cea9d51f843b1dc87199e801975e33ff1bce17e33872ce42a3e9643fcb5
+Description: Fast, scalable, distributed revision control system
+Homepage: https://git-scm.com/
+
+Package: git
+Installed-Size: 20636
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.43.1
 Depends: libcurl, libiconv, less, openssl, pcre2, zlib
 Suggests: perl
@@ -7874,6 +7877,21 @@ Package: git-gitk
 Installed-Size: 900
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.43.1-1
+Depends: tk, git (= 2.43.1-1)
+Filename: pool/main/g/git-gitk/git-gitk_2.43.1-1_x86_64.deb
+Size: 136496
+MD5sum: 9a13a172f72d470b091e4592ed59d546
+SHA1: e13329bc4e7498a9ba63907d8d9ed27f8b77860e
+SHA256: 3600ee70cbce484459f0b21e16b5a13e507105dabb82289f8d8a57eb4b45d806
+SHA512: 1d18c0978450b195156ca1faca27c92657a9d979d6592b644c4cb397b06725669d71fdd0ce065ede22d5a7024565d089e232fc2dc5d70c18f4bd6cc54673aad9
+Description: Git repository browser
+Homepage: https://git-scm.com/
+
+Package: git-gitk
+Installed-Size: 900
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.43.1
 Depends: tk, git (= 2.43.1)
 Filename: pool/main/g/git-gitk/git-gitk_2.43.1_x86_64.deb
@@ -7883,6 +7901,21 @@ SHA1: 64442f0d2fdfaa0015c462cd85f5aa1035da6ed3
 SHA256: a57293f08309d15b5090826515cd8adccdc7debffb9538bb2ac164dc79b0cfe6
 SHA512: 5b28459f8fd199f89039386da64a5c6cc4ea2b075664b28b95c7ec2be21357f220eae940fce5de1f27cbc2c4e318fc12c4d6dcb7a4d9b380b20aa2520187b043
 Description: Git repository browser
+Homepage: https://git-scm.com/
+
+Package: git-gui
+Installed-Size: 1560
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.43.1-1
+Depends: tk, git (= 2.43.1-1)
+Filename: pool/main/g/git-gui/git-gui_2.43.1-1_x86_64.deb
+Size: 216104
+MD5sum: 02b32365bb907a22a5d310f8d32e8b33
+SHA1: 1e35ff9bcc8091882f5884ced0ae9e7fada05e5d
+SHA256: 3dec80c965c48f59fac99797fad819f30bdf10e6ab3a97c2ba7c6daeb9b3d91a
+SHA512: 836cdb14e1122ddd726927547c9e81d7dbda9b53d98fe1b72adb36af3eeeaa99299c61cf6e2286d23c374661d64e4819244f72c4326541c2377c27602e3563d2
+Description: A graphical interface to Git
 Homepage: https://git-scm.com/
 
 Package: git-gui
@@ -7928,6 +7961,21 @@ SHA256: d8fbde28fab0de2420e2194271ee0cae8ef2701ac559817ec0b1a55f5a4149bf
 SHA512: 6f3326a774c28344aaa20d67022976f0c2eb5bca6dba066563531ec8c4b85f8f78b8cd4f2e072c1499aad32e37a178d7bfb749f1b720c7c042cf22bc030a8d53
 Description: Compute various size metrics for a Git repository
 Homepage: https://github.com/github/git-sizer
+
+Package: git-svn
+Installed-Size: 320
+Maintainer: @termux
+Architecture: all
+Version: 2.43.1-1
+Depends: subversion-perl, git (= 2.43.1-1)
+Filename: pool/main/g/git-svn/git-svn_2.43.1-1_all.deb
+Size: 75344
+MD5sum: bd27c5201712b830441696b45192b641
+SHA1: ecfa72f61a3d26885c7d3dc2fb86c5f1a1afbeb9
+SHA256: d0975486272d5ff20f8bc509754cb948e20ec29d6cc78c27209588f60b2748dd
+SHA512: 65ffd659f3f69e25f1fb73d37461d3193608dd60bea300777581dd27f24263d9a84d10b5efed308037b93f48eea1d4cf93470a1b11bf705426c7d74ffbe9c61a
+Description: Convert between Git and Subversion repositories
+Homepage: https://git-scm.com/
 
 Package: git-svn
 Installed-Size: 320
@@ -20295,6 +20343,21 @@ SHA256: f2e7d37657e8144a9b0193ff367d7ae2c938678c5e786f310b60a80c35f10824
 SHA512: c2f3f569ab3c77162bc7320ee6c8ce609fdba952a46d74e2998802394fbde188f80e72a55c7c98e892220c122c479e7c42b3b156fde1c9d3927bcbf9b24fbfd6
 Description: Tools for working with tiff files
 Homepage: http://www.simplesystems.org/libtiff/
+
+Package: libtiledb
+Installed-Size: 14348
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.20.0
+Depends: ca-certificates, file, libbz2, libc++, liblz4, libspdlog, openssl, zlib, zstd
+Filename: pool/main/libt/libtiledb/libtiledb_2.20.0_x86_64.deb
+Size: 2535160
+MD5sum: d6caeb57e586e86850a1e102a6218bac
+SHA1: 7286496a416c3436e8b08fa6665d808cc4c6c0b7
+SHA256: 068aaac4c8030d41f10061ab9b85354376d29bc774c96368b94fd3846197a176
+SHA512: f2ccc4a2d240df4beb9322f565705fe1f96b441422021dbdebbad838b1f0684d3abe99365f0ebfa9ef26c2782a6e4cbdf8c9b6fcd7d3988fbd011a673555fa8b
+Description: A powerful engine for storing and accessing dense and sparse multi-dimensional arrays
+Homepage: https://tiledb.com/
 
 Package: libtiledb
 Installed-Size: 14248

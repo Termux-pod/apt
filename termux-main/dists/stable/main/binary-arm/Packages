@@ -1573,17 +1573,17 @@ Description: A sh-compatible shell that incorporates useful features from the Ko
 Homepage: https://www.gnu.org/software/bash/
 
 Package: bash-completion
-Installed-Size: 2316
-Maintainer: @termux
+Installed-Size: 2552
+Maintainer: Joshua Kahn @TomJo2000
 Architecture: all
-Version: 2.11-2
+Version: 2.12.0
 Depends: bash
-Filename: pool/main/b/bash-completion/bash-completion_2.11-2_all.deb
-Size: 156416
-MD5sum: 5bc8b7bca4a351805f443a8bde5b2716
-SHA1: 4388a08c636c0e0d75bc4aca9a91935a51116a86
-SHA256: 8fc020e673863e605e20d8e3b78c480b75cb66b2e36a373662673aab732802d5
-SHA512: d0636dcdd98e971f6f48c36e1efe534a9b6f2e025b124df2fd4ad70391493d138cf9a946bb40f701055c6b39c91c1f75718676a341831d2453f209188e774da8
+Filename: pool/main/b/bash-completion/bash-completion_2.12.0_all.deb
+Size: 182776
+MD5sum: 84655116866628125dab8208651b1a51
+SHA1: a7abb041dc7bc60a8b1af7199e7f629056a9c780
+SHA256: 9c8c4277d6b2a023dba1d9570af79dbc464f52fc695b76944af5b9173b5213aa
+SHA512: ac2731943a35c41b692d43438e879d0b0b4f3ad3dc590c7d9e48c0b79f873d37a70b61ec64fb561c4aa5f43d83049b564e4e70527a5c7bd9021f58c34fe827e1
 Description: Programmable completion for the bash shell
 Homepage: https://github.com/scop/bash-completion
 
@@ -7448,6 +7448,21 @@ Description: Utility to print configuration values
 Homepage: https://github.com/termux/getconf
 
 Package: geth
+Installed-Size: 41632
+Maintainer: @termux
+Architecture: arm
+Version: 1.13.13
+Suggests: geth-utils
+Filename: pool/main/g/geth/geth_1.13.13_arm.deb
+Size: 10524140
+MD5sum: 6f0da16140b889b652df4f83809ea948
+SHA1: 3875f107d1212a8cbd3a01dc96697c98c329855f
+SHA256: a5e9d18f11be65da96327e867b4652ca317711bf53d01c2764c578ed6d778582
+SHA512: 27a8a58e0f4c48bb9c514599fd72adc1eb1309a7b9bdb734d60574883cdc46998adee6e882c2437271a75792a77a138254c13c87775cbfa876c504da4bd6c88c
+Description: Go implementation of the Ethereum protocol
+Homepage: https://geth.ethereum.org/
+
+Package: geth
 Installed-Size: 41624
 Maintainer: @termux
 Architecture: arm
@@ -7460,6 +7475,21 @@ SHA1: 813ef2e7ac91e7e5d91488773882e4db3c37ed33
 SHA256: 2456d9bb0032e994f30fbfb01d0a12e8418503e91efbff4f1bfef7ac84866947
 SHA512: 3b7e830943af476b4b1491a1c9b5a270e98fc9d443fbdc8606937e1f47097ba9d3f0d43d79b707acd112e44e2ceb509ba8f15d0f232f4a30c3efbce0e1e24368
 Description: Go implementation of the Ethereum protocol
+Homepage: https://geth.ethereum.org/
+
+Package: geth-utils
+Installed-Size: 192132
+Maintainer: @termux
+Architecture: arm
+Version: 1.13.13
+Depends: geth (= 1.13.13)
+Filename: pool/main/g/geth-utils/geth-utils_1.13.13_arm.deb
+Size: 49234324
+MD5sum: 61a3bcb47612141277cb8483d96897d2
+SHA1: 7720bd9e723a8b26fe86201e72fbc3b4a972bffc
+SHA256: b699a817b800d79cc222b4d2a915b242977c2f7b6ff48542a5bb9bea06a8926e
+SHA512: b14394546e1f886bdfd4fff9321f443cd4ed59dcce858984b2b584990ecaf07220247d1ba6bfa73920f456b5692b5c7eeca7a35340b18deeac59e8eae3a6dd8e
+Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
 Homepage: https://geth.ethereum.org/
 
 Package: geth-utils
@@ -9960,21 +9990,6 @@ MD5sum: b9361e1f45332d2e18c2a5737791ed58
 SHA1: 38b5a0ba99e395e24699c2517ef579d44a62eeda
 SHA256: 32f91ee5b5dbc99fb41639d3daf0af9a8a0f2280e47e238c8294d008cd6e862e
 SHA512: 6f9a53b0bdd2bb68e22a1e7617350ff05814add482df33ba1dfcdcadd8be75ecc09751697d93fc73b762878c8c3f6cc970ad2db8822c641d9e9df1880a358ba8
-Description: A fast and flexible static site generator
-Homepage: https://gohugo.io/
-
-Package: hugo
-Installed-Size: 76288
-Maintainer: @termux
-Architecture: arm
-Version: 0.123.0
-Depends: libc++
-Filename: pool/main/h/hugo/hugo_0.123.0_arm.deb
-Size: 13956428
-MD5sum: 1cab36fa5ca20fcd5264d14cba84ffc9
-SHA1: 440447e5984ac5bb3c3c8a621a337910c6de09d4
-SHA256: c89ebe1411e2c4b64ffdb70850dbab0243016e2db062848cc13f0f237dd98990
-SHA512: 18a99cbbbb9b02a3921bf1bf022426bd12516b8665d8598a8e25d630ab40fe222453dc6609dc0efc060965c45038185eb1abb07b27a82c232a24691f6dcecf53
 Description: A fast and flexible static site generator
 Homepage: https://gohugo.io/
 
@@ -19852,6 +19867,21 @@ Package: libstrophe
 Installed-Size: 212
 Maintainer: @termux
 Architecture: arm
+Version: 0.13.1
+Depends: openssl, libexpat, c-ares
+Filename: pool/main/libs/libstrophe/libstrophe_0.13.1_arm.deb
+Size: 63316
+MD5sum: 2961b7bc1b7b9b8558d938ad3caf0032
+SHA1: ece761b4692d12d7809fbb0d217247ffa2ab29bf
+SHA256: 43b042ee30dc278689f51de1d6bb90d5c6d34d1e39325c44e5d65f752dd1eca1
+SHA512: c628460775bd71a2de8e014b05aee9a1862190f1e07e689bd97c745ef67410b1bad81a5dd45c8dbb2edbbcbc692518c1c09470898e7dbb2611c16261e39abce8
+Description: libstrophe is a minimal XMPP library written in C
+Homepage: https://strophe.im/libstrophe
+
+Package: libstrophe
+Installed-Size: 212
+Maintainer: @termux
+Architecture: arm
 Version: 0.13.0
 Depends: openssl, libexpat, c-ares
 Filename: pool/main/libs/libstrophe/libstrophe_0.13.0_arm.deb
@@ -19861,6 +19891,21 @@ SHA1: 76890246f3e77654dfa83bf088b3d156f752c3c6
 SHA256: 0ce63c0c2349cb2b7b1af18de0ed998e713b85107a197feec02646aae98f1626
 SHA512: 40aff960754f1cc711a07b2d081c20cef9cc277adf23ca4aa7dd9857a571f1ea0c6caecae1e7d3b94d71055f3f2044456ab10ad498a4a9d016e90824985dff5c
 Description: libstrophe is a minimal XMPP library written in C
+Homepage: https://strophe.im/libstrophe
+
+Package: libstrophe-static
+Installed-Size: 208
+Maintainer: @termux
+Architecture: arm
+Version: 0.13.1
+Depends: libstrophe (= 0.13.1)
+Filename: pool/main/libs/libstrophe-static/libstrophe-static_0.13.1_arm.deb
+Size: 60136
+MD5sum: 6eb88be89a4a6470bb85091aa8c92b0d
+SHA1: 137fba5e8be91a76e599ee467d3dc1eaeb134c30
+SHA256: 5aa1dc1ad06241e9151395c35a0e6109369b40304d7e9b77833a1e874865e86c
+SHA512: b2dc59930afb3b45f6fdffd7f656fd69c1e594da51d971d885b54a0fce9110805d7b819cb09de429513b75259df34485889c075136d734a378bff3ab4c7fe41a
+Description: Static libraries for libstrophe
 Homepage: https://strophe.im/libstrophe
 
 Package: libstrophe-static
@@ -25027,21 +25072,6 @@ SHA512: 01203faa16fbfe3d5f2e7afaadafdfdaebd9366bc3a5d53358be3a49711ee4987a3fe02c
 Description: Lightweight implementation of the Ruby language
 Homepage: https://mruby.org/
 
-Package: mruby
-Installed-Size: 2444
-Maintainer: @termux
-Architecture: arm
-Version: 3.2.0
-Depends: libandroid-complex-math, readline
-Filename: pool/main/m/mruby/mruby_3.2.0_arm.deb
-Size: 375224
-MD5sum: 65b16bc89c86988682c06913a98920ba
-SHA1: 866d5495d125e13ba52a733a1dfa9ab8bcba27c4
-SHA256: 34e31dea3225c7c3c3154ad769eb6887da7e7df4f8ac7c8177cbba9f913d1eac
-SHA512: 80b1ffd879265a18f1035388d957e1f6412b44c9963352aadee931a3c95eb16cf6615e8adced6e0921e03040e3d0dbb4aa8d1be8a8ad188a9c19dc9afd51fd11
-Description: Lightweight implementation of the Ruby language
-Homepage: https://mruby.org/
-
 Package: mruby-static
 Installed-Size: 2684
 Maintainer: @termux
@@ -25054,21 +25084,6 @@ MD5sum: 31a3ab1fab02c3361871a3ffdbfb0b46
 SHA1: 7e8e83cc60a634db9c20ccf9e8f5e88371c5de9b
 SHA256: 25a1613ba30f0c301da707dccd075f2ed761acc7ed02efd7cebd1d1c522a6139
 SHA512: 946a5692fe887044f287c029facc2a9919af15683d8e470cfcde72ace4df3fbee6731fc924a49ee4c76b568e9315760f54dd00ef1cda6e53a9cfde73e65cdc28
-Description: Static libraries for mruby
-Homepage: https://mruby.org/
-
-Package: mruby-static
-Installed-Size: 2668
-Maintainer: @termux
-Architecture: arm
-Version: 3.2.0
-Depends: mruby (= 3.2.0)
-Filename: pool/main/m/mruby-static/mruby-static_3.2.0_arm.deb
-Size: 386364
-MD5sum: b9ad8967266a5bd6289d2aa8db595333
-SHA1: 5a964d5bb831c8143ddc181d2bda9558be47b2be
-SHA256: c37137fc0a0d4a69767c0ef3a84563f6ac0fd9653536e773b832de1c63c93026
-SHA512: 6a295b8e7371071df3bd5ebd3fc6ae13146d916476c0f267ee4cebb4b1c0040042b23a7bd5f3f1931073ea1ce9f56218734c90b345b3515bccb008735cd60c6b
 Description: Static libraries for mruby
 Homepage: https://mruby.org/
 
@@ -26193,21 +26208,21 @@ Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
 Package: nodejs-lts
-Installed-Size: 45824
+Installed-Size: 50196
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: arm
-Version: 18.16.1-2
+Version: 20.11.1
 Replaces: nodejs-current, nodejs-dev
 Depends: libc++, openssl, c-ares, libicu, zlib
 Suggests: clang, make, pkg-config, python
 Conflicts: nodejs, nodejs-current
 Breaks: nodejs-dev
-Filename: pool/main/n/nodejs-lts/nodejs-lts_18.16.1-2_arm.deb
-Size: 8159160
-MD5sum: ad314e94cd9363e2aa77b4dee577580c
-SHA1: 9d194e08dfb96fefd2f89a6915524f21e1d26834
-SHA256: 89c2c6036bd02f2908b0a01359f136e925144da76a8510f2d6c6111128b703e7
-SHA512: b7eaaa2b3d7580fa507a5b0c8947b31fbfeed8c09b6f9fb7ff79cbd54e2f72d9c146892a089826e45283afa9dc851b93d22deae84890b86cc94752e416441e1e
+Filename: pool/main/n/nodejs-lts/nodejs-lts_20.11.1_arm.deb
+Size: 9118092
+MD5sum: 396eb70328067afb9465335d50255f7f
+SHA1: 65c6e3c454d97dfbee25327eb8543d5093e8648a
+SHA256: d99fe788dfa25de624d0c9ea61f7bab45364bf45b843fcd4c082faacafbae980
+SHA512: 377cd16716797bad009e24e53afb53d2c1590fb01dc5f628263da3125d5822fbba624aadbd4497b658358c97e4502d208d18539d0791f0bbb4c417e36240aa65
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 

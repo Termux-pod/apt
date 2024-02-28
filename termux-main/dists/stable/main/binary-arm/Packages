@@ -1750,21 +1750,6 @@ SHA512: 6c40f72672973e75824fbb8172fd56eae620aabad358e3ff54c5727bc7d9db7a9dfa61f3
 Description: Binaryen is a compiler and toolchain infrastructure library for WebAssembly
 Homepage: https://github.com/WebAssembly/binaryen
 
-Package: binaryen
-Installed-Size: 12632
-Maintainer: @termux
-Architecture: arm
-Version: 116
-Depends: libc++
-Filename: pool/main/b/binaryen/binaryen_116_arm.deb
-Size: 3187532
-MD5sum: 0862d9a5673d9d484c37c242680dd8a5
-SHA1: ccbce7c1e59cb15ebc4473a30f48b3536aa1fe61
-SHA256: f48124a59cd3345e79bfa330c844ca6f53bfed35e48cb897f0e9818e9b7a4252
-SHA512: 74191b5b00ab06e284f58eb85f11ee069a6b0d28dc06f31c22b4e4be6719b90689af79f27400cb2eda5364dde18ba6a1e3b8851e2224481a411d06fa59d36300
-Description: Binaryen is a compiler and toolchain infrastructure library for WebAssembly
-Homepage: https://github.com/WebAssembly/binaryen
-
 Package: binutils
 Installed-Size: 36
 Maintainer: @termux
@@ -18825,32 +18810,32 @@ Description: Static libraries for librnnoise
 Homepage: https://jmvalin.ca/demo/rnnoise/
 
 Package: librocksdb
-Installed-Size: 8672
+Installed-Size: 8972
 Maintainer: @termux
 Architecture: arm
-Version: 8.10.2
+Version: 8.11.3
 Depends: gflags, libc++
-Filename: pool/main/libr/librocksdb/librocksdb_8.10.2_arm.deb
-Size: 2627544
-MD5sum: d26b86de36d48fcafc7fb61cc77a5d0e
-SHA1: e21806ea935b848f1ab614a67b16534b89b14434
-SHA256: 2251ccab309e2e0b742aa4935f8262386c5b4b103a4a76b7a97742fb7306d5f5
-SHA512: 5e5fe2d434595f51e61fbb3e40a9c199e214807790357e86f5b16e90716655ef5f397f092c5eee231da307477f2276851df90aa4ec56f1ee5032d1b21405de56
+Filename: pool/main/libr/librocksdb/librocksdb_8.11.3_arm.deb
+Size: 2681052
+MD5sum: a4a9088d6cb7a62e7c97b92570526ddf
+SHA1: fed8fb9caec4377573b83edf375ec52f3017f80a
+SHA256: de86c086b81272bb2ee2d33b2cc7c98667e6060580f63935d4d0795e3c6f2991
+SHA512: 75a7d926d88d7195153b7c87a30f1542728f53b76a1e9ac43039ee063e06d21b324efd524309403ab16efe02141cb3a889575e3bf926debb074dfc93ac67c761
 Description: A persistent key-value store for flash and RAM storage
 Homepage: https://rocksdb.org/
 
 Package: librocksdb-static
-Installed-Size: 26420
+Installed-Size: 27200
 Maintainer: @termux
 Architecture: arm
-Version: 8.10.2
-Depends: librocksdb (= 8.10.2)
-Filename: pool/main/libr/librocksdb-static/librocksdb-static_8.10.2_arm.deb
-Size: 4045888
-MD5sum: db0f18d5094d7ecec7fd587b0395b161
-SHA1: c37151672eefec2b304c8abf907c98a457298d3c
-SHA256: 7cc1c1f3bec8201389bfd174f8bb7681aadeaf92dc6c459ea6363386dc1f84bd
-SHA512: b871835a6b9066848d7f61b83e860e3b3db4b6f275e64e3eebe16b2c4705ef6ae45f363f0e8eaf949f7fedd86c5ed496983a24b9b849c9ba4b854a4cb313fd33
+Version: 8.11.3
+Depends: librocksdb (= 8.11.3)
+Filename: pool/main/libr/librocksdb-static/librocksdb-static_8.11.3_arm.deb
+Size: 4120468
+MD5sum: f470133cc6888f9841209ede18e1e99f
+SHA1: 5cc5c8f826f0e87ac1c38500faeb5a3740b53944
+SHA256: 085b41c6f610281f77d9b2b1930623c272b153b57dc7da11cd93a9d249931b47
+SHA512: 6ad3586603f138cfea8eedd1a70599dd5be500849316c34696fadbc7bbc65e150aa764b301f8a1f6758cf5fab6d177fa7b3e8035f94c2dbe4315c260cb89869c
 Description: Static libraries for librocksdb
 Homepage: https://rocksdb.org/
 
@@ -24083,6 +24068,23 @@ Package: memcached
 Installed-Size: 436
 Maintainer: @termux
 Architecture: arm
+Version: 1.6.24
+Replaces: memcached-dev
+Depends: libevent, libsasl
+Breaks: memcached-dev
+Filename: pool/main/m/memcached/memcached_1.6.24_arm.deb
+Size: 128632
+MD5sum: d798909f795e9243e8cdc7bc14ef9360
+SHA1: 7d4efbe8256307c593459f865cc853e80b4f388a
+SHA256: 3668941553888a6ff5fb79084363322e5c5902f730137471df1418ade62ea90a
+SHA512: 1308bd0249db6e839a865e13e9b5c24aa6a40ccd9a0389366b537fc1f97a92274b569f8707eecd02d065529c1bf5c583135b39b4af42dcd941be6f8250c26e36
+Description: Free & open source, high-performance, distributed memory object caching system
+Homepage: https://memcached.org/
+
+Package: memcached
+Installed-Size: 436
+Maintainer: @termux
+Architecture: arm
 Version: 1.6.23
 Replaces: memcached-dev
 Depends: libevent, libsasl
@@ -27517,17 +27519,17 @@ Description: par2cmdline is a PAR 2.0 compatible file verification and repair to
 Homepage: https://github.com/Parchive/par2cmdline
 
 Package: parallel
-Installed-Size: 4560
+Installed-Size: 4564
 Maintainer: @termux
 Architecture: all
-Version: 20240122
+Version: 20240222
 Depends: perl
-Filename: pool/main/p/parallel/parallel_20240122_all.deb
-Size: 2004064
-MD5sum: 69f19d92804691fe66c4e602fb5ea047
-SHA1: 74789490ea5af90fa1a5f1570bdfd50e9329d303
-SHA256: 027ddc3682f7395f7cb15428a6a3f0a2b506da11b45c27535abe0ed2b68317d9
-SHA512: d0f2eae277cdb761756c666136687687c4789ab4b66cb6f2ded2ded6370412dacd7d74781dd1ed08d0f023aa2e89383db35c0145f935efbedb9c473c30f456af
+Filename: pool/main/p/parallel/parallel_20240222_all.deb
+Size: 2010756
+MD5sum: de79a973ebe2f4486b9d7e54d56b7c8b
+SHA1: 453100eaf4e45ae026bfa56d56336a0932b59a54
+SHA256: 26686486e6771e98e952901e033c7c88397a22623cbcb65457b0bd1d47fd8293
+SHA512: 39dd82c681ff41c189f2cf1f09928f7b4498235c00a1334a3c3b58e4210b9f50b078747b8e41a8e992d3c4ac2f0ac0ac116a0853a3cb21f19c2069c2c3b34ca5
 Description: GNU Parallel is a shell tool for executing jobs in parallel using one or more machines
 Homepage: https://www.gnu.org/software/parallel/
 
@@ -32092,16 +32094,16 @@ Package: seafile-client
 Installed-Size: 540
 Maintainer: @termux
 Architecture: arm
-Version: 9.0.4
+Version: 9.0.5
 Replaces: seafile-client-dev, ccnet
 Depends: glib, libcurl, libevent, libjansson, libsearpc, libsqlite, libuuid, libwebsockets, openssl, python, zlib
 Breaks: seafile-client-dev, ccnet
-Filename: pool/main/s/seafile-client/seafile-client_9.0.4_arm.deb
-Size: 149376
-MD5sum: 8e6c389f79f4d44ba2ca0e00ceaebfb8
-SHA1: 89a9fff76a6c73e5a88be1bc76e76e240afd73d8
-SHA256: 92c401daa5382acc587d42b64ee25be0f9e2cbda5be036acf801e4c3d0d7e7ad
-SHA512: 95a670483b4f0cf5a4b7bcc0cafd294a87f815db276bc05e09939e3e470b6ee5d919941daf0f1af575bac3e18d6e6003ddcc8be04f6c23648225448b1373e073
+Filename: pool/main/s/seafile-client/seafile-client_9.0.5_arm.deb
+Size: 149008
+MD5sum: 2325746caafc63e00ac5a7742456bc67
+SHA1: ea73fda0a0891491e33b231bb44e08854c3fc1a4
+SHA256: ff26d566c0e83989e441d851bae2eb19412e24f63a1a49e4195d42278c7ddc22
+SHA512: c4499c1a95447fdb43b43f8f9c291d4f140b67fe29ff17396369bdf44f660d0533e7d7b7e3c9d2ca12e453ee51d814579a9bf426d1da3bf0e645909ecce1715e
 Description: Seafile is a file syncing and sharing software with file encryption and group sharing
 Homepage: https://seafile.com
 
@@ -32109,14 +32111,14 @@ Package: seafile-client-static
 Installed-Size: 112
 Maintainer: @termux
 Architecture: arm
-Version: 9.0.4
-Depends: seafile-client (= 9.0.4)
-Filename: pool/main/s/seafile-client-static/seafile-client-static_9.0.4_arm.deb
-Size: 16540
-MD5sum: dfef8324bbf812ec36ea4b0150b9bf06
-SHA1: e7ab22731f9434d762ec7c6d69e5d6b56c2d4d8d
-SHA256: 5f455416a6ebe7c88e6e07913afc7db6990cd863d42a9429e98a6b44c0146e16
-SHA512: 3d54fefead8d6ba6dea4522c7fb8dee31a60194e09ea4100108ae5100b48fabaf5d1594584afdd4d62a5acb46f5f0d1cf6c80ae19a96adb6c9f8e91498f9560e
+Version: 9.0.5
+Depends: seafile-client (= 9.0.5)
+Filename: pool/main/s/seafile-client-static/seafile-client-static_9.0.5_arm.deb
+Size: 16456
+MD5sum: f03bbc65f90b9ae5475545f5bb62057f
+SHA1: 588a360e07754df6253ba415aec587b887c7e8fe
+SHA256: 6518e4158e84b3e584b0cee94d98b284fa0098ef761c3fb13c0b9fa5ff25cd36
+SHA512: df47d1acf2e2f9e2d513259b2c2738586029b3770aa9209b8e6cf8ee4404a5c755bec7dc8de13c654a659fe191f069f8aee703777694dff4b95d08cbb62a3dc8
 Description: Static libraries for seafile-client
 Homepage: https://seafile.com
 
@@ -32548,6 +32550,20 @@ SHA256: 7e6f3c52ca1f69927d5755388a88d3b995d31ba7f96fb26714508fa32a780b8a
 SHA512: d2dd11ee9bcd7713ae646b99cd9028fc6fae4b362232cd99770d7ce169b9d1b19dfd24decbd57d75815946cd61570696897c00e4f82b9b3344aded1b0acfb687
 Description: A simple heat transfer simulator in pure Rust
 Homepage: https://github.com/file-acomplaint/simuwaerm
+
+Package: sing-box
+Installed-Size: 25216
+Maintainer: kay9925@outlook.com
+Architecture: arm
+Version: 1.8.7
+Filename: pool/main/s/sing-box/sing-box_1.8.7_arm.deb
+Size: 6365436
+MD5sum: 519eec3ac661e039ae6fb7ad8de7ddb5
+SHA1: 3eb58088061ef911998ed0696fa66f66c2f9aea0
+SHA256: cd7fd9a63024144131f6237be62c7f91ca3bd0ed2690b2a6f078593a8a622b9e
+SHA512: 4e3cb79a533f82f495cc190bad834a52025430315529562df3aaaf9d00a9d9541a810022595ef4108ecf1be1e64923a0a4a5c79c0759bea8c383ecc0b8e5a9d6
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
 
 Package: sing-box
 Installed-Size: 25216
@@ -33605,20 +33621,6 @@ MD5sum: 4dcd6d0c274a91cf9716ba0a15e62636
 SHA1: 47f6f99aa3aa5cca5fc9395dd913bdbfadf1ac2c
 SHA256: 64ee1b6ed607c7f490bd9e77e3786af166fa105a145c088f11113f819123a428
 SHA512: 19b56d07be7ea40a9d20eb331bd04f3a6f9b9f60fcb9ec9884600b29ac381b150f49135188bbbdf45632406c8655479e186325d753a8ee6450a0f344e8b8430e
-Description: Storj DCS Uplink CLI
-Homepage: https://www.storj.io/integrations/uplink-cli
-
-Package: storj-uplink
-Installed-Size: 14540
-Maintainer: @termux
-Architecture: arm
-Version: 1.95.1
-Filename: pool/main/s/storj-uplink/storj-uplink_1.95.1_arm.deb
-Size: 3753764
-MD5sum: 2325b041238a82b423fd082f58210def
-SHA1: f30d72a42f6183920ec35ac4f6d8b7c13665519b
-SHA256: bc2f2d3a254c54670c48c4fefc60e714cb7d4b7f951d6e53d4636579897cc7ba
-SHA512: c5b15c4f8fef4e4d9232a6cf24073feb1bcad74b4fb625533f415a4d1b26e0ba199fc4ea37b399e05ad1ac6ef77eebd3315a0ae392aa5f0368fc902567140fc5
 Description: Storj DCS Uplink CLI
 Homepage: https://www.storj.io/integrations/uplink-cli
 
@@ -36844,21 +36846,6 @@ SHA512: 23d50ecf248b69eaa5d69693fc258a130f52b1ba1e3454f5bf61b63a16f33228128cfb53
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://vtm.netxs.online/
 
-Package: vtm
-Installed-Size: 3436
-Maintainer: @termux
-Architecture: arm
-Version: 0.9.73
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_0.9.73_arm.deb
-Size: 853620
-MD5sum: b13eb0f5361888355d486d0e6d604a7f
-SHA1: 159f9c0167288d0688d6fc0ac1363e56ed35ca36
-SHA256: 560b2b5559dd257117b75631f508b21b335ef23af0ba7a3dda2b7bd94319b235
-SHA512: 32364cdf24eeea41aa98279cb5e97a22852cdfdcd9bdfba022b79137863cbf7a9730d52b3b92840a3436d9062a27ced073cb1bbed29855db530fed001dcf366e
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://vtm.netxs.online/
-
 Package: vttest
 Installed-Size: 224
 Maintainer: @termux
@@ -38539,6 +38526,21 @@ SHA256: 5bd623b8e07ecd0f9fab3ca1cdb683f1012535f98186c92d9d9a4d30dd508bca
 SHA512: 6e2edd40b6eab1ce91ed7cf7f8ae130ec06a236b5ce0fe57d847e8ec52f2c52108abbdef135c47d1cf66f10c5262c5eb9f9c8f6704032f03e24d482f7b5be295
 Description: A file transfer program to download files from remote web servers
 Homepage: http://zsync.moria.org.uk/
+
+Package: zziplib
+Installed-Size: 368
+Maintainer: @termux
+Architecture: arm
+Version: 0.13.73
+Depends: zlib
+Filename: pool/main/z/zziplib/zziplib_0.13.73_arm.deb
+Size: 49240
+MD5sum: 86ecbfe6870db6ad71335f1c9354b61e
+SHA1: 05d4be0d34915d6df7d60c7e6a1fe946dd51d141
+SHA256: 16b361fb575cd9e03b384728be451b41fe6792ef43d632951e512da577fda261
+SHA512: b02b049fffda2d3f29f8e71a3faaf888092291bab692e19f7203de96a799b6e353a4b3d0dfa0bcef98c875a8fd2ec8ca40ebb9014ae6c7681db0e376fa2b5b7a
+Description: Provides read access to zipped files in a zip-archive, using compression based on free algorithms
+Homepage: https://zziplib.sourceforge.net/
 
 Package: zziplib
 Installed-Size: 348

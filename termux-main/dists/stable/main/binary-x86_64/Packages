@@ -8200,21 +8200,6 @@ SHA512: 29a42dd778f1d1a66d82b2fd6018a27ee85ea0ce9aa83ff02dd6f1e22a2fe45da4445b8f
 Description: OpenGL and OpenGL ES shader front end and validator
 Homepage: https://github.com/KhronosGroup/glslang
 
-Package: glslang
-Installed-Size: 18672
-Maintainer: @termux
-Architecture: x86_64
-Version: 14.0.0-1
-Depends: libc++
-Filename: pool/main/g/glslang/glslang_14.0.0-1_x86_64.deb
-Size: 2590556
-MD5sum: 46860152a5a39ebad398d16c98830ed4
-SHA1: 70c3d9086d1ad6e247856091f0003d72b9127204
-SHA256: 727c333ff9244d8ae1688e015de8588ccd84ec3538baf3653e95d9b188fd4b3d
-SHA512: f0b7d9553628aaf7f19173111637bd9146616c87406da4ffa209d0580b0d76686b608a665612f48353bc19eb05d41acc61e6818065de412cb8b8f3c50c05526f
-Description: OpenGL and OpenGL ES shader front end and validator
-Homepage: https://github.com/KhronosGroup/glslang
-
 Package: gluelang
 Installed-Size: 176
 Maintainer: @termux
@@ -9587,14 +9572,14 @@ Package: has
 Installed-Size: 60
 Maintainer: @termux
 Architecture: all
-Version: 1.5.0
-Depends: bash
-Filename: pool/main/h/has/has_1.5.0_all.deb
-Size: 5340
-MD5sum: b133a759737981f11516999ed0c253b7
-SHA1: 5936456f702e731ec457ef97d63db38de7cd5df1
-SHA256: 31b2c89bf5ccf304743bfbb8d7a88d7e320c9090058617b9b08e7ecc8e411c05
-SHA512: bf4d2d5a05edd04d246825d84f4a1dc38eded45fe556c84670edc18b551c66214259fa60fc97842f0bcc4b438848a9e36ebadc2155d59ed08dab362e399f3975
+Version: 1.5.0-1
+Depends: bash, ncurses-utils
+Filename: pool/main/h/has/has_1.5.0-1_all.deb
+Size: 5360
+MD5sum: 90ebd286eb6a0950129fe2c0584facbe
+SHA1: 1ef17641a1cd7c63ec7ea0cd7b13d879dae7998b
+SHA256: 84b3b2a69ae4588dfe5045eea6225d1211fd2ac51902b1055a49f3ea4b869fc4
+SHA512: 670f233719c89980321490f7fb29aed8d7290212e8e9765ed816029cfbc4c66e668893d43b74bb627bf1edd646007388c0e1ccc14f6f88457b1f213544c41e88
 Description: has checks presence of various command line tools and their versions on the path
 Homepage: https://github.com/kdabir/has
 
@@ -12419,6 +12404,22 @@ Description: Static libraries for libarchive
 Homepage: https://www.libarchive.org/
 
 Package: libarrow-cpp
+Installed-Size: 40584
+Maintainer: @termux
+Architecture: x86_64
+Version: 15.0.1
+Depends: libandroid-execinfo, libc++, liblz4, libprotobuf, libre2, libsnappy, utf8proc, zlib, zstd
+Breaks: libarrow-python (<< 15.0.1)
+Filename: pool/main/liba/libarrow-cpp/libarrow-cpp_15.0.1_x86_64.deb
+Size: 6704824
+MD5sum: cdf672a71be44126c60aebc146cffc30
+SHA1: fcbdeb827f3fda6f6cdcb831adec089d313f87ed
+SHA256: 31a4db6afa2b8f23cd658bf3454109aeae63b2fb321418769a895e03bd69535c
+SHA512: dfdeed5ded34b0269e904d7a051cdea67d15693c9113b679a4cd960664d6c85e11bdc21f0ef837d0d3a59ae066f7906c0ca1cfe4f307ff013fd0f4ff2ff85d3e
+Description: C++ libraries for Apache Arrow
+Homepage: https://github.com/apache/arrow
+
+Package: libarrow-cpp
 Installed-Size: 40564
 Maintainer: @termux
 Architecture: x86_64
@@ -13185,16 +13186,16 @@ Package: libcoap
 Installed-Size: 2352
 Maintainer: @termux
 Architecture: x86_64
-Version: 4.3.4
+Version: 4.3.4a
 Replaces: libcoap-dev
 Depends: openssl
 Breaks: libcoap-dev
-Filename: pool/main/libc/libcoap/libcoap_4.3.4_x86_64.deb
-Size: 364328
-MD5sum: 9c45e826bc44c20abba22c92671f1469
-SHA1: 9afb615e468de4a762bc82ffdce55446e1d63c19
-SHA256: b87456fc648aa51278bfd5130ceaf77c2fe42133c83c869268bd581d8884fa32
-SHA512: 1e027b8209e2cf980f06dde5e6566ba52e110ea22178ba26f8cbae9eb0449d3bcc9921d9eebd6de7744ddffa720fa60ea86e88e19b6beeeb36d054bfdd1acc9f
+Filename: pool/main/libc/libcoap/libcoap_4.3.4a_x86_64.deb
+Size: 365720
+MD5sum: 8a976063b388fe131a863931e1ac4bf2
+SHA1: af3ad326ce2c2f98365f6ee26f13c0d54105f93a
+SHA256: 54a05cd2f32c1fe5b84a22309c5d36980a71f1ab67fe79cee8fe4f5efebd00d4
+SHA512: 5fe77aa354411f1db1fead277e6e6a7fd753c5351fdf8e5de1240008dabad41b733b81772d9be765d6125b333d4aeeb6e2e312d03d16e05e21ee3233fe59e71b
 Description: Implementation of CoAP, a lightweight protocol for resource constrained devices
 Homepage: https://libcoap.net/
 
@@ -13202,14 +13203,14 @@ Package: libcoap-static
 Installed-Size: 640
 Maintainer: @termux
 Architecture: x86_64
-Version: 4.3.4
-Depends: libcoap (= 4.3.4)
-Filename: pool/main/libc/libcoap-static/libcoap-static_4.3.4_x86_64.deb
-Size: 145260
-MD5sum: 56ac03949ef230e3b1e9967e6bc23162
-SHA1: 1ed1f17bbf8da27356e092ae6e74ff758044b15c
-SHA256: ec967b1a4c2d760438bf471d913fc95d9f708de3197dc2b185c6e22395f1628d
-SHA512: e3db996481dd5ba9fa1c8389999f7f610635a88b090fb71627302ca90b82cf8e3ea228dfcfc78b42cbd5c2ae10f9bbb38a02c6fd2dc5fd12270d6fe69cf9af2f
+Version: 4.3.4a
+Depends: libcoap (= 4.3.4a)
+Filename: pool/main/libc/libcoap-static/libcoap-static_4.3.4a_x86_64.deb
+Size: 145104
+MD5sum: d900aef3b9efbdfcff5e4d7b4cc2c6e8
+SHA1: 971e3a29f1f3b1413f60f6acb49f61b16c2ef1fa
+SHA256: 9e12027629dabceec3e8afca85441f50ab3647e2e36c01e272053dd9609bc3c1
+SHA512: ffab704c2e83b41aee7dc6da42968bf2a1da4eb62d1cab51341bb72af98f169d822f83267f2cf462196fa3ec0e7b6dbb1a07baef8affc9bfc830b44dd0d94309
 Description: Static libraries for libcoap
 Homepage: https://libcoap.net/
 
@@ -17333,29 +17334,29 @@ Package: libneon
 Installed-Size: 1180
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.32.5-1
+Version: 0.33.0
 Depends: libexpat, openssl, zlib
-Filename: pool/main/libn/libneon/libneon_0.32.5-1_x86_64.deb
-Size: 175740
-MD5sum: 3a9100f0ff5087e4230816e44bf16910
-SHA1: 0e4c23b32a94fb34ec00fcc3985a795132cb541d
-SHA256: a8073d3523c1a1abfe9161ed46e3a1f06e9992a916bf834325bece27817f3157
-SHA512: a0162de8632f20d0ee197a5ef0fb0338441e8956fc4120ee618d0a1af765e8d21cad787d842e4c0d0e21924e05ca6b740bbb094835c94664ab6d313edd5b0a1d
+Filename: pool/main/libn/libneon/libneon_0.33.0_x86_64.deb
+Size: 176916
+MD5sum: 7740361ee8f40e82086dd95bdedc7ee7
+SHA1: b7281e89780390057566c26e95eeb65a194947fd
+SHA256: 642148e72cc7ca026336367573dfdbb1e99174a727727aae24c23be4bf7a1c49
+SHA512: cdbc8e97820a87cd8745f07af1afa76e47c849da4f9d52862b12c09030a706e4e27171d31802ee499bdea09fb2b34d13f790d488855aa3723e86deeb55cbd35b
 Description: An HTTP/1.1 and WebDAV client library, with a C interface
 Homepage: https://notroj.github.io/neon/
 
 Package: libneon-static
-Installed-Size: 308
+Installed-Size: 312
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.32.5-1
-Depends: libneon (= 0.32.5-1)
-Filename: pool/main/libn/libneon-static/libneon-static_0.32.5-1_x86_64.deb
-Size: 66292
-MD5sum: 53d8e4990e4383e8667e8bc78ef7ab70
-SHA1: ab93925d8a9d7608a6597eaac2443ff307790e0f
-SHA256: 55ad022838fcc6d03409da2e9d7cbf78e36a732c7489fba24155ed645b63f7bb
-SHA512: e4d2f04fa278657b10f9d9727bf591389f69cc8fef72343cb67f4f817116f15fa513a27b54ed5085952218112bd66257c74e7b0e184e6199b829e2ff0352a97c
+Version: 0.33.0
+Depends: libneon (= 0.33.0)
+Filename: pool/main/libn/libneon-static/libneon-static_0.33.0_x86_64.deb
+Size: 66448
+MD5sum: 6e66799dcf785f00614944faa6576cda
+SHA1: 5339b192800cbfe73d1c6c557a428bd43273f2e2
+SHA256: e9908a56c82fd00be947fbabafafb8e81b9df0046c79f3fd313bd4ec41545e50
+SHA512: e080e61fbaed8e6cd01d9453ea39da7b7799cfecc4d98082870ee95a3dd088c6073d015b4b5d0151424b06c5bfc0cc7f80cc439de899ec5b06438170eff4adac
 Description: Static libraries for libneon
 Homepage: https://notroj.github.io/neon/
 
@@ -17575,31 +17576,31 @@ Homepage: https://nghttp2.org/
 
 Package: libnghttp3
 Essential: yes
-Installed-Size: 308
+Installed-Size: 312
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.1.0
-Filename: pool/main/libn/libnghttp3/libnghttp3_1.1.0_x86_64.deb
-Size: 66580
-MD5sum: 1c98eb30743c1da94e84cdda3eb25ab6
-SHA1: 8a4a62767033a7fa4d6f918d503f56dbae687d82
-SHA256: 7c5f3d64eb22fd166ac50d331d55e07a12588ae67a1f69a09f45ae6d2e25e8e6
-SHA512: f5d17fa0090f9076b856ce6f56c2edae94d022f4bb358e3e03a0dfde5b844db2ea160f5f7fca47e39d083b9dbb7acc51a2d00fa86ff59c32762976f3fc58b3f8
+Version: 1.2.0
+Filename: pool/main/libn/libnghttp3/libnghttp3_1.2.0_x86_64.deb
+Size: 67312
+MD5sum: 4849c41e2a4990c7b7f7dac68777ee91
+SHA1: 2d404d16342607472c5612771d7f6bde4605d820
+SHA256: a23014dbfa6cfee8632ef0c75df32545f486fda5524eb255f9aac0b13cca3e9e
+SHA512: 3a3035d57b9338fc12ddc089b9bbb03d90c385881fbe205a39073d73d97d893966067ba8fae7a7f94e6d7d6a346509a933ffcd88a559f46bb82adec9f3019cd5
 Description: HTTP/3 library written in C
 Homepage: https://nghttp2.org/nghttp3/
 
 Package: libnghttp3-static
-Installed-Size: 320
+Installed-Size: 328
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.1.0
-Depends: libnghttp3 (= 1.1.0)
-Filename: pool/main/libn/libnghttp3-static/libnghttp3-static_1.1.0_x86_64.deb
-Size: 62772
-MD5sum: 1c2f2884d5d19d38b08e45387a9587bc
-SHA1: eb276cba79c1af05cdbc79d8abcafdc46644537d
-SHA256: 05554fb1115a4c4f48bf6aaa033bc8400d72f7f6b359e33308f81058475f3313
-SHA512: 414163807cb52b1c3fe3ad34ff697cadbf8f360a2d50eab15f3a3695208baba3169037775e4449671a76ddd6a6bfa4a9004be293e1ebe159dddef6a6f7de73e9
+Version: 1.2.0
+Depends: libnghttp3 (= 1.2.0)
+Filename: pool/main/libn/libnghttp3-static/libnghttp3-static_1.2.0_x86_64.deb
+Size: 63500
+MD5sum: f273692fe6094b0ee22b055e1d95d83f
+SHA1: eb9ae485bbe1d0ecd4527a47f2d6bee96940385b
+SHA256: b43471b6d6e4f7f41c33bcb1ab32994d55fef16381a32b8aff6d1a10c19af270
+SHA512: c12529876d127c760cae8107d4784d03a2820d3f8a895a41c4790d89daa697bbbf7fe99264b15cd8f8bd838e3d619439df3095d2f2e124c41484805b4549f7e7
 Description: Static libraries for libnghttp3
 Homepage: https://nghttp2.org/nghttp3/
 
@@ -18882,17 +18883,17 @@ Description: Static libraries for librav1e
 Homepage: https://github.com/xiph/rav1e/
 
 Package: libre2
-Installed-Size: 640
+Installed-Size: 636
 Maintainer: @termux
 Architecture: x86_64
-Version: 2023.07.01-1
+Version: 2024.03.01
 Depends: abseil-cpp, libc++
-Filename: pool/main/libr/libre2/libre2_2023.07.01-1_x86_64.deb
-Size: 182816
-MD5sum: 05efb2b2381ab02d0918d490fb0a1f97
-SHA1: 67adf2025dc5a6fa40695e58718299f226b73a7f
-SHA256: 64fbf7a306d0204ab570620bed2eecd2e3e11b1a86efab90d3979c167777ffa0
-SHA512: e9078986bb7d21450ffce271f6d9fc0ab25799256802c436b2332a494931f60be695e400e042e6fcc7d578c6bd2bb42d0f18cedfb9e5dce933683b9c91cb3e72
+Filename: pool/main/libr/libre2/libre2_2024.03.01_x86_64.deb
+Size: 183468
+MD5sum: eaaba07fe0a91838a422302301a7e35a
+SHA1: c3a232bc96279a39cb9035888c475035d1a19a7d
+SHA256: c4a6f0691dbc5d084a2fc6c5d40b2f99b9641593e81ab6ce190cf2f70c065a88
+SHA512: 0aac5e64fca974679f600e426bfd5c1bcaf3d9574ddd266f201c37b521386ac4513066ef4d80164fd6d39a80e4d074cebe0860f1212dd47db1503c4b5b2a9ee4
 Description: A regular expression library
 Homepage: https://github.com/google/re2
 
@@ -19045,6 +19046,23 @@ SHA256: e2e5dd1ed358a9a7c082f3b816d666b68eb96b2a753f7f9217666fc865509f25
 SHA512: bb32233f1b4528255834fcde54ace202b846418a6fc69e967f5cfb5174bedc680f06cd32439dfd692ad44234fcc288f2bbeec712f8c028d5b1a6d08f231a5d2e
 Description: Static libraries for librocksdb
 Homepage: https://rocksdb.org/
+
+Package: librsvg
+Installed-Size: 11472
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.57.2
+Replaces: librsvg-dev
+Depends: fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, libcairo, libpng, libxml2, pango
+Breaks: librsvg-dev
+Filename: pool/main/libr/librsvg/librsvg_2.57.2_x86_64.deb
+Size: 2068484
+MD5sum: b62f86596932ee6f1fe8edaf11df97ef
+SHA1: 6a002108f815356af3f9ca6dc67c3c5895dfc97f
+SHA256: 1e90074575f824911839e89730c41c3ead847269a17ebb1bf6131f39dded9b7c
+SHA512: 5cf236ff5b6464039e4bc606d72acc4ef60d21276ab2f681f9cc908fa601e73d7468849c34dd243b0e95e61438813753e7b808176f02b737fabb8c7056dc1322
+Description: Library to render SVG files using cairo
+Homepage: https://wiki.gnome.org/action/show/Projects/LibRsvg
 
 Package: librsvg
 Installed-Size: 11428
@@ -21749,23 +21767,6 @@ SHA512: 09c9c75a4b1b78d0ec8c5fc2951997a827fe5806ce43b56c3df2db4fd08260a376a10101
 Description: Xapian search engine library
 Homepage: https://xapian.org
 
-Package: libxapian
-Installed-Size: 2340
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.4.24
-Replaces: libxapian-dev
-Depends: libc++, libuuid, zlib
-Breaks: libxapian-dev
-Filename: pool/main/libx/libxapian/libxapian_1.4.24_x86_64.deb
-Size: 575752
-MD5sum: 79d8b38ba40625f1c109af1068448f8f
-SHA1: 8002d2708a09acbca135eac6c36d38c9eb354758
-SHA256: d2812defdb7d576b669d64388526c5ff8e6286591db9a5b32015974db92bb4ff
-SHA512: 518972db1527de96b76be4fb098fcc037a5cf7e3135f109d55f3b0ed387fceaac87e54d5e449922bf5afec6d8bc38beb92919ff27a60a9297d50275743c4bd90
-Description: Xapian search engine library
-Homepage: https://xapian.org
-
 Package: libxapian-static
 Installed-Size: 8564
 Maintainer: @termux
@@ -21778,21 +21779,6 @@ MD5sum: b9f745932b4e2ed9eeae9eda731e97a5
 SHA1: 75d925b7d653e30dbcaa981215cba96e12356c21
 SHA256: c513ad0620220764a90426edb5768148f5ed66496958208641851219d5b8261e
 SHA512: 2610058c5901030c4203a6d196d00aca7f50e1eb6a57820fae0f7149eef9dfa09c1b0fb532e10e957a92d6ef82dc59eba1b4f6c4cb463a70546c7a8e85f6582c
-Description: Static libraries for libxapian
-Homepage: https://xapian.org
-
-Package: libxapian-static
-Installed-Size: 8564
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.4.24
-Depends: libxapian (= 1.4.24)
-Filename: pool/main/libx/libxapian-static/libxapian-static_1.4.24_x86_64.deb
-Size: 945564
-MD5sum: 3160e7968a5512e200a2cb41016c4fbf
-SHA1: 3f3d3b38fe38135210482bf1a580d656249fdaae
-SHA256: dead13b917b7db16154386560276566bf2e4adbdf2251e99b835658700057024
-SHA512: 3720b03ef35a8f6a4db2c2029a8705e70e4c1320c53403c35078c9ff2be876fccad4d5ce31090de52a733e6421b65b2c38d130b676a57aea4e96b56c36f34f30
 Description: Static libraries for libxapian
 Homepage: https://xapian.org
 
@@ -29953,6 +29939,36 @@ SHA512: 3c9d47e0404fb982f26a43eb36b5628b811bf57af289c5788dd2f131a1de9e132e4b30fa
 Description: A straightforward binding of libsass for Python
 Homepage: https://github.com/lxml/lxml
 
+Package: python-msgpack
+Installed-Size: 340
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.0.8
+Depends: libc++, python
+Filename: pool/main/p/python-msgpack/python-msgpack_1.0.8_x86_64.deb
+Size: 69896
+MD5sum: dcf5cb906a0e9419b45a69bc4b4cbea6
+SHA1: 650e3ba3d64cff099e12e5fd1c01910480b8fdca
+SHA256: 949e959697282bcdf81ba77836487b1a6ec36eca6a79cfe884009af110796e11
+SHA512: a27aed818e77fe64d02f34d4791bed96929c3c7972301dd58b5e1b5643af895a60c74796eca3f106a2e44ce5615ee88e314792dee6561dd2685911642c663e34
+Description: MessagePack serializer implementation for Python
+Homepage: https://github.com/msgpack/msgpack-python
+
+Package: python-msgpack
+Installed-Size: 340
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.0.7
+Depends: libc++, python
+Filename: pool/main/p/python-msgpack/python-msgpack_1.0.7_x86_64.deb
+Size: 69864
+MD5sum: af8257cd225cf648a23389afa23e83b5
+SHA1: 4d55ab731b99eda4041ca79c0c6c39510b7fac95
+SHA256: 3fe8145278539e6b28d1787001894ff644c70fc5874bd94086ed5adaa4e9a20f
+SHA512: 95ebdecc8cc8543a0db6607592d9b155e8b6c2779d67e94dbaefe1e164af28b417064232b2b7f9bda1e31371ec7eb365bd1bf13106f3864b548953afccc32ac8
+Description: MessagePack serializer implementation for Python
+Homepage: https://github.com/msgpack/msgpack-python
+
 Package: python-numpy
 Installed-Size: 38376
 Maintainer: @termux
@@ -30013,6 +30029,22 @@ SHA256: fec6b1b15337a295f33cd48dbf386a961b27632168db0af7a84e2122e5162b20
 SHA512: f816a21ecb7a67f254d180f013c2b29c844d168a50cb0966310e10e62435e8b1be833d9020ec61bd5977047349db2fbb19f72390924f922fff1e47c9803e48d6
 Description: The PyPA recommended tool for installing Python packages
 Homepage: https://pip.pypa.io/
+
+Package: python-pyarrow
+Installed-Size: 24736
+Maintainer: @termux
+Architecture: x86_64
+Version: 15.0.1
+Provides: libarrow-python
+Depends: libarrow-cpp (>= 15.0.1), libc++, python, python-numpy
+Filename: pool/main/p/python-pyarrow/python-pyarrow_15.0.1_x86_64.deb
+Size: 4302652
+MD5sum: 286d1b75e14744209295c8b90b5db728
+SHA1: d118b75a67cd837ee039ed140d9380d0446158e7
+SHA256: c9cc59171735c1061cd92d4ffe636d15cba72ccbf292a8c53aa18382f74ca5b1
+SHA512: 8528e749783227a25f4e060ba37371d199c6e6e3cc984be7631ae634dbe5cffef7629c6ab123f3d91e79092409858efa029b7368ea4943fc304c348136facee4
+Description: Python bindings for Apache Arrow
+Homepage: https://github.com/apache/arrow
 
 Package: python-pyarrow
 Installed-Size: 24584
@@ -31097,14 +31129,14 @@ Package: rdrview
 Installed-Size: 108
 Maintainer: @termux
 Architecture: x86_64
-Version: 1:0.1-1
-Depends: libcurl, libiconv, libseccomp, libxml2 (>= 2.11.4-2)
-Filename: pool/main/r/rdrview/rdrview_1:0.1-1_x86_64.deb
-Size: 24012
-MD5sum: f277f564c64341b6fdf0148e67db2466
-SHA1: d8c71138cac251685c8702bb36200e43b4e40ce4
-SHA256: e78b931761fbc73b07a61d1cc22ea4df8a7340f006b208aa10dd879cbee599b2
-SHA512: 4dc0a8239d908231ba3f21b10edae78b6da33f094712c6203b91d4c35677e34074d42bf151372d5d86cad0da88ee1ce6f31814f2eb8362616f59acbba510994f
+Version: 1:0.1.1
+Depends: libcurl, libiconv, libseccomp, libxml2
+Filename: pool/main/r/rdrview/rdrview_1:0.1.1_x86_64.deb
+Size: 23920
+MD5sum: 2349f989863db4a8f77889be889a3ddc
+SHA1: 182f380963d94b0d5dc83fec627a648086258e11
+SHA256: 114b877651ad14a0939595e5442c89ba08c6c8a62d85ff72cced0ba7ec9c89f1
+SHA512: 9490ea644f3a0a7f5f99cdbf89b36f13e4f05dc84de0252ad6e51e7d675856629c98d984ccac8a7cc41ed1d35a6bf0c9a64f8d5afd4bed5c09000c19bcf864b9
 Description: Command line tool to extract the main content from a webpage
 Homepage: https://github.com/eafer/rdrview
 
@@ -32673,22 +32705,6 @@ MD5sum: 13bcf06dea869278662748a73898fca9
 SHA1: ff0f0073c86b01e45ecd728dd412e26148a1f04d
 SHA256: 4678526ccd4346a423e2beb9382dce1899d88d9257a375d6facc306e1f9b6296
 SHA512: d43311fead1c43158c3e569a258c8b4c267038423ca206f9ef47f8c5162a2de253fb442cb9f9e19d4e18deaf40ca97061c81ed7f7d7424c23309ccc18e19b4df
-Description: Collection of tools, libraries, and tests for Vulkan shader compilation
-Homepage: https://github.com/google/shaderc
-
-Package: shaderc
-Installed-Size: 56260
-Maintainer: @termux
-Architecture: x86_64
-Version: 2023.8
-Depends: libc++
-Conflicts: glslang, spirv-tools
-Filename: pool/main/s/shaderc/shaderc_2023.8_x86_64.deb
-Size: 7421372
-MD5sum: e67df7b83e5f83c3d8affa8fd3591328
-SHA1: 4fb1115601988ddd0222886edb9cadef76b47aca
-SHA256: d41819af57db4d3c1ee666c2513dec675971853bc379f4d1fd14aca2ab998366
-SHA512: ba90ad43e10e19d82e4768a3645bfaf538a6f794cb0dcb17fa39fe2bad885e983c4a40fb7f8bdd5ae4eac93ba452146b1ac66c455b6a5eea1a1126c80b81eeb6
 Description: Collection of tools, libraries, and tests for Vulkan shader compilation
 Homepage: https://github.com/google/shaderc
 
@@ -34872,20 +34888,6 @@ MD5sum: b19561a0a79cb7818cb2317dcbc1c5b2
 SHA1: a97edc2d16d6caf0d51922e61e51cdad1682b406
 SHA256: b11529765cf013a7bfe34e805c99ff3971d714956d093548d3dd2f26da9e31dd
 SHA512: 49ed23d0c3e3d4f6c1cefa6ebb75a735af98fbfd03dfe31f2975bdc869c03089d3fc1d0222e795cda64badf4b1abef43008182e559ac73d7f25e6e5e5293620f
-Description: Secure Access for Developers that doesn't get in the way
-Homepage: https://github.com/gravitational/teleport
-
-Package: teleport-tsh
-Installed-Size: 120160
-Maintainer: @termux
-Architecture: x86_64
-Version: 15.1.1
-Filename: pool/main/t/teleport-tsh/teleport-tsh_15.1.1_x86_64.deb
-Size: 21534780
-MD5sum: 19764b8fcc3ed98061f1b14ecf2f89cf
-SHA1: e54dae557d8e72e1ab30e9b6a859a3544f880dbb
-SHA256: 2016f7afb5cee3fb8feefa03eb678d417e81d09a80ab75338070cefdb54dc0fb
-SHA512: 1783a7c13b2d486ae078b83d7e56f062cbd9f5bcae4d24710fb38a09887a3514b88d0b4fc3628d83aeceaa83952680eec2152fc0e0174f2c53177475efa28454
 Description: Secure Access for Developers that doesn't get in the way
 Homepage: https://github.com/gravitational/teleport
 
@@ -37354,21 +37356,6 @@ SHA512: c2d08ac8310bad82f50b36fcce2372703794b39acbb31255bc295c2bdd9c7771abed2923
 Description: Vulkan Extension Layer
 Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
 
-Package: vulkan-extension-layer
-Installed-Size: 4652
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.3.279
-Depends: libc++, vulkan-loader
-Filename: pool/main/v/vulkan-extension-layer/vulkan-extension-layer_1.3.279_x86_64.deb
-Size: 515396
-MD5sum: 2e340e9f47668517aa48cd8ae6e13758
-SHA1: da7486ccf5139a67af74f4bf47b0653eaf1f7fe5
-SHA256: 4b8a0eefb8b61a7d0fc826505719253ac7318a028558e9324b3d92e35cfde415
-SHA512: e0e67ab48014a7ddf22daafb275bac83d029d444cfdef28d44e0fce5b2751720d5da7340c5b64dbc4f10abebaa5903ded9b64d26858820ec8fc9f268511d2f5e
-Description: Vulkan Extension Layer
-Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
-
 Package: vulkan-headers
 Installed-Size: 26752
 Maintainer: @termux
@@ -38155,23 +38142,6 @@ MD5sum: 37ca2f2374a629197ee4d031421ab1e0
 SHA1: 468c3cf2c255e01f99c3b856a44e82cce8ac6471
 SHA256: d05e03b5718916eeebb0720b86e9a2fb582c22c3dc319cbd914be22630480d43
 SHA512: 1f2b3034157776fdf21aa60e2d6399b89dc30b90f88fad4904d956a74cea8490347ec7abd8c07720d053dc9fc4558ebe21fa7aa9740db19f00f3a4ab13c368e6
-Description: Basic tools for the Xapian search engine
-Homepage: https://xapian.org
-
-Package: xapian-tools
-Installed-Size: 804
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.4.24
-Replaces: libxapian (<< 1.4.21)
-Depends: libxapian (= 1.4.24)
-Breaks: libxapian (<< 1.4.21)
-Filename: pool/main/x/xapian-tools/xapian-tools_1.4.24_x86_64.deb
-Size: 107172
-MD5sum: e225f2f7c4418429792e84c67ca52400
-SHA1: cd572ce7aeec0dfea5ed544721965a3eea1b60c5
-SHA256: 0626d7ff61f8b27a39b13914d99e4331323eb1bd1997f4361415bf8819cf9874
-SHA512: d81ef998ad425017d1501a2e4944bdc2e54b2fd4afd6b643d7160755d4f8bc44c7ff27e10026213508c4a6993695ea345a39d748ece3211ab230ebd6f290412a
 Description: Basic tools for the Xapian search engine
 Homepage: https://xapian.org
 

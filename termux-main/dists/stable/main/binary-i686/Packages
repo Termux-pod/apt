@@ -3675,21 +3675,6 @@ SHA512: 829705f136bd2800c49c3950634ae3ff9d1c56884a93e32db13817b7dc4a18e5d07bcd59
 Description: Suggest installation of packages in interactive shell sessions
 Homepage: https://github.com/termux/command-not-found
 
-Package: command-not-found
-Installed-Size: 344
-Maintainer: @termux
-Architecture: i686
-Version: 2.4.0-14
-Depends: libc++
-Filename: pool/main/c/command-not-found/command-not-found_2.4.0-14_i686.deb
-Size: 90916
-MD5sum: a7d814a80b0969ddcb09de339b4b009f
-SHA1: 620c93046c8bd95f8d7156133ca7dec910603104
-SHA256: 1fa311d26e0f13d5859616023e2c8db9653b64a3af587760b1d1569cc010daf0
-SHA512: 8f0c0be6ff6d6f4c773fc592654702a2e790f22666e80b7cc80038ddb1df878cf9b77265bc096a6e12a093606d8617a3273bdf4cbaf3d540dd56853fe2afa4d8
-Description: Suggest installation of packages in interactive shell sessions
-Homepage: https://github.com/termux/command-not-found
-
 Package: composer
 Installed-Size: 2952
 Maintainer: @PuneetGopinath
@@ -25144,21 +25129,6 @@ SHA512: 20d1de37e450b8f2c3e2e425b438efb80f7dad5d6d881ffaed5d7659836cd203ac3877c5
 Description: Mail client with patches from neomutt
 Homepage: http://www.mutt.org/
 
-Package: mutt
-Installed-Size: 6684
-Maintainer: @termux
-Architecture: i686
-Version: 2.2.12-1
-Depends: libandroid-support, ncurses, gdbm, openssl, libsasl, media-types, zlib, libiconv
-Filename: pool/main/m/mutt/mutt_2.2.12-1_i686.deb
-Size: 1255128
-MD5sum: 259407ea0a802967552353d9660666d8
-SHA1: 92d2d74686248023c33d91bebd07310774e2040a
-SHA256: 886acee1c0320cb3a75c4f5e908ce008f7047032175b6fa53b91cfc19aef77e7
-SHA512: f58fdbbb8b96e520c4bae1c76e63f288b2b55b3f3a4eae7dd93965a2a4473a3c4f53a278041b5b928caa70b835bb8817ba93e9bb1d77e334064a22e4d26865e9
-Description: Mail client with patches from neomutt
-Homepage: http://www.mutt.org/
-
 Package: myman
 Installed-Size: 13712
 Maintainer: Henrik Grimler @Grimler91
@@ -34628,6 +34598,26 @@ SHA256: 15c3fff14cf80949ffda0ca1dbc3e4aa10d6c649fddc50fb292e498da310e16e
 SHA512: 7c24b07f9292a4c6c8283b796566d655845655759825684a346597fe7994a25153ece067cadaa9852edd6acc5a013094d085b6c4646c84b5daec50a901e1771a
 Description: Service daemon for Termux
 Homepage: https://github.com/termux/termux-services/
+
+Package: termux-tools
+Essential: yes
+Installed-Size: 496
+Maintainer: @termux
+Architecture: all
+Version: 1.41.1
+Depends: bzip2, coreutils, curl, dash, diffutils, findutils, gawk, grep, gzip, less, procps, psmisc, sed, tar, termux-am (>= 0.8.0), termux-am-socket (>= 1.5.0), termux-exec, util-linux, xz-utils, dialog
+Recommends: ed, dos2unix, inetutils, net-tools, patch, unzip
+Suggests: termux-api
+Conflicts: procps (<< 3.3.15-2)
+Breaks: termux-keyring (<< 1.9)
+Filename: pool/main/t/termux-tools/termux-tools_1.41.1_all.deb
+Size: 30232
+MD5sum: 86cbf0d0cb5aa4a38e27d065fe36641c
+SHA1: 9a99f437cb3002c52b979a1bbdd24a8da30095ca
+SHA256: d1d817d21b0f48d77631271d68c2c41f88e988fde4adc169dad0e73522977546
+SHA512: f00f6e6d547666a8572ffbb62c613a0c54f186b1f1050e172bfb09c265869c51a49412ebdfc5f3481f958517eae8d1615c883d87dff4ac7d8469c4bbc6878d53
+Description: Basic system tools for Termux
+Homepage: https://termux.dev/
 
 Package: termux-tools
 Essential: yes

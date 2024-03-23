@@ -307,20 +307,6 @@ SHA512: f50ba478741c2db79c5f08da2b83ad7426521e84a6c7eb0f770d85ad5771459e063ac70d
 Description: Very simple server for the Gemini hypertext protocol
 Homepage: https://github.com/mbrubeck/agate
 
-Package: agate
-Installed-Size: 1312
-Maintainer: @termux
-Architecture: arm
-Version: 3.3.5
-Filename: pool/main/a/agate/agate_3.3.5_arm.deb
-Size: 546424
-MD5sum: ead894a0963a0c6e1d09f123a6f2e57d
-SHA1: 6c77e52589cb50477272214c34679d638d2675d2
-SHA256: 808ba391c98a460914885b7b8c559eb6afff56cc3788ad7e379641ea1f0c67b7
-SHA512: 978f0449aec5b2ddda921a3962b3f83e985a1d6d8c051850ceca55553cfa71620e9c11d9ff8e2b8d568ef84aa3a2061ade4e4aee900e2436c4b495a6ddc17077
-Description: Very simple server for the Gemini hypertext protocol
-Homepage: https://github.com/mbrubeck/agate
-
 Package: age
 Installed-Size: 5316
 Maintainer: @termux
@@ -11254,6 +11240,20 @@ SHA256: 4df7928b396179078ed1829a9895911bd235e4de1401f879db693490b94b6a40
 SHA512: 90500ab8c329c00ca67a575b1349b4fe791d5ad9684e71f8b534c8e34ac10d4f5bac4dd04ccffc5fb60c45518929707b8061f3f8d69c017574f2dde4aab96955
 Description: Code editor heavily inspired by Vim
 Homepage: https://github.com/mawww/kakoune
+
+Package: kbd
+Installed-Size: 60
+Maintainer: @termux
+Architecture: arm
+Version: 2.6.4
+Filename: pool/main/k/kbd/kbd_2.6.4_arm.deb
+Size: 6264
+MD5sum: 0b894a9bf7dab9b01cdd0d3d1ce16475
+SHA1: a591841963224a7d57f0363fdb822170c7c1221f
+SHA256: 25b6eb1abc0623b5ec58e69f8530d66820ba93a64d6fdef64c25e67c376fa668
+SHA512: fa5f37e89986d023b7440ecc512e88b05b1604ae0691660dfc3846636700ccb0bca0d54ccc29ae58a566c7f347814f3b9f3a3ccdff10bcd07eadde1d5b286734
+Description: KBD's showkey utility for examining keycodes
+Homepage: https://kbd-project.org/
 
 Package: kcptun
 Installed-Size: 20516
@@ -22954,21 +22954,6 @@ SHA512: 026e48dfdc2c275c60fc80686fec053ae6c4a1705cbeba0e16e1490cf09c6c3a492169be
 Description: Next gen ls command
 Homepage: https://github.com/lsd-rs/lsd
 
-Package: lsd
-Installed-Size: 1868
-Maintainer: Krishna Kanhaiya @kcubeterm
-Architecture: arm
-Version: 1.0.0
-Depends: zlib
-Filename: pool/main/l/lsd/lsd_1.0.0_arm.deb
-Size: 812636
-MD5sum: 88fcbee2678157b73ee8027468532754
-SHA1: 47a81291e5a8d3c533f14e6de062320fbce94e13
-SHA256: 244db82ac78d60a92442c5ec8040592e1a3287facf0680db674b7984edf46f5a
-SHA512: d0494f259518c7f6ccd60f8b345b3d42db832c24566048c50bbef7211f55153e8635d72605d46acc320da263d721198abf20095ec2a604c956a62adc79f9fe52
-Description: Next gen ls command
-Homepage: https://github.com/lsd-rs/lsd
-
 Package: lsix
 Installed-Size: 52
 Maintainer: @termux
@@ -24648,6 +24633,21 @@ Description: A high-performance database kernel for query-intensive applications
 Homepage: https://www.monetdb.org/
 
 Package: mono
+Installed-Size: 9316
+Maintainer: @termux
+Architecture: arm
+Version: 6.12.0.199-1
+Depends: krb5, mono-libs, zlib
+Filename: pool/main/m/mono/mono_6.12.0.199-1_arm.deb
+Size: 2007772
+MD5sum: fda149282830c5edc9ed11c39e5869d2
+SHA1: 381e2558af5392ae09311c9cecfba7b89013cf71
+SHA256: 37ee48030b142653e783ea33304bee30d7f93b1a219ea11d1edba37292793935
+SHA512: 523b9dffca044b192448cad18004122c699dd8176675bbcc33f030fc9aff6a43b0ee008e58501445dd17f598e7b32c68b9721844a2365493d570ee26bf339151
+Description: Cross platform, open source .NET framework
+Homepage: https://www.mono-project.com/
+
+Package: mono
 Installed-Size: 9328
 Maintainer: @termux
 Architecture: arm
@@ -24666,6 +24666,22 @@ Package: mono-libs
 Installed-Size: 204132
 Maintainer: @termux
 Architecture: all
+Version: 6.12.0.199-1
+Replaces: mono (<< 6.12.0.122-2)
+Breaks: mono (<< 6.12.0.122-2)
+Filename: pool/main/m/mono-libs/mono-libs_6.12.0.199-1_all.deb
+Size: 46606516
+MD5sum: 7e5f6bf25cf5de75412fc92bf1fc8a01
+SHA1: 7271dd65e70203b9e74e6867929152f296acd676
+SHA256: 79850c67cf7ea1287c1ef2be4b3cd63e6ddbc48788e4db32a6ac12f6a8c8ec98
+SHA512: 6c8e37a56bd6242e5432059b6e35b215d5907a0ad193e939596ad91a072327fcacb8c76aacb2756f37e0930f8a656d094547615ecdddefb177c66fc0e952c42e
+Description: Platform-independent libraries for mono
+Homepage: https://www.mono-project.com/
+
+Package: mono-libs
+Installed-Size: 204132
+Maintainer: @termux
+Architecture: all
 Version: 6.12.0.199
 Replaces: mono (<< 6.12.0.122-2)
 Breaks: mono (<< 6.12.0.122-2)
@@ -24676,6 +24692,21 @@ SHA1: 4a84bc9e61bac54e71daa8c7421778246127ed72
 SHA256: 232fcf6602b57aa54cf517a9a9de895b04e8f8aca63640dca21b0ad1df7395a8
 SHA512: 0c63edd6d4c1b1250eedeff9b4d17d0ae2884db2d684dfd3cffe5bd7501b94dc45c0b45437dcbeabf6acf6c152c984fb09617641f7893867c25598aacf59e7df
 Description: Platform-independent libraries for mono
+Homepage: https://www.mono-project.com/
+
+Package: mono-static
+Installed-Size: 32840
+Maintainer: @termux
+Architecture: arm
+Version: 6.12.0.199-1
+Depends: mono (= 6.12.0.199-1)
+Filename: pool/main/m/mono-static/mono-static_6.12.0.199-1_arm.deb
+Size: 7171784
+MD5sum: 09556732c7198767da8ad10dde3030a0
+SHA1: dbda0378efe6a192ba3f5761677d74631f52967f
+SHA256: fcd3049444651e26633f4b76f15173a66088035ab82b13ae79bedaf05699aa05
+SHA512: 4921859ce473fc6f05ea8dc2716072f5dd75fdd809cd848b707e0b64889b172a824f3cd2f5b46feec77a118d655a0e522f146a7e88ec3164080a436d64914150
+Description: Static libraries for mono
 Homepage: https://www.mono-project.com/
 
 Package: mono-static
@@ -34199,17 +34230,17 @@ Description: GNU tar for manipulating tar archives
 Homepage: https://www.gnu.org/software/tar/
 
 Package: task-spooler
-Installed-Size: 124
+Installed-Size: 96
 Maintainer: @termux
 Architecture: arm
-Version: 2.0.0
+Version: 1:1.0.3
 Conflicts: moreutils
-Filename: pool/main/t/task-spooler/task-spooler_2.0.0_arm.deb
-Size: 37748
-MD5sum: a1e5dc6fd7816aff9fe71d52f6552ed9
-SHA1: d45314b19e85518b9510295f5568368a3aa7325e
-SHA256: 778da8491f82a606c5f6d7bd77b0e89e2c634deadf35895d0b04c10de4c721a7
-SHA512: c3ecf9aaf74a3e5b79769713492678417e29f73e12a8f769e2bd140af8523960fc098448f58cacf5373799ba0d54ad69fa54b1765c2f5a1da0f689893ad39ff5
+Filename: pool/main/t/task-spooler/task-spooler_1:1.0.3_arm.deb
+Size: 22724
+MD5sum: d60b3a8c0133efd541272566d89b2c9e
+SHA1: 266d0ce9333a13d0c2c4f254742f2fa39f543bf2
+SHA256: 3ca6ae972b028140f817d16b513a61ddf047e428ec41c8e90f5de11344408197
+SHA512: 5bee75027d707c021eda18fbd307cf998bf175cee7c7150877ac578c606e535de99ad42ae4eea1f74beb3be222a5b6321993472a8b84657355e8b51a5dedd87a
 Description: Task spooler is a Unix batch system where the tasks spooled run one after the other
 Homepage: https://vicerveza.homeunix.net/~viric/soft/ts/
 

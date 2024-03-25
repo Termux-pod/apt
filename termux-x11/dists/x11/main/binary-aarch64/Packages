@@ -4131,21 +4131,6 @@ SHA512: aabc8cb6047be8871d636580eb8a42259a335307e4382576e2e7be62b21b331b0e9033ae
 Description: Keymap handling library for toolkits and window systems
 Homepage: https://xkbcommon.org/
 
-Package: libxkbcommon
-Installed-Size: 936
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.6.0-1
-Depends: libxcb, libxml2, libwayland, xkeyboard-config
-Filename: pool/main/libx/libxkbcommon/libxkbcommon_1.6.0-1_aarch64.deb
-Size: 183152
-MD5sum: 99ea36f3ade49eda564fba820f273a9a
-SHA1: 574ba0a079c918783d2aa570f3c4ed9d872b2404
-SHA256: c6c4bc42f8e8f6c085ec950761e83409bef8b22e748d0431e546040dcddad910
-SHA512: 71b2498844a5dab09b7002ccdd4ee48db07157ddaaba295591916ac1f9d17cfac8dd905f838a579bc0fc02335faa77a7cef0477927aa047f1d24ffaa4049308e
-Description: Keymap handling library for toolkits and window systems
-Homepage: https://xkbcommon.org/
-
 Package: libxkbfile
 Installed-Size: 240
 Maintainer: @termux
@@ -9419,6 +9404,22 @@ Package: xorg-protocol-txt
 Installed-Size: 60
 Maintainer: @termux
 Architecture: all
+Version: 21.1.8-2
+Replaces: xorg-server-xvfb (<< 1.20.11-8)
+Breaks: xorg-server-xvfb (<< 1.20.11-8)
+Filename: pool/main/x/xorg-protocol-txt/xorg-protocol-txt_21.1.8-2_all.deb
+Size: 6872
+MD5sum: 8eb557f98f56ee2566c2cf08ffc990e8
+SHA1: 33f63fff8ee0c348d7e9bf7692fb68d7314a18d6
+SHA256: a75037caa9055a8b028cfef93d7de618f63c982f2ece342d09806e741d8650f5
+SHA512: f74dce1c9dac754c165c802271d398ad7846481a20159d7960a4028bb48b8c894b66777a02e63e4bd9a00322add4569b9c85267d01778ccb0d393d1e55be9f2a
+Description: X.Org protocol.txt file
+Homepage: https://xorg.freedesktop.org/
+
+Package: xorg-protocol-txt
+Installed-Size: 60
+Maintainer: @termux
+Architecture: all
 Version: 21.1.8
 Replaces: xorg-server-xvfb (<< 1.20.11-8)
 Breaks: xorg-server-xvfb (<< 1.20.11-8)
@@ -9461,6 +9462,23 @@ SHA256: cb70369335ce12611935e703c1d59b7ef585b276cbd13e23ea89b4181adecd15
 SHA512: 9375c220e9201a6dfa387f67fdb60d2615e33763f5987a4a20abb0c86ee43461e7c14ea0ba4d1e58a63a4f5a6251bfa9f5bd32efb7be88358e676db6ce6a4afd
 Description: nested X server
 Homepage: https://xorg.freedesktop.org/wiki/
+
+Package: xorg-server-xvfb
+Installed-Size: 1912
+Maintainer: @termux
+Architecture: aarch64
+Version: 21.1.8-2
+Replaces: xorg-xvfb
+Depends: libandroid-shmem, libdrm, libpixman, libx11, libxau, libxfont2, libxinerama, libxkbfile, libxshmfence, opengl, openssl, xkeyboard-config, xorg-protocol-txt, xorg-xkbcomp
+Conflicts: xorg-xvfb
+Filename: pool/main/x/xorg-server-xvfb/xorg-server-xvfb_21.1.8-2_aarch64.deb
+Size: 632264
+MD5sum: e2569681fdad2cc40ba71cde9aa1d953
+SHA1: b30b0a2c6a622ce7a8c65c377f26079ba5e7dee0
+SHA256: 9c9d5d15b05925b63f13cc62c9822c012ad810e9c10d8196556512c9106a8bff
+SHA512: 0daa002af0705c7284fdbc4c9a4929a60ccc3873089e87ea035be1b5c5d8917e53650bd8c55bd84b8d1cc48888a9319e86abc8225c23517c95dc2430af01629c
+Description: X virtual framebuffer
+Homepage: https://xorg.freedesktop.org/
 
 Package: xorg-server-xvfb
 Installed-Size: 1824

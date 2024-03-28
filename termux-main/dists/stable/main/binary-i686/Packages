@@ -2509,6 +2509,23 @@ Description: Compile and execute C "scripts" in one go!
 Homepage: https://github.com/ryanmjacobs/c
 
 Package: c-toxcore
+Installed-Size: 1048
+Maintainer: @termux
+Architecture: i686
+Version: 0.2.18-p20240317-0
+Replaces: c-toxcore-dev
+Depends: libsodium, libopus, libvpx
+Breaks: c-toxcore-dev
+Filename: pool/main/c/c-toxcore/c-toxcore_0.2.18-p20240317-0_i686.deb
+Size: 282360
+MD5sum: 78d94b81b8b4f0aa73927e8531ae7d1b
+SHA1: ea83729e8020426d7e79ed7efbd74844b39c0940
+SHA256: 9e4f96c8bb3fa486311bbaa5b8286d512efc62cf399a941e9e89193c64c621ef
+SHA512: 006d362d7a419683bf7c726b0ac3cf55d967288e7dcf9998339a32b0025959f0a8b6f33de59b3f8f16d2607d0d633b1a0639277fd221005f8fb548c51757f867
+Description: Backend library for the Tox protocol
+Homepage: https://tox.chat
+
+Package: c-toxcore
 Installed-Size: 1056
 Maintainer: @termux
 Architecture: i686
@@ -2523,6 +2540,21 @@ SHA1: deab672e88bef5ba789b2ec42243c058c58066f6
 SHA256: c3f4300838a2c12d76a2078c4d08abfa0433475006067875d791aa79f7970412
 SHA512: 96f4626b446d2ba25fd56d13d3dbec8454b949643a1a623514a45fce66fc80ca8da5519123e2214c4fb50f20d38b8ee4f32f6b80d845af5028814792104e8044
 Description: Backend library for the Tox protocol
+Homepage: https://tox.chat
+
+Package: c-toxcore-static
+Installed-Size: 1056
+Maintainer: @termux
+Architecture: i686
+Version: 0.2.18-p20240317-0
+Depends: c-toxcore (= 0.2.18-p20240317-0)
+Filename: pool/main/c/c-toxcore-static/c-toxcore-static_0.2.18-p20240317-0_i686.deb
+Size: 256312
+MD5sum: 5e178b6c2e54c524a3b55e3651a89e85
+SHA1: 2db6b6b4493ba341078486fe74921a79ffb21f3f
+SHA256: 0cd7adc57691a98e736369f12133fa6a05cc3ce36cc3d7c21bda86ef44679d5d
+SHA512: 69ae536d30d0fb197d53aad8d1a121b4d8de0e3b80460d080200f13577c15033e14170746d3e8437200716152e65c3db6f384c6fddbff90d2443e64d2a181c9b
+Description: Static libraries for c-toxcore
 Homepage: https://tox.chat
 
 Package: c-toxcore-static
@@ -4257,6 +4289,21 @@ SHA256: 43967104554685c48bd582b4a31519aeb6152af8380e8dda2789a5dd97d9cc42
 SHA512: 526792763c2add98b1e96c0773cc4649c50f5c1a8a297d43b7aa2cad67d35ad8917c3abb5cd84fa5924373bd128d42edf24a328948109d15cd133503ec0cd39a
 Description: A simple webserver, implemented in a single .c file.
 Homepage: https://unix4lyfe.org/darkhttpd
+
+Package: dart
+Installed-Size: 262616
+Maintainer: @termux
+Architecture: i686
+Version: 3.3.3
+Depends: gzip, tar
+Filename: pool/main/d/dart/dart_3.3.3_i686.deb
+Size: 67709756
+MD5sum: f6607097704d83789bc08d50a55e893c
+SHA1: 6af33ddf06248284ccce57907264373c34f70622
+SHA256: ec3ecb04c343198147eaef6b5df4e314262dd594df9020fd2907344c3302577b
+SHA512: 7c22059bc841b2055666db79f17ba75be05c9ff1a5f57122216100e2f38a0b7d7e7b17e653a1f38e856d8423a879e5edaee86b1065d6b94235cac20722287dfd
+Description: Dart is a general-purpose programming language
+Homepage: https://dart.dev/
 
 Package: dart
 Installed-Size: 262616
@@ -24122,23 +24169,6 @@ SHA512: ba7707383d491d1a80775ea65dead9f9ae3aa0b7191d5386dc49614241ca1feea1d4fcb2
 Description: Free & open source, high-performance, distributed memory object caching system
 Homepage: https://memcached.org/
 
-Package: memcached
-Installed-Size: 496
-Maintainer: @termux
-Architecture: i686
-Version: 1.6.25
-Replaces: memcached-dev
-Depends: libevent, libsasl
-Breaks: memcached-dev
-Filename: pool/main/m/memcached/memcached_1.6.25_i686.deb
-Size: 140528
-MD5sum: 3771e27ab05ab477f9bcf34268393e11
-SHA1: 89bb27e456f3df6b269375855d36ac3533d76d50
-SHA256: 91dd67b7b4d638e6f5258538b8adc1206eba957ecfa1562b5a201880e04b65a2
-SHA512: 9b96435bd01a0d91ad24f0cc8ee222fa172bf047fa851ccb7330a51f6af2f33ce1aa8dc8bfd7056373b453ea60cc7134e70a44732fdd8687fe72824a6098f2a7
-Description: Free & open source, high-performance, distributed memory object caching system
-Homepage: https://memcached.org/
-
 Package: mercury
 Installed-Size: 139048
 Maintainer: @termux
@@ -34770,20 +34800,6 @@ SHA512: 2dc51c8452ba3396766d242e874d6787444cd9d2819cc0106149f78b4bacfe9688230df4
 Description: A cross-platform implementation of the Language Server Protocol providing rich cross-editing support for the LaTeX typesetting system
 Homepage: https://texlab.netlify.app/
 
-Package: texlab
-Installed-Size: 13684
-Maintainer: @termux
-Architecture: i686
-Version: 5.14.0
-Filename: pool/main/t/texlab/texlab_5.14.0_i686.deb
-Size: 8928068
-MD5sum: 561a3987352962d17ea4d38f807a445f
-SHA1: c260014477983995bae4b02956abcb6cb828c3c6
-SHA256: 55703162a9c7ae693a8e3a22936afecf1e58b6541fecd962c9a824f222f8b9e7
-SHA512: 919c6e199b21d3bb3b339ba02f175ba2b6db328c57e8a963c4b3c00580d7b9f20068e77477de1663e6f74344129adac734cc9a10cf50813cfc942c5c6efecdf2
-Description: A cross-platform implementation of the Language Server Protocol providing rich cross-editing support for the LaTeX typesetting system
-Homepage: https://texlab.netlify.app/
-
 Package: texlive-bin
 Installed-Size: 48728
 Maintainer: Henrik Grimler @Grimler91
@@ -35232,6 +35248,21 @@ SHA256: adeb0e32ce17bc0a4b2d87642deb44c4cf1734bbb399659781249e96041aca1b
 SHA512: dea80d4eb47a93209d0f454e34b52195d4386f39c221383f3e2046d454832a533c48180f6dfacdeed7e786cb85c2ec293e977119659c02ff93a45555f899296e
 Description: Static libraries for torsocks
 Homepage: https://gitlab.torproject.org/tpo/core/torsocks
+
+Package: toxic
+Installed-Size: 2288
+Maintainer: @termux
+Architecture: i686
+Version: 0.15.0
+Depends: c-toxcore, libconfig, libcurl, libqrencode, ncurses, zlib
+Filename: pool/main/t/toxic/toxic_0.15.0_i686.deb
+Size: 921436
+MD5sum: 08a9cd49a480d0af3bb640b730685cb5
+SHA1: 25d308199eb6a24682bc21282515205a6d453a97
+SHA256: a97b62c63083bc0336f4070eccc750fff4ee3cdd45e4d859d686d8529186d573
+SHA512: d7bd9570475ffcc063f11169ff1c6f187b1447f9dec4ce0a056e7cc318ec897a115a3435a9c944e69f62b6ab89de284c6e429020acdbb226af0e694a03065452
+Description: A command line client for Tox
+Homepage: https://github.com/JFreegman/toxic
 
 Package: toxic
 Installed-Size: 2272
@@ -36061,21 +36092,6 @@ SHA512: 1808e7a75f3f7289e6f7697f33d16cee93a6081797be23149b5b88cd74d55063f7c38a2f
 Description: the Ultimate Packer for eXecutables
 Homepage: https://upx.github.io/
 
-Package: upx
-Installed-Size: 2624
-Maintainer: @termux
-Architecture: i686
-Version: 4.2.2
-Depends: libc++
-Filename: pool/main/u/upx/upx_4.2.2_i686.deb
-Size: 619156
-MD5sum: f69727e7d64abca73ab71a7a26ebbfe8
-SHA1: 57df5097f4c20412b0631be74596748b0dd5830c
-SHA256: 78026685c0f2996c2b2dcf742bbf908107eb9c7fe149ed9c8ea1ab3142a88648
-SHA512: b523667a17b5ed8e790c23e9ef4be985630ebcda738372d2183a4aa390534b6bf0b57b0de118ff4d9697531b14c24ea19835054663ec6cccb60db72b488b4e35
-Description: the Ultimate Packer for eXecutables
-Homepage: https://upx.github.io/
-
 Package: urdfdom
 Installed-Size: 716
 Maintainer: Pooya Moradi <pvonmoradi@gmail.com>
@@ -36780,21 +36796,6 @@ MD5sum: bf576eb36859fba548053665141740d6
 SHA1: 14dec040905ee2bed4ca0ed168fa359301c8aa20
 SHA256: 191ccb26d13a1e6827584e0d92a58fbd7e51bde585c7ffb802266b9406716302
 SHA512: 678406df7ea876b0cfeaa7db75041d8fda0674db9cc911aa3cbe48539e2fa76e44349974e0de5ff047b6d7e2c4f2fbbfe796bc532ccf05adef3d0435b37a7f47
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://vtm.netxs.online/
-
-Package: vtm
-Installed-Size: 5628
-Maintainer: @termux
-Architecture: i686
-Version: 0.9.74
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_0.9.74_i686.deb
-Size: 1031928
-MD5sum: a8c604e34e606216561475998e4cb568
-SHA1: 113e21ddefc89e3cb79bd61e5163477bbf260760
-SHA256: f53dc9d391e79fc7d21f1bd0ed1d294bce2e7cd819f8210d242c39c64fddbd8d
-SHA512: 5d8d853449263ee0f68bd807da2baab4fae9fb56509e68259fcd95532a1c67d30521fb376eac96c898fce8c7f68e23d20c6f3dcc2798a73d81ede26ff3970625
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://vtm.netxs.online/
 

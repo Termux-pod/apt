@@ -643,6 +643,23 @@ Description: Command-line tools using AOMedia library
 Homepage: https://aomedia.org/
 
 Package: apache2
+Installed-Size: 30864
+Maintainer: @termux
+Architecture: arm
+Version: 1:2.4.59
+Replaces: apache2-dev
+Depends: apr, apr-util, libandroid-support, libcrypt, libnghttp2, libuuid, openssl, pcre2, zlib
+Breaks: apache2-dev
+Filename: pool/main/a/apache2/apache2_1:2.4.59_arm.deb
+Size: 5001608
+MD5sum: fa23a561595bbb973e1adf3114627de3
+SHA1: 367fbc11ecf45d330949f8fdf16cf139896da504
+SHA256: cc64c7bafd34fc83634c6fabb49ea0312aa968ee0131974c3e105fb9a76cf324
+SHA512: add15f7fc94f2c6be365584b5dc0b909791e7ae01457c2e25dc00d657fa394a4aab5269a67752c5aaef247cb5917bed96cafe5db4133bc31b1ae9c5cf6a5c368
+Description: Apache Web Server
+Homepage: https://httpd.apache.org
+
+Package: apache2
 Installed-Size: 30816
 Maintainer: @termux
 Architecture: arm
@@ -1584,21 +1601,6 @@ MD5sum: 38798fc84587dab20572c305c217b0d5
 SHA1: e44a0f3033398d71a88ee99df8a54d2ac883fbf1
 SHA256: 8c512c06ee7865794a8b8a7b55937bad0b13c954a48db592d172e94e0ed4a079
 SHA512: 83d79208c8baf1fc4bf5ef99ad0176e3cfbfc4d9d201dca4b4b92b72ed1dbb35f02612bcd66799fe37f28c5681d31c3e05e81b26f2566405eaf11ea5e7403dd0
-Description: Programmable completion for the bash shell
-Homepage: https://github.com/scop/bash-completion
-
-Package: bash-completion
-Installed-Size: 2552
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: all
-Version: 2.12.0
-Depends: bash
-Filename: pool/main/b/bash-completion/bash-completion_2.12.0_all.deb
-Size: 182776
-MD5sum: 84655116866628125dab8208651b1a51
-SHA1: a7abb041dc7bc60a8b1af7199e7f629056a9c780
-SHA256: 9c8c4277d6b2a023dba1d9570af79dbc464f52fc695b76944af5b9173b5213aa
-SHA512: ac2731943a35c41b692d43438e879d0b0b4f3ad3dc590c7d9e48c0b79f873d37a70b61ec64fb561c4aa5f43d83049b564e4e70527a5c7bd9021f58c34fe827e1
 Description: Programmable completion for the bash shell
 Homepage: https://github.com/scop/bash-completion
 
@@ -6969,6 +6971,21 @@ SHA256: 15096ff0e994a1f418137b50f1def5994d842ef0e616c9443701a60169c43f4e
 SHA512: c9216634d036d2dcbb339a073087f545a04a2700cf83ba8224d522e8db5b62e9fe5868f45836f4a3e27e8acf1adeade7d70e63e49b11fe883d111b02cf4006fc
 Description: Interactive JSON viewer on your terminal
 Homepage: https://github.com/antonmedv/fx
+
+Package: fzf
+Installed-Size: 3812
+Maintainer: @termux
+Architecture: arm
+Version: 0.49.0
+Depends: bash, findutils, ncurses-utils, tmux
+Filename: pool/main/f/fzf/fzf_0.49.0_arm.deb
+Size: 1127608
+MD5sum: 7085638592449e5acfdc4ee1c993a9f3
+SHA1: 53d3817db7850389505464ad8619577d0ba8e73e
+SHA256: 0c173e7f6e09ff0b8d6dc828d76bc7786879aec6b727376a4ef42304f9296644
+SHA512: 54aa6464cd73d53f39d0e454a0959797e7454691e42dcdad236b1615735974cfc1816228572ec9a9b0c8b234a289e2fed5d6d3a0d42c6cdb379c9a3dc6f23267
+Description: Command-line fuzzy finder
+Homepage: https://github.com/junegunn/fzf
 
 Package: fzf
 Installed-Size: 3808
@@ -17423,22 +17440,6 @@ SHA512: 2cbc9ec794dd8f36001801efeb82c0488f44c74b729ec6c70cc87aa9ffcb0b230d4aebe6
 Description: nghttp HTTP 2.0 library
 Homepage: https://nghttp2.org/
 
-Package: libnghttp2
-Installed-Size: 476
-Maintainer: @termux
-Architecture: arm
-Version: 1.60.0
-Replaces: libnghttp2-dev
-Breaks: libnghttp2-dev
-Filename: pool/main/libn/libnghttp2/libnghttp2_1.60.0_arm.deb
-Size: 93196
-MD5sum: c3c932e67462c4c78d75c968899e238b
-SHA1: b138550e217c1f750337cc8aaff14de02c89b4df
-SHA256: fcb40a4eedf83c85ed6850cb04433ec3402ef0b9d5eaeb66571a6c57de6bf9ba
-SHA512: a81c07183dbc95620ce9fb99f1c663537c6075f5d54fe50c06557246f2764bd4c0a55468ef13dd48e20656d7abf8d3f3b300ab6a18c36e13354de2426db87a1d
-Description: nghttp HTTP 2.0 library
-Homepage: https://nghttp2.org/
-
 Package: libnghttp2-static
 Installed-Size: 248
 Maintainer: @termux
@@ -17451,21 +17452,6 @@ MD5sum: ee3f6d41e3a26f3fc5aa020ce16567a4
 SHA1: f4386f6dfe7b7f611b4a46f336c1c126f4a09613
 SHA256: 4f636eec0ba1f01ecc0eb2c4b1a86835029039b834557ef632d41aaabf25dfe9
 SHA512: e29143f956da6ec17db6efbecb7f69661e19f0414a8ad6fa949456cc4ed817ca51a6e2b1e993c8bb493a23c2f3912efc214d9c4c6109de786ac6dcc98ea0e11c
-Description: Static libraries for libnghttp2
-Homepage: https://nghttp2.org/
-
-Package: libnghttp2-static
-Installed-Size: 244
-Maintainer: @termux
-Architecture: arm
-Version: 1.60.0
-Depends: libnghttp2 (= 1.60.0)
-Filename: pool/main/libn/libnghttp2-static/libnghttp2-static_1.60.0_arm.deb
-Size: 63192
-MD5sum: 14cf6ce4d0f4598c97c622ed11b40a0a
-SHA1: 642332510e451d5c6e842c322e490eac8c52831d
-SHA256: 0103efff0d378a20c9fd93363362ea43b8ff57e09cb19617172c841f8c58e6f4
-SHA512: acf40de8408694d4d51e5192436152e23f71c45f9e518bf71db63bfab17b992126e95afd0e5cf1c9d7b25d7b0e7f89413b01485a4769c0b767c08b37f310a7f7
 Description: Static libraries for libnghttp2
 Homepage: https://nghttp2.org/
 

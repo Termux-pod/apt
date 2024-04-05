@@ -659,22 +659,20 @@ SHA512: add15f7fc94f2c6be365584b5dc0b909791e7ae01457c2e25dc00d657fa394a4aab5269a
 Description: Apache Web Server
 Homepage: https://httpd.apache.org
 
-Package: apache2
-Installed-Size: 30816
+Package: apkeep
+Installed-Size: 6984
 Maintainer: @termux
 Architecture: arm
-Version: 1:2.4.58
-Replaces: apache2-dev
-Depends: apr, apr-util, libandroid-support, libcrypt, libnghttp2, libuuid, openssl, pcre2, zlib
-Breaks: apache2-dev
-Filename: pool/main/a/apache2/apache2_1:2.4.58_arm.deb
-Size: 4992976
-MD5sum: b129d4c2ae8bb142a404729c6a8b2b8a
-SHA1: 2f6b3a19f9d53db5baf271bd430f202eb604f95f
-SHA256: b07660f8c1147ac9995a1fbb73e031b88f523480680fcc82b06950d56767ef45
-SHA512: 2eabe7735b5ae4117da98605e74cb54b50df76eb7a82b3c4c4a7882f87f3c9d8378ee4fa5f65da5acca34f83760d51e8ff21dda42d2737ff5711cdc9a3fc47c8
-Description: Apache Web Server
-Homepage: https://httpd.apache.org
+Version: 0.16.0
+Depends: openssl (>= 3.0.3)
+Filename: pool/main/a/apkeep/apkeep_0.16.0_arm.deb
+Size: 2336620
+MD5sum: eec9865bd50468138e6c16322e94c920
+SHA1: 3f40ac0e4a2ac046905a3af707062758957e3d70
+SHA256: 802ff365fd0d54ee14ce1ff314941136aa7e1b45e73105e4cf6af0fb2606e78c
+SHA512: 57b8ec15e43c9080824f33349cb6f0bb9b0e14a1523a738e5d8a902c77578f194a92ae7a4240e1160ee2dcaefc46bc14930112405e36b2695f16d62c481f9bb8
+Description: A command-line tool for downloading APK files from various sources
+Homepage: https://github.com/EFForg/apkeep
 
 Package: apkeep
 Installed-Size: 5976
@@ -1979,6 +1977,21 @@ SHA256: ef8f404e560ed44351a560a43f85a6ea4354853ad37259c99518e13431eeb6d9
 SHA512: 6c6405d6c10ca3d7b95be6ff65c9d39a150ba29d033511f7c75786aa5e9c890d26dd6c452a84973d21381a0d93fe94e7e7b988828d4fd3ea8a0105cdc593d73c
 Description: A simple, fast, clean and dynamic language
 Homepage: https://bladelang.com/
+
+Package: blas-openblas
+Installed-Size: 32
+Maintainer: @termux
+Architecture: arm
+Version: 0.3.27
+Depends: libopenblas (= 0.3.27)
+Filename: pool/main/b/blas-openblas/blas-openblas_0.3.27_arm.deb
+Size: 1016
+MD5sum: 33724be93a487605d9b9098c963f9157
+SHA1: 0bbaac2bf1c81d09711807e3365a052b01d34150
+SHA256: d47a7c0c035f2df496bb47721f648795c0fac25ec44c09159e65116aed7a99e2
+SHA512: 131ea9e9a6f250a79c089b35e11e36c60eece25b8ee8b5b40be4c7f6d8eb087e82b35d833c0f7d1cf819cf4b273fe58f57118144a8ae9d47b531e8abece25a5d
+Description: OpenBLAS symlinks for BLAS/CBLAS/LAPACK/LAPACKE
+Homepage: https://www.openblas.net
 
 Package: blas-openblas
 Installed-Size: 32
@@ -6987,21 +7000,6 @@ SHA512: 54aa6464cd73d53f39d0e454a0959797e7454691e42dcdad236b1615735974cfc1816228
 Description: Command-line fuzzy finder
 Homepage: https://github.com/junegunn/fzf
 
-Package: fzf
-Installed-Size: 3808
-Maintainer: @termux
-Architecture: arm
-Version: 0.48.1
-Depends: bash, findutils, ncurses-utils, tmux
-Filename: pool/main/f/fzf/fzf_0.48.1_arm.deb
-Size: 1125356
-MD5sum: ac14186eb855a68cb2ace58a038c3c9b
-SHA1: b1fb9c3aa677a3a9d5a98f45ce1285ec421f04f7
-SHA256: 43c188080f0a8a9d9c58f4b6356c45172ebb20c3225875bde69d9455b043333d
-SHA512: 48c83b13c4444163bf65bde5c2d5d3a7aae085713d335d2685e5bd077b5b6f3da1289ac1af0df6ac931468aace1c3093c807d914649513d4a42783833d405046
-Description: Command-line fuzzy finder
-Homepage: https://github.com/junegunn/fzf
-
 Package: fzy
 Installed-Size: 88
 Maintainer: Krishna Kanhaiya @kcubeterm
@@ -7201,6 +7199,23 @@ SHA256: dee4dc88de5de766ed9142ac3dc29dc4dff782043dfa842adfe61743800a6528
 SHA512: 2c373bce880cb18695b3d7de6b2790dca485f70bc90fe522ddcc251bed1121d49e258ac57316ba2520b4b38eb62a6b2e2eefe2266c1606a885e86663cb3961a3
 Description: Program for calculating and printing calendars
 Homepage: https://www.gnu.org/software/gcal/
+
+Package: gdal
+Installed-Size: 19940
+Maintainer: @termux
+Architecture: arm
+Version: 3.8.5
+Replaces: gdal-dev
+Depends: giflib, json-c, libc++, libcurl, libexpat, libfreexl, libgeos, libiconv, libjpeg-turbo, libjxl, liblzma, libpng, libspatialite, libsqlite, libwebp, libxml2, netcdf-c, openjpeg, openssl, proj, postgresql, zlib, zstd
+Breaks: gdal-dev
+Filename: pool/main/g/gdal/gdal_3.8.5_arm.deb
+Size: 6841580
+MD5sum: 779a5e4dbba481f067875e796be58aa7
+SHA1: a0d19b4f705e353d92b47eeda5273b372ab9285b
+SHA256: 46b15e2d03f6317ce8bdce29bf111b5c2cedcb50ad88dbce806e05046b147a25
+SHA512: b975a1d3fafd96ff051fb92ca8764234ff28c5db82f17c0f8a0d444b5341a5d1e681fe0f8ee32f3318f2c601d3a2499a7eca3fd804be9d2cb59a160ad0fefcf2
+Description: A translator library for raster and vector geospatial data formats
+Homepage: https://gdal.org
 
 Package: gdal
 Installed-Size: 19936
@@ -11228,6 +11243,20 @@ SHA256: df4e7f0fc9e21098c06510ac6e56b445310a9328ba776c12f417cb92246b1773
 SHA512: 6f14aaa50480ef8b672532e2a25efd633bcccff5af921a8aa552926ffeb00c86700157d1e80a87452126bd5680e7f3a767d883a8d492e5491df1986a0a94314f
 Description: Mustache implementation for modern C++
 Homepage: https://github.com/kainjow/Mustache
+
+Package: kak-lsp
+Installed-Size: 4884
+Maintainer: @finagolfin
+Architecture: arm
+Version: 17.0.0
+Filename: pool/main/k/kak-lsp/kak-lsp_17.0.0_arm.deb
+Size: 2106956
+MD5sum: aa2a1a0186285cd74aa4a5484d997dda
+SHA1: 211e456cc731455d16d52c913906b582e795c66c
+SHA256: 27e53f292f98825977996a3ba321e0f957d8aca821a1200bd134712966a1efb3
+SHA512: a598e3617e2475c4fc0f639a24313294fd72c920d4f8bd7f8c86852d140029931387ae24da95d0142a179bc93b85e5d1ffa59ceafbdc219dad2e96099ba458c2
+Description: Language Server Protocol Client for the Kakoune editor
+Homepage: https://github.com/kak-lsp/kak-lsp
 
 Package: kak-lsp
 Installed-Size: 4848
@@ -17789,6 +17818,20 @@ Description: An implementation of the Double Ratchet cryptographic ratchet
 Homepage: https://matrix.org/docs/projects/other/olm/
 
 Package: libopenblas
+Installed-Size: 8508
+Maintainer: @termux
+Architecture: arm
+Version: 0.3.27
+Filename: pool/main/libo/libopenblas/libopenblas_0.3.27_arm.deb
+Size: 2613620
+MD5sum: 9406ed4569024b46f5c9ba0c4c900976
+SHA1: 313a677d9a172c8bf5fec3735544b9c5d6108239
+SHA256: 2f4af4ebbbfe684b019499315f2532108a552486cfa17218e076ba2a5ce8bf9e
+SHA512: b347c02bf769cbe00e7a03f5e3f780a591830fa25058dfed31e24f69e84d802e82c24b02f52765df4998fe22ad3c92cb338019a1772cbbab887d18526e3d903e
+Description: An optimized BLAS library based on GotoBLAS2 1.13 BSD
+Homepage: https://www.openblas.net
+
+Package: libopenblas
 Installed-Size: 8504
 Maintainer: @termux
 Architecture: arm
@@ -17800,6 +17843,21 @@ SHA1: 56de60f67eeeff24db7ce95969c084d465d8dc52
 SHA256: 893e006de1db9571904c024c42d8b0151cdc9b6056b31446da24b499cffd0e97
 SHA512: db44f1089c36f9f8d946ba0666edf4d57beac64fb3943d10e31ca158ddf1e0c706d766876e4cac43009db308d869a64a98e5ada6af99c06d1caa74e69c0ca851
 Description: An optimized BLAS library based on GotoBLAS2 1.13 BSD
+Homepage: https://www.openblas.net
+
+Package: libopenblas-static
+Installed-Size: 15764
+Maintainer: @termux
+Architecture: arm
+Version: 0.3.27
+Depends: libopenblas (= 0.3.27)
+Filename: pool/main/libo/libopenblas-static/libopenblas-static_0.3.27_arm.deb
+Size: 2650488
+MD5sum: b6a2b60af06c77b79e66fc5f99e555b4
+SHA1: 48a61f1dce3f34d20ad362ee5c707d0a278a9735
+SHA256: 8300145b57e9596f1489b8069fd2f822e238b62958732dc912f78f2365c9174c
+SHA512: 2ca2321437f76b38ccb3415a4087274cb60403cd9b3c111a48fced636bce98515c04c17477b7ef9c9d1297760d28b7db73e4a91d4e5eca293a30007ab4607f24
+Description: Static libraries for libopenblas
 Homepage: https://www.openblas.net
 
 Package: libopenblas-static
@@ -25030,6 +25088,21 @@ Package: mpg123
 Installed-Size: 768
 Maintainer: Thibault Meyer <meyer.thibault@gmail.com>
 Architecture: arm
+Version: 1.32.6
+Depends: pulseaudio
+Filename: pool/main/m/mpg123/mpg123_1.32.6_arm.deb
+Size: 258208
+MD5sum: 5c07d7d5d496b0ad81897802af153c2f
+SHA1: b2e9706483f429f17492ee3a7611f06743fc8b95
+SHA256: b4ba69e871f4ff5541dc2b3ee2594ed90d21fba3bad81bd32f38b885fa1c8991
+SHA512: b25735af84c0246873ae22827b652d900761c92b3a1c59383cefda2ec820a755e1ad223b05b8a53789020c3df1ad48c302ea4851a3b0f12bac12b2e67e8d22d7
+Description: Fast console MPEG Audio Player and decoder library
+Homepage: https://mpg123.org/
+
+Package: mpg123
+Installed-Size: 768
+Maintainer: Thibault Meyer <meyer.thibault@gmail.com>
+Architecture: arm
 Version: 1.32.5
 Depends: pulseaudio
 Filename: pool/main/m/mpg123/mpg123_1.32.5_arm.deb
@@ -25039,6 +25112,21 @@ SHA1: d92742b0a9ff174521f1488ca80fbb03d76c590e
 SHA256: 357137347bc7d9325da51ebfbb761284c5528981caad1e16ffb3f65516b9dda9
 SHA512: 97296d3096420bb4e0dfa63756f54740917615a773e44d883dae6f2e91f372e3d893c5c6341707cce254df7e5158fea193875745d36cdf8637ec058aa6151345
 Description: Fast console MPEG Audio Player and decoder library
+Homepage: https://mpg123.org/
+
+Package: mpg123-static
+Installed-Size: 428
+Maintainer: Thibault Meyer <meyer.thibault@gmail.com>
+Architecture: arm
+Version: 1.32.6
+Depends: mpg123 (= 1.32.6)
+Filename: pool/main/m/mpg123-static/mpg123-static_1.32.6_arm.deb
+Size: 150528
+MD5sum: 52d24d2a614b7cdb6c089aba61a16c7f
+SHA1: 172a1aaf9065a4e4e4013e88e7de43ea7f2ce3c8
+SHA256: 2a74881d5de361f319e0db07573db695698a075632428bb27b0d7e83d6f47b01
+SHA512: 5afc0c7cbb71c83ecb3e6332ba19b40f262376e79d6a0bc8dead9ad6082cc8e20e0e716c8ae79bf07daddf7c27bfa577401d2e3702ffb70fe484211a38327ba3
+Description: Static libraries for mpg123
 Homepage: https://mpg123.org/
 
 Package: mpg123-static
@@ -26407,17 +26495,17 @@ Description: ncurses based sudoku game
 Homepage: http://jubalh.github.io/nudoku/
 
 Package: nushell
-Installed-Size: 15508
+Installed-Size: 15528
 Maintainer: @termux
 Architecture: arm
-Version: 0.92.0
+Version: 0.92.1
 Depends: openssl, zlib
-Filename: pool/main/n/nushell/nushell_0.92.0_arm.deb
-Size: 5206976
-MD5sum: 4905797712839d59f93cb42d79846568
-SHA1: 2b994010860d8b5572f1949fc140023f1887643d
-SHA256: 69db92ca5302d52a07c48cf14927d682260c24af2da55a29270b0d4424c2c3aa
-SHA512: abb0c22b97c32eba08bdbd60a995b4c7698e823ca9c62077933bda017630434009f1c3d365a2407c2d6197bc9d4bd84be2b932ed61a12016f6e664ec52f0ab20
+Filename: pool/main/n/nushell/nushell_0.92.1_arm.deb
+Size: 5209444
+MD5sum: e3bc6e6658e73b2841ba8602c963960f
+SHA1: 4416c40e22efbbdb8c32f8b36f4ba4e4ad5f779d
+SHA256: 0097b8f2edd75afe245d87dfc0475a875a807dd0b5bebf8bf9771627b3ce8298
+SHA512: bbb8aa4ace9f519cfdbabc20d83e1a4a3e817efe754c0e1c2e49f5bba435857ae930e8bb742f857dfbae138a04c22ef41b9b74df1f51f6d1c1c40bc6c4897c51
 Description: A new type of shell operating on structured data
 Homepage: https://www.nushell.sh
 
@@ -38505,6 +38593,20 @@ SHA256: 0898cc8e13c39c9f25c309e8fac6866ddf9452ace1b7847b85a23c2b3ea37d07
 SHA512: 470d3e4c9b6cb32a4fbbe93da5eaa9708a5dd84164feeccf408a9c554cfa0d6ca6ffa965e5eacd0ca4e3ab42ec549f348253272f4176f1d20849760bac4c94dd
 Description: Programmable file compressor, library and utilities. Based on the PAQ compression algorithm
 Homepage: http://mattmahoney.net/dc/zpaq.html
+
+Package: zrok
+Installed-Size: 120180
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 0.4.26
+Filename: pool/main/z/zrok/zrok_0.4.26_arm.deb
+Size: 27134380
+MD5sum: 5127821718387caab0c233849956cae6
+SHA1: 5aa4923c78b4dbdfac6d9c125fdaab49f1a6d1b0
+SHA256: f0e86fe2f8b5318ac23c3fd85d3ec6ebc7499cb0024a9f5a8051332791843557
+SHA512: d97e3a54ac5a4fdfcb80d3e5793675dea7d2ef2f8f07adfd65cec4323fe149d38d55dfe8f8bc56132de15a5234c5b3d3644c46ee6ffbf5e9a57e2a79f7a0f0b4
+Description: An open source sharing solution built on OpenZiti.
+Homepage: https://zrok.io/
 
 Package: zsh
 Installed-Size: 9164

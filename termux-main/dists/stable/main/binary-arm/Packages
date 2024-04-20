@@ -758,6 +758,26 @@ Essential: yes
 Installed-Size: 2780
 Maintainer: @termux
 Architecture: arm
+Version: 2.7.12
+Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Provides: unstable-repo, game-repo, science-repo
+Depends: coreutils, dpkg, findutils, gpgv, grep, libandroid-glob, libbz2, libc++, libcurl, libgnutls, liblz4, liblzma, sed, termux-keyring, termux-licenses, xxhash, zlib, zstd
+Suggests: gnupg
+Conflicts: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
+Filename: pool/main/a/apt/apt_2.7.12_arm.deb
+Size: 962536
+MD5sum: 1b766aa588c7cd90b3bd88f824ccc06d
+SHA1: b7ca9a293f996fec75fe49d75ab4ac2c3a3c7f63
+SHA256: 048fd1cc13d1e52b040daa275e85af70fc3fcb1e2ffc80e229fd9ca10175dd8f
+SHA512: 77c79e0a6dda68e99fa2bfc4d26e098bca58f771af2f305818530e40dc24e6682e0b32f86b23420b106d4059a68881513179c3fb140bb40e39719c0b07e27460
+Description: Front-end for the dpkg package manager
+Homepage: https://packages.debian.org/apt
+
+Package: apt
+Essential: yes
+Installed-Size: 2780
+Maintainer: @termux
+Architecture: arm
 Version: 2.7.10
 Replaces: apt-transport-https, libapt-pkg, unstable-repo, game-repo, science-repo
 Provides: unstable-repo, game-repo, science-repo
@@ -793,6 +813,21 @@ Package: apt-ftparchive
 Installed-Size: 224
 Maintainer: @termux
 Architecture: arm
+Version: 2.7.12
+Depends: libdb, apt (= 2.7.12)
+Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.12_arm.deb
+Size: 83820
+MD5sum: d8639d5fa336d2c4255db4fbd18c9b3e
+SHA1: fcbf6fdeba3afb8b18d931faec9b2c9337c2a15c
+SHA256: da6712bc887360a052ef04616c2abe46e2836987283a4b628a9b99bc1bd9aa2a
+SHA512: 1455dd8cfdd864789c517fcdfb751cc26bb7471943ff7657bf9856721e44d457ac253b1740b1b66b47a350c12bd0c796fd46e1a82bdc3a2b1502986f0fab1cb6
+Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Homepage: https://packages.debian.org/apt
+
+Package: apt-ftparchive
+Installed-Size: 224
+Maintainer: @termux
+Architecture: arm
 Version: 2.7.10
 Depends: libdb, apt (= 2.7.10)
 Filename: pool/main/a/apt-ftparchive/apt-ftparchive_2.7.10_arm.deb
@@ -802,6 +837,21 @@ SHA1: b14d192049c3ae8effa8bc95a3327775165af434
 SHA256: 3340be7debe296c69e2a2fa75faa6b4bd7b1f92e4e65dae54297247f56858827
 SHA512: c0e6d85968c310d2a1fcc29edfe5f9230bbc138778e932cfc77ef943e1e99fe82a13f29f39e587419e3ab2fdfb8c814b4363a882244283686f849f6492db2b11
 Description: apt-ftparchive is the command line tool that generates the index files that APT uses to access a distribution source
+Homepage: https://packages.debian.org/apt
+
+Package: apt-transport-tor
+Installed-Size: 44
+Maintainer: @termux
+Architecture: all
+Version: 2.7.12
+Depends: tor, apt (= 2.7.12)
+Filename: pool/main/a/apt-transport-tor/apt-transport-tor_2.7.12_all.deb
+Size: 936
+MD5sum: 1c27ce8462287601a09dc642292326a6
+SHA1: d0d157fdf5d34e580ce390e7c9129d44f16d6bdf
+SHA256: fd1ad37758d99824594d519529789f99437b3fea30b69cb36ad80f6005c0d35e
+SHA512: cde3d30711ba89df1c7791496aaa91afeef09edc4c2694298e3cce4f0f7a2ea6294e893fd02b2c844918004a97713ccc55a95f37c47637baf3fcdbde63a13966
+Description: APT transport for anonymous package downloads via Tor
 Homepage: https://packages.debian.org/apt
 
 Package: apt-transport-tor
@@ -3689,6 +3739,21 @@ SHA256: d08a796204ffe33649bda51f8aaeb3145e53539ca12bb74680c270204179f78c
 SHA512: 1a780baa4645ef6971f3a43b921070acd87a5b4415b704e13ad4bf9b1010df83587ab4ad29e839dac6ff475c4ad69ab35b699afa2ea0e9592e30d52d0b45a278
 Description: Suggest installation of packages in interactive shell sessions
 Homepage: https://github.com/termux/command-not-found
+
+Package: composer
+Installed-Size: 2960
+Maintainer: @PuneetGopinath
+Architecture: all
+Version: 2.7.3
+Depends: php
+Filename: pool/main/c/composer/composer_2.7.3_all.deb
+Size: 544044
+MD5sum: eaf8dd50355d1e3a3c60edd2c78c0202
+SHA1: 9e6e0e8374b96543f4b25014d59f3cea76e54456
+SHA256: e69770603e50c35c6f6b49fd9296bead661ff5ed868cdb506f7c292be0c512e3
+SHA512: d5764894a1d977a6e3c29b9e26f784d5fff29397cf427379acd06b6f72eb3d4310c97ba3384e80345f215b202464f012dd9ef839768f05d5975970d9c626f071
+Description: Dependency Manager for PHP
+Homepage: https://getcomposer.org/
 
 Package: composer
 Installed-Size: 2952
@@ -9759,6 +9824,20 @@ Description: Tool for manipulating HFS images.
 Homepage: https://www.mars.org/home/rob/proj/hfs/
 
 Package: hilbish
+Installed-Size: 8780
+Maintainer: @termux
+Architecture: arm
+Version: 2024.04.16
+Filename: pool/main/h/hilbish/hilbish_2024.04.16_arm.deb
+Size: 2345908
+MD5sum: 5fc6639ff22e96236c96b00532e32459
+SHA1: 348920ce337d51b9b666483e5b1ff309d01ffd97
+SHA256: f25b6cf58f18d096022c7b91f0b3e980e8acfa4944e848f8af6f427cfa3c7f98
+SHA512: 36a2327f4e021b187511048fd1ad8bf1ea16cca12380bd77809f1ff148d76af263fd354ecac73dd9f6102a9695c7d855d829377284d0fc4ae2ddcbd6468e6f6b
+Description: The Moon-powered shell! A comfy and extensible shell for Lua fans!
+Homepage: https://rosettea.github.io/Hilbish/
+
+Package: hilbish
 Installed-Size: 6536
 Maintainer: @termux
 Architecture: arm
@@ -11475,21 +11554,6 @@ MD5sum: 072f3249735dcd573eda0449fd0d68d6
 SHA1: 6a693e05befe71172754d6abf2285542297ca578
 SHA256: 192995acf5f192f22638994edaa4f9ebe90c687d29f3a3c107047100349d4943
 SHA512: f7de1d5c30d999c672e837001a2bbdbd89042945619af96583b6156eeb15ff9cce0599972f2228542e451927f72f803e444f5395ba23499aa5f9036b4ae78c86
-Description: Colorize your kubectl output
-Homepage: https://github.com/kubecolor/kubecolor
-
-Package: kubecolor
-Installed-Size: 4648
-Maintainer: Kalle Fagerberg @applejag
-Architecture: arm
-Version: 0.3.0-1
-Depends: kubectl
-Filename: pool/main/k/kubecolor/kubecolor_0.3.0-1_arm.deb
-Size: 1416244
-MD5sum: 2aff9ffd15f81e9660918b9420d536bb
-SHA1: 3d23324a5e50d9f1f40f4119be6c90604c5e3bf1
-SHA256: acbe9fe4dd1b8080b7a1886fd85b6eb7bd91393271a73509bad11f20952a6e25
-SHA512: 3452cf93fdea756e163f5ec8f9529cf210f520ce2199dd9bdd086c4aae0a6a304d5ca580bc44ddac611f3cebaefdc2ac48e380d5f6f5309dd5aa4f1c8df49c0e
 Description: Colorize your kubectl output
 Homepage: https://github.com/kubecolor/kubecolor
 
@@ -22465,21 +22529,6 @@ SHA512: cc9c91971ea94f5ef7f83327e9e090b259636dffd2d2a165a35320c7e76dd508f3016344
 Description: The ZIM library is the reference implementation for the ZIM file format.
 Homepage: https://openzim.org
 
-Package: libzim
-Installed-Size: 776
-Maintainer: @termux
-Architecture: arm
-Version: 9.1.0
-Depends: libc++, libicu, liblzma, libxapian, zstd
-Filename: pool/main/libz/libzim/libzim_9.1.0_arm.deb
-Size: 210932
-MD5sum: 5ad22418fb725edd4f90c9f32fb44a95
-SHA1: a826adfb36c7a2537570d108e2711b4e90232a98
-SHA256: 4edb100bdf1cf3b82a5046208fbd99b1e5cac5bae2ab27b3fbbe485f7e0e484f
-SHA512: ad3dc3075a4760fbedbd8734d08713d4689ef95d1596182bb5ff8c689f7e318295cd711508bde67094f86c17ce7e1cec9207164a980aed88414c4942d284bf5a
-Description: The ZIM library is the reference implementation for the ZIM file format.
-Homepage: https://openzim.org
-
 Package: libzimg
 Installed-Size: 364
 Maintainer: @termux
@@ -26689,6 +26738,20 @@ Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
 
 Package: oh-my-posh
+Installed-Size: 17496
+Maintainer: Steven Xu @stevenxxiu
+Architecture: arm
+Version: 19.23.0
+Filename: pool/main/o/oh-my-posh/oh-my-posh_19.23.0_arm.deb
+Size: 4507668
+MD5sum: ee0cc7117be70b95633e82fd9462dc8d
+SHA1: ae090c0a56221fa574be457705b86c2205919a33
+SHA256: f248eb930056ddceed70a0b5ef18542262f2f5a94fd8772c6a3ed6a4a45fd5ad
+SHA512: a2be5494c0214cb1b218d3f3e41d8e4b2e6e9f1f25507085c30198d52a281e34923ca118ef832627c67d8e158813bb8ba3fcdfa5d8e98d102ed16d9ec5692339
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
+
+Package: oh-my-posh
 Installed-Size: 17488
 Maintainer: Steven Xu @stevenxxiu
 Architecture: arm
@@ -26699,20 +26762,6 @@ MD5sum: d40acdc542f4b4297f0c81bf74057e9c
 SHA1: ac021248934a35e86d175127df7e358a688b65b4
 SHA256: 23d663069476ce7398ebd2105f93798a45ed552ac4fc99f2b355bbb852f8fe36
 SHA512: 36e4ad2a6ea8af2bf6e33bf4eab294c1ba074dce7027e50ddc0b4976e0e2e8f1071b7b237b4a93d35f8120fade20924138c8cc0dab4989c2d2135b9d51ec3800
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 17488
-Maintainer: Steven Xu @stevenxxiu
-Architecture: arm
-Version: 19.21.0
-Filename: pool/main/o/oh-my-posh/oh-my-posh_19.21.0_arm.deb
-Size: 4504532
-MD5sum: 6296036780546c68d4175582c90ef3f0
-SHA1: 1e2d338e8e34fa7121e69efbb21f75687b6d6798
-SHA256: dadb72428ee19da76e21a847519588f6a424775a913c9398bbcb582a4523f23e
-SHA512: cd152f7db3ff3b17e945ac0629470ce36d17c82555491b7c137f5d6bde1753b7035f9db14fffab0f534e78682d5116a6b854edea3b913922754abcc8c76616ef
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -35772,6 +35821,20 @@ Description: Command-line tool for sharing terminal over the web
 Homepage: https://tsl0922.github.io/ttyd/
 
 Package: ttyper
+Installed-Size: 1148
+Maintainer: @termux
+Architecture: arm
+Version: 1.5.0
+Filename: pool/main/t/ttyper/ttyper_1.5.0_arm.deb
+Size: 541264
+MD5sum: fd517a3960ca490749f3e1272de24cdf
+SHA1: 8ec413e5c540b01ca78e602a4dc0c326793825c1
+SHA256: 2670f2fc86dc17c3b7fa7894e85af1e55acf7e618dc74074ba00a0a9bbd5b091
+SHA512: 21fb470cfaccb605d03c6956c96175782a0c02258dfda693e531d630a07ae64bf2b826d9b9ab0289bce2b11e8591ce10f61e49e79c21e87f23e92809c040a3d6
+Description: Terminal-based typing test
+Homepage: https://github.com/max-niederman/ttyper
+
+Package: ttyper
 Installed-Size: 1136
 Maintainer: @termux
 Architecture: arm
@@ -36546,24 +36609,6 @@ SHA512: 769ecc46013fa8dd9e9610e37f33801f27742eb42c300fe48bacab650ab300ec73c5f5ae
 Description: C# like language for the GObject system
 Homepage: https://wiki.gnome.org/Projects/Vala
 
-Package: valac
-Installed-Size: 12452
-Maintainer: @termux
-Architecture: arm
-Version: 0.56.16
-Replaces: valac-dev
-Depends: glib
-Recommends: clang, pkg-config
-Breaks: valac-dev
-Filename: pool/main/v/valac/valac_0.56.16_arm.deb
-Size: 1604860
-MD5sum: 51cfd3f4c185e2f479ea493437800be3
-SHA1: d96c4f6a9c3703ca487f2237a6e0c1da937c04e7
-SHA256: ab0124141bf94e87e836e7a3dd52fb7cabfec4baaf1fc7a3a6db2508db50bde9
-SHA512: 9497ef73823c0c4ac75c2c826a5d084f22f53440f7923ce74a34f8f535d309045317ac8264ac3334f0cc54e415e3f423343abef6e0dd6947cec6cc6aa8db0e71
-Description: C# like language for the GObject system
-Homepage: https://wiki.gnome.org/Projects/Vala
-
 Package: valac-static
 Installed-Size: 4396
 Maintainer: @termux
@@ -36576,21 +36621,6 @@ MD5sum: d0befcc75c4e8699af9b5a08a35cbeb7
 SHA1: 243fff5423992f1ebdd8e7636dc48b0cbdbfb69c
 SHA256: 3cd8fc0f27a66e6ab9093a345649a7f385499e0c0a6723fa6bd2d824a61be9a8
 SHA512: 40a003f76bd11fa25bb118ed24fc9cb6b8e9e0881a1156fb0eea22a698798a3971b7a7ff59093b00f801b884498f60a27c03f6619c7109c9f37f88a4821268a3
-Description: Static libraries for valac
-Homepage: https://wiki.gnome.org/Projects/Vala
-
-Package: valac-static
-Installed-Size: 4396
-Maintainer: @termux
-Architecture: arm
-Version: 0.56.16
-Depends: valac (= 0.56.16)
-Filename: pool/main/v/valac-static/valac-static_0.56.16_arm.deb
-Size: 898880
-MD5sum: af616e18a4a61dfc2ac3f70c103db75f
-SHA1: bbc12ca1d2b18291ff709c70dbd988e13f7542a5
-SHA256: f639a295447f07b3a48c8d953cf4b9e18892d76b357d440534917db98bbe8ece
-SHA512: 31b7c5748dfcccafe50896c237c7bbb85f1835ea1f435a4102bf68fb0de5e37d17c42383fc1da764783e8ad7769d8b7370d003cc33f789abde08ad1113a697ec
 Description: Static libraries for valac
 Homepage: https://wiki.gnome.org/Projects/Vala
 
@@ -36609,21 +36639,6 @@ SHA512: 18ff155116e0d2888ebff940cb8af98dd46e28b2ce2fc6a93c1a585741e74fefa15331de
 Description: API documentation generator for vala
 Homepage: https://wiki.gnome.org/Projects/Vala
 
-Package: valadoc
-Installed-Size: 1552
-Maintainer: @termux
-Architecture: arm
-Version: 0.56.16
-Depends: graphviz, valac (= 0.56.16)
-Filename: pool/main/v/valadoc/valadoc_0.56.16_arm.deb
-Size: 308696
-MD5sum: 4523f2dde3bd8cdb27118660cebadd3f
-SHA1: e0d41ee775e1c89063551be9e11d72e092d37d9a
-SHA256: b2314680034b7232f6e9929a3116b70ca45013735f5360d2bbe2b3ea6ef50129
-SHA512: 1d996a2e3fb8675f411bef2892903526b52f29ebcf127398e2df7d7f005964d61ed11e7ac43f6bd9730db3f05d478c5a2cbfe23ac3b17a3ff5ac52ae9edef30c
-Description: API documentation generator for vala
-Homepage: https://wiki.gnome.org/Projects/Vala
-
 Package: valadoc-static
 Installed-Size: 1796
 Maintainer: @termux
@@ -36636,21 +36651,6 @@ MD5sum: 9c4e72b76d5cc4ca5fccd5101c847a75
 SHA1: cb515339d7d5108cb980e888931b68ec3952204a
 SHA256: 6580face5c3ac3e59915e424f9fc34c456702982b790c0ff79cd00c0036b4f0f
 SHA512: 239a9274d02b63b22e2a6468f4eabf8accf77b7342835ca2164bc88dc94f1e3afb121b0ac7e84a3870c6ab7730e18d025a373f6e357dbce42aae2fc4e5b23daf
-Description: Static libraries for valadoc
-Homepage: https://wiki.gnome.org/Projects/Vala
-
-Package: valadoc-static
-Installed-Size: 1796
-Maintainer: @termux
-Architecture: arm
-Version: 0.56.16
-Depends: valadoc, valac (= 0.56.16)
-Filename: pool/main/v/valadoc-static/valadoc-static_0.56.16_arm.deb
-Size: 351216
-MD5sum: a3a27df59bb78bccec0b6ce8cc3454b9
-SHA1: 240ee78962d6806828c5425de4727bdbc0622be1
-SHA256: aa5a3a617dedb5a6a46497f5a29a2393cd837f43ea1f1e4ad3aad131a5708f32
-SHA512: 63d957b3148e2160a6536cf8ce0e8786f9c2b6a467c39d68cce5ec53ede9eec4db84b0ffb5e1061166720faa60346fe14c7c4e259d50a991e38b7b8000e0065e
 Description: Static libraries for valadoc
 Homepage: https://wiki.gnome.org/Projects/Vala
 
@@ -37180,15 +37180,15 @@ Package: vulkan-loader-generic
 Installed-Size: 452
 Maintainer: @termux
 Architecture: arm
-Version: 1.3.282
+Version: 1.3.283
 Provides: vulkan-loader-android
 Conflicts: vulkan-loader-android
-Filename: pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.3.282_arm.deb
-Size: 104368
-MD5sum: 613cfb0c73688fcc110899cf39e25120
-SHA1: e07aadd13df27d05ab077d252d345296b99998d5
-SHA256: 728b327139cb64b041397dfc0167d65cbbb63ab1c84ae7435b2f3d77cc10ef50
-SHA512: 18915682c24c196405c3f935e6765685c121e1a00b689ba69cebc89599b437ea109f1605d8bbac36bd0b87658f23bdc3c188cfb73b08ef1338bc7908b3a737ee
+Filename: pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.3.283_arm.deb
+Size: 104408
+MD5sum: cc13bc41686aa9fbfb98644a49d38263
+SHA1: 23e0e0f550c0a223fc315edb9f6d0eb87418b869
+SHA256: 1af475908e5898d27d9ba711e0297c0c67f864c676b67039907b606121ba6b32
+SHA512: 9e6d7a1de4bf66cdb38007403e66c0f0b211b96b9404609324011e861b7c7ceff032053cb6c8313cf2b7b55710a0ce35d880fc1042d722232a38a3a82220d8c8
 Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
 
@@ -37196,14 +37196,14 @@ Package: vulkan-tools
 Installed-Size: 1640
 Maintainer: @termux
 Architecture: arm
-Version: 1.3.282
+Version: 1.3.283
 Depends: libc++, libx11, libxcb, libwayland, vulkan-loader
-Filename: pool/main/v/vulkan-tools/vulkan-tools_1.3.282_arm.deb
-Size: 305296
-MD5sum: 98482df563ddb6b81b33feafe7db6949
-SHA1: eeb407f36d23f0837648d146b98e88814df91790
-SHA256: bfa8cfad072b3eee5135ed84350841828f6cd652ffef21d26f80518325e5df06
-SHA512: 0b677b24f87310985d4d007e5f7ee4346328399adca54633188bc961a956f230c68a3415942887b02ded33a017ea1910914fc7e1026335a427ccac73410c1e4c
+Filename: pool/main/v/vulkan-tools/vulkan-tools_1.3.283_arm.deb
+Size: 304916
+MD5sum: c319589179244f767a2f25905fd13899
+SHA1: 1e725520a36654d2385d0f668c42c421edc51ba1
+SHA256: 5ab8e16039bcf2faf7c9153f84d80bf70b5548b8095287e9aa9e94d958a56909
+SHA512: 75e49c9ce2bce92fc74d73f0ccc5cbebb3bd6b26c1bf305eb6777b8a981d4b6719ed99316560019f4bea3a6a41efa8d1177738e29b8fb51e750577dee215fe41
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
@@ -37221,19 +37221,20 @@ SHA512: 5d50e3c3ba8d4a9ae7835c59da6c00cca24477abaf0d9957303f69fdf74e161b988b4dfc
 Description: Utility Libraries for Vulkan
 Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
 
-Package: vulkan-utility-libraries
-Installed-Size: 5136
+Package: vulkan-validation-layers
+Installed-Size: 16792
 Maintainer: @termux
 Architecture: arm
-Version: 1.3.282
-Filename: pool/main/v/vulkan-utility-libraries/vulkan-utility-libraries_1.3.282_arm.deb
-Size: 486008
-MD5sum: fcf9922a41e04e7da277501ea48283c4
-SHA1: 0c87b771133e747356fb33155c75d758f8726fef
-SHA256: da33b3fbaf063cc38e03818366d3472fc0b3032fdccafe3d43c38889efd8f4e9
-SHA512: adde24d53e6914b32d51a327b7c8b97785cea531383dea4f85da5cc39b679be961c27b46531829120203b7cd80e5d613b7b21cf8c9e9652e091436a1bdb300c8
-Description: Utility Libraries for Vulkan
-Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
+Version: 1.3.283
+Depends: libc++, vulkan-loader
+Filename: pool/main/v/vulkan-validation-layers/vulkan-validation-layers_1.3.283_arm.deb
+Size: 3946168
+MD5sum: d52ac3198c040fa2dbb9108ac116ab5d
+SHA1: f6594df3fd6ebdd709f1f8c5b30981920c3d5c41
+SHA256: aea1ec53e85c3945fba809be414202b7c1b0d315cefd54d9fbade01f32e7f7cf
+SHA512: 789820d8ab4f6b02cb376e99f668a3a3a654f4240ada1da71e5d987cae5dd858ce6940e8a134b3134b961e5457835e52a7205fa36d498795e43ac7d3acc93bf0
+Description: Vulkan Validation Layers
+Homepage: https://github.com/KhronosGroup/Vulkan-ValidationLayers
 
 Package: vulkan-validation-layers
 Installed-Size: 16780

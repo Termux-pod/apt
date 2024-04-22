@@ -2478,21 +2478,6 @@ SHA512: 83d7e7faecea7dd5caeffef08ef694af64018da99d869702cd8b759fa0aa24d7991b4225
 Description: GTK+ Unicode Character Map
 Homepage: https://wiki.gnome.org/Apps/Gucharmap
 
-Package: gucharmap
-Installed-Size: 5808
-Maintainer: @termux
-Architecture: aarch64
-Version: 15.1.3
-Depends: atk, glib, gtk3, libcairo, pango, pcre2, unicode-data
-Filename: pool/main/g/gucharmap/gucharmap_15.1.3_aarch64.deb
-Size: 1188516
-MD5sum: c1f7d32d697d5f9fe489f0a2fb30763a
-SHA1: bfc9b0a7ac2dbc9e765ee53ea86dbe26e7c20f48
-SHA256: 409b2832d2a9588d9e48ca445e5ed231cf560d102fe8f9cb15212581d23ea410
-SHA512: 5f6e24beefb4a95257b5182878537a315bc6bbb33b3e1e562d4743e3ddd0be9fd6a7d9f18e95def1f1f9e09e8bd32af4554e76eb503a7ccb31d393d26448cc4e
-Description: GTK+ Unicode Character Map
-Homepage: https://wiki.gnome.org/Apps/Gucharmap
-
 Package: gvfs
 Installed-Size: 1460
 Maintainer: @termux
@@ -8005,6 +7990,21 @@ Description: A VNC server for wlroots based Wayland compositors
 Homepage: https://github.com/any1/wayvnc
 
 Package: webkit2gtk-4.1
+Installed-Size: 97732
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.42.4-1
+Depends: atk, enchant, fontconfig, freetype, glib, gst-plugins-bad, gst-plugins-base, gst-plugins-good, gstreamer, gtk3, harfbuzz, harfbuzz-icu, libc++, libcairo, libgcrypt, libhyphen, libicu, libjpeg-turbo, libpng, libsoup3, libtasn1, libwebp, libxml2, libx11, libxcomposite, libxdamage, libxslt, libxt, littlecms, openjpeg, pango, woff2, zlib
+Filename: pool/main/w/webkit2gtk-4.1/webkit2gtk-4.1_2.42.4-1_aarch64.deb
+Size: 20913736
+MD5sum: f8ce33b648269033c3b7401ecf6a0829
+SHA1: 229e041a8aec2330ff9d56cb7bc6caed55b0f091
+SHA256: 69fd0fa005f4992cd3456947efbd0c88a930e96cc456f5e7ce28032e50d8c09e
+SHA512: e3a440fff58c7499659e590d6dda3a7f0965dc0f8f055757aae998c33dc4b2120308751f011fba547125be9dcb82952a4b87cdc23f41e55dee327f962474b615
+Description: A full-featured port of the WebKit rendering engine
+Homepage: https://webkitgtk.org
+
+Package: webkit2gtk-4.1
 Installed-Size: 97736
 Maintainer: @termux
 Architecture: aarch64
@@ -8023,6 +8023,22 @@ Package: webkit2gtk-driver
 Installed-Size: 1716
 Maintainer: @termux
 Architecture: aarch64
+Version: 2.42.4-1
+Depends: webkit2gtk-4.1 (= 2.42.4-1)
+Conflicts: webkit2gtk (<< 2.38.0)
+Filename: pool/main/w/webkit2gtk-driver/webkit2gtk-driver_2.42.4-1_aarch64.deb
+Size: 448588
+MD5sum: befad2aff9b94631c6f62f0dfd4afb95
+SHA1: b961d7e860638a1c891a757fb71f35e1c181caa6
+SHA256: 329e547de8d157ad92a8649e4e1c9223bb78ff26786189827d1490ab06d198d7
+SHA512: 469017b1b526588403b12a905aa43d6f4bbd72c99eaad6902f408137641e0ee81621ee0ba5703eee91c985ae01ecfabe6959cbf2b995931a3d118fe752922e70
+Description: WebKitGTK+ WebDriver
+Homepage: https://webkitgtk.org
+
+Package: webkit2gtk-driver
+Installed-Size: 1716
+Maintainer: @termux
+Architecture: aarch64
 Version: 2.42.4
 Depends: webkit2gtk-4.1 (= 2.42.4)
 Conflicts: webkit2gtk (<< 2.38.0)
@@ -8033,6 +8049,21 @@ SHA1: db667a72b880514240c95e3bebf9ac3afeb51cc0
 SHA256: 651d3948ff538a42b02228fe0a6c900c4c2f56861412019c6e9710a1137bd8c1
 SHA512: 42cf6066cce8a1378afa962a73709e08a476c8b8b4fc71b18874135b8c587fc145d269c5df61d5a7f3e05aedbff531637cae4794b399721851cd0f95f4fa5414
 Description: WebKitGTK+ WebDriver
+Homepage: https://webkitgtk.org
+
+Package: webkitgtk-6.0
+Installed-Size: 92664
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.42.4
+Depends: enchant, fontconfig, freetype, glib, gst-plugins-bad, gst-plugins-base, gst-plugins-good, gstreamer, gtk4, harfbuzz, harfbuzz-icu, libc++, libcairo, libgcrypt, libhyphen, libicu, libjpeg-turbo, libpng, libsoup3, libtasn1, libwebp, libxml2, libx11, libxcomposite, libxdamage, libxslt, libxt, littlecms, openjpeg, pango, woff2, zlib
+Filename: pool/main/w/webkitgtk-6.0/webkitgtk-6.0_2.42.4_aarch64.deb
+Size: 20512752
+MD5sum: 59f3db58959158672131c63cab7060e0
+SHA1: ecf90e630f30da1cd4787765149661afaee830de
+SHA256: efeea6cef76a1acabf413c268d910ee47bb2694521df389548bf602809ed2df3
+SHA512: 8fb1ed73a9ee69d4dff546dbda4048dc940e55c3616f6299d05c30d32027284db55670eb645b9f8dd7ae8b35d874094610a5f24dc0307554c41492aa383bffac
+Description: A full-featured port of the WebKit rendering engine
 Homepage: https://webkitgtk.org
 
 Package: webkitgtk-6.0

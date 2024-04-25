@@ -6707,20 +6707,6 @@ SHA512: 77226eadf8855903ccdbb7883effe23c810a6f0e5119a8550ffb299dbb648412331ef388
 Description: Command line tools for fly.io services
 Homepage: https://fly.io
 
-Package: flyctl
-Installed-Size: 58320
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Architecture: x86_64
-Version: 0.2.41
-Filename: pool/main/f/flyctl/flyctl_0.2.41_x86_64.deb
-Size: 13557512
-MD5sum: ffcd0bc6718f8285311f05fb0badda5a
-SHA1: 680f79cb6e291719e55ebc065cbdcc6b63a10002
-SHA256: 960708014ab3d1b0eaa175fd4b2367e208a3d1ca82e4bc6c41cb21ae8e5fda18
-SHA512: 91835f04dbfc838a300b1cc0e731b4d28f66a245148811ff8d4d3944ddf9a17e24530e5d9122d852f07234ecd64ad0d393e12417dcee96615004eb2d55595ca9
-Description: Command line tools for fly.io services
-Homepage: https://fly.io
-
 Package: fm
 Installed-Size: 13536
 Maintainer: @termux
@@ -6947,6 +6933,23 @@ Description: Minimalistic plugin API for video effects
 Homepage: https://www.dyne.org/software/frei0r/
 
 Package: fribidi
+Installed-Size: 436
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.0.14
+Replaces: fribidi-dev
+Depends: glib
+Breaks: fribidi-dev
+Filename: pool/main/f/fribidi/fribidi_1.0.14_x86_64.deb
+Size: 65080
+MD5sum: 24e46e33aa78ce9034d0d3591bdca138
+SHA1: 956fe1096cf684d798d59e0e073c47dd5a594e0e
+SHA256: 1596ad981a5cdfbcf21d5d423836d68bb0c2527282ded089b52ba2a550cb05a6
+SHA512: 712cbfdcc94012ad4b6005dad2bf0d1ecabb31ebc9e993ba80c0e268fe58f500ed3bda41ad9c9e2bf58353279f4588b84345992d5a55c17f764ab8b097040dde
+Description: Implementation of the Unicode Bidirectional Algorithm
+Homepage: https://github.com/fribidi/fribidi/
+
+Package: fribidi
 Installed-Size: 444
 Maintainer: @termux
 Architecture: x86_64
@@ -6961,6 +6964,21 @@ SHA1: 746ec6eb3323458857d856e6c1dec474f60a153b
 SHA256: 559cf0eb19f30ed5a7eb9608eb3f372254a60dd3f31715b13f17ba24edd98b35
 SHA512: 26cb3439886afa0e5472e05f17d66c0ced96ddf260ec84ef6de01bf2a85c20586f2dab92d2191477ea819d04a134bc7190bf26fec652f04542330d78743205bd
 Description: Implementation of the Unicode Bidirectional Algorithm
+Homepage: https://github.com/fribidi/fribidi/
+
+Package: fribidi-static
+Installed-Size: 168
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.0.14
+Depends: fribidi (= 1.0.14)
+Filename: pool/main/f/fribidi-static/fribidi-static_1.0.14_x86_64.deb
+Size: 19892
+MD5sum: de3b57e9f64bdafd019567b0b6a9d650
+SHA1: d23376c5ff71558d3d17f4f8d925017bc79f8478
+SHA256: 645a5436a907386825344e2f66039b5ccc86a1132282262e5917e71dc1b26daf
+SHA512: c5ec138eb8896f902ace6adaf8cbfa9adc628126d57a329846dcbd6a5d5fe85f64418dcb220439b579c6c4ecb033cde00f70018cc5a1c9e05ff4c5681f0a7bd2
+Description: Static libraries for fribidi
 Homepage: https://github.com/fribidi/fribidi/
 
 Package: fribidi-static
@@ -8090,6 +8108,20 @@ SHA256: ac9d549100fe8702a68cfb820197ef496f884d303dd1868b0947a5e6f9956c96
 SHA512: d3b1aee01e552ae4b79b295c7fd30a0ab0e4acdf46483850b3ada36912a0860d407ca4cc40360160d23f17e2525d4b366fb6c529cb46411262e98038216407f8
 Description: Simple, Portable, Free File Transfer Software for UNIX
 Homepage: http://www.columbia.edu/kermit/gkermit.html
+
+Package: glab-cli
+Installed-Size: 31384
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.40.0
+Filename: pool/main/g/glab-cli/glab-cli_1.40.0_x86_64.deb
+Size: 7136448
+MD5sum: 5befe7af6428ddd5efca3d6ac0dda5e7
+SHA1: 12d449857b57a94c9e21ce0836c5b485968d1560
+SHA256: 1da2d41e1c3fd87a10fef60d48b48fee1be8d8ddea12c6a39cffc056699c93d1
+SHA512: d001f0ef899a4ddaa6e4b9931d94af06eab4e91348686d13ef0496add45910a8940144bbb2928144381af73ca8ca7f2be66e32bb46c10a8d488045cb48e90623
+Description: A GitLab CLI tool bringing GitLab to your command line
+Homepage: https://gitlab.com/gitlab-org/cli
 
 Package: glab-cli
 Installed-Size: 31352
@@ -24567,24 +24599,6 @@ SHA512: b341a1687722bc99d6604221a5efa5ad42dc8e7e32b8ed0bbf6495bc5dc3374c72413c7b
 Description: An open-source implementation of the OpenGL specification
 Homepage: https://www.mesa3d.org
 
-Package: mesa
-Installed-Size: 15284
-Maintainer: @termux
-Architecture: x86_64
-Version: 24.0.5
-Replaces: libmesa
-Depends: libandroid-shmem, libc++, libdrm, libglvnd, libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
-Suggests: mesa-dev
-Conflicts: libmesa, ndk-sysroot (<= 25b)
-Filename: pool/main/m/mesa/mesa_24.0.5_x86_64.deb
-Size: 3501268
-MD5sum: a7b500a698e9516053ab480c32aa4fca
-SHA1: 914d4a277453358def65fe34f4cce64d6a1b1592
-SHA256: a0258b408f132c5be55b07d9e66e81320b098c243cd0f0b061683f39a703345d
-SHA512: 9c6082fa623d8171b777ff6f8e4bd75886b670f4179e33810cdb474f3d055634cfa010c917f148449bc01cec22d9439cf883f76432d208603c91511cd81243f0
-Description: An open-source implementation of the OpenGL specification
-Homepage: https://www.mesa3d.org
-
 Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
@@ -24602,23 +24616,6 @@ SHA512: 1e2980475131b80227dd5887f61bc236ddaf6efaade266e679e54aa4c1ce4caa6f88e438
 Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
-Package: mesa-dev
-Installed-Size: 164
-Maintainer: @termux
-Architecture: all
-Version: 24.0.5
-Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Depends: libglvnd-dev
-Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Filename: pool/main/m/mesa-dev/mesa-dev_24.0.5_all.deb
-Size: 25244
-MD5sum: c599d707dbf129aedff098a3f75e7d18
-SHA1: 4949e63419f6316921c23195b1324f9222701ee4
-SHA256: 8c79fd7dd375145207a971fbc300669db63a2066b7bc6dcd066b7b3243db1989
-SHA512: db6bee69a11567591fc9dd22a1f1bd2b68e41ac3e632cbb68b55f5beb07a9185893e913b5cabd110ef04bd2bd4ba80d60403f30616e8241479f76d2f202c5c04
-Description: Mesa's OpenGL headers
-Homepage: https://www.mesa3d.org
-
 Package: mesa-vulkan-icd-swrast
 Installed-Size: 8124
 Maintainer: @termux
@@ -24631,21 +24628,6 @@ MD5sum: 821883d55743d7e32c68ce7e60bab3cc
 SHA1: 4e8dfe9962da23657126cfc96a3615834b1c1fda
 SHA256: b6b38e3087e16740b1208cc7bf8f1fc49723975f74f48d8d893e248c3a460557
 SHA512: 39f9fc2ef6ce4d290909ff0a0340d0991bd211b872bb4cb7ee5b56e957a046abc6db132f9b0afbd47486e41183db998055aeffcfd55ca0f83e04c54e2206aeed
-Description: Mesa's Swrast Vulkan ICD
-Homepage: https://www.mesa3d.org
-
-Package: mesa-vulkan-icd-swrast
-Installed-Size: 8124
-Maintainer: @termux
-Architecture: x86_64
-Version: 24.0.5
-Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
-Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_24.0.5_x86_64.deb
-Size: 1621592
-MD5sum: 690c02648fe3ad7686afc1aa08baa2a2
-SHA1: 8af229d47c31a4f12b1d2c00716885251d3d133a
-SHA256: 728a9e77550b28b89231a6ca6b45a2840a43800ca4cddf57bf00b061a3e421c4
-SHA512: 9ad4b5df345d94d6a61fa64e681959221c35a012b36ee5b94bc4c545e223c30da3fe3f1d3c3a5e58149505bfac55a7890bc76873ee8628bafa5d8a20f03d22ed
 Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -27803,23 +27785,6 @@ SHA512: 3fdadab6a2252018ae5e10f5d13bd1707da022e03db4192e48f63691c53a8531dbb90d6f
 Description: Mesa Off-screen Rendering Library
 Homepage: https://www.mesa3d.org
 
-Package: osmesa
-Installed-Size: 12068
-Maintainer: @termux
-Architecture: x86_64
-Version: 24.0.5
-Replaces: mesa (<< 22.3.1)
-Depends: mesa (= 24.0.5)
-Breaks: mesa (<< 22.3.1)
-Filename: pool/main/o/osmesa/osmesa_24.0.5_x86_64.deb
-Size: 2740272
-MD5sum: 6feb5b870a23423484ed965b43701f46
-SHA1: 6e05da9da01b3edca3b46af4345465728835feff
-SHA256: f15d803a2b06a8e5f3d16f8e0b42f563b719cbe9877b1bda37e38e2b24f789ac
-SHA512: 79e533a9cfc67d6777f3e4eb792c0a4593d7fe74e41ee3825bfa231bd1b47d060897ce697e19caf7a6c9a246133811fe40626f6eb348b28f2ea57a1be83afee3
-Description: Mesa Off-screen Rendering Library
-Homepage: https://www.mesa3d.org
-
 Package: osmium-tool
 Installed-Size: 1940
 Maintainer: @termux
@@ -28479,20 +28444,6 @@ MD5sum: 3753306f35cb842f81cb2050f8dd6121
 SHA1: 592836ecca1332c71a1f6460bd322e7aa27579ac
 SHA256: 87f2664052f8f868b0f4b6741c1677b2bf4d6f99016f7ae6c0f0653590c02dda
 SHA512: 9578a82fa97afc9e4e384b0fb6f797f320b48518ffb1af2edd1c4e87f844c31f6f0b75fda8cb41fba4bcaee40c536cdcba5bd05aa73d4c0df974c4445e84a03b
-Description: A PDF processor written in Go
-Homepage: https://pdfcpu.io
-
-Package: pdfcpu
-Installed-Size: 11372
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.7.0
-Filename: pool/main/p/pdfcpu/pdfcpu_0.7.0_x86_64.deb
-Size: 3350752
-MD5sum: affe47e1e67c368d919dfdef783302af
-SHA1: 76febb54eb7b06503bc811d47f1c8d2163dc0250
-SHA256: af631659caeb770e3caed1e682602e749b0bbc3020e66c7df8781d9502412407
-SHA512: 2b276b2e759239a23ed13167bbff7c8b1a6fabfc7e95f6ca2c8174921abdbde410056fb469127032bf5eafad556281c6499a353bdd189a40ceb9baa036c5c05c
 Description: A PDF processor written in Go
 Homepage: https://pdfcpu.io
 
@@ -33678,20 +33629,6 @@ SHA512: c098084115091898b99f10890d0dbecc890828c3286176aeedfd21855e2b510603713a17
 Description: Command line interface to test internet speed using speedtest.net
 Homepage: https://github.com/showwin/speedtest-go/
 
-Package: speedtest-go
-Installed-Size: 7864
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.6.10
-Filename: pool/main/s/speedtest-go/speedtest-go_1.6.10_x86_64.deb
-Size: 2397292
-MD5sum: 25c3c8d85e92f71514333e7cd5d98a3b
-SHA1: c5f5559bad039f5684d211d714a2809baf6316dc
-SHA256: 439b9940bead851fbe75a0bcebd2770050dc72997b04798d5480454842359a0d
-SHA512: f955e19e7b3405613dba9e63e1396baf83e0bb5b7b17fa096a6b97fd397f42b2b553dc960e13e8548f2fdef4cb3ccb8ea3a70f1f3ef39df9437b18316a8f1de8
-Description: Command line interface to test internet speed using speedtest.net
-Homepage: https://github.com/showwin/speedtest-go/
-
 Package: speex-utils
 Installed-Size: 96
 Maintainer: @termux
@@ -35163,20 +35100,6 @@ SHA512: a5b9808e01ec187a7d035b60f58e6dfe76e4662ff36fff7473575cf5e5c130def5c8ad25
 Description: Secure Access for Developers that doesn't get in the way
 Homepage: https://github.com/gravitational/teleport
 
-Package: teleport-tsh
-Installed-Size: 123864
-Maintainer: @termux
-Architecture: x86_64
-Version: 15.2.2
-Filename: pool/main/t/teleport-tsh/teleport-tsh_15.2.2_x86_64.deb
-Size: 21922044
-MD5sum: dd9163077dcc968c6d558fc3871ab7c3
-SHA1: 3b9f3f6ca52dec0f6151e8addd5dcd07d08ad28b
-SHA256: 44caaaab51c3e15030dc4be56aac769c7bde24a7d257feadbebf2079a3b8847a
-SHA512: 38215beaec73cc387bacaa5561a7c3d593099d229653488c8216222e28d79f0b4bd5224aaafd5333288d91b39828db8e8b4ff50647bf983982acd55238b2f772
-Description: Secure Access for Developers that doesn't get in the way
-Homepage: https://github.com/gravitational/teleport
-
 Package: tenki-php
 Installed-Size: 232
 Maintainer: @termux
@@ -36575,6 +36498,21 @@ SHA256: 6dfd12ea59c50b3f59908c972c5fe214435b2eabaa2040c22a022ad2175ad40b
 SHA512: 01e4da679a0c5870634bc2d33ac4c8659c142e1ef8b04b06accb14bc592968de5084055e1821ca2e5b7feef28c7efebfbdb16b101286000a58dce0f9940e45a4
 Description: Linux tools for UDF filesystems and DVD/CD-R(W) drives
 Homepage: https://github.com/pali/udftools
+
+Package: uftrace
+Installed-Size: 1856
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.16
+Depends: capstone, libandroid-execinfo, libandroid-glob, libandroid-spawn, libc++, libdw, libelf, libluajit, ncurses, python
+Filename: pool/main/u/uftrace/uftrace_0.16_x86_64.deb
+Size: 411112
+MD5sum: e40b1cc26860fe06bd328e51a1db0909
+SHA1: 594f9e305bd2ec6482d32964b57e3e212d07f8ec
+SHA256: d85a7722fab51a7c83a5ad69946ed591235f4051e1c4f267e8d85230a5543a22
+SHA512: e96d053682efd4450058f3e51d7fb77551f7b90dc6a7391ad8b32c27b2d66fc4bf4bba3ea7c3bc859599e357804e5ef3ac4f49030ddc24159522881c224491c7
+Description: Function (graph) tracer for user-space
+Homepage: https://uftrace.github.io/slide
 
 Package: uftrace
 Installed-Size: 1836

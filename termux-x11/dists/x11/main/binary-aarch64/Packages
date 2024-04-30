@@ -997,22 +997,6 @@ SHA512: b68315b8c564d9d294e48c1a6a32caf570fbda307d341503f09c532163ee999da1a9a12f
 Description: document viewer for multiple document formats
 Homepage: https://wiki.gnome.org/Apps/Evince
 
-Package: evince
-Installed-Size: 3220
-Maintainer: @termux
-Architecture: aarch64
-Version: 46.0
-Depends: atk, djvulibre, gdk-pixbuf, glib, gnome-desktop3, gst-plugins-base, gst-plugins-good, gstreamer, gtk3, libarchive, libcairo, libgxps, libhandy, libsecret, libspectre, libtiff, libxml2, pango, poppler, poppler-data, texlive-bin
-Recommends: evince-help
-Filename: pool/main/e/evince/evince_46.0_aarch64.deb
-Size: 499216
-MD5sum: bbef77bc6cd4cdcc478a98b5a963e668
-SHA1: 2582cc5dbe2eb47b4781b0109fc228707f4bb506
-SHA256: 2767eef210df48be74c887b3cf1e39dc5e1cbbd5b9117f791aba4eb8f54c3bb7
-SHA512: c74ecd309218ab105ced767ef2271075f03ec04bbf3487c6ca26033683876f962d312b4e3c93b8b56d74147370d6b3ac2b3115ad9bf306872ca2eeee98e2dcd6
-Description: document viewer for multiple document formats
-Homepage: https://wiki.gnome.org/Apps/Evince
-
 Package: evince-help
 Installed-Size: 11568
 Maintainer: @termux
@@ -1027,23 +1011,6 @@ MD5sum: 9b545edea9cefb3fc3a473e9e845dc73
 SHA1: 0d50cae49d68340b352e81b2a7a80f9209b5a3c5
 SHA256: fd52ef27c28a37a887994c9d1097e012b9866fe03a95a781f06a29daa3411af4
 SHA512: 162814c979d69f1acc3c37c0187a37f9a8c9961fa83c9e181d78afe1ec98f0127230e4aaf630a9f42415f96795017f86f98004e4307d8b3917c67b28ecaeca66
-Description: Evince help files
-Homepage: https://wiki.gnome.org/Apps/Evince
-
-Package: evince-help
-Installed-Size: 11552
-Maintainer: @termux
-Architecture: all
-Version: 46.0
-Replaces: evince (<< 44.3)
-Depends: evince (= 46.0)
-Breaks: evince (<< 44.3)
-Filename: pool/main/e/evince-help/evince-help_46.0_all.deb
-Size: 460200
-MD5sum: c3368709720f29e136acbb79c96cc8b7
-SHA1: 9a8a03e441ca79db65bf996c39ccba9544bd2a1b
-SHA256: f63c61950d1e3411e87d91211b3dc3ec7d027c8d4669ab3ad5d125eb7cfd01db
-SHA512: b57e742b48baa3f080e248bce01c9e98d8b56784413ce348c6bd0a7b226b9f6c7e029881143ce218c010501930888413a52514c51dedfb47344652a002a1ce39
 Description: Evince help files
 Homepage: https://wiki.gnome.org/Apps/Evince
 
@@ -5556,6 +5523,36 @@ SHA512: 15abd413a78585988655bbf3b20b1b79820cf130603a0e10a201eee7b6ef1891d44d869f
 Description: Static libraries for openbox
 Homepage: http://openbox.org
 
+Package: opencv
+Installed-Size: 60752
+Maintainer: @termux
+Architecture: aarch64
+Version: 4.9.0-1
+Depends: abseil-cpp, ffmpeg, libc++, libjpeg-turbo, libopenblas, libpng, libtiff, libwebp, openjpeg, openjpeg-tools, qt5-qtbase, zlib
+Filename: pool/main/o/opencv/opencv_4.9.0-1_aarch64.deb
+Size: 13159760
+MD5sum: 540acf99818bf3b61080243cd58f2c37
+SHA1: 66bcff41801d85eb4f7d26733474bb4478445460
+SHA256: 554c1d022226f1b6eb05e769e5be77ccf0a03a7037bf7ec223bde9958f7a5f17
+SHA512: d22b3ff4390b451a7d2d35f46038cad25b5bb84573c59cbce698ac220995ea02aa6a9311cfb7cddda553d1cff7f42feb9f8a36ec621d2c60501fbfdd1c79c37a
+Description: Open Source Computer Vision Library
+Homepage: https://opencv.org/
+
+Package: opencv-python
+Installed-Size: 10080
+Maintainer: @termux
+Architecture: aarch64
+Version: 4.9.0-1
+Depends: python, python-numpy, opencv (= 4.9.0-1)
+Filename: pool/main/o/opencv-python/opencv-python_4.9.0-1_aarch64.deb
+Size: 1613056
+MD5sum: 4837192bb020660939a7a95455ece3ca
+SHA1: 076718a54f8d50b8c2beea0e40f93fc04d070ec4
+SHA256: 80bec5d56b3ed4dcc51ced56148e9778e32bca6040e1751e3b04aa0c8a7de7c3
+SHA512: d646c11df8ddf6771bdee1996b34c9f1d1b7b0a239db56d57f22c7742c8b97e4839c48d2619ae426626a09a2febbdb2932513662b4b81aeddec47b13a0d24ff8
+Description: Python bindings for OpenCV
+Homepage: https://opencv.org/
+
 Package: opensubdiv
 Installed-Size: 4208
 Maintainer: @termux
@@ -6099,6 +6096,66 @@ SHA256: 367d25b3f4b2b601d7d03ef1fbf9e1de32e62f0201018b98b327507aea2549d2
 SHA512: 714dbdc6b70adabcaa510244cedbd3519539c4ee4715a7cecd824f02e314bea458705dd156103c9987c99761e4cba7e05da1b7d472390d840c27a91554f8d912
 Description: Python bindings for QScintilla
 Homepage: https://www.riverbankcomputing.com/software/qscintilla/
+
+Package: python-torch
+Installed-Size: 247984
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.1.2-2
+Depends: ffmpeg, libc++, libopenblas, libprotobuf, libzmq, opencv, python, python-numpy, python-pip, fmt
+Filename: pool/main/p/python-torch/python-torch_2.1.2-2_aarch64.deb
+Size: 35240232
+MD5sum: 94d8dbe5d305a1cd6e21ba7cc50c85d5
+SHA1: 6b7fab3ff850bae7f3e100c4894333f4bed3f1dc
+SHA256: 60b9633824add5cdc3e9bb82878c8b99a56a12def34a6622538fc660663739ea
+SHA512: e9f73fbc7812e5f884ce9c5028cccf673a20bb9d5c12b57c4f52ae87adf8d3e2fe6c18394b67897fdb38e2162bd6a2b5f775494ce38622f41026db281dc38db0
+Description: Tensors and Dynamic neural networks in Python
+Homepage: https://pytorch.org/
+
+Package: python-torch-static
+Installed-Size: 7680
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.1.2-2
+Depends: python-torch (= 2.1.2-2)
+Filename: pool/main/p/python-torch-static/python-torch-static_2.1.2-2_aarch64.deb
+Size: 1056276
+MD5sum: 80bd3fe12a04e5c20953734ccaccaed6
+SHA1: 798b7fdf9eaa46340de81330b218452979d1319c
+SHA256: 63e539d1aa8842929da68f55679fcc1f2f0573203e8ebc26671bf4c84f1506ed
+SHA512: 440beccaf3cd37699dc5f897019014bb803ff4e4bf7147c0014fd629bcfd7a977fc951a60e8694be5f4993bf196102f86e81932e3c3bc7088466e05d647aea18
+Description: Static libraries for python-torch
+Homepage: https://pytorch.org/
+
+Package: python-torchaudio
+Installed-Size: 9300
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.0.1-2
+Depends: libc++, python, python-pip, python-torch
+Filename: pool/main/p/python-torchaudio/python-torchaudio_2.0.1-2_aarch64.deb
+Size: 1723400
+MD5sum: 80644bfbb30072019ed1162021c497bd
+SHA1: c8c20b16829b8925b9c533c10cee24938867dbf9
+SHA256: ad529311c5078b970a5186ddb2db067abf54546cea8880072446728b3193b9ff
+SHA512: 0216c09a49203de6a06514c0202cfa8c5a835638ea94011619588f2fc36127f9d66365be6de94cf5f89451c4ea49fb6214dcb6e2f2f6246fab23e29dd2962159
+Description: Data manipulation and transformation for audio signal processing, powered by PyTorch
+Homepage: https://github.com/pytorch/audio
+
+Package: python-torchvision
+Installed-Size: 6700
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.15.1-2
+Depends: libc++, python, python-numpy, python-pillow, python-pip, python-torch, libjpeg-turbo, libpng, zlib
+Filename: pool/main/p/python-torchvision/python-torchvision_0.15.1-2_aarch64.deb
+Size: 1033664
+MD5sum: cf883f2bc3b2c1f18645463f2f121670
+SHA1: a4865618f9260be64c3321594e287ab52ccabd01
+SHA256: 9c55cf3535e44c0c0e1cb9b88d5704170271c7326392b406e95ff09899c88e98
+SHA512: 0d89947f8c617a9654c164fdf02065c05279256d502599f1a0493707e251ae80636e0ee0b3a4e6749a4af9aa2d36b576fb1ac536bc1787639afe1f88ab021262
+Description: Datasets, Transforms and Models specific to Computer Vision
+Homepage: https://github.com/pytorch/vision
 
 Package: qb64
 Installed-Size: 72060

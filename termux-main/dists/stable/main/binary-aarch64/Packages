@@ -497,6 +497,21 @@ Description: A periodic command scheduler
 Homepage: http://anacron.sourceforge.net/
 
 Package: android-tools
+Installed-Size: 12416
+Maintainer: @termux
+Architecture: aarch64
+Version: 35.0.1
+Depends: abseil-cpp, brotli, libc++, liblz4, libprotobuf, libusb, pcre2, zlib, zstd
+Filename: pool/main/a/android-tools/android-tools_35.0.1_aarch64.deb
+Size: 1946564
+MD5sum: 6892bcab0955708bf1b34c5d8b6b93af
+SHA1: ff01a887c666bfeedcce5a5d183a0bf93c117e46
+SHA256: 9b3e579f0e3bcf50bfaaa1373c8e08b792f174b94910c73394f6f0eb20ea4d11
+SHA512: ab3cef1048cd2ab019e5568c68d3324ae51ed9d52a84fc26c34cdccea28460be389ef25be3e706ccaca0943c124e746b368c11a0ef98516ee281976fd4587b91
+Description: Android platform tools
+Homepage: https://developer.android.com/
+
+Package: android-tools
 Installed-Size: 11660
 Maintainer: @termux
 Architecture: aarch64
@@ -1628,21 +1643,6 @@ MD5sum: 59ab472347dda4d501289d1946d1cf7c
 SHA1: 60beac1bbbf7382eeb698048955a14af3079d17f
 SHA256: 940a7b6b26a9e6d05c0f6281ca9695afdae818d469ec595d749bc576332c5009
 SHA512: 1e1a0cb3af097336d5855fc67f12165798ae5e11e65d0caf1689e04aac59fed2aea033be831041d259d46954b7f5311886a15d3de1d071defb4d5c6c7e47d1da
-Description: Programmable completion for the bash shell
-Homepage: https://github.com/scop/bash-completion
-
-Package: bash-completion
-Installed-Size: 2564
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: all
-Version: 2.13.0
-Depends: bash
-Filename: pool/main/b/bash-completion/bash-completion_2.13.0_all.deb
-Size: 182284
-MD5sum: 38798fc84587dab20572c305c217b0d5
-SHA1: e44a0f3033398d71a88ee99df8a54d2ac883fbf1
-SHA256: 8c512c06ee7865794a8b8a7b55937bad0b13c954a48db592d172e94e0ed4a079
-SHA512: 83d79208c8baf1fc4bf5ef99ad0176e3cfbfc4d9d201dca4b4b92b72ed1dbb35f02612bcd66799fe37f28c5681d31c3e05e81b26f2566405eaf11ea5e7403dd0
 Description: Programmable completion for the bash shell
 Homepage: https://github.com/scop/bash-completion
 
@@ -3990,6 +3990,24 @@ Package: cronie
 Installed-Size: 288
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.7.2
+Depends: dash
+Recommends: nano
+Suggests: termux-services
+Conflicts: busybox (<< 1.31.1-11)
+Filename: pool/main/c/cronie/cronie_1.7.2_aarch64.deb
+Size: 58152
+MD5sum: e6779ead7b5c2fb3d5b9aa16bd7fa516
+SHA1: 2f2ff680b6ba5fb060651adb9b4d59640d02a26b
+SHA256: 741153a274da273accdd289785ef7e852ca0deb982983449b632127afa33efd0
+SHA512: 37b88841d88eadc54cf81501fe861d79090ca4c9b685366e2a9191a253a88ec6ef3d5947564ae8a9bf33ec3290aed5988932c9779ee8342676be9c79b8638836
+Description: Daemon that runs specified programs at scheduled times and related tools
+Homepage: https://github.com/cronie-crond/cronie/
+
+Package: cronie
+Installed-Size: 288
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.7.1
 Depends: dash
 Recommends: nano
@@ -6006,20 +6024,6 @@ SHA512: 0db8a179246ea7cc8df1bf792e1697f5ca7f87ae89de4ec7cfe1b2d78a68c5f346ba1d8d
 Description: A Go based command line tool for exercism.io
 Homepage: https://github.com/exercism/cli/
 
-Package: exercism
-Installed-Size: 10008
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.3.0
-Filename: pool/main/e/exercism/exercism_3.3.0_aarch64.deb
-Size: 2833076
-MD5sum: dc98be8da5cfd2a3645b0440e1719e17
-SHA1: b8f9f96db76e4a8956c54491c2b44c2a98d9c728
-SHA256: d7283dcdd08e608e6133dc670b2b0667567999029ba71eecd3eaf3051628ad51
-SHA512: 0f5849a17ed4e723f9f287640cd2317a96986a9861477b0b3bc5d553b42b40997d5371a8a29c7aea98f6b5bf8db6cf4303cdbc3706e737e6b5b2393a0d886bd3
-Description: A Go based command line tool for exercism.io
-Homepage: https://github.com/exercism/cli/
-
 Package: exhale
 Installed-Size: 360
 Maintainer: @DLC01
@@ -6098,6 +6102,23 @@ SHA256: 3b247b8c035869425d937fd3d2957dedfd10c1fa7289c3e0ea73d2d7fe04c8bb
 SHA512: 164f7aaa3e25656f0c8bb7c800af1eb193fe9680b3d2ee5d6b6cd78eecb07de5cce74a7c1397def9b5a3eff9430643c9a86936642b22a957619d80e1484c8ad4
 Description: Tool for automating interactive terminal applications
 Homepage: https://core.tcl.tk/expect/index
+
+Package: eza
+Installed-Size: 1048
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: aarch64
+Version: 0.18.15
+Replaces: exa
+Depends: libgit2
+Breaks: exa
+Filename: pool/main/e/eza/eza_0.18.15_aarch64.deb
+Size: 363628
+MD5sum: 22d0599e3442febcc9cdd149b427bbdc
+SHA1: bac0150c7ded0b76a4611fa8e7f42f984ad5e846
+SHA256: c0dd64239d28da8ff0f829ac4102d435c3068296d55fc36735e56897b273fad5
+SHA512: bbcbf549494e3adf8f8b23e054fcde6a433ee27ca49f404ae94f592df47e71282893eb157d904bb5775d07b5cc314976619c3d94731190a9245d7865d03a1c58
+Description: A modern replacement for ls
+Homepage: https://github.com/eza-community/eza
 
 Package: eza
 Installed-Size: 1048
@@ -7281,6 +7302,23 @@ Description: A collection of video game music file emulators
 Homepage: https://bitbucket.org/mpyne/game-music-emu/wiki/Home
 
 Package: gap
+Installed-Size: 92104
+Maintainer: @termux
+Architecture: aarch64
+Version: 4.13.0
+Replaces: gap-dev
+Depends: readline, libgmp, zlib, gap-packages
+Breaks: gap-dev
+Filename: pool/main/g/gap/gap_4.13.0_aarch64.deb
+Size: 22749784
+MD5sum: c9e5a26a41b5284390afe36c72fa8c6f
+SHA1: ff5dbd58daf7de823427325a4c4d4f68e8b7ca0b
+SHA256: 3d017ed3fc6622d22c7fafb5b148245e30fd2cabca603e1ba6e9c292403af58a
+SHA512: 4cf74b7036a3f7b9cf6866055f64dff080683f91fbb9552c47910e53ef271bed7dc81ce128f60c17b23680f8150ee0a10546efb67c10d719606aecf73f0c9ceb
+Description: GAP is a system for computational discrete algebra, with particular emphasis on Computational Group Theory
+Homepage: https://www.gap-system.org/
+
+Package: gap
 Installed-Size: 92664
 Maintainer: @termux
 Architecture: aarch64
@@ -7295,6 +7333,20 @@ SHA1: 7182c2da43ebb4565a458f54f1fe0bc49cd8fc1a
 SHA256: 14faa923fcfe0aa2056824f5bc6867d5e2bae946ad430be175335fd9d213f6ad
 SHA512: d6ffb7d39b516b62dd5493309ae650e5ad8b77d0b1ccb618299ff6ccf64c2c5daac25c55dc4179d238f00f1ed5e1cb0d5372ecceef5d6c0624ba2090c6bde8cb
 Description: GAP is a system for computational discrete algebra, with particular emphasis on Computational Group Theory
+Homepage: https://www.gap-system.org/
+
+Package: gap-packages
+Installed-Size: 106760
+Maintainer: @termux
+Architecture: all
+Version: 4.13.0
+Filename: pool/main/g/gap-packages/gap-packages_4.13.0_all.deb
+Size: 95203060
+MD5sum: d48311f81e902cd5d862464115c6da80
+SHA1: 48b915f1e6faf91cb9371c28a905106479b1d4f8
+SHA256: 724dbfce23a76b5d92b14ae4b3ad028ed11aa4ab9994dab69964bf5632900c16
+SHA512: 5bc06a9354bfaeff3cd50c9b6cc11ebaf9ed78dc5777d023b0cdca4b78ef36145f7f622c27c769685b375d40c20857ac47a6598752297812a9611600fd887419
+Description: Packages for gap
 Homepage: https://www.gap-system.org/
 
 Package: gap-packages
@@ -7626,6 +7678,23 @@ Package: gegl
 Installed-Size: 5092
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.4.48-1
+Replaces: gegl-dev
+Depends: babl, ffmpeg, gdk-pixbuf, glib, json-glib, libandroid-support, libc++, libcairo, libjasper, libjpeg-turbo, libpng, librsvg, libtiff, libwebp, littlecms, openexr, pango, poppler
+Breaks: gegl-dev
+Filename: pool/main/g/gegl/gegl_0.4.48-1_aarch64.deb
+Size: 1224344
+MD5sum: 87a89cebd08028a08f54c0d4bbd81785
+SHA1: 17283933a4f8e2ab8e852d66a2f29d2d186446fa
+SHA256: c8b264015c3a17ff88e5bd65b2b412ccbb1f805ab4325b582ae6df5848b5eec4
+SHA512: 4069aef382992c3b4eb7a5026492938eed7c8c2325565d72c6bf416e1de566d049f89443712e98d08a71f2f52287c15f762ad3e98b00783dfb5de0f3bcf9f4ed
+Description: Data flow based image processing framework
+Homepage: https://gegl.org/
+
+Package: gegl
+Installed-Size: 5092
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.4.48
 Replaces: gegl-dev
 Depends: babl, ffmpeg, gdk-pixbuf, glib, json-glib, libandroid-support, libc++, libcairo, libjasper, libjpeg-turbo, libpng, librsvg, libtiff, libwebp, littlecms, openexr, pango, poppler
@@ -7726,21 +7795,6 @@ SHA512: a3940f50fb8b2181c8ea3b3dca3425d7f599862456448a2252401482b77cce0edcef0f49
 Description: Go implementation of the Ethereum protocol
 Homepage: https://geth.ethereum.org/
 
-Package: geth
-Installed-Size: 46368
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.14.2
-Suggests: geth-utils
-Filename: pool/main/g/geth/geth_1.14.2_aarch64.deb
-Size: 10829392
-MD5sum: 4efbdbc8f411c364cd400f9cdd5291e4
-SHA1: acb6b31001995d52f79191c979a1757d6125a7ef
-SHA256: 64354667fe62688ddb264fab4366e11a6e27f6ba7912f340a82ac4acd56fae23
-SHA512: dc3eb4706535fbe33084e8d65a8364b60c966d08def2230390a24b9de96f7632c8e48fa03f2b487580ae6aad8d0b93a09b8e627b9d53ba0234aa528b936e25fb
-Description: Go implementation of the Ethereum protocol
-Homepage: https://geth.ethereum.org/
-
 Package: geth-utils
 Installed-Size: 205488
 Maintainer: @termux
@@ -7753,21 +7807,6 @@ MD5sum: 9046e74e28261d6d125f96d4731c4501
 SHA1: 1452b8b05cf05393eb13c0aeb7037a618a63d071
 SHA256: d0cf9d0f4871653ae1295bd6c7156e1d6862752178239bda277d76c2f010ac0d
 SHA512: 8e8de598649adcfceaeca23adb9766a3104e0e054b8dcd261a2542fd5b6458454356fc4f81e49774b15dc8a9a869065ccb68d80ef1888111dea7d2f7b278d2d6
-Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
-Homepage: https://geth.ethereum.org/
-
-Package: geth-utils
-Installed-Size: 205488
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.14.2
-Depends: geth (= 1.14.2)
-Filename: pool/main/g/geth-utils/geth-utils_1.14.2_aarch64.deb
-Size: 50187500
-MD5sum: e83e2d17bd89dbea8a9fb76cb3dd8507
-SHA1: f9e1ef11c69bbb5f91f59a78658fcf2111a2a53b
-SHA256: a991f7179f1c84b4193145ab04cb9fb13420060cef2f3eb8d9c3b9644660d85c
-SHA512: 2a825dd57e310cb742d533883ff4cefc6000db3067c9f22c05e36eb56638926014a46562c01621661166b879818702da1df63364e566386bda6e37f7d4ee7c1d
 Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
 Homepage: https://geth.ethereum.org/
 
@@ -11550,19 +11589,19 @@ Description: Language Server Protocol Client for the Kakoune editor
 Homepage: https://github.com/kak-lsp/kak-lsp
 
 Package: kakoune
-Installed-Size: 4864
+Installed-Size: 3808
 Maintainer: @termux
 Architecture: aarch64
-Version: 2023.08.05-1
+Version: 2024.05.09
 Depends: libc++
-Filename: pool/main/k/kakoune/kakoune_2023.08.05-1_aarch64.deb
-Size: 901752
-MD5sum: a3997d1b34b4398f40e8fd0629a45d32
-SHA1: 8d66846d2dbf4d6e761f0c1b6a98a1180ed6f0ea
-SHA256: e25aae6a2e905230a66aa109709708753cd473d5b4dac224c1290d43bc472888
-SHA512: 2a2dd0d591bac30c850b90b5cdb25d546a13cfea9aa754f34e28be4152cc89959db555ebaa2e18be78281812bb540f65a2d479844537a631f7e7aba0cfa14769
+Filename: pool/main/k/kakoune/kakoune_2024.05.09_aarch64.deb
+Size: 746312
+MD5sum: cdb53828eb8ba28a8c76347ddcf2a768
+SHA1: d0888d498f5beb3126aed92f10497e9ac2c584ea
+SHA256: d1c51654d921a7c3d36fd409da79113ac675b806f7914d01827b96b82625ee6a
+SHA512: 01c675feec965194e5a50b069a12698c6e240ebcc126213680e672c4377e2865e9d9570a988f662bcdca29f7077459cb4844b09352e5384428f73b1c35910303
 Description: Code editor heavily inspired by Vim
-Homepage: https://github.com/mawww/kakoune
+Homepage: https://kakoune.org/
 
 Package: kbd
 Installed-Size: 64
@@ -21523,6 +21562,21 @@ Package: libvips
 Installed-Size: 3404
 Maintainer: Thibault Meyer <meyer.thibault@gmail.com>
 Architecture: aarch64
+Version: 8.15.2a-1
+Depends: cgif, fftw, fontconfig, glib, imagemagick, libc++, libcairo, libexif, libexpat, libheif, libimagequant, libjpeg-turbo, libjxl, libpng, librsvg, libtiff, libwebp, littlecms, openexr, openjpeg, pango, poppler, zlib
+Filename: pool/main/libv/libvips/libvips_8.15.2a-1_aarch64.deb
+Size: 1076556
+MD5sum: 5c197afa0438338dfd5801bc5848be95
+SHA1: 6f878b9c75b47530ec5decf4c810cfe97b184259
+SHA256: 7b110bbf5e9dcdce56c74c377b110b4662f3616fb63290f511a0af3a3b3b075e
+SHA512: 4b98fbbf2729261da599c66a53dce00b898b82bc51264bd9a2948d6b5c047985d17c6f5478fbb1a874d154bef0b794d2a857cd6c0385cdf56e591bf65e9e6228
+Description: A fast image processing library with low memory needs
+Homepage: https://libvips.github.io/libvips/
+
+Package: libvips
+Installed-Size: 3404
+Maintainer: Thibault Meyer <meyer.thibault@gmail.com>
+Architecture: aarch64
 Version: 8.15.2a
 Depends: cgif, fftw, fontconfig, glib, imagemagick, libc++, libcairo, libexif, libexpat, libheif, libimagequant, libjpeg-turbo, libjxl, libpng, librsvg, libtiff, libwebp, littlecms, openexr, openjpeg, pango, poppler, zlib
 Filename: pool/main/libv/libvips/libvips_8.15.2a_aarch64.deb
@@ -25722,6 +25776,21 @@ Description: Tool to monitor logfiles and command output in multiple windows in 
 Homepage: http://www.vanheusden.com/multitail/
 
 Package: mupdf
+Installed-Size: 50100
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.24.2
+Depends: freetype, gumbo-parser, harfbuzz, jbig2dec, leptonica, libc++, libjpeg-turbo, openjpeg, tesseract, zlib
+Filename: pool/main/m/mupdf/mupdf_1.24.2_aarch64.deb
+Size: 25421660
+MD5sum: 5e6529c7e9f629ce434c644c297dedd0
+SHA1: b221ac90004fe8a6e85eb12fc2853a71f0c60b75
+SHA256: 5525621e15085f3fc60442bfd69411757bb4ae89744d8c7279e2e0c9422cfc44
+SHA512: 2ef95082e1664f09b0e7954790af8dbb20966a673af8371954d02070c3e5f447cc975d083ad870f845853ce81ce8c4740d4a2166ba8c134fb865f43d1ebf7993
+Description: Lightweight PDF and XPS viewer (library)
+Homepage: https://mupdf.com/
+
+Package: mupdf
 Installed-Size: 50092
 Maintainer: @termux
 Architecture: aarch64
@@ -25737,6 +25806,21 @@ Description: Lightweight PDF and XPS viewer (library)
 Homepage: https://mupdf.com/
 
 Package: mupdf-static
+Installed-Size: 51892
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.24.2
+Depends: mupdf (= 1.24.2)
+Filename: pool/main/m/mupdf-static/mupdf-static_1.24.2_aarch64.deb
+Size: 24713676
+MD5sum: aeed7baa2db6ee00ebacf64c89c66f61
+SHA1: 595c464e87dc161a5816465418ed7d334a73b6cf
+SHA256: 9092b30db71bed2dc46f87bc140912f054e635a1824cad9d192acd1174f374e9
+SHA512: 567534111bc47a26aa58021b8686593ccadcd55634eba539acc6bcc20c05de0dc2e79f50244c2b1841c89eab952e73f3c8d079113cb085b7772fdf739c6a6e1c
+Description: Static libraries for mupdf
+Homepage: https://mupdf.com/
+
+Package: mupdf-static
 Installed-Size: 51876
 Maintainer: @termux
 Architecture: aarch64
@@ -25749,6 +25833,21 @@ SHA1: 98630adbd3a7267d577ee3de5ec164a40e20aeab
 SHA256: e95f79eb5ba7438eb3b9dbed36b410b57c3463b66b394ef9969aba292e4f6cf0
 SHA512: 778d2445d41a202b1db29d921a314e04bc5fbd1c1dcfcf4fc8ee70febd4a59fba0020c83536aa6d7e040e411c85f6611729e9e4abe3198bfc45f5cebdb2e83f4
 Description: Static libraries for mupdf
+Homepage: https://mupdf.com/
+
+Package: mupdf-tools
+Installed-Size: 504
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.24.2
+Depends: openssl, mupdf (= 1.24.2)
+Filename: pool/main/m/mupdf-tools/mupdf-tools_1.24.2_aarch64.deb
+Size: 119592
+MD5sum: f606d1693e9af06a1110fdc29034d14c
+SHA1: 7bd2ac373bd59b183899d7036e241d314a13152e
+SHA256: 28739ef068d5dd8c98b78f5f360e8332e6d85b394f72ede4737256e36293fdb0
+SHA512: 6648fb5123ca8d3d7464e4afa1ece4665ae94094e9f243ffc5155bfa728ddcdfc9660d8d58f3d9a58b9518ee8f3fa7f4efd5b291072dfe082c4641ef3d3d1704
+Description: Lightweight PDF and XPS viewer (utilities)
 Homepage: https://mupdf.com/
 
 Package: mupdf-tools
@@ -28554,6 +28653,21 @@ Description: A grep with Perl-compatible regular expressions
 Homepage: https://www.pcre.org
 
 Package: pdf2djvu
+Installed-Size: 996
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.9.19-5
+Depends: djvulibre, libc++, libiconv, poppler
+Filename: pool/main/p/pdf2djvu/pdf2djvu_0.9.19-5_aarch64.deb
+Size: 272564
+MD5sum: 72593bb699ee8611c255646e4e62d013
+SHA1: caa0bcaa195a64b621402c7ebe0b07b8484e1f45
+SHA256: ce8d49685897b17f6bd99344483eea4f89067b66383f604d745162aae1dfe608
+SHA512: 2424ee4560e5b83d0a932dc00665312d059722e61bbb411e657cbe610746da220275bbdd54032bcadfceafcc6eaa30842abd9fb023a33460187da3a771635fa4
+Description: PDF to DjVu converter
+Homepage: https://github.com/jwilk/pdf2djvu
+
+Package: pdf2djvu
 Installed-Size: 908
 Maintainer: @termux
 Architecture: aarch64
@@ -28567,6 +28681,21 @@ SHA256: f2a65d000121950f0d7318f2c24d674d656c31ab6b781149f35ac4fb7e963820
 SHA512: b0b509879d1ff1161ab439dbe1d42c53c506ccbdcf134e87a0432ec711d9c67e13f52a67fe2ba5e31235bb89af583600d50cad905a49ab740560c041ad8525ec
 Description: PDF to DjVu converter
 Homepage: https://github.com/jwilk/pdf2djvu
+
+Package: pdf2svg
+Installed-Size: 52
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.2.3-11
+Depends: glib, libcairo, poppler
+Filename: pool/main/p/pdf2svg/pdf2svg_0.2.3-11_aarch64.deb
+Size: 3476
+MD5sum: 4938bd5dd5ba68e815bc8ba151fcc918
+SHA1: 55e116d4d5e7e0b2446a2ae3556398eede0e3769
+SHA256: 15425afc9dd704f4c1cd361b2dc8179ffdf5b086d1c0dd674996080d5dc1fece
+SHA512: 8f14ab5c2998c830d78d10e7baaea45bb60ad7417e9f4347c214ef3149511a869f4f2fd37d2792de2bf8d5b81d29c3c4f29a1f71798477fda33938820ddc0616
+Description: A PDF to SVG converter
+Homepage: http://www.cityinthesky.co.uk/opensource/pdf2svg/
 
 Package: pdf2svg
 Installed-Size: 52
@@ -28596,6 +28725,21 @@ SHA256: 540eba00ea8aa79c0d648c15cdf25bec7e79e2bbe5fbafb441dafd7b05c5cbc0
 SHA512: ddc7019eac27ac1b3cb238a14b68ae0a10986a4e1c5b8c257d8d410dd5be6a886a3a69e29de3256e1e63a3dce7da80939aa7d334083e23ff3548603558837b6c
 Description: A PDF processor written in Go
 Homepage: https://pdfcpu.io
+
+Package: pdfgrep
+Installed-Size: 196
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.2.0-1
+Depends: libc++, libgcrypt, libgpg-error, pcre, poppler
+Filename: pool/main/p/pdfgrep/pdfgrep_2.2.0-1_aarch64.deb
+Size: 44100
+MD5sum: 904252fe351ef8fae5746492be3a8911
+SHA1: c7e20571f70843cd3aa26c58a7ffd3e7bc075fe4
+SHA256: 7eab4f9608ab7f56a3062c5a86025a316c54752339b36a43e65589d6ccb68247
+SHA512: 46bfa8727ef9fb3fc404a246b8c630548ef1d7f81178a347244559b1d5d3aff9b988149ea18bb9d534a920ab73170f010b2553a413624e55fa5b553918883202
+Description: Command line utility to search text in PDF files
+Homepage: https://pdfgrep.org/
 
 Package: pdfgrep
 Installed-Size: 196
@@ -29121,6 +29265,21 @@ Description: Animated pipes terminal screensaver
 Homepage: https://github.com/pipeseroni/pipes.sh
 
 Package: pipewire
+Installed-Size: 8376
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.0.6
+Depends: ffmpeg, glib, libc++, liblua54, libopus, libsndfile, libwebrtc-audio-processing, lilv, ncurses, openssl, pulseaudio, readline
+Filename: pool/main/p/pipewire/pipewire_1.0.6_aarch64.deb
+Size: 1315808
+MD5sum: 668488ae4f739c7d2c6ca1beaa051186
+SHA1: bdeb4df9f423eddea3d8f161c25826cf63803f8d
+SHA256: 2ac1d493af92c462f71fa7da196cc50230fa5fbfd9cc8b4958fa6c5ccbe27bb6
+SHA512: b6e327057ef13b6c1a19a6fc5fb03156fa0cf1cec4da372dc43745159a08ff09d84da5cc384b058698ee9c6091fe157fbe3e5c484c8200be4a03a9d60129b2e5
+Description: A server and user space API to deal with multimedia pipelines
+Homepage: https://pipewire.org/
+
+Package: pipewire
 Installed-Size: 8364
 Maintainer: @termux
 Architecture: aarch64
@@ -29389,6 +29548,23 @@ SHA256: 47ba2ed469fcaecd688e167f844ec30f8a1c27d7824f38ecff262c0b9b87c0d5
 SHA512: 9aa2f4b1369a36d63452ed87981aa9b6f3fba53af53ba5c6eed958be5c594c8f2d02d8bfa0e64fa0f59e08b0232ec75c1c8abb4255f54faf737ca59201a2884a
 Description: A simple pomodoro timer written with the Ncurses library
 Homepage: https://github.com/chunga2020/pomodoro_curses
+
+Package: poppler
+Installed-Size: 7388
+Maintainer: @termux
+Architecture: aarch64
+Version: 24.05.0
+Replaces: poppler-dev, poppler-qt (<< 22.04.0-3)
+Depends: fontconfig, freetype, glib, gpgme, gpgmepp, libc++, libcairo, libcurl, libiconv, libjpeg-turbo, libnspr, libnss, libpng, libtiff, littlecms, openjpeg, zlib
+Breaks: poppler-dev, poppler-qt (<< 24.05.0)
+Filename: pool/main/p/poppler/poppler_24.05.0_aarch64.deb
+Size: 1242688
+MD5sum: ebed78634c35ea026dfea8d7602aa27e
+SHA1: c80ebb33d085ec6e8220f3ae3121c55a22e729bd
+SHA256: f26cd2e4ece08c4f7b7f5f689dcf0de878df9b32aaa20f765e574e3a04d0fef0
+SHA512: 47abc3418fc3d1639f61c937e6dbf3a3a91a8f26bbe37947430588baba1b01e57cbb23c5e8dce136f0d3ddb65acd0620450d09e18c2c6a34d7f45788c0330747
+Description: PDF rendering library
+Homepage: https://poppler.freedesktop.org/
 
 Package: poppler
 Installed-Size: 7288
@@ -33794,20 +33970,6 @@ SHA512: fd400a85760106b78cfd1a187673d09c5eb1922b9ea85310091512eb43fbca1922e83440
 Description: Command line interface to test internet speed using speedtest.net
 Homepage: https://github.com/showwin/speedtest-go/
 
-Package: speedtest-go
-Installed-Size: 7800
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.7.3
-Filename: pool/main/s/speedtest-go/speedtest-go_1.7.3_aarch64.deb
-Size: 2153224
-MD5sum: c8f5daadc52fba687823f4a68f8a7e8a
-SHA1: 5f476bdfffc892e29ef7c89172a419c5ab551a81
-SHA256: 257d825fce43f2b89934c0ee5706bae461ae29fdcda8e096b6f985e21a4d2463
-SHA512: e1c2fa5b41fc9679eb16f1a2d6f876da03c5171dd4e3518a27609da32e3d158a6e667234b4f88d694bb291af5f8b102bb0dfb21d7e76471ecef909423dd41e60
-Description: Command line interface to test internet speed using speedtest.net
-Homepage: https://github.com/showwin/speedtest-go/
-
 Package: speex-utils
 Installed-Size: 96
 Maintainer: @termux
@@ -35847,6 +36009,21 @@ Package: timg
 Installed-Size: 312
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.6.0-2
+Depends: ffmpeg, graphicsmagick, libc++, libcairo, libdeflate, libjpeg-turbo, libexif, librsvg, libsixel, poppler, zlib
+Filename: pool/main/t/timg/timg_1.6.0-2_aarch64.deb
+Size: 96240
+MD5sum: a11dae42043b6f25ce83a4fcb41bef3e
+SHA1: 5879d041a49336f57ff562dc9201d649f4a9c219
+SHA256: ac4b660031d4480add5c030f2164b6948cc4c1844f2f4e26112db103ede5a5c0
+SHA512: 3bbed9bd200046af81f52ab3758f289a9bcf071812a81557f177bb3010106169a0caf5069963342638b0aba58f542adf4ae327e5f29932de5295e4cf59403204
+Description: A terminal image and video viewer
+Homepage: https://timg.sh/
+
+Package: timg
+Installed-Size: 312
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.6.0-1
 Depends: ffmpeg, graphicsmagick, libc++, libcairo, libdeflate, libjpeg-turbo, libexif, librsvg, libsixel, poppler, zlib
 Filename: pool/main/t/timg/timg_1.6.0-1_aarch64.deb
@@ -37004,21 +37181,6 @@ MD5sum: 2dcc3d9ee1143aad9b744212014d6044
 SHA1: 48e88cafe995eaa5bc5743337257d2e5e8e93000
 SHA256: 5249554ddd6b50de85c1048171a5865223afd0fd51ce5da0443b377f627b7b33
 SHA512: 103719e328047f5291b8e8ce116657e3e3729a6df32d528f9b582dbb4c1644db2e6a53c34a7f3a3aac09c9e121c01afaaa032e65088ff94c116e3236704b5543
-Description: the Ultimate Packer for eXecutables
-Homepage: https://upx.github.io/
-
-Package: upx
-Installed-Size: 2596
-Maintainer: @termux
-Architecture: aarch64
-Version: 4.2.3
-Depends: libc++
-Filename: pool/main/u/upx/upx_4.2.3_aarch64.deb
-Size: 568092
-MD5sum: 1e8258416432e36d93e8675ae447d8aa
-SHA1: 4413552ccef0b7bba3fbfb45c35a301a20ee58cd
-SHA256: 6295b96f5d40df213ce13c15d23379ff11e3e415b02077ea7394e524a78d0cbc
-SHA512: 6cbae1ebab33ee977c89e955806d7d1655120519832aeb327630dd379b34155adcfe91323ef7e37c8383d89f24b6ece38c5ede9395c9e843a9878a8106673bb3
 Description: the Ultimate Packer for eXecutables
 Homepage: https://upx.github.io/
 
@@ -38275,6 +38437,21 @@ SHA256: eb6a4ed0e9593a2416d26448704c0cde6fa6a3db8b7fd3bc746bd1d8fefc56ff
 SHA512: 88d025ba6b104fb653c8a8fc2be6bcf462107bb2a88435a7d7d473cd0d7a2a94c19f59c9fcb9ab8502543a91a5433104b4b2cfc663586582e9dea81f7c9eb9e9
 Description: weather app for the terminal
 Homepage: https://github.com/schachmat/wego
+
+Package: wget
+Installed-Size: 808
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.24.5
+Depends: libandroid-support, libiconv, libidn2, libuuid, openssl, pcre2, zlib
+Filename: pool/main/w/wget/wget_1.24.5_aarch64.deb
+Size: 285552
+MD5sum: d310c7371e7ce83cacb077fd8793ba92
+SHA1: 4a2a0e9f41c87c55e5cd91622dae24d30982819e
+SHA256: a76e1687a0d8a3152fbe2b75cc4d077072733a5f9f8e40368c351d903cd4edb0
+SHA512: e27218534f7e1459a601139bd1a8b1db31aef71afeaa907ff80fdf109b387e524ce0205c47255f4eb7f2bb9f0b4ef66e3501add01fd3f79ed818bc85efecafeb
+Description: Commandline tool for retrieving files using HTTP, HTTPS and FTP
+Homepage: https://www.gnu.org/software/wget/
 
 Package: wget
 Installed-Size: 780

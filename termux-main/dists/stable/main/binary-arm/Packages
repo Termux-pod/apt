@@ -2427,20 +2427,6 @@ SHA512: 855dcbb0395615ef8379c9fb744b416170a5bc83582c6f938670f533989cc43ebf3ae21a
 Description: A new way of working with Protocol Buffers
 Homepage: https://buf.build
 
-Package: buf
-Installed-Size: 36080
-Maintainer: @termux
-Architecture: arm
-Version: 1.32.0
-Filename: pool/main/b/buf/buf_1.32.0_arm.deb
-Size: 7331580
-MD5sum: d8d670ca09b80c6167291ed0722f9123
-SHA1: 7c1327ac94addc95c5191cc2fa1110fcd2fb6d9e
-SHA256: f4df6fa7dda2284dde4e36f7a4c964696b411967b96cd00b2892af7d9e36d400
-SHA512: cba36c0b7a05c6f3d2cd1081311232641e580d19c5acf20bbcd190258146a24705091ce0c4824e1d6d23a0f95045a99a5a6749fd23e85f0a6f34c7a2b2c09e11
-Description: A new way of working with Protocol Buffers
-Homepage: https://buf.build
-
 Package: build-essential
 Installed-Size: 4
 Maintainer: Leonid Plyushch <leonid.plyushch@gmail.com>
@@ -4188,6 +4174,22 @@ Essential: yes
 Installed-Size: 304
 Maintainer: @termux
 Architecture: arm
+Version: 8.8.0
+Depends: libcurl (= 8.8.0)
+Filename: pool/main/c/curl/curl_8.8.0_arm.deb
+Size: 201408
+MD5sum: 2947cbda6debce076691f0e4d9c01d58
+SHA1: 7d8936a706aa58560fb788194bae3c82feeb213b
+SHA256: f4c670446797c7783832be02c293b59ff8c5ecc6810144bbacb383398fca51e6
+SHA512: 1322a368d4043b86f1dd06ddc86ca62a8089f176f1e4855913da6b3bf1b3ee26a90ea9818b8dee2d58bbfefdadbfd9666a8d229ca2650ab93d05b8de5a93ebf9
+Description: Command line tool for transferring data with URL syntax
+Homepage: https://curl.se/
+
+Package: curl
+Essential: yes
+Installed-Size: 304
+Maintainer: @termux
+Architecture: arm
 Version: 8.7.1-1
 Depends: libcurl (= 8.7.1-1)
 Filename: pool/main/c/curl/curl_8.7.1-1_arm.deb
@@ -5331,6 +5333,20 @@ SHA256: e8730a54e8331af6c45f8ea79dec94bb539acab70ae51b08644b28da94df7d0c
 SHA512: 4b9247ff8c2c2a0b3ffca05d0086407d301a81956dd00f6fb5c2a17ec581adb4d7ab2922a48bcc41a0419b3cc896d4b0949451616d4443863f1bef33b3d34f99
 Description: Disk usage/free utility
 Homepage: https://github.com/muesli/duf
+
+Package: dufs
+Installed-Size: 2464
+Maintainer: @termux
+Architecture: arm
+Version: 0.41.0
+Filename: pool/main/d/dufs/dufs_0.41.0_arm.deb
+Size: 1200072
+MD5sum: b1cce1d3eb300bd88790527eedc82d32
+SHA1: b1905d9c42094a0e0b89356b01dcaf5bcf7c170f
+SHA256: 6248be278f8ee9bdc3861555cce591c959a623cd6c7c14b026e2cf2f7d422d13
+SHA512: 9d82fa574116fb2536bab570babf2bb5e0f82f2fca096701ecdaac5f42fbe539e61e3ca255138b3a29217228f024ca866c584f22fc7c4f144f4330daa969d20a
+Description: A file server that supports static serving, uploading, searching, accessing control, webdav...
+Homepage: https://github.com/sigoden/dufs
 
 Package: dufs
 Installed-Size: 2472
@@ -13486,6 +13502,25 @@ Homepage: https://sourceforge.net/projects/cunit/
 
 Package: libcurl
 Essential: yes
+Installed-Size: 2920
+Maintainer: @termux
+Architecture: arm
+Version: 8.8.0
+Replaces: libcurl-dev
+Depends: libnghttp2, libnghttp3, libssh2, openssl (>= 1:3.2.1-1), zlib
+Conflicts: apt (<< 1.4.8-8)
+Breaks: libcurl-dev
+Filename: pool/main/libc/libcurl/libcurl_8.8.0_arm.deb
+Size: 870672
+MD5sum: 52e6990260a7c07485da992921e20719
+SHA1: 128a61ce246297161b874d0799fa98824d0bc8fd
+SHA256: 2cdb8f882b9f5dc083cdf95e1820a0a7bb3d785628c181fdde84bfbabbdfbbe9
+SHA512: 633ae69d938c8d4aa68201ead0463b5832e426952bb280cc5807e490c2059ec4ca62e0c37816583de312c974c64254bc253918bedb9585ff7a9ecc968dd9d977
+Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl
+Essential: yes
 Installed-Size: 2912
 Maintainer: @termux
 Architecture: arm
@@ -13501,6 +13536,21 @@ SHA1: 868bb1e1241ba7b4c58bbff517345673ac2fa6cb
 SHA256: a6d6c88f609ddf3773a9c09bc37ec1a18c40af0c8f70adab98059fa68cc7e2d1
 SHA512: 700067041f67371b4b3941e1d5eeb015dea513e801f01a8997400522e19d85ae23873eccb1a2a9a3cde63097fcf6221d2da756be00361bdd007b3372eb35cfd5
 Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl-static
+Installed-Size: 1068
+Maintainer: @termux
+Architecture: arm
+Version: 8.8.0
+Depends: libcurl (= 8.8.0)
+Filename: pool/main/libc/libcurl-static/libcurl-static_8.8.0_arm.deb
+Size: 345020
+MD5sum: 2747e2ae08207954de388289892748d9
+SHA1: 6ad4aac467981e0fd4f6eca5abc8cbf5d0e65995
+SHA256: 9f1128b3f3b7be6b9fb20d57e7d1485202f88e32c3d212d3ea6ac3449830ab54
+SHA512: 620a26e1e51b8ea836df91d8e3c58d496d27f044806ba0781196bc923c6929cd647d6543b4f3ed1be4d456fba11cf02874e104e771a433cb7870582abd07f1c3
+Description: Static libraries for libcurl
 Homepage: https://curl.se/
 
 Package: libcurl-static

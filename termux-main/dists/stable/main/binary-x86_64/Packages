@@ -2457,20 +2457,6 @@ SHA512: 86b4a05cadea5cb20b214668b484e9fe232e5130032c89f7a150ee1dd0806a9972ef34be
 Description: A new way of working with Protocol Buffers
 Homepage: https://buf.build
 
-Package: buf
-Installed-Size: 40268
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.32.0
-Filename: pool/main/b/buf/buf_1.32.0_x86_64.deb
-Size: 8113024
-MD5sum: e4f1a28a85a232ac85565f53ecda29ab
-SHA1: eb9c0c595dfa4462e1f0da83ec27f5d30a2678c7
-SHA256: be8d9483de68a091292baa5ab72ba5c8f6278b2ee9be73fb1840b5fd3b36c232
-SHA512: ee3a870b95572617b7e8b1bf865fd1b87a3993fd29e3791fd011b3aec792fa28054f8fd99d68a66deb53070f00efd270d60f9f48c78722cc2efbd900166cd66b
-Description: A new way of working with Protocol Buffers
-Homepage: https://buf.build
-
 Package: build-essential
 Installed-Size: 4
 Maintainer: Leonid Plyushch <leonid.plyushch@gmail.com>
@@ -4247,6 +4233,22 @@ Essential: yes
 Installed-Size: 372
 Maintainer: @termux
 Architecture: x86_64
+Version: 8.8.0
+Depends: libcurl (= 8.8.0)
+Filename: pool/main/c/curl/curl_8.8.0_x86_64.deb
+Size: 207704
+MD5sum: 7372b9e2d7d1437061f250263c75093c
+SHA1: 48c9b19d1693d66e1ca66e9539320c85c1879872
+SHA256: 0e1a144e115932782ef89d097e67bff10dcae8a4641dbafb39ae7287dda5f9db
+SHA512: 5bd0d26a12a700eb38fc262051310d811443cdfded69da378b2989d5e44f7d3409f7cf56d3d7da70baec81f7358d3a27cd6972e43df3ba8db190d550ed85d7a0
+Description: Command line tool for transferring data with URL syntax
+Homepage: https://curl.se/
+
+Package: curl
+Essential: yes
+Installed-Size: 372
+Maintainer: @termux
+Architecture: x86_64
 Version: 8.7.1-1
 Depends: libcurl (= 8.7.1-1)
 Filename: pool/main/c/curl/curl_8.7.1-1_x86_64.deb
@@ -5405,6 +5407,20 @@ SHA256: 7466851e89353c47cc12f4317f188a59c2c2e9854f41b38c5c1b9994cea08149
 SHA512: b74728b38e9aa50ea9841c3746d9bbd08a926554096d6e67dcd30c177bec0647b6227b36cbbd4bb2d25b608ab23eb7bae81dbf386cb1197180e61d775364fd53
 Description: Disk usage/free utility
 Homepage: https://github.com/muesli/duf
+
+Package: dufs
+Installed-Size: 3988
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.41.0
+Filename: pool/main/d/dufs/dufs_0.41.0_x86_64.deb
+Size: 1481144
+MD5sum: a9f897e070d6402373d2392f334384a0
+SHA1: 60cd86b2e8ef0ea73665a882fdc6c4663dcbfeac
+SHA256: be4ec1ed2d9512a152c5a14a52bed86416eb4493656edd6f3d0b4d691bb24b4f
+SHA512: 8133d7aea42cdb877dec8179c37f532f907cbef90b0118fbe5dbe657278a2b33be5486ce54fe7e2a03eb8a36199a3776c27f39bb565824efd012b302c358f5bf
+Description: A file server that supports static serving, uploading, searching, accessing control, webdav...
+Homepage: https://github.com/sigoden/dufs
 
 Package: dufs
 Installed-Size: 4192
@@ -13649,6 +13665,25 @@ Homepage: https://sourceforge.net/projects/cunit/
 
 Package: libcurl
 Essential: yes
+Installed-Size: 3212
+Maintainer: @termux
+Architecture: x86_64
+Version: 8.8.0
+Replaces: libcurl-dev
+Depends: libnghttp2, libnghttp3, libssh2, openssl (>= 1:3.2.1-1), zlib
+Conflicts: apt (<< 1.4.8-8)
+Breaks: libcurl-dev
+Filename: pool/main/libc/libcurl/libcurl_8.8.0_x86_64.deb
+Size: 907188
+MD5sum: 7845d7ccbdaa2d42f83a18c19fb58ff8
+SHA1: 9175988752386c7f54d9289b7ad8d268ee58a943
+SHA256: 0854ab57c2b9638120bb8af968f3091faa893b1ebf4e2fa5d4c466deda1e75ca
+SHA512: e6074f33e31c6638091dfccdc6a838b3b9a7631530072025dcfe8934818a4c7851d939ee4cb97656e4594a725543b2b6e174436f682ee1abb8d2dee6159cb2ec
+Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl
+Essential: yes
 Installed-Size: 3196
 Maintainer: @termux
 Architecture: x86_64
@@ -13664,6 +13699,21 @@ SHA1: cd7143043223e2adf4df8a0266862776517a624f
 SHA256: d4e3f3c4c9838e8c42e4633b6468c7781c0d0463112d04c23093afa02dbf537f
 SHA512: b11bab079d73297f8345a2527bd5c55f33afaf0115cc87bcf9147f18ef43e89d47f94bb87bf238cdba085496a92373732810bef36a504c085383cf22c6798d6b
 Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl-static
+Installed-Size: 1656
+Maintainer: @termux
+Architecture: x86_64
+Version: 8.8.0
+Depends: libcurl (= 8.8.0)
+Filename: pool/main/libc/libcurl-static/libcurl-static_8.8.0_x86_64.deb
+Size: 364964
+MD5sum: 8bcfa4a10264fa35353cca19df07322f
+SHA1: db96df75a2352b1966c4dd76d06f1d7347be9724
+SHA256: a0b52db0340db7ea0159c4487aa20199782ae95d6c1102254d8f2c21637cec38
+SHA512: 68f638895e679c32889c435314d9f6431cbf3d79047f62c7936c52d735751d602a1250aba408caae01fd0f48cadb4e3dad0daad90653a28e4523201b72649ee9
+Description: Static libraries for libcurl
 Homepage: https://curl.se/
 
 Package: libcurl-static

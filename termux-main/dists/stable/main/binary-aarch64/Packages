@@ -2716,20 +2716,6 @@ SHA512: 4917f4b49d35f422504d39f4d491c7085190ed4930711cd72f81db403eef89592f9af70b
 Description: Fast, cross-platform HTTP/2 web server
 Homepage: https://caddyserver.com/
 
-Package: caddy
-Installed-Size: 42708
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.7.6
-Filename: pool/main/c/caddy/caddy_2.7.6_aarch64.deb
-Size: 9358736
-MD5sum: c12dbf2082bf96f6eff95f2b75fed0bc
-SHA1: 8e37e5187393100a57a3a320a3f840af62d8fc62
-SHA256: 6db5dedbedde00bb075887df99278f1f064c689469748f992515865169ddb8ec
-SHA512: 73ab416b09f0557b01efee137d261e6fe80e1a31d79570493e0a29213bc43fe275950ef24ad28d1a3bf0379c74b88de99cb3e2460afd07b4a079c0b9a9a80c0d
-Description: Fast, cross-platform HTTP/2 web server
-Homepage: https://caddyserver.com/
-
 Package: calc
 Installed-Size: 6264
 Maintainer: @termux
@@ -8680,21 +8666,6 @@ MD5sum: 125d0c75febad11720c83748aaf68c0b
 SHA1: d4b39eee0fc8bdc76d0271559e24b32c6c7d58e6
 SHA256: 06268d9f1f3a665634d454663d40adc05f478613552df6fcaffe31574230b331
 SHA512: 1240db88449152c06168f9639e8e86001562352a7dac5eabf63816a89b9465ff8b0e7c94dc5c955e0d807a841fc4daa6b210c7c5e0731d9c4f7339142be18f61
-Description: The GNUstep makefile package
-Homepage: http://www.gnustep.org
-
-Package: gnustep-make
-Installed-Size: 1284
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.9.1
-Depends: libobjc2
-Filename: pool/main/g/gnustep-make/gnustep-make_2.9.1_aarch64.deb
-Size: 164256
-MD5sum: ad61f73844c01f44375ca0d552c65a98
-SHA1: a4bd87a6f1cb9a5773fd660e3cc54cecd0e92a11
-SHA256: 3bae8865d767709dbceb191d8c0ac04a9ab0b74dd4a32befac8c4425f47d97c1
-SHA512: ae7558be6cce616581796a8dbfdc14dcc6bb9776014ceade308347718e80327110ecaf3a6682f720ec0eee7a8e211d35e89d637dba1a99527674eee3ad412af5
 Description: The GNUstep makefile package
 Homepage: http://www.gnustep.org
 
@@ -30174,6 +30145,26 @@ Description: C++ functions matching the interface and behavior of python string 
 Homepage: https://github.com/imageworks/pystring
 
 Package: python
+Installed-Size: 61868
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.11.9-1
+Replaces: python-dev
+Provides: python3
+Depends: gdbm, libandroid-posix-semaphore, libandroid-support, libbz2, libcrypt, libexpat, libffi, liblzma, libsqlite, ncurses, ncurses-ui-libs, openssl, readline, zlib
+Recommends: python-ensurepip-wheels, python-pip
+Suggests: python-tkinter
+Breaks: python2 (<= 2.7.15), python-dev
+Filename: pool/main/p/python/python_3.11.9-1_aarch64.deb
+Size: 7738108
+MD5sum: 367bd63a69f74933440c944f2fd79c74
+SHA1: 6fa1dcdd7415ccf74313d1c7a5fe7e998bed002c
+SHA256: f7e4ebc1989e56af9f6462376f29ce583db282b00339a9eaa552db30dfaeb0ac
+SHA512: 594c5c36695086c6b0ed872fa035aeb6f11262a1bd2853d89a82b0f18e275f7119b60c3fd8d1f110b8c427901071c1471f98b02a1b01acbe49476cf4edc6e22f
+Description: Python 3 programming language intended to enable clear programs
+Homepage: https://python.org/
+
+Package: python
 Installed-Size: 61864
 Maintainer: @termux
 Architecture: aarch64
@@ -30267,6 +30258,23 @@ SHA256: 288c33edef0f49e93af687eb7a23de3ccac781c70ec5e217d1250ec6f30aff4e
 SHA512: de44d24c52d3108d295b76bd9db7cc770bcbc0870333bb021ecb5636f69c1f9798420a3361c5851854e1e01a1b04925404a70699dff33751a3ac41b1126ba1c7
 Description: Provides cryptographic recipes and primitives to Python developers
 Homepage: https://github.com/pyca/cryptography
+
+Package: python-ensurepip-wheels
+Installed-Size: 3308
+Maintainer: @termux
+Architecture: all
+Version: 3.11.9-1
+Replaces: python (<< 3.11.1-3)
+Depends: python (= 3.11.9-1)
+Breaks: python (<< 3.11.1-3)
+Filename: pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.11.9-1_all.deb
+Size: 3029164
+MD5sum: 3fc6680fa6c712523687cc5752441b0d
+SHA1: e43f17ae62c71e94d48743b6a0f15c7ffa29e455
+SHA256: 3f3d153c7dbe328d3cc1af70c9844d172c596b74f19b3ec8ad6960de90e279ab
+SHA512: e42da6c0a33448c0ab3ee1ca477241d7cd8014697fd07dda42c21a336ba7205c81d1dd88ac679b9c7e098496e69065eb9a5e7edf8331cdbd302e98c2f39490dc
+Description: Wheels for Python ensurepip
+Homepage: https://python.org/
 
 Package: python-ensurepip-wheels
 Installed-Size: 3308
@@ -30501,6 +30509,21 @@ Package: python-static
 Installed-Size: 34284
 Maintainer: @termux
 Architecture: aarch64
+Version: 3.11.9-1
+Depends: python (= 3.11.9-1)
+Filename: pool/main/p/python-static/python-static_3.11.9-1_aarch64.deb
+Size: 5304292
+MD5sum: 4ed85f7910841902a0608cb9193acf6f
+SHA1: 1a642bf4ca2d93942a2494719947b7823ae048f6
+SHA256: bb07816b79455885858ff78e81c621a63fdca98ff3f2457860aa786549ba6670
+SHA512: 152b2952a54cbd5c29400bae312b9fffb4d88022a67c43ba53894b904511c1b85b717bab8ac2cf15af07803423d3962c99d79d16fce7532a82a8fa43f872beac
+Description: Static libraries for python
+Homepage: https://python.org/
+
+Package: python-static
+Installed-Size: 34284
+Maintainer: @termux
+Architecture: aarch64
 Version: 3.11.9
 Depends: python (= 3.11.9)
 Filename: pool/main/p/python-static/python-static_3.11.9_aarch64.deb
@@ -30510,6 +30533,23 @@ SHA1: d1bf11503589d24eec266010e4dbcb4b3e6915d4
 SHA256: 8ba4075eeca53b3d69bd07cdbd5b835c827c6262991b1dc53db4134edbcef84d
 SHA512: aa66fe647986098eddc946ff8e3d09227cf389d0cd9d44f6b241596b09beecee93fba41fc68a1131880cf6d80f30797585361949d122f15bc49d53da86cc603b
 Description: Static libraries for python
+Homepage: https://python.org/
+
+Package: python-tkinter
+Installed-Size: 11756
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.11.9-1
+Replaces: python (<< 3.11.1-3)
+Depends: tcl, tk, python (= 3.11.9-1)
+Breaks: python (<< 3.11.1-3)
+Filename: pool/main/p/python-tkinter/python-tkinter_3.11.9-1_aarch64.deb
+Size: 1245372
+MD5sum: 739b55c84a315d661aa4eb0ce7e47fd7
+SHA1: aeb0d78fab594aa1054c854f01e8df71044770f4
+SHA256: 1870ee70bfe5c6bfcb7e75a78172e24cf8ae2a8e0fe54bb9bed8b3d883b4abb2
+SHA512: 6cbf9891cc1a9a2ef8690cdb074f2d484d06e0e0856cd7154a85d3f26825e52ee2da831bd5aa807bdeea398013c1b310cfa95deca295c2874cdc942b8ce6b1bb
+Description: Tkinter support for Python 3
 Homepage: https://python.org/
 
 Package: python-tkinter

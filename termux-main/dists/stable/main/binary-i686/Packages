@@ -2913,17 +2913,17 @@ Description: A free compiler for 6502 based system.
 Homepage: https://cc65.github.io/
 
 Package: ccache
-Installed-Size: 1936
+Installed-Size: 1616
 Maintainer: @termux
 Architecture: i686
-Version: 4.9.1
-Depends: libc++, zlib, zstd
-Filename: pool/main/c/ccache/ccache_4.9.1_i686.deb
-Size: 596800
-MD5sum: 26833b1f45029778ebff072fff80f61f
-SHA1: da69c181003f44ff5605cd74bc72a6f4d6630670
-SHA256: 6d7d8033430c1066ae24c5fdc62beb5e992ccfc8a3865001e0a1800105f3f3ec
-SHA512: 57af366e416c47793f9fbb7b9c96aaf5e7848cf1e708da23876c55bc4daafb3b0ad64736141ff316363e325bfec22e584b3d6d61647526774e9707a3b49f6e66
+Version: 4.10
+Depends: libandroid-spawn, libc++, libhiredis, xxhash, zlib, zstd
+Filename: pool/main/c/ccache/ccache_4.10_i686.deb
+Size: 521992
+MD5sum: b6a4af1b07ecc2071bb9845dc458db2f
+SHA1: a5cf725e7a5b89cfe9559a1d2a1478f00ce91ff6
+SHA256: b0f0e3b267f13a9e2df4294887ee94f9cab7cab9023e96b9791dc69ee90a5a9e
+SHA512: fcdd6450be0465259a8898b62f5ec39daf971af58c15d7d1b7dd7e31845e53a1a48e7d4bd611112a8a243adeeac8efb8ed2427786f4cb01883eb52e576eb7ecd
 Description: Compiler cache for fast recompilation of C/C++ code
 Homepage: https://ccache.samba.org
 
@@ -3312,6 +3312,23 @@ SHA256: cae7a864decc01b51be5f8d14f27e71522b76f7ed9f4ff9eb2b6259ef4a7a2c4
 SHA512: 95dfc153705150f6d50f35b17546d1cc6ff07b6312ba0ba003fa34e2a528c14ec9e151e6bc84e1f4178c682e7383004478c676d27946896b8c073376d1a5dbe2
 Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
+
+Package: clang
+Installed-Size: 206452
+Maintainer: @finagolfin
+Architecture: i686
+Version: 18.1.6-1
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 18.1.6-1)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_18.1.6-1_i686.deb
+Size: 38085692
+MD5sum: c8e30221f1b0cba5ecbb386fd0347164
+SHA1: 6f15c173d6ec6bda859f539e7a67e93eebbf029c
+SHA256: 84c289a24f6c32bb0ebf5c1c84561608917b1a0cfb7a754de7d77f115ff70f20
+SHA512: 920d8444fff1db0f24bb6f8d7c298c0a63a1ec0083210040f803a70c52981e82b210f7e339e701757e7a71f0012f82d4b9f8c9fbd99d4795e954f26dfb4952f5
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
 
 Package: clang
 Installed-Size: 206456
@@ -6055,20 +6072,6 @@ SHA512: 2b62053b51780c2fa29ed9a49dd5331b9bcbd638eca369c4be85e2e7f77be2f59a38ad6f
 Description: Tool for simulating superuser privileges (with tcp ipc)
 Homepage: https://packages.qa.debian.org/f/fakeroot.html
 
-Package: fakeroot
-Installed-Size: 128
-Maintainer: @termux
-Architecture: i686
-Version: 1.34
-Filename: pool/main/f/fakeroot/fakeroot_1.34_i686.deb
-Size: 26012
-MD5sum: 3f592ada1a3cbdde69e29d9715cd2c51
-SHA1: 113f2415023db47573cad5cae3425ca27b9bddfa
-SHA256: e40e90758b297691c340c8e86f29845047db002a5cd0f89c7d6280018953f1c1
-SHA512: 37ff3bd003eb5acf2e4438369a71776b205bf0737f94a0e163f50a301b6e00ffbbb0c8e48a09cfdcf8f4b98e0432feb420a686e2059483b603ee326cf9f02dbd
-Description: Tool for simulating superuser privileges (with tcp ipc)
-Homepage: https://packages.qa.debian.org/f/fakeroot.html
-
 Package: fakeroot-static
 Installed-Size: 80
 Maintainer: @termux
@@ -6081,21 +6084,6 @@ MD5sum: 4278a32ac21930c86b90132f2dee7f11
 SHA1: d6ecf649d60c98da895a212e6db80d8eae8d216a
 SHA256: 4bb8cf31a0f1d2c5adc3b35093bbea21f1142d84ae66df10372a150ac9442e2c
 SHA512: 85cb18356e53b2666c8d5a37d8945bf30a16b1666b3d1c6ea44e2c9e3fe758e0d58e68385c6ab5a2ae9bcb0465259ba89a4eb588e526ee199b09fbbd97ae7e65
-Description: Static libraries for fakeroot
-Homepage: https://packages.qa.debian.org/f/fakeroot.html
-
-Package: fakeroot-static
-Installed-Size: 80
-Maintainer: @termux
-Architecture: i686
-Version: 1.34
-Depends: fakeroot (= 1.34)
-Filename: pool/main/f/fakeroot-static/fakeroot-static_1.34_i686.deb
-Size: 11468
-MD5sum: f8a351c0170a86477faa68aed148717c
-SHA1: 4a15dfe03530e874357ea33895a9ec8ad4bd14b5
-SHA256: be300beeb4ba7202c3bd09715d11451e35a2670931757b7d94ca3cca515af243
-SHA512: c0aa6317ea9c62cf11c88a20e894072a51e7b02e60069b7ab6d0530a8f1cdf8287e6a23c3673cf820684fc4645e4aff961bda9bdae2e8ed9f59793ff81041ddc
 Description: Static libraries for fakeroot
 Homepage: https://packages.qa.debian.org/f/fakeroot.html
 
@@ -11343,6 +11331,20 @@ Description: User friendly full screen text editor
 Homepage: http://www.mirbsd.org/jupp.htm
 
 Package: just
+Installed-Size: 3540
+Maintainer: @flipee
+Architecture: i686
+Version: 1.28.0
+Filename: pool/main/j/just/just_1.28.0_i686.deb
+Size: 1106704
+MD5sum: 10ce5aebc1361c3b8b6cd10c44dbd737
+SHA1: 1b1447fe4aec41a207ebbef553748244024a1443
+SHA256: 3bd26cb294e4c4e308d3d48bc8beab67eec56ac397fa2fe9be223b3c59fb4881
+SHA512: 7144015be3f9f5d70a6beda048a04ccf886f5edcd76a2c0581acc318f2bc28f08f46ebe57c0f92146df4f17521bbfde9dfc0de8e22437436845cec6bd27c35ad
+Description: A handy way to save and run project-specific commands
+Homepage: https://just.systems
+
+Package: just
 Installed-Size: 3448
 Maintainer: @flipee
 Architecture: i686
@@ -13413,6 +13415,22 @@ SHA256: eceaaceea104ca5c24cc7aaa785d3fd4ab364d476a9efc68a211c3bbe8dd044a
 SHA512: 1f330f03ec8badca0980d3bced20fde805746590bbe9fcb290de918570696300bac4d5513be3eb0c548f8a139659527ea5373d2f90a9091659760e636ff5e680
 Description: A host of helper utilities for the java.lang API
 Homepage: https://commons.apache.org/proper/commons-lang/
+
+Package: libcompiler-rt
+Installed-Size: 13740
+Maintainer: @finagolfin
+Architecture: i686
+Version: 18.1.6-1
+Depends: libc++
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_18.1.6-1_i686.deb
+Size: 1438568
+MD5sum: 1e9ae1c8809567ed9da0bee5f50bdc9c
+SHA1: ff8640a60739a611a3c4f523f394bd018d3d2c59
+SHA256: 5cef50f6d59a9cb7dccd89577a7dc720aeab3db5a6c880c3d4032afc2382bbe9
+SHA512: df5e47fce5ff61a3354704bdc2580b6716c0a00beab9caae6991713f00c7495986ff6499e898108c4be0f94ea8894397ebc4f1b2b3fb82d6ddd9adc37da4ea58
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
 
 Package: libcompiler-rt
 Installed-Size: 13740
@@ -16218,6 +16236,24 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
+Installed-Size: 155480
+Maintainer: @finagolfin
+Architecture: i686
+Version: 18.1.6-1
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_18.1.6-1_i686.deb
+Size: 31248108
+MD5sum: 459d33f5803f48b91b9c2ddedee90d44
+SHA1: 40a6968f7f76529a4de12cad14cdf29dc5da6467
+SHA256: 279a0a482a8ee6e7699a75deb7afdc5e4a9ed12b476a86ab1deee7b1b2efaf02
+SHA512: 47a3e639b260995b08ea81f5a4d9fc872a751eaffb059789dfd8a9005ce24a0ee0bdf7dfa17522e77dff295ebc095e27b2f690077f03121a1a81a397c963be2d
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
 Installed-Size: 155488
 Maintainer: @finagolfin
 Architecture: i686
@@ -16233,6 +16269,21 @@ SHA1: 23679779936be8957e800925b7584f555e20ae09
 SHA256: ea88d123b7038224857830f334b7e13953d1ad8cda988914a973404ee44d2df7
 SHA512: 2735741f269c401a35fd23d0b5ac6503828b4ebb7807901416371f65b2abbc9e8fcf1e0af041f2c220d79f17e6bc585791c9cc4ff7044613dbbdccf0b1b76da9
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 616712
+Maintainer: @finagolfin
+Architecture: i686
+Version: 18.1.6-1
+Depends: libllvm (= 18.1.6-1)
+Filename: pool/main/libl/libllvm-static/libllvm-static_18.1.6-1_i686.deb
+Size: 78585820
+MD5sum: 8b90cb43e2b6182f07829b901c36b3c6
+SHA1: d577b12fae138a8c5814ec68a24115bb5d6f8f99
+SHA256: 5af935b6d4d683653c48de50c66544161ce7c174999a0f4108efb77b70ffa5d3
+SHA512: 80a13b4e5c670cc45f0c802076a173d6d94c292b8bc75f4186b6d253520f83d6e940f34d489bc0ec2a4112f113c583e7be838d1479acc05ed7b04e410698e59a
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -18670,6 +18721,21 @@ Description: Static libraries for libplist
 Homepage: https://libimobiledevice.org
 
 Package: libpluto
+Installed-Size: 12680
+Maintainer: Komo @cattokomo
+Architecture: i686
+Version: 0.9.3
+Depends: plutolang (= 0.9.3)
+Filename: pool/main/libp/libpluto/libpluto_0.9.3_i686.deb
+Size: 1513648
+MD5sum: cecbe39305aa907aa5903cb3cfacc260
+SHA1: 4411831a414285e8b6cd5223387ba05cb8acd595
+SHA256: 4b6df405cd156bf1192330eccb21d73babeb6710e5cd7860bff11bbf1c2a79fb
+SHA512: b90994bebdcc6cba716da865499b1266f9ced22b7948017618939878d248b486c28c0aa8909e90d8d97dcde7fa364213d397e3ab9367e5d7158ef2f4268dad86
+Description: Shared library for the Pluto interpreter.
+Homepage: https://plutolang.github.io/
+
+Package: libpluto
 Installed-Size: 12448
 Maintainer: Komo @cattokomo
 Architecture: i686
@@ -18760,6 +18826,21 @@ SHA256: f9ddb409d3d16d76814cda1840439f6b8730678ef1880d4b798a84ea9a1dbbf2
 SHA512: b5c7127a48719fac4ae05a008ed20a96a8c39783aeaebc573adef1c3a938ffcaa26c7dc9cf53586c4fe51f2f0a25d91323ecc6b2033edc36c22b819aaf466efa
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 5948
+Maintainer: @finagolfin
+Architecture: i686
+Version: 18.1.6-1
+Depends: libllvm (= 18.1.6-1)
+Filename: pool/main/libp/libpolly/libpolly_18.1.6-1_i686.deb
+Size: 1410308
+MD5sum: e31722673a9ac56e1af48fa73c74ea56
+SHA1: b9703ac59b303bab7b09dd48f1e73417b9b60363
+SHA256: c9aaafb4a5170bc27888981e7131697a90b95dbda525931fec17676e3aedccaa
+SHA512: 802283d63d05762b3639dc00958c51aa2a302f7046c5f71fa9f4441451e9cf161a80efe32aa5a8b752d59f4e99728561479db5fc797dd0e5814dea7650281776
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 5948
@@ -23055,6 +23136,21 @@ Package: lld
 Installed-Size: 15036
 Maintainer: @finagolfin
 Architecture: i686
+Version: 18.1.6-1
+Depends: libllvm (= 18.1.6-1)
+Filename: pool/main/l/lld/lld_18.1.6-1_i686.deb
+Size: 2417972
+MD5sum: c0a5edf0f1a8a069ffb7ac7444088dd3
+SHA1: 6d7e51508fc2d6955f868a55dfeab62eede5396b
+SHA256: cd0901530b7148a1056056bdbae9b90606ed7d7d90b610b10122288e1a7412ad
+SHA512: 4fb8daa7f4b1083febe95d06159dd72027d8e83cc52603a7c035a732860a8e35998d1a7511ba5572bc8f7fbdfbc0951d2e230026666e3f9c9489145fecc1c507
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 15036
+Maintainer: @finagolfin
+Architecture: i686
 Version: 18.1.6
 Depends: libllvm (= 18.1.6)
 Filename: pool/main/l/lld/lld_18.1.6_i686.deb
@@ -23064,6 +23160,23 @@ SHA1: 17b099da3820fc37c7a6713ecd8d26791e537aa9
 SHA256: d27898043311e2c69793cffbf374182c6873247c1cf933e42324ba1d8c61052d
 SHA512: 5cd3333f73f967aa766feae26137f9aebf966b41fb8767d3765a0330240c7b456f8f46b9656a54f110b563c3c72e0d554efdc7a9cff6b6ec54bbde56b4526955
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 110596
+Maintainer: @finagolfin
+Architecture: i686
+Version: 18.1.6-1
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 18.1.6-1)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_18.1.6-1_i686.deb
+Size: 23018504
+MD5sum: 691a658c4a5b3554d53390628a64ff5b
+SHA1: 5c35ea2a1cecec7e81374d6eb9903a57e69472e3
+SHA256: 4d815c9d469ce0fddf025f570146342d3fe41990868705dd2fb555ecca3ea67c
+SHA512: 3a81a319c0d64dc8872764d078bb6679ae4a4aaf3709333b79be4ad4ff46f7da212e19fc962131a66b2a15b3ef2bc666c286d080d2a467174aaa98e19f8cfe80
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -23146,6 +23259,23 @@ Package: llvm-tools
 Installed-Size: 12200
 Maintainer: @finagolfin
 Architecture: i686
+Version: 18.1.6-1
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, zstd
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_18.1.6-1_i686.deb
+Size: 2555320
+MD5sum: 08d1914a895880aa847640864287ffea
+SHA1: 24b73c7a1b6047067f843b71125081131bb90231
+SHA256: 63d0aac5f224b301e8cedf889d0fca64af2da129c47b0cfbc83e92efb47b39c7
+SHA512: 3a2be23004da029a212870488e086963c9e9c32c1ab21189c131c1a2b9d3cb770e4e07068b2617afd6e4a0fb34e19ba34063eb069c3e7682bb14eedc0e63553f
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 12200
+Maintainer: @finagolfin
+Architecture: i686
 Version: 18.1.6
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, zstd
@@ -23157,6 +23287,21 @@ SHA1: 559009dd266391095e5bbb709eca0040f95c79ea
 SHA256: 51d6dfab9d7c4d3ef086a630fd1b88b05d782214ef61d8089f56fc756fcddeee
 SHA512: e92c051acb170acf165c2f54dcfaab14a57c8ebdca2725e8a76ab86503deb3335d6b030df13e1becfc9b3e667869366d4c80bdbb3b5d67815555bc389caeba0b
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 108
+Maintainer: @finagolfin
+Architecture: i686
+Version: 18.1.6-1
+Depends: binutils-gold, libllvm (= 18.1.6-1)
+Filename: pool/main/l/llvmgold/llvmgold_18.1.6-1_i686.deb
+Size: 28172
+MD5sum: 5e82337c475bfbcc63b2391ef8db658b
+SHA1: e83831dc6756ff71bf6d397f741428f3cd35b054
+SHA256: 400b399bb915f19798c6937a995d6e9e061b2cde017e33b8c38bffa541b09fc3
+SHA512: 2ca1dd1aeeefb51be86102144d64cc9faf9aa76763aa5f0a8e01272722f36641f2f0a398f88d3f8ee52a53678e9c3edb1b05a14e6063d0aa197884a9de44fb36
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -23407,21 +23552,6 @@ MD5sum: f3cdbca9a3ace1d4c07025399d964612
 SHA1: 8f9a5a1f630b4d2c608cce2d187805a0f3a948a6
 SHA256: 558eaf3aec00aac602967ff9235827b2d48c48ea4c57feea4a45086f2d1cc99a
 SHA512: 572529f375d6ff062755591e6506e550edfa61b982ba4c1c4426dcb356e585f524e675ba9ebfc50f305507844582eee7ef93adfce7714cbd03a47b39241ddf34
-Description: Sumneko Lua Language Server coded in Lua
-Homepage: https://github.com/sumneko/lua-language-server
-
-Package: lua-language-server
-Installed-Size: 10752
-Maintainer: Aditya Alok <alok@termux.org>
-Architecture: i686
-Version: 3.9.1
-Depends: libandroid-spawn, libc++
-Filename: pool/main/l/lua-language-server/lua-language-server_3.9.1_i686.deb
-Size: 1674704
-MD5sum: a50061031f3765d09c9cbf626049a5e5
-SHA1: eef73d398f8c37350819881bb591e684ce035d76
-SHA256: f152ca96f2076fbcd0a680ab86684ad1fb63276bd7b539373629dc1a611509ab
-SHA512: 5409bd59d3f3ee4b2e77f1c8b30a82feefd7af1ebb750e2bff0b34e10d9e31f17e775abd386275357c4c966adecb17daecad8b07431d0863fa53877e418b2fe5
 Description: Sumneko Lua Language Server coded in Lua
 Homepage: https://github.com/sumneko/lua-language-server
 
@@ -24938,6 +25068,21 @@ SHA256: 69dc50949953e33715326352a2b9857c98d33cb09b16ba5a6366c424e05506a1
 SHA512: 8ba48472d277e40d4c0f4bf94d53dd8e9c0f07661d27084dc9ef8aacc83b980eedee0d921d4c357d2f24fbd22a090879e9673a300e02b8a6422606fcf320e499
 Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
+
+Package: mlir
+Installed-Size: 418580
+Maintainer: @finagolfin
+Architecture: i686
+Version: 18.1.6-1
+Depends: libc++, ncurses, libllvm (= 18.1.6-1)
+Filename: pool/main/m/mlir/mlir_18.1.6-1_i686.deb
+Size: 56092384
+MD5sum: e5988815ac4dc4e36598707f46f68d7b
+SHA1: 7bcb0173abbb8324c1ba4c37bce5859483715962
+SHA256: 1375551d6e895cfc1df8029c3f0a9423ae78fd882026481f554fa4128bf74e32
+SHA512: f216df11f4c338ab0c39fb2369c0e5e32631c2242cd2401c25e2abc7e662f38b814e12d6ae8ca1b7ee4fb589252ad93136741089a699f5883dc6ce09499b267e
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 418576
@@ -28894,6 +29039,21 @@ Description: Simple command line audio player for Android
 Homepage: https://github.com/termux/play-audio
 
 Package: plutolang
+Installed-Size: 4016
+Maintainer: Komo @cattokomo
+Architecture: i686
+Version: 0.9.3
+Depends: libc++, readline
+Filename: pool/main/p/plutolang/plutolang_0.9.3_i686.deb
+Size: 719116
+MD5sum: 5815ddc974ca7c44a4ded6b9e5908166
+SHA1: 3fbfe9a90e91560d33ed635c6bda78b8cbdccbaa
+SHA256: 1c3a637e705e8a4cc6d5f36bdd8f80a2c85bff65cc471895cbd29eaf0e103ed5
+SHA512: 9143cdda760064d268f52b7f6edcdd8b05ac1b67f45d24739deecef4a5f2fb7f134685ad8621d6dcbc9aa259072b5bbfd823cd05f1830dcf0169003fd6119b8b
+Description: A superset of Lua 5.4, with unique features, optimizations, and improvements
+Homepage: https://plutolang.github.io/
+
+Package: plutolang
 Installed-Size: 3984
 Maintainer: Komo @cattokomo
 Architecture: i686
@@ -30886,20 +31046,6 @@ SHA512: e0faafd6dbcbe216bf428133dad4f0eea22998424367c4aa9c3407f886f934cd6ec3fe04
 Description: This is the command line interface for Railway
 Homepage: https://railway.app
 
-Package: railway-cli
-Installed-Size: 5636
-Maintainer: @termux
-Architecture: i686
-Version: 3.8.2
-Filename: pool/main/r/railway-cli/railway-cli_3.8.2_i686.deb
-Size: 1959468
-MD5sum: 60dc664381ea5f4b7b7453f83b3f8214
-SHA1: 08d7dcb900215a911f1e1aa0cf8e47535bf96947
-SHA256: dee1c3106503aaaeff37657c870eaa02e7b9c45898ffd967e5d5b106dfb88d8d
-SHA512: a0aed472fcb93f91842643005bf477384f04dd59fbb2de9378bef6b0b961352b83d7cbc70b111360f13b80bb1c7477cc3222965264ff34112306a455823f2cd2
-Description: This is the command line interface for Railway
-Homepage: https://railway.app
-
 Package: range-v3
 Installed-Size: 2796
 Maintainer: @termux
@@ -31149,6 +31295,21 @@ SHA256: 17d7c4e6c960100ad9dd643d6d5bf2ee7b6824055e44a24fb93707b92da31245
 SHA512: 9c1b277ed5dfcc08119a97fc08219f4653b5c6fa2aa52f4a9a249a88d7182c32d3b1b0caa68f7f9b9263fa38b33ca9a4868834630fa51424f671f01b93bd0a86
 Description: Command line tool to extract the main content from a webpage
 Homepage: https://github.com/eafer/rdrview
+
+Package: re2c
+Installed-Size: 2296
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: i686
+Version: 3.1-1
+Depends: libc++
+Filename: pool/main/r/re2c/re2c_3.1-1_i686.deb
+Size: 351364
+MD5sum: 6466e3d4788f409366038641264ca784
+SHA1: 662c541410dc522482514561ad4736a007f82664
+SHA256: 38f8ef33715dbf570e2373016d273510bc62b5cc22385bcc16af9305bd17e473
+SHA512: 7bd0e287faf03569d63c5b2a743eca80b97c92fdc978fbb5d77901715eacf48f4ad384c868f44339e1f57332d6d578a80de905e5609137c301ec7865466d9761
+Description: Lexer generator for C, C++ and Go.
+Homepage: https://re2c.org/
 
 Package: re2c
 Installed-Size: 2180
@@ -34313,6 +34474,21 @@ Package: swift-runtime-aarch64
 Installed-Size: 29988
 Maintainer: @finagolfin
 Architecture: all
+Version: 5.10.1
+Depends: ndk-multilib
+Filename: pool/main/s/swift-runtime-aarch64/swift-runtime-aarch64_5.10.1_all.deb
+Size: 5399444
+MD5sum: c4c742bc99b93f9319ecf01c5273b96f
+SHA1: de2fd156ecf28b8a0eb7fd7f35f1f431d8560c39
+SHA256: ab570f0ea6e68df3ba0b267fcd7356042e51ad46940a437daa23e7d2dcd19dbf
+SHA512: 236bc66dacc98d8a8dbda7b88d3101529ec3d29f4bb6fe619ffcc992e6124cb552c9c58daec4cb47cddb2cc2b5c7bcdd418d4f9aca5749e316eba5bc7122baef
+Description: Swift runtime libraries for Android AArch64
+Homepage: https://swift.org/
+
+Package: swift-runtime-aarch64
+Installed-Size: 29988
+Maintainer: @finagolfin
+Architecture: all
 Version: 5.10-2
 Depends: ndk-multilib
 Filename: pool/main/s/swift-runtime-aarch64/swift-runtime-aarch64_5.10-2_all.deb
@@ -34322,6 +34498,21 @@ SHA1: 33689ee17bf4f9192b793236917ded8c02388982
 SHA256: e01b7a65201be60b21ee476927464bf6fc52cb2d5b381434672725176633a753
 SHA512: 01dc27eabc435058966cbc62ab1edfd759779acaeaae8ccc0326096b37048864c62ac54ede43983872aed74acc54c51b4e2de324e2215328170f52b7d362e3ce
 Description: Swift runtime libraries for Android AArch64
+Homepage: https://swift.org/
+
+Package: swift-runtime-arm
+Installed-Size: 29780
+Maintainer: @finagolfin
+Architecture: all
+Version: 5.10.1
+Depends: ndk-multilib
+Filename: pool/main/s/swift-runtime-arm/swift-runtime-arm_5.10.1_all.deb
+Size: 6209652
+MD5sum: 70757157dbf8c6f521f747b530efae91
+SHA1: ce70b9695dc8733cd74b88bb6575de21bcc9473c
+SHA256: 91cae41b9ff1924a99ace3af7d92f340df176d16116e0aef3a150bf4112298b3
+SHA512: 597d8725f058babeb6bd4a287af01b334c20b8ac01384aaed5207486dc6b269653e0555eb1039850596f69759d7ca5f5a9a842201f0b23948c4dc05abb55b733
+Description: Swift runtime libraries for Android armv7
 Homepage: https://swift.org/
 
 Package: swift-runtime-arm
@@ -34340,6 +34531,21 @@ Description: Swift runtime libraries for Android armv7
 Homepage: https://swift.org/
 
 Package: swift-runtime-x86-64
+Installed-Size: 30384
+Maintainer: @finagolfin
+Architecture: all
+Version: 5.10.1
+Depends: ndk-multilib
+Filename: pool/main/s/swift-runtime-x86-64/swift-runtime-x86-64_5.10.1_all.deb
+Size: 5951332
+MD5sum: 136530920e021f5761e7ca0aa63187d4
+SHA1: d52a59a4e11204c5c7d58ea703e8123b8ce283b4
+SHA256: 0ab97a5c6de4af33b953bab0d966999c767cde4a23f26bc58dd1e8ba9e2cae03
+SHA512: 3b0bf2ad764e764ccf3f9a9af37b5a1118f7e0bd4af657cbc62cd87f7d04438397b3da8b971de38dc758e9632bd5fdb92e00e051f0f7079763072e7b9fbab2d9
+Description: Swift runtime libraries for Android x86_64
+Homepage: https://swift.org/
+
+Package: swift-runtime-x86-64
 Installed-Size: 30380
 Maintainer: @finagolfin
 Architecture: all
@@ -34352,6 +34558,23 @@ SHA1: edc363b201cf1bbb7ab2eb51569e9ef65a981b23
 SHA256: 6d4924fd0c290724a17156356ca3e94b0368c643fc86690b93324568de936145
 SHA512: a9537f50114ef9b9333c1fa6c4e532ffe400bf67d790760a1bbf98e3d38289130712180c3c9539259988d9dda324e3395bc089777245527ff06210fdccc44d3b
 Description: Swift runtime libraries for Android x86_64
+Homepage: https://swift.org/
+
+Package: swift-sdk-aarch64
+Installed-Size: 133740
+Maintainer: @finagolfin
+Architecture: all
+Version: 5.10.1
+Replaces: swift (<< 5.8)
+Depends: swift-runtime-aarch64
+Breaks: swift (<< 5.8)
+Filename: pool/main/s/swift-sdk-aarch64/swift-sdk-aarch64_5.10.1_all.deb
+Size: 19206636
+MD5sum: ef470e4bca121970c45a3bb2b1b1ecc0
+SHA1: d4cd539e39120605ed197f49eed9fe055943f075
+SHA256: b1536a5a886fe82137555a1eda66f59b17f8738cc64044e989d7a2ae44b2cf45
+SHA512: 696eaf93ba47629e9f4f54bbe440ce396eaece1250782bd1259743e8d743cccf45291468d6c5675ad9b867733438646952b0c08106571daab05b666561de4f5e
+Description: Swift SDK for Android AArch64
 Homepage: https://swift.org/
 
 Package: swift-sdk-aarch64
@@ -34375,6 +34598,23 @@ Package: swift-sdk-arm
 Installed-Size: 129684
 Maintainer: @finagolfin
 Architecture: all
+Version: 5.10.1
+Replaces: swift (<< 5.8)
+Depends: swift-runtime-arm
+Breaks: swift (<< 5.8)
+Filename: pool/main/s/swift-sdk-arm/swift-sdk-arm_5.10.1_all.deb
+Size: 20378060
+MD5sum: 2f45483a41808cd97d6bf7167699df2f
+SHA1: 6d49f82e0b7c11c225f8e792dc33deac78610e81
+SHA256: f5e588bd10559f82880a34a364ab74c9379131c2744e64f9ef997fd4afa8cd6f
+SHA512: e8f90006f56140c6c2a78e79b96162c56bef608ea6f284f218b9a1753ae197bdaae3cd74d85434862858facfc67502de56f89b6ab8ad48fa6591556b2906b873
+Description: Swift SDK for Android armv7
+Homepage: https://swift.org/
+
+Package: swift-sdk-arm
+Installed-Size: 129684
+Maintainer: @finagolfin
+Architecture: all
 Version: 5.10-2
 Replaces: swift (<< 5.8)
 Depends: swift-runtime-arm
@@ -34386,6 +34626,23 @@ SHA1: a4c2d45c5ef33a884bac08d0a8fa3c54a69e0679
 SHA256: 8b46f58d7f471c330454bf63b83dd9e068fb5076c3c6d50fb6396ae41bf1d4a2
 SHA512: d9bde31e0b2cc7e21247895129fa72243b40ea1dcea05418ce3bb9c56479d27ee8e96e2b0e10d8b5b2f3447ba8cd21a4a2f03116a249fcfd4cf0f833a9e81087
 Description: Swift SDK for Android armv7
+Homepage: https://swift.org/
+
+Package: swift-sdk-x86-64
+Installed-Size: 133284
+Maintainer: @finagolfin
+Architecture: all
+Version: 5.10.1
+Replaces: swift (<< 5.8)
+Depends: swift-runtime-x86-64
+Breaks: swift (<< 5.8)
+Filename: pool/main/s/swift-sdk-x86-64/swift-sdk-x86-64_5.10.1_all.deb
+Size: 19568060
+MD5sum: 14f1b947aee9ec65bc25771bf7cb688f
+SHA1: e6c9c0154bad0340140c146c8f4cea7661d819c3
+SHA256: 9eba6b3492b666a7f632a24d84f95916331324c01ae90c0c9dc112a65b91b4d2
+SHA512: 9f0f0ecc7e3971f0932d79d480a90832affa69c4fb79d61852d3d9f68d6df5b93eaa5699baafbd1a026b6e0d9b0d4faa0c8efd2fbbda41a5ac3dcc17cc56bf61
+Description: Swift SDK for Android x86_64
 Homepage: https://swift.org/
 
 Package: swift-sdk-x86-64

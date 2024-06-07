@@ -3376,6 +3376,23 @@ Package: clang
 Installed-Size: 207912
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 18.1.7
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 18.1.7)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_18.1.7_aarch64.deb
+Size: 33139808
+MD5sum: 731f60fae63fc908df6b825ea55d5e14
+SHA1: 9cbe1ac9cf3bc88ca8b4ac53fafe3add75c170cb
+SHA256: 1e0611d49e1444544ea7ae38e8f91978e226faabd6a91faeb91b40f8fe93816a
+SHA512: 159b7ea5fec859e71974d48b1293dc01d30ca1ba1161e8578d146bc9084ec7de82ca6c728c36b55889f81c8f702f13ac7b462788ad48ffca57176e3c54b38883
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
+
+Package: clang
+Installed-Size: 207912
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 18.1.6-1
 Replaces: libllvm (<< 16.0.0), clangd
 Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 18.1.6-1)
@@ -6051,6 +6068,21 @@ Description: Open source xHE-AAC encoder
 Homepage: https://gitlab.com/ecodis/exhale
 
 Package: exiftool
+Installed-Size: 16824
+Maintainer: @termux
+Architecture: all
+Version: 12.86
+Depends: perl
+Filename: pool/main/e/exiftool/exiftool_12.86_all.deb
+Size: 3487724
+MD5sum: 963746314ff798c0fdd6615511c11377
+SHA1: b6b67fa2b03d8e752b8bca9f620bda3c11c15464
+SHA256: 0d04b2be7d9b72ac2a3effcd9f20593e8f726004f5a304f6a34e29388c4a41e4
+SHA512: 2ece920828262385d7803da87a55bd72aece79971af91d15dd81c0f44fa40d21d9ea788ee293a786de31e5ebe2999b90e10a08a25e1b038a93be7f7fa9fca156
+Description: Utility for reading, writing and editing meta information in a wide variety of files.
+Homepage: https://exiftool.org/
+
+Package: exiftool
 Installed-Size: 16816
 Maintainer: @termux
 Architecture: all
@@ -7049,21 +7081,6 @@ MD5sum: ee07dfddbec8ac97fc7ad17107f85ae0
 SHA1: 8c4ec49544e9a0461f834f7946697d62ba17e733
 SHA256: c1d011b499ea3f6e96f4e7c75d45ab67565eb9fbfa211913a7b217f20a4abc54
 SHA512: 3139817ee5b61988e8a115bd201639bf422590a2cb5e581d7b7a5032f57d710c203840052b97b09f092c8509981955d20d206cdcff6a549a898edcaa6618f4cc
-Description: Minimalistic plugin API for video effects
-Homepage: https://www.dyne.org/software/frei0r/
-
-Package: frei0r-plugins
-Installed-Size: 3540
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.3.1
-Depends: libc++, libcairo
-Filename: pool/main/f/frei0r-plugins/frei0r-plugins_2.3.1_aarch64.deb
-Size: 452060
-MD5sum: 7f172d383db1c25760d54c494763aaba
-SHA1: 903fd03d35d8b7f4e3fab78a5dbf0c6517594a4f
-SHA256: 365de1aa8f5417790a80b490fafc131a1a26fe1d8388f98329ba04d16f68cadc
-SHA512: adcd663986ac284d693302d251e52b93b5907ee4aa23cd859111fcb95f150b83816487333215348ebb03da8a02941e662fe5a139341c380b3fa6c747d03b37cd
 Description: Minimalistic plugin API for video effects
 Homepage: https://www.dyne.org/software/frei0r/
 
@@ -13599,6 +13616,22 @@ Package: libcompiler-rt
 Installed-Size: 35296
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 18.1.7
+Depends: libc++
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_18.1.7_aarch64.deb
+Size: 2958712
+MD5sum: aa7b31a872fae32d16bbcf149be0c40f
+SHA1: 07cf1f839e865d039a905ea1b0eadd1cb0902975
+SHA256: 7a0f09d4ad5d1498143fa85694f71e6d4a067045c423fd7fffd7384d66999ccb
+SHA512: 79ccde799c64e3c9550215b7bf8155c5dd55066615b5fd7f9e04e9cf35912316bd3a45391ee0dc69e496cc7b12f6c3ee71dcc0244cbcbab97205322a90f55b53
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
+
+Package: libcompiler-rt
+Installed-Size: 35296
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 18.1.6-1
 Depends: libc++
 Conflicts: ndk-multilib (<< 23b-6)
@@ -16447,6 +16480,24 @@ Package: libllvm
 Installed-Size: 141512
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 18.1.7
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_18.1.7_aarch64.deb
+Size: 26265892
+MD5sum: e676a207e58ca78fb90647b155fc3984
+SHA1: 1b2523738286e8a08eb897691a7a5080b19e66c5
+SHA256: 9437fe688f6b49e3ba481b20a6ff66d4e4b99116b7492e839a462876bbe7817b
+SHA512: 8650676281f78c287a0c7e611c660756a7f8ed473e58135b463542466bc91471adca0d88018915cb11055878133a5f28d7156eb5cf81bef4613b412c61dbf3eb
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
+Installed-Size: 141512
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 18.1.6-1
 Replaces: gcc, libclang, libclang-dev, libllvm-dev
 Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
@@ -16459,6 +16510,21 @@ SHA1: 3c7db014469d2fbfc913343e22c36625b1605c40
 SHA256: a5ecd1587dc1baa29ac69934ba835d83d01b453bca8d6f586f5554f496155607
 SHA512: 5efec8b3781ff1aa0df72b55ce9f279742bdb779ad59041416b9fbae94d257fc63dca852b5782dc83f086503ea40cea85274526e74a48a3ad3776c194a9a68bc
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 729596
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 18.1.7
+Depends: libllvm (= 18.1.7)
+Filename: pool/main/libl/libllvm-static/libllvm-static_18.1.7_aarch64.deb
+Size: 73744044
+MD5sum: b60dad0259a9ea83208976564fde08a7
+SHA1: 7380b0787f26b5dbb0a06b9e4d917510da3fbd5c
+SHA256: c1cf9b3f97fb7ef0a7e630a6e536279f234aad0c13583bce594b4e8c75d34c6d
+SHA512: a14fd765e3827b57c4200fca764364322f0b2cc4495668c380621bdceaff21b3ba8941d3338a3918e3d4b8dd504461c1867a0e1bb5b4c97447669b2c0dc93253
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -18991,6 +19057,21 @@ Package: libpolly
 Installed-Size: 5872
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 18.1.7
+Depends: libllvm (= 18.1.7)
+Filename: pool/main/libp/libpolly/libpolly_18.1.7_aarch64.deb
+Size: 1220880
+MD5sum: 6a5b3fed99c1bb7b898ae59d9ca9b8c2
+SHA1: 7a08043eced5aaa0a24cdedfc8c3915b54d9c507
+SHA256: 7808c1695efa52e9f549572636438f9cbc707f05bfd4c322f973d76e93845a5f
+SHA512: 67148876c84efcdaab29600283d27b411f9e481d3d56bba8f75b963b5eaf1d416db1af3934096b1ea95c89acf24067dace3f25729b5a0e0afd6d5158f76c006d
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
+
+Package: libpolly
+Installed-Size: 5872
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 18.1.6-1
 Depends: libllvm (= 18.1.6-1)
 Filename: pool/main/libp/libpolly/libpolly_18.1.6-1_aarch64.deb
@@ -20119,6 +20200,21 @@ SHA256: be59df6ee46d754e3165a680adc34d18d1227510d85dbddba7990c4bb718c531
 SHA512: f0194b9ba378c768869b5480ba2d6a351827119e49823ac3be9db214f223762a0822c94d7e5e64edd000ec6299d99e7c04a2c7659e8aff24febcaf300d9d475f
 Description: High quality, one-dimensional sample-rate conversion library
 Homepage: https://sourceforge.net/projects/soxr/
+
+Package: libspatialindex
+Installed-Size: 1456
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.0.0
+Depends: libc++
+Filename: pool/main/libs/libspatialindex/libspatialindex_2.0.0_aarch64.deb
+Size: 262904
+MD5sum: 27d6ade99d02e02487f57ef6bb2d099d
+SHA1: 79fd0e2d5f578f43ebf29b026c647b0c1454cf5d
+SHA256: dfb2089bca4a9f64f937af7cdf106099f4444db6644e947ce700a72d53e7622e
+SHA512: 02fea71b3c064dbfe26b71ae810efd61e62a577d5c155a00e68ad702a4048c81d1baceb2f237efd9a1e12993713f6b602e7ff370891f80388a4970a4944017cf
+Description: C++ implementation of R*-tree, an MVR-tree and a TPR-tree with C API
+Homepage: https://libspatialindex.github.io
 
 Package: libspatialindex
 Installed-Size: 1340
@@ -23296,6 +23392,21 @@ Package: lld
 Installed-Size: 16704
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 18.1.7
+Depends: libllvm (= 18.1.7)
+Filename: pool/main/l/lld/lld_18.1.7_aarch64.deb
+Size: 2256004
+MD5sum: 3bb98bc9c16be409c1eccc365859f9d5
+SHA1: 78645159ac07803aae36ebd7895125c3ad08c1ff
+SHA256: 9ef47396889bbdc1c88b8ba8933beeda0b8dd7002a41432553d02f7ea88275b0
+SHA512: cf85907ac1b88e312ec5b68a8d0691013a0a447f9de85b9eddf1d1875042b7ef71a536a67db54702f85ec4cd5ac65262c9817eedb76acfa929fa6cae150e860c
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 16704
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 18.1.6-1
 Depends: libllvm (= 18.1.6-1)
 Filename: pool/main/l/lld/lld_18.1.6-1_aarch64.deb
@@ -23305,6 +23416,23 @@ SHA1: b11b902c4ee1823a8c2a480505859cbcca0e4f36
 SHA256: 3a49c6e3dd2278f3c7fbba09731bf2ee9d534d6a40fe8b0b08288f0ac6d67022
 SHA512: 063ddc8234379262352834d0ccd5f2fa1db1653f2cc3ae24be03338161a1559f2ffaf9ee8f174b48ac04dc96d1dcd190133c0fd431da6407f7869b1cc1c5bf80
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lldb
+Installed-Size: 23884
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 18.1.7
+Replaces: lldb-dev, lldb-static
+Depends: clang, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 18.1.7)
+Breaks: lldb-dev, lldb-static
+Filename: pool/main/l/lldb/lldb_18.1.7_aarch64.deb
+Size: 5025484
+MD5sum: 3f1d606676ccd309d150a1e44c0b3b2a
+SHA1: f9041b22cee461ed17b6282a367deb35183be558
+SHA256: 2843a52ae9157523f2df132bf9a6416d03bc3d6f358aa643b0b64c238ed2639d
+SHA512: 7546fe9d316ba9c69ca5212b00f9b5dba40b0f1ed99eec93dfa069e36f854026562189b2e8f300921c30f6314fa0a847b2baf8dd71177f969d497490874d9f3a
+Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
 Package: lldb
@@ -23322,6 +23450,23 @@ SHA1: a8bc2f579df2077fab52c1f7fd103f1a0d49ba48
 SHA256: f02b4eff5d74f37cd0645933cc3e9a6621d33b4944f0b453329f6d5be7c5f6f6
 SHA512: 6ca0bbef2705941459417273c895a0845de52856293514b35ddc2ec237b7460c7255247816c35036fcad78d227cfd24135859b83dc0eec90fb6b094259ab43b9
 Description: LLVM-based debugger
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 98540
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 18.1.7
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 18.1.7)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_18.1.7_aarch64.deb
+Size: 19047704
+MD5sum: 043c5dd5acc72030adfa2f3b694b111a
+SHA1: bd590e477c332f69cb1b5e08255fab2356e35feb
+SHA256: 234229e2a2cbad03ca0650db308c689c815617a57a25a86ee1a1df109ce57aaa
+SHA512: 9c40bf669f91110c3d89c042f0abd9af1e1356aa7990a91626f10985ef889000c56c8b11755e2fbd06cfa64912546dd6496d719cede0be5e2b7e1ec778af5ccb
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -23404,6 +23549,23 @@ Package: llvm-tools
 Installed-Size: 11832
 Maintainer: @finagolfin
 Architecture: aarch64
+Version: 18.1.7
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, zstd
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_18.1.7_aarch64.deb
+Size: 2207084
+MD5sum: c6c23a0c966b2a6e9d1a7ba285aba800
+SHA1: e7823710907da65460b8660f5854637f39af2198
+SHA256: 53af3430b90ddbf8ab1c6535ef8f9329aafad17f04fd7f938eda1bce94f619c0
+SHA512: 4070a7bb8566acd8e12d2c4214a3a46018cbb19e2686491951df954df050874593173d87d75b5cb9e15c11c71869c9c89000ea83c4c7f19aefdbdfcb8f1999b7
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 11832
+Maintainer: @finagolfin
+Architecture: aarch64
 Version: 18.1.6-1
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, zstd
@@ -23415,6 +23577,21 @@ SHA1: 06182ce7a6771c7723f44c42ae5d532463c4d039
 SHA256: 7007caa2a6f3e7d4281caf8c037922434836cb985a7364dd6e04ebc05c02e37f
 SHA512: dbeab505e75ca8148f9fe176da6cf4ba2fb85bdeafff6068946253d8832c0f6c55ec47a6fa698f4c72bbc910972bcfd2310136b922faeaa77a8d932b8512d1c4
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 104
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 18.1.7
+Depends: binutils-gold, libllvm (= 18.1.7)
+Filename: pool/main/l/llvmgold/llvmgold_18.1.7_aarch64.deb
+Size: 26856
+MD5sum: 1751e8d6da29b5b18f6a1ea24193b440
+SHA1: dd8bdb6d3e0ca726744cf1b0d9df577a5f3f8079
+SHA256: d7da06903efd68fec9f8e43bd4f0c98b07d081658dc403607b712a48b1f02bce
+SHA512: 9a31fee1bd4690516168ab04732c36bc9b4d8e06f0e68be07eb1b2d647681c8888df89bc34229809114d47285b737283a3544431f8538aa5f4e993c78fdc6883
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -25255,6 +25432,21 @@ SHA256: b6efcdc53ef592fe11d33c2b33f9c0a5336c4570c2f717c29798eb4d6acc8c78
 SHA512: fa06e653d689e0e94a5c3049ed68afc59e226464046de80020ca9c7822cdfa65e50ac23b664e8af57b491581b6744a438e30faee4fa585fe3966d32aaeb1f66a
 Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
+
+Package: mlir
+Installed-Size: 376408
+Maintainer: @finagolfin
+Architecture: aarch64
+Version: 18.1.7
+Depends: libc++, ncurses, libllvm (= 18.1.7)
+Filename: pool/main/m/mlir/mlir_18.1.7_aarch64.deb
+Size: 49268596
+MD5sum: 0e69160310b32513c8b44ad64b53e8bd
+SHA1: 182719638a75d2c4635c41ebf320dcb342ef2a97
+SHA256: 67fd9e698b4959b5fbf8c6597bc5018339cfcda8883cda24eccf8d5acb80d175
+SHA512: 82dd0efaf47d6f7059761246fb24540c0ee8db0207acf5a035620fbbc1e2652e1f1ddbc44dd0f26d828ff207906ea0c836b490055722f73f288c9778c3a924d7
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 376400
@@ -28630,6 +28822,22 @@ Description: Static libraries for pcre
 Homepage: https://www.pcre.org
 
 Package: pcre2
+Installed-Size: 4104
+Maintainer: @termux
+Architecture: aarch64
+Version: 10.44
+Replaces: pcre2-dev
+Breaks: pcre2-dev
+Filename: pool/main/p/pcre2/pcre2_10.44_aarch64.deb
+Size: 888932
+MD5sum: 11decc3a301d3835fa08642a299d5225
+SHA1: bef7fb38167b5f90de145871349881d72eaf6a43
+SHA256: 14a3c6dffd26b3467b9447c2a9d47bac39b678839a84fec47063c6f1f06f6a5f
+SHA512: d4e86effab95b03ce63e959565aeecb63d8fe9a84c9f06a7757859f3b62801953307b0d79cb40da972cfe79d9d73e17649ae26043aaa3ff145c6aae4b0b04287
+Description: Perl 5 compatible regular expression library
+Homepage: https://www.pcre.org
+
+Package: pcre2
 Installed-Size: 4084
 Maintainer: @termux
 Architecture: aarch64
@@ -28646,6 +28854,21 @@ Description: Perl 5 compatible regular expression library
 Homepage: https://www.pcre.org
 
 Package: pcre2-static
+Installed-Size: 1708
+Maintainer: @termux
+Architecture: aarch64
+Version: 10.44
+Depends: pcre2 (= 10.44)
+Filename: pool/main/p/pcre2-static/pcre2-static_10.44_aarch64.deb
+Size: 344416
+MD5sum: cdafb876476f14001f73799415f431b6
+SHA1: 408e5923f46b7415f884ead8a73fdf6c1fc99fb8
+SHA256: 5f7076b97bc8433557484e4be3eb5d1e459a6037c9e441593d9ca1739844d63b
+SHA512: 843137abe65f4002a8ea2b5cbeeeb72f58f28db1799684782ade7e9cbd5063e03e429b5aa382d85db0a35a65d857d142ca549ad60b72606263fb66b1ce8ccb39
+Description: Static libraries for pcre2
+Homepage: https://www.pcre.org
+
+Package: pcre2-static
 Installed-Size: 1704
 Maintainer: @termux
 Architecture: aarch64
@@ -28658,6 +28881,21 @@ SHA1: 635d7311bb03c096b7b25cbf445a8dc4e540f4b1
 SHA256: 2e193df976e91c88e71c926ad86dba03c29df2b7cd8650eda10e63b5369d61c5
 SHA512: c2e55fe9444282e458153520b578cc3b92a6d69a8ed3f851a0e9234414652da97275579200628b99886a14ad6509803f87ac514722619ba30d1d6d4de280dab5
 Description: Static libraries for pcre2
+Homepage: https://www.pcre.org
+
+Package: pcre2grep
+Installed-Size: 100
+Maintainer: @termux
+Architecture: aarch64
+Version: 10.44
+Depends: pcre2 (= 10.44)
+Filename: pool/main/p/pcre2grep/pcre2grep_10.44_aarch64.deb
+Size: 33456
+MD5sum: 99618170cccffb621b6fe071a1b95ea9
+SHA1: 39656fd26f8a4d26b0d9edc48b798ec0bed64d0a
+SHA256: b1496319d6a83d5c78413c177dfba6e057a43a5751cdfb0b51b77e51c4c6b720
+SHA512: 791826af27ff32cfea0f8cbe06f895cc19b745927d1496015b6cb3b3a7fdba2c1564e59abe83a6224b4024f667c15bdda040c61bafe02803f420e810e268c1a7
+Description: A grep with Perl-compatible regular expressions
 Homepage: https://www.pcre.org
 
 Package: pcre2grep
@@ -33515,6 +33753,20 @@ Package: sing-box
 Installed-Size: 27644
 Maintainer: kay9925@outlook.com
 Architecture: aarch64
+Version: 1.9.1
+Filename: pool/main/s/sing-box/sing-box_1.9.1_aarch64.deb
+Size: 6455232
+MD5sum: db805681fdd3007f596dc83ebb5d605f
+SHA1: 45506b60fabbb3365984288be6657af887011a5b
+SHA256: bdfa191debd899363702620786e5569fcbed9a31121457d35510ea8c38950857
+SHA512: 486b809722b040baa14aded35bfb79934c9f5fd78cd2e0f37bf4d8f75badfd3e44c41e3042328c228b3f7a3b61e0a16869a091f18430490a86184ed18fd68f26
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
+
+Package: sing-box
+Installed-Size: 27644
+Maintainer: kay9925@outlook.com
+Architecture: aarch64
 Version: 1.9.0
 Filename: pool/main/s/sing-box/sing-box_1.9.0_aarch64.deb
 Size: 6462808
@@ -36860,17 +37112,17 @@ Description: ugit helps you undo your last git command with grace. Your damage c
 Homepage: https://github.com/Bhupesh-V/ugit
 
 Package: ugrep
-Installed-Size: 3004
+Installed-Size: 3008
 Maintainer: @termux
 Architecture: aarch64
-Version: 6.0.0
-Depends: libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
-Filename: pool/main/u/ugrep/ugrep_6.0.0_aarch64.deb
-Size: 336268
-MD5sum: 317ebf6079288bc38af2b1681c7f5310
-SHA1: db94748bfa5d95df05e2c5123eb46756d3ada9ac
-SHA256: d951b8557f42d19a934f5cbe37a0723e1a6f3a10345e8ab9515faf8dafb3774a
-SHA512: 74389e4457f54004f79c2fae004aa93117fa5c2fcfa95c5b6b006f0a3329534f360695e36f1c1381504a87802b9ea43423412bd951d0ed348a5dc913dd252c9b
+Version: 6.1.0
+Depends: brotli, libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
+Filename: pool/main/u/ugrep/ugrep_6.1.0_aarch64.deb
+Size: 339668
+MD5sum: 2d9c82613adb8160b232e9d0920d3d38
+SHA1: bf39cc6cac839fc0c6f1c223e622e870d1c0e93c
+SHA256: 3d875babf51da1c86895a2d600e8644b295f10fcd97b538e7932f1f9c71fc5e8
+SHA512: 00875368326b9479dc73ed2346b53e26ee5b372a98c500501b233bc673b8c259309fe9f1ca2e9c9b48dec76c0c2d5113fd1788ada82bb32ec0516273f323def1
 Description: A faster, user-friendly and compatible grep replacement
 Homepage: https://github.com/Genivia/ugrep
 
@@ -37938,20 +38190,6 @@ SHA512: d372387ca3831bf7fd5419e41ca697bde9cb65b0ee579c4eead8af620dfb90b4a4a16d32
 Description: Vulkan Header files and API registry
 Homepage: https://github.com/KhronosGroup/Vulkan-Headers
 
-Package: vulkan-headers
-Installed-Size: 27128
-Maintainer: @termux
-Architecture: all
-Version: 1.3.286
-Filename: pool/main/v/vulkan-headers/vulkan-headers_1.3.286_all.deb
-Size: 1339656
-MD5sum: 47cec18e2f2b3e1f572892378fdd7624
-SHA1: 4f9dfada802a52d2fbde5b5923ae17a46b3b03bd
-SHA256: b15f61e8d07b1ed62f13611f7809122db099a0ab2694b41a45979a432e36ebd9
-SHA512: 67a826203599a5d44b963db03841dd2f52c558d66484ceefec7696a8f3109cb7a518032f9869e99961d67ae9002a356489fc72b4cf2bca034e44f16f4d817853
-Description: Vulkan Header files and API registry
-Homepage: https://github.com/KhronosGroup/Vulkan-Headers
-
 Package: vulkan-loader
 Installed-Size: 4
 Maintainer: @termux
@@ -38011,6 +38249,20 @@ SHA256: 660af2928d0be9df06919c4eb88163a5509120473a66a1d2fb7c236f90fa0ce1
 SHA512: 9d1d148c4da5f72969bccdf4c56eb0ca44b0144b714303b6a75168a9184d6b4ac1d2dc1ef5db97eed25482af6790d973a85f06cbb4a45b31e17b24155153e380
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
+
+Package: vulkan-utility-libraries
+Installed-Size: 5968
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.3.287
+Filename: pool/main/v/vulkan-utility-libraries/vulkan-utility-libraries_1.3.287_aarch64.deb
+Size: 488248
+MD5sum: 761f5fd0cc9970566745e03b3eba85fc
+SHA1: 0d1543c46742f5a50f053cbac3fb0674fa8b7fe4
+SHA256: a4fa6994aaa88de6f15c8c6e4e998dd8560f092ddb432c1f0b66eea77ecb1e27
+SHA512: 628c0caa7f63852154b2d06c683d8af6c1ff10103c015af9aa1ceb411df14e4bcea78d984840fecc922aad7f52ffe4cb0bff9b7810bb902ffd6d7e58f4bca8d4
+Description: Utility Libraries for Vulkan
+Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
 
 Package: vulkan-utility-libraries
 Installed-Size: 5968
@@ -39229,17 +39481,17 @@ Description: Blazing fast terminal file manager written in Rust, based on async 
 Homepage: https://yazi-rs.github.io/
 
 Package: yosys
-Installed-Size: 22032
+Installed-Size: 22008
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.41
+Version: 0.42
 Depends: graphviz, libandroid-glob, libandroid-spawn, libc++, libffi, readline, tcl, zlib
-Filename: pool/main/y/yosys/yosys_0.41_aarch64.deb
-Size: 3853092
-MD5sum: 240a5f8dcdb41c63d2c9cb4d8138eec6
-SHA1: 6b2749928fc5994bd46144caf6a11cbea08db662
-SHA256: 875deb73cad0822f9208a28b763c63a1892d3816766a1e9074bf745ea754f3f9
-SHA512: a046dd71843cfe5a846c593c4073fe3cc113bb77be9c14ff392adbe538d1d23a4cbde13df9e803c3aafd8ec2018ab06c533bdf8c88194df13274dd263bc738d3
+Filename: pool/main/y/yosys/yosys_0.42_aarch64.deb
+Size: 3848660
+MD5sum: 1e48d752146580af3625c33349f6cd36
+SHA1: a2a091f56426b65aefd7f910670d2a67a7a7f742
+SHA256: ea1d5d41a419b06925c1f08ec1e5157686a5088b1cc4e45ab7f3b77d4f275912
+SHA512: b9da3d9597353ace9c515b93b337e3eb905d8c8c85c053e361cc482854bec759bf3c42d46099b83ada8344b44edfc334f844a83ef8c83f5df6ee2c0193048f29
 Description: A framework for RTL synthesis tools
 Homepage: https://yosyshq.net/yosys/
 

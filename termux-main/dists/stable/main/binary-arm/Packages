@@ -3332,6 +3332,23 @@ Package: clang
 Installed-Size: 148440
 Maintainer: @finagolfin
 Architecture: arm
+Version: 18.1.7
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 18.1.7)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_18.1.7_arm.deb
+Size: 32372408
+MD5sum: 4e37f9d9e06687e2d61cd49907b6bfe6
+SHA1: 0a48acc05dc1e934d5f8eaf737470b69fe654b55
+SHA256: 60b69c44db48d761b55437828fd1dca0d7c711b538a82943543498bcf1cb2b9e
+SHA512: 0753e681cce5595d0b1abb6fdad6f66884aca05823d7a454c74ae88f74545165b91b524639341ebb943603e7fd4b3238dab09c95185fe896ea3dfe5fd0de9b64
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
+
+Package: clang
+Installed-Size: 148440
+Maintainer: @finagolfin
+Architecture: arm
 Version: 18.1.6-1
 Replaces: libllvm (<< 16.0.0), clangd
 Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 18.1.6-1)
@@ -5976,6 +5993,21 @@ Description: Open source xHE-AAC encoder
 Homepage: https://gitlab.com/ecodis/exhale
 
 Package: exiftool
+Installed-Size: 16824
+Maintainer: @termux
+Architecture: all
+Version: 12.86
+Depends: perl
+Filename: pool/main/e/exiftool/exiftool_12.86_all.deb
+Size: 3487724
+MD5sum: 963746314ff798c0fdd6615511c11377
+SHA1: b6b67fa2b03d8e752b8bca9f620bda3c11c15464
+SHA256: 0d04b2be7d9b72ac2a3effcd9f20593e8f726004f5a304f6a34e29388c4a41e4
+SHA512: 2ece920828262385d7803da87a55bd72aece79971af91d15dd81c0f44fa40d21d9ea788ee293a786de31e5ebe2999b90e10a08a25e1b038a93be7f7fa9fca156
+Description: Utility for reading, writing and editing meta information in a wide variety of files.
+Homepage: https://exiftool.org/
+
+Package: exiftool
 Installed-Size: 16816
 Maintainer: @termux
 Architecture: all
@@ -6915,21 +6947,6 @@ MD5sum: 219e22e9b8a87464dc5a8d1c54626d7f
 SHA1: 23152cd2d4dce238ecd54e050ba24f73a7d93acf
 SHA256: 4fea7823b08a806452118790142d8e3e99d182e240a3df36f7474929a28b315d
 SHA512: 5a05df90fae28d97d4f1f953150e6a43726f51b698a84e5a065cc782b731f30b334ced57ea4644e8e748dcce9bcdee1637ebecd0d8e22bc61f7286d9c7ebfde3
-Description: Minimalistic plugin API for video effects
-Homepage: https://www.dyne.org/software/frei0r/
-
-Package: frei0r-plugins
-Installed-Size: 1608
-Maintainer: @termux
-Architecture: arm
-Version: 2.3.1
-Depends: libc++, libcairo
-Filename: pool/main/f/frei0r-plugins/frei0r-plugins_2.3.1_arm.deb
-Size: 329432
-MD5sum: c6517666bae600ac99fce9d972289e91
-SHA1: c70e8eac86000cd3f32f31169f41d8eadd55691e
-SHA256: 63e3ea1e9d493bd7672d72c1831474246190fa741f9863ab48a8ca833a4bcda3
-SHA512: d1f59d5f3afae6d8410c8f508971466af44a2b8acb28b314c6e66cb6cf12148a9e886c4f5a9b2fccafca6d5ed25e5ef30d1948e0098bd36b84e56f5c2b8bd6e7
 Description: Minimalistic plugin API for video effects
 Homepage: https://www.dyne.org/software/frei0r/
 
@@ -13390,6 +13407,22 @@ Package: libcompiler-rt
 Installed-Size: 15196
 Maintainer: @finagolfin
 Architecture: arm
+Version: 18.1.7
+Depends: libc++
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_18.1.7_arm.deb
+Size: 1568712
+MD5sum: 2d7cb5cbb4e5b21f0e13f8ebaa06360b
+SHA1: a7cbaff197482a0e6ec22373adbbc2043f60aab1
+SHA256: 056c0b87a6d66762fe571edf3c36e0b94c35bfa73b968c8307008effbc662684
+SHA512: 596ace4dd39174741f0ad970a5b296e9fa069efc674f235dd38541aa1684cab4da762b0bbd83e896d9bbbd2e5ab6bab0effc02862589a10a05a45df91a3e04d4
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
+
+Package: libcompiler-rt
+Installed-Size: 15196
+Maintainer: @finagolfin
+Architecture: arm
 Version: 18.1.6-1
 Depends: libc++
 Conflicts: ndk-multilib (<< 23b-6)
@@ -16208,6 +16241,24 @@ Package: libllvm
 Installed-Size: 119212
 Maintainer: @finagolfin
 Architecture: arm
+Version: 18.1.7
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_18.1.7_arm.deb
+Size: 27268080
+MD5sum: c2c3cbe8e2493dc3d6214cf51f6d0a9f
+SHA1: b8ba34859f3c77cd63f61ba06d0763acb8eb93a8
+SHA256: e401b3c3f15d4773fb3c7e14310f26be09c26c23d59d34d482a3a41a2b1d159f
+SHA512: 8e88974968eb95870c87350ebbaa9c331a196dbed769720d4342f39179aaf4253edd1f13af353b50be8d8f8a6511e84da6231fa0b8075355ff97d271feb01fd1
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
+Installed-Size: 119212
+Maintainer: @finagolfin
+Architecture: arm
 Version: 18.1.6-1
 Replaces: gcc, libclang, libclang-dev, libllvm-dev
 Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
@@ -16220,6 +16271,21 @@ SHA1: a280763a236e42f33f0e3dbce70ffb770c178b0e
 SHA256: 2dfd8689d8bb82534239d7d9f98ebc96d21dd795b286fccb8e404b5de3244c8a
 SHA512: 04b081830a75dcbc34bd6ea1ac70644db0f46b4523c053cb57cd559056b5887cc681fb175151579a7ca5f58f3c42bf88df75af2cd1d96ce1fd52e42d519c716c
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 704284
+Maintainer: @finagolfin
+Architecture: arm
+Version: 18.1.7
+Depends: libllvm (= 18.1.7)
+Filename: pool/main/libl/libllvm-static/libllvm-static_18.1.7_arm.deb
+Size: 87630772
+MD5sum: cbdf1c52bf1b6a65e0cf343f558fcc60
+SHA1: 24cbaab56ce81d3ec51b9b98bde48781f782dd65
+SHA256: 284aa75927d566f3ebc5310e4967dab686db893e70ef89e4113a8190aff3291f
+SHA512: 93fc8643cd75a711030c30d1763755b1f92cf710346e7c23c3bd491a12db98de1a1d845d2abcb1fe6658bbcb19ae16374ea45df4df7447bd88df5782fdc73593
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -18752,6 +18818,21 @@ Package: libpolly
 Installed-Size: 4400
 Maintainer: @finagolfin
 Architecture: arm
+Version: 18.1.7
+Depends: libllvm (= 18.1.7)
+Filename: pool/main/libp/libpolly/libpolly_18.1.7_arm.deb
+Size: 1185588
+MD5sum: 12e0ec516e6c50435c2564beef663a3b
+SHA1: d080224510eeb112d8b36eb8a562e72f695e5224
+SHA256: c4b3c7bdc6ea2c3cc76d59fcaa8048b285fc73420a17c5dcb7011729249fe4d1
+SHA512: ce6707bc3b073f85789fb807b66449bd9521c57a1fa87b711c3d5107cf900f646d61f022121357c83e596c0526734a6016242d87a0bf9887441d92199936a5f0
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
+
+Package: libpolly
+Installed-Size: 4400
+Maintainer: @finagolfin
+Architecture: arm
 Version: 18.1.6-1
 Depends: libllvm (= 18.1.6-1)
 Filename: pool/main/libp/libpolly/libpolly_18.1.6-1_arm.deb
@@ -19880,6 +19961,21 @@ SHA256: a81627ac0fdeb5113277be1e751791322688fd40abcc6f89616b0b0abc6ae658
 SHA512: d6b3c894a9b74acabd867995570194f6f9695c9761b9fcd0415380bc43f27387d5c11f37e9b75af229dd91aa30e7ef1e7a79aa07d0f3868d2ca9bd8e5bf33237
 Description: High quality, one-dimensional sample-rate conversion library
 Homepage: https://sourceforge.net/projects/soxr/
+
+Package: libspatialindex
+Installed-Size: 1060
+Maintainer: @termux
+Architecture: arm
+Version: 2.0.0
+Depends: libc++
+Filename: pool/main/libs/libspatialindex/libspatialindex_2.0.0_arm.deb
+Size: 255564
+MD5sum: 45f52b51e448403cec6948d57119d85d
+SHA1: 474a5f0b270b19c3b8055c686c4165c2dc6d9624
+SHA256: f100b16d0c3224a9adb264faa8f722ec4375ced6f9e84ae282518efd7cf3fb10
+SHA512: 2e85e4a37bc41fdba443eb1c4aaf4ddd682ad93b751130e224e96529ccd6b5350e69564774f5d443b8c10c12fe763c64beae8ff26d7430c87c2467c813d346ad
+Description: C++ implementation of R*-tree, an MVR-tree and a TPR-tree with C API
+Homepage: https://libspatialindex.github.io
 
 Package: libspatialindex
 Installed-Size: 1012
@@ -23042,6 +23138,21 @@ Package: lld
 Installed-Size: 14108
 Maintainer: @finagolfin
 Architecture: arm
+Version: 18.1.7
+Depends: libllvm (= 18.1.7)
+Filename: pool/main/l/lld/lld_18.1.7_arm.deb
+Size: 2438524
+MD5sum: fad2e33f890ca7ebcb83dce8fbc5ac95
+SHA1: fbd62069e2439143e06021f56f57639124e1bf89
+SHA256: 88bef19e2e1eeab3a578e253b0428d8ff39ce0f7610ca9f9eab3b3d5d71a5f9b
+SHA512: 1ff0d184447b9f1aec959c4ec5ca3add6381b6c04351b7f173d982e5d185789669ccdd0da4a8bc5357b5c4c7a2b07c074ef552ee3853d1b083429be5b8a4f54f
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 14108
+Maintainer: @finagolfin
+Architecture: arm
 Version: 18.1.6-1
 Depends: libllvm (= 18.1.6-1)
 Filename: pool/main/l/lld/lld_18.1.6-1_arm.deb
@@ -23051,6 +23162,23 @@ SHA1: 066c4c7bb2ff7f86c674353368c537e3fa37b859
 SHA256: 238853c986eb7be3d61413f814e45bbd7686c6d03e1b341fada3930c4f32bb18
 SHA512: 6c6aa8a85b3ec83f3f670123f888f0b55e58ce338067d4edd91afdcf98454ca8e480c1689401e8d1dbeef3af4b525dafdc0026b593350a3ee6cc02d089dee5e6
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 79924
+Maintainer: @finagolfin
+Architecture: arm
+Version: 18.1.7
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 18.1.7)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_18.1.7_arm.deb
+Size: 19862836
+MD5sum: a6525f562f83d182a86c3910534b63c5
+SHA1: 52570c85429d27a0ac7ee58d80c1770d5ef96b8a
+SHA256: dc47d8273d762f2a05c8e9591b4b96846ac709ca450da3e143c4d2617e7b9586
+SHA512: a34f6452461195106c3bc239874425767b40b94bcd5ab21204f4eb424f3b81b9d8462537b55a43d5041e97a1743648d071858491e2eabe91df298d850ebd826d
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -23133,6 +23261,23 @@ Package: llvm-tools
 Installed-Size: 8136
 Maintainer: @finagolfin
 Architecture: arm
+Version: 18.1.7
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, zstd
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_18.1.7_arm.deb
+Size: 2213948
+MD5sum: e6f47731595d6f945adb5e135e8c91a8
+SHA1: 3672e9ea3a6288edbdbb93ef2ad09ab719a3bc80
+SHA256: 601c30edbb14845930a5bd8299004fbf48ebe4365fbb446b6efd4a3bdb2cf84d
+SHA512: 64f3c5e57866d2f50744ddf6b371ea25e540a1f26b79601e07f160463d5760c3a1e8d5047f7493fbecff98363b4c478ae3727ef9e4394c8fe23d3f8f534f4eba
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 8136
+Maintainer: @finagolfin
+Architecture: arm
 Version: 18.1.6-1
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, zstd
@@ -23144,6 +23289,21 @@ SHA1: 6f9185ad82861ffe24cd7c05d862b31a7c62af71
 SHA256: d8fd489a2553a2c3e7c30baf73db578cfae016035d12a2e569f1034b335485cf
 SHA512: f889ecb727fd9fa1971ec39b3b64ba7902b2147d3265a8eae8e53f25549aafc0292ba9f53eaaaf5920ca54890ccc0c3cc8e4003f877bf4ae9e9df3aeef705948
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 80
+Maintainer: @finagolfin
+Architecture: arm
+Version: 18.1.7
+Depends: binutils-gold, libllvm (= 18.1.7)
+Filename: pool/main/l/llvmgold/llvmgold_18.1.7_arm.deb
+Size: 23200
+MD5sum: a6acc1f7de80303c054a1f89edb7679c
+SHA1: 7be2a2160608b9d643340e074fd359700ccd64e4
+SHA256: 677c8fabe22fb73b4eb3a338791172fa9abe0361e45993ade9a449d41d0e4396
+SHA512: 4cc1b09eac624923b944c5a722484852cc368405a3c31b654ab26d06fc07d78b8bb89ff570c2c3e2976fa4d6413619b41246b097b0976c01bb517e4f23527c49
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -24956,6 +25116,21 @@ SHA256: 3bc9b6ad4c3e89ad5ad8e110860922bc2fd61afc8d2aa9395b852ceaea653d30
 SHA512: d02e25e36ca8e14d3d16c38c45f4a04d1a70ed62f599b0be496aa2129df466a087874f6eacb4f7557db71115b17917554c23454f3938660c5d8ed5efd5eeed3b
 Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
+
+Package: mlir
+Installed-Size: 260896
+Maintainer: @finagolfin
+Architecture: arm
+Version: 18.1.7
+Depends: libc++, ncurses, libllvm (= 18.1.7)
+Filename: pool/main/m/mlir/mlir_18.1.7_arm.deb
+Size: 47274356
+MD5sum: 1999779f579b64cf9f62a71edae9ac84
+SHA1: 3fa852a53b319de1fd85a724cde10f2c32f41d85
+SHA256: f1bae56e699a87342b32ca3dce0787e6748df2c9a5a76bb3ce8e07b2ce009eb6
+SHA512: db194fa4ded41d00827baf581befc6c1c6f32c0381b408a7c27eb12af621fe7bd37d5cbb67e404e575e62b8d9525163f39e0c8acfef14307d21170a23ba74d38
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 260896
@@ -28255,6 +28430,22 @@ Description: Static libraries for pcre
 Homepage: https://www.pcre.org
 
 Package: pcre2
+Installed-Size: 3868
+Maintainer: @termux
+Architecture: arm
+Version: 10.44
+Replaces: pcre2-dev
+Breaks: pcre2-dev
+Filename: pool/main/p/pcre2/pcre2_10.44_arm.deb
+Size: 882424
+MD5sum: 66a9cef83ea79ee43763ca34c82e2406
+SHA1: 3395c0f9f683783415464fa51488c4cfc10bdd09
+SHA256: 5b52c30584c1d5a66e1628248e750fece07dce228313c04b6646d982672d94e7
+SHA512: 1da0ccf164430c34cb41445980f16d058cebdaac7bab00ce4f0c4bd4406433f4636371cbdb87cf3ac56242afe708d720eda80ddae19d25a6ec99ff63fa42ac51
+Description: Perl 5 compatible regular expression library
+Homepage: https://www.pcre.org
+
+Package: pcre2
 Installed-Size: 3844
 Maintainer: @termux
 Architecture: arm
@@ -28271,6 +28462,21 @@ Description: Perl 5 compatible regular expression library
 Homepage: https://www.pcre.org
 
 Package: pcre2-static
+Installed-Size: 1260
+Maintainer: @termux
+Architecture: arm
+Version: 10.44
+Depends: pcre2 (= 10.44)
+Filename: pool/main/p/pcre2-static/pcre2-static_10.44_arm.deb
+Size: 327852
+MD5sum: b324cdbd9d795dd52599285715667688
+SHA1: 0127f4a6137066593bada3e6b7ceb539f55eb71e
+SHA256: 7480a6722b39ae14c1f87962231e6a93ea58610b81fd412368b164c0a9a01cfe
+SHA512: 6c74e1d1615c2e4075c12639e77f463a122ec3e5a153fc55f2d6c1b829adbf3005e340ce6ef6d528b65b67edb6006ad75e86d71640e5c64d175a0ee62d43cb63
+Description: Static libraries for pcre2
+Homepage: https://www.pcre.org
+
+Package: pcre2-static
 Installed-Size: 1252
 Maintainer: @termux
 Architecture: arm
@@ -28283,6 +28489,21 @@ SHA1: 3f3d8654b0017b43730d23da4499df75607ab9d0
 SHA256: 872e7b4c1e2410929ef0b43598359fc3c0f8733f19dc5a94776fc615770d8f02
 SHA512: 738eedc2d248516f87998028f0beffdfcbd033ca4c4d04c79e129b6bb7432eb9e42f01cfcff72b659fe1ce96a70ecd8169cc126c21d931dd7b1853a271c1e522
 Description: Static libraries for pcre2
+Homepage: https://www.pcre.org
+
+Package: pcre2grep
+Installed-Size: 88
+Maintainer: @termux
+Architecture: arm
+Version: 10.44
+Depends: pcre2 (= 10.44)
+Filename: pool/main/p/pcre2grep/pcre2grep_10.44_arm.deb
+Size: 32304
+MD5sum: d9d32fc243e9d19c751945bee3c19bc1
+SHA1: 354a600d5cc0bc3091393e1a4e9b3bc05adaf5b0
+SHA256: 6402709625b21e32a7e85f0b65ff56e9af4772a1dc061cad91d9a75bc021b89d
+SHA512: 44c6d92087d9ef12d9101f448deff1c5064c7895a08c373a988c5163bfda5c1f3a35bd89b66f908b3eed1372cddf9d59832aa551d42faca4620c61743fca943e
+Description: A grep with Perl-compatible regular expressions
 Homepage: https://www.pcre.org
 
 Package: pcre2grep
@@ -33034,6 +33255,20 @@ Package: sing-box
 Installed-Size: 25604
 Maintainer: kay9925@outlook.com
 Architecture: arm
+Version: 1.9.1
+Filename: pool/main/s/sing-box/sing-box_1.9.1_arm.deb
+Size: 6485768
+MD5sum: 7305114d29c5d3ea194734f7d84d11bf
+SHA1: 0f0bac89e79dc659b0130c52d02088af0546b09e
+SHA256: 379f5d92671e0a23988aaf1bf2727ed5fb2e33c1537534c288fb5d8962a641c7
+SHA512: 2de73375353314cd5cdb744a18106d92c3500a72d3e4ad745c640eb84c1a4d5e6baf5629b1f806b46d7eaa7cb4a760ad11586d7b5508ebf1d3bc4c495b614c49
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
+
+Package: sing-box
+Installed-Size: 25604
+Maintainer: kay9925@outlook.com
+Architecture: arm
 Version: 1.9.0
 Filename: pool/main/s/sing-box/sing-box_1.9.0_arm.deb
 Size: 6484080
@@ -36334,17 +36569,17 @@ Description: ugit helps you undo your last git command with grace. Your damage c
 Homepage: https://github.com/Bhupesh-V/ugit
 
 Package: ugrep
-Installed-Size: 2464
+Installed-Size: 2456
 Maintainer: @termux
 Architecture: arm
-Version: 6.0.0
-Depends: libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
-Filename: pool/main/u/ugrep/ugrep_6.0.0_arm.deb
-Size: 302676
-MD5sum: c7b5f2d92b7a2a5bd9a9b1c54ee961f6
-SHA1: 5ec2aa4f1f062f558cd794af9a61d110524e881d
-SHA256: fa5c576262de01044ca147c9bd801d5d91587ec492eb4eab03637c6b88963366
-SHA512: 82c94d39f2cc5487982f78cf552853e360d824d7fb2e73b8656b770173ea03ff11df6c3d3124413b6009d4bc0ae1002a0ce8c116ac77f8812e16968f87105f4a
+Version: 6.1.0
+Depends: brotli, libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
+Filename: pool/main/u/ugrep/ugrep_6.1.0_arm.deb
+Size: 304992
+MD5sum: 87a2fb6649a22198a7f374c21427065d
+SHA1: 9ce65458670f00ffe2c72095d4e924c73cbef08b
+SHA256: f9a69257770e35e64fa0d8686ec3f33d4323b10c3fe3be19c82f0579ca8e925c
+SHA512: d0081a4046847291aefba1e23952264f2648177a2e3bdef22f83314e9dc8e7f7e1b7d5e39fffb6c077138433d3fcfd7f16ba7cdcb5bfe119bb96f8ca4411de85
 Description: A faster, user-friendly and compatible grep replacement
 Homepage: https://github.com/Genivia/ugrep
 
@@ -37412,20 +37647,6 @@ SHA512: d372387ca3831bf7fd5419e41ca697bde9cb65b0ee579c4eead8af620dfb90b4a4a16d32
 Description: Vulkan Header files and API registry
 Homepage: https://github.com/KhronosGroup/Vulkan-Headers
 
-Package: vulkan-headers
-Installed-Size: 27128
-Maintainer: @termux
-Architecture: all
-Version: 1.3.286
-Filename: pool/main/v/vulkan-headers/vulkan-headers_1.3.286_all.deb
-Size: 1339656
-MD5sum: 47cec18e2f2b3e1f572892378fdd7624
-SHA1: 4f9dfada802a52d2fbde5b5923ae17a46b3b03bd
-SHA256: b15f61e8d07b1ed62f13611f7809122db099a0ab2694b41a45979a432e36ebd9
-SHA512: 67a826203599a5d44b963db03841dd2f52c558d66484ceefec7696a8f3109cb7a518032f9869e99961d67ae9002a356489fc72b4cf2bca034e44f16f4d817853
-Description: Vulkan Header files and API registry
-Homepage: https://github.com/KhronosGroup/Vulkan-Headers
-
 Package: vulkan-loader
 Installed-Size: 4
 Maintainer: @termux
@@ -37485,6 +37706,20 @@ SHA256: e6d34430aa60f100dcdb720db980ab66b9506cd404ed605f2e75aadf7d5222b7
 SHA512: dcb01dfcab40cd03cca73c64323a5212f96b5e4b48a33910ec5f3e257cbc73f80ca7828484f9b8476a1ea456308e8bd7ae92e096e0b75ea93a98bb83d76e8fc5
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
+
+Package: vulkan-utility-libraries
+Installed-Size: 5168
+Maintainer: @termux
+Architecture: arm
+Version: 1.3.287
+Filename: pool/main/v/vulkan-utility-libraries/vulkan-utility-libraries_1.3.287_arm.deb
+Size: 485648
+MD5sum: 8de28f8839bc600ea4ab6e6ff37520ff
+SHA1: d095bc4fc0826da11656cf059d38d4c916a1f54f
+SHA256: 9c179e969f112c7090f0be003993b79d755c927f9a5037bc346cfc5a22fc5fd0
+SHA512: b0fd113f1e5ed5e2f83cbb71824a617fe31e7691189fcb860805cdb9f6cb4cdecd5c9e40840f1458da26ca9449dcf70f59e49f42ea3070f069f7308c6d8f46ea
+Description: Utility Libraries for Vulkan
+Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
 
 Package: vulkan-utility-libraries
 Installed-Size: 5168
@@ -38660,17 +38895,17 @@ Description: Blazing fast terminal file manager written in Rust, based on async 
 Homepage: https://yazi-rs.github.io/
 
 Package: yosys
-Installed-Size: 18404
+Installed-Size: 18372
 Maintainer: @termux
 Architecture: arm
-Version: 0.41
+Version: 0.42
 Depends: graphviz, libandroid-glob, libandroid-spawn, libc++, libffi, readline, tcl, zlib
-Filename: pool/main/y/yosys/yosys_0.41_arm.deb
-Size: 3920096
-MD5sum: 5e60753db44b08c3284cc33c5b410fbd
-SHA1: 101be4a0a97bb588ca3487cb2b978b7018baae30
-SHA256: 39517b994bdf43147d451793630d72e84b85b7d85ccec0f84cf09092dec1595d
-SHA512: 53ec0b2e7dd5b21d0a1e6125cea46f4693c9e326705e43de793a3e251acedf573582d3f4a833dec3145ef090a395d0d679428a2bb3e71d2ae91e5819069df122
+Filename: pool/main/y/yosys/yosys_0.42_arm.deb
+Size: 3916928
+MD5sum: 011c4cef394f25a123137e77dcaa1eac
+SHA1: 87aa6581fda9bf1f6d03c367b6c3f6163e176393
+SHA256: 7223b90c37b1e99dab13d6bcf969892a36b6e0fc88b2a4fc03391d458f0d21d7
+SHA512: c3b9ef463a4ce7b2d6ac3d4967e769224742e83ac466be92559851fb370ee314bef4e87c7da506162d86290f049d16a7faac001406fecd7e96099310458e21da
 Description: A framework for RTL synthesis tools
 Homepage: https://yosyshq.net/yosys/
 

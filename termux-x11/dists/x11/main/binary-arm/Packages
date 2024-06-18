@@ -286,22 +286,6 @@ SHA512: ebc38524e67ed9d0de80d37ea3f60d8ede6510f8c1fe5dec21a698f131a3bedfcab024a9
 Description: An advanced audio player
 Homepage: https://audacious-media-player.org
 
-Package: audacious
-Installed-Size: 1212
-Maintainer: @termux
-Architecture: arm
-Version: 4.3.1-1
-Depends: libc++, qt5-qtbase, dbus-glib
-Recommends: audacious-plugins
-Filename: pool/main/a/audacious/audacious_4.3.1-1_arm.deb
-Size: 292212
-MD5sum: 55ab9b1e4bf205a4425d668420fef82c
-SHA1: 074171bfa8fef7d9338a30931010b25130f1858e
-SHA256: 7c0dc1dac3be0c51ad484fd2d0a3293bd6d4d0df3f9df8458a01fbea1dd2d674
-SHA512: 15c31c197fdd20251852cc0a75fb146ea975ade2ab041de82e3e5c9c1426cd1bd7e5d8ae31681489217583bb8aba1b1305f91c3d72310025146c9d08e81f4682
-Description: An advanced audio player
-Homepage: https://audacious-media-player.org
-
 Package: audacious-plugins
 Installed-Size: 2500
 Maintainer: @termux
@@ -314,21 +298,6 @@ MD5sum: b6409e53c51e2755af974ca3d8936240
 SHA1: 7e5295d79a718b73e002a94b1e5e292a9ea77612
 SHA256: e2a905ba115a893b22a91d885928a2bcadca8aa96785bd3e52f22a555a1e9cc8
 SHA512: 1e667985a2176db03dfcb4f66dbe073967f8881b338ce3eeadff1b8852c161d11cd4f63797279ba1f4d951be721d612612aadabfa689912d8d24ff885c223fdf
-Description: Plugins for Audacious
-Homepage: https://audacious-media-player.org
-
-Package: audacious-plugins
-Installed-Size: 2456
-Maintainer: Simeon Huang <symeon@librehat.com>
-Architecture: arm
-Version: 4.3.1-1
-Depends: audacious, ffmpeg, fluidsynth, glib, libc++, libcue, libcurl, libflac, libmp3lame, libogg, libsamplerate, libsndfile, libsoxr, libvorbis, libx11, libxml2 (>= 2.11.4-2), mpg123, opusfile, pulseaudio, qt5-qtbase, qt5-qtmultimedia, qt5-qtx11extras, sdl2, zlib
-Filename: pool/main/a/audacious-plugins/audacious-plugins_4.3.1-1_arm.deb
-Size: 618712
-MD5sum: d49e0dcd52fc890a56074f2b5caa7439
-SHA1: d95cb3d82336859ff903bfaad9eb052a7d1475a4
-SHA256: 893eecacc4c605189bf4f23d91d46a4a9665136dbff6b59a055bb3ca8bb7b7f0
-SHA512: 5741f460f10edf55328a2f17e4910dcba72e5789027bbddbd2e742bc5263232d853afef3477c7e8a020f4bcc89fabbaeb214872cf423f302744430e4fe3af1f1
 Description: Plugins for Audacious
 Homepage: https://audacious-media-player.org
 
@@ -7644,6 +7613,24 @@ Package: sdl2
 Installed-Size: 3676
 Maintainer: @termux
 Architecture: arm
+Version: 2.30.4
+Replaces: libsdl2
+Depends: libdecor, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
+Recommends: opengl
+Conflicts: libsdl2
+Filename: pool/main/s/sdl2/sdl2_2.30.4_arm.deb
+Size: 700300
+MD5sum: 622b2cc252aa1cc50cb10e259fe3c55b
+SHA1: cef32fb68d17a5f11dc4844edaa0d4a6caf60962
+SHA256: 73a78e18d54877f02c3260ba1c9f3d5dd338ffc534fb17b64d9a22599b1b9884
+SHA512: 20be634ea5966a15c0c73fc5391b4e297b3c58feb4257f547b9080cc09335a80d073fab19112055a471ea626177e19ed8099ad3d952f6ff7fd3f7bb97cad0f8f
+Description: A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (version 2)
+Homepage: https://www.libsdl.org
+
+Package: sdl2
+Installed-Size: 3676
+Maintainer: @termux
+Architecture: arm
 Version: 2.30.3
 Replaces: libsdl2
 Depends: libdecor, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
@@ -7807,6 +7794,21 @@ SHA256: 4787bae3a2977cf5b5d114e21dff9b2682fd2419cda410947ff3074c98f571e0
 SHA512: e25a53ec1a7771a64857399587507c4f33eb1e7ce0d81b850fd9d3a5a96fdc77eb1e29927dc2090dc7fea7ab243a4f532a5e68303d098ca151e6bde644faa583
 Description: Static libraries for sdl2-pango
 Homepage: https://sdl2pango.sourceforge.net/
+
+Package: sdl2-static
+Installed-Size: 2436
+Maintainer: @termux
+Architecture: arm
+Version: 2.30.4
+Depends: sdl2 (= 2.30.4)
+Filename: pool/main/s/sdl2-static/sdl2-static_2.30.4_arm.deb
+Size: 599816
+MD5sum: c13960c2e19b933e054c45684245c68f
+SHA1: a8dcdaf4d039ca05e99a28362c6269eb72412391
+SHA256: 30a735bd037f718d64eda5546168e391af8bfa701bd49fff95394c9fad723570
+SHA512: d4bc5e82f179c4878809694f98683c8c36bec14a47911145196c65b8c2b39d390adb403ca53e84b5dcbfbc04d4f02456b837ea058a7b8e8f86140bba71d41c2c
+Description: Static libraries for sdl2
+Homepage: https://www.libsdl.org
 
 Package: sdl2-static
 Installed-Size: 2436

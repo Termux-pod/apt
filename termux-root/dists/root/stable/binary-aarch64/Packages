@@ -117,21 +117,6 @@ SHA512: 5b8e77ec837001b4f8d65a40adfbafce0adba88516604c8671ac0a189577a4d22a8ca31e
 Description: An open and reliable container runtime
 Homepage: https://containerd.io/
 
-Package: containerd
-Installed-Size: 102404
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.6.21-2
-Depends: runc
-Filename: pool/stable/c/containerd/containerd_1.6.21-2_aarch64.deb
-Size: 22716644
-MD5sum: 512e26978a6ecb8dbfa865ce0802b9bf
-SHA1: 1dcde6e7b1241ffb820194e2116e93dc68cc17e4
-SHA256: a612231024fd4a7e78f676b64e0b2acf36ad4c6584b782c344aaa3e2333d64eb
-SHA512: d4453655a52e1f1f50f0bc2e104b0a4a9a6df5f34bae1164eb030fedbb9d601eb1d7dc5549e379416afc5045ae829ebf07f8bcefec0712c14e17879a386cb82f
-Description: An open and reliable container runtime
-Homepage: https://containerd.io/
-
 Package: cryptsetup
 Installed-Size: 548
 Maintainer: @termux
@@ -207,17 +192,17 @@ Description: Compose is a tool for defining and running multi-container Docker a
 Homepage: https://github.com/docker/compose
 
 Package: encfs
-Installed-Size: 1496
+Installed-Size: 1444
 Maintainer: @termux
 Architecture: aarch64
-Version: 2020.05.09-c444f9b9-2
-Depends: libfuse2, openssl
-Filename: pool/stable/e/encfs/encfs_2020.05.09-c444f9b9-2_aarch64.deb
-Size: 283440
-MD5sum: f089048bb81511149774c96f15079dd8
-SHA1: 6e173745fb7974198dc9d883d644d95a58a9f922
-SHA256: e2aa9b334206b071a00e73d276763b70d730bff877ca6bfe7087426a326b03e4
-SHA512: 0a27ab0f49f782e0b31c9230c8d7634818b30a04ac08a039ae2d5ed2d1c433c836a46ed956d6041c1b03797d1a7b2f8e2faa56b4370f3d711db8c3541f8252a2
+Version: 2020.05.09-c444f9b9-3
+Depends: libc++, libfuse2, openssl
+Filename: pool/stable/e/encfs/encfs_2020.05.09-c444f9b9-3_aarch64.deb
+Size: 277744
+MD5sum: 22129a127c61feb435cb40b966d38df9
+SHA1: 1f9a5d7d6bfa1c2dc6bf62a4780872c63221942e
+SHA256: 0b2a7f4afc9cfe5cdb74bcb99d927d317f0c2650fac748eec6dc8eb819cfbfdf
+SHA512: 73ffc811571c5ec7b177b249ed315e80222191c953e84378f794a21402303ed24916aff04075ae602642678aa6ffcfa36f8da927d7f039f97e580ea69f99c8cc
 Description: An encrypted filesystem for FUSE
 Homepage: https://vgough.github.io/encfs/
 
@@ -502,6 +487,20 @@ Description: CLI configuration utility for wireless devices
 Homepage: https://wireless.wiki.kernel.org/en/users/documentation/iw
 
 Package: keyutils
+Installed-Size: 372
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.6.3-2
+Filename: pool/stable/k/keyutils/keyutils_1.6.3-2_aarch64.deb
+Size: 92352
+MD5sum: b6b75252a2cf13d1e84e751f52df4697
+SHA1: 11f63e3cdb668af8d31ee4e89d52396277000871
+SHA256: f248f4656318e8e75b68d72ba32d611c2945682f54d442d2e7594b3827f269ba
+SHA512: 69c9d7e82aef503f3bc2d8dd7b163a8f473f8fbbc885fd9e1768277fa64ed1b512d7525651f6c393b794acd1ae524f6e0279bea9c63d2db18999e357c63727ce
+Description: Utilities to control the kernel key management facility
+Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
+
+Package: keyutils
 Installed-Size: 368
 Maintainer: @termux
 Architecture: aarch64
@@ -513,6 +512,21 @@ SHA1: 458e4b8ae4e6963295db6d7ea6a24db681d20346
 SHA256: 7679bdfd12210dbbec577b6d0ef0124b205004b02126c7c8763b7de35511fd2d
 SHA512: a1c2ec819442f0c292ae33b780f5bb45193aa8fe620d5b69278553c4f3257e68d8ada36161a1b51445f7702536f3b24ecb4daa5f7cfe541f245dc894fe82a612
 Description: Utilities to control the kernel key management facility
+Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
+
+Package: keyutils-static
+Installed-Size: 44
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.6.3-2
+Depends: keyutils (= 1.6.3-2)
+Filename: pool/stable/k/keyutils-static/keyutils-static_1.6.3-2_aarch64.deb
+Size: 5024
+MD5sum: 4f46bf7b18b61d5105106bebeab80746
+SHA1: 9877551b0084bbb2b19ce2bef54a00e9fa3a6765
+SHA256: e6ca8ef8059d67cbf7da93406805bd6d1bf83094271575f9db0703cb6f8054b0
+SHA512: 9292591eceb2135f2ab9ea3011d60dfc4a2b5927003cf6950f66870c64df15163cdbfce88d328224a5e25a26b75262ce3fe523529b585dd1de5827d6cefd1a08
+Description: Static libraries for keyutils
 Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
 
 Package: keyutils-static

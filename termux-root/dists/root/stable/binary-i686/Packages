@@ -500,20 +500,6 @@ SHA512: fc85689ad08073f7de54cabfdd62ff3d8fe941a849ab10f8b49ef639915e9424ca25d4b9
 Description: Utilities to control the kernel key management facility
 Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
 
-Package: keyutils
-Installed-Size: 356
-Maintainer: @termux
-Architecture: i686
-Version: 1.6.3-1
-Filename: pool/stable/k/keyutils/keyutils_1.6.3-1_i686.deb
-Size: 92912
-MD5sum: 9dd33fe25c047505c614b694d3fd80d7
-SHA1: 2d49587dc57e53f2c6d985d73b38ea6ae6aaa5f5
-SHA256: 6a44148e9c5a90f10bf5befbbc2fb0e4708ecc14ae94c1cdb67b533b234bf12a
-SHA512: 968a188656de3ae2702466be501b0339d46fcb71352f27bcc7a41cb046a9db124dabd71efcf23430a01d0cd3069cfcfe7e49dd554b97359b10c09956e8498345
-Description: Utilities to control the kernel key management facility
-Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
-
 Package: keyutils-static
 Installed-Size: 44
 Maintainer: @termux
@@ -526,21 +512,6 @@ MD5sum: 0fb51ea30a4248510a3dcdf85993a06c
 SHA1: a02e76de58dd3a12c0dc9b8972a963e396be063c
 SHA256: fbb5b15845da2a3eaa52b15c7856a8e9e32c9065d02d8bb58f77ef4b54a06db2
 SHA512: 3c4b37a193a72af8d4d74c6e5d93e0435e8f090f1afaf15b83284077356099e769bee5109840bc591cc29bc91253005b852e856f10cbf59a4f1f55db783e74a5
-Description: Static libraries for keyutils
-Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
-
-Package: keyutils-static
-Installed-Size: 40
-Maintainer: @termux
-Architecture: i686
-Version: 1.6.3-1
-Depends: keyutils (= 1.6.3-1)
-Filename: pool/stable/k/keyutils-static/keyutils-static_1.6.3-1_i686.deb
-Size: 4528
-MD5sum: 275bbc4d1cc85b43d370b0105aba2cb6
-SHA1: f85adddf9c9accfa0c8436fb78a8670ae2a6118b
-SHA256: f2a3a2efaebb5d032d85b9f2822271f0f5b26c529cf1527b481e1241a844a21f
-SHA512: 9b3f839b4c3510e65ba8e6a9f4fabde9b9c19f1c6c9fc3572670b98060d89fe885bddf89b948c9647dc19fd339a482383e59a69e3086df5192c2ba5ffe11aacd
 Description: Static libraries for keyutils
 Homepage: https://git.kernel.org/pub/scm/linux/kernel/git/dhowells/keyutils.git
 
@@ -944,6 +915,21 @@ Package: nfs-utils
 Installed-Size: 1432
 Maintainer: @termux
 Architecture: i686
+Version: 2.6.4
+Depends: keyutils, libblkid, libcap, libdevmapper, libevent, libmount, libsqlite, libtirpc, libuuid, openldap
+Filename: pool/stable/n/nfs-utils/nfs-utils_2.6.4_i686.deb
+Size: 325856
+MD5sum: 2aa27b6aea6ae2d35bfee520b18afb92
+SHA1: 7c66d9ff13c474bd1d372d9b9b6b99506be53db9
+SHA256: 528efdd5be91f64932801fa84a3e4aed7bf31ee1f063cdd24e5a414fac3815a0
+SHA512: a4e9944c919df77b8f0342fdffae04a989253668adfeb7b5ef42207de080ed1d191044ed84379035661f8236f0a1cd8f8930ea940a6d0270430556c1f5f0b077
+Description: Linux NFS userland utilities
+Homepage: https://linux-nfs.org/
+
+Package: nfs-utils
+Installed-Size: 1432
+Maintainer: @termux
+Architecture: i686
 Version: 2.6.3
 Depends: keyutils, libblkid, libcap, libdevmapper, libevent, libmount, libsqlite, libtirpc, libuuid, openldap
 Filename: pool/stable/n/nfs-utils/nfs-utils_2.6.3_i686.deb
@@ -953,6 +939,21 @@ SHA1: 18e107a4d37694face3c505274fdb6f0a36775cb
 SHA256: 383099bb18cddfb808589bcbcaa9f8207a851de582bc032634db26a51c4eeed1
 SHA512: 39c637d3ed27c239f5a913839f64631fb1fec13a21773b94ef7f7e41d7e5fd54e9efe94b3b775d7d9f588069e3e927c0bcef9458f7922c65c3136c4c4ce8dc88
 Description: Linux NFS userland utilities
+Homepage: https://linux-nfs.org/
+
+Package: nfs-utils-static
+Installed-Size: 300
+Maintainer: @termux
+Architecture: i686
+Version: 2.6.4
+Depends: nfs-utils (= 2.6.4)
+Filename: pool/stable/n/nfs-utils-static/nfs-utils-static_2.6.4_i686.deb
+Size: 33740
+MD5sum: 3bca6861e67b550e0a8e764f80d0fa82
+SHA1: a16859e3131db484dc43ea4fecd8566ee5d9a588
+SHA256: 9781219c68a37d8e2fc1b28a2a50ac3d31aade1246e1ba114e526e3135ef150d
+SHA512: 98090a86f389290170315b5e36c39ba807b7f1a613ff4da88be0580bae8bce08865e473cf155e2d482ab3732cc13e53e38cf2f4d56927f568dc6f1b81b37246a
+Description: Static libraries for nfs-utils
 Homepage: https://linux-nfs.org/
 
 Package: nfs-utils-static

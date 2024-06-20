@@ -8810,20 +8810,6 @@ SHA512: 7b4674f5569660b5f2542a08f3e1abad8eb9ee506dee53202f11af2d4332839391b9ab74
 Description: A database migration tool. Supports SQL migrations and Go functions.
 Homepage: https://pressly.github.io/goose
 
-Package: goose
-Installed-Size: 31916
-Maintainer: @termux
-Architecture: arm
-Version: 3.20.0
-Filename: pool/main/g/goose/goose_3.20.0_arm.deb
-Size: 7603484
-MD5sum: 422eb60d2d7715232fcf786f1eb7e21d
-SHA1: 82a057ad1694a5e48d86e3fdd5c1df87f7a9ad75
-SHA256: 7935c2f0b5118bb348b72a835e3cf765b8c1f87a72f4dc1416845e36b4f46f90
-SHA512: e87bd48952bda8b9f5f13375bb56b728cebdea9dd48cd3e12d4f2c6ff92a98744e6c22e8abea8d724678a6cdf0003dea33548456df8f11ef5bbf6983f98723f3
-Description: A database migration tool. Supports SQL migrations and Go functions.
-Homepage: https://pressly.github.io/goose
-
 Package: gopass
 Installed-Size: 20348
 Maintainer: Joshua Kahn @TomJo2000
@@ -19848,6 +19834,24 @@ Package: libsoup
 Installed-Size: 2404
 Maintainer: @termux
 Architecture: arm
+Version: 2.74.3-3
+Replaces: libsoup-dev
+Depends: brotli, glib, libpsl, libsqlite, libxml2, zlib
+Recommends: glib-networking
+Breaks: libsoup-dev
+Filename: pool/main/libs/libsoup/libsoup_2.74.3-3_arm.deb
+Size: 324104
+MD5sum: cb5867896f71556c2c7079780ca13c3a
+SHA1: 83bbe70da1c9f445db6a03a3712596cfa0d888cc
+SHA256: 5bc2a201e1bcef3e3d6b52f5db12955f89e73b076115dd334eff2b32bd102061
+SHA512: d035ee23a214c3c93c02f2380708fd2963a41f8bd4f4db8e1ef2f88f81fa405934e6aae1a42a0001f2cd55b7cd469f3936543e970bcd507f2683d785f381c5a7
+Description: HTTP client and server library
+Homepage: https://wiki.gnome.org/action/show/Projects/libsoup
+
+Package: libsoup
+Installed-Size: 2404
+Maintainer: @termux
+Architecture: arm
 Version: 2.74.3-2
 Replaces: libsoup-dev
 Depends: brotli, glib, libpsl, libsqlite, libxml2 (>= 2.11.4-2), zlib
@@ -22265,23 +22269,6 @@ SHA512: 91c2200f5f2ed4862c3c8cd7a41fc3b5c004b8d98eabe466df7b4f47f17c48034f5f4d86
 Description: Library for parsing XML documents
 Homepage: http://www.xmlsoft.org
 
-Package: libxml2
-Installed-Size: 1380
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.0
-Replaces: libxml2-dev
-Depends: libiconv, liblzma, zlib
-Breaks: libxml2-dev
-Filename: pool/main/libx/libxml2/libxml2_2.13.0_arm.deb
-Size: 415184
-MD5sum: 3f0b6e5f0326efcf0f22f1b92c924538
-SHA1: 4b1b485f62c5bc529eba1bc24c09d791398fae0a
-SHA256: 56ba5caa686ac6e043d44517a39e1d0e213c61d36a01af724c1ff9620d71ef7e
-SHA512: ca4d3db5a4f07634c6b4286ee9aee8029db3305b7e9dd28925b4855961c921a0f8525d001dba963de124be099d5be56b0ef87b6b484b6a825a617decd9cfa1ae
-Description: Library for parsing XML documents
-Homepage: http://www.xmlsoft.org
-
 Package: libxml2-python
 Installed-Size: 1680
 Maintainer: @termux
@@ -22294,21 +22281,6 @@ MD5sum: 40c0cdb33d183e34be8c2375b71bb3f1
 SHA1: 89cc25bd1c76517ee96e3046129be29c846bc3eb
 SHA256: ff911f92f6a4053e980532bac88d6422608dabfada139d1566a17859ae5c5570
 SHA512: 7153e62e9fa37dc71bcddb041a2b1d602a1ca854aa82a705e243e3500f2c675be97bdb783738a7d63aa74201628ace295207bb4395a72bb2b2ce4dcbb7e34f83
-Description: Python bindings for libxml2
-Homepage: http://www.xmlsoft.org
-
-Package: libxml2-python
-Installed-Size: 1680
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.0
-Depends: python, libxml2 (= 2.13.0)
-Filename: pool/main/libx/libxml2-python/libxml2-python_2.13.0_arm.deb
-Size: 181800
-MD5sum: a590b74d2e92698c28f31177e2dc1267
-SHA1: 8e9bbf9b2572463afcea81db17ce431ac2da6adc
-SHA256: 99a8b46722bedf8aac4aeedbd8b88dbecfa2cc9078478bd65a5946c507a8ecdd
-SHA512: 86318e87b14c35abb76398b265fd126197268debc7209f7f04dc7596f7fd76d9114bd7b004857a298e7a843d68d67d2d1a27ae9d2099ce5ea9f8641666bf1dc6
 Description: Python bindings for libxml2
 Homepage: http://www.xmlsoft.org
 
@@ -22327,21 +22299,6 @@ SHA512: b4ceeb4734a1703db44e8a7a7ae6a654283c646164c8401d0cc2b918f4c454bbe67e661f
 Description: Static libraries for libxml2-python
 Homepage: http://www.xmlsoft.org
 
-Package: libxml2-python-static
-Installed-Size: 492
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.0
-Depends: libxml2-python, libxml2 (= 2.13.0)
-Filename: pool/main/libx/libxml2-python-static/libxml2-python-static_2.13.0_arm.deb
-Size: 72848
-MD5sum: bbc2909e54d3d9663dea4157a82e1076
-SHA1: 813d66cccd43c164410172abd3b04f97af6ddee3
-SHA256: 5a9df21e5851c7f0f28df4e387bff8b6d4b3194ad8c5a4b276ec9c7d58c982b8
-SHA512: 96455c1fc514a83eb1cb9ad45e034a39ef520486d1b075db661d5371aeb315aa772e849679d09011a001ab4c20aa07d20a47bc2d6c720bcf3054e9fa73c67905
-Description: Static libraries for libxml2-python
-Homepage: http://www.xmlsoft.org
-
 Package: libxml2-static
 Installed-Size: 1188
 Maintainer: @termux
@@ -22357,21 +22314,6 @@ SHA512: bf63e8de8d68a5820f0a035fd2d27af39b5cd3e04d18bc3fe5b5333c7cabca8d7781eb32
 Description: Static libraries for libxml2
 Homepage: http://www.xmlsoft.org
 
-Package: libxml2-static
-Installed-Size: 1188
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.0
-Depends: libxml2 (= 2.13.0)
-Filename: pool/main/libx/libxml2-static/libxml2-static_2.13.0_arm.deb
-Size: 411692
-MD5sum: 07f4a9ba1ef1180fcf0436e9429a1267
-SHA1: d1600fbc2b46dc168c95ea11bde5903de48d6b43
-SHA256: 0cce6515ca7b06fab477b46f872d73c68079d5837b9c60962e536d36c2fc245c
-SHA512: 2c778b72b8a26e0f84fc57971c42577cba2fb8f23f9edf4a596d3eb5f6d37bb5ffbcbf8c91bc9ce051f9d7418a002acd47be4000e518eb6ec898bd431027310c
-Description: Static libraries for libxml2
-Homepage: http://www.xmlsoft.org
-
 Package: libxml2-utils
 Installed-Size: 108
 Maintainer: @termux
@@ -22384,21 +22326,6 @@ MD5sum: fa9d3b1398cca8b6a88abaf7538cdcb0
 SHA1: bedc296d81244b932fb41666a1c62616cf10bf4f
 SHA256: 74feb5e4b06c212d0ff13e335d1228a3cf789cb39bc12e6f89da3866bd1b19d2
 SHA512: 95723d3da84e1bdf0e2953277cb8956c2fe54603612db9fd3bf41eb7fd4b5d6e2ed6b4c77355943a21f307dae1832d600694c8de9d043df443a72d0e2946be6f
-Description: XML utilities
-Homepage: http://www.xmlsoft.org
-
-Package: libxml2-utils
-Installed-Size: 108
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.0
-Depends: libxml2 (= 2.13.0)
-Filename: pool/main/libx/libxml2-utils/libxml2-utils_2.13.0_arm.deb
-Size: 28788
-MD5sum: c9fae010e34497849c36cb0cbf968b5c
-SHA1: ef226f39b0502151637645660e4e24145ef752be
-SHA256: a9536a91a2a7d4c8d35a8a25ddd77add258eab3e039f0e3506e3cb0ae72562a4
-SHA512: 23f644f2f8709a28e28705c0d4bbc43c3444cca7df55cb6ea5ba5fb828f328f06274a1cfae515ad7b1f645749ae0d58f023f1a6d0134814091f576e12cbd2062
 Description: XML utilities
 Homepage: http://www.xmlsoft.org
 
@@ -26310,6 +26237,21 @@ Description: A version of mutt with added features
 Homepage: https://neomutt.org/
 
 Package: neovim
+Installed-Size: 27588
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 0.10.0
+Depends: libiconv, libuv, luv, libmsgpack, libvterm (>= 1:0.3-0), libluajit, libunibilium, libtreesitter, libandroid-support, lua51-lpeg
+Filename: pool/main/n/neovim/neovim_0.10.0_arm.deb
+Size: 5354532
+MD5sum: 5f184e7709b4ac401101d52304a46f9c
+SHA1: e27287d29ffb6879696b0707edfe89ebbc22a11b
+SHA256: eabbc317ce7992cb7ca172f9640208a926a92cd6f84fdfba8d522cdcac8f71d8
+SHA512: bbf74a077285e4b3b8299f44c76d19d2253158438cfd2c1bc68cca8ab10f3c455e90f8f412a2446a0c9065a636fe0722aec41fa2f0414614249e45dd81d71676
+Description: Ambitious Vim-fork focused on extensibility and agility (nvim)
+Homepage: https://neovim.io/
+
+Package: neovim
 Installed-Size: 24496
 Maintainer: @termux
 Architecture: arm
@@ -27132,20 +27074,6 @@ MD5sum: 60de303bcb5dda8de2c9b2931f513e1f
 SHA1: 46b6c66a22d73d150a2c2445dd622ba15cb7f462
 SHA256: b6ff509fa746015d0d3176b2753cf457f53f5a126d35675aac06cd83bf3ab04b
 SHA512: 6cb94afe9550b3d945b149e632fa3564153c58e12d8bed5dbc8693f6e879e253cfc2b41a1edae587cde121bb9846d7d2973251d76d5c19e4043db477e2a33270
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 17692
-Maintainer: @termux
-Architecture: arm
-Version: 21.13.1
-Filename: pool/main/o/oh-my-posh/oh-my-posh_21.13.1_arm.deb
-Size: 4526648
-MD5sum: ad95bb91b8957b184708ab36868d57d7
-SHA1: 0e37e366812da4d26fd28f5b660aa56eea8e5090
-SHA256: 77fc98cb06219e4350bf62884c223452e9e085a696b9115127db4ff9a822650f
-SHA512: 166aa0297a1545cc54afa90e16229d601eb2fba1f119368821258073a5f6e0299b1e1e9448d3d60059a462290fee817e7897b34d3a6a3af060e469954b161ea5
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 

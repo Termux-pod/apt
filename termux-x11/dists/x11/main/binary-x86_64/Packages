@@ -7020,21 +7020,6 @@ SHA512: 525ac5c957efdce11351797e0f6edac1a9ccd33ae3aa728e96fc9eeb4c1430fe04ace884
 Description: A cross-platform application and UI framework
 Homepage: https://www.qt.io/
 
-Package: qt6-qtbase
-Installed-Size: 70656
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.7.1-3
-Depends: brotli, double-conversion, freetype, glib, harfbuzz, libandroid-shmem, libandroid-posix-semaphore, libc++, libdrm, libice, libicu, libjpeg-turbo, libpng, libsm, libsqlite, libuuid, libx11, libxcb, libxi, libxkbcommon, libwayland, opengl, openssl, pcre2, vulkan-loader, xcb-util-cursor, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, zlib, zstd
-Filename: pool/main/q/qt6-qtbase/qt6-qtbase_6.7.1-3_x86_64.deb
-Size: 12566996
-MD5sum: 09654f63b3a933479edd6168e6c8c3de
-SHA1: 58492a1ce53f04c745bb5aee137b3af784e9c3c9
-SHA256: 2a6529aea84fa3de063e1ebff2d9c2052cf581205c57ddb5957ece720a03f6bb
-SHA512: f0b021a4a34418afb2df1ce43e580b7e0ee3260a338d1d08c1ea51e223757c4efd3143594e0dd69ab9ff307ace3699097ec1b6ee2025cba3013ccc2f0befd7d1
-Description: A cross-platform application and UI framework
-Homepage: https://www.qt.io/
-
 Package: qt6-qtbase-cross-tools
 Installed-Size: 71592
 Maintainer: @termux
@@ -7050,19 +7035,19 @@ SHA512: a0c11297119da861190b28a208640ebf3cd06b2ad58f8fe1098c4b7edf87d653948b2341
 Description: Tools for cross build on the host (NOT for Termux)
 Homepage: https://www.qt.io/
 
-Package: qt6-qtbase-cross-tools
-Installed-Size: 71584
+Package: qt6-qtcharts
+Installed-Size: 5372
 Maintainer: @termux
-Architecture: all
-Version: 6.7.1-3
-Depends: qt6-qtbase (= 6.7.1-3)
-Filename: pool/main/q/qt6-qtbase-cross-tools/qt6-qtbase-cross-tools_6.7.1-3_all.deb
-Size: 13569816
-MD5sum: e69131c31b61e2da5febbb987baae8dd
-SHA1: 8a208f693337ae0611e024e1eaf89c15f68f4e13
-SHA256: e522a0f42cec5ee0b23582d23c6deae2851a323a11614379915428ebb7e0a345
-SHA512: 88762ec8c110d298cae28bac4d042e07261ce2f8dfe1a7ef6899e9a2b32dcc1203facac82eb9e2fdff4b8986a9f062ffc4aa8cd64e43f2d9a5359cb6dcd31cd9
-Description: Tools for cross build on the host (NOT for Termux)
+Architecture: x86_64
+Version: 6.7.2
+Depends: libc++, qt6-qtbase, qt6-qtdeclarative
+Filename: pool/main/q/qt6-qtcharts/qt6-qtcharts_6.7.2_x86_64.deb
+Size: 632768
+MD5sum: 2be47eb91458e9b343cd2796fa6ff14d
+SHA1: babd350b2a876fc1818b0643f0e30688005aa055
+SHA256: a6e9300b0066207802d5d5aa73d6bbc68f484514c60fbee90869432cf204aa43
+SHA512: 6bcb5aa572236c5ad4d2827c6579ed0dbe822d5f1ee7fc0588538254297137c22ea8954fe5542de0876fe095d806fe8a5ae32a5d47170d528f429df1ca5288ad
+Description: Provides a set of easy to use chart components
 Homepage: https://www.qt.io/
 
 Package: qt6-qtcharts
@@ -7084,6 +7069,21 @@ Package: qt6-qtcharts-cross-tools
 Installed-Size: 6316
 Maintainer: @termux
 Architecture: all
+Version: 6.7.2
+Depends: qt6-qtcharts (= 6.7.2)
+Filename: pool/main/q/qt6-qtcharts-cross-tools/qt6-qtcharts-cross-tools_6.7.2_all.deb
+Size: 752800
+MD5sum: 12e8695e157d7b04c7059c1e93b0f920
+SHA1: 6e25038970ec6f8552be3f6ec8a2e7483a9b01cc
+SHA256: 471c39d5d188d16673b68b38ffaebe0a4c45e2257e0d045a3b8aff03e56f52df
+SHA512: 138ebe37c433f85e444576d0e7067b4b90bba3efa545909026a31d239fc614603b43587dc791809a540def3f31164e17ddc4d97328a9a4674a1ae6628d21a94a
+Description: Tools for cross build on the host (NOT for Termux)
+Homepage: https://www.qt.io/
+
+Package: qt6-qtcharts-cross-tools
+Installed-Size: 6316
+Maintainer: @termux
+Architecture: all
 Version: 6.7.1
 Depends: qt6-qtcharts (= 6.7.1)
 Filename: pool/main/q/qt6-qtcharts-cross-tools/qt6-qtcharts-cross-tools_6.7.1_all.deb
@@ -7093,6 +7093,22 @@ SHA1: a7361ded31b06a2fe06ee57f95dfd62e0e6a44a6
 SHA256: 0a55523660cdbd6290bde561cc15a9412fb44b184bf8e0a1387ade404efd9678
 SHA512: 627f1eebd39c1f5655de76cd61e662aa6c5a0ff4b69efb734eb6c9867408b2be111d392daecab291a861f60b700b98ad7d9f21a8133cf0ba8e1b57ffdb3d3b4a
 Description: Tools for cross build on the host (NOT for Termux)
+Homepage: https://www.qt.io/
+
+Package: qt6-qtdeclarative
+Installed-Size: 95076
+Maintainer: @termux
+Architecture: x86_64
+Version: 6.7.2
+Depends: libc++, qt6-qtbase
+Recommends: qt6-qtlanguageserver
+Filename: pool/main/q/qt6-qtdeclarative/qt6-qtdeclarative_6.7.2_x86_64.deb
+Size: 11556304
+MD5sum: 6dca2ba74a955586d661c6a8470ed181
+SHA1: 0232a46beb03cf9ddb6d2eab4d61cf5e12ba7573
+SHA256: d481706869c079b9257cfb2ff26ecc59bae80a9485be5f60201714aee37810ff
+SHA512: 3f629895ac48dc0e86319779566981c44e16eb0b01b211771dcf4741d29f32f3e14de7f1f041b7c731a3c100d49a2d30c255fcc641941c204cb1093283446984
+Description: Classes for QML and JavaScript languages
 Homepage: https://www.qt.io/
 
 Package: qt6-qtdeclarative
@@ -7109,6 +7125,21 @@ SHA1: 23ddc49caf71f7ceae6b077c0e53567e1d690ff2
 SHA256: d48c982db47bbde91648ec3ec6fda5cc1f5bb98170cfd01a8a25bcb22c6b3549
 SHA512: 4dc717ec6635140ea7617f43db70a6641cfcbbd25cd4c2c39aec385ae875dad426798399affa83e89816efb69600247687f3e973ec1afdb9569ef29a32a90ca6
 Description: Classes for QML and JavaScript languages
+Homepage: https://www.qt.io/
+
+Package: qt6-qtdeclarative-cross-tools
+Installed-Size: 124784
+Maintainer: @termux
+Architecture: all
+Version: 6.7.2
+Depends: qt6-qtdeclarative (= 6.7.2)
+Filename: pool/main/q/qt6-qtdeclarative-cross-tools/qt6-qtdeclarative-cross-tools_6.7.2_all.deb
+Size: 12881584
+MD5sum: e0ec2de7b3b4cd66eed71f730057cc02
+SHA1: 9478cc73274f7ab26fb56bd86a66cffe7502c776
+SHA256: a9df7cc19bb7fac143a42432ceda78a7b9b7bb3cb74ade8032fc6f8e8c1c3f9f
+SHA512: 20f7739682b961f8e1674d68dec9f762d20d9d062ca2e7ad13f107e7979538e7a410a693d58d153bb0cf8fa416a9cc691ebc873599efb3094a56b76883891e13
+Description: Tools for cross build on the host (NOT for Termux)
 Homepage: https://www.qt.io/
 
 Package: qt6-qtdeclarative-cross-tools
@@ -7141,21 +7172,6 @@ SHA512: 8f56963a1bd5efcd8b4f9de74126a6459bff826e6ea70b983f0958ce41db3a6f1ca0fffa
 Description: Plugins for additional image formats: TIFF, TGA, WBMP
 Homepage: https://www.qt.io/
 
-Package: qt6-qtimageformats
-Installed-Size: 420
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.7.1
-Depends: libc++, libjasper, libtiff, libwebp, qt6-qtbase
-Filename: pool/main/q/qt6-qtimageformats/qt6-qtimageformats_6.7.1_x86_64.deb
-Size: 49052
-MD5sum: 423ae7e43c58c97e91f75ab3e035216f
-SHA1: c4e6304d35fe2e05b8c29155bed1582c64c7fa89
-SHA256: 844d43bdd28bc5b290c3e3adc08b04766471cc3ee324d9f1cd267de96b601b50
-SHA512: 824029caa91e8641415650a8b3d75521522eecb8190432dc91dc2ad527efc2ddf2b111bf6f4e198fa0c6316412e65152f59032c8f8517a1cb54f353bb0ab10e4
-Description: Plugins for additional image formats: TIFF, TGA, WBMP
-Homepage: https://www.qt.io/
-
 Package: qt6-qtimageformats-cross-tools
 Installed-Size: 448
 Maintainer: @termux
@@ -7168,21 +7184,6 @@ MD5sum: 87f93cd99c319f1f6fa077523f92dc50
 SHA1: 981f3ec92c9099f511f036fa0df6067b9f9a066b
 SHA256: 7e62dfb184b116a61d65f00118be9f5154f0ecd730c2547e9380262b4eb3a9d1
 SHA512: 587ff912fdbadcd4a5880af1519a2533137980fc696ed7db3d47c2960e2d3874d7514063308af6872357dde188779af938cb73bda7e560d05637dde90d15747d
-Description: Tools for cross build on the host (NOT for Termux)
-Homepage: https://www.qt.io/
-
-Package: qt6-qtimageformats-cross-tools
-Installed-Size: 448
-Maintainer: @termux
-Architecture: all
-Version: 6.7.1
-Depends: qt6-qtimageformats (= 6.7.1)
-Filename: pool/main/q/qt6-qtimageformats-cross-tools/qt6-qtimageformats-cross-tools_6.7.1_all.deb
-Size: 49448
-MD5sum: 0f1d9e18e58dd4657a8fc1e1d0b7353f
-SHA1: c13aabd0e69732cabfe0d2d31fcc21d092b1988c
-SHA256: 02b8a8b80ba5940db013f6978e3f4cd90239dc60d386c3a5ebd3990b824fa506
-SHA512: 990f15f6cfc08fc9b8ceba57b004a3eaeb1e7132c9b4a5f76047d1bbd435ab3e6672fb6cf80cad90e2ea2776c18b722b503eb13ab07998d640d38ded30d18a8a
 Description: Tools for cross build on the host (NOT for Termux)
 Homepage: https://www.qt.io/
 
@@ -7201,21 +7202,6 @@ SHA512: 49bc17f3fdb94e9930b593c6ca2df153c086e29a2ae1207ce0d25263191566e72caed0aa
 Description: An implementation of the Language Server Protocol
 Homepage: https://www.qt.io/
 
-Package: qt6-qtlanguageserver
-Installed-Size: 2232
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.7.1
-Depends: libc++, qt6-qtbase
-Filename: pool/main/q/qt6-qtlanguageserver/qt6-qtlanguageserver_6.7.1_x86_64.deb
-Size: 291284
-MD5sum: 166b5d17233ff2c0ead35e682ca64779
-SHA1: 912974ee46d67d2ee2d30b6366fff2b821836a6a
-SHA256: 7c827e71195b4d5a981133711fcb058cf9cdd300b4b250009616b7fe57d53f86
-SHA512: 5c1b9b9db788fb55e5e450d02cf5ba32cd0e443c1e0f84447b67a2a7b3649733f649926316c30e1f3573fef1e1e6361ba343634913eee45caec2f402c51ba770
-Description: An implementation of the Language Server Protocol
-Homepage: https://www.qt.io/
-
 Package: qt6-qtlanguageserver-cross-tools
 Installed-Size: 2576
 Maintainer: @termux
@@ -7231,19 +7217,19 @@ SHA512: 0cf2a1ae4454b930232cf5ca88696310c9d1afe3b4b5f72a20506d98bb34247f370ea164
 Description: Tools for cross build on the host (NOT for Termux)
 Homepage: https://www.qt.io/
 
-Package: qt6-qtlanguageserver-cross-tools
-Installed-Size: 2576
+Package: qt6-qtmultimedia
+Installed-Size: 7808
 Maintainer: @termux
-Architecture: all
-Version: 6.7.1
-Depends: qt6-qtlanguageserver (= 6.7.1)
-Filename: pool/main/q/qt6-qtlanguageserver-cross-tools/qt6-qtlanguageserver-cross-tools_6.7.1_all.deb
-Size: 310376
-MD5sum: 8120512ab07a6a4b8a4c6f5fe9631dd6
-SHA1: aa3510b945cd09d6596ceff8acf4dbea87c44c67
-SHA256: f8eb01d3421935866f7be2fa121ff0a40ea0cc33b2f620f0920ff2b18a04760d
-SHA512: bfd87b9fe1e685d6f2d550512f5be420750d2fb808171423b26db972d57c074e42058b2404a0c3ba667be0c9935a47c3b953eafffb46c5c57355fe74e106b6e4
-Description: Tools for cross build on the host (NOT for Termux)
+Architecture: x86_64
+Version: 6.7.2
+Depends: glib, gst-plugins-bad, gst-plugins-base, gstreamer, libc++, opengl, pulseaudio, qt6-qtbase, qt6-qtdeclarative
+Filename: pool/main/q/qt6-qtmultimedia/qt6-qtmultimedia_6.7.2_x86_64.deb
+Size: 1036628
+MD5sum: 2019eecf1193cc9f87eddbb4d181166c
+SHA1: 92717c534cf22c4dde487bc43f16d549d18f09ae
+SHA256: a412eabb8481e614d9bc7ba6bf7cd9b6840fb31b04ec263072b95f2ff8636bc0
+SHA512: bbe7592ff7303fe6db8d88f269ea946d837bbc0c5226e28d5c1e8f7d0b173fe1d5e0c7043867a329156902224140bc764991fba0599167d489ea93ac80b67790
+Description: Qt6 Multimedia Library
 Homepage: https://www.qt.io/
 
 Package: qt6-qtmultimedia
@@ -7259,6 +7245,21 @@ SHA1: da8504c4292a6513b62ca0b7dd8a3d9fba115a92
 SHA256: ef305c0bef5c9fbe134dc2464fc832c1d9a62edb42f9e3377d6beb00427a2a99
 SHA512: f9ffc61e13a4ba2e4631aeefe003575809209e2f7a0b3bf33a5219c533ad66b7f048856a9ad4a8f8bcffc3fa030db65d3bf2b29ca8819bd1444acc9c80797703
 Description: Qt6 Multimedia Library
+Homepage: https://www.qt.io/
+
+Package: qt6-qtmultimedia-cross-tools
+Installed-Size: 5340
+Maintainer: @termux
+Architecture: all
+Version: 6.7.2
+Depends: qt6-qtmultimedia (= 6.7.2)
+Filename: pool/main/q/qt6-qtmultimedia-cross-tools/qt6-qtmultimedia-cross-tools_6.7.2_all.deb
+Size: 752912
+MD5sum: 32ccd0a34543c95cbd9654086ce36a16
+SHA1: 4bde3ea4fb9760ea17ca92ed9323a62549cbe0af
+SHA256: 68b2ace7cdfb7e29aa12a00cc08e633e8df8a56c5fcaa7830c0a0bebaa3386e6
+SHA512: 3e7165f5797635a1faf176f8af2fec6b22f01604a5f0f4cc5f8f8fac68ee516791a236145c8647707ee438b7da702160ad5919ba4e5df7af01f8b665e7927f10
+Description: Tools for cross build on the host (NOT for Termux)
 Homepage: https://www.qt.io/
 
 Package: qt6-qtmultimedia-cross-tools
@@ -7291,21 +7292,6 @@ SHA512: 9e225e42b13be2b20bf6b71d78c99851cf38daabf1bdc2cd39fd505c660d2a4469925ea8
 Description: Qt6 SVG Library
 Homepage: https://www.qt.io/
 
-Package: qt6-qtsvg
-Installed-Size: 1068
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.7.1
-Depends: libc++, qt6-qtbase, zlib
-Filename: pool/main/q/qt6-qtsvg/qt6-qtsvg_6.7.1_x86_64.deb
-Size: 180596
-MD5sum: 7d35c816f85d6b88d567854efa2a8466
-SHA1: 9ee85e52adfe16a1de8e73e13333363b31f6f01e
-SHA256: c9d7bf7ed6ec603fdbd481a30b0332976cd19eba0df1247915502c1519e593e8
-SHA512: 652d43c69ceb9d52de50b86efba43da0b8a010828c8ac2ad0e34108d90da20503924d8b12048440329faa4c36d7b2d46393061174cfe9dcc42da332a9464a9d6
-Description: Qt6 SVG Library
-Homepage: https://www.qt.io/
-
 Package: qt6-qtsvg-cross-tools
 Installed-Size: 1256
 Maintainer: @termux
@@ -7321,19 +7307,20 @@ SHA512: 20a215d68927a9fafeba566c00210b68cd858c03e6fdb378a3189041b1ae20c8acd7da81
 Description: Tools for cross build on the host (NOT for Termux)
 Homepage: https://www.qt.io/
 
-Package: qt6-qtsvg-cross-tools
-Installed-Size: 1252
+Package: qt6-qttools
+Installed-Size: 19464
 Maintainer: @termux
-Architecture: all
-Version: 6.7.1
-Depends: qt6-qtsvg (= 6.7.1)
-Filename: pool/main/q/qt6-qtsvg-cross-tools/qt6-qtsvg-cross-tools_6.7.1_all.deb
-Size: 199132
-MD5sum: f3e71225563467be9f432f56a3050f2f
-SHA1: 69b8dd58d664261508ed7a8fdbb6051cb9ddc070
-SHA256: e2ad71fbb66e7b9c52c1a31ae3862bc46f1e3c2eec6680c1ae6df741966af0ea
-SHA512: d085f1b99a3dde1bf3cb19ec51fce19625703dec4def0aafb7ff7c70d9a53de282c061665045df1dbde84ffd109c27ed28fee7012545b054eeef2ed241962f8a
-Description: Tools for cross build on the host (NOT for Termux)
+Architecture: x86_64
+Version: 6.7.2
+Depends: libc++, qt6-qtbase, zstd
+Recommends: qt6-qtdeclarative
+Filename: pool/main/q/qt6-qttools/qt6-qttools_6.7.2_x86_64.deb
+Size: 4889100
+MD5sum: 70440eccbd75b968cb6f36fe131bf1a2
+SHA1: 7d6983ceeee63ce9756357c87c0ca766eb8ade55
+SHA256: 7ebbdb942d75d89eb9069550d66276eb0244c45b3bf82cf0a80de218b7b8fd5f
+SHA512: 0de1a8f21671d452ee978e25d25b2cb5b4ce57872550c060a88b81e81bb2166385d7eee27a7453e08c67a9febbb62083485aecdfcc5a57e94148a51471c1ff7e
+Description: Qt Development Tools (Linguist, Assistant, Designer, etc.)
 Homepage: https://www.qt.io/
 
 Package: qt6-qttools
@@ -7356,6 +7343,21 @@ Package: qt6-qttools-cross-tools
 Installed-Size: 22640
 Maintainer: @termux
 Architecture: all
+Version: 6.7.2
+Depends: qt6-qttools (= 6.7.2)
+Filename: pool/main/q/qt6-qttools-cross-tools/qt6-qttools-cross-tools_6.7.2_all.deb
+Size: 5423136
+MD5sum: 6a942e7caa48ee236db92653cb5192d7
+SHA1: 5a33eea59ca31748064147ff4d4080d7ec74c049
+SHA256: 60d4712662a78f8416dd3b1823071d0d17099468b814520b46a64f93dbc5ca59
+SHA512: 3db6cd91a1155503f82ea03fffdbe56c203a05eb587cee1d10d530ddb850dfd36849b47af6d2d0e50dc8a5dc8d330fb9027eb0629aa24ad86bb7c759b1c9df8c
+Description: Tools for cross build on the host (NOT for Termux)
+Homepage: https://www.qt.io/
+
+Package: qt6-qttools-cross-tools
+Installed-Size: 22640
+Maintainer: @termux
+Architecture: all
 Version: 6.7.1-1
 Depends: qt6-qttools (= 6.7.1-1)
 Filename: pool/main/q/qt6-qttools-cross-tools/qt6-qttools-cross-tools_6.7.1-1_all.deb
@@ -7371,6 +7373,20 @@ Package: qt6-qttranslations
 Installed-Size: 14696
 Maintainer: @termux
 Architecture: x86_64
+Version: 6.7.2
+Filename: pool/main/q/qt6-qttranslations/qt6-qttranslations_6.7.2_x86_64.deb
+Size: 1729588
+MD5sum: ae58eedf1b090f725ee9ee36954a15bc
+SHA1: ecccf3192b5ac6940503d7b43d5c56cee2d12329
+SHA256: f6bd724526af9ebd9113f4916d412e09fda6019a93171fa135fc51189b095b7a
+SHA512: 29b257f8f9b5228086797d26c19f96c58c31a8346d7fec95c91f52b36389f8afd226b0a0eb9ea1481ba6ef1eba75ad0a17262caf7f14afb5ab0b17e72d63b61a
+Description: A cross-platform application and UI framework (Translations)
+Homepage: https://www.qt.io/
+
+Package: qt6-qttranslations
+Installed-Size: 14696
+Maintainer: @termux
+Architecture: x86_64
 Version: 6.7.1
 Filename: pool/main/q/qt6-qttranslations/qt6-qttranslations_6.7.1_x86_64.deb
 Size: 1731804
@@ -7379,6 +7395,21 @@ SHA1: df06250a2bc30f26b90f9b2224a6b6b2a8776b6e
 SHA256: 32186f4b8be81c07196816776a95c47555369fc9d1bbf70acf9e6c8d302d551f
 SHA512: 7b50662dec154d29bf8ed3987f2c4e948a19e69608b62fd09dc0af3fa4562548c036fae20fb1f7ecb777eec6673a07e0918b7d10bad9b268bab8e1a320ee9030
 Description: A cross-platform application and UI framework (Translations)
+Homepage: https://www.qt.io/
+
+Package: qt6-qttranslations-cross-tools
+Installed-Size: 14700
+Maintainer: @termux
+Architecture: all
+Version: 6.7.2
+Depends: qt6-qttranslations (= 6.7.2)
+Filename: pool/main/q/qt6-qttranslations-cross-tools/qt6-qttranslations-cross-tools_6.7.2_all.deb
+Size: 1731404
+MD5sum: 3d790f294fa9c9471331d295b08a4ea0
+SHA1: 909480a6395dc5e31ab63cb2afb997ef52531f97
+SHA256: 0f9bdd45d37add5d08e1f63130c31126375f3e71aff3d9ea541cf4e217749b1f
+SHA512: 215e09003a2d2b13dcf4323e2b908ac005046400243d341c35cc70c3d8b130c211cfb9b68d206b67db82e64475bb88a5ffabfc8746d212a378afba7faef29361
+Description: Tools for cross build on the host (NOT for Termux)
 Homepage: https://www.qt.io/
 
 Package: qt6-qttranslations-cross-tools
@@ -7411,21 +7442,6 @@ SHA512: 3dfe45dbfe4569346a78dfb59c08e1f0c5c3d12333cdbf8270b2a7d3bc6020c4d1da77af
 Description: Qt6 Shader Tools
 Homepage: https://www.qt.io/
 
-Package: qt6-shadertools
-Installed-Size: 5332
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.7.1
-Depends: libc++, qt6-qtbase
-Filename: pool/main/q/qt6-shadertools/qt6-shadertools_6.7.1_x86_64.deb
-Size: 1259944
-MD5sum: 18a909008a0cb3f81b763521d149ed88
-SHA1: 6f1be0ec1093aaaa95275619d18447dd6ac8b9b1
-SHA256: 18fa941f55516753f1638d25aa2dea349278dbc84e64348635ddf367e1fc5131
-SHA512: 3601888723361aec3e777e4d1690f06023bb624cde153383a8e686b64a8fcb623295ccba573cc1f700f19a7bf49e67617e61d4ed28020f60792c99a6d7e7f411
-Description: Qt6 Shader Tools
-Homepage: https://www.qt.io/
-
 Package: qt6-shadertools-cross-tools
 Installed-Size: 4456
 Maintainer: @termux
@@ -7438,21 +7454,6 @@ MD5sum: d60f819ae0cb7b79250177d782189b8b
 SHA1: 94c8a240b80d82a0e7b281b7b42fea40bf95b6a6
 SHA256: 093ee2c8cb0a6708b951dd69baf59746b80b5befda32d87bf5669101befc469e
 SHA512: bd76622ab5c9c793bcd7ef3828ec0cd82b64326af81f3f731f4d177ea9c0dfc92acefe6a0884a244e3723812d265d208e08bdd826b659afc5b1535e6690947f4
-Description: Tools for cross build on the host (NOT for Termux)
-Homepage: https://www.qt.io/
-
-Package: qt6-shadertools-cross-tools
-Installed-Size: 4456
-Maintainer: @termux
-Architecture: all
-Version: 6.7.1
-Depends: qt6-shadertools (= 6.7.1)
-Filename: pool/main/q/qt6-shadertools-cross-tools/qt6-shadertools-cross-tools_6.7.1_all.deb
-Size: 1110024
-MD5sum: 5de13a5852edb3ac7b660442349b4870
-SHA1: 09ae4dd7b87aa5bbf39a3d7b54975f1fe42da0f3
-SHA256: a964cf8eef8ba817a22ffe00fdf4a97a2c0e68faa0f56853d5d8a101ef2f0a68
-SHA512: 1a205e1846c7ca2704d0f83c9e2dc14cc6c02b22ad5efae336fa3f70cbbb9251174f46f536e5d7a75780655622921a702be4aff9da72e0e70ba44e6504a4637f
 Description: Tools for cross build on the host (NOT for Termux)
 Homepage: https://www.qt.io/
 

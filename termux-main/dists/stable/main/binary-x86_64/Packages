@@ -6248,21 +6248,6 @@ SHA512: 86dcc687fdd3ba7e617de98c10031a6f3e77a504cabb191b67677c6cdd1ecbc8f559f7ec
 Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
 Homepage: https://github.com/fastfetch-cli/fastfetch
 
-Package: fastfetch
-Installed-Size: 2900
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.17.2
-Depends: vulkan-loader
-Filename: pool/main/f/fastfetch/fastfetch_2.17.2_x86_64.deb
-Size: 421008
-MD5sum: d101f303159a47a1c6175afa56b59510
-SHA1: 3e920991697a4b433a002b26a187de5c1137828b
-SHA256: 3ca3b7a840630c95ae4ebc38dfb36d3226fcde73b69cbe12cd07a05200f552ac
-SHA512: f63f809358baefb7d7273f1f9b77b018a4410cce9d4e4ef4d9edbb327286de433c141307ed0776eb0ece25e47b5d12856005471ecae47034ad2316abe7b86988
-Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
-Homepage: https://github.com/fastfetch-cli/fastfetch
-
 Package: fastmod
 Installed-Size: 3748
 Maintainer: @termux
@@ -7264,19 +7249,19 @@ Description: Interactive JSON viewer on your terminal
 Homepage: https://github.com/antonmedv/fx
 
 Package: fzf
-Installed-Size: 4416
+Installed-Size: 4436
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.53.0
+Version: 0.54.0
 Depends: bash, findutils, ncurses-utils, tmux
-Filename: pool/main/f/fzf/fzf_0.53.0_x86_64.deb
-Size: 1305012
-MD5sum: 5d24f575fb004f7c9c33273f8dd27571
-SHA1: 52a27a6730ee999150b82cfdc3e98d2decb86119
-SHA256: d18aa8dfbe36d2d2acf8acc6dc1f5c460a33833ca454a4676d136c07fd79bd81
-SHA512: 298b0c05f567375e95363a531a3ec3310b22cd28b45562a52c68b7689bb051ac59803e4f86523921ef9899899b05a76dd94bb27f36cfca48e0b7e7cdf4c16052
+Filename: pool/main/f/fzf/fzf_0.54.0_x86_64.deb
+Size: 1312180
+MD5sum: e8eeca0791e8967ea1954a055ed75eb9
+SHA1: 92d4b51c16fb05c860abe70f9caf8f13f97c840c
+SHA256: cd4febc372623f063ba8aa308ae2fe962e3d0abb8450ba2a83e12e6752647c6e
+SHA512: d532d304219573ef7c9cba8987ce0dab5ca5d977611e6740629a0dc071284115645b12b2a7e9b7d2db7636863a6d2938ac2aa8e60fb04a637b752501a970ed2a
 Description: Command-line fuzzy finder
-Homepage: https://github.com/junegunn/fzf
+Homepage: https://junegunn.github.io/fzf/
 
 Package: fzy
 Installed-Size: 96
@@ -7514,6 +7499,23 @@ Package: gdb
 Installed-Size: 14568
 Maintainer: @termux
 Architecture: x86_64
+Version: 14.2-1
+Replaces: gdb-dev
+Depends: guile, libc++, libexpat, libgmp, libiconv, liblzma, libmpfr, libthread-db, ncurses, python, readline, zlib, zstd
+Breaks: gdb-dev
+Filename: pool/main/g/gdb/gdb_14.2-1_x86_64.deb
+Size: 3798384
+MD5sum: c5450917005637bf9dab2e2518321d9f
+SHA1: 4aa5bc47f6f007934bd615376f46414f1676047c
+SHA256: b6f14ed2e9ae38a62d9fe8fa7627177742f78ac467508779a279566d1f50db0d
+SHA512: 308b16ab4452de0672934c83574f9aa6642c9cf3a0e5d5fc7e6a691b9c3e5fdd3596559d9eb1275c27400aacc6abce4150090ce448cba24fd09d715fd7d2d71d
+Description: The standard GNU Debugger that runs on many Unix-like systems and works for many programming languages
+Homepage: https://www.gnu.org/software/gdb/
+
+Package: gdb
+Installed-Size: 14568
+Maintainer: @termux
+Architecture: x86_64
 Version: 14.2
 Replaces: gdb-dev
 Depends: guile, libc++, libexpat, libgmp, libiconv, liblzma, libmpfr, libthread-db, ncurses, python, readline, zlib, zstd
@@ -7558,6 +7560,23 @@ SHA256: 93b52a65b007dffb5c120107356e1340143bedbc2b58223c182c46b2f8d30e53
 SHA512: f70c9d8fb76601a31adae7e9a78713e8bed4958a6245a4a59db3131a39f3e5c156019d5061f449fffd978cb4b293ccea0cf650b7052c9b28ced5ba1c10bd9124
 Description: Static libraries for gdbm
 Homepage: https://www.gnu.org.ua/software/gdbm/
+
+Package: gdbserver
+Installed-Size: 604
+Maintainer: @termux
+Architecture: x86_64
+Version: 14.2-1
+Replaces: gdb (<< 13.1)
+Depends: libc++, libthread-db
+Breaks: gdb (<< 13.1)
+Filename: pool/main/g/gdbserver/gdbserver_14.2-1_x86_64.deb
+Size: 214900
+MD5sum: c055c0419de7d8c7a200e3c18b4c8b2c
+SHA1: e0bb364febfb1f1936877b64b4bc1eb00a51d740
+SHA256: dbd18895399678efec036a392fd48aa6745d42d1d2ed173c6ef9c7ae5f8a4163
+SHA512: 77ea18865598e0c37550adfab0d8fccbd9c948362640d30da0aeb2eb55522ad15c6606ea75f48a6f0ad42acd437140baa7e33cd2c5c19cd11a05479bbc7d4b4b
+Description: The gdbserver program
+Homepage: https://www.gnu.org/software/gdb/
 
 Package: gdbserver
 Installed-Size: 604
@@ -8253,22 +8272,6 @@ MD5sum: ded6ff91c3a2591286224cac32e414a0
 SHA1: d38c33d6dec1ecc8a9b61a89b9b67bbf2df821a6
 SHA256: b8739c6d33ecda51d1d310464d4c05d2029d792056864cd4914b863680c00163
 SHA512: b71bcbf3e2610b8c366f815d2ccfdd1db654c91fe3b968e46bfa8086807acf776e975737c1dd4412452ba42fc99883f44f18c0cc210f5e2711f3bdfb59a620d4
-Description: A friendly language for building type-safe, scalable systems!
-Homepage: https://gleam.run
-
-Package: gleam
-Installed-Size: 15712
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.3.0
-Depends: erlang
-Suggests: nodejs
-Filename: pool/main/g/gleam/gleam_1.3.0_x86_64.deb
-Size: 4339180
-MD5sum: 75ba9f8726bef4c4f3d245d95761177f
-SHA1: 867028f23b1a62349ce0a63fd0b79a62fa5419d1
-SHA256: 14487001d7cd03e97016dca3226643d98d2e5c597065d0c534a5071c50b6ac35
-SHA512: 40a43b9eda406865cb4e650e08fba930387dc13a224cad450239828717fd18254e6c6053a9b6263d978a7d6fce2a532d7e35fbf680bdad26d7baeb6b5e4e7007
 Description: A friendly language for building type-safe, scalable systems!
 Homepage: https://gleam.run
 
@@ -11472,6 +11475,20 @@ SHA256: af4834a1b8fcfc29099b31d312fe1e5a3b69225c0b4f44c07bac811ef5d2f4f1
 SHA512: eee5345c75259abd5b8a49f0714091d8083ffd57bb5b5ee37f023c82c6c24047f252195471d58e14dd9b3f4731aa4fd028cfcf88c43475c3a98e187bff3bf1f4
 Description: Static libraries for jq
 Homepage: https://stedolan.github.io/jq/
+
+Package: jql
+Installed-Size: 828
+Maintainer: @termux
+Architecture: x86_64
+Version: 7.1.13
+Filename: pool/main/j/jql/jql_7.1.13_x86_64.deb
+Size: 304100
+MD5sum: 02041e65e3385482674bfd22dfeed4d2
+SHA1: 972e64251a463a649f485e403f63bc3938346cf0
+SHA256: f879790d6873256960f1b81cc88913f73dc478a901fac198371afb428e6916f8
+SHA512: 32b9a2d9764a919b9940e1f02921297acb86f14576ec99e7a84916082a26b580290ef8531878cf4e82b7f05aff21ffbd89d1a7d72160c3a792e7033393e2fb2e
+Description: A JSON Query Language CLI tool
+Homepage: https://github.com/yamafaktory/jql
 
 Package: jql
 Installed-Size: 828
@@ -15676,21 +15693,6 @@ SHA512: e459e688e227513adfde08e3f9985bca791920b07ae46d9a0e5f5669dcb9324a3938bba9
 Description: HEIF (HEIC/AVIF) image encoding and decoding library
 Homepage: https://github.com/strukturag/libheif
 
-Package: libheif
-Installed-Size: 1176
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.17.6
-Depends: gdk-pixbuf, glib, libaom, libc++, libdav1d, libde265, librav1e, libx265
-Filename: pool/main/libh/libheif/libheif_1.17.6_x86_64.deb
-Size: 310152
-MD5sum: d8084b35c133710170f7754d31f927c8
-SHA1: 12334f6c2c5db2e71431e2deb346da9dd98319ed
-SHA256: 9f001347ecb1029a287664da32fbf6c7006c469df3dbd05c60798d5d08936514
-SHA512: dd3e266e5f8f4214f0a23fd9d23715e461011039fdfdc202bea66aa5cc297e2b742ad7687ba15d66dad004c8f563a48c13cb48a5c38df9e121aba9cf019e92fa
-Description: HEIF (HEIC/AVIF) image encoding and decoding library
-Homepage: https://github.com/strukturag/libheif
-
 Package: libheif-progs
 Installed-Size: 388
 Maintainer: @termux
@@ -15703,21 +15705,6 @@ MD5sum: de7d91405e8799a1193e88cf15b44a79
 SHA1: 07adf9aa14d174858bce318f98ec53e604d346e3
 SHA256: a8110e35ad3eac1d0a8245665d471c6b4ab534301f41339bf08a29bb5b822ce6
 SHA512: 94061bdb723bb4fbe7792efde0eb71f4fdf62212fefe5e6e91618a16e4f7e74f08128b0d2f22644c56bc7180faede0d18f7b25bcb95d596efa9423d8b1792d37
-Description: Programs for manipulating HEIF (HEIC/AVIF) image files
-Homepage: https://github.com/strukturag/libheif
-
-Package: libheif-progs
-Installed-Size: 368
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.17.6
-Depends: libjpeg-turbo, libpng, libheif (= 1.17.6)
-Filename: pool/main/libh/libheif-progs/libheif-progs_1.17.6_x86_64.deb
-Size: 78108
-MD5sum: d4a0c4cec4253238c628f133eacc807f
-SHA1: eef4699cd9a38f274494ae757dfacc0ec5a8b510
-SHA256: 5e808b1000116d728e38713c40cfbef45b3340f7bf9902d9f643eb4c1d8e8a08
-SHA512: 4058ddfbc75efbc6af23dad69d85f14dd960a73256bfdeaa1497b745d58d7f37037f098d1bd39a535f7ab7c2f49900ead65398f1ac44cdad986ef91caf45a195
 Description: Programs for manipulating HEIF (HEIC/AVIF) image files
 Homepage: https://github.com/strukturag/libheif
 
@@ -19511,13 +19498,13 @@ Package: librinutils
 Installed-Size: 132
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.10.2
-Filename: pool/main/libr/librinutils/librinutils_0.10.2_x86_64.deb
-Size: 6112
-MD5sum: aab11d7731b7f239dc88aece2ebd29a8
-SHA1: c7aabf17d9fbb04d137f66fb7ab0cce6c00c34b9
-SHA256: 64f68457848cebf0a6eaf69998981f10579ef523ac072c5b9dbcc3ceae20fc80
-SHA512: c238317e6d80aaf743054a637aa86d1af37206e0e8043ea550cfb3e38d7aa4f722684947c92c6e6681c1ae373f1a4d4b3186536cde6bfa5f7bbf3d52d564f69c
+Version: 0.10.3
+Filename: pool/main/libr/librinutils/librinutils_0.10.3_x86_64.deb
+Size: 6116
+MD5sum: 12dfd952069f4f79829bdc61122e7024
+SHA1: 50b870723cbb186b269cea940a95d8656fc790b4
+SHA256: ca898c575e57f06ea2326009bf11f6df05e1790b2d4e67feb73410806f1c22ef
+SHA512: d81d39e5c05209018952bed954173bb0bdbb0c227045f91830add6a539a44e3e41e346519791fb022dad30b3f980d84549e05f5066346f760b7018adeb2378ad
 Description: A C11 / gnu11 utilities C library
 Homepage: https://github.com/shlomif/rinutils
 
@@ -25245,16 +25232,16 @@ Description: A server software with the aim of being fully compliant with DLNA/U
 Homepage: https://sourceforge.net/projects/minidlna/
 
 Package: miniflux
-Installed-Size: 22120
+Installed-Size: 22236
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.1.3
-Filename: pool/main/m/miniflux/miniflux_2.1.3_x86_64.deb
-Size: 5670196
-MD5sum: f405bbd3fec10026070a96a68c75cef1
-SHA1: 27d8c48b5b0271dc3f95ace6577ea2dc5c270489
-SHA256: cfb703c73b0f8d40249bcb226e370194b1c9ec6c855b8ffea9d3052796e06338
-SHA512: 9068df6c83119650cea82475f6510a35fce15de269435c0ffa8955950c81fa579c9ebcb63b38c414bd9471f412d0aad876d272c69e984d5605b5e292bf3fde4d
+Version: 2.1.4
+Filename: pool/main/m/miniflux/miniflux_2.1.4_x86_64.deb
+Size: 5688584
+MD5sum: b34db7122238a3133d00865d502ebc74
+SHA1: 73cdacf2649945872952d6ae455159b5073769b7
+SHA256: 6114ceab9a008e49b0b7e7cf337c8c8e1dc7ead0b4da39d436825709178f82f3
+SHA512: 7e42776875a9082dcccc91c314f19d514ea49909ce4f9a4b556535e6817c2690d2c0523e927adf609035ad70aba65eabc2a9124c832a2316a44b2b9b3818785c
 Description: A minimalist and opinionated feed reader
 Homepage: https://miniflux.app/
 
@@ -27066,41 +27053,22 @@ SHA512: 874b03e014efae87f49f47cf1aa57aa3c6f9ec9bb49d557c0c9ae72cdabc0a1a0dc2873d
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
-Package: nodejs
-Installed-Size: 74100
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Architecture: x86_64
-Version: 22.4.0
-Replaces: nodejs-current, nodejs-dev
-Depends: libc++, openssl, c-ares, libicu, zlib
-Suggests: clang, make, pkg-config, python
-Conflicts: nodejs-lts, nodejs-current
-Breaks: nodejs-dev
-Filename: pool/main/n/nodejs/nodejs_22.4.0_x86_64.deb
-Size: 12021796
-MD5sum: 787f052fc2a954d2be2461305694a22e
-SHA1: 10034395b5ce96850fb7fb7aea757bed99ca5cd2
-SHA256: cb356a6705c9f225fb7add6d320d50b7ae346645a00e48391ad70cdf3438e2a2
-SHA512: 6bd54edfe6969d30fbb9964f6411688b05f52b050a2660813e4764878f67810a3d21627d2d853e948cad2601c899e8c70c99a841fbc23877e3d5c43fce225116
-Description: Open Source, cross-platform JavaScript runtime environment
-Homepage: https://nodejs.org/
-
 Package: nodejs-lts
-Installed-Size: 56448
+Installed-Size: 56456
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: x86_64
-Version: 20.14.0
+Version: 20.15.1
 Replaces: nodejs-current, nodejs-dev
 Depends: libc++, openssl, c-ares, libicu, zlib
 Suggests: clang, make, pkg-config, python
 Conflicts: nodejs, nodejs-current
 Breaks: nodejs-dev
-Filename: pool/main/n/nodejs-lts/nodejs-lts_20.14.0_x86_64.deb
-Size: 9855356
-MD5sum: 1e298acd8f0e84ef573b47ea6edfb4ba
-SHA1: 6681bf0b60174b37f143bc818d7c0c5ca814f36a
-SHA256: ea7dd929f396e6b7c5869751c6d6ca5954078cde281383e2e49b7bc136bae352
-SHA512: 68a80a902d2de0cf77c1cb30b8cf0bbfeda4ef2e8a26f70261632b41270cc0158a8891dc7cc1ff3382e37c83d27d19b4287a05253f4e7aeae34b931f963b5b55
+Filename: pool/main/n/nodejs-lts/nodejs-lts_20.15.1_x86_64.deb
+Size: 9866176
+MD5sum: 1fcb42309935a7ce49040de07719c32c
+SHA1: b66e378b4e7642442cf184c30929dde95bf98534
+SHA256: ebeffd3d22b9b96b8f9fffa165408259c8134c11d135f0134c3708edebb6d71f
+SHA512: 658368f433a2dc01da2c3f25cba7ea1688b866c618c684fe88a129d37a15a7fe11b1ba40e4b0912cceb05203cfc50a7c4a41cfb37a6bd5dfeeed470cb0af8695
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
@@ -27512,20 +27480,6 @@ MD5sum: f59375e29ba7e1bfb86a14c45c0bba17
 SHA1: 050275c42b901aa1cf5f58245a27381b2d024c70
 SHA256: 5a84d29f726434cd2ba7be6b8223f6825f2516a0b049f2aca78b5df16d36a60b
 SHA512: 8e62f7d8ed9776c9978f402bb1ceed4b51b108d169ee416a4ea8f5a7fddefecfe2fec1338aacfc63c34bc86bd900922070e3c9a8ce168efc2d88bcb38296e4d4
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 19192
-Maintainer: @termux
-Architecture: x86_64
-Version: 21.23.0
-Filename: pool/main/o/oh-my-posh/oh-my-posh_21.23.0_x86_64.deb
-Size: 5102324
-MD5sum: 90b0ca7fd6ccf91d23d8ed614e56071b
-SHA1: 5953eefbd2ab39e5ead314876290baeaa5a4fd70
-SHA256: b48f9994234a9735a67ce111570bfac780bd2082478c6e8b42310afa3f6f9019
-SHA512: 921938c7257a9d28c13ce9ab02c401a997d847efb815dc36b026495c3378e6e9438908fa1986f13560e57fc3c8957e4955379dac792b839b332eb9e752e7bc19
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -37291,17 +37245,17 @@ Description: ugit helps you undo your last git command with grace. Your damage c
 Homepage: https://github.com/Bhupesh-V/ugit
 
 Package: ugrep
-Installed-Size: 3008
+Installed-Size: 3000
 Maintainer: @termux
 Architecture: x86_64
-Version: 6.1.0
+Version: 6.2.0
 Depends: brotli, libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
-Filename: pool/main/u/ugrep/ugrep_6.1.0_x86_64.deb
-Size: 357896
-MD5sum: 2c32a6c68ef49cafe2bb5657b86515cc
-SHA1: 434f1141a3ad019309e4588bedb52354ef6329d3
-SHA256: fab80a413eb22c238cf2f31f10063f6027d80842d3c6e4d95252068d1f5014c4
-SHA512: 90d35390a3c0976b01a631bb6bc2219ee2498e996a5a928edb788b139cdfa7d57487e2aadaf416042bd79275e224adf8e9dfb1700c8f6cc156b1ea19d6d1583b
+Filename: pool/main/u/ugrep/ugrep_6.2.0_x86_64.deb
+Size: 358076
+MD5sum: 74259ef5871379c7929301b11c89ee46
+SHA1: 8ce398ee593d209669dfb97d1a624f65a165a1e7
+SHA256: 9195652452ae1b634b58bf50dbacd1c69e8c0e2c81f5514ecf42373fefaf43e1
+SHA512: a288041f263c97c52c9c2e4d7579922171f46f185929eceb231fb8feab08b7a8910cb85c5aaebebff0afb30e1b050cf3a19849896285091598c05243c01e267a
 Description: A faster, user-friendly and compatible grep replacement
 Homepage: https://github.com/Genivia/ugrep
 
@@ -38518,6 +38472,20 @@ SHA256: 92a0b24290c8056b435561873c84c16a8292418f8089f01a48822a3c0aca2ea8
 SHA512: 6e76a1910d3baee249832dfd323afe10fd9b1283c55af34d4679c44c9db267e13c3410ab429454221141cb42f9c29a466c28675ce0fe06b5375ec00dc43ee62a
 Description: The WebAssembly Binary Toolkit
 Homepage: https://github.com/WebAssembly/wabt
+
+Package: wakatime-cli
+Installed-Size: 16172
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.94.1
+Filename: pool/main/w/wakatime-cli/wakatime-cli_1.94.1_x86_64.deb
+Size: 4246176
+MD5sum: e253e714b540c0b0db2232f5707e8986
+SHA1: 00e7877ba85d280080fe9cfb8cd7c8bf276bf8fd
+SHA256: 2dea3aed88686123aa11fcf31455784bef5bcfa42f186ed946bfa85fd3cf8445
+SHA512: c78399a38175ea16aa0ec45bd1d07f7f6f4bb4131d6026d1425b1e7acaff4c98ed58487aade7f9e8d9d9ea058c101ce2c26cfc9681ed6028c0a41e8929d3a0cb
+Description: Command line interface used by all WakaTime text editor plugins
+Homepage: https://wakatime.com/plugins/
 
 Package: wakatime-cli
 Installed-Size: 16164

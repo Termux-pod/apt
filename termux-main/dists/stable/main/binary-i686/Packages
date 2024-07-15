@@ -9746,32 +9746,32 @@ Description: Hetzner Cloud command line client
 Homepage: https://github.com/hetznercloud/cli
 
 Package: helix
-Installed-Size: 33600
+Installed-Size: 35228
 Maintainer: Aditya Alok <alok@termux.org>
 Architecture: i686
-Version: 24.03-1
+Version: 24.07
 Suggests: helix-grammars
-Filename: pool/main/h/helix/helix_24.03-1_i686.deb
-Size: 6697568
-MD5sum: e93a83d4ebb6408ca5e36f6f5a4c5fbc
-SHA1: f2f78d3158be28afa251ebd81b958261366f6786
-SHA256: a55c9904647cd84477179296a607ad8e86502a67e7392f7b290a432831efb704
-SHA512: befbd887c8d89e90c42875ebbabf51e5b6d912e678fb64a5b41babaae57ee3026dd826dc2a32ae01316f9d101f3f9c213c406a1372a2aa18844d94eddb9d8246
+Filename: pool/main/h/helix/helix_24.07_i686.deb
+Size: 7124696
+MD5sum: 439ea1efcd9147ac5dfe7891fec2e48f
+SHA1: 50b5a3ac5db1698e823bd208cb3f33af23950911
+SHA256: 4a64731c74426f1da0c514c2d958768328fc3a35ea9452a8dc7a48c5ebd70e4f
+SHA512: 7b93dcd07fc56e43a17e26bc1ca90af876ff560d288ff1b816572b98912cad0bacc559cbb3d9210cf1e2dc882a50fe64567ad9d0118674c51e2addee0e3e4f3c
 Description: A post-modern modal text editor written in rust
 Homepage: https://helix-editor.com/
 
 Package: helix-grammars
-Installed-Size: 142200
+Installed-Size: 147760
 Maintainer: Aditya Alok <alok@termux.org>
 Architecture: i686
-Version: 24.03-1
-Depends: libc++, helix (= 24.03-1)
-Filename: pool/main/h/helix-grammars/helix-grammars_24.03-1_i686.deb
-Size: 8304108
-MD5sum: 18d109f8e1ad28f1dc04b0cfa61596ab
-SHA1: e5686111f89005e54558e36cf91322d8089c6828
-SHA256: f9443cf12430f659b4d37d98e568f531115a10e11fb4cdb115b38a5a06ece1d0
-SHA512: 7e3d513e1e0425d97d62bebb86f38129751839a6a1620167a47bb6663ab7df7b9878cf62d28e4161962f5cd1a97886953be734c7805e6c999d3345777962e265
+Version: 24.07
+Depends: libc++, helix (= 24.07)
+Filename: pool/main/h/helix-grammars/helix-grammars_24.07_i686.deb
+Size: 8697096
+MD5sum: a018f2877774fe33f8da81501f447546
+SHA1: 73b5d9a422a5f905825fe2185842c872c18f5216
+SHA256: aeb610956e62e79130f821faf6c8bdfeefdff9c49be098867c94504cf2bbcd00
+SHA512: d79f3a52d130f9189df2826e19be778ee021610116600a1d1509936c8432ffa017ed9f57aeeaaa5da267ec02ca8dced3138a495a5471ea5604860562a30ae414
 Description: Helix grammars
 Homepage: https://helix-editor.com/
 
@@ -10553,6 +10553,23 @@ Package: imagemagick
 Installed-Size: 20464
 Maintainer: @termux
 Architecture: i686
+Version: 7.1.1.35
+Replaces: imagemagick-dev, imagemagick-x
+Depends: fftw, fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, imath, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblzma, libpng, librsvg, libtiff, libwebp, libx11, libxext, libxml2, littlecms, openexr, openjpeg, pango, zlib
+Breaks: imagemagick-dev, imagemagick-x
+Filename: pool/main/i/imagemagick/imagemagick_7.1.1.35_i686.deb
+Size: 8004656
+MD5sum: 3475636e727f81959801d37a50f39474
+SHA1: 80b08fd57c411793ec7696c838717687205234d1
+SHA256: 025b50fc885f75a7206dfae6a6980f9992adeabd486bd8f095d1180d2bb5d84e
+SHA512: dc8ac362de7a4cd05c3c13940d63646e79c2a795c1daa0345215606c308d8cdc83b832d81b2677fff95d7e7c980a59e3dcfa163b66e5f9385174434891a0996e
+Description: Suite to create, edit, compose, or convert images in a variety of formats
+Homepage: https://www.imagemagick.org/
+
+Package: imagemagick
+Installed-Size: 20464
+Maintainer: @termux
+Architecture: i686
 Version: 7.1.1.34
 Replaces: imagemagick-dev, imagemagick-x
 Depends: fftw, fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, imath, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblzma, libpng, librsvg, libtiff, libwebp, libx11, libxext, libxml2, littlecms, openexr, openjpeg, pango, zlib
@@ -10564,6 +10581,21 @@ SHA1: eacbd36231780cb2021eab9437dc8ed1ad065d08
 SHA256: 9acc57e45b4d1536ea0f14c786450b3673af39f1741896cf4fe92f64db48d358
 SHA512: de6b7b24830b0a982046812a27e22e6c1642d7e37831ae1874cb84fab4686811b416bda3295a138c121dc64b86867dc6d62da0770595a96502652d7df3269c8c
 Description: Suite to create, edit, compose, or convert images in a variety of formats
+Homepage: https://www.imagemagick.org/
+
+Package: imagemagick-static
+Installed-Size: 9240
+Maintainer: @termux
+Architecture: i686
+Version: 7.1.1.35
+Depends: imagemagick (= 7.1.1.35)
+Filename: pool/main/i/imagemagick-static/imagemagick-static_7.1.1.35_i686.deb
+Size: 2030644
+MD5sum: b4952010d992d8ba84a9cfc822dbadd5
+SHA1: fa9a207c862bbe10736cbfc1773be1887ac1bfa1
+SHA256: b7737d8735017a9743976dea33f42281819d712b2ff7444e7a7e70e79515a2a8
+SHA512: 0a93adc7fbd9bf837327e06a09656e9759c464b97c8f47705593b2523a2cdaa764464a1c113e167407f73e9d9017953064d1867d19db9597bddf50b4b5b86c10
+Description: Static libraries for imagemagick
 Homepage: https://www.imagemagick.org/
 
 Package: imagemagick-static
@@ -10628,21 +10660,6 @@ SHA512: ad52cb9079d7e842f20add0a58bb4094da378f4fb7bdf64c10451481f4d076ebae0b61c5
 Description: Library that does image file loading and saving as well as rendering, manipulation, arbitrary polygon support
 Homepage: https://sourceforge.net/projects/enlightenment/
 
-Package: imlib2
-Installed-Size: 1292
-Maintainer: @termux
-Architecture: i686
-Version: 1.12.2-1
-Depends: freetype, gdk-pixbuf, giflib, glib, libandroid-shmem, libbz2, libcairo, libheif, libid3tag, libjpeg-turbo, libjxl, liblzma, libpng, librsvg, libtiff, libwebp, libx11, libxcb, libxext, openjpeg, zlib
-Filename: pool/main/i/imlib2/imlib2_1.12.2-1_i686.deb
-Size: 523256
-MD5sum: 0696be98ffcd51b2df6678615f61c751
-SHA1: 6fead25430497b22e3de6bbe94fb9f8889703664
-SHA256: db57554d3e43897ab87cdda0d99d20e7a26d2a30d2deef2aafb1275ab538d809
-SHA512: fc3c1032b16bd626c866d9c40bafd5d2fefb6bba860821d1bf1efc0d4bf125687e81ce58d925a92693397ca3a03d123f6fce7c73323778a2d0c11fc9dae02cb4
-Description: Library that does image file loading and saving as well as rendering, manipulation, arbitrary polygon support
-Homepage: https://sourceforge.net/projects/enlightenment/
-
 Package: imlib2-static
 Installed-Size: 568
 Maintainer: @termux
@@ -10655,21 +10672,6 @@ MD5sum: 4b873f226dfa99378d5a3d9be4252510
 SHA1: ef83ec1ad6625af246184a3dae4f22b8c8652a9e
 SHA256: 7c6b483158cdf1fd9bc6dcdaa90d9632321a872ca6b1ce7050102f7a6040c882
 SHA512: d229e15f738f7564c9c638400a77aa949e5b9c67339c6e9cae01f942ca96d86dca631f6f6d52061620ad0bc518860bb620702882c592f7f3a9bf36ff3ca5f3ae
-Description: Static libraries for imlib2
-Homepage: https://sourceforge.net/projects/enlightenment/
-
-Package: imlib2-static
-Installed-Size: 568
-Maintainer: @termux
-Architecture: i686
-Version: 1.12.2-1
-Depends: imlib2 (= 1.12.2-1)
-Filename: pool/main/i/imlib2-static/imlib2-static_1.12.2-1_i686.deb
-Size: 127020
-MD5sum: 4612b811be0bf719a2d160b064294a16
-SHA1: 88dcabef33743ec194a4c480bd920b4ac6ab1ce9
-SHA256: ab55daed7cafa98320d6f173a2241ccba32b7c429d82873766f9c2608b3aef03
-SHA512: bac4ba621a1765254dd4b0e715b7281491a67dee3ba9d4e8918983cff060940f4de6835f8826f7b362b5abbd8b790d4d5b957fb88672b6d4ead9eb20d6e7189d
 Description: Static libraries for imlib2
 Homepage: https://sourceforge.net/projects/enlightenment/
 
@@ -11477,6 +11479,20 @@ SHA256: 885014cf71d91390c85ed13e89dc47b39d6dbaf613ba6ef35273ff09045bcc6f
 SHA512: 2c28a0bdb8151bf8fabca518a0e28b0ca4260cd66c7539b6dd442064cc953d188b56bedf6d29d35731076d3c531457641f63b233c50a1524d182abadcd9b0ee6
 Description: User friendly full screen text editor
 Homepage: http://www.mirbsd.org/jupp.htm
+
+Package: just
+Installed-Size: 3560
+Maintainer: @flipee
+Architecture: i686
+Version: 1.31.0
+Filename: pool/main/j/just/just_1.31.0_i686.deb
+Size: 1116596
+MD5sum: acb958d4b197d2be7579568f8a284e97
+SHA1: d55de7d3ca1be5a94ad5a72a19822a947af01a18
+SHA256: 1b47dbef5fa2d539f54394c61aff165733cc01c811173e20a9e529cdaa8304f8
+SHA512: c20022caffc6a09d092b66d9556798ebb2ccf64341eccf124ed903d2ad13c03e2e1485898ee83759164b4f2ef298881fbabd54caaefed7666dd15e3f381c3dab
+Description: A handy way to save and run project-specific commands
+Homepage: https://just.systems
 
 Package: just
 Installed-Size: 3540
@@ -27138,6 +27154,20 @@ Package: oh-my-posh
 Installed-Size: 17900
 Maintainer: @termux
 Architecture: i686
+Version: 21.26.1
+Filename: pool/main/o/oh-my-posh/oh-my-posh_21.26.1_i686.deb
+Size: 5212456
+MD5sum: e9688cf7db5d70969a61b3238fdeb87e
+SHA1: 0e4ab343decc8426181a8ea425ae02488c809471
+SHA256: 9faeab17eff96c97364ad97b635eff0be6204bbb9817a7b92517335f27182563
+SHA512: 64ec1fb41612e994ae1543bab5cfe94c4e15d8f2ece6a7f5cf6f29fcb8962cbfd3422b3c22da4dc2cb88d315d89ed03576d27a957db10c5d31f12b137a977bae
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
+
+Package: oh-my-posh
+Installed-Size: 17900
+Maintainer: @termux
+Architecture: i686
 Version: 21.26.0
 Filename: pool/main/o/oh-my-posh/oh-my-posh_21.26.0_i686.deb
 Size: 5212668
@@ -27145,20 +27175,6 @@ MD5sum: 2ce4797c0abc1b8fa2b3305f5c6ea0a1
 SHA1: 3755c11e97cefcf6c8471dd84999d3b8392e3773
 SHA256: 94d5cc76d54171f75fd3d110249f587eabc8d70f863e1b75ea46bd0412997b34
 SHA512: a189fc8f2119313b1749d00e8d9cf4fa4d35b8cdac1e59f81197dacde09e87799c8e4f0f68d374f71df8f25ed0ab89b69a273da23f37249bf3d266bc2fc1dc01
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 17896
-Maintainer: @termux
-Architecture: i686
-Version: 21.25.0
-Filename: pool/main/o/oh-my-posh/oh-my-posh_21.25.0_i686.deb
-Size: 5214736
-MD5sum: d250460234ee2feda4c2257132e04a0a
-SHA1: c20919da2561462cd52b1ea7e5f8401af895494d
-SHA256: 2c445b757b9ca51b11aeec36a20e17f0397b8e2ae58c5898dd5955503d19b6cf
-SHA512: 6ea1dd9516cbcf50c519efd780516161c2752c350d8f31c2a50e3ccaf50eced5208eb3dc8c75754557375a480364520a09302f61faca95907938b865d70d4ed7
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -32204,16 +32220,16 @@ Description: Ruby documentation index
 Homepage: https://www.ruby-lang.org/
 
 Package: ruff
-Installed-Size: 21832
+Installed-Size: 21816
 Maintainer: @termux
 Architecture: i686
-Version: 0.5.1
-Filename: pool/main/r/ruff/ruff_0.5.1_i686.deb
-Size: 5585192
-MD5sum: f7078e9263ab1e01a4e7666ce7148819
-SHA1: 75f1e86865bff6bec2f923a6578800007d6999f1
-SHA256: 3b13d737f74ab6e8e543c0b129261b426f815303ec5fb45c4ff69dcc5beee91c
-SHA512: 7a777ea34aad2e3b66686372f327a261791a3f8c42ad52bbcc668e1d74e5710b1d79d721298ac74510153ef6080e270796f57f0def4bdceddc49b8858067dd8d
+Version: 0.5.2
+Filename: pool/main/r/ruff/ruff_0.5.2_i686.deb
+Size: 5589792
+MD5sum: 35bd882e4ac5b176b2819c31f9fe6d86
+SHA1: e2bce204074e51b4280746f0fcb926e71de9911f
+SHA256: e29e61eeac4a90f92662aec0990d250bc50f41d1205bf33c6e5113e39117223b
+SHA512: 566225e30d4f08af32fedca43811cd28729a5be777380452b58043b016fe7cff53b7113a34a87cafb67124ddc1efce6bdc7a32763e26ccdeee91b92dc452753d
 Description: An extremely fast Python linter, written in Rust
 Homepage: https://github.com/charliermarsh/ruff
 
@@ -37673,6 +37689,21 @@ SHA256: 674b8d5a3d412f7c9f2f065add5d00daa308609c9f7509b4b0a6b247bd110e23
 SHA512: 559ce935963d601f61e0d0d9bb5764ffca0c1dae9e7511668467d0bed2584a5e952f0e22d813f56a056188c673b398d02888638c5001ac424d520000abe197a1
 Description: Ogg Vorbis tools
 Homepage: https://github.com/xiph/vorbis-tools
+
+Package: vtm
+Installed-Size: 6276
+Maintainer: @termux
+Architecture: i686
+Version: 0.9.91
+Depends: libc++
+Filename: pool/main/v/vtm/vtm_0.9.91_i686.deb
+Size: 1195132
+MD5sum: c053b70b2d91412199fae88ef973b07b
+SHA1: 17e7d06507d92fe9a902638b47ace9f912dc6220
+SHA256: da3dff07fcb9886fbb665901408420fc6d1a99a73d80cb45f26024414b9951c2
+SHA512: b5552c3938de67b532a14eb2e9c92ea4b107b23ea3ac15f63e174190c4c3b564c26611d913598167cb573a4f7c062a201de73fa11a8e21a4a7c515e69cbeed4f
+Description: Terminal multiplexer with TUI window manager and multi-party session sharing
+Homepage: https://vtm.netxs.online/
 
 Package: vtm
 Installed-Size: 6272

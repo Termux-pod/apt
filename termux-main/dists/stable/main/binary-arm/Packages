@@ -687,6 +687,21 @@ SHA512: f20da593379ec1a8597a0797807956bd1d836c94d61edf499b1225ec049ebab28812cec9
 Description: Command-line tools using AOMedia library
 Homepage: https://aomedia.org/
 
+Package: apache-orc
+Installed-Size: 1300
+Maintainer: @termux
+Architecture: arm
+Version: 2.0.1
+Depends: libc++, liblz4, libprotobuf, libsnappy, zlib, zstd
+Filename: pool/main/a/apache-orc/apache-orc_2.0.1_arm.deb
+Size: 354564
+MD5sum: bee1c64c4002e2efda3dec63dc2501ef
+SHA1: e184b790fdd1fbadf2d889936dce6d20e4332214
+SHA256: bed663d2799fbc92bc8ef0d068db795256fd0279faaf5e35f851dee58900d4f9
+SHA512: 606548f32b55f2a0c511cca6c6692f4d6d0f826da361ae9ab6d73fc9db1d67bf164a84906ed8d95033fc41cd54e91e8d30d95015d87a712ad674bf42f1508d58
+Description: Columnar storage for Hadoop workloads
+Homepage: https://orc.apache.org/
+
 Package: apache2
 Installed-Size: 30872
 Maintainer: @termux
@@ -7610,21 +7625,6 @@ SHA512: 54c0e60fa8632d96128682f095514bff93494f1eda479a674aba54a4b043171d68a0c892
 Description: Utilities and C++ library to solve some geodesic problems
 Homepage: https://geographiclib.sourceforge.io
 
-Package: geographiclib
-Installed-Size: 2388
-Maintainer: @termux
-Architecture: arm
-Version: 2.3
-Depends: libc++
-Filename: pool/main/g/geographiclib/geographiclib_2.3_arm.deb
-Size: 469568
-MD5sum: fc82439798a6b3731a03caea886bf6ca
-SHA1: 09c96a8c11bc8fbadf08df8c1cc47ce87ff29812
-SHA256: 86d0ae1e76c096152a3bb58407ac978d0df1b1156e5f585ea50010e6ad398268
-SHA512: 4e0da8334031dd92fa1209124437ab0137645d4221afd2d3aa1d648c33c82114622e2545f7fdb93668257124904441a6913b0ee2d547f13621005a6ddeb02c72
-Description: Utilities and C++ library to solve some geodesic problems
-Homepage: https://geographiclib.sourceforge.io
-
 Package: geoip2-database
 Installed-Size: 71704
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -12636,18 +12636,18 @@ Description: Static libraries for libarchive
 Homepage: https://www.libarchive.org/
 
 Package: libarrow-cpp
-Installed-Size: 31288
+Installed-Size: 31072
 Maintainer: @termux
 Architecture: arm
-Version: 16.0.0-2
-Depends: libandroid-execinfo, libc++, liblz4, libprotobuf, libre2, libsnappy, thrift, utf8proc, zlib, zstd
-Breaks: libarrow-python (<< 16.0.0)
-Filename: pool/main/liba/libarrow-cpp/libarrow-cpp_16.0.0-2_arm.deb
-Size: 6481188
-MD5sum: 115123222ddbc23abe44cd6ad36bdd87
-SHA1: 6a56c3296999cdedabf46633d0891176f45995fd
-SHA256: 67977c43244a8c06fa01a5aa359ff0c73d5e40714aaffc3bd6a0098daf08a9b8
-SHA512: 5fbf2b33bcc878ce73e95a410b0e20f594177c897c822ffa8eaf4de9de5441cd2f93332056e48a7b265c1385f90a4ba82cb240abc43e3da55ef1aa48088d6261
+Version: 16.1.0
+Depends: apache-orc, libandroid-execinfo, libc++, liblz4, libprotobuf, libre2, libsnappy, thrift, utf8proc, zlib, zstd
+Breaks: libarrow-python (<< 16.1.0)
+Filename: pool/main/liba/libarrow-cpp/libarrow-cpp_16.1.0_arm.deb
+Size: 6287676
+MD5sum: 9bec3d504f6f6adf53b60f56d62f034d
+SHA1: beb60662176c86c57f1bffe14156f883d83007e0
+SHA256: 5f1b88762aba91f4cd816ed0f28675f4756e80e1a307762b239df9e6e65aef48
+SHA512: 9fd13840a4a98273afd9924b268edb5c422a20517da28d11133fdbc25a3bb9d0ef9252ff9745ddbc9ed16ecf777471bfbba20c6415ed4c5b062837d759987e13
 Description: C++ libraries for Apache Arrow
 Homepage: https://github.com/apache/arrow
 
@@ -25858,6 +25858,21 @@ SHA256: 73c6ba79d23bf317760b7603a147b45767078e2d0c4585cddfc14190934c2624
 SHA512: 1a887be5a6298bccd52d203289b5ae798dc36bde6974b18081f93d912caaa8fddbe2fd295a4b2e93e747766dcba32e8e0855031b195dec4de5e792927f197b9d
 Description: Video game for color and monochrome text terminals in the genre of Namco's Pac-Man
 Homepage: https://sourceforge.net/projects/myman/
+
+Package: mympd
+Installed-Size: 1184
+Maintainer: @termux
+Architecture: arm
+Version: 16.1.0
+Depends: libflac, libid3tag, liblua54, openssl, pcre2, resolv-conf
+Filename: pool/main/m/mympd/mympd_16.1.0_arm.deb
+Size: 752756
+MD5sum: 5f1b203cca12b83ca307ef3e714f63d4
+SHA1: 06cf949ee4e41a7d8d0b8d4d77285ac355357136
+SHA256: bb5fcb0974b56d5d9b553800888318f3b241acba2b539b7fa3cf26e37b089a9e
+SHA512: 80885103bbcb1cd599a10fd77e1ea90e244c03cd07007e78e8dcb5c20a840af03d75917ba66271f2f0d9175dc878619b8e11cbbe5843b4488fc288f8ff4f726e
+Description: A standalone and lightweight web-based MPD client
+Homepage: https://jcorporation.github.io/myMPD/
 
 Package: mympd
 Installed-Size: 1180

@@ -4691,6 +4691,21 @@ Package: debootstrap
 Installed-Size: 324
 Maintainer: @termux
 Architecture: all
+Version: 1.0.137
+Depends: binutils | binutils-is-llvm, perl, proot, sed, wget
+Filename: pool/main/d/debootstrap/debootstrap_1.0.137_all.deb
+Size: 34308
+MD5sum: 102e042da934d11b8461c95910f9d6c5
+SHA1: e89090b90e84fa7db7a2e9f2703957780fdcea46
+SHA256: 7b1e13b071a7901a461fa87eb237792e42d31ecab84e80f4297c72a5f0ccb208
+SHA512: 8e4b465f7353e54335f6575604598fb5a0c53ea455dc528a5e5f454a6a53ecd4d4985791a4689f5eb23f9a216315523845f6b15981ab8019247fe6a39df11d02
+Description: Bootstrap a basic Debian system
+Homepage: https://wiki.debian.org/Debootstrap
+
+Package: debootstrap
+Installed-Size: 324
+Maintainer: @termux
+Architecture: all
 Version: 1.0.136
 Depends: binutils | binutils-is-llvm, perl, proot, sed, wget
 Filename: pool/main/d/debootstrap/debootstrap_1.0.136_all.deb
@@ -6853,20 +6868,6 @@ MD5sum: 8cde1d21310c0c4756ec6a2b4f5aa65d
 SHA1: e9eb96c1c1c9dc57f9b7075cd99f700a86732cd8
 SHA256: 2370d12dff63a98bfd6b308905224defe872429e26c0088572e99499decc459b
 SHA512: e07f6ccc7a47488c1a1f68a33d9a39b869a1e15394ea4a7a26061f27d97ad2001fcdd06b5d7ec3fcb95cd18e126b44757389cf4e7c0e3b0c81d985381c57656d
-Description: Command line tools for fly.io services
-Homepage: https://fly.io
-
-Package: flyctl
-Installed-Size: 62268
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Architecture: x86_64
-Version: 0.2.97
-Filename: pool/main/f/flyctl/flyctl_0.2.97_x86_64.deb
-Size: 14590292
-MD5sum: f89b7736442b9c529b47a63f1be7733d
-SHA1: 55e7df5cf3c7d0418b067f47f8f38cd521792589
-SHA256: 9d816890aaa94beb9fbac0e46f7b6c6bc99e5cba822cb60a9280ecdaf2b79ab6
-SHA512: 8931cccab379ccc42afbf5cfe9cbc8013f1e1590b7e7ca4259960661663d91782e5a5e44c9440c581c34e76a62f2d8989d64a46265e2d9e781ff679cf5e23a7a
 Description: Command line tools for fly.io services
 Homepage: https://fly.io
 
@@ -11289,20 +11290,6 @@ MD5sum: b6390af6f175c3846304f6c3f3b20707
 SHA1: 80288d51c614635eb4779152bcb2e2def0bdb177
 SHA256: 1f0e4126ab25529c2ed4ddcc4974b31021370adcdac9cd2262f0a1d9bfe03b61
 SHA512: 62b54b3289309e067ce6e301759336d3b0437b0be90e66f1a8135a94e85711059deb975029ccfddb1f279ad268b09c6f31b3dc0cf7d94452ae2dc1b38f3a07f5
-Description: A CLI for JFrog products
-Homepage: https://jfrog.com/getcli
-
-Package: jfrog-cli
-Installed-Size: 35160
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.61.1
-Filename: pool/main/j/jfrog-cli/jfrog-cli_2.61.1_x86_64.deb
-Size: 8311280
-MD5sum: ffb20395911a37a8a3e111563e0a4b47
-SHA1: c6d707facc31fbb3e59d3e598a1b86a5a3a64de1
-SHA256: 50acb33146d4dfacd82fb8de219b140b46ecc954849b1dff6b7f002092257cdd
-SHA512: 7a1a3e239b565f54dd03027b8407a53089befd6a91a7364f67c91d330600e9dd5d420e80affbeac6ae6cecb3e73ea9f5d868dcb3131043948b92e91d208344b9
 Description: A CLI for JFrog products
 Homepage: https://jfrog.com/getcli
 
@@ -25256,6 +25243,21 @@ Description: General-purpose software audio FSK modem
 Homepage: http://www.whence.com/minimodem/
 
 Package: minio
+Installed-Size: 108608
+Maintainer: @termux
+Architecture: x86_64
+Version: 2024.07.26.20.48.21
+Depends: resolv-conf
+Filename: pool/main/m/minio/minio_2024.07.26.20.48.21_x86_64.deb
+Size: 28045892
+MD5sum: fb6154cf180b7f7a8c4e551f96ea985d
+SHA1: ffe61f586d48344798a19efbde29aaa3b964d4a8
+SHA256: 647b31280ff1596be026b784afd861a2e876f4dc3cb60106ab98d4b4451b0034
+SHA512: c23522c08e173c9787a58caad99e68bf5bcced35584e8d614070be3816b9f4e2eddd84b8ceb9eb48f0a661771c8614d38859c01f57d38cfb7a54cb58a44738ec
+Description: Multi-Cloud Object Storage
+Homepage: https://min.io/
+
+Package: minio
 Installed-Size: 108644
 Maintainer: @termux
 Architecture: x86_64
@@ -27030,21 +27032,21 @@ Description: This project provides a command line tool called nms that recreates
 Homepage: https://github.com/bartobri/no-more-secrets
 
 Package: nodejs
-Installed-Size: 74100
+Installed-Size: 74072
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: x86_64
-Version: 22.4.1
+Version: 22.5.1
 Replaces: nodejs-current, nodejs-dev
-Depends: libc++, openssl, c-ares, libicu, zlib
+Depends: libc++, openssl, c-ares, libicu, libsqlite, zlib
 Suggests: clang, make, pkg-config, python
 Conflicts: nodejs-lts, nodejs-current
 Breaks: nodejs-dev
-Filename: pool/main/n/nodejs/nodejs_22.4.1_x86_64.deb
-Size: 12020372
-MD5sum: 754e304ba4ad1950c64140a5d20d14a2
-SHA1: 576e4f0d2aec6d98059a505c06f28297f25bad7a
-SHA256: e6e2fb4cdd34972128d2ff26336ca3ed9c265c01e3ed163a802d558bd92dbe9c
-SHA512: 874b03e014efae87f49f47cf1aa57aa3c6f9ec9bb49d557c0c9ae72cdabc0a1a0dc2873dd9aca97b3604c61151a0c4f6d09f72726e7889df0d72d67a3c962009
+Filename: pool/main/n/nodejs/nodejs_22.5.1_x86_64.deb
+Size: 12041704
+MD5sum: 1a8c8f7d8286c651e866e6d6b5646294
+SHA1: 16c2931a64fbf86d869a0c90a136a11ad74bda22
+SHA256: 7b66f717de48c01214322ef135e74b71bbbec1f948b07add517fd0a451bde894
+SHA512: 3c0fb269172ef2d356e1b3b86ce5a3a017d5ae39ba6b161d27ad62dea8326ef742ed5eaccff17d2dc188827f9fcb43356e9f64859dd5bc7df64581762dd31b9b
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
@@ -27463,6 +27465,20 @@ SHA256: c2618957aa2d1c55f4025eb855b11464c87b7dde10da432a1d9f4ccb2bd7822a
 SHA512: 55e8a984187d9abb06178891ec89ec1adee19d7e1d18ba00efd92e38660fdff009f96ae3dcb9529fc56907755929d18e355a88890407981b3960699d33013bb8
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 19232
+Maintainer: @termux
+Architecture: x86_64
+Version: 23.2.0
+Filename: pool/main/o/oh-my-posh/oh-my-posh_23.2.0_x86_64.deb
+Size: 5112924
+MD5sum: 6a73ca2b842472d1563a32b9e4e80fb4
+SHA1: 6a17d2be06470261f73658f273ed01a366481132
+SHA256: 7d4da0bec2f56e061034621500e4b2495ca3c12d38ac613bc99b890cbb141a7a
+SHA512: cbc469710cc28f89ec8cfab4ef8b91b7390833e0a20c639e834e83c5026d9c54fb317102f855ff4782ffbfcd46be71411cc8f289de936b37b3339481aa741177
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 19228

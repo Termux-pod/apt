@@ -4293,6 +4293,22 @@ Essential: yes
 Installed-Size: 312
 Maintainer: @termux
 Architecture: arm
+Version: 8.9.1
+Depends: libcurl (= 8.9.1)
+Filename: pool/main/c/curl/curl_8.9.1_arm.deb
+Size: 206208
+MD5sum: 68d76ce08f6c7cfcf83ee060c3e84c8a
+SHA1: 8b31cb2946e22aab2a10bd639f759b93a463575e
+SHA256: 7456b9a20ec13dc868aa9cd2b3514fe2f6f3815b93937b100f3dd54848328ce0
+SHA512: 0b2031db60b332f02131f9013419daeee469f8c23006b289bae93b50a6c84f891d641624005d7d0e84f4997fda7ee5074eea753e218873f29458fd08402eea14
+Description: Command line tool for transferring data with URL syntax
+Homepage: https://curl.se/
+
+Package: curl
+Essential: yes
+Installed-Size: 312
+Maintainer: @termux
+Architecture: arm
 Version: 8.9.0
 Depends: libcurl (= 8.9.0)
 Filename: pool/main/c/curl/curl_8.9.0_arm.deb
@@ -6615,23 +6631,6 @@ SHA512: 76af95d657ac8c29168835da689f028c1e401f243a00e560ce8dd5e9b91b2a46a345783d
 Description: Text-based multi-protocol instant messaging client
 Homepage: https://pidgin.im/
 
-Package: finch
-Installed-Size: 2976
-Maintainer: @termux
-Architecture: arm
-Version: 2.14.13-1
-Replaces: finch-dev
-Depends: glib, libgnt, libgnutls, libidn, libsasl, libxml2, ncurses, ncurses-ui-libs
-Breaks: finch-dev
-Filename: pool/main/f/finch/finch_2.14.13-1_arm.deb
-Size: 813664
-MD5sum: 43b98e9069d83fff3452588002016723
-SHA1: 2cf46afcab37f0edb67bd8c901d461cb662d1783
-SHA256: 15ccd4ff9ff86bcc1530cfb10cd9b53a5a1861b7690fdf69cd2cb9c50455c55d
-SHA512: 156bfb06f40f5742eed197f9d83ce3992eeea3eac95ccae0bb3b5d090a4fdf2b419307bdf17c6bb720ce102a652ac8b5028e69602b4f60648f066e590bb71723
-Description: Text-based multi-protocol instant messaging client
-Homepage: https://pidgin.im/
-
 Package: finch-static
 Installed-Size: 9336
 Maintainer: @termux
@@ -6644,21 +6643,6 @@ MD5sum: 671e012cdbca407d08b802e9cfe922a3
 SHA1: bc85485451dd751a0291a4447297c149d2175a9a
 SHA256: e4cd92ed8518bbdcb4407504ef77ae75e9d877b7bf9ca97c30cf22ae4931e2be
 SHA512: d731aaf289c4c39ba75afc18ae5e822a09aa5fd93123982c5753c35f03543d17c06936629095e1ad54eafa0fe241d7fe50e5bca1bd209a1461f78d5c8ac4fc9d
-Description: Static libraries for finch
-Homepage: https://pidgin.im/
-
-Package: finch-static
-Installed-Size: 9324
-Maintainer: @termux
-Architecture: arm
-Version: 2.14.13-1
-Depends: finch (= 2.14.13-1)
-Filename: pool/main/f/finch-static/finch-static_2.14.13-1_arm.deb
-Size: 2278464
-MD5sum: a68feda49f8022cc02dab710c4fcf11d
-SHA1: 13945718b831ed26d4857b1769c0ae2deaebd4cc
-SHA256: 2681c711817eadb331d322a006ddfb0491e3b4d71af0073e7a99c7e6bdfe02cd
-SHA512: dfd98c5e1f71851c4995ec1fb1c6d5312b786332f40b4dc778592c7217d89cc2ee0d2db2ca9bbe0c3c3a50631e788ecaca182243c257901f042d19ac10ca3ea3
 Description: Static libraries for finch
 Homepage: https://pidgin.im/
 
@@ -11509,20 +11493,6 @@ SHA512: f1b833f4b61853935d6176f432d1d20316e6f939066bb9fa35ddcf8c5a416f12047cf4c7
 Description: A handy way to save and run project-specific commands
 Homepage: https://just.systems
 
-Package: just
-Installed-Size: 2288
-Maintainer: @flipee
-Architecture: arm
-Version: 1.32.0
-Filename: pool/main/j/just/just_1.32.0_arm.deb
-Size: 949124
-MD5sum: 2a6a2a28c992757fd02e356c3ed15ec6
-SHA1: e4cb45322a2ecde49443aeec0f8cc316d51503b9
-SHA256: 4fbefd9dbc17c6dc7594ebc45fcd02461f07883a4d44edb21c8bdc7d7adb800c
-SHA512: a45d78ba49d7f0a38594352e794b8a739dbd63def477c29b26858373bdd02407d2c8fce8626662e7960339a3af447ffa31d8c01fe621bcfa13712f0f58c90d84
-Description: A handy way to save and run project-specific commands
-Homepage: https://just.systems
-
 Package: jython
 Installed-Size: 91404
 Maintainer: @termux
@@ -13756,6 +13726,25 @@ Homepage: https://sourceforge.net/projects/cunit/
 
 Package: libcurl
 Essential: yes
+Installed-Size: 2952
+Maintainer: @termux
+Architecture: arm
+Version: 8.9.1
+Replaces: libcurl-dev
+Depends: libnghttp2, libnghttp3, libssh2, openssl (>= 1:3.2.1-1), zlib
+Conflicts: apt (<< 1.4.8-8)
+Breaks: libcurl-dev
+Filename: pool/main/libc/libcurl/libcurl_8.9.1_arm.deb
+Size: 884832
+MD5sum: 8536fdfcbd9c63d0aa774abbb3581a1a
+SHA1: 34472d90798e9fb8d85525b9b16b6729299f8ea2
+SHA256: 57d2affa8a1eba522fd0fea37599cb139e5d73194b29627bd9a5b35853cc8901
+SHA512: 6914710723407f91a19a50e34b71206063738b633cfd6536e890fd317ae87db6909877b0e435e0c81d670401483c41ee6d71f089bba10ccd64048250be7956fe
+Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl
+Essential: yes
 Installed-Size: 2948
 Maintainer: @termux
 Architecture: arm
@@ -13771,6 +13760,21 @@ SHA1: da2a1a68e5d2c7174182765181cbb969c8dafb65
 SHA256: 1db334d7d6750a2652689ce7c46565c089df6ea546f79f19c2f0e46abd611c91
 SHA512: 4a54383bf5789adc812446a7875e9bb144a5a6b005ef7c087b8f8f9cac0a2e2e39c76e2058719fe9c8bbd9bc79626d174397e67b01255aa699d981542733b06b
 Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl-static
+Installed-Size: 1088
+Maintainer: @termux
+Architecture: arm
+Version: 8.9.1
+Depends: libcurl (= 8.9.1)
+Filename: pool/main/libc/libcurl-static/libcurl-static_8.9.1_arm.deb
+Size: 351740
+MD5sum: ffd63628f07f331bbe5d1e6159489618
+SHA1: 9f332553d1701e5a63f6c204af51226137918478
+SHA256: 6504e7489d7a1c691df1a058f0be8746b58d152c76d4d4db3e338f3bad1be4a8
+SHA512: 08b0f51128f4febec69e1df85c26586bd927beb4e477e7fa837845bf9ace51e2cf903f35af6fdf5bd759bc908861dac575fad3e7ad0c2bffcab11d79abe2ad2a
+Description: Static libraries for libcurl
 Homepage: https://curl.se/
 
 Package: libcurl-static
@@ -15214,21 +15218,6 @@ MD5sum: 88cf60d7f346b152c8f6470eac41fb60
 SHA1: 7e6bfa78d9b597aaa112dba8aaf01c20e9f67327
 SHA256: 3631ebe84c5d0b83f752fa543aeba0cb74de3552103cd9705f87a92b530e17be
 SHA512: 9abcc991dff39e46141f5c0b1209f39b012ce626023e7441ce1de4a6c05e9c9d1f4c8afa9617f8f044dd0bd59e1ac3c4d448533feae8d8edebfb556ee0555c60
-Description: An ncurses toolkit for creating text-mode graphical user interfaces in a fast and easy way
-Homepage: https://keep.imfreedom.org/libgnt/libgnt
-
-Package: libgnt
-Installed-Size: 436
-Maintainer: @termux
-Architecture: arm
-Version: 2.14.3-2
-Depends: glib, libxml2, ncurses
-Filename: pool/main/libg/libgnt/libgnt_2.14.3-2_arm.deb
-Size: 87296
-MD5sum: cd53392800477fec00adc23de28ac8bb
-SHA1: ad7d0fe9cd8d6d536b912e69952a38f2b6759d12
-SHA256: 4edc7008ee6f19a6f089c83e241c51d600df6c78d3dff716402e469d2567f2ae
-SHA512: d39a32a76f774f1a68085f7d5afbba4e197c62dcec544817c0c76a8fd7890af24727cca32f34011dd8d5e2aee1e3a9fce5e802e28398df851b2557338bad91be
 Description: An ncurses toolkit for creating text-mode graphical user interfaces in a fast and easy way
 Homepage: https://keep.imfreedom.org/libgnt/libgnt
 
@@ -25079,6 +25068,21 @@ SHA256: 9c72c404f52807e204620f4202710ada92dc32a6819a780c1b0d4b7c37d0f981
 SHA512: 84a1644819cefee4ebeb6c67c070bcf18902bbe7ae8f30518be22466d5cf88b75653d23532804cbf5f58bd8efaf58a154d315283a27a645c7a607672171e4717
 Description: General-purpose software audio FSK modem
 Homepage: http://www.whence.com/minimodem/
+
+Package: minio
+Installed-Size: 99636
+Maintainer: @termux
+Architecture: arm
+Version: 2024.07.31.05.46.26
+Depends: resolv-conf
+Filename: pool/main/m/minio/minio_2024.07.31.05.46.26_arm.deb
+Size: 26418696
+MD5sum: c18787502e96b4229df3f4c93168a03d
+SHA1: 36ce99388dff0abd2684f2a58dc420dfe9f93c96
+SHA256: e9edcd47a883d6a996911b954b8ea21f40686150a51d54d1f1decd1e4b59aadf
+SHA512: 4f3872774ce23d14df1db138cf7b20971ca03f2e052aa7cecaab9353e34d14adc54e5eead64ada5b6da11d47a7c27f5eda167073d7610b6c57b05bd72e862f5c
+Description: Multi-Cloud Object Storage
+Homepage: https://min.io/
 
 Package: minio
 Installed-Size: 99624

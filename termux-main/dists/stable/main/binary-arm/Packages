@@ -6963,23 +6963,6 @@ SHA512: 53a27e88192d2eadad405bfef2d912ec6b9a6206170d1f7f3e5d0a3122601207414525d1
 Description: Software font engine capable of producing high-quality output
 Homepage: https://www.freetype.org
 
-Package: freetype
-Installed-Size: 1484
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.2
-Replaces: freetype-dev
-Depends: brotli, libbz2, libpng, zlib
-Breaks: freetype-dev
-Filename: pool/main/f/freetype/freetype_2.13.2_arm.deb
-Size: 384284
-MD5sum: e49aa0134ead2966afa08ab3382134a7
-SHA1: f676085b6ced513119fe04df92b1752e691dc979
-SHA256: 8725b58571e213854a3df5c2cc57bcd5b52d9f108548259efe8fcbe5d5a3add9
-SHA512: 480276b4ea464b814b05c367f076ab055e4579eaf6352a47dc1b7452a802850c5ae1da1c199b0cf61fc0dae9b89a0657a508c918de57bf7a301276dd5bc69b41
-Description: Software font engine capable of producing high-quality output
-Homepage: https://www.freetype.org
-
 Package: freetype-static
 Installed-Size: 660
 Maintainer: @termux
@@ -6992,21 +6975,6 @@ MD5sum: d6dc5b5cf459158b63ed62c7ab6d3baf
 SHA1: 6d54a5692558b0133baa552fa63540b10b797f63
 SHA256: d7952a7dd601447bec1445bb4daeb3c244b69ac8a62878a084e80f1063328bb1
 SHA512: 6c99926d56b54e82fe5de60b7e852c44c39545b60b3d8113758a00dae4262ca494eb3238f4ee51703b1490ebae09774826f5e9e1b773202fb3a5b6279c6d5b18
-Description: Static libraries for freetype
-Homepage: https://www.freetype.org
-
-Package: freetype-static
-Installed-Size: 660
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.2
-Depends: freetype (= 2.13.2)
-Filename: pool/main/f/freetype-static/freetype-static_2.13.2_arm.deb
-Size: 275812
-MD5sum: f16cc3966fd541c35739125a4e905ccd
-SHA1: e6bf6280ed69d89e2e7e61c111ec66d5bc7acfcf
-SHA256: b2d3223135ff48e96cfd55e5c4f5315019612de0934040ada7566c7d2be5774c
-SHA512: c29671f62566a1a41ab5fee86b051389b2dfd84b39de1dafa51aba0a0988af85686deb94a3956d81e3b2fd524b386f66f45848a0e85ed187ef7d7e2f201c5bbd
 Description: Static libraries for freetype
 Homepage: https://www.freetype.org
 
@@ -7333,6 +7301,22 @@ Package: gauche
 Installed-Size: 20024
 Maintainer: @termux
 Architecture: arm
+Version: 0.9.12-5
+Depends: gdbm, libcrypt, libiconv, mbedtls, zlib
+Recommends: binutils-is-llvm | binutils, ca-certificates
+Filename: pool/main/g/gauche/gauche_0.9.12-5_arm.deb
+Size: 4566184
+MD5sum: 302b3c5525bde1869d07cf829c58234b
+SHA1: 3e30194bed5804e6203aa52f82246ca8b85411ea
+SHA256: 889f272f45e3bd6f4878a3da4ae0a6ebc03058a2c1a67449009a636d5e889779
+SHA512: 447381fbc5f22cf50184115ccd40e296b538224e77af04381c6cedadf86f757a03d817fda513ee51541f3fa9dd383edc5c97e9c4ebe99f62a1a57153f1389dbd
+Description: An R7RS Scheme implementation developed to be a handy script interpreter
+Homepage: https://practical-scheme.net/gauche/
+
+Package: gauche
+Installed-Size: 20024
+Maintainer: @termux
+Architecture: arm
 Version: 0.9.12-4
 Depends: gdbm, libcrypt, libiconv, mbedtls, zlib
 Recommends: binutils-is-llvm | binutils, ca-certificates
@@ -7343,6 +7327,21 @@ SHA1: bbeb28633debb58ffc52fbc86f391b0fa9508fb1
 SHA256: a22cf7ecf2f086c0a30e3029ffd506de04a7c5f5a01e63ebbbd4f92639e50415
 SHA512: 503f7326c76bccf2d301907c79418c33d323fec4fc13a3138a816e99b6821669a8dee9d9a3717ccead9f566f0a40f5b6886f4d77aa6cf9376e21f10414b9fdf5
 Description: An R7RS Scheme implementation developed to be a handy script interpreter
+Homepage: https://practical-scheme.net/gauche/
+
+Package: gauche-static
+Installed-Size: 23544
+Maintainer: @termux
+Architecture: arm
+Version: 0.9.12-5
+Depends: gauche (= 0.9.12-5)
+Filename: pool/main/g/gauche-static/gauche-static_0.9.12-5_arm.deb
+Size: 4764008
+MD5sum: bbf41454c2ab43813e0330b3f8c36899
+SHA1: b60ce7042ded535985edfeb65d41f967ea83365e
+SHA256: 9e5f03b070b8d328f33738f05f9195436e1ee91093fa358576f42fb8a96f2045
+SHA512: 8b9fbefc241a6096d94ead06dcfd1e68f25c413fce8d5d2213c7f47cc6b47dcf8ee2930946d140e16c8f68f86ea4c104da75c3225e0e1a9f8194efd696c332bf
+Description: Static libraries for gauche
 Homepage: https://practical-scheme.net/gauche/
 
 Package: gauche-static
@@ -7472,6 +7471,23 @@ Description: The standard GNU Debugger that runs on many Unix-like systems and w
 Homepage: https://www.gnu.org/software/gdb/
 
 Package: gdbm
+Installed-Size: 480
+Maintainer: @termux
+Architecture: arm
+Version: 1.24
+Replaces: gdbm-dev
+Depends: readline
+Breaks: gdbm-dev
+Filename: pool/main/g/gdbm/gdbm_1.24_arm.deb
+Size: 135424
+MD5sum: 002eaacc9b6279d3e616a3a8bf0a848b
+SHA1: 10c442e4842e9407c5c67f896bc5bbf030f3e123
+SHA256: 4aff5fa8379f967c9326ac17671cd924f11398224d1c72e86419fd1f517dd255
+SHA512: fcb50e2c54e5b2d7d5bddf60cfd4abfaf1c75d811190e41fc6db7676657ca2bad5b5103cdeaa89eda2ee54c898d556a0250a965f9414052d313ba134aa979052
+Description: Library of database functions that use extensible hashing
+Homepage: https://www.gnu.org.ua/software/gdbm/
+
+Package: gdbm
 Installed-Size: 476
 Maintainer: @termux
 Architecture: arm
@@ -7486,6 +7502,21 @@ SHA1: 1dd7d4c0c5e0c1e2fc4d5958cd247b8372673a7e
 SHA256: 51d261de71e706f47be11064344a7c45d6a3adc6e5bdad555f0696d90d096a50
 SHA512: af2fa10c577f5064fa2f5b71d1055397d7e0488aa91376e0188444707b4a1f0afb9a8be22df4d662dadcdbee663293400db8a1c63c0cb148874c0d3e7b000834
 Description: Library of database functions that use extensible hashing
+Homepage: https://www.gnu.org.ua/software/gdbm/
+
+Package: gdbm-static
+Installed-Size: 140
+Maintainer: @termux
+Architecture: arm
+Version: 1.24
+Depends: gdbm (= 1.24)
+Filename: pool/main/g/gdbm-static/gdbm-static_1.24_arm.deb
+Size: 29292
+MD5sum: 785a08bc2a96acbff39f8abcce4779d0
+SHA1: 189ac234782c4e3b7c2efd93b3fd6ede47831c47
+SHA256: 6f2055606bc7f9db03b24b23ae366bb864fad31f97f94fa35bc3bcc27c954f2c
+SHA512: 04cbb841dc229ee2da71fc0140835449b130093d8530af294d1fdb2fce09fea2653fd733c9a97438482a3b63fa92082964cea811b2250592a87f037895d10912
+Description: Static libraries for gdbm
 Homepage: https://www.gnu.org.ua/software/gdbm/
 
 Package: gdbm-static
@@ -7700,32 +7731,32 @@ Description: Utility to print configuration values
 Homepage: https://github.com/termux/getconf
 
 Package: geth
-Installed-Size: 44328
+Installed-Size: 44168
 Maintainer: @termux
 Architecture: arm
-Version: 1.14.7
+Version: 1.14.8
 Suggests: geth-utils
-Filename: pool/main/g/geth/geth_1.14.7_arm.deb
-Size: 11065516
-MD5sum: 36eace8e4cab13ec36e6e46fe64275be
-SHA1: ae5f72c0fa49b860d69adc0fce8074a33aa27a4d
-SHA256: 1406303f82f9ea808e3135e29c04846e46d81946dfe7a3bfbdf4b37bb8ad714c
-SHA512: 0c09bb8e73126a486ba84a36f2283d9930de55c636492c4502b13e6a08d3c3e701d1828cd4bf9b84bde43a24cd7b0ead18cb188cc12c10a4815eb0d6e9d931ac
+Filename: pool/main/g/geth/geth_1.14.8_arm.deb
+Size: 11020272
+MD5sum: b0bd225351cf051d2895538ca2dd3329
+SHA1: 030fc6118c7a4c936bf5bda76ee9b4e5a9e1e3ad
+SHA256: cae6f33e5773c179b943d7ef3a1e378996c94a5d8f623384bd1b1bc700464d7e
+SHA512: 2a32ab06d058119d6e4202a6b1251727b91aad55904070d0fba069407e6bd369ffadac4b0ef170989d27904d43cff2ca1533bafe42e922a1abca78594e4003b1
 Description: Go implementation of the Ethereum protocol
 Homepage: https://geth.ethereum.org/
 
 Package: geth-utils
-Installed-Size: 198632
+Installed-Size: 218868
 Maintainer: @termux
 Architecture: arm
-Version: 1.14.7
-Depends: geth (= 1.14.7)
-Filename: pool/main/g/geth-utils/geth-utils_1.14.7_arm.deb
-Size: 50926456
-MD5sum: 1116092028f25f1ca728610ee17259a6
-SHA1: a53ed05af60891e421d19977640e2f5c1df7cf81
-SHA256: b5a91a4e0d05687a03f7bd25faf0800d69ab18d28078fea0059b95efb3c56727
-SHA512: 94de225b304b7f9a6f8f6401073f3857967054e24fd15f7ca6db30529a1aa8b7b808124000f4d2c7ec87f1437f9c0593c194be27b57130e755d464579343dd2c
+Version: 1.14.8
+Depends: geth (= 1.14.8)
+Filename: pool/main/g/geth-utils/geth-utils_1.14.8_arm.deb
+Size: 56170112
+MD5sum: 8ad61607a84a9809084ec58e77379662
+SHA1: a71f08a0a2a227d57a4c4b0b23f7254576f465db
+SHA256: 7dcc2f4ec809bc1cfabcefa5333ae944e078790ce6cbe7baafdfec61034f0db0
+SHA512: 78c771671e1e70823905f4400f055b566e7229a9bf508085fdb9e17aefa7bcba9b1587efbfb4fd58e3dc6a82eb1cf477c2d7b960d92e086f8e6b1d0e5354abd2
 Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
 Homepage: https://geth.ethereum.org/
 
@@ -10248,6 +10279,21 @@ Package: hugo
 Installed-Size: 83900
 Maintainer: @termux
 Architecture: arm
+Version: 0.132.1
+Depends: libc++
+Filename: pool/main/h/hugo/hugo_0.132.1_arm.deb
+Size: 15416580
+MD5sum: 94bf1322258ac7157f12c4ee04c30a84
+SHA1: cde4b83c4565d9a415dc0a8a91ef1dc03dda32b4
+SHA256: a5eafc5044631b0b0906b3855b60eac2cec7c64a0d0aebb1d8454fbc2e3b1de3
+SHA512: 8516a47257a652bd5e82d2a55ac79ad35ac7b2944b1d41d3087886960c8d67c9f567a6fa3cd08c2331752e134981fe1a11d05fa4f43b9cad961fd28c318bb0a5
+Description: A fast and flexible static site generator
+Homepage: https://gohugo.io/
+
+Package: hugo
+Installed-Size: 83900
+Maintainer: @termux
+Architecture: arm
 Version: 0.132.0
 Depends: libc++
 Filename: pool/main/h/hugo/hugo_0.132.0_arm.deb
@@ -11834,6 +11880,22 @@ SHA256: 5db50dd818dbe88118a05e667d624e0fd1e65c980274ccc427a23c4dc9ece0bd
 SHA512: 4912f3852c2c083648fa419de74805902c3ff1b95f611aac8a089cc9fe2c9bab99cf94055c3f220623ac3db9b7f2f5f63f2625b3a87dcf53720d305a71a5c21d
 Description: High quality MPEG Audio Layer III (MP3) encoder - frontend
 Homepage: https://lame.sourceforge.io/
+
+Package: lastpass-cli
+Installed-Size: 216
+Maintainer: @termux
+Architecture: arm
+Version: 1.6.0
+Depends: libcurl, libxml2, openssl, pinentry
+Suggests: termux-api
+Filename: pool/main/l/lastpass-cli/lastpass-cli_1.6.0_arm.deb
+Size: 66016
+MD5sum: a297e98bd8bd9418cc1e09127c867225
+SHA1: d84fbdc51e5da7276ca08a422157d0464850819b
+SHA256: 179d1223aea45f2f1d753b91082023d2fd5b0ad7fdc2d5518d0c54c7acf4eed6
+SHA512: d8af1fb825e8b27574664e64a93d4606efc81d20570046faf27bafeda62e10ccb58c329a79d693fcd8d982296c1cff3160a84271f02fc9c64e7c2800cbe0fe5f
+Description: LastPass command line interface tool
+Homepage: https://lastpass.com/
 
 Package: lastpass-cli
 Installed-Size: 216
@@ -25790,6 +25852,21 @@ Package: multitail
 Installed-Size: 356
 Maintainer: @termux
 Architecture: arm
+Version: 7.1.5
+Depends: libandroid-glob, ncurses, ncurses-ui-libs
+Filename: pool/main/m/multitail/multitail_7.1.5_arm.deb
+Size: 117052
+MD5sum: b6c916fe30e6d4b984182f75f2a2bda2
+SHA1: 2425aa99589229b979e4d6dc8d5f3592063b1f21
+SHA256: f5d429f291ebe21d467b9900830be79baa70d824ecf0d7e9c09819d6cf7d696e
+SHA512: 8d9f807df8e7231b626d55c7a8715bdb8ae49b2d1b624668793ab65d04446da95a694f4d16bba9d9f02fdf5d470cb03ab83e308e6e4251c5702e7b7e7544aeae
+Description: Tool to monitor logfiles and command output in multiple windows in a terminal, colorize, filter and merge
+Homepage: http://www.vanheusden.com/multitail/
+
+Package: multitail
+Installed-Size: 356
+Maintainer: @termux
+Architecture: arm
 Version: 7.1.4
 Depends: libandroid-glob, ncurses, ncurses-ui-libs
 Filename: pool/main/m/multitail/multitail_7.1.4_arm.deb
@@ -25865,6 +25942,21 @@ Package: mutt
 Installed-Size: 6380
 Maintainer: @termux
 Architecture: arm
+Version: 2.2.13-1
+Depends: libandroid-support, ncurses, gdbm, openssl, libsasl, media-types, zlib, libiconv
+Filename: pool/main/m/mutt/mutt_2.2.13-1_arm.deb
+Size: 1210588
+MD5sum: e82a377e671a0501eb392532c8ec6c16
+SHA1: aa84663636ff1afcc56720b245b69f93ff23da4b
+SHA256: 40b380f48e52b0bf17efa5fdcd22892be3b34d1143e0f12acafe677b703fe52d
+SHA512: 827d98d5c8f3c7092a8f8709689917c328d918b3f69eb0735774464543c6b8c27e5c056ead7ebf7835705b25d201deef10fc3f4db4cef4d22f7cf4e3565619b3
+Description: Mail client with patches from neomutt
+Homepage: http://www.mutt.org/
+
+Package: mutt
+Installed-Size: 6380
+Maintainer: @termux
+Architecture: arm
 Version: 2.2.13
 Depends: libandroid-support, ncurses, gdbm, openssl, libsasl, media-types, zlib, libiconv
 Filename: pool/main/m/mutt/mutt_2.2.13_arm.deb
@@ -25903,21 +25995,6 @@ MD5sum: 87950f8e3c61defa8a915a3b06cf0a4c
 SHA1: 1e13d0f3d32c2bcef2ba3aea035d459141b61e10
 SHA256: 379acff8542925c2d6949e010baa1777658926c978aadba62d2a3d5db03598a4
 SHA512: 61bfce8cd8f49d15ae799f30e2701ab9bac1cc2ead5da5bd694add8b0ac9541a41593503c06afbbd29cd0a39ca181ce3ab9e771a26f003ee52b49859c8d84d9b
-Description: A standalone and lightweight web-based MPD client
-Homepage: https://jcorporation.github.io/myMPD/
-
-Package: mympd
-Installed-Size: 1192
-Maintainer: @termux
-Architecture: arm
-Version: 17.0.0
-Depends: libflac, libid3tag, liblua54, openssl, pcre2, resolv-conf
-Filename: pool/main/m/mympd/mympd_17.0.0_arm.deb
-Size: 752028
-MD5sum: 69eded4c0369584c47301a4ed91fbc3a
-SHA1: e4e63666d385a548addeb011999ad8c6388f23c5
-SHA256: 00c91248c63f4f140dfc66d2fd373200d44a024cc0e281f93bba0fe7b2dd1380
-SHA512: fe546f58b875c71779c18e9cf12c7304040f697bbd8b629b1da0029bd9e6de07bc7da0fd8058a0072681efe6700f7a69ca14679d5ab0be1933e70cc740de6c5d
 Description: A standalone and lightweight web-based MPD client
 Homepage: https://jcorporation.github.io/myMPD/
 
@@ -26417,6 +26494,21 @@ Description: Simple system information script
 Homepage: https://github.com/dylanaraps/neofetch
 
 Package: neomutt
+Installed-Size: 5320
+Maintainer: @termux
+Architecture: arm
+Version: 20240425-1
+Depends: gdbm, krb5, libandroid-support, libiconv, libsasl, ncurses, notmuch, openssl, zlib, zstd
+Filename: pool/main/n/neomutt/neomutt_20240425-1_arm.deb
+Size: 1041488
+MD5sum: a918ae80c3bb1848a60e30d75ddf89a7
+SHA1: 6bad5f38e54d1e02a8fec18e656b782eb180b2be
+SHA256: 6f325330ba13563355293d48a30d14ead3f262e42b87eb3d350164ae95f88f1b
+SHA512: 20fe4a5029a252a25bbaed6d8d2478a49e4dc305ebef9d7da14da69725d6febae6c8b1fa4c80c4817d98e79a067825325de3190bf8b3f8f600d6fc047bf65152
+Description: A version of mutt with added features
+Homepage: https://neomutt.org/
+
+Package: neomutt
 Installed-Size: 5324
 Maintainer: @termux
 Architecture: arm
@@ -26779,6 +26871,21 @@ SHA256: 1a9b9a04555960116b79716d18d6f4a59d2c14f448f35eade9c3f675877e1319
 SHA512: a6c97ae015626ad0f9f4912b540ea0b98beec3a43d6fd8a3f55dca15fdc2bfcb39b00f11e3f3060f3efa23044f6d80901ef02f545feed86af911eea091516068
 Description: Feature-packed networking utility which reads and writes data across networks from the command line
 Homepage: https://nmap.org/
+
+Package: nmh
+Installed-Size: 4944
+Maintainer: @termux
+Architecture: arm
+Version: 1.8-1
+Depends: gdbm, libcurl, libiconv, libsasl, ncurses, openssl, readline
+Filename: pool/main/n/nmh/nmh_1.8-1_arm.deb
+Size: 871976
+MD5sum: 987194b2aa0a24b2cbd246d32c30e044
+SHA1: b1190d86c065b58decd35fd44cf85c68c09fff0b
+SHA256: ff5006df4f0e58d9b71f71a51594ec3afa6616b68454ecb75509c7b533a0c7a2
+SHA512: 0220079c0e497d4c091efe7b4ed39e9c6fef0c838c09fd4765fbb01e421578b78f124b249a711b40b8803c4084b7deed970d7c3e2b0dd5ef9c0d993168039dbd
+Description: Powerful electronic mail handling system
+Homepage: http://www.nongnu.org/nmh/
 
 Package: nmh
 Installed-Size: 4952
@@ -27242,6 +27349,20 @@ SHA256: 1a11dff939c33d807383cabc9ddfe354a06ae4bbe5ab06a894aa1b75d4a4c2a2
 SHA512: 03cc7270276e500a9a23b6c72c7a6a2dbeca4670912329bdfbf438fe4991bef7f0d0719b28a3d1213c7c309d3231d4aeb0a0ade796eb367773c6cdc8d4f95c2a
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 17776
+Maintainer: @termux
+Architecture: arm
+Version: 23.6.3
+Filename: pool/main/o/oh-my-posh/oh-my-posh_23.6.3_arm.deb
+Size: 4549492
+MD5sum: 5a79415024740f54b75692d67e2b2581
+SHA1: ec925aed218b90f206a0109e3b48c123dd5a1e22
+SHA256: 8e0bacfb6244c8ff26eb4ba85640df91210b77356d91507f56d108145b62240a
+SHA512: 31c40aaf9dbdeb88d5714e3dd3457185acb8839af1c9147476bcd922843fe43c0126471da6b5d76dc13ed72f8bb47cca33d868ff3f61fd00a5754164f42aab4a
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 17776
@@ -29302,21 +29423,6 @@ SHA512: d9ecf2d1ba3ae6787e34ed51bbbb8659252df21ca714a82fcb81f3957acfd1598a043366
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
-Package: pocketbase
-Installed-Size: 37692
-Maintainer: @termux
-Architecture: arm
-Version: 0.22.18
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.22.18_arm.deb
-Size: 8854096
-MD5sum: 4b6a5413b6c2307c2b763e5ac46ef31d
-SHA1: 6779f150a0c40b0b2c76164865fc3df4eaa60ec2
-SHA256: b897a2781611b62b128d882d020f321998ef2736a410560f291df37a31592b77
-SHA512: 68a85d2d6e321d024d68d6b5275e03ddfb2e4c424e423e333b285179c8308614e61a8f1bb16b8fe986c19d241800387c4a7238dedc4f74af64c5a5bc4fcde371
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
 Package: poke
 Installed-Size: 3264
 Maintainer: @termux
@@ -30095,6 +30201,23 @@ Description: Python package which provides bindings for GObject based libraries
 Homepage: https://pygobject.readthedocs.io/
 
 Package: pypy
+Installed-Size: 73956
+Maintainer: @licy183
+Architecture: arm
+Version: 7.3.15-2
+Depends: gdbm, libandroid-posix-semaphore, libandroid-support, libbz2, libcrypt, libexpat, libffi, liblzma, libsqlite, ncurses, ncurses-ui-libs, openssl, zlib
+Recommends: clang, make, pkg-config
+Suggests: pypy-tkinter
+Filename: pool/main/p/pypy/pypy_7.3.15-2_arm.deb
+Size: 13870056
+MD5sum: 0d5668698cc2563bcc50065400eaacd2
+SHA1: 42168bcafe76497770d01d39f4e0c7bd8dfca275
+SHA256: bf979959bf2f1d46ce1faaa48f28c11430029bd6a8f124794ab46e3726ba11d1
+SHA512: afec75148af7e108addd58412e2f59f296b541722d83b38efaee182de4c753658378bf34ebd8a3945b0137ccb6181068f468f07534269382862313331d988356
+Description: A fast, compliant alternative implementation of Python
+Homepage: https://pypy.org
+
+Package: pypy
 Installed-Size: 73896
 Maintainer: @licy183
 Architecture: arm
@@ -30112,6 +30235,21 @@ Description: A fast, compliant alternative implementation of Python
 Homepage: https://pypy.org
 
 Package: pypy-tests
+Installed-Size: 16948
+Maintainer: @licy183
+Architecture: arm
+Version: 7.3.15-2
+Depends: pypy (= 7.3.15-2)
+Filename: pool/main/p/pypy-tests/pypy-tests_7.3.15-2_arm.deb
+Size: 2191012
+MD5sum: e8950a27d8a4d17a56995039cb39155c
+SHA1: f83e87f91dc045aedad3311f8c6f40ad7645b402
+SHA256: bb3a18462bab947b3cdc5d780d2bfb62631d948a5ebccb535c028e95a3e9e956
+SHA512: c8a8a58eda128ce74cafcbf2deb12f96b614e09089f0f43d825513410c43216c068ac5100194fe556f0ce1e814a1e96bb1fe6c5e69960f06097cdbd38399524e
+Description: Test files for PyPy
+Homepage: https://pypy.org
+
+Package: pypy-tests
 Installed-Size: 16952
 Maintainer: @licy183
 Architecture: arm
@@ -30124,6 +30262,21 @@ SHA1: 72085b2e241e4516dd9795a3d3d6ab0e68c7e635
 SHA256: 9d3df77efc6762d8d200e9bd28490db518942c57a7e39b1a69de38a9888b5d60
 SHA512: d70976d9a3bdf9ae4680e4ae7ae01c01b4d5b1a9cc7089317d2473c65981471e85c1790d24b8bfdd82c31589727aaeb99068bacf596d66b3e102ed9419451e8d
 Description: Test files for PyPy
+Homepage: https://pypy.org
+
+Package: pypy-tkinter
+Installed-Size: 128
+Maintainer: @licy183
+Architecture: arm
+Version: 7.3.15-2
+Depends: tk, pypy (= 7.3.15-2)
+Filename: pool/main/p/pypy-tkinter/pypy-tkinter_7.3.15-2_arm.deb
+Size: 16624
+MD5sum: 92e2dd5f498ea3bd066a0ac49937e913
+SHA1: cb080fa4fa6d813cbce17dd8f48894a3f6ecbecc
+SHA256: a7ec6ddcfab988f9248245415bdfd14b2f186d930eb84a93ad5fe2ad9b6a21b7
+SHA512: 4943c8bf4c4140b245c2ceb0470211017b728da5730b9ee8cf5ff30c39692d243837f7345816ab8fb2649c62b6d3734f08250f51476f10266d55df73a44a743c
+Description: Tkinter support for PyPy
 Homepage: https://pypy.org
 
 Package: pypy-tkinter
@@ -30202,6 +30355,26 @@ SHA256: 49967ec3f097ba870a816e7ee25b026632fb8937c7d0b5ad670e91d0e00b672f
 SHA512: 2916b47a9293887a7d639ad34d23f0935cc529f42a4e87d1ba4349e3f64907e622fa944c69d5a31f5797f8f7665cf661b2713d34cfd075e9d10f59c3bcc63690
 Description: C++ functions matching the interface and behavior of python string methods with std::string
 Homepage: https://github.com/imageworks/pystring
+
+Package: python
+Installed-Size: 58752
+Maintainer: @termux
+Architecture: arm
+Version: 3.11.9-5
+Replaces: python-dev
+Provides: python3
+Depends: gdbm, libandroid-posix-semaphore, libandroid-support, libbz2, libcrypt, libexpat, libffi, liblzma, libsqlite, ncurses, ncurses-ui-libs, openssl, readline, zlib
+Recommends: python-ensurepip-wheels, python-pip
+Suggests: python-tkinter
+Breaks: python2 (<= 2.7.15), python-dev
+Filename: pool/main/p/python/python_3.11.9-5_arm.deb
+Size: 7688060
+MD5sum: 101a60b5882f270578bf5226eb5600a0
+SHA1: 36bb9c4d23dc99a6c55bd0997fda975f91b07b7b
+SHA256: 9f6505db791da92e76a198a3524982a5a32c7e0d25633fe43b905e8c334bf427
+SHA512: 935232bf2e37195fd5546644e46eb78c34cff616ea9325d2c865895b6567b5bbf6f3c2397fa967bb78ed739af5b6711b98291a9548ddb431c6d16ce11e35a9b9
+Description: Python 3 programming language intended to enable clear programs
+Homepage: https://python.org/
 
 Package: python
 Installed-Size: 58752
@@ -30297,6 +30470,23 @@ SHA256: 49e497888a6484a3a7e094bd3d504f089625bc1956bdf697c820976c830723c0
 SHA512: 835a46f1c26f2c2fcf03ea2114b6fb7dcacf0c9f4a9859770cd4d80a032b245c1df240c52921bb2aff17aba99e1e4a83ec68ef6d692e66c3d81321ae66a60f9d
 Description: Provides cryptographic recipes and primitives to Python developers
 Homepage: https://github.com/pyca/cryptography
+
+Package: python-ensurepip-wheels
+Installed-Size: 3308
+Maintainer: @termux
+Architecture: all
+Version: 3.11.9-5
+Replaces: python (<< 3.11.1-3)
+Depends: python (= 3.11.9-5)
+Breaks: python (<< 3.11.1-3)
+Filename: pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.11.9-5_all.deb
+Size: 3029144
+MD5sum: b5ae1adca49b3f9cdb239c0b0c77a760
+SHA1: 34ab7f3e92c4936dd4c194231716cdd402f8cca6
+SHA256: 451019bb8ce7d92b476edec8cb1b7aaa53880e7717d0c7db78027d62e4963caf
+SHA512: 1a63405f038816f497e050dadb3f7b4412717c272d0a6cce1d57a9e642c3b2b115569104e30f3ad05c08a5b3d61443f02369960a2a31d12c1d08ac60e7eb7c51
+Description: Wheels for Python ensurepip
+Homepage: https://python.org/
 
 Package: python-ensurepip-wheels
 Installed-Size: 3308
@@ -30531,6 +30721,21 @@ Package: python-static
 Installed-Size: 20072
 Maintainer: @termux
 Architecture: arm
+Version: 3.11.9-5
+Depends: python (= 3.11.9-5)
+Filename: pool/main/p/python-static/python-static_3.11.9-5_arm.deb
+Size: 4870332
+MD5sum: 521dc257c00dabe57128b07ebb0d131a
+SHA1: f5d1d0594dc6cf08d8ef98e9efe345447c5c3e39
+SHA256: 895604d466736b11638d0f8209e4502df7f095afdcbd1a0bf62c8b4f0c6ede08
+SHA512: 1fd1de5a3277d71f9a06a1aac95f8ed87b730e303cd7bedca37e33542e5a603e8507fa215e5ca220f7f5dc35d17040d9a23c8695fefcd7c66817c205558c6b6e
+Description: Static libraries for python
+Homepage: https://python.org/
+
+Package: python-static
+Installed-Size: 20072
+Maintainer: @termux
+Architecture: arm
 Version: 3.11.9-4
 Depends: python (= 3.11.9-4)
 Filename: pool/main/p/python-static/python-static_3.11.9-4_arm.deb
@@ -30540,6 +30745,23 @@ SHA1: 8e98a24d7207d121bb905bed64f2fd40c3628bef
 SHA256: 839497ed8e500d049c4d0a973a3dbe3a8db8cf4bb4c75f3dc08a60563ec4ee15
 SHA512: 91b1ed5e93f1475326e24f714ac56f3628e71ab00418dd5c7f1a45674b95249593605756b5f068a0f59853e6e159ec15c5dbd2ac8a999ae3130124d95f1d6179
 Description: Static libraries for python
+Homepage: https://python.org/
+
+Package: python-tkinter
+Installed-Size: 11736
+Maintainer: @termux
+Architecture: arm
+Version: 3.11.9-5
+Replaces: python (<< 3.11.1-3)
+Depends: tcl, tk, python (= 3.11.9-5)
+Breaks: python (<< 3.11.1-3)
+Filename: pool/main/p/python-tkinter/python-tkinter_3.11.9-5_arm.deb
+Size: 1243828
+MD5sum: 3e50304b67482ead0e4009b26c90511d
+SHA1: 0b5bb1914b8d3d5743e5fa03bbfddba97166b700
+SHA256: 7ecf5d9fa64e3eb8df63781a4dc5cbd0e9ef9aea90c41e2f7ac7c8642af3f2f8
+SHA512: 2070d7530fcc4924a39b07930dd73c7a8aedee50d55c7fb2a5f3e0802fd406b3972dbed5401df6da5df37fdf036703ecc66010ce62738682ee089d3dfd41604e
+Description: Tkinter support for Python 3
 Homepage: https://python.org/
 
 Package: python-tkinter
@@ -30668,6 +30890,24 @@ Description: The Python X Library
 Homepage: https://github.com/python-xlib/python-xlib
 
 Package: python2
+Installed-Size: 17164
+Maintainer: @termux
+Architecture: arm
+Version: 2.7.18-14
+Replaces: python2-dev
+Depends: gdbm, libandroid-posix-semaphore, libandroid-support, libbz2, libcrypt, libffi, libsqlite, ncurses, ncurses-ui-libs, openssl, readline, zlib
+Recommends: clang, make, pkg-config
+Breaks: python2-dev
+Filename: pool/main/p/python2/python2_2.7.18-14_arm.deb
+Size: 4897904
+MD5sum: 5bbb654e38212da4549ffeedd34b526f
+SHA1: 8fb197992edc3510cd218b148fdd9d732a6e6c71
+SHA256: aa7f11f6a24ef1aefb93dcbfb84ac83b124f4b36b43d3be39cc04b93e7497260
+SHA512: 2e71c514df5ddf0de9d36ffe50458b8b7372733d6123957879960e3bc78f8988403b25c4eca18a6efbb5554f35e5433cfb2743929e1bce1337bdac1428c57f0b
+Description: Python 2 programming language intended to enable clear programs
+Homepage: http://python.org/
+
+Package: python2
 Installed-Size: 17144
 Maintainer: @termux
 Architecture: arm
@@ -30683,6 +30923,21 @@ SHA1: 47b5eee103a892a6309c81a6bc0ba3870a357e01
 SHA256: 4c8047752c44e8b10fdf69b84ef1996367ef7c25748aa258a351e69403cd1133
 SHA512: 4c9a8df64820a945c476a1583c54155e7506995432e8d66dad32a4575efe1bd3e451f844e9e492040ef71afd8b1fe8a3d5013f019bf05b5aeb26728ca177ba55
 Description: Python 2 programming language intended to enable clear programs
+Homepage: http://python.org/
+
+Package: python2-static
+Installed-Size: 6224
+Maintainer: @termux
+Architecture: arm
+Version: 2.7.18-14
+Depends: python2 (= 2.7.18-14)
+Filename: pool/main/p/python2-static/python2-static_2.7.18-14_arm.deb
+Size: 1796940
+MD5sum: 07150e0682112dda12d7f003cf52c037
+SHA1: ad725aef463f9e245d348265f39795580dbdd192
+SHA256: 1d0c3e11b7381329b98c93e3b9e8cd9c1bb93374707e70071b561d36979e8426
+SHA512: d9a0e2523bdf2cc61eb2db0caffb70983591bf522cb0c1e193c6c0dc57f75e7bbef30b3c92e5deff668372b4da107b63d55d683134db1af549a2c90ecebe071f
+Description: Static libraries for python2
 Homepage: http://python.org/
 
 Package: python2-static
@@ -30778,157 +31033,157 @@ Description: Static libraries for qalc
 Homepage: https://qalculate.github.io/
 
 Package: qemu-common
-Installed-Size: 244404
+Installed-Size: 244408
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Replaces: qemu-system-x86-64 (<< 1:8.0.0), qemu-system-x86-64-headless (<< 1:8.0.0)
 Depends: glib, libbz2, libcap-ng, libcurl, libgmp, libgnutls, libnettle, libnfs, libpixman, libssh, zlib, zstd
 Breaks: qemu-system-x86-64 (<< 1:8.0.0), qemu-system-x86-64-headless (<< 1:8.0.0)
-Filename: pool/main/q/qemu-common/qemu-common_1:8.2.5-2_arm.deb
-Size: 18434228
-MD5sum: 29c3f159b611bf340693c43af34d621e
-SHA1: 105e44bf19c609e0d741b6d28e5271ee3e987769
-SHA256: 24dfd73f6dc6cd98a48ffaf17f6fe8eb7125cc6f6e218b058dde3407711f2656
-SHA512: c10502c00aec7531405f7a5df0528959b9b51fa3f0b0516eaa340eeb18f80d084290b4979b687216b2f53cb2b240495b2c8ed4bf4cacd81fc98cbf1604c4e162
+Filename: pool/main/q/qemu-common/qemu-common_1:8.2.6_arm.deb
+Size: 18434468
+MD5sum: 4f4fdf5fce6911471a63ae6fb0913ce8
+SHA1: 7ba60defe1f9b59c15b0510cc6aa60b00dfd1e42
+SHA256: b7d579a836c9650a39139904dcd2592d233d52cc33d4f47cd37cba5bfa5887b1
+SHA512: dc74e08b0c20a0eb8b1489d28546719c92a578a3eaeac82a4bd7b3b8f49868623c9d4747519452ef33d44e9c6508f65ed6c5a4155d0fc0d428118e0b4f56125e
 Description: A set common files used by the QEMU emulators
 Homepage: https://www.qemu.org
 
 Package: qemu-system-aarch64-headless
-Installed-Size: 14328
+Installed-Size: 14320
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-aarch64-headless/qemu-system-aarch64-headless_1:8.2.5-2_arm.deb
-Size: 2985840
-MD5sum: 12d224db4daa20b4695ee60a91635258
-SHA1: 19e5f0b9ff1ee484ba2b38fc2d743a81628c0a81
-SHA256: 0c6444a73816329e83066bce2c17237c883d1c143f39108a3943f1a34dfcad3d
-SHA512: 69ada638a94511cad314fce339d28f2a07188bae6c86f4571fd7287ad82c5a223880c9375dfad810702bf707bd5abf6db1ab348e7079b3ff67c786b52dce2823
+Filename: pool/main/q/qemu-system-aarch64-headless/qemu-system-aarch64-headless_1:8.2.6_arm.deb
+Size: 2988660
+MD5sum: 05ca1d5f6a7041dee334938d45ad1598
+SHA1: 911af8499f8173c7114e06851d1c78ca5f415bad
+SHA256: e03468deb777e9670078653388344ffa8c27f5936a6d524a4da6d9e84330ca9f
+SHA512: 4ab8c478fad1dd649277d217e51b51a09a1fc78af19c2a2a06e8c5d86f6d75ce313ed2d3e82cd57b1b77c526eb504ae1e638605b0a5ba34de96c099ad6069606
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
 Package: qemu-system-arm-headless
-Installed-Size: 12972
+Installed-Size: 12964
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-arm-headless/qemu-system-arm-headless_1:8.2.5-2_arm.deb
-Size: 2686568
-MD5sum: 1ca457cf778beecac2e8ba04a115d2aa
-SHA1: 5c4421f29af7e46589e3ba303b8da88349d824c4
-SHA256: 622e85fc51cd8791184220bbb5f7dffddb3f58c32bc628a3ed660ba8a2398783
-SHA512: 409d3a6696b47e532016d19cd9ad40749e317d96dc852b7bfbd6d26019f339d9663b6c0f81a8b04ce93383791e9fa49a85a444475d4d38d8097420a2d8a38ba5
+Filename: pool/main/q/qemu-system-arm-headless/qemu-system-arm-headless_1:8.2.6_arm.deb
+Size: 2686260
+MD5sum: 28c170a40397451b6937ad3c52cdc106
+SHA1: 078f602465b3bc364a11a3a4c5236c34e5071245
+SHA256: a4d93be400c3a2b30d000012a38d219d64cfd75ef88917aeac43e5ac6c782ce7
+SHA512: 42e701b820fcb12def7d0c25ae7acb507cb067988393f47c5420912ab8ccc94d6e7fb1c65d7c674ff7c801f622d1dcd0835f5b8de366bad81bfdca46b8bf5661
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
 Package: qemu-system-i386-headless
-Installed-Size: 11596
+Installed-Size: 11588
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-i386-headless/qemu-system-i386-headless_1:8.2.5-2_arm.deb
-Size: 2206808
-MD5sum: faeb151dfd6703ece89d138a2ffb1147
-SHA1: be4457d235be984781dbff3b43247da09d509eec
-SHA256: 37733cc58a375830f8171a9901ac2159b61cdb64ee490569cd3af66709a9afee
-SHA512: b65791f2b7e2ded8cbe87c16c2d041ba99304437fdd09d3c70bcbb5b60f348292802177281c7acf7c94169f6ad6a36a5ab0b903c5cf950a1e8096b7d74ccc129
+Filename: pool/main/q/qemu-system-i386-headless/qemu-system-i386-headless_1:8.2.6_arm.deb
+Size: 2203312
+MD5sum: 114317e28be9a4d5b06d098ebca7225b
+SHA1: 94131ec9a6e76b493f0ba2984adb9d226cd3934e
+SHA256: 8118a0744eb731140f820b7ab0720c739d53534b34bfee2c51f51d780e2c0c32
+SHA512: e9569b69734c1f229452ef4e5965f1244e624e82265a1a1c2bb4ff592d24fa1ed9e3f07f286d9228269a0644995060306a567230a29442d922130a677bd5fbf3
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
 Package: qemu-system-m68k-headless
-Installed-Size: 4456
+Installed-Size: 4448
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-m68k-headless/qemu-system-m68k-headless_1:8.2.5-2_arm.deb
-Size: 1531440
-MD5sum: b233167cf95f00fb893a8cce626dbb56
-SHA1: 6d66a2baa662696dd0b37b51b15e67aab9e9406a
-SHA256: 48192f46b7c4d671903506a5cc02142a332caf8ae3dcbb1b4c44231ec3623fcb
-SHA512: 3800d63f412aba01f2f9e4c38596b8c59ac86810f9634fcb5e4c44263a8bb3d0cea07ffc5916e2db70f1993afb9d4adf2b003c5eadcbf6d326f58d127263c81a
+Filename: pool/main/q/qemu-system-m68k-headless/qemu-system-m68k-headless_1:8.2.6_arm.deb
+Size: 1529308
+MD5sum: 7a123400f66df8a2be3270e8872b7a98
+SHA1: f8623d578be869c6a9faf0969ad1dca539a161bd
+SHA256: baff02f43b97af2b8814f54978adf7eb2d89064cc9f489b7a8acbb41a4d6602d
+SHA512: 1d2a7718dba0c8ec652c5235b4e682647ec51225cfcd8b68cce2e4b99777cbb14ceef090959f361a7f115f4c6dad99617a391de552457bbd5ffc00ab951e1dce
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
 Package: qemu-system-ppc-headless
-Installed-Size: 7480
+Installed-Size: 7472
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-ppc-headless/qemu-system-ppc-headless_1:8.2.5-2_arm.deb
-Size: 2177836
-MD5sum: 391390269eca516b5d224098c9ab6637
-SHA1: bd704b79d6848c4450bf41da1fffdab4fe34ccad
-SHA256: 2adf9171eec55b71792c0a2183401c25a353ca6c61a2b86c6f2967091a55d0bc
-SHA512: 28aba1c56ee389d7f64056552e163364e31c5594af9d0b9066fac0a6369de781e0e8155783dc81eb721ac8254d3cea3bc33aba98d5ae585e930bd4a9b22ba740
+Filename: pool/main/q/qemu-system-ppc-headless/qemu-system-ppc-headless_1:8.2.6_arm.deb
+Size: 2176268
+MD5sum: b568edc3826c107409a900fb93bc3bc4
+SHA1: a5ce44b3157ecd3f1c09d45f5f1c680a2ed7271a
+SHA256: 0a7d9987e96d64d00ee7d32f9fb7194a3f445610fe9810f2c113a7e031e1f4f5
+SHA512: 8b9fb7878cefeabae14a009b84176fb2f2d4532803e8eb1d0637e7415a363dc5b4f9371ed348ca89504b775586ab4217709b3d3ca50405bec616a197aefc6ab2
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
 Package: qemu-system-ppc64-headless
-Installed-Size: 7968
+Installed-Size: 7960
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-ppc64-headless/qemu-system-ppc64-headless_1:8.2.5-2_arm.deb
-Size: 2387352
-MD5sum: 1e68b458dd6045c2984d5acefa89feaf
-SHA1: 720631ab659176d2ac4e4f8f6917cbcafa2d86ef
-SHA256: 8a4c575bed63dd9509bbefd76fc25abd97f985fb69283ac5042d5025a80d8234
-SHA512: 4cc723a4755ab654d9af1be0b87a898553c83da5d4559a0e51acedc52813f718516444ac72cae8af093a6aec46d4335efe3a51a95b2d57ed7998ab0e5ef68864
+Filename: pool/main/q/qemu-system-ppc64-headless/qemu-system-ppc64-headless_1:8.2.6_arm.deb
+Size: 2385752
+MD5sum: 206646df838f335c796871bef4ee11dc
+SHA1: b57b9f6387d220372468dc7899ceb3240d193c7f
+SHA256: 9894c5f2df051d3a18513c0915792ce5033c6dd5e98a77c0c127441ec29c116a
+SHA512: 06c3df6ddeb01d2dc1dc5cf305e064221a91dac77109168492622e14006170ba0746bf2acf815f608ef9e6698cf2ce57d6996b0a34c46f0252b42f11e0bf8055
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
 Package: qemu-system-riscv32-headless
-Installed-Size: 7464
+Installed-Size: 7456
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-riscv32-headless/qemu-system-riscv32-headless_1:8.2.5-2_arm.deb
-Size: 2072456
-MD5sum: 88f8fb5546f1716c365f46c70a1c8805
-SHA1: 7c1907e74766a4d36e4a810c092e303e25105eed
-SHA256: ec19c2d04a39a3f4c9123da31754149709a0c8a67cb75f32ad258deaceeb2044
-SHA512: ffd6ecbd4e2199eef3354ca7b9300d9873012340ad7f6f166167176e1d931906017ea0aebe4776e0bb954f9036b835795f4ee78ac420e584bdd65493121126c5
+Filename: pool/main/q/qemu-system-riscv32-headless/qemu-system-riscv32-headless_1:8.2.6_arm.deb
+Size: 2072024
+MD5sum: 045b1babf303307f44f587ad164a9763
+SHA1: ce2f12809fc014821766d0cb3f7c245190f4588f
+SHA256: 9932fbf006250a36ead92354986446cf64c7f8bc49981b2a6acd7d19034471d5
+SHA512: 05dc7d6ca3fc53d7ca005ecde122b50b67c7a1cf70b986fb65b91a68338ce5a271de4005121673f2227e5cb17241acd08d44aad2dde669736e3c74c6adcf148e
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
 Package: qemu-system-riscv64-headless
-Installed-Size: 7508
+Installed-Size: 7496
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-riscv64-headless/qemu-system-riscv64-headless_1:8.2.5-2_arm.deb
-Size: 2090012
-MD5sum: 54264a532adbd2e58ceedac749231d04
-SHA1: 8bfd32315cefc8bebd734ca9b8e4b43fcd831809
-SHA256: 146280a7cda2214cba9e61b787b775eb5585f524a30e19581000da9c8de697cf
-SHA512: a800f427c607eeb2090672edc9a5b00a185e45ba6f1e6011347719eea65ee7a69a319aeb260749e4bb28c91077862fbbb56f0758ea9c4be44d84e006af0398af
+Filename: pool/main/q/qemu-system-riscv64-headless/qemu-system-riscv64-headless_1:8.2.6_arm.deb
+Size: 2088056
+MD5sum: 0720e526f27255b5d6036ad90416d0cf
+SHA1: c2bfa302cada2ee1608c48224e938d46b0c4b6d4
+SHA256: 662c327c25fb7149ec55e5ee249eb88f8f3fd9d746e142825c28087631cec8d4
+SHA512: 81fbc40a327b27b22f9751deee14f358af4c36eb98098531a2f32c4db0ba06175249a060533859d0f2c5ffcb058dab23d0dc8221c040100d73e5e53a2996c935
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
 Package: qemu-system-x86-64-headless
-Installed-Size: 11628
+Installed-Size: 11620
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Replaces: qemu-system-x86_64-headless
 Provides: qemu-system-x86_64-headless
 Depends: dtc, glib, libbz2, libcurl, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
 Conflicts: qemu-system-x86_64-headless
-Filename: pool/main/q/qemu-system-x86-64-headless/qemu-system-x86-64-headless_1:8.2.5-2_arm.deb
-Size: 2221556
-MD5sum: d431c012244ba86520b823e072fddd05
-SHA1: 4a3821ed9be947b9ca25403ed178ddfa2b7d6f63
-SHA256: 944b9d4c3fbbb1b3005ed8c44f2070a162a3de4fc2733415c268997b6ed6bb6c
-SHA512: 83a27f40a8bed40ad1455f0d36d8fac09ab520eb0bfca262660f038391d248138fb3ea57833edd2951cca4e8e0e9c77c898876d58bc8fa9652eff79d2921a044
+Filename: pool/main/q/qemu-system-x86-64-headless/qemu-system-x86-64-headless_1:8.2.6_arm.deb
+Size: 2218448
+MD5sum: cc5dcb3abfc0f6e64d0bddf972f1c0f2
+SHA1: ea3af161385fd6950f8191a80ac47af0c27bcbac
+SHA256: 0c033ab68be72712488e4fec3bfba472a6eddd862bd736ca3e4ec5bb4fdb783d
+SHA512: 7030ae09734c7cf3502e3333c590df0b6aad5c7b7339abf31024224c9205384bb755c92a9fe5abc787ae81286f7c4f351c281e70375d2c97eeb22fdf82ca569f
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
@@ -30948,154 +31203,154 @@ Description: Static libraries for qemu-system-x86-64-headless
 Homepage: https://www.qemu.org
 
 Package: qemu-user-aarch64
-Installed-Size: 2744
+Installed-Size: 2740
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-aarch64/qemu-user-aarch64_1:8.2.5-2_arm.deb
-Size: 753140
-MD5sum: 90088afdab6eea5cb2b7a3babbc33746
-SHA1: ad120fa2fc94fc15f951fe60638cbab0db5ee1f2
-SHA256: 23198b98011f92124886deee32b5a6d983db38625966705e3350c61285da33e0
-SHA512: 8d725de534af9f123172760cb0d94e011c1b2c214cd456554cb515b31d5525737605c22a8d11e53f3cc96d7c707cdcca1d6aada718a246314bb757e422ac5001
+Filename: pool/main/q/qemu-user-aarch64/qemu-user-aarch64_1:8.2.6_arm.deb
+Size: 754044
+MD5sum: 2bc8a2a5834015e1a602237af0c11527
+SHA1: 06b6b75d92ad72595a1b9d302f2e3cbfc8c8fcaf
+SHA256: 24dd258774ebdfc8622ee91085586e404660fb3487549bd4507ac18b23d0fdf6
+SHA512: 0961f923599b2f9958aea203c0082859e0c85307604da7930cf65fcd62b50ad462dbe6a216b83a11f8750b2f5b170f20f7f261e4d2c5ec04997222a011d29dd2
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-user-arm
-Installed-Size: 1680
+Installed-Size: 1676
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-arm/qemu-user-arm_1:8.2.5-2_arm.deb
-Size: 542420
-MD5sum: e2af12ddbbb477baa9de6a9cc2787056
-SHA1: 14eeecc838ddaf4ebe9769f1f30e8f053146b7b5
-SHA256: 23055d1e25268805fe2e8312f5b959a75f955e6fea9597f280a8b01e106415be
-SHA512: 1c2077d1a079b34e55e182227c0fc3b5f952e55283a7532ed8829a5aee6a34a8ef0e59f3def917b091accbb0e32ac65ef8e4f4032abc27cf0563d65584434c37
+Filename: pool/main/q/qemu-user-arm/qemu-user-arm_1:8.2.6_arm.deb
+Size: 543360
+MD5sum: 1bb7cb684fa4ba39d09a8381158c5836
+SHA1: 45fe89a799da84f78bd9c0581f05cfe5b03c1ecf
+SHA256: c96e329e6261d03f75551ef550968d9e66ea02a94aae925bfee078f06b52edb1
+SHA512: 97b6a333ee27b9f4b552a0b7750329db5b10cbd8c95f30c4db6d418c48d34e0f88a553b0756654ab2ce589d7e930e83ad7079befa6848d35dfe17d65b6ffd87d
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-user-i386
-Installed-Size: 1364
+Installed-Size: 1356
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-i386/qemu-user-i386_1:8.2.5-2_arm.deb
-Size: 459592
-MD5sum: 248ac58a162cbc186adb7ba850e8397d
-SHA1: 51f4cebb6ec45f4111b978484b395dbd300ce661
-SHA256: 745fa12ff99860051acfeaeb70c6b7a46ebbd42a2cae88077b7d4a1695b8a319
-SHA512: 0d1d83a67f40eab9ab49d7ddd0a81a01467c6ad4b1a30517f12175337a091982a8f79da481607ca6b20eade5fee5734d62e26f957ae86ffc10957dba2df6c067
+Filename: pool/main/q/qemu-user-i386/qemu-user-i386_1:8.2.6_arm.deb
+Size: 459864
+MD5sum: 13b12ff1566e70a693bd1cf84bd4f281
+SHA1: eb3d41838d7c0b3fde06ef3972d63304cf055e9e
+SHA256: 906b5c56c6db15e29d32f41529dfb38513cf581209c14b1aed18674dbc69f182
+SHA512: a948c8b3101ab9da29ed3e372ddc2ec719d9389a538cc1cffcfb7731e6f0fcbfae693508fc0599bf9f67597e72da75110a2a10e888d0c58040f798762a4f4d2a
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-user-m68k
-Installed-Size: 1108
+Installed-Size: 1104
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-m68k/qemu-user-m68k_1:8.2.5-2_arm.deb
-Size: 407492
-MD5sum: e8abe21114ffb4e1ef2cbda475495423
-SHA1: 6f1133102e6876e4459aa5f9575060a5184be8c1
-SHA256: 59a5b72ad79421cabf0f83569dff948c944f0b4d2619bf1b6e38f1801b8f3325
-SHA512: f94334cffe0c491ac91cbc2dfe4ea6c86dfdb10a37925ba6e10d02e7540c670fad646c2d3aa94b07a46e20993a9e5de75b6f56add925b9e21c204886c816dcf0
+Filename: pool/main/q/qemu-user-m68k/qemu-user-m68k_1:8.2.6_arm.deb
+Size: 406896
+MD5sum: 2572e4ccdcb010b385a217e4d294bde1
+SHA1: 8b05eb6ce34f9463dbba6879c3a2f41d6f3cb7ef
+SHA256: 34320e27a02d8629ae620abfefdb29748f13b7f430dd4289cbd8eeb1771afda6
+SHA512: 32850b4d1f4aee236ae2a4770fa6a78e2f24ad121476011926c615087172b8b314e52f969fb0047e909d65b53c354660c79c0fd3d39bbc39c51b0345d4d72e7f
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-user-ppc
-Installed-Size: 1464
+Installed-Size: 1460
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-ppc/qemu-user-ppc_1:8.2.5-2_arm.deb
-Size: 490472
-MD5sum: c3f6a8bfdf44c3e64453a2979c649bfa
-SHA1: 35fb134e38721fd65d63f88dc2988f9a8dea0784
-SHA256: e23d46c0fff35d0d93751ffeb15e197c04f0036acd534420087013d30b305339
-SHA512: 1eaeaf992dc38f7192511747d3f0bd8bb5db5409b4316434ea858190f0693e3034795b78cb11764e82c576cfa2b8503d14856645690df1a18607a83f391a1854
+Filename: pool/main/q/qemu-user-ppc/qemu-user-ppc_1:8.2.6_arm.deb
+Size: 490864
+MD5sum: 17c3453cd76ecb9ba8d1c4b3d7563459
+SHA1: eb0ce33b825caaf3b4e6b2bdf3961399e1e97d9b
+SHA256: 4fc612afa41dc6e7cc0f997d6b6cb677b7485eb49c270a78fd0fe00a768a68f2
+SHA512: 51b36adba514ca0d29e8d8041ce8d605a1eb81b93668781222c723688f5beae68583edbeff956007bd7516ab05e4b3dde5023ca086d72f1775027c1d60a349a8
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-user-ppc64
-Installed-Size: 1528
+Installed-Size: 1524
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-ppc64/qemu-user-ppc64_1:8.2.5-2_arm.deb
-Size: 512920
-MD5sum: 24597fb3a5c27e6463d3ab06f7da2f54
-SHA1: a155a8cb6acc6e8fe26e69a307f4d530311ac7ae
-SHA256: cd7e58844d5b229834e55e9399811a043a73445a69a0f7a653f6094077c5e20b
-SHA512: 6a196bb43b1f92b450e911e15d47527672bab56514947bfddc6fdf86beccd597a134d42b4abb82d4698c59b973756b28c75a9384a013c8a15f52e37217861f04
+Filename: pool/main/q/qemu-user-ppc64/qemu-user-ppc64_1:8.2.6_arm.deb
+Size: 512572
+MD5sum: 93a71c7723cfaa87c260ddbe7aad1123
+SHA1: 7371379bbbda193e1c71028d3d9a9e5ecc2dce57
+SHA256: dc63c660efa4e11a487e9f6fd9c68993cb33d8181ce437516bedb137ef263e60
+SHA512: 8f3aadbb84ff15c70536cc0f3942f9e0180bb17c1edeb1ec52949658cd9b233b7570997ac8e8b139a92033dd78cb1e40f7e6f8bf2bb505a0bf3efb987268eb8a
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-user-riscv32
-Installed-Size: 1628
+Installed-Size: 1624
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-riscv32/qemu-user-riscv32_1:8.2.5-2_arm.deb
-Size: 459080
-MD5sum: 56f30bb557211d0b76ed20c9dace7e1a
-SHA1: 2911344704219e52e163a74739060a3c86f0d16a
-SHA256: 677fed895c33f0ba4f8ae0cf3e1ad7bd2cd0f33391ad00e692faea173ae21da7
-SHA512: fbdda52efcb3a220bf763ce050105403771c54b46bfa2a81c071724ea786594140305ab2d3822e1e47fbc2cc61b534a6b2ce2e56a1ad9b8cb22b6f9b6cb6a78b
+Filename: pool/main/q/qemu-user-riscv32/qemu-user-riscv32_1:8.2.6_arm.deb
+Size: 458900
+MD5sum: c730f59848160281a55498b4d311f3b1
+SHA1: a88ea84c7bc15181d60b47b74e4eb759b083f42b
+SHA256: 72350b1a5e31713ac38bd104002514d17155f5a1d9a965efa4e08377919e53d4
+SHA512: c99f4a2f5ef113adef9ce5cd9d8752d92789bd7b84bbdf7b3d8694b71e86fa073ed79dde8d564c3474416591ed82a8b0c091271679234750666f1c119e366020
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-user-riscv64
-Installed-Size: 1676
+Installed-Size: 1668
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-riscv64/qemu-user-riscv64_1:8.2.5-2_arm.deb
-Size: 476132
-MD5sum: 9d5080dc1ff11679e628bc9b26580658
-SHA1: 5801bce178ff05f61711329f52ac80c9afdf85a4
-SHA256: 35ffa6294b85198eba68b996183ac2bfe0ed15174c69e7994cb238b46ce5c1d8
-SHA512: 16188955df66ca164c3c7e6004a1bbcbdbed5e0ee33b0b5f802d8ea9c7dd2304a14984f5a4b0b56b9c00004ce8c900da694ac2636fc6832ea2b3b965a9ebb0c2
+Filename: pool/main/q/qemu-user-riscv64/qemu-user-riscv64_1:8.2.6_arm.deb
+Size: 476296
+MD5sum: 8ccde9fb49afd11c5d93b9b6d6c71953
+SHA1: 7c84f874ae3921300b00e40c1f830fcc4bb2dfca
+SHA256: 8b03a5139828e29d2eaaf9d6d7c56f774cbbca34cb4a9eda7b88a6f0c83f1baa
+SHA512: 373b1602b5152eeda2572f75702789a6b0de8b7001656060ea4e9cfb39f2b797bc5a273c6c673d371ceb2b70cf4eaee8e8debe1e37f5a966b3fe7c359c4c1194
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-user-x86-64
-Installed-Size: 1380
+Installed-Size: 1376
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Replaces: qemu-user-x86_64
 Depends: glib, libandroid-shmem, libgnutls, libpixman
 Breaks: qemu-user-x86_64
-Filename: pool/main/q/qemu-user-x86-64/qemu-user-x86-64_1:8.2.5-2_arm.deb
-Size: 467188
-MD5sum: 26d2eb663ba83baa80e81f161ff62bbb
-SHA1: 1d228afdc054a9a03044c94d565ab774ac339782
-SHA256: 5e7bdffb87c19d3828ec5f2ad52f679b6fd83e321c56a838811f45e059c3b890
-SHA512: 1b7ea19cff79ff9740ec2f0921bdb138868028c7c3eaef8303b2477d0642030349f8659f5f5f77e66cc714437d253ac1006178156b7c5a4cdfba95f0f9e0a10b
+Filename: pool/main/q/qemu-user-x86-64/qemu-user-x86-64_1:8.2.6_arm.deb
+Size: 466960
+MD5sum: 703e8d937e9b5d25d09ab41c2d0c7155
+SHA1: 334ff6ec70a8b66220fe797aa96bf0c849c1504f
+SHA256: b42404bcf6b2f28da530fd380eab5d97083baa79712bbfc53c198bd5205c6552
+SHA512: 689c5739acd3559747287b039c9b3f72a7dde18e9cae32c0c1928e7b2456b4dd00bc3c91d5ed14f514491a6ab4506681f36ca70281764171ee5af1a6c7a2d3fd
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
 Package: qemu-utils
-Installed-Size: 3796
+Installed-Size: 3792
 Maintainer: @termux
 Architecture: arm
-Version: 1:8.2.5-2
+Version: 1:8.2.6
 Depends: glib, libbz2, libcurl, libgmp, libgnutls, libnettle, libnfs, libpixman, libssh, zlib, zstd
-Filename: pool/main/q/qemu-utils/qemu-utils_1:8.2.5-2_arm.deb
-Size: 863024
-MD5sum: 69772318f1285e517bb30fa408e7057e
-SHA1: b2ea67111647ce7c26e03a47f1cc8d864478d412
-SHA256: fb6af6695697a9e9b2bc2f0469eebec6c01914d1b84a1437e625787c3d9c8dfb
-SHA512: 4da3de930ed7407083bf9887755365b9947eadfa615bb0e81b56df60ad3bc69cb782c8d90c5d7ca7e47aec57e62e8e64bc922883e98267e769efcee78af01555
+Filename: pool/main/q/qemu-utils/qemu-utils_1:8.2.6_arm.deb
+Size: 861780
+MD5sum: 46cbd2cfd3df88885462e9523b5fc5c6
+SHA1: 8404eb1c174c3fd166a4626af28742cad3bc183b
+SHA256: dd52613844755aa6137f056441b06e13a1056dd0efd6cfc969d47fad02880b8d
+SHA512: 7d394639165542d6b8b7444665e9ac6cda1f51fc5f610c2a2dce33e1d511ce2e8b00c64db5781e678dcc53c132f2ecd7bb9dd6eae134842f7471d02efafb3448
 Description: A set of utilities for working with the QEMU emulators
 Homepage: https://www.qemu.org
 
@@ -36839,20 +37094,6 @@ MD5sum: 0b8520f7b56c4d7b0a1cc9af1e9d4ba5
 SHA1: 2221ffcf68988882257e18422a3c30a7138b051d
 SHA256: ccf2547cef45c18101aa762c3abb427bf872fb0e5eb5baab7a7d5aa24bd8698c
 SHA512: 80b7cc0522cf7e96ab14d68bc966dfa726a31adbe4aec562871f2ad5dfcf5442d4da29b26bb49b6f656ac74d55b7963efc5f1aae7e9372a776141a3fe984b2a0
-Description: Terminal-based typing test
-Homepage: https://github.com/max-niederman/ttyper
-
-Package: ttyper
-Installed-Size: 1148
-Maintainer: @termux
-Architecture: arm
-Version: 1.5.0
-Filename: pool/main/t/ttyper/ttyper_1.5.0_arm.deb
-Size: 541264
-MD5sum: fd517a3960ca490749f3e1272de24cdf
-SHA1: 8ec413e5c540b01ca78e602a4dc0c326793825c1
-SHA256: 2670f2fc86dc17c3b7fa7894e85af1e55acf7e618dc74074ba00a0a9bbd5b091
-SHA512: 21fb470cfaccb605d03c6956c96175782a0c02258dfda693e531d630a07ae64bf2b826d9b9ab0289bce2b11e8591ce10f61e49e79c21e87f23e92809c040a3d6
 Description: Terminal-based typing test
 Homepage: https://github.com/max-niederman/ttyper
 

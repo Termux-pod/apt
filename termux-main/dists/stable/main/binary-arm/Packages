@@ -5259,17 +5259,32 @@ Essential: yes
 Installed-Size: 1000
 Maintainer: @termux
 Architecture: arm
-Version: 1.22.6
+Version: 1.22.6-1
 Replaces: dpkg-dev
 Depends: bzip2, coreutils, diffutils, gzip, less, libbz2, liblzma, libmd, tar, xz-utils, zlib, zstd
 Breaks: dpkg-dev
-Filename: pool/main/d/dpkg/dpkg_1.22.6_arm.deb
-Size: 277056
-MD5sum: 41d1f6eb979de8d3cd1d6db3be1c47af
-SHA1: 840b3f09395af948016bf61d6046e9f9164f39c9
-SHA256: fcfccaa13fef8b871eb26ea45ca86f0576299089a36722426a454d391e3df977
-SHA512: f915fae19ca5ceba0384a894525f8b1f7a1f20e891779003d7e64c1476c7107e3a79529ccab24e9276e89dea426c1d697d02d292a130cd439da10d812c8db8f8
+Filename: pool/main/d/dpkg/dpkg_1.22.6-1_arm.deb
+Size: 275384
+MD5sum: 21b51e3c1a17e17b501cc8da1b473dd7
+SHA1: 024357e4412ad07cf0cd683dd8c45bca72581195
+SHA256: 07b28fdf8713b4be36808f43d8b132f62836f27e37879804ef0a9fb3e97e6598
+SHA512: 6ef23d16beca6012537b3b5db7972ab7563f1e67d349a3d8de9d47bd1524e33d524dfef8b845539626a5fcb0d7b57bd6f5a815e9d6bf412d3dc4645eb77f8da3
 Description: Debian package management system
+Homepage: https://packages.debian.org/dpkg
+
+Package: dpkg-perl
+Installed-Size: 940
+Maintainer: @termux
+Architecture: all
+Version: 1.22.6-1
+Depends: perl, clang, make, dpkg (= 1.22.6-1)
+Filename: pool/main/d/dpkg-perl/dpkg-perl_1.22.6-1_all.deb
+Size: 126224
+MD5sum: 74f6641496476b491c3c2c09f7fc708e
+SHA1: 82346e5912e266500f866986352aca5fc26c85f2
+SHA256: 46f9f3d9c9010885ec4669a37494910a64e32a8c02838dd322e390df16957ec3
+SHA512: 90ff723924bbf6585384a16882e2ce218cf52e91134f7791e25b73ed8e27a1091117fe2ccdc43e3e3aa28cdff8959b9c8a71535e496a869bd692650a3b6529db
+Description: Perl modules for dpkg
 Homepage: https://packages.debian.org/dpkg
 
 Package: dpkg-perl
@@ -5285,6 +5300,21 @@ SHA1: 83c68fca0641fa1d7ec438d9123e41204db2feee
 SHA256: e9755f59270ca795ade759658190ba5e5a41bb84d8bf23b0e28cacaa7c5e4927
 SHA512: ab04cd13720482cb1feb7db558bdd6d53404cdb468ab28bc3b6be619673aeee334ed3f6bd7824d08ba1943110f3775b7ffcd9abf491fdffb8972ba6ccd9b136c
 Description: Perl modules for dpkg
+Homepage: https://packages.debian.org/dpkg
+
+Package: dpkg-scanpackages
+Installed-Size: 56
+Maintainer: @termux
+Architecture: all
+Version: 1.22.6-1
+Depends: dpkg-perl, dpkg (= 1.22.6-1)
+Filename: pool/main/d/dpkg-scanpackages/dpkg-scanpackages_1.22.6-1_all.deb
+Size: 6752
+MD5sum: b138a06869e1990b1eda47880391a3bb
+SHA1: b72715201dfd9f735203c8c19c4807d4fb2d2076
+SHA256: 5261eb5de0ba72b1ea456b874db26b24145a17ac489ea68d50776db71562e78f
+SHA512: 36c39a2573ee94f4c29458c162e9f8d904d1e316ce6e2b7fa858d70997f32e5df7d868db9d024d3b2c8aa335bf1fc18cdc8c691f7a6157068d958dfcb803789e
+Description: Creates Packages index files
 Homepage: https://packages.debian.org/dpkg
 
 Package: dpkg-scanpackages
@@ -8303,21 +8333,6 @@ SHA512: 35f0f78359592f9f121ebb5c4b8a27f9ec1bb1761dcdeef9d16d6078ee92c1be10ef5fdb
 Description: Render markdown on the CLI, with pizzazz!
 Homepage: https://github.com/charmbracelet/glow
 
-Package: glow
-Installed-Size: 20380
-Maintainer: @charmbracelet
-Architecture: arm
-Version: 1.5.1-1
-Recommends: git
-Filename: pool/main/g/glow/glow_1.5.1-1_arm.deb
-Size: 4679844
-MD5sum: 34f2bf4e2644673ab684476c1f9a29d2
-SHA1: 385a360de1b4e836e90c87e335ff200bfbc4a791
-SHA256: a9daf96da48e1d622777a1762915b4f07c185c45c9cbaad35ed7d294deb44ddc
-SHA512: b56e25113c1ff2aaf976ebf6ea205bf8a0c18920f1d392c7bfeb5d1335fd4f2b5fa8e2f7e528f384a98d06191e91cacec682db411e6320dc7c2577ba7932b9ad
-Description: Render markdown on the CLI, with pizzazz!
-Homepage: https://github.com/charmbracelet/glow
-
 Package: glpk
 Installed-Size: 668
 Maintainer: @termux
@@ -10014,6 +10029,21 @@ SHA256: 7fd2f23f6ec2bf5a597c623517c37227eb53d4487ef6dc74342cf2197efd0b90
 SHA512: 3bf25af96db02cda430c9e4e01e7f9e795bc949bb85a779527badc1d563c06022744582afcb455bb59b213e89cbe03875198d794d19f3f7156636e877e45ce17
 Description: view and edit files in hexadecimal or in ASCII
 Homepage: http://rigaux.org/hexedit.html
+
+Package: hexer
+Installed-Size: 200
+Maintainer: @termux
+Architecture: arm
+Version: 1.0.6-1
+Depends: ncurses
+Filename: pool/main/h/hexer/hexer_1.0.6-1_arm.deb
+Size: 66192
+MD5sum: df7c42ce6cd1160bf5f26ab23cf56730
+SHA1: 093a2938d6705633b449cd776e0c87b646fe3259
+SHA256: c37b78bff0962d56df05fc1438edd5542a71fef571fb6600333704fc65d53cc8
+SHA512: 36dfd486eb495dfd3211cb02b72614abd400e452f29fb1544590bb2210bff0ae58a74be5a8f5286b42c71db79d769a612e70774ce5f6e34acefa80cf5960baed
+Description: A multi-buffer editor for binary files for Unix-like systems that displays its buffer(s) as a hex dump
+Homepage: https://devel.ringlet.net/editors/hexer/
 
 Package: hexer
 Installed-Size: 200
@@ -17378,6 +17408,22 @@ Description: Static libraries for libmesode
 Homepage: https://github.com/boothj5/libmesode
 
 Package: libmhash
+Installed-Size: 260
+Maintainer: @termux
+Architecture: arm
+Version: 0.9.9.9-3
+Replaces: libmhash-dev
+Breaks: libmhash-dev
+Filename: pool/main/libm/libmhash/libmhash_0.9.9.9-3_arm.deb
+Size: 101644
+MD5sum: 7f58c3920984367f28dde0fb00e53987
+SHA1: c551240b9db21aff858edc0d664f4cb4d4f7d795
+SHA256: 4f2460c259582d5c8cd85eeb207969370b9e99e66f11368225896649e1ff0901
+SHA512: 74d7f936fd702b06f6cc38b2346be0020478f4c02fc6dcaa8b239ca44d380b78b4583b20d140cae920b5435dd9a52787fb3c691b036aebfc71328b42964001a7
+Description: A thread-safe hash library which provides a uniform interface to hash algorithms
+Homepage: https://mhash.sourceforge.net/
+
+Package: libmhash
 Installed-Size: 272
 Maintainer: Leonid Plyushch <leonid.plyushch@gmail.com>
 Architecture: arm
@@ -17392,6 +17438,21 @@ SHA256: 2c1d783464e893026086eb026ab54092a21680a6eb71a5bba5f322fb46d2350b
 SHA512: c3c289a680ff17f5d928c2f6bb521354db62bb4f7a33f4caa2c12742df82529a6c08b032a4085a11de69961c53d3554ad43ca5dc066f4340247d1a6d912e2127
 Description: A thread-safe hash library which provides a uniform interface to hash algorithms
 Homepage: http://mhash.sourceforge.net/
+
+Package: libmhash-static
+Installed-Size: 220
+Maintainer: @termux
+Architecture: arm
+Version: 0.9.9.9-3
+Depends: libmhash (= 0.9.9.9-3)
+Filename: pool/main/libm/libmhash-static/libmhash-static_0.9.9.9-3_arm.deb
+Size: 92792
+MD5sum: 9a12924984ff3abcd122e0df2f2ad745
+SHA1: b286d542fb390e373a583a305774a8425c9cc3c6
+SHA256: c45101d60b33a87a9a84f946f0603aa9a9f5c4c2607b3a3b2d3e268e50908c46
+SHA512: 9f13c6def8705b6a0474f023e595a4528b8201b1a48ff6b9f49fb45452df2bee84d326e36496f1715a3e37d33b859f95d9f8a1ed691918897fa8ccffa9e2937c
+Description: Static libraries for libmhash
+Homepage: https://mhash.sourceforge.net/
 
 Package: libmhash-static
 Installed-Size: 224
@@ -18209,6 +18270,21 @@ Essential: yes
 Installed-Size: 268
 Maintainer: @termux
 Architecture: arm
+Version: 1.5.0
+Filename: pool/main/libn/libnghttp3/libnghttp3_1.5.0_arm.deb
+Size: 60424
+MD5sum: deaae4a573ee9199d7a39e01214842dc
+SHA1: 4a65b71696586f353de04056f6847e20e4efb412
+SHA256: 3aacf717d0d309f2eefca60a8b3ea5298584ce3a03321f7d1841f4be97178e4a
+SHA512: e99226f5b9a35b6f81a749ea96285c06679cb717e61a1d76b39b5c3855125649057f09273bce429e220a41f3ff50fd50d7e6302a3de882d3d1caa5fbd49c58ca
+Description: HTTP/3 library written in C
+Homepage: https://nghttp2.org/nghttp3/
+
+Package: libnghttp3
+Essential: yes
+Installed-Size: 268
+Maintainer: @termux
+Architecture: arm
 Version: 1.4.0
 Filename: pool/main/libn/libnghttp3/libnghttp3_1.4.0_arm.deb
 Size: 61088
@@ -18217,6 +18293,21 @@ SHA1: fa20fec9912a363a37520191243829d45c66dbf4
 SHA256: c1bd6ffc0976b4c0ee4b55441c3f389fdf41ed609a7a7babba53622bf2c833be
 SHA512: fe9f08cee396c2c1c8855827f2e55472e3584a3b9a10f4123b271d8ab70d90b3458262958db9d955ae32706f0174a3e4ff613dfbb6ccb2bfb486ca6097fe7a2c
 Description: HTTP/3 library written in C
+Homepage: https://nghttp2.org/nghttp3/
+
+Package: libnghttp3-static
+Installed-Size: 232
+Maintainer: @termux
+Architecture: arm
+Version: 1.5.0
+Depends: libnghttp3 (= 1.5.0)
+Filename: pool/main/libn/libnghttp3-static/libnghttp3-static_1.5.0_arm.deb
+Size: 58628
+MD5sum: cf1a88cf1f838f2d6bfe6aa4da462d83
+SHA1: 302e2efa4581f5a74e277c983e6f7e9e0055da3e
+SHA256: 9e77262ac6de9d3a310c6887cc87272deb35a0a9bd9838b4d6b4805984b792b7
+SHA512: a4954090946767e0251f472e8db923a0e3ec2ad645f760223aee9731f0e95a03637cd90200f56eda9ef00be472e3e05463a5af2cfc3583f83dba8f06cdb3b188
+Description: Static libraries for libnghttp3
 Homepage: https://nghttp2.org/nghttp3/
 
 Package: libnghttp3-static
@@ -27948,6 +28039,21 @@ Description: Python bindings for OpenCV
 Homepage: https://opencv.org/
 
 Package: openethereum
+Installed-Size: 17360
+Maintainer: @termux
+Architecture: arm
+Version: 3.3.5-2
+Depends: libc++
+Filename: pool/main/o/openethereum/openethereum_3.3.5-2_arm.deb
+Size: 6577888
+MD5sum: bedac5db131025a9ab8441c5fbbd502d
+SHA1: a8dfca6d65642bab7c5ca54f3a19cb036d3e61d0
+SHA256: 0c46498b1efecc72d681c6affd0620d362f53c86ce70002bdfc6ac050ac45cca
+SHA512: 5c7f76d70599a386a5f775a2b4f08ef4c66abc685258abd7776efcb9c90148259c8f308179f27f000887d398741a1ebff59757586dbb0bd8c460118d836b777f
+Description: Lightweight Ethereum Client
+Homepage: https://openethereum.github.io
+
+Package: openethereum
 Installed-Size: 17640
 Maintainer: @termux
 Architecture: arm
@@ -27960,6 +28066,22 @@ SHA1: 1aa03eb56c8876370d5ae5b8d2f65e77ba394148
 SHA256: 020b984e16d6e0548f7775a2afc54de9e0688863b2ea7738dd62f3354b27803d
 SHA512: 4942df72a9b443e4feaec7373adc448f1bd36c86205494ca482fd84ce925a97e4a538d99e8747970d5c6d87278a968929ff65f94a95fac9c16bb61fe81c2f2b6
 Description: Lightweight Ethereum Client
+Homepage: https://openethereum.github.io
+
+Package: openethereum-utils
+Installed-Size: 7584
+Maintainer: @termux
+Architecture: arm
+Version: 3.3.5-2
+Depends: openethereum (= 3.3.5-2)
+Conflicts: geth-utils
+Filename: pool/main/o/openethereum-utils/openethereum-utils_3.3.5-2_arm.deb
+Size: 2474516
+MD5sum: 55b038330d02e9d5bb00b07879b2dd7d
+SHA1: 0001728e629bdd1c6c94df860f951505e406f58b
+SHA256: 5211dc20bb73c60bcefc3d32133829de2322daab0038b117b6c1566182318786
+SHA512: 170c58c0de10291c6fe3cc205454d82a34f6babca4c4a51d8b98df85e4b3b423937999a940e024dc220a448a84aa8b60b500174e1b8966bb59282d3e2589fc97
+Description: Additional utilities for OpenEthereum (like evm, ethstore, ethkey)
 Homepage: https://openethereum.github.io
 
 Package: openethereum-utils
@@ -29068,6 +29190,21 @@ Description: Command line utility to search text in PDF files
 Homepage: https://pdfgrep.org/
 
 Package: pdftk
+Installed-Size: 1044
+Maintainer: @termux
+Architecture: all
+Version: 3.3.3-2
+Depends: libbcprov-java, libcommons-lang3-java, openjdk-17
+Filename: pool/main/p/pdftk/pdftk_3.3.3-2_all.deb
+Size: 968188
+MD5sum: 3efc65bd04180bc8f6282bdad9ea2cd4
+SHA1: 46fe8a39e8806be139e88b25cc3049617f0ed078
+SHA256: 47e54de0da261ae69af793749fbdb5ac578360b4b9fdafb76cae76d1d02e02bc
+SHA512: e09cf9ba9f8b2a217b926f6d4c907c5a1fdbd4a44f3d584fac8b8f06bb8f3ec3f81521a3d5bd3abd6d1c541d5db3ad0481d1a9e4f994a67177668c962a377fa3
+Description: A simple tool for doing everyday things with PDF documents
+Homepage: https://gitlab.com/pdftk-java/pdftk
+
+Package: pdftk
 Installed-Size: 1036
 Maintainer: @termux
 Architecture: all
@@ -29322,6 +29459,21 @@ SHA256: 45f85e2ba3cd059c6629170f18f4df83580157075409d07c34164e65667a401f
 SHA512: a3df5340347f75ae8bf6931eb489a0bef2dd5ba2c70541a6aa1903858ad1ae7ca520ce7dd54df4bdcba5dfee2c0a52c7ca9c37e414480348e11da8978870bba7
 Description: gd module for PHP
 Homepage: https://php.net
+
+Package: php-imagick
+Installed-Size: 332
+Maintainer: ian4hu <hu2008yinxiang@163.com>
+Architecture: arm
+Version: 3.7.0-5
+Depends: php, imagemagick
+Filename: pool/main/p/php-imagick/php-imagick_3.7.0-5_arm.deb
+Size: 73736
+MD5sum: ce1cec37a0facd20ba468ffa4c245b3a
+SHA1: 6c382a876c06e262660811faa712ce5b89701cbd
+SHA256: 119512c01bc4bf338faf27a99eb7eb04e1eb4c5543aba61baabe1ef137572bfe
+SHA512: e25fa89b4f61754b61537a603873f0b3c716d2b8bd5917beeabcbb0a2d368b176556d50679aa51f4ef1b774e361a6082fbe4732af51fa7cc080b7b2d8361bef0
+Description: The Imagick PHP extension
+Homepage: https://github.com/Imagick/imagick
 
 Package: php-imagick
 Installed-Size: 332
@@ -29785,6 +29937,21 @@ Description: A small and fast caching web proxy
 Homepage: http://www.pps.jussieu.fr/~jch/software/polipo/
 
 Package: polyml
+Installed-Size: 9196
+Maintainer: @termux
+Architecture: arm
+Version: 5.9.1-1
+Depends: libandroid-posix-semaphore, libc++, libffi, libgmp
+Filename: pool/main/p/polyml/polyml_5.9.1-1_arm.deb
+Size: 1599992
+MD5sum: 46bed05f72b980ce3405d9d3997c57c5
+SHA1: a84e8a37adfd7d7bf29aebf7a4214ea6c528f221
+SHA256: 6e85b94cf2deb48f4897e56007dd97762123132dd555a501f121f6bc169f7412
+SHA512: 02c5b2f867d1215ae1d116ecf68e9d9ab2f343d21370e6063bb379e3485c8d2d948e68468cc2da56dff3c6f772818a419a6281095333c23d634191b5ce788d37
+Description: A Standard ML implementation
+Homepage: https://www.polyml.org/
+
+Package: polyml
 Installed-Size: 9200
 Maintainer: @termux
 Architecture: arm
@@ -29797,6 +29964,21 @@ SHA1: 6e39d076e99a5677ecfeffdf895b0b19d1ccc86b
 SHA256: 624e3f66ad23ca899014f5b963c7a952cf5dfd785a495331fb16b0b761c6e2d5
 SHA512: d6cceb7386dcf801a92aa9368085db48b7d49c72f54aa7bf321e3ffc730e7434869745b5b6d86c578e1fd361aca5915804fb66bee4383fa98ca346898a5a1db4
 Description: A Standard ML implementation
+Homepage: https://www.polyml.org/
+
+Package: polyml-static
+Installed-Size: 936
+Maintainer: @termux
+Architecture: arm
+Version: 5.9.1-1
+Depends: polyml (= 5.9.1-1)
+Filename: pool/main/p/polyml-static/polyml-static_5.9.1-1_arm.deb
+Size: 216292
+MD5sum: ca87394ae498354b36c03cba9305c0fa
+SHA1: 99119bc7aa65733076a4d35833187d6754b7c976
+SHA256: c61ba65a1a98d5156b221c1488a421cf7aadf8f22df4963421ee5ee6cdabc641
+SHA512: a888ee37557fbd88936c40140714f1e3fc6d5ec12e310da9709cfe71b0dfbf94f93859016180f02f894874c7c0fe2249db15def42e1a2f9bfe59f97590332049
+Description: Static libraries for polyml
 Homepage: https://www.polyml.org/
 
 Package: polyml-static
@@ -31909,6 +32091,21 @@ Description: An AV1 encoder program focused on speed and safety
 Homepage: https://github.com/xiph/rav1e/
 
 Package: ravencoin
+Installed-Size: 10088
+Maintainer: @termux
+Architecture: arm
+Version: 4.6.1-5
+Depends: boost, libc++, libevent, libzmq, miniupnpc, openssl
+Filename: pool/main/r/ravencoin/ravencoin_4.6.1-5_arm.deb
+Size: 3304060
+MD5sum: 0110efac6864da04e777ac99771f59a9
+SHA1: 2e0f4729b8a899a9a4c2ba02885ecae608f083fa
+SHA256: b2ccbf764f0b92d0a171c1e6dc11944778fab1c473c4be109233cfa842978a72
+SHA512: b689ed544244f4a3b6801bb25902d744d5a781e0147dc551ac3db806b4bece3867de13ee6d68f48f670f82e0b5d19ea1dd93e8a16e980c17fbaf8d4bc367b06e
+Description: A peer-to-peer blockchain, handling the efficient creation and transfer of assets from one party to another
+Homepage: https://ravencoin.org/
+
+Package: ravencoin
 Installed-Size: 10056
 Maintainer: @termux
 Architecture: arm
@@ -31921,6 +32118,21 @@ SHA1: 6d413a7567d13b7605a695a7b13263461b78cc05
 SHA256: 117db628b84e0c4db62263156502960aa32a9a392ec7847e1773de60915f403f
 SHA512: 31059a2a8eb08be8d8ef7dce90d418b6befa281459964ff4f7df64d74207bcfff6cca7b62c6747cb7699c875f10e152ccdc176f6b6227bfd8e4692dbbd3cb5cb
 Description: A peer-to-peer blockchain, handling the efficient creation and transfer of assets from one party to another
+Homepage: https://ravencoin.org/
+
+Package: ravencoin-static
+Installed-Size: 1860
+Maintainer: @termux
+Architecture: arm
+Version: 4.6.1-5
+Depends: ravencoin (= 4.6.1-5)
+Filename: pool/main/r/ravencoin-static/ravencoin-static_4.6.1-5_arm.deb
+Size: 545816
+MD5sum: 1cd7c59b22913047659e61b0e8e59db7
+SHA1: 268d06d1e1c4164dbee2fb6806f915c7ff100dff
+SHA256: 389292999fa58b518130d8391f872d8e595fd58e0b0ae955e117aabcf75ee6ac
+SHA512: 8dbc65f8c806b576707308cfa28512dd442db57379ea72c6fe113e0460c2613f2612bb6e32c99294ea91b2434e4576ecba579f25423b718aa5fd9757717b13df
+Description: Static libraries for ravencoin
 Homepage: https://ravencoin.org/
 
 Package: ravencoin-static
@@ -35047,6 +35259,21 @@ SHA256: 9940d2b8e281ce9fff533494776d39505f3797cf805579a5f8756650e896281a
 SHA512: c921b516acd79566cd408288c7b7d5d0f024cbbc21a8b0dd16b8f04b8cb7e5910d9f281597cba8eb6c06931d70b0bf60de2e60b1815f3891a16152f8c01f4471
 Description: Patch the isatty() calls for colored output in pipeline
 Homepage: https://github.com/lilydjwg/stdoutisatty
+
+Package: steghide
+Installed-Size: 384
+Maintainer: @termux
+Architecture: arm
+Version: 0.5.1-7
+Depends: libc++, libjpeg-turbo, libmcrypt, libmhash, zlib
+Filename: pool/main/s/steghide/steghide_0.5.1-7_arm.deb
+Size: 110244
+MD5sum: ab3a5682f3a3c21bea22487804a0812b
+SHA1: b63b79d10830bc5e6bf77a14711eafd1ca48c8ca
+SHA256: 7ebab8a7209e185292df737b01040f95abade59bea3e72dc51f0c5fbc6f19343
+SHA512: 8ab621e2af2727cfb3dde3998eacd3740e612d591ede0f5bc087c4492eeb0072e74d4b84c0aeae17f18c705c94488a9a268ca5565640d0d7ddd0403fe86e9d84
+Description: Embeds a message in a file by replacing some of the least significant bits
+Homepage: https://steghide.sourceforge.net/
 
 Package: steghide
 Installed-Size: 380
@@ -39347,6 +39574,21 @@ SHA256: c0f861a270bfa92dee940eca157389ff13918a7734bcaa3b5db56c62035e700c
 SHA512: f224a18a99dd585d4814b16b3d8705ed493d9b43b00dcc6bd30bd31b5c6bc01333cd6d96ac7d3b6945fa3a12e04b7b4806c3ea9c8189734cd767813321f96eec
 Description: WeeChat Ruby Plugin
 Homepage: https://weechat.org/
+
+Package: weggli
+Installed-Size: 3404
+Maintainer: @termux
+Architecture: arm
+Version: 0.2.4-1
+Depends: libc++
+Filename: pool/main/w/weggli/weggli_0.2.4-1_arm.deb
+Size: 668872
+MD5sum: 9cd6108572cf6fd68f7954847a661524
+SHA1: ecabaf3a0f3e939c463602dd49d06527be12ca99
+SHA256: 351e67538222df95bd66edee184d93643512a487b901eb65a41406fe249c2722
+SHA512: 38b6523d77e71de11486ee910ecd395e6a1b4fa2c48be7c460fbd372a73a4d5fed64a2e12b36161eac4b157ab2bfaf21a00a11f3cd0e7f3aa9fffbe09edc5568
+Description: A fast and robust semantic search tool for C and C++ codebases
+Homepage: https://github.com/googleprojectzero/weggli
 
 Package: weggli
 Installed-Size: 3412

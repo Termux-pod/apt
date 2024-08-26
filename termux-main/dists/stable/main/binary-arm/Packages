@@ -1872,33 +1872,47 @@ Package: binutils
 Installed-Size: 36
 Maintainer: @termux
 Architecture: arm
-Version: 2.42
+Version: 2.43
 Depends: binutils-bin
 Conflicts: binutils-is-llvm
-Filename: pool/main/b/binutils/binutils_2.42_arm.deb
-Size: 1172
-MD5sum: 03441f4c4177ecbc1d7bf83fa6fe123f
-SHA1: e1afb2d9f03528469c67bbabcf4c2778299d53bd
-SHA256: 1f4c45fb04ca37db1a094a64eb031383c6a2e16172d82bf8d8cf7e29ba07313c
-SHA512: 3102dcfd029ecb7b6a11c81e69679f2d4dc2a070d5164e0363d546d5465565da8342812a5084a0eba24a16e93c597d60e5a3722b7205ed5772a21b347117ff04
+Filename: pool/main/b/binutils/binutils_2.43_arm.deb
+Size: 1116
+MD5sum: 3ffad6808dbcd2a69b40ff444aa953ce
+SHA1: b52b8e1fd886ec0fd8caa6b839175f8eb73d6ece
+SHA256: 6d53dd7702bbfecd23d1eaa9c200541f5aa56dadb8cc001bcc9de7975b5d242a
+SHA512: 7a4f591db31e3cb36ca9a830646873f5b17954d894483e90dab42970d1a9ec369a6a61d81c187d826b1336d69a164432ef1e984b6be59c16a77ec071d74b0b6f
 Description: GNU Binutils (metapackage)
 Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-bin
-Installed-Size: 6296
+Installed-Size: 6428
 Maintainer: @termux
 Architecture: arm
-Version: 2.42
+Version: 2.43
 Replaces: binutils (<< 2.39-3)
-Depends: libc++, binutils-libs (= 2.42)
+Depends: libc++, binutils-libs (= 2.43)
 Breaks: binutils (<< 2.39-3)
-Filename: pool/main/b/binutils-bin/binutils-bin_2.42_arm.deb
-Size: 1712876
-MD5sum: 40958748c6c6e6551bfe556690ab1b3a
-SHA1: 9ba222c93d7b09856b8efce540a363124acb8f35
-SHA256: 5145a51e1462ee827d67fb291b14885a0a2be9985a9005157d554a452e496aa3
-SHA512: b427bf8fca36d190d59aa5ff1673c08d6cc96464d005ade381939f355f93f3db027e624967b7bdd2b51f0acf4c6cc02463f1bfddd169c3e906d8a76b2e36a83a
+Filename: pool/main/b/binutils-bin/binutils-bin_2.43_arm.deb
+Size: 1722404
+MD5sum: fd488fce56f3eccf078f2d952986bf24
+SHA1: 426f272a7e6b4155eb83824df164bb3dbe2a56be
+SHA256: 7d1ed610be7670b5d763ae184919186bee1670e625178b98263418637ed268a0
+SHA512: 81ec9d15ef342228d15bd3c84f87f1c6d179830a8daa5bdc47bb2ca5a9b7d4a3bf2f483824dd54fd461491cf7a963e7d25fc1a634f92628f72bc917ac4d0f9ff
 Description: Collection of binary tools, the main ones being ld, the GNU linker, and as, the GNU assembler
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-cross
+Installed-Size: 10852
+Maintainer: @termux
+Architecture: arm
+Version: 2.43
+Filename: pool/main/b/binutils-cross/binutils-cross_2.43_arm.deb
+Size: 2046040
+MD5sum: c1b419b7fdcee33d31d18cf6e67dbdb5
+SHA1: 3de4c66aaa5810df9177afe00b5eba780b28500f
+SHA256: b6c26524d99d27e84475630d7abac3b73180a6f08e667ff17116f1998925e663
+SHA512: d28243281f6bb0fa65a00d0cf8bbd15f36af12157b44ca0bb8bdf825fb0873e47ddebc81c8f5f4e5656f53f8badc8c15888fba7359b433ab0f43731feaedf013
+Description: GNU Binutils for cross build on the host (NOT for Termux)
 Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-cross
@@ -1913,6 +1927,21 @@ SHA1: 93ca0ccfb588df89c504418cc6eb174ff31b6771
 SHA256: 23f158063076cec4f48f7e96f1df8ee87f59f85349b4f66d70b97d82baeab066
 SHA512: 2dfa250ea3d27a7a8eb9af43ad4b1f0a50bfc9e123ea450bd2842eda039de55aa8c03c6bbaac30e65cd365a01f2eced23535af97ac1e23b8310b9798f40dc5e5
 Description: GNU Binutils for cross build on the host (NOT for Termux)
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-gold
+Installed-Size: 2468
+Maintainer: @termux
+Architecture: arm
+Version: 2.43
+Depends: libc++, zlib, zstd
+Filename: pool/main/b/binutils-gold/binutils-gold_2.43_arm.deb
+Size: 808952
+MD5sum: b3e8b2451ac167655f2aa77a1e1dbae0
+SHA1: a783ad91fe131508140e95b1386bc0de7bd81632
+SHA256: 0e310e73e16fe888f40c28a6f38ee0f896db03b33ee57a26c648c38b87610a65
+SHA512: 6f23d24f717ff0683d22c6c855d874a869e7383c90869cb8c9bbf950f6361cb6c4d1127133743ccad568afb485b3a44a2665f1e4657a9576bff3bd955b31340f
+Description: gold linker
 Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-gold
@@ -1945,6 +1974,23 @@ SHA256: f41a8d7423bdecec67f3316fd80aa3cf2a2b573b51bc16e5adbfe1a4ef40d506
 SHA512: a72ea7b2b37f81411041294bd40f2d16fa385f73757d603b4fb21101252a4e73e13868b4be9700ce690c8dc36be08188350226f26ac051696a51b2ed1ffa9536
 Description: Use llvm as binutils
 Homepage: https://github.com/trentbuck/binutils-is-llvm
+
+Package: binutils-libs
+Installed-Size: 4516
+Maintainer: @termux
+Architecture: arm
+Version: 2.43
+Replaces: binutils (<< 2.39), binutils-dev
+Depends: zlib, zstd
+Breaks: binutils (<< 2.39), binutils-dev
+Filename: pool/main/b/binutils-libs/binutils-libs_2.43_arm.deb
+Size: 761948
+MD5sum: 1b362c5db1b15f5cdf0c7f06524e636d
+SHA1: bfc713920fa6a7813750b058f431102c60108a68
+SHA256: b6ba6844ca1a4abd0e96fcca8c9058c2f1b43457069778f6abd032b611a36e1c
+SHA512: f8f9c859f55aefc19c54c0f83c9457abc8f4673702510795b43c25f55a97f8754c15b14004d2f799f5c618c72efa14b2d8dd7604605b55186a059dfd87a6f9d6
+Description: GNU Binutils libraries
+Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-libs
 Installed-Size: 4264
@@ -3551,6 +3597,22 @@ SHA256: 9938b834a3e38e7ad12ca9535adafb9a9a1dc88cd63df33715be9d119e58f951
 SHA512: 9c7997ff4471ea83629562ee2d35aa5c33529634556ae271cfd4998dea9025d0970262923817af662aa3d7d00d4373514854e83e325c6e1ebd099abb6467fadf
 Description: A tool which profiles OpenCL devices to find their peak capacities
 Homepage: https://github.com/krrishnarraj/clpeak
+
+Package: clvk
+Installed-Size: 54200
+Maintainer: @termux
+Architecture: arm
+Version: 0.0.20240813.131531
+Depends: libc++, vulkan-loader
+Recommends: ocl-icd
+Filename: pool/main/c/clvk/clvk_0.0.20240813.131531_arm.deb
+Size: 18156380
+MD5sum: 064d72b52f8349573336322dcc7f8159
+SHA1: 557c2ea004245fd67d790821182e3b4368badc95
+SHA256: 79311808dc26562ede6cfe6cea9b50b70f9a415b42679c3968bc6d0f2fb252d4
+SHA512: d544dcdfe5f7d416b8d6fae96fbf9fc0dc7af92b25b1ac25c87ec2f95be1491ccc5935425326ba617d533751df233de5b382948f1e301361c5b30167c0ae8688
+Description: Experimental implementation of OpenCL on Vulkan
+Homepage: https://github.com/kpet/clvk
 
 Package: clvk
 Installed-Size: 54200
@@ -6188,6 +6250,21 @@ SHA256: e379e7d238219c1e0d9c444979a0027f100b0327a1a33a51dcd6656a73dd22a6
 SHA512: de36676b20fc3b3b9043fbdb0aacb8431c4bfb04b4671299cb19eb782400dce13d6a9ea6152de3b166e55e81857eb6f8487e41d120ea355ca3baf2155f650391
 Description: To fastly access files and folders
 Homepage: https://github.com/whjvenyl/fasd
+
+Package: fastfetch
+Installed-Size: 2296
+Maintainer: @termux
+Architecture: arm
+Version: 2.22.0
+Depends: vulkan-loader
+Filename: pool/main/f/fastfetch/fastfetch_2.22.0_arm.deb
+Size: 438492
+MD5sum: 8595575eac9c139d9f144a8c13cf5212
+SHA1: 8c8b4a417934aa3c959a7bb271e44dd20cb10d43
+SHA256: 283849f28f085e5cda6ec4e50881bda07bf4b359103b2811219703366d5ae592
+SHA512: 810fd46e19784ea33c33b11a1737566dbd15759f94e432c91cf48378199297d5cd2b0e2ff80593e7b1890bc877db79ad2f3f6595fd7e38d11cfad0f09a652cf6
+Description: A neofetch-like tool for fetching system information and displaying them in a pretty way
+Homepage: https://github.com/fastfetch-cli/fastfetch
 
 Package: fastfetch
 Installed-Size: 2276
@@ -9623,20 +9700,6 @@ SHA512: 336ef2dc3a8838fbf0485ae1581f6397c492ae6e8ed4165b50cea9fe2b9f25f3c3d70b46
 Description: A tool for creating minimal interactive TUIs for shell scripts
 Homepage: https://github.com/charmbracelet/gum
 
-Package: gum
-Installed-Size: 20612
-Maintainer: @termux
-Architecture: arm
-Version: 0.14.3
-Filename: pool/main/g/gum/gum_0.14.3_arm.deb
-Size: 3069768
-MD5sum: 931140cb8958d5e89bde6535c52256a3
-SHA1: f93716f4313b18198d493f4ddd8230d53966726f
-SHA256: e6dab4ee3838396389a382756bd0c9ff82e887cc3b884df321e51bd42601b071
-SHA512: 0a21867cc3c366688acdacb97344588a78d57c2fd59de4337600624c6670c96bfdd57204ec5881ec6bbcc527bbaae4420599ac7fe35206575fd8976ca39cf247
-Description: A tool for creating minimal interactive TUIs for shell scripts
-Homepage: https://github.com/charmbracelet/gum
-
 Package: gumbo-parser
 Installed-Size: 368
 Maintainer: Fredrik Fornwall @fornwall
@@ -9889,20 +9952,6 @@ MD5sum: 9694816d702be57fe6486ecf4901063b
 SHA1: cb0a6f86bb46e401873d0ec0b05dbff379813095
 SHA256: 8225cf6a961db8e9cbfda4da4c4ea1002ff17fe795df61b65138721299d78cde
 SHA512: b17da5ba0f8c740dd75471e5da13971d0450e2fc27314c602b779ba40ac8c7957b6583058d615790484b0ce2ccae35d259e4f12e925a1118a35b60002eea9a80
-Description: Language server for Helm
-Homepage: https://github.com/mrjosh/helm-ls
-
-Package: helm-ls
-Installed-Size: 55032
-Maintainer: @termux
-Architecture: arm
-Version: 0.0.21
-Filename: pool/main/h/helm-ls/helm-ls_0.0.21_arm.deb
-Size: 11874784
-MD5sum: 047c8b9c987d39c1619c1a1b64433311
-SHA1: fd51b4eb64ec8030d762afeb98ad3bb50b74d416
-SHA256: 84a08342c964a2e465e86261d974544b421d2ad6fd02b02c3e5e7309c2b6f4bc
-SHA512: 93249138f31d03dfe30214f85449a061ac848641546b22dbcff3f1158d33cc732fb215adb992750fce1a64eadfd32253ae819012e9afe4ed64b20bdf4e17f4ed
 Description: Language server for Helm
 Homepage: https://github.com/mrjosh/helm-ls
 
@@ -10623,6 +10672,23 @@ Description: A command line id3v2 tag editor
 Homepage: http://id3v2.sourceforge.net/
 
 Package: imagemagick
+Installed-Size: 18968
+Maintainer: @termux
+Architecture: arm
+Version: 7.1.1.37
+Replaces: imagemagick-dev, imagemagick-x
+Depends: fftw, fontconfig, freetype, gdk-pixbuf, glib, harfbuzz, imath, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblzma, libpng, librsvg, libtiff, libwebp, libx11, libxext, libxml2, littlecms, openexr, openjpeg, pango, zlib
+Breaks: imagemagick-dev, imagemagick-x
+Filename: pool/main/i/imagemagick/imagemagick_7.1.1.37_arm.deb
+Size: 7890388
+MD5sum: 934e71e1e534499ed9767c0e416c0caf
+SHA1: 82bf9842439e13157ac7fcd45367443cdc86da47
+SHA256: ea3ea7343611a0c278256c7204ba0d92030b66a58af48ece787e61a3ddb69cd4
+SHA512: ab6d9d55d518d21f3e74bf061819a90874e0b2bb2529e8c9b1730d7f6a2f0df44425372e8dd1e76c4e657575e4ab51057ee5b02da045a59d36478f15a6549ffc
+Description: Suite to create, edit, compose, or convert images in a variety of formats
+Homepage: https://www.imagemagick.org/
+
+Package: imagemagick
 Installed-Size: 18972
 Maintainer: @termux
 Architecture: arm
@@ -10637,6 +10703,21 @@ SHA1: caab9349947364c50a6ebd9331a6d71547eea708
 SHA256: ddf355c3adc97d2894a5bc24de99b826d90ca72b2b0e3107c04201107ba9e539
 SHA512: 2ea7b04a37b91d9b6fd7e7bf9307f0c24d91748d9fd0b8024567ea9d86b59318834c7fd417048de3be6df1c7601e2734c22eb174d9592ff2f85242add8a0ffeb
 Description: Suite to create, edit, compose, or convert images in a variety of formats
+Homepage: https://www.imagemagick.org/
+
+Package: imagemagick-static
+Installed-Size: 8032
+Maintainer: @termux
+Architecture: arm
+Version: 7.1.1.37
+Depends: imagemagick (= 7.1.1.37)
+Filename: pool/main/i/imagemagick-static/imagemagick-static_7.1.1.37_arm.deb
+Size: 1959912
+MD5sum: b3f90a29ce2c403a8ea8401c0ca631f3
+SHA1: b51edae789014ed87aa6db557ad6fa8fbe6b03bc
+SHA256: f71b269bae464e0343310e12dc6f1eb2d470ad08b35edb725f38296b0f3c2880
+SHA512: 0c4339becee7a930ba887f4b22e5fce2456bb9bee3ded2dae821a9386f348b552195f2772a34a96725e3451e08e4387e05bce7a73d4ad8a86253361a725d4354
+Description: Static libraries for imagemagick
 Homepage: https://www.imagemagick.org/
 
 Package: imagemagick-static
@@ -11996,6 +12077,21 @@ SHA256: 556dd6797c5fab520182e12acdd953d97fb42ff03fec39fe3375827e814c94ed
 SHA512: 42ec3a6dfe5ad707ee6a1870f5009bc482788a1bb30791c6c7f0ecca41cc333d934261f78342b73fa31fbb29826ee59ad84053837dd6a468ee715ec1e0f4e1f0
 Description: A multi-platform program which generates PostScript lunar calendars in a yearly format
 Homepage: https://pcal.sourceforge.net/
+
+Package: ldc
+Installed-Size: 111920
+Maintainer: @termux
+Architecture: arm
+Version: 1.30.0-1
+Depends: binutils-bin, binutils-is-llvm | binutils, clang, libc++, libcurl, zlib
+Filename: pool/main/l/ldc/ldc_1.30.0-1_arm.deb
+Size: 23995468
+MD5sum: d6ad63b1821c92ff35ece8a27d57942f
+SHA1: 4d074436bd8f26617851a90cdcc0e3d216d71099
+SHA256: a9763a1fd11675dec44b6e8a791b964257344906fce838ddedeedb7d6cefdd88
+SHA512: 19302270ff51606268dd2f906a6c41474fb5f7ceefb144ec6e03ddbe4bc16454ef7caa9bb3d3c103e3d9d63bd4177190b6e5e8b2e5884559aa921c8ba102d4b1
+Description: D programming language compiler, built with LLVM
+Homepage: https://github.com/ldc-developers/ldc
 
 Package: ldc
 Installed-Size: 111792
@@ -33243,6 +33339,21 @@ Description: Systems programming language focused on safety, speed and concurren
 Homepage: https://www.rust-lang.org/
 
 Package: rust-analyzer
+Installed-Size: 21616
+Maintainer: @termux
+Architecture: arm
+Version: 20240826
+Depends: rust-src
+Filename: pool/main/r/rust-analyzer/rust-analyzer_20240826_arm.deb
+Size: 6511896
+MD5sum: 73341df628dd91e8a64da431e4065a8f
+SHA1: f0a8636b05e04b0be562c566f918646c503c6daf
+SHA256: a25227f4dc0e250942751943e89140161fdd64bf2874d4182efc76f372aa6685
+SHA512: 6b2adf6157afba26416bf1ca2f13ce9a18af91d8014b25c5732a0a912a50f2a97b4d81bb6dff411ecb5babcaa69032a7dc8a21ebc0168582411d488bfd4a387f
+Description: A Rust compiler front-end for IDEs
+Homepage: https://github.com/rust-lang/rust-analyzer
+
+Package: rust-analyzer
 Installed-Size: 21484
 Maintainer: @termux
 Architecture: arm
@@ -36641,6 +36752,26 @@ Essential: yes
 Installed-Size: 532
 Maintainer: @termux
 Architecture: all
+Version: 1.43.4
+Depends: bzip2, coreutils, curl, dash, diffutils, findutils, gawk, grep, gzip, less, procps, psmisc, sed, tar, termux-am (>= 0.8.0), termux-am-socket (>= 1.5.0), termux-exec, util-linux, xz-utils, dialog
+Recommends: ed, dos2unix, inetutils, net-tools, patch, unzip
+Suggests: termux-api
+Conflicts: procps (<< 3.3.15-2)
+Breaks: termux-keyring (<< 1.9)
+Filename: pool/main/t/termux-tools/termux-tools_1.43.4_all.deb
+Size: 32820
+MD5sum: a6d06a6817afa9b8d92bc8037fc7e751
+SHA1: 305fef440ac8d95ff21699ba6e251727748af237
+SHA256: de47698f1e4023d1dbb90fdb271f5205fe3b1012682a4350f251e658f3c5d71b
+SHA512: 00b633b7f2bb381b67135e7983ad2ae679b1d772b0e4480b415a6795d4c195d72bc4eed658adbeb30becf3e9f211085cdb121d8115c2af42faaca96a0b5a6897
+Description: Basic system tools for Termux
+Homepage: https://termux.dev/
+
+Package: termux-tools
+Essential: yes
+Installed-Size: 532
+Maintainer: @termux
+Architecture: all
 Version: 1.43.3
 Depends: bzip2, coreutils, curl, dash, diffutils, findutils, gawk, grep, gzip, less, procps, psmisc, sed, tar, termux-am (>= 0.8.0), termux-am-socket (>= 1.5.0), termux-exec, util-linux, xz-utils, dialog
 Recommends: ed, dos2unix, inetutils, net-tools, patch, unzip
@@ -38926,6 +39057,34 @@ Description: A collection of tools for the VGM file format
 Homepage: https://github.com/vgmrips/vgmtools
 
 Package: viddy
+Installed-Size: 5468
+Maintainer: @termux
+Architecture: arm
+Version: 1.0.1
+Filename: pool/main/v/viddy/viddy_1.0.1_arm.deb
+Size: 2095640
+MD5sum: 87d2d81f5ff861cb2d39f06e62789f00
+SHA1: ef897e68e68c090c97c19f9b367fe8af8017f9b0
+SHA256: 3af0a0a5ca982fab35b469fff2fbca5aa81ce5fef18ed0930aa56318c4e49747
+SHA512: 0cbd0b6aa2daa4120858e9ec0e259201e68dd599d0861c476e40f7125e8223fa0961a6af6e503e9e74cdc30938cfc1f94171e0a89505c3d8cb2c1e1085d4df98
+Description: A modern watch command
+Homepage: https://github.com/sachaos/viddy
+
+Package: viddy
+Installed-Size: 5468
+Maintainer: @termux
+Architecture: arm
+Version: 1.0.0
+Filename: pool/main/v/viddy/viddy_1.0.0_arm.deb
+Size: 2095616
+MD5sum: 43a7f84184e63efc3042dc1a4c3f2360
+SHA1: 9545959d9fc669b43ec7e26fa21a16e865c3f570
+SHA256: 15bda6fafe6767edfac55a6e0c9f630ce0496706ca92b6f1660bdb1bd6ccf8bc
+SHA512: 792c5bc7d103035d7f05154c874a3c2a6b67682027ee0d71c211a0a226ada19b9415a1651c8e113e680033af8ed8b20e858d25c27ae603dc10bcfc5248a63931
+Description: A modern watch command
+Homepage: https://github.com/sachaos/viddy
+
+Package: viddy
 Installed-Size: 8724
 Maintainer: @termux
 Architecture: arm
@@ -39313,6 +39472,21 @@ SHA256: 5fdae78078a42af98f41062b96a5b0f40652da09874c56a1d48727eb83b64d94
 SHA512: 5378a928b7e2d9e6436e6907790f5752d9bb189f93af8d352a7483783338b0e86dc1dc798bcf7fef04c22666370fe7f6a5c0f06a468ee213da42468794175a2e
 Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
+
+Package: vulkan-tools
+Installed-Size: 1612
+Maintainer: @termux
+Architecture: arm
+Version: 1.3.294
+Depends: libc++, libx11, libxcb, libwayland, vulkan-loader
+Filename: pool/main/v/vulkan-tools/vulkan-tools_1.3.294_arm.deb
+Size: 291664
+MD5sum: 03c75893f6799794a9d824347583d175
+SHA1: 344743ce5ee9bbb436abfa5c61c01db367dca271
+SHA256: 530ec11be80313403d5fda025458b2f1fde5c8ea2ac7388ff28498f5be4ff05c
+SHA512: 5ea07261de043b5ec301f98f21bc634ea675b12e380b47de7f9530c5c93925fee60f806ee005194e24c8b0db520f6e8e0b42848a364cbaf957f7d5d834c89486
+Description: Vulkan Tools and Utilities
+Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
 Package: vulkan-tools
 Installed-Size: 1632

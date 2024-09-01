@@ -235,22 +235,6 @@ SHA512: 632afd42340e0c4c9339709ae0e80901cb8282cdd16fa7d315a2ea28ed3cf8ef1bd1b259
 Description: Abseil C++ Common Libraries
 Homepage: https://abseil.io/
 
-Package: abseil-cpp
-Installed-Size: 6728
-Maintainer: @termux
-Architecture: arm
-Version: 20240116.2
-Depends: libc++
-Conflicts: libgrpc (<< 1.52.0-1)
-Filename: pool/main/a/abseil-cpp/abseil-cpp_20240116.2_arm.deb
-Size: 979292
-MD5sum: de012f87c559ebf1a51bd3b4ec59b259
-SHA1: 8f0fbf9c1af0e0517c65f916f4a6d527d6637e40
-SHA256: 9e38faffc640328849cd4d8375fd066ee2e21e349628364569655f9afb303f6e
-SHA512: f8bfa2105a16d50b76493e6586676f72c7103bf59e62ce51862de5e1b1cabceaa3e627220b659f56a27e97a6674f46d3693e9ed82d31092c454a512356ecc91d
-Description: Abseil C++ Common Libraries
-Homepage: https://abseil.io/
-
 Package: ack-grep
 Installed-Size: 204
 Maintainer: @termux
@@ -2232,6 +2216,23 @@ Description: A non-web client for the terminal, supporting Gopher, Gemini and mu
 Homepage: https://bombadillo.colorfield.space/
 
 Package: boost
+Installed-Size: 5044
+Maintainer: @termux
+Architecture: arm
+Version: 1.83.0-2
+Replaces: libboost-python (<= 1.65.1-2), boost-dev
+Depends: libc++, libbz2, libiconv, liblzma, zlib
+Breaks: libboost-python (<= 1.65.1-2), boost-dev
+Filename: pool/main/b/boost/boost_1.83.0-2_arm.deb
+Size: 1111680
+MD5sum: d095d6c8d57ae0d06f5de5878da1eba4
+SHA1: c6e0c13503d3e1dd0f43614b07243b6550766bb5
+SHA256: 997e083b9e0f712f5a49ce1c3047d5570ba3ebf07d2cb2d60671611c393449f7
+SHA512: c2921f8808adbdd23e01844bff44a531adc7b099db7473b32f847c81ba4d3c04112a527f7937d6c643604bb2a9a1a9e821db16dc741d9f7139220958b8bcf36f
+Description: Free peer-reviewed portable C++ source libraries
+Homepage: https://boost.org
+
+Package: boost
 Installed-Size: 5040
 Maintainer: @termux
 Architecture: arm
@@ -2252,6 +2253,21 @@ Package: boost-headers
 Installed-Size: 187128
 Maintainer: @termux
 Architecture: all
+Version: 1.83.0-2
+Depends: boost (= 1.83.0-2)
+Filename: pool/main/b/boost-headers/boost-headers_1.83.0-2_all.deb
+Size: 9948920
+MD5sum: ec1b19cbbc966eca5a499082d795b2a6
+SHA1: bf8ba1683ed2742e52e3ccbd5f14bd49e84171ce
+SHA256: 644e0d8ae18f26c7ed9c1bdf3e22d4ef7595b608893be1a196924f12d6ca0e1a
+SHA512: 8b1aa6dc7559b403ee0498790f6f533f57bc47f74ad8ea692eb42eb5f60297bcc64d00a0c161483e09a09fb65125e95b20658cb40566b45b8acc06682f3b537d
+Description: Boost header files
+Homepage: https://boost.org
+
+Package: boost-headers
+Installed-Size: 187128
+Maintainer: @termux
+Architecture: all
 Version: 1.83.0-1
 Depends: boost (= 1.83.0-1)
 Filename: pool/main/b/boost-headers/boost-headers_1.83.0-1_all.deb
@@ -2261,6 +2277,21 @@ SHA1: 5fa1b6c54aa26bb44484a41e8a36eb087417e0e1
 SHA256: f66113556f99829672c6b162f7ae543b537828cce796da7726fd1fc56dd5dbcd
 SHA512: a62a845fd628926df0367886a15b062f0eb50430874a54c3bb282bdb4d236beeb8167365189536945df824054b6dd5b71faaca88a321af4b93840fc9aa83c6aa
 Description: Boost header files
+Homepage: https://boost.org
+
+Package: boost-static
+Installed-Size: 41996
+Maintainer: @termux
+Architecture: arm
+Version: 1.83.0-2
+Depends: boost (= 1.83.0-2)
+Filename: pool/main/b/boost-static/boost-static_1.83.0-2_arm.deb
+Size: 3345304
+MD5sum: 85712309c3d90ecf4a3bf05188080bd0
+SHA1: 7c97f85106a30b9b373613ff395532dfe61d046e
+SHA256: 8063e57662ad81505b6163e83b031a9fd764aad3b1002d4db3c37fc6867f84bf
+SHA512: 2eba9bf3a5297b325ee2e8d5820f144093b7877208a51134d5fdd70681c9f2ff664d486d6f952f6a42254692a053ccf3fa6ea14d9929810d5f2be29ac6e709ca
+Description: Static libraries for boost
 Homepage: https://boost.org
 
 Package: boost-static

@@ -379,21 +379,6 @@ SHA512: 63a075303a7db231ef59c97b906295fcb64c9c81e9c23c4afed5a7a1a8c557775193fdf2
 Description: Android Interface Definition Language (AIDL)
 Homepage: https://elinux.org/Android_aapt
 
-Package: aidl
-Installed-Size: 1480
-Maintainer: @termux
-Architecture: i686
-Version: 13.0.0.6-13
-Depends: googletest, aapt (= 13.0.0.6-13)
-Filename: pool/main/a/aidl/aidl_13.0.0.6-13_i686.deb
-Size: 426276
-MD5sum: ffa5964f60a13874332103160b2f0771
-SHA1: 9d99b79f77be97c4b99a45697cf0e7df82d7c350
-SHA256: 61aa3f1b9272ab40c8cc46eff2a131cb77e137bf01d3597d25ccd5b1c793d966
-SHA512: 0126cc19084ca5ed1f9c4966599ba5adf7dd2ad58befd33980ec4835f07de715170eb6747fe976c18c782573defc0a9e67d17dbb54b49440c611d292344e2a72
-Description: Android Interface Definition Language (AIDL)
-Homepage: https://elinux.org/Android_aapt
-
 Package: alass
 Installed-Size: 1636
 Maintainer: @termux
@@ -718,19 +703,19 @@ Description: Columnar storage for Hadoop workloads
 Homepage: https://orc.apache.org/
 
 Package: apache2
-Installed-Size: 31428
+Installed-Size: 31444
 Maintainer: @termux
 Architecture: i686
-Version: 1:2.4.62
+Version: 1:2.4.62-1
 Replaces: apache2-dev
 Depends: apr, apr-util, libandroid-support, libcrypt, libnghttp2, libuuid, openssl, pcre2, zlib
 Breaks: apache2-dev
-Filename: pool/main/a/apache2/apache2_1:2.4.62_i686.deb
-Size: 5057412
-MD5sum: f44faa69a9129936d340bdc3d82c2701
-SHA1: 72b811405c025da189867bdd4ba08892232ce48d
-SHA256: e71a1bc8fe64862f63cd05d0a0950a04e11d6c86baa5cd5dec62e2fd33a1e541
-SHA512: 1b548593eef83cfbefebfa2470720b2bec48d5c3f54c7a61fd6c64ea47041949fbdaeb0687c9afdd1df4eebd7717dd622c01c93e160d51a94c3ee41076e70edf
+Filename: pool/main/a/apache2/apache2_1:2.4.62-1_i686.deb
+Size: 5058796
+MD5sum: 3c42ccd60e0039246b5ea6126eb2ad5f
+SHA1: 9ec3f9968d4c94c6be25eef70f7086382d0fe053
+SHA256: 486b5cdf8ba396a9935ccab1c97cf6146f43c5f0efe066375f5ce711a351da2d
+SHA512: 85ffa1dd03ca7697e787d4e0abb5f750de051b46a5df9efe5fcdc2a73087441d919ce5dbefa9171fcd23ebd541d5460f835f29d01641c0f4c73c63e18e3e4f42
 Description: Apache Web Server
 Homepage: https://httpd.apache.org
 
@@ -783,6 +768,23 @@ Package: apr
 Installed-Size: 1252
 Maintainer: @termux
 Architecture: i686
+Version: 1.7.5
+Replaces: apr-dev
+Depends: libuuid
+Breaks: apr-dev
+Filename: pool/main/a/apr/apr_1.7.5_i686.deb
+Size: 240496
+MD5sum: 82f5d23d33c8eee5f87f5fd61ee604c4
+SHA1: db3a45ec13bda8a45350c872b90ecc683ae5c1d5
+SHA256: da1cee5e3f27610a390c0ef9e27d891a443214f90ea5be4ea27ffcb498c77b62
+SHA512: 5aa11f619a1e2389362482f1fd6a9af97edb6ccfdcd06af75c089219ba2fe7d501b5b051ab553adf8126008daa4530010d6818cf3ee6490462a345b2c5f0722f
+Description: Apache Portable Runtime Library
+Homepage: https://apr.apache.org/
+
+Package: apr
+Installed-Size: 1252
+Maintainer: @termux
+Architecture: i686
 Version: 1.7.4
 Replaces: apr-dev
 Depends: libuuid
@@ -794,6 +796,21 @@ SHA1: 295a09ed3571c043341550a92d2566c602e1df6c
 SHA256: 5dab2ca0bef100cfdaa4d61ae14c364cdc2d5513cd8b0fa24cd8b255812ef4b0
 SHA512: f5f36463d18840963061accf10c9bd26972e676795b8832cf624604f0491c12b7be2a26bc1d12a47bcbdb8133ac22602751ebfb8b5de7116d5112d2d4a495ccb
 Description: Apache Portable Runtime Library
+Homepage: https://apr.apache.org/
+
+Package: apr-static
+Installed-Size: 332
+Maintainer: @termux
+Architecture: i686
+Version: 1.7.5
+Depends: apr (= 1.7.5)
+Filename: pool/main/a/apr-static/apr-static_1.7.5_i686.deb
+Size: 82184
+MD5sum: 57aa87981c97feb8259c016e975d0e19
+SHA1: 28500f5bbaeb195541877ce7c724d1c0fb60f603
+SHA256: 00e017354e8287f42ffa1319324610b283f20fef0585617ae2cf8c00b429a7cb
+SHA512: ba472762ec42b769ce089c40d8d2e911c7b69022e93627fede9d15ec671ff358e51a32b3cf0cc9c6b1732f02e05edcd9a0a6cb927dc7e04b32b5f92543ecabf2
+Description: Static libraries for apr
 Homepage: https://apr.apache.org/
 
 Package: apr-static
@@ -815,6 +832,23 @@ Package: apr-util
 Installed-Size: 584
 Maintainer: @termux
 Architecture: i686
+Version: 1.6.3-2
+Replaces: apr-util-dev
+Depends: apr, libcrypt, libexpat, libiconv, libuuid
+Breaks: apr-util-dev
+Filename: pool/main/a/apr-util/apr-util_1.6.3-2_i686.deb
+Size: 114140
+MD5sum: 96e6a6a61a807462905041d9daa21fae
+SHA1: 55b6bd44b43410d13c0834a81035b8426a32594e
+SHA256: a8f5a5c2601e96dbd87fd9f74c3d15268900a9f2d525d26e8bfa62467f377c86
+SHA512: 009f5f09407b7d501ba17328ea6e1923a423dce271f7c7cf76abdf1ff98f46f4d4e18cdc523168cb6b463d659e6e314e01d692c22b143635af3a81eaf7259e3d
+Description: Apache Portable Runtime Utility Library
+Homepage: https://apr.apache.org/
+
+Package: apr-util
+Installed-Size: 584
+Maintainer: @termux
+Architecture: i686
 Version: 1.6.3-1
 Replaces: apr-util-dev
 Depends: apr, libcrypt, libexpat, libiconv, libuuid
@@ -826,6 +860,21 @@ SHA1: 303bfe764c98f4183a9ba959072673f8f755c43d
 SHA256: fd7cc376baec41f761691b7dc054d20f16ad30ae76fcca15b4555bc1c36affec
 SHA512: ba1afc45cfd3f464af0febd4e14e94962b99f9186e2c0e88dc6761f4805168bd7a3ad0b3c63abdc9f04c1ffc4f6a1990171d22d5610f0a01bb24739022fe6a81
 Description: Apache Portable Runtime Utility Library
+Homepage: https://apr.apache.org/
+
+Package: apr-util-static
+Installed-Size: 256
+Maintainer: @termux
+Architecture: i686
+Version: 1.6.3-2
+Depends: apr-util (= 1.6.3-2)
+Filename: pool/main/a/apr-util-static/apr-util-static_1.6.3-2_i686.deb
+Size: 67656
+MD5sum: ee7b1ecdf557399c2d886b768f8b7fed
+SHA1: 33e1aa2bec4c1dd3d8178c8c09d94e6cb171308b
+SHA256: 0b80936b164fd00cc6cd0647e5172cff3cb2f73b0e344c38a376d65e8344cabe
+SHA512: f65378e4e40b1e07b8f59ba37bf6b03e650ce212c9263004935eac237c1c931d31c2eef6830be892dbcc3071e94dc2e1556655da398427f144f99074534d1682
+Description: Static libraries for apr-util
 Homepage: https://apr.apache.org/
 
 Package: apr-util-static
@@ -2229,23 +2278,6 @@ MD5sum: e6b97d8377e323f8289db16529f7e90c
 SHA1: c650ef21785998290380fba66b8f720979f4f281
 SHA256: 3a5ffe2f025f905c54ab100fa17ef00d9e47c4c49cd0e9f621afef2c308a97be
 SHA512: da436b84da6aae251bb4acb8b8a148e0b005f49391f825dd79d2d02a577474258f50def8e2c5b30cd4bef5959eb82c1df75ae9eebb7aeee18edc27c1f7e4a920
-Description: Free peer-reviewed portable C++ source libraries
-Homepage: https://boost.org
-
-Package: boost
-Installed-Size: 8100
-Maintainer: @termux
-Architecture: i686
-Version: 1.83.0-1
-Replaces: libboost-python (<= 1.65.1-2), boost-dev
-Depends: libc++, libbz2, libiconv, liblzma, zlib
-Breaks: libboost-python (<= 1.65.1-2), boost-dev
-Filename: pool/main/b/boost/boost_1.83.0-1_i686.deb
-Size: 1519400
-MD5sum: 706f8ed2cbc688fce5c135b12c2e13e5
-SHA1: fb9d9bba089162e10d3c951c596249abd2a2a5ef
-SHA256: db12fb83bd5038e82e4fd8b48a92c3d620b12778dd348c2a4d7057ad8bd6c5d6
-SHA512: 0b456259560489dbaa9f498b929cd6b5338cc673d44a0497a316be4b3f750d008cdcc8b551cbd74b1d1efbd160ceff460fa332646cf4f588838f90daa1d9c46e
 Description: Free peer-reviewed portable C++ source libraries
 Homepage: https://boost.org
 
@@ -4110,6 +4142,21 @@ Description: CPU usage limiter
 Homepage: https://github.com/opsengine/cpulimit
 
 Package: crawl
+Installed-Size: 25884
+Maintainer: @termux
+Architecture: i686
+Version: 0.32.0
+Depends: libc++, liblua51, libsqlite, ncurses, zlib
+Filename: pool/main/c/crawl/crawl_0.32.0_i686.deb
+Size: 6633324
+MD5sum: 5d8f406f3db1036120234523a3312306
+SHA1: 0a052a37cc7ccdb57e9db79b35e657668fc639f8
+SHA256: 2f1bb5c36135c92090b64feda0768db1d41d8531f06313872c920b2733a6296d
+SHA512: b4ebdacad0d2edae4e00d70e03edfd6371e612300527c61e51c4be09d12a5627891b33a0da904f41dddbd54c173cca8093fc8ecefebfa24b7e81014ae67163cf
+Description: Roguelike adventure through dungeons filled with dangerous monsters
+Homepage: https://crawl.develz.org/
+
+Package: crawl
 Installed-Size: 25040
 Maintainer: @termux
 Architecture: i686
@@ -5741,6 +5788,20 @@ Package: electric-fence
 Installed-Size: 76
 Maintainer: @termux
 Architecture: i686
+Version: 2.2.7
+Filename: pool/main/e/electric-fence/electric-fence_2.2.7_i686.deb
+Size: 11824
+MD5sum: 77f1023ff299723ec1d8fc8a25b09a01
+SHA1: eccc8a951d3175e317ff913b208f7e2939708011
+SHA256: 26ae2e720aaeb4c77e83e8f691541c021c4ec262aa9abb62db1bf8dafb58cb0f
+SHA512: e9277f1f9bce94ac05ca828d5ff5f788b84cab66f946f1b191993f4cbdefedccd8468ca0a867895f0f740980023be4d254a310f90fd464b884a40add9fc035c3
+Description: Electric Fence (eFence) malloc memory debugger
+Homepage: https://elinux.org/Electric_Fence
+
+Package: electric-fence
+Installed-Size: 76
+Maintainer: @termux
+Architecture: i686
 Version: 2.2.6
 Filename: pool/main/e/electric-fence/electric-fence_2.2.6_i686.deb
 Size: 11396
@@ -5749,6 +5810,21 @@ SHA1: 2a780aeb42ddfaf335e48de6c3fdef9e87d56ee2
 SHA256: 88820ef0f3d143d7e22c515382eac07af9877129dcef716806e73f878ed6d3ef
 SHA512: 1c853f5d2636ce9ced29920d3edeb6eea991b02d385004e8fe51e42ade08f708282bf495e5e379cf28eb17c4eb04edfd1aa1fde36f99f477f1985f6fc25a732b
 Description: Electric Fence (eFence) malloc memory debugger
+Homepage: https://elinux.org/Electric_Fence
+
+Package: electric-fence-static
+Installed-Size: 64
+Maintainer: @termux
+Architecture: i686
+Version: 2.2.7
+Depends: electric-fence (= 2.2.7)
+Filename: pool/main/e/electric-fence-static/electric-fence-static_2.2.7_i686.deb
+Size: 12528
+MD5sum: 4dd1512de5b94491458f562831178c5c
+SHA1: bf72525bf1af4674725fc2daf2cb6b61f077c638
+SHA256: ce61af095ab503093ea0d5b242c350363a7bd48ea91d87c4e151dda03f778581
+SHA512: 8c26543ccb5d82c9ce7f8820ce050eae4a3aff5959fe279bc1fbe4a00476216b292b496c8060d6be1ae032ed251464212f88332188aafbe414662276ec3a87e2
+Description: Static libraries for electric-fence
 Homepage: https://elinux.org/Electric_Fence
 
 Package: electric-fence-static
@@ -11086,6 +11162,21 @@ Description: Terminal based IRC client
 Homepage: https://irssi.org/
 
 Package: isync
+Installed-Size: 588
+Maintainer: @termux
+Architecture: i686
+Version: 1.5.0
+Depends: openssl, zlib
+Filename: pool/main/i/isync/isync_1.5.0_i686.deb
+Size: 177980
+MD5sum: 337a2fdf1c91c47a64c0f5d5aa8eca22
+SHA1: 58410a8b45b04311977bec9fb796d75e8ddb14aa
+SHA256: 26f321c8a0442cfed27a6b40fe9d36cc474915363879e8abc1aa887a53075f52
+SHA512: 6baacf68310208f5890db32d361722e56fed4450e5c91f507410ea5639e0657fe234a0ce33cebe183ff8458a04a1004aaa7227efb923d1eec3c59c197c6cefab
+Description: IMAP and MailDir mailbox synchronizer
+Homepage: http://isync.sourceforge.net
+
+Package: isync
 Installed-Size: 464
 Maintainer: @termux
 Architecture: i686
@@ -11282,6 +11373,20 @@ SHA256: 1bf6bc3302aecca9b3583a7889ecb188118d6505cacfadbf08c7ab66971f7d75
 SHA512: 37276bf3b2ace1c4f3fa3f9b7f02d9880b405e4adbfe2cd5c8fd6c3f40d3816087c52d7adb66a66600871bf1530cea08e9bfeea7c1d6fb01cc73dc223a37a64b
 Description: Static libraries for jcal
 Homepage: http://nongnu.org/jcal
+
+Package: jfrog-cli
+Installed-Size: 31832
+Maintainer: @termux
+Architecture: i686
+Version: 2.66.0
+Filename: pool/main/j/jfrog-cli/jfrog-cli_2.66.0_i686.deb
+Size: 8810172
+MD5sum: 6a528af471789a86966e842f3c72d42c
+SHA1: dd662c186023a75fbe01892cf70c9f8105ecd946
+SHA256: 91731115b5df8c42dba7a517b63b3d8c0127a15d3afde43eec21e3445856a9ec
+SHA512: 09e77ce6cbd64476106809cb267789fd5283c1c799921f5efbc2237cc138a5599d6422659680133f1cd96ec4fff4a1d215568c5eac3e2c3e02fd454650e63582
+Description: A CLI for JFrog products
+Homepage: https://jfrog.com/getcli
 
 Package: jfrog-cli
 Installed-Size: 31820
@@ -16932,6 +17037,21 @@ SHA256: 4e83ec6d0f0d92398407c9d1777b53a337dfc964eece6edd02fed64d1460b5a6
 SHA512: f85043104e4a73c22c6c20d77f0fcae913048757c82b7fc16dd17668209003390e9b7eda336c8c37c7b2519dbf01524fd869fb25ddbcbac9ed46d13b16f74ea7
 Description: Static libraries for liblog4c
 Homepage: https://log4c.sourceforge.net/
+
+Package: liblog4cxx
+Installed-Size: 2900
+Maintainer: @termux
+Architecture: i686
+Version: 1.0.0-1
+Depends: apr, apr-util, libc++
+Filename: pool/main/libl/liblog4cxx/liblog4cxx_1.0.0-1_i686.deb
+Size: 498784
+MD5sum: a3b5941a9a93180d1c56c4ddfdf5b56d
+SHA1: 113910c5c791ca57d4f2482e7d690b53710d650c
+SHA256: 4e50f46ff2c259ae992ab0a2096d1ef915caa362636074611613fb93ddaf6db3
+SHA512: 7c621314b00232cfebdd03f2355c58a0d41344c11a85842c8138357288bbe37ffe24efc591b38b52bd26f02fd5ed5d0b4ebce23a0f1d95c5a2c458694ce6f4fd
+Description: A logging framework for C++ patterned after Apache log4j
+Homepage: https://logging.apache.org/log4cxx/latest_stable/index.html
 
 Package: liblog4cxx
 Installed-Size: 2948
@@ -35216,6 +35336,23 @@ Package: serf
 Installed-Size: 220
 Maintainer: @termux
 Architecture: i686
+Version: 1.3.10-1
+Replaces: serf-dev
+Depends: apr, apr-util, openssl, zlib
+Breaks: serf-dev
+Filename: pool/main/s/serf/serf_1.3.10-1_i686.deb
+Size: 49652
+MD5sum: 335c8187669b643544d73d52b8d7be63
+SHA1: 702f8f966ffa6c22b3828328d3ea53cb5d00c756
+SHA256: 5d5880b4a15263c2408dd896fe15b5a8b6288cfaabd99bbdcdbbf53410087006
+SHA512: b7bff8053f38353dce711656b2084b34cee040307e1ad3b9054670a98bbe3522eb0597ee1bc180140d6acc4e992dff0dbffc2c91b00e03db2ce3179b5ff382ec
+Description: High performance C-based HTTP client library
+Homepage: https://serf.apache.org/
+
+Package: serf
+Installed-Size: 220
+Maintainer: @termux
+Architecture: i686
 Version: 1.3.10
 Replaces: serf-dev
 Depends: apr, apr-util, openssl, zlib
@@ -35227,6 +35364,21 @@ SHA1: 7c0e5bc3d07f33739b52e6ffa4dc99bff9d36472
 SHA256: 0ed0cdd9ff16d512f23121c29a20feeb0f362e2b786e54747ecc6e5cdda4221e
 SHA512: 4e49e834e0801d6964a1055a345bb6df08abed4d087d664bcf843e6135df7986d337739e1a09fbb9d0582c322e337f7291320931fdfe82a3220a6646c5874136
 Description: High performance C-based HTTP client library
+Homepage: https://serf.apache.org/
+
+Package: serf-static
+Installed-Size: 172
+Maintainer: @termux
+Architecture: i686
+Version: 1.3.10-1
+Depends: serf (= 1.3.10-1)
+Filename: pool/main/s/serf-static/serf-static_1.3.10-1_i686.deb
+Size: 38308
+MD5sum: 688b5fc28c22b033a4fa82ba0f49b961
+SHA1: 9d0b874e3809b04573c0bbd021894f9ee96f6ab7
+SHA256: 974b1c0b70edf0a4f7d985128dba4bce63d68f2d35b47db3a1d771a0f88113ac
+SHA512: 1b859f15511150c88d96ba35821b4843357be3f52676bdbbddc7e2663d9d07a242568f14f8cf7d8803a0859d10efdc5d3373ec4ccf9e339980d86dedee2c2eae
+Description: Static libraries for serf
 Homepage: https://serf.apache.org/
 
 Package: serf-static
@@ -36879,6 +37031,23 @@ Description: DVD subtitle ripper for Linux
 Homepage: http://subtitleripper.sourceforge.net/
 
 Package: subversion
+Installed-Size: 5760
+Maintainer: @termux
+Architecture: i686
+Version: 1.14.3-1
+Replaces: subversion-dev
+Depends: apr, apr-util, serf, libexpat, libsqlite, liblz4, utf8proc, zlib
+Breaks: subversion-dev
+Filename: pool/main/s/subversion/subversion_1.14.3-1_i686.deb
+Size: 1441628
+MD5sum: 010a5856dabef26e513059f42b0894b8
+SHA1: 4f0a9cc67fc7ad197edbb45584803d00d2907448
+SHA256: 487ba42af4d5b7f9586eda70011772cdd186984df7611e7995e04a6eccee0504
+SHA512: 8fe596099e8d4507b27879a059de2c22ecd289d732d5c29b3c814b45fd740a0bc0cd27fb8fb0bde12d33f3476095abd5c63554195be8b05dd0920d5555a0b919
+Description: Centralized version control system characterized by its simplicity
+Homepage: https://subversion.apache.org
+
+Package: subversion
 Installed-Size: 5768
 Maintainer: @termux
 Architecture: i686
@@ -36893,6 +37062,21 @@ SHA1: 45a008a89eb0f384e51c8dfa64b3adc047bc7812
 SHA256: a3d3fbf0e7b3d067555e8f729b01f12dc7a77e86c4c4e43b70d3169e0a12739d
 SHA512: 62d501db7f1e55257fb21843c1a8ddb6a144e64e2d40de2cc58676ce2ebca5f1162b4877d07b554e23c142c800d510c83538ebb723d20ec2c071014e779779eb
 Description: Centralized version control system characterized by its simplicity
+Homepage: https://subversion.apache.org
+
+Package: subversion-perl
+Installed-Size: 4456
+Maintainer: @termux
+Architecture: i686
+Version: 1.14.3-1
+Depends: perl, subversion (= 1.14.3-1)
+Filename: pool/main/s/subversion-perl/subversion-perl_1.14.3-1_i686.deb
+Size: 782660
+MD5sum: 87726aedf348f10d8037fe16f8eb59ad
+SHA1: 1d7148523ca04515818409a61012cec875f5523a
+SHA256: 24c0b8c7d236e24548d1c59ab5096b2503adf11dd67fe16cb2c575d1b4a56526
+SHA512: e47901a0b405e109391cd9898be2071b393aa7834262bb61ebc379140c1fd3050d7f1975a893fbebb7f441f47ae98cbcad20c1a3fd187f391573cea90b0aea4a
+Description: Perl interface to Subversion
 Homepage: https://subversion.apache.org
 
 Package: subversion-perl
@@ -36914,6 +37098,21 @@ Package: subversion-perl-static
 Installed-Size: 76
 Maintainer: @termux
 Architecture: i686
+Version: 1.14.3-1
+Depends: subversion-perl, subversion (= 1.14.3-1)
+Filename: pool/main/s/subversion-perl-static/subversion-perl-static_1.14.3-1_i686.deb
+Size: 14712
+MD5sum: d93f923cdd46d42f60a1f5a7c695ad44
+SHA1: 189da9ad1b1655281e313cf7168d646846b8d481
+SHA256: 9f6aa10665809f3d958bd1103c97f50ba6d948c28642b1cb540f416c4d7d7241
+SHA512: 2291559fcf6edc3f3ce5eb2126235d442c6577f487d153112305fbf25e320975f0ce896c7e4f7b29947a4dcafb1d52593b9a880457343e0f7ede4bb13df6af24
+Description: Static libraries for subversion-perl
+Homepage: https://subversion.apache.org
+
+Package: subversion-perl-static
+Installed-Size: 76
+Maintainer: @termux
+Architecture: i686
 Version: 1.14.3
 Depends: subversion-perl, subversion (= 1.14.3)
 Filename: pool/main/s/subversion-perl-static/subversion-perl-static_1.14.3_i686.deb
@@ -36923,6 +37122,21 @@ SHA1: 12b818d24b10cca803cebb6dd75459fc9e740f1d
 SHA256: bcccd16ba7167f4104c4d370d66b4bb011aebc04b577e1e1ee441be374f8f477
 SHA512: 26a669672f78aa74185bf461a4fa5b6ad5ee509d7bd2e29348ba1f9f43671e74095a4837c914f2507a6b98efc8efb1306bd2bf0dd687d6a268d43dc279566c24
 Description: Static libraries for subversion-perl
+Homepage: https://subversion.apache.org
+
+Package: subversion-static
+Installed-Size: 4336
+Maintainer: @termux
+Architecture: i686
+Version: 1.14.3-1
+Depends: subversion (= 1.14.3-1)
+Filename: pool/main/s/subversion-static/subversion-static_1.14.3-1_i686.deb
+Size: 1095052
+MD5sum: 982d012842019bd05c55ccb7b3d60df5
+SHA1: 855177c7dd66ab05a5a52550dc8b9ed74352a642
+SHA256: 82213ad1f128b11deeb7acd52578c5e7fd4480e77e4ca4a69bb9e3d67cd4997c
+SHA512: 1998f98959e2bb87b2c2c971b702987315a69e4968c3f247e0d8b66718df2b0035974859d3157eefdc349a8683f1f4f6e6b7626c7d1314d8199440671d378369
+Description: Static libraries for subversion
 Homepage: https://subversion.apache.org
 
 Package: subversion-static

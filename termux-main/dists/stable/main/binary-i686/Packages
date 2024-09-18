@@ -349,20 +349,6 @@ SHA512: a8eb60907b5e7407a11917991f948a4f1d3056726e9d34a241534a9887e65e007a735258
 Description: A powerful chatgpt cli
 Homepage: https://github.com/sigoden/aichat
 
-Package: aichat
-Installed-Size: 9516
-Maintainer: @termux
-Architecture: i686
-Version: 0.21.1
-Filename: pool/main/a/aichat/aichat_0.21.1_i686.deb
-Size: 3665140
-MD5sum: a4f0fb5d4f1c8d22a430cb5a8f8ba765
-SHA1: 7325bf1e862932fbb08eebf184f7d0457b2dee15
-SHA256: 341ec2c99cb06770545dee684b8ab28c8bf7cff68fb0a1d8ed44c43aaf26ae4f
-SHA512: c41faf124006877341b0da62a99ed52c75cc913bad8c84187aaf70c2b70dcec2f274731beda20b45897b1a992a43768fb5585a170f38b8e93d5ef9cf35a8863a
-Description: A powerful chatgpt cli
-Homepage: https://github.com/sigoden/aichat
-
 Package: aidl
 Installed-Size: 1484
 Maintainer: @termux
@@ -1748,6 +1734,21 @@ SHA256: 79545f694b79fec5b951b078edfe5d56cd8e39ada4e925c9ed1206089a98f6b4
 SHA512: 28b41d9ff2ef0179df7b0100b804d27d66ccb5bf36d383fc257f237cf7d631e27b53f21bc0e467c27d2313b7d322d559dac9b8284cf9c8e5c471876b35bf6ca7
 Description: Arbitrary precision numeric processing language
 Homepage: https://www.gnu.org/software/bc/
+
+Package: bc-gh
+Installed-Size: 228
+Maintainer: Gavin D. Howard <gavin@gavinhoward.com>
+Architecture: i686
+Version: 7.0.2
+Depends: readline
+Filename: pool/main/b/bc-gh/bc-gh_7.0.2_i686.deb
+Size: 92128
+MD5sum: b7a497ba86e1359c7fde922ff76093ba
+SHA1: 5f2ffa8add8600e71bedee65ae5549fc195958e1
+SHA256: 073e06309022990717b7444aa09e285d753974758a84fecbf74a20ae5c9c8a4b
+SHA512: 6d3ffaf3d0c3584e14d4d96339eca148a9706f93b4b3345e457a444a29e86339057c160b03ec225c28d04ff5beb65d30b7220e3654c14c5a70155471e1a372b0
+Description: Unix dc and POSIX bc with GNU and BSD extensions
+Homepage: https://git.gavinhoward.com/gavin/bc
 
 Package: bc-gh
 Installed-Size: 228
@@ -4271,6 +4272,22 @@ SHA256: 7ae543f42eb91530da52ce78a920ce6d3a0246533f78d1c931372b2d67fee9a9
 SHA512: 4cb2ea813c5e38ec6019e93715fe770cfe8bccf3de187a19b429e0b6a77cc826f8067c3feb780f4c1667fba48f3cfe5e777f674153fdd95f0f897e35b41acaa1
 Description: Static libraries for cups
 Homepage: https://www.cups.org/
+
+Package: curl
+Essential: yes
+Installed-Size: 360
+Maintainer: @termux
+Architecture: i686
+Version: 8.10.1
+Depends: libcurl (= 8.10.1)
+Filename: pool/main/c/curl/curl_8.10.1_i686.deb
+Size: 218736
+MD5sum: a54e49e44f35beddcd28a62d24329531
+SHA1: e80bd680c345412375ac5c1fff71f3b654cd6609
+SHA256: 7bb02b2ba50c1821dd199cdf9d0b02b8fd7ea562be69cd5d0ba49506f296238a
+SHA512: efa455b58525853eccb3e4955e0fa8e94d8318e595de13d047e322aa3700e7384921c5ac349c5840c8f211a064902c9c4a2db821fbc9c6481d1a8b80c5df1e4c
+Description: Command line tool for transferring data with URL syntax
+Homepage: https://curl.se/
 
 Package: curl
 Essential: yes
@@ -13756,6 +13773,25 @@ Essential: yes
 Installed-Size: 3224
 Maintainer: @termux
 Architecture: i686
+Version: 8.10.1
+Replaces: libcurl-dev
+Depends: libnghttp2, libnghttp3, libssh2, openssl (>= 1:3.2.1-1), zlib
+Conflicts: apt (<< 1.4.8-8)
+Breaks: libcurl-dev
+Filename: pool/main/libc/libcurl/libcurl_8.10.1_i686.deb
+Size: 939116
+MD5sum: 6eb0fa8208f6ac1b322f63d3ad0787cf
+SHA1: 9b989b7f516d3c089282f6293edeb2650fc472e2
+SHA256: 465baf9509fef54cfe372f28bb14fea2e351f698efff6df23ce241c4d4a05f27
+SHA512: 0eaf49b4375834e3ead1d5c8a0a8ddd29027693a15177f8affcf951f8d6fbf4a9f46728e6f694f4a1dddc8dbbbeb70eb3d1041735c18b1d0d2145b7abd393c52
+Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl
+Essential: yes
+Installed-Size: 3224
+Maintainer: @termux
+Architecture: i686
 Version: 8.10.0
 Replaces: libcurl-dev
 Depends: libnghttp2, libnghttp3, libssh2, openssl (>= 1:3.2.1-1), zlib
@@ -13768,6 +13804,21 @@ SHA1: a8c07db0ed2d8f9531add81051a4ceb270dacdf8
 SHA256: 3e510e2bc102e46ccbfdbfbf6e5e317694259af63573cf54dd151906951a10fc
 SHA512: 0ffa375c9c4b5c4f1120d38aeac9e9ea1906adac608a18212034251a0f2cac8458cbc198e3005af424537fbaa0d0a5e83a77646de00d63962b9d2b64ab647428
 Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl-static
+Installed-Size: 1320
+Maintainer: @termux
+Architecture: i686
+Version: 8.10.1
+Depends: libcurl (= 8.10.1)
+Filename: pool/main/libc/libcurl-static/libcurl-static_8.10.1_i686.deb
+Size: 378528
+MD5sum: 2a4f48b19ca81f6e1ebd332a03e9d4c5
+SHA1: 58e60b2b2496b9a1c0a9440e26f8f991fab95bda
+SHA256: 18b2b2769c542b63d8d332445480883176bdfdbd5e0ad0a0955012a3d038cee2
+SHA512: bd19e4cff186c7e640af0b3fbaf69d83eb7d78a4f6b3bd8a5ef8e3afa66e3771eaf235dc50e0f81bfab88cc9b94c2f1ed6b541abd84aa4009e876515ca1eb636
+Description: Static libraries for libcurl
 Homepage: https://curl.se/
 
 Package: libcurl-static
@@ -26023,21 +26074,6 @@ SHA512: 5d9970414137a5f706dc2ec5bf93250920986a9ad7cdf3c1747849004da476bf5745c674
 Description: 🎧☁️ Modern Music Server and Streamer compatible with Subsonic/Airsonic
 Homepage: https://www.navidrome.org/
 
-Package: navidrome
-Installed-Size: 42720
-Maintainer: 2096779623 <admin@utermux.dev>
-Architecture: i686
-Version: 0.53.0
-Depends: taglib, ffmpeg
-Filename: pool/main/n/navidrome/navidrome_0.53.0_i686.deb
-Size: 11773980
-MD5sum: c2b3cfc3e7e5d6120ef7187fcd6111f3
-SHA1: 9950570ea20aeafb157cf8e3f40f4cb0d31cf4a1
-SHA256: 35ad5b27ed29dbe943c2af5597709efab7cdc792391b16cf4a53b6776a5a5c75
-SHA512: 0fb431891ddb1736e44393ad2309aa334cf544e4bc9827884ac9e39bc5351282af2a9780c2f84af2bf2f52cbc5424a4bcd47f556a8bf1cb06f5ae7ce464ecae6
-Description: 🎧☁️ Modern Music Server and Streamer compatible with Subsonic/Airsonic
-Homepage: https://www.navidrome.org/
-
 Package: ncdc
 Installed-Size: 444
 Maintainer: @termux
@@ -29238,6 +29274,21 @@ SHA256: 81bc6ca4067c30f56c3f8490eddb4df652cc071e94883243646bb333d6ee3b1f
 SHA512: c9b9eb9b699674eb8122939a507b2dadeac7a15a180b0e03f1984a331965305a994674b2dd4b3da36c5bf54e55221fc1632416a78f5c2f03abb269fdd5ee7f81
 Description: PNG image optimising utility
 Homepage: https://pngquant.org
+
+Package: pocketbase
+Installed-Size: 38520
+Maintainer: @termux
+Architecture: i686
+Version: 0.22.21
+Depends: resolv-conf
+Filename: pool/main/p/pocketbase/pocketbase_0.22.21_i686.deb
+Size: 10249960
+MD5sum: c5b535013ddb7124242477801f5a2867
+SHA1: 0ed93b6fa120f1239745c52a210f5f4fafa902dc
+SHA256: eb0099dc10bd2804135285aa7f448c89bbd05b8bcbc809bd272f1de40835ca42
+SHA512: 0245f94248a1ed7afa34f5d00f67af46d70c23d8ca228353eedb9c9b0711a07d7ffca03863c5c1dbee46ff16b87d2b7835a81e5cd2863441e2745d728f349e6b
+Description: An open source Go backend
+Homepage: https://github.com/pocketbase/pocketbase
 
 Package: pocketbase
 Installed-Size: 38516
@@ -33403,6 +33454,20 @@ Description: A simple heat transfer simulator in pure Rust
 Homepage: https://github.com/file-acomplaint/simuwaerm
 
 Package: sing-box
+Installed-Size: 26232
+Maintainer: kay9925@outlook.com
+Architecture: i686
+Version: 1.9.5
+Filename: pool/main/s/sing-box/sing-box_1.9.5_i686.deb
+Size: 7674500
+MD5sum: 549732aaf43dfd75eca509842d46d45a
+SHA1: f7bff044c535c43f592a663c5aab3f5d75ed76b1
+SHA256: c1ed3100d0417b428c914318b0d3400d07add3c103ea08ddff0586206a079629
+SHA512: 9a20db86115e4addf9b07f4b36c63484547458c3301f86b5657d186363ffb05bca26339bfbbaf198866d454362585f01397141d9bf23834be20e076a08bba721
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
+
+Package: sing-box
 Installed-Size: 26228
 Maintainer: kay9925@outlook.com
 Architecture: i686
@@ -37473,20 +37538,6 @@ MD5sum: ff3bdfe34b7fc65c9d96933263abc6c5
 SHA1: 4352b2d8293e10db6f7813a8c16656aab3b6e827
 SHA256: 4aedb51e0d733ebe045f4d206d10e3fa0fa092dfa4d537081916e6170611f9aa
 SHA512: f224ceb96f5809df5eb0bcf0d69141abe96084fe3b5e481eccc2e0be97aab85a3a3b20068da1085512f53590b47767f8aaead7f05b0f06c0f5fa515558ee0aff
-Description: An extremely fast Python package installer and resolver, written in Rust.
-Homepage: https://docs.astral.sh/uv/
-
-Package: uv
-Installed-Size: 25644
-Maintainer: @termux
-Architecture: i686
-Version: 0.4.10
-Filename: pool/main/u/uv/uv_0.4.10_i686.deb
-Size: 7391120
-MD5sum: fa6a40320bc084ed8a193a217f55c373
-SHA1: 865ab2d9a62bb463ebd9b80e3e53e095c895c3db
-SHA256: 0ced5c32ba8695702627e3d69457b26036ba83b26de0f2e17fa1f1a9da39e788
-SHA512: c746462189b42da7a8087aa0fbe7a4178ed4b8e3d875560a3a78be5094ab7194fae123e7fb75eef14cb3c34793f017bda13c4bf6dbc62eaf047eb8db8dcb0e4b
 Description: An extremely fast Python package installer and resolver, written in Rust.
 Homepage: https://docs.astral.sh/uv/
 

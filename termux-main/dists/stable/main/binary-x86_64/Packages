@@ -6856,20 +6856,6 @@ SHA512: 6d92a0572629f1ae5f5625394312f9e50dceb0c5f7c3e7b6f4bfb430f89ce511ae5ffa2c
 Description: Command line tools for fly.io services
 Homepage: https://fly.io
 
-Package: flyctl
-Installed-Size: 69948
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Architecture: x86_64
-Version: 0.3.14
-Filename: pool/main/f/flyctl/flyctl_0.3.14_x86_64.deb
-Size: 15759444
-MD5sum: fa9bacbf5915fe3034efde5ad1f603ef
-SHA1: f29c9174d3f2fb427341b89f9e32f47d6b0b0e7c
-SHA256: ba88c0bfad8f624ec7bee7ba0c1e4671e07a4a18ae0aa1f4519228ee80092bfc
-SHA512: 5dd0d7c49069d3ada689b34ed8e22aff55d86443ad84ff2800ad8ae60fad1063c95e070dd248a7ba5f95c6a19d796b5f9acf6702bb307166e21e5b3d6952d284
-Description: Command line tools for fly.io services
-Homepage: https://fly.io
-
 Package: fm
 Installed-Size: 13536
 Maintainer: @termux
@@ -25065,6 +25051,24 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 15212
+Maintainer: @termux
+Architecture: x86_64
+Version: 24.0.8-1
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 20), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_24.0.8-1_x86_64.deb
+Size: 3477600
+MD5sum: 12fe489ff1eb03d6f37b726cb0e69e09
+SHA1: da2537b37e4aa7b841c32c5bfe600a4a42881392
+SHA256: 06b7e1096681b23d5487c84b1ce1cf292483af1fb4135cd91796a4b80f0b7357
+SHA512: e7b95e8ff35ba4ce57e9ef932eca1a9732e6cc7d470573d95c32961f407a95e89a3bad5272ebfb695ad720aed3677926c73a95e5b5bc97acf5b4f55ce64efb12
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 15288
 Maintainer: @termux
 Architecture: x86_64
@@ -25086,6 +25090,23 @@ Package: mesa-dev
 Installed-Size: 164
 Maintainer: @termux
 Architecture: all
+Version: 24.0.8-1
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_24.0.8-1_all.deb
+Size: 25156
+MD5sum: 246bf111e42f453c2aee707d06a15cf4
+SHA1: 56d659c3f8449e77fe0313cd2b18760f19c87da0
+SHA256: efec1fc02107a6a4f3b5a496698a5866786fbb1f929870e14d46cba7afedc641
+SHA512: 3384326f673e0702e55607c39adf5e328744536211dd985887e0ae08b426d9f51c590983c3795c1e970f2d691c8ea73a77dbd8d2a0ed8331382605b216b85185
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 164
+Maintainer: @termux
+Architecture: all
 Version: 24.0.8
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -25097,6 +25118,21 @@ SHA1: 41e032792c498f6a46956ca6bfe133250db516c7
 SHA256: c1de784e92e087a08463c4f9855a6e48b3958caae0961e43072d580e65924320
 SHA512: fe6adbc079e4fc2406300b0a276982ec12d3fb20afdd91ee9d2ebaf85911eec2da93caa57fb5224b6289db322b5400140f290ea63c91da9ec17e3e7c65302b20
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 8104
+Maintainer: @termux
+Architecture: x86_64
+Version: 24.0.8-1
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_24.0.8-1_x86_64.deb
+Size: 1620760
+MD5sum: 4c34a79ff40964d6f6c983834b78dae9
+SHA1: 4f7103c15f968ed858366e94727fd0392789d62a
+SHA256: 3cec8396514151bb2f7ff0891c7b826dd37faedfb9de0e66313a296f9e1f097e
+SHA512: c1a361d8f274602fd73f6f5695d61fdd307f07c4015cafb6a94e951b46c42815c3fd0a6ee717a50b4f7337afd752c8bcbeccf5866c3e42814ad00850e1e0aa3a
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -27253,6 +27289,21 @@ Description: ncurses based sudoku game
 Homepage: http://jubalh.github.io/nudoku/
 
 Package: nushell
+Installed-Size: 30024
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.98.0-1
+Depends: openssl
+Filename: pool/main/n/nushell/nushell_0.98.0-1_x86_64.deb
+Size: 7010992
+MD5sum: 0f9efed844a1ef17dae1e1e20c0c7f86
+SHA1: b1454e1da3f7d884a1146246d4e453ed61b5f5dc
+SHA256: 602f53900180df70a7a01f713c275f36ed67df19b0b4a2f721d722b83a5cffeb
+SHA512: 86a569f1057d3dbd6013ac749882de265ae41fe80c4b4010ecf1cf6c8aae7414504bbe264be355139eb4abbaef3898294406c0541c13de84fee9ce6f0aa29cf2
+Description: A new type of shell operating on structured data
+Homepage: https://www.nushell.sh
+
+Package: nushell
 Installed-Size: 25640
 Maintainer: @termux
 Architecture: x86_64
@@ -28263,6 +28314,23 @@ SHA256: 495264b23e1bbcfba74133fd2ea880b3032214c7cdfc6278e083b8679352af58
 SHA512: 0d2dd86311d2a9ce3a2ca0ce3c8a9340b82ad982cde24d1d33b6026e6a0bf94c2154389a551837f57e16d6ba2166fff288653523c7c894284935011a283a9e30
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 12008
+Maintainer: @termux
+Architecture: x86_64
+Version: 24.0.8-1
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 24.0.8-1)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_24.0.8-1_x86_64.deb
+Size: 2735484
+MD5sum: 7f92646805837466c522f13ac6891e0b
+SHA1: e23d0cea2684049b2f13f6676fee8e4fd01ef594
+SHA256: 22751bed32e48b1b14a3a7e102c4fdccc615439ebd8a7219105a6e824b530be4
+SHA512: 5987c14a22759ee90adc94515e1132ac73ae1466bb7a3db4fca06551cf426168dd29e7b3bb2df4b609215157a51b8511a347d0bc6ecfef17914adfb33ddea60d
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 12068
@@ -34224,6 +34292,20 @@ Description: An Ethereum smart contract-oriented language
 Homepage: https://solidity.readthedocs.io
 
 Package: sops
+Installed-Size: 32612
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.9.1
+Filename: pool/main/s/sops/sops_3.9.1_x86_64.deb
+Size: 7359336
+MD5sum: 377f562abd18df3f505418d310914292
+SHA1: 9a6e882e71b82b5b5e144b73afb0c02c87417949
+SHA256: c8b204c3283ff4f903bb30e04e68bdda3860cd7a725bb81b6d46e65a911c2f63
+SHA512: 4c6f498a1065275a478bd246d2e04f54fb1a73d09fc6e75b14dca74fd7565e076ef8d5fc5324b43dc115c6527b41b3fd863d85bb544c50a5953456220188174f
+Description: Simple and flexible tool for managing secrets
+Homepage: https://github.com/getsops/sops
+
+Package: sops
 Installed-Size: 31200
 Maintainer: @termux
 Architecture: x86_64
@@ -36851,6 +36933,22 @@ Description: Recursive directory lister producing a depth indented listing of fi
 Homepage: http://mama.indstate.edu/users/ice/tree/
 
 Package: tree-sitter
+Installed-Size: 14740
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: x86_64
+Version: 0.24.1
+Replaces: libtreesitter
+Breaks: libtreesitter
+Filename: pool/main/t/tree-sitter/tree-sitter_0.24.1_x86_64.deb
+Size: 2254628
+MD5sum: dab7f1c692d1b1be49fcabb8c3b0b7cf
+SHA1: cd809988add20def237bb02857738f4d1bc53f31
+SHA256: edb452f52b286b2f74ac9903c8b19edab72bed3c9041579f8cd2b929d7bc0f02
+SHA512: a72c5e175bb4289306ff66a27a84a08fa32ea792ddf12814b81cf3b1c2aff384a696b21c9f0587b6f03ec0ac4533c2dc47bd1e379475dbbec70e30234396f051
+Description: An incremental parsing system for programming tools
+Homepage: https://github.com/tree-sitter/tree-sitter
+
+Package: tree-sitter
 Installed-Size: 13684
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: x86_64
@@ -36996,6 +37094,21 @@ SHA256: 32957341538e3a6bcbab98aa57e0f7d9f8b4196742ab00bff0e680d3b94e67ac
 SHA512: 2b2fcdeb864fac15b9a402aea727aa687a7ca27d6f9750b079975901bc59aae020f9e3a893ec15b049e25be61b6bee435ea4fe737e3d5d3bafb6df8c784d03f8
 Description: Static libraries for tree-sitter-query
 Homepage: https://github.com/tree-sitter-grammars
+
+Package: tree-sitter-static
+Installed-Size: 240
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: x86_64
+Version: 0.24.1
+Depends: tree-sitter (= 0.24.1)
+Filename: pool/main/t/tree-sitter-static/tree-sitter-static_0.24.1_x86_64.deb
+Size: 66396
+MD5sum: 4684fb237def465c9c9c9a6c32790452
+SHA1: f2bb3157090ec510c5712b7994bd466c7e10c33f
+SHA256: cc7b1e8b40342b7bdaf4190367af1771ca9fa1b51e48db9436ba7d3d6757cce6
+SHA512: f9533072430ad4798465d63926538fbed352e34506446a1f95d7f7465a5a67758205e3a60eb7fe0e7c46e948711441f05263731d9761ff757ac51fda6a0e2efd
+Description: Static libraries for tree-sitter
+Homepage: https://github.com/tree-sitter/tree-sitter
 
 Package: tree-sitter-static
 Installed-Size: 240

@@ -1552,20 +1552,6 @@ SHA512: 797bad4baaa62c9256225cac07680a541f61fe3b428826cb1266ae9db5a69bc17b153eec
 Description: Runs list of commands in parallel and waits for their termination
 Homepage: https://await-cli.app/
 
-Package: await
-Installed-Size: 64
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.0.5
-Filename: pool/main/a/await/await_1.0.5_x86_64.deb
-Size: 8080
-MD5sum: 46e969b7e6f445ec98f7abf1775c382f
-SHA1: 8ed1ba9d9ae945dec387db33a0c68da2cdfdd3ad
-SHA256: df9d9fd8d6ede9c1800d0832636285fb8f13cb7fdafa760c04388526e62853c1
-SHA512: 91fc9760023afd59ebd2f4d5d8143715a75552be64e21b7908b5e312aa2d55d049d04a79c45d3ecb93838706d1e9492b0da7ceaefa24b96e8861f6a3be396e51
-Description: Runs list of commands in parallel and waits for their termination
-Homepage: https://await-cli.app/
-
 Package: awesomeshot
 Installed-Size: 88
 Maintainer: @termux
@@ -15311,6 +15297,23 @@ Package: libgit2
 Installed-Size: 3520
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.8.4
+Replaces: libgit2-dev
+Depends: libssh2, openssl, pcre2, zlib
+Breaks: libgit2-dev
+Filename: pool/main/libg/libgit2/libgit2_1.8.4_x86_64.deb
+Size: 756796
+MD5sum: e553d9c1026d4e69b8ae2ffa05988784
+SHA1: abf4b4be69de7c22e085c18214798298d4d04e86
+SHA256: ea19e400f74250b711d2080153379f23287a5a00b1e7467ab2ce9fed5a5e49e9
+SHA512: 115dbc8b961ef482521d8ed06d6f0c1ceb5c15215fc0fe7a43d8d324e80c100c94487e2c124eb20432916a286291fdbfe013581a82071282117259e0e88dfc8c
+Description: C library implementing Git core methods
+Homepage: https://libgit2.github.com/
+
+Package: libgit2
+Installed-Size: 3520
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.8.3
 Replaces: libgit2-dev
 Depends: libssh2, openssl, pcre2, zlib
@@ -17199,6 +17202,21 @@ SHA256: 4c6a0e6771e1eb8cb42dde110501efdae76d6ca339274542b5e71b5a1bbc667d
 SHA512: 534a82cbf1395bdf264965604913c7cd6a826f68a28a283ea066a1742a9d1eebedd60e73d7e4d23d6b9ebd7919f60cee88987de5121ef88aedf2564ea0546120
 Description: Enables C++ applications to establish client connections to MariaDB Enterprise over TLS
 Homepage: https://mariadb.com/docs/clients/mariadb-connectors/connector-cpp/
+
+Package: libmatio
+Installed-Size: 572
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.5.28
+Depends: zlib
+Filename: pool/main/libm/libmatio/libmatio_1.5.28_x86_64.deb
+Size: 119016
+MD5sum: 7f0ad7398a9ffc709a9ef51571aaea99
+SHA1: 6cdcd24d5e0095346d0d658bf9b8edd9dfe0c2b5
+SHA256: 857e53f2b59d178af05147d7f934f041f0ec18ee1dd927a49887df70ce4ce038
+SHA512: 983311a5efb3593d798899d0e615fddc5f952dea768d208fe57f33f1e2d244d4bbc244a20ecbf6d28e446b43ebe2cf4a83000a562aed889a4d9c98e22dbd27cf
+Description: A C library for reading and writing Matlab MAT files
+Homepage: https://github.com/tbeu/matio
 
 Package: libmatio
 Installed-Size: 576
@@ -19135,23 +19153,6 @@ SHA512: 3dcc3dc845dd5a28234d605e3d4e41f16166813675b0d2929b710a5e1af9adbc7d625146
 Description: Shared library for the Pluto interpreter
 Homepage: https://plutolang.github.io/
 
-Package: libpluto
-Installed-Size: 1684
-Maintainer: Komo @cattokomo
-Architecture: x86_64
-Version: 0.9.5
-Replaces: plutolang (<< 0.9.4-1)
-Depends: libc++
-Breaks: plutolang (<< 0.9.4-1)
-Filename: pool/main/libp/libpluto/libpluto_0.9.5_x86_64.deb
-Size: 585304
-MD5sum: 75eb49a9fdf124d46bd52bc69e9b9fa4
-SHA1: 077c8f55e9612920b08eaaf59030c53cf274234f
-SHA256: 4c9d071ad8ebdf039108f255fa077fdb02cae6b2112263284a3324017e10387c
-SHA512: 25ad5e0c6e56000bdcae2aff7296c6c743c303791c5d5e12091c06042a7296bd0b07f36bcb1033952299fbe02bb98d9d50625d1fbdc5e0e683155efe30fb46ed
-Description: Shared library for the Pluto interpreter
-Homepage: https://plutolang.github.io/
-
 Package: libpluto-static
 Installed-Size: 5228
 Maintainer: Komo @cattokomo
@@ -19164,21 +19165,6 @@ MD5sum: 9628b8a5fe8bd9b2336c181a800fb8d6
 SHA1: 23db5fbd8220794c2f923d3e98c80f940e0de951
 SHA256: cd946dbb33c2b4828c7739336b5ae61ae0ee83db98ea7d9956037bd54cffe6e7
 SHA512: 8cc6f02aa3cdacb8df95012067e44f2f9bb4c86bed26315e6786ef2e6860fde2306d5471e8f79e7959a1624ae2b4493eeaeb63f4cb11cf5be7ae3994e4baac0c
-Description: Static libraries for libpluto
-Homepage: https://plutolang.github.io/
-
-Package: libpluto-static
-Installed-Size: 4180
-Maintainer: Komo @cattokomo
-Architecture: x86_64
-Version: 0.9.5
-Depends: libpluto (= 0.9.5)
-Filename: pool/main/libp/libpluto-static/libpluto-static_0.9.5_x86_64.deb
-Size: 735180
-MD5sum: ac06d994cacffd0d18918b08cbbe501b
-SHA1: 66b010229ef5b9d8e739bede84b73423712964e4
-SHA256: 002e21dcf3f0e8be6d054b873d46f7efc7ef1a465d8a5645619b50c66be3541e
-SHA512: bfe5b9791fea7e0a776314df1b50bec42ec1b2d7e7e9a73846a625727c0ad780b40d1923e7cc5a4f8992fde358d8ba59fdc0d8f660df84162d56b508728de513
 Description: Static libraries for libpluto
 Homepage: https://plutolang.github.io/
 
@@ -19887,6 +19873,20 @@ SHA256: 20954c667dd69d4cf41146a426fe6a727ec0e35a7d56b6cea4ea08356a6fbeef
 SHA512: b3499330f92dc62bf1bea76c4f3f09fb785f36696393cd9ae5038b62ca0eaab44424e30fba75247b52339d00faa4018b39c795d22a9d7c1e948e3c95cd8ddee4
 Description: Static libraries for libsearpc
 Homepage: https://github.com/haiwen/libsearpc
+
+Package: libseat
+Installed-Size: 144
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.9.1
+Filename: pool/main/libs/libseat/libseat_0.9.1_x86_64.deb
+Size: 26316
+MD5sum: c92c7f6c850bdecccbc1a238ed6c1019
+SHA1: e094f29aabdbe1c3719b273a979441f7ca248eaa
+SHA256: 92c15ba4610ed324c041d1e1c0131b3424021afa4717188957881eb310e4b129
+SHA512: 5500041a188f7fa6f1a2d2d9636da2f37cf76288f5a63338a7f549be5d05c1e4f0de40d884c3f759024f7f4a854e97a90b1ce2cab5b292ebd72e8e960477d7e3
+Description: Reference implementation of a wayland compositor
+Homepage: https://sr.ht/~kennylevinsen/seatd/
 
 Package: libseat
 Installed-Size: 144
@@ -24375,20 +24375,6 @@ SHA512: c49d8fd20983e01b0ddf447eeaae0aae5d788c9c5e3313b152e77111faba4df40b374b49
 Description: A system information fetcher, with an emphasis on performance and minimalism.
 Homepage: https://github.com/Macchina-CLI/macchina
 
-Package: macchina
-Installed-Size: 1500
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.2.1
-Filename: pool/main/m/macchina/macchina_6.2.1_x86_64.deb
-Size: 516340
-MD5sum: d7a1bcad1a3432c1b4bd712ee4e1e913
-SHA1: cf793a94d837f7d621b096250321d4311ce39731
-SHA256: 2a7bb877be4a6eb6455e671708a363c6d0a442b3f8ed80ed2fc69f899c8ff4fb
-SHA512: 6a1fd77bde5fb1e425b43037b4b390966a5e567869d536abef57a71fd78aea6c2ade29678f7ab712cf5e97a2903ff48deaf23a29404e7a05d1aaca4b19b2fdaa
-Description: A system information fetcher, with an emphasis on performance and minimalism.
-Homepage: https://github.com/Macchina-CLI/macchina
-
 Package: magic-wormhole-rs
 Installed-Size: 7060
 Maintainer: @termux
@@ -25438,6 +25424,21 @@ SHA256: 2363724eca612d93651345c6e00dde9f0288f456e614d0a9e9f5b2e930be519f
 SHA512: 5389d00012763733736b02ec1af304ff8dbd96ade0aad8af438dc3030f32d684f29c248c28c0f864dab9292127cb76142fb9e9fe67891f9d5e52ded72a6edb82
 Description: General-purpose software audio FSK modem
 Homepage: http://www.whence.com/minimodem/
+
+Package: minio
+Installed-Size: 109248
+Maintainer: @termux
+Architecture: x86_64
+Version: 2024.10.29.16.01.48
+Depends: resolv-conf
+Filename: pool/main/m/minio/minio_2024.10.29.16.01.48_x86_64.deb
+Size: 28338340
+MD5sum: be7a6b0f1dc3e54ea2aabcc85316a1c9
+SHA1: c5083a5e710737cab7aac2bc2b10cacfbc04de25
+SHA256: 01031f7afb2e191b18e14026b5501449e206f6ecddf4b451b0e9f0dd26ce8299
+SHA512: 859dcb9e47ff75b1834def4a9ea05fe1c07fe82137a958cc7fefbb2805f4a6db95bb6e6a762338fb77edf21d5c88784b629d625ff31d22eb8895d82452d462a1
+Description: Multi-Cloud Object Storage
+Homepage: https://min.io/
 
 Package: minio
 Installed-Size: 109256
@@ -29793,21 +29794,6 @@ MD5sum: cfc04befca1c12a32d541c551fde7e60
 SHA1: e97710a2fb1e931c517fc6bf7e44ee46e6d287b9
 SHA256: cb49ac47f94e51486f0c410497f41efa893023545c5af45484cf96c412ae1e8f
 SHA512: 78129ce91c8890972b0a5383f6903be04fca8e06fb5730b91203a44067c3f0a2643e9cd520f4ec106840aa242bddb2937e43d0f000aa8cd0b839e74a92bee4b3
-Description: A superset of Lua 5.4 with a focus on general-purpose programming.
-Homepage: https://plutolang.github.io/
-
-Package: plutolang
-Installed-Size: 2012
-Maintainer: Komo @cattokomo
-Architecture: x86_64
-Version: 0.9.5
-Depends: readline, libpluto (= 0.9.5)
-Filename: pool/main/p/plutolang/plutolang_0.9.5_x86_64.deb
-Size: 601724
-MD5sum: 606cc61454c17c360ad8ea7a26dfd86d
-SHA1: 7d4e6d248897d223710bdabc20be74dce985d814
-SHA256: 6252804a10d1121e4f710133d93da4a74fa9ea774530427e7782ec95b788fddb
-SHA512: b7fc1e6c842b755d8455357f5d6c76c1656b7f9ad791b9ad2da74d0bbecb089a0c2012ea949b98682ed0517653e13562f5824e84e11bd99c8ec655db78730992
 Description: A superset of Lua 5.4 with a focus on general-purpose programming.
 Homepage: https://plutolang.github.io/
 
@@ -35165,21 +35151,6 @@ SHA512: e3b3d62e732fef5ef0238c1228db4fcba39574132f94c61c8f5b4ee37dd7cd275cd013ad
 Description: An easy-to-use CLI tool for building, operating, and automating Public Key Infrastructure (PKI) systems and workflows
 Homepage: https://smallstep.com/cli
 
-Package: step-cli
-Installed-Size: 39560
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.27.5-1
-Depends: termux-tools
-Filename: pool/main/s/step-cli/step-cli_0.27.5-1_x86_64.deb
-Size: 9345180
-MD5sum: f2c80caa94b39472754b060a0cbde950
-SHA1: 7ed800a6b162d623d2fb50595c67d3b16c586ee1
-SHA256: 216859599a70d56a785d994dbf8de41a587854311c24f6b4776ef92f146ccd0e
-SHA512: 98e70e44349a4e373c381caae78192ebc8b50021ef08430060e81ae54d76505be5744848fd53fb1b87473d2eaee325781dd9dc7a99bf559078af76bb41839e01
-Description: An easy-to-use CLI tool for building, operating, and automating Public Key Infrastructure (PKI) systems and workflows
-Homepage: https://smallstep.com/cli
-
 Package: stfl
 Installed-Size: 120
 Maintainer: @termux
@@ -38336,6 +38307,20 @@ SHA256: f15e90f09c673cfe1a775d7869b9e7b3eb5d53cbd5bafb8de75de7d14777ecd6
 SHA512: 012813c7160e39aa3138616488d2c28cc01df2a03346b0b8f6ccb57d7c329fbb2e0739424c5ba46b33d696467e678727d0e3e3c1126f7a0b8926c166120cf5be
 Description: Utilities for handling universally unique identifiers
 Homepage: https://en.wikipedia.org/wiki/Util-linux
+
+Package: uv
+Installed-Size: 31440
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.4.29
+Filename: pool/main/u/uv/uv_0.4.29_x86_64.deb
+Size: 8606792
+MD5sum: 449c030f9bd37506df4124ad5ec838f7
+SHA1: 412f3f1679b45e3b06fed23adb2b38b368a99218
+SHA256: cdb43c00bac78025296e5fe251d8e1f4c87a871b3d5ac3086acec2607cadd886
+SHA512: d323d3132d0982c0a571f37d71ecc3c6b0ad3fa48ddb0697e7352f321fbb9d49ed5980bb8a25eedcc80edbcb31afb9be3313896fd328d86f0eb432fc3b624547
+Description: An extremely fast Python package installer and resolver, written in Rust.
+Homepage: https://docs.astral.sh/uv/
 
 Package: uv
 Installed-Size: 31400

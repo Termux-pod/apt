@@ -12908,21 +12908,6 @@ SHA512: 9e3f4aa2e1b33065dde2b0149d6ff712af69b0c4f411c1ae379dc33dfbee848e68b4e28d
 Description: A lightweight cryptography API for Java
 Homepage: https://www.bouncycastle.org/java.html
 
-Package: libbcprov-java
-Installed-Size: 5700
-Maintainer: @termux
-Architecture: all
-Version: 1.78v1
-Depends: openjdk-17
-Filename: pool/main/libb/libbcprov-java/libbcprov-java_1.78v1_all.deb
-Size: 4939892
-MD5sum: c0a0f43744343459320389f7a171a6ed
-SHA1: 183b278006e1347d2e34117d5d6aceac38443d23
-SHA256: 3d06853d3c4d068f4abbe1a7602d3a50b2d12d6a97585de0913ebaff9ee18f1c
-SHA512: b484c64700bb0ce87f62aaebbf82d7dd8325fd367720beea5e1f4fe7b8e9da82f176c82e5e7286d30264072a166282790c742ca365daf1de2266880bc9668afd
-Description: A lightweight cryptography API for Java
-Homepage: https://www.bouncycastle.org/java.html
-
 Package: libblkid
 Installed-Size: 396
 Maintainer: @termux
@@ -15191,21 +15176,6 @@ SHA512: bcf88dc1bf3347bf53dbb4b64a73f5c05699be56465cd7fb617d333b9f869a76fd54efc4
 Description: A C++ API for parts of glib that are useful for C++
 Homepage: https://www.gtkmm.org/
 
-Package: libglibmm-2.68
-Installed-Size: 7612
-Maintainer: @termux
-Architecture: i686
-Version: 2.80.0
-Depends: glib, libc++, libsigc++-3.0
-Filename: pool/main/libg/libglibmm-2.68/libglibmm-2.68_2.80.0_i686.deb
-Size: 1043300
-MD5sum: 049306b9c70b45165500e985ecdae84c
-SHA1: 2facd5a2e31b7414f43ea00d522a6154226d4ae4
-SHA256: 9584a4192a7e735b8478495952c1f37bc1efc30095bd364a75f3423e75becd59
-SHA512: bd34af70fa20e2f3977d3b6f5616fa17efab471c20fbbceffd1fe2fd9c589a7309846ba841023c225ca0bcd2c1b6d4b7f4d60cc3625bcfc237217e803741d540
-Description: A C++ API for parts of glib that are useful for C++
-Homepage: https://www.gtkmm.org/
-
 Package: libglvnd
 Installed-Size: 1820
 Maintainer: @termux
@@ -15635,6 +15605,21 @@ Package: libheif
 Installed-Size: 1532
 Maintainer: @termux
 Architecture: i686
+Version: 1.19.1
+Depends: gdk-pixbuf, glib, libaom, libc++, libdav1d, libde265, librav1e, libx265
+Filename: pool/main/libh/libheif/libheif_1.19.1_i686.deb
+Size: 409944
+MD5sum: df9906491faf8bd0b9ffb4b91242803a
+SHA1: 852dba64fb3234c35fb36024a97b26a215155324
+SHA256: 67af55a5bee6eec329f4677d087092f3bcf4094b52cd19580420d3b0b8879eec
+SHA512: e9d839f6a2530b28bb9d761a5e6d3f7aa705da4feda8f96d0e56f10e9709ee48fa5720b173a4543dc9aca24fa7c1b259cd6d123415ce22c401664c59820b2467
+Description: HEIF (HEIC/AVIF) image encoding and decoding library
+Homepage: https://github.com/strukturag/libheif
+
+Package: libheif
+Installed-Size: 1532
+Maintainer: @termux
+Architecture: i686
 Version: 1.19.0
 Depends: gdk-pixbuf, glib, libaom, libc++, libdav1d, libde265, librav1e, libx265
 Filename: pool/main/libh/libheif/libheif_1.19.0_i686.deb
@@ -15644,6 +15629,21 @@ SHA1: 4d0ec23088d948de157927796bb8dd0e75fac177
 SHA256: 4a64d45dab3c642fcf66e51b96b8779d062ee135d646bf3797aad4f58f2402dd
 SHA512: f9c5234a858f6f58a1882ac8b481e771c4e7c005ec9c81244709b847251c80a92b2ff48e20388ac5804bd0847eaf17739488879ce1f972415c26dab9918ee265
 Description: HEIF (HEIC/AVIF) image encoding and decoding library
+Homepage: https://github.com/strukturag/libheif
+
+Package: libheif-progs
+Installed-Size: 484
+Maintainer: @termux
+Architecture: i686
+Version: 1.19.1
+Depends: libjpeg-turbo, libpng, libheif (= 1.19.1)
+Filename: pool/main/libh/libheif-progs/libheif-progs_1.19.1_i686.deb
+Size: 126556
+MD5sum: 3203ba25c0066707a52bf84e42769121
+SHA1: f9a7f93ee78c515971b1f643698b086c725e6d26
+SHA256: a02209569acecae5b4850acddc47bd98bfcd90d78beb6e5fc7f6a86917057b6c
+SHA512: 029a2c9c403ec372acad510a11adc4ead783b7be386e450609248f88cb608d30defb56b67025d5e53480d106eb4513ec7859bc29f7c55dce4963530e8a7ec2f9
+Description: Programs for manipulating HEIF (HEIC/AVIF) image files
 Homepage: https://github.com/strukturag/libheif
 
 Package: libheif-progs
@@ -23941,18 +23941,18 @@ Description: Bare libuv bindings for lua
 Homepage: https://github.com/luvit/luv
 
 Package: luvi
-Installed-Size: 640
+Installed-Size: 632
 Maintainer: Komo @cattokomo
 Architecture: i686
-Version: 20240723
+Version: 20241009
 Depends: pcre2, openssl, luv, libluajit
 Suggests: lit, luvit
-Filename: pool/main/l/luvi/luvi_20240723_i686.deb
-Size: 192268
-MD5sum: 7e1f016212f0d7a4d657990c98d15e98
-SHA1: 763916d49e26edbcaec785963ae2585b0ddf66fb
-SHA256: ff1f3e75d5dfce811640fd08fd830555300c98019c34fac0e253e32aef5ae1b6
-SHA512: c24180511627f92a4d70fa9c5a20755776ef246a94a4cf1abd332841d72386e501d337c28aa6f009ed7925f53d7bd50864ae7e9be7bfd07bbdc2c5f7bc91a281
+Filename: pool/main/l/luvi/luvi_20241009_i686.deb
+Size: 187788
+MD5sum: 921f042605f801dacb26188fd0b165dc
+SHA1: e1d6f73a6cd9259e631f2a74211b5187be2cd68a
+SHA256: 39e4f8e042ce090ee0dd45b7ed342dc5a1050d8a5c206bf3daa52af8746656a8
+SHA512: 850ef7d433e60cf1b91a748e4153a383f70e1ed11de5993c8687f3aa405f5f62bb6eb0ba4200810b9965d56422dc8b8e7ba811354c1101d73632883231fff2c0
 Description: A project in-between luv and luvit.
 Homepage: https://luvit.io
 
@@ -32586,6 +32586,20 @@ Package: rush
 Installed-Size: 7972
 Maintainer: Krishna kanhaiya @kcubeterm
 Architecture: i686
+Version: 0.5.7
+Filename: pool/main/r/rush/rush_0.5.7_i686.deb
+Size: 2598916
+MD5sum: 09f7cbf693baac56c8e387d58793bdfc
+SHA1: 2bffaa814e52019e54260cef330df15b4ff2af58
+SHA256: 94656663ac8472b4b6499c6010a41bda7acbe2219bc5bccdf361463be5239d87
+SHA512: 72b3c274e17913765abcfaff429284b3e17daeceb77ce02fcd6fa741626dbf89e4ffacc9933d90b2041dae40fb40e0fdd985d4a1e201e26d212fe9d2ddf1c2dc
+Description: A cross-platform command-line tool for executing jobs in parallel
+Homepage: https://github.com/shenwei356/rush
+
+Package: rush
+Installed-Size: 7972
+Maintainer: Krishna kanhaiya @kcubeterm
+Architecture: i686
 Version: 0.5.6
 Filename: pool/main/r/rush/rush_0.5.6_i686.deb
 Size: 2598788
@@ -35396,6 +35410,20 @@ SHA256: bfb748c264fdbd6f813d009f05ef9d23ab7e860082f6c0c66a0ccc9bd2b95fcc
 SHA512: eb11068802f7953d916279e9c616730bd2d0f7d58eb5794eb6b4882502fee5bc4f215ae4958777d8dbc83341c207b2596b6a9fddd9a170f4f21f204fad6af0a4
 Description: Tools for TDB
 Homepage: https://tdb.samba.org/
+
+Package: tdl
+Installed-Size: 39948
+Maintainer: @termux
+Architecture: i686
+Version: 0.17.7
+Filename: pool/main/t/tdl/tdl_0.17.7_i686.deb
+Size: 8834340
+MD5sum: d3188e7dad0fd3009d0ec05a88a7a0d3
+SHA1: dbb49d1f87911c5fc81196e72472d05bf7d80b71
+SHA256: 30bc91de97007aa9d4509ac1ec8f5567d4264230440404f0d7b3aeb5d1eb36e5
+SHA512: 8837e41d6484d717f38676691aeacb3015cf1c80e3892a17bc9b0cf8d7b6cbf58f6a6112779a84423074679343f84f86bd32918490dbaa24937cf34bdb378ec3
+Description: Telegram downloader/tools written in Golang
+Homepage: https://docs.iyear.me/tdl/
 
 Package: tdl
 Installed-Size: 39948

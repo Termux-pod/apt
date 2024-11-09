@@ -3552,22 +3552,6 @@ SHA512: e65caec0f0674be908b9c316e3597e3d313edc6d9e90b833696595c5f0cd8d798e154e03
 Description: Experimental implementation of OpenCL on Vulkan
 Homepage: https://github.com/kpet/clvk
 
-Package: clvk
-Installed-Size: 86936
-Maintainer: @termux
-Architecture: i686
-Version: 0.0.20241026.081805
-Depends: libc++, vulkan-loader
-Recommends: ocl-icd
-Filename: pool/main/c/clvk/clvk_0.0.20241026.081805_i686.deb
-Size: 21752540
-MD5sum: 278792632729d207cb208a6a04fb724e
-SHA1: 047eaad3e4ff7d322b6d51d5ede97770631c55cc
-SHA256: 87d5778ca14046b2f9724aec01aa5f4234afb7187fe595062606cbd75109ab5c
-SHA512: c35a2237112281a5467cd0d2ee55737d9c54d5c35ec031b9fff5a380bc5e69394b8e9dfcacd06a257a18f366b5abfa102901e5c974473b70532a72608135f038
-Description: Experimental implementation of OpenCL on Vulkan
-Homepage: https://github.com/kpet/clvk
-
 Package: cmake
 Installed-Size: 51316
 Maintainer: @termux
@@ -7224,14 +7208,15 @@ Package: fzf
 Installed-Size: 4192
 Maintainer: @termux
 Architecture: i686
-Version: 0.56.0
-Depends: bash, findutils, ncurses-utils, tmux
-Filename: pool/main/f/fzf/fzf_0.56.0_i686.deb
-Size: 1414216
-MD5sum: 3cef19dcb8723a67ae3942c461ea5fba
-SHA1: eece9316895d4b7a707ca269c53f2699e178188c
-SHA256: d46e375abff6b7628b0f0340a34ebd0ef6030d9be86e72d9472ecb8c6aa91ccc
-SHA512: aa7a2533034f4253ccc4f637f3db26a95cc3cd72fededd7123beb2daabcdcf35d2829d3ce09636912c3d8b69461028c65fe5245db4e3a28263e302a6e406a6e4
+Version: 0.56.0-1
+Depends: bash, findutils, ncurses-utils
+Suggests: tmux
+Filename: pool/main/f/fzf/fzf_0.56.0-1_i686.deb
+Size: 1414580
+MD5sum: ba047ec5b736626e7f0e073defbca08a
+SHA1: ab8a4fa2a43cdeaea87da4be0cd8cd1068cfa000
+SHA256: f4a7a07fe9bb3efd1fa5ab0e768e86d5cbd37c7c7feb6aeb2ebb88319749ea7b
+SHA512: 357aa955c7c58a2f5214ce2b89d3e581e38c37eac4420c40a7956c19f237b27d34dc671ae46741daa9dd3d2cee99339fdc880233119a3e23024f1e8e223d77ff
 Description: Command-line fuzzy finder
 Homepage: https://junegunn.github.io/fzf/
 
@@ -12533,22 +12518,6 @@ SHA512: 513217e2e91f8efde41e984db84a3228f53be5362a147ed225611a0ca96aa1ba2aa2ca02
 Description: Stub libandroid.so for non-Android certified environment
 Homepage: https://android.googlesource.com/platform/frameworks/base/+/main/native/android
 
-Package: libandroid-stub
-Installed-Size: 64
-Maintainer: @termux
-Architecture: i686
-Version: 27b
-Replaces: libandroid
-Conflicts: libandroid
-Filename: pool/main/liba/libandroid-stub/libandroid-stub_27b_i686.deb
-Size: 5432
-MD5sum: f156efc60bf2d7486eb4a21cb0455061
-SHA1: 5dd68816e7fe309f63ff496cb95f417415a44bc5
-SHA256: b6baaf5c4471b8160453cde7a6be4b3ca8bd444a6193937d996f79d3bff94e05
-SHA512: 7b6d89b34cb3113dbafce9866172b360056c5ab074762ffd73e78a6aa132449b251688f678be99245d71d8d05831ed3267528539a5804984592d560b5e02e8b2
-Description: Stub libandroid.so for non-Android certified environment
-Homepage: https://android.googlesource.com/platform/frameworks/base/+/main/native/android
-
 Package: libandroid-support
 Essential: yes
 Installed-Size: 72
@@ -13182,21 +13151,6 @@ MD5sum: b3b59e6ff68ee8dc96a23265c97aa966
 SHA1: cc650f57aee591622a1ffad09c2e8afec1fe0b51
 SHA256: f496ba90caff0f7efbd912085caceb917dad43c67de6d394c3efbe22e9d4d4cf
 SHA512: 1aad4cf67365782b3be112fd168dd229437ae59728d8a6c383578232af76a5c7efbbb7bb2d411081b9eb79a05d4b1428ed7ac46f457e6bcdb733a7ec84b41a1d
-Description: C++ Standard Library
-Homepage: https://libcxx.llvm.org/
-
-Package: libc++
-Essential: yes
-Installed-Size: 1268
-Maintainer: @termux
-Architecture: i686
-Version: 27b
-Filename: pool/main/libc/libc++/libc++_27b_i686.deb
-Size: 339888
-MD5sum: ca8b199876301d10f8b0b61ade54a7b4
-SHA1: 1a3513bb3a32d8db5391fe046444a04d9ceab4b3
-SHA256: 77bda33f46b41e55b8a347f949f28a675ba576ae28749c189d95135f3b2c345f
-SHA512: 424fd1037b1ceafc877b2c77c882032fc52d479fda7d0062b26922c16bf3dbf28aaebff6d175f7c14db2d17a3dbbdb2af7a924d438ddd2d34f3165914be8d683
 Description: C++ Standard Library
 Homepage: https://libcxx.llvm.org/
 
@@ -26386,20 +26340,6 @@ SHA512: 69a13fc482d3f7626a60fe19de98592bc6734dae3937ea7631ec9472b63d272579fb25cd
 Description: Multilib binaries for cross-compilation
 Homepage: https://developer.android.com/tools/sdk/ndk/index.html
 
-Package: ndk-multilib
-Installed-Size: 246344
-Maintainer: @termux
-Architecture: all
-Version: 27b
-Filename: pool/main/n/ndk-multilib/ndk-multilib_27b_all.deb
-Size: 34854600
-MD5sum: 782c8a4e3f3dc39a2239955371236cb1
-SHA1: 4b025c082dad0da26d3c538c7cb58487f24de437
-SHA256: 9cd625ae78f5eb459fbee982fdc9c84246978dcd5197647c0e13cef7dc2e9ac5
-SHA512: 65e855c093f89ec59eccd6b084af0b7c7e5285ef977b9a0c199ab54d453b949dfc48d6f28d611842583c42b5c0bffcdb5012a10b33b983aa4e9fb1d0f5f2159f
-Description: Multilib binaries for cross-compilation
-Homepage: https://developer.android.com/tools/sdk/ndk/index.html
-
 Package: ndk-multilib-native-static
 Installed-Size: 44
 Maintainer: @termux
@@ -26412,21 +26352,6 @@ MD5sum: e789cd321983e4dc2cf7d745bd18945c
 SHA1: 078ffa687fb520b6852773a47547a35d48265df4
 SHA256: 1d0f6bff478c13425f70bbfb3e2b24a1d29cc0e2ecef5c091e6e4e1d1cac4d1e
 SHA512: 22e8640c083dc415ed593cd37bac44dc4c18940f3d7fa47012b56be00d2ae895ceccf7b4bac1394eee4b8cc7a58cd2a50d5ae4220d0620743d443f0769a6d1bb
-Description: Install native static libs from NDK
-Homepage: https://developer.android.com/tools/sdk/ndk/index.html
-
-Package: ndk-multilib-native-static
-Installed-Size: 44
-Maintainer: @termux
-Architecture: i686
-Version: 27b
-Depends: ndk-multilib-native-stubs, ndk-multilib (= 27b)
-Filename: pool/main/n/ndk-multilib-native-static/ndk-multilib-native-static_27b_i686.deb
-Size: 888
-MD5sum: 44085da66a599786ad1e0e3387412894
-SHA1: c03552bfb624c6cc26a371f9665a9381a51bc871
-SHA256: 31862b523de47f7bb212303cf85722cde96191b4c6f3bb2044e385882ce5b010
-SHA512: 6308132e1e5eab91e7bb093d2a6074e3bd1d68ac3d4695cf6c0bb51f4608943f1093341238e75c5355ecddab3649a83a94fc2a6b2a7ea3e8bf5b0d1bb4f61a7c
 Description: Install native static libs from NDK
 Homepage: https://developer.android.com/tools/sdk/ndk/index.html
 
@@ -26445,21 +26370,6 @@ SHA512: 6e2ddd1d04dd33ad34a4373519cfd2aee782c997f797aa0474e9d48eb7ca3bac918b488e
 Description: Install native stubs for shared libs from NDK
 Homepage: https://developer.android.com/tools/sdk/ndk/index.html
 
-Package: ndk-multilib-native-stubs
-Installed-Size: 48
-Maintainer: @termux
-Architecture: i686
-Version: 27b
-Depends: ndk-multilib (= 27b)
-Filename: pool/main/n/ndk-multilib-native-stubs/ndk-multilib-native-stubs_27b_i686.deb
-Size: 904
-MD5sum: df72e40802118ff5d7a4f69cac1955ce
-SHA1: 0431062045a9bf3b31bbfbb08a26e8ffd5016157
-SHA256: ad8e0ace05011e4abad9a4207193da893bd287b9789ef68ca8451cead361cee7
-SHA512: 9a093135e880d2aab381a34f1d70eee3f19cb2f733dbb58b41be951402e02d70bcfad7b33c6ad924254ebd91b7d885a652ddbf24947816517a26d5c815c02db8
-Description: Install native stubs for shared libs from NDK
-Homepage: https://developer.android.com/tools/sdk/ndk/index.html
-
 Package: ndk-sysroot
 Installed-Size: 20536
 Maintainer: @termux
@@ -26473,22 +26383,6 @@ MD5sum: a97ffc20244a39d04db7e8f0b3f70dff
 SHA1: cdc73617530a3883e0f82d125ac2b993310e5509
 SHA256: eb594278fe05c7fa0cc9bfd6e118a9ad8c0986db9ff386f6d0edf985e205a682
 SHA512: e77f56bdd1a6bd58d7937492af9293ccbdb137d581dbc0e3df2bdc8f509db7c4d6b542be75b8a0768a4527297dd9972d812b5df909c27024587b68790aabb70c
-Description: System header and library files from the Android NDK needed for compiling C programs
-Homepage: https://developer.android.com/tools/sdk/ndk/index.html
-
-Package: ndk-sysroot
-Installed-Size: 20536
-Maintainer: @termux
-Architecture: i686
-Version: 27b
-Replaces: libutil-dev, libgcc, libandroid-support-dev, ndk-stl
-Conflicts: libutil-dev, libgcc, libandroid-support-dev
-Filename: pool/main/n/ndk-sysroot/ndk-sysroot_27b_i686.deb
-Size: 1732112
-MD5sum: 6acf7758e9ea32245490002aafbfc1d8
-SHA1: b3369a778e40e8ca645cef880b106121d5f451c7
-SHA256: 4dd617d0b2a6ec889c7c3ee7af1ae93464581383f4d8a2058c5984373e051af1
-SHA512: 8842a21a037fa4a43f9a4d834c8b76c7398475aae2179e33229c9b5243ee8854bb9eb474146198b44072bf8a343c645a043d33f78edf4140b0952236c6070329
 Description: System header and library files from the Android NDK needed for compiling C programs
 Homepage: https://developer.android.com/tools/sdk/ndk/index.html
 
@@ -27377,6 +27271,20 @@ SHA256: 603b989cc2192ccaef471e2f402eb14b60d2ec15e6be47fdc7f9a0653ea02060
 SHA512: 475fa6968fb5d47b16b0cc00ce79385a011af020048bb30bcdf751ce5cc9c061089c56041616d3664693c76a62f801b1d9b2b5a4fbce55a9ae6488de52529da2
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 18356
+Maintainer: @termux
+Architecture: i686
+Version: 24.2.2
+Filename: pool/main/o/oh-my-posh/oh-my-posh_24.2.2_i686.deb
+Size: 5363760
+MD5sum: 4cf93e36da7bb1822f192ea101be5a05
+SHA1: 21b9d39995288c606a0bfe5d4601015340ab4e12
+SHA256: 68ddb8c1313993f5a0088eed5e62f2a09d0be544d754978dbb8932d9f6556867
+SHA512: 37c129ecb8aa6c70fce608e706edadc49ff94da356fcd66207d47f9c9fe46a13790db66f33909ee862ddd5a8c074eabfa6c58cde0b9635d2bf21158b04476c68
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 18356
@@ -38436,20 +38344,6 @@ MD5sum: daa29145b959f76e4597b715e60c5b4b
 SHA1: 15914ef2f649232ad1571226ff772cd84f4463b3
 SHA256: d12b090b13ae54bdeac3f3d755ed5ee6596e6daebfe6b2581a098acf70e0304b
 SHA512: c12e57eb0e2058ad0c400a2162bd851da18c3eb5d84768a621c7d433b37fa5ce4fd48969fc92c1a319b1770c7a3c99ad87e01432db0e4a75edfb306ff2fd6a27
-Description: Vulkan Loader for Android
-Homepage: https://source.android.com/devices/graphics/arch-vulkan
-
-Package: vulkan-loader-android
-Installed-Size: 64
-Maintainer: @termux
-Architecture: i686
-Version: 27b
-Filename: pool/main/v/vulkan-loader-android/vulkan-loader-android_27b_i686.deb
-Size: 4904
-MD5sum: fb463fddeb640f7d34041318dd804e97
-SHA1: f984e77990d0c77a8860ccb4695a3234a45bb75f
-SHA256: 251038825a61aa9a25fa5c286097612c9e76d9f1256fbbeb827d229ecc01a032
-SHA512: bdca37c0b279ad0a53d9096f87d995d614d2fad4d4427c48062c9fc37cd43438b752c8b746c0d3cec7482f46c9948aebf216d29fb71bcc98573e8fcd81174bdc
 Description: Vulkan Loader for Android
 Homepage: https://source.android.com/devices/graphics/arch-vulkan
 

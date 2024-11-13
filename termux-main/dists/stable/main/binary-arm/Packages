@@ -6503,6 +6503,21 @@ Package: fetchmail
 Installed-Size: 300
 Maintainer: @termux
 Architecture: arm
+Version: 6.5.1
+Depends: openssl
+Filename: pool/main/f/fetchmail/fetchmail_6.5.1_arm.deb
+Size: 144440
+MD5sum: 02d6787a1f8703a91964dc67f003a28b
+SHA1: 7da2eed3fd542ffc203d592db9a128b2d164bddd
+SHA256: 981eaa052a36388e1643629db092a13e816aac49e5758eefe3bfe66dcc5f5c09
+SHA512: d7c60ed12335d558494f935ed1800948782d73c47078c977af998e0163c876937b4f496f2998e6b3a33a98b49055fbb7783775c8be9139b8232a79b9fc373127
+Description: A remote-mail retrieval utility
+Homepage: https://www.fetchmail.info/
+
+Package: fetchmail
+Installed-Size: 300
+Maintainer: @termux
+Architecture: arm
 Version: 6.5.0
 Depends: openssl
 Filename: pool/main/f/fetchmail/fetchmail_6.5.0_arm.deb
@@ -6512,6 +6527,23 @@ SHA1: 54d6c429298204de60e913cdcfe2145435812224
 SHA256: 8fb896cf627b153ef2fe2ff102b1632d0dd3ddcd2dcab1bd5f8abf6666db2007
 SHA512: 57a1b194df03e750884a81d30f5285dd7d1e2a0ea839c6fcd311a70dee83448b690cd9dec399f3165ce52073720fd6e97aa3dafd9836fb9671fd6804dba53e6f
 Description: A remote-mail retrieval utility
+Homepage: https://www.fetchmail.info/
+
+Package: fetchmailconf
+Installed-Size: 156
+Maintainer: @termux
+Architecture: all
+Version: 6.5.1
+Replaces: fetchmail (<< 6.4.33)
+Depends: python, python-tkinter, fetchmail (= 6.5.1)
+Conflicts: fetchmail (<< 6.4.33)
+Filename: pool/main/f/fetchmailconf/fetchmailconf_6.5.1_all.deb
+Size: 24912
+MD5sum: 4fb29e113e5e0d8f1ae11dea25f1f8aa
+SHA1: 5df4a5dc172d2cdc9a13ec492d206d848717db64
+SHA256: 096370cb7c127f7cbec245e00d823cb12c231c767d3b0142afda84e91d525a52
+SHA512: ed30ecb4424b5f7a3109383826222b77da0468786290f5071d53743a764680931e5022d6bdfd1c1e383676f98e52b5475cce4cb5df30723edac054c6caa8ceaf
+Description: A GUI configurator for generating fetchmail configuration files
 Homepage: https://www.fetchmail.info/
 
 Package: fetchmailconf
@@ -22600,23 +22632,6 @@ SHA512: f9b2faf16f674572f5cbb8e88073333d5802de06fd2cb5cf244309643cfb85b0e5637dc9
 Description: Library for parsing XML documents
 Homepage: http://www.xmlsoft.org
 
-Package: libxml2
-Installed-Size: 1408
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.4-1
-Replaces: libxml2-dev
-Depends: libiconv, liblzma, zlib
-Breaks: libxml2-dev
-Filename: pool/main/libx/libxml2/libxml2_2.13.4-1_arm.deb
-Size: 426428
-MD5sum: 5af73ef7b5ffed82cc2ee7aee1a32fbf
-SHA1: a24d0a171a24df32f029e26b6e562012dd4c04a4
-SHA256: f1127a4b08b52327acf17de595218b827f44150f8523ba79616527567c85d20a
-SHA512: 1a0db8f3506521cc23aa1d854dd56501d610d4df4cc2742a658262ccc44b9222f2c8551f619c51a9a16015c92dfd7cf5f19a935456f66e4d27140e603e135cc3
-Description: Library for parsing XML documents
-Homepage: http://www.xmlsoft.org
-
 Package: libxml2-python
 Installed-Size: 1656
 Maintainer: @termux
@@ -22629,21 +22644,6 @@ MD5sum: d7fe190f943e37db4c50ae1380ffb555
 SHA1: 70d65a33da9caa7c70845aa4a32cc9efba77a141
 SHA256: d6c5eaa9ae1cb2e6bbdcdcab9af4dda4f8e6b0f7465f66ba0f795c6f4fbc951a
 SHA512: daa3f741f7b00063c9a1128e5117ad2b7e99e0551d69e43e4bbeea06c1a24534f7eb3f86a5f6cb048e6b9b7fecc36cf4bece88eda85505485e7543b802e60efc
-Description: Python bindings for libxml2
-Homepage: http://www.xmlsoft.org
-
-Package: libxml2-python
-Installed-Size: 1656
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.4-1
-Depends: python, libxml2 (= 2.13.4-1)
-Filename: pool/main/libx/libxml2-python/libxml2-python_2.13.4-1_arm.deb
-Size: 181792
-MD5sum: 13e98983e67bb52be53838ead8ccdbee
-SHA1: 57e66ac2dae70eb8194ac9ba26d4abc8398f22ad
-SHA256: 7f6c872e49dab147fe195d1b4e388b98f253cd21715d82ebe4ff2282e027fb16
-SHA512: 5a37d1b8e024c764fdbc3a46d493644a6ef06a27cb6507821cd8b21cabf9d855e89521e7078fd8cd14697773108b2b59460ff746f57ebfa3b2ea5a7e079b188d
 Description: Python bindings for libxml2
 Homepage: http://www.xmlsoft.org
 
@@ -22662,21 +22662,6 @@ SHA512: 03ee5f91d2a08da553ec4f59452e564089c67a33ec3c0cb55b90c846c2ad664e2013e936
 Description: Static libraries for libxml2-python
 Homepage: http://www.xmlsoft.org
 
-Package: libxml2-python-static
-Installed-Size: 504
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.4-1
-Depends: libxml2-python, libxml2 (= 2.13.4-1)
-Filename: pool/main/libx/libxml2-python-static/libxml2-python-static_2.13.4-1_arm.deb
-Size: 75532
-MD5sum: 51e91d36b4b19a47641b696f7e593386
-SHA1: 375267d83c1be17481150b89d45994b9742a3756
-SHA256: e5642be90a86c31f44187ee3bc4255d0bafb0662af9065e039d57ae85923d254
-SHA512: ff9727c7f0e61530c0fec40ee1e5e8a9f472361388607ae2273f11c57f092865d1c0c5066adff61cccc977698424b972b5a9765ccb2c90d3e7d2bf39b2ea859a
-Description: Static libraries for libxml2-python
-Homepage: http://www.xmlsoft.org
-
 Package: libxml2-static
 Installed-Size: 1240
 Maintainer: @termux
@@ -22692,21 +22677,6 @@ SHA512: 52c2a5fff713fc22692e62fb35d74fb1305e4308e22de4f48b4d70028fb9bca4462736a8
 Description: Static libraries for libxml2
 Homepage: http://www.xmlsoft.org
 
-Package: libxml2-static
-Installed-Size: 1240
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.4-1
-Depends: libxml2 (= 2.13.4-1)
-Filename: pool/main/libx/libxml2-static/libxml2-static_2.13.4-1_arm.deb
-Size: 426224
-MD5sum: 3acc034a5d307975abb65135e1284172
-SHA1: 8bab2e6dd2ae7f59ea8d200a0b67118917224abd
-SHA256: 8a13bdb27b2a360814c76ac7e5662fd6e6bda892fbf3ccbe4df62fb4f7dde3bf
-SHA512: 8117df85ee0c38a46816213215e032fbedb26e44a2c87176ded57334ca53cede9727dcc31bc3202ca53beac40821d5a0fb33602e33f95755780121beb5e13517
-Description: Static libraries for libxml2
-Homepage: http://www.xmlsoft.org
-
 Package: libxml2-utils
 Installed-Size: 108
 Maintainer: @termux
@@ -22719,21 +22689,6 @@ MD5sum: d5bd007b70fd2785807064d5313c3f74
 SHA1: b867afa8f231aafead5f7f8d1414186085813499
 SHA256: 2f8fac46fed210cccb149c5c16c02e8914769cc27dc597188c7a89aff143d9e9
 SHA512: bb45a23184db9cc52e7082fc3d15515c5464478d9833b311052d167075d1f28c881448ba398ac4f09a20d658eeaa241c4fb2ffa205648c535985a58d644e7039
-Description: XML utilities
-Homepage: http://www.xmlsoft.org
-
-Package: libxml2-utils
-Installed-Size: 108
-Maintainer: @termux
-Architecture: arm
-Version: 2.13.4-1
-Depends: libxml2 (= 2.13.4-1)
-Filename: pool/main/libx/libxml2-utils/libxml2-utils_2.13.4-1_arm.deb
-Size: 28856
-MD5sum: 1c6285a6daf382fa6f81c99fba0417b9
-SHA1: e6f90318bd05a4219ed74987cb267828d4ddd9e8
-SHA256: 4ac8715ccaf07155691c97f3f3c5b26c9d66cef7486d9a2aa57e9bee1918475a
-SHA512: c017a5d149842be6d04e606b500bd85096a78a6820623ab9937426bcf39f9a0d699680797d68920b41895c679b6158a2a757061cbe97e84adb15bb6e75ad9c33
 Description: XML utilities
 Homepage: http://www.xmlsoft.org
 
@@ -23822,6 +23777,21 @@ SHA256: a45dfa0357a5abe0b34d861226d5d09362fe7ebc83de48d45eb73be6455f0231
 SHA512: 56b8ddfa0a4907daeb76d16f4dfbe56d2659fd25ec1d433108c2416c6212d6c7a08f4c5bc678fe4576ebd40ebb4d33522abdb5b72c79c32aec38e8f92664c64b
 Description: Tracks runtime library calls in dynamically linked programs
 Homepage: http://www.ltrace.org/
+
+Package: lua-language-server
+Installed-Size: 10560
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 3.13.0
+Depends: libandroid-spawn, libc++
+Filename: pool/main/l/lua-language-server/lua-language-server_3.13.0_arm.deb
+Size: 1615704
+MD5sum: 3cbd3d89b91bc4c5bf32b8126032ca67
+SHA1: a3a7058fbbaa170a1dd0ca6a9f785b41f8b3761b
+SHA256: acb211cadbd8b2e0c469f4162edda950a9450021ef1e2c4c55131c27d2729d9d
+SHA512: f74df85c31bf5973af8caf230fd861a7a268f7778ce47c29974b917c85cf79ea0dff7211941e60fe7819c6ce42a559bb220b6a93ec5a9f113485f21913950762
+Description: Sumneko Lua Language Server coded in Lua
+Homepage: https://github.com/sumneko/lua-language-server
 
 Package: lua-language-server
 Installed-Size: 10552
@@ -27245,6 +27215,21 @@ Description: ncurses based sudoku game
 Homepage: http://jubalh.github.io/nudoku/
 
 Package: nushell
+Installed-Size: 18272
+Maintainer: @termux
+Architecture: arm
+Version: 0.100.0
+Depends: openssl
+Filename: pool/main/n/nushell/nushell_0.100.0_arm.deb
+Size: 6061796
+MD5sum: dc72562a2df9d47e5eb532f98301a8c3
+SHA1: d0a2feb51bdafe944d217784a6cd036e254791c6
+SHA256: 2806c03d4c9d270a185ee777403d4735a4cde5f6ffeba036f56bc3325177cdfe
+SHA512: 0b0862f28b4e6946a8832337590f5d7b05900e0bd32a4eddc0a94ef945afacab5a9c14843a63b9b068506a76c33f8c8b4ec6db4b3699a5ad9d55b1d45da5e901
+Description: A new type of shell operating on structured data
+Homepage: https://www.nushell.sh
+
+Package: nushell
 Installed-Size: 18352
 Maintainer: @termux
 Architecture: arm
@@ -29561,6 +29546,21 @@ SHA256: 4e858c7717bd4c8675e030e5a60542d0f96fbb92137ac8c344c5e4029725dd14
 SHA512: 29aaecd906948ba1dac134354a76de06b8908e452f7a1d08069a8d6022cbd34792868fb0f94d48c22d228f971e680204001776ff1901ade749fd49456f2f1c7f
 Description: PNG image optimising utility
 Homepage: https://pngquant.org
+
+Package: pocketbase
+Installed-Size: 38204
+Maintainer: @termux
+Architecture: arm
+Version: 0.22.24
+Depends: resolv-conf
+Filename: pool/main/p/pocketbase/pocketbase_0.22.24_arm.deb
+Size: 8976748
+MD5sum: b6b31f794cddf567c71682ec5b19a975
+SHA1: a1b909dadbb0dd88d4e0f5bf3d6cb02a02560022
+SHA256: 7ee58186a3b1270199f254df5e3018d871571e0484a8bba2d411083117adb6c0
+SHA512: 93f6e3b8c894defd343244f70ce4276d154e8f2bf170f627b418706e73c70dc3edc7b41a934844c4eb040192f1536148c79971af50a3919aed83720d3831f960
+Description: An open source Go backend
+Homepage: https://github.com/pocketbase/pocketbase
 
 Package: pocketbase
 Installed-Size: 38204

@@ -2487,6 +2487,20 @@ Description: Decentralized file system integrating with TRON network and Bittorr
 Homepage: https://www.bittorrent.com/btfs/
 
 Package: buf
+Installed-Size: 39324
+Maintainer: @termux
+Architecture: i686
+Version: 1.47.0
+Filename: pool/main/b/buf/buf_1.47.0_i686.deb
+Size: 9839200
+MD5sum: 59c38954ff351109d6d4524485c8a339
+SHA1: ac500033c630c652814327936705695c47d6d674
+SHA256: 4e2121f23856b886a6a483615b8adff789bbac9d3d93f7d398108f82ff7653fd
+SHA512: 89030614f3215db2f97e02639591a60bbe114e70901c5cb52efe547aca3ae4f25e641362b63541add77e3ea2243a16c4518ea5cfe7a1c2318f18de477432bab0
+Description: A new way of working with Protocol Buffers
+Homepage: https://buf.build
+
+Package: buf
 Installed-Size: 39072
 Maintainer: @termux
 Architecture: i686
@@ -11235,20 +11249,6 @@ SHA512: fabd15c5d49e8d6f1d7ce3be745e0eafc809beddab922d0dd4e61332de2524dca43ee4e3
 Description: A CLI for JFrog products
 Homepage: https://jfrog.com/getcli
 
-Package: jfrog-cli
-Installed-Size: 32276
-Maintainer: @termux
-Architecture: i686
-Version: 2.71.3
-Filename: pool/main/j/jfrog-cli/jfrog-cli_2.71.3_i686.deb
-Size: 8918660
-MD5sum: d5a22672bee4a75b668fa0d10c5cd56c
-SHA1: 4d300bcbee98c0bfaf32bd94568017fa3ab5c7ce
-SHA256: 7f080d46c6cba9c720c109bf1123c8d9b9184f1421cb2931fbf949c3625cf4c8
-SHA512: 12ed9f0f5a7598cc82dde2208c61ce787f2b7f089bcfeb4a80f5628fdfedcec2e4ebcd260b0ab841e8d69dcf5464c96e3a92bc9ddb92d19e960fdcf2631e59fd
-Description: A CLI for JFrog products
-Homepage: https://jfrog.com/getcli
-
 Package: jftui
 Installed-Size: 196
 Maintainer: Maxr1998 <max.rumpf1998@gmail.com>
@@ -18865,20 +18865,20 @@ Description: Static libraries for libpipeline
 Homepage: http://libpipeline.nongnu.org/
 
 Package: libpixman
-Installed-Size: 776
+Installed-Size: 716
 Maintainer: @termux
 Architecture: i686
-Version: 0.43.4
+Version: 0.44.0
 Replaces: libpixman-dev
 Breaks: libpixman-dev
-Filename: pool/main/libp/libpixman/libpixman_0.43.4_i686.deb
-Size: 215840
-MD5sum: 0093e1323b40116644a205b3b66d42aa
-SHA1: 26d81198b68dca3afce2afadfcf1c1c74e51ffc4
-SHA256: 497f70d18bc11971589dbb07a964163d7ee3e0da9503077747d6dcb0898a0f79
-SHA512: c0236b55bda9680efb1b5a855027da8e2cfdb8874be2909d26d7aa8281dc88a1d7f046a0a1a117ce539b524b13850b0af64641070b79b7b4768c07877ffe02f0
+Filename: pool/main/libp/libpixman/libpixman_0.44.0_i686.deb
+Size: 201868
+MD5sum: d5a4adc2d813b42210ab520c56db071f
+SHA1: 5a4a3484f454aabd28c15641a2c563d27167f090
+SHA256: 3fafc998721f59b87869c5f1c6ceddf7ace342127cbb18eb89320bb090f5f38a
+SHA512: 901062e39629da3ff40fa401476663d38d9a3554e06900c7bb076a05bf6fc70dc5b762a2d3f508af23d145fb7aea9e6965f0f189ad0db1f175c40c78222197a9
 Description: Low-level library for pixel manipulation
-Homepage: http://www.pixman.org/
+Homepage: https://www.pixman.org/
 
 Package: libpixman-static
 Installed-Size: 776
@@ -24950,6 +24950,24 @@ Package: mesa
 Installed-Size: 16188
 Maintainer: @termux
 Architecture: i686
+Version: 24.2.7
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 20), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_24.2.7_i686.deb
+Size: 3457308
+MD5sum: c424519ef3c188882841d89486b04aa3
+SHA1: ce630738d1f5dcca4c2e6c9e055d9b6c2a8aaad8
+SHA256: d55e766b714b12a1959da1b31110cf6a0289a518f79c55c916fa34c6311a3da3
+SHA512: c65490905c8bc4d097df63474f92ffd8707ef2833a31382c210f72bea5869199beae2749c8a2af8c6314b3e31677e848f897cf6136307e77810d3ce41721f1c2
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
+Installed-Size: 16188
+Maintainer: @termux
+Architecture: i686
 Version: 24.2.6
 Replaces: libmesa
 Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 20), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
@@ -24968,6 +24986,23 @@ Package: mesa-dev
 Installed-Size: 168
 Maintainer: @termux
 Architecture: all
+Version: 24.2.7
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_24.2.7_all.deb
+Size: 25340
+MD5sum: 95a8e71c7886a432559e454b28124065
+SHA1: e99beedb14ccd3d8fb9225632124804056605484
+SHA256: 6047f0de2dcf031fbf7e9aa2baf50de4c222d77fcb094d7edf4af92d30e4e257
+SHA512: 90f29b82958f3c5ccf0a28f0f1efe2b46166670db37927a496f3c527a5d0aab43151a9774998421a7928abe70a176aee58e17b1f303b1c3620ebcb9b21f1ca9d
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 168
+Maintainer: @termux
+Architecture: all
 Version: 24.2.6
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -24979,6 +25014,21 @@ SHA1: 61b360f6e56b99c8aa59bf3de978450e1fae6e85
 SHA256: 3714e36adf6cef2ec9dfb8823d723eba46840284a2cdce449ef9146626cf80d3
 SHA512: fdb020dbf0d1ced60298276e2a9e212fa8058ba11bb1ce0821231f0dcbd0bd6da1b36eb37f59bb2a6bf84f3ed226de62a7ea1811c32737f4c3b8f83f2f2c6b16
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 9032
+Maintainer: @termux
+Architecture: i686
+Version: 24.2.7
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_24.2.7_i686.deb
+Size: 1625044
+MD5sum: e94f19fb07f038085be88ce9bd615a72
+SHA1: aa2b7fb9afb995b2ee97bdbb36f3b1e0ee7c73b1
+SHA256: fba6feb457be098ba4ba799c2ea4dfc61e2a97d0f2de04a4d4bfe8e86d59fe2f
+SHA512: 2c08759193a99fe010e71903cd25de3b1a4c40965454121cdc96cf2dd554c918d4c8cc31fd43f5566fec8c0e0044cc1910b36efc7d0bc12b2409eb8fa3929db8
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -27319,6 +27369,20 @@ Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
 
 Package: oh-my-posh
+Installed-Size: 18356
+Maintainer: @termux
+Architecture: i686
+Version: 24.4.1
+Filename: pool/main/o/oh-my-posh/oh-my-posh_24.4.1_i686.deb
+Size: 5364556
+MD5sum: 2bf8c5608596ba06dff4d301b67b3640
+SHA1: 11df7c9a5d9c760d84d44fc31f468ab70b2b3843
+SHA256: db73081c63ff294682d0907630a0207351c671e6f009748a34a445e874be64c2
+SHA512: 7179181a0364ccf6d46d9c56c6f4c3554a3aaab6dbb46942707aea94cd75f42374fc5fba9358fcd1125610f6b5e16343242046d8f40a353d84358bb5ff68ed76
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
+
+Package: oh-my-posh
 Installed-Size: 18360
 Maintainer: @termux
 Architecture: i686
@@ -27329,20 +27393,6 @@ MD5sum: 5dbb267a30c55c8b1f7929732498b706
 SHA1: 21cacc0a7164e88fcd999bdca0ecbf8997df2936
 SHA256: d7650cb952f595af751c7ef8f2fb3618fad3715ec675e4db6c048a9e2f91abcf
 SHA512: eb1220590242c36459bf4ee98b228f0dd30eecb94d4466188212dd2dd79f11ea4035d9e6461a29cf66dfa609acb76d79a75191401ba31f10b3175504f313da83
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 18360
-Maintainer: @termux
-Architecture: i686
-Version: 24.3.0
-Filename: pool/main/o/oh-my-posh/oh-my-posh_24.3.0_i686.deb
-Size: 5366320
-MD5sum: 7661279bd85ab36d5ce89fbdaa025158
-SHA1: 513c82b6329409841b4cb1fd65681d714578de27
-SHA256: cb56fae279f7dc1e6888455c8ada97381c039a6da1a9313bb49d9c1bd7bdffef
-SHA512: c56bf3c84206fd45e928c35a9834d6e2533e00a6e7552b005350306cf6f33d5aea2b0d5884cd2c0d76e3da22b54b0a0d3c68aa675bf4fe387e7bafcf3f1ee9df
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -28113,6 +28163,23 @@ SHA256: 42dd3da28780aaddadb7ea22adbdc2cfa98e81eefe16b9f0609a3d94cb0c01be
 SHA512: 2ed01d65e61fbdc9fac0370411c3e103eb9ad488ec73b3ab4be3a3b2346986c32f2dd9b64e823e08de9492c0ff8ab3ea37153e8b7c16e72be438c6113b37b5c6
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 13116
+Maintainer: @termux
+Architecture: i686
+Version: 24.2.7
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 24.2.7)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_24.2.7_i686.deb
+Size: 2709148
+MD5sum: b9ca46fb879c01ce7902adb31156e660
+SHA1: 3b3f4fe14991d103c1028798bb9f527fe0708ca8
+SHA256: 75f274a6e26881edccb773d57e5fab9ad546ed7878214f85599b5dbce61c510f
+SHA512: 3e59d2f27d157b5d1822b47a19a0315ee52bb0b3c211c0279f369c1b53f37a78daf6d29cdcc2c677c272716c6231a212b72ec5859616559b9466f3064bf2b66d
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 13116
@@ -38813,17 +38880,17 @@ Description: weather app for the terminal
 Homepage: https://github.com/schachmat/wego
 
 Package: wget
-Installed-Size: 804
+Installed-Size: 792
 Maintainer: @termux
 Architecture: i686
-Version: 1.24.5
+Version: 1.25.0
 Depends: libandroid-support, libiconv, libidn2, libuuid, openssl, pcre2, zlib
-Filename: pool/main/w/wget/wget_1.24.5_i686.deb
-Size: 297352
-MD5sum: fcc3d1268f0fe50764f7effb5c67183c
-SHA1: 618c81fa2a81c889f7ddf8993f7642fe2ad79955
-SHA256: 7374cec41a6f28e17a096029fc11f6f522a25ad842e360556fabaafcfad87a4d
-SHA512: 88a16fd5924b7f0c5813b162fec198d22eadbd53b33022f9d83cc3cac5883468587513fc948f18a6e2f0489797fa247bf7b1a4aacfc534c7d60b5d518d5fac06
+Filename: pool/main/w/wget/wget_1.25.0_i686.deb
+Size: 294744
+MD5sum: 4c823d622d81e9b50a7da2f7b3536c72
+SHA1: a7b5746323e5af9cd87ce8c36ca903787f5e3081
+SHA256: 4153eb67cb5ec8cc2751e33a8ef0a00d6fced5c0962bf9f27b72975800a7690f
+SHA512: c3c9a3a30bc7c0b102c6ba2037415be10590cab0534fcef4cf6a4d57a0fcc8b967b416a2e7eb7e153647cd7c9b586a3855e978d582521b4d98cd0f709320fd28
 Description: Commandline tool for retrieving files using HTTP, HTTPS and FTP
 Homepage: https://www.gnu.org/software/wget/
 

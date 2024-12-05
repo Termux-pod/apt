@@ -240,21 +240,6 @@ SHA512: 9e88c4ec233e9353e591f17317b965c49d9a73b7966866e68152eed72237f37ef61ee6b4
 Description: MATE document viewer
 Homepage: https://mate-desktop.org
 
-Package: atril
-Installed-Size: 3036
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.28.0
-Depends: atk, djvulibre, gdk-pixbuf, glib, gtk3, harfbuzz, libarchive, libc++, libcairo, libice, libsecret, libsm, libsoup3, libtiff, libxml2, mate-desktop, pango, poppler, texlive-bin, webkit2gtk-4.1, zlib
-Filename: pool/main/a/atril/atril_1.28.0_aarch64.deb
-Size: 464668
-MD5sum: b330b833d800e16dfa7e2f76e8ab89a8
-SHA1: 6a73074ae19faa1048c5c7a37069a6817b205967
-SHA256: 86c37c960e86d834ae86d36e94ddf38ca72f1f937eb4a5314a4fa1ac267273c0
-SHA512: 6e4ce8e433f5cca19eca4708b5112d5b873092d62d8eb0008de5c2b9ae52306ef66d41640902de2c73a4c04223885b97f4dd4ead592859f24a0d4bf3b2f73998
-Description: MATE document viewer
-Homepage: https://mate-desktop.org
-
 Package: atril-static
 Installed-Size: 1484
 Maintainer: @termux
@@ -267,21 +252,6 @@ MD5sum: a16e9ea27b378820812cf5f9ca74d499
 SHA1: 63dc5d5722c1b0408668a7f37b928b99c696bff5
 SHA256: c9a9dd5da36018b9806722b188fab6538c26398b7dad36f992874c49d9369b90
 SHA512: 3ebce3162905f4d019b58b51ffa54af37ed51faa21e9e911d5c0c692f00f5d1570f0036885c4b79610ce7fe83d0c4280bdb153bbeee48ee032e49fbf22abe0c1
-Description: Static libraries for atril
-Homepage: https://mate-desktop.org
-
-Package: atril-static
-Installed-Size: 5532
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.28.0
-Depends: atril (= 1.28.0)
-Filename: pool/main/a/atril-static/atril-static_1.28.0_aarch64.deb
-Size: 299232
-MD5sum: 85f25aeff14e76e5bc5edeed62890253
-SHA1: 65f0af7d7dfe7da562c1941b57d2ba82e192b67e
-SHA256: 9a6e1f7ff3ab806655834440aa70893a8a96a3dafaf9c51f59cdcf939d21a221
-SHA512: 8b5a73cca4dfe328148163f8970cf0ea67999dc25e3290b356dfa41233c795a723489cd868a96d6f0c3a314c29a03482b4b79c2b812e418a399f691a99b2ee95
 Description: Static libraries for atril
 Homepage: https://mate-desktop.org
 
@@ -5341,6 +5311,54 @@ SHA512: ed59ba06a441ad8f977146603b9996ca86d2b99a5772031931dd09fbfa882d28cca446e0
 Description: Static libraries for love
 Homepage: https://love2d.org/
 
+Package: luanti
+Installed-Size: 8536
+Maintainer: @termux
+Architecture: aarch64
+Version: 1:5.10.0-4
+Depends: freetype, jsoncpp, libandroid-spawn, libc++, libcurl, libgmp, libjpeg-turbo, libiconv, libluajit, libpng, libsqlite, libvorbis, libx11, libxi, luanti-common, openal-soft, opengl, xdg-utils, zlib, zstd
+Filename: pool/main/l/luanti/luanti_1:5.10.0-4_aarch64.deb
+Size: 2349912
+MD5sum: a4ec05867b127b1ac41c14f4caecb490
+SHA1: 83e3eea6bc30cf085eeee60d0eb641a6caa9b1e9
+SHA256: 5abb0e2f6cd45f380984762c3ceb4ce1101e6894303f6aa29e7ed0f08394cfbe
+SHA512: 04805f939d9028e4d6e7549dc4456d6d19c6c3f6e0ff5bbc65829e7fa311927a0411d61ba3eacf24125afed79cbb8781ae2af96c214906ca90601bd1137e1745
+Description: An open source voxel game engine.
+Homepage: https://www.luanti.org
+
+Package: luanti-common
+Installed-Size: 10880
+Maintainer: @termux
+Architecture: all
+Version: 1:5.10.0-4
+Replaces: luanti (<< 1:5.10.0-4)
+Breaks: luanti (<< 1:5.10.0-4)
+Filename: pool/main/l/luanti-common/luanti-common_1:5.10.0-4_all.deb
+Size: 3343980
+MD5sum: 4ccb17a3da4231f17981799b773bda03
+SHA1: 68f8149ad24325846834833356585987e2e019d2
+SHA256: d135c61a9b5cd54ea8372e270e3ec1635ee42f7dcfff977582a9642e3a08f2b9
+SHA512: 490b301b25f292e7ceeafd412422d8122e51bccbefdcc35ad89d55a30dfef658b63fd066c2477077145712285b31915b0b7b2d72da842e07c03efda0cc863c26
+Description: Common files, including docs, shared between luanti and luanti-server
+Homepage: https://www.luanti.org
+
+Package: luanti-server
+Installed-Size: 4828
+Maintainer: @termux
+Architecture: aarch64
+Version: 1:5.10.0-4
+Replaces: luanti (<< 1:5.10.0-4)
+Depends: jsoncpp, libandroid-spawn, libc++, libcurl, libgmp, libiconv, libluajit, libsqlite, luanti-common, zlib, zstd
+Breaks: luanti (<< 1:5.10.0-4)
+Filename: pool/main/l/luanti-server/luanti-server_1:5.10.0-4_aarch64.deb
+Size: 1355344
+MD5sum: d01dbd524b6b19e554cd777ae874cfa2
+SHA1: b5710cd338297d9db1e33d546e2961ffb38dee3d
+SHA256: 47bceee0618c0b24b90963cdcce6189b06d2616ed53a0df0dcbc023be2c2a1e6
+SHA512: b81c6d8a62867d1948bc2b2e96fe65bb4bb8f11f6661bf4011486fb961bf0d8f9459102ded270328b50740947b2acbeead19355a07233f8bc25edbb64b86f7e0
+Description: Headless server for the Luanti voxel game engine.
+Homepage: https://www.luanti.org
+
 Package: lxappearance
 Installed-Size: 216
 Maintainer: Yisus7u7 <dev.yisus@hotmail.com>
@@ -8341,6 +8359,21 @@ SHA256: 50e6d95567605320c58ac53d39e619db7acd3231f3954d154609cebc89b1191b
 SHA512: da8c54aec11785e1f1cfdaaf6d3f63f16264e9bae2090136ceb78763cbe7abcfaaa2c4d609c8abd14adb634b9303a5fc41194cfb5221a6f3d46190882199e5ea
 Description: A free source code editor
 Homepage: https://www.scintilla.org/SciTE.html
+
+Package: scrcpy
+Installed-Size: 436
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.0.2
+Depends: android-tools, ffmpeg, libusb, sdl2
+Filename: pool/main/s/scrcpy/scrcpy_3.0.2_aarch64.deb
+Size: 186300
+MD5sum: fe91acd63fdea364631fcba1ed193f73
+SHA1: b64d5ef86ebef7dec248f19cb85e1cbe8558ae34
+SHA256: 9d25cb967b9e7d82512664d73d601c2b82b38c14ea587784d1bb1abaad868168
+SHA512: ea050dc9161850cbc332e14366fdad757afaf15a0bba619904a67ec9ff98e57ae909ef67f3af2cf0241e618cfa851103a313cabe7d6841b1e48e98dc39aa6a17
+Description: Provides display and control of Android devices connected via USB or over TCP/IP
+Homepage: https://github.com/Genymobile/scrcpy
 
 Package: scrcpy
 Installed-Size: 436

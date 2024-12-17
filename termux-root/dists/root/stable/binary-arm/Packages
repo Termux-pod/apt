@@ -191,21 +191,6 @@ SHA512: a4c8980b9af225c793376a8691ee3e66081b4fc83f459fbae4466d3c87c2ea0bbd2359a6
 Description: Compose is a tool for defining and running multi-container Docker applications.
 Homepage: https://github.com/docker/compose
 
-Package: docker-compose
-Installed-Size: 57056
-Maintainer: @termux
-Architecture: arm
-Version: 2.32.0
-Depends: docker
-Filename: pool/stable/d/docker-compose/docker-compose_2.32.0_arm.deb
-Size: 11184348
-MD5sum: 16be6c7aa3965d32c8728cf8a942a349
-SHA1: e38e1149e985d650839eee04cdab4d680ab58ec4
-SHA256: 2280347d407e4f3aeb278c2fd2ecc897e65c4174b29d76a67f0f072022d12890
-SHA512: 8f11923b1526733ded0fc7725d8f09c84a4beb944eac4225b58f322f929e6d451945a3fb660b052d80563e591f37bcf561832d9cdb284d1a1baadae5ca0a8cbe
-Description: Compose is a tool for defining and running multi-container Docker applications.
-Homepage: https://github.com/docker/compose
-
 Package: encfs
 Installed-Size: 944
 Maintainer: @termux
@@ -444,6 +429,23 @@ Package: ipset
 Installed-Size: 452
 Maintainer: @termux
 Architecture: arm
+Version: 7.23
+Replaces: ipset-dev
+Depends: libmnl
+Breaks: ipset-dev
+Filename: pool/stable/i/ipset/ipset_7.23_arm.deb
+Size: 71332
+MD5sum: 85369f67d6b1180e1142750944200c5f
+SHA1: 7dbf30cc4cd10ed63cec55fcda6eb4ac22fc406a
+SHA256: c133839bef46b057cc138b152810a7e1cbd12b3c785f97f440f5a39c0d30e23c
+SHA512: 26808ad3d40770f8f85a8fef0f35ceed3522cb6c5beaedd2887ad1baf8598cce59a9308942418bd67c475abdd40a764e90d8a4dccbfd37253d29942e4d62981d
+Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset
+Installed-Size: 452
+Maintainer: @termux
+Architecture: arm
 Version: 7.22
 Replaces: ipset-dev
 Depends: libmnl
@@ -455,6 +457,21 @@ SHA1: b48cd4d11e328aeec1f21c8578145f02e6a22e18
 SHA256: 6ab019e38ac204dac633f102c3be87a712b2e0b5351c85180dbc2f1e9c45c385
 SHA512: 0b9da4387a6a61186a8f58a4d53928d19ef58bcfa5a495524af37260c99169e941f19b6d5a24903ae33a7fb522b58fd287f78eb7c6ba467008fc6f5649950a99
 Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset-static
+Installed-Size: 240
+Maintainer: @termux
+Architecture: arm
+Version: 7.23
+Depends: ipset (= 7.23)
+Filename: pool/stable/i/ipset-static/ipset-static_7.23_arm.deb
+Size: 46112
+MD5sum: 7c70d402c70cb3e9ed4a695dbfeaad6f
+SHA1: 308d2e069ad66705caf8f3d3dc44028460a892b0
+SHA256: 072569fc3d362b4cdc1630e97afc953015771efe3f90ef95cc01eb17cfb4f75e
+SHA512: d07cd9f1ab1ec37023131ffcd2a6d572e67b53c7eba65d24684c366604f662afb4ee982a87eab8dc993110474db419e5a54fa6ef582b5a931ac660512cd5182e
+Description: Static libraries for ipset
 Homepage: https://ipset.netfilter.org
 
 Package: ipset-static

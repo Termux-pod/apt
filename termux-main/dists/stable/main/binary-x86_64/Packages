@@ -1927,21 +1927,6 @@ SHA512: cefd197a2641d7695ad753b196a544f1b6e8955a143cfe8dc01901f03b8471b54cbb965f
 Description: Binaryen is a compiler and toolchain infrastructure library for WebAssembly
 Homepage: https://github.com/WebAssembly/binaryen
 
-Package: binaryen
-Installed-Size: 21340
-Maintainer: @termux
-Architecture: x86_64
-Version: 119
-Depends: libc++
-Filename: pool/main/b/binaryen/binaryen_119_x86_64.deb
-Size: 4270164
-MD5sum: 2c470f5961fb910683ef36a36dbde7d2
-SHA1: c13ae1e8d2c7a5ffe292ea6dd421ad1d646ab216
-SHA256: c27eacb342aa0d4c0ef47bf3548afa6acfc9fa2639c41cacf66a0857c5f9df48
-SHA512: 9d767428f04e9691913a03974aa8a81153b5db9fa7f6bc85d4ebe7774d024157a6715ee733426b39b13e846f490bef783286dddc18c332d1d6585dfa1c63df5a
-Description: Binaryen is a compiler and toolchain infrastructure library for WebAssembly
-Homepage: https://github.com/WebAssembly/binaryen
-
 Package: binutils
 Installed-Size: 36
 Maintainer: @termux
@@ -5962,6 +5947,21 @@ Description: Extensible, customizable text editor-and more
 Homepage: https://www.gnu.org/software/emacs/
 
 Package: emscripten
+Installed-Size: 73740
+Maintainer: @termux
+Architecture: all
+Version: 3.1.74
+Depends: nodejs-lts | nodejs, python, emscripten-binaryen, emscripten-llvm
+Filename: pool/main/e/emscripten/emscripten_3.1.74_all.deb
+Size: 12624756
+MD5sum: b401ccd7fe93da158abf55414a8c625e
+SHA1: e7ad3607f461bc83fb9192caf54ed5aa886b2d31
+SHA256: 156214149f32f3bc5ea5556b4bc7686bbd70130abf8e855da8bb38cb37f491f5
+SHA512: 8ed025e4b6b2b7c35ff0a119dbd6f68add35e6dacbf0e4a08093cf8820cd1d7be595480e52c95302807aaa4b98bbdc665f42d48b67e6ff422e3b204bd917a1f3
+Description: Emscripten: An LLVM-to-WebAssembly Compiler
+Homepage: https://emscripten.org
+
+Package: emscripten
 Installed-Size: 73692
 Maintainer: @termux
 Architecture: all
@@ -5974,6 +5974,21 @@ SHA1: a6b69c0942c64f075373b323ea677106c73227c4
 SHA256: c9ce59a98e8b8bb8e1cd7a6deb5f0751ee87711e5d6f11185ef9a968d2f274c2
 SHA512: a8ae4fdb42d906a5c63fbdfe84d83c223af3c164a9f25aba614af02b7f7e2f1efdfb0915f3cff9c1ba5f53e3a16e58a3d725cc350cc02107c95fe7e6ef36ac8a
 Description: Emscripten: An LLVM-to-WebAssembly Compiler
+Homepage: https://emscripten.org
+
+Package: emscripten-binaryen
+Installed-Size: 21516
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.1.74
+Depends: libc++
+Filename: pool/main/e/emscripten-binaryen/emscripten-binaryen_3.1.74_x86_64.deb
+Size: 4275828
+MD5sum: 39f191754bd7e149e7140ab04cc3c13e
+SHA1: 1742e583bc53e090d5eb679b922f09f0915c2e48
+SHA256: e9b9aa36e0eea1b2bcefbdbc1afa7ed640e2517941ef40fa12a0a4d3a3733d5e
+SHA512: f18c5b6a5eb93dc8b52f9cd69b5f0ac8db6fe49028baf870f30c538ae7469a2fcc8ff05934d1a899a06f5c774d0272ed451db29192a1a7e1eb77dd3b3294ad71
+Description: Emscripten-compatible Binaryen
 Homepage: https://emscripten.org
 
 Package: emscripten-binaryen
@@ -5992,6 +6007,21 @@ Description: Emscripten-compatible Binaryen
 Homepage: https://emscripten.org
 
 Package: emscripten-llvm
+Installed-Size: 148944
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.1.74
+Depends: libc++
+Filename: pool/main/e/emscripten-llvm/emscripten-llvm_3.1.74_x86_64.deb
+Size: 33900828
+MD5sum: 58911d8ec3269ff6fef95588c8dcb596
+SHA1: 4f24f2f4487c95272c6eb20e85f4e6b601ffe54c
+SHA256: f95e3f664fdaf554e538b58c78defad72ff6a4ba28693bbe6d950629f759cfdb
+SHA512: 436a7bd65e07056ba30438d0f52cec4697fb36270daa7c6a41e28850c630ef1f6cd17e71e90e36e030d9732aad5b4b2be7b98cd40303042455b79053150291d9
+Description: Emscripten-compatible LLVM
+Homepage: https://emscripten.org
+
+Package: emscripten-llvm
 Installed-Size: 151788
 Maintainer: @termux
 Architecture: x86_64
@@ -6004,6 +6034,20 @@ SHA1: 3daa82efb25dd8b9f56e1bdcef3303e3dcd348a9
 SHA256: 07507884aa806eea682d6823044e837a2d1d2161b14f16d6bc8fa13f369a3462
 SHA512: e39e6854c06cbb05a4476e467b420c7d13ce1773566582d4aa991ae9d2254640d153bdf6ffc14811e57200a803698da45b0daf3d1135e35b0d886ec9ae93f9ae
 Description: Emscripten-compatible LLVM
+Homepage: https://emscripten.org
+
+Package: emscripten-tests-third-party
+Installed-Size: 83268
+Maintainer: @termux
+Architecture: all
+Version: 3.1.74
+Filename: pool/main/e/emscripten-tests-third-party/emscripten-tests-third-party_3.1.74_all.deb
+Size: 9449060
+MD5sum: 29a5deddd645dfc7083bc613bfb562be
+SHA1: 9bd7910f8d7d37c339aeeaeefd7edc10bdae2281
+SHA256: a5dd2f1efda29dc152dc5257b518a182fa99f3716ba9f60b5a79cd0948f446e0
+SHA512: ddc9304b55fe7873b22488d53e5a78b3fa66ee33c70d5789b4cf2291a8bec414fd3fe1e329e693fa0f66a3f9f1c6be335c1553d41aea36fec241869b211b81ce
+Description: Emscripten third party test suite files
 Homepage: https://emscripten.org
 
 Package: emscripten-tests-third-party
@@ -32466,6 +32510,21 @@ Package: remind
 Installed-Size: 2852
 Maintainer: @termux
 Architecture: x86_64
+Version: 1:05.02.01
+Depends: libandroid-glob
+Filename: pool/main/r/remind/remind_1:05.02.01_x86_64.deb
+Size: 272444
+MD5sum: a56c12cbfb1e1e8480a7db2b1c1e5e00
+SHA1: 007013e01a3cf42121723b67c3d5bebf5e44add1
+SHA256: b0889ea1797f831fd8d026ef779a7911ba82b56c3390d4514699b98892ac48e7
+SHA512: 53b8a78cb0c0b03aea70191d4af69d9097e33b2f92ffb8ded028ad95ba54f448684e01062c0118ba2a5f5036aaea4fc7c985be1f9ba2d1fcfd919b365b3da28d
+Description: Sophisticated calendar and alarm program
+Homepage: https://dianne.skoll.ca/projects/remind/
+
+Package: remind
+Installed-Size: 2852
+Maintainer: @termux
+Architecture: x86_64
 Version: 1:05.02.00
 Depends: libandroid-glob
 Filename: pool/main/r/remind/remind_1:05.02.00_x86_64.deb
@@ -33740,20 +33799,6 @@ MD5sum: 753d85c90058678b2738232a2d95dab6
 SHA1: 5e7ffac613f293f534270e35a4237d7c25dcf472
 SHA256: 1dd86f1decadeb8808e025586d6c6ed241eb528d6d2606f7d00847554590e20e
 SHA512: 40da3ff8484a3663ac65f948022866428b31751c1731ebffae312bd4e25ed6c0c5660d9489e4e02ab24ff0920bb1c4f68651d2ffa106e7d44fa96b21d3b94016
-Description: Self-hosted anime and manga server for sea rovers.
-Homepage: https://github.com/5rahim/seanime
-
-Package: seanime
-Installed-Size: 74348
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.5.0
-Filename: pool/main/s/seanime/seanime_2.5.0_x86_64.deb
-Size: 19533896
-MD5sum: 3f090dd85b0f9e1dbe91a5939577cfc6
-SHA1: 06d49e5b0f98a5941262625b919969047d52f8f1
-SHA256: 8b5102b052e9d6679915d5e5fe1eae3f8e0782a2f1ad30efbb0bbc5a0dd9902f
-SHA512: 9dfdeb513c82ca3f7ff42c8b00c57e44612404e4ee6458b7ed918a1c69b1dcf5e54c83f3ad90c1a576736b4512b7de33630e3d246ae2e4e58693d303da2d5dc9
 Description: Self-hosted anime and manga server for sea rovers.
 Homepage: https://github.com/5rahim/seanime
 
@@ -40426,17 +40471,17 @@ Description: An open-source application to synchronize ActiveSync compatible dev
 Homepage: https://z-push.org/
 
 Package: z3
-Installed-Size: 47292
+Installed-Size: 48600
 Maintainer: @termux
 Architecture: x86_64
-Version: 4.13.3
+Version: 4.13.4
 Depends: libc++
-Filename: pool/main/z/z3/z3_4.13.3_x86_64.deb
-Size: 13231104
-MD5sum: ad62de995edc1c42cec8b36534e5a9e6
-SHA1: f3f5e330ec2f6369db98c2fddd02147660cc1d0f
-SHA256: 58610e45194e485a5eb8756d1ed788255cd0d4c7e6cbf17bac718117bfa2f3ba
-SHA512: 167327c7735227983cbfc0edb65a10fe0161e5a1deac3f61f9d682e4abe7b83db5fbaa12d21c9eadfb7e8919a3d34e8a10570d9905020139dd1d910af44113cd
+Filename: pool/main/z/z3/z3_4.13.4_x86_64.deb
+Size: 13619856
+MD5sum: f863c75e27f1db12eef46abe13508c2c
+SHA1: 3e79bc9e840e680e0084cdf8d72fe7b92217d297
+SHA256: 8530988ad0f00a6f4459c8c70aac983413d113140a7adb0d153fd9e5786c7050
+SHA512: 2dba375820a4069ef8b374c13c64e1aa03ba481e4d5c220db49e033a9903f33e5850e9ef4173b1b88f5222c473fea5f228313fd05075af5145a2f4e264548c16
 Description: Z3 is a theorem prover from Microsoft Research
 Homepage: https://github.com/Z3Prover/z3
 

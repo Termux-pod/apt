@@ -191,21 +191,6 @@ SHA512: 8f353034dcf2032456990f63a143c8386f018ceb09605451ebd69afb26df0c3995e1ffdf
 Description: Compose is a tool for defining and running multi-container Docker applications.
 Homepage: https://github.com/docker/compose
 
-Package: docker-compose
-Installed-Size: 59836
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.32.0
-Depends: docker
-Filename: pool/stable/d/docker-compose/docker-compose_2.32.0_aarch64.deb
-Size: 10854988
-MD5sum: 24d6a0598ba92f715656f50154144c63
-SHA1: 214dc0df2fc605eb53853fd3e91e571b49a4b148
-SHA256: b3a65be8a187b7a563eba53fd1fb34bcb02348b60ae81b03f81f4ceb6feb99b9
-SHA512: bca23a993ea52f1dbb95b1408ea059147b501cd0cf8e848c95daf080eea531bbc64c923726b2708a3c0e284be487fa8a795a2676be0f2fd490f0b80c678b91b4
-Description: Compose is a tool for defining and running multi-container Docker applications.
-Homepage: https://github.com/docker/compose
-
 Package: encfs
 Installed-Size: 1444
 Maintainer: @termux
@@ -444,6 +429,23 @@ Package: ipset
 Installed-Size: 568
 Maintainer: @termux
 Architecture: aarch64
+Version: 7.23
+Replaces: ipset-dev
+Depends: libmnl
+Breaks: ipset-dev
+Filename: pool/stable/i/ipset/ipset_7.23_aarch64.deb
+Size: 78476
+MD5sum: 34a2d793cdeacc2fa5899988d4189801
+SHA1: 3bcb8bc9cb8e07967f129911543f447c620c0f2f
+SHA256: 93d02edb459a725726899970776ee21e6cbe960ee8f2a1e9496a380d75d4243c
+SHA512: 55153998ef4f2a359d5b27c231ed7b1d57131f35a91971400f803fb67bde00c90c97306a0dee7b5fecf01dd045b91b17ba5eac3ba6abd156f753d25d7cef1328
+Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset
+Installed-Size: 568
+Maintainer: @termux
+Architecture: aarch64
 Version: 7.22
 Replaces: ipset-dev
 Depends: libmnl
@@ -455,6 +457,21 @@ SHA1: bc7cec6179d73d75656e738cc16767855278c468
 SHA256: 183bf957f529900ca296999e4f68310876c45f8f27334379bba4e0924f127ef4
 SHA512: 8173b26b1c0154acb989c0c65ff44d87d1fa2adb8b3e1ceaf7281feb1f185ec63e1cf9013840fad16ea5e058fd26214c77484ec4e3bbc594427a36252e8928d5
 Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset-static
+Installed-Size: 340
+Maintainer: @termux
+Architecture: aarch64
+Version: 7.23
+Depends: ipset (= 7.23)
+Filename: pool/stable/i/ipset-static/ipset-static_7.23_aarch64.deb
+Size: 48624
+MD5sum: 1ec38c097f550cf2113ff04e37787743
+SHA1: fa2da1acc528ae4419c0c6c20655414f4e6f3f24
+SHA256: b0a1946a8c2bb50c2339e17285e408c9f5ef2001f68b7143fc8e311f3188c4c3
+SHA512: 5facf5ed111b6572010a2e3dfc309613d1883ce450d438cfce354768553094e59119958b142e9aa043f882dabba0991e71d49d2244e360b4eab0d9b517b85672
+Description: Static libraries for ipset
 Homepage: https://ipset.netfilter.org
 
 Package: ipset-static

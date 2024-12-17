@@ -191,21 +191,6 @@ SHA512: 1a637a2a1397f61c3f8e46c9bb65995e31debc14249b98e3737f9c78ce38fffcf1250454
 Description: Compose is a tool for defining and running multi-container Docker applications.
 Homepage: https://github.com/docker/compose
 
-Package: docker-compose
-Installed-Size: 57456
-Maintainer: @termux
-Architecture: i686
-Version: 2.32.0
-Depends: docker
-Filename: pool/stable/d/docker-compose/docker-compose_2.32.0_i686.deb
-Size: 13122556
-MD5sum: c593f9f577036455812dc5dba7e1231a
-SHA1: 66e9555e1b1109a778152f1a3e444532b9023850
-SHA256: 6b6a78265cdbe796b761bd63d422bf163e5490017af7d6ee8f4468e399784aaa
-SHA512: 7666eaa2055ffbe87f7af0891b813af15c1bbce6d423d42fb90c7040f955e9a4833c4c9c05d940dd2a75b942e3955a0e3cc687911524e9233c595ba624f18900
-Description: Compose is a tool for defining and running multi-container Docker applications.
-Homepage: https://github.com/docker/compose
-
 Package: encfs
 Installed-Size: 1476
 Maintainer: @termux
@@ -444,6 +429,23 @@ Package: ipset
 Installed-Size: 500
 Maintainer: @termux
 Architecture: i686
+Version: 7.23
+Replaces: ipset-dev
+Depends: libmnl
+Breaks: ipset-dev
+Filename: pool/stable/i/ipset/ipset_7.23_i686.deb
+Size: 79968
+MD5sum: d39bc5eb1415bae8c8539d54ce90483b
+SHA1: 1ff7b01356eaee17024fb21c52171801aed43464
+SHA256: c1d145079107390d45388fee935aa9ebb84f0ea1d12b298ee4fd3d0716d4c328
+SHA512: 3571200a9dd6dddc9ca4950c6227186cd76cf8f760ec6379b4d5c616b89c837de3c610e1c7307aaf214d6e83d42b58dc601a22f450c794b953013fd7890ad770
+Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset
+Installed-Size: 500
+Maintainer: @termux
+Architecture: i686
 Version: 7.22
 Replaces: ipset-dev
 Depends: libmnl
@@ -455,6 +457,21 @@ SHA1: 5429af6ad4c9e000c20256f14ad14276b319adf0
 SHA256: 7cd2730d518ab4e2683c56648a329aaf91423b37901e9ad306ca15de4b4c86d2
 SHA512: 8f2522dec7871ceccb45010be336cc89711b34838a734c1773f2d578b3667a3bfb24ce0b5b768e976580a2ffc0dac55793e60ccbdea3e52faf3d9d046a6f3802
 Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset-static
+Installed-Size: 256
+Maintainer: @termux
+Architecture: i686
+Version: 7.23
+Depends: ipset (= 7.23)
+Filename: pool/stable/i/ipset-static/ipset-static_7.23_i686.deb
+Size: 48344
+MD5sum: 5e9fb4c421d1994beb4b76664fb6cbb9
+SHA1: 88b472a7f15384c4fc2fb544cb6acaac422191f6
+SHA256: 2d192de245dd24b8a49b56df4de3218bda38b3604fcd8c20cd2b3575903d7aa7
+SHA512: 1ef512cd16af259b144578abc6a1410376f534eef1fb6e49bdc644a2b7c522f3811c597d0da419d9f65aae9289e93c791e2f79aaf90b7a23d33dfbcbbaff1464
+Description: Static libraries for ipset
 Homepage: https://ipset.netfilter.org
 
 Package: ipset-static

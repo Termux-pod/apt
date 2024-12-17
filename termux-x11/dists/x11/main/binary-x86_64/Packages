@@ -1714,6 +1714,24 @@ Description: GTK+ based scientific calculator
 Homepage: https://sourceforge.net/projects/galculator/
 
 Package: garcon
+Installed-Size: 708
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.20.0
+Replaces: libgarcon
+Provides: libgarcon
+Depends: atk, gdk-pixbuf, glib, gtk3, harfbuzz, libcairo, libxfce4ui, libxfce4util, pango, zlib
+Conflicts: libgarcon
+Filename: pool/main/g/garcon/garcon_4.20.0_x86_64.deb
+Size: 90180
+MD5sum: 0e9129ffdfd4d6b9e6cc7aee1a860818
+SHA1: adce9e1824d4bbfc10eb332d4998f144705eb308
+SHA256: 9bada7f25ba7c82b9666ede7a2b8ee8105a32b6fd19fe8982a8ee59f98c480ff
+SHA512: 877649fe64e2f1edda57ac348b8ed6ea2e08753f2769c0120c8dbb679c11484e69fe7b40e26bc02fb2133292664ddcfbd94a3299309235c03429aa3ae6903f1e
+Description: Implementation of the freedesktop.org menu specification
+Homepage: https://docs.xfce.org/xfce/garcon/start
+
+Package: garcon
 Installed-Size: 704
 Maintainer: @termux
 Architecture: x86_64
@@ -1730,6 +1748,21 @@ SHA256: 41afe8a5125593afad102f0b1ada9d8c0db7f3ec180497129837ea3b9617e66d
 SHA512: baf9cee83588396143692e7e2ecc0e58b9dea2a08921fc6468f7899ac1a8d3f1c72f86fb45c7af557c9bef059dc5ac47d4b9c5fe7c72cdc6e834483eafa716f5
 Description: Implementation of the freedesktop.org menu specification
 Homepage: https://www.xfce.org/
+
+Package: garcon-static
+Installed-Size: 332
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.20.0
+Depends: garcon (= 4.20.0)
+Filename: pool/main/g/garcon-static/garcon-static_4.20.0_x86_64.deb
+Size: 48108
+MD5sum: 69a3b6fbc6b87a4dc512c6439bb6d364
+SHA1: e95874b0d29c5e73eb4084118768248489973d29
+SHA256: 9306e977dac0737bb293468e8b8199c5da89d209d8c4eb33c830ec5f85797d6c
+SHA512: 14c99901ed803d2ba99e18d828de0231ab8f671f0ce9d87a625a5fce7ed65ebe714136e4cec1751ee241bf2fedeaa26bb40f4f9de1216d334a4bfea76219bd4a
+Description: Static libraries for garcon
+Homepage: https://docs.xfce.org/xfce/garcon/start
 
 Package: garcon-static
 Installed-Size: 332
@@ -2115,22 +2148,6 @@ SHA512: 49b3a0fa7ce311df712d9d285d0cf04f50847b30e3ca6eb81d58b7c6109f7a8764606b50
 Description: GNOME Scientific calculator
 Homepage: https://apps.gnome.org/Calculator
 
-Package: gnome-calculator
-Installed-Size: 2136
-Maintainer: @termux
-Architecture: x86_64
-Version: 47.0
-Depends: glib, gtk4, gtksourceview5, libadwaita, libgee, libmpc, libmpfr, libsoup3, libxml2
-Recommends: gnome-calculator-help
-Filename: pool/main/g/gnome-calculator/gnome-calculator_47.0_x86_64.deb
-Size: 359480
-MD5sum: 52c34573000c5139209e4a9e56354c1f
-SHA1: 1c46f4670b7e774fbd00523898b6fce43a8ff7ec
-SHA256: 9796823ab4d34fe7d7478960190ee34b60988867889f40d5e6a0b608165d62e8
-SHA512: f4aaa74af7c273e7b5a332ec0d77fe1cc5f0ec99b859df3da6989439b155ad1c91f3e2003e4127dd25702230e1b702eeb80ff54959531821e421fcd29d2b1741
-Description: GNOME Scientific calculator
-Homepage: https://apps.gnome.org/Calculator
-
 Package: gnome-calculator-help
 Installed-Size: 4356
 Maintainer: @termux
@@ -2143,21 +2160,6 @@ MD5sum: f3cd06bd50e88b41ec64b8b380d9a024
 SHA1: f0c828ced0f0c24d937c06dcc2e5167f06b6a23c
 SHA256: dc67331cf6ec99f6786113480b2e68ae5a3ef7c29fde13c449efe2938b1165dd
 SHA512: d1bf275182aa8726849fb3e395bd39bbd8a2ba5e8fd02c198c7ef79a3772fb63bd3efa419cdf1f21c223da17aa6dca509be58b0991968997f1c5410f4e2a0cc4
-Description: Gnome Calculator help files
-Homepage: https://apps.gnome.org/Calculator
-
-Package: gnome-calculator-help
-Installed-Size: 4356
-Maintainer: @termux
-Architecture: all
-Version: 47.0
-Depends: gnome-calculator (= 47.0)
-Filename: pool/main/g/gnome-calculator-help/gnome-calculator-help_47.0_all.deb
-Size: 140008
-MD5sum: 66cfa1afd54e84dd9075018fc3ba668c
-SHA1: 565675e77e3323a38227b28745cefdf22e395668
-SHA256: 2570e79e138568d54daf747c486fd494a7ce51559cccbf74e380fa9bebbe657f
-SHA512: d96447386f4ee81a1bd5f728b2556485958e45799a3abcfbe68ef82fe917dc4aa11b0a96e6b79fed9b3857ada6a50d119d808334640f4a80754200513796c3fe
 Description: Gnome Calculator help files
 Homepage: https://apps.gnome.org/Calculator
 
@@ -10142,6 +10144,21 @@ Description: A metapackage that installs all parts of the XFCE desktop environme
 Homepage: https://github.com/termux/x11-packages
 
 Package: xfce4-appfinder
+Installed-Size: 360
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.20.0
+Depends: garcon, gdk-pixbuf, glib, gtk3, libcairo, libxfce4ui, libxfce4util, xfconf
+Filename: pool/main/x/xfce4-appfinder/xfce4-appfinder_4.20.0_x86_64.deb
+Size: 67996
+MD5sum: c8a6b6d46d95209fafaa23dcfdd0e309
+SHA1: 7e609c0bed6288e19bb8206300281d402215fce5
+SHA256: fdbe7f649bdbbc1ead9868d57d78e29946980d8f40a56af57b795e8925b3f5f1
+SHA512: 9353a78e6c75b4e1756e878caaebf51e0e9b8e4385c707e440d8786eabae39de02b54cecf40c318986d644adbddb59cd5542067d9ad9728aa7bf45e20c20de55
+Description: Application launcher and finder
+Homepage: https://docs.xfce.org/xfce/xfce4-appfinder/start
+
+Package: xfce4-appfinder
 Installed-Size: 356
 Maintainer: @termux
 Architecture: x86_64
@@ -10761,20 +10778,35 @@ Description: A session manager for XFCE environment
 Homepage: https://www.xfce.org/
 
 Package: xfce4-settings
-Installed-Size: 2508
+Installed-Size: 2752
 Maintainer: @termux
 Architecture: x86_64
-Version: 4.18.6
-Depends: atk, exo, fontconfig, garcon, gdk-pixbuf, glib, gtk3, libcairo, libnotify, libx11, libxcursor, libxfce4ui, libxfce4util, libxi, libxklavier, libxrandr, pango, xfconf
+Version: 4.20.0
+Depends: atk, exo, fontconfig, garcon, gdk-pixbuf, glib, gtk3, harfbuzz, libcairo, libnotify, libwayland, libx11, libxcursor, libxfce4ui, libxfce4util, libxi, libxklavier, libxrandr, pango, xfconf, zlib
 Recommends: gsettings-desktop-schemas, libcanberra, lxde-icon-theme
-Filename: pool/main/x/xfce4-settings/xfce4-settings_4.18.6_x86_64.deb
-Size: 385952
-MD5sum: c45c3e743c8224681296ba73da8007e5
-SHA1: 161787f523a10144f77daa31fd5153ba94f5a516
-SHA256: fed1e8304b1b422948a117ec15afa285b0ac32d0c9707db5b5342edc170fa003
-SHA512: aa60d3a8c6f66d61c211773599fa9c7a5e5ee7d43617f0679709c6559bead7206978057f240c18abf9254f1191d8642693040577d510c50be18019cdf6b73d76
+Filename: pool/main/x/xfce4-settings/xfce4-settings_4.20.0_x86_64.deb
+Size: 426760
+MD5sum: f8d9c1d51fda92f56dfe02b449a87dac
+SHA1: 7facdb1eb8bd5d35747f797faa5251284463a813
+SHA256: ff1eedf3f48c1c8b0707edd42f64c3f553fc7511fb8d784892d9ea72ddee215e
+SHA512: 57aad4958ed82d976dc234bc9ffe2cd753798fb5ba5205e81d6ab8b80afcc29c7093e360fbd8766549704b735cceea35790c80f7ab10ecfdccde1ba9ea17da48
 Description: Settings manager for XFCE environment
-Homepage: https://www.xfce.org/
+Homepage: https://docs.xfce.org/xfce/xfce4-settings/start
+
+Package: xfce4-settings-static
+Installed-Size: 48
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.20.0
+Depends: xfce4-settings (= 4.20.0)
+Filename: pool/main/x/xfce4-settings-static/xfce4-settings-static_4.20.0_x86_64.deb
+Size: 3272
+MD5sum: 5e66a7cbf60a3a878e0f872069aaf745
+SHA1: faec245a8bbddd6a82a181e705bae86841d5c937
+SHA256: 502b9b503a3ef7abdf2b57c144300ac823922e590ac35729713749528f2cb9c5
+SHA512: 067c6fc7db3a8a624b8e635698ac22b0d0ee183ba257af6e0b8e737ff34bfa204192c5f41e15d8b07c0f85e267b1f64dc46eae17b44cf51f163e09b985d30a70
+Description: Static libraries for xfce4-settings
+Homepage: https://docs.xfce.org/xfce/xfce4-settings/start
 
 Package: xfce4-taskmanager
 Installed-Size: 300
@@ -10927,6 +10959,22 @@ SHA256: e4ff6dac3df5c325ff41776980aae86fa87a533b8742f9d1adf70c6fc755fff3
 SHA512: 146350dbdeb4d5c97bf941307f4747632fcd194c128bbb4c3d9f83cc40288a75fe4376331617144e23f1618f1a9d31a2b97f28b240168eace16ce37e2e24e7e8
 Description: A desktop manager for XFCE environment
 Homepage: https://www.xfce.org/
+
+Package: xfwm4
+Installed-Size: 3944
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.20.0
+Depends: gdk-pixbuf, glib, gtk3, libcairo, libepoxy, libwnck, libx11, libxcomposite, libxdamage, libxext, libxfce4ui, libxfce4util, libxfixes, libxinerama, libxpresent, libxrandr, libxrender, pango, startup-notification, xfconf
+Recommends: hicolor-icon-theme
+Filename: pool/main/x/xfwm4/xfwm4_4.20.0_x86_64.deb
+Size: 261800
+MD5sum: 37068d861bd433362386a5eac6089348
+SHA1: 92cb47e7c6e0239045a91bc076379d5f7d76b74f
+SHA256: fe48a302d119289f2b7a4adfc2f8b767bb1846c4c38cef8d5aebdaf493109327
+SHA512: 127cd254776f18dcc4f46bbc6cdc6841ea5b4c8ededc01bc57be20538b005076ff713651f814f8d24c25d3dbea19028e22bdebd5a42e9a219fa61f75e8256c49
+Description: Window manager for XFCE environment
+Homepage: https://docs.xfce.org/xfce/xfwm4/start
 
 Package: xfwm4
 Installed-Size: 3944

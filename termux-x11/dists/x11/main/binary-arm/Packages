@@ -1731,24 +1731,6 @@ SHA512: 118a56f68af3c8cc13e2b184fa80eaacdf5f8850f8b97d6a49d428e85643839dcd92d3ae
 Description: Implementation of the freedesktop.org menu specification
 Homepage: https://docs.xfce.org/xfce/garcon/start
 
-Package: garcon
-Installed-Size: 656
-Maintainer: @termux
-Architecture: arm
-Version: 4.18.1
-Replaces: libgarcon
-Provides: libgarcon
-Depends: atk, gdk-pixbuf, glib, gtk3, harfbuzz, libcairo, libxfce4ui, libxfce4util, pango, zlib
-Conflicts: libgarcon
-Filename: pool/main/g/garcon/garcon_4.18.1_arm.deb
-Size: 81924
-MD5sum: 9ff9156769b7ef2aa21c8b22d252199b
-SHA1: a2015ca51118092c97e6c2439b9cf9fe673d2a4c
-SHA256: a7071416ea982f18ba1100eff2f5aa8748c4fed746e06e051a9fdac9086bdc71
-SHA512: b2316b70f1eb4af95daeb137d663de8f7007efb32e4932771e27786040597fe28717cb1126a1da1ed36b322bd47bcdba4eb15a08815552b9c233034a8719e427
-Description: Implementation of the freedesktop.org menu specification
-Homepage: https://www.xfce.org/
-
 Package: garcon-static
 Installed-Size: 236
 Maintainer: @termux
@@ -1763,21 +1745,6 @@ SHA256: 5bdccd4a635fb25e3d8d0500a551fde17c4668d67976cdf6b7327d5659efdf1c
 SHA512: 529ab30217853135a344a21a915ce68c61a3514cac2fc59c304de6b947c2b28c04349a7160ef01854add29d037d18c7406c149e7ebc4987b34211118da038e97
 Description: Static libraries for garcon
 Homepage: https://docs.xfce.org/xfce/garcon/start
-
-Package: garcon-static
-Installed-Size: 236
-Maintainer: @termux
-Architecture: arm
-Version: 4.18.1
-Depends: garcon (= 4.18.1)
-Filename: pool/main/g/garcon-static/garcon-static_4.18.1_arm.deb
-Size: 47380
-MD5sum: 87b74870c8f6fab071c870c574b3369e
-SHA1: 590a164923de6739ad6d942dae5bd74d18de0033
-SHA256: 359ab7421c2a94e2db7cab62cb4bf3a8ae24e3c52ab73dc5330a198d5fcd4db4
-SHA512: 9323f96309720c0fbdd7f634b2ead832b2a3a12e17976963b73a60ac4e67c3545cf38cb597ea393602d555faa5ba22b706ff89e588eb40a104b2fd5081b426ec
-Description: Static libraries for garcon
-Homepage: https://www.xfce.org/
 
 Package: gcr
 Installed-Size: 2900
@@ -8594,6 +8561,21 @@ Description: Static libraries for sdl2-gfx
 Homepage: https://www.ferzkopp.net/joomla/content/view/19/14/
 
 Package: sdl2-image
+Installed-Size: 220
+Maintainer: @termux
+Architecture: arm
+Version: 2.8.3
+Depends: libjpeg-turbo, libjxl, libpng, libtiff, libwebp, sdl2
+Filename: pool/main/s/sdl2-image/sdl2-image_2.8.3_arm.deb
+Size: 47664
+MD5sum: 1e2e06d50d953a9a57e3d1bb54c973ee
+SHA1: e699c1c27a2af43c12204ec38313fd7571358bd1
+SHA256: 215564d08952cdb3cc3186957d9a2798a5d85438901342e408aa3fec5bea0853
+SHA512: 3c52bb99e2753e23eba9a05228a918fb913b646aa99c393be57dbdc3af346b7b9d15a9968269dd6026f9fcc3b3ec5a07a62b90a746604145580a4087d7e63ef1
+Description: A simple library to load images of various formats as SDL surfaces (version 2)
+Homepage: https://github.com/libsdl-org/SDL_image
+
+Package: sdl2-image
 Installed-Size: 228
 Maintainer: @termux
 Architecture: arm
@@ -8606,6 +8588,21 @@ SHA1: 7da5e4a01522d90e84d6e2b0db1615ec89868f2b
 SHA256: c24c273de0193e8b6622e8101a91e5588f67c5ac3e0d2be60f87aaa4da257671
 SHA512: 709d8ec2944752b5351357d50b4bfaa5dacea402e2c9f2ca1e13e3ddd4b46938dec4b40f811e8c6d1b773d0f346b32dc8569393e245032fae641414748943f82
 Description: A simple library to load images of various formats as SDL surfaces (version 2)
+Homepage: https://github.com/libsdl-org/SDL_image
+
+Package: sdl2-image-static
+Installed-Size: 152
+Maintainer: @termux
+Architecture: arm
+Version: 2.8.3
+Depends: sdl2-image (= 2.8.3)
+Filename: pool/main/s/sdl2-image-static/sdl2-image-static_2.8.3_arm.deb
+Size: 48336
+MD5sum: 8dd328100471e834f48442417d077d05
+SHA1: 1e39b610e206bfab1e124dafa633d47f2960341d
+SHA256: b2289efda9b8f942b7ee17a2a5c2782fed48d170ddea5adfec9581e29de411de
+SHA512: 1f8306d75ed875289be4ba2c11b65e100e2a10a96c1545a59c704035b85c6cdcd3488e05dc1a780208452c69fd6a8eb439d7b80bf1d54308a61f16e3f0a83f82
+Description: Static libraries for sdl2-image
 Homepage: https://github.com/libsdl-org/SDL_image
 
 Package: sdl2-image-static
@@ -9144,18 +9141,18 @@ Description: The Powder Toy is a free physics sandbox game
 Homepage: https://powdertoy.co.uk/
 
 Package: thunar
-Installed-Size: 4032
+Installed-Size: 1524
 Maintainer: @termux
 Architecture: arm
-Version: 4.18.11
+Version: 4.20.0
 Depends: atk, desktop-file-utils, exo, gdk-pixbuf, glib, gtk3, harfbuzz, libcairo, libexif, libice, libnotify, libsm, libx11, libxfce4ui, libxfce4util, pango, pcre2, shared-mime-info, xfce4-panel, xfconf, zlib
 Recommends: gvfs, hicolor-icon-theme, thunar-archive-plugin, tumbler
-Filename: pool/main/t/thunar/thunar_4.18.11_arm.deb
-Size: 570604
-MD5sum: 48257709e4cd451facb3328e7cf90055
-SHA1: 72ea57ef18e22ea7551bc693f8157e4edcd0d558
-SHA256: 465f4c7dff1af2d977164f3cffb547375bdb44765e3aaa1084174c8cddc0844b
-SHA512: b84e3f6e9c6b1bf4df3dcda76677f00d468e2781652291ef446dcef784c4e995cf0f785846043932a0ccd6b4034a7169cdc8cf1cef515465b507b8a9c64db8bf
+Filename: pool/main/t/thunar/thunar_4.20.0_arm.deb
+Size: 358008
+MD5sum: 52552c8379d422f9536d69b635e15212
+SHA1: ef3db34d0857e8d341b2bb5a270948f886fb76fe
+SHA256: de1e6f9c41aecf813828c17cb050fba210d7c88b3bfd1faf5e12f5d9ea1c941d
+SHA512: c781eabfbe2cce433a506501f1d24af4cb8a7ae59933290185dbaaf701b66197d2c802b41b5ec3c0ec3efa171b3ee2d0c4785ce2aeb7a63d07ae16bee3556a0e
 Description: Modern file manager for XFCE environment
 Homepage: https://docs.xfce.org/xfce/thunar/start
 
@@ -9194,14 +9191,14 @@ Package: thunar-static
 Installed-Size: 396
 Maintainer: @termux
 Architecture: arm
-Version: 4.18.11
-Depends: thunar (= 4.18.11)
-Filename: pool/main/t/thunar-static/thunar-static_4.18.11_arm.deb
-Size: 79084
-MD5sum: 51f821dd5615e3dd4cdb56c355c97564
-SHA1: 5b95eeb68000c2c543ca641a16a205dd25292b4a
-SHA256: 2f48b8073f3acfbc1f1ffe45a6c5fbd59808f1623c518d7f926e1a8ec900aaa0
-SHA512: d0e35183112e8949e1986ef8ecb128da6e6ba1d87c66a52f238e25dbe286568f54410898f6a55c3b04ab65ea745c9831fa0d3bd71221fe250aa63c5059bbf5fe
+Version: 4.20.0
+Depends: thunar (= 4.20.0)
+Filename: pool/main/t/thunar-static/thunar-static_4.20.0_arm.deb
+Size: 79124
+MD5sum: 2e74dd80a4f194b762800cf4159e32db
+SHA1: aa4cd9a83c03deb2af18e6431053a52a8e37ce6b
+SHA256: 9fe78653a5a25f2fb3ee2fb872558efa478fc9f53cc40b34ea5d92aa38527396
+SHA512: 3a1e14cec4379baf59bd5d450983a6f38d31ec36bb37358a43063f771cffa31305d4abc15fee975cb7d1716f530eb3dfb08895acc059a8daf20bf3971b06b48a
 Description: Static libraries for thunar
 Homepage: https://docs.xfce.org/xfce/thunar/start
 
@@ -10111,21 +10108,6 @@ SHA512: ec180858b4ab0420c957818d1442b819a0701b2868d9548f50fb228ec9b7d2eeca11ca0f
 Description: Application launcher and finder
 Homepage: https://docs.xfce.org/xfce/xfce4-appfinder/start
 
-Package: xfce4-appfinder
-Installed-Size: 320
-Maintainer: @termux
-Architecture: arm
-Version: 4.18.1
-Depends: garcon, gdk-pixbuf, gtk3, libcairo, libxfce4ui, libxfce4util, xfconf
-Filename: pool/main/x/xfce4-appfinder/xfce4-appfinder_4.18.1_arm.deb
-Size: 60244
-MD5sum: 1aef350f151395c5b1bb046a2a2a25c5
-SHA1: 35ebf6554a9199899f38d18c142468ceca1a3c89
-SHA256: 5d129f9e3ed14bab0cd3ac77f512421f22ae1d9b52df287045aeaaa466e70ad8
-SHA512: b7c50db021f72b68d3ae17676cd742f204195ab5ab4de29855d866a0af4df9c790c514a51060b699ac512e019dd2bf13d20827b99276f1dacf87f8e8f571dd40
-Description: Application launcher and finder
-Homepage: https://docs.xfce.org/xfce/xfce4-appfinder/start
-
 Package: xfce4-appmenu-plugin
 Installed-Size: 136
 Maintainer: @termux
@@ -10929,22 +10911,6 @@ SHA512: eb92d9e33a3f3c12108347150352d57324a583d4e4fd1659daf877769452cfe95dfcc9fc
 Description: Window manager for XFCE environment
 Homepage: https://docs.xfce.org/xfce/xfwm4/start
 
-Package: xfwm4
-Installed-Size: 3796
-Maintainer: @termux
-Architecture: arm
-Version: 4.18.0
-Depends: gdk-pixbuf, glib, gtk3, libcairo, libepoxy, libwnck, libx11, libxcomposite, libxdamage, libxext, libxfce4ui, libxfce4util, libxfixes, libxinerama, libxrandr, libxrender, pango, startup-notification, xfconf
-Recommends: hicolor-icon-theme
-Filename: pool/main/x/xfwm4/xfwm4_4.18.0_arm.deb
-Size: 235636
-MD5sum: f35c5e0ff3d85fd6922f90bd79d45dd9
-SHA1: 28a5ed654a6d6f776e9cab04e8642448c4974d68
-SHA256: 6a74d27f3bcafe6334670c1f831ac592bca4931ea7e70f792c222d29e30d3059
-SHA512: aa4a8286c147cac8a0e4186a276b8954517b8d0217c1828801fe28fb6850ec88768c289b6fbabedcec6c3dd20742d749e433cae50663cf4eb85fd2afec7b03ac
-Description: Window manager for XFCE environment
-Homepage: https://www.xfce.org/
-
 Package: xkeyboard-config
 Installed-Size: 4044
 Maintainer: @termux
@@ -11100,6 +11066,22 @@ Package: xorg-server
 Installed-Size: 3888
 Maintainer: @termux
 Architecture: arm
+Version: 21.1.15
+Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxcvt, libxfont2, libxinerama, libxkbfile, libxshmfence, opengl, openssl, xkeyboard-config, xorg-protocol-txt, xorg-xkbcomp
+Recommends: xf86-video-dummy, xf86-input-void
+Filename: pool/main/x/xorg-server/xorg-server_21.1.15_arm.deb
+Size: 1038028
+MD5sum: 378ae8a77bbea99fbfe5bb2f69b77a5e
+SHA1: d55ffce6abb76547e3db85401fd01eab57e726c0
+SHA256: 7d8363b4194affb36f389c4dbfb17416ffa7b9fbcdaa575f3d6a9ace17dfd026
+SHA512: 1361a47d4ee524173998623398ebb0155e919a9fe676b0b4cded37b497a4d932316f4f030a03d099dc04a4b432c8341305bcfd721c15d2e4708a368f7cf5bf86
+Description: Xorg server
+Homepage: https://xorg.freedesktop.org/wiki/
+
+Package: xorg-server
+Installed-Size: 3888
+Maintainer: @termux
+Architecture: arm
 Version: 21.1.14
 Depends: libandroid-shmem, libdrm, libpciaccess, libpixman, libx11, libxau, libxcvt, libxfont2, libxinerama, libxkbfile, libxshmfence, opengl, openssl, xkeyboard-config, xorg-protocol-txt, xorg-xkbcomp
 Recommends: xf86-video-dummy, xf86-input-void
@@ -11110,6 +11092,21 @@ SHA1: 206b9b0f205bdfbc1db0dfafa941d9cd26f2f052
 SHA256: 8223f3e9c2741530a6bcc1099988488458609d7b5bd3cab7b6b9a8588dd12950
 SHA512: ba5ef39555d1cd604a47bbae4d69c5b1c4e8e56e3d94e947e451aac8614310e9eef13848968b40d777c25aa4bc00a517597d73b5663e9c10a8fafe8c4ac1dbfb
 Description: Xorg server
+Homepage: https://xorg.freedesktop.org/wiki/
+
+Package: xorg-server-xephyr
+Installed-Size: 1168
+Maintainer: @termux
+Architecture: arm
+Version: 21.1.15
+Depends: libandroid-shmem, libpixman, libxau, libxcb, libxdmcp, libxfont2, opengl, openssl, xcb-util, xcb-util-image, xcb-util-keysyms, xcb-util-renderutil, xcb-util-wm, xkeyboard-config, xorg-xkbcomp
+Filename: pool/main/x/xorg-server-xephyr/xorg-server-xephyr_21.1.15_arm.deb
+Size: 577488
+MD5sum: cbfa5c1f4f545a20ade1ad6ddb142926
+SHA1: bd5a4569c6c41afe0630fa57e6c4e048d4fe1c61
+SHA256: 1b56a5ac2d68e88ed9598181162d26ee1bf5cc99f0e47b5aa4443c1ef0302d43
+SHA512: d474e2bbe914d2392b85ccbe94ceedaabe21a33a0ce0aeb84b96bd32f91c4ae2003df37ec46289b34a7cbd9a7ef2f154b8fd7cb8628576a57a78b3dbb6c14710
+Description: nested X server
 Homepage: https://xorg.freedesktop.org/wiki/
 
 Package: xorg-server-xephyr

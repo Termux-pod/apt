@@ -4951,6 +4951,21 @@ SHA512: 922343c108df79d45340047a414b29a5bfb45988fa80bca21d9411d2d8c2e480401583b5
 Description: Static libraries for libxfce4util
 Homepage: https://docs.xfce.org/xfce/libxfce4util/start
 
+Package: libxfce4windowing
+Installed-Size: 644
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.20.0
+Depends: atk, gdk-pixbuf, glib, gtk3, harfbuzz, libcairo, libdisplay-info, libwayland, libwnck, libx11, libxrandr, pango, zlib
+Filename: pool/main/libx/libxfce4windowing/libxfce4windowing_4.20.0_x86_64.deb
+Size: 90608
+MD5sum: 264f59c6234bf86e2d6706a0ef8e5fc3
+SHA1: 50b7ee2f2b506654df3ada9d84e654bd4428524e
+SHA256: 36e0303f616c19da74efe56c6b9a071f3cfcc943a3cb7c3199bd586f9dc15040
+SHA512: a590a9103a16e4a00d044c4d6dcf896aaf3fb7cd81fcc6ac11f1cf602ad042a4c771d2313c3c8144445e36c6900f6cecccaf4b67c740a587210703604cdf2f9e
+Description: Windowing concept abstraction library for X11 and Wayland
+Homepage: https://docs.xfce.org/xfce/libxfce4windowing/start
+
 Package: libxfont2
 Installed-Size: 284
 Maintainer: @termux
@@ -9612,23 +9627,6 @@ SHA512: b445e1f4f4048b3bc4179bd55f3ade27f3947d1bad37a144f0c90f01418913cf69be0e1e
 Description: Modular wayland compositor library
 Homepage: https://gitlab.freedesktop.org/wlroots/wlroots
 
-Package: wlroots
-Installed-Size: 1524
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.18.1-1
-Depends: libdrm, libglvnd, libpixman, libwayland, libxcb, libxkbcommon, xcb-util-renderutil, xcb-util-wm, termux-gui-c
-Recommends: xwayland
-Breaks: sway (<< 1.10 )
-Filename: pool/main/w/wlroots/wlroots_0.18.1-1_x86_64.deb
-Size: 324220
-MD5sum: 7f9763d59c5d20e264124886c4538e0b
-SHA1: 68fce28693c06d9022921562d0c36b70f3fe1ee0
-SHA256: b6ed68b520b76597665d54a0a040c9276d40620fcbbb2afac62966799c4d83e6
-SHA512: 94ebfdc42d34be242bdf06eaac21f85fe03f9fcce82215fb47077d6d24dc2236f258a09e5d66b56d8fff5323b495442441350d615918bc4bb302eb29408187e7
-Description: Modular wayland compositor library
-Homepage: https://gitlab.freedesktop.org/wlroots/wlroots
-
 Package: wmaker
 Installed-Size: 3960
 Maintainer: @termux
@@ -10580,6 +10578,22 @@ Description: Static libraries for xfce4-notifyd
 Homepage: https://docs.xfce.org/apps/notifyd/start
 
 Package: xfce4-panel
+Installed-Size: 2544
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.20.0
+Depends: atk, exo, garcon, gdk-pixbuf, glib, gtk3, gtk-layer-shell, harfbuzz, libcairo, libdisplay-info, libice, libsm, libwayland, libwnck, libx11, libxext, libxrandr, libxfce4ui, libxfce4util, libxfce4windowing, pango, xfconf, zlib
+Recommends: desktop-file-utils, hicolor-icon-theme
+Filename: pool/main/x/xfce4-panel/xfce4-panel_4.20.0_x86_64.deb
+Size: 488612
+MD5sum: dc7843a732c4fc315afb83924ae874cb
+SHA1: ca2a743da930c6a171821d6d112af8882000b362
+SHA256: d272b8ad1a8023c2b9e1df4b9df6ea8e887bfcbc5e458fd4160b841ed8ee9713
+SHA512: 9c96b3f8d43c5af293f32f70f3392cb49edbf7665cbb5c5947abe154d7c901d4bfc8962fd527def4f1f4c503e094a5729a1f523bc882c046984191a081adaecc
+Description: Panel for the XFCE environment
+Homepage: https://docs.xfce.org/xfce/xfce4-panel/start
+
+Package: xfce4-panel
 Installed-Size: 2476
 Maintainer: @termux
 Architecture: x86_64
@@ -10609,6 +10623,21 @@ SHA256: f99b0e6d8cc73ef854d8b1e83ed9ee56ab926cf24027a34e05735787588a33bf
 SHA512: 60578c2791dc50df601207f2dcfd3910b585f7e62b8ccf61346484e85204d6583cefdbc0cac28baeddc322d55f58510e79fd07152ea6292bb9f25aa777237c90
 Description: A simple application to manage Xfce panel layouts.
 Homepage: https://docs.xfce.org/apps/xfce4-panel-profiles/start
+
+Package: xfce4-panel-static
+Installed-Size: 1728
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.20.0
+Depends: xfce4-panel (= 4.20.0)
+Filename: pool/main/x/xfce4-panel-static/xfce4-panel-static_4.20.0_x86_64.deb
+Size: 209656
+MD5sum: af3715d40cbe6317cd4198ad6ab3ce7c
+SHA1: 37e951acdf88cb7713c18e22d2ac444b9d23e815
+SHA256: 3ac048ffef8493b24453bcf6a45a36005566a58a9e190e424631fd436d905728
+SHA512: 49b3ecae011cbd5d0601a55ca6f6856be42d2d6e3e9efc72439579cf47c589f732b6776a026f44766b9f534b593d5900b44d2bed9baa2210cc210c3d9f0c762b
+Description: Static libraries for xfce4-panel
+Homepage: https://docs.xfce.org/xfce/xfce4-panel/start
 
 Package: xfce4-panel-static
 Installed-Size: 1716

@@ -8560,24 +8560,6 @@ SHA512: 5eb19d62138b510a489ec3d75175aac68d2b4b8380c5437d31a5fa80e66e70b52927ac85
 Description: A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (version 2)
 Homepage: https://www.libsdl.org
 
-Package: sdl2
-Installed-Size: 4236
-Maintainer: @termux
-Architecture: i686
-Version: 2.30.10
-Replaces: libsdl2
-Depends: libdecor, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
-Recommends: opengl
-Conflicts: libsdl2
-Filename: pool/main/s/sdl2/sdl2_2.30.10_i686.deb
-Size: 780668
-MD5sum: a00f3a7544f247adde32bcce2720c29d
-SHA1: 8620fe033d84deab8a023075837b7a11d02b9c48
-SHA256: c88bc6de02623cf45a57fc5b4e1868f50595857b73f5e3f9c553a48f0c67cf48
-SHA512: 8ab65a7fcd5e14e2bff132c998e2275ec75eef6547f039f8735cf439d36aceed34ceb1374269c6131515187816665e812e6ce143f59bf34a4ced128314903949
-Description: A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (version 2)
-Homepage: https://www.libsdl.org
-
 Package: sdl2-gfx
 Installed-Size: 148
 Maintainer: @termux
@@ -8743,20 +8725,20 @@ SHA512: 3f61ae40d76dc874c4b232b5036bd4e50f0e7ee2adc43dae21e2c4f7d2476a3886b8495d
 Description: Static libraries for sdl2
 Homepage: https://www.libsdl.org
 
-Package: sdl2-static
-Installed-Size: 2824
+Package: sdl2-ttf
+Installed-Size: 212
 Maintainer: @termux
 Architecture: i686
-Version: 2.30.10
-Depends: sdl2 (= 2.30.10)
-Filename: pool/main/s/sdl2-static/sdl2-static_2.30.10_i686.deb
-Size: 638432
-MD5sum: 32b49788239af4a254b443eb54b80ed5
-SHA1: ae68ee896ec5ae726267d908e1f4248842f93934
-SHA256: aa439a01c080a0345c15f010eefc047dcb2bea28f044f2e50894ae10824078a4
-SHA512: b1d1a925308fa63f1886b61af774550375bf3f1923e43419b755325853baf2942bf957d5655df14edc34d3f1eff7d64402364b2c0480fc8132ba9c5eee505e8b
-Description: Static libraries for sdl2
-Homepage: https://www.libsdl.org
+Version: 2.24.0
+Depends: freetype, opengl, sdl2
+Filename: pool/main/s/sdl2-ttf/sdl2-ttf_2.24.0_i686.deb
+Size: 28000
+MD5sum: 925f73c54a1f7af390db88e07441f292
+SHA1: 612e5d53dc224e3f608d06fc9a24b39709ef119a
+SHA256: 40276a4db45c61c8f5ca27b6352e650ba20451c356166d879bbf058f568c098c
+SHA512: 19ae8b331dc3a7612ce15a9f2769ae801efe3105ece861aeb7f2baaabfb0cd95b7995aa30d9ab59a29affc18f698a1dd1d1fcc47e9cea94d95b24b209c974064
+Description: A library that allows you to use TrueType fonts in your SDL applications (version 2)
+Homepage: https://github.com/libsdl-org/SDL_ttf
 
 Package: sdl2-ttf
 Installed-Size: 212
@@ -8771,6 +8753,21 @@ SHA1: b67f1ba429c5f4d704150dca6cd6c651df1a017e
 SHA256: 60e9d4d3ae6d20d5f64fde0910ed0e1e50695f24a62fca788e457e2b6bc7543f
 SHA512: e97efd2075d1f715102d218176857add78265612b534f0c23814ca7547f4bf8fd0f44d5bb64ceb88977fb45189b3a80746b94d70438677aa5899ddc4cca7fd6e
 Description: A library that allows you to use TrueType fonts in your SDL applications (version 2)
+Homepage: https://github.com/libsdl-org/SDL_ttf
+
+Package: sdl2-ttf-static
+Installed-Size: 84
+Maintainer: @termux
+Architecture: i686
+Version: 2.24.0
+Depends: sdl2-ttf (= 2.24.0)
+Filename: pool/main/s/sdl2-ttf-static/sdl2-ttf-static_2.24.0_i686.deb
+Size: 16884
+MD5sum: 9241ba88fec943bebd8c05286b037dac
+SHA1: 6088f2102d6e2f10d1fadffe5e8d9de2729f681a
+SHA256: 1e40bef3eb80bfd4e34adfcc88f893e159c037ead594e686a0222fb47eeb7f3f
+SHA512: ebaf9fdacd51441ddb72149089c5a0ecb6ff5e47391b2c3d347b739f6498df29a600361bbd1c108e23482d29136f4181ae35b33ebe25b53ca1af270fc0e573f7
+Description: Static libraries for sdl2-ttf
 Homepage: https://github.com/libsdl-org/SDL_ttf
 
 Package: sdl2-ttf-static
@@ -9000,6 +8997,22 @@ SHA256: 0dd61786c01f9273b22d6af88617aa21a79545594d4222018b1290639ba81316
 SHA512: 2cb1b23f0fb4375ca090425780f1d85020aa6f3513133e0b2d982c3ec4219ceeba4bd7776e8e6338393ed9cfeb49b7eeb9d9e84cd6bd5ea4c4ea2f7140ed7674
 Description: Simple X hotkey daemon
 Homepage: https://github.com/baskerville/sxhkd
+
+Package: synaptic
+Installed-Size: 3748
+Maintainer: @Yisus7u7
+Architecture: i686
+Version: 0.91.4
+Depends: apt, dpkg, gdk-pixbuf, glib, gtk3, libc++, libvte, pango
+Recommends: hicolor-icon-theme, netsurf
+Filename: pool/main/s/synaptic/synaptic_0.91.4_i686.deb
+Size: 1418928
+MD5sum: e9ba71c1eb5097955c5da1b1eb319192
+SHA1: c98c57247d7b286cbcf59f0a444aa3c5e633fc22
+SHA256: 82c9d914d1de7e3ab94231f665af3d6003ccd292eb3e91a2e00da79c390b19c4
+SHA512: 1072222c0562b55cb95c92b05852e3bfbb007786badbd236771303de05e942e703e773ab01b1f4dba5b198e96723430b73ea95d9b44d6e20fc83d22618476300
+Description: Synaptic is a graphical package management tool based on GTK+ and APT.
+Homepage: https://www.nongnu.org/synaptic/
 
 Package: synaptic
 Installed-Size: 3696

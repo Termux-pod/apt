@@ -76,6 +76,21 @@ Package: bindfs
 Installed-Size: 108
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.17.7-1
+Depends: libfuse3
+Filename: pool/stable/b/bindfs/bindfs_1.17.7-1_x86_64.deb
+Size: 25956
+MD5sum: 5c6b51203a2a002b74146e62f924a81a
+SHA1: 88b55235dca1011983b8e7719ceba04bbe285679
+SHA256: fedce9f0cbe6bb49f302f587847d514b09d1cf2b23f9bd212b1b1cb6f98a82cf
+SHA512: 878e438243f01177d4c720822279f41bb79a7c05fbddfc06d38eda7652af8b73374377fd1a6eb4dfbeeb94f74e1f6e6036a85b9fb610e635e3bb069dcecaa6e4
+Description: A FUSE filesystem for mirroring a directory to another directory.
+Homepage: https://bindfs.org/
+
+Package: bindfs
+Installed-Size: 108
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.17.7
 Depends: libfuse2
 Filename: pool/stable/b/bindfs/bindfs_1.17.7_x86_64.deb
@@ -116,6 +131,21 @@ SHA256: 9b07975695a77d7f28487cd6fa61a99b62962101c478b5276aa5ca1c2d46a387
 SHA512: 1d0084fc3470f889d89b594ce237d417b3f33b0e7ca1363e763317b3d1cb9959cb003e5937da5cef8565a7aff2c0a92250756bfb2b5cde4ccde90d9e58950330
 Description: An open and reliable container runtime
 Homepage: https://containerd.io/
+
+Package: cryptsetup
+Installed-Size: 564
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.7.5
+Depends: libpopt, libblkid, libuuid, libcryptsetup (= 2.7.5)
+Filename: pool/stable/c/cryptsetup/cryptsetup_2.7.5_x86_64.deb
+Size: 196664
+MD5sum: a72d9f89ff2330f2d163e1603c425481
+SHA1: 56d57473eda1ffa7970c926430a2d54a50059e9d
+SHA256: 0907637da4ac6897962e30fdf82ff95ae34280ca072e6a2df470b00c1915f25d
+SHA512: 4ab504b7696ea92b42fa6153dbfcf2f64db694a210030f69eb311683ab6756d3dfa64a5a1ede16743687ea781fbecbe3aaf299247cc5fc18b1e975b68ee43f56
+Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
+Homepage: https://gitlab.com/cryptsetup/cryptsetup/
 
 Package: cryptsetup
 Installed-Size: 556
@@ -218,21 +248,6 @@ MD5sum: fc511dbb5e444ee86bde24b8cf4dc91e
 SHA1: 617dd6c33501ffd3ed29df4e532fd41ddf8ee1ef
 SHA256: 35d7aab0854b6c26e21fdac0e00d9385fd91eed9509404d77bb4b6f18daf42ff
 SHA512: 8b500afabd230e9f4b0151ec8c954aac2b4f0736446a17e3ad2f8154d549a6c55131724a621a3d2a51b0bb96e818a7b78b28008d0972696086dbb9bb290037fb
-Description: A github erofs-utils fork for community development
-Homepage: https://github.com/erofs/erofs-utils
-
-Package: erofs-utils
-Installed-Size: 636
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.8.3
-Depends: liblz4, liblzma, libfuse2, libuuid, zlib
-Filename: pool/stable/e/erofs-utils/erofs-utils_1.8.3_x86_64.deb
-Size: 125332
-MD5sum: 7674c498d212cf0d3c1e4b48261c19be
-SHA1: d4cc788085abac4723e665dc5d8b55e05b504af7
-SHA256: 3cd7ca8a5f7cb935177646a0482e1ac71fada41a6dfe58a29e9fe147d1011092
-SHA512: a3f751989a53ef5d0a39de6e3bb4553e19f0fd6f51686190492aaf829dfb5fb1d66ecbd454ee7205d96b8c7431772e6a7428111845441d6ae599ea8c4ac0adfa
 Description: A github erofs-utils fork for community development
 Homepage: https://github.com/erofs/erofs-utils
 
@@ -593,6 +608,23 @@ Description: A generic USB CCID (Chip/Smart Card Interface Devices) driver and I
 Homepage: https://ccid.apdu.fr/
 
 Package: libcryptsetup
+Installed-Size: 684
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.7.5
+Replaces: cryptsetup-dev, cryptsetup (<< 2.4.3-1)
+Depends: json-c, libblkid, libdevmapper, libgcrypt, libuuid, openssl, libiconv, argon2
+Breaks: cryptsetup-dev, cryptsetup (<< 2.4.3-1)
+Filename: pool/stable/libc/libcryptsetup/libcryptsetup_2.7.5_x86_64.deb
+Size: 224788
+MD5sum: aece63b2ddf1c4f38fdf6f2a823e0ac7
+SHA1: 195bdc1fef26b44e08a1ddf3423f01ae706ffc7e
+SHA256: a7fef389cf42aa4283292264d45042fcb151e300fdac70bc134e39f5984053c4
+SHA512: f5352e18663340c37fd92d4d839f8c1f876410b53f32a3b5e3540e9c42a2fadaf98e56b7fa2c7fa2424a5f94db612a39f3ca081e1ce19ea3d35c4dd1ff78f1b7
+Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
+Homepage: https://gitlab.com/cryptsetup/cryptsetup/
+
+Package: libcryptsetup
 Installed-Size: 612
 Maintainer: @termux
 Architecture: x86_64
@@ -607,6 +639,21 @@ SHA1: d501b6e254866965f4d5abf9b1f05fccaa77c01a
 SHA256: 9879b9312a3c0d42f50bc909eff938e4a37d8b2daf0963a595c752eb0bda5413
 SHA512: 066f1a946340d66327222b434191317c8bc4395c71847660f9863d2518c3e009196e1c5700015b830cb9e8989ae93525fc3a988cf141c64136bbb1a2d3b92fd5
 Description: Userspace setup tool for transparent encryption of block devices using dm-crypt
+Homepage: https://gitlab.com/cryptsetup/cryptsetup/
+
+Package: libcryptsetup-static
+Installed-Size: 1140
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.7.5
+Depends: libcryptsetup (= 2.7.5)
+Filename: pool/stable/libc/libcryptsetup-static/libcryptsetup-static_2.7.5_x86_64.deb
+Size: 246872
+MD5sum: 02a9fc69d3f9f60a4a586aae150c39c9
+SHA1: 13d001f87384cdb2d25243ac0a57a5ee635308fe
+SHA256: c7f1012f8550db544d0ef5f22067b9db5cceb852f68d5e494fc78d5ae7a1750c
+SHA512: b3dd9e97c7fe0f0292eb6ad97a0fe04734cc6a74a6f171179f1873e83283eedf22badf96c50cd18ed36cfd31fc1de2929e1af93da5f1fb0878ab0acb78739708
+Description: Static libraries for libcryptsetup
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
 
 Package: libcryptsetup-static

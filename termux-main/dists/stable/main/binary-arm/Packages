@@ -11149,14 +11149,14 @@ Package: jack2
 Installed-Size: 1292
 Maintainer: @termux
 Architecture: arm
-Version: 1.9.22
+Version: 1.9.22-1
 Depends: alsa-lib, dbus, libandroid-posix-semaphore, libdb, libexpat, libsamplerate, libopus
-Filename: pool/main/j/jack2/jack2_1.9.22_arm.deb
-Size: 309888
-MD5sum: 516b7704323bac248b07e920df9419cc
-SHA1: b1dbb49037ff1bd0b2843735c15e08d8259f69ae
-SHA256: af1cd211c168407d1fa6f294bf82d27e88eec7d973d9f1d68445c4678f3e4842
-SHA512: a071acd64ef9dcbabe857cda1cc500ec3930d34698f73f9393b78cf3d8824e170e33a7a72de6684f6ab0d16f7e5fe885681f9c814e19d1fa5102d3d576833ee8
+Filename: pool/main/j/jack2/jack2_1.9.22-1_arm.deb
+Size: 306892
+MD5sum: bb3023a798375125f15eecfbdbdc385e
+SHA1: d974724904232c22f120a078b0cbbc12312dd5ec
+SHA256: 326fea4bc7106590245c27e7769baf91466496cf80cffe077de3fb02f68a44ba
+SHA512: d249c70485dfb0e26a7598a1e10f6d9bb908800cb5ea9a897e0bb2804f2d1d9347dd354e23c8dca13f1fd247cc958f9e7a0b99a259a248ac926eee6dde3d7e45
 Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
 
@@ -29111,6 +29111,23 @@ Package: php
 Installed-Size: 58012
 Maintainer: @termux
 Architecture: arm
+Version: 8.4.1-1
+Replaces: php-mysql, php-dev
+Depends: libandroid-glob, libandroid-support, libbz2, libc++, libcurl, libffi, libgmp, libiconv, libicu, libresolv-wrapper, libsqlite, libxml2, libxslt, libzip, oniguruma, openssl, pcre2, readline, tidy, zlib
+Conflicts: php-mysql, php-dev
+Filename: pool/main/p/php/php_8.4.1-1_arm.deb
+Size: 9889508
+MD5sum: c94bd3e784e22671e5f6409621b16cc9
+SHA1: da4fc9d8946e6d3633a0c4cc8bf992f642e7050a
+SHA256: d67426772433af020115c1cd41683a923ac2d30e3e62855cab90d5aad7dc41ff
+SHA512: 3d91f565d57e31ced5c12e3021109371f97f5352f1143d535bd871a122e4e4b185264eab37d428270c5327952f02ddb8d6126fe73ee89fc501eec9394592dc2e
+Description: Server-side, HTML-embedded scripting language
+Homepage: https://php.net
+
+Package: php
+Installed-Size: 58012
+Maintainer: @termux
+Architecture: arm
 Version: 8.4.1
 Replaces: php-mysql, php-dev
 Depends: libandroid-glob, libandroid-support, libbz2, libc++, libcurl, libffi, libgmp, libiconv, libicu, libresolv-wrapper, libsqlite, libxml2, libxslt, libzip, oniguruma, openssl, pcre2, readline, tidy, zlib
@@ -29122,6 +29139,21 @@ SHA1: d46a01cd477291c5a8ecc0d9e850f6c29c088009
 SHA256: d4399b05fccad68ecda3f2c575f8f01394921fc5f3992510d92353137923da8a
 SHA512: 7770c5e45b70b988ce92f12dd902e121f0922c8ba31b8421604d67a2347de09a973aedec42d040cd5d5a87ca407983f6b832890331997728508a31f0487b71db
 Description: Server-side, HTML-embedded scripting language
+Homepage: https://php.net
+
+Package: php-apache
+Installed-Size: 16864
+Maintainer: @termux
+Architecture: arm
+Version: 8.4.1-1
+Depends: apache2, apr-util, php (= 8.4.1-1)
+Filename: pool/main/p/php-apache/php-apache_8.4.1-1_arm.deb
+Size: 3015052
+MD5sum: 85f9f7005011d08fd43de25f1111cdde
+SHA1: 0d4067bc4037ebedac05076b42bd0b7a7643cab8
+SHA256: 89a69c4a99af9791d117b91881db854340dc0947e691af04eaacbc36f6077002
+SHA512: 343c7c465b0b62b36fced2d76dcb1d03f05a4b4795dc2e373c6d020a88f352aa6c22ba4bb0c705612438605eacd56cbcd71da7cb97c818439408b67aefefbd33
+Description: Apache 2.0 Handler module for PHP
 Homepage: https://php.net
 
 Package: php-apache
@@ -29143,6 +29175,21 @@ Package: php-apache-ldap
 Installed-Size: 96
 Maintainer: @termux
 Architecture: arm
+Version: 8.4.1-1
+Depends: openldap, php-apache, php (= 8.4.1-1)
+Filename: pool/main/p/php-apache-ldap/php-apache-ldap_8.4.1-1_arm.deb
+Size: 22896
+MD5sum: c26fab5982c0e76b1f7f8d3530f318e4
+SHA1: 7c3db74fc35d4018f67c9d284c4719a09c9cc68c
+SHA256: ee68d0da6ccb476accd3088ab08839120f460e11722364bdf7dbffccc6efe14f
+SHA512: dc2c1d502ae69f909d2060f4c99f68b26b3a42563b9cea67bd7d8e169cb2b8895bde7b99c591d498652559a60ea6299c8fa9c241afc186987db417de8a465f30
+Description: LDAP module for PHP/Apache
+Homepage: https://php.net
+
+Package: php-apache-ldap
+Installed-Size: 96
+Maintainer: @termux
+Architecture: arm
 Version: 8.4.1
 Depends: openldap, php-apache, php (= 8.4.1)
 Filename: pool/main/p/php-apache-ldap/php-apache-ldap_8.4.1_arm.deb
@@ -29152,6 +29199,21 @@ SHA1: 805b0bff3c95c2be66540dc7e472532e3d9f188b
 SHA256: 3f2c362faa815f8071ae4fe0c35189a019a1b906eb4deb71b7cf20044e092789
 SHA512: 84a882c1e6bc06b7ca2398aa68116278024fe62ee47f3ca515f2951ebfd25a0a1d701d388cdf07a810a044ae07be94b42bb68c6e3ff5fe76691d0c0432d66e85
 Description: LDAP module for PHP/Apache
+Homepage: https://php.net
+
+Package: php-apache-opcache
+Installed-Size: 144
+Maintainer: @termux
+Architecture: arm
+Version: 8.4.1-1
+Depends: php-apache, php (= 8.4.1-1)
+Filename: pool/main/p/php-apache-opcache/php-apache-opcache_8.4.1-1_arm.deb
+Size: 47252
+MD5sum: 2287b02bb044d30939a310a59e7b9678
+SHA1: aa1d378c7086de031d6425d34518b62b4fafae1c
+SHA256: e61057bce3d02a60cf9c438f1ab31d7433901d331e194e9876f1f27ed6b4dcd6
+SHA512: 693ed41318e67903b346881ad39dc422043b233fac91c6cd5399d5df538d5527b58bbc96ecffe954ecfa733925448885526ee21929931152129d4d61b9078fc8
+Description: OPcache module for PHP/Apache
 Homepage: https://php.net
 
 Package: php-apache-opcache
@@ -29173,6 +29235,21 @@ Package: php-apache-pgsql
 Installed-Size: 188
 Maintainer: @termux
 Architecture: arm
+Version: 8.4.1-1
+Depends: php-apache, postgresql, php (= 8.4.1-1)
+Filename: pool/main/p/php-apache-pgsql/php-apache-pgsql_8.4.1-1_arm.deb
+Size: 50076
+MD5sum: 7e3f76d32fa1be9c30cde6748e38ac98
+SHA1: c044069a002b6fed1086a386b902293d3ca161ac
+SHA256: ba2ac79d73e784a45ecb1f28923d5a629420ae499f94d6438a275c5f3944e507
+SHA512: e26fee4b9dcd93f7863bd9f290a0cca8e4ccaf7675380ba676a6e4fd0794c8887dce8aa2cab6e56be7d77ef086a2789113551f4fe8583cc03820220ab2f25b02
+Description: PostgreSQL modules for PHP/Apache
+Homepage: https://php.net
+
+Package: php-apache-pgsql
+Installed-Size: 188
+Maintainer: @termux
+Architecture: arm
 Version: 8.4.1
 Depends: php-apache, postgresql, php (= 8.4.1)
 Filename: pool/main/p/php-apache-pgsql/php-apache-pgsql_8.4.1_arm.deb
@@ -29182,6 +29259,21 @@ SHA1: eb04ea8d91e91e0af299150616a30098306f8c11
 SHA256: c5798e29809b3022b4affdbaea0d24d8e029de7fb8677a16f5f591995acc1061
 SHA512: 34b988410d3a7b9103f3de4c07fec7f41261d98443873e8aa04775b5e8d0d710b7cc2afe1c504182bbd0c2903d46d19b14cc762b3e8879437a1b454b87481773
 Description: PostgreSQL modules for PHP/Apache
+Homepage: https://php.net
+
+Package: php-apache-sodium
+Installed-Size: 116
+Maintainer: @termux
+Architecture: arm
+Version: 8.4.1-1
+Depends: libsodium, php-apache, php (= 8.4.1-1)
+Filename: pool/main/p/php-apache-sodium/php-apache-sodium_8.4.1-1_arm.deb
+Size: 20172
+MD5sum: 00cfed8009ea48b58fc3e802e400dbab
+SHA1: 7058d08d43c461a3d7579b9cebf07eb0e63f6cd8
+SHA256: 2ad9621dc150116528f189eef8b99c738a8a1eb0cae33ca1accfac40fcedfece
+SHA512: c3676d23c962bd020a912dd44237dc3512679e5d002385edc78e4f9ecf8a976ac8b35b76e5d3c588995287c27383b8d310fecd2525be7a027cf1e66aa1778d62
+Description: Sodium module for PHP/Apache
 Homepage: https://php.net
 
 Package: php-apache-sodium
@@ -29218,6 +29310,23 @@ Package: php-fpm
 Installed-Size: 16996
 Maintainer: @termux
 Architecture: arm
+Version: 8.4.1-1
+Replaces: php (<< 8.1.12)
+Depends: php (= 8.4.1-1)
+Breaks: php (<< 8.1.12)
+Filename: pool/main/p/php-fpm/php-fpm_8.4.1-1_arm.deb
+Size: 3070788
+MD5sum: 9537c0a0cec69bfc07a5497e74417439
+SHA1: aa2c2eb3138366c153511eb8cd3428eb163677f6
+SHA256: 8961a3c416816728753bdbf8228ea53e91b246a12e85589add785aa92c5aa4e3
+SHA512: 91813578d2aab08cd49c8be3a43242c418b52cf9fd722917e1d7cc3d482ab1c11327dca031864e964cd9e06367ba6078cb45a23d3886f13dbda73fbdbf9b3808
+Description: FastCGI Process Manager for PHP
+Homepage: https://php.net
+
+Package: php-fpm
+Installed-Size: 16996
+Maintainer: @termux
+Architecture: arm
 Version: 8.4.1
 Replaces: php (<< 8.1.12)
 Depends: php (= 8.4.1)
@@ -29229,6 +29338,21 @@ SHA1: f719d36c6c97a524c0e4bb0e4e41589c26c29f2c
 SHA256: 1868d88c64cfb08dd35ed397e9be325fdf1c6eb1be1128c956875d4c80edb6e6
 SHA512: ac7861b595807154ca60b4ca2deb917aa7e788cb7d7c48ef045e5419b99d3d237cb493389e5c0cb53bb2c84b329da155d0fbb7ba4b4ed3a337b513b902d3e178
 Description: FastCGI Process Manager for PHP
+Homepage: https://php.net
+
+Package: php-gd
+Installed-Size: 124
+Maintainer: @termux
+Architecture: arm
+Version: 8.4.1-1
+Depends: libgd, php (= 8.4.1-1)
+Filename: pool/main/p/php-gd/php-gd_8.4.1-1_arm.deb
+Size: 24764
+MD5sum: a178800867153bab11721612a5f9ec02
+SHA1: 3262781803f8eb672a82b925f5ac195b0c0351d0
+SHA256: 8871c32363b96e196c092974beb17c8eb1f25ba4b626d6ce6d2f15e6c818822b
+SHA512: f88e77e8361b40740fd3b2e937d39ee1451d36947c330a32dddfc3226f5ac24f1e3719806167b8b557d14a1919efe74794344e89cd04cfa70c9b5dc818dfaa4a
+Description: gd module for PHP
 Homepage: https://php.net
 
 Package: php-gd
@@ -29265,6 +29389,21 @@ Package: php-ldap
 Installed-Size: 104
 Maintainer: @termux
 Architecture: arm
+Version: 8.4.1-1
+Depends: openldap, php (= 8.4.1-1)
+Filename: pool/main/p/php-ldap/php-ldap_8.4.1-1_arm.deb
+Size: 22756
+MD5sum: 1bd08983695eef218a7efc9a09f9837e
+SHA1: 9216e0e58d435d19590a53fe753802f513b5f922
+SHA256: 0bfd46f962b9f67b2bc090a15a81b84a2cdbfd51575acf8730f4d16b7438f66c
+SHA512: df3306b599b5ccd6bb7f7155e19953714c7968e7b66782fd3c99ddcb12facf56e767ab6f8c862fb1819d166a042d2a2efd45bb2fbddcbce2ad98b64a05e1877d
+Description: LDAP module for PHP
+Homepage: https://php.net
+
+Package: php-ldap
+Installed-Size: 104
+Maintainer: @termux
+Architecture: arm
 Version: 8.4.1
 Depends: openldap, php (= 8.4.1)
 Filename: pool/main/p/php-ldap/php-ldap_8.4.1_arm.deb
@@ -29274,6 +29413,21 @@ SHA1: c262f8bd3986097e5c53ebb31c97b7a2f722c9c5
 SHA256: 320f0787036fce11819229f3687af07ad8bce66992d1557f3d44d9fdfb8650e6
 SHA512: 1941b6a99c8177765aa9b8b34beb4eafeeae29f762caac1065d19e518609b97679688f0a9fe7505f80c13fefd1284e462d4b608c622a02c5c766181cbe416a98
 Description: LDAP module for PHP
+Homepage: https://php.net
+
+Package: php-pgsql
+Installed-Size: 188
+Maintainer: @termux
+Architecture: arm
+Version: 8.4.1-1
+Depends: postgresql, php (= 8.4.1-1)
+Filename: pool/main/p/php-pgsql/php-pgsql_8.4.1-1_arm.deb
+Size: 49812
+MD5sum: e04cbdef43d7d70fda13af7fa150e1e7
+SHA1: ca7a9340860fc04f3141f858b97d853dc66647ef
+SHA256: 6eee269ab463be337216eee983acefa043285f0be02d2027e646d9630e1897b3
+SHA512: 3e1f99a87229f04976d74bf18a40e13fcba6a733f94c3454a9a87da2a8125f417320ddc9a5b5412403e666d49a0aba84aee947e36a6f35e9bf0b2d47103a810c
+Description: PostgreSQL modules for PHP
 Homepage: https://php.net
 
 Package: php-pgsql
@@ -29320,6 +29474,21 @@ SHA256: 322a12ba7691bece462f0825d0bd1365704cb4a7627088cd5a435edb2807599f
 SHA512: a13d9cc6a4f90aba998e1528306a048adc493252230e12a405ead748299b78150e332e3e785c277bf416f49a65451e6b2e5e1ef39255d9190cedae5c108b1287
 Description: PHP extension for interfacing with Redis
 Homepage: https://github.com/phpredis/phpredis
+
+Package: php-sodium
+Installed-Size: 120
+Maintainer: @termux
+Architecture: arm
+Version: 8.4.1-1
+Depends: libsodium, php (= 8.4.1-1)
+Filename: pool/main/p/php-sodium/php-sodium_8.4.1-1_arm.deb
+Size: 19980
+MD5sum: b09bd702a061be52d9cd3e0948ad129a
+SHA1: 510c61978cf32c45523149bb6405f33b9f271df6
+SHA256: 7170688d34c5624b5d61b9b96c7ff4168e0de38ece3118a1739c2d5bb3aa5167
+SHA512: 3107405531bdd46459f8670389e752d7a24acb391a293b5be42e5f112f23e40b9692ab52efda7cb63a32b6e5ae6b70d2a45d969e8a145be42ce5764482e8e53e
+Description: Sodium module for PHP
+Homepage: https://php.net
 
 Package: php-sodium
 Installed-Size: 120
@@ -29644,21 +29813,6 @@ MD5sum: 6e0033e788a8d262d30729afcc71ac74
 SHA1: 4b7e5b9f99bd762e26928ea9e15b69337604dfa1
 SHA256: fe482fdcdc7c69aa8920408641e6822a391a1477fe77e682917ed00d2245c5e6
 SHA512: 78ddd055f90c854c4235fa9bf4524d673c46aaf5d6b3008b3305a88b7765162c51d41d9f291634071d9be5e484449953e5468bcba1ac3bf0e40afd6160dafe32
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
-Package: pocketbase
-Installed-Size: 40976
-Maintainer: @termux
-Architecture: arm
-Version: 0.24.0
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.24.0_arm.deb
-Size: 9727452
-MD5sum: 745d621996e9cd2db2f65e0e2397938e
-SHA1: 617ef041c04270f07b45459cdd270d759a445ef3
-SHA256: 03a6f7da4e04dd60b4410fd3ff2915f7a3e966bd8b1e2fc879e28510f35840c6
-SHA512: 1eca122fec105f72505abf9bd84681b01d3ca1b9088fea9d150dae31d45c463eb8fc14feebb3e51d786ded27b7838b880df3260c2adceb8159344c171b5c9b9a
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
@@ -32827,6 +32981,20 @@ Description: Ruby documentation index
 Homepage: https://www.ruby-lang.org/
 
 Package: ruff
+Installed-Size: 15028
+Maintainer: @termux
+Architecture: arm
+Version: 0.8.6
+Filename: pool/main/r/ruff/ruff_0.8.6_arm.deb
+Size: 5374324
+MD5sum: a1b0124e23b8680cecc380e209c8254b
+SHA1: daf7bf9ac6e678e6a6f3328a1b4b42392ff30132
+SHA256: ea87d056fb0121784ccd206eb0253823d7c02595f6eb8fffea09bdf9dcc88525
+SHA512: e46eb4f7a1947598aab48a1c77cbbb5e36bc1158d742f9cf097c27fe5e0cab1025c2eff34e07668d2c25df70e5e7b6fe884e09ed534917ef26c6a5616ba60fbb
+Description: An extremely fast Python linter, written in Rust
+Homepage: https://github.com/charliermarsh/ruff
+
+Package: ruff
 Installed-Size: 15032
 Maintainer: @termux
 Architecture: arm
@@ -33457,6 +33625,20 @@ SHA256: 3ed6f0520e0924db86c0af31d2873de58f06a7e9458f02eebe11c51f9b74f4c7
 SHA512: d508b91363cd2b663dd2db76643311d9c06e3ec22e5fa5f8b848a4c05f1a099c33a592eee9b859c6c54b7d1017660162ce6c65da34596cb03fb5317b6e5ace7f
 Description: Static libraries for seafile-client
 Homepage: https://seafile.com
+
+Package: seanime
+Installed-Size: 69624
+Maintainer: @termux
+Architecture: arm
+Version: 2.6.0
+Filename: pool/main/s/seanime/seanime_2.6.0_arm.deb
+Size: 17941808
+MD5sum: 0fb2223151a7c52589810ca1a720f58f
+SHA1: dbdcec746231521cfa786cd551890e8ae0fc5d18
+SHA256: 8b9131ebd5c7517c1579ff440d6f67b8684ba24aab82d5ddba7e8be7116cd5e2
+SHA512: 57195b01851cdd2d8a641db48654fbffeb3d4fdee00348dc6873558a7af457b28750b42726d84f26fb033664edf96073cb20ad49a3238753d71c5b2945ec958a
+Description: Self-hosted anime and manga server for sea rovers.
+Homepage: https://github.com/5rahim/seanime
 
 Package: seanime
 Installed-Size: 69424
@@ -36454,6 +36636,21 @@ SHA256: 3c17b650b35a42c09ce1f6716687a3a3f6e5c5f10f9937698f81657b3380bd03
 SHA512: ae64bb8d25bf17129e96615de0998b647e8b4d7e736fa8e5fd8c1588ecad96ed1041f12ebc0e6c8772612cb6c25734564079d084f2745af99b64fcb556e194ea
 Description: Find build artifacts that are taking up disk space
 Homepage: https://github.com/vmchale/tin-summer
+
+Package: tintin++
+Installed-Size: 4728
+Maintainer: @termux
+Architecture: arm
+Version: 2.02.42
+Depends: pcre, libgnutls, zlib
+Filename: pool/main/t/tintin++/tintin++_2.02.42_arm.deb
+Size: 1371172
+MD5sum: 988ece539372b9cea10be765f96747ec
+SHA1: 09946e18936d203699f64435bf350c59bb7c9930
+SHA256: 5fc7f87048882edc98e89e66c3bdef5db4c9b08066a102bdc2660c615d149e63
+SHA512: 4e555264ba3c060cd50ad3bd6c8676422fb2f6f3a8d35e706dc6b8a4d93e1909a5526e73ad977dbf624f7930de26a478970e3cc62a844f11294fbf8412fbe675
+Description: Classic text-based MUD client
+Homepage: https://tintin.mudhalla.net
 
 Package: tintin++
 Installed-Size: 4728

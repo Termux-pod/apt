@@ -4232,18 +4232,18 @@ Description: Static libraries for cryptopp
 Homepage: https://www.cryptopp.com/
 
 Package: crystal
-Installed-Size: 25408
+Installed-Size: 26328
 Maintainer: @HertzDevil
 Architecture: aarch64
-Version: 1.14.1
+Version: 1.15.0
 Depends: libc++, libevent, libgc, libgmp, libiconv, libllvm (<< 20), libxml2, libyaml, openssl, pcre2, zlib
 Recommends: clang, libffi, make, pkg-config
-Filename: pool/main/c/crystal/crystal_1.14.1_aarch64.deb
-Size: 3963892
-MD5sum: 21420ca4181a56e8f25f0d50a5e9915c
-SHA1: e8f5f77d1c698c6b7c962d62eaef6719839d697a
-SHA256: ba0263faecdcb56a86af486636799b9400a0c93a05c62c24f9e3c2d2908acb2a
-SHA512: 50f1947b6c491ce5894c47f1fd0eb3c2015e331fd994cbafa2e92240484de4816f68e6453c17d7cb6abf32f848e736a0d81826b4ee959bcec00241f1307c175c
+Filename: pool/main/c/crystal/crystal_1.15.0_aarch64.deb
+Size: 4037816
+MD5sum: 1dcf7bc77a87cdcf7be98a4ae7ed9eb8
+SHA1: eea0ff24b73f1f948b8074657797e11654b4bd03
+SHA256: fb354226fa37ef0b9c45f13f8409d5bc0168031099029f292bc515c6a1728057
+SHA512: c8cff3bb143673eaa8780784df4253a49969691763b4d72266060dc2afab018f188aea76ba7e3209d41b8a6040d1f78907a8ac7d634b6f9c0086178ebae24962
 Description: Fast and statically typed, compiled language with Ruby-like syntax
 Homepage: https://crystal-lang.org
 
@@ -8302,21 +8302,6 @@ MD5sum: 849abc05484955608159022e5446c7b0
 SHA1: 0f55cd00942e9c885b8894f80c6a40bf2de74df8
 SHA256: 91d3b84cd7b08d27b4dc58d919c580d97a52b328925f40c0021d7905600f5a75
 SHA512: 5c21758d71afdc35285e00f5d92b312c05343614f8b0a66d44ba7af5724f1b0f823359b5fe8f735a74cd3748040c3ed0be104ae7bfeecd9a224ef92d4002171f
-Description: Git with a cup of tea, painless self-hosted git service
-Homepage: https://gitea.io
-
-Package: gitea
-Installed-Size: 123972
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.23.0
-Depends: dash, git
-Filename: pool/main/g/gitea/gitea_1.23.0_aarch64.deb
-Size: 33317664
-MD5sum: 3f69645a2228495c1e6d04af80a56df7
-SHA1: 7162bb890e071c04fcb2d8f450cf227921e03468
-SHA256: 7b95d525f05780895c15bb0ac1daa0bbc7cda0f10ea5ae6826875588b18cee0c
-SHA512: 5467f430538db3dd6931dc5d49e3d4be8a50adc708091cb34285c2b142e8eb9c5136ec4d5400719b740454cfdca501a4fc7b5563cbd3545ad4bfbd71e6b286dd
 Description: Git with a cup of tea, painless self-hosted git service
 Homepage: https://gitea.io
 
@@ -17388,6 +17373,22 @@ Package: libmaxminddb
 Installed-Size: 104
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.12.2
+Replaces: libmaxminddb-dev
+Breaks: libmaxminddb-dev
+Filename: pool/main/libm/libmaxminddb/libmaxminddb_1.12.2_aarch64.deb
+Size: 11000
+MD5sum: c32425b4aa9ab7b95aee7e1cabb9dc2d
+SHA1: de11c6e3870233542a41bd347d73abceff619bd9
+SHA256: 803fd78b28da2775de01ae32ea68d63114d00b0478da92dda1b427b9c8e89c04
+SHA512: d39cef4c089befeda4b2f73ca8d20a90ec0b50075b619a54a82f15711d7610693e22fbd918aa42a45bf1b154f1858fa561c9ce4646b86a7fb6a60f375c0bbe3d
+Description: MaxMind GeoIP2 database - library and utilities
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb
+Installed-Size: 104
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.12.1
 Replaces: libmaxminddb-dev
 Breaks: libmaxminddb-dev
@@ -17404,6 +17405,21 @@ Package: libmaxminddb-static
 Installed-Size: 136
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.12.2
+Depends: libmaxminddb (= 1.12.2)
+Filename: pool/main/libm/libmaxminddb-static/libmaxminddb-static_1.12.2_aarch64.deb
+Size: 27336
+MD5sum: 3588d354d3822a2d9a431ff4ecba1dd2
+SHA1: 39362b9282e0267c1f266c3938b6280c7dde4780
+SHA256: 12c10b0ed4bc23676f614acb872ed2c0986eef7c3a7134d890aeb608ecb183ed
+SHA512: de490a514eb6c0af1f98cb118c4e8450c8b4a27d06f8297db96341d1678f15d5768fbc88281b1a75fff2690f6f9aa7a4aff341ff4b0853d9c562d93abd335634
+Description: Static libraries for libmaxminddb
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb-static
+Installed-Size: 136
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.12.1
 Depends: libmaxminddb (= 1.12.1)
 Filename: pool/main/libm/libmaxminddb-static/libmaxminddb-static_1.12.1_aarch64.deb
@@ -17413,6 +17429,21 @@ SHA1: e88c1919b25f0ea64e0cd804a465f4c13d680e76
 SHA256: 67a6f1f9b2246b2059876d56537f326406bcd6812ffac47bdf049883ae9750c9
 SHA512: 91b65e35c00f1eee6885f78d659680671f05e80857b697d91880be51a453b144ac16b9cf47e8edeb6303f758e8b7ba621115ab9fc0ba562bd8193f24dbf285c5
 Description: Static libraries for libmaxminddb
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb-tools
+Installed-Size: 48
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.12.2
+Depends: geoip2-database, libmaxminddb (= 1.12.2)
+Filename: pool/main/libm/libmaxminddb-tools/libmaxminddb-tools_1.12.2_aarch64.deb
+Size: 8680
+MD5sum: 94d1f1ba6fd05be51ec54bbd5aca8cc3
+SHA1: ce6a88d410c3534a0f8ec21459f7b7f3b6804fdf
+SHA256: a664a071b8d6e7bb5446fa4c7cba96829051a373f973ac62e072636c8a59bf1c
+SHA512: 355fbc9e5143c3e902ff83558d41d039d5b6a00a2661934e390e73408f9a5b315b72e990ef7060074e0fd90f36ce74a5078f091fcebee9a094e28de0804a0f0d
+Description: A geoip lookup utility for MaxMind DB
 Homepage: https://dev.maxmind.com/geoip/geoip2/
 
 Package: libmaxminddb-tools
@@ -27476,25 +27507,6 @@ SHA512: 88a828191771e544bf1394fec9cddcea50be5c3b4bd3cbe99c20a26021d728e0fc45ce15
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
-Package: nodejs
-Installed-Size: 91968
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Architecture: aarch64
-Version: 23.5.0
-Replaces: nodejs-current, nodejs-dev
-Depends: libc++, openssl, c-ares, libicu, libsqlite, zlib
-Suggests: clang, make, pkg-config, python
-Conflicts: nodejs-lts, nodejs-current
-Breaks: nodejs-dev
-Filename: pool/main/n/nodejs/nodejs_23.5.0_aarch64.deb
-Size: 13062988
-MD5sum: 9fd54f8192dfd3fd0255d42924caa136
-SHA1: 1cb1bbea1ea19c45f3797ca447f35ce92f2b7e69
-SHA256: 9267dfdf17d3618e39008d934b4992e5067c98f46bfe17046ab45de725b1248e
-SHA512: 160952795b2c07095377662a5b14739f1e60ab7fe4a6c046ed301d47c56750f27935248a55138b0eba0fe13ac69f43dacc92a28d4f2aa18f1d47bd72bb546b97
-Description: Open Source, cross-platform JavaScript runtime environment
-Homepage: https://nodejs.org/
-
 Package: nodejs-lts
 Installed-Size: 86560
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
@@ -30132,21 +30144,6 @@ MD5sum: 4266feab1f524f565315c1a9d7aa5a60
 SHA1: acc5e59d720fe30eaf46ebc397efa9b8f6eefdad
 SHA256: 7a9dcbc6d1b5695c71c68eda4c1601c99f5b51b37f75fbb4327b448442056e24
 SHA512: 25630c27900b0e4790ffe801e309ca6a565a344e2090e407cf6ee30ab1a463e5b118f3778b8e3f6abcd653ca483e7a76f07db8f9c6ed4a80c6a67e24682e156c
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
-Package: pocketbase
-Installed-Size: 43368
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.24.1
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.24.1_aarch64.deb
-Size: 9637060
-MD5sum: fa59ae964ac0e71c37e51e779f9a6a99
-SHA1: 7b44dd302951b333f987558d0f3c60d78edae0e2
-SHA256: 6864cf9f9f8eaea4e31d88394a06661206b67c331beb63ed58ec39d100db7fa2
-SHA512: 38e47692fb59d0c69574c545523168bc2fbe4017483f69da46dff51ff2e424dfb2e0a6e0a45e67143e80a1333d7de7239f24429748587f4e30026eca8025cb23
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 

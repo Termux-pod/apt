@@ -8259,21 +8259,6 @@ SHA512: ebfe23bd086d2fb365ff9bb8b9090c364f383f369611c84fc7745a79295f771ffbb60b29
 Description: Git with a cup of tea, painless self-hosted git service
 Homepage: https://gitea.io
 
-Package: gitea
-Installed-Size: 128484
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.23.0
-Depends: dash, git
-Filename: pool/main/g/gitea/gitea_1.23.0_x86_64.deb
-Size: 35573172
-MD5sum: ef1e8eac766ed9ff0c08ecd8dfe57622
-SHA1: f4ddc444e9118a5155b65e580794c8f9dee7e531
-SHA256: 8c107461312a6b701512eb7ad9678993204508c53e07c4c71309ae692662f42d
-SHA512: 7f157a553eb361b263188fbb56aa1432ed81886025f5a8db1af344bbe564456a98b7738f3aeaf4290144ea2ec081495772178f216230b699f43b3b1950db7219
-Description: Git with a cup of tea, painless self-hosted git service
-Homepage: https://gitea.io
-
 Package: gitflow-avh
 Installed-Size: 448
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -17327,6 +17312,22 @@ Package: libmaxminddb
 Installed-Size: 104
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.12.2
+Replaces: libmaxminddb-dev
+Breaks: libmaxminddb-dev
+Filename: pool/main/libm/libmaxminddb/libmaxminddb_1.12.2_x86_64.deb
+Size: 11768
+MD5sum: 4ea7e9e8597b92cfd9bb5552b25bf494
+SHA1: 165b1456fc49ce7e291e771974cebaa54d8c4af1
+SHA256: 3119ebbda47c603998eb8b51d5a99eaf8bc3d37966dbd0f7237138ac80718cc0
+SHA512: 07ad3f019f2d7cf25f5dfe3d24601662d1e986a1b782ecdfd7035f9d31bf1dc54aa5e2a217f6e245fd3cd811af9d09e925b5949d3a49116769e247e1ad43d32a
+Description: MaxMind GeoIP2 database - library and utilities
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb
+Installed-Size: 104
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.12.1
 Replaces: libmaxminddb-dev
 Breaks: libmaxminddb-dev
@@ -17343,6 +17344,21 @@ Package: libmaxminddb-static
 Installed-Size: 136
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.12.2
+Depends: libmaxminddb (= 1.12.2)
+Filename: pool/main/libm/libmaxminddb-static/libmaxminddb-static_1.12.2_x86_64.deb
+Size: 27984
+MD5sum: c1f432bb03b5cf5c8826631aec3e002a
+SHA1: c8396f2dfb502b9578f452823bd69e90c6e354df
+SHA256: aaedb13cc50576ad272384655b2ab2d29c85e5b1c64bd49d86a9fcb45b695f86
+SHA512: fb3b9b188a538fe07f462812d4af1202c95e6c957f9e753e7e6ccff6cbcbc6a611b60c99c3c7ba1785a89eb98f211d159c2b4ae98c0546567adfa0444857daeb
+Description: Static libraries for libmaxminddb
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb-static
+Installed-Size: 136
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.12.1
 Depends: libmaxminddb (= 1.12.1)
 Filename: pool/main/libm/libmaxminddb-static/libmaxminddb-static_1.12.1_x86_64.deb
@@ -17352,6 +17368,21 @@ SHA1: c66057a1ababb50b7df3889eadc5677877bd2ffe
 SHA256: 7ac4414d2ee33fcd7ad68bab5ba62e429c978ad5b79fba8aeaa0c09d0d7179a5
 SHA512: 6457fd3c2c511ea7309ef6474b7b51815d024012bb358253f70cea131a7db00cd37c2010d9828e9249314135430fcc12cd67f4c6c554332831bbd7fa18b16368
 Description: Static libraries for libmaxminddb
+Homepage: https://dev.maxmind.com/geoip/geoip2/
+
+Package: libmaxminddb-tools
+Installed-Size: 48
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.12.2
+Depends: geoip2-database, libmaxminddb (= 1.12.2)
+Filename: pool/main/libm/libmaxminddb-tools/libmaxminddb-tools_1.12.2_x86_64.deb
+Size: 9088
+MD5sum: 148647321986c210a846d1f5c36559a1
+SHA1: 091ccad110813d2001fbf9f108ca2c1f70b14547
+SHA256: 33b72b59ce7264f76087c85acd7b89b19d7cd00ed23bd0de5735d629ba09b061
+SHA512: 2731f5085cc8e1823a4b9cca2a73c53f9be0f9b118d717f3b6e0580dbcf194375199e809e8eb93542b43ec4715bd1de1e55dcdb50ef10c4528f0ae0e3eaa7119
+Description: A geoip lookup utility for MaxMind DB
 Homepage: https://dev.maxmind.com/geoip/geoip2/
 
 Package: libmaxminddb-tools
@@ -27369,25 +27400,6 @@ SHA512: 5fff8175bbaf2403658d2ce65af5d5ce0c8680c4e6df777cc97234413ac539ad90a11de6
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
-Package: nodejs
-Installed-Size: 84236
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Architecture: x86_64
-Version: 23.5.0
-Replaces: nodejs-current, nodejs-dev
-Depends: libc++, openssl, c-ares, libicu, libsqlite, zlib
-Suggests: clang, make, pkg-config, python
-Conflicts: nodejs-lts, nodejs-current
-Breaks: nodejs-dev
-Filename: pool/main/n/nodejs/nodejs_23.5.0_x86_64.deb
-Size: 13149088
-MD5sum: 28711b81d87b2afda05528bf83e7397d
-SHA1: db24da5f450cf891e83433b0c73a15be35de0693
-SHA256: a87d33648b7b8e0dcad7ae0c10418837cc76fe668ae3ba8050a5b9f95083b7f7
-SHA512: 458e2a9e58b8ebb443410949bad657ea801cd34bddf09cef68cc90314ba4e0c895f5cbd346a3f7fb865f76c107bb01f69434a139e2eb5d47f03e0f22c9ff060e
-Description: Open Source, cross-platform JavaScript runtime environment
-Homepage: https://nodejs.org/
-
 Package: nodejs-lts
 Installed-Size: 79104
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
@@ -30040,21 +30052,6 @@ MD5sum: 19a93b098dbb0396d84f2b17c9d71764
 SHA1: 40d6fb68354b6e7dc1fa1953ab2c1abf1b918dbd
 SHA256: e0a3e1a4b60f221cc69e2058b034434199a6dee33478159d9e733f0bd26c64d7
 SHA512: 88a0b7c0adaa328d18ec2e3072901656be9c402533a0d3199949e2e85dd16284f74a804a7f8ec2aa927c1a2aba4258757f93e5bc657f34e8aa6f5f37ed42bdfc
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
-Package: pocketbase
-Installed-Size: 44904
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.24.1
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.24.1_x86_64.deb
-Size: 10811872
-MD5sum: 200835347a72d2f67bcb3abecdd0086b
-SHA1: 62dece5fd3da6ef8eb7a258f46fe711426840fef
-SHA256: 6c03f62fbed32007e60706cbb2176bac8631fe4ce23ea12f31f4990b0fe3d585
-SHA512: b33452e7b1381a5d4b7e0123be6e3ee41eeebfb89ead7a0dac5dadd43cc4eed05500449198c789c9abbce0ce014458b7f982dbfa2e8ce56e35b1ea63e2eb055c
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 

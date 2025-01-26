@@ -1347,36 +1347,6 @@ SHA512: 7679d4de8f69b2be53bd6a8633a9ab781ce0249298709f6c4c4bda399e73e69e088a4334
 Description: Fcitx Qt immodule & library
 Homepage: https://fcitx-im.org/
 
-Package: fcitx5-qt
-Installed-Size: 1320
-Maintainer: @termux
-Architecture: x86_64
-Version: 5.1.9
-Depends: fcitx5, libc++, libx11, libxcb, libxkbcommon, qt6-qtbase
-Filename: pool/main/f/fcitx5-qt/fcitx5-qt_5.1.9_x86_64.deb
-Size: 242316
-MD5sum: 2121e19d79b15a6a813c35adf91df330
-SHA1: be559d503a8a03a46a337e13eb4756a53987db12
-SHA256: ea9f331a6acc5f7a9b5decadefe316745c9b7721ee1cfe8709e9de5fdd24a6ff
-SHA512: 81fe88d6de51fb841fd255734c630ae02c6a4a0d0aa733f816a913e50f51e8e8a9b3fe2ab7fe3af2e87f672c1fcf34bc433c31730cd958cb6f1267e11f5ce4be
-Description: Fcitx Qt immodule & library
-Homepage: https://fcitx-im.org/
-
-Package: fcitx5-qt
-Installed-Size: 1320
-Maintainer: @termux
-Architecture: x86_64
-Version: 5.1.8
-Depends: fcitx5, libc++, libx11, libxcb, libxkbcommon, qt6-qtbase
-Filename: pool/main/f/fcitx5-qt/fcitx5-qt_5.1.8_x86_64.deb
-Size: 242768
-MD5sum: d58b7499a9330f191a4f335e3b9e3788
-SHA1: 59c6d1cf0a86de2d813d4272db429da2d404c370
-SHA256: a8056a34be2bb7b05d2122fd418d5740b822d5f9572f89f4cc80d84ba7b2c4dd
-SHA512: a0e45202aaa85d22a42d14dc07ac69e98acb81dd375e7e7f6bb8a825b50e102be9a2875f45053122ce44763b5f22a0c59cb74cf044d8c112a0e00eb267a45866
-Description: Fcitx Qt immodule & library
-Homepage: https://fcitx-im.org/
-
 Package: feathernotes
 Installed-Size: 1056
 Maintainer: @termux
@@ -2467,6 +2437,23 @@ Package: gtk-update-icon-cache
 Installed-Size: 72
 Maintainer: @termux
 Architecture: x86_64
+Version: 3.24.48
+Replaces: gtk3 (<< 3.24.41)
+Depends: gdk-pixbuf, glib
+Breaks: gtk3 (<< 3.24.41)
+Filename: pool/main/g/gtk-update-icon-cache/gtk-update-icon-cache_3.24.48_x86_64.deb
+Size: 12296
+MD5sum: 2dff9c862d80c0faf2d66e7e9e09b955
+SHA1: 5e68a5ffa1c79390df97581de8c27f8be7f301e6
+SHA256: ef61e768fa3c96df4c8ea1c361b4f88673e5f7e1d3f3ef969bbbdc99a42dda80
+SHA512: ad46ef9635080187f75bc1758c1b0d66c12369d239181e8322c1abc4103205a6a3f916d477f55ccea228ea5a1f1127d85a36309360f9588a3e560505088edcae
+Description: GTK+ icon cache updater
+Homepage: https://www.gtk.org/
+
+Package: gtk-update-icon-cache
+Installed-Size: 72
+Maintainer: @termux
+Architecture: x86_64
 Version: 3.24.45
 Replaces: gtk3 (<< 3.24.41)
 Depends: gdk-pixbuf, glib
@@ -2477,23 +2464,6 @@ MD5sum: 3fddeeb42f6e2acdc16327565c33b4d9
 SHA1: a9e62322dabfcc60e8a9d13030f0d3d9b797868a
 SHA256: 860f715612e56216a74da2704ae33df8d8baf2046819798169ace844c539691c
 SHA512: 853b843b6e04475d03247b3ff223a741f725966709d60e33a313fed085a249412039a9b2b7745f949354f1ce6f62e697ac02440da4c58e5094f98a98267fd5ce
-Description: GTK+ icon cache updater
-Homepage: https://www.gtk.org/
-
-Package: gtk-update-icon-cache
-Installed-Size: 72
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.24.43
-Replaces: gtk3 (<< 3.24.41)
-Depends: gdk-pixbuf, glib
-Breaks: gtk3 (<< 3.24.41)
-Filename: pool/main/g/gtk-update-icon-cache/gtk-update-icon-cache_3.24.43_x86_64.deb
-Size: 12296
-MD5sum: 1cfca1fb461668cecb46b4d0e41edcad
-SHA1: c199539edda099b43bb5ac1a96b3585997e3f7d3
-SHA256: ab187d2a2ceafc43dd4a9bf1e3fc7458cc96f64fd4e9b249d5fa5a1a0a614bf3
-SHA512: dd7f11886a4fdd88ad3b5aeffb15804f4f267207f16acfb6e23174f199364597e01e34c55271c9efe3e95c3cba0e97ead80dba473e6f71c742a300201e76b7f1
 Description: GTK+ icon cache updater
 Homepage: https://www.gtk.org/
 
@@ -2593,6 +2563,23 @@ Package: gtk3
 Installed-Size: 32288
 Maintainer: @termux
 Architecture: x86_64
+Version: 3.24.48
+Replaces: libgtk3
+Depends: adwaita-icon-theme, at-spi2-core, coreutils, desktop-file-utils, fontconfig, fribidi, gdk-pixbuf, glib, glib-bin, gtk-update-icon-cache, harfbuzz, libcairo, libepoxy, libwayland, libxcomposite, libxcursor, libxdamage, libxfixes, libxi, libxinerama, libxkbcommon, libxrandr, pango, shared-mime-info, ttf-dejavu
+Conflicts: libgtk3
+Filename: pool/main/g/gtk3/gtk3_3.24.48_x86_64.deb
+Size: 5626728
+MD5sum: 2d097a509a5dc6b7c50086274b024ad8
+SHA1: 60f8be34b410ab2967862a8c670c5aa3615bdf89
+SHA256: 11a7312e1bc638ee3df933cb8030b2befa83853a31e439a36343d0fd3f94d5b9
+SHA512: 6a797608029ba85d8e0a15459bd733d165973c31267e1191410380bc3c4f11735df51abb24957399192399faa7ba2fdd9baab6408c37d7fe070385eaf6b4ef2f
+Description: GObject-based multi-platform GUI toolkit
+Homepage: https://www.gtk.org/
+
+Package: gtk3
+Installed-Size: 32288
+Maintainer: @termux
+Architecture: x86_64
 Version: 3.24.45
 Replaces: libgtk3
 Depends: adwaita-icon-theme, at-spi2-core, coreutils, desktop-file-utils, fontconfig, fribidi, gdk-pixbuf, glib, glib-bin, gtk-update-icon-cache, harfbuzz, libcairo, libepoxy, libwayland, libxcomposite, libxcursor, libxdamage, libxfixes, libxi, libxinerama, libxkbcommon, libxrandr, pango, shared-mime-info, ttf-dejavu
@@ -2603,23 +2590,6 @@ MD5sum: 0a6419e9483e524fb6d2b8ef9bf60728
 SHA1: 3ade12d43f881056c746a3b7e81a8e18f385fdcc
 SHA256: 6a6b4513c61fbaa5f5372ed74211c991327c3e91794e6610fd32e83998f58efd
 SHA512: e0be0551a9166e77631111a0ef2471ac0ed811a54e4d23e3e169ac528929eb619d11f389655fd409285669e5f83a258eca22c0678e282c3d4553c80a1b65c228
-Description: GObject-based multi-platform GUI toolkit
-Homepage: https://www.gtk.org/
-
-Package: gtk3
-Installed-Size: 31516
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.24.43
-Replaces: libgtk3
-Depends: adwaita-icon-theme, at-spi2-core, coreutils, desktop-file-utils, fontconfig, fribidi, gdk-pixbuf, glib, glib-bin, gtk-update-icon-cache, harfbuzz, libcairo, libepoxy, libwayland, libxcomposite, libxcursor, libxdamage, libxfixes, libxi, libxinerama, libxkbcommon, libxrandr, pango, shared-mime-info, ttf-dejavu
-Conflicts: libgtk3
-Filename: pool/main/g/gtk3/gtk3_3.24.43_x86_64.deb
-Size: 5401364
-MD5sum: c21e73b99d8fc378ab46f6aa33f30eb4
-SHA1: 920e1b09a6ccde95c8f06f597e829435c25af12f
-SHA256: b5364e3cb6753feec67e6f0808271a14f4237afe079b6e8fd49a81639e44a2b0
-SHA512: b301243e5b1da6436de9480b7b7475a245f500c08fb6db5050c8c7668bb66429e41321363c9cb7a3f18f263a16527e6050a993bf43aaac411fd9f4ed05faba1a
 Description: GObject-based multi-platform GUI toolkit
 Homepage: https://www.gtk.org/
 

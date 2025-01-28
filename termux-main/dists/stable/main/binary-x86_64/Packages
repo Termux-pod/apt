@@ -2305,6 +2305,23 @@ Description: A non-web client for the terminal, supporting Gopher, Gemini and mu
 Homepage: https://bombadillo.colorfield.space/
 
 Package: boost
+Installed-Size: 8008
+Maintainer: @termux
+Architecture: x86_64
+Version: 1:1.84.0
+Replaces: libboost-python (<= 1.65.1-2), boost-dev
+Depends: libc++, libbz2, libiconv, liblzma, zlib
+Breaks: libboost-python (<= 1.65.1-2), boost-dev
+Filename: pool/main/b/boost/boost_1:1.84.0_x86_64.deb
+Size: 1557128
+MD5sum: 04b616ec0fac550cc87f513590bee938
+SHA1: 32e3f61756f0fc1049540fa3f4d483774ba23b9d
+SHA256: 06ce3236bc7f50cc7d4704d9d36c7826e072e30c6d462113a4e0625a4c65cfda
+SHA512: af04db2094b60dd52be57bde00fc06e5abdfe9f961949e720b7261b4bd3e3e5640e27823bbcae08334e53bce99aa574a53acc85ee0951ea2ae405d711eba1001
+Description: Free peer-reviewed portable C++ source libraries
+Homepage: https://boost.org
+
+Package: boost
 Installed-Size: 8364
 Maintainer: @termux
 Architecture: x86_64
@@ -2321,21 +2338,19 @@ SHA512: 437feb0316b3e833235559f4d9c5fbe95187d6f7feb2c8e2c4521f8eeca035dc9f1f3aae
 Description: Free peer-reviewed portable C++ source libraries
 Homepage: https://boost.org
 
-Package: boost
-Installed-Size: 8008
+Package: boost-headers
+Installed-Size: 182356
 Maintainer: @termux
-Architecture: x86_64
-Version: 1.84.0
-Replaces: libboost-python (<= 1.65.1-2), boost-dev
-Depends: libc++, libbz2, libiconv, liblzma, zlib
-Breaks: libboost-python (<= 1.65.1-2), boost-dev
-Filename: pool/main/b/boost/boost_1.84.0_x86_64.deb
-Size: 1558076
-MD5sum: b05247b9e675fd3a3bc3010c42140a57
-SHA1: fbe89b49bf0982ae336adb94dbf3edcf03722b46
-SHA256: 09505c2dcb42f0f38da9e42403f24d1a48aa9dc28705908ab35c08baf2d3c707
-SHA512: ba70b41bdb8ec993d5647d1f9bf9d64c50a26d3e2966219ea9cb2e94bc9a65fbaef6a415e0ad77b0d27c9e542f7b566c72e1e1e4e2d313b409d3aacfe9615e91
-Description: Free peer-reviewed portable C++ source libraries
+Architecture: all
+Version: 1:1.84.0
+Depends: boost (= 1:1.84.0)
+Filename: pool/main/b/boost-headers/boost-headers_1:1.84.0_all.deb
+Size: 9943536
+MD5sum: ee8c8bf65237fc40ad850eeb057d02ca
+SHA1: e9cf4618afb17304b174f48883c728a506f22611
+SHA256: 6d71381757c04c42b714177217ded5330fc38b8bac00dcbbc636dd1a43d63c4a
+SHA512: 98ed38eb3093d25ab7a67a1f33d2444c86483e32cc4f5a82d19192171e62c4ec030fbebe2b81095703ac657cb4f005089870f2ac419d7bc607278786ccc5568c
+Description: Boost header files
 Homepage: https://boost.org
 
 Package: boost-headers
@@ -2353,19 +2368,19 @@ SHA512: 77570c2c05cf940fedca23ec15297c76f34ae1f88cd1f6f4e293dce9ac2956c75463b818
 Description: Boost header files
 Homepage: https://boost.org
 
-Package: boost-headers
-Installed-Size: 182356
+Package: boost-static
+Installed-Size: 40304
 Maintainer: @termux
-Architecture: all
-Version: 1.84.0
-Depends: boost (= 1.84.0)
-Filename: pool/main/b/boost-headers/boost-headers_1.84.0_all.deb
-Size: 9942844
-MD5sum: e75b5836762d7ec01ca6fc3fe75f3f79
-SHA1: 4d1b529544a987b6d1c3b60b36da823cbcf9649f
-SHA256: bb5f39c1a7a5f6d0b598a36807d62bd5fe41ccebeb01da74224cd5039be5db85
-SHA512: 257cc3b44fdb4d565be0ab8cd155a49ff72920bb632aeafb8a8ea2e093d05ab0e2f3eb49ad369a81f09101961bf05da52590558e578b5e084cc02300c24ec390
-Description: Boost header files
+Architecture: x86_64
+Version: 1:1.84.0
+Depends: boost (= 1:1.84.0)
+Filename: pool/main/b/boost-static/boost-static_1:1.84.0_x86_64.deb
+Size: 2985004
+MD5sum: fc54be1fc048536aa9f2f5f866a30f4a
+SHA1: 71da074b643c6f5db5fd229569a3569764996a63
+SHA256: 830359eaa6022bd11d971daccd59f9b3d86f1f962120e98bd9600ca0a423ba88
+SHA512: 0b5a98caeea69ab20ac0f96ef29a3e762bd156ad1821d49527c1cfbfe00840d24b5c4dbe28384d0f1f873a7a4b45e0c5f399bce480940148e6cece9f2f0f200f
+Description: Static libraries for boost
 Homepage: https://boost.org
 
 Package: boost-static
@@ -2380,21 +2395,6 @@ MD5sum: eee3bbdf2a7b41b502e1dc6a07c6d41c
 SHA1: 773ccd77206de8852fa59ce4aa9bbeae06b1e997
 SHA256: 9e9d97e866d3dd95fbeb4c032e6d7df584af148024808cbb95ea10d783187fae
 SHA512: d5f42edc559f357cade975036b15f78ae77d1e4e09dd054bb0700a73c67f5aae7d021f41d69fd4a0bf5f3a3171865ea4329fdfb3321253ec7a1c1479d48439b3
-Description: Static libraries for boost
-Homepage: https://boost.org
-
-Package: boost-static
-Installed-Size: 40304
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.84.0
-Depends: boost (= 1.84.0)
-Filename: pool/main/b/boost-static/boost-static_1.84.0_x86_64.deb
-Size: 2989380
-MD5sum: cd519eca1c0515b1103879e1a42f0df5
-SHA1: dd5492aba001ec843fb08be72c8f3905da0056a3
-SHA256: 59d653f19baaa6d15097cec094a7321b777f642c9a045145b112f25be1ef15d0
-SHA512: ffedad9657053a1b6b859a37110e4050517a8b091598f8c6af82695d537fda672e31b38356e9fbc6b030bce6761e27ef6dbd8ec69ee67102309dc17292e2a062
 Description: Static libraries for boost
 Homepage: https://boost.org
 
@@ -6128,6 +6128,21 @@ Description: Electrum is a lightweight Bitcoin wallet
 Homepage: https://electrum.org
 
 Package: elfutils
+Installed-Size: 2900
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.192
+Depends: argp, libarchive, libasm, libc++, libdebuginfod, libdw, libmicrohttpd, libsqlite, libelf (= 0.192)
+Filename: pool/main/e/elfutils/elfutils_0.192_x86_64.deb
+Size: 472344
+MD5sum: 041b780252f172350db4a02c56132e33
+SHA1: 7af443970c056aabf20432b17a2322874d4feb6b
+SHA256: b0dfc3cc09cf73b71cfc5b1f7c640a554245c2aeb9470094938ee9aabe4bc2a6
+SHA512: 1786e27ba51f93a000968ed54e6dd40db94e15924a73eb7ffa378d286fdcb6386adfc4de67e025f8a75d84e80ff7aa40cc52ed93eb1e64bb554d8786cdc2f15e
+Description: A collection of utilities to read, create and modify ELF binary files
+Homepage: https://sourceware.org/elfutils/
+
+Package: elfutils
 Installed-Size: 2800
 Maintainer: @termux
 Architecture: x86_64
@@ -6156,6 +6171,22 @@ SHA256: 58c2b8574ee44dd00720541496779d3b72a8562a1f2836af0dfecb60b9e1a820
 SHA512: ddacf414bc10d403c5e4975b5960bd58325910bcf277dfa0425c103f313a408aa3a9ee4f264417dae041762aefa135580550301c59cc4431964ede696719cf38
 Description: Full-Featured Text WWW Browser
 Homepage: https://github.com/rkd77/elinks
+
+Package: elixir
+Installed-Size: 14596
+Maintainer: @termux
+Architecture: all
+Version: 1.18.2
+Depends: dash, erlang
+Suggests: clang, make
+Filename: pool/main/e/elixir/elixir_1.18.2_all.deb
+Size: 6349936
+MD5sum: 557d6e133c64734e00e2e818fa6b433d
+SHA1: 4d2d7cb8d1739147c9a103738799b22bcdf62819
+SHA256: 050cc3c84ed4e6f442e7562bf6ad8072ce59d6370ba8f850cebc5c9e2db037c7
+SHA512: b9a2e956e8e7cd903c9b4fdcf0d31982c44df8c9c1afff4b257cb288e5204046763ddd1dd66628c7709e3007ad7399f24a26a3416971d33c8c26c9a2a02829dd
+Description: Elixir is a dynamic, functional language designed for building scalable and maintainable applications
+Homepage: https://elixir-lang.org/
 
 Package: elixir
 Installed-Size: 14580
@@ -6352,6 +6383,21 @@ SHA256: a530cc12cf4f003e3b9999fa1db648bcc302e4b4a4d3e8f7deff0a01185a19f9
 SHA512: c3e391b990f0586ff248dc3854b02553ecdffe4bef913d8eac71574cc931ff7c475c08d280684ce87fa046308c09c0325b66b28401b57e0702b1a23817fd3747
 Description: Event Notify Test Runner - run arbitrary commands when files change
 Homepage: http://eradman.com/entrproject/
+
+Package: erlang
+Installed-Size: 117456
+Maintainer: @termux
+Architecture: x86_64
+Version: 27.2.1
+Depends: libc++, openssl, ncurses, zlib
+Filename: pool/main/e/erlang/erlang_27.2.1_x86_64.deb
+Size: 41454136
+MD5sum: 488e41c5e185cfa9a8685e3757f58bed
+SHA1: 08b6f24a650e54dc48cb5990f624c12e3c5e9cb1
+SHA256: f8b9d721311432bff828ded13a0491b44f957b0ccb9d674fe9559c111a51689a
+SHA512: e2396f7b6f9e3d3c27029dde50200e89ffa429065b96922acff4a54951d2033b008de7af006e18343263031b46ae89eadc21ed75c6d11596eb3096515701bb62
+Description: General-purpose concurrent functional programming language
+Homepage: https://www.erlang.org/
 
 Package: erlang
 Installed-Size: 117452
@@ -13243,6 +13289,21 @@ Package: libasm
 Installed-Size: 72
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.192
+Depends: libdw, libelf (= 0.192)
+Filename: pool/main/liba/libasm/libasm_0.192_x86_64.deb
+Size: 14052
+MD5sum: 8e972b35bf22b7cfaa20a52da2a0e058
+SHA1: bddb8a419701d15721b700bc00a2ff2f126575f1
+SHA256: 5acd1be463f2068563c6731a3a3891b08e419ab1c770628868c2f21e75293b31
+SHA512: c8980e65c3a71ff458e5f6873505abe594efc5e55ad1ffe81149f7c8a6b238dcb43c8e60e5c84c9f1216156a9944fb8d1051ce0dbf82d4a28bd0cbdc8f838de6
+Description: Library to assemble and disassemble instructions
+Homepage: https://sourceware.org/elfutils/
+
+Package: libasm
+Installed-Size: 72
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.191
 Depends: libdw, libelf (= 0.191)
 Filename: pool/main/liba/libasm/libasm_0.191_x86_64.deb
@@ -13252,6 +13313,21 @@ SHA1: 11dc827513694927cc4e10b467d727e247b60c0e
 SHA256: 418df0412028c9adff11eb2af27c767abe3f2681432918b4739474d4ce7772a5
 SHA512: b67429c773b40f1dff90af57a64fd37e7c3cf401a5076a054a75bc937853cb4fcce3736bdf80211fa966ed9246ffe7bbab04b513feb288edd54ce8e1139bda6e
 Description: Library to assemble and disassemble instructions
+Homepage: https://sourceware.org/elfutils/
+
+Package: libasm-static
+Installed-Size: 100
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.192
+Depends: libasm, libelf (= 0.192)
+Filename: pool/main/liba/libasm-static/libasm-static_0.192_x86_64.deb
+Size: 13536
+MD5sum: 096d8f3fb6265cbd52d6baea66bcd02f
+SHA1: eaf7b59faab933fa0f1cacc2ded40af6cf1d97e6
+SHA256: c60080c8431de45d7388e3eee91d91bdd29fe4cfd310b0482f9e4692ac08a1cb
+SHA512: f6f81f990a756f044dfe403c548ec8fd5b3bbcc2ac417eedae6893c63aa7b0604f7fed5a66a535c2fc68960202fbc8c2fb7ba5a4475dc2beb9abe99f9651b62c
+Description: Static library to assemble and disassemble instructions
 Homepage: https://sourceware.org/elfutils/
 
 Package: libasm-static
@@ -14511,6 +14587,21 @@ Description: Static libraries for libde265
 Homepage: https://github.com/strukturag/libde265
 
 Package: libdebuginfod
+Installed-Size: 152
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.192
+Depends: libcurl, libelf (= 0.192)
+Filename: pool/main/libd/libdebuginfod/libdebuginfod_0.192_x86_64.deb
+Size: 21408
+MD5sum: 6feb43607580e29e4312b3570b2a8dfb
+SHA1: d6ef66296c0074c3aa48a117ec9190523056ef2c
+SHA256: 6594f9e414dd649bb04ce8b9e1b26f4ad83d2f8f58342a7954ace1e65d13a08e
+SHA512: 6cf7101dc6975220afc31fd8c0e7da5bde38421a10f87ce77e4efe40c5891e2dd7f150a82010109bc7dfec23de33aa704dbf03070b02b49a6f409381ef77cea5
+Description: Library for debuginfod
+Homepage: https://sourceware.org/elfutils/
+
+Package: libdebuginfod
 Installed-Size: 140
 Maintainer: @termux
 Architecture: x86_64
@@ -14820,6 +14911,21 @@ Description: Static libraries for libdvdread
 Homepage: https://code.videolan.org/videolan/libdvdread
 
 Package: libdw
+Installed-Size: 804
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.192
+Depends: argp, libbz2, liblzma, libelf (= 0.192)
+Filename: pool/main/libd/libdw/libdw_0.192_x86_64.deb
+Size: 224028
+MD5sum: 2a2ede20f154a743f89b20a42dbe0543
+SHA1: 4b1c7d67deaed777c2c70ca4727147fdfba981e2
+SHA256: 80499963c866f955d435d2281dbc10059b195541f95a8c8af6b52fe9cc7f2ebc
+SHA512: 7abfd2b42e7d6a286fa9fa7ef135d035deace962baed87d3c0b0e0048ba085e00d26dfcc57ca773eb1c3d36720ca0efa1b0a416ef0f07bc5cf6b6c6fb0744573
+Description: Library to read DWARF information
+Homepage: https://sourceware.org/elfutils/
+
+Package: libdw
 Installed-Size: 788
 Maintainer: @termux
 Architecture: x86_64
@@ -14832,6 +14938,21 @@ SHA1: 2f434b1df70c354d674814dffed3c1bce18d062e
 SHA256: c2c0c7834399b791c9f101977f2e6519990dbb3b0fe5079436927b14d330841b
 SHA512: 2f54fd0338581dcd11fc8161cd464f7651b2a6f2e11344503caebccd3efbede2cf0f9fefb47c4821ab55fe38622c33caa6bc76c1291946e661bb7566f6c06d46
 Description: Library to read DWARF information
+Homepage: https://sourceware.org/elfutils/
+
+Package: libdw-static
+Installed-Size: 1496
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.192
+Depends: libdw, libelf (= 0.192)
+Filename: pool/main/libd/libdw-static/libdw-static_0.192_x86_64.deb
+Size: 250128
+MD5sum: 35164c50e6d8bc94524656bc36dbd8a8
+SHA1: d2bcec521d34bbcb99afeeeccf0af3cae30b4630
+SHA256: 8a5fab91d7b1bc5506242d119a86aba50f6d136497823f0ef178c1b3e2384ded
+SHA512: 10af073da65b4fc3db2602682f0f3bd89a138618d1278d7bbe62ead63b1436b0f19094ea2a24ce0c1a39542c6fec1bfba2d2696b719009270cb4e30f2c857210
+Description: Static library to read DWARF information
 Homepage: https://sourceware.org/elfutils/
 
 Package: libdw-static
@@ -14911,6 +15032,23 @@ Description: Static libraries for libedit
 Homepage: https://thrysoee.dk/editline/
 
 Package: libelf
+Installed-Size: 364
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.192
+Replaces: libelf-dev
+Depends: libandroid-support, zlib, zstd, json-c
+Conflicts: libelf-dev
+Filename: pool/main/libe/libelf/libelf_0.192_x86_64.deb
+Size: 67920
+MD5sum: 423d9a3a68507fa4ff822f31d3fd8b2a
+SHA1: ae4df142f17254b8886faf39db2d9d15f87f8c7b
+SHA256: 64778b55aeac851ba78d3de0989bb9c5a517cc81013b1ae69db28d2de72766b7
+SHA512: 4a07b50451ed7e8cc3e9e6dbe424bd6e1c5c2aa68bceb83af257b4c1b6337b1e67210446def88ca5e4c63301be864f630f65429ca0b89cf69821336bb4c7556e
+Description: ELF object file access library
+Homepage: https://sourceware.org/elfutils/
+
+Package: libelf
 Installed-Size: 232
 Maintainer: @termux
 Architecture: x86_64
@@ -14925,6 +15063,21 @@ SHA1: e9c6e906f0517df735a0847437638eac0cac71fe
 SHA256: dbb83b34ab415a1dfb25a764db6eb8419b294d0deb74e5e78821f65ddc93d585
 SHA512: d6cf92db34546d3b96a1f0c9d15384c22e7c57df9490ed9e421caa7e36deb5395eaeaec48de9bf3bdf4812f1dc0c81f04d0a1b8fd26a01d21a00d3923236c7ac
 Description: ELF object file access library
+Homepage: https://sourceware.org/elfutils/
+
+Package: libelf-static
+Installed-Size: 292
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.192
+Depends: libelf (= 0.192)
+Filename: pool/main/libe/libelf-static/libelf-static_0.192_x86_64.deb
+Size: 44388
+MD5sum: 115a169bf88d00b46fee106624b9869d
+SHA1: 56dea23a7bae6e28c3b5c75d911f23ffc39a8a96
+SHA256: 3737dc4b153afab8f5ba4002f7b8f96586d29c829428526e7b2ebbb9ea196a8b
+SHA512: f9789d522587129c2bf2741b934c8202f65002578ff0e141b740c430315ebada7314e20b2932abdd92ed0829ac3c7ae971d2ae7ea987058d35cf5751dd0c5627
+Description: Static libraries for libelf
 Homepage: https://sourceware.org/elfutils/
 
 Package: libelf-static
@@ -27454,6 +27607,21 @@ SHA256: c1f90641203b4185db8896a4907992fcca9aad5ea19ff2347c72ef58d056c9f8
 SHA512: 46aad800e7da8a7dca0e3f6933f7cea5d807c5a0af0d4a8256d12dd4391e90e9c747f34ae2b4400da6170bc74ad3d8c8c27457cc50a6a1b6e78a92ba4caa3db5
 Description: A mixed-level/mixed-signal circuit simulator
 Homepage: https://ngspice.sourceforge.net/
+
+Package: nim
+Installed-Size: 24048
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.2.0
+Depends: clang, git, libandroid-glob, openssl
+Filename: pool/main/n/nim/nim_2.2.0_x86_64.deb
+Size: 5740808
+MD5sum: b83be0ffb60d67be7f09a62a71eb6909
+SHA1: a8577c5e46fd9e582f8e2d0589f2cc70d36b1406
+SHA256: 0c23da694be148910ee6c4cc93809f7a8019210e7d11035609b4a63061e81323
+SHA512: 3d8b010c42a146ab74a42711ae14ee52255e05fe890e64e9de9fb4550c025a4ce92789ca3bf3d624e240ecc6c28105e41df0d0005a05ade263485e1aa4378cb2
+Description: Nim programming language compiler
+Homepage: https://nim-lang.org/
 
 Package: nim
 Installed-Size: 23248

@@ -4168,25 +4168,6 @@ SHA512: c636efd58d6b063182c74bcf1153760a551825d79cd0a1ae30c3886eeebfb2720fc6f5ea
 Description: Daemon that runs specified programs at scheduled times and related tools
 Homepage: https://github.com/cronie-crond/cronie/
 
-Package: cronie
-Installed-Size: 276
-Maintainer: @termux
-Architecture: i686
-Version: 1.7.2-1
-Replaces: anacron
-Depends: dash
-Recommends: nano
-Suggests: termux-services
-Conflicts: busybox (<< 1.31.1-11)
-Filename: pool/main/c/cronie/cronie_1.7.2-1_i686.deb
-Size: 58552
-MD5sum: 4b49fd50d73ece121ec69fe872ad21bd
-SHA1: 3f095427ab969c2affc3cceffa8401db390c29f4
-SHA256: e349005a5cf1f44b71080ae506f84f7e2530c4e0b9ae29ad30f19e612939f963
-SHA512: aba8ffb30de3856efa12fc531e4ca977874ad14741e80c512781f6fdc9ef9a24901583108c0c8ff9c1eebe0eb47848e1c83f16d950ec32e3cb9f0addae1d5fe4
-Description: Daemon that runs specified programs at scheduled times and related tools
-Homepage: https://github.com/cronie-crond/cronie/
-
 Package: crowbook
 Installed-Size: 9764
 Maintainer: @termux
@@ -5150,6 +5131,23 @@ SHA256: da576417dd33c5002b9cc17b2f0f11e984d3f6ae21237964c5536a9cdcfb6996
 SHA512: 3c3efdc903f799468034ff652fe4031437a9807ad41f6defff0b28540180930dda71281962660ae69b4b430fa9f150bd1db0ac212e67a0d29d1c671890144dbe
 Description: A libpcap application that displays various tables of DNS traffic on your network
 Homepage: https://github.com/measurement-factory/dnstop
+
+Package: dnsutils
+Installed-Size: 6560
+Maintainer: @termux
+Architecture: i686
+Version: 9.20.4
+Replaces: dnsutils-dev
+Depends: openssl, readline, resolv-conf, zlib, libuv, liburcu, libcap, libandroid-glob, libnghttp2
+Breaks: dnsutils-dev
+Filename: pool/main/d/dnsutils/dnsutils_9.20.4_i686.deb
+Size: 1682464
+MD5sum: a282e00594141e2150f542b5676b9cc2
+SHA1: e2c10118ca862ea9ea39df9c88c890c6a2d77809
+SHA256: bda92684546a497aa9e17d27b0fb25f82f54de7d09a20c9e8d41dcbce4cf7796
+SHA512: c5b9e6e25e5912eceaa57ed6a25e60d461b8c78f2255d6e18d0ec2cf38f05e8b428d644be4403db7c2009e7f620e0afcbb55302098f9179a62a12845f2ab06b8
+Description: Clients provided with BIND
+Homepage: https://www.isc.org/downloads/bind/
 
 Package: dnsutils
 Installed-Size: 14632
@@ -21959,6 +21957,35 @@ SHA512: 8c71d5cf022284d78fd59995dc1a9eba476be889deebbada5994dbe21eaca950812db245
 Description: Static libraries for libupscaledb
 Homepage: https://upscaledb.com/
 
+Package: liburcu
+Installed-Size: 1320
+Maintainer: @termux
+Architecture: i686
+Version: 0.15
+Filename: pool/main/libu/liburcu/liburcu_0.15_i686.deb
+Size: 118164
+MD5sum: 48ff5e37eb302be5aafee3f3f1b0bc7e
+SHA1: 28a27adc4f6cbc75f91753a8d1c2be91e59223a2
+SHA256: 9479dbdebee36b692bea2e76a67c2b2ce95bfc7121941cf8eb6640c67efcd3c4
+SHA512: 00a2ca4ea0d3146bd4a564b4736c8ee8ef3e52dbee9b8dfae5496739683d666bba8331980a9c92d573130d5f7c178e97302aacbb1c1f2d5e377a2366087e38f2
+Description: LGPLv2.1 userspace RCU (read-copy-update) library
+Homepage: https://liburcu.org/
+
+Package: liburcu-static
+Installed-Size: 328
+Maintainer: @termux
+Architecture: i686
+Version: 0.15
+Depends: liburcu (= 0.15)
+Filename: pool/main/libu/liburcu-static/liburcu-static_0.15_i686.deb
+Size: 43144
+MD5sum: cda39fc3e55c81365218a00ffd7b055b
+SHA1: 91d10a63f961fbbae01aa67b9df8f3da9f2d2986
+SHA256: d90c36b5e8d3eaa7444747c370391798a32cbe68f1ed1349a66200f79eb58e00
+SHA512: 074b4444c7782575b70381030fc6233ca4bcbc5b31fd76e0546630cc78299fc0ea61f1c4092008daba921397c24ede033596001a00382f1df8f21a1af1491779
+Description: Static libraries for liburcu
+Homepage: https://liburcu.org/
+
 Package: libusb
 Installed-Size: 240
 Maintainer: @termux
@@ -36698,21 +36725,6 @@ MD5sum: ccf511d777e32ffcf871d1fcd66e2585
 SHA1: 3411bbafd72053d4cc2c4347800d32b2fd97fe83
 SHA256: a54a84e19107ae108fc08d5550b9fe9dab7ea439bb0209247a0d11327a63d79a
 SHA512: 91a795bac47d4efeb77b0b9a7a61d76adfcf899975e1563897f382f66c4988c4299427dd1152f44f02019c246662ccc595be2c5eeca6b3f276960c57cda8d0ac
-Description: Ncurses-based text-mode interface for git
-Homepage: https://jonas.github.io/tig/
-
-Package: tig
-Installed-Size: 1068
-Maintainer: @termux
-Architecture: i686
-Version: 2.5.10
-Depends: libiconv, ncurses, git, libandroid-support
-Filename: pool/main/t/tig/tig_2.5.10_i686.deb
-Size: 229056
-MD5sum: 042f0b2b087f8aeff71b7b41e3f0afdb
-SHA1: 66a03a12e01215fff6b6113bb95f6d18962d7456
-SHA256: 40648fe31ecf025a613d970ba0b1f3321d4a8b7eb88577c77d4c3d8dc8114a05
-SHA512: c7c3dd051d905bb779d069b77a924db17fcff89b69e890818ad6f46d8ec5ac18426f458039983f851afcca5e9aa14dd362ff20f70178f5adbeca089426fa8b18
 Description: Ncurses-based text-mode interface for git
 Homepage: https://jonas.github.io/tig/
 

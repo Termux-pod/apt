@@ -4501,6 +4501,22 @@ Homepage: https://www.cups.org/
 
 Package: curl
 Essential: yes
+Installed-Size: 400
+Maintainer: @termux
+Architecture: x86_64
+Version: 8.12.0
+Depends: libcurl (= 8.12.0)
+Filename: pool/main/c/curl/curl_8.12.0_x86_64.deb
+Size: 225620
+MD5sum: a632a1b189595575d5b827bb95f04355
+SHA1: 3e2fe11804483b77c98606af8500ebb9f967bc1d
+SHA256: 0b1fa6e27da5de05c2742ec6374aac0fb40d9eb083fe691877ba4ac4c93982f3
+SHA512: f6af79dacc27ff3c317f511b3285b71e5a863e9cda2402f5ce74555b90423768d58daba98fea50668969c99a87850fc5b589b702e2d00d41607a6bc92ba5f615
+Description: Command line tool for transferring data with URL syntax
+Homepage: https://curl.se/
+
+Package: curl
+Essential: yes
 Installed-Size: 388
 Maintainer: @termux
 Architecture: x86_64
@@ -14480,6 +14496,25 @@ Homepage: https://sourceforge.net/projects/cunit/
 
 Package: libcurl
 Essential: yes
+Installed-Size: 3308
+Maintainer: @termux
+Architecture: x86_64
+Version: 8.12.0
+Replaces: libcurl-dev
+Depends: libnghttp2, libnghttp3, libssh2, openssl (>= 1:3.2.1-1), zlib
+Conflicts: apt (<< 1.4.8-8)
+Breaks: libcurl-dev
+Filename: pool/main/libc/libcurl/libcurl_8.12.0_x86_64.deb
+Size: 978580
+MD5sum: 4cc33105e16cbeacb587f2f590f1f9f0
+SHA1: 51b4cd093cccbed67710c048330c567a37e90129
+SHA256: 7ea73eccd872d21925c47ac733bb561f36292c68e2ff2ea1e6f2e81eede8f640
+SHA512: 29176795b07e3260201e3edfec0e4ae9aebee91833d968248427d1194b2495c3a45821f01dda33771f06bf5bf1e979a0e195ac444a152c48b0053f5dc3c1e8ba
+Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl
+Essential: yes
 Installed-Size: 3272
 Maintainer: @termux
 Architecture: x86_64
@@ -14495,6 +14530,21 @@ SHA1: 433e0677a6929c44cd0e9828443368da824be361
 SHA256: 69a21e214acc32e71170b7a2ccf45704c4622a6f4415c9e4b8db42970811893f
 SHA512: ab6274f2e6a1179e603755918e2b003ad9f6b0a5d837e365862e3e1469abb644ed97dddb11cc4c87626cb6e734403937b0a72d67cab4fbc84930a72a5290f683
 Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl-static
+Installed-Size: 1772
+Maintainer: @termux
+Architecture: x86_64
+Version: 8.12.0
+Depends: libcurl (= 8.12.0)
+Filename: pool/main/libc/libcurl-static/libcurl-static_8.12.0_x86_64.deb
+Size: 396112
+MD5sum: 761dbdb2c4dbddb65c3ac398183cf2f1
+SHA1: c01b94213b711d51abf62c2cf3ed847197aa3768
+SHA256: d2b5e0b5baa4b5c7c79846b1966222c926be11a3e2828b839553781b0cbafede
+SHA512: 95f5440fe7b22c1c1a3cd352603dd080b3a9dc5336f14cf4038ef2287f200078a68ebded25697e498091d858b82ad89ffac54342fb97e17ee467044db8d97c83
+Description: Static libraries for libcurl
 Homepage: https://curl.se/
 
 Package: libcurl-static
@@ -32472,23 +32522,6 @@ SHA512: aa117950af439e560121574b26fb59850d66d7df6158e7a54b02e7c358f06032abfabb24
 Description: Content-Preserving PDF Transformation System
 Homepage: http://qpdf.sourceforge.net
 
-Package: qpdf
-Installed-Size: 4072
-Maintainer: @termux
-Architecture: x86_64
-Version: 11.9.1
-Replaces: qpdf-dev
-Depends: libc++, libjpeg-turbo, zlib
-Breaks: qpdf-dev
-Filename: pool/main/q/qpdf/qpdf_11.9.1_x86_64.deb
-Size: 920132
-MD5sum: dfd3e5516c86a28e99abcd53a6558cc3
-SHA1: f819fff3f9bbbc9a3db3e53a48f4b3dfc390002f
-SHA256: ff6e2b6b7585ecb945313bf73e4c4e5f33b4b9210181c035acf8f7c79694eb20
-SHA512: e8d5658e27ff72d99e9cecf2d2e6dd06b53619ebd834c5c5c56914389b5fc64d5d69bb8de772b062e65244de0be35bbecb5fec75253dd4be9fdad7f1dcabfeb5
-Description: Content-Preserving PDF Transformation System
-Homepage: http://qpdf.sourceforge.net
-
 Package: qpdf-static
 Installed-Size: 8760
 Maintainer: @termux
@@ -32501,21 +32534,6 @@ MD5sum: 1905f936c2767e72fea7fd434f19299f
 SHA1: a8e49afd35a83f723514813b1e3504fc2d417f99
 SHA256: b9a389a7dcfb1abadfb461a49b49b0fb0077a82492f26a033e0912a2c9f00626
 SHA512: 5a522c5f4a4eeefeac087fd17e728223c7a50431afecfeb0cf012813a7f3f1ad21843cfc7dee7e3ec27f6b7b28ab2a18397e831bb3f51ceccdfb29c853273bfb
-Description: Static libraries for qpdf
-Homepage: http://qpdf.sourceforge.net
-
-Package: qpdf-static
-Installed-Size: 9092
-Maintainer: @termux
-Architecture: x86_64
-Version: 11.9.1
-Depends: qpdf (= 11.9.1)
-Filename: pool/main/q/qpdf-static/qpdf-static_11.9.1_x86_64.deb
-Size: 1088596
-MD5sum: 59777fb96b0ec597623e7bd70f842311
-SHA1: 32051b46a0a8c5e08d7c4e572f582909193e17bd
-SHA256: 313d93b7b685ebfd7f2b18047e808e8a3a849d8df9bbcd9c55b7a4980e6ffd87
-SHA512: ca9c0f4693fbb3eecd4f6347edd240540f0e30e83cbba0f15902deccf4065d5c1fdaa84341852646f408e3ddf3e16cb988317d4ec6edd4c407c6025c47f3c0d0
 Description: Static libraries for qpdf
 Homepage: http://qpdf.sourceforge.net
 
@@ -41005,6 +41023,20 @@ SHA256: 15f5fb21b3c969d6342127ffc883de486d9f883d9cb316816f40406af047451c
 SHA512: 5e0ca0a4ac443abb948b2696a3104d67147f892a164668cd744383b5e9106ff40e91ff43e3e5d16f88d11ca54526d8464ccf7f01e215a8fbb5cb445cba7737bd
 Description: Static libraries for yasm
 Homepage: https://yasm.tortall.net/
+
+Package: yazi
+Installed-Size: 17528
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.2.7
+Filename: pool/main/y/yazi/yazi_25.2.7_x86_64.deb
+Size: 5059132
+MD5sum: bea549458f958ac2b6118c78b435ef36
+SHA1: 70fbcd60e0f96107d9548f2aec5581e2cfc06776
+SHA256: 5dd1f68548a3de169cca3b10a595868fcb8c37aacb7d00d93aec5b01f64dce86
+SHA512: d88412a1b88aa53ddf05ffbb43e207d99dfcc595d51ca1826f49dca61774524602eb5b267f209431d7b16093f45b39e251bddd0c4005248e389094b66d83c9b0
+Description: Blazing fast terminal file manager written in Rust, based on async I/O
+Homepage: https://yazi-rs.github.io/
 
 Package: yazi
 Installed-Size: 17120

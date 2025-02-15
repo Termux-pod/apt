@@ -3854,21 +3854,6 @@ SHA512: dc10ded24c42e759c31a36cc2d44c7994bbc5e385b61f0d32b641aef053ea1102cc83925
 Description: Qt component to allow applications to make use of the Wayland wl-layer-shell protocol
 Homepage: https://invent.kde.org/plasma/layer-shell-qt
 
-Package: layer-shell-qt
-Installed-Size: 272
-Maintainer: @termux
-Architecture: aarch64
-Version: 6.2.5
-Depends: libc++, qt6-qtbase, qt6-qtdeclarative, qt6-qtwayland, libwayland
-Filename: pool/main/l/layer-shell-qt/layer-shell-qt_6.2.5_aarch64.deb
-Size: 33392
-MD5sum: 4960f6b1ebecd15d5a0cf6b6ddca1581
-SHA1: 698577b9d27d66d823443721f7507b57d2ed62f4
-SHA256: 4137c53d6a7283c40ed91ea541f14740b1143331882a6fa0e1bee40dad0b2627
-SHA512: 163e414cd61828288368b9b5b982777ae5b43da8a007f13e10675f402f1406bdf5eefef3f5519be2388e64a663b57fbe5b68f50ca85ab0adb65d953d121b6c64
-Description: Qt component to allow applications to make use of the Wayland wl-layer-shell protocol
-Homepage: https://invent.kde.org/plasma/layer-shell-qt
-
 Package: leafpad
 Installed-Size: 260
 Maintainer: @termux
@@ -5402,6 +5387,21 @@ Description: Static libraries for love
 Homepage: https://love2d.org/
 
 Package: luanti
+Installed-Size: 8668
+Maintainer: @termux
+Architecture: aarch64
+Version: 1:5.11.0
+Depends: freetype, jsoncpp, libandroid-spawn, libc++, libcurl, libgmp, libjpeg-turbo, libiconv, libluajit, libpng, libsqlite, libvorbis, libx11, libxi, luanti-common, openal-soft, opengl, xdg-utils, zlib, zstd
+Filename: pool/main/l/luanti/luanti_1:5.11.0_aarch64.deb
+Size: 2384516
+MD5sum: 44bd5f3df5c964d0ce4f3663ab55ce4f
+SHA1: 594c108e90ffd57816703d483eef18c01b730938
+SHA256: c16b7fdf5a2bad91e6d998297d0646c94b9fb8d44ccca67bccc8b34d3f04378b
+SHA512: 15287f035d9f9d3cd8ba2da9d5f6e736e780a8cf103d6a92480f8697d45a0f2366ce0b79e2888d6ff0479e44ab22ede653688f8a35837159bfbb66a8775b27de
+Description: An open source voxel game engine.
+Homepage: https://www.luanti.org
+
+Package: luanti
 Installed-Size: 8536
 Maintainer: @termux
 Architecture: aarch64
@@ -5414,6 +5414,22 @@ SHA1: 83e3eea6bc30cf085eeee60d0eb641a6caa9b1e9
 SHA256: 5abb0e2f6cd45f380984762c3ceb4ce1101e6894303f6aa29e7ed0f08394cfbe
 SHA512: 04805f939d9028e4d6e7549dc4456d6d19c6c3f6e0ff5bbc65829e7fa311927a0411d61ba3eacf24125afed79cbb8781ae2af96c214906ca90601bd1137e1745
 Description: An open source voxel game engine.
+Homepage: https://www.luanti.org
+
+Package: luanti-common
+Installed-Size: 10912
+Maintainer: @termux
+Architecture: all
+Version: 1:5.11.0
+Replaces: luanti (<< 1:5.10.0-4)
+Breaks: luanti (<< 1:5.10.0-4)
+Filename: pool/main/l/luanti-common/luanti-common_1:5.11.0_all.deb
+Size: 3349660
+MD5sum: 6fb5b33afc8cfe005e4eb51530f8792c
+SHA1: d8bafa58d960cff81681ce78abb14595ea19734d
+SHA256: de1cb873add16de3004067d77c27564d0bb93c6d3fa533da1427f33df985f1cb
+SHA512: c5ab3d1042e5d68f043cfe87508927d382ab3625e78c17ef5b6cf6392435ebc0f4eba296e293d7e6db1db829f23bf10d97ea0563cb74aade3ebf73ccc0ceb560
+Description: Common files, including docs, shared between luanti and luanti-server
 Homepage: https://www.luanti.org
 
 Package: luanti-common
@@ -5430,6 +5446,23 @@ SHA1: 68f8149ad24325846834833356585987e2e019d2
 SHA256: d135c61a9b5cd54ea8372e270e3ec1635ee42f7dcfff977582a9642e3a08f2b9
 SHA512: 490b301b25f292e7ceeafd412422d8122e51bccbefdcc35ad89d55a30dfef658b63fd066c2477077145712285b31915b0b7b2d72da842e07c03efda0cc863c26
 Description: Common files, including docs, shared between luanti and luanti-server
+Homepage: https://www.luanti.org
+
+Package: luanti-server
+Installed-Size: 4856
+Maintainer: @termux
+Architecture: aarch64
+Version: 1:5.11.0
+Replaces: luanti (<< 1:5.10.0-4)
+Depends: jsoncpp, libandroid-spawn, libc++, libcurl, libgmp, libiconv, libluajit, libsqlite, luanti-common, zlib, zstd
+Breaks: luanti (<< 1:5.10.0-4)
+Filename: pool/main/l/luanti-server/luanti-server_1:5.11.0_aarch64.deb
+Size: 1364716
+MD5sum: 67f9670850d9b82d8ebcf5922a773bd9
+SHA1: 89de458c3819b8dbd8ac4012a54b10d833cea4c0
+SHA256: fea7f13b5ac9cca73446fcfa9aee23882dc99c2bce1ff11bc845e19692248601
+SHA512: 7daecb4a1a510316dd8d881e3adda7dd074582bb1b8c0f7016e856e4f5fe1281cee43f05e2bc76915181a563f1ce581ebcf3386321d356c941f68068b0d3cbb1
+Description: Headless server for the Luanti voxel game engine.
 Homepage: https://www.luanti.org
 
 Package: luanti-server

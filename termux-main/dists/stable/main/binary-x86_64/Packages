@@ -34396,6 +34396,23 @@ Package: seafile-client
 Installed-Size: 736
 Maintainer: @termux
 Architecture: x86_64
+Version: 9.0.12
+Replaces: seafile-client-dev, ccnet
+Depends: argon2, glib, libcurl, libevent, libjansson, libsearpc, libsqlite, libuuid, libwebsockets, openssl, python, zlib
+Breaks: seafile-client-dev, ccnet
+Filename: pool/main/s/seafile-client/seafile-client_9.0.12_x86_64.deb
+Size: 186000
+MD5sum: 6f57c3799041aab885d1f5e38a234161
+SHA1: b8898a6b71121455e7c0dc37dd7b908662cc16bb
+SHA256: 9082c4a836c4043aca2653d5f905485d4d2cc57c0e6efc5b1996bf2c37bdc7a4
+SHA512: 2e9a96afdfe1a3289f7f684ac043f5e09892f106824f699d8dae281a46809d201faf0d542baf9fb5478560963aa67681b9d722a8bb48e5539265d2ab405c26a7
+Description: Seafile is a file syncing and sharing software with file encryption and group sharing
+Homepage: https://seafile.com
+
+Package: seafile-client
+Installed-Size: 736
+Maintainer: @termux
+Architecture: x86_64
 Version: 9.0.11
 Replaces: seafile-client-dev, ccnet
 Depends: argon2, glib, libcurl, libevent, libjansson, libsearpc, libsqlite, libuuid, libwebsockets, openssl, python, zlib
@@ -34407,6 +34424,21 @@ SHA1: 72963a728d756c9a492b9b37043ddc90a49438ca
 SHA256: 1c1e3c25c2d4921a2e7d5de6b0fb672aa0a4a55323ec216a312f22443e4bd1eb
 SHA512: 7b15fcb33c7011b72fd6c14f0ad27427495feaf3e68de6aa9fc03a18d8b265b02057677c418af649305246cf67fddb8cb16e07a063216d390c1f2b49a1020fab
 Description: Seafile is a file syncing and sharing software with file encryption and group sharing
+Homepage: https://seafile.com
+
+Package: seafile-client-static
+Installed-Size: 152
+Maintainer: @termux
+Architecture: x86_64
+Version: 9.0.12
+Depends: seafile-client (= 9.0.12)
+Filename: pool/main/s/seafile-client-static/seafile-client-static_9.0.12_x86_64.deb
+Size: 16084
+MD5sum: 1779656615cac434773e871904421186
+SHA1: 6a39ec1f35883d1f2f2365ab3662fb4235b83fb7
+SHA256: b25ab58eb9c534d862862b0c15ed2ee92981b5c47dbf698562a58d65230cdfe9
+SHA512: 04e57038096c20422908db8cde1306cd9cc4e221fbdadcf7397211989b3818248aa6781fb825231eb637bbed85b1c40eadf6ed47387f1141306403247f798135
+Description: Static libraries for seafile-client
 Homepage: https://seafile.com
 
 Package: seafile-client-static
@@ -34664,6 +34696,21 @@ Description: Shell script compiler
 Homepage: https://neurobin.org/projects/softwares/unix/shc/
 
 Package: sheldon
+Installed-Size: 6076
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.8.1
+Depends: libcurl, libssh2, openssl, zlib
+Filename: pool/main/s/sheldon/sheldon_0.8.1_x86_64.deb
+Size: 1750888
+MD5sum: a3cf59bece7b0fda5fedde9511f62ace
+SHA1: e575c6897c1f7c230a0cf9351a1ab392d67ef674
+SHA256: 233113a21e9ee89db1b42141c1390d3bc5b13f359b58a8300a682bbee4d914b6
+SHA512: 80da605e474c4aa0b6f0731ef9bf47705d5cdb291bc02bff31f853fd8520ddfd31056261480a7716743e732e2513e358ed3f3dbd3f690f2ed8bfaf04c1d42417
+Description: Fast, configurable, shell plugin manager
+Homepage: https://sheldon.cli.rs/
+
+Package: sheldon
 Installed-Size: 6100
 Maintainer: @termux
 Architecture: x86_64
@@ -34851,6 +34898,21 @@ SHA256: 666a7dc1da561cbd7ecc821c6e40c60756c16f8719e445875faa441a4766c46e
 SHA512: 4565133c853cf07fd3bf1e73082ccf453f6a289547f3c9ece88b4af77e8354a305d7e81d1f72bc6269460ec65e1111a64f658ff098c8e58ada2fdbe211dceda9
 Description: Implementations of SIMD instructions for all systems
 Homepage: https://simd-everywhere.github.io/
+
+Package: simdjson
+Installed-Size: 5416
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.12.2
+Depends: libc++
+Filename: pool/main/s/simdjson/simdjson_3.12.2_x86_64.deb
+Size: 232732
+MD5sum: 56749f5a12b1719cc641343efa622577
+SHA1: 0b86a9d8114f651c5cf1d14b9065b6e0e7f73cee
+SHA256: 277bf438a41681c42ac9fc3d29567dac8774ab5394213110d638321e82c8f985
+SHA512: 221935721909de34340e8f90bcda3cd577878b3070400ef8e276e52dbad3102c1cef361e62b8dec6edd8c42e3f0656c1c9be8a94078f73a27a97871cb18b7e9e
+Description: A C++ library to see how fast we can parse JSON with complete validation
+Homepage: https://simdjson.org/
 
 Package: simdjson
 Installed-Size: 5416
@@ -37410,21 +37472,6 @@ SHA512: c803e56699eae17f35ba6183a5a2ade2dfa6e0a35e17d5778ed1f0d17d36ad2686dfb9f3
 Description: Ncurses-based text-mode interface for git
 Homepage: https://jonas.github.io/tig/
 
-Package: tig
-Installed-Size: 1112
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.5.11
-Depends: git, libandroid-support, libiconv, ncurses, pcre2
-Filename: pool/main/t/tig/tig_2.5.11_x86_64.deb
-Size: 234452
-MD5sum: c7fcd763b3629df9adbaf9182c2530d4
-SHA1: 6bf3035ee9d422a0beb77c67a60e9c82d5400c6c
-SHA256: 53e9e4b6ef2f2c49e5b4155146d5fd239c322728004fd0c743da1b7a9209fd7a
-SHA512: 7bb74cd9d410e6ba1f979d70b3ca767f3a71a6e572aa2d90f9ded54bb6cee9dbc164a17422f19538042a94abe62d3dab449b6f0967ba58c4d6cc335f3145c5c2
-Description: Ncurses-based text-mode interface for git
-Homepage: https://jonas.github.io/tig/
-
 Package: tilde
 Installed-Size: 696
 Maintainer: @termux
@@ -37734,20 +37781,6 @@ SHA512: 01f9dff11758bf19891a94cf05610afd2c3233d2f633031de8d192e7b4c651a9229d9ca4
 Description: toml11 is a C++11 (or later) header-only toml parser/encoder depending only on C++ standard library
 Homepage: https://github.com/ToruNiina/toml11
 
-Package: toml11
-Installed-Size: 784
-Maintainer: @termux
-Architecture: x86_64
-Version: 4.3.0
-Filename: pool/main/t/toml11/toml11_4.3.0_x86_64.deb
-Size: 72296
-MD5sum: f8687769963f77f8df988d19d0f145e7
-SHA1: d238d6782e1fbd2e5d850943516be44bb46dc67b
-SHA256: 7751463e8a8e9744ba4d42cea400d53b1408ff813451ef973472e2681889b8fd
-SHA512: 06c9db4ccb6e28480e8e5be40def5a1e0655f72e4996c65eeaad57df177fa858e1c6eea86b7723ee9ef5595fd7a38dd7542e7e4c2ccd36839f77782dd05beb6e
-Description: toml11 is a C++11 (or later) header-only toml parser/encoder depending only on C++ standard library
-Homepage: https://github.com/ToruNiina/toml11
-
 Package: topgrade
 Installed-Size: 8240
 Maintainer: @termux
@@ -37774,21 +37807,6 @@ MD5sum: c07e1a16a764854283ee81646406075b
 SHA1: 536c02793e4a8d8805d9ef75294fa849594bd024
 SHA256: 3d1e96d7ab7ccbaaaecafe3cf69f09632ade860a43787c65f3ea30cdbcac3d70
 SHA512: ad506ff360ff25681ee56037a4ecff856529dacd2a3d8c459645500744efe990c416bef4ef3ae4442f406182ef177a5de610743257746d5cb8aa7529bf7a988d
-Description: The Onion Router anonymizing overlay network
-Homepage: https://www.torproject.org
-
-Package: tor
-Installed-Size: 22964
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.4.8.13
-Depends: libevent, liblzma, openssl, resolv-conf, zlib
-Filename: pool/main/t/tor/tor_0.4.8.13_x86_64.deb
-Size: 3057620
-MD5sum: ca7fe424f1ae7cc32fdc346f54449ddc
-SHA1: a36c4ca33656b05d9a3c89d78002ea6412584482
-SHA256: 1cc97793d6175988e69729fce49b438c5aaf5cb618d15906666d05a46284b424
-SHA512: 0f4b5ba04ac1bdb728b6beb8776a4705b673a5b2d91e0c21e5124ae4a84a7e81b02947efe544b10a4e99d86f0f9eae36763d9d13059020b435a3d7ed5d27392b
 Description: The Onion Router anonymizing overlay network
 Homepage: https://www.torproject.org
 
@@ -38735,22 +38753,6 @@ SHA512: b2ccb488c46c96a33c28bde9111430ec01b5e72ef83ee39c795a45b94b26ca0c179cffc1
 Description: Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework
 Homepage: https://www.unicorn-engine.org/
 
-Package: unicorn
-Installed-Size: 20564
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.1.1
-Replaces: unicorn-dev
-Breaks: unicorn-dev
-Filename: pool/main/u/unicorn/unicorn_2.1.1_x86_64.deb
-Size: 2889164
-MD5sum: b0e8d66c528b3fc871c3cc41a6fbd4f0
-SHA1: e8d4f3da340e6ed56d69977eef831603fa1364e0
-SHA256: ed3d8fc32cddc019c5692ab4436bd8fa28fe5c62d7181f027d24c0c93f4b6666
-SHA512: 79fcfbe09e8a39ad1baab049296c95d5be7fe3c9ef3f3fe4de0dc8b36f8632445bc952369bb16e40d8581e76c43a53966c15673621fde70d262b3a733fe3130e
-Description: Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework
-Homepage: https://www.unicorn-engine.org/
-
 Package: unicorn-static
 Installed-Size: 31472
 Maintainer: @termux
@@ -38763,21 +38765,6 @@ MD5sum: 6f60d22a2bfaf353ee908ac2bfe0d9d8
 SHA1: e22644d86f8430b62a98e9d42b95273e206c1d14
 SHA256: 71ceae5529148414b9f20d0554bba7d4c2935371915d16bc7181de5789b2f413
 SHA512: 4073c113e79b404fac99f29ac8f51c635c201e5e21ccbdcd1ec2a997394ea4e4a3492dfdc4cf2a024af2dbe6fd50a0f0f035a0079865c5c1b51d60817afba2ec
-Description: Static libraries for unicorn
-Homepage: https://www.unicorn-engine.org/
-
-Package: unicorn-static
-Installed-Size: 31748
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.1.1
-Depends: unicorn (= 2.1.1)
-Filename: pool/main/u/unicorn-static/unicorn-static_2.1.1_x86_64.deb
-Size: 2473196
-MD5sum: 1cacaf8fcd22f069cd7a173014f8c91a
-SHA1: 37bd4a7cbc8df29dfbc17e8b7223617db4b19dee
-SHA256: 3c2c3bfd8293875729b19ae9197d4cba17d2fc931f0022934a863deeacb0d647
-SHA512: d3104b3255989a35378c81b1529d92f958a18b4b5b1e5d174a6cab1cfc538f91d7fad4dd1dac98d88d1b0e5da71c864a7f3b0e965fbd00a43aeac17cc9bac61d
 Description: Static libraries for unicorn
 Homepage: https://www.unicorn-engine.org/
 

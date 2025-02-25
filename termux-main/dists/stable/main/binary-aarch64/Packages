@@ -4023,6 +4023,21 @@ Package: composer
 Installed-Size: 3036
 Maintainer: @termux
 Architecture: all
+Version: 2.8.6
+Depends: php
+Filename: pool/main/c/composer/composer_2.8.6_all.deb
+Size: 556248
+MD5sum: d5be956a729e5d532413664eef1ab1f5
+SHA1: 31ca9401041cc9342cf9455e5f014eabf327a269
+SHA256: 8b2fa1b0d524d2bf1b2ce67a15d955c9fbb4aa7ec5f72a1241ed8764f1678184
+SHA512: 0b550d5ffccd0a5a69d9a42f61eed38a966bf561b6b29571800f5e80196692123acf79c2404620b2d2023e383b35f33a6d7931dae6938f6fa60a73a924c88808
+Description: Dependency Manager for PHP
+Homepage: https://getcomposer.org/
+
+Package: composer
+Installed-Size: 3036
+Maintainer: @termux
+Architecture: all
 Version: 2.8.5
 Depends: php
 Filename: pool/main/c/composer/composer_2.8.5_all.deb
@@ -4159,14 +4174,14 @@ Package: cppcheck
 Installed-Size: 9804
 Maintainer: @termux
 Architecture: aarch64
-Version: 2.17.0
+Version: 2.17.0-1
 Depends: libc++
-Filename: pool/main/c/cppcheck/cppcheck_2.17.0_aarch64.deb
-Size: 1822232
-MD5sum: 2b07176820ca5dd28c0d6cc23fba62e5
-SHA1: 5b96222e57c35741d60341138d1655230801ae78
-SHA256: 89cd69a931318f7f79589ba8715c7c6f515ad8eb279f353a00deb35bcb7cbe70
-SHA512: a87e9ea895c07a078e2eef33f23f83170d803505f9e78f6b8be3639f5f23be36a478add2cb783ca6f86c07f6eca6f397ff36f94701319f2800262484c00a9e23
+Filename: pool/main/c/cppcheck/cppcheck_2.17.0-1_aarch64.deb
+Size: 1820848
+MD5sum: 22d65b665e4d51d21b3053f8d3bbd7f5
+SHA1: f15cac560f87c2520236527938e9fc646f0c4121
+SHA256: 27af932b96b4283e191d632b8a790350f0104f9dfedda7e73f3910089dd84733
+SHA512: 25a6a0ec8fbbdc40549f0d282464cbb98ae53f6fd1a6894e5a86cd1d97910cea3b32a62e6eef8d46e69c9e3b106cde99ee6cf98975ad6f47a5df9e53d1b40aee
 Description: tool for static C/C++ code analysis
 Homepage: https://github.com/danmar/cppcheck
 
@@ -5307,29 +5322,30 @@ Package: docbook-xml
 Installed-Size: 2412
 Maintainer: @termux
 Architecture: all
-Version: 4.5-4
+Version: 5.1
 Depends: libxml2-utils
-Filename: pool/main/d/docbook-xml/docbook-xml_4.5-4_all.deb
-Size: 78838
-MD5sum: a04b314d880d744e74647f62244fc168
-SHA1: 1f453c4378a33e8906f9e416019dc778b3de9b99
-SHA256: 1b67311f6b3013fdbb4724bd9d37d91231f095ffb82cbd68310035dca8e09107
-SHA512: 50a06658dfa5dca65e7ed10682c06e597dc1ca6dc5bf7cc931cd58267b4f891f91b43a2e67a04a0ec1c5941e92f93d049dcf5f1c0a7089782b3a69decd004c32
+Breaks: docbook-xsl (<= 1.79.2-1)
+Filename: pool/main/d/docbook-xml/docbook-xml_5.1_all.deb
+Size: 78204
+MD5sum: 4eca50939dd0732d1d971fe9b7f5054a
+SHA1: eb987fa321cbd11c426d1d57b0c49d79b34431fa
+SHA256: e5cf908abe113bc26dc999fcdcd9fc4c98e8131946b9d623bb373d44cbebcbde
+SHA512: af391f9227bc9ec7bfa6e3e56da0d1749db607a8a12c9bfe2e776165152b59221f405fb95cbbfd62219066876867875dce58b53cbe8543e2fe8220bc2b536e62
 Description: A widely used XML scheme for writing documentation and help
 Homepage: https://www.oasis-open.org/docbook/
 
 Package: docbook-xsl
-Installed-Size: 33400
-Maintainer: Termux members @termux
+Installed-Size: 33404
+Maintainer: @termux
 Architecture: all
-Version: 1.79.2-1
-Depends: docbook-xml, libxml2-utils, xsltproc
-Filename: pool/main/d/docbook-xsl/docbook-xsl_1.79.2-1_all.deb
-Size: 1248844
-MD5sum: 6bce3d33333450979bd051681c3183b0
-SHA1: 652d08c080cee92a9e95235b359aea9f7621c7e8
-SHA256: b862d4db27f7ed8b0ab2f8a56731eb5a8e97ddced3efd31f68d91a1bad3c1a27
-SHA512: 3618a734239641bff5064a0a99f65147688cce26d2fc29793f42b9f513f38d108219b0e617bb08346409a8ab35d4770e66e38c775e779477780e6b113cf3fd40
+Version: 1.79.2-2
+Depends: docbook-xml (= 5.1), libxml2-utils, xsltproc
+Filename: pool/main/d/docbook-xsl/docbook-xsl_1.79.2-2_all.deb
+Size: 1234980
+MD5sum: 61871e4d64c25b1a19202dfb4b779274
+SHA1: 3665be4fbf326352cf47de43e65b3f4f334d213b
+SHA256: f84cf341c4a2c0fdb5806ea44e1e2548395a28d8cf7766350a912d8ff5eaae5d
+SHA512: 6f4b3371d975a55da7adcafc10dce3116abc6e83de7e88da60cb2d0769fe2512b1b4d0c0c1b91b72fa6e9504340f46a76e9661e3a07084f71cc8ca839505640f
 Description: XML stylesheets for Docbook-xml transformations
 Homepage: https://docbook.org/
 
@@ -7013,17 +7029,17 @@ Description: Duplicates file detector
 Homepage: https://github.com/adrianlopezroche/fdupes
 
 Package: fennel
-Installed-Size: 656
+Installed-Size: 720
 Maintainer: @termux
 Architecture: all
-Version: 1.5.1
+Version: 1.5.3
 Depends: lua53
-Filename: pool/main/f/fennel/fennel_1.5.1_all.deb
-Size: 107816
-MD5sum: 71939bf28635231f396c54d8652acaf0
-SHA1: 784907a56fdc65a54a138cce5bf4f69b3d8fb39e
-SHA256: c87a88bc1776a49e21c51c0384eed039979e78feecdb9fc41a02e47c061755af
-SHA512: 7abd5aa545f7854676bc99edfee4f28b3cbc88a5b3ab096734c0f90fdb8ce5423050341ec7af98363fa5543257bffbbb10f8ea3a06e305c60318355a50805dfb
+Filename: pool/main/f/fennel/fennel_1.5.3_all.deb
+Size: 109692
+MD5sum: 64a54f3705960f27735e476665077a46
+SHA1: f8136e262d94b115fd0144a4090c7ec229a93d2f
+SHA256: fef35110f9684dd523000790a6e0aed8e3926703000c035a196999a0252ee8a8
+SHA512: c69d76c041a1fbe06e3b8dcaec179aedf5795d6077bc89c3919b99fcac45edc453eb6874051e1122eb95ad21f731a3ee005e7c78a2c62644100ad8a3ad2ebb0b
 Description: A Lisp that compiles to Lua
 Homepage: https://fennel-lang.org
 
@@ -8071,23 +8087,6 @@ SHA512: 094fea6b043276e7e8cb009d8cf2902fb1661f3509847664ac8b64ef316209ed11ab6d80
 Description: A translator library for raster and vector geospatial data formats
 Homepage: https://gdal.org
 
-Package: gdal
-Installed-Size: 31004
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.10.2
-Replaces: gdal-dev
-Depends: giflib, json-c, libc++, libcurl, libexpat, libfreexl, libgeos, libiconv, libjpeg-turbo, libjxl, liblzma, libpng, libspatialite, libsqlite, libwebp, libxml2, netcdf-c, openjpeg, openssl, proj, postgresql, zlib, zstd
-Breaks: gdal-dev
-Filename: pool/main/g/gdal/gdal_3.10.2_aarch64.deb
-Size: 7482836
-MD5sum: fa2ebd9cad88923f103199835fd2c54f
-SHA1: 3148b254b1e300a48d2bf2cfb83ed9800f686501
-SHA256: aa1cb3bf2e292ffc921445202facac2decf3fa06451cc6acbc20aa311e1961ea
-SHA512: 4c215cfbb8c780f007d7b915e7974473f60795d3deeb7fbf7d15ebe38fb7b5f4ed1c03e7af99d7c9a9f4daa84123b5ac4cc26c8fca3e267659a734e03bd9a67d
-Description: A translator library for raster and vector geospatial data formats
-Homepage: https://gdal.org
-
 Package: gdal-static
 Installed-Size: 62908
 Maintainer: @termux
@@ -8230,21 +8229,6 @@ SHA512: cf18be3cb5937c0fe1491308450caebe1456e49b1882811bf54876c91d04f722f05975a9
 Description: Proxy for using W3C WebDriver-compatible clients to interact with Gecko-based browsers
 Homepage: https://github.com/mozilla/geckodriver
 
-Package: geckodriver
-Installed-Size: 4872
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.35.0
-Recommends: firefox
-Filename: pool/main/g/geckodriver/geckodriver_0.35.0_aarch64.deb
-Size: 1408792
-MD5sum: 03db86e3f2419ade3208fc1b5ee8094b
-SHA1: a63f7fab4a9618eac7814f9290ca1559750e420e
-SHA256: 3ecf888453e586e791cb9bd5ed162606386c8f3329f31403b9ce97634c284107
-SHA512: cb293121bdebc889b7d883469c09f0937008cbfbfdefff252ba52fe713a2de0fd66ede5753123b2916f8c5c041a767325c67b1940659d2fe0c8c2afeae39cab3
-Description: Proxy for using W3C WebDriver-compatible clients to interact with Gecko-based browsers
-Homepage: https://github.com/mozilla/geckodriver
-
 Package: gecode
 Installed-Size: 18044
 Maintainer: @termux
@@ -8364,32 +8348,62 @@ Description: Utility to print configuration values
 Homepage: https://github.com/termux/getconf
 
 Package: geth
-Installed-Size: 46784
+Installed-Size: 47480
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.14.13
+Version: 1.15.3
 Suggests: geth-utils
-Filename: pool/main/g/geth/geth_1.14.13_aarch64.deb
-Size: 10880976
-MD5sum: 8cfaf2589e890ee5678eee8262b905de
-SHA1: 8e8062d0ec63bf3d15c174b1f85ee0292a2898fc
-SHA256: 7bc97f01b856cd169b3b318307494f31ca215d3f33782c7d9e777e34a015b069
-SHA512: ddbd276707d29017c2e8e4f0308203c5873ce9219fcbd159eea43023195c220ac994dd269471a44bb7c821a3a97d815057ceddba0146163157b30a557ce79ba7
+Filename: pool/main/g/geth/geth_1.15.3_aarch64.deb
+Size: 11071600
+MD5sum: 024dfd1e61d02ff4907b48d0f42a1ae7
+SHA1: 3dbeeea3dc174af06e0077060b5dbd6b701fbb43
+SHA256: ab19a0bd5223cb7b79fa48d4ea7c700d00dc290b67ee7e94cd19f747963a808d
+SHA512: 66ddb86d1f1e8cef5e6dd5c89e2dba5fdee8a04237394c846af019c288db94cbd2b38263403316fd180ba2740d37648741d06c6a5cb1ac9023070fe3b0f6fdbf
+Description: Go implementation of the Ethereum protocol
+Homepage: https://geth.ethereum.org/
+
+Package: geth
+Installed-Size: 47472
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.15.2
+Suggests: geth-utils
+Filename: pool/main/g/geth/geth_1.15.2_aarch64.deb
+Size: 11070892
+MD5sum: 5f9d6717e370de71c66eb71f032572cf
+SHA1: 632a1d05485ac5b09a485def6145521cc89abf78
+SHA256: 5315008276adcd4bd50a3d4415d27c925da154e4159772e4ad73f3975b0c0d1c
+SHA512: 4528e4e0eab4e273e553b86d59054877c1a783a0a364307cfc671ef698ead80eb019840369cab265f6a787072afee5bac57bd25a974cdfb0aea3c6f60544b052
 Description: Go implementation of the Ethereum protocol
 Homepage: https://geth.ethereum.org/
 
 Package: geth-utils
-Installed-Size: 214696
+Installed-Size: 196988
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.14.13
-Depends: geth (= 1.14.13)
-Filename: pool/main/g/geth-utils/geth-utils_1.14.13_aarch64.deb
-Size: 53093832
-MD5sum: 418928a43049dabb3241544222fe0abc
-SHA1: 4be52a70279d32fabc7759483d14c5e35dea75a1
-SHA256: 66034e7325dbfddb24fdf6b32c982384bde7a6b27a92a49ddd5295dd173e0fa2
-SHA512: 24701d42bb2f4fc53598d0aea99690f91439ba268de84cbf4f498eda3a01a712111edb4bd0d414f403e165178d0c3ad449cf08bbf52b604eeaa339d96972a00c
+Version: 1.15.3
+Depends: geth (= 1.15.3)
+Filename: pool/main/g/geth-utils/geth-utils_1.15.3_aarch64.deb
+Size: 48725776
+MD5sum: 17225cfc6cf2427cebd1560a3dc6d210
+SHA1: ba21bac4b54ca9839f7e741967a8302765508237
+SHA256: 1ff63465a4cbaf8eeb5a17c68849ff299b33ba93c42420c828092b75d5d1d7eb
+SHA512: 631921f1390d747a59aaf565e9cdf6d5e33613145f7a7aebb3ab48c7811ef0f95715dcfe626d3f983035aab68745583d299ede8bfab0c71486c2a7d2d8f08285
+Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
+Homepage: https://geth.ethereum.org/
+
+Package: geth-utils
+Installed-Size: 196960
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.15.2
+Depends: geth (= 1.15.2)
+Filename: pool/main/g/geth-utils/geth-utils_1.15.2_aarch64.deb
+Size: 48686076
+MD5sum: 111a296d814be5da17cf7c2575a74230
+SHA1: 5824544b80c3957241dd75eada38cb0d314e1b4c
+SHA256: da3447b45c89094369376a7314ae4287dea73ad67ff9a3d902b27071e2cc5789
+SHA512: 24ffb0db781be6c2175b11bf8b5299e92bc8a5d403d85c7423a8e204a29616f1a3af9f1ba7ab8414c5ecc815b34d8cdb0417f057fe765d8d7f4c7642159c9d54
 Description: Additional utilities for Geth (like abigen, bootnode, evm, puppeth)
 Homepage: https://geth.ethereum.org/
 
@@ -9822,6 +9836,21 @@ Description: GPS file conversion plus transfer to/from GPS units
 Homepage: https://www.gpsbabel.org/
 
 Package: gradle
+Installed-Size: 148756
+Maintainer: @termux
+Architecture: all
+Version: 1:8.13
+Depends: openjdk-17
+Filename: pool/main/g/gradle/gradle_1:8.13_all.deb
+Size: 134950900
+MD5sum: e53b7528f9d0377e4b21b237367b377c
+SHA1: a6f4715c4f13c73b3c1a4aa576647f21c7957a73
+SHA256: 5fe9ba944fda9b5788eade934be2b4d9028a2c4d0dff8eba8d20ca53abeeae1c
+SHA512: d82783e86582ac14d844668345798321ec365e497e3782367c6b5548a6c69119fe2b61fc4ce4d4c93ffc645ee2cbf13f4acac7b1873ecef3c55a977b6c8bcdc3
+Description: Powerful build system for the JVM
+Homepage: https://gradle.org/
+
+Package: gradle
 Installed-Size: 148304
 Maintainer: @termux
 Architecture: all
@@ -10115,16 +10144,16 @@ Package: gst-plugins-bad
 Installed-Size: 7712
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.24.12
+Version: 1.24.12-1
 Replaces: gst-plugins-bad-dev
 Depends: game-music-emu, glib, gst-plugins-base, gstreamer, libaom, libass, libbz2, libcairo, libcurl, libopus, librsvg, libsndfile, libsrt, libx11, libxml2, littlecms, openal-soft, openh264, openjpeg, openssl, pango
 Breaks: gst-plugins-bad-dev
-Filename: pool/main/g/gst-plugins-bad/gst-plugins-bad_1.24.12_aarch64.deb
-Size: 1867964
-MD5sum: d3c6a4b435679373aac46a83f8690234
-SHA1: 66ae0a44fb753b470bb87b4b40e8208830b8312a
-SHA256: f879a5f09f18a69dad9964bc0a81ee7b4e664e3f4f39ead02f39a24d3aaf59de
-SHA512: de7e0e09cf2ba2f6edfc175642ede24d8098e473faef203119011c51d6db8a64cd0a08a04734508a7b78dded456413c451457b150dc754470890a1391aaed771
+Filename: pool/main/g/gst-plugins-bad/gst-plugins-bad_1.24.12-1_aarch64.deb
+Size: 1867812
+MD5sum: c03cfc207cfc78d7808f4a2db4d2a8cf
+SHA1: f4f2ff9e41f0179477361a8ef00b2f29867d1e88
+SHA256: 0a07795a29c19e3808506149a0f0208a327afe8522a2578090432318e95601eb
+SHA512: a6c5381a89af3d24234d736a0950571c557a3676cb834db8e3a226e899b083daa2580eebb5a188a7e9e080f03bc7ec7de80fefd611f588dad81eace9ec9111de
 Description: GStreamer Bad Plug-ins
 Homepage: https://gstreamer.freedesktop.org/
 
@@ -10891,17 +10920,17 @@ Description: Static libraries for htslib
 Homepage: https://github.com/samtools/htslib
 
 Package: httping
-Installed-Size: 140
+Installed-Size: 152
 Maintainer: @termux
 Architecture: aarch64
-Version: 3.6
+Version: 4.4.0
 Depends: fftw, libandroid-support, ncurses, openssl
-Filename: pool/main/h/httping/httping_3.6_aarch64.deb
-Size: 38108
-MD5sum: c5a5a5ebe31b5aee4718ce294c742861
-SHA1: a7b8e87c8bc350577cf57d8c0324bf00cd753860
-SHA256: 1925df60e6f1e121e31586d893528b484c8845fc65ce25795381bad3523764ac
-SHA512: 913d8825a1d327251b00157a62129d53ae5f19a50b8e54cbdf7cd4ee8d2ffdd4c165b20efe6ade30bfa0b21aebf44fdb1b94a3c4ea2dcfbc28b6336a76af3742
+Filename: pool/main/h/httping/httping_4.4.0_aarch64.deb
+Size: 40160
+MD5sum: 107c3180b26eb6849d480585405c90e0
+SHA1: e18fecf49009d0ad04460e38eeb47119b08ee580
+SHA256: a19cae6eb4ae0e6be45927412c6619b1ee8ccd67390eee6b4d7f571358dd6758
+SHA512: 20f91f986afa34df154fdd242487b1c72a2817479fae4f3e18894a3bd7e82031b36ec47ca2f4ca13a0c0b76447d6f4ad64edc8c2f8ddc1b80b18e1622ffaacfc
 Description: ping-like program for http-requests
 Homepage: https://github.com/folkertvanheusden/HTTPing
 
@@ -12619,22 +12648,6 @@ MD5sum: 1b0491e29780bceda1442e54c1c72a31
 SHA1: 451e8979659efbf177958fd89ba77fbc49dbacb1
 SHA256: 7622f688ad7acf98aa6cf374787f79858e38dd29284a828d4b97801574ede53e
 SHA512: 633d5270f32d0cb47fd477cdc52e1be571dd7fc648c69045f5068867cdfbf037dcfda961b5e292320d1d5c6598869dbd5509c945c441ccbddf472bf285f814a4
-Description: Simple terminal UI for git commands
-Homepage: https://github.com/jesseduffield/lazygit
-
-Package: lazygit
-Installed-Size: 21532
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: aarch64
-Version: 0.47.1
-Recommends: git
-Suggests: diff-so-fancy
-Filename: pool/main/l/lazygit/lazygit_0.47.1_aarch64.deb
-Size: 4899536
-MD5sum: 6c11c88aff8321e9fb3c2a3aec3d4618
-SHA1: 58a0a3af75a7e1ad8606348746342bd783aa3e0f
-SHA256: c96c724364c25c4a76b210be8983387df0d24fe8f3bbb8262d7691ff6181035f
-SHA512: da8c3f868da4107fff2646000c4b0a6e6ed900377062093b1849e1cc479ca7fd416509917878b5650b3a2f29052a10960c9500bd4c5e69453f877c3e0a4f6170
 Description: Simple terminal UI for git commands
 Homepage: https://github.com/jesseduffield/lazygit
 
@@ -19951,19 +19964,19 @@ Description: Protocol buffers C++ library
 Homepage: https://github.com/protocolbuffers/protobuf
 
 Package: libprotobuf-c
-Installed-Size: 336
+Installed-Size: 348
 Maintainer: Henrik Grimler @Grimler91
 Architecture: aarch64
-Version: 1.5.0-2
+Version: 1.5.1
 Replaces: libprotobuf-c-dev
 Depends: abseil-cpp, libc++, libprotobuf, protobuf
 Breaks: libprotobuf-c-dev
-Filename: pool/main/libp/libprotobuf-c/libprotobuf-c_1.5.0-2_aarch64.deb
-Size: 79856
-MD5sum: b9da0948bffd7efd50d7ac0288551cb5
-SHA1: 3c0d37d124cb04c71433229203270c8d2b7e677d
-SHA256: 312b42063b79695f5fc5a1f62eb4e3bb16f5ae515ec53a5fe43c1cb288912b3f
-SHA512: 50dc430a83f1cd4f03915efb13eda015bc2c038f1db2020f3d2b7aa8d617f18cbc156b3c1e03c38cd6cb25901500003a23e82ad2850be8dcbeba968bd74a58ab
+Filename: pool/main/libp/libprotobuf-c/libprotobuf-c_1.5.1_aarch64.deb
+Size: 83440
+MD5sum: 05eeb5b142a02d06b384145978ae2fb1
+SHA1: 1bd0375f6433fe7d3a204a8ab54d54336b036178
+SHA256: f6b29ad50c44dddba815bbcc30880d3fb2aadcff07809df04d7ea70c450b757c
+SHA512: 66faeda7b1e68945df99ec6539f4c7e2fa75781a0aa61715ea95f7f03c39e2d57802ef0e69e6f8001ed53327c4f4e3b6ea660047e0151a8899ed266986704ffc
 Description: Protocol buffers C library
 Homepage: https://github.com/protobuf-c/protobuf-c
 
@@ -19971,14 +19984,14 @@ Package: libprotobuf-c-static
 Installed-Size: 64
 Maintainer: Henrik Grimler @Grimler91
 Architecture: aarch64
-Version: 1.5.0-2
-Depends: libprotobuf-c (= 1.5.0-2)
-Filename: pool/main/libp/libprotobuf-c-static/libprotobuf-c-static_1.5.0-2_aarch64.deb
-Size: 12088
-MD5sum: 621de5460aec1e60eee48c756167f2f4
-SHA1: c2b76f8b0a6ca392a7f4ba4b9e322ef3279b7bb6
-SHA256: ec52edba39f89b23a2021cb22f0920e6e4f7dbebe0104e09208318cbde17673e
-SHA512: 77a8cbae03d75df3aec06887d83cabf41b9ab85410f3ed060f2421bdfdf8da0b588d39543713c5c38c7ba3508cd888bb8e8a7ceddc4d80a69ae51c897ce5d6e7
+Version: 1.5.1
+Depends: libprotobuf-c (= 1.5.1)
+Filename: pool/main/libp/libprotobuf-c-static/libprotobuf-c-static_1.5.1_aarch64.deb
+Size: 12108
+MD5sum: 6a7c17dc222415b227a1afe028b50fed
+SHA1: 499ce4176644583dffd70b4ad804e5872ac3ca77
+SHA256: 8f694363fde65a0c5a04d375cb75c3d813f318c8d1ddc80773ea6c3112f0ff2e
+SHA512: b5a7a7b9c3f998c541fdbaeb61ddaae28d8ff4412fd1fd658aa1e2ad9e3fb3e377b40e5791524bcb6022e842c70e5d9cff924a36ad89d216a7a5854078e93a63
 Description: Static libraries for libprotobuf-c
 Homepage: https://github.com/protobuf-c/protobuf-c
 
@@ -26398,6 +26411,20 @@ Description: Tool to find files anywhere in the filesystem based on their name
 Homepage: https://pagure.io/mlocate
 
 Package: moar
+Installed-Size: 7580
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.31.4
+Filename: pool/main/m/moar/moar_1.31.4_aarch64.deb
+Size: 1872036
+MD5sum: a47c87ea7cb93f459a8a6664f472053c
+SHA1: 07d89e97d3bded55eab18b7bb2c0cf95db13e40f
+SHA256: a57979a6a58ade79ff9e36113c615a1b56fa668a7f61f3df4a4467137809e5bc
+SHA512: 878828ef17e97a42bac15d9f252e093b7d6a4070bfc00a02b5ef265c05211b009d659b901739492a47d73eabf33673373069bf7d7eb1b1f8798f02a650571058
+Description: A pager designed to just do the right thing without any configuration
+Homepage: https://github.com/walles/moar
+
+Package: moar
 Installed-Size: 7316
 Maintainer: @termux
 Architecture: aarch64
@@ -26453,21 +26480,6 @@ MD5sum: 36308697a0ee125f9d9e65db9e67f407
 SHA1: 268f9c688c514a5c999caa0a6469be4e9e22c3e8
 SHA256: 44874381f85fd151de7762c1536c45c5df76749f44420e0c129cdfde3174f3b0
 SHA512: 21ce0df285ace2ba77ad1f51eb22a36c89b5eb044418e10b97a5ae060627ac78ca239f15f2adc14baeac72e72ede7cd8688e51f744d6857d9efd78ce58631507
-Description: A high-performance database kernel for query-intensive applications
-Homepage: https://www.monetdb.org/
-
-Package: monetdb
-Installed-Size: 16640
-Maintainer: @termux
-Architecture: aarch64
-Version: 11.51.7
-Depends: libandroid-sysv-semaphore, libbz2, libcurl, libiconv, liblz4, liblzma, libxml2, netcdf-c, pcre, readline, zlib
-Filename: pool/main/m/monetdb/monetdb_11.51.7_aarch64.deb
-Size: 3223024
-MD5sum: 2213906d69bfbb220ecac5c0bf1649cc
-SHA1: a1f5f97097d3612d42101a48082c5ae725b12f5b
-SHA256: f2041e2c799049aa07129766906e3ec798b9639ad51281e42afd4298d298b8b5
-SHA512: 0ff847fc24cb204403067b50dd45640f1f1c3a641e39113f760c7fa9922158419d330e3e823a806214aa34edad6b739b658f552d89fc821e39a63ecd5fae3e5a
 Description: A high-performance database kernel for query-intensive applications
 Homepage: https://www.monetdb.org/
 
@@ -27703,23 +27715,6 @@ SHA512: ce51bf4e88dee697933ab430dfb43d316d60ab2dd744f8c3adbe6cc8e7c5229f2b15eb92
 Description: NetCDF is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data
 Homepage: https://www.unidata.ucar.edu/software/netcdf/
 
-Package: netcdf-c
-Installed-Size: 1816
-Maintainer: Henrik Grimler @Grimler91
-Architecture: aarch64
-Version: 4.9.2
-Replaces: netcdf-c-dev
-Depends: libandroid-execinfo, libcurl, zlib
-Breaks: netcdf-c-dev
-Filename: pool/main/n/netcdf-c/netcdf-c_4.9.2_aarch64.deb
-Size: 498140
-MD5sum: c30e65c84d109df4cc306e0a36704cc2
-SHA1: 0b92ad0af98bc6035e8832cca52b734e0650fc9a
-SHA256: f58be3649d3152fb6a907e074d240b906614eea731d7df505022359a5c1524fd
-SHA512: 01c79a667962b54d626d89a108fe717d4103be04ae4d5450e8e24cc21b8b7af3e41251e00a7c7ed13b4efa073cd3e3eb2e42e370a80b847ca06302cef7088c3d
-Description: NetCDF is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data
-Homepage: https://www.unidata.ucar.edu/software/netcdf/
-
 Package: netcdf-c-static
 Installed-Size: 2020
 Maintainer: Henrik Grimler @Grimler91
@@ -27732,21 +27727,6 @@ MD5sum: 69b5df6107c61b8c07ff947e462ba945
 SHA1: f244967268f22468ef877084eeaa111453270894
 SHA256: e38585e99305996e53767fe6e66b9689e8fa506b397010aa8d86362f717b7d25
 SHA512: cb99de0e0a21a39ccade29202b7d8cb3c5143a368778bf63245be8366f4f30fb9f92d7296f974579eb76f7897156c6abf78db9d84950f64e0ac2b4a35d613eac
-Description: Static libraries for netcdf-c
-Homepage: https://www.unidata.ucar.edu/software/netcdf/
-
-Package: netcdf-c-static
-Installed-Size: 1888
-Maintainer: Henrik Grimler @Grimler91
-Architecture: aarch64
-Version: 4.9.2
-Depends: netcdf-c (= 4.9.2)
-Filename: pool/main/n/netcdf-c-static/netcdf-c-static_4.9.2_aarch64.deb
-Size: 349384
-MD5sum: c525f2a256264eedb1da3f59e1b8067f
-SHA1: 13e85d61dadb13795d818dbe2b482fdc9d7e9770
-SHA256: e98dfb41ba98d868178ad46ec25b12cde6d6ce5522fcc1dae924954bf0d92cbc
-SHA512: 7942096d3aa69cff151ef456033d9be412a75f7da7f3d702953a75e8d5154998ab3057e7b06411d2a415803a08fbf0b7efd7c0ce8c432b3c938d9d95b5ee66a8
 Description: Static libraries for netcdf-c
 Homepage: https://www.unidata.ucar.edu/software/netcdf/
 
@@ -28592,20 +28572,6 @@ SHA512: 5ebc2d34a3184f23831364bda20908a70455bed63112e83dc48beecc1b30897b299f3d79
 Description: Get up and running with large language models
 Homepage: https://ollama.com/
 
-Package: ollama
-Installed-Size: 27156
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.5.7
-Filename: pool/main/o/ollama/ollama_0.5.7_aarch64.deb
-Size: 6390308
-MD5sum: 0009f247250894601e88fddb12834af5
-SHA1: d9864f9f1310453a866f050a99242b9f487c7a84
-SHA256: 6c49bf77a9c7033372f27757e1de7b33d993e98fbbc42ff5213d74bf6faafdce
-SHA512: 716358a0bf0e728e139611c60dfd45549b1f9b626b167623dda04ebc54fdcfe97fd2c76659fd136abbe589ef9330266b4af7f9c720c6eb1e0b15654659c0b54f
-Description: Get up and running with large language models
-Homepage: https://ollama.com/
-
 Package: onefetch
 Installed-Size: 13424
 Maintainer: @termux
@@ -28927,14 +28893,14 @@ Package: openh264
 Installed-Size: 1000
 Maintainer: @termux
 Architecture: aarch64
-Version: 2.5.0
+Version: 2.6.0
 Depends: libc++
-Filename: pool/main/o/openh264/openh264_2.5.0_aarch64.deb
-Size: 309392
-MD5sum: 2fcccb810be863d3b32ec5184965b53a
-SHA1: d216a17d4ed6d4c6115a5d0699eaec00aad18f07
-SHA256: dc32615caecdeedab13b6674f9c9fa2eec80415fc0727706fa94fdeea98ca53e
-SHA512: 2959eaff80d8b14ca66a9975495946617072cc91399bd7ef02583e0e8eebfb116d2aee1df03b4fce74197e730acf7d8c7877d020e5b35b151a18ed9dffdcfbad
+Filename: pool/main/o/openh264/openh264_2.6.0_aarch64.deb
+Size: 309572
+MD5sum: 42fd93afafc00947ed642c7e10698183
+SHA1: 24c70dfff7d3dfe9d94b92bdc6ca4fb893c79530
+SHA256: 19bb48b1df9c3611bb48970a609859ebd021bf25ead469b1d7128f921b3d7008
+SHA512: b43ff864694c661c9cbcd9574a59c13351f8320ecb280930825f82892711b1459781cc8a8acbd474aefbb9b061ba615a4bc9798a4a8e345f8862e16171269299
 Description: Codec library supporting H.264 encoding and decoding
 Homepage: https://www.openh264.org/
 
@@ -35425,21 +35391,6 @@ SHA512: b2f9edfa1f7d9ce95b9c0edf014683a4c9b4a41d2a3f9060b5184c07d9b5cafb92b77f0b
 Description: Relay for bidirectional data transfer between two independent data channels
 Homepage: http://www.dest-unreach.org/socat/
 
-Package: socat
-Installed-Size: 684
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.8.0.2
-Depends: openssl, readline
-Filename: pool/main/s/socat/socat_1.8.0.2_aarch64.deb
-Size: 189040
-MD5sum: 9bc85faffc0ed8039f79509234dde371
-SHA1: 669972408f32ac7534eb3b687c847ccfc236ffa2
-SHA256: a9ce32ce42aad67e3ac6d1a3611c2b2b9bf6931e79459cec1c5ef05835692903
-SHA512: 263c097a68be1eabcef1bb21a189772826d568da16d3a1e20d06d2b9b4b5bb3401bd2a28d5103eededd6c4f7f213407317d01e627ca3ddf6704293c1c751a691
-Description: Relay for bidirectional data transfer between two independent data channels
-Homepage: http://www.dest-unreach.org/socat/
-
 Package: softether-vpn
 Installed-Size: 23132
 Maintainer: @termux
@@ -35707,21 +35658,6 @@ MD5sum: 5b7733be71cdc5214d189f6a8e14a2a1
 SHA1: 972e5b042391a983b2692f82dec5020296f34eac
 SHA256: 18e32f8e954272c180968bbe44c43544087c8f77704fb4c66fc20e845ba8ce18
 SHA512: d1fc6876db217ea9158ac78138a46eb7e721a08e6610a91c0222bca75d48d96e558f7a93b26ef21041b769ab6014ec9faf515f6079c1735670019c00eacf7491
-Description: a utility for creating symmetrically encrypted and authenticated pipes between socket addresses
-Homepage: https://www.tarsnap.com/spiped.html
-
-Package: spiped
-Installed-Size: 212
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.6.2-1
-Depends: openssl
-Filename: pool/main/s/spiped/spiped_1.6.2-1_aarch64.deb
-Size: 44112
-MD5sum: 16881f10df0e56ffcb336b661a7cc701
-SHA1: d4cf5d27bf9228f721a0946b6737d637f0c20110
-SHA256: eb754faf0cd5f92065d6d208c46a4ede33240af8e25682770519a788b8e0f82d
-SHA512: cc28ae0d5c1f9ee18e8c9e92b5cc244cf824f5b3de22c477c592a04af179f961dd48fd4599632c326c4d0b878f798227ca048b1010bf398d8497d72b68cee00c
 Description: a utility for creating symmetrically encrypted and authenticated pipes between socket addresses
 Homepage: https://www.tarsnap.com/spiped.html
 
@@ -36262,17 +36198,17 @@ Description: Tool for managing the installation of multiple software packages in
 Homepage: https://www.gnu.org/software/stow/
 
 Package: strace
-Installed-Size: 1748
+Installed-Size: 1756
 Maintainer: @termux
 Architecture: aarch64
-Version: 6.12
+Version: 6.13
 Depends: libdw
-Filename: pool/main/s/strace/strace_6.12_aarch64.deb
-Size: 397048
-MD5sum: 6cc5fbd1f93e8576cf8a71fec54962d7
-SHA1: 443253c2276c25a54c95155ca11485bd9dec8204
-SHA256: 03d04ce1113aec77cceb42f4de43a0e92aba8a059b028b2eb87acc95bbe8486c
-SHA512: 4f0cb22cec2713a2cfd88e2e7fa25fc05ef0617cf14e877aecee09606f642576463585cab6361707b7f0baeeaf5ee9d3914f8afbe4cb91c5d65f6f6daa846065
+Filename: pool/main/s/strace/strace_6.13_aarch64.deb
+Size: 396136
+MD5sum: 6ddebe202649a22eeadaf45b25a137c7
+SHA1: 05d83baa9acb097570b2b2a3922075283742f7b9
+SHA256: 36e0b536078940f0e6149c38ab27ce5ae1797666b8564fa0dc532761ebd98f13
+SHA512: 67d5c1feb56f65cdf8c19ca36518eda88f33b3cb4a92c0704b528478c02d670ea285e0cabffb1df2da2095eb4916f3daf8c2d47a18ef9632d1e8a0ba978ae21b
 Description: Debugging utility to monitor system calls and signals received
 Homepage: https://strace.io/
 
@@ -39180,16 +39116,16 @@ Description: Headers for URDF parsers
 Homepage: https://github.com/ros/urdfdom_headers
 
 Package: usql
-Installed-Size: 162396
+Installed-Size: 155412
 Maintainer: @flipee
 Architecture: aarch64
-Version: 0.19.12
-Filename: pool/main/u/usql/usql_0.19.12_aarch64.deb
-Size: 27594492
-MD5sum: b8aa22cc3bfdae10ea1f4ee3509ca9e7
-SHA1: 58444e0fb0a391011d5cecbc65a9be958e8967f6
-SHA256: 83374d949ea3db10ca06e160bbafef7911bbcf83f9da2e70b675ee656383f2a1
-SHA512: 406b70f3765eb4618c8d16305af83fda714f3b00a341e4c82c2ed1857205837954d6077a43f9e5fa190fc54f92eb4f69a0c54047b0c1b6f0bfe0eced76af3779
+Version: 0.19.17
+Filename: pool/main/u/usql/usql_0.19.17_aarch64.deb
+Size: 25648124
+MD5sum: 599822de002b97376efd3ba9baffab33
+SHA1: 0022033f10033a982195e25c677f946ad55cffb0
+SHA256: 042f5a3269e373d90c168042dbf3a1b97b524efe9ce8d52839d7031f0bb87a05
+SHA512: 909b0770a59c43b849fdcdc55f887b7ea85f34e8f6598e413042efbfa7d07c2b907fb8dacb97f7ead19455896174634b7803e8da712f13ef1552cf755276d451
 Description: A universal command-line interface for SQL databases
 Homepage: https://github.com/xo/usql
 

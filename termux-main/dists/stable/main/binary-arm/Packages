@@ -2095,20 +2095,6 @@ SHA512: 189a4bde8b9b3c33941f29fd5756d724a8af001c11f14161b24c9b0a76d1ff5f11e5f33a
 Description: A simple, fast, clean and dynamic language
 Homepage: https://bladelang.com/
 
-Package: blade
-Installed-Size: 3028
-Maintainer: @termux
-Architecture: arm
-Version: 0.0.86
-Filename: pool/main/b/blade/blade_0.0.86_arm.deb
-Size: 507440
-MD5sum: 1faefb65341c5520805db1726a189adc
-SHA1: 445bc1cae11404f1f6d71d81fd82d563def0053a
-SHA256: 350cb546f6b0c07cff249d16bb5f342d1eda57635a64afd2c5e96b614656a431
-SHA512: 4de74ade66cd065250b007f7b0d21b9e6caf41f2d8c1759b4f577e77e613d935e5a88c62a45c587ceb14855e51a925badc789baad855ce0bf0410a51c81d1f53
-Description: A simple, fast, clean and dynamic language
-Homepage: https://bladelang.com/
-
 Package: blas-openblas
 Installed-Size: 32
 Maintainer: @termux
@@ -7515,6 +7501,23 @@ Package: gdal
 Installed-Size: 22096
 Maintainer: @termux
 Architecture: arm
+Version: 3.10.2-1
+Replaces: gdal-dev
+Depends: giflib, json-c, libc++, libcurl, libexpat, libfreexl, libgeos, libiconv, libjpeg-turbo, libjxl, liblzma, libpng, libspatialite, libsqlite, libwebp, libxml2, netcdf-c (>= 4.9.3), openjpeg, openssl, proj, postgresql, zlib, zstd
+Breaks: gdal-dev
+Filename: pool/main/g/gdal/gdal_3.10.2-1_arm.deb
+Size: 7463280
+MD5sum: 47c5d0a7d9d35145086a18bef705d6c9
+SHA1: e3dc008eb6e13c19802cd9f18aec3b29e27ddcb2
+SHA256: e0e785fb1fc6010fe4dbf7ebcb737a1ffc891c255af4420e27385ce384b458be
+SHA512: ed09cbbb79ff132857a5b02104bb1dbbdcf5780d7ae965ea7b50f51e87126f9a80290ceba587635f9187cb6fff1bdea6d75e5288c24e32815f4a2a29cf8e8afe
+Description: A translator library for raster and vector geospatial data formats
+Homepage: https://gdal.org
+
+Package: gdal
+Installed-Size: 22096
+Maintainer: @termux
+Architecture: arm
 Version: 3.10.2
 Replaces: gdal-dev
 Depends: giflib, json-c, libc++, libcurl, libexpat, libfreexl, libgeos, libiconv, libjpeg-turbo, libjxl, liblzma, libpng, libspatialite, libsqlite, libwebp, libxml2, netcdf-c, openjpeg, openssl, proj, postgresql, zlib, zstd
@@ -7654,6 +7657,21 @@ SHA256: b450c363f873b373a0f655ce7f83d8ee351e025c208d58daa79f1c9be6569ec8
 SHA512: d812d52d48506fb341d7aaea4e5be90b168ece60f82291ff8aabb596c43d8c07da47a452dcd2adb2ac42d3cbd2e2bcfec959ef84a9e432c449ea9167f8e8a8b6
 Description: Fast disk usage analyzer with console interface written in Go
 Homepage: https://github.com/dundee/gdu
+
+Package: geckodriver
+Installed-Size: 3412
+Maintainer: @termux
+Architecture: arm
+Version: 0.36.0
+Recommends: firefox
+Filename: pool/main/g/geckodriver/geckodriver_0.36.0_arm.deb
+Size: 1478284
+MD5sum: a173a4f4e19f9a9f1b5207e44e5ac1ba
+SHA1: 67e77cd484dbc1e2c3ff182cfb5a436e3f63c8e8
+SHA256: ad0a433190d912ac94eb524aafd3318b215dee4098d3c1e02f3f6f86c0022548
+SHA512: 0de4f333c6e33aa4661f15b574e55877f67d5bb1ccf835696a28e81471ad3e12e757b5e946bee6c23338e2ba76cc4890fac0cc4408b29abc6dba7c684d9e6a0a
+Description: Proxy for using W3C WebDriver-compatible clients to interact with Gecko-based browsers
+Homepage: https://github.com/mozilla/geckodriver
 
 Package: geckodriver
 Installed-Size: 3252
@@ -12002,6 +12020,22 @@ Description: LastPass command line interface tool
 Homepage: https://lastpass.com/
 
 Package: lazygit
+Installed-Size: 20068
+Maintainer: Krishna kanhaiya @kcubeterm
+Architecture: arm
+Version: 0.47.2
+Recommends: git
+Suggests: diff-so-fancy
+Filename: pool/main/l/lazygit/lazygit_0.47.2_arm.deb
+Size: 4965944
+MD5sum: 29c8bd42fe2de2156774ad547bc5a1be
+SHA1: 3bf696f09fa18aca87755b0e0d20af012bf00d19
+SHA256: 3aad577ce0e87834e57d90c03f3b9d3904ef94edd547b2a77e1b8d40ab7c8389
+SHA512: 11b519c7b023c33aea80e516c61d81e84d3914b45c9a7edfbbd9696e178f4de2a0d6dfc16d241ae1ad8d5cd7c6b77030de788142afebe136e343b9d9af1fae32
+Description: Simple terminal UI for git commands
+Homepage: https://github.com/jesseduffield/lazygit
+
+Package: lazygit
 Installed-Size: 20064
 Maintainer: Krishna kanhaiya @kcubeterm
 Architecture: arm
@@ -15384,19 +15418,19 @@ Description: An ncurses toolkit for creating text-mode graphical user interfaces
 Homepage: https://keep.imfreedom.org/libgnt/libgnt
 
 Package: libgnustep-base
-Installed-Size: 9628
+Installed-Size: 9724
 Maintainer: @termux
 Architecture: arm
-Version: 1.30.0-1
-Depends: gnustep-make, libc++, libffi, libgmp, libgnutls, libiconv, libicu, libxml2, libxslt, zlib
-Filename: pool/main/libg/libgnustep-base/libgnustep-base_1.30.0-1_arm.deb
-Size: 1526608
-MD5sum: 98cf4f5596b03141be93f247f6a59c3b
-SHA1: 5007deb57c8278e98dbc1ec5ad5ab43b09d2ae4b
-SHA256: f9ad1f32103cdc299fe89b92f0a22c628e9e92d22887b1a56f0142bc559da2ba
-SHA512: 5301aa06bdcbc5d91558fa52646f77571373717e3323b17f6bd47b9442101e1a0b1a59708d91bd2cd8f8bba7b053be458c8fb678612ff29ff86ed692fb9a3463
+Version: 1.31.0
+Depends: gnustep-make, libcurl, libc++, libffi, libgmp, libgnutls, libiconv, libicu, libxml2, libxslt, zlib
+Filename: pool/main/libg/libgnustep-base/libgnustep-base_1.31.0_arm.deb
+Size: 1557036
+MD5sum: 6a39c2dafd80209f02f0f5552c46770a
+SHA1: 91e9b93a5d0f9097d0f1f95778399d6685c4b914
+SHA256: 7ed4794f0de037f6aa3a25e696e40ba866d72c0f72f5c1c60a8a33331c9b0525
+SHA512: 64e1b78a1a464a1dba835d1ec48700a86066904374c9ea6afe9d73eb20a51296c21d361d05e8a24794e4a69244e2f896746747e2375c4857bc8cec035b49fac8
 Description: A library of general-purpose, non-graphical Objective C objects
-Homepage: http://www.gnustep.org
+Homepage: https://www.gnustep.org
 
 Package: libgnutls
 Installed-Size: 1892
@@ -25670,6 +25704,21 @@ Description: A private, secure, untraceable, decentralised digital currency
 Homepage: https://getmonero.org/
 
 Package: monetdb
+Installed-Size: 14072
+Maintainer: @termux
+Architecture: arm
+Version: 11.51.7-1
+Depends: libandroid-sysv-semaphore, libbz2, libcurl, libiconv, liblz4, liblzma, libxml2, netcdf-c, pcre, readline, zlib
+Filename: pool/main/m/monetdb/monetdb_11.51.7-1_arm.deb
+Size: 3437868
+MD5sum: 8d5d6ab2eb59f1d1f18c9790c39bc73f
+SHA1: 5810f8e4bcd707d58360ba85bfd944eff82495b8
+SHA256: c43eab43980e4007031e2570ba18d7b0ec0f0b564c4fb3c0c2b5a1b837e2176c
+SHA512: 6f2d72721adb14afe46df2fe327c08ccf79d8978db043eda98b14a7da7bbff1198b03b3c559e1c8a575679ab7f811a315cf7529c49bf02a3241b7e8968447f6f
+Description: A high-performance database kernel for query-intensive applications
+Homepage: https://www.monetdb.org/
+
+Package: monetdb
 Installed-Size: 10964
 Maintainer: @termux
 Architecture: arm
@@ -25984,21 +26033,6 @@ MD5sum: 64a559f720320563639ad2597545e4d3
 SHA1: 26ec834966eaf91f872a120aa60ae061702bf7fd
 SHA256: 773ad854e309f4de6d4f04020cfda955a17f465d6a7f600008dfa2ee8a996542
 SHA512: ff7df406505b7f98d13144727f57430a72248ece76f493a089bfd0b3aa1af3c2fa709c964485ac477ab66c6b12f4e2dc9e2f46e5419709573b45ee41e47285e9
-Description: Music player daemon
-Homepage: https://www.musicpd.org
-
-Package: mpd
-Installed-Size: 1940
-Maintainer: @termux
-Architecture: arm
-Version: 0.23.16-3
-Depends: chromaprint, dbus, ffmpeg, game-music-emu, libao, libbz2, libc++, libcurl, libexpat, libflac, libicu, libid3tag, libmad, libmp3lame, libmpdclient, libnfs, libogg, libopenmpt, libopus, libsamplerate, libsndfile, libsoxr, libsqlite, libvorbis, libwavpack, mpg123, openal-soft, pcre2, pulseaudio, yajl, zlib, fmt
-Filename: pool/main/m/mpd/mpd_0.23.16-3_arm.deb
-Size: 530936
-MD5sum: 7def524797a22dadaf815a31d1346b18
-SHA1: 48a00a41f2085bd51eb6865d6c03dbe9b8112957
-SHA256: ab6b59ed85ffa7852d8ae975de81b7ed49c902f3aa488ad953862e758d61d3c0
-SHA512: 378666514cdca526488d64cfc19bcf52b809eb086502e29ff51ac0c0a269d020c46b8f3c6f1caf6a7473763a6c2b40ed15e136ed36b910e15245f9f0aeb56b00
 Description: Music player daemon
 Homepage: https://www.musicpd.org
 
@@ -26915,6 +26949,23 @@ Description: TCP/IP swiss army knife. OpenBSD variant.
 Homepage: https://packages.debian.org/sid/netcat-openbsd
 
 Package: netcdf-c
+Installed-Size: 1692
+Maintainer: Henrik Grimler @Grimler91
+Architecture: arm
+Version: 4.9.3
+Replaces: netcdf-c-dev
+Depends: libandroid-execinfo, libcurl, zlib
+Breaks: gdal (<= 3.10.2), monetdb (<= 11.51.7)
+Filename: pool/main/n/netcdf-c/netcdf-c_4.9.3_arm.deb
+Size: 503988
+MD5sum: 095508304b514c5271eecf459ffda436
+SHA1: b14ea8b501bc75ef82d515b7c3094704eac4255d
+SHA256: 5e89fdd3164dbcf90814c9700232adc3fe7eb1a6f8b787cf5dd0ae6634d49303
+SHA512: c6459ca65b77ce05ece03feea6c8ddb79888cbcc428e2518bf57b1c7f515dc4bc66860c00d85288bc29ebc973eb2e736aa36fd0e58bc52185b90ecc9ddb78949
+Description: NetCDF is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data
+Homepage: https://www.unidata.ucar.edu/software/netcdf/
+
+Package: netcdf-c
 Installed-Size: 1488
 Maintainer: Henrik Grimler @Grimler91
 Architecture: arm
@@ -26929,6 +26980,21 @@ SHA1: c2ee080c8d3e0c4fa07f5618f2138506fb75238b
 SHA256: c41ea1b2127ff725596560b4908ff5d3988e0bd7d4e6f5c46ee4749b1aa7cef5
 SHA512: 86ecb0f91526f4dcd81ff295c25af5d6e04a4d10d9770694c2961b66dbc58c75a134490fab0cc7dc394cb5b79d44767de8f6bc6567f6c8cb77be572a61f7735a
 Description: NetCDF is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data
+Homepage: https://www.unidata.ucar.edu/software/netcdf/
+
+Package: netcdf-c-static
+Installed-Size: 1524
+Maintainer: Henrik Grimler @Grimler91
+Architecture: arm
+Version: 4.9.3
+Depends: netcdf-c (= 4.9.3)
+Filename: pool/main/n/netcdf-c-static/netcdf-c-static_4.9.3_arm.deb
+Size: 356120
+MD5sum: c8272705212d8264f58df5856bd76ab7
+SHA1: a37f2dcb22d627293875af6fa2bdfa273db4b8f2
+SHA256: da3e2989c5be9be9d1d050e9b34d75dce8030fa1986a2b5b86f3a40f7c01db5a
+SHA512: 497a5087d3f2c93702e3b9cfc8309a2c6df06d1c58cc86eaad05a7b51121369d8a8334033af5e773c5d8e9ed86943c4d1242a717c40a139e37e74f4f485d7aa2
+Description: Static libraries for netcdf-c
 Homepage: https://www.unidata.ucar.edu/software/netcdf/
 
 Package: netcdf-c-static
@@ -32795,14 +32861,14 @@ Package: rsnapshot
 Installed-Size: 320
 Maintainer: @termux
 Architecture: all
-Version: 1.4.5
+Version: 1.5.1
 Depends: coreutils, openssh, perl, rsync
-Filename: pool/main/r/rsnapshot/rsnapshot_1.4.5_all.deb
-Size: 70060
-MD5sum: 7c222c644841ce7dea3c9a1dc16162dd
-SHA1: 3b341793b85c10e6d4a886b7c89e666b9c000106
-SHA256: 7a7dfc3acddd8840dce90c3457d0180ac731bd95c65ea9ba48ecea6e474403a5
-SHA512: aabb6f401cf8aefb2173186db6d1f0239882577c641cfae44cc98d83419ada3c7b6266c12cbaa2428fa7f5dec802984c99b8099d3025ed11a5cd946ff31ea033
+Filename: pool/main/r/rsnapshot/rsnapshot_1.5.1_all.deb
+Size: 68712
+MD5sum: b5bd45358a952e893d667288bb66ce9e
+SHA1: 99c3f36ec7bf78a4a7c047cec74230475d9657b6
+SHA256: 537fff8bd98b5198a0f35bd69a02de5c1902641de07ad6db83a2cd27ce750825
+SHA512: d63946b4a843d07dfa86bcc85d7ea20453669e4d28fc37582b293127e93e08007454a733158772cd523f95af7618218b964c93a4ab3654fa0e1983c751331690
 Description: A remote filesystem snapshot utility
 Homepage: https://www.rsnapshot.org/
 
@@ -34367,6 +34433,21 @@ Description: Pluggable Transport using WebRTC, inspired by Flashproxy (Proxy)
 Homepage: https://snowflake.torproject.org/
 
 Package: socat
+Installed-Size: 492
+Maintainer: @termux
+Architecture: arm
+Version: 1.8.0.3
+Depends: openssl, readline
+Filename: pool/main/s/socat/socat_1.8.0.3_arm.deb
+Size: 176380
+MD5sum: 8cafb41bbe561376565dab210fa78ae5
+SHA1: e584c6eb1b9365c9951a5d71d6253ef15383afd0
+SHA256: 6c1863f284c8aa8419f1e4745cf696de4516bdfa66c62e80bfb27f64e5296642
+SHA512: c9d40974e2042423e079ddf420f4034b0342fa92268f5a02e84b3481b49a4cf371a4929865d1c298776264f581abf4bc3e9f2559a2fedd69cf7a9c31b5949b47
+Description: Relay for bidirectional data transfer between two independent data channels
+Homepage: http://www.dest-unreach.org/socat/
+
+Package: socat
 Installed-Size: 484
 Maintainer: @termux
 Architecture: arm
@@ -34650,6 +34731,21 @@ SHA256: 41171080de988fd6f9b2d619159b93f7a6f5205138fc9d84d2d8705027ddbac2
 SHA512: 55585da7a83ddcdb26da249b0f6b0148786d4e7b61f2dca90e8aafcb90a0fd2dd6b56b04ff12564bd02052eb6c54f75fae99c8f10b9d3df574d6dc8e1fb32e5f
 Description: Static libraries for spglib
 Homepage: https://spglib.github.io/spglib/index.html
+
+Package: spiped
+Installed-Size: 160
+Maintainer: @termux
+Architecture: arm
+Version: 1.6.3
+Depends: openssl
+Filename: pool/main/s/spiped/spiped_1.6.3_arm.deb
+Size: 39536
+MD5sum: 2b5389e00fe7b0dbce48965685e26f68
+SHA1: 21f8ea8200a88c42bf9b9190b207a461621fa5d6
+SHA256: 391319e5a535f2e386cb7f29d5366c6a29d48e10a9e246bb4b97d5f7713b2c5e
+SHA512: 2e45516053f18a36794b7bb9e5e89339dbdffcb8d0a4f326e564d3ca81cd783b526d4a8f41108755a990c546e5822f4b88a356865b6401dd042598dfbc1dfaab
+Description: a utility for creating symmetrically encrypted and authenticated pipes between socket addresses
+Homepage: https://www.tarsnap.com/spiped.html
 
 Package: spiped
 Installed-Size: 156
@@ -38992,16 +39088,16 @@ Description: Libc for WebAssembly programs built on top of WASI system calls
 Homepage: https://wasi.dev/
 
 Package: wasm-component-ld
-Installed-Size: 3272
+Installed-Size: 3784
 Maintainer: @termux
 Architecture: arm
-Version: 0.5.11
-Filename: pool/main/w/wasm-component-ld/wasm-component-ld_0.5.11_arm.deb
-Size: 1253108
-MD5sum: 0f2af2a6110a0385668d5f944205bca2
-SHA1: afa53cc2195aba8eea8b4173df301ff04b6dfa87
-SHA256: f4c894233ace4e39d53c0312b2d9daef10bacd0bad0add7882d664ce21372346
-SHA512: bf3dcedc15c9c73a6edb88b092ff211cdf4a6d0208d74f09f88b44b00b520211f13216e1e32255711ec705ecf623f601cdb017caf0ff16cb6e7e0fb5364171c2
+Version: 0.5.12
+Filename: pool/main/w/wasm-component-ld/wasm-component-ld_0.5.12_arm.deb
+Size: 1417340
+MD5sum: 8616dab6941f52b8d5b03fb9b7903d59
+SHA1: bba7264ef5b14600d2b3393f4dd6d62aa1807936
+SHA256: e4d9d01663167e42f9d33460b0ec93c5e443271d2d316de654940ab37fb09945
+SHA512: 806891581aa41afb5e9ef61dd08fa25f0c4d01f22362b1066a090bbd3576255eb24eee56abf16fdedcfdd03d7eeec2f8fdcd42ff38bea55618f396b96a10f2ff
 Description: Command line linker for creating WebAssembly components
 Homepage: https://github.com/bytecodealliance/wasm-component-ld
 

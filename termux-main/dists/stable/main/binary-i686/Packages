@@ -17923,6 +17923,23 @@ Package: libmosquitto
 Installed-Size: 356
 Maintainer: @termux
 Architecture: i686
+Version: 2.0.21
+Replaces: libmosquitto-dev
+Depends: c-ares, libc++, openssl
+Breaks: libmosquitto-dev
+Filename: pool/main/libm/libmosquitto/libmosquitto_2.0.21_i686.deb
+Size: 66308
+MD5sum: 7221179e00d8111c5437819ed49f068f
+SHA1: bec2ac531b237e0ff6997316f4ff364f7ca9eb85
+SHA256: 860040710e157bec4f71d3ce85fd888380e2ee8c2dd5fc33de5d828900bd110a
+SHA512: 9035fb817df778f234c7fd64e677bf57fcbde8ec6b70c0cadf31db74ecef3898ce5358df5af6e54ddda062423195bc375593da4e4f24887c79629c060f2ca2ac
+Description: MQTT library
+Homepage: https://mosquitto.org/
+
+Package: libmosquitto
+Installed-Size: 356
+Maintainer: @termux
+Architecture: i686
 Version: 2.0.20
 Replaces: libmosquitto-dev
 Depends: c-ares, libc++, openssl
@@ -26184,6 +26201,21 @@ Package: mosquitto
 Installed-Size: 656
 Maintainer: @termux
 Architecture: i686
+Version: 2.0.21
+Depends: libwebsockets, libmosquitto (= 2.0.21)
+Filename: pool/main/m/mosquitto/mosquitto_2.0.21_i686.deb
+Size: 212188
+MD5sum: 1c669cdb0c027d96fabcc0bb0c877caf
+SHA1: 37d4c4123bba0709e7f36d00eefbd280dc0f904d
+SHA256: 4fb9f2d996660f65668c088e6c465e79cd9f61a32fd2318b693c9660d1bf06ac
+SHA512: 157204bd513581ca95c0f7e931eaebc125b99da30125aae2e7a0855ddccbe719af9acf4182d688be60851251b6280e12ad90d11dbdbba261500e26d3298db8f0
+Description: MQTT version 3.1/3.1.1 compatible message broker and clients
+Homepage: https://mosquitto.org/
+
+Package: mosquitto
+Installed-Size: 656
+Maintainer: @termux
+Architecture: i686
 Version: 2.0.20
 Depends: libwebsockets, libmosquitto (= 2.0.20)
 Filename: pool/main/m/mosquitto/mosquitto_2.0.20_i686.deb
@@ -27860,22 +27892,6 @@ SHA512: 589d44c4353bf2655d904978de3592bf06661991abbbf53aa0eac8e2773eba4b75570ee7
 Description: Small, fast and limited text editor
 Homepage: https://github.com/xyproto/o
 
-Package: o-editor
-Installed-Size: 11640
-Maintainer: Alexander F. Rødseth <xyproto@archlinux.org>
-Architecture: i686
-Version: 2.68.8
-Replaces: o
-Breaks: o
-Filename: pool/main/o/o-editor/o-editor_2.68.8_i686.deb
-Size: 4247308
-MD5sum: cd519070e9fc93e9038a0f9ca757d660
-SHA1: 68c3c3f0bf65dd83727baf65fbe20e915e2d4649
-SHA256: c995aea1d48faf4347a571b26184c54adbe941e9b1fef6d0e688f0fe74624f0b
-SHA512: c63633a2f712751de3db1a4782238c11f63d917219e83cda8dc267c7f931727e8907cc5833155e4c3cc79600d20ab509fccb1d4ef347d51262a53425bdf13677
-Description: Small, fast and limited text editor
-Homepage: https://github.com/xyproto/o
-
 Package: oathtool
 Installed-Size: 936
 Maintainer: @termux
@@ -28025,20 +28041,6 @@ MD5sum: c8ebd0a6c72ab50eb93567bc487e4e22
 SHA1: 53306be380a45b92e79358908fb930aa3da44e6b
 SHA256: 29c4a96b63015f183e48675b1b1471a644c543e5fd831a526e4daa6517fb2d48
 SHA512: 037b8d4b7a94e706f21d866e0aa3a92cb0865dc415ebc148329e8e0ef77afc2dec418a20272ba8f32838e81a37646842b76d59e7ea25343927c0c5582d700d4c
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 19312
-Maintainer: @termux
-Architecture: i686
-Version: 25.1.1
-Filename: pool/main/o/oh-my-posh/oh-my-posh_25.1.1_i686.deb
-Size: 5649412
-MD5sum: 3f113eaf06051c5acac0870caf7d7362
-SHA1: 2017af87e413e551fbd186739d2ba2936b088e91
-SHA256: 2d3e80d5e5d39fa89bac67b7d9ee0b80fcbad5a313053542c6ce1cd5bde102a4
-SHA512: a721d63ab81add8b922a33d7204b4ba3516709a21a96e5d0f0317d046b896ce3ee64ef7e2ed881616ebced9557ae274a9328a9129ce410bbac08eeddf743fee9
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -29207,6 +29209,22 @@ SHA256: f8a727e41fefa763861799767ce3358a79a6bbcad16dbb4c2e172fafb8ee6123
 SHA512: cf52f505504302a77b3a33ac9e94f9d607a7dd31f8780081dad2c555469007e37251c3d460e43489290c82043b10f8d12c9d952a9d0bccd0701596cfd18eeadf
 Description: Lightweight directory-based password manager
 Homepage: https://www.passwordstore.org
+
+Package: pass-otp
+Installed-Size: 88
+Maintainer: Henrik Grimler @Grimler91
+Architecture: all
+Version: 1.2.0-4
+Depends: oathtool, pass
+Suggests: libqrencode
+Filename: pool/main/p/pass-otp/pass-otp_1.2.0-4_all.deb
+Size: 6572
+MD5sum: 4dd6ef40b8ae3d98cfa14c12a43ce7da
+SHA1: 66dcc675d11eeb823b4dcf51ffad6fbd142d3c01
+SHA256: 87224ed57ae80263e605db1459f819481c04e675463bf0f469cc0bf7c0a0990a
+SHA512: 0f3162827e2b2df83200a19913aea83df27a3e9cec59eaa5778f8ab41554a88f8385db8aad42a60ab9d41144b75100da0054a70dcd3ad0f4bc9f04fe94a12325
+Description: A pass extension for managing one-time-password (OTP) tokens
+Homepage: https://github.com/tadfisher/pass-otp
 
 Package: pass-otp
 Installed-Size: 88
@@ -34471,20 +34489,6 @@ SHA512: c536e73f632d926d64b7fb421a79eef059245a0cb2684343c654d5c881b7ad1f4166bf58
 Description: A personal key-value store
 Homepage: https://github.com/charmbracelet/skate
 
-Package: skate
-Installed-Size: 11604
-Maintainer: @termux
-Architecture: i686
-Version: 1.0.0-1
-Filename: pool/main/s/skate/skate_1.0.0-1_i686.deb
-Size: 3565812
-MD5sum: 8151a0b4b58980c11ce383c83e06baaf
-SHA1: 65e792aef1669fd7c861a4861a67eef4bf33166d
-SHA256: f57fff958fd0f0158b7b9495e3b39575291b1fa67aaa1830f335a7784fd7eb95
-SHA512: efa06f4bf26b14212c7dba78bf81fb5d3563a45ac2bf51cd5b46932e7556625af03e265eb01919f136729484f90f897443fb0912bbd10962b97a7a4e43180651
-Description: A personal key-value store
-Homepage: https://github.com/charmbracelet/skate
-
 Package: sl
 Installed-Size: 72
 Maintainer: @termux
@@ -36315,6 +36319,20 @@ SHA256: bf611d58b5ef788acf49b52b74ba7f2efe0a863f430286893caa8976db1acbb7
 SHA512: 7fbceea02581bd045b242f639ebd2747e64efe239cd56c51219a148b50878e112a70f0c32b5103b9b7f1de6636600f35f4c3b2ba4d43d047ff138dbc4c78626d
 Description: Telegram messenger CLI
 Homepage: https://github.com/vysheng/tg
+
+Package: teleport-tsh
+Installed-Size: 108464
+Maintainer: @termux
+Architecture: i686
+Version: 17.3.3
+Filename: pool/main/t/teleport-tsh/teleport-tsh_17.3.3_i686.deb
+Size: 22625720
+MD5sum: 931091144ab387eb937c688d9faff310
+SHA1: 3f1c61692adf0c1ca864ba12e553a0bc08f701f2
+SHA256: 5bb97ab922bb3f5fbb6298ae7837e8e336f115607d687b105d3a42155eaa7991
+SHA512: daf6ff83d026741e69e91d8014a8d8dcd133d76733fbc84b8858e72907f6749f6f85cafe4b8776c9c38e2659adfeccbbfdf48afa61ff6618a14509d8adc6ab0e
+Description: Secure Access for Developers that doesn't get in the way
+Homepage: https://github.com/gravitational/teleport
 
 Package: teleport-tsh
 Installed-Size: 108452
@@ -39037,14 +39055,14 @@ Package: vtm
 Installed-Size: 6704
 Maintainer: @termux
 Architecture: i686
-Version: 0.9.99.67
+Version: 0.9.99.68
 Depends: libc++
-Filename: pool/main/v/vtm/vtm_0.9.99.67_i686.deb
-Size: 1361392
-MD5sum: 8f9edea0d8989271644a9fd9a710af60
-SHA1: 2e1149ba4524d1230d068a1d6920409652c6d80a
-SHA256: c0fb203573899543dcc1c4368ac958c139459b82add11243095be2c45905104c
-SHA512: a7e5be3e80dcba778f47ce526c3ce7be2f11da6c5fb7171be128652111156f5be30624c26feb8fa5bde7d31a4d9a73257b9376e5dfceab876db46b0708e8ece7
+Filename: pool/main/v/vtm/vtm_0.9.99.68_i686.deb
+Size: 1361620
+MD5sum: bbbc9919df1821392309bcb82709ed6f
+SHA1: d087ad29c9f2688fe73fbfc41f6bbc08fdd3e8e2
+SHA256: f2c2b4f8f2b8c278e13e110bb8e3bed328e2cdb64e0f297cb3f4629058cd3abe
+SHA512: efb582afaee7083193a0292d15f535ff7640252e369ad0a6645b34914a8fc4511778e36848aaa8544f4fa693b81ace600679befe4d427a878bb40c815bed077d
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://vtm.netxs.online/
 

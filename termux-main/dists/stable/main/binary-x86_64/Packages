@@ -4886,17 +4886,17 @@ Description: Bootstrap a basic Debian system
 Homepage: https://wiki.debian.org/Debootstrap
 
 Package: delve
-Installed-Size: 16276
+Installed-Size: 15404
 Maintainer: Krishna kanhaiya @kcubeterm
 Architecture: x86_64
-Version: 1.24.0
+Version: 1.24.1
 Depends: golang, git
-Filename: pool/main/d/delve/delve_1.24.0_x86_64.deb
-Size: 4479696
-MD5sum: 44e665b4908bb2c6736543149ba2df88
-SHA1: 1fd774b4a115f2bb06b83d070c77b0f7793b5194
-SHA256: 495d3b0de06a143b1acf26aefe06e9d323209770f8cf67b5323e4f9e31e8a1cb
-SHA512: 16dde16eabffbe5101e69d4f688b74057e06121fa7578336dafdca8647b88ab41be6686b87fa0780080686c5e6e6a4b69d61777dab1d44f0b7897463b4b82129
+Filename: pool/main/d/delve/delve_1.24.1_x86_64.deb
+Size: 4219456
+MD5sum: 92c7196caf8b52f78d7b68b2e258a701
+SHA1: 52ef42cc3e9f2c39dabc140929bd9bb153c01e41
+SHA256: 943aa87fdbbfc737096192da9ad56022c95bd984963d883c6e1957c0e0ac2a2a
+SHA512: 7f0372a3ec6e54d330295d9bb2e8aae39eb8b293581859ca62e054fb12c1a76d44b73f4b39f15e8064691db0c19151605a79b7c770bcce25954cfd75b9d49142
 Description: A debugger for the Go programming language
 Homepage: https://github.com/go-delve/delve
 
@@ -18135,6 +18135,23 @@ Package: libmosquitto
 Installed-Size: 356
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.0.21
+Replaces: libmosquitto-dev
+Depends: c-ares, libc++, openssl
+Breaks: libmosquitto-dev
+Filename: pool/main/libm/libmosquitto/libmosquitto_2.0.21_x86_64.deb
+Size: 66216
+MD5sum: 4992e4663f2442e8e5d4f41f2d3c43cc
+SHA1: d27676bab65923cc9df0a475d65234b580b5a87f
+SHA256: df28607464ad6e13cd8f673275a66cbf2f1b31a745ac647b66fd6a722e74e4b0
+SHA512: 65469a9ec724668f245116d8a5f02ff3c0ba1726adff326a0e65693e4ca90b5271f2a7daa7642f5e7892973776d08289c81c97328861fcfaad1050e6a5f810b0
+Description: MQTT library
+Homepage: https://mosquitto.org/
+
+Package: libmosquitto
+Installed-Size: 356
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.0.20
 Replaces: libmosquitto-dev
 Depends: c-ares, libc++, openssl
@@ -26487,6 +26504,21 @@ Package: mosquitto
 Installed-Size: 676
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.0.21
+Depends: libwebsockets, libmosquitto (= 2.0.21)
+Filename: pool/main/m/mosquitto/mosquitto_2.0.21_x86_64.deb
+Size: 214396
+MD5sum: 81dcf788a9dbb4f49001768f76343220
+SHA1: 61a68d061c81e846cfd2072a5e70969cd5559808
+SHA256: b956112b49c8bbe89eeb1236f0029b68f91a02483b601634910882587c94a337
+SHA512: 75c99095de863439aef340e0cede0657e5f31880a722713e02057a281716b99e516acbc1f564c053d1dee43c2006af4b64a1a0ce6b544d7fa8f07624c3c27fe5
+Description: MQTT version 3.1/3.1.1 compatible message broker and clients
+Homepage: https://mosquitto.org/
+
+Package: mosquitto
+Installed-Size: 676
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.0.20
 Depends: libwebsockets, libmosquitto (= 2.0.20)
 Filename: pool/main/m/mosquitto/mosquitto_2.0.20_x86_64.deb
@@ -28178,22 +28210,6 @@ SHA512: 26cd9d5b38c9ce2d613f7507ce8b629f64ff65c599d8c69832897eb79410a749a4455ab1
 Description: Small, fast and limited text editor
 Homepage: https://github.com/xyproto/o
 
-Package: o-editor
-Installed-Size: 12828
-Maintainer: Alexander F. Rødseth <xyproto@archlinux.org>
-Architecture: x86_64
-Version: 2.68.8
-Replaces: o
-Breaks: o
-Filename: pool/main/o/o-editor/o-editor_2.68.8_x86_64.deb
-Size: 4120596
-MD5sum: 6c7814eb5937c85ce1ef58734965b1bd
-SHA1: 3417e59b8eb27f9eef34b78bf4dfb6f5cfd8ce6d
-SHA256: 7eedc6cffdc10d82e37371c556e4e48e981cd5f816343097f7583e2659ccb921
-SHA512: 15806cd4d6d195a2043ca7680e592446d380e0035079acf61511147115e33478740540b94c56b3c1d7ff28fa1c7d555838c6e8c7b0792a93e0ed485ade5ebfae
-Description: Small, fast and limited text editor
-Homepage: https://github.com/xyproto/o
-
 Package: oathtool
 Installed-Size: 928
 Maintainer: @termux
@@ -28375,20 +28391,6 @@ MD5sum: 689cf90ca396ada1f48370808c322ff8
 SHA1: 138c0c8dfa3c2023c579121fe53d169ccc4f2205
 SHA256: f4ad862dc25bb8c22722b3c2b226b11f478b466231201824e235153356d72d1a
 SHA512: 554545074749a4d46397062c2c3c0b8605a942a67f7b76cc4ea85aeeab6995e8f7a98b92f5a4d183af19995d80240e927df1fdbbd4cc104c8ccca359360c8989
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 20788
-Maintainer: @termux
-Architecture: x86_64
-Version: 25.1.1
-Filename: pool/main/o/oh-my-posh/oh-my-posh_25.1.1_x86_64.deb
-Size: 5442904
-MD5sum: e437a3193011138ce41ee6e2fea2297b
-SHA1: 38489c1c3ce2055c95318fd3a111ae69b1c3d186
-SHA256: 076e7877933c4591230a4a2fbf145b9f819c245a2bfbc3d22b29a067b4a1cccf
-SHA512: e3109683f639a504eb52b35a6f2661f2e274faa42708a1fb9a492d8b22f80ebbf9f5a5c0c74660d6062c676bd49b101e689535411d3fcfbbfa40f7af81a7b3b3
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -29630,6 +29632,22 @@ SHA256: f8a727e41fefa763861799767ce3358a79a6bbcad16dbb4c2e172fafb8ee6123
 SHA512: cf52f505504302a77b3a33ac9e94f9d607a7dd31f8780081dad2c555469007e37251c3d460e43489290c82043b10f8d12c9d952a9d0bccd0701596cfd18eeadf
 Description: Lightweight directory-based password manager
 Homepage: https://www.passwordstore.org
+
+Package: pass-otp
+Installed-Size: 88
+Maintainer: Henrik Grimler @Grimler91
+Architecture: all
+Version: 1.2.0-4
+Depends: oathtool, pass
+Suggests: libqrencode
+Filename: pool/main/p/pass-otp/pass-otp_1.2.0-4_all.deb
+Size: 6572
+MD5sum: 4dd6ef40b8ae3d98cfa14c12a43ce7da
+SHA1: 66dcc675d11eeb823b4dcf51ffad6fbd142d3c01
+SHA256: 87224ed57ae80263e605db1459f819481c04e675463bf0f469cc0bf7c0a0990a
+SHA512: 0f3162827e2b2df83200a19913aea83df27a3e9cec59eaa5778f8ab41554a88f8385db8aad42a60ab9d41144b75100da0054a70dcd3ad0f4bc9f04fe94a12325
+Description: A pass extension for managing one-time-password (OTP) tokens
+Homepage: https://github.com/tadfisher/pass-otp
 
 Package: pass-otp
 Installed-Size: 88
@@ -34984,20 +35002,6 @@ SHA512: 2e9c2b8be9671dab62f5ba1bce34470bb8b9189580454ba290a566b8d19d7a94613c3051
 Description: A personal key-value store
 Homepage: https://github.com/charmbracelet/skate
 
-Package: skate
-Installed-Size: 12604
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.0.0-1
-Filename: pool/main/s/skate/skate_1.0.0-1_x86_64.deb
-Size: 3481476
-MD5sum: 457a1cb8f051373e0eba49ec1086e47c
-SHA1: 2f379be13d9652dc4581e6ea0ba812a29e66354b
-SHA256: 4970d58c33d6ae7c60797ebeaa4b45b1dd83fc6f755f1db51788cf4ea7714b96
-SHA512: 759967337671ecbf2f520e5ec7e8623f96b3ed35018c846823e0bf8695db18d6f358631d3b8d1a71c66667257dbb6ac2c3e46c0b1566d2cad7b09ea960f2aaab
-Description: A personal key-value store
-Homepage: https://github.com/charmbracelet/skate
-
 Package: sl
 Installed-Size: 80
 Maintainer: @termux
@@ -36919,6 +36923,20 @@ SHA256: c78f61f865b89e2cf69c008161cb644a7aedd0bc46bc0d7dca5206543bad51fb
 SHA512: 336402062c99eb82386cd4fb8a566c4361c8732e354da21814dd017c4167b6110e440ac272ce2615be14c67f2d116c7e3efb00949287b69885119f10e2474308
 Description: Telegram messenger CLI
 Homepage: https://github.com/vysheng/tg
+
+Package: teleport-tsh
+Installed-Size: 116404
+Maintainer: @termux
+Architecture: x86_64
+Version: 17.3.3
+Filename: pool/main/t/teleport-tsh/teleport-tsh_17.3.3_x86_64.deb
+Size: 21167464
+MD5sum: 69d36f0092c25e8984da242bfe7423b2
+SHA1: 9a699269b2257679e040e343bdf582eb6f22de9e
+SHA256: 30b9618d97f95320318b39b246f6d0faa66e0a5a07be7203530ea91cade0feb6
+SHA512: e78943467e53c51e778dda9c08d068f48c19bd841f5cc1f29b17c6da4fca4db1f40d5eb958a0773b7347dc45684a07d4ea5ab5901521af787eb2aa181f6bd672
+Description: Secure Access for Developers that doesn't get in the way
+Homepage: https://github.com/gravitational/teleport
 
 Package: teleport-tsh
 Installed-Size: 116396
@@ -39673,14 +39691,14 @@ Package: vtm
 Installed-Size: 6668
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.9.99.67
+Version: 0.9.99.68
 Depends: libc++
-Filename: pool/main/v/vtm/vtm_0.9.99.67_x86_64.deb
-Size: 1298392
-MD5sum: b44649c93b6c2cda1c1656cc179254fc
-SHA1: 326f2fc04eac296b3b54fc7aec09d8e6a333cc88
-SHA256: 88fd6afe56b2dc571084e6fef25160675f62ef0ee443e27d460f00a4d1ca4fbb
-SHA512: ad074ef3e97fefc0cacdb8f9fdbba4736ea72e588e445f8c6271fd6c2e8af558644aa66aa9dc5eb30b28bb5baa46b206948721b511948de20471b1ebef22ad47
+Filename: pool/main/v/vtm/vtm_0.9.99.68_x86_64.deb
+Size: 1299356
+MD5sum: 75f383119baf1c67141e538968ffaa8d
+SHA1: f9d93287211e9385dae539807deb5ecd2b671b8a
+SHA256: 593a4fc59b448e605f58fb23d86b525d89e8aa567ca95a0631403ba7f8b58dd9
+SHA512: 7d8bf00594ba012f38da7f7080c3c36c6aa5a88b492a8c80de06c01be7cc1af586b5c7a483ce0ee046c1c4bcaa900efae5ce7d6edc621c8e1bebc15b1b8b4c75
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://vtm.netxs.online/
 

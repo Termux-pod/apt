@@ -6715,21 +6715,6 @@ SHA512: ce40c3a06161f4f4d0fa20abec2eb5e3f0d28d5d7fe475a86387ea2fbfab25077591e414
 Description: Utility for reading, writing and editing meta information in a wide variety of files.
 Homepage: https://exiftool.org/
 
-Package: exiftool
-Installed-Size: 17248
-Maintainer: @termux
-Architecture: all
-Version: 13.22
-Depends: perl
-Filename: pool/main/e/exiftool/exiftool_13.22_all.deb
-Size: 3592132
-MD5sum: e354413e77f6291b946d3cf863013849
-SHA1: e7f4137240d04959c10d074b04dbec39fe8fefb3
-SHA256: 337c0366ab816bdb3d6613823a8e6c16f29cd75d55349537a6b215ed78d66dcb
-SHA512: a7320ded0404d2e35ccf526254b571d02df57476d88041a843ed4ecfd9ded2448b54fae16b8cde484276bd81c5c8e03c127181ce9ab424c6a680f83cfd85fc87
-Description: Utility for reading, writing and editing meta information in a wide variety of files.
-Homepage: https://exiftool.org/
-
 Package: exiv2
 Installed-Size: 5088
 Maintainer: @termux
@@ -19933,6 +19918,23 @@ Description: Static libraries for libpopt
 Homepage: https://www.linuxfromscratch.org/blfs/view/svn/general/popt.html
 
 Package: libprotobuf
+Installed-Size: 8440
+Maintainer: @termux
+Architecture: aarch64
+Version: 2:30.0-1
+Replaces: libprotobuf-dev, libutf8-range
+Depends: abseil-cpp, libc++, zlib
+Breaks: libprotobuf-dev, protobuf-static (<< 30.0), libutf8-range
+Filename: pool/main/libp/libprotobuf/libprotobuf_2:30.0-1_aarch64.deb
+Size: 1284948
+MD5sum: f0d46854c5f3b02173f2f5e76d0f71ee
+SHA1: 443764904639dc6158ee3ba271e1bf9d34c6cc46
+SHA256: e710e47366310b383a6af409aac4b7b0619c841a1c6e105d5b8d1ec49467b047
+SHA512: b22abcf2b59ab75ba4ac36b297994f64652cdc5c9abde9cc646e3c40d7babf1721c50ccaab4dc5718d1f920b5563d380d6c1e8650406aa1876aea83844a18cec
+Description: Protocol buffers C++ library
+Homepage: https://github.com/protocolbuffers/protobuf
+
+Package: libprotobuf
 Installed-Size: 8388
 Maintainer: @termux
 Architecture: aarch64
@@ -21240,6 +21242,23 @@ Description: Static libraries for libspice-server
 Homepage: https://www.spice-space.org/
 
 Package: libsqlite
+Installed-Size: 1580
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.49.1
+Replaces: libsqlite-dev
+Depends: zlib
+Breaks: libsqlite-dev
+Filename: pool/main/libs/libsqlite/libsqlite_3.49.1_aarch64.deb
+Size: 509528
+MD5sum: a4ea19bdf0ee41b19e257114fb996cea
+SHA1: 45c2288e8f290dd736577300e5fac5e6aa936de0
+SHA256: 614245b4863f9d6730b42938d52c595e53a8e743c55d4b19cfd7fe44af85634e
+SHA512: 95890281f5cb766f721adbb92424c3d4cb82382e68f6e08292775688a27f570fa6f0297ad7dfdb8ba633388efe28a490a418bc3e70cbf5304f59363d988ea564
+Description: Library implementing a self-contained and transactional SQL database engine
+Homepage: https://www.sqlite.org
+
+Package: libsqlite
 Installed-Size: 1864
 Maintainer: @termux
 Architecture: aarch64
@@ -21257,6 +21276,21 @@ Description: Library implementing a self-contained and transactional SQL databas
 Homepage: https://www.sqlite.org
 
 Package: libsqlite-static
+Installed-Size: 1244
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.49.1
+Depends: libsqlite (= 3.49.1)
+Filename: pool/main/libs/libsqlite-static/libsqlite-static_3.49.1_aarch64.deb
+Size: 404372
+MD5sum: 03f7e7b9d01937f84ea942700b0a5618
+SHA1: 35e4ac1163e134557f7e49a3e0edf8b5ebd33012
+SHA256: 6a15e8a35f03c6ce95e567526db63ca4e2fc552273b4aed9e51645606422065b
+SHA512: c6a66a09251ca63140845efa2a9c50c10598399a6e69abcf8a846de99db74fe1aeb9bcba0294d1506b6eb0afb2def16c8e94bb2968257df095100ffd2a27fb6c
+Description: Static libraries for libsqlite
+Homepage: https://www.sqlite.org
+
+Package: libsqlite-static
 Installed-Size: 1684
 Maintainer: @termux
 Architecture: aarch64
@@ -21269,6 +21303,22 @@ SHA1: e94b213ff3c6bb64de4b57e87b34b0430d8ec596
 SHA256: 62df892483c3b62170644894742a14ffefab337966ea5c4a4dcccb1ca6490c73
 SHA512: fd099c2e17c4a93c5fe0002b242f4bdc7c76db7fba8fe27f77dde05874f755a5501ec36cf6bf0e459a81810ef45be7038f25f15b0a6d832a6329cea7a26ade87
 Description: Static libraries for libsqlite
+Homepage: https://www.sqlite.org
+
+Package: libsqlite-tcl
+Installed-Size: 100
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.49.1
+Depends: tcl, libsqlite (= 3.49.1)
+Breaks: sqlcipher (<< 4.4.2-1), tcl (<< 8.6.10-4)
+Filename: pool/main/libs/libsqlite-tcl/libsqlite-tcl_3.49.1_aarch64.deb
+Size: 17768
+MD5sum: 65f2a505a3d7c4f9e5ea5a5edca0842a
+SHA1: d22e60869c9fde42e01b2dcb0eac1bb90f6f532c
+SHA256: 1280bcab67e0569abcfbde24571b2c84026e84ad311f9dbb1d6c4d8f5ad73e2b
+SHA512: 42a8c9ecd8c611885bd5dcb44748311deb462c2936060a78b139bf1b1ef46c58fca8b555699179392c2ff618af643715f0d4c607346e6fc26de97cbe77901304
+Description: tcl bindings for SQLite
 Homepage: https://www.sqlite.org
 
 Package: libsqlite-tcl
@@ -31219,6 +31269,21 @@ Package: protobuf
 Installed-Size: 10148
 Maintainer: @termux
 Architecture: aarch64
+Version: 2:30.0-1
+Depends: libprotobuf (= 2:30.0-1)
+Filename: pool/main/p/protobuf/protobuf_2:30.0-1_aarch64.deb
+Size: 1594660
+MD5sum: 850330cbd7d280e88a42e6e6b3614416
+SHA1: 9a345b20c47ad2445eaa94f65ed1011f09f1f72c
+SHA256: 60406e9dfd8bcc36f1838aa79228ae34b749c50c8db85cc8035726d2413f301e
+SHA512: b5c12f35367aaf5bb382b355d7bcd3fc5f0a449209144913d6ffec28426a2cca6408fa28bdf3546c133eb3782cd7e01adb36dd859357afd752ed7b52df90332f
+Description: Compiler for protocol buffer definition files
+Homepage: https://github.com/protocolbuffers/protobuf
+
+Package: protobuf
+Installed-Size: 10148
+Maintainer: @termux
+Architecture: aarch64
 Version: 2:30.0
 Depends: libprotobuf (= 2:30.0)
 Filename: pool/main/p/protobuf/protobuf_2:30.0_aarch64.deb
@@ -31228,6 +31293,24 @@ SHA1: 16258c7d7d67237d10e334372af013ef041db8ea
 SHA256: 3300d3717cefe3061f2b8780c293e6ab2f9ce6e68203c76d24c97fa784982c02
 SHA512: 3e6f631fd041ac1c813433096b6b8db76fc47415758598b7b05534ac46840f324d4f1ebee6eed4a4e17c0af68e83e467fbda63ae74b8f43bbd8f8d3140c1317a
 Description: Compiler for protocol buffer definition files
+Homepage: https://github.com/protocolbuffers/protobuf
+
+Package: protobuf-dev
+Installed-Size: 56
+Maintainer: @termux
+Architecture: aarch64
+Version: 2:30.0-1
+Replaces: libprotobuf (<< 2:21.12)
+Depends: libprotobuf (= 2:30.0-1)
+Conflicts: protobuf-static
+Breaks: libprotobuf (<< 2:21.12)
+Filename: pool/main/p/protobuf-dev/protobuf-dev_2:30.0-1_aarch64.deb
+Size: 3160
+MD5sum: 5c8dc7ae769045001f93f7fe7843b8c2
+SHA1: 1b1997c85dd863caff49810fed26f668ed0c5352
+SHA256: df7df0721b6f51d1ecabcb2b44f6e3eb0c1980604bcece7037535466cbdc91b6
+SHA512: 164f7a3555b08dbdd3fb6d2f8b3ff73a6818712dd6422c87fa8393d7366ea464d9db00e93f35faabdab0c5e1ab0e1d407780f2b941a870f1ca303d51c250204c
+Description: CMake files for protobuf shared libraries
 Homepage: https://github.com/protocolbuffers/protobuf
 
 Package: protobuf-dev
@@ -31660,6 +31743,21 @@ SHA256: c3cd211c43b574bbabc573575a1b8645d908392565e745ceefde2a208e035770
 SHA512: b6bdd818703ed21ef4fa128e449991ea1d21ff2f577685a2a2b32894a9d56e91f7895f3a4ddde7d23a4d41bed90388af61b8952bfd1e8cae04dcf56bd75198e7
 Description: Python 3 programming language intended to enable clear programs
 Homepage: https://python.org/
+
+Package: python-apsw
+Installed-Size: 4024
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.49.1.0
+Depends: libsqlite, python
+Filename: pool/main/p/python-apsw/python-apsw_3.49.1.0_aarch64.deb
+Size: 1017276
+MD5sum: f4ace63bfffdf34de6c598ba2895c1cc
+SHA1: b16af7acd38421c01ed08222ddcd203204ff2794
+SHA256: 5f24db85d6dc6f27daa3071d157ee4e432bcba64b2eaa1b57f1bc9823d2ed4f1
+SHA512: 5562b56f91f7262b2f79c6a57e5f43f5528f9e9150e11d58d4a76f835f7540b22c899bd379a5fed427168aabdc8605c882c4676da332de2fa1d04400633119ea
+Description: Another Python SQLite Wrapper
+Homepage: https://github.com/rogerbinns/apsw/
 
 Package: python-apsw
 Installed-Size: 3984
@@ -32863,20 +32961,6 @@ MD5sum: 48752d17c188f6d8bb4fbd79db3a2ff7
 SHA1: 1955aebee2250aae9002d17ae9a3a2416bc98040
 SHA256: 1820409081fc64601498a3124a0290215bff79ccd49f8f049a2f2b061ffe3ff6
 SHA512: ba8d6ba13891e1d9e18e56438941be7987c1f76f37c66c0321ca1dc040b3fdd7700fd59194144ec2accf52dfcc4b74a9ce3a6b350e3b29c7cfb2d748ebf4085b
-Description: This is the command line interface for Railway
-Homepage: https://railway.app
-
-Package: railway-cli
-Installed-Size: 5288
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.22.0
-Filename: pool/main/r/railway-cli/railway-cli_3.22.0_aarch64.deb
-Size: 1944080
-MD5sum: 4f94ceaca02cd512f4739695288f9008
-SHA1: 20ecd53b7ffc6f517d3eb9db81f48759a425c0c7
-SHA256: f6fccbe79d44594e8a221868c3d59ad9900ab0ee103ab03edae89ab67972efae
-SHA512: 852891d0c6f7711c22fd92ea5e0d94d060363360364ed80479fb361c24860124db1e2b8ed7cbd056935a7313d22bb516542bf6550de89f0c9c1e7182bd0cf4e8
 Description: This is the command line interface for Railway
 Homepage: https://railway.app
 
@@ -35689,6 +35773,21 @@ SHA256: af62d8a294c8dd1d9bb288820aafa4fdcb75e82ab90ab89e40cb089f7d7b9407
 SHA512: d9294bc3980c59ee6dbbd10aa76310a5ea650f40ec9d479cfbd5d222693239e83faa0d82596c9e2f343ff28d9f3476550e65e2fdb7d58a5d3f1f9074fa16b96e
 Description: Static libraries for sqlcipher
 Homepage: https://github.com/sqlcipher/sqlcipher
+
+Package: sqlite
+Installed-Size: 1140
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.49.1
+Depends: readline, zlib
+Filename: pool/main/s/sqlite/sqlite_3.49.1_aarch64.deb
+Size: 475140
+MD5sum: b6ccebc7614b2140e583f8c8cc0ee897
+SHA1: ba62af1a1c25bc4e92e9e63fa90351dfb6643dd7
+SHA256: 25012a49cd1912c22ce377e877eabb8868aac8229655e4527d5a04883d0bd0ba
+SHA512: 0bcd35854a98a8cd249aaac54988ebf3a4c690e8bacdea1f463024f4ac53d071a4e92345a69bce2e6167b09f263fab7983356f5f286832489472c7452bf07ed2
+Description: Command line shell for SQLite
+Homepage: https://www.sqlite.org
 
 Package: sqlite
 Installed-Size: 1476

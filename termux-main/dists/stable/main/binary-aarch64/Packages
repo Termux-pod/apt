@@ -15765,21 +15765,6 @@ SHA512: f1358e6946a52a8baed27b2cfb004fe170234f0ee3948750a6d1088f297ed253ca2407f8
 Description: A module dedicated to file loading and saving
 Homepage: https://gitlab.gnome.org/World/gedit/libgedit-gfls
 
-Package: libgedit-gfls
-Installed-Size: 188
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.2.1
-Depends: glib
-Filename: pool/main/libg/libgedit-gfls/libgedit-gfls_0.2.1_aarch64.deb
-Size: 16060
-MD5sum: a11819faf6e8d3af21bcd52ca3e023a7
-SHA1: 1f067260f9e6be56c23dbac60338465231ad8b2e
-SHA256: d9d067ad201725e67d38ee86ad853f52d52da4d40b2ecbb92d8eba9029803cc9
-SHA512: c6fe027be6463036837ecbe8f46d5bc5974119222a039e1ca26820a4b7297b0376cd50e065d0ffd7a9d45fedb19bf4e9126ef2ec69d6b154eb30e02785fc280e
-Description: A module dedicated to file loading and saving
-Homepage: https://gitlab.gnome.org/World/gedit/libgedit-gfls
-
 Package: libgee
 Installed-Size: 1836
 Maintainer: @termux
@@ -18505,6 +18490,21 @@ Package: libnats-c
 Installed-Size: 932
 Maintainer: @termux
 Architecture: aarch64
+Version: 3.10.1
+Depends: libprotobuf-c, openssl
+Filename: pool/main/libn/libnats-c/libnats-c_3.10.1_aarch64.deb
+Size: 219932
+MD5sum: 193775c3374d8bb6a8d44840e181a5eb
+SHA1: 9fdecbfaedb571fde6ed77f08ca5cf8fbb086ec7
+SHA256: 734836e82f24b6d745c72adc1d460aabe23481dfc083bed6436a7cb6a5c04406
+SHA512: 4a8ca7687ea754ee606f9303f5146a12e24263137f955ac73d4e2b9ab147f9e4d061ae795a2fe78e92e9312ccf1f17be03dbc00c5ea60fce0ba2b65b3844f1c1
+Description: A C client for the NATS messaging system
+Homepage: https://nats-io.github.io/nats.c/
+
+Package: libnats-c
+Installed-Size: 932
+Maintainer: @termux
+Architecture: aarch64
 Version: 3.10.0-1
 Depends: libprotobuf-c, openssl
 Filename: pool/main/libn/libnats-c/libnats-c_3.10.0-1_aarch64.deb
@@ -18514,6 +18514,21 @@ SHA1: 088db03e9117c8283cf582434ccae3fe0c350fa9
 SHA256: c108698323238052a645366b87865bf68b1621f4c88c7b297b7bcb7de747b0db
 SHA512: 1cf8c88e9857bcf6e0f2739e189bd45264494df6064ce9aca17b38a14796be2c2b550cea3e8f07bf0fd5a6edc95feb594ded3dbede7bf5a9cc9eb50f9d61d29d
 Description: A C client for the NATS messaging system
+Homepage: https://nats-io.github.io/nats.c/
+
+Package: libnats-c-static
+Installed-Size: 988
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.10.1
+Depends: libnats-c (= 3.10.1)
+Filename: pool/main/libn/libnats-c-static/libnats-c-static_3.10.1_aarch64.deb
+Size: 179488
+MD5sum: 2b82bc7560f8496dda0dd293a9fb33f4
+SHA1: 963b7d4a8061dfe586ab1809155944e9d8489fce
+SHA256: f3d09c2f020cdb5206e70ca2804cb9360a2f3998ff2a6b1b84b3078725772a1f
+SHA512: 8bfbeb4bd24726a2cd546f0d62413081faf87ed471f2482ac5dcdf18f721a575826ece5462d443113401f5bf2d7c453c6831d22acf4ec99d23ff2172d0a3ca0f
+Description: Static libraries for libnats-c
 Homepage: https://nats-io.github.io/nats.c/
 
 Package: libnats-c-static
@@ -24309,52 +24324,102 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
-Installed-Size: 42720
+Installed-Size: 43752
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b4793-0
+Version: 0.0.0-b4889-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b4793-0_aarch64.deb
-Size: 5224024
-MD5sum: e8e5fdb0714bee53eb332bbe0d554fc3
-SHA1: 9ceb82a860c6f3f45923e3e7e308cd0e5ad16d6d
-SHA256: fdcaa05beda58b6c9d3e8829128edf039ff54a0124950dbeee4faaa3b395dd7b
-SHA512: 971b0110ffae6aa63153c5bfe48ea09957104006ac756412271e6ec42ed2c1f5e825afc9d9e5c63bc4989d091647a66ed8ec1a660272cc22d21f166a1d648d8f
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b4889-0_aarch64.deb
+Size: 5349656
+MD5sum: e0f51aa95136f872063f58a71b83a1d2
+SHA1: a7bfb82e5bb2cb7a84c5b04c3401c1b4abceb902
+SHA256: f36f346a7c6d47c7c5b8c0c4cbd17381ebd5930342d353b75b5e267604437af6
+SHA512: a52029ea6c2790d6b854d3e354f715592de6f4680c699e3739994bd94d5eb6e9bfebc8410fe33fffcc8356d8d3651967124cd5cced99448d755e7f3b1c61eae8
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 43676
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b4879-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b4879-0_aarch64.deb
+Size: 5334020
+MD5sum: 68d72c3b7dda1b9d7803d719896b83fa
+SHA1: 16e621e3ed40cbb00abe077f0afb4db7f0041b65
+SHA256: 2ec9adff4c6b63e73679238c2a8b673f3a4770d35927d2f46f7ce7c41a8c391f
+SHA512: 16489b61de35a58a0cab647fa39899a8bde2ccd169b173814beedf6334dcc32744b3ac31fc065fa4ad92d409ba1135e994cd245c994e66dff44c24a4abc5d99f
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
-Installed-Size: 348
+Installed-Size: 352
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b4793-0
-Depends: llama-cpp (= 0.0.0-b4793-0)
+Version: 0.0.0-b4889-0
+Depends: llama-cpp (= 0.0.0-b4889-0)
 Recommends: ocl-icd
 Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b4793-0_aarch64.deb
-Size: 57404
-MD5sum: bb4cf6a0d91d05b694d4be683722bdeb
-SHA1: 498e0aed376449750485a80b6d6863ae8913f5b6
-SHA256: f912c00942b38df44b4efc65e0b10118d3cbf43df5533c28282e5607cbcaa43d
-SHA512: 90dfc2cafd8719581322a19aa4420a539a64677e068cb83c514fe6d763eb1bc033b0a00d9945076c060b20fa4ac88c4e48587e243fe168ddc29b1ccba62940db
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b4889-0_aarch64.deb
+Size: 59964
+MD5sum: 6a456f6d38aa558c18cc30a28ee4a119
+SHA1: 935fb1f9054765ed7dd834b91a7d320439e7eac6
+SHA256: 3f94a65a3d31011fad16f7b491d535ffe23726a31b405cf1120a43608401d5ed
+SHA512: fe121224d23463a7fb1ed67bee704b9762d927466b3a7f280dd4993ee26c2d7586c683233f18d75226b4d1c809d094600856adc2e777e8d62fe9858c3d1932c7
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 352
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b4879-0
+Depends: llama-cpp (= 0.0.0-b4879-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b4879-0_aarch64.deb
+Size: 59928
+MD5sum: fa2b190bd9da8cb6020af5c7caafaa9b
+SHA1: 4332341c175da2e108a04221b6ab46bee4764478
+SHA256: 7b466f2cd75f220d3f187c2759c2bd7c4a680359937d7d764ba6798af2dded12
+SHA512: 79d8f61da6045e54d56c86d9f5980900c508605d4f217afd42a5eb84414bc0582913c9cce23d7a6e459238c68aad07ffcade8a87b5ec0ee4f630ef53eea5aefb
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
-Installed-Size: 11984
+Installed-Size: 11988
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b4793-0
-Depends: llama-cpp (= 0.0.0-b4793-0)
+Version: 0.0.0-b4889-0
+Depends: llama-cpp (= 0.0.0-b4889-0)
 Recommends: vulkan-loader
 Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b4793-0_aarch64.deb
-Size: 898956
-MD5sum: 5bca962bd594c0b22ce8f38a0ea28593
-SHA1: d271d5961ef9e90b8f27334b2e9a173b5d6e0810
-SHA256: bd3ba06ff52fe61c428c4d9e6e316812ae71e58f607d49c0763a19605a7e8447
-SHA512: 3b3d01f5dc0344846db4122e1c1504f3744ca4baeb6b3a7e5920647e204373bb878ff87bce980b3c23b45b17e37f808d1d51dd632ebf49345cd308ae8cf82e3a
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b4889-0_aarch64.deb
+Size: 898744
+MD5sum: 812dd2b8f40c3bf2a2213b7cf0c3b6dd
+SHA1: c92ccc555d4409af54c09faf70765ec904e044d5
+SHA256: 2699c8b7b03c9ad6b39393b176a9ae09eeb16bfbe386e623f9821cee35137fa2
+SHA512: 9894ac97773bf6d9a01fa0aa8015990e5cb37e43fd3c393cf1bce99a959ee6eedce2f67e3eddc97611333619b3bc9cf11ef92ff697a99150231f9af9f6e8ba59
+Description: Vulkan Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 11988
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b4879-0
+Depends: llama-cpp (= 0.0.0-b4879-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b4879-0_aarch64.deb
+Size: 900340
+MD5sum: 351b2b6c5ad066a42bd13d9b4ac232ed
+SHA1: 07862ebac1cbe86a4c91505b0f6e8befd1260d67
+SHA256: 661c1d2d1257c66736886827c9af032eb559b6dee161beedcabec23ecfce2da1
+SHA512: a33706621c2c67f3ea8590ae784cdebc5e2f402f4265b116d43be9931c045b26d5cb6996a61102f96a84813763e68b5ac66756b6c386b2e2d0a35b309eb767be
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 

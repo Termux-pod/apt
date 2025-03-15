@@ -5440,22 +5440,6 @@ SHA512: 85095d31c077e92ccbcfb28db811ae587a7451582b5eee20b40d03cc7ff8154cf2d28b7b
 Description: A command-line DNS client
 Homepage: https://github.com/Dj-Codeman/dog_community
 
-Package: doge
-Installed-Size: 1560
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.2.8
-Replaces: dog
-Depends: openssl, resolv-conf
-Filename: pool/main/d/doge/doge_0.2.8_x86_64.deb
-Size: 341228
-MD5sum: 8f2ab85c139f3d8d26df6e59d4f81f48
-SHA1: 08992abe2b6406ca7d8279710b7f74cadb4abbbb
-SHA256: 416887a6f7341d9e4894274e10e5e9c43dbc23f7319b33a6f358b1eb035f1acd
-SHA512: 8897520f170e8209ec38917d8e9401ce72b9a63765a86115c64d179d7f47bd70117652ac690feea77fda79d06e893a54eb98de00ecdc0a7a9914914a27feab69
-Description: A command-line DNS client
-Homepage: https://github.com/Dj-Codeman/doge
-
 Package: dopewars
 Installed-Size: 744
 Maintainer: @termux
@@ -24270,6 +24254,22 @@ Package: llama-cpp
 Installed-Size: 47276
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b4893-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b4893-0_x86_64.deb
+Size: 5987392
+MD5sum: bf59ed57443a1a68776e47535d8bfdf4
+SHA1: fa090d5df152477a1ec795bf5c9ee578c739aa47
+SHA256: ba10163d04bd78ff9ceb8ee9ef7653c1311ca6e9316cd7586bc11544b9142bca
+SHA512: b199a052e973545acf98484f33a9e4462570eb524a22408d930ee7f95f4de2e13cbb3cdf4a4f0d2501d3a893e88c304217dc9567c38e2ac8585f277852d8af7f
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 47276
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b4889-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24280,6 +24280,23 @@ SHA1: ee64cb13f5f75e10c1424871ade69904afe2df13
 SHA256: 5b6f6ebd21579dfee99381a17abbc45ad72ebb08a459f596fbfcbc0a517fd9a2
 SHA512: 3c685153ccf17479a2bca6d67f7d5b61b775008c4caacf3bfa48ca5e5075dab3a61bbfba90a4f9a678a6181b99dbac2c8de4bdfe92009d651f5a8e1523d27e8a
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 368
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b4893-0
+Depends: llama-cpp (= 0.0.0-b4893-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b4893-0_x86_64.deb
+Size: 65020
+MD5sum: 08ee54e98251f850e8bf6858d9151273
+SHA1: 77a9869fbb0e6d9d4b1a6e8e8cbb3d6d0670872c
+SHA256: d3ff84a6431207c80e334239709048101d978b466a9d1165031cbaa425136128
+SHA512: d7d7eb835f249bc2399869a0bb2902d17b1167fe7b8b5a892a90ed1549ab0ec89502481dca51798262b8199689b6890657bec1b96d9eafdf00fe2ea2285bf9e5
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24297,6 +24314,23 @@ SHA1: 18d8419489c1067a469593d06a70d4f24fca208a
 SHA256: 283440b18ab55031f4024b0e16c21e4be34a5f66b5bb1e5bd93f0503e9151def
 SHA512: 534b87b5eb55f912f224b02403f9126b4db830e0d4fa70909a471c166bd35796f3f2cc7ceae63cc2394dd7b34d352eab6849af37b8fc023d3789527bbe1b8f0d
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12148
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b4893-0
+Depends: llama-cpp (= 0.0.0-b4893-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b4893-0_x86_64.deb
+Size: 927748
+MD5sum: 28558fa07d396d64bbf2993d6fb22119
+SHA1: 5f10d59ce599469dc3dd835b08f8b81d2e81caae
+SHA256: 1a0a0af2a88d26cf9bae530b5984cc77e1b4d502005a1bfa6f3b1c5c42730b95
+SHA512: 1ba569ee54946083d554e83f77f010a2b3a47c0ef4b116c173d70924821cb3acd8ced8b6471b98ac8c80aadd2f319e4a5177763112e829162e49c8839e516960
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -27998,21 +28032,21 @@ Description: This project provides a command line tool called nms that recreates
 Homepage: https://github.com/bartobri/no-more-secrets
 
 Package: nodejs
-Installed-Size: 85008
+Installed-Size: 86424
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: x86_64
-Version: 23.8.0
+Version: 23.10.0
 Replaces: nodejs-current, nodejs-dev
 Depends: libc++, openssl, c-ares, libicu, libsqlite, zlib
 Suggests: clang, make, pkg-config, python
 Conflicts: nodejs-lts, nodejs-current
 Breaks: nodejs-dev
-Filename: pool/main/n/nodejs/nodejs_23.8.0_x86_64.deb
-Size: 13385580
-MD5sum: bc0e9df3c2d4d980f07ce61f39ccb084
-SHA1: b828cce72f3da50bc96c6b923e3a6c2e5a3dd2b5
-SHA256: d96a684451630c25a5ece7bdec64f20eb911109dc09db871127ed5f2b0a52987
-SHA512: 122176e054814ae026474fb90ca0a512d4b38d484960061509ee0c7688ec3c264ade5d395f00989bf5694e333f5fe2baf8a5073d0b509b78908bf978c677b07e
+Filename: pool/main/n/nodejs/nodejs_23.10.0_x86_64.deb
+Size: 13596732
+MD5sum: bda0eb9a4cf48c2a44ddad921378a774
+SHA1: 7cf74f10b392a2c9bc629c9bfdac4aded2fb7456
+SHA256: 738dc4a1b2da7aa2287f272eda460b7ea630868ab721ed80ea5219c3d791088b
+SHA512: 102caa7612542710059ead4a971676b63c78b3174668a5dbe16b0182a733b6046db54ecca5fac61571b8cf1e8586a234f8a8ed11a09a95cdd9747a7f46cdec25
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
@@ -28443,20 +28477,6 @@ MD5sum: ae6287ef246436be926531519eabde82
 SHA1: d5d9d08978dcf5da1c7f69e366e3e34c77e4f619
 SHA256: e0377e02c9898d12e3c803c752cacfe48d91c1707536133689e95c42fb6e6616
 SHA512: 20649a1fd98ef20dc2e0b10eca3a780f72ef80d0bfa2c0fb8516d264459ff864e0f345ab243a1a039894ad4a33336ed471807af8d59d21468d3dc103764b9bb1
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 20876
-Maintainer: @termux
-Architecture: x86_64
-Version: 25.4.2
-Filename: pool/main/o/oh-my-posh/oh-my-posh_25.4.2_x86_64.deb
-Size: 5462284
-MD5sum: ee18f7c381e7a1edffacb32dedd60efa
-SHA1: edbac3c69d5e26cd411776fe8b6144787de2053b
-SHA256: 0ec03f55e8825630cbaf2fa83068c5dda4b56c94a89a556cd8028b55b12fffb7
-SHA512: 3a40a54f1ae62d9724fc32f4d390a5f4caffbc451d3b12e943bbda204df73ede2419a760e3d528a0e212e484070a5fc9442f986ba5941a565f393e3108caf394
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -30714,6 +30734,21 @@ Description: PNG image optimising utility
 Homepage: https://pngquant.org
 
 Package: pocketbase
+Installed-Size: 33276
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.26.0
+Depends: resolv-conf
+Filename: pool/main/p/pocketbase/pocketbase_0.26.0_x86_64.deb
+Size: 8805180
+MD5sum: a3b81c3a7070b07be943e8112558ac98
+SHA1: aa9c69620be835912c2cba58a6d8f24033617427
+SHA256: 08e7a33f46cd1e67e415f2effdb24fe9b5cca100afebd19a47ce8994c1e61fb3
+SHA512: e7249913d2c745344a11b22cb762b2a18e5ba9eab7435245f77cbe42aa7d5d8888cc71f26a22892e2f65ab72ee2b857170ea7986d28aca42bc64e945d9e9fb8a
+Description: An open source Go backend
+Homepage: https://github.com/pocketbase/pocketbase
+
+Package: pocketbase
 Installed-Size: 45264
 Maintainer: @termux
 Architecture: x86_64
@@ -31168,23 +31203,6 @@ MD5sum: c2f2ba7b150b94b869706198d262b7d2
 SHA1: a91d5fc6940caaa013ae86344b3ea9afe2ef79f8
 SHA256: d84761909ebfcb0858affb6cd3637a010dde2bf9aaee1f1ef78b1c203bf0051b
 SHA512: 8f2276bf832fb905a6955ae0302d41028365a7b170cd59876c85119d727ca0f71e9a201ef31f8c77dceaf72d9b6958a24c16cc872323e5586e5ef2b824344422
-Description: Generic coordinate transformation software
-Homepage: https://proj.org
-
-Package: proj
-Installed-Size: 14588
-Maintainer: Henrik Grimler @Grimler91
-Architecture: x86_64
-Version: 9.5.1
-Replaces: proj-dev
-Depends: libc++, libsqlite, sqlite, libtiff, libcurl
-Breaks: proj-dev
-Filename: pool/main/p/proj/proj_9.5.1_x86_64.deb
-Size: 2481560
-MD5sum: 44ed371d4c904e6aa603d6cb1313cc76
-SHA1: 6358d6d9900395d62c56f0f38041697b811b654f
-SHA256: ec2a6dfd3c7c3fb91a01882528d1dfb2faa94bdaed9c8b4aeae211827e1343ce
-SHA512: 87b1b9ed9376b4a813bb33ffcc28637245b17d60082f904eabe3a1f6f4ff69fbbe506935c70651eb2ab7c4d5e17ccdd08f3313ce88fa31bff2250b49c6038210
 Description: Generic coordinate transformation software
 Homepage: https://proj.org
 

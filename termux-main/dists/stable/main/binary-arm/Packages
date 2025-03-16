@@ -3883,21 +3883,6 @@ SHA512: 30b2d94c5d7cc8760a90081e522585ece7b673c4b8a1382da6c4942c560c03a9e6dee7cd
 Description: Suggest installation of packages in interactive shell sessions
 Homepage: https://github.com/termux/command-not-found
 
-Package: command-not-found
-Installed-Size: 332
-Maintainer: @termux
-Architecture: arm
-Version: 2.4.0-66
-Depends: libc++
-Filename: pool/main/c/command-not-found/command-not-found_2.4.0-66_arm.deb
-Size: 84704
-MD5sum: 6a2f68c2601d2f0dca15d9f4b6f6dfd9
-SHA1: fb4bffdc2fc2da2a85458e7c084f7051de6282b2
-SHA256: e9514e664848f19116420673f6e423269ee56af65cdf3a41b30dc48d50991566
-SHA512: 7b263ac42a83d22a6963115e0e576f061f246ccd06174bb5cf9a3c8f1281920451b19614368ef7d13b2f44fc5888ca54acb05704326958c72ba012e7e8cfc3d6
-Description: Suggest installation of packages in interactive shell sessions
-Homepage: https://github.com/termux/command-not-found
-
 Package: composer
 Installed-Size: 3036
 Maintainer: @termux
@@ -11731,20 +11716,6 @@ MD5sum: ca67d9b597c23c2031946670084985b9
 SHA1: dbf916813b31b0bd4a363ff0c1e73c7cc0a5019a
 SHA256: c83a24b0bf1effee622c00e0f9ed28803580bcdf402d51ffec8912c9d5a49597
 SHA512: 715095d217bad8089f9a0c542194bb202bab73b24a16b7f99dcce0e658f3239b4531b2d1161c323c7efa601b92ce3020f48cdf77f6adf7f5a2c7d76a7c14486a
-Description: Kubernetes CLI To Manage Your Clusters In Style!
-Homepage: https://k9scli.io
-
-Package: k9s
-Installed-Size: 153776
-Maintainer: Krishna Kanhaiya @kcubeterm
-Architecture: arm
-Version: 0.40.8
-Filename: pool/main/k/k9s/k9s_0.40.8_arm.deb
-Size: 31656344
-MD5sum: d1fdc6911c983ae7254b383c8f3f7f06
-SHA1: b3b43daec341c4953f9ff9ca0f9761d8eecfd63f
-SHA256: 917f7abbd73484d38cbe081a914ee04c5fa223e7421a169ffffb5dd6eb93f141
-SHA512: ffefb4e40a1edb4afc0f087ecafc6fb1edecf56fb8874e3338a01d888ceb5a087e2ea6793fe68574bfc72220ed4c564e946a1b42a806272836e49333b6ec544f
 Description: Kubernetes CLI To Manage Your Clusters In Style!
 Homepage: https://k9scli.io
 
@@ -21144,21 +21115,6 @@ SHA512: a1baf0e5f218605df6027697a3e442876a659989b1bb4bc27a2494da77720c8801bc1906
 Description: A simple, small, efficient, C++ XML parser
 Homepage: http://www.grinninglizard.com/tinyxml2/
 
-Package: libtinyxml2
-Installed-Size: 220
-Maintainer: @termux
-Architecture: arm
-Version: 10.1.0
-Depends: libc++
-Filename: pool/main/libt/libtinyxml2/libtinyxml2_10.1.0_arm.deb
-Size: 41240
-MD5sum: 76b60356a8dba955645ce67bfc3b6962
-SHA1: 2234feff52362e35f868b552fbd9136c93529e34
-SHA256: df35aa352f9875116acc094d5844c26cf84c9e1943e072e22a684af04c72b78a
-SHA512: e1d90791ac70623e5a82b841752221109da4093dd4930a9012cc5f64f48161654b0c8d148832753fb0b20d1f15419ddab7148e63b49283bc0f999d100461cf5d
-Description: A simple, small, efficient, C++ XML parser
-Homepage: http://www.grinninglizard.com/tinyxml2/
-
 Package: libtirpc
 Installed-Size: 496
 Maintainer: @termux
@@ -22878,6 +22834,23 @@ Package: libxml2
 Installed-Size: 1408
 Maintainer: @termux
 Architecture: arm
+Version: 2.13.6-1
+Replaces: libxml2-dev
+Depends: libiconv, liblzma, zlib
+Breaks: libxml2-dev
+Filename: pool/main/libx/libxml2/libxml2_2.13.6-1_arm.deb
+Size: 426984
+MD5sum: 649c91d2676dfddc8dacc1182899f0f3
+SHA1: b05eb47cbbae6df747882a1eedd8ce68df586898
+SHA256: b32dfce4d02f105d31cd2a87ca0e2c47ed62fd1ba911b7fe903873c52d31faad
+SHA512: 3454a4dda6a6c0bb18fa1082e50e74c0ad0d49eeb5c7fbce595375d2ab91e0e8478d8807b1b2fe7f9a8ec09ad726b7b533ca99da5db5771b07db9b9225c67d42
+Description: Library for parsing XML documents
+Homepage: http://www.xmlsoft.org
+
+Package: libxml2
+Installed-Size: 1408
+Maintainer: @termux
+Architecture: arm
 Version: 2.13.6
 Replaces: libxml2-dev
 Depends: libiconv, liblzma, zlib
@@ -22889,6 +22862,21 @@ SHA1: b4adca3a5c5b64b488750ad78268a6fbefcfc2bd
 SHA256: b25b6696031bcdaed8bbd2e205a37d1a9e547744f724aa52691bf42e4c3c10e3
 SHA512: 00c85f356da03af46c0413952b90ec8a6fd9ff5c0c9542dc58ca53f8405d29f66c515f4d816e13c3c796bf6ed325a1588f6a14c661e638db23fea36c6c80a5c3
 Description: Library for parsing XML documents
+Homepage: http://www.xmlsoft.org
+
+Package: libxml2-python
+Installed-Size: 1656
+Maintainer: @termux
+Architecture: arm
+Version: 2.13.6-1
+Depends: python, libxml2 (= 2.13.6-1)
+Filename: pool/main/libx/libxml2-python/libxml2-python_2.13.6-1_arm.deb
+Size: 182084
+MD5sum: 9c24d4be7664e191772ba7952eb723ce
+SHA1: c2dad262a55706b260b25c09a515e5493488e3fb
+SHA256: 5e96d7642b994cc3f9115990eb6b6d0cc5f8787b32c6ede5ca7da268e2785bc7
+SHA512: 2115469563581a2ab96d22d3e3ff7a0ec43211c1e8bc06744c28428a1048b42a1103daf5af7246f009ca53e9d10af77df52d80b44729d962c527a86ca17b7652
+Description: Python bindings for libxml2
 Homepage: http://www.xmlsoft.org
 
 Package: libxml2-python
@@ -22910,6 +22898,21 @@ Package: libxml2-python-static
 Installed-Size: 504
 Maintainer: @termux
 Architecture: arm
+Version: 2.13.6-1
+Depends: libxml2-python, libxml2 (= 2.13.6-1)
+Filename: pool/main/libx/libxml2-python-static/libxml2-python-static_2.13.6-1_arm.deb
+Size: 75844
+MD5sum: 1f75cabb2e3b40d31ce73e8f3188ce90
+SHA1: 38f088ff45cb5ea0c2f573b3d4e046d227030a87
+SHA256: 29cc30047d1963619412d6814b4e14702d9580bb583e22547175f02f71ef8c86
+SHA512: f700644867346becb35dadd68f268506d31671509370071c45cb26ddb3d90e0c4b3315d1a6374c7c2ff6f31999bbda43f6875624ae69b5d514d65897ac3cb4cd
+Description: Static libraries for libxml2-python
+Homepage: http://www.xmlsoft.org
+
+Package: libxml2-python-static
+Installed-Size: 504
+Maintainer: @termux
+Architecture: arm
 Version: 2.13.6
 Depends: libxml2-python, libxml2 (= 2.13.6)
 Filename: pool/main/libx/libxml2-python-static/libxml2-python-static_2.13.6_arm.deb
@@ -22925,6 +22928,21 @@ Package: libxml2-static
 Installed-Size: 1240
 Maintainer: @termux
 Architecture: arm
+Version: 2.13.6-1
+Depends: libxml2 (= 2.13.6-1)
+Filename: pool/main/libx/libxml2-static/libxml2-static_2.13.6-1_arm.deb
+Size: 426960
+MD5sum: 21cb57e46ca22f08a51039145fbba764
+SHA1: e7b34280540b4f4f306b912f48748b558eb7730e
+SHA256: 12463ee98cdad7dea66755d2688e1faed2b1587dc931533ac14c2876b427c07c
+SHA512: 229e5ae2b9eb9e192df53bb6b88860a6f678e8156cef5af7a9f8a74ea7a64c9924d5bab40e02a62229b05b6c2d82a0f321c50cb3a878556702444e8a795f2658
+Description: Static libraries for libxml2
+Homepage: http://www.xmlsoft.org
+
+Package: libxml2-static
+Installed-Size: 1240
+Maintainer: @termux
+Architecture: arm
 Version: 2.13.6
 Depends: libxml2 (= 2.13.6)
 Filename: pool/main/libx/libxml2-static/libxml2-static_2.13.6_arm.deb
@@ -22934,6 +22952,22 @@ SHA1: b9dd732e689dd4450341ca6778227f29a853c40d
 SHA256: 76a0f6e39885290f8d7c71f3edd9db62cc7a215d7dc8f3a2278befd681151978
 SHA512: 42002cf5a12129ec8842d69d0ae3fe6d6703024e76257c7669ebe482898b3b1f41643a506ae89586280d4d36ebab41b2180d9e613102ff9fecc8eab2dd91d5c4
 Description: Static libraries for libxml2
+Homepage: http://www.xmlsoft.org
+
+Package: libxml2-utils
+Installed-Size: 108
+Maintainer: @termux
+Architecture: arm
+Version: 2.13.6-1
+Provides: xmllint
+Depends: libxml2 (= 2.13.6-1)
+Filename: pool/main/libx/libxml2-utils/libxml2-utils_2.13.6-1_arm.deb
+Size: 28888
+MD5sum: a3f2a8e55a2d285986f78fc9967eeb25
+SHA1: f29318e1585d810842c3cdbddf87dd3b5a0803d1
+SHA256: e7be7e5bad973f2e1f0c48d9e95702baeebc13c0b3ee82bfcd98490798035de3
+SHA512: 960c60fc7afdb9a9dd622c7a99d5d790ad087401f5c22b4697db6aca57524af771fd4634871ca162a8882e7f0d3542f29273b1286d5e286b2905e5a8d7b67c0e
+Description: XML utilities
 Homepage: http://www.xmlsoft.org
 
 Package: libxml2-utils
@@ -26604,6 +26638,21 @@ SHA256: fb766eb32330c9bee2e76454e51a52373455f3ea84991d66a1cb28c9afca7bb8
 SHA512: f9478c3e7af6711dec819e2275a64b798459a0cf56b5bc8ebee424f054ac96b09f6f020464a7ce928e946da9a25eeec4113f4a452c50bf5394abe660e7d2ffaf
 Description: Disk usage analyzer
 Homepage: https://dev.yorhel.nl/ncdu
+
+Package: ncftp
+Installed-Size: 952
+Maintainer: @termux
+Architecture: arm
+Version: 3.2.8
+Depends: ncurses, resolv-conf
+Filename: pool/main/n/ncftp/ncftp_3.2.8_arm.deb
+Size: 210636
+MD5sum: 8a32dc35944f7dfe56dc3e1fa6ae7626
+SHA1: d0a147cefa94e655bc288688b77488cef4dc4adf
+SHA256: 909039b03f5c779911f122a08d4a85b9559a515c236a4c97d4366738cddd9c2d
+SHA512: a23108d32f936d29b5085ef4605f3a5a21ce038c3b614e24ff672390470aec3176a20740e23fe0c83224761898c3da9c4bbb400e7698981970ad7d49052cf264
+Description: A free set of programs that use the File Transfer Protocol
+Homepage: https://www.ncftp.com/
 
 Package: ncftp
 Installed-Size: 952
@@ -33029,6 +33078,24 @@ Description: A rubik's cube that runs in your terminal
 Homepage: https://github.com/been-jamming/rubiks_cube
 
 Package: ruby
+Installed-Size: 40628
+Maintainer: @termux
+Architecture: arm
+Version: 3.4.1-1
+Replaces: ruby-dev
+Depends: libandroid-execinfo, libandroid-support, libffi, libgmp, readline, openssl, libyaml, zlib
+Recommends: clang, make, pkg-config, resolv-conf
+Breaks: ruby-dev
+Filename: pool/main/r/ruby/ruby_3.4.1-1_arm.deb
+Size: 8326700
+MD5sum: 478bb168713cd75474673ade97e267fa
+SHA1: 590d5b994e903a37896a68eef2dc5894f5c8baba
+SHA256: fd731a79df27edebfbb62cb637cc3895627824cf25af524cd01058fa2a42f835
+SHA512: baaf423057e4c029e226014fabba3ad5d0a2c8f53a30349b8ebd864d3457ea3ba09f5bcadeffcfadb5f413cdb2c742fda33645675ceadd04e8330569a7f0d608
+Description: Dynamic programming language with a focus on simplicity and productivity
+Homepage: https://www.ruby-lang.org/
+
+Package: ruby
 Installed-Size: 40624
 Maintainer: @termux
 Architecture: arm
@@ -33044,6 +33111,21 @@ SHA1: a19448e04a82cf9b11328a18431990bd09e87910
 SHA256: 9b0f59bed1a72265b81b1e35c1c1e4a21343bdca1040f48d47e5f47f0c6b8eca
 SHA512: 23457672b6f9fa9ba8950efc40290068698e92cbcb3cf301e4a8deeccde20e634136a92bae345253a1c4d0d6ccfa7f92d945ca454b704688d33a5d8474db3cc7
 Description: Dynamic programming language with a focus on simplicity and productivity
+Homepage: https://www.ruby-lang.org/
+
+Package: ruby-ri
+Installed-Size: 70268
+Maintainer: @termux
+Architecture: all
+Version: 3.4.1-1
+Depends: ruby (= 3.4.1-1)
+Filename: pool/main/r/ruby-ri/ruby-ri_3.4.1-1_all.deb
+Size: 1838328
+MD5sum: 73c05db61677d1c36306d82543905dde
+SHA1: 14cc962641ff6e629b44e053eba36f220222eb4d
+SHA256: b0e219c9d8873caca1be942ff197a689e7a9b00e4b939a5be387fda0841596ee
+SHA512: 5a86ec300d20934fe99e21fd0d875f7b7f6d8bb69f92861b35abeba7734a7c9553b0719cd338c1283848105865a4efb4734f1bcb98a66e0f681b8cf85b6af454
+Description: Ruby documentation index
 Homepage: https://www.ruby-lang.org/
 
 Package: ruby-ri

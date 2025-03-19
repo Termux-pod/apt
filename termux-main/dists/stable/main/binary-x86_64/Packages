@@ -3917,17 +3917,17 @@ Description: The post-quantum cryptography tool
 Homepage: http://e-x-a.org/codecrypt/
 
 Package: codon
-Installed-Size: 159700
+Installed-Size: 157796
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.18.1
+Version: 0.18.2
 Depends: libc++, libxml2, zlib, zstd
-Filename: pool/main/c/codon/codon_0.18.1_x86_64.deb
-Size: 30365844
-MD5sum: 0d498b5e68f51a2c11924cd4f6747143
-SHA1: 0d32549cceba58116cff966a32379d99df54e709
-SHA256: 041796bd974d9b29a0d47f8ee840f8f72e162e514213fdc49caaa4814e5058dc
-SHA512: db191a4159fb3c88f0619b5ae1d6d5398b142a8356b8fae7ab7cc6913d3f3d603f26ff2adfa76637b34d1dd11435d6230240dda53a29f8d3013d0efbcb738f8b
+Filename: pool/main/c/codon/codon_0.18.2_x86_64.deb
+Size: 29961960
+MD5sum: 61d7be81d4933b0427e2800b355ae08a
+SHA1: 7b1e9d3830f5bdc473e1618e09647a1037ed812d
+SHA256: d44ee231bf29dab59863e4bd09a9c763c0543bf1fe1e9dcc37152d1bddaaba2e
+SHA512: 703c2e01783083f568df4f5e67aca58d07d3149fe924b72b0c6c6fe108d26aafc4724d32f04b0b893c4cf2734bb54243235791258ce76a856a378c697044f7f9
 Description: A high-performance, zero-overhead, extensible Python compiler using LLVM
 Homepage: https://github.com/exaloop/codon
 
@@ -11292,6 +11292,23 @@ Package: imagemagick
 Installed-Size: 20664
 Maintainer: @termux
 Architecture: x86_64
+Version: 7.1.1.46
+Replaces: imagemagick-dev, imagemagick-x
+Depends: djvulibre, fftw, fontconfig, freetype, gdk-pixbuf, ghostscript, glib, graphviz, harfbuzz, imath, jbig2dec, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblqr, libltdl, liblzma, libpng, libraqm, libraw, librsvg, libtiff, libwebp, libx11, libxext, libxml2, libzip, littlecms, openexr, openjpeg, pango, zlib
+Breaks: imagemagick-dev, imagemagick-x
+Filename: pool/main/i/imagemagick/imagemagick_7.1.1.46_x86_64.deb
+Size: 8087444
+MD5sum: bc01022acd38008c05975935ee53197e
+SHA1: ac24676a3ca993c70b91e4af6e9eb573bb69ffe0
+SHA256: f2233f6d5d5532e1a085e2e93a0673606034cae1fd248ca84cbc680399f752e8
+SHA512: e40d3997bcb102c95bb34639f8a850ce91d830ba4196045be5f153e6592c2e1df93f989c1f9b86faebbda2d5246fdf2d88f056408ef74a1b812603bb5670425b
+Description: Suite to create, edit, compose, or convert images in a variety of formats
+Homepage: https://www.imagemagick.org/
+
+Package: imagemagick
+Installed-Size: 20664
+Maintainer: @termux
+Architecture: x86_64
 Version: 7.1.1.45-1
 Replaces: imagemagick-dev, imagemagick-x
 Depends: djvulibre, fftw, fontconfig, freetype, gdk-pixbuf, ghostscript, glib, graphviz, harfbuzz, imath, jbig2dec, libandroid-support, libbz2, libc++, libcairo, libheif, libjpeg-turbo, libjxl, liblqr, libltdl, liblzma, libpng, libraqm, libraw, librsvg, libtiff, libwebp, libx11, libxext, libxml2, libzip, littlecms, openexr, openjpeg, pango, zlib
@@ -11303,6 +11320,21 @@ SHA1: 84d6c3afe3558d27ea01d8b4a6ad5b9508e26460
 SHA256: 08c528ffe5e21d3d23959d33913343a1502c43e2b6a1b7eebb5640a2180f8e14
 SHA512: f015afcb9b4293d540aea1e371f72f686d7d243ce912b834cc1a538427715da59380db57547e2a0a74bed8ccaa1bcf5ecdbd9fc31efecd5e9e10ddf1c6cfe4f4
 Description: Suite to create, edit, compose, or convert images in a variety of formats
+Homepage: https://www.imagemagick.org/
+
+Package: imagemagick-static
+Installed-Size: 11800
+Maintainer: @termux
+Architecture: x86_64
+Version: 7.1.1.46
+Depends: imagemagick (= 7.1.1.46)
+Filename: pool/main/i/imagemagick-static/imagemagick-static_7.1.1.46_x86_64.deb
+Size: 2002044
+MD5sum: a439bfe88076d43da7051f5d8f080b59
+SHA1: b0133fcfd1721586a86218dde7f7be45f77a2756
+SHA256: 13f4b57387c937e4a477abc85f768d813653c6e0a0f8810978f1ad442e4b260f
+SHA512: 44a9d09bc5274d78af519fdb1600c1f47b904a1d84406f74d6e9abd1b1a73883fd3c83b4815dceedb81bbd591ee2227e3a25fb6bae6d1fd9ecb18680ff318955
+Description: Static libraries for imagemagick
 Homepage: https://www.imagemagick.org/
 
 Package: imagemagick-static
@@ -11595,21 +11627,6 @@ SHA512: 45cf78b7ef7f4ef8d8d53a36f7c217272ae80ded0960693870e9aefe0da7c393f2dba016
 Description: Utilities for controlling networking
 Homepage: https://wiki.linuxfoundation.org/networking/iproute2
 
-Package: iproute2
-Installed-Size: 2824
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.12.0
-Depends: libandroid-glob, libandroid-support
-Filename: pool/main/i/iproute2/iproute2_6.12.0_x86_64.deb
-Size: 853264
-MD5sum: 4c5332fe74ad96d6f43eab1e60de1aff
-SHA1: 20d3558ad953c87ada57e54841782e7f27a7663c
-SHA256: 4e0552031c0b1097ba4c3dd8bb96b75cabe24fdddc90cee43f874eefce28a263
-SHA512: 37913de6ec9e04d1e721ee8a1df08be42610a5c9509b70456f9b1f04a2f3d89f114ceaf3f16b790c2d7b531a6727a216ce079f7b335229a1d74d18a569f1033a
-Description: Utilities for controlling networking
-Homepage: https://wiki.linuxfoundation.org/networking/iproute2
-
 Package: ipv6calc
 Installed-Size: 6156
 Maintainer: @termux
@@ -11798,6 +11815,21 @@ Package: jackett
 Installed-Size: 14452
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.22.1665
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.1665_x86_64.deb
+Size: 3196588
+MD5sum: 6afc99439e310a5118cac08dc22ce8f5
+SHA1: ac2fc9c80c0b52b4e53f47a25505979c264a53da
+SHA256: 881f4190e7209e39fa9a13429dfb0844730dea78e6999e274e40a0ac740379ae
+SHA512: bf87b29ddd1f3877d7624237f7939ab9cac8f96934842abe9e0057fa377314c9dbf36b074f494ada99cf983a72f60270013a6b46440d174072d110fa3d05723f
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
+
+Package: jackett
+Installed-Size: 14452
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.22.1660
 Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
 Filename: pool/main/j/jackett/jackett_0.22.1660_x86_64.deb
@@ -11810,17 +11842,17 @@ Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
 Package: janet
-Installed-Size: 756
+Installed-Size: 764
 Maintainer: Komo @mbekkomo
 Architecture: x86_64
-Version: 1.37.1
-Depends: libjanet (= 1.37.1)
-Filename: pool/main/j/janet/janet_1.37.1_x86_64.deb
-Size: 252296
-MD5sum: 4644378b265fb7595d7dc69cac2b9b11
-SHA1: 3b3f7e0a368a1fc2e7f78a2a2224359978c2a4a7
-SHA256: 816f0e2c20bf97c06eb341fcde1fb0cc8488c687438ab680235485f5ccee4f65
-SHA512: 3e1f5545364833319ed9fdea77e0eae1464ce52f4120faa0c28ccf7ca2430851e792b37c57940907029049937f4165545b3e727f4b5f79c3d7d04edee914604c
+Version: 1.38.0
+Depends: libjanet (= 1.38.0)
+Filename: pool/main/j/janet/janet_1.38.0_x86_64.deb
+Size: 253908
+MD5sum: d2e945cc3fe6bd547325726c9e37c64a
+SHA1: 00f49f92f09c563ce00175116b39e6ab7ff5a26a
+SHA256: 2030d723ed73b4012d3702534bcf0a5b5de27ece75e1199b44243216087ba683
+SHA512: c99b044ef1c8d0e046c5cac14b918b62a251317973ad622b4c60efe674efe1ea7fa408a8870a5239e206790d2923be1545f9fc6bd843f70d9d7bd03dd4bdd123
 Description: Janet is a dialect of Lisp intended for embedding into programs and such
 Homepage: https://janet-lang.org
 
@@ -16944,32 +16976,32 @@ Description: Static libraries for libisofs
 Homepage: https://dev.lovelyhq.com/libburnia
 
 Package: libjanet
-Installed-Size: 920
+Installed-Size: 928
 Maintainer: Komo @mbekkomo
 Architecture: x86_64
-Version: 1.37.1
+Version: 1.38.0
 Depends: libandroid-spawn
-Filename: pool/main/libj/libjanet/libjanet_1.37.1_x86_64.deb
-Size: 281468
-MD5sum: 8b55300dbad03b7e334c22572c32eb15
-SHA1: bc035014e6ab7a8701a20807032e96e00ad2e8a3
-SHA256: 7b1f68f6dd25e983f086cf425d6270c1b37c48fe9e05edbc48fe3156fd9240c6
-SHA512: 2a15d1b3d44fa5ad5c0e937290baf7230b33de763ff1878da9405982c6b761a5c1365a5f3e02f0dc7e1ef7b95aaae3849166eb6045556966ec75f6832cda55f0
+Filename: pool/main/libj/libjanet/libjanet_1.38.0_x86_64.deb
+Size: 282796
+MD5sum: 12502dac835671de218426c1d8fd969f
+SHA1: 8081965ebf66f3dd8a4223b2949f858002e09027
+SHA256: e8d58e2a00d9e3d000a3aa1b37647de0396f8db8430d002396fe26f70aa2d69c
+SHA512: 316e83f70b4318b8ee6a19e610a9d87fd53e5b4550bdf9d17be9eeeaf9131865d195c370ebbc2dd01b075ba73ad2bd73dafdb525b6a6d66fe6a744ebeb33e81f
 Description: Development library for Janet
 Homepage: https://janet-lang.org
 
 Package: libjanet-static
-Installed-Size: 1068
+Installed-Size: 1080
 Maintainer: Komo @mbekkomo
 Architecture: x86_64
-Version: 1.37.1
-Depends: libjanet (= 1.37.1)
-Filename: pool/main/libj/libjanet-static/libjanet-static_1.37.1_x86_64.deb
-Size: 270908
-MD5sum: b1d0d3b55c00ff3380dc6bdf21562ebf
-SHA1: 178149f1b9e16420cbcfec019f15100dda0a7459
-SHA256: becdedf48914e3af445e1c82fc9e907a6d473ddf826410ef6ab09028c375e461
-SHA512: 3e720896f9facd4406376e67a6a6e96c889df3d16eb658ca448e4bfc76c5e65d4364549d8434a217f465bbdaba1f0bae84a9e0a3064921b6f87b7c89821f6274
+Version: 1.38.0
+Depends: libjanet (= 1.38.0)
+Filename: pool/main/libj/libjanet-static/libjanet-static_1.38.0_x86_64.deb
+Size: 272312
+MD5sum: cdc1f6e29a4991acdb89f6d9213cafeb
+SHA1: c812fdbe5d0a8e2d298ab4bf0e737e6c4bfc471e
+SHA256: 3ffbc0ddb9c4f6cbaa5653ab55ad805d8cae725ef0f1f3c5c4c478c8f8f62927
+SHA512: 57154783517c76c5dad5a0f8e854229eda360b1ff65139d2bd224202b68de72d6976192ab0b32cb77c8fe4228ba44ef3f9a7574acb59358370c8cf02eebf7ac4
 Description: Static libraries for libjanet
 Homepage: https://janet-lang.org
 
@@ -20618,6 +20650,21 @@ SHA256: 9ea96906012285e8a82dd25ab0f0985fcc5e8aaabec3cbe1ad596e3e89a5a865
 SHA512: 570b37d0585fb3a9b0500333889bd086a2aa4fe2f66e56a8faff6385541b545448c1c7790c99d4257930147a4dd6e206da16be3cba1460ced28087c77b6ab043
 Description: Static libraries for libsecp256k1
 Homepage: https://github.com/bitcoin-core/secp256k1
+
+Package: libsecret
+Installed-Size: 1200
+Maintainer: @suhan-paradkar
+Architecture: x86_64
+Version: 0.21.7
+Depends: glib, libgcrypt
+Filename: pool/main/libs/libsecret/libsecret_0.21.7_x86_64.deb
+Size: 146864
+MD5sum: 51c9b3b5e435726c2a7e3de8246d2c03
+SHA1: 01040714e82826511480c5b2859b4836fb0b89a3
+SHA256: c71f68d7e307eee964341d6c550da23526b935047e687a0f0468f405e6c3453f
+SHA512: a85d9c592f3c116241c6613b754426d2a6c68f2beeddf70aef898d9b153ebc8fad8063a995a2d22e28c103db23e396af619af85582d6a0ec93ea411820765478
+Description: A GObject-based library for accessing the Secret Service API
+Homepage: https://gitlab.gnome.org/GNOME/libsecret
 
 Package: libsecret
 Installed-Size: 1200
@@ -28202,17 +28249,17 @@ Description: ncurses based sudoku game
 Homepage: http://jubalh.github.io/nudoku/
 
 Package: nushell
-Installed-Size: 31272
+Installed-Size: 31656
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.102.0
+Version: 0.103.0
 Depends: openssl
-Filename: pool/main/n/nushell/nushell_0.102.0_x86_64.deb
-Size: 7403236
-MD5sum: 302526fdec29e35354dd17fd47c10b72
-SHA1: b829bf54bd137d25932f9538397356ed5533e015
-SHA256: 39f0a54fcd1dcd70ff9885a666980c78e09788a7161893e0c5c4ea652fa20d15
-SHA512: feadd9b41597dd740362e8baf12871f7e4585fd8ca06709535867f7cf83e2b474c93a0d2de7b05f5b934223e9ab1b57f193217911b10f0f6af91bf99dc3021f1
+Filename: pool/main/n/nushell/nushell_0.103.0_x86_64.deb
+Size: 7486764
+MD5sum: a7ea1f86c79b23cd46116bf5f103455c
+SHA1: f254618935e2aa13703f5fae40683f581548fba5
+SHA256: 858877741f9af57c1b098b82ecd96a62bfd5264a7df2c62c662bc11eb096e7ca
+SHA512: 86255c942f112c02c78ce1822e46a1847449008b3a3c26bbba65076d77955b564551586a9f5d5154908e32f6a0b239ad09dc7d48bd3c76d477248fcca5c6c604
 Description: A new type of shell operating on structured data
 Homepage: https://www.nushell.sh
 
@@ -28746,14 +28793,14 @@ Package: opencolorio
 Installed-Size: 5736
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.4.1
+Version: 2.4.2
 Depends: imath, libc++, libexpat, libminizip-ng, libyaml-cpp, pystring
-Filename: pool/main/o/opencolorio/opencolorio_2.4.1_x86_64.deb
-Size: 1237620
-MD5sum: 62540eb7307d6e9ad1fd10ac09fcfd51
-SHA1: b1f6393d02b183f495a16d9a4c736cf990061d14
-SHA256: c1fcdf3772f373a777f43113c01ca24846bc647197f30efba80652e2276d73f1
-SHA512: e07fb214371faa4198946d75feb02d330254a2175f868fa80fd77837ec2d5af4bda382ef65b69ce579471a3f4e2609d1d55e178e60e8678455cc5c2f269f4bcb
+Filename: pool/main/o/opencolorio/opencolorio_2.4.2_x86_64.deb
+Size: 1238028
+MD5sum: 6dc94656a4bef4a02781651937a6b832
+SHA1: ef5f7d55f6e83641714ebbcf7e910826dbe2ac35
+SHA256: 5e9744280bfcf6f966efcdbbd7513124bbfd8f65838c9ee45275b016d4fadc18
+SHA512: 08654fa8d1e632f37916dbbea1e757f61756b794144ec9a56915ac92dd30227284ef89b510e29a000c8b5525c7eed1960510919f5af2e28db052510b0bef5268
 Description: A color management framework for visual effects and animation
 Homepage: https://opencolorio.org
 
@@ -36945,20 +36992,6 @@ SHA512: 9331547bc6aa53229046b9b0807732a8b494de581ed866e608a9217a6d43d469dfc1c723
 Description: A very fast implementation of tldr in Rust
 Homepage: https://dbrgn.github.io/tealdeer/
 
-Package: tealdeer
-Installed-Size: 3776
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.7.1
-Filename: pool/main/t/tealdeer/tealdeer_1.7.1_x86_64.deb
-Size: 1430420
-MD5sum: 92aa9f27acd8af5f333b272518607d27
-SHA1: 2b9ff5db24eced83099e02d9a71094bb33255bf6
-SHA256: f0a52290b5467de35e63de396142cba1257a41b5e8e268eeb5ad9ed6e27099d0
-SHA512: 3bffb97c028488e4ca1a9df4039d76d2fa5fd1164db84637aed6d5c252439cbed6bb264da0447e75978288f6b6fec969bc3e64c08afe2f532a01185d2a168710
-Description: A very fast implementation of tldr in Rust
-Homepage: https://dbrgn.github.io/tealdeer/
-
 Package: teckit
 Installed-Size: 2960
 Maintainer: Henrik Grimler @Grimler91
@@ -37492,24 +37525,6 @@ SHA512: 4db64ee64f5aa60117cfe2488ce1cbd3fdc1a4bf8e6c411d25d5b1ae12aeb8ea2e57bde9
 Description: TeX Live is a distribution of the TeX typesetting system. This package contains architecture dependent binaries.
 Homepage: https://www.tug.org/texlive/
 
-Package: texlive-bin
-Installed-Size: 51408
-Maintainer: Henrik Grimler @Grimler91
-Architecture: x86_64
-Version: 2025.0-1
-Replaces: texlive (<< 20170524-3), texlive-bin-dev
-Depends: freetype, harfbuzz, harfbuzz-icu, libc++, libcairo, libgd, libgmp, libgraphite, libiconv, libicu, liblua52, libmpfr, libpaper, libpixman, libpng, teckit, zlib
-Recommends: texlive-installer
-Breaks: texlive (<< 20180414), texlive-bin-dev
-Filename: pool/main/t/texlive-bin/texlive-bin_2025.0-1_x86_64.deb
-Size: 10485332
-MD5sum: af91c65d458623ffaf94999097d49e2f
-SHA1: 859553ae2c4ad7f5cca14e6e280c56bc8a47182f
-SHA256: 57d359c60d1ec10366f825333455ac0c2beb6bdeeea3fad0106bf111e8040c26
-SHA512: b31b030e105e38a6ee861378a98ce772e747a3e0f426e3f96906dfd780a3c80e67fb3b5bcd43f2117b70c3ad950d5a955358ead512ec0f811896b357ce2d0df1
-Description: TeX Live is a distribution of the TeX typesetting system. This package contains architecture dependent binaries.
-Homepage: https://www.tug.org/texlive/
-
 Package: texlive-bin-static
 Installed-Size: 1708
 Maintainer: Henrik Grimler @Grimler91
@@ -37522,21 +37537,6 @@ MD5sum: 9a9d14f69df58ee333cd3f02700abe4b
 SHA1: 06b3adf91919e4dcf0f97d5d5cb79bf6b83df53a
 SHA256: 39b10d0203adbe02d5fbdb32f79105e4e689d12f6976f96de67b5f6ddf03eda9
 SHA512: e89f16070be725838127af6d0bfd8c70a43c252fe1a7cc4c73a59814fdcef8b729307f62e9db60f000f0f1bc34950fa66947d81e2426551d3b872e967b9c9ce9
-Description: Static libraries for texlive-bin
-Homepage: https://www.tug.org/texlive/
-
-Package: texlive-bin-static
-Installed-Size: 1804
-Maintainer: Henrik Grimler @Grimler91
-Architecture: x86_64
-Version: 2025.0-1
-Depends: texlive-bin (= 2025.0-1)
-Filename: pool/main/t/texlive-bin-static/texlive-bin-static_2025.0-1_x86_64.deb
-Size: 457304
-MD5sum: 77abfdc2ad1bae56e1c89314ff6c5453
-SHA1: cc73ec23a934c50c5ebc774b142dc39ec41af742
-SHA256: 39528e02e82aa133637b1136940a459052220085594aae823ad0beeaa734464a
-SHA512: fbffd9b773378daa7835ae7bf08b6dfcce201f60c8dc384d7dbb9c47292f71f258185fc28084aa900923db4e8290a83ff839da182daf827674aa21b9f7206260
 Description: Static libraries for texlive-bin
 Homepage: https://www.tug.org/texlive/
 
@@ -38312,20 +38312,6 @@ SHA512: cddb287125cdafe280e95bbe235bfcf6cee6a00b758767b07e1a4694addd4e799ef45afe
 Description: Tree-sitter parser for Vim help files
 Homepage: https://github.com/neovim/tree-sitter-vimdoc
 
-Package: tree-sitter-vimdoc
-Installed-Size: 232
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.0-2
-Filename: pool/main/t/tree-sitter-vimdoc/tree-sitter-vimdoc_3.0.0-2_x86_64.deb
-Size: 19736
-MD5sum: b7333111ae17ccedc2eefc3ca16133bd
-SHA1: ee7dfdd33fbded8e1988c6227867024edfc8f6a6
-SHA256: ebe8f3cee1ea599693f6a79cce85317a72742e82061d215b04ed81b539fdd561
-SHA512: cb3f39f903b378d8cd0cb398a7ac3fc8a0f474ac49b01320a6b94066b05f04819f4c2a38ed85d6080426c77e1b1ebeec144b3a892b5aebf03d98874e3fba0ae9
-Description: Tree-sitter parser for Vim help files
-Homepage: https://github.com/neovim/tree-sitter-vimdoc
-
 Package: tree-sitter-vimdoc-static
 Installed-Size: 212
 Maintainer: @termux
@@ -38338,21 +38324,6 @@ MD5sum: b4652cf4943ebc716263ac485b84a3b0
 SHA1: 543ebda3648943b4c258fe335d3523d0f61ebdaa
 SHA256: e8b51125e536408b43eb0af482b148f7c82c497b32f6a285bd346635bcafb2d8
 SHA512: d293083ca5679ca55fbc251860aa4b0554f5938262a4c3dce7f3b111824cbf40e3782dacfca0ead5e819e7fb18c7dbe9275c1aa19d67d4f92534aa5664858760
-Description: Static libraries for tree-sitter-vimdoc
-Homepage: https://github.com/neovim/tree-sitter-vimdoc
-
-Package: tree-sitter-vimdoc-static
-Installed-Size: 212
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.0-2
-Depends: tree-sitter-vimdoc (= 3.0.0-2)
-Filename: pool/main/t/tree-sitter-vimdoc-static/tree-sitter-vimdoc-static_3.0.0-2_x86_64.deb
-Size: 20144
-MD5sum: f50878cee3cecb7c9c40644e67e852c2
-SHA1: 51fb626ab0b5d03a4350806e919c7a1a0e8957a8
-SHA256: 34f709b1ffaa016764c3c1d4355c2327d7a872d3408d936de2c7aeaea2d41fc6
-SHA512: a78defeaffb27f0408a6cfd15500b99eb75357f9a146dd47d6f95a841f27c182c3807e3ea60b9237fcfa0351c73d516f4428a146b86af67a7958fa0097a7a21f
 Description: Static libraries for tree-sitter-vimdoc
 Homepage: https://github.com/neovim/tree-sitter-vimdoc
 

@@ -4127,6 +4127,24 @@ Essential: yes
 Installed-Size: 2724
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: x86_64
+Version: 9.6-1
+Replaces: chroot, busybox (<< 1.30.1-4)
+Depends: libandroid-selinux, libandroid-support, libgmp, libiconv
+Breaks: chroot, busybox (<< 1.30.1-4)
+Filename: pool/main/c/coreutils/coreutils_9.6-1_x86_64.deb
+Size: 819520
+MD5sum: 3152127667a326212f58d961c3520611
+SHA1: ff54f2d969b8f55b12ae45505cd66845004cb0da
+SHA256: 9a2fe28dd41f058e29614c30d5088825e6031931fa2db6687b7f6a5387cf5ddc
+SHA512: f005fe08cac5caf8fe4a2c0df06deb72e697a11b37356f120e3787e921533dd098c55eefca1ec569d4e61766327b285ed0c9a6c15d653695db20b675147aa2d3
+Description: Basic file, shell and text manipulation utilities from the GNU project
+Homepage: https://www.gnu.org/software/coreutils/
+
+Package: coreutils
+Essential: yes
+Installed-Size: 2724
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: x86_64
 Version: 9.6
 Replaces: chroot, busybox (<< 1.30.1-4)
 Depends: libandroid-selinux, libandroid-support, libgmp, libiconv
@@ -6837,20 +6855,6 @@ SHA512: 16e6fdb3f678f1ac76882e8e96f4ebb41264769e259746df11e970688af3e0a81b097a27
 Description: A maintained, feature-rich and performance oriented, neofetch like system information tool
 Homepage: https://github.com/fastfetch-cli/fastfetch
 
-Package: fastfetch
-Installed-Size: 3264
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.39.0
-Filename: pool/main/f/fastfetch/fastfetch_2.39.0_x86_64.deb
-Size: 473176
-MD5sum: 0ce89a5516e9e5cadba7bedc5b652889
-SHA1: 47b262ce0e71b0f573f6deb983395eb68187a53a
-SHA256: 056b5c9ffba1145f5fe955121f616045334d3771b0eb0c185a66b9eafdc63936
-SHA512: 810af4dca7aa8936bdb363d923bd848353d2b92b3bb4021afe19843d8a8bfc2cddc23881a1436d1088f2553fa7331a0306517bb9d8311d5ff79edd9f69f1b5b8
-Description: A maintained, feature-rich and performance oriented, neofetch like system information tool
-Homepage: https://github.com/fastfetch-cli/fastfetch
-
 Package: fastmod
 Installed-Size: 3748
 Maintainer: @termux
@@ -7429,6 +7433,20 @@ SHA256: 8c96d1686426fa774507104e416857550e51efadedd9f1683aabeabc7c0bae50
 SHA512: b05fd03f0dd451227d10a68e0cfa8a94e483515cede1058aaf8779566a346ce65b5284f8ce081c9177a503f63f2f8b02a1c82e3f9c9974558442b0a76097f9a7
 Description: Software synthesizer based on the SoundFont 2 specifications
 Homepage: https://github.com/FluidSynth/fluidsynth
+
+Package: flyctl
+Installed-Size: 71840
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: x86_64
+Version: 0.3.91
+Filename: pool/main/f/flyctl/flyctl_0.3.91_x86_64.deb
+Size: 16111792
+MD5sum: 414a881cb8c1dff9b3ba256cd01310ce
+SHA1: 8f0504c85965775864c58e467771791989b7bfc8
+SHA256: 811c81fbd1720a03124c902d87ecd2ae09f46a53ed5e552005120520025f0f37
+SHA512: 452331014bc374d9f4a07caf4c4c82ccbcd94408740217390a6405fe2e60bb48decc3d06db750865d21d1b9483c90efe6a5ab9340a72b0bbf78054d5e2a1e0fb
+Description: Command line tools for fly.io services
+Homepage: https://fly.io
 
 Package: flyctl
 Installed-Size: 71840
@@ -12542,6 +12560,24 @@ SHA256: e69687e3a3750b7d11bc6c6a198ecf9baa392bf826b894f0fb058a837e4271e8
 SHA512: e8be9063c8577ea93c9811d0537bb6789e4555b7543057d6940c76b2d5862350ff7453c034181db15023b9926c3c4ec05db07a95cb065a0f2e62a45c5efd3aa3
 Description: A kubectl plugin for Kubernetes OpenID Connect (OIDC) authentication
 Homepage: https://github.com/int128/kubelogin
+
+Package: kubo
+Installed-Size: 81884
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.34.0
+Replaces: ipfs
+Provides: ipfs
+Suggests: termux-services
+Conflicts: ipfs
+Filename: pool/main/k/kubo/kubo_0.34.0_x86_64.deb
+Size: 19910364
+MD5sum: c5ddb0e43eebf546900849a9c932b7ef
+SHA1: 1a73aecb4a9c0bbfaaec52ecd290b6c2734054e6
+SHA256: cd5999e339ace35141af2f8865b48217ee670059dab770b570ddf08311032d3d
+SHA512: 43ace5596fe4483ac23df9ab47008db34b0e08343996e97b6cd5aa5c53068b3b27bac146aa8563a8f2f0da7ee03b3115d55aca3efa79e5e2461d7fe775d10687
+Description: A peer-to-peer hypermedia distribution protocol
+Homepage: https://ipfs.io/
 
 Package: kubo
 Installed-Size: 80600
@@ -24267,22 +24303,6 @@ SHA512: 89006ab2c68b339ce3a142e93673ca9d247cb678ef94b22a74ef015223741cb827b524f1
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47344
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b4929-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b4929-0_x86_64.deb
-Size: 6002400
-MD5sum: 8874d2b365fb39cb3f921f9a8b9f6e50
-SHA1: c727f6e6e0da17b09da516fc6541efe7b0ab2a0b
-SHA256: 8d331dec1a62206136b4fc351de170592ff288b445facfa4fe93a99e7e31d887
-SHA512: 111222845ab8ffcde893871b8a4336741eefb7d352875638d1888cb8a68e5fac13f8aa2e95575ef63f0ce749c6f2fc3edbde57cd0348d8c1e3cc63d0138c1c0b
-Description: LLM inference in C/C++
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-opencl
 Installed-Size: 368
 Maintainer: @termux
@@ -24300,23 +24320,6 @@ SHA512: 2418101dfb1dfdf1ab8db287db2150310e1e952f7cca063420de14be9b0afc316babcf80
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 368
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b4929-0
-Depends: llama-cpp (= 0.0.0-b4929-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b4929-0_x86_64.deb
-Size: 65000
-MD5sum: 1714a340c0c64485006dfbd43fb21f7a
-SHA1: 257617be531a026db767a5656bd2c91e003fe393
-SHA256: 1fc977a8ab72bca38d5a1847267d760454c1ccb066e0d125303126c0f4b8d5b3
-SHA512: 76cbbab54177f317fd44269f870516e78d9db7bd1564937f35f7c5b2472505e7946efb0d4332df14167dcf2e173cd1402bafd256f4b1f8b93788e9b66ec7358c
-Description: OpenCL Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-vulkan
 Installed-Size: 12204
 Maintainer: @termux
@@ -24331,23 +24334,6 @@ MD5sum: 50746e238633b7e6fd0b2956725ea9f0
 SHA1: 0f522800cb65c8ac052ecee40c1e29600864af24
 SHA256: 31c9cd0f927ca27e14f67fe8b3d4070704851626f3ca9808239c3e8593f5f4fa
 SHA512: f594bd1e9a7baf67d3984bd2411d460c2a9445e6561ac1c37132b675f584d74db0c759362e8c93dc71d75a090c8183a2f335c24a7594d8ca759c6d25f57c9fb7
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12204
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b4929-0
-Depends: llama-cpp (= 0.0.0-b4929-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b4929-0_x86_64.deb
-Size: 937564
-MD5sum: 946548feb21bc815dc8b2fa0b835c54d
-SHA1: 1482937d8606f85402bf8934b8695a50752abaec
-SHA256: c59070c5d24b6b3dc69ebf115741d678f81dc8c69bcd53c5bf7eb594f5b396e9
-SHA512: 3eb730f8398fd2159929b09f17ef35a2885e2bbc4f9284600fd37d01a2a1b51ddaf547d6f142f7b77a53138d32cc50a5737e372c4ee47abc6a76bbabfd4b2605
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -33993,16 +33979,16 @@ Description: Ruby documentation index
 Homepage: https://www.ruby-lang.org/
 
 Package: ruff
-Installed-Size: 30260
+Installed-Size: 30180
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.11.0
-Filename: pool/main/r/ruff/ruff_0.11.0_x86_64.deb
-Size: 7177404
-MD5sum: e0dc5bad58715477ee62bb6336590eea
-SHA1: ce8612796c062c73464c393cc7c803a270d9d1d8
-SHA256: 6c53b72d7a63b56f8a440a0a6f1f9e359ca062a3cb52b5109c8fb2ec9e36e8f5
-SHA512: b272e511d5d153e19b601cfab5da363a4cf5f34c8468223212f6f07bbe6cd05676a1ed39e99e188fefb962b51218c3377bb0bb6f4277cd62b950769ca0e86b49
+Version: 0.11.1
+Filename: pool/main/r/ruff/ruff_0.11.1_x86_64.deb
+Size: 7188740
+MD5sum: 4351e11a0f82bdd306f211d9e11f2a0a
+SHA1: 3c1031ad0cb45bb57382df5a2edf628eec2273b6
+SHA256: d6b45bb8fdd1d7b3a1424bdcab4dc2ef202b1b80e21df6a11551160df55e4832
+SHA512: 1f824996c40237e0fff0117a5e73b37eb475c73c9aca0c5ae1a7af0f297a41f91d55de4d7baf049aec58567b4bc93f51acac39023df4e867446b4038128ad4ae
 Description: An extremely fast Python linter, written in Rust
 Homepage: https://github.com/charliermarsh/ruff
 
@@ -40122,16 +40108,16 @@ Description: A fast and secure WebAssembly runtime
 Homepage: https://wasmer.io/
 
 Package: wasmtime
-Installed-Size: 38892
+Installed-Size: 39428
 Maintainer: @termux
 Architecture: x86_64
-Version: 30.0.2
-Filename: pool/main/w/wasmtime/wasmtime_30.0.2_x86_64.deb
-Size: 7748468
-MD5sum: a73acb8473096be61353ac456f866b01
-SHA1: 411dc75c737ca8cb4f41ec4ab8b4bd53782cae06
-SHA256: 5da2fd4bc52ed0fa20d22214170d7e415e264ebd63ebd526a2e68631c788ac30
-SHA512: e6b67a0ba0aecb81a2e803ca98664653e5cd19beaefb27028147d77cd08f61ef9f292449f5e6dfce42d14417f363cbe2c1e213613a637f4ec1b13aba9e6c655a
+Version: 31.0.0
+Filename: pool/main/w/wasmtime/wasmtime_31.0.0_x86_64.deb
+Size: 7799260
+MD5sum: ea612905d6e1b7c527bd4f30587b8c51
+SHA1: ac3a3045915800959bd2bb7ead3a753042bb48d9
+SHA256: c5e3ba13c81b007456df1a20f85f5bedf4b07500f95dfa4f929339eea93470f2
+SHA512: 86b4c9940b412de44d70faa1c2383417d49ce4e1a1fe1af715f288a8372bfd91409ee2e4a5f8f8629f35e1ca8c8b71f88c15c6930e8630dd37d7e2d4c49afb6b
 Description: A standalone runtime for WebAssembly
 Homepage: https://wasmtime.dev/
 

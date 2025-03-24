@@ -11809,21 +11809,6 @@ SHA512: 89d3b55f3751326dca4cdff7cdb6e9af7a9fce1b9b5105f8ae4e0e452fa088d8fd2728ae
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14460
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.1680
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.1680_x86_64.deb
-Size: 3198452
-MD5sum: e2d892d7a996a75a1f3bc84b0cc3f8b8
-SHA1: b9cc03bdd24c812bfc9393ca8514c2163d318814
-SHA256: fe07a705fc9e435238dfecb88ad1e71ff8fe3502736aae9f354bea50009123fa
-SHA512: cca17e5319a4e952c6b856ff7af6750865c86227693e3f68e522c038726a50feafd62e67107a59fcdd99b4c27d45b82773dc56ccc6c4846edb089a5e643cc4de
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 764
 Maintainer: Komo @mbekkomo
@@ -24271,6 +24256,22 @@ Package: llama-cpp
 Installed-Size: 47348
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b4947-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b4947-0_x86_64.deb
+Size: 6005340
+MD5sum: d7634c7c1d0e3151eef5739e58eaa13e
+SHA1: 224966a92a3deeae9f289375d48dd747af57badc
+SHA256: a15b4e91fea34c439d17aa0d530a1d6044463f69c9414e828fcf28e23b8bd51a
+SHA512: 3b1745100a52e2244d0dcdfd8cb8abc9e53e418d4cf2175258febe872d357fbf8747520d4a4810cf45e222276145a7127781e836e5342fcc1d1fb062c34be36f
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 47348
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b4944-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24281,6 +24282,23 @@ SHA1: 7fc558bc81272dcc43c4162a39e6aa2248d93b15
 SHA256: 6beac562581a6e1323ec3431c8fd7eb14692f2276a532b31b6c6efa9d105d39b
 SHA512: 47983ecabdc9621fb9bd256e6c1a02bd0d382f05aa056bdd9a1637aa963b8f1bde5d25d776d0f8474915344f486ee25ab7cb0f0779ed37193b5375ec0e55f06d
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 368
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b4947-0
+Depends: llama-cpp (= 0.0.0-b4947-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b4947-0_x86_64.deb
+Size: 64996
+MD5sum: 5c32bdac1acd6af6531b5ed7a311295f
+SHA1: 96d6f76d6f602d7e5f1571bbe5ae9ff7a099dc2e
+SHA256: ad7beba1682f63b679e3d249ae76f8433bcd0d701a8bf53c9aa1e8837e2d4881
+SHA512: 3a684c57746899cea836759e9862a256a481bad2a04320eb03730e8465a36325bc7fb2b355e55bd2fa6947d742e9e5d70cc4aa019433bb31be22d8f4d184a409
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24298,6 +24316,23 @@ SHA1: dfe4dc520268fbb75ccbc91719991a5a381cfa4f
 SHA256: e3a6b3594bf6802737ff71d1bb5119952dc69b0556fac30a680f811d549c6f9f
 SHA512: f2d34a4e20d7731c65992b2c9c40a5fa1e4a980d52b45064664981f1aa5e7c0c9f6de03dae764a4a43cb91445ea5a688c01b561c213623376686d4b8d195e94c
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12332
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b4947-0
+Depends: llama-cpp (= 0.0.0-b4947-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b4947-0_x86_64.deb
+Size: 945240
+MD5sum: 28e3ff9ac668dfab5d1b81b409d602ca
+SHA1: 389fa9c755fec1b29daf1e26548a82aba1648275
+SHA256: 59947c5d423216126d15f89eebf840743f5f830108b8ca390c3ec38668fade20
+SHA512: 10d069536c89d5b35c6c96170f7c9201d0c91f473e38ca925677ba0bce82902126413aa0dc67542f0986895f32d529f0c2434988217720ac2bff3f1b74cbcf99
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -27788,19 +27823,19 @@ Description: Low level cryptographic tools
 Homepage: https://www.lysator.liu.se/~nisse/nettle/
 
 Package: newsboat
-Installed-Size: 8428
+Installed-Size: 12824
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.38-1
+Version: 2.39
 Replaces: newsbeuter
 Depends: json-c, libandroid-glob, libandroid-support, libc++, libcurl, libiconv, libsqlite, libxml2, ncurses, stfl
 Conflicts: newsbeuter
-Filename: pool/main/n/newsboat/newsboat_2.38-1_x86_64.deb
-Size: 1646344
-MD5sum: e7188d139a140f44d464b6eb1a21c4f6
-SHA1: 78efe3f784aa69c98b9834033900ff3123d44e86
-SHA256: bc0aaf08fbcbdf4049c2af34fc6ba1684204abba78bbf095a48acd55c7fe288c
-SHA512: 52b9da40b5b2d8397b2246b9f1bf8b69e00ecc31fc2cab5bf2de5dcc1d3d896caeb260cbee855855d1257fd177098291bd63634ee66dc8bc596b3f89b10273d8
+Filename: pool/main/n/newsboat/newsboat_2.39_x86_64.deb
+Size: 2262964
+MD5sum: 9ee858a12402555d54a05e07d1af8ce7
+SHA1: 5114686e1fdad4e4a9a738821053695b3d136cab
+SHA256: 541be8dc37eebde8ae0a9cdaf12cba63895158197ce35c7f0a5937fa1574856d
+SHA512: c4f843b75f23c7b58fb5a149d9f00cf550676ba1735610311f7a0636d45673177af325f36a8a52a6d8be8ac51441f08f9c23cff7efa555f6ddb554f7531900b1
 Description: RSS/Atom feed reader for the text console
 Homepage: https://newsboat.org/
 
@@ -30718,21 +30753,6 @@ SHA512: 3c07a0f7735205e0548c23ac30f09438e5307eb83a86ffcee83d5b8cadf72af35e927e72
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
-Package: pocketbase
-Installed-Size: 33280
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.26.2
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.26.2_x86_64.deb
-Size: 8805860
-MD5sum: 31f71313260cbc2514c2bd8740a40c2c
-SHA1: 644c517d276e9bf2a096d76f5cee679f56b67b06
-SHA256: 563bc2a777bc1e80924944421502b1261835bd79f27971606fd27aec53291b2f
-SHA512: 95bc9801acffe4728f10bc3f488f791580c65f04f4c3fa513a4c15839e8ad7ff5471821c1b7339d92a95f0718fac44db2e11d5369b60d18749e93c6c0d6c4ba8
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
 Package: poke
 Installed-Size: 3760
 Maintainer: @termux
@@ -33339,17 +33359,17 @@ Description: In-memory data structure store used as a database, cache and messag
 Homepage: https://redis.io/
 
 Package: remind
-Installed-Size: 2924
+Installed-Size: 2940
 Maintainer: @termux
 Architecture: x86_64
-Version: 1:05.03.04
+Version: 1:05.03.05
 Depends: libandroid-glob
-Filename: pool/main/r/remind/remind_1:05.03.04_x86_64.deb
-Size: 281524
-MD5sum: 2d2e15dd4aef347cffbd5eeb84e38c16
-SHA1: 1e3a520bb00917eb9b9f9ed253f2f370ad3de435
-SHA256: d819a64d843b9de35954e54f05a134eef8c3f82d4f992c6f12203e432943e809
-SHA512: 6399cfa15ea175028b18a4885314b7766784edee7fd2cc75cc2b270917ec4fdb8dd94039d5186255c005be0365fb455f4e16de3eb34b45cddde227d947deefb2
+Filename: pool/main/r/remind/remind_1:05.03.05_x86_64.deb
+Size: 287792
+MD5sum: f6bc93dc155ad95ee22cd7d021e117ca
+SHA1: 69b7c90410645fe868afdbcc9e38b1431745d90d
+SHA256: 821266b2a26632dd95e2330284a08852bbe8c89b0496ee5e8c933d7182b6c6e5
+SHA512: 23f2950454a29cee9a851db1b33a0cc7af55dbfb73769f21637252ca12ee15d33497bb7487bc54bc24fb95f9b5173fd21d34f723c091524379b230e233d6cbfa
 Description: Sophisticated calendar and alarm program
 Homepage: https://dianne.skoll.ca/projects/remind/
 
@@ -34046,17 +34066,17 @@ Description: Systems programming language focused on safety, speed and concurren
 Homepage: https://www.rust-lang.org/
 
 Package: rust-analyzer
-Installed-Size: 38180
+Installed-Size: 38244
 Maintainer: @termux
 Architecture: x86_64
-Version: 20250317
+Version: 20250324
 Depends: rust-src
-Filename: pool/main/r/rust-analyzer/rust-analyzer_20250317_x86_64.deb
-Size: 8530728
-MD5sum: 1f2ef6ccc78d982e777e2b62fc69827f
-SHA1: 49d650cd46b367e2541c185ad7e40cf2f4abe531
-SHA256: 0302173310dd85bd5b0235fa22a9619683069438a9f6cfd27b9fc8bd58897364
-SHA512: f35926c10bddf2fbe2736f17d88b85a9037286ec881dac17aaa9afc2f895074dd8e772cb148998e015403406354fb5fa863848baecb72bc027c2337022004bdd
+Filename: pool/main/r/rust-analyzer/rust-analyzer_20250324_x86_64.deb
+Size: 8556096
+MD5sum: e6dc93670dc0c62c7be8c3b55f3a83fb
+SHA1: 78cbea675db17c84fb2425d6fb52ff0e1d7738a9
+SHA256: 20c2d4102d8c50c86909ca732b18872ba157ebd4ac055256cb4b188d3e912285
+SHA512: dd62e71c2044420edc52ebb8b784ed04951dd5a80801ea0d5c16a9266f1d6f191605020d8cc1dfb0371630e9353ab72b90a0a695e9cee2f9bc4fe0527813647a
 Description: A Rust compiler front-end for IDEs
 Homepage: https://rust-analyzer.github.io/
 

@@ -7253,21 +7253,6 @@ SHA512: 9b70558b0a1b39f3b52f76156a4eb18af07f07ecf80f055cdf9548b1db7d94a3fc4c533a
 Description: Find files with SQL-like queries
 Homepage: https://fselect.rocks/
 
-Package: fselect
-Installed-Size: 3952
-Maintainer: @termux
-Architecture: arm
-Version: 0.8.10
-Depends: zlib
-Filename: pool/main/f/fselect/fselect_0.8.10_arm.deb
-Size: 1840420
-MD5sum: 37091151162d02fdfb23ad85457e1531
-SHA1: 6e7a0e0b497a58f82c9731f72cc0cad37d9c2d8a
-SHA256: 10e67945c42ac3661ab9cde04ecd5247ac2913f168690c47caacbccf5a33fbb4
-SHA512: 18cf38c77617687f4859d698b7fd2a8cd9e7dedfe0e094b10121e37c4a4883e62b295cb6adfb94f79457a117a05dcf1cfba7fc7c29f3be189203663b0e261721
-Description: Find files with SQL-like queries
-Homepage: https://fselect.rocks/
-
 Package: fsmon
 Installed-Size: 76
 Maintainer: @termux
@@ -16433,6 +16418,23 @@ Description: Static libraries for libjansson
 Homepage: http://www.digip.org/jansson/
 
 Package: libjasper
+Installed-Size: 912
+Maintainer: @termux
+Architecture: arm
+Version: 4.2.5
+Replaces: libjasper-dev
+Depends: libjpeg-turbo
+Breaks: libjasper-dev
+Filename: pool/main/libj/libjasper/libjasper_4.2.5_arm.deb
+Size: 407084
+MD5sum: 78bcea6dbabca5d6d37a6d2ce5d2ce0b
+SHA1: be4b75e021f02b8ddc4ad6003ee565b3e3cb4db9
+SHA256: 2022760b252220427de0f3a97ee52e8966a96ff0db6387d994d1eca314ebec16
+SHA512: e248f860b1aa803fecb15e7f845494ceeba9b626e1f646fa623f80f9e8930a4d045b47b08b8c0de4c8f4a65b88f0197bf5789a7b7e832c23d5af83eab417a2f5
+Description: Library for manipulating JPEG-2000 files
+Homepage: http://www.ece.uvic.ca/~frodo/jasper/
+
+Package: libjasper
 Installed-Size: 900
 Maintainer: @termux
 Architecture: arm
@@ -16447,6 +16449,21 @@ SHA1: c2f682c02bf38b3baad17485630b22c39e1f711d
 SHA256: 9ad7de29abbedbe899c1e55fc3dc1bb53d1e1cc637eea96629f04ea870e4e70c
 SHA512: 9bc2325c0b763cbf28c5fcb6c5ea21efa8016d0a61cb9e60380b525e1a5c4ea8a95c444f42da2d2b492c7e32eba563c0558297fd8becad5495ed74c7a7d33b71
 Description: Library for manipulating JPEG-2000 files
+Homepage: http://www.ece.uvic.ca/~frodo/jasper/
+
+Package: libjasper-utils
+Installed-Size: 96
+Maintainer: @termux
+Architecture: arm
+Version: 4.2.5
+Depends: libjasper (= 4.2.5)
+Filename: pool/main/libj/libjasper-utils/libjasper-utils_4.2.5_arm.deb
+Size: 14804
+MD5sum: 0dae13a3a0075de3d17499078821b519
+SHA1: 121906196286239fca4c15d152c496d93e38b63b
+SHA256: 87a842c3008f71c29d47ec4b9c219c484f13a232389b2559b51cd8cff31a5988
+SHA512: 6573ec1c875a54e2832de7fade8f84ecbac71eb66dfe54d0c1a12f5bc20a89cbf440c6e714a3f712781d4722055745a9388be2266145b38dead62cc4a4f59a2f
+Description: JPEG-2000 utilities
 Homepage: http://www.ece.uvic.ca/~frodo/jasper/
 
 Package: libjasper-utils
@@ -20216,6 +20233,21 @@ SHA256: 832faad8f7d86eef44835bdc2d3415013123f7eab73d0594bd300745f96b272c
 SHA512: 6891a9c1e84de4c61031a09eec026e08cab0caefff5257575820b210419639aafbdecd70249b9c83543a6d735ea4ae0eef598ff9e4ed735bac6e600f9cce300f
 Description: Library for smart adaptive formatting of tabular data
 Homepage: https://en.wikipedia.org/wiki/Util-linux
+
+Package: libsnappy
+Installed-Size: 136
+Maintainer: @termux
+Architecture: arm
+Version: 1.2.2
+Depends: libc++
+Filename: pool/main/libs/libsnappy/libsnappy_1.2.2_arm.deb
+Size: 23836
+MD5sum: a4247baf49e9cef989f25b7094f1392b
+SHA1: 0e1aec1f5705ced0105cee1bf165215d8ae88e16
+SHA256: 2de31e60013ec5618f18809db3af13e6732b8202db05095004b7a62c7d29a195
+SHA512: 7ecc25d6c391ed15918c5504a454b90927c3888bf3f19dab53f885f77d50cf8c36c37922142df300755cb2f987bd0af6322f52318c19a2c309a44c69d96ea909
+Description: A compression/decompression library
+Homepage: https://github.com/google/snappy
 
 Package: libsnappy
 Installed-Size: 136
@@ -24519,17 +24551,17 @@ Package: manpages
 Installed-Size: 18016
 Maintainer: @termux
 Architecture: all
-Version: 6.12
+Version: 6.13
 Replaces: linux-man-pages
 Provides: linux-man-pages
 Depends: man
 Conflicts: linux-man-pages
-Filename: pool/main/m/manpages/manpages_6.12_all.deb
-Size: 5658352
-MD5sum: b968983974f10713a1ea2c38dc790049
-SHA1: 01a43118ecd87e01a556bb97308de9eb0a39ce3f
-SHA256: 46f08d14a87527fd1a164dd12271a880910f0928f740cdfc92c0f9cc09fd7c86
-SHA512: 682b95748f9127be1259336fd3e322d349cd7a0ae425cfdd8ac64c7892b97299b4b8e2ddd7fd699de689fe8b8ea26fa89a5cab4f73e553e067880027c0314ab2
+Filename: pool/main/m/manpages/manpages_6.13_all.deb
+Size: 5659012
+MD5sum: 4b08d8acd22f56f21069ae12ba18f23b
+SHA1: 3113b6b300904efde014cdf5498b1c9e6150f904
+SHA256: b8764febeebd996d21bcfa9008ebc9777592f42373bdb745660ac931374cee1d
+SHA512: b5671a0a1e7841b890ac7d62c4790912aefc01d2c6df7bfe1a40fc2a7e65afcb79712ad1790ecd295ad04efde5e7869abb03eeec552c15eb32492b50e6322eca
 Description: Man pages for linux kernel and C library interfaces
 Homepage: https://www.kernel.org/doc/man-pages/
 
@@ -26029,6 +26061,21 @@ Description: Minimalist command line interface for MPD
 Homepage: https://www.musicpd.org/clients/mpc/
 
 Package: mpd
+Installed-Size: 6940
+Maintainer: @termux
+Architecture: arm
+Version: 0.24.2
+Depends: chromaprint, dbus, ffmpeg, game-music-emu, libao, libbz2, libc++, libcurl, libexpat, libflac, libicu, libid3tag, libmad, libmp3lame, libmpdclient, libnfs, libogg, libopenmpt, libopus, libsamplerate, libsndfile, libsoxr, libsqlite, libvorbis, libwavpack, mpg123, openal-soft, pcre2, pulseaudio, yajl, zlib, fmt
+Filename: pool/main/m/mpd/mpd_0.24.2_arm.deb
+Size: 2723020
+MD5sum: 2ab5d0a5ff054cc05c442e519481a5bc
+SHA1: 838efb0006523ffdd138548332a4fb501a8fa1f3
+SHA256: e24ab7bc9c2ea4e4929ba8a8a1fc92e2bee528f36a88c79da8c12ab6ecd823eb
+SHA512: 82839d77ecb1906cda430cfd35b8a6fa876b56e5eda7d1e0789a8e8a1e15d941286c1afb3a134d8fa1ca44bec6d0aa043686353e51bcebfa28008ccd683d4c55
+Description: Music player daemon
+Homepage: https://www.musicpd.org
+
+Package: mpd
 Installed-Size: 6936
 Maintainer: @termux
 Architecture: arm
@@ -26117,6 +26164,21 @@ SHA256: ab92c8120579c1aab57ae791e9fd7df8df4fbd27197c63f864337469976b1d8b
 SHA512: 5d77516d18d4bcf7284acab9e88763007c2ad734c3645a180bb6b6fe6960f7c9be542c2b09e82fa6ef312194f9b7aebf783523a26df1f79fc6ada86a544b2d02
 Description: The Movie Player
 Homepage: https://mplayerhq.hu/
+
+Package: mpv
+Installed-Size: 3748
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 0.40.0
+Depends: alsa-lib, ffmpeg, jack, libandroid-glob, libandroid-support, libarchive, libass, libcaca, libiconv, liblua52, libsixel, libuchardet, openal-soft, pulseaudio, rubberband, zlib, libplacebo
+Filename: pool/main/m/mpv/mpv_0.40.0_arm.deb
+Size: 974376
+MD5sum: c1be03c1a450c88a8f5ec070ebd09e40
+SHA1: 6c95329b911ef01852ff87240e299b427a575740
+SHA256: ba2764a72ae404f003df1e181e3d27f03ef6918701beb2c76f88a21d4bb370c4
+SHA512: 5f08efabd8fd61c869fb36a8a996f61afaf70930324ff6b933dd1163d7bc84dee35e73113a004b28b0b942bb789b661816e71d08b95813490491f904dde8ed59
+Description: Command-line media player
+Homepage: https://mpv.io/
 
 Package: mpv
 Installed-Size: 3604

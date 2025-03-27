@@ -10323,6 +10323,22 @@ Package: helix
 Installed-Size: 36420
 Maintainer: @termux
 Architecture: i686
+Version: 25.01.1-1
+Recommends: clang
+Suggests: helix-grammars, bash-completion, clangd, delve, elvish, gopls, lldb, nodejs | nodejs-lts
+Filename: pool/main/h/helix/helix_25.01.1-1_i686.deb
+Size: 7282520
+MD5sum: 61600ff61580fcceaef50157c11b68a5
+SHA1: d48d3728083fa54b6e90ced8b6b76f18b49ff25d
+SHA256: 4376f31dfbe91e524990922d48c8f07c143d9e5a1e81367fa1469a7d98a96009
+SHA512: d2e9ec72756dd5121b14bbd3c70a258916c27244301d37e739664294c190e98d1ec10350702a436f2c8d21c8d6c40312a318d9fe95f8b59423dbad62eb7788ce
+Description: A post-modern modal text editor written in rust
+Homepage: https://helix-editor.com/
+
+Package: helix
+Installed-Size: 36420
+Maintainer: @termux
+Architecture: i686
 Version: 25.01.1
 Suggests: helix-grammars, nodejs | nodejs-lts
 Filename: pool/main/h/helix/helix_25.01.1_i686.deb
@@ -10332,6 +10348,21 @@ SHA1: f88a895e00f681bda908228a29d1b4226f3d90de
 SHA256: 584ec3e48bc655f326bf6bbd0e060f283b3411a23099b7c74c12c0df7f52241f
 SHA512: 690f8b5bd505c4e2fed9664553f16ce3559ccc51467fcb369034a9a556939b17c4297c61186084da95b7f14d330de7acfd25deb7f495fe53c1f91e4d798a09b9
 Description: A post-modern modal text editor written in rust
+Homepage: https://helix-editor.com/
+
+Package: helix-grammars
+Installed-Size: 154768
+Maintainer: @termux
+Architecture: i686
+Version: 25.01.1-1
+Depends: libc++, helix (= 25.01.1-1)
+Filename: pool/main/h/helix-grammars/helix-grammars_25.01.1-1_i686.deb
+Size: 9341948
+MD5sum: 01f478cff6d05ca8e18d6e7da3972d45
+SHA1: 37d5f823069a7918dbe03a0f0c58891a55bc0cff
+SHA256: a34a83ff25c9b7e357879608229a35d6cea2b0bfe4d3346580c1e309af0815b0
+SHA512: e8ea3876033b697ebbaeff1ab700880343bc510d429868e0f82294360bb87de16bc84f3d55aa7168132d9590cd20bdea056c4827fd13dad0089c8d5fcc14f547
+Description: Helix grammars
 Homepage: https://helix-editor.com/
 
 Package: helix-grammars
@@ -11655,21 +11686,6 @@ MD5sum: 6a89695424abb76c17128b8719a8e5ed
 SHA1: 889bc08861ac2584231f2647b5854d672e52d3c2
 SHA256: 919dea7f63d39627809216e323597f81f43e631de6b7af8f46b226d24d44345a
 SHA512: 53712fbe8b53e561a20821724b2835ce0764e29676250bf930b88853610d796d6340be931e98f6a53671441326d48175f96cb50c0426450f572375a236b27bf9
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
-Package: jackett
-Installed-Size: 14316
-Maintainer: @termux
-Architecture: i686
-Version: 0.22.1695
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.1695_i686.deb
-Size: 3176016
-MD5sum: cdbca6b1c94ac40c7b7b550d026e795f
-SHA1: 10b0adb24513d90d977497e65b109658690aaaf3
-SHA256: fcb674b85f5cf20613ec29b7e4051dcaaa45256e75d4e469953c822b0fa4583f
-SHA512: 077305b84f3697675d3bc70d18bca96c5da609b29b6e20a5048fe8391e96e024020dce01b1a91e583e69b3c773da2067452ab3f5d5a0b62bc20fd6a23b2659df
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
@@ -21306,6 +21322,21 @@ Description: Static libraries for libtasn1
 Homepage: https://www.gnu.org/software/libtasn1/
 
 Package: libtbb
+Installed-Size: 2324
+Maintainer: @termux
+Architecture: i686
+Version: 2022.1.0
+Depends: libc++
+Filename: pool/main/libt/libtbb/libtbb_2022.1.0_i686.deb
+Size: 312832
+MD5sum: c25744a9bf060a132fa5b844cf357f15
+SHA1: f7c2f5259be12f6cf8b7ae00cd24e6c3408693cf
+SHA256: 64badc673d3ac2113ac3c00a9972f576e02f859da96d81c8c69d58df07e97659
+SHA512: 1fe27dd613228a53979c601cb6f74f02fbed729dbd029bfa6cdc0d25f00daf3482d9aec9d75dabfd5132e77f7ac44f20c11cc74d8928a8454aa48e8648390bd8
+Description: oneAPI Threading Building Blocks
+Homepage: https://oneapi-src.github.io/oneTBB/
+
+Package: libtbb
 Installed-Size: 2308
 Maintainer: @termux
 Architecture: i686
@@ -25620,20 +25651,20 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
-Installed-Size: 16568
+Installed-Size: 16584
 Maintainer: @termux
 Architecture: i686
-Version: 25.0.2
+Version: 25.0.2-1
 Replaces: libmesa
 Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 20), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
 Suggests: mesa-dev
 Conflicts: libmesa, ndk-sysroot (<= 25b)
-Filename: pool/main/m/mesa/mesa_25.0.2_i686.deb
-Size: 3468412
-MD5sum: 417647a09eb7a0127da2c3217ba1f0d0
-SHA1: e67313dfa35b57ec459d09bef117007e6c115141
-SHA256: 940e4a2aaf79e9643ff632231d50837f0dc92be7eea976a83efa0794657144db
-SHA512: e905d22a7a706c2cf4f88d71eb722d434e22de2e5a8c9d926ddb3b2086bf455093cc99c098ae72d9cd05b29cffa05ca3519b4466e9cbda8b9f9ffad72903f476
+Filename: pool/main/m/mesa/mesa_25.0.2-1_i686.deb
+Size: 3473460
+MD5sum: 5de9651f144352fa95b41698b0426944
+SHA1: 15d93d6d72e7f7e0e28e73e9f44034d8352620cb
+SHA256: 2c92673cb5314805f6867f0ec05086e9dca64fd27b5b70ee0a107a519c031224
+SHA512: a56e337118da6eedac00559e46bcf31fea9f8df74ab554c0886d91f7b7d6fd25d783c6e092a0fcde3c83dfcf5b3151fa7f98868e10fd94f2b1a43140f090aa14
 Description: An open-source implementation of the OpenGL specification
 Homepage: https://www.mesa3d.org
 
@@ -25641,16 +25672,16 @@ Package: mesa-dev
 Installed-Size: 168
 Maintainer: @termux
 Architecture: all
-Version: 25.0.2
+Version: 25.0.2-1
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
 Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Filename: pool/main/m/mesa-dev/mesa-dev_25.0.2_all.deb
-Size: 25332
-MD5sum: 7e7b9f86b6528563fe98ce59d3af0901
-SHA1: 02345016ad747fb0660b8201b717f3fff77759c8
-SHA256: bb9cc1cde83ebb6acb7a174dd01a0c18a3a6eaacfba38b8b4267961ea8812ea7
-SHA512: 67d6dddde2c627739ef9d45a3d46a05852241c0a5ab46930ac7284c9a7767a51bcf0164f21b6b22ad4faf450ea8edc053227cf0f615c4e097445958d6ca6e736
+Filename: pool/main/m/mesa-dev/mesa-dev_25.0.2-1_all.deb
+Size: 25328
+MD5sum: 3164dd188f3117d3bb3df296b1890575
+SHA1: 1a170876b2e4d85bc3637b3064e94de30163a1ae
+SHA256: 36f8932fdaaba25a44601f9af3b8f4dd3944bd26b6595e83b97acf9e456a8d24
+SHA512: 9373e73dd1074824b0cc9c9fdb08ad296df7c836afefa661427321e54eef56a523283b73ea6b497a520ac894887dbf306625bd25cc0e0ec40ca24bc255dd9736
 Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
@@ -25658,14 +25689,14 @@ Package: mesa-vulkan-icd-swrast
 Installed-Size: 9496
 Maintainer: @termux
 Architecture: i686
-Version: 25.0.2
+Version: 25.0.2-1
 Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
-Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.0.2_i686.deb
-Size: 1654736
-MD5sum: a10e9924a695f812ee5e517830b7933a
-SHA1: 662051ca85f44b57023957193642704004006042
-SHA256: 4fc4bf0226eadd7a779cbb33182a872fe31c3d79ea8ccb6edf069c6f3f680bcc
-SHA512: 40a4e2e743226bc373e28f1af64b73f2ed79669330d4f2b349b51dbd51323a087e3f9afbaeb47d7eb18812cd13434571501dd7b192cf76096aeeae07007059ea
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.0.2-1_i686.deb
+Size: 1653980
+MD5sum: 7e4dc91aacebd8a1610dcb90498cd077
+SHA1: 5b3bbd5f1453c8ab6990286cce6075672c0f7521
+SHA256: e83969db0b3fab4690dfd16c42718014bef242ede622229cfa781986665f77c4
+SHA512: 2128b57136b7273fc2d87507b880d716aa95095f3f6c317b597f601007e55acfdf391f7474645fbdb6ec328aea60985ea76364cfac8b0662f1752673be95b7c4
 Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -28867,16 +28898,16 @@ Package: osmesa
 Installed-Size: 13812
 Maintainer: @termux
 Architecture: i686
-Version: 25.0.2
+Version: 25.0.2-1
 Replaces: mesa (<< 22.3.1)
-Depends: mesa (= 25.0.2)
+Depends: mesa (= 25.0.2-1)
 Breaks: mesa (<< 22.3.1)
-Filename: pool/main/o/osmesa/osmesa_25.0.2_i686.deb
-Size: 2763140
-MD5sum: 04b2b91cbb3b6b68ff161b77927cd557
-SHA1: 53dbaf1b7eae0f804a4d89a595cbcbb3d833470d
-SHA256: d4da8338397d20088ab2c36761243e422c1b12aa5676d6f03c601c254b615f12
-SHA512: 4dd49cccdd810a7e89224b864a41472e9c1a1e8d093d332c6e5109cbbc7bc31802005ad95c51ae3ab7c3c1e619ed697bc398a4328706ae8ad4fa770be913a2ac
+Filename: pool/main/o/osmesa/osmesa_25.0.2-1_i686.deb
+Size: 2764400
+MD5sum: c43b4c19050ba4f65d3388715907c7ea
+SHA1: 934d318fa211e10361c4af8b6473308df84d8135
+SHA256: 04822d7175a09c3afb749fa7d2e78279a4ca6b2fa7395b8c809c728330031125
+SHA512: 010d710e3e91172e0ca4c6d6aa07170e685aed099a736899b8ddf748c7d25b7df4d97906dcf4544e931ff925ab4effe33c6190dd5537566c6073dc7109624228
 Description: Mesa Off-screen Rendering Library
 Homepage: https://www.mesa3d.org
 
@@ -34499,6 +34530,20 @@ Description: A simple heat transfer simulator in pure Rust
 Homepage: https://github.com/file-acomplaint/simuwaerm
 
 Package: sing-box
+Installed-Size: 29648
+Maintainer: kay9925@outlook.com
+Architecture: i686
+Version: 1.11.6
+Filename: pool/main/s/sing-box/sing-box_1.11.6_i686.deb
+Size: 8536004
+MD5sum: 0ecb79a7764d036b29a23ac510acc0a9
+SHA1: b6e33505e59c1ac3974f3dc3c94d841b37bf7fa5
+SHA256: 9c34e3714ea7c71dd62cd7d14cad5899b922aef269401e04fed0bbecc9fae331
+SHA512: 8701f2c82ede8e6f070cc3366f381b2dbb50bb826853fbf5033b0df040fcd1b5cf951f1764a5cb1e82e05230606ddf0294176720b40116ef0b67d4f668234728
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
+
+Package: sing-box
 Installed-Size: 29652
 Maintainer: kay9925@outlook.com
 Architecture: i686
@@ -39225,6 +39270,21 @@ SHA512: bfcc8c6bbea1ca3c9a0bed60a6c39385fb790a79d63b9a0e4ad360652215625a8659d3fe
 Description: Vulkan Header files and API registry
 Homepage: https://github.com/KhronosGroup/Vulkan-Headers
 
+Package: vulkan-icd
+Installed-Size: 4
+Maintainer: @termux
+Architecture: all
+Version: 0.1
+Depends: mesa-vulkan-icd-swrast | mesa-vulkan-icd-freedreno | swiftshader
+Filename: pool/main/v/vulkan-icd/vulkan-icd_0.1_all.deb
+Size: 720
+MD5sum: 3b82553dd8c990cd355bd57624dde347
+SHA1: d226c4f2ef301de656932b4e8a88e5cb33a9771c
+SHA256: c9d2a6be2a97b5b014deff5bc620cfff28644cb72491d7f8ea7870ced31c619e
+SHA512: b4f917655aa4a75f4995a2787e2876d32a4e1b5e5a1b8b2773781a400586d97d7feddae6b78985ab916ce2ed8e875b915d88c808b64c1f4fd69bba08f9e32d00
+Description: A metapackage that provides Vulkan ICDs
+Homepage: https://github.com/termux/termux-packages
+
 Package: vulkan-loader
 Installed-Size: 4
 Maintainer: @termux
@@ -39258,15 +39318,16 @@ Package: vulkan-loader-generic
 Installed-Size: 608
 Maintainer: @termux
 Architecture: i686
-Version: 1.4.311
+Version: 1.4.311-1
 Provides: vulkan-loader-android
+Recommends: vulkan-icd
 Conflicts: vulkan-loader-android
-Filename: pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.4.311_i686.deb
-Size: 130416
-MD5sum: 2509d2d84314332684c207c5ec72cb4f
-SHA1: 0d8f3b0c978d8067b5110c5844c8bff66b0a2f46
-SHA256: 66acb93f4aff43d78238ba19ea509bdde1cb64a894e6278f51ecf2131b8d2c86
-SHA512: cf20af24ad8811ee0f6d0723be9c6b8100b79908889e67b7098901d0ce6f368fef593384859cf8e68524d5b90bbe3b63e4ade1b80ceb1563a54796c3dd8d6e96
+Filename: pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.4.311-1_i686.deb
+Size: 129844
+MD5sum: 258c0197c82cbc85911f35e682c58125
+SHA1: c3864a6c503556d29d2fb872dba4e143b2f81916
+SHA256: 715a7329a4c55337ecee6a1b7416a5eea41bd2349a2174c8ed971e9598577d16
+SHA512: dc9ed0e571bc6458631eed565d784e5fd358f4006082363033d4755ed4c33b772d3ef2286d836ccbb52143e7a6e2103fb61752f4226b74d2c2cd60197b5324d9
 Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
 

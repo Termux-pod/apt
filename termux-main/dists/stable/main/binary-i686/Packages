@@ -1405,6 +1405,24 @@ Package: at-spi2-core
 Installed-Size: 3232
 Maintainer: @termux
 Architecture: i686
+Version: 2.56.1
+Replaces: at-spi2-atk (<< 2.46.0), atk (<< 2.46.0), libatk
+Provides: at-spi2-atk, atk
+Depends: dbus, glib, libx11, libxi, libxtst
+Breaks: at-spi2-atk (<< 2.46.0), atk (<< 2.46.0), libatk
+Filename: pool/main/a/at-spi2-core/at-spi2-core_2.56.1_i686.deb
+Size: 350588
+MD5sum: de27ed1fc45ac7e448b250962c73b083
+SHA1: 30408b780201c5ff236aae0e80037773163535b2
+SHA256: e0cb46e8a2e6985d3c8fd253bb41e8ed42b684fd5e198696f68d96cac3dd6446
+SHA512: 5f79a62f128b442ca523477d5e7bf1b50f531425f68b9cfd1751515ca0d019d50e49e84897ce52aa957328e276bd23b3af6db79fea0f91ad1f8363e7b40bcc7f
+Description: Assistive Technology Service Provider Interface (AT-SPI)
+Homepage: https://wiki.gnome.org/Accessibility
+
+Package: at-spi2-core
+Installed-Size: 3232
+Maintainer: @termux
+Architecture: i686
 Version: 2.56.0
 Replaces: at-spi2-atk (<< 2.46.0), atk (<< 2.46.0), libatk
 Provides: at-spi2-atk, atk
@@ -11643,6 +11661,21 @@ SHA256: b3b15eab629dd65d06d88dd4e73fb1a6de1550a5d5e8475b0c027d2b62c34ffc
 SHA512: 087fcaf778173687ca2fcdbc338c8fcc513ccbb67603f7daac010cbda8844c73c6ddfa4c7e40b32e8caf76850493d863b45c75abb8ee7e8e7fc490aa826a8ab7
 Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
+
+Package: jackett
+Installed-Size: 14320
+Maintainer: @termux
+Architecture: i686
+Version: 0.22.1705
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.1705_i686.deb
+Size: 3175720
+MD5sum: 632c640216fed0b7cf6f979efa36e7be
+SHA1: 688d5e63afaa256695f8c04b54e201a9ddf8c363
+SHA256: c9df0a0dc1a2de7b45791b92808769840208a0e71ca26ca118fb576697845daf
+SHA512: 201890f845c9f4e3551ccd5fe6335222af8e7441a6509be49cf583e3f9a60ad522307a290cec995e17cbcfdf6a372443b5de08ffe014daff0512f1155628656a
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
 
 Package: jackett
 Installed-Size: 14324
@@ -25623,24 +25656,6 @@ SHA512: 4152a3685a58ed874c7086412c51877d0a5c583aaae78360b9b05c2bae412a519514ff94
 Description: An open-source implementation of the OpenGL specification
 Homepage: https://www.mesa3d.org
 
-Package: mesa
-Installed-Size: 16584
-Maintainer: @termux
-Architecture: i686
-Version: 25.0.2-1
-Replaces: libmesa
-Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 20), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
-Suggests: mesa-dev
-Conflicts: libmesa, ndk-sysroot (<= 25b)
-Filename: pool/main/m/mesa/mesa_25.0.2-1_i686.deb
-Size: 3473460
-MD5sum: 5de9651f144352fa95b41698b0426944
-SHA1: 15d93d6d72e7f7e0e28e73e9f44034d8352620cb
-SHA256: 2c92673cb5314805f6867f0ec05086e9dca64fd27b5b70ee0a107a519c031224
-SHA512: a56e337118da6eedac00559e46bcf31fea9f8df74ab554c0886d91f7b7d6fd25d783c6e092a0fcde3c83dfcf5b3151fa7f98868e10fd94f2b1a43140f090aa14
-Description: An open-source implementation of the OpenGL specification
-Homepage: https://www.mesa3d.org
-
 Package: mesa-dev
 Installed-Size: 168
 Maintainer: @termux
@@ -25658,23 +25673,6 @@ SHA512: 1580d16da1ba1fa24cd7c436a5b5f5386d49d96a073bebc0cb225e920b375ef1e9c24116
 Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
-Package: mesa-dev
-Installed-Size: 168
-Maintainer: @termux
-Architecture: all
-Version: 25.0.2-1
-Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Depends: libglvnd-dev
-Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Filename: pool/main/m/mesa-dev/mesa-dev_25.0.2-1_all.deb
-Size: 25328
-MD5sum: 3164dd188f3117d3bb3df296b1890575
-SHA1: 1a170876b2e4d85bc3637b3064e94de30163a1ae
-SHA256: 36f8932fdaaba25a44601f9af3b8f4dd3944bd26b6595e83b97acf9e456a8d24
-SHA512: 9373e73dd1074824b0cc9c9fdb08ad296df7c836afefa661427321e54eef56a523283b73ea6b497a520ac894887dbf306625bd25cc0e0ec40ca24bc255dd9736
-Description: Mesa's OpenGL headers
-Homepage: https://www.mesa3d.org
-
 Package: mesa-vulkan-icd-swrast
 Installed-Size: 9496
 Maintainer: @termux
@@ -25687,21 +25685,6 @@ MD5sum: 99487c8a4ca4a91ceb84f93a77c6bc23
 SHA1: 5f178dc824c4d3f1c91f4e4865821a8d8c937158
 SHA256: 2af3c2ca6472c2ffc55b9abaa1b85bad507658f6100d11e34df4d79e65664808
 SHA512: ffd23f9119757650cb35ddb8d7541317d973f5392cec3d0525aebb836c146cef46ab58067d4e927f3b7b217b0abc38604ac2f8dcf7d0ab3b7948d19955215405
-Description: Mesa's Swrast Vulkan ICD
-Homepage: https://www.mesa3d.org
-
-Package: mesa-vulkan-icd-swrast
-Installed-Size: 9496
-Maintainer: @termux
-Architecture: i686
-Version: 25.0.2-1
-Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
-Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.0.2-1_i686.deb
-Size: 1653980
-MD5sum: 7e4dc91aacebd8a1610dcb90498cd077
-SHA1: 5b3bbd5f1453c8ab6990286cce6075672c0f7521
-SHA256: e83969db0b3fab4690dfd16c42718014bef242ede622229cfa781986665f77c4
-SHA512: 2128b57136b7273fc2d87507b880d716aa95095f3f6c317b597f601007e55acfdf391f7474645fbdb6ec328aea60985ea76364cfac8b0662f1752673be95b7c4
 Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -28086,20 +28069,6 @@ SHA512: a16720e3bf79e61bc075c81a51f95b64ba1dfbc58225dd82f866424f492f656243f8a79f
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
-Package: oh-my-posh
-Installed-Size: 19452
-Maintainer: @termux
-Architecture: i686
-Version: 25.6.0
-Filename: pool/main/o/oh-my-posh/oh-my-posh_25.6.0_i686.deb
-Size: 5692080
-MD5sum: 787524ff2a70b4d5fb93e5561596d169
-SHA1: 40db6675cfe83a2554c08b407a6a41459bbf8559
-SHA256: 1801a0d3e0794f47286758ec0732ffef98d4119c774450ba753b7554ee65a867
-SHA512: e6dfd8fd0b715f7b04f9a8de7e8f55f63badf4c7c96583ea457288847143e1f884df4b96820d9044cb8bcc75eff4537d8133aca8edc54aaaccc2d70827fc8998
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
 Package: okc-agents
 Installed-Size: 3704
 Maintainer: Termux members @termux
@@ -28927,23 +28896,6 @@ MD5sum: 333088a09c1078193b7c7c7156c7de3b
 SHA1: 0e12a930f93a7c436f8b89c01feb40b528d453ab
 SHA256: f9b106f49b5602cb5b67e77ba572373e7e8b723068a14b786f0177e92f9065c8
 SHA512: 15b585774fc7d579b906ac719c12eb02b4655b20d6864318486164bfa852dda9c19720ec365d9f6f39b3495ff8dded7fa3751cd75801671c64a83423c57f709a
-Description: Mesa Off-screen Rendering Library
-Homepage: https://www.mesa3d.org
-
-Package: osmesa
-Installed-Size: 13812
-Maintainer: @termux
-Architecture: i686
-Version: 25.0.2-1
-Replaces: mesa (<< 22.3.1)
-Depends: mesa (= 25.0.2-1)
-Breaks: mesa (<< 22.3.1)
-Filename: pool/main/o/osmesa/osmesa_25.0.2-1_i686.deb
-Size: 2764400
-MD5sum: c43b4c19050ba4f65d3388715907c7ea
-SHA1: 934d318fa211e10361c4af8b6473308df84d8135
-SHA256: 04822d7175a09c3afb749fa7d2e78279a4ca6b2fa7395b8c809c728330031125
-SHA512: 010d710e3e91172e0ca4c6d6aa07170e685aed099a736899b8ddf748c7d25b7df4d97906dcf4544e931ff925ab4effe33c6190dd5537566c6073dc7109624228
 Description: Mesa Off-screen Rendering Library
 Homepage: https://www.mesa3d.org
 
@@ -39275,21 +39227,6 @@ MD5sum: 5cecbe97b2a3cab7b3ae20a7ddf24a76
 SHA1: 5f389dde171bd044de15b717030d01186fa7cada
 SHA256: 0b43fd8859f7d1cfc06542ca86330f4c3b5c0d60221cb7c3bab5c32b2bde418e
 SHA512: 803a9cd7d7f469b8b227e05e501f6dbdd680a4f8d7cf363613055a6ea952c89cc4e4a5eb92817c20056ad35749628305d69bf496ad5c4c1eb553e4d6cf57b6d0
-Description: Vulkan Extension Layer
-Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
-
-Package: vulkan-extension-layer
-Installed-Size: 3132
-Maintainer: @termux
-Architecture: i686
-Version: 1.4.310
-Depends: libc++, vulkan-loader
-Filename: pool/main/v/vulkan-extension-layer/vulkan-extension-layer_1.4.310_i686.deb
-Size: 465176
-MD5sum: 868d98dfd17b9e5c68d6c2fd2ca170b0
-SHA1: 663021d94b5a6313eb327f4b30f520f29f76c81a
-SHA256: 1980a94b5757ef47c5c0298003356f56187faf21a8b46e7a5d38ca78e304f711
-SHA512: 1e589a8f5b023570580a22b75928de06e8326480b15c9c9f82b425f5abbe54759783720e1ecce4338f8a37e5d5b078fbb4c4f8d7d9a1a7584dc2335c00c355a5
 Description: Vulkan Extension Layer
 Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
 

@@ -2681,20 +2681,6 @@ SHA512: 21bd514a8b7e01cba2bba65b03f48f1e298e4e2bd5ce0e4ead8ac575e0902f7cf8db08c8
 Description: A new way of working with Protocol Buffers
 Homepage: https://buf.build
 
-Package: buf
-Installed-Size: 48600
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.50.1
-Filename: pool/main/b/buf/buf_1.50.1_x86_64.deb
-Size: 10230692
-MD5sum: c17d803a88303420a6ebdea3a9ffc1af
-SHA1: 3a109585d36aca3787a569bf8d381d2c977f8921
-SHA256: 5eb56c075957aeffeff415e5cc21a2be8a87d945edac2cefe0baa1cba537fb0e
-SHA512: cfd6c22d021678cd622b99c770440e701aebbdb0557e419b2f21cf53de83f2b5dbed379c6fdb2c58c43a8770c286809a106b0003e6dd8f0d5b6dcb207fada2e1
-Description: A new way of working with Protocol Buffers
-Homepage: https://buf.build
-
 Package: build-essential
 Installed-Size: 4
 Maintainer: Leonid Plyushch <leonid.plyushch@gmail.com>
@@ -25661,20 +25647,6 @@ SHA512: 915ba3e47607b0f193dfef8607983adcf23eecb1d5b4c1f9e9e6baa7fe2487dbe194193e
 Description: A preprocessor for mdbook to add mermaid support
 Homepage: https://github.com/badboy/mdbook-mermaid
 
-Package: mdbook-mermaid
-Installed-Size: 6376
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.14.1
-Filename: pool/main/m/mdbook-mermaid/mdbook-mermaid_0.14.1_x86_64.deb
-Size: 1641120
-MD5sum: 1e8d22f6457f3ad1b0c4c2948774c3db
-SHA1: 556ab075179fc405b7878be0c65cdacb098a907c
-SHA256: 445dcf7f53dbccdb5c3c34c29103df781432abe97942d3bdf219aea07ac784de
-SHA512: 18e20f1efef5294db4d98e66ce7faca52be8b5aba01bb1002130895f9ca498f735bbe29bc3abe7dbcd9af0c00abb51dd3b69659f878baa534a9eb55c6731c4d5
-Description: A preprocessor for mdbook to add mermaid support
-Homepage: https://github.com/badboy/mdbook-mermaid
-
 Package: mdbook-open-on-gh
 Installed-Size: 2924
 Maintainer: @termux
@@ -25972,6 +25944,24 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 16904
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.0.2-2
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 20), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_25.0.2-2_x86_64.deb
+Size: 3586080
+MD5sum: 828df148fb1c49875c725b6005317d2b
+SHA1: 1f58ffee134fd0b95cee328db6e4e20eb98e52cc
+SHA256: 980168a44028e6a69773b84d20fba7273de92fadaa51fe9d789f0d27b10dace9
+SHA512: a067f1e8bee21783522219a761f6922b010e90c4c0f3c27ba54ac2fd01855f87a0299940798bedf3a1ba64d35e6545ee2f3d941d747689e79f61974a6be8ca84
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 16928
 Maintainer: @termux
 Architecture: x86_64
@@ -25993,6 +25983,23 @@ Package: mesa-dev
 Installed-Size: 168
 Maintainer: @termux
 Architecture: all
+Version: 25.0.2-2
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_25.0.2-2_all.deb
+Size: 25328
+MD5sum: ed7f66550f4e02fbd9ae78f7b78668c4
+SHA1: 622263d14ca4f06f29654967ead15954c222108f
+SHA256: ce201dcc76370ee80e24659ad1cb2967a529227a891ff9bfd7fa4a2b551f2675
+SHA512: 1580d16da1ba1fa24cd7c436a5b5f5386d49d96a073bebc0cb225e920b375ef1e9c24116e54548261c58325c337a6801c022ebf21a989e68ba1d5e6e1abfb849
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 168
+Maintainer: @termux
+Architecture: all
 Version: 25.0.2-1
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -26004,6 +26011,21 @@ SHA1: 1a170876b2e4d85bc3637b3064e94de30163a1ae
 SHA256: 36f8932fdaaba25a44601f9af3b8f4dd3944bd26b6595e83b97acf9e456a8d24
 SHA512: 9373e73dd1074824b0cc9c9fdb08ad296df7c836afefa661427321e54eef56a523283b73ea6b497a520ac894887dbf306625bd25cc0e0ec40ca24bc255dd9736
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 9508
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.0.2-2
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.0.2-2_x86_64.deb
+Size: 1677660
+MD5sum: 2f65edb62e99713acce57b72c5f9e848
+SHA1: e52277624fdc74907524834bc342937e5a262e6a
+SHA256: 006163c31aea855880001566ea7645deab1acdd5c4eba37e51791270f503cb90
+SHA512: ce9d48be8e14fd1d79c3bd807b46052cd68ce00b2a3f696e5a46924403b380001d11f639d8dd608ffecff64f5c2095dc258175c608fdb978a9589f371035c25f
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -28454,6 +28476,20 @@ Package: oh-my-posh
 Installed-Size: 20944
 Maintainer: @termux
 Architecture: x86_64
+Version: 25.6.1
+Filename: pool/main/o/oh-my-posh/oh-my-posh_25.6.1_x86_64.deb
+Size: 5477164
+MD5sum: 6f50bc265b75b7e3453296ebd651bfff
+SHA1: aa580c8da9e3916a1b554d9978ca5ed39e05a297
+SHA256: 628819e8156e90f156b0f8183c07919569331ec97897301292ca0e3d8ea2a945
+SHA512: a9ee38f409344c144372ff74cbff17886562caff49cfb410d00ad5116102a4569123ca120bfa45704e8baf71099ae4a63933f248c83e97b8c8cf20762bebe94a
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
+
+Package: oh-my-posh
+Installed-Size: 20944
+Maintainer: @termux
+Architecture: x86_64
 Version: 25.6.0
 Filename: pool/main/o/oh-my-posh/oh-my-posh_25.6.0_x86_64.deb
 Size: 5475852
@@ -28533,20 +28569,6 @@ MD5sum: 6e2382fb358fccb29aa7976e34322567
 SHA1: 64971c9438717ed35a497b91f2eda5cbe59eeee6
 SHA256: 9d024f6dc001330073095ff1e877e88d494a678b525a101e39198c1ea7e42bd5
 SHA512: 074c94ddabfee89ac1155b3a551fc63d42ed190dedb118ee6cb46a89116e80232ce0694bea12dc0bc71be4ed958d16113a1a1794d6d69bd1b1a0954144a43b4b
-Description: Get up and running with large language models
-Homepage: https://ollama.com/
-
-Package: ollama
-Installed-Size: 34828
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.6.2
-Filename: pool/main/o/ollama/ollama_0.6.2_x86_64.deb
-Size: 8664172
-MD5sum: 1392886564c7aeaa6cff3bcadf57067d
-SHA1: 2694271dd8bf67fe18c3029746cfb50e9ba4c653
-SHA256: d392de2edfb9626c6bf55a17135f3a361df41386930258e916de78bd66509b24
-SHA512: ede01426f111a8ac29da0b0b20f855de14179182934d29856911eafe2704ffa166b21b8b74db776e878a97537720ecd2419148250179cede287529a39765d97f
 Description: Get up and running with large language models
 Homepage: https://ollama.com/
 
@@ -29334,6 +29356,23 @@ SHA256: 495264b23e1bbcfba74133fd2ea880b3032214c7cdfc6278e083b8679352af58
 SHA512: 0d2dd86311d2a9ce3a2ca0ce3c8a9340b82ad982cde24d1d33b6026e6a0bf94c2154389a551837f57e16d6ba2166fff288653523c7c894284935011a283a9e30
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 13880
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.0.2-2
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 25.0.2-2)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_25.0.2-2_x86_64.deb
+Size: 2855360
+MD5sum: bbc79a23f333c343dcf47ee89cf02476
+SHA1: 9c7c6a971ed548d1f12d41139e9c798ba972ca31
+SHA256: d48a5626ae181a0ea9135d61666e56a97f6a28bbefbd9d65d9e0a9c8986a7df5
+SHA512: a3054f0f96f2f3a202951debd72b0ec3d40975c153ee9432c41bd710e6387ccb658176fbee26b59d11ba560b950e67765cadeb0a14a40efe45a0787a5f575898
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 13880
@@ -30743,21 +30782,6 @@ MD5sum: ce60f1774faf8f7db6cb0408eaabf6db
 SHA1: 8a67258c33dd602c1885ae732bbf83ae7c70866c
 SHA256: 952b89ccc72ea5da50bd48a8399ad9621b85621ec16e4d18d9a4430f93f0fcfe
 SHA512: 0674fc5b7d2331b3b7cff804c4be66802b39e529b848491b96effa1b409db500cd73c2d0ad60995fe2390e7bbaead03c4fb08d17607ba12da7aa057e68bec2ff
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
-Package: pocketbase
-Installed-Size: 33264
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.26.4
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.26.4_x86_64.deb
-Size: 8807436
-MD5sum: 9b71d412fadee1e6743bb3cde481f8a7
-SHA1: b99d220509eaf76621facf2f01dd745a2ea09ca7
-SHA256: d6abde45d4b3e84b40901b85b82829e6c20be182f1628c100b95c137ace02817
-SHA512: b94cc03556bafc0c99e7cd32c75b8c67b337ccc21e6f85acb9351fad98ddc2460f358e9e8ba1c4c3ffd2ac9aa8c87ecaf3e525593c0b80f280f6767ae50bd0e1
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
@@ -33425,17 +33449,17 @@ Description: Resolver configuration file
 Homepage: https://man7.org/linux/man-pages/man5/resolv.conf.5.html
 
 Package: restic
-Installed-Size: 29000
+Installed-Size: 45716
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.17.3
+Version: 0.18.0
 Suggests: openssh, rclone, restic-server
-Filename: pool/main/r/restic/restic_0.17.3_x86_64.deb
-Size: 7241620
-MD5sum: af95fcb000fb540d0516077ba381ab79
-SHA1: bb0793c8ed65a574dc0fddc6be0c98a12817d026
-SHA256: 791d28e01172bac91e70ffcbcb0b841a9c47493490c7571def02ebc469f34594
-SHA512: b3c1b26b6cbd86dc2d61556d0ed2b166ac5053bd8d7f48a57e9937bf0a0a845a3cfeb18d042065db8773d29c16727fad91b8e8fafaaff3a2f4aa09228dfd809a
+Filename: pool/main/r/restic/restic_0.18.0_x86_64.deb
+Size: 9731876
+MD5sum: c0375aeb82f5277ec7c5aaf3bd0f865d
+SHA1: e059761ece2f613d452334f4a53086473c5cfdf2
+SHA256: dbbdfcb6e154a54817ffebef758fc62b4658027aa9195dec6fe272bef89027c0
+SHA512: 0ebe10727dafffd28415c66ef664bf065f5b11c041cdb03f7efac2e0fb82d0c3720347cedf030f3395e3db9e4b33d11ca729a8cf09d03d1060ac71fb75aef8d9
 Description: Fast, secure, efficient backup program
 Homepage: https://restic.net/
 
@@ -35058,21 +35082,6 @@ MD5sum: 8fba22b055862432fbc804dee4d09a52
 SHA1: ff9f86fce094aee56f15874fc66b5d6485014cd8
 SHA256: f8eb32eef84f631e3ba6ad974376c61d123e49bb3e0fa8094c26857dc9e49d8f
 SHA512: b9033dfd59ea24e016e3a4663e3febd0ce7f919fd4c486ee4fdb3f099eb2ce8dec45ce1c7c7ae0caaed0962b3dcf8bf5d7e5aabe1ac35f443d420ffb6e6b34fb
-Description: A C++ library to see how fast we can parse JSON with complete validation
-Homepage: https://simdjson.org/
-
-Package: simdjson
-Installed-Size: 5416
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.12.2
-Depends: libc++
-Filename: pool/main/s/simdjson/simdjson_3.12.2_x86_64.deb
-Size: 232732
-MD5sum: 56749f5a12b1719cc641343efa622577
-SHA1: 0b86a9d8114f651c5cf1d14b9065b6e0e7f73cee
-SHA256: 277bf438a41681c42ac9fc3d29567dac8774ab5394213110d638321e82c8f985
-SHA512: 221935721909de34340e8f90bcda3cd577878b3070400ef8e276e52dbad3102c1cef361e62b8dec6edd8c42e3f0656c1c9be8a94078f73a27a97871cb18b7e9e
 Description: A C++ library to see how fast we can parse JSON with complete validation
 Homepage: https://simdjson.org/
 
@@ -39939,6 +39948,21 @@ SHA256: da1154e4d299d21d1b0bda419bd160d8560531889c5f6e0bf7bcd1b9f1f8eb3c
 SHA512: e13d68af59333117fdc3fa58aeae14c6488d0b2def95f3f63e4038011c1d2dfed2f6039b3293a073b69f9cd3a15e4539a7e231b83d67319be904da0ca1208c0e
 Description: Utilities for testing and working with virtual terminals
 Homepage: https://github.com/fornwall/vtutils
+
+Package: vulkan-extension-layer
+Installed-Size: 2732
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.4.311
+Depends: libc++, vulkan-loader
+Filename: pool/main/v/vulkan-extension-layer/vulkan-extension-layer_1.4.311_x86_64.deb
+Size: 424880
+MD5sum: 7609961d5c5d94cc0dfcd674df7c25be
+SHA1: 853cd4f6555b80b7da34ecc24a627067808e7a1a
+SHA256: 680129d48186fd2f4bb56e55a88efa7df0fcc1095530090be544c97d657ac186
+SHA512: 63189d393c5f8054e34dc454152fa6ceac037070af0cd32d9dfd6b7f31c2079679697c41e7891caade42ecb9fac279f2512111bafb8f8d48f7919dc469cae993
+Description: Vulkan Extension Layer
+Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
 
 Package: vulkan-extension-layer
 Installed-Size: 2732

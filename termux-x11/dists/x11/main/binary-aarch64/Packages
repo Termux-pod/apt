@@ -6308,21 +6308,6 @@ SHA512: 3fcb14f67b2597569431303aa8b3631aa72b6cbd40897924c34ab61e4342bd393d8bd7a0
 Description: A simple text editor for the Xfce desktop environment
 Homepage: https://gitlab.xfce.org/apps/mousepad
 
-Package: mousepad
-Installed-Size: 724
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.6.4
-Depends: atk, gdk-pixbuf, glib, gspell, gtk3, gtksourceview4, harfbuzz, libcairo, libxfce4ui, libxfce4util, pango, xfconf, zlib
-Filename: pool/main/m/mousepad/mousepad_0.6.4_aarch64.deb
-Size: 137448
-MD5sum: 3b4a305bc5f596a2679578e325f4dfc2
-SHA1: c7f411a727daf1ed47660f840dbb8f0b4bf12e9b
-SHA256: e95c52c0d6d3dabd638d0b5cc503ecc7c4ca88ac0e2f93fed65f551ded68e16a
-SHA512: 82656d164ee15c4f320cd8322bdd1a62545f53e14fdba82ed4ec5ddd6ad51e752da918306b7cb95014e0f49d58ac7d1bba95ef9fcd336d1615a0ce2ccb47ec2c
-Description: A simple text editor for the Xfce desktop environment
-Homepage: https://gitlab.xfce.org/apps/mousepad
-
 Package: mousepad-static
 Installed-Size: 832
 Maintainer: @termux
@@ -8743,6 +8728,24 @@ Package: sdl2
 Installed-Size: 4120
 Maintainer: @termux
 Architecture: aarch64
+Version: 2.32.4
+Replaces: libsdl2
+Depends: libdecor, libiconv, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
+Recommends: opengl
+Conflicts: libsdl2
+Filename: pool/main/s/sdl2/sdl2_2.32.4_aarch64.deb
+Size: 730516
+MD5sum: 0b9eaad145c4a2742ba0fdecbea549c0
+SHA1: 2f6f01299ee9bd110c0c5440de641a5e4cc5b755
+SHA256: 51cf4de8abec7ede1df74a191ba244ae1cb2bcc4e983161e4cb6707864bf8a84
+SHA512: 22ddbaba59661441c6cccd878aea89c884e1db92534dcbf7f680e981328e692db27016796ccb0be63e57e748fe2cc5419b3275ee13a0de76e4a7d326c1ed8320
+Description: A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (version 2)
+Homepage: https://www.libsdl.org
+
+Package: sdl2
+Installed-Size: 4120
+Maintainer: @termux
+Architecture: aarch64
 Version: 2.32.2
 Replaces: libsdl2
 Depends: libdecor, libiconv, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
@@ -8772,24 +8775,6 @@ MD5sum: 6cb4b212f256158ce192eafe02db16dd
 SHA1: ca9dc17603027811f8d191b05abe28046e18efa5
 SHA256: a3c13f2356dde28e13c251bea3cf229cc6427ebce9e2d69e11c42e1259b4b3cc
 SHA512: 0c86263cc97292b909c3cb861f0ebf1ac2580e959b97766bc4d323bfbe87e1535c2104cd9169371839009d80b7a4b3c8fd0c3107a9d962d63b9fcf249692ec4e
-Description: Simple DirectMedia Layer (SDL) sdl2-compat
-Homepage: https://www.libsdl.org
-
-Package: sdl2-compat
-Installed-Size: 3556
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.32.52-1
-Replaces: sdl2
-Provides: sdl2
-Depends: sdl3
-Breaks: sdl2
-Filename: pool/main/s/sdl2-compat/sdl2-compat_2.32.52-1_aarch64.deb
-Size: 446576
-MD5sum: ae1aee7596993219cf690e5cf10a7579
-SHA1: b66f53ee99db7750c4ad67ad38a5ab9f31f429de
-SHA256: bd003dad05b7d4dbd11354a4c6f6872e937ca73e5cf9459be328d13270bbf9b6
-SHA512: cc45b214e7dd104726d8628faf2a134524982e8a7e289a3273b313f542b6d52e06721e183dc23ccb6fc685d780d9d6e31697a7eb73f665708fa5db063b3921cf
 Description: Simple DirectMedia Layer (SDL) sdl2-compat
 Homepage: https://www.libsdl.org
 
@@ -8947,6 +8932,21 @@ Package: sdl2-static
 Installed-Size: 3360
 Maintainer: @termux
 Architecture: aarch64
+Version: 2.32.4
+Depends: sdl2 (= 2.32.4)
+Filename: pool/main/s/sdl2-static/sdl2-static_2.32.4_aarch64.deb
+Size: 605872
+MD5sum: 37357b71ce50d593816abd05ca4ee27a
+SHA1: eea159fcf7d717937e82576a8aaed8696bd12642
+SHA256: 79bdc38142eac6c77056a9f7527e40ccdbcd938df46c3d2a17d9458aafbd496f
+SHA512: 7739e04a4b2e0624b4ba9fb923c4c0f4876417e964fa086e890ee4dfd939219d3ea43264aa7132973d396cfae16e3a212b23bc96d96b1a2348bfee3d0f7e4607
+Description: Static libraries for sdl2
+Homepage: https://www.libsdl.org
+
+Package: sdl2-static
+Installed-Size: 3360
+Maintainer: @termux
+Architecture: aarch64
 Version: 2.32.2
 Depends: sdl2 (= 2.32.2)
 Filename: pool/main/s/sdl2-static/sdl2-static_2.32.2_aarch64.deb
@@ -9000,21 +9000,6 @@ MD5sum: b5bdeffc431e6890e3ce390fafe57e9d
 SHA1: 5f4820a39f21ae65ed368632e08b54080cebab29
 SHA256: c7d308be3754d21c029192be8d5338b8dc59d21eeca759098f6815b8892b19af
 SHA512: fc07ce48959e78a6be17fb542b16ff4feddd356f61279a0b71c237866c82316a57d7234185a82ab53a4a2b92778fe6f7d92a089379e4d94765254dad814d1d7d
-Description: Simple DirectMedia Layer 3
-Homepage: https://www.libsdl.org
-
-Package: sdl3
-Installed-Size: 6420
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.2.8
-Depends: libandroid-shmem, libdecor, libiconv, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
-Filename: pool/main/s/sdl3/sdl3_3.2.8_aarch64.deb
-Size: 1160180
-MD5sum: 2a4fa8146d53c53b10ed6987acf1e39c
-SHA1: 99b370d87a3c81dccd75a45db7422b0f73d6b33d
-SHA256: 681379cd1d9ae57680acd7dd512ad72bdca0f998cb348231b36dbe7b94ff08a3
-SHA512: 32f9d69b0b9997444ccdd3b7a7d64fa49b58b80e37f9fe7ae129f2ed26ec3481e21ebae9b645a56d855dba7408f07ed2c87b19f18e2b03230aa02043fe6f95b6
 Description: Simple DirectMedia Layer 3
 Homepage: https://www.libsdl.org
 

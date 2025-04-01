@@ -6235,21 +6235,6 @@ SHA512: 6e0ef501b92eae0a2d7de59c4775abcbb673b0766862566a16c780cdaf7d13a35dd17a85
 Description: A simple text editor for the Xfce desktop environment
 Homepage: https://gitlab.xfce.org/apps/mousepad
 
-Package: mousepad
-Installed-Size: 672
-Maintainer: @termux
-Architecture: i686
-Version: 0.6.4
-Depends: atk, gdk-pixbuf, glib, gspell, gtk3, gtksourceview4, harfbuzz, libcairo, libxfce4ui, libxfce4util, pango, xfconf, zlib
-Filename: pool/main/m/mousepad/mousepad_0.6.4_i686.deb
-Size: 143432
-MD5sum: 2f1e80548891b2a012b552524c0615ec
-SHA1: 4f60065d29937469f6810a325f9cb0bed972ea7a
-SHA256: 07a29c31e6e6a60f4df49aed242640ab8952adbd8b69c51e7520cfb3de3a85ef
-SHA512: 9d14c27bd189dc8eabace2ac279acc56714aa3d90597f15a3095f1f6f89a11227f558c2273b5c9200d0026ff46c4384632e2bbca5a1dc8b97030c209e96d8c45
-Description: A simple text editor for the Xfce desktop environment
-Homepage: https://gitlab.xfce.org/apps/mousepad
-
 Package: mousepad-static
 Installed-Size: 612
 Maintainer: @termux
@@ -8638,6 +8623,24 @@ Package: sdl2
 Installed-Size: 4220
 Maintainer: @termux
 Architecture: i686
+Version: 2.32.4
+Replaces: libsdl2
+Depends: libdecor, libiconv, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
+Recommends: opengl
+Conflicts: libsdl2
+Filename: pool/main/s/sdl2/sdl2_2.32.4_i686.deb
+Size: 784148
+MD5sum: be41ef6a15e1a2c8208f6f3629bbabca
+SHA1: bd8df39f840d6edc0d8dd9c1beab1277c1efd206
+SHA256: 6f91bfad8691660e015b93659604bbef87d2e992714e5f38c5f799e143709201
+SHA512: 833dfbb30d50d8469072b51c8ad22875bd3d33a0aa18f24f608879df2ccdeee4db218e5eb560aa06745ea15ede1bacd64e55565a36c46e48872c21200d880a3a
+Description: A library for portable low-level access to a video framebuffer, audio output, mouse, and keyboard (version 2)
+Homepage: https://www.libsdl.org
+
+Package: sdl2
+Installed-Size: 4220
+Maintainer: @termux
+Architecture: i686
 Version: 2.32.2
 Replaces: libsdl2
 Depends: libdecor, libiconv, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
@@ -8667,24 +8670,6 @@ MD5sum: 399ade02b83a22cd1d7d1b7562bb217c
 SHA1: fd709c94982429094e7d15d71bca8a3dfff29e3d
 SHA256: bfced335714adc2a10038856c6686f284cef79b40c451c5cb62342530c973cd4
 SHA512: 5b870b6f729597b84af75cdf94876af9e5275c43117ad43dd5786127a1abaf3c063170b08f83fb38709f76dc6c42c572c27d09517a6bcbb3973d26d9d5de9d82
-Description: Simple DirectMedia Layer (SDL) sdl2-compat
-Homepage: https://www.libsdl.org
-
-Package: sdl2-compat
-Installed-Size: 4508
-Maintainer: @termux
-Architecture: i686
-Version: 2.32.52-1
-Replaces: sdl2
-Provides: sdl2
-Depends: sdl3
-Breaks: sdl2
-Filename: pool/main/s/sdl2-compat/sdl2-compat_2.32.52-1_i686.deb
-Size: 459252
-MD5sum: 01eb1fc0b5d878017021f86f58fc6cf0
-SHA1: 2ad505fa703525179d6fe7d9b1a75eb6857e3e75
-SHA256: 1f6df00ac74fe68f93a7bc30704e3e2dd0bbc19048d171fed0ce74610857e568
-SHA512: b124f089d1b7add641129ee88cbf0ba41dbe89339975eae7db983b754cf963334640f1709581444417e8b520d677f95b77740900e9b24721eed5d170e9e3239b
 Description: Simple DirectMedia Layer (SDL) sdl2-compat
 Homepage: https://www.libsdl.org
 
@@ -8842,6 +8827,21 @@ Package: sdl2-static
 Installed-Size: 2808
 Maintainer: @termux
 Architecture: i686
+Version: 2.32.4
+Depends: sdl2 (= 2.32.4)
+Filename: pool/main/s/sdl2-static/sdl2-static_2.32.4_i686.deb
+Size: 641168
+MD5sum: 24d054ddff8941d43250975140e7f57a
+SHA1: f236f059fb1b15d92ea57e83a79cc79bfa81f332
+SHA256: be99d5de3fcd6d981a2fac65fd0e0b806718854947b36969c648455006bbb104
+SHA512: 285f2e335e369660487e77f1973ce27070f6f75f768fddc700607ca0b26c35413c7511326a92314bf297761a0065d5b4712a6fa3065226e304d7757e15c13529
+Description: Static libraries for sdl2
+Homepage: https://www.libsdl.org
+
+Package: sdl2-static
+Installed-Size: 2808
+Maintainer: @termux
+Architecture: i686
 Version: 2.32.2
 Depends: sdl2 (= 2.32.2)
 Filename: pool/main/s/sdl2-static/sdl2-static_2.32.2_i686.deb
@@ -8895,21 +8895,6 @@ MD5sum: 165b64961b96258a91c75b97958514dc
 SHA1: 5f6de79c844887260b509e663ef9635c374c4285
 SHA256: cd1b5ab162140289a5fd5d78a6c3fee82efa2277bf4bbe97bcd96e6eb8f03344
 SHA512: 359f7b9dd192dcb1e162bd8728d1b69cbea46564e922509cc6784d3778cab05ba701422b6e0b5943369a23ba7b4f3cc8def7205ff5e6e894884251b16b130abb
-Description: Simple DirectMedia Layer 3
-Homepage: https://www.libsdl.org
-
-Package: sdl3
-Installed-Size: 6540
-Maintainer: @termux
-Architecture: i686
-Version: 3.2.8
-Depends: libandroid-shmem, libdecor, libiconv, libwayland, libx11, libxcursor, libxext, libxfixes, libxi, libxkbcommon, libxrandr, libxss, pulseaudio
-Filename: pool/main/s/sdl3/sdl3_3.2.8_i686.deb
-Size: 1268732
-MD5sum: 2e3eda4a1464b9705594f0ad1aa770be
-SHA1: e5108c8a289049fb45097ba6429f5b354b151534
-SHA256: 82c4f6aae4126e04a3d6ec12c78a4be8ed57dea8f228b9ad3192be64cce9d1e7
-SHA512: ef6b7859146d25c3d38b0cd3a791caa1641ddf2f6c7f85edd440933bde7c17b1b6b10ca06bb9affeedd064bbf3cdaec345656102feab87548c95d2d2bf78c3d7
 Description: Simple DirectMedia Layer 3
 Homepage: https://www.libsdl.org
 

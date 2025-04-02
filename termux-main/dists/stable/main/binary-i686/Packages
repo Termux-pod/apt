@@ -3673,22 +3673,6 @@ SHA512: 47a41d5df84fbcc947dc8867c21fdcc5b00628ecbdd7e2ccb605e0672cac88648d4b646e
 Description: Experimental implementation of OpenCL on Vulkan
 Homepage: https://github.com/kpet/clvk
 
-Package: clvk
-Installed-Size: 85908
-Maintainer: @termux
-Architecture: i686
-Version: 0.0.20250317.173942
-Depends: libc++, vulkan-loader
-Recommends: ocl-icd
-Filename: pool/main/c/clvk/clvk_0.0.20250317.173942_i686.deb
-Size: 22312052
-MD5sum: 8913fbbade22cf915050fb5d6c16c151
-SHA1: 92a7c9675ed2d74de0d905f8259bc7adccc42646
-SHA256: 3afe529813a51c291ef740c0e0d213f1a4e944152716ec2ddc14f95ba2cc3949
-SHA512: e77bc1458bf4a8e4486481d00aca53aaef007e80986d2403ef9b7e68abd573f0562836a154bd8a91c55d5115819ed296baf7d07195dea67234e76218cdb09f36
-Description: Experimental implementation of OpenCL on Vulkan
-Homepage: https://github.com/kpet/clvk
-
 Package: cmake
 Installed-Size: 51596
 Maintainer: @termux
@@ -4423,6 +4407,22 @@ SHA256: 352e20d4ded77ea826c685dc20dc78b60d6566eb92c47465452b9b1f2736b2fb
 SHA512: d6f1644821cabe6daf8834bd0005251dfb6a49bca277a45c14ec5a3094703bb4b13f93938d7bb42a0a87790ca1708fce3d47d6fe919d463cae26605c959a866d
 Description: Static libraries for cups
 Homepage: https://www.cups.org/
+
+Package: curl
+Essential: yes
+Installed-Size: 384
+Maintainer: @termux
+Architecture: i686
+Version: 8.13.0
+Depends: libcurl (= 8.13.0)
+Filename: pool/main/c/curl/curl_8.13.0_i686.deb
+Size: 233748
+MD5sum: 9fb3235fe470531dc0ad1a005bc4d76e
+SHA1: 634428b333c658f6c21b586bd8791b19234035a1
+SHA256: 85faf27b493b0244ce1a45f3f2ca88c5eb20f0df02aa53b27643d42aea3b85e3
+SHA512: 7f63736c55849dd08474e6efa5f9c0bf8e8f134b9a44e62c7309ad4eb8fddc919e29db22242093057b66f542d79664aa80bf2bfd4730b5ce0ae2b507d47d7155
+Description: Command line tool for transferring data with URL syntax
+Homepage: https://curl.se/
 
 Package: curl
 Essential: yes
@@ -5960,20 +5960,6 @@ MD5sum: 2bed56760480184f3fde340a9c74612d
 SHA1: 938f7e2ef3b1fc749bd6d031fd36bfbfbf841326
 SHA256: 23d24bfb9e94473e1b225d15a65a49eb881f3bec0410e71b39dd76ff97970f24
 SHA512: 5e70e9d58248ec2a993cac293cea9093c1530e039f3f240e3d53ecbbee2c8743d3333de96f07ca5845460d1a906065d5ac8333ae65b03f6b896cf41879f8b46c
-Description: A more intuitive version of du in rust
-Homepage: https://github.com/bootandy/dust
-
-Package: dust
-Installed-Size: 2708
-Maintainer: @termux
-Architecture: i686
-Version: 1.1.2
-Filename: pool/main/d/dust/dust_1.1.2_i686.deb
-Size: 884564
-MD5sum: b0c1d6f1c06ff3cb82208d4f1384616e
-SHA1: aa38477de742daf37ab247e7c06e2e747f099725
-SHA256: 0e76a47e02a5885f900e0cf99bc17dd41ea94ccf3ce7baeb04ad00628c90d327
-SHA512: 960545248efe2a08613b53e411e435e12c6c42e63075629d6e4a85b040bfa9712f5fa9ca3036eb177f123abc70fdd07f453cdbf1382e5abe626821cb0df6dfb4
 Description: A more intuitive version of du in rust
 Homepage: https://github.com/bootandy/dust
 
@@ -11663,6 +11649,21 @@ Package: jackett
 Installed-Size: 14332
 Maintainer: @termux
 Architecture: i686
+Version: 0.22.1719
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.1719_i686.deb
+Size: 3175260
+MD5sum: 651ef41203b3c004328e09f804cc0476
+SHA1: 283359a9a5baa29808c617431a5ab2dcfdd94d8e
+SHA256: 5be3b4bea9f0c36bfdc39bc4c3d0bdbd5ef64881172de60bd58c87fa298959ac
+SHA512: 8627873b87ad4e279bec6bcf8f2c25827105aa21cf9761b8082074d3160d192bb2c23d244f12f30b4c128106c3f20ef4fc0fcfd2eb80625e2335ed1c866ba808
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
+
+Package: jackett
+Installed-Size: 14332
+Maintainer: @termux
+Architecture: i686
 Version: 0.22.1714
 Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
 Filename: pool/main/j/jackett/jackett_0.22.1714_i686.deb
@@ -14394,6 +14395,25 @@ Homepage: https://sourceforge.net/projects/cunit/
 
 Package: libcurl
 Essential: yes
+Installed-Size: 3304
+Maintainer: @termux
+Architecture: i686
+Version: 8.13.0
+Replaces: libcurl-dev
+Depends: libnghttp2, libnghttp3, libssh2, openssl (>= 1:3.2.1-1), zlib
+Conflicts: apt (<< 1.4.8-8)
+Breaks: libcurl-dev
+Filename: pool/main/libc/libcurl/libcurl_8.13.0_i686.deb
+Size: 992220
+MD5sum: cfe205aeb8a2760045553ff53f1d8e05
+SHA1: 63fc66d1358c41a8f3882738c0ef0871e65a01f6
+SHA256: d252f00384e40d9a11c00014473b94bc56b0f839d59da5897adaa6fbda2cc476
+SHA512: 670a66fed7904d07959eb161b5be718bca308a8829db29c1510c144c66227c7d7c065b8a9b9bc8f16b09fc533b9796299077a2855b655938a87fd1fd6ed6c700
+Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl
+Essential: yes
 Installed-Size: 3284
 Maintainer: @termux
 Architecture: i686
@@ -14409,6 +14429,21 @@ SHA1: 91ab97230308a3da610ce83654bac13e5dc7a31e
 SHA256: f7edbefa76c4512063a9f6c3e095bf2a720ccf965cc3c44d648fc318be2c3307
 SHA512: 9ee4fea86a5cf9590fc801441bcfe42163b2d2e1c6022dd6009ba84990a9054637cf85c167f92d827918d4517addddb3a2fab2bf90e85f7918cbcecd68a16bbd
 Description: Easy-to-use client-side URL transfer library
+Homepage: https://curl.se/
+
+Package: libcurl-static
+Installed-Size: 1404
+Maintainer: @termux
+Architecture: i686
+Version: 8.13.0
+Depends: libcurl (= 8.13.0)
+Filename: pool/main/libc/libcurl-static/libcurl-static_8.13.0_i686.deb
+Size: 405016
+MD5sum: e7c441eb61549d7d351e3334265786bc
+SHA1: df341771f7c104fc80279b1beac5103e77856359
+SHA256: 265a92d5af4fc4611b66da19455f1d66c8950d679e404c85960e015f288361f9
+SHA512: d0aab48faf97de377988811422202f67d0c9fe4440d305273a7de87becf662669b02013a1271f02b85923c39dce065117dca0829a69cf80b145f9174f2002052
+Description: Static libraries for libcurl
 Homepage: https://curl.se/
 
 Package: libcurl-static
@@ -25817,6 +25852,20 @@ Description: A server software with the aim of being fully compliant with DLNA/U
 Homepage: https://sourceforge.net/projects/minidlna/
 
 Package: miniflux
+Installed-Size: 20604
+Maintainer: @termux
+Architecture: i686
+Version: 2.2.7
+Filename: pool/main/m/miniflux/miniflux_2.2.7_i686.deb
+Size: 6228476
+MD5sum: 72273ab9816e3eb74a29f9a6330cbf45
+SHA1: dc6c0b37e20813b8b477f2f8d0022fcedf4db001
+SHA256: 9083241413720a9c3b5612b8dd5d76a42cf1a673632ea2f9ed18bebf74f8fdf6
+SHA512: 4b6a5aa2be54f611275752a283e8dada5635f2ce98c305153d4cd758ccb58e1e4d1ffaf05cf9defbcedca05ffae4e588ee8502eb1047607c0244437823bc4bde
+Description: A minimalist and opinionated feed reader
+Homepage: https://miniflux.app/
+
+Package: miniflux
 Installed-Size: 20348
 Maintainer: @termux
 Architecture: i686
@@ -27650,21 +27699,21 @@ Description: This project provides a command line tool called nms that recreates
 Homepage: https://github.com/bartobri/no-more-secrets
 
 Package: nodejs
-Installed-Size: 97732
+Installed-Size: 97744
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: i686
-Version: 23.10.0-1
+Version: 23.11.0
 Replaces: nodejs-current, nodejs-dev
 Depends: libc++, openssl, c-ares, libicu, libsqlite, zlib
 Suggests: clang, make, pkg-config, python
 Conflicts: nodejs-lts, nodejs-current
 Breaks: nodejs-dev
-Filename: pool/main/n/nodejs/nodejs_23.10.0-1_i686.deb
-Size: 14753020
-MD5sum: a326a205fd86dc1600a473d524d7c5f3
-SHA1: 0e5b3d46d2b172f7025ea6ce02fbf8c254cdd384
-SHA256: 73a0af0aee4fa75728316d87c7b3680efaa302e7954e1d5c8547ab0975dc793b
-SHA512: 5d9e787325c1573377237047427bb8bd0efce5e43205e0f2e2791a1ed51e13cd6cf1fa26a0116b3e2d2ad935ef612cf02463f5b52cea234007901a81b8686761
+Filename: pool/main/n/nodejs/nodejs_23.11.0_i686.deb
+Size: 14755856
+MD5sum: 5fe3906eba3bb799cb81ce3d116f60e4
+SHA1: 234c7c5e6b4e8c1e5d2651a306c406f60cd92e73
+SHA256: 130d65b36b012b203f7b85fef1bba1a01d51495d4a18fbc8635ff52d84842d26
+SHA512: 57091087f09d5d7de0b253ab5fb99b77eb3c2c6ec73e0054877fbfe8d2f2aa0e4b51bc09f113d4f2142ce50f54615718544e5cceb8754a50a34d6be52b023eb2
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
@@ -36386,20 +36435,6 @@ MD5sum: 431c8b65627ba041bbc5282f8b3477a3
 SHA1: 9449482eb29fd9fe1808be22edfed874f013832d
 SHA256: 8c1ef33e45d1e38d1885272d6985f98f16fe272b010d9cdc47efd3bebff94029
 SHA512: 4f3b0e1b87920473a16e7f7f5b1a8e5714f8b6d22811dd7197684011a2e1ee51605a989b3cd5f3055a66be7671d8cef7d6f90d67dd1885110682b320745b932f
-Description: Secure Access for Developers that doesn't get in the way
-Homepage: https://github.com/gravitational/teleport
-
-Package: teleport-tsh
-Installed-Size: 109436
-Maintainer: @termux
-Architecture: i686
-Version: 17.4.1
-Filename: pool/main/t/teleport-tsh/teleport-tsh_17.4.1_i686.deb
-Size: 22794856
-MD5sum: aacab4f06b470f13670c3c1bf7c77de3
-SHA1: 961b9e0c1308b433f7d987bb0522d2a26a40d6fa
-SHA256: a23cb65af37eb33ea0638cafc8d386ebbe9be641565653ce403405ee116f47d3
-SHA512: 259b8bed114b9cf2623e4638c17a5d6b6e348cdefc688e853c027df89d566f6561f27ef6438027613b46e5c8e30895af571d289cbe0ca8ddf6fc98404660102f
 Description: Secure Access for Developers that doesn't get in the way
 Homepage: https://github.com/gravitational/teleport
 

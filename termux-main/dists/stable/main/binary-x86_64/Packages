@@ -25947,6 +25947,24 @@ Package: mesa
 Installed-Size: 16908
 Maintainer: @termux
 Architecture: x86_64
+Version: 25.0.3-1
+Replaces: libmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 21), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b)
+Filename: pool/main/m/mesa/mesa_25.0.3-1_x86_64.deb
+Size: 3585804
+MD5sum: 048fde06df6b866c1cee70413e4b01ef
+SHA1: 86a8458072b9620d8fe134a01689439bb93dd11b
+SHA256: e9a94ea69b6ff0dc3147ebb7b1bddc35aa3c4d43e8fb9c92e570305a3036a4e0
+SHA512: b175e3df72225a234fe0752180f66be546d564af562a5032afa940357a2346ce987b5396d9e2ab1358f7ecdb0b693967bfea70c4234f1868bef1799cd09f901c
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
+Installed-Size: 16908
+Maintainer: @termux
+Architecture: x86_64
 Version: 25.0.3
 Replaces: libmesa
 Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 20), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
@@ -25965,6 +25983,23 @@ Package: mesa-dev
 Installed-Size: 168
 Maintainer: @termux
 Architecture: all
+Version: 25.0.3-1
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_25.0.3-1_all.deb
+Size: 25328
+MD5sum: 446b9455d14665dcaf2e09e10e1c1174
+SHA1: bd7f7922948fd3ae1464ac8ca812b25f11e3200f
+SHA256: 345957a2852ea0c40f0903806657fc9063ab0626e9b0ac969dacd17a3d664c3e
+SHA512: 703072aa0e0b5c9aa47737af31e321dfb805042bd4b4d754e59e4e0a5fa14b77cf2c9d82be4fb10ee9a8e9669187d2d9a9d2a57ffad0baf2aedb75f00ff2c3e6
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 168
+Maintainer: @termux
+Architecture: all
 Version: 25.0.3
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -25976,6 +26011,21 @@ SHA1: 5341cb8d08a6832b1beb10a347001ff00ce30d9e
 SHA256: 670009449b1a157e64c8e8909574b58fef2cbec7024f87850955d1a7ca2529a7
 SHA512: 8ccb61d9de5b37820a0a5b09675a5be210922d7f68f21739274a2b5ba15d0df9b08d4d078675284952d0c014616558a6632e75258ebf80d5fcb1a54a9fe25099
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 9508
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.0.3-1
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.0.3-1_x86_64.deb
+Size: 1676248
+MD5sum: fbf9af4e9751eb95015f87e99294ada8
+SHA1: eb6061e4fb60180e0ede207b1d7ab64c1e5e43c3
+SHA256: 6cd61d620df1a0201a8a1a06505324715e43b3e1bf6ff698cb73aebb6a7ebde3
+SHA512: 9f5c4463970bc1ce59ba38abba6925c145ea597d7d91051b4157e380294831d18b28685499be12b117da2f7a0033b7a9f14f618ca83b1345b3c4759002d6268d
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -26401,21 +26451,6 @@ MD5sum: 36cca0e2a32e5e1e1c389c412e236498
 SHA1: 4e2ca6ccb9b63246e29019b7502afa900c781f02
 SHA256: 6c9570e9960fa67595e83062a83f63c236599196c383d009766735b90ffd62e5
 SHA512: 857b1d1a35cb963df0145e7f93295adbacb59a223a1479bb58753e6c235c111a33b20baf18f2586a06556920e658689fe97389cf767e35a6991e54015c6b6d6a
-Description: A private, secure, untraceable, decentralised digital currency
-Homepage: https://getmonero.org/
-
-Package: monero
-Installed-Size: 81940
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.18.3.4-3
-Depends: boost, libc++, libprotobuf, libsodium, libunbound, libusb, libzmq, miniupnpc, openssl, readline
-Filename: pool/main/m/monero/monero_0.18.3.4-3_x86_64.deb
-Size: 15080860
-MD5sum: a28392215501987fc3f2f02d6532572a
-SHA1: b2797e345f078bbe6e4a2ca767e0e5c69676f77c
-SHA256: 30910f5077636e900060ce0c853e4893bf0d99e4510d06c6b3af18b76b1fffdd
-SHA512: ea9b04034825b75b395ed493b56c540e6514099b6c51000c91311aa1e3c62b3cc8e9355a3c76b2e65f230e0748a31d8ba5c73c627bfce51ce70320ec4f4040e8
 Description: A private, secure, untraceable, decentralised digital currency
 Homepage: https://getmonero.org/
 
@@ -29307,6 +29342,23 @@ SHA256: 495264b23e1bbcfba74133fd2ea880b3032214c7cdfc6278e083b8679352af58
 SHA512: 0d2dd86311d2a9ce3a2ca0ce3c8a9340b82ad982cde24d1d33b6026e6a0bf94c2154389a551837f57e16d6ba2166fff288653523c7c894284935011a283a9e30
 Description: Simple tools for OpenStreetMap processing
 Homepage: https://gitlab.com/osm-c-tools/osmctools
+
+Package: osmesa
+Installed-Size: 13880
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.0.3-1
+Replaces: mesa (<< 22.3.1)
+Depends: mesa (= 25.0.3-1)
+Breaks: mesa (<< 22.3.1)
+Filename: pool/main/o/osmesa/osmesa_25.0.3-1_x86_64.deb
+Size: 2854236
+MD5sum: 9cd64312ecf1b88193584f5c090a760e
+SHA1: f2abbadb777d23b01989174d146971dbf1ef8317
+SHA256: 642e6173fb2cad0e7589e1d90446b3e69408df23d90c61c7cf2b13aae35eb6dc
+SHA512: 9cf3f50c4d98a2eab009af3084dcb926191938c6ea94f5c2e53ce036a88ae43248c6aedf24b58ab8ef42236b08cedb280df8ef2ee94ddb83e6addf294906f522
+Description: Mesa Off-screen Rendering Library
+Homepage: https://www.mesa3d.org
 
 Package: osmesa
 Installed-Size: 13880
@@ -34017,6 +34069,21 @@ Description: A cross-platform command-line tool for executing jobs in parallel
 Homepage: https://github.com/shenwei356/rush
 
 Package: rust
+Installed-Size: 304396
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.86.0
+Depends: clang, libc++, libllvm (<< 21), lld, openssl, zlib, rust-std-x86-64-linux-android
+Filename: pool/main/r/rust/rust_1.86.0_x86_64.deb
+Size: 63302696
+MD5sum: fe46f29f72464f2198a41fac50af1ebb
+SHA1: d77a45935ccfac54985f30614970b4738e8adc27
+SHA256: b0d76988a5564514c9ec1831c4b1b901f36f0cd30a42632177db90de95e856b8
+SHA512: 327d8b869b88c00d7921f6ad0813f329c06eb737794ab967d534ea67e2f44ff2e4117ca5f0f552a42c5d4a060139a8c577d3ebc1c1935f034b1a0acf024c4dd3
+Description: Systems programming language focused on safety, speed and concurrency
+Homepage: https://www.rust-lang.org/
+
+Package: rust
 Installed-Size: 301832
 Maintainer: @termux
 Architecture: x86_64
@@ -34061,6 +34128,20 @@ Description: Automatically generates Rust FFI bindings to C (and some C++) libra
 Homepage: https://github.com/rust-lang/rust-bindgen
 
 Package: rust-docs
+Installed-Size: 736052
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Filename: pool/main/r/rust-docs/rust-docs_1.86.0_all.deb
+Size: 31657576
+MD5sum: 8599d49fff4423da2130f23f7f041781
+SHA1: c6e1c9a0552537290c7f571f3417ce7f6eeb722f
+SHA256: 5673cce5abf94704a460d25c567c9a1457a873ade79cf255fb5ddbd1f77ea123
+SHA512: d57c3e8fdfc87191af46a992ac39fd3a5021eca073485023d70761a247436ecab9a577061223af5b7b09fd5f55d0ba380e8783384acc66ed059444cba864e34e
+Description: Rust documentation
+Homepage: https://www.rust-lang.org/
+
+Package: rust-docs
 Installed-Size: 713168
 Maintainer: @termux
 Architecture: all
@@ -34072,6 +34153,22 @@ SHA1: f6c6f9da0da223e12121d20f9f3310468116b1a2
 SHA256: 47d0400ceaa5c07bf998ffbd1d28e5f17d693a9ba52c0de1662343af7707ebd6
 SHA512: cac2a2c6109753c6a784fd8cc5b60ff03c23fc7bc6b130da7f7a3f862063a57dd82288106068110544551281f0d130bba2058e4cc6eb69fc81e548a426bcb475
 Description: Rust documentation
+Homepage: https://www.rust-lang.org/
+
+Package: rust-src
+Installed-Size: 38860
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Replaces: rust (<< 1.74.1-1)
+Breaks: rust (<< 1.74.1-1)
+Filename: pool/main/r/rust-src/rust-src_1.86.0_all.deb
+Size: 3149096
+MD5sum: e06931f2b7306663391d4b7df3d36560
+SHA1: b55b66aa53abb3bf97e932db2e7117ca76c33db8
+SHA256: f0a5cdf547967101c49d8340f635ec5bbb02960e86ddd96c9f0523bca9ee0c39
+SHA512: 948a8b2789f831aa6c9389c6b824fa8e6ec715e7aa4d22a7a045508bd6b189ba148b6896ea77f0b84791f3bf801ea75b17975e1c9d94e0540acdc35c454e36c5
+Description: Rust source code files
 Homepage: https://www.rust-lang.org/
 
 Package: rust-src
@@ -34091,6 +34188,22 @@ Description: Rust source code files
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-aarch64-linux-android
+Installed-Size: 99960
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Replaces: rust (<< 1.74.1-1)
+Breaks: rust (<< 1.74.1-1)
+Filename: pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.86.0_all.deb
+Size: 24512636
+MD5sum: 3eadba33d66a65f15261e7cd435d6d32
+SHA1: aac05d713e77760f42c2510a7dca6a9565883b61
+SHA256: 1eb4b6d1502f3db5e1b11ef3d484781ac6eee96f891f5ce09289c1644546f339
+SHA512: ffeea24b8e8a949d2957220f1d87547f3b6ac4e971a54d9d72824a179c791b1e455fe259e65c363afd074e651627c7b809e3f613bb64c7756aab228032ae2953
+Description: Rust std for target aarch64-linux-android
+Homepage: https://www.rust-lang.org/
+
+Package: rust-std-aarch64-linux-android
 Installed-Size: 98312
 Maintainer: @termux
 Architecture: all
@@ -34104,6 +34217,22 @@ SHA1: 210a904a4a1e723c0ba69968487751633a54f7b1
 SHA256: 783069eb3395742fcb86dfba895295aa4e18c2a17abc894d0528f72d8f9a1cd7
 SHA512: 631bf98a058f528d3ebf5a12b0b32362b386cdea00b53d252826acf26d928e10119b762264d84e1bc281436a0a85621c2234f1f834a7a2ac36920523c153f4ba
 Description: Rust std for target aarch64-linux-android
+Homepage: https://www.rust-lang.org/
+
+Package: rust-std-armv7-linux-androideabi
+Installed-Size: 95072
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Replaces: rust (<< 1.74.1-1)
+Breaks: rust (<< 1.74.1-1)
+Filename: pool/main/r/rust-std-armv7-linux-androideabi/rust-std-armv7-linux-androideabi_1.86.0_all.deb
+Size: 23932660
+MD5sum: 49e96c9c03886ce48e8933cd20a1cfab
+SHA1: b1ef4673b812401c5ec8cc19ae973947b85dcfc2
+SHA256: 47b438069d259957452a03b124395cd26488b6dba548944102db22fe54babc20
+SHA512: 2737213ed4d9c4bf619eeca73fc05899c65c5b399ba78d7fc999fcca5874fcfe8e9f2b72250963109566000cd33115583f2edf126c601dc01d84088424779a9e
+Description: Rust std for target armv7-linux-androideabi
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-armv7-linux-androideabi
@@ -34123,6 +34252,22 @@ Description: Rust std for target armv7-linux-androideabi
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-i686-linux-android
+Installed-Size: 107032
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Replaces: rust (<< 1.74.1-1)
+Breaks: rust (<< 1.74.1-1)
+Filename: pool/main/r/rust-std-i686-linux-android/rust-std-i686-linux-android_1.86.0_all.deb
+Size: 25586364
+MD5sum: 8eae531c6e6d4aacbd6c22149968cf45
+SHA1: 4c5f1699a8af4639a2fbbe35b8a2a4150700a908
+SHA256: ad3e85a59abed34dd54d224ff5aa7a2377a269f8717fd06ec6126c2836bf93c1
+SHA512: 92b54ef18bc49d8d6c34e4f9ac75d6acbf0d26af5823cc82f5beaa128efe7f0ec24099769ec94b4d41fcb88f413d71d6e3e44d8b708e7467745d47f2db6e873d
+Description: Rust std for target i686-linux-android
+Homepage: https://www.rust-lang.org/
+
+Package: rust-std-i686-linux-android
 Installed-Size: 105144
 Maintainer: @termux
 Architecture: all
@@ -34136,6 +34281,22 @@ SHA1: 35500ba0899f28114e7eb3018aacfc025243ddbd
 SHA256: dd81c1397a1875cf665271c6ee7b9241a408821b711c795cd1b3dc042f9cf818
 SHA512: 96f81f250bac395bd12928091b662036ed8c263171fe92faaec51f2425615155af6c29a2979804ec3b90287b672a33ffcb6b4339405d09d5876f4822e5191536
 Description: Rust std for target i686-linux-android
+Homepage: https://www.rust-lang.org/
+
+Package: rust-std-wasm32-unknown-unknown
+Installed-Size: 74044
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Replaces: rust-std-wasm32 (<< 1.74.1-1)
+Breaks: rust-std-wasm32 (<< 1.74.1-1)
+Filename: pool/main/r/rust-std-wasm32-unknown-unknown/rust-std-wasm32-unknown-unknown_1.86.0_all.deb
+Size: 18943068
+MD5sum: c6f6fcb43b6295dfc0c724d5b715860d
+SHA1: 70f72ad6b6f9f0055da1333fa192c40d3a2d745f
+SHA256: 272e2ef5b25190df172d66bf17be136c755d7b1e8ee1cf66334e714cf2b208dd
+SHA512: dc404eef4c5a2f158606583479c9ef91a10f6eddcb1208a86a2516aaf0afc18286490888ced1f226f03f08c6d1c8cbd1b55763b39c68b7457d726f3139459408
+Description: Rust std for target wasm32-unknown-unknown
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-wasm32-unknown-unknown
@@ -34171,6 +34332,20 @@ Description: Rust std for target wasm32-wasi
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-wasm32-wasip1
+Installed-Size: 77252
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Filename: pool/main/r/rust-std-wasm32-wasip1/rust-std-wasm32-wasip1_1.86.0_all.deb
+Size: 19807212
+MD5sum: 212a424f350b31f01a808e8bba86235c
+SHA1: e0a4fe83db29e632a8010f616964af898b7ea993
+SHA256: affb0d1d4197002330e20588312f38fae9ce9c22eaead143239af2364e90c65f
+SHA512: 7b6a54b1e172c4d30b32eaf5d56f371b5388f807c01340ae6763f7cb2aa10c5f560ebc71051d32407f6ceb133861b0e5918a2bd29d156a59f241e4148befb510
+Description: Rust std for target wasm32-wasip1
+Homepage: https://www.rust-lang.org/
+
+Package: rust-std-wasm32-wasip1
 Installed-Size: 75920
 Maintainer: @termux
 Architecture: all
@@ -34185,6 +34360,20 @@ Description: Rust std for target wasm32-wasip1
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-wasm32-wasip2
+Installed-Size: 78000
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Filename: pool/main/r/rust-std-wasm32-wasip2/rust-std-wasm32-wasip2_1.86.0_all.deb
+Size: 19986700
+MD5sum: dffdd1abb5c3ca95dce370baf10f10e6
+SHA1: c9a2e8ef3a5118efd8f7c22bb7e4d59790d82976
+SHA256: 21b02d70b870aeeacc22c3fb4879014920c16f92ed12b84774b3dfbbf1e98006
+SHA512: f008ab7b2eae13cca41268179f51d25e21994e7d7d63dd4653b3df89c155c6cb7261a782715daf695b8d3969f047cce883f1d3fa1f0e08b72a592403fa6d0745
+Description: Rust std for target wasm32-wasip2
+Homepage: https://www.rust-lang.org/
+
+Package: rust-std-wasm32-wasip2
 Installed-Size: 76556
 Maintainer: @termux
 Architecture: all
@@ -34196,6 +34385,22 @@ SHA1: 242f50a2fd1504f0e9dfd7158cedffbe7d31bf99
 SHA256: 18ee9b11b04ca18c89b058e7ccca22d58d0e132ebe2193473a55713857c63077
 SHA512: 2fed8b9f98b40b00ee11dc5b485af56758757ac3b432c64c04b5637b1a1e8d6539590c7f4a1616da893d57f2f0da1916f8ad27b9c6e27df3de0da6c20da25fa8
 Description: Rust std for target wasm32-wasip2
+Homepage: https://www.rust-lang.org/
+
+Package: rust-std-x86-64-linux-android
+Installed-Size: 118148
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Replaces: rust (<< 1.74.1-1)
+Breaks: rust (<< 1.74.1-1)
+Filename: pool/main/r/rust-std-x86-64-linux-android/rust-std-x86-64-linux-android_1.86.0_all.deb
+Size: 27176364
+MD5sum: a49610c6a8ad6bc829214b0f1e179785
+SHA1: ce7b8ce8d6beb99f391bfa77d485a88cb66bdf04
+SHA256: 51aa5a99d574cd8a6626df1f288e87807a9aedb3cc816fd5c33ec92ba2aff4e6
+SHA512: 77fb5849a3b40d82d07290898d2afc670161a7f7b91a8c7efa389f10ed42a92a195fb74220d41942d80b2c38d82566d5d5a1c549d2310ab172ffd0b189efabdb
+Description: Rust std for target x86_64-linux-android
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-x86-64-linux-android
@@ -34215,6 +34420,22 @@ Description: Rust std for target x86_64-linux-android
 Homepage: https://www.rust-lang.org/
 
 Package: rustc-dev
+Installed-Size: 264924
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.86.0
+Replaces: rust (<< 1.74.1-1)
+Breaks: rust (<< 1.74.1-1)
+Filename: pool/main/r/rustc-dev/rustc-dev_1.86.0_x86_64.deb
+Size: 66830692
+MD5sum: a7937b7a2877c5577c656d021fb296a3
+SHA1: cc84b94a7d1aa0dee179f0b3cb7d49c33cc8f48b
+SHA256: 037028fd8ae27d34c64a6fc7ed2624a73df5c1527c355c0d0daaae2a9aa032ce
+SHA512: a6bd8f7420516339792b19e8098fdf330bb2041e7b273e7063ed70f9dbf4f498e725bcecc16f0b4f6c41e24dc0df15a627f96dfd360370b0cac91227fe2a0343
+Description: Rust compiler development libs
+Homepage: https://www.rust-lang.org/
+
+Package: rustc-dev
 Installed-Size: 262704
 Maintainer: @termux
 Architecture: x86_64
@@ -34228,6 +34449,22 @@ SHA1: eb69582e33d5fd6193e7c37c3289bb120286dc71
 SHA256: a358b22d5545975f0a259c2eee69013524f9e070bccedbf3ebef311dede7f91f
 SHA512: 586485f211ec10ef225100d41312423dad14e153c988f2cec12683b985455173fe6be5ea0cc9cee05190c74d2e33c74962daf87020366f5ac9772f466facfbca
 Description: Rust compiler development libs
+Homepage: https://www.rust-lang.org/
+
+Package: rustc-src
+Installed-Size: 38148
+Maintainer: @termux
+Architecture: all
+Version: 1.86.0
+Replaces: rust (<< 1.74.1-1)
+Breaks: rust (<< 1.74.1-1)
+Filename: pool/main/r/rustc-src/rustc-src_1.86.0_all.deb
+Size: 4840272
+MD5sum: d48987682c4daf90340802ee197061ac
+SHA1: 16f7d8272480300d5c38282c032c8014bd828a31
+SHA256: 2847f062124b8fcd705842f267d9aaa4ad145616f159ebcef646fc4a4881de7f
+SHA512: 8f4de312d58c5991bb9c4293983ede23246b2088994721489e85e914ae192e183c7bb0b116c04c0711c8e5da4c19488743433434697eb0bee235e8d0ba1da668
+Description: Rust compiler source code files
 Homepage: https://www.rust-lang.org/
 
 Package: rustc-src

@@ -1501,21 +1501,6 @@ SHA512: 0530a3de181318698c85cc4a5381a530887aa80a8c320cc62e47608747934659f64c153c
 Description: Mozilla Firefox web browser
 Homepage: https://www.mozilla.org/firefox
 
-Package: firefox
-Installed-Size: 245116
-Maintainer: @termux
-Architecture: x86_64
-Version: 136.0.4
-Depends: ffmpeg, fontconfig, freetype, gdk-pixbuf, glib, gtk3, libandroid-shmem, libandroid-spawn, libc++, libcairo, libevent, libffi, libice, libicu, libjpeg-turbo, libnspr, libnss, libpixman, libsm, libvpx, libwebp, libx11, libxcb, libxcomposite, libxdamage, libxext, libxfixes, libxrandr, libxtst, pango, pulseaudio, zlib
-Filename: pool/main/f/firefox/firefox_136.0.4_x86_64.deb
-Size: 62824780
-MD5sum: 25ee0931e9650d03b011bd3adeb3f494
-SHA1: 1c2641ea4caf35763579434e22e5b6b9009224f0
-SHA256: 1bda1629a5121463323241110c6ce47d5b7d57f9a64752566767980b52816714
-SHA512: eb682c9068aa078da8a8b4cbef218e78489ac5f8381e434729f3f2a784ae85be890d9dbb7a676b745fe9af7b5dbf5597093c24f2654b298fbd7c73902ac5ea0e
-Description: Mozilla Firefox web browser
-Homepage: https://www.mozilla.org/firefox
-
 Package: flacon
 Installed-Size: 7516
 Maintainer: @termux
@@ -2483,6 +2468,21 @@ Package: gtk-layer-shell
 Installed-Size: 360
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.9.1
+Depends: glib, gtk3, libwayland
+Filename: pool/main/g/gtk-layer-shell/gtk-layer-shell_0.9.1_x86_64.deb
+Size: 53628
+MD5sum: 39cc9e07cb0eb1d30e200fa508b0a543
+SHA1: 9b10e56e0af0633bd4d55724a82bab68197ebd84
+SHA256: ae6fec135a0b9051262fe68a233f6da80da111b9e709bfad4bf902a56f3a9e83
+SHA512: ce80096bf75d46d644b0d8e9f7b5a690ad91445d438a78ffbab8c4bc87e3f6d77d0034f9eab00b2918fd4e5a018703c20401cfb60f76ca54879b01f300b21dc3
+Description: Library to create panels and other desktop components for Wayland using the Layer Shell protocol
+Homepage: https://github.com/wmww/gtk-layer-shell
+
+Package: gtk-layer-shell
+Installed-Size: 360
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.9.0
 Depends: glib, gtk3, libwayland
 Filename: pool/main/g/gtk-layer-shell/gtk-layer-shell_0.9.0_x86_64.deb
@@ -2498,16 +2498,16 @@ Package: gtk-update-icon-cache
 Installed-Size: 72
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.24.49
+Version: 3.24.49-1
 Replaces: gtk3 (<< 3.24.41)
-Depends: gdk-pixbuf, glib
+Depends: gdk-pixbuf, glib, gtk3 (= 3.24.49-1)
 Breaks: gtk3 (<< 3.24.41)
-Filename: pool/main/g/gtk-update-icon-cache/gtk-update-icon-cache_3.24.49_x86_64.deb
-Size: 12376
-MD5sum: efc29384070e24fc36468518c9ea190b
-SHA1: 8bf0505d0375e32bed4f905aa6208a1a13b28e39
-SHA256: 5a697ae6b032651dbd387f46fc6912385067aeedcfc1cbabde43aa26bb994995
-SHA512: a60455d781636d2890df0ac32d2f0c5f4312cf238f1f1d2340d3fd926872965ee2820a80cc6b4938f5e9ef3d6db6b85992bdb40d364b99de10c8ab1c45014789
+Filename: pool/main/g/gtk-update-icon-cache/gtk-update-icon-cache_3.24.49-1_x86_64.deb
+Size: 12388
+MD5sum: 8d391647c3dd7bbafa4d6a6e36368e7d
+SHA1: eba0f76c4d9985589f72752fc704e2fe1786633f
+SHA256: e3a626c2041f355f7cb704b8ec5b56403d33d5166f81b8c92f70ecbe37a120b3
+SHA512: e211988db377affa478c16145adc770157c5491d19e7f2fd0fc4f8ba3d1b19bc52d1efff40137709724d8177cb7e08ed7099d15b32ec7968150b7993d5f16234
 Description: GTK+ icon cache updater
 Homepage: https://www.gtk.org/
 
@@ -2607,16 +2607,16 @@ Package: gtk3
 Installed-Size: 32296
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.24.49
+Version: 3.24.49-1
 Replaces: libgtk3
 Depends: adwaita-icon-theme, at-spi2-core, coreutils, desktop-file-utils, fontconfig, fribidi, gdk-pixbuf, glib, glib-bin, gtk-update-icon-cache, harfbuzz, libcairo, libepoxy, libwayland, libxcomposite, libxcursor, libxdamage, libxfixes, libxi, libxinerama, libxkbcommon, libxrandr, pango, shared-mime-info, ttf-dejavu
 Conflicts: libgtk3
-Filename: pool/main/g/gtk3/gtk3_3.24.49_x86_64.deb
-Size: 5627920
-MD5sum: 526520f660b4b2f5803fc987a51086cb
-SHA1: b5292fd975d2c14081b3bac67be1f7fd85e20aaa
-SHA256: 27905b41df7a289fb877c5fbb7e8b88643548dc29f31b70093c3f572589a1465
-SHA512: fd29613d12d8775ba5778946f3ba983984b61591def64a1290183c7fc672073ed3c4dab1f109283f1a08ce81a13338054edb9a7b0ac32f75cfd1bb372771cbdd
+Filename: pool/main/g/gtk3/gtk3_3.24.49-1_x86_64.deb
+Size: 5626884
+MD5sum: e02c68fd3b8ad7e70e7e08b3e8b470b6
+SHA1: 5a17507b6929fbc303b76c68f87033d55d0b5859
+SHA256: 002a399b710a6973f3f18edc344f341def18f5ba24fc25020c34d8b650453e39
+SHA512: 63c845aa97ca8489f417ede6b5c83a3b9eb7dd4902b80d05398c7ffe34c46777bd9467f7ef4e9f866c5b7d6b6ea3deea7ad0323a803fb6b886992bd825e50577
 Description: GObject-based multi-platform GUI toolkit
 Homepage: https://www.gtk.org/
 
@@ -4880,14 +4880,14 @@ Package: libvte
 Installed-Size: 3324
 Maintainer: @termux
 Architecture: x86_64
-Version: 2:0.80.0-1
+Version: 2:0.80.0-2
 Depends: atk, fribidi, gdk-pixbuf, glib, gtk3, gtk4, libc++, libcairo, libgnutls, libicu, liblz4, pango, pcre2, zlib
-Filename: pool/main/libv/libvte/libvte_2:0.80.0-1_x86_64.deb
-Size: 517048
-MD5sum: 6d11d6aa71c5b94b1cce17f5d499a606
-SHA1: de91f2a0339e3dcb2394190ab8faf9f7522e0b8e
-SHA256: 62d72364735001d5ecf8aadd05adb2921a202bacc57e6f99165b59cb36804d09
-SHA512: 5a292d4717190c854e6596ef6eafa5c4e3a7dc5600728b53f2ef64c0dbd5ad12cca1e45e72cff6bc37aca1e1426596f8ccd0ee23a940660e11b163f173b33714
+Filename: pool/main/libv/libvte/libvte_2:0.80.0-2_x86_64.deb
+Size: 518052
+MD5sum: 074b0e5b8dad256b9e6c64195457d9f8
+SHA1: 23063e3264f0c3467729b9627a8e3e758480ca74
+SHA256: 943be2880fb6563230ab5e78f5659695931fd91a00a9afc8dfc3d2104f3a143d
+SHA512: 5af2c23a5ab2e3dd28b4888ed3d72f0b66e2b5d5f91f38cd4be3884d357264e338b91fa1a76cbdc0976dc1e06b38974e23dc3505ddcfaf45e962b7bfed3268ca
 Description: Virtual Terminal library
 Homepage: https://gitlab.gnome.org/GNOME/vte/
 
@@ -9448,21 +9448,6 @@ SHA512: 89a08a2ce35e70c45ce37634729d55cf0d5899925ba0bd3c9c879c98dccb392990bb8a41
 Description: Unofficial Thunderbird email client
 Homepage: https://www.thunderbird.net
 
-Package: thunderbird
-Installed-Size: 245584
-Maintainer: @termux
-Architecture: x86_64
-Version: 128.8.1
-Depends: ffmpeg, fontconfig, freetype, gdk-pixbuf, glib, gtk3, libandroid-shmem, libandroid-spawn, libc++, libcairo, libevent, libffi, libice, libicu, libjpeg-turbo, libnspr, libnss, libotr, libpixman, libsm, libvpx, libwebp, libx11, libxcb, libxcomposite, libxdamage, libxext, libxfixes, libxrandr, libxtst, pango, pulseaudio, zlib
-Filename: pool/main/t/thunderbird/thunderbird_128.8.1_x86_64.deb
-Size: 61982984
-MD5sum: 941def7c71e7fa6d1213e2876f2f2c5a
-SHA1: d690ba7767f0b286fce003064e9c8ec15e071b63
-SHA256: 94457d870e41da926381ae44aeb970cdf497be50e8c5447775d911c0ae2d7a24
-SHA512: 48fc1a0cf0271eae89262f3490af291f4bf6ac7ab5d97347ae8ac3e488268c5178f8bd2de75052a1f678a57b5ef132d265995c8cd681c8ef17c53aa27cea9408
-Description: Unofficial Thunderbird email client
-Homepage: https://www.thunderbird.net
-
 Package: tigervnc
 Installed-Size: 4072
 Maintainer: @termux
@@ -9509,6 +9494,21 @@ SHA256: 46a15b3c21509a83951e27830947d23cddc3e4f2a6e212312a554da6d5843d02
 SHA512: 69b7981afc7ffc68f8e478b96aa8fc6c14f0e23d77dd450732291dad46445940c26175fe3254d6ae7d8e2e307a3a2e221a7a2a59ddc54024ed0547cdeb56e802
 Description: A Gtk based drop down terminal for Linux and Unix.
 Homepage: https://github.com/lanoxx/tilda
+
+Package: tilix
+Installed-Size: 14212
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.9.6
+Depends: dconf, gdk-pixbuf, glib, gsettings-desktop-schemas, gtk3, libcairo, libsecret, libvte, libx11, pango
+Filename: pool/main/t/tilix/tilix_1.9.6_x86_64.deb
+Size: 1939860
+MD5sum: 03eb8c01c99457edd3c77ef2618ac6c0
+SHA1: 90498c4888628f207950d8a952f008fcf901d071
+SHA256: a9371a185109e1a8571de633fb5bc830187e01266e62ed591267de069a79e3e7
+SHA512: 70aec5b6b6c6d9f9595d7952072690e4d680eb3fb3f48677096a4978366095142fbd30774df3600e9bec507ff23452753b0f958e06378d0ca57d8ed6720182b7
+Description: A tiling terminal emulator for Linux using GTK+ 3
+Homepage: https://gnunn1.github.io/tilix-web
 
 Package: tint2
 Installed-Size: 1200

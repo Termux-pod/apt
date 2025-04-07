@@ -2037,46 +2037,93 @@ Package: binutils
 Installed-Size: 36
 Maintainer: @termux
 Architecture: aarch64
-Version: 2.43.1
+Version: 2.44-3
 Depends: binutils-bin
 Conflicts: binutils-is-llvm
-Filename: pool/main/b/binutils/binutils_2.43.1_aarch64.deb
+Filename: pool/main/b/binutils/binutils_2.44-3_aarch64.deb
 Size: 1124
-MD5sum: deee4d9ad218a7447ce1115b1f4a6695
-SHA1: a546acb0d81b525eccf2b8b6d7559ba7fc9a74af
-SHA256: 53f2bebecb5004be668f7db70e52f4b8c8966ea04635e4140bd37513b592e598
-SHA512: e1552200e6766d14a83ccc2f494f6378cc159e5d101bcb172bf07ab0daae9f8d420b3e78321fa38c4ef88896c528ef33dc6d5371d7aa728c6b1d6689c3d656f1
+MD5sum: 177c1fe2b5d4890932ef96cb4cd814e4
+SHA1: 66ed7847e033e73488b78896c1cceb08c4a9831c
+SHA256: 7e76d3525def082e8981efcd464005b6e4f4f73707aa1b87e0ace04a23990ff5
+SHA512: 61d8944a528cd1437aa576182ada0cf4b9fabcf19799422bc5b8c4f6ebf5cf814bcf8dde49aab6397ea05c96ef037e71d65022a17c1653896574fda5e4a2ffa1
+Description: GNU Binutils (metapackage)
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils
+Installed-Size: 36
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.44-2
+Depends: binutils-bin
+Conflicts: binutils-is-llvm
+Filename: pool/main/b/binutils/binutils_2.44-2_aarch64.deb
+Size: 1124
+MD5sum: 2d4c3cadc01b31b7ae36bc63da9ef480
+SHA1: af4ca502f8bb7ac4707cc04d73f8c0f261f4fc6c
+SHA256: 11119712d20c9a42f4935d20a8792e8ad65b96ce497f1dbd11a5677620a6f898
+SHA512: 877cdedf4d65fcf2939e6e10f38f5fe080fb32cdeed3f0e435057aced7794f59892e92ec8fc6dddbfe86666f5e0a6954df4a1f43b98c01b64a5de8aecbadb63f
 Description: GNU Binutils (metapackage)
 Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-bin
-Installed-Size: 8852
+Installed-Size: 9084
 Maintainer: @termux
 Architecture: aarch64
-Version: 2.43.1
+Version: 2.44-3
 Replaces: binutils (<< 2.39-3)
-Depends: libc++, binutils-libs (= 2.43.1)
+Depends: libc++, zlib, zstd, binutils-libs (= 2.44-3)
 Breaks: binutils (<< 2.39-3)
-Filename: pool/main/b/binutils-bin/binutils-bin_2.43.1_aarch64.deb
-Size: 1757940
-MD5sum: 17e321290eb99da7884952b3060289b5
-SHA1: c59eac56a2a0ffd6f6d913e189cebb29dc147a01
-SHA256: 5f7d4e737d82548071039507528588cf10a6199832496f2c7d6f2c45b595ce36
-SHA512: 5303ab9eeb9a97040a5a55a163d6f19bf7a4e730ea09d682f380126ab1dd4c2350e20d51400bbf5ef20fb2ee2451eac310f98aa91ac91170a8b7d8a6d2a41595
+Filename: pool/main/b/binutils-bin/binutils-bin_2.44-3_aarch64.deb
+Size: 1766088
+MD5sum: 9f4cb438bc988bad3e39ac8a1625ba3c
+SHA1: f1bc97eadd8cfae825ff112c0422e890c15a8427
+SHA256: 5d381a2bcc98e5d1a6e2d9c9ea178c48a61e03db9282fc8b3bd95fea3d8dfa3a
+SHA512: bec3b0a94389706456b61c0fc424a47664616699ac09f6af6b82a806050dd064a75915458c5ffb158d30bf5f898eb1c2b866fb04f3d7d1b89960d11a090be2a9
+Description: Collection of binary tools, the main ones being ld, the GNU linker, and as, the GNU assembler
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-bin
+Installed-Size: 9084
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.44-2
+Replaces: binutils (<< 2.39-3)
+Depends: libc++, binutils-libs (= 2.44-2)
+Breaks: binutils (<< 2.39-3)
+Filename: pool/main/b/binutils-bin/binutils-bin_2.44-2_aarch64.deb
+Size: 1765576
+MD5sum: 8ea81d67ab19ba6933903122a928f3d5
+SHA1: 065acaba5fd31ee3d606924ea3cf161cedfae924
+SHA256: ebdf3274a6b718f83f9d2a0bb814e7b82ad46d90ffd7d261d12211b3209d3b47
+SHA512: 6bf2cdf47e0529093aff218a6b6b6c38b95dbea6cbdd01ccc325d087530f9a2541bf2797418ebd88faafa0e91bff767d3c7c458bf22c4d26ae4680bfdb0c4969
 Description: Collection of binary tools, the main ones being ld, the GNU linker, and as, the GNU assembler
 Homepage: https://www.gnu.org/software/binutils/
 
 Package: binutils-cross
-Installed-Size: 17240
+Installed-Size: 17508
 Maintainer: @termux
 Architecture: aarch64
-Version: 2.43.1
-Filename: pool/main/b/binutils-cross/binutils-cross_2.43.1_aarch64.deb
-Size: 2214720
-MD5sum: 640299f2d581037926ff8d3a97e2c216
-SHA1: 48a6ea7cff50516d3d4866c5cf25c923dd731902
-SHA256: 434231e23133a525d4a3d0f720436ae13dd8ff49a251592a73679747911d0167
-SHA512: 9508b7718c0a19fe04f219a469e7f66530a370b1ce41d26de691d083a7b8b372e95160b8c8e92f2c62bc1187bc6bf7e2d3113882e9d571090fe2f232a423a615
+Version: 2.44-3
+Filename: pool/main/b/binutils-cross/binutils-cross_2.44-3_aarch64.deb
+Size: 2223544
+MD5sum: 1c277065dd5aa474f9c2373300c5d863
+SHA1: 8fdfbbbd12cefbd9808e07b3716862372f37aea0
+SHA256: 32aa6561154b26ef7d916e1c42c259046623b75b59151b7dd4bdba3eb58f79d8
+SHA512: 666766539275e6fa5460276431894f5fa3998c5ef5d5ade7ad3484bcc8a226496bb6b390414fd23fb360975d464b0f1ca4b2e9150614ad8fd7f7be7f57b5cec5
+Description: GNU Binutils for cross build on the host (NOT for Termux)
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-cross
+Installed-Size: 17508
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.44-2
+Filename: pool/main/b/binutils-cross/binutils-cross_2.44-2_aarch64.deb
+Size: 2225828
+MD5sum: 4036b21912a6815b954c7e7fb20e5b01
+SHA1: 67d92be780496b089b880781817fc3e0f1c81210
+SHA256: 569c880209ebbb34f519938b5ce6ad4423f71ccd9b71d44a03e0368d815af78c
+SHA512: 1d03ef66221f38b4d0da01514d80c5bc4c3d93636f61c9f49ce040b8e00e8cab57b46c87ffc0e5e3c5954e3b8a858d8b605d99c82152ec58d70dd572e100472b
 Description: GNU Binutils for cross build on the host (NOT for Termux)
 Homepage: https://www.gnu.org/software/binutils/
 
@@ -2084,14 +2131,29 @@ Package: binutils-gold
 Installed-Size: 3900
 Maintainer: @termux
 Architecture: aarch64
-Version: 2.43.1
+Version: 2.44-3
 Depends: libc++, zlib, zstd
-Filename: pool/main/b/binutils-gold/binutils-gold_2.43.1_aarch64.deb
-Size: 922308
-MD5sum: 93de290942ecb609d17fc9e96539bb2b
-SHA1: 91f98836316bc3562a9993a639764ca5b1e8ede7
-SHA256: 406c714309542faa4c2b82a4f56c7a52aea4c07f8525b1b34591f50bfb9dfb89
-SHA512: b6098d10e724c49cea32fdb274a29f4e1a922066f536d15075f96112b2058dd04d5c233806973bb342ec1f61ba62a288c276c1a649b1fd853beafdcf176a2fc1
+Filename: pool/main/b/binutils-gold/binutils-gold_2.44-3_aarch64.deb
+Size: 920416
+MD5sum: 4422a086384277147744fcefb3847b57
+SHA1: 6e99cff38631355af25976042f9be9006f1fc8cd
+SHA256: 003a31a72b84f65a93f7b1324df3c215c63094e713a853ae2208970d161c174e
+SHA512: 01820a17d8002fd77f4e089c8f9b9075ac78f58d0e77cefde0b4cca46c4f2463f8da458a8b18ade8f590aea1422e14d1f236799b96fe302f5f5db8015a698549
+Description: gold linker
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-gold
+Installed-Size: 3900
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.44-2
+Depends: libc++, zlib, zstd
+Filename: pool/main/b/binutils-gold/binutils-gold_2.44-2_aarch64.deb
+Size: 921000
+MD5sum: 3c49af0f22f6cf37f1a8fd1243cace97
+SHA1: b9f4020e98d3709286bed76ee1c7c06c9f694b93
+SHA256: 312dd9cb51d9377dc036e1bb3b5b0d5fe30a786467dacec2278b16778f9e0721
+SHA512: b670d9ba0614cc4c43734e6675aadc131c53022ba3bdb59950690509344a9f1578fc547e595edf8f47be13a01e9282dabe6239d3c0cb4b2bfe474a461a413885
 Description: gold linker
 Homepage: https://www.gnu.org/software/binutils/
 
@@ -2112,19 +2174,36 @@ Description: Use llvm as binutils
 Homepage: https://github.com/trentbuck/binutils-is-llvm
 
 Package: binutils-libs
-Installed-Size: 12528
+Installed-Size: 12576
 Maintainer: @termux
 Architecture: aarch64
-Version: 2.43.1
+Version: 2.44-3
 Replaces: binutils (<< 2.39), binutils-dev
 Depends: zlib, zstd
 Breaks: binutils (<< 2.39), binutils-dev
-Filename: pool/main/b/binutils-libs/binutils-libs_2.43.1_aarch64.deb
-Size: 1133824
-MD5sum: 17abe2500d73a1101aa000377cea9881
-SHA1: e1d76a77e463d977ab4bdb17b054e633b7b749cb
-SHA256: 8c348884c18040e2d1d5d74e918afb98de81485b5134ede3fa1c1458ab2a24e4
-SHA512: 05f15ac48b41bcd900d64d9a6d6ab9d0373fd81795cff96df95314c9a972e772138f53b38f7c6d27021a09df793d0c59c170c59d82de40eb4b7273c405603304
+Filename: pool/main/b/binutils-libs/binutils-libs_2.44-3_aarch64.deb
+Size: 1138584
+MD5sum: 904b7a56b7d23f914a36b24faf339ba7
+SHA1: 99fdc19d35083cfcda916923cac0becbe081ea90
+SHA256: f257cba6791a89574f82786c46b139093edce2dd6c39167685e90e780b43bb6b
+SHA512: 245d949b81ec023594ee6b4b7173d2ff94cc818060603db43f63a15612ad184848d3ad3301eb396bea8a15b5b102b84d4938137fc952012e2cc752d62edd2630
+Description: GNU Binutils libraries
+Homepage: https://www.gnu.org/software/binutils/
+
+Package: binutils-libs
+Installed-Size: 12576
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.44-2
+Replaces: binutils (<< 2.39), binutils-dev
+Depends: zlib, zstd
+Breaks: binutils (<< 2.39), binutils-dev
+Filename: pool/main/b/binutils-libs/binutils-libs_2.44-2_aarch64.deb
+Size: 1140884
+MD5sum: cd7409cd50e512fe4e3919d5eeaedbd1
+SHA1: a983ee9166835dc78d6bbafca8de9dddebf473d7
+SHA256: 24b0fd535a2036a04ab1cbbec8371b31435e61002bf9b23e6c6305be7351384c
+SHA512: dc289ace7255911d345735df9f4154cf8afb5d5b10cd1d2e3d583c610df786167fbc5bc4d40ff7bb6b4e603743fa36873280ddc6f04aaaaafa08ed0b6257b6aa
 Description: GNU Binutils libraries
 Homepage: https://www.gnu.org/software/binutils/
 
@@ -3433,20 +3512,6 @@ MD5sum: 5ae1b79b85ab42748771b6c17849917d
 SHA1: f74b90ba7456acfd81d917472c75ace4cd4a0235
 SHA256: 96b9cbf97a62a65663c7e7f1fbd2fe2b1018a5e064f8abccda17069eb7e482b7
 SHA512: 847e05f8fcb3d4af1f8a2e2d29fe81562171feba0a877ca49120d6de786046654fd7b6b923ff423ae6e28d244c7862eb2be8eb59d5e9d28e5d6b43fdc776ee10
-Description: Manage your dotfiles across multiple machines
-Homepage: https://chezmoi.io
-
-Package: chezmoi
-Installed-Size: 33584
-Maintainer: Henrik Grimler @Grimler91
-Architecture: aarch64
-Version: 2.61.0
-Filename: pool/main/c/chezmoi/chezmoi_2.61.0_aarch64.deb
-Size: 7983872
-MD5sum: d997d3f55ae369cac94652185660fac3
-SHA1: 493891316c8778d0cc90f5381a4f6dd4a98eb3f8
-SHA256: a6b2bd5f5f172ddbdb1d20c2dc309c0011ff9fbd6ef714f4524adfe1738cdc88
-SHA512: d7bd051065adc7f3c9145f22abbfda8a69759773bb56fd430c9f849c90768e12f369d684f34133a71b8e9c5505e745a5f17164def31bdc10531bc854e4241cb8
 Description: Manage your dotfiles across multiple machines
 Homepage: https://chezmoi.io
 
@@ -11837,6 +11902,21 @@ SHA256: 06c991d926219330e7542c89f9d2409a9144abd0460aeed1ff7b936579b6ecb1
 SHA512: cc87f59da4d318420c95f9e1be06dcf5247b50b232f93178d8bbc2059c38fe8de376d6bf072d458c7f7b58dfc9592ab124979d6f469614e1f1b9d23627777f67
 Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
+
+Package: jackett
+Installed-Size: 14420
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.22.1740
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.1740_aarch64.deb
+Size: 3177724
+MD5sum: 52caac2cb18b961b69249901e7508a0d
+SHA1: 6db1207d665833e3a6ddaad390ef78fa718dd363
+SHA256: 3d63a60abff7d13d739811bafe8a335023bd98c9a0d31ec3ffb85bd153f42fe9
+SHA512: a68cbe36a7876ec2917177e011b1fe61a35406eaaa386f8dbb6815db96b63907a86591a870196c116566637cd8a89200360a2c0689faa617a4f26e9b463fa2e1
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
 
 Package: jackett
 Installed-Size: 14416
@@ -32790,23 +32870,6 @@ SHA512: bac2ad6d92ccf012a88bbb697b46283289c169e0f6b5fb86427784991080448affb0374c
 Description: Content-Preserving PDF Transformation System
 Homepage: http://qpdf.sourceforge.net
 
-Package: qpdf
-Installed-Size: 4016
-Maintainer: @termux
-Architecture: aarch64
-Version: 12.0.0
-Replaces: qpdf-dev
-Depends: libc++, libjpeg-turbo, zlib
-Breaks: qpdf-dev
-Filename: pool/main/q/qpdf/qpdf_12.0.0_aarch64.deb
-Size: 861664
-MD5sum: 50c175017ca0d66fa2fb4d1685650b16
-SHA1: f444871bb840bd2251db71d871c1d82cfeb7279e
-SHA256: 55bbe62853e95f9b96454ed53d79b5b9fd8073f332f0b7ff986c7c6108a853f8
-SHA512: 3b575674ba6a93d2663988ff370d0f4d6509dfac47a7646e60aa1b66580819a0e82392c9715b85a625df4fb5b7391d79c11f30329ac77b44af613a412eb8c9df
-Description: Content-Preserving PDF Transformation System
-Homepage: http://qpdf.sourceforge.net
-
 Package: qpdf-static
 Installed-Size: 9376
 Maintainer: @termux
@@ -32818,21 +32881,6 @@ MD5sum: 5c450c9559b6059766539683bdae99b9
 SHA1: f948e5bd10d28366d76d94b3bf22f133120988eb
 SHA256: a4aa1d3d0910de717a713c414eb3bbf3f48c7c558f05559d7f56a4d81475edd7
 SHA512: a1a3ec49f381c2eb99122a81f77261ca22d704239f0d2b117b1ce5b871dc97b6645f72989de5b7f4e48e4b6bca4a3aa2802ee75091c276e1d4906490f09cd600
-Description: Static libraries for qpdf
-Homepage: http://qpdf.sourceforge.net
-
-Package: qpdf-static
-Installed-Size: 9212
-Maintainer: @termux
-Architecture: aarch64
-Version: 12.0.0
-Depends: qpdf (= 12.0.0)
-Filename: pool/main/q/qpdf-static/qpdf-static_12.0.0_aarch64.deb
-Size: 1065600
-MD5sum: adc0d87296d9e1b4a623de568d0e3df4
-SHA1: e663f040f52cb923bd62d6edd18c5711ec09a296
-SHA256: 3efab701b3252d81c4b71214ffdd54770625c18ccc6b9ddb2c9d9ed06262a82d
-SHA512: 3fd7c70bed765fa02b2123c1727a8fc14ba2b2abcbd32bd39d698b74e489f1b642adb3a0b59b150c9f716c2226596ff9f31dc8183a6b90cad510522daf66581b
 Description: Static libraries for qpdf
 Homepage: http://qpdf.sourceforge.net
 
@@ -34213,6 +34261,21 @@ SHA256: e75ff4100847e714077a7113c99c6754d2017a7db55ae6b35613d6ea283eab4b
 SHA512: 0cc1ba35ce09e208a348695b73ee9a7e2096add46c45ef532f6e0f9f2530a03d15f7a1eb72d374dbc0c2aa89afc4c2e3794ec5055aac6fddf893c955a8203db6
 Description: Systems programming language focused on safety, speed and concurrency
 Homepage: https://www.rust-lang.org/
+
+Package: rust-analyzer
+Installed-Size: 34588
+Maintainer: @termux
+Architecture: aarch64
+Version: 20250407
+Depends: rust-src
+Filename: pool/main/r/rust-analyzer/rust-analyzer_20250407_aarch64.deb
+Size: 7369140
+MD5sum: 4659da221215ffdce8821e15dcb5c61b
+SHA1: 04d81a4b2f8a9fc7b896064e3e6163e34ded621a
+SHA256: 73eb9a2e77dcecf794e91df5ec36737f739de3fc1fe598b4daef39c7e12e37b8
+SHA512: dbfffb153a0fb0357c7e40e08761005533405de6f2e22a22b4b15abf99345b7e4242d4ff685e2702578abf8880c7878faa50d6733c606b8e76cae56abda3c200
+Description: A Rust compiler front-end for IDEs
+Homepage: https://rust-analyzer.github.io/
 
 Package: rust-analyzer
 Installed-Size: 34680
@@ -39342,20 +39405,6 @@ SHA512: 7c6913ccee9227fc3069b586383e90d1b390d9d61dcc71565a58168318b23131069250d4
 Description: A universal command-line interface for SQL databases
 Homepage: https://github.com/xo/usql
 
-Package: usql
-Installed-Size: 157172
-Maintainer: @flipee
-Architecture: aarch64
-Version: 0.19.20
-Filename: pool/main/u/usql/usql_0.19.20_aarch64.deb
-Size: 25936936
-MD5sum: 1a318626fa4ca161eed0aa6098f15fc4
-SHA1: 8e74a34010919c791db056ebde673e98626e7847
-SHA256: 208bb5dd6eab8c79693402dc977dcefdf848c2b131f0253512b7ad05c6900429
-SHA512: 90931b8b722fc0a03d4f5ee7874f6a97779c66c8c37185c4eb17892ae7d0e0b0152a6382c0a1902ce007d15605d524da972c5e43d27b0830c6b984d0f38282ca
-Description: A universal command-line interface for SQL databases
-Homepage: https://github.com/xo/usql
-
 Package: utf8cpp
 Installed-Size: 140
 Maintainer: @termux
@@ -39597,6 +39646,20 @@ SHA256: cea283b91193d3a92fa3842818341de305e7e6b9231e3e1e2ddd7ef4c460c84b
 SHA512: 395b71ac7118398a79e25afee76d2be826ddd783fcc2797444682a995deecc90cf0dc5587cbb5fbde3d4da18b5c195c86c489b54d1197d629d4704b78e6d7c32
 Description: Static libraries for valadoc
 Homepage: https://wiki.gnome.org/Projects/Vala
+
+Package: vale
+Installed-Size: 39340
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.11.2
+Filename: pool/main/v/vale/vale_3.11.2_aarch64.deb
+Size: 6564932
+MD5sum: 58d7c012b47f3476189042e9c1191656
+SHA1: bc381996716c10e65a7025d83e0fff99a9d1668d
+SHA256: aecbc71d04f3e3752d6b38e4c17bbed6b24fe1b0c928fe3435d74b6aa3ea3dbb
+SHA512: 2e21b997ad2554d5316e89a67e8d3ec9feec772dcb5fb126868605659cce4c14a7bf062410bb1af4796546d9342961ad2b0a7e7a9513f561de60c17504b0b346
+Description: A syntax-aware linter for prose built with speed and extensibility in mind
+Homepage: https://vale.sh
 
 Package: vale
 Installed-Size: 39340

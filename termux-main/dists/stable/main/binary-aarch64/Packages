@@ -2666,20 +2666,6 @@ SHA512: 6b5e232bae7bd48a02ca46d5da76a64f6f26f87aa26e458fbe9091809360b432a27b4bf5
 Description: A new way of working with Protocol Buffers
 Homepage: https://buf.build
 
-Package: buf
-Installed-Size: 46852
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.52.0
-Filename: pool/main/b/buf/buf_1.52.0_aarch64.deb
-Size: 9084560
-MD5sum: d0f26f7261fee5a744ad46f1a7260682
-SHA1: 6b7311741eaa731fb86ab07be680383435fdfcfb
-SHA256: e3ca1030914555db344cd86f2f3dbfb378547bda7dd04caf4818cc82c1aae0a1
-SHA512: 263fc87e9f175459185ed5fa798c1f35f246d82ad19cf44d465e80494be19778383e02dd90a0c7b54af4b9e2a10c663b0c15729cdfcce588c899146dc2cd8fe2
-Description: A new way of working with Protocol Buffers
-Homepage: https://buf.build
-
 Package: build-essential
 Installed-Size: 4
 Maintainer: Leonid Plyushch <leonid.plyushch@gmail.com>
@@ -2790,23 +2776,6 @@ SHA512: f346754a4f32638a2ee721fb3b539d502fd74d51433a5c3314116c887f4daf5d5c76d6ed
 Description: Library for asynchronous DNS requests (including name resolves)
 Homepage: https://c-ares.org/
 
-Package: c-ares
-Installed-Size: 1096
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.34.4
-Replaces: c-ares-dev
-Depends: resolv-conf
-Breaks: c-ares-dev
-Filename: pool/main/c/c-ares/c-ares_1.34.4_aarch64.deb
-Size: 191592
-MD5sum: 272bd31209d8d7b245ef22502d09dfbe
-SHA1: f7b833bda92397cbf3b11862dc9da47dd0696402
-SHA256: fa39f503f6d933dc818131994d4f740bc263c6f5938fa9d303c7ef6a753b2874
-SHA512: a438e26a8e1490852fcfe06c278669c32cdbeb228d9ceb38ae0fba5d08023ca2660d49d7396b2236edfb81c6a3c9e60d04599ef18edca8a7a4470b9933203a64
-Description: Library for asynchronous DNS requests (including name resolves)
-Homepage: https://c-ares.org/
-
 Package: c-script
 Installed-Size: 52
 Maintainer: @termux
@@ -2884,18 +2853,18 @@ Description: Common CA certificates (java keystore format)
 Homepage: https://curl.se/docs/caextract.html
 
 Package: cabal-install
-Installed-Size: 58888
-Maintainer: Aditya Alok <alok@termux.dev>
+Installed-Size: 36692
+Maintainer: Aditya Alok <alok@termux.org>
 Architecture: aarch64
-Version: 3.8.1.0
-Depends: libffi
-Suggests: ghc
-Filename: pool/main/c/cabal-install/cabal-install_3.8.1.0_aarch64.deb
-Size: 7019276
-MD5sum: 604beb1ec2b8da87d2665fa4675c0a30
-SHA1: 5917c873ac47252a15e7efe5094b37aedca92a93
-SHA256: b05213ee6975f12aea867b150cdf97ea23d233ed19cd1e1d59da38e09b3af3b5
-SHA512: 30b90c694b6655cd80c6bf7795029cf88b50464b28e7036c2789a005dc50416e5b047ab6bc9cf150568e188071a83949f1882db60aa40471604115b5922609b7
+Version: 3.14.1.1
+Depends: libffi, libiconv, libgmp, zlib, libandroid-posix-semaphore
+Suggests: ghc, dnsutils
+Filename: pool/main/c/cabal-install/cabal-install_3.14.1.1_aarch64.deb
+Size: 4805592
+MD5sum: 2b203ae4417de5ec49aaacfb3c8cb34e
+SHA1: 498c70c6d6151a3fa5aa550ec88f08a73869845a
+SHA256: bdd13fb823f00671f7d5cd53a33374ae9d8378f0cb74fd3932167618ab2263a4
+SHA512: b2a5ab1d4a1d52153eb2769424bf1713775059959cb75c7f1d98b7c4e6ef3b88a50161f37982aca1e220ab3ef6fc33822b23b2c34ed30bd598d4a532e2ae2da0
 Description: The command-line interface for Haskell-Cabal and Hackage
 Homepage: https://www.haskell.org/cabal/
 
@@ -8531,17 +8500,19 @@ Description: GitHub’s official command line tool
 Homepage: https://cli.github.com/
 
 Package: ghc
-Installed-Size: 445608
-Maintainer: Aditya Alok <alok@termux.org>
+Installed-Size: 3021756
+Maintainer: Aditya Alok <alok@termux.dev>
 Architecture: aarch64
-Version: 9.2.5-1
-Depends: binutils-is-llvm | binutils, llvm, clang, ghc-libs (= 9.2.5-1)
-Filename: pool/main/g/ghc/ghc_9.2.5-1_aarch64.deb
-Size: 50167080
-MD5sum: 446fb1ced79c174a87d962be16b054f2
-SHA1: 566d4d2455c94d582310a3397f88c112166400a5
-SHA256: 0ae799b0e26e73dc4ac4ab5428132361aaa83eff52b714e1012db1ddf2db22cf
-SHA512: 40b1be13d5dfc14c4a656ba3bc2bde63992a4f1265aea75de29a14f9f9112f79bcc440273f2f59bf8556cfcaf46c0bab7543d0e07e33a2169ab2560bd4cbe3fd
+Version: 9.12.2
+Replaces: ghc-libs-static, ghc-libs
+Provides: ghc-libs, ghc-libs-static
+Depends: libiconv, libffi, libgmp, libandroid-posix-semaphore, ncurses
+Filename: pool/main/g/ghc/ghc_9.12.2_aarch64.deb
+Size: 247180732
+MD5sum: dab6683508859d48073415168ea439cd
+SHA1: 84fe932adf7eed047508361ef45f372546ca6941
+SHA256: f6e097269a486a5f48bf38b395416c2c4d2d8f7d818ec4990c5f872b87e94c46
+SHA512: 2af153dc6c2154271a428f3bad94b1ffeccce3cfa75129c88d4d3813c63d3d162098c3b4ef74f9cb506c8404fa216001762738968f373e2eb714547a393c801b
 Description: The Glasgow Haskell Compiler
 Homepage: https://www.haskell.org/ghc/
 
@@ -26332,6 +26303,21 @@ Description: General-purpose software audio FSK modem
 Homepage: http://www.whence.com/minimodem/
 
 Package: minio
+Installed-Size: 119880
+Maintainer: @termux
+Architecture: aarch64
+Version: 2025.04.08.15.41.24
+Depends: resolv-conf
+Filename: pool/main/m/minio/minio_2025.04.08.15.41.24_aarch64.deb
+Size: 28300800
+MD5sum: 6025e0e10f03298f38744d814feba8b1
+SHA1: 0943bf8539dd6bec412dddd8708f56e500fb19dd
+SHA256: f1b32d4a921f096e3de47b9e946c2032fd5952b7111766f02851bad3f79b3260
+SHA512: 4d7e81d772cd4d2dc0e919ededccb98c19f392a0910b0d5c62799eb896d0667bf6a41d86f2ae7a1f526088308616beec46f5a65f7f3de18e982896310188d7f6
+Description: Multi-Cloud Object Storage
+Homepage: https://min.io/
+
+Package: minio
 Installed-Size: 119884
 Maintainer: @termux
 Architecture: aarch64
@@ -35007,17 +34993,17 @@ Description: Executing shell commands via HTTP server
 Homepage: https://github.com/msoap/shell2http
 
 Package: shellcheck
-Installed-Size: 40160
+Installed-Size: 20792
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: aarch64
-Version: 0.10.0-1
-Depends: libffi
-Filename: pool/main/s/shellcheck/shellcheck_0.10.0-1_aarch64.deb
-Size: 4899920
-MD5sum: ab39c68cc71143e07e29952323f20fe8
-SHA1: bee5aa454da663c600645b6917dd7ad4d1884962
-SHA256: 3873a29ef550fecbe3738f014a00e23b3281e32b06deed176ae5d15e2ffeec60
-SHA512: 02e63e5d542d049ebf83711c1830d5890bb795e8e558c182bdbc4fda827fd06f091ab656f364c131e2c464f69318c57b104cf155508d79b5d20e947b74a147e4
+Version: 0.10.0-2
+Depends: libffi, libgmp, libiconv
+Filename: pool/main/s/shellcheck/shellcheck_0.10.0-2_aarch64.deb
+Size: 2678412
+MD5sum: 6ff1a74a0febd4c2c233a0298eb3d0c2
+SHA1: 799f57677f8477e752c53c5909a25160f4eb9c8e
+SHA256: 490f0c84aa2997027dbda428a884a906c5eb0040f7614671b1a9241cf01378c4
+SHA512: cf61bfbd26fe7b8d9f841e64782190ce48596bdc5ff53d50dd3ecf31ef445faa1fc092973d9025cc5f31b3369d719a052d06415fa76ffcf310e0a79216b89a7f
 Description: Shell script analysis tool
 Homepage: https://www.shellcheck.net/
 
@@ -41391,20 +41377,6 @@ MD5sum: c68b63d2a2999b00c01d0e6cac8c6e75
 SHA1: 140180f75af6f5b067cf045518d1feb97c8df792
 SHA256: 3a08bd38560c3638d4d87ff3c8590273cf4ba7340386c62782da4264d4eb681d
 SHA512: c6518bab51f3e4b24d327856b43f7622e4aa82590b5e911517fe5bab711e3b8f5bfae52c7570ac34e728cf98198fc2aadfaebc4eca45767722d544170bf5fdac
-Description: Blazing fast terminal file manager written in Rust, based on async I/O
-Homepage: https://yazi-rs.github.io/
-
-Package: yazi
-Installed-Size: 15308
-Maintainer: @termux
-Architecture: aarch64
-Version: 25.3.2
-Filename: pool/main/y/yazi/yazi_25.3.2_aarch64.deb
-Size: 4356888
-MD5sum: ed561095ed8139c802e9da5e006fc13e
-SHA1: fdb0a71ab15b5c48a2c80bb5c4b77f81df37e258
-SHA256: cfb66bd26b9bbb3b647440e57e44f194d021591f0cbff9525e0836446219f53c
-SHA512: d26e92038b988f6b8ff03924c8cabf0af0312c3df6602bcf185fe6dea2e7b4178dc710c88a876296855f907fc98c76e63302fb57a887b4b31662d4ee4785c36e
 Description: Blazing fast terminal file manager written in Rust, based on async I/O
 Homepage: https://yazi-rs.github.io/
 

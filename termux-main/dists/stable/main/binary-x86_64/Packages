@@ -2426,20 +2426,6 @@ SHA512: f42124bc867ec2e61daa561de671484d2520ad5da991e36f93522c42c3d63c27d061e80f
 Description: Bore is a simple CLI tool for making tunnels to localhost
 Homepage: https://github.com/ekzhang/bore
 
-Package: bore
-Installed-Size: 2116
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.5.2
-Filename: pool/main/b/bore/bore_0.5.2_x86_64.deb
-Size: 663952
-MD5sum: 3e092f670f262f82feb6788bfb7c56fa
-SHA1: cd5ec312ee40828fd58e3e2e4b415e69bbd3f960
-SHA256: 6a2f7b87648a4b79fb7a4a143e5b24b2b1c23b49e375bfb4255fefb2a7d27af7
-SHA512: e10a71c8119adedd0aafc067b201a43963f5fc71077e2ae0dcaf07cd2af7966e30a9377ddefdedcf65944e46a6e2d311f41365777272d1d2d65cae09a2d3b71b
-Description: Bore is a simple CLI tool for making tunnels to localhost
-Homepage: https://github.com/ekzhang/bore
-
 Package: borgbackup
 Installed-Size: 5072
 Maintainer: Joshua Kahn @TomJo2000
@@ -18533,6 +18519,21 @@ Package: libneon
 Installed-Size: 1232
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.34.1
+Depends: libexpat, openssl, zlib
+Filename: pool/main/libn/libneon/libneon_0.34.1_x86_64.deb
+Size: 183328
+MD5sum: b5e7bd833595ca3340cd3b4e77261a22
+SHA1: 4c43a63aee2709cc4d13aec95385caee6b3ebc12
+SHA256: dadebf18fa4cb50f5fa5a06ab92bdb58630ea296404046f90b55cbc5eb01e43c
+SHA512: bbd6c3d42043a160257808c70d271e75940b9ee72366b4158e0da647036fd4c8399e26852615bb84c997a71d3307d4e020cb6aefff5a971229e81eafbc8ae35a
+Description: An HTTP/1.1 and WebDAV client library, with a C interface
+Homepage: https://notroj.github.io/neon/
+
+Package: libneon
+Installed-Size: 1232
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.34.0
 Depends: libexpat, openssl, zlib
 Filename: pool/main/libn/libneon/libneon_0.34.0_x86_64.deb
@@ -18542,6 +18543,21 @@ SHA1: 2e4bf6ed347e6af0f7fc83af25b76c63527f6207
 SHA256: 593ccbf5e638c7310e4a84ca724db32e140bf123723eae9e24ed0b7348de71bc
 SHA512: 30c33894e704232be77a367169ee137c7e914981122e861429a36540e486b44684e945cf46fd535b2250b7e9fed21121ed520c6a3fc4bfb90073a3ff835b27b9
 Description: An HTTP/1.1 and WebDAV client library, with a C interface
+Homepage: https://notroj.github.io/neon/
+
+Package: libneon-static
+Installed-Size: 316
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.34.1
+Depends: libneon (= 0.34.1)
+Filename: pool/main/libn/libneon-static/libneon-static_0.34.1_x86_64.deb
+Size: 67512
+MD5sum: 6ed1e234e98417898dcfc16c36efba9c
+SHA1: 3d24ccc2e7ff6929f455001f0f88262384f8f7f6
+SHA256: aa04aafc9bd63e135af6eb017a04c07405f893fa9130bbb22c6249dfa262b4db
+SHA512: 1626881cb2b278d586a2585c3825a073e2fcfcae123e6ede80dfa1379764f6d99d2a7c8dd60b7e7acfb04ad3e51873d2c239ab8cf8328b8278eeb1fd2c275391
+Description: Static libraries for libneon
 Homepage: https://notroj.github.io/neon/
 
 Package: libneon-static
@@ -18715,6 +18731,23 @@ Package: libnftnl
 Installed-Size: 312
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.2.9
+Replaces: libnftnl-dev
+Depends: libmnl
+Breaks: libnftnl-dev
+Filename: pool/main/libn/libnftnl/libnftnl_1.2.9_x86_64.deb
+Size: 57304
+MD5sum: 59b728159f034a8342060b61260025ed
+SHA1: b312c64faaa13116cffd52e4925875a53b03c37b
+SHA256: e9e45b5248c9311111df04a46b843c020baf6aaca72bbf1f6b303927d9f5b540
+SHA512: ecfb8c419cb4465760a81b41f1029bd0c960773909ccce53e1d7e5e4ada2829c4da9d9a4e06b566f758d21db1edd76cb14fb5e75be5a382170d244e86acc860d
+Description: Netfilter library providing interface to the nf_tables subsystem
+Homepage: https://www.netfilter.org/projects/libnftnl/
+
+Package: libnftnl
+Installed-Size: 312
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.2.8
 Replaces: libnftnl-dev
 Depends: libmnl
@@ -18726,6 +18759,21 @@ SHA1: 8c46e5fe17bc69974144431033ebab427d7ea1ec
 SHA256: f55d017e5e760bdcdd2bb7c5e84c0084b6440d1d4832ac9652fa32c4d8f8ed0e
 SHA512: 3baed0f6785cfa88ab2a3749693b2e5b3dd2f34d6e2a35ac58d1dc18bc65b6a3e1924bb78a1fba4983307e56d24efa15b2fa72fd932ac7cd74fdd61dd939245e
 Description: Netfilter library providing interface to the nf_tables subsystem
+Homepage: https://www.netfilter.org/projects/libnftnl/
+
+Package: libnftnl-static
+Installed-Size: 476
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.2.9
+Depends: libnftnl (= 1.2.9)
+Filename: pool/main/libn/libnftnl-static/libnftnl-static_1.2.9_x86_64.deb
+Size: 61836
+MD5sum: c291c93a40cc37daf301407d222e7eaf
+SHA1: b269e146778a038815e2d26783ed09e4c5f528ab
+SHA256: 3ce88939975879c83ab3cdcf4e3c3343b127ed74ca0478e564b7e814df13b5ad
+SHA512: e58fef090bd56c471b4c2a164309c7c91322e7002e7b6b6fb57010009a98c15c1ea63f5acb6f0995f315a1c8cb4f447b86fb9691f1b821cd2cf765d01d31c91b
+Description: Static libraries for libnftnl
 Homepage: https://www.netfilter.org/projects/libnftnl/
 
 Package: libnftnl-static
@@ -31505,21 +31553,6 @@ SHA512: 8b949e0310643d4a6533ba21f033ae1e68f54a1dc4d4e344d3c821d06ee65e61c88a867d
 Description: Python bindings for the cairo graphics library
 Homepage: https://www.cairographics.org/pycairo/
 
-Package: pycairo
-Installed-Size: 548
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.27.0-1
-Depends: libcairo, python
-Filename: pool/main/p/pycairo/pycairo_1.27.0-1_x86_64.deb
-Size: 90516
-MD5sum: 1b45d3a0ab1fb357a552fa71d779902d
-SHA1: 63c888334ec1ad8cb79831a240c51fbfce343a9f
-SHA256: 5941b7e3b2c0062fe7f21cd603478ddf46726b9d7af0faee39abe91fce62c0fa
-SHA512: 2521a115e3d6ee4185ee644620143f2bd43be42df360a2937576e4bf816ffd7ca5ee0123729e8d4153adf0965e85d97c46da25c3a3e101e0402144303bed30bd
-Description: Python bindings for the cairo graphics library
-Homepage: https://www.cairographics.org/pycairo/
-
 Package: pygobject
 Installed-Size: 1272
 Maintainer: @termux
@@ -34716,20 +34749,6 @@ SHA512: 10f6b517a193c53522158c8c4b714a74c5abcaa61adc5f5e14cc8e9b1b64d3dc01cff9f2
 Description: An IRC client that works best with bouncers
 Homepage: https://git.sr.ht/~delthas/senpai
 
-Package: senpai
-Installed-Size: 9660
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:0.4.0
-Filename: pool/main/s/senpai/senpai_1:0.4.0_x86_64.deb
-Size: 2801028
-MD5sum: 1c7f0b6c3b0007f35f152d2de96fcc55
-SHA1: e2412e3b20287c88cfbae38cd7cbdc501a0f22f9
-SHA256: 84152cb735791b141f561b1094fde7dba6957814ae1db2a90d966034266ccd30
-SHA512: 750bb195e6acb19e145385fb06268f1a5565d01eca6f61307a1ba2a8d6feba464807c3972b67dce00b8e4de61bfa17990c7c3a13f1c13628b5438d51a0d45489
-Description: An IRC client that works best with bouncers
-Homepage: https://git.sr.ht/~delthas/senpai
-
 Package: sensible-utils
 Installed-Size: 88
 Maintainer: @termux
@@ -37079,6 +37098,20 @@ SHA256: c78f61f865b89e2cf69c008161cb644a7aedd0bc46bc0d7dca5206543bad51fb
 SHA512: 336402062c99eb82386cd4fb8a566c4361c8732e354da21814dd017c4167b6110e440ac272ce2615be14c67f2d116c7e3efb00949287b69885119f10e2474308
 Description: Telegram messenger CLI
 Homepage: https://github.com/vysheng/tg
+
+Package: teleport-tsh
+Installed-Size: 117556
+Maintainer: @termux
+Architecture: x86_64
+Version: 17.4.4
+Filename: pool/main/t/teleport-tsh/teleport-tsh_17.4.4_x86_64.deb
+Size: 21338908
+MD5sum: 7a9aa40e0532e434547dd11922a87bc2
+SHA1: 4081bc879ddcf2f91888ba0fac27aacf1591b0de
+SHA256: d44cae3d974b2e297cccfd4064b4b994f0dc4f34147b782506aa2b6ded066a60
+SHA512: e1f9dceef9c2d961d92ba0577fc058ced918ec6f7715f10252b824c6459b989686997ca15140ba874c21ae198206234999966b2d2d2c7b1d9fe0f60aba77c05e
+Description: Secure Access for Developers that doesn't get in the way
+Homepage: https://github.com/gravitational/teleport
 
 Package: teleport-tsh
 Installed-Size: 117492

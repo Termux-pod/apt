@@ -6683,17 +6683,17 @@ Description: Open source xHE-AAC encoder
 Homepage: https://gitlab.com/ecodis/exhale
 
 Package: exiftool
-Installed-Size: 17288
+Installed-Size: 17304
 Maintainer: @termux
 Architecture: all
-Version: 13.27
+Version: 13.28
 Depends: perl
-Filename: pool/main/e/exiftool/exiftool_13.27_all.deb
-Size: 3615368
-MD5sum: 11691b2e32059813250fe21e94b98127
-SHA1: 4fe7d8f9a68e5b84e0b0c5c2706f798b6a25a136
-SHA256: ffe7050111412dcf0c3389ca5be858146cc598f41c278407bf23a5fe37a18761
-SHA512: b48ea8318aaf6c35f3064e8b05dad2c795b2fa2089e3d32aca299a4005d4d4c35f19ec03ec5e4ffbac1225a7ee0933f1a91eb2de6c5f0f1e0b04ee21d4d42e3e
+Filename: pool/main/e/exiftool/exiftool_13.28_all.deb
+Size: 3615868
+MD5sum: 23b251c39b402848c0ec1cb0fbc93883
+SHA1: 72eb3af0379adfdeceb113555c5676cce7718a4e
+SHA256: 922577c7e6a19b96194a162ce0dc082dcc654ae6eace00d929697a7f9536a4b5
+SHA512: cdb149ff937a91d5c77135d45b1d52b3417b8f9df574d826f8e5223f9d084672c10f08dd136f3c4abad9d00d8827c66d0bc1ec534121506d9ab7f0eb993c2105
 Description: Utility for reading, writing and editing meta information in a wide variety of files.
 Homepage: https://exiftool.org/
 
@@ -11821,21 +11821,6 @@ MD5sum: fb55d1492d00cfa6834938cc9798fb71
 SHA1: 1cfb77555e5fee0ec92b8453ba865314dc3341f3
 SHA256: fc6a2bc682a4a543a51df9ebe068334a3f95ff4483f9c1851370cce0c0158186
 SHA512: 4d9b6c68e7ddc128716e722e2c6d890479e6ea861fae7a26ff8d9b5838844ee2bd1393a1f013b907b22d7d656f5aa31056cfa2507d1b3597d71212383bcc0fde
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
-Package: jackett
-Installed-Size: 14424
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.1823
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.1823_x86_64.deb
-Size: 3205612
-MD5sum: c38afb985eb7d436e303b8c2bce57402
-SHA1: 2df230f23dd473d19dde1d8cdbe5d16a8431e74c
-SHA256: ec08945d219071e06f39c3960822cfcf45487f9702ea9e8865cde6ddb157e046
-SHA512: 8f9e7d123f53b4aa9f53c6c3f262702ef3746593024b28ddcb753222fa2718323493fcf04a2bf240ef35f401a4f1dcca8c0b92a119a472ae26857ee759039ef3
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
@@ -24341,6 +24326,22 @@ Package: llama-cpp
 Installed-Size: 46920
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5192-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5192-0_x86_64.deb
+Size: 5966444
+MD5sum: 75832e9cae92019551572ed5d1b853f6
+SHA1: 0515c88a35a6ae0007662d074f5fea0b51eb3448
+SHA256: 47422651e26e22e3fcc7a9c31a14cde7be2951509ba70b65f5b14661386a7fee
+SHA512: 3be9f3beb3d9daeba8cb28bab68f4d21f6de25ada54a10146856ebf1debac33def80497c137afce542f7559ecb42fb8099c6e6ee19df7f9777d1d9a2a2ffa398
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 46920
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5191-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24351,6 +24352,23 @@ SHA1: 6067d1385ec07d8e0da98bdb5e2b3b70c1f5752e
 SHA256: 6744033987fe7c753d22006fb8440938b302e37e709b2653fa96f8a43772a6c9
 SHA512: 94268200cb24d6a8db364a723ba75950f9586036fba502554653f32c6b15f9c025268ba028135e9f4e8aef624956179d49b71271f732d7fd45c3d11e375bee69
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5192-0
+Depends: llama-cpp (= 0.0.0-b5192-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5192-0_x86_64.deb
+Size: 68052
+MD5sum: ec062c0688742b38da314a9a9a7a1ed7
+SHA1: 28af26c28c75d3c65041c89329a1b56d4921ed77
+SHA256: 16c83e0f8e42cd0278a8e8abad2b13f9314f5ae5ae3f4081567fa03d10d20fb4
+SHA512: cc56af1ebfec85a832ecd44b385b327e92d0ef97f6de7c71da8483caac22eb1b12ad4e0eb046e75c9d6df2d7fd1905626339f89897eebc9c4fd135230e9813ff
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24368,6 +24386,23 @@ SHA1: 67506a0c5a256bbd776adb6b2189f4c1f3b332d9
 SHA256: 3aae24f5845c4df6ea8ad1c7ec60efe10117830694d50dc2e77840a253405f00
 SHA512: 8eef095d5476deff995f7d36bc75f06a6fcdc151a5c1eb91f56c2533db098b49fe747fb728597c92340be0ba0402b2820d74241996b2a17af8955b2af13d2459
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12248
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5192-0
+Depends: llama-cpp (= 0.0.0-b5192-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5192-0_x86_64.deb
+Size: 943660
+MD5sum: dfa05c5e8ae2489410b422bba6802eb4
+SHA1: 9605247106305855584b995663c6037b97a1d418
+SHA256: 158429a2fd5af77d982dc4c42f0a068a201fc13cc999cbe678d37d01da574cb4
+SHA512: bdbd6e5235a39e2f1f866a9b8fef4cb8b47cf7f8c1cf53c4a3ae86dc57e805111cc1d53d06412647e9ca9f5e3e105a63944952362d894c77bc9ea2afcdd0df58
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -28538,6 +28573,20 @@ SHA256: c2618957aa2d1c55f4025eb855b11464c87b7dde10da432a1d9f4ccb2bd7822a
 SHA512: 55e8a984187d9abb06178891ec89ec1adee19d7e1d18ba00efd92e38660fdff009f96ae3dcb9529fc56907755929d18e355a88890407981b3960699d33013bb8
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 20364
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.19.0
+Filename: pool/main/o/oh-my-posh/oh-my-posh_25.19.0_x86_64.deb
+Size: 5320296
+MD5sum: 1146feaf489ea38de0c08576893fead2
+SHA1: 8d2f79c39c97bc4d97adcf923d9a767b5a40472f
+SHA256: 5ab97d39f4818f2c414d302df8a7ba98da23f79b5595ce3616a3b1bad4e7426e
+SHA512: d9756debbb76214ad00cb16fc5d4007c6dbbb533ac20267b741c76ef4d56110cd9fabf6dc29ed9db881bba31f1135a0f0a6a3df03763327642379352296685cc
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 20276

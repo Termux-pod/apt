@@ -12365,18 +12365,18 @@ Description: KBD's showkey utility for examining keycodes
 Homepage: https://kbd-project.org/
 
 Package: kcptun
-Installed-Size: 26736
+Installed-Size: 28200
 Maintainer: @termux
 Architecture: x86_64
-Version: 20241227
+Version: 20250427
 Replaces: kcptun-client, kcptun-server
 Breaks: kcptun-client, kcptun-server
-Filename: pool/main/k/kcptun/kcptun_20241227_x86_64.deb
-Size: 7138188
-MD5sum: 0a81a05a280c95d77c29c93e17a41739
-SHA1: 554ff88b85f86c8a66d8fa88f36f722be25522c6
-SHA256: 832daf38a570e2cf99a8c9ace7fb8eceed481f7eb9f1c5f6817e4b43753f96d1
-SHA512: f5c2844dc9d1622d6a4ab7308a97bbdb92d8e157908ba23c94242d77ffb6f98eb703e178a6ffd23c47b57747585f1dd4ecf50b7dadc67c60891095d543202a4e
+Filename: pool/main/k/kcptun/kcptun_20250427_x86_64.deb
+Size: 7427624
+MD5sum: 39dd8565f8b9fa84b17da64e594eaf4e
+SHA1: 85d1ea13e14cb49c20bb0f71ce1f46e8052684af
+SHA256: 675ff5db50a8f2c275cf306d24a8ff99014e00bd44551e01855899c86f3db93e
+SHA512: 7a2eb9ba71f7247fd575048cd52a7ac78bfce620b9226ee174ce0a314385bb168b3955d9738db652fc6f47834fecf92f80881ace8ddb301a197ad3c1bedf853d
 Description: A Stable & Secure Tunnel based on KCP with N:M multiplexing and FEC
 Homepage: https://github.com/xtaci/kcptun
 
@@ -24326,6 +24326,22 @@ Package: llama-cpp
 Installed-Size: 46980
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5198-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5198-0_x86_64.deb
+Size: 5962964
+MD5sum: f279bb5ee076504b76fcc4d9eaa732dc
+SHA1: 25f8d2df1f96238b81b6505160ac6d0c7875082a
+SHA256: 6edd975ec180d06ab07bc9f634c053a6ff975dbe03bbf903d38e6fa2abebd09f
+SHA512: 5ec73865547e636444c45aba8be5be8da26997c929908fc631c9f44e2f406b1b566ed21878d3b709de848db351bd8cb706e0460330f0f9015b44733c4ca5ca7f
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 46980
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5195-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24336,6 +24352,23 @@ SHA1: 8f2fb141f2c11018c84af3e003902a4072828ce7
 SHA256: 4a1d61b022b916f5e3f481550a3c422f08a5ef0f11bedbd85a33df517a94027e
 SHA512: 0b581f659f3db722f9f0cceee1b5c610c661d25be85deca4e1881fb7b0cb6f89fb44d5b61fbb41ca67e7759750181afef489c0b7e348036a08982add5caa6226
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5198-0
+Depends: llama-cpp (= 0.0.0-b5198-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5198-0_x86_64.deb
+Size: 68112
+MD5sum: 156a9ed2cc587c095442d3b3efd0aa04
+SHA1: 5032790bff414d9fa996d346da20ceba14d65065
+SHA256: e7768bde2125ddba7947c7f652a1767ca24bf703079ab2f2d9aba2f5d1870398
+SHA512: 2d4330943325aa62ce64b46e459c870bb0aa190b9d91087d268fcf87f6475a0c8141386dc75b891cdd32ccd2e037595ffac81ced51cb2418e8db2f8a6e2f29a8
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24353,6 +24386,23 @@ SHA1: f8d6f3cee1b7c29e5bccf8177a645844b2b151a2
 SHA256: c7698a097ef18c4f822415e7b67f011c09be0e2a1faa39064967cf8b2edc5e66
 SHA512: cd73607f0c780de6cd6fc828eb28261dfbfafd8e2d89c6b6fa74d955a14184aea32e293d790bc0ae2ab6cc22005574309260847395e42585d5f18b446eaceb1f
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12248
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5198-0
+Depends: llama-cpp (= 0.0.0-b5198-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5198-0_x86_64.deb
+Size: 943044
+MD5sum: 3a400e399d7f9d31971e7b64f5c95e35
+SHA1: 3a8a35536818848c10a2cac4e7bb3d277c460433
+SHA256: 9eed37b55def48d46985c0386a56dc5da7a1002cce5a29358e627707ef1ed4b1
+SHA512: 9c758e9195f7ee224459178397aa6cef9cb351e2646595ab775eb7133d7ac43795e0f4a8be094ec1060684ad8fcc524211cbfec52229a9d39649f47544bbd159
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -26477,17 +26527,17 @@ Description: A pager designed to just do the right thing without any configurati
 Homepage: https://github.com/walles/moar
 
 Package: mold
-Installed-Size: 20556
+Installed-Size: 20944
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.37.1
+Version: 2.38.0
 Depends: libandroid-spawn, libc++, openssl, zlib, zstd
-Filename: pool/main/m/mold/mold_2.37.1_x86_64.deb
-Size: 1678020
-MD5sum: 43237a166e3207aef581c8f1b3dabac8
-SHA1: a8f3b8a0d0fe89402b7f99a85bd1c19513ce22cf
-SHA256: 8ee97c7f10078c3372d6dd5b538945acdc51f3f5ab4d16247e1b9769f5fc360d
-SHA512: d3498a7d665d2263c766fc0d7e1a63e32fff0c03c95f3590601ce1f2e48d7c90d96cbce7fbb8f9c3f53d3615bcf03b70590df2c256deaca84943e5cdd53b42d5
+Filename: pool/main/m/mold/mold_2.38.0_x86_64.deb
+Size: 1698076
+MD5sum: bf1cf7bd769888ab0d94b41e4a193491
+SHA1: ae6812473857fdc1c16109e39c38f3540a0509b9
+SHA256: 6d53a8725fb118667d3ef3db190e76939168355fdd2e29d9ec65ba6b0b699cf1
+SHA512: 2d8f22690b92c569266d79d0d574b0b53b6532c24f6b84cbea85ddbe79cca71aa06c3f9c4902fafccaeb65e45b6f45889303899e76212f0eab88e6e4b8352513
 Description: mold: A Modern Linker
 Homepage: https://github.com/rui314/mold
 
@@ -28157,21 +28207,6 @@ SHA512: d1967845d2641f5cff5be15530fa194a69233bd0a308ccfbd54e864668d06d4855980df1
 Description: blingful TUIs and character graphics
 Homepage: https://notcurses.com/
 
-Package: notcurses
-Installed-Size: 1448
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.13
-Depends: ffmpeg, libandroid-spawn, libc++, libunistring, ncurses, zlib
-Filename: pool/main/n/notcurses/notcurses_3.0.13_x86_64.deb
-Size: 339236
-MD5sum: 9c87afde54b0e829e784ecc17a1bb832
-SHA1: 3ae208e7de25163943720e1140dac1ecf9aa35db
-SHA256: 0ef03a6ccd4df8e21b31c1336276166ff6fa44d5c4113e8f51b0221d786b4a65
-SHA512: e3dfdda30b5cabf99dd2a9cad22e671f1e8c2e81d7bc4573f0a35a861d24442bc69d21538bb8f2024f45f50b60fc5a6f5353237a0a01ac986266ab27c66c8d6f
-Description: blingful TUIs and character graphics
-Homepage: https://notcurses.com/
-
 Package: notcurses-data
 Installed-Size: 6500
 Maintainer: @termux
@@ -28187,21 +28222,6 @@ SHA512: eb34b0b54d71ec6dc731bc6697f8cefad12a33d7bb96fb91c48b5c264064d00f0059cf39
 Description: Platform-independent data for notcurses
 Homepage: https://notcurses.com/
 
-Package: notcurses-data
-Installed-Size: 6500
-Maintainer: @termux
-Architecture: all
-Version: 3.0.13
-Depends: notcurses (= 3.0.13)
-Filename: pool/main/n/notcurses-data/notcurses-data_3.0.13_all.deb
-Size: 5903916
-MD5sum: f2049a2f7ec07f1aba65af7ea9780b52
-SHA1: 5987e74e5cc9bfec5f68df98fd930b65fdd94d9e
-SHA256: c018ccf57075e3e830dbee2ce3e4082c7d410df3e17dcf282d981527d89c6514
-SHA512: 04a429e8e07ada074bd21b42b4d22f34cf1e20152660b4d1b7a65789cbf2e6e4cd58f20c9eff249636dd074bca1cbe07ca9635d231896e8cdf38332051594f14
-Description: Platform-independent data for notcurses
-Homepage: https://notcurses.com/
-
 Package: notcurses-tools
 Installed-Size: 1268
 Maintainer: @termux
@@ -28214,21 +28234,6 @@ MD5sum: fb755104554d6cc8eb2d1f7824f4cd71
 SHA1: 55082abb2e76eb2539a7be96be78ab1cf9697216
 SHA256: d6b6fb96289f1a14023c753a2f8c69b71326a32945e434e16f1812d30c87d9e8
 SHA512: 602e4a4246b90d07d097cbd69261f7893ff27a93fe17d1302ac830bc5e6f5ffc9be5a24388ee3b782e78822d36c301514593d2f2547c94554bb8b87e7c8b5d11
-Description: Tools and demos for notcurses
-Homepage: https://notcurses.com/
-
-Package: notcurses-tools
-Installed-Size: 1268
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.13
-Depends: notcurses-data, notcurses (= 3.0.13)
-Filename: pool/main/n/notcurses-tools/notcurses-tools_3.0.13_x86_64.deb
-Size: 441392
-MD5sum: 955251c0c7f3778c64c0046cb2b6ee34
-SHA1: 3df2d5a1e43ab7c03316ee79a7a962e2633aafd8
-SHA256: 0900e82a25b029b5212c13cb0ef870d769e3d7708e7874bca6e41a88ccbb39ab
-SHA512: 1146f50ad1959cddd488d5ea90b8bfa35b848d41a496e4b57f59b308f30107b7d8f651d1691182e302c0fd8387504c32eac14a5b17951a88671a38fda733d8c7
 Description: Tools and demos for notcurses
 Homepage: https://notcurses.com/
 

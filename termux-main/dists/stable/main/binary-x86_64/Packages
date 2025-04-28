@@ -16364,29 +16364,29 @@ Package: libheif
 Installed-Size: 1612
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.19.7
+Version: 1.19.8
 Depends: gdk-pixbuf, glib, libaom, libc++, libdav1d, libde265, librav1e, libx265
-Filename: pool/main/libh/libheif/libheif_1.19.7_x86_64.deb
-Size: 428672
-MD5sum: 9abe3710611a9574acd751c3c1cbb19c
-SHA1: 99db191789c058b1b2a7fac49db2c11c0844b058
-SHA256: 99a253a1e0411a554a9238e5ec5f90d770f0a5363a97f91d11be779b56ac46b0
-SHA512: dd4c4f1c3f5f3ce8c8c305eade23143612a5bd2632dd41d9d76afc85396929388d616ced80e9b140827b36a128299912af583de625ea51712d60aead7d291924
+Filename: pool/main/libh/libheif/libheif_1.19.8_x86_64.deb
+Size: 429484
+MD5sum: 739a360b9d45f311451dd6251db078eb
+SHA1: 47303c2b6a3660010bb42cabbe36d124718dc44d
+SHA256: 5beef64e443e92aef827914716e87d3417f5fececf19b9b9e445a7ecfea2ec3b
+SHA512: e2954f281c10f47b8e14c0e02325dd0cfa816c352fa155bb02388628b4432ffbf6a647c8245729a5bea1e0bad55ba5982d957c254e6675215fdf4402f38e490c
 Description: HEIF (HEIC/AVIF) image encoding and decoding library
 Homepage: https://github.com/strukturag/libheif
 
 Package: libheif-progs
-Installed-Size: 488
+Installed-Size: 500
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.19.7
-Depends: libjpeg-turbo, libpng, libheif (= 1.19.7)
-Filename: pool/main/libh/libheif-progs/libheif-progs_1.19.7_x86_64.deb
-Size: 119728
-MD5sum: fd19ed62877441313bb9c9f47bb3a7fc
-SHA1: 3468d5a9bdc0c27b8802f7a1b241271cde68d023
-SHA256: e08cbaca83361528464d9fdba8ffbedd7c9f96529d21c0885d41b849de129917
-SHA512: cf0986789cddd49a0e3a4adbb00eaec1dd2d48c2b89470b345398d9bb901ee70b7b5a0eadceecc768fc15b9cefd59b46447e4f14261de99f4c5d1ed7c3042ca6
+Version: 1.19.8
+Depends: libjpeg-turbo, libpng, libheif (= 1.19.8)
+Filename: pool/main/libh/libheif-progs/libheif-progs_1.19.8_x86_64.deb
+Size: 120560
+MD5sum: 0cff28bbd9c2c9e3982a0f81acb71c1c
+SHA1: 3602d33e6f4eb5361d3c05b7b4b14c4405ee1527
+SHA256: d4307ab7dbb094228d0b78e8158148fedb517f03379f42bfe06f19f1823afb96
+SHA512: a0851559587e55541437c7390165400d3d15194f1f16e2306f85a7acec34f33a2f61f689f0ba51d0fc4e85286ff0e92af911f13eb771286fe3ec4c13530db1e6
 Description: Programs for manipulating HEIF (HEIC/AVIF) image files
 Homepage: https://github.com/strukturag/libheif
 
@@ -24323,6 +24323,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 46992
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5200-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5200-0_x86_64.deb
+Size: 5958548
+MD5sum: f071e85f54e6267b847a927efe632156
+SHA1: 60bf6efc3b5b21dcc3ae21e56708466ff5b2940a
+SHA256: 2a6d7d1c7d5f4a640e9ce52f965e27379424fdde007a085b1e0d74c142a32e0b
+SHA512: 992e61b542772177ae8253c3cc64c562ce201724009ac6da148d92530393fa97da2070dd9d8bca2eae2716334eec0ee84cddba1bbcb9cffc2f4d552b52390a85
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 46980
 Maintainer: @termux
 Architecture: x86_64
@@ -24342,6 +24358,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5200-0
+Depends: llama-cpp (= 0.0.0-b5200-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5200-0_x86_64.deb
+Size: 68116
+MD5sum: 62576eff46889b3b58c7c7856379e26d
+SHA1: e1fb97ff3fa4926f8c3564702ad0fae95eb44f1b
+SHA256: dce8375eaa3bedbd39dbd0065ed11e7acaf349323c032880ef34aaf422fca628
+SHA512: 9f4b5f4720aef6b3e1109cf79d2d2a8ab9b99a33662d1262bd206d45437f509f2df194cbf26af62237f4e17ea400af905c960987cb4d72f9510d9b5c96be6b71
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5198-0
 Depends: llama-cpp (= 0.0.0-b5198-0)
 Recommends: ocl-icd
@@ -24353,6 +24386,23 @@ SHA1: 5032790bff414d9fa996d346da20ceba14d65065
 SHA256: e7768bde2125ddba7947c7f652a1767ca24bf703079ab2f2d9aba2f5d1870398
 SHA512: 2d4330943325aa62ce64b46e459c870bb0aa190b9d91087d268fcf87f6475a0c8141386dc75b891cdd32ccd2e037595ffac81ced51cb2418e8db2f8a6e2f29a8
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12248
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5200-0
+Depends: llama-cpp (= 0.0.0-b5200-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5200-0_x86_64.deb
+Size: 942528
+MD5sum: 784baa47a6d2868d6deb3f066340b7a4
+SHA1: 04649560aeb31aecca84f47dc33effa034132d5d
+SHA256: 1d42698fcfcdd8bc13838fefff001a68f66d53d90b278279b9abdb7871305ba7
+SHA512: b1f50840437c3475ab1e006e7ed12e7c4578825163db6da762c14319f0fd417ce62e149508fbfe77e8178b70297639354024007283d036b78dcfcb8a48a16d02
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -26915,6 +26965,21 @@ Description: Command-line media player
 Homepage: https://mpv.io/
 
 Package: mruby
+Installed-Size: 4268
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.4.0
+Depends: libandroid-complex-math, readline
+Filename: pool/main/m/mruby/mruby_3.4.0_x86_64.deb
+Size: 504340
+MD5sum: ee820de16e8954778b659334ecb35309
+SHA1: 51121937c369a936844a75e651e4e304e86aed81
+SHA256: e6faadfa4c8243435da3e48fd5467f94235a45ea5c46c733b9ddcf564653d0d3
+SHA512: 60cebb3956bc50b6b1e3140f007dbecf272e44b2d6028b6ef21d6a133f0b3b33cc990cd64d9ee1944a19367e48ec9527f365d9cb0f8c1fd5e97ba5b406c9c994
+Description: Lightweight implementation of the Ruby language
+Homepage: https://mruby.org/
+
+Package: mruby
 Installed-Size: 4548
 Maintainer: @termux
 Architecture: x86_64
@@ -26927,6 +26992,21 @@ SHA1: d0f6b7c3ae335f9c7b5f39169c8a57d8187f12d5
 SHA256: 06d3565ace4b1409a16ce3a698c8919f81b77dfc4a3c537642a434b6d9a4149d
 SHA512: 6f37e3ecf123b555e959974027b7a03472a94c7385dcca0bb922ef22fae5f96c8c16c2d5c5d6854a9c75081deb2eacb35524cb456b98c924e6f03bf71f9396b1
 Description: Lightweight implementation of the Ruby language
+Homepage: https://mruby.org/
+
+Package: mruby-static
+Installed-Size: 3344
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.4.0
+Depends: mruby (= 3.4.0)
+Filename: pool/main/m/mruby-static/mruby-static_3.4.0_x86_64.deb
+Size: 381504
+MD5sum: d6730454907971f936f57f79c3062b9b
+SHA1: ead80f204e64fcc316c554290b9964f6e045a47c
+SHA256: 5046d846d2d4aaaae6ed76d61d673a8a4632b7ebd16e03c22bf299b818506217
+SHA512: 0e28a1a1f444d72e0eacd3136cb63d925e1d39dc187b2dbc897b257725b08845c8b18399797cebd28bf700d240063300a23438fa2ce38f03dc0f71cabe20c001
+Description: Static libraries for mruby
 Homepage: https://mruby.org/
 
 Package: mruby-static
@@ -34707,20 +34787,6 @@ SHA512: 5aee87d4a33ec5ecadf2e500b70b26f8ad3af85ed311d0cea6acee1c08ac91557167d7f1
 Description: Self-hosted anime and manga server for sea rovers.
 Homepage: https://github.com/5rahim/seanime
 
-Package: seanime
-Installed-Size: 66988
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.8.3
-Filename: pool/main/s/seanime/seanime_2.8.3_x86_64.deb
-Size: 17486424
-MD5sum: 703c9f85ac30aab1a2eb0af6ec3d1816
-SHA1: 8415003d979b6d47e5f1db26fb8b38d4c21ffe43
-SHA256: eb30ed83e2fbe0300146ba38d4603fd3a1371f654d4ba1c79c4fa1a9ae0cec9f
-SHA512: e99f4237cd457eaea103d041dea547c4546e31c802ebf5930f70e92e0dc742fdb727bd24292ca26623d5e482f0dd32462bea2c08a67cef39d3442c615f008256
-Description: Self-hosted anime and manga server for sea rovers.
-Homepage: https://github.com/5rahim/seanime
-
 Package: seccure
 Installed-Size: 108
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -35189,20 +35255,6 @@ MD5sum: 0b7d894215412ab07e29077be880fe36
 SHA1: c57e31d55a43945b35e7716c8e4b9600554b9318
 SHA256: 5abf9348601efec9f656846860e6360263c1798b103f1de71654081bd8a12fc4
 SHA512: 2a81a967f1db8383c5a834ce8a39b7d27a45642f4baf402e9f2fd08b4beb12c3271f517d051265d74d5440795cd0f4e9380d4f7fe26a549b610e3651d7336a76
-Description: The universal proxy platform
-Homepage: https://sing-box.sagernet.org
-
-Package: sing-box
-Installed-Size: 33276
-Maintainer: kay9925@outlook.com
-Architecture: x86_64
-Version: 1.11.8
-Filename: pool/main/s/sing-box/sing-box_1.11.8_x86_64.deb
-Size: 8224040
-MD5sum: fdc9871b1e8610009df22f0632a01c37
-SHA1: caf0a8af0a36d74f1352667dac00151d1efb6f2e
-SHA256: 0e71b8e88d4a4e0927fdbd0449ba85e5965ab5390dc322adffb3c067e4877084
-SHA512: df99e34d2c9c745dfa6e709837b7d6700ce308c1fcd0d6b47a3172b17c5146fb901f727272ba51abfef6eee88372db2e6879679cfa06911d6429dd11706a673f
 Description: The universal proxy platform
 Homepage: https://sing-box.sagernet.org
 
@@ -36101,17 +36153,17 @@ Description: Streaming bar graphs. For stats and stuff.
 Homepage: https://github.com/seenaburns/stag
 
 Package: starship
-Installed-Size: 11080
+Installed-Size: 12812
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: x86_64
-Version: 1.22.1
+Version: 1.23.0
 Suggests: nerdfix, taplo
-Filename: pool/main/s/starship/starship_1.22.1_x86_64.deb
-Size: 2984948
-MD5sum: 4d28b5607f489f87243cfd8d80b61c04
-SHA1: 04f57656a322d75537a9ddf356d27ec981dd856e
-SHA256: eb6bf12713bf01f3cda0d33cf0a12b67010d8150a3c3b44420592774c419081c
-SHA512: 3b8b81883ef4b798965e7f08333050a425e00e6551f3c579e1af6a609853035de6bbf57632d0511b881582240de50d5be97231e1735ef7c84aab9420a1dc4ef8
+Filename: pool/main/s/starship/starship_1.23.0_x86_64.deb
+Size: 3572372
+MD5sum: 0496154ffb5a8158ed8fc9ff4c80787f
+SHA1: 92501b2fa4115495e9b688aedc3b90e9f3fd98f8
+SHA256: e8658b2f916e5c13dfe5e955e985983dfcbccdb6d5b6b5b455fa7fe0c80c4595
+SHA512: c8ac73d29840f34c33c101b1ab9a860c6ca6382945eed5a1220ecee453b0501038d87b2c480f7aec46170a78964e350365da42c778d8c2e58a5bad9bfaf73fc5
 Description: A minimal, blazing fast, and extremely customizable prompt for any shell
 Homepage: https://starship.rs
 

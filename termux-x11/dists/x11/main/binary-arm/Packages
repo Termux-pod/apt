@@ -1244,17 +1244,17 @@ Description: A generic input method framework
 Homepage: https://fcitx-im.org/
 
 Package: fcitx5-chinese-addons
-Installed-Size: 4040
+Installed-Size: 4184
 Maintainer: @termux
 Architecture: arm
-Version: 5.1.8-2
+Version: 5.1.8-3
 Depends: boost, fcitx5, fcitx5-qt, libc++, libcurl, libime, libopencc, qt6-qtbase
-Filename: pool/main/f/fcitx5-chinese-addons/fcitx5-chinese-addons_5.1.8-2_arm.deb
-Size: 1063552
-MD5sum: 51d5685899f022b798ec5abe84697139
-SHA1: 8394f5a0947fad9698d3460d14707b37fd85572c
-SHA256: 5faf92bc83263b480e79fd5ea05d99773e312435bab8ccb5b98dac2711775722
-SHA512: 491dbd96fcb2cb38345181bd8c086ea7f91d0883abae95c23b4c0558dd8299e9346bd67bd2f473e1557653bca065a7df0c140752160cdcf805bdc3aa9919ff70
+Filename: pool/main/f/fcitx5-chinese-addons/fcitx5-chinese-addons_5.1.8-3_arm.deb
+Size: 1213648
+MD5sum: 1fe15b4c959506a87236ad326a3e0bfb
+SHA1: 9d3dd328eaf9944f5e91e7fc2ef644b993b1967d
+SHA256: cc8c3287140fda6de08e39ac629790854db2d5713f0d5356256af0e4568bb775
+SHA512: 557bd7c964ee765785c33f01eabaed7cd38bcce7b44384c04351226e9f07c9c3754b3721f5cb91d9dc5a44130a7e5b32f873d6d27a4a6e95f780fad131f3c404
 Description: Addons related to Chinese, including IME previous bundled inside fcitx4
 Homepage: https://github.com/fcitx/fcitx5-chinese-addons
 
@@ -4548,18 +4548,32 @@ Description: Building blocks for modern adaptive GNOME apps
 Homepage: https://gitlab.gnome.org/GNOME/libhandy/
 
 Package: libime
-Installed-Size: 2116
+Installed-Size: 2108
 Maintainer: @termux
 Architecture: arm
-Version: 1.1.10-2
-Depends: boost, fcitx5, libc++, zstd
-Filename: pool/main/libi/libime/libime_1.1.10-2_arm.deb
-Size: 544392
-MD5sum: 4613840559bad6327bf870907db2d489
-SHA1: 0a1984d1dd3f4dfa309a8d7865623b8ee9a77d4c
-SHA256: 6f811e0a37c341adb8f6fa7ceb0802f867c948f8f283fbc98986a0b232b931e0
-SHA512: b2322f1802fe9a5b53a5b32e40bc2a1d9323a1a53d6bae5c641cbb789f711652afe97097ac96d87c1f316b459a392cc5c5555f09712738f3536a5e0d09579afd
+Version: 1.1.10-3
+Depends: boost, fcitx5, libc++, libime-data, zstd
+Filename: pool/main/libi/libime/libime_1.1.10-3_arm.deb
+Size: 544672
+MD5sum: cb6db2dfe2c340eb9ff383900de68e9d
+SHA1: ac9e05a4b22343abc3be4fceb1358b338fe37e58
+SHA256: 915abd4629dff92f826441980c08e042b6c807ac59ca638f673528979f605a3a
+SHA512: b379c44614f0280826cb30bf93429a59ff4ef9c47cefa99079eaf4f4f9e8ce0d755522434ea7051c24c46337d08e441181a7d9b330ae2d11b08881b299f31765
 Description: A library to support generic input method implementation
+Homepage: https://github.com/fcitx/libime
+
+Package: libime-data
+Installed-Size: 44372
+Maintainer: @termux
+Architecture: all
+Version: 1.1.10-3
+Filename: pool/main/libi/libime-data/libime-data_1.1.10-3_all.deb
+Size: 36489192
+MD5sum: e5614256108cf4810a467b95920e7c6f
+SHA1: 0954251295b9236c174d4fcc7577fe5b34f4fb1f
+SHA256: 66225cb8c5b388da79be81265fe2a6c5e35a71270813c4594af8674750cfc15f
+SHA512: 0c85c82ef7df484360ec680f816212893069b0291f7028d2fa3fa16ca5afe96053d573c67b7c862c4816c894fde53e84f68a9c3523498447fc7caff457edb82d
+Description: Platform-independent data for libime
 Homepage: https://github.com/fcitx/libime
 
 Package: liblxqt
@@ -5144,6 +5158,21 @@ SHA256: da632dab9aa2b3af5e4ac9d7f72846be2774416b27f79db6a474f1b6cd3b230f
 SHA512: 9b29e850ee251b5c607f72027abe56a1dc221841ce2b867e08623255f005b4fd0defca9ef67474dd39262397d8b10465c47678879394ae953a5863935561824b
 Description: Static libraries for libxinerama
 Homepage: https://xorg.freedesktop.org/
+
+Package: libxkbcommon
+Installed-Size: 948
+Maintainer: @termux
+Architecture: arm
+Version: 1.9.1
+Depends: libxcb, libxml2, libwayland, xkeyboard-config
+Filename: pool/main/libx/libxkbcommon/libxkbcommon_1.9.1_arm.deb
+Size: 200764
+MD5sum: b73ce1359b2c8dfa7262fd95ec85262e
+SHA1: 1ef0a1865a65f05e3a39552bb7d088b23d82c8ba
+SHA256: 6480c77e445d036c5bc4ccf5f57b410f68bb9aac85e6ab84160618bfdfba14b9
+SHA512: 4c1ebf0915c137d0316a547bf5991eea7e503349df6e6113f1ae878d79f6dc2671cdbd2d448f925a47571fe138e359e7d228f4b8026126f7891a4a395226acef
+Description: Keymap handling library for toolkits and window systems
+Homepage: https://xkbcommon.org/
 
 Package: libxkbcommon
 Installed-Size: 948
@@ -6775,21 +6804,6 @@ MD5sum: 83a8c9d1bce428db8f4c98a97603aa4e
 SHA1: ebff149802b3fb90701df96dd0fe5de576905771
 SHA256: 5376f0d7b3f19941ab051d5ca7a94a18a41c32183250cf38c35b513a1d90c8a8
 SHA512: bfc010fda65ccc9581b8fc168e0993ed4887df09d584fa42804d4af8641ab0e582f9b89d266c8870431dcc57ae6f0b3e8409aa6e70d5350614517f095081f0fe
-Description: A free, open source, flexible, and extensible screen reader
-Homepage: https://orca.gnome.org/
-
-Package: orca
-Installed-Size: 14060
-Maintainer: @termux
-Architecture: all
-Version: 48.0
-Depends: at-spi2-core, glib, gst-python, gstreamer, gtk3, libwnck, pango, pyatspi, pygobject, python, python-pip, speechd
-Filename: pool/main/o/orca/orca_48.0_all.deb
-Size: 1440800
-MD5sum: 984d4afc71b4a0e2e484536a397d2b22
-SHA1: 0951fc5a5f055e347eb8291b8000509dbf8596a2
-SHA256: 95b8e2c2cd0dd23771d62ae2c68c2307e8e6ffab1e5e7bc1b8b0a8519e320936
-SHA512: bf22c93bc25982a86611efd60bea6a1acbd974fb93bc239f10a32a3e06517fc812d30966bc1915c7a9733e5b13c221eec250be73a60275d08b8eef2e79d6326b
 Description: A free, open source, flexible, and extensible screen reader
 Homepage: https://orca.gnome.org/
 

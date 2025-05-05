@@ -11824,21 +11824,6 @@ SHA512: bb2c60f60186d3ff33dc52bbde2ec6a7de262735df47ee9d73f35a8a0731adbbd214db63
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14388
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.1863
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.1863_x86_64.deb
-Size: 3204348
-MD5sum: 6d12e5860353d1b7f9815718cfb26caa
-SHA1: 0dd479ed2b46ca5e25116e6319b5ae7eb8fc0897
-SHA256: ec298684c7ba49ea352b7e155df2fd39e6ea0ba1a603882d718e4483de9047e6
-SHA512: 91f5aa112e29348041914cca9c8bc3931e8e8a90640fc7b666936ea59d62a209c7001a208386005fe11f792eaa6683fd7036eaa2b730fc620bfe7af3d0310a17
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 764
 Maintainer: Komo @mbekkomo
@@ -18132,21 +18117,6 @@ SHA512: 44b5d2ba7d1924dbc3eca7275a583b490c82484129129e4d4f695a69863466e4c17238bf
 Description: A zip manipulation library written in C
 Homepage: https://github.com/zlib-ng/minizip-ng
 
-Package: libminizip-ng
-Installed-Size: 308
-Maintainer: @termux
-Architecture: x86_64
-Version: 4.0.9
-Depends: libbz2, libiconv, liblzma, openssl, zlib
-Filename: pool/main/libm/libminizip-ng/libminizip-ng_4.0.9_x86_64.deb
-Size: 55104
-MD5sum: a1483b528feddac8ecd689378fe193b6
-SHA1: 3154e137b15a2d0d7a4c14bd360871157bc3dc20
-SHA256: 5c3c7be4844b3a5731ca28724ecc7c7bca4e4e254bc3eafa8b29df7ac770daf6
-SHA512: fbd7ace43e4b1f103b86438d337633baadbe352d910f4837e069a70fffbf9eb124fd1bc98423975c5dca0d423c4127036659a9a82ca9a0bd33ddce419a9ad521
-Description: A zip manipulation library written in C
-Homepage: https://github.com/zlib-ng/minizip-ng
-
 Package: libminizip-static
 Installed-Size: 76
 Maintainer: @termux
@@ -24357,6 +24327,22 @@ Package: llama-cpp
 Installed-Size: 50352
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5283-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5283-0_x86_64.deb
+Size: 6432316
+MD5sum: 130a98620c8b451ba83779934e77de50
+SHA1: 544f346a1fbd829104b94178bb049f55230b5c98
+SHA256: ed0cf72eac31c4dfe0a74c722a868b7b5a65f13dfe8daed166eb571d5171b9b3
+SHA512: 102de97aec7982472c67b5407507d269f314da2a420170c21d54f0d5809ab7fa14a52e2ab13f945ee08ff59a342ed188ae5d27e367d22474af8683c492d8db7c
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 50352
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5280-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24367,6 +24353,23 @@ SHA1: e1b4afe8c61cee8b1e2b662b265e0b26eaf2a024
 SHA256: fc9388d4a9d1f8a77a32c3077d5c5edc3a465fb3063ee82c23c032e5170aeb5a
 SHA512: 4361f2a2406f9e84d79a9d54fc1d3f18da9740a76659d3925e750e8e023c95eb70fe41762e5e939870cf9f28dc63368f30a624601c2906dffd644a367c70b63d
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5283-0
+Depends: llama-cpp (= 0.0.0-b5283-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5283-0_x86_64.deb
+Size: 68060
+MD5sum: 5c378e390f53ff736e003bea286d2cc8
+SHA1: 31c252aa31e2e10d27f7065c3ce2c950c2108df5
+SHA256: 8bc3e7da5a8ab6c0a11022248504d9df5af98132acc9cf7de52a91d99163ee3c
+SHA512: c83588c851e74f686f905683079b6c90504e9c6faf7db0f3e85288b4c8e1498243eddbab41d955508bec7ac27955f5b503874822b3a29db466e185fa1912e6a7
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24384,6 +24387,23 @@ SHA1: 5d24787104ece1184d0330bc78ea43975d558dbd
 SHA256: 08bc5f10b3329a9865e2d98cb671a19ea58898e2f6942f6a4e4767b43cf8bf8d
 SHA512: 976fb963fe812622066de2cc5000a2eaec4051aa5d9f0c4f2a15b1321054ed157aaf67e07dbbbbdae7b4655ff0fdb7afaeec63a8a8ed6d4cd64deb585097022e
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12688
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5283-0
+Depends: llama-cpp (= 0.0.0-b5283-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5283-0_x86_64.deb
+Size: 976568
+MD5sum: 1cabd721975c591549e29bfaa10f879b
+SHA1: 874b7bdffc1bb198030e6a7a404921d83b0a1754
+SHA256: f1e5bf9ac759a4b696b025b944622042ecc0ff8b5cce6239028133946c822655
+SHA512: 7705cbf99abb1646103eab07480c4fab7fcf5a8d209a0267764f2644294fb3222190c78d03f0a1750a88af709ea3b500772da5bbaea2e547d181c0e2880b7584
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -26491,6 +26511,21 @@ SHA256: b6b8ffa6b8032a1caa12efe69601802dda00cd084469b305a04ff192e634a642
 SHA512: 7651773977c9053ee20e2447d9b44e490c199039aa4bf9a7ac59326d061f52907a00242ffa8e15bf6b9c8c897b67afb1120e9ad66690a49b337217de6d452507
 Description: A pager designed to just do the right thing without any configuration
 Homepage: https://github.com/walles/moar
+
+Package: mold
+Installed-Size: 22052
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.39.0
+Depends: libandroid-spawn, libc++, openssl, zlib, zstd
+Filename: pool/main/m/mold/mold_2.39.0_x86_64.deb
+Size: 1777788
+MD5sum: b1bf6fd8b28ef7770045a059b9fe8dd5
+SHA1: ecff804fc854988546236c85de7b29f0d23375e4
+SHA256: 805d8501fcc54693c0f44b098f860280aa2bc8b19e78583208a64f97a93f2b5a
+SHA512: fb7ef48fd3a357d67b340e1213cd0ee002f34bcf6ca0729bb277f1c9e5f17e0981ffe8b239f099693d6ebe4a6ee483cf2b24bc6e7e6e2ae161770eade6772e60
+Description: mold: A Modern Linker
+Homepage: https://github.com/rui314/mold
 
 Package: mold
 Installed-Size: 20940
@@ -32420,23 +32455,6 @@ SHA512: e1f6bb862f07c9a9d745fdd7beb4d7688388607a89ecb312d1c5d94446c6302f6b420906
 Description: A set common files used by the QEMU emulators
 Homepage: https://www.qemu.org
 
-Package: qemu-common
-Installed-Size: 246076
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Replaces: qemu-system-x86-64 (<< 1:8.0.0), qemu-system-x86-64-headless (<< 1:8.0.0)
-Depends: glib, libbz2, libcap-ng, libcurl, libgmp, libgnutls, libnettle, libnfs, libpixman, libssh, zlib, zstd
-Breaks: qemu-system-x86-64 (<< 1:8.0.0), qemu-system-x86-64-headless (<< 1:8.0.0)
-Filename: pool/main/q/qemu-common/qemu-common_1:8.2.6-5_x86_64.deb
-Size: 18575820
-MD5sum: 514bc20fa4704d26775acceb92beb88d
-SHA1: 2ba230c1a6712092a33cdb7e30a6c594c7be524d
-SHA256: 12dbf9c9cbd6222b588242dc1889710b5f7d39d46e39f48ff4ab50ad8c32bf07
-SHA512: f56bed0ac6bb906a488d1a28481ccc1abbe92f23a23b0ff7a79370dc7c416a6c2d83b4b5b85485f5c5b3b6a043ada7bc63a06e5232dcdf0a1775bc577ffa0200
-Description: A set common files used by the QEMU emulators
-Homepage: https://www.qemu.org
-
 Package: qemu-system-aarch64-headless
 Installed-Size: 24848
 Maintainer: @termux
@@ -32449,21 +32467,6 @@ MD5sum: 94439fba4085bb9880a74e4e23fb901c
 SHA1: 460a33bcf170986abff8299eb71beb88f4d4a468
 SHA256: 6996e620323c357fb895a87481d5b8ae017b6fda679098d23d764cd147eea963
 SHA512: 6e0661c6f1da090b45b25a19470fccaf57c0cd678737cfe8f3c0a505a797a268f1d0bc33667f8606d461ff6f4a55296c2aa84139ff2de7030c1938b45451ec97
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
-Package: qemu-system-aarch64-headless
-Installed-Size: 24848
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-aarch64-headless/qemu-system-aarch64-headless_1:8.2.6-5_x86_64.deb
-Size: 3472728
-MD5sum: 017d0ed13dce1f910defdf72de29f38c
-SHA1: daf426d91fd9572cc455328e063e58eb57d21f3f
-SHA256: 3e6da97aa039880c7d8fe8a8b0e370635fdcf386c9dabd5ab7ee3f55ba223018
-SHA512: 26730629c7ed8cfe215c73d8df0b3eb595dbe8d14b99c324e82c6dddcf6eb892fe8e916a2663e2017004aed869fcb97c308d13246878671b680adedb89405a07
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
@@ -32482,21 +32485,6 @@ SHA512: b6623febbe5319ed30ef53818204f56da3ec50c531ad5b535efd24df4a9c4f5fb4ed833b
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
-Package: qemu-system-arm-headless
-Installed-Size: 22836
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-arm-headless/qemu-system-arm-headless_1:8.2.6-5_x86_64.deb
-Size: 3136840
-MD5sum: c576f43bdba33f504e168468b45be168
-SHA1: 7c3af9030b3bbee66faea20b226c2270538f3628
-SHA256: 37e1a66247f7117e346ecd23d54716a2e06c53335f5fc7e2ed068ae80095af55
-SHA512: 17ad6cee0d6ba91c63048cab3be4292f63087365b795d40b3b5bd989944fbe161456e1fa476d9b6c341d8002811d36f6d18699e0b2ab2b38460768b3a84c2600
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
 Package: qemu-system-i386-headless
 Installed-Size: 21040
 Maintainer: @termux
@@ -32509,21 +32497,6 @@ MD5sum: 5af98b9d1e3f9da95594516524f2a078
 SHA1: 614465466059f44d15804fd97775e931b1b0b535
 SHA256: 8e943264dc253b3cbffe846342e970a33225365ea63676876ae10b7d17115b01
 SHA512: 5b6e779a370c1eee36d05ead16aef22b92a518d35b5bb5f40fe46b4262bd529d52180938f55f97d8580f2a41368bfd9984370d5aad48e6d57fc5886282adbe46
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
-Package: qemu-system-i386-headless
-Installed-Size: 21040
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-i386-headless/qemu-system-i386-headless_1:8.2.6-5_x86_64.deb
-Size: 2713488
-MD5sum: f31fc5a5e9b5e7618f54785071eff5bb
-SHA1: 16ee0e08b28d3141779e7ca6567460ce79da3ad5
-SHA256: e8b3dcbeebaa74c1e5113418d5a7eb31985fc546f562ac94d09a2b90d7e0d546
-SHA512: 2ad0f3d8fcf1e1dbe495044644c4efc1d93a3b8d8eb3704de9b4087aeb252d15c9d0d96549fe118eedff507f9a6381cadedf1031959791c1d343bb6898cda19b
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
@@ -32542,21 +32515,6 @@ SHA512: 6bf527fe9182339b4ad39c273ed3d16a8ed47c13052af4619e73946f6e23363ec30cafa5
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
-Package: qemu-system-m68k-headless
-Installed-Size: 6860
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-m68k-headless/qemu-system-m68k-headless_1:8.2.6-5_x86_64.deb
-Size: 1778932
-MD5sum: bb44b4ef2f78bdab764d7fe8a567fd35
-SHA1: 3bcd158699e227e07a52a5573bdacf7713ec59ae
-SHA256: eb36e4cec2e9b09e99333616dbe3d170f03a20b4ebe6e647571a7c5f1b0bfa47
-SHA512: 7cd8cc755cc8406bfff61f8ecb6137d9ce6f9d2d3578058cb606da9711901ff5f086490eb674349498359f8502c5f6ae985a989c88979d08d351cb5508dc01ff
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
 Package: qemu-system-ppc-headless
 Installed-Size: 12480
 Maintainer: @termux
@@ -32569,21 +32527,6 @@ MD5sum: 352d42d4a42290406c2275f27b21cc75
 SHA1: dfa33702793ba7365f2acafd16ac359551c48f85
 SHA256: 0e9618df238cd664aecebad7adc716597204bc717689f8fc12573056223c79a6
 SHA512: c2babc7d75ce563ddc7b2b47b132ca51523cda80a19677507e9354a2da68a07459a3cc580074ff4768f4500649517823b3d1f57609a511445a85633da63787b3
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
-Package: qemu-system-ppc-headless
-Installed-Size: 12480
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-ppc-headless/qemu-system-ppc-headless_1:8.2.6-5_x86_64.deb
-Size: 2554156
-MD5sum: 113a23ebc2d594d889147b7f2677117a
-SHA1: 71bed5549b2d807c91ab8fd90ae15dbb1e100c61
-SHA256: 242b4b11988f880568c49201a0d2499438075e286ef8110bf34e4f91c4ffc8fd
-SHA512: db083aad9cd499b32ed3ddf25ec1e8fd69bac611c3cb1c6b1d82f977d21db2eaf4b17ed1db7574346d1158799de5059b89f1bdd30bdb2196570ab0fcb6f12082
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
@@ -32602,21 +32545,6 @@ SHA512: 044f243c8f6d62d42fa86dafd266ab99db2bca70d3cc1f471785a4a8af5fa108bca2ff8e
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
-Package: qemu-system-ppc64-headless
-Installed-Size: 13220
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-ppc64-headless/qemu-system-ppc64-headless_1:8.2.6-5_x86_64.deb
-Size: 2780336
-MD5sum: 099c9bbaaa8f2a8b40d9b1a383776a95
-SHA1: 620de990e7ec8f9c5c66bfc03284a807e712f684
-SHA256: 7ef0fa64f5faad4dd974d6c38e7379bd045954fa1e9f5b415aa524fa38cba0a2
-SHA512: 81fcd906b931fd735a34e9cd55cfd4096db3e658bd4fd7d2b8f16d349533e281a96efcbc0fdcf37e3ab5410fa005ee90858481e5b50239235861629bb117a3db
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
 Package: qemu-system-riscv32-headless
 Installed-Size: 12512
 Maintainer: @termux
@@ -32632,21 +32560,6 @@ SHA512: 2e6ac307c19063a67673d9dbadfa741ec45ead46d9a2cab2fc4928fb5725b3f080912583
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
-Package: qemu-system-riscv32-headless
-Installed-Size: 12512
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-riscv32-headless/qemu-system-riscv32-headless_1:8.2.6-5_x86_64.deb
-Size: 2421964
-MD5sum: 6a506531fd93ffaa438beb1c00f63c75
-SHA1: d68efac2c86a2c0b146d98687c2664e47b022fcd
-SHA256: 727362a4c6e1fd8ba3de3e027656cf619ff1e85b9a8059d33d23bbb921a09892
-SHA512: 02bf28065870628392f4ca10db6b293561659c39c2f997d1486e0e993b0034742f74c012ab2e047be18fcd5923bfdf41ba5b330af09bb36507a5c72e71d52f24
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
 Package: qemu-system-riscv64-headless
 Installed-Size: 12552
 Maintainer: @termux
@@ -32659,21 +32572,6 @@ MD5sum: e5537f4b174bab9457db79e036940afe
 SHA1: 1e6f34a7204ae725832089777e23233cd75e55ec
 SHA256: ae5244bb673a414f3d886a1d92ede4d6970acf107d4da64da15f95418b7f6bdd
 SHA512: 62bc9a92ce58860e9b679e86e6e267e0b7b9b60e3ae0e2243f2d9007d3337363f55d0f7867e50aee0bb720e1321d9447427750c6443db9760abfafa08cd566de
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
-Package: qemu-system-riscv64-headless
-Installed-Size: 12552
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Filename: pool/main/q/qemu-system-riscv64-headless/qemu-system-riscv64-headless_1:8.2.6-5_x86_64.deb
-Size: 2430772
-MD5sum: 774b18d83628827750000892cce7d897
-SHA1: fea2f65d69b95fca691cc1f3efbf1bd67671cc0e
-SHA256: f6140f9bae335f82ed0545153b51070fef057f25527c839e58d99eb12d6c82c2
-SHA512: 84c08847ea40d0d68c20a9ff3c44afdfa6957c6189a0576f925ffd0e2ad1b7a38c72b0a1b3e7a096aba7d9b3d661f892c4c3c5b1a1d5705fa93eec0aa4189894
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
@@ -32695,24 +32593,6 @@ SHA512: 0e8fd96a2765851d020f1f430a97fedde84d4d29fc9297896e8b343727e916fd2696a8d9
 Description: A generic and open source machine emulator and virtualizer (headless)
 Homepage: https://www.qemu.org
 
-Package: qemu-system-x86-64-headless
-Installed-Size: 21072
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Replaces: qemu-system-x86_64-headless
-Provides: qemu-system-x86_64-headless
-Depends: alsa-lib, dtc, glib, jack2, libbz2, libcurl, libdw, libgmp, libgnutls, libiconv, libjpeg-turbo, liblzo, libnettle, libnfs, libpixman, libpng, libslirp, libspice-server, libssh, libusb, libusbredir, ncurses, pulseaudio, qemu-common, resolv-conf, zlib, zstd
-Conflicts: qemu-system-x86_64-headless
-Filename: pool/main/q/qemu-system-x86-64-headless/qemu-system-x86-64-headless_1:8.2.6-5_x86_64.deb
-Size: 2728436
-MD5sum: 4e283f5647f919520e3f964661c57c1e
-SHA1: 932796bfbe3778b9c7099026ec6d0b7ae5eb7b1c
-SHA256: c9ce2769fd214a0ea012f838644f782c351bbaa9d86d05e1266ffcde77309ce6
-SHA512: c2de7df4d1c6b5c404e8ec7e3da5be6b66a46f9f7f86bcad6213b74b32e84a77cd9633baac86881e8561a187cf73e3bfb0f9f0f4beaafa644c5e373680c42355
-Description: A generic and open source machine emulator and virtualizer (headless)
-Homepage: https://www.qemu.org
-
 Package: qemu-user-aarch64
 Installed-Size: 4104
 Maintainer: @termux
@@ -32725,21 +32605,6 @@ MD5sum: 15faca225a0ce55457234f1c71bf4a2e
 SHA1: ddec9921864d24d94b7f7301a412310e87d26d61
 SHA256: 5afefe79799c5e3a446c494df885d3b0e61b23c4ca083ba93e16ff2adbf714a4
 SHA512: ed2d3dcb44365fb3bbf28dc9e4cefcb2561dcc3dc3649dab9ff109b4ed03f62d0e25e1dbdb8091a3929471bb7234f70ca350f460ee9ff7ac87d3428929b5b651
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
-Package: qemu-user-aarch64
-Installed-Size: 4104
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-aarch64/qemu-user-aarch64_1:8.2.6-5_x86_64.deb
-Size: 884980
-MD5sum: aef4dc87e9b716eb6c35890dd6d83965
-SHA1: 5d72036e21180d33fe56ee4d659ad66fd69eb147
-SHA256: 753ccc9f75c01fbfc61be4742eb31035ea929ac2852bb40f6d147c67ea6e4993
-SHA512: 4d880d25f427fdea2682e95c1643a0e4aed57eadf17b9d5fddb16f7692ec03edd9e34b54c82a8c6c907f50b6dc9e792aabeaa4911edbb8bb1ae361f2f870aee4
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
@@ -32758,21 +32623,6 @@ SHA512: 404042c7cca0246dfa5405ace0e0c9e0393e00c284cc8ea5ae634d4c78ef89a5165191fe
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
-Package: qemu-user-arm
-Installed-Size: 2560
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-arm/qemu-user-arm_1:8.2.6-5_x86_64.deb
-Size: 653860
-MD5sum: a76d7f0abff77e6a90acecd20fa52cd6
-SHA1: 56ec7074038adadc6ec03cf503ce24c35d8e205d
-SHA256: 8a08266775326fdf0be721cdcf573a40f9f179a79aa90ae66297c1a4ab3ea4a8
-SHA512: 1145f8ad2a0663dfc80b71ad6411d49be8ecb32efb6e55fc1e2dce49043bd916176358ef0cb9cc7bf92ffc8e905bc5a8fe98005b46c8926ff351ddc1b17ed612
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
 Package: qemu-user-i386
 Installed-Size: 2056
 Maintainer: @termux
@@ -32785,21 +32635,6 @@ MD5sum: 9fe55e65c3bfbc52225396abf63a64c7
 SHA1: bf3965b435975c78d24cac699a945a4ac6dea9ea
 SHA256: 9392812af251ef7c946ecd41822e0a6e5ab9bc8f33267e3dbeb7fed1b6ee7917
 SHA512: 89765c787126176464301feb3737bb363a3453e485420c23ec461aa3a8ab33c5c5ce01c92b741d9ea56f075bf44d1a4e3e663e2266d8f62e5ffe2bfeee0ab3b0
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
-Package: qemu-user-i386
-Installed-Size: 2056
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-i386/qemu-user-i386_1:8.2.6-5_x86_64.deb
-Size: 542016
-MD5sum: 89f2f7a6f5ae9d42528951a5e498984d
-SHA1: 2d33d81567b146a6245782d87c8ff64680ef7272
-SHA256: a19854daabc06eb70c016c2599e6b37837438a9adc12ac9c3b33c1bc30f580a2
-SHA512: 84fbcce6593c7d9c90cfdcde74d2469e9e0fae09cc4238b03a9893f198bdd8e711df499e44da87994ed84f8d35a8fc8ee39e8ef59b83f3766da6c989e3d580dc
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
@@ -32818,21 +32653,6 @@ SHA512: 7cc47f26c9c98dda3a34532f0c09fab181ad843edf663a167a44cb7c318073eec55bae9a
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
-Package: qemu-user-m68k
-Installed-Size: 1736
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-m68k/qemu-user-m68k_1:8.2.6-5_x86_64.deb
-Size: 472288
-MD5sum: 874df766c8983d55513af4ba3b776276
-SHA1: 60e8b35395a9cbf6a49920ce52438b5e449bd8ef
-SHA256: 5032c8f609e6ec2522dbfa2f9aeb2e9916a0104e013717c209c0f28d526d46bb
-SHA512: 4ad3fdd35bd845b620768ccc9ebaaf26bf8454ef91ecd13d17c967cc36d22bf787cd19bfb35206e34afe37810f374190f540139f26428968fa3bbaae32c17eb1
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
 Package: qemu-user-ppc
 Installed-Size: 2264
 Maintainer: @termux
@@ -32845,21 +32665,6 @@ MD5sum: 86a49504c41af9e590551ab015e13ec4
 SHA1: ea7ef026737146704f63fb06002ee1e6bad55f85
 SHA256: 1a1796a541bc2315792b915e9920e3d50cb8c2f77e0845d4699ecf126a032e84
 SHA512: 3f0da4064380b8d4411cb4fe486fa82f403641ea05f24956b1f1a9698ae53b8d023d33bf3ff5cd664fc245b8bc469a0c59bcf31fc6ce17e5d5a5574c749f291a
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
-Package: qemu-user-ppc
-Installed-Size: 2264
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-ppc/qemu-user-ppc_1:8.2.6-5_x86_64.deb
-Size: 590296
-MD5sum: c0feed9c99efee93a26c381da90ca6a1
-SHA1: c4b0458e1f56ab0dacea1c2b161974cbfd7bb0ea
-SHA256: eaab51bfa1468256feda8c0806b6c5c77986d93640c8d342874a014399c7c20e
-SHA512: 90457648d95dbd949f8cf1af86a8bb68c878a52dfec1a221449eac7b7c0d9253dbc6065908ba064360746c4a9d16e2eac28f1dd8aac41d7d8c66d3ec2d5c465b
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
@@ -32878,21 +32683,6 @@ SHA512: 81e62786ebc416c374045a0b8a29fc878446c5a69bc6a04bf3bbe33a2e21fd68c11206d3
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
-Package: qemu-user-ppc64
-Installed-Size: 2328
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-ppc64/qemu-user-ppc64_1:8.2.6-5_x86_64.deb
-Size: 601928
-MD5sum: f0d3525652e869699c4eb72f2bbc5bd6
-SHA1: 59e9f07eaf8f3c5b8e21952917de2cc97c8524c1
-SHA256: f62dec2fe749971d283203316170a4f5f71f204113bd129b3bb74bb35784bb6e
-SHA512: e54895da46255a6849161fa390df9436fd82336a3eb7b7be9899fae0136cfa6b5fd5b4b322a78fcd5fafc874f2b093372ba217ad918fa276ed17a9572754bac8
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
 Package: qemu-user-riscv32
 Installed-Size: 2600
 Maintainer: @termux
@@ -32908,21 +32698,6 @@ SHA512: 8c3c9ba315edb312066f2208e0c2e2bb8746fceea8b06625e957cea01e4998149466ac9a
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
-Package: qemu-user-riscv32
-Installed-Size: 2600
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-riscv32/qemu-user-riscv32_1:8.2.6-5_x86_64.deb
-Size: 547744
-MD5sum: 0a72deea698f0c12819de7d7b8ece1d7
-SHA1: 0a87ffbc54aabd516999a72d67392e79de181f79
-SHA256: 13244f3e951be3eb32531b0cbd299458a71900ea0b343ed66ec7832fb698f264
-SHA512: 185b5cecead198390cb2eed040658495464965ec88d42190b7a3991d2a0ab66ec86c8bc2f222c10bd794a9caf25388b0ad4bc7427a83ba1e4d372b66d580a028
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
 Package: qemu-user-riscv64
 Installed-Size: 2628
 Maintainer: @termux
@@ -32935,21 +32710,6 @@ MD5sum: ad8cb4b62f450bed1def7a6d552f8f23
 SHA1: fafc14ce53b462a5ca14a7154853d0aeeb1d184f
 SHA256: 588628b9c99483dbe1a079395fe45f480018861c3a97d020645799f13a0f68b4
 SHA512: 7c7200159f5814b8ad9e75993608a9500b7747b421b5c3a4b1af6014ccf27c48c4d6ec0dba6b7044075d7df4014f8f3b0adb63bc941cf1272c22f6041bb63e29
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
-Package: qemu-user-riscv64
-Installed-Size: 2628
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Filename: pool/main/q/qemu-user-riscv64/qemu-user-riscv64_1:8.2.6-5_x86_64.deb
-Size: 553580
-MD5sum: ba110b4dc4a8b600726c3f686029744f
-SHA1: 581683572675f56da0422cdb24d8c38921feeda8
-SHA256: 11d14bf00b13ed86f1e0f96f57cc4f82f84da34cad41d6338839873f87bff4d2
-SHA512: 915a9881b4a312464aedcc24faa3f2ea78861a98474d0a5e81a787e9701432df5ccb726bf2284dde51c8a46fd8985bc86b0ec67eebd7e0b14518edbab1bbe586
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
@@ -32970,23 +32730,6 @@ SHA512: ba16fa3399a3ca1647e2214f0abb39ce7d94912c71d894d721d2670def0fb9c77c59dcb0
 Description: QEMU Linux user mode emulator
 Homepage: https://www.qemu.org
 
-Package: qemu-user-x86-64
-Installed-Size: 2040
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Replaces: qemu-user-x86_64
-Depends: glib, libandroid-shmem, libgnutls, libpixman
-Breaks: qemu-user-x86_64
-Filename: pool/main/q/qemu-user-x86-64/qemu-user-x86-64_1:8.2.6-5_x86_64.deb
-Size: 535952
-MD5sum: 595ce4f6e74326624e28a260dafa0e5c
-SHA1: 6e159d810bce88df848e59f4b4c069c37210aa61
-SHA256: 9fb683a9e0d760b31df358513b2845f01f2034203b24b0a2fc3ff2398a3c1b61
-SHA512: 445bb3c727d7604ba0524ff6382a1fffbaabaca5d641dac4af11a523462b892bcc2bb7ac7eb26e13c208679e45b2016d6e87382aaf3b09ec971e50831e8adbf6
-Description: QEMU Linux user mode emulator
-Homepage: https://www.qemu.org
-
 Package: qemu-utils
 Installed-Size: 5588
 Maintainer: @termux
@@ -32999,21 +32742,6 @@ MD5sum: f66d94714edcc3c69c8565388c27df9a
 SHA1: 57b58ca82a739208ad6cc9929c9c622deeee64fd
 SHA256: 9d56b2fd9d648c241a30d7e3e3bd1d918421183e636f0e9b183cf6c775196855
 SHA512: f470773702ba3764c86f3417dd67054ef980238432421bfc426185be5527f75b94379eef9864608ccabff45d78688b67e8fd589dd59f3fa8abed803d099d3881
-Description: A set of utilities for working with the QEMU emulators
-Homepage: https://www.qemu.org
-
-Package: qemu-utils
-Installed-Size: 5588
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:8.2.6-5
-Depends: glib, libbz2, libcurl, libgmp, libgnutls, libnettle, libnfs, libpixman, libssh, zlib, zstd
-Filename: pool/main/q/qemu-utils/qemu-utils_1:8.2.6-5_x86_64.deb
-Size: 1025708
-MD5sum: 9a502c53387c7922518f4d0248a750de
-SHA1: c30150c19f24048023257a60f884067d4a7228b3
-SHA256: 21b53e3847cf357d45c9b826636e7503be8b477e9a9a2c47a05e4917789f3354
-SHA512: df8f4b80526f0a4289bbf1ac417e14fe35cd6a1f6dcce0b3700c6439d1a74b8ca500d0d305601c5ecf9545300ffb2a44dafeabca4df54880ea52d70d46d8a2b3
 Description: A set of utilities for working with the QEMU emulators
 Homepage: https://www.qemu.org
 
@@ -34456,21 +34184,6 @@ SHA512: ba966206bf36d01e3d7f30f88a312d18040b7e90a2d8795bddfc6e7d3fa49f5d5c3a9c07
 Description: A Rust compiler front-end for IDEs
 Homepage: https://rust-analyzer.github.io/
 
-Package: rust-analyzer
-Installed-Size: 38408
-Maintainer: @termux
-Architecture: x86_64
-Version: 20250428
-Depends: rust-src
-Filename: pool/main/r/rust-analyzer/rust-analyzer_20250428_x86_64.deb
-Size: 8541116
-MD5sum: 2d44e044dde69140bc7178680fadb486
-SHA1: a6e2540588080166b467fc16ed8c4d267807a598
-SHA256: 80b3bbeb9856f02e571c9c2b01c5b08240e0fb84e7de7f8c87969d43376e8d6b
-SHA512: de16ca575e11dabebc0bdbea9b43f6a7e2d7f94e1e997e08c355865fafc9bd32b08abf8906be526467eb13f435ae0c6b39ac70cd1c5992ea25661fddf41c53bf
-Description: A Rust compiler front-end for IDEs
-Homepage: https://rust-analyzer.github.io/
-
 Package: rust-bindgen
 Installed-Size: 7384
 Maintainer: @termux
@@ -35501,6 +35214,20 @@ SHA256: 59fd5c790924e5b455392414a09b2ce5a9954f4dce7743fe51cc1531e779f5ea
 SHA512: ce7207b4048c3f461dc273bc6b81899c162e48656e154e472cecaf5891ca2b75bbfac88a157e04e3a73ef45bde9645e541cccf4d6d5b1c4ebfef0cf02cb16788
 Description: A simple heat transfer simulator in pure Rust
 Homepage: https://github.com/file-acomplaint/simuwaerm
+
+Package: sing-box
+Installed-Size: 33324
+Maintainer: kay9925@outlook.com
+Architecture: x86_64
+Version: 1.11.10
+Filename: pool/main/s/sing-box/sing-box_1.11.10_x86_64.deb
+Size: 8227868
+MD5sum: cf69a3c8a918dcd8953035a46cfdeeec
+SHA1: a9e7a956bfb29562151b3689691ab5b4061f4628
+SHA256: 6bcafdee42c667bfe091a63f381184d52a7b410384226ad800bae43abecb1912
+SHA512: 7200b062f226400d0935a768567da5ccc31b599312b9e7b65a8d957f77d281411fad7f38488f9f5c49b7d6e09df475bfddced834c97634515379b924f34d6ea4
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
 
 Package: sing-box
 Installed-Size: 33288
@@ -40354,6 +40081,20 @@ Description: Vulkan Extension Layer
 Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
 
 Package: vulkan-headers
+Installed-Size: 31860
+Maintainer: @termux
+Architecture: all
+Version: 1.4.314
+Filename: pool/main/v/vulkan-headers/vulkan-headers_1.4.314_all.deb
+Size: 1564800
+MD5sum: 0b0a2480e56a5a397456fc854d988ad2
+SHA1: 5d632766609fbad801caf9f2ebaa378eb354483c
+SHA256: 54f3d8345cb09b9b0c34fa0c81d48fa1a9a95c509914dba1788d728651cd748c
+SHA512: ee9297cf3faf26bd8ca8f56801b40b48ff12b049f80020526e6087bbd71fced498578c6d2acd0d60ba2a5696b9c87113f68a7ddadd7e5a81b96b12626727a825
+Description: Vulkan Header files and API registry
+Homepage: https://github.com/KhronosGroup/Vulkan-Headers
+
+Package: vulkan-headers
 Installed-Size: 31840
 Maintainer: @termux
 Architecture: all
@@ -41007,22 +40748,6 @@ MD5sum: a2c48309710d2c964c3c2bbed013af8a
 SHA1: 920e81fe83ce1e9cbc559ef57febf7144cabf243
 SHA256: 69319b31e4cc2f314bcb03430ca349ff06821c9c6a9234b632165d18a2f6dbd5
 SHA512: a739fa571a441ef58b3ce04b875b405bc688b19066857c48e3e05a32f650f127cfe3c61f69c282fd9788fb393b1efe0b95e218a98057abddd2fe5aaf2c4a425e
-Description: An intelligent Whois client
-Homepage: https://github.com/rfc1036/whois
-
-Package: whois
-Installed-Size: 240
-Maintainer: @termux
-Architecture: x86_64
-Version: 5.5.23
-Depends: libcrypt, libiconv, libidn2
-Conflicts: inetutils (<< 1.9.4-13)
-Filename: pool/main/w/whois/whois_5.5.23_x86_64.deb
-Size: 39868
-MD5sum: 0801a7c746ee75123d231bf200a16cdb
-SHA1: 26344da3f198a0c5c2d76ced9274eccb17b8fc09
-SHA256: ad74a6f4dcf8f245257cc7eff8273012156bdd02b5f54204333b041b3ffa7382
-SHA512: 35649746e84377d9501ac723d2e6e06c0de9f200389637cb7599abdccb62dedffc946162e765b40f7eb7feaf7ed8fa341c4b734952e8a62f632531c0538728d5
 Description: An intelligent Whois client
 Homepage: https://github.com/rfc1036/whois
 

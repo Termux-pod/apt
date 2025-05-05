@@ -7414,21 +7414,6 @@ SHA512: 6c0091cfd3bfe5576435c460a6abaf6b5fceb8a1fcfde3624b054ca6cf31581da5b0b58f
 Description: Software synthesizer based on the SoundFont 2 specifications
 Homepage: https://github.com/FluidSynth/fluidsynth
 
-Package: fluidsynth
-Installed-Size: 1564
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.4.5
-Depends: dbus, glib, libc++, libsndfile, pulseaudio, readline
-Filename: pool/main/f/fluidsynth/fluidsynth_2.4.5_x86_64.deb
-Size: 485068
-MD5sum: 34383fea3b4cff35b5ecc29f847970b0
-SHA1: caedcd6d3976e673556673a48ed0cb82764bc45c
-SHA256: 70c1f0edac4815ec16ab952a048eb98db6c612fc4f884225b9274d5fd4f760b3
-SHA512: 87096f8b052faecaeabf93f3d089ce97fcd64881c2c633ab217cc4902200a1d44fc224e513f72340a57ed3635c72d106dec28aaa3c94a24ba527d3d86f6f4984
-Description: Software synthesizer based on the SoundFont 2 specifications
-Homepage: https://github.com/FluidSynth/fluidsynth
-
 Package: flyctl
 Installed-Size: 72036
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
@@ -24339,6 +24324,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 50352
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5280-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5280-0_x86_64.deb
+Size: 6427880
+MD5sum: 2dd8859899f5c7694f19b0ee80990161
+SHA1: e1b4afe8c61cee8b1e2b662b265e0b26eaf2a024
+SHA256: fc9388d4a9d1f8a77a32c3077d5c5edc3a465fb3063ee82c23c032e5170aeb5a
+SHA512: 4361f2a2406f9e84d79a9d54fc1d3f18da9740a76659d3925e750e8e023c95eb70fe41762e5e939870cf9f28dc63368f30a624601c2906dffd644a367c70b63d
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 50340
 Maintainer: @termux
 Architecture: x86_64
@@ -24354,20 +24355,21 @@ SHA512: 70e6e89c738fff8e5d3d9f92b5fe786f2ae2eb5920af3b1bdc2dc41896a737d9c4440f47
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47080
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5273-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5273-0_x86_64.deb
-Size: 5975200
-MD5sum: 8d5d8b54d1715fa9afdd85fb4a4a10ab
-SHA1: e28d2be86258651ae2be26c71a4d1311819a426f
-SHA256: e8ffe86bd2dc6c33319bb82d11eee5791d934641bd41f0dc118d68b7066311fa
-SHA512: 22ca3d7d13163c4eb9e702735af3431ef0341c94aaf0c50d5fddbc7df444c82e05522e6902a9b7c0dc41c040295d881c9cc7f6f297ee8091a0981fdf59972263
-Description: LLM inference in C/C++
+Version: 0.0.0-b5280-0
+Depends: llama-cpp (= 0.0.0-b5280-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5280-0_x86_64.deb
+Size: 68168
+MD5sum: db07972e4647b8639a37c0f66abe7f18
+SHA1: 5d24787104ece1184d0330bc78ea43975d558dbd
+SHA256: 08bc5f10b3329a9865e2d98cb671a19ea58898e2f6942f6a4e4767b43cf8bf8d
+SHA512: 976fb963fe812622066de2cc5000a2eaec4051aa5d9f0c4f2a15b1321054ed157aaf67e07dbbbbdae7b4655ff0fdb7afaeec63a8a8ed6d4cd64deb585097022e
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24387,21 +24389,21 @@ SHA512: f295c37cc3879fa5b6f6e7d4ac46437f4c887a0ee83e732786190fd268093d32a9a0ce30
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 380
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12688
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5273-0
-Depends: llama-cpp (= 0.0.0-b5273-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5273-0_x86_64.deb
-Size: 68024
-MD5sum: 794622c4efc90d63c86d9bf87236101d
-SHA1: d41b5e6836f693f248c504f8611db9faf42c3e44
-SHA256: c2b09ee8d150cd8491769798d99acbcddcd97ac4656b1161cfe26e81d2b4cce9
-SHA512: 7ceee7a1ef498e4da2f5184d09282532334b0fca8fe64674baac46964294ad7aebe22de59469cb8529ca8e4398cc31248396c41aebec1bd6662ebc33c732514d
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5280-0
+Depends: llama-cpp (= 0.0.0-b5280-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5280-0_x86_64.deb
+Size: 975344
+MD5sum: 6bedf058a7620114bdfae254e46c276b
+SHA1: 636f3a7f3ad01db6869e61e837ff4f4fc20d072c
+SHA256: 313f717cc12f2e557f9e0938de961281185bcd6d81a00ebb1c0a0ef40c435a26
+SHA512: 88c05d8bb3f054ca87ee880d0cab3f88038bd9a45e325f5ee5529506d66f582e73e128b611d2fff5a00db7dabe79acf138ebff940cdc3a5b7779626d86bc4485
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24418,23 +24420,6 @@ MD5sum: e0a4444bda24b5ac3bcaf41e7f1187d4
 SHA1: 230cc9802ca83c03b0a1389cbd207afd9a7b6faa
 SHA256: 13b1e1531c2ebfb8a12cbfb0020d0ff7546ee7f62737e2a0b864f4362a29b7a3
 SHA512: 4b77727432f247e71f50ae4b6ed9f86d70c0a71a13d12040925965e820b21f8d2a078f44b214e676b3005745ca3334f663f8217f1f80c21160e3e2cd0fc12b43
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12688
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5273-0
-Depends: llama-cpp (= 0.0.0-b5273-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5273-0_x86_64.deb
-Size: 978760
-MD5sum: 195a7c498dc4ab7c5cd04b65a76a0673
-SHA1: 401124772823caa6cc5d117476805bbc473e4741
-SHA256: fd90c16e6cdd335c6102a3125afcd07d86e42ee8e5d9efdc2943a2ddf1817d69
-SHA512: be788e998a64bb70508ddfe218fa1ee6bc84622619308ab80ea173fe1010dd2507f24abd06e0949e55750467f05627fae0d8a7d00448e5b8ed0fd75095727d53
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -26004,6 +25989,20 @@ SHA256: 139fc828a474281d8c035c160eb5025464fb12cb4ee7898a28fe5978d2147b0f
 SHA512: 33981acb58ea24190bd476b31c2068fc7ac5ffc4f334713dc0dd67594803c334fa14396676ab2da413bfbc03428534648d962b98bcf10e9231c12e2820fd22ac
 Description: Command-line utility for reading information from media files
 Homepage: https://mediaarea.net/en/MediaInfo
+
+Package: mediamtx
+Installed-Size: 25124
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.12.1
+Filename: pool/main/m/mediamtx/mediamtx_1.12.1_x86_64.deb
+Size: 6540860
+MD5sum: 5f8fc5ec14dfb5401429089afd7b1855
+SHA1: 10cfc6efcbf178fdfa173be290a1ab684d12f604
+SHA256: 50bc294dfbd97782373782fd796672cc13b3ee2503a1d94f2df886774b1ab3d7
+SHA512: 913b0c694d1230bc180f868e15792c10258baea6e9743cd81e14bd6c29a2aaa85850743f377223f5c50fc1ce630fc1094567b375b2c8ab731b4f5e5f5349cf90
+Description: Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy
+Homepage: https://github.com/bluenviron/mediamtx
 
 Package: mediamtx
 Installed-Size: 25116
@@ -32778,6 +32777,23 @@ Package: qpdf
 Installed-Size: 4148
 Maintainer: @termux
 Architecture: x86_64
+Version: 12.2.0
+Replaces: qpdf-dev
+Depends: libc++, libjpeg-turbo, zlib
+Breaks: qpdf-dev
+Filename: pool/main/q/qpdf/qpdf_12.2.0_x86_64.deb
+Size: 945548
+MD5sum: b0b4c92b2bff75b06898e5a79f61a128
+SHA1: ea5189a49b941242395d996d2da50fd86e6a80d6
+SHA256: 2cefe8728b5988ad005003d31fea01cb1dc612ba39c27107db07949cdfae3cb9
+SHA512: ccb05a531cbf73be9ea690d6f29567782a78b3fc4d2799f763aa8ae35334a17339ef272bcee1c71a817ba9df82cdc7bbf0cd731ecc98582d37f6a9cb95a0419e
+Description: Content-Preserving PDF Transformation System
+Homepage: http://qpdf.sourceforge.net
+
+Package: qpdf
+Installed-Size: 4148
+Maintainer: @termux
+Architecture: x86_64
 Version: 12.1.0
 Replaces: qpdf-dev
 Depends: libc++, libjpeg-turbo, zlib
@@ -32789,6 +32805,21 @@ SHA1: d02b61cf1f28d026e1cfe29928f7d2492294e659
 SHA256: 8e8b76d3f648f2da11eb02a5b209c3553306ef55cb78498983a4270f1ce60203
 SHA512: d0ec83543ebf8246ebd81e795b593a58164cd6d1b32ea326a70ba17b580664eb435b3577ae107d45becfc7b2f6a6abc3ff23b0ada3660db060443547e8b4eb10
 Description: Content-Preserving PDF Transformation System
+Homepage: http://qpdf.sourceforge.net
+
+Package: qpdf-static
+Installed-Size: 9040
+Maintainer: @termux
+Architecture: x86_64
+Version: 12.2.0
+Depends: qpdf (= 12.2.0)
+Filename: pool/main/q/qpdf-static/qpdf-static_12.2.0_x86_64.deb
+Size: 1096432
+MD5sum: d299a22050770ced21eb36b4e79376bb
+SHA1: 2c946ba63cd6e68d21cc8fc031b3d6aff1f3ed63
+SHA256: f458605059caf20b2e941e5b8f3931b6eda2cee372b57cd9cdd0ecc89b004594
+SHA512: dc50c4046372f9a0353f6d835471aeb9d175642835e29058e52a7cf3b3bccb1f929023311e4aae6ef56a55074df43d9050199f2361b037f3f6b6d028927a8f4d
+Description: Static libraries for qpdf
 Homepage: http://qpdf.sourceforge.net
 
 Package: qpdf-static
@@ -33574,21 +33605,6 @@ MD5sum: e54d639265239554221922df395c5a0b
 SHA1: 6d47aa74148672d84eb5ee64f8af7897a48db9ab
 SHA256: 0e061dacc389754218e43a47abd91b9f5d220901220df8a164cbfaf60b8dc91d
 SHA512: fcc02aeac69bac08017c4052ab3bce7dca5025ab2db4992f29ab5c584002f31b33614baa4783c560aae4b56cdbbb9cc06cfec90104c3f66dfcd787d7c389bae7
-Description: Rednex Game Boy Development System - An assembly toolchain for the Nintendo Game Boy & Game Boy Color
-Homepage: https://rgbds.gbdev.io
-
-Package: rgbds
-Installed-Size: 1012
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.9.1
-Depends: libandroid-spawn, libandroid-support, libc++, libpng
-Filename: pool/main/r/rgbds/rgbds_0.9.1_x86_64.deb
-Size: 326484
-MD5sum: f81b7e2bc0d5de9bacd7b20ca55cb707
-SHA1: 5b29fdc5916184bf149f3222d01049f07953e012
-SHA256: 270218b3983af1e7aa5d6eebeb445e68bb5b29ec22e02b9948a5de822268eeb8
-SHA512: 423123d31b6e1bff0d864a9eed37dca054a71743347e6f50cb950e785815934851cf3d592f6a5d15c8849068b0885727ed7f29b26a3a026b40e62681e1603991
 Description: Rednex Game Boy Development System - An assembly toolchain for the Nintendo Game Boy & Game Boy Color
 Homepage: https://rgbds.gbdev.io
 

@@ -592,21 +592,6 @@ SHA512: 03d3f4257c9ad28f2777696e97b04b6f4084c16b729a9f1e99721c6d9d72cb193d5da49b
 Description: A generic USB CCID (Chip/Smart Card Interface Devices) driver and ICCD (Integrated Circuit(s) Card Devices).
 Homepage: https://ccid.apdu.fr/
 
-Package: libccid
-Installed-Size: 236
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.6.1
-Depends: libusb, pcscd
-Filename: pool/stable/libc/libccid/libccid_1.6.1_aarch64.deb
-Size: 52392
-MD5sum: 096628768a5418458b00a74c316127cf
-SHA1: de0a7a1489fe574a81101b91b03a376a7b2c0d91
-SHA256: ab6a23f52d1eddb38e8ead6e1f5a6f8c41afd3d522e9cd43d68b7ca4823b3ba9
-SHA512: 2dec09bdee760b74660a8fe6c02e882f65690433f659b8a94180e24dcca48fd59574eaf1752c02dc7fe41fa2389275d4288fa7a33da892228a459389fc948049
-Description: A generic USB CCID (Chip/Smart Card Interface Devices) driver and ICCD (Integrated Circuit(s) Card Devices).
-Homepage: https://ccid.apdu.fr/
-
 Package: libcryptsetup
 Installed-Size: 656
 Maintainer: @termux
@@ -638,6 +623,21 @@ SHA256: f177bcd50d12035435e1ddafb933a2e93a46c6c5b2d17c758de2318c90579a8d
 SHA512: d9b461ea6ba0c8075e234a29d86895e0b69c62e3d6bdbe8a81d8dfb49451e28c3893eb4cadcd40ed0849d50d324d73f4d57b04b2ed55e6da5550c613e42f7ff1
 Description: Static libraries for libcryptsetup
 Homepage: https://gitlab.com/cryptsetup/cryptsetup/
+
+Package: libdevmapper
+Installed-Size: 588
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.03.32
+Depends: libandroid-support
+Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.32_aarch64.deb
+Size: 169820
+MD5sum: 0865fc5467fd6be3ef2000f4b0f6e211
+SHA1: f7719ab92cf8b0dafd40d3f517caaf2bbbb0a0a8
+SHA256: f061f089c43c9157ef68d48ec81ae20c06aae804c5a833325a77ca67442c36a2
+SHA512: 344980349d4c4ae02d4fe9b9249fda2744069676df4b5ce6465e7189bb6efca2e3ae7eb6cb6e9a12a36248c98a131c8eeaba83eacae0c0d6c3a835f8c5866702
+Description: A device-mapper library
+Homepage: https://sourceware.org/lvm2/
 
 Package: libdevmapper
 Installed-Size: 584
@@ -787,38 +787,6 @@ SHA512: b8231e43d835eedbd5321f5082d5c11912f0b4d8bac05a6aa5e60cf15196faaa1aa97579
 Description: Static libraries for libnfnetlink
 Homepage: https://www.netfilter.org/projects/libnfnetlink/index.html
 
-Package: libpcsclite
-Installed-Size: 304
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.0.0-1
-Replaces: libpcsclite-dev
-Depends: python
-Breaks: libpcsclite-dev
-Filename: pool/stable/libp/libpcsclite/libpcsclite_2.0.0-1_aarch64.deb
-Size: 55344
-MD5sum: 7741144b41ab0f858909eaf8a7cae24f
-SHA1: ae2be4bce9e838dfca4cef93a3e480c426ad27a7
-SHA256: 4361d9493718028638f9c5727c6a3e4ebf6432b493cd650544fbef896ed90467
-SHA512: af755a351c1031951c993c0f7c14131587a6d9930617fe530a8d813d3d99bd108fece36d956cee13dd5af8ab24cd68ae50b623678d7c306416f6b7a8e977b7ed
-Description: Middleware to access a smart card using SCard API (PC/SC).
-Homepage: https://pcsclite.apdu.fr/
-
-Package: libpcsclite-static
-Installed-Size: 124
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.0.0-1
-Depends: libpcsclite (= 2.0.0-1)
-Filename: pool/stable/libp/libpcsclite-static/libpcsclite-static_2.0.0-1_aarch64.deb
-Size: 21460
-MD5sum: b7cbe38ac640f7a474a1f2fa87eb5932
-SHA1: 0b6849f1c76e02e777ceff9116abd8cf8340f257
-SHA256: ca58d1b342bc016292c14a5856a284564a0b037ae9baa4d1c7ac6d7f2c19445c
-SHA512: 813eb8735de676125409e7ddc65daca821a60d276608b1c1ec9cbda2143ab15f82d22c18cd2a3bd732d38003e82b60fc1eb1fbcadb960a9b78db4a9ad0dbb773
-Description: Static libraries for libpcsclite
-Homepage: https://pcsclite.apdu.fr/
-
 Package: libx86emu
 Installed-Size: 224
 Maintainer: @termux
@@ -834,6 +802,23 @@ SHA256: ac0c76c33088310ba6d6efe43e3f375c65270c552d576404cb0250725968d8dd
 SHA512: 922440686f76fb88af075ab35c472918789ec870f907a61d03cf56240fadd477f8822a1c422171e6d7508fa8e42930a389e66abf0e2d560d1b52240245238ff0
 Description: x86 emulation library
 Homepage: https://github.com/wfeldt/libx86emu
+
+Package: lvm2
+Installed-Size: 2816
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.03.32
+Replaces: libdevmapper-dev
+Depends: libaio, libandroid-support, libblkid, readline
+Breaks: libdevmapper-dev
+Filename: pool/stable/l/lvm2/lvm2_2.03.32_aarch64.deb
+Size: 1061296
+MD5sum: 9d609e1f374806adc91a8e8405ca9910
+SHA1: cb7a8a1b21516b7f8e47487a9f75e0ec2c204ad0
+SHA256: 3133e6d3bddcca6f88121c991176167fc97267fbc0e3adad82643495dcf9218d
+SHA512: dd47fc96ba56d15c99049397ebd99303ae6e224cb6cd5f5d95b54e13558becaf269e21f8ec706e849f087e85331c7cf5c4079e7af485dca1e6eedfbf49dd749c
+Description: A device-mapper library from LVM2 package
+Homepage: https://sourceware.org/lvm2/
 
 Package: lvm2
 Installed-Size: 2868
@@ -1077,21 +1062,6 @@ SHA256: 4af1367037265673fa791aea327cc77b412df337722cec04590e81503ae7973d
 SHA512: b7feb57e00df10aa7d9c5a70192be08cd6a786bd457a1f511df04eab3621001fe2eb44c3bb15a98c29b314256385b434b36dca103783d32039c8b2c90a1adb8b
 Description: a collection of programs for inspecting and manipulating configuration of PCI devices
 Homepage: https://mj.ucw.cz/sw/pciutils/
-
-Package: pcscd
-Installed-Size: 160
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.0.0-1
-Depends: libusb, libpcsclite (= 2.0.0-1)
-Filename: pool/stable/p/pcscd/pcscd_2.0.0-1_aarch64.deb
-Size: 44040
-MD5sum: c38b8e916e5f1a43455995e60457e04f
-SHA1: 3db5453688dfa4e36ec0bcac96b57ce5241a29d3
-SHA256: 13866800398eb67b39cfdabc7e22c055767518750b4483521f738cc2f324e1bb
-SHA512: e41d6f195f53e2ecdf7ea377f6c9ff321703727834aee182d37effd8be3683ee17e175fa8b75a48f22233494b23ddbb553bd598b8ca028c6b8e58aed51bf163a
-Description: Middleware to access a smart card using SCard API (PC/SC). (daemon side)
-Homepage: https://pcsclite.apdu.fr/
 
 Package: pixiewps
 Installed-Size: 140

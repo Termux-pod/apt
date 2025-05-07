@@ -11976,16 +11976,16 @@ Description: Static libraries for jcal
 Homepage: http://nongnu.org/jcal
 
 Package: jfrog-cli
-Installed-Size: 46196
+Installed-Size: 46200
 Maintainer: @termux
 Architecture: aarch64
-Version: 2.75.0
-Filename: pool/main/j/jfrog-cli/jfrog-cli_2.75.0_aarch64.deb
-Size: 9638096
-MD5sum: 5e0b55b5ff3de8bdbf203651bb197b8a
-SHA1: 0c164bde26a2baf08d07840cd5a3e72aec8f82a9
-SHA256: ad02708902b8ebce5e777be0b6f4e2da968dd55914af50040fb4dc774f75c76b
-SHA512: fb43fbb04d65701482ef979746a82e59afdb030c4339022ceb75b6890ad9dac557cdefbcd006e1dca1bbc69a0588366b1b3dfc7fc93dfb221e919d357b0e6aac
+Version: 2.75.1
+Filename: pool/main/j/jfrog-cli/jfrog-cli_2.75.1_aarch64.deb
+Size: 9636760
+MD5sum: 814d103c7593d58cca3f736f8c6f6d0c
+SHA1: acaf5cd0971f7cf0c83b01d7abf1438b2028ff7e
+SHA256: e316f7e3e5f7c13f2a8910040efe4eb0c6a5f3c6eaea938349e332e88a7ff3bf
+SHA512: 614fc9c6c251ee34f1272491ff930adb40eeb037ebb2f96bd0e2156ce2e5cc636fb7bc2f13ed3a21292370c2987c33ce6028d27a23169b51ebf7ff27896f9962
 Description: A CLI for JFrog products
 Homepage: https://jfrog.com/getcli
 
@@ -24387,6 +24387,38 @@ Package: llama-cpp
 Installed-Size: 44852
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5306-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5306-0_aarch64.deb
+Size: 5612236
+MD5sum: 2f094de83c35e83137aec1f33c0da084
+SHA1: 738449863b48eca43887258c282ea2d7a9da0d0e
+SHA256: 18f013e9920e78c3ecafde22568894e2c5e36a1f2f6a174fc6c49ccc7d281e16
+SHA512: a4054b69979efbbf24c5e07780f8b3d31ac767b2e7dbf976f09684b11cfab37b32a6311c5871af151b241421efe6c2a85bbc9f258f8bfc5b217b68588aca4083
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 44852
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5303-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5303-0_aarch64.deb
+Size: 5617656
+MD5sum: b31a20fdc93ebefb18501e2c6c9c287f
+SHA1: c70ac0d11d4f8824dfd3883f7232b95723bf536e
+SHA256: 2fff32a6f1411f22a82ccf558b33250a217647e37b22431ffad28af3a95d62eb
+SHA512: a8b5b72b831dd893f2ba6797eec2575b1a344946780da010781a829614011a49f8957a788d0c62b3ee76dc0b2157b6bd4b48ff843d14d0dcde4334236ef74f6c
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 44852
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5302-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24397,6 +24429,40 @@ SHA1: 75fc174d9c515401b23b7971ebae6a89c12d77a5
 SHA256: ad657729b978d8e38a337157fe6cf918d1e9d056c3d1d90cd1c3cd957cccff47
 SHA512: 3209fd3669e77cf4d52f12679b31639b916dfc97edb1297f3f668781a1b427c1f98fde30557115559e56a436cab1d2e296b3069189a901d49f812fe8dd4b7b85
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 364
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5306-0
+Depends: llama-cpp (= 0.0.0-b5306-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5306-0_aarch64.deb
+Size: 62588
+MD5sum: 462dc82d1fff4f3630092db9c56538da
+SHA1: 6b9ce4650fc648a0c700898c61c31087967ba9bc
+SHA256: 970f7e63e54018db1d0177dbd22b975d322f40c5e4bc449eb6d3fb381b4162a1
+SHA512: 0016aa8a2dc231ec727fd6dc394ed0f7c12662ff98d5ebbb19f17d37914a6163ad5aba292e550aaf9583d1b01305d243af0c4b00f8e495f1761ac370042baaf8
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 364
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5303-0
+Depends: llama-cpp (= 0.0.0-b5303-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5303-0_aarch64.deb
+Size: 62548
+MD5sum: f0306d0cab8d95ab4a115b69818249e6
+SHA1: c7b4ccd5da9389b6f1090259aca5de758953c68a
+SHA256: e413ef0345d844f1657076d01bed20d4b82cf75dce9539e53c89abbab3f96d15
+SHA512: 394b09f68542c9389b3a2193f173477a41b33866f688c72ccdad5ba448878f69c7fdf74513cdcea34cd0732ae4583db05a515a3aa575b619cdb23dfef03919c8
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24414,6 +24480,40 @@ SHA1: a280d5ddca396fdd9e764459f24930bccf7c69e4
 SHA256: 365652f4334622c8baf8cda9a67e446d12856fab4bc26f4ab1847a726f86c9dd
 SHA512: 38a0ea23aa86b5e76f7e617894e08ab387525a374b807b165b76d393e892211eb97d32d5665ba95db13b8ce07da892967823e2637236b391675a58d30ce3f391
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12508
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5306-0
+Depends: llama-cpp (= 0.0.0-b5306-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5306-0_aarch64.deb
+Size: 943712
+MD5sum: 2f793ac961313000441a998a08d077e7
+SHA1: a7dbfffeb5d048dbcc9de16196d695e9c4ec645d
+SHA256: 14ccb464403eb2fab69e84df20aa5015d70c3516b7f7881b72c3a097743aa059
+SHA512: 26f284ec1c0066ae78aa852039f4e660e0f589a5e646d0cc4ff3e21cae3d244ca38ba973a5d53778a869fb1dbcaa316870a0abdcc54926e7f7d4809d092e9631
+Description: Vulkan Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12508
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5303-0
+Depends: llama-cpp (= 0.0.0-b5303-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5303-0_aarch64.deb
+Size: 943760
+MD5sum: 7049f555d14720dd673091c683b852ec
+SHA1: 97de1e0b67bfc7e389ec7560a32df01f7c9580d5
+SHA256: d0c691057bd228523e7ae52129425a7c21e14393162455b131114e0fb609e93c
+SHA512: 2ba634910ee28ad21144a518753ef6d603aa8a91a6dfd8d4ac43a8187cef9b044ed26eb7b16351ff8b71f8839da1999567edf7c85b88dfef9a7b1109c179d5c6
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -31823,6 +31923,21 @@ Description: Python 3 programming language intended to enable clear programs
 Homepage: https://python.org/
 
 Package: python-apsw
+Installed-Size: 4028
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.49.2.0
+Depends: libsqlite, python
+Filename: pool/main/p/python-apsw/python-apsw_3.49.2.0_aarch64.deb
+Size: 1016108
+MD5sum: 07ef2e62dbcd6d9bf1f27f4df35335bb
+SHA1: 654fd4cd5575812c933e51d6a94701444732f6c0
+SHA256: 5a3a5654ff54f52561da80c1933576625db8f93910682be567742df63407e344
+SHA512: d0b2419964336bf2641b5d06f859b12464748eb1f37b561c32bd5febede4e74a7e9a351271bf78a00343db87724422a15e9d23c6795900278f328a129f77aa29
+Description: Another Python SQLite Wrapper
+Homepage: https://github.com/rogerbinns/apsw/
+
+Package: python-apsw
 Installed-Size: 4024
 Maintainer: @termux
 Architecture: aarch64
@@ -33419,6 +33534,21 @@ Description: Static libraries for recode
 Homepage: https://github.com/pinard/Recode
 
 Package: recoll
+Installed-Size: 4724
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.43.1
+Depends: aspell, file, libc++, libiconv, libxapian, libxml2, libxslt, zlib
+Filename: pool/main/r/recoll/recoll_1.43.1_aarch64.deb
+Size: 1185760
+MD5sum: 23ac03e704cebf7664f6c2adcd34900d
+SHA1: 286aa866fa3f63481e951c3b8e0b8eaa8ef072c9
+SHA256: d01df2e349a6072c7192bb86c16adc7b847ccb7f356e9eb2e003957368c35758
+SHA512: aad80b532a15a9b1f550b476624fe3c906d57a468054dddc81a74c585d8f13412c4c11aeb502d46050857dab56fed12bdbd0483aefbda70c54829945c806c902
+Description: Full-text search for your desktop
+Homepage: https://www.recoll.org/
+
+Package: recoll
 Installed-Size: 4720
 Maintainer: @termux
 Architecture: aarch64
@@ -33431,6 +33561,21 @@ SHA1: cceb303bedb57c6f0354effe5bc2ba5848ef778d
 SHA256: 40a3b0d25410b7aa7f7a0df68ba7c23d9f1b74496b4e6a6011cb361eb85d6b43
 SHA512: d0fb0416b436e1248c7b2bb67345be57884fca9d61d1d1d9fa02fc8a38ca8fa118188afa52a8c8399e060f5db0c1e72242276a96ffeed17ce38a298f7335ecb8
 Description: Full-text search for your desktop
+Homepage: https://www.recoll.org/
+
+Package: recoll-python
+Installed-Size: 288
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.43.1
+Depends: python, recoll (= 1.43.1)
+Filename: pool/main/r/recoll-python/recoll-python_1.43.1_aarch64.deb
+Size: 66308
+MD5sum: abba66200864c5d04ecd2e16856a6ec3
+SHA1: 2e3acd2c3b55be042ab2f1e543956eac67397410
+SHA256: 7aae9d764dc584bfb275942183668c9f53f907f065fe18e355e942e6e0b33d0b
+SHA512: ef5c395a0457cce220cbae3efabe70db5e077392139cfe9ef70382e78d1637bb405904eff56ad186f09cccb076b5fe2b5bdbc20d41f2290d4cd884691ee49fb9
+Description: Python interface for Recoll
 Homepage: https://www.recoll.org/
 
 Package: recoll-python
@@ -33522,17 +33667,17 @@ Description: In-memory data structure store used as a database, cache and messag
 Homepage: https://redis.io/
 
 Package: remind
-Installed-Size: 2928
+Installed-Size: 2968
 Maintainer: @termux
 Architecture: aarch64
-Version: 1:05.03.06
+Version: 1:05.03.07
 Depends: libandroid-glob
-Filename: pool/main/r/remind/remind_1:05.03.06_aarch64.deb
-Size: 274664
-MD5sum: 506c76394cdb04bd11589095f6e47b7f
-SHA1: 2d780a009698e13b30ebf699974b4c5a41149914
-SHA256: a432a5b960dd4ea1eaf9c991260722d83e53e3e1c6c3afdd98456109becb62fd
-SHA512: aed361006bcea73fe7411ffa8d4f5c5c7d593f0232e590eefc6a0355c18ff71610221b3e1290e64e960e5fd5812dc1035eb838ef8a0025729e6992dba4ae61f3
+Filename: pool/main/r/remind/remind_1:05.03.07_aarch64.deb
+Size: 279296
+MD5sum: 9caaac3914d260ca18e8bf254bb06ecf
+SHA1: 660739fe6e4ac051b55927b7e44faa7db39ccfa4
+SHA256: 1e33323ce544d59a3a649d14efbf988e29b2326b43a6ae65a33434f275521bc1
+SHA512: 882b1200e6e88086580f9486793cb717dd78e47eb5ceccfc58efe040ff2f24012185befc29ef8cab948026b50b7feab09110166cdf26b699d68f63826a70d523
 Description: Sophisticated calendar and alarm program
 Homepage: https://dianne.skoll.ca/projects/remind/
 
@@ -35596,21 +35741,6 @@ MD5sum: 5ce132b8fb227d20ebcc9c9d853ecabf
 SHA1: 04ffe435595f9a123a57dc135a1c5446f933cafe
 SHA256: 51931cef8c0b46b9b80306b65be185ae6ed81023591f51d000ad04f52d6c0e4f
 SHA512: 01f4d8997a39c5b1234ceb76f2d905a66a5d8e9b1061a79aa3277a907c58215213d58cbcbe12272b2ec92bdf77d6024822abaafbf6698e7d31fdec76de56bfcc
-Description: An Ethereum smart contract-oriented language
-Homepage: https://solidity.readthedocs.io
-
-Package: solidity
-Installed-Size: 16580
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.8.29-2
-Depends: boost, libc++
-Filename: pool/main/s/solidity/solidity_0.8.29-2_aarch64.deb
-Size: 3383036
-MD5sum: 87f8e99f91b75bac188e47b5e1e58c4e
-SHA1: 8edf12a1438fb35feddd392bd67ba4195f9a0386
-SHA256: 2f9d126b0557fb3a863e7a7e4994cb416cbad2a91ca4b0e17d6934947fc19d2f
-SHA512: e180c02c363c5edb06ec58fd7925e8498d05c3707895a3479994cec49a8dd33dfdbca04b4f4f458a6a0b0e6ae6863c31e160964d2e22ae171137eb9e909f7dcd
 Description: An Ethereum smart contract-oriented language
 Homepage: https://solidity.readthedocs.io
 
@@ -39850,6 +39980,21 @@ SHA256: 32340a805a3af4920ea2681984f2062b6b43f1a9a208cb33bb8643e61cb3cc67
 SHA512: 1792cb3e2baf6e80296b9f8ce729fed799ba5342b39c8e8d03ac722d9180b3d6b4c3a6032f95d2a114f1ca1148f305e8ee4a044797060e70f708df7847339e59
 Description: A modern watch command
 Homepage: https://github.com/sachaos/viddy
+
+Package: vifm
+Installed-Size: 3484
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.14.2
+Depends: ncurses, file
+Filename: pool/main/v/vifm/vifm_0.14.2_aarch64.deb
+Size: 837892
+MD5sum: 2f682d0b88585b80f3370fced635500a
+SHA1: 67439a55ac54846091650ec40722921dbff65357
+SHA256: 4c97f8a704739190a360e4c63a09a8d93198255e01fdf940498dde585dbe36c6
+SHA512: 867a59ece3fa87858a4a1d005e7cd6c3028022ec924d9b4fad24e6a23d309f9bc952826be94559a79989178f8cdf66831d6d0138db9cdc9a35af42ec7f9b064a
+Description: File manager with vi like keybindings
+Homepage: https://vifm.info/
 
 Package: vifm
 Installed-Size: 3484

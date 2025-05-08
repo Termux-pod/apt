@@ -10018,21 +10018,6 @@ SHA512: 1ca3c2e5079ab7241092e7729093b704f913aecf78cf0905cfa86cdcb1221d3ee4097444
 Description: An embeddable fulltext search engine
 Homepage: https://github.com/groonga/groonga/
 
-Package: groonga
-Installed-Size: 29828
-Maintainer: @termux
-Architecture: x86_64
-Version: 15.0.4
-Depends: libandroid-execinfo, libarrow-cpp, libc++, liblz4, libstemmer, onigmo, simdjson, xxhash, zlib, zstd
-Filename: pool/main/g/groonga/groonga_15.0.4_x86_64.deb
-Size: 3649732
-MD5sum: 7270c5b00247d2b3bba7ea2ceddce7c7
-SHA1: 5b37730bc14a84037a5c3ed75da152c2f3befa28
-SHA256: 8da5b034ed09b4994e4e61a20fd9cefdeb34a687da4c6ab9cbe43aa581bb0e88
-SHA512: d91f10a875c0998159851cc22eacecc89096da5a408d5b3b48e2fd33f422aa2f9b7847dcb00585ccf6ad41a8c65a4433fc86314bfcd9d13d072cd2835f4dfd59
-Description: An embeddable fulltext search engine
-Homepage: https://github.com/groonga/groonga/
-
 Package: groovy
 Installed-Size: 32636
 Maintainer: @termux
@@ -24357,6 +24342,22 @@ Package: llama-cpp
 Installed-Size: 48600
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5309-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5309-0_x86_64.deb
+Size: 6272008
+MD5sum: 88939c3072aac9b26ec93ac4b337a6d4
+SHA1: 60a52ddad5fdea298dc2787f23b859d7993ce29c
+SHA256: 5e206b179ce9e5fc11b2c5b0225bf45fb898c1b5c96ec42e6e5cc7f3801a56ee
+SHA512: 138d8a532f43f050fd262132b34e50222fcc37994afcbf310d6dadd00519e033879a6e8bc8e2fbc57ed8453e4afd48623a4d175aed311533019cf44ad16c6b6a
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48600
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5308-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24369,20 +24370,21 @@ SHA512: 6eed71424c5aa251ad480151bca412b11cb0dd6d691ce3aa742c6423fd737691706eacef
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48600
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5306-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5306-0_x86_64.deb
-Size: 6276756
-MD5sum: b1349eff05180567a4f454b23dad6ed3
-SHA1: db7fb283d38bb3876c2496ffe69e4f3fda808aa0
-SHA256: 3fb0999ddadf91e966f648874566539b071b7d4921bd59f917ce88d226069edf
-SHA512: bb2f4a42491c7b7e276f9255ea257eae18e46cef2af63312aa81e5e943d2d42bbe9b371234d0bd34ab412f7b5150e47996698dbf337252a247e3a070cfcc3b97
-Description: LLM inference in C/C++
+Version: 0.0.0-b5309-0
+Depends: llama-cpp (= 0.0.0-b5309-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5309-0_x86_64.deb
+Size: 68060
+MD5sum: 1023f578c1d6e29e6af3d47eae4e9550
+SHA1: 87704026d41b1ecbb102ac69efc1223f7e30cf18
+SHA256: 5bfaf24dc50436b5d88cd0ec658269eca4c42fa374be37a163c13c19fc84b673
+SHA512: af791e0c115d6df9ad48d4cd34ca82a7cc88682fefa825bc953bee7cc04825d53c99d8ea6c2b156bc8ba9a54b2484b88b34b47706b66c28ef96183eb975731e6
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24402,21 +24404,21 @@ SHA512: 39fd1c165ecf52af5a922153820c8e9e65f8739c480145fbde6cc505d334031022c79e5a
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 380
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12688
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5306-0
-Depends: llama-cpp (= 0.0.0-b5306-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5306-0_x86_64.deb
-Size: 68112
-MD5sum: fba22ba307f4d3e52499219325e5ec66
-SHA1: a4436b7e25a537281d0e89dd4b38bf2aeafafd9a
-SHA256: 901d0426f7796279c73029e10748fe240452b8646bf22758fc65d0e5cc0f53b5
-SHA512: 642fb4c34d1c1712ff336926a2d61122c638af724fe4b26d09645230d4c302604e590bb84efee4878f9c7fae41fc8b797297dc9b380d2503e2b79ef547b927de
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5309-0
+Depends: llama-cpp (= 0.0.0-b5309-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5309-0_x86_64.deb
+Size: 975908
+MD5sum: 6894eb6b1a59fd41c4eaecca1753dab2
+SHA1: b475fb79c6977d5312cdd5da5f71535909fab21d
+SHA256: 9a60ccda628c5833a5265b96f8b0cf82072cad05806fa963cea389ec0920d10b
+SHA512: 9cdc850489b4687ca535d2fa044e899553d1e0bf5d8baa035d86e3b9fb8cff58c853ee79d6efcf55f5bc751830f8f421eb5782bfa420c1678a96e82617b587ba
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24433,23 +24435,6 @@ MD5sum: eb456f29d73c58b76c2f25e3a317e575
 SHA1: 6a6ed0ea1aacea569fff37abad801cb826c46000
 SHA256: dbb3873ee9abf3f578a3b58645cd44eedaba8dcf19735063fae06d8e4d91b903
 SHA512: 8a9d40db29a72bbf86081ce093d4035ea6478aae7657a12f9347e9c50551d3299793957a1cc6bdb2265310a0315f4703f17ed8ea30c01b594acfdfef910ee22d
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12688
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5306-0
-Depends: llama-cpp (= 0.0.0-b5306-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5306-0_x86_64.deb
-Size: 975924
-MD5sum: 7c644c48d22d72fb2a5a69ad453a2a02
-SHA1: 065106854d61b2bea262f73c97f02d583841e8da
-SHA256: d4693edbd384bf4b7f7dbcee986ec5032a33ed7e2bd7950a752a89d968893e1f
-SHA512: 3852180b1c4f7951eb4eeb307634f0a4b7f574e9040de8f0826acd879716836ea5a43d1a746939340812a01fe41f09d46aa1beea1e785710632e0c6983e73500
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -28606,6 +28591,20 @@ Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
 
 Package: oh-my-posh
+Installed-Size: 20360
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.21.1
+Filename: pool/main/o/oh-my-posh/oh-my-posh_25.21.1_x86_64.deb
+Size: 5327608
+MD5sum: 1643985d356922ac26b10c6960e82151
+SHA1: c210c8eec2cc7c7139f18f8386d5158821cba1f3
+SHA256: 57e6510adb2b1b7c678ae6b25c52bad2daaf79fee7feecb582599984db8eb337
+SHA512: 91a58439c9f105e291e0a31ce7ca99e8e66f6ae8507a4c0d4981e1755bcd96840384a0d61912ef8da3273118567d9bd3bf5e430d7a8b4a80df24dcacfefee81c
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
+
+Package: oh-my-posh
 Installed-Size: 20356
 Maintainer: @termux
 Architecture: x86_64
@@ -29027,6 +29026,23 @@ Package: openjdk-17
 Installed-Size: 218880
 Maintainer: @termux
 Architecture: x86_64
+Version: 17.0.15-1
+Depends: libandroid-shmem, libandroid-spawn, libiconv, libjpeg-turbo, zlib, littlecms
+Recommends: ca-certificates-java, openjdk-17-x, resolv-conf
+Suggests: cups
+Filename: pool/main/o/openjdk-17/openjdk-17_17.0.15-1_x86_64.deb
+Size: 95711828
+MD5sum: cf3d9e4a8dc54e78f64695c5d5da0050
+SHA1: 66d501e9e25fe014a555f05198bb813927e03551
+SHA256: 0ba78786e7566509f3f5f7f352aea7824aee2ac9f2d2b5c8fd93157b98927214
+SHA512: 2f76f3228fc755297a42d6659c2d685790c2f8237e641a0898b68c694e0bcb2f4d58ee9585be3863264db7095e1ef32fa1508b0e6871d2af6dd62b559a47978a
+Description: Java development kit and runtime
+Homepage: https://openjdk.java.net
+
+Package: openjdk-17
+Installed-Size: 218880
+Maintainer: @termux
+Architecture: x86_64
 Version: 17.0.15
 Depends: libandroid-shmem, libandroid-spawn, libiconv, libjpeg-turbo, zlib, littlecms
 Recommends: ca-certificates-java, openjdk-17-x, resolv-conf
@@ -29038,6 +29054,20 @@ SHA1: 9dc73626b11a68ff4c051c41bfe6ed84c6ecf3c8
 SHA256: 3250bf769458458c2389c5dfce9c7b976f9abc518999b34fce329edf270350fe
 SHA512: a7f2bbcbee64a2b1d7735c33081c33fa56b84ceffd0e7afe8c70ad2d6b69a1497442649a030394dc26552df12b3d86c3677b942da717b381028bf0f2d2c5aaa9
 Description: Java development kit and runtime
+Homepage: https://openjdk.java.net
+
+Package: openjdk-17-source
+Installed-Size: 50716
+Maintainer: @termux
+Architecture: all
+Version: 17.0.15-1
+Filename: pool/main/o/openjdk-17-source/openjdk-17-source_17.0.15-1_all.deb
+Size: 46986876
+MD5sum: f53b240cb33313449f35141f49b37d18
+SHA1: 207855ac7e4993a5b751ba35312347f203391abb
+SHA256: c196c252bff10131a0471df62e155aa217344b063a88acb808e5ce24bebfa614
+SHA512: 2911f4eaccb1c11a3ca5ffc29510a7a94426ef85d1554b8fc86e90293a121ebe0d2e3ee41e9f225f323663086b192b7fa911957422ce2177d55610b2bd4bba3c
+Description: Source files for openjdk-17
 Homepage: https://openjdk.java.net
 
 Package: openjdk-17-source
@@ -29058,6 +29088,21 @@ Package: openjdk-17-x
 Installed-Size: 14716
 Maintainer: @termux
 Architecture: x86_64
+Version: 17.0.15-1
+Depends: freetype, giflib, libandroid-shmem, libjpeg-turbo, libpng, libx11, libxext, libxi, libxrender, libxtst, openjdk-17 (= 17.0.15-1)
+Filename: pool/main/o/openjdk-17-x/openjdk-17-x_17.0.15-1_x86_64.deb
+Size: 12639216
+MD5sum: e597419584297b47fcd83dd56081a4ae
+SHA1: 425be3ad1ef9a79d33e36bb6be9e5a6e6ca2170f
+SHA256: 2a1ae23fed8dc7b79fd387f23788a0300f9fb780d1d887e3308ac96e6d66f165
+SHA512: 0557ce07deac0bde738d8d07f0781ae57eee8c8a3881941e09b5aa0b9900c1bbf42d13e96148dfcb09160845def16390ebf306a5adc612d5814dc5513347f0a9
+Description: Portion of openjdk-17 requiring X11 functionality
+Homepage: https://openjdk.java.net
+
+Package: openjdk-17-x
+Installed-Size: 14716
+Maintainer: @termux
+Architecture: x86_64
 Version: 17.0.15
 Depends: freetype, giflib, libandroid-shmem, libjpeg-turbo, libpng, libx11, libxext, libxi, libxrender, libxtst, openjdk-17 (= 17.0.15)
 Filename: pool/main/o/openjdk-17-x/openjdk-17-x_17.0.15_x86_64.deb
@@ -29067,6 +29112,23 @@ SHA1: 6951267c1f927e1f55cf81b5c0337f5e7b4fda3d
 SHA256: 6841dfbd0da14a8e39e017d86c3cc37e1265ebde468064318930eb67acdcef42
 SHA512: ddfcb4a23b45466a650e5b96a13458b64cad05f7333681c9a1f6fa9952d9db3f996c9a2f1703261cb9fe45fd9fe71dc27de30964b155c0c89378c7cb788cec07
 Description: Portion of openjdk-17 requiring X11 functionality
+Homepage: https://openjdk.java.net
+
+Package: openjdk-21
+Installed-Size: 250416
+Maintainer: @termux
+Architecture: x86_64
+Version: 21.0.7-2
+Depends: libandroid-shmem, libandroid-spawn, libiconv, libjpeg-turbo, zlib, littlecms
+Recommends: ca-certificates-java, openjdk-21-x, resolv-conf
+Suggests: cups
+Filename: pool/main/o/openjdk-21/openjdk-21_21.0.7-2_x86_64.deb
+Size: 106907428
+MD5sum: db00967f7cc960fa1d8b190c27d844d8
+SHA1: ce8d17ee22c6aaeb528628ba3c388368cc87ddf3
+SHA256: 5c832280a50c1c7c44c6f218277e9f82218f4a5e5672d1a5584c3b2d2707c129
+SHA512: 2a29297f60d3647693d0eb10de3b3f360684d5a512b93f2acbbcf83741fe12980b1a50af1d1ad2254491dbd632d0f660b075fc67c0cd43b8904e4aeb66136aa1
+Description: Java development kit and runtime
 Homepage: https://openjdk.java.net
 
 Package: openjdk-21
@@ -29090,6 +29152,20 @@ Package: openjdk-21-source
 Installed-Size: 52312
 Maintainer: @termux
 Architecture: all
+Version: 21.0.7-2
+Filename: pool/main/o/openjdk-21-source/openjdk-21-source_21.0.7-2_all.deb
+Size: 48976196
+MD5sum: 56b2c292ec9672489759e8ae1396f1c0
+SHA1: 755f238d9e13e17bd866a989e88d93a64044d2d9
+SHA256: adccbff0c2ed902be58ee2278f25da9da772d53953f20a2b3c4cc77e570954ff
+SHA512: dc78cb65a2958aceb58a51e2c7f2a4bc8fb1762c48aa92f7af296e03fe5e54b07f13a450b4c5d11d845f17d2ec4364b6443505848d3af3c9caadc15f4ef7f967
+Description: Source files for openjdk-21
+Homepage: https://openjdk.java.net
+
+Package: openjdk-21-source
+Installed-Size: 52312
+Maintainer: @termux
+Architecture: all
 Version: 21.0.7-1
 Filename: pool/main/o/openjdk-21-source/openjdk-21-source_21.0.7-1_all.deb
 Size: 48976104
@@ -29098,6 +29174,21 @@ SHA1: 07d5db9986aa6b9ab9d3f06f2ed8e83bff997efb
 SHA256: 8c84ec7c8c54a9a03ac7d1ec9e32841a82cbcdbdb98b292cd6177a95db1bff84
 SHA512: 091bf129a9266a76a8f2f18edfe8c93303c09243de76e497a3e8e9a9f3af496a84101b8d18cc5c6fdccb245a1c384223697150ab60c256c242282552ecbe060c
 Description: Source files for openjdk-21
+Homepage: https://openjdk.java.net
+
+Package: openjdk-21-x
+Installed-Size: 14740
+Maintainer: @termux
+Architecture: x86_64
+Version: 21.0.7-2
+Depends: freetype, giflib, libandroid-shmem, libjpeg-turbo, libpng, libx11, libxext, libxi, libxrender, libxtst, openjdk-21 (= 21.0.7-2)
+Filename: pool/main/o/openjdk-21-x/openjdk-21-x_21.0.7-2_x86_64.deb
+Size: 12660424
+MD5sum: bc123dbc52ddb75c655a9705d8c9b7b4
+SHA1: 4e7a0440c53b9bd3f6bcdff68f1e68c7e4658dd6
+SHA256: d78d12c24b6250735a289377bfbdb14a9599ef9a4faa86001fd0cfc2dbf413c7
+SHA512: c9400000e8361f39798f53c5de495405cb8eedf839a02ecfba3e8f8f840a90cc80b32151a959f3c76ac1051514456328b3f2215222582a810ded0ac7e529ebef
+Description: Portion of openjdk-21 requiring X11 functionality
 Homepage: https://openjdk.java.net
 
 Package: openjdk-21-x
@@ -32140,6 +32231,21 @@ SHA256: c90ed663a45db027002494d4ae4ec7a60c50bc821882aa7f5cad17bb61dce513
 SHA512: 4821b42e48120fe4ec2b8c49511130a055ba405a770d7ad222137350d874d35ebaeb419dd0041a454f4fce91bbcbb49d6afcff1a3d333b1ee3f601677f5e6ea1
 Description: C implementations of functions for use within SABnzbd
 Homepage: https://github.com/sabnzbd/sabctools
+
+Package: python-scipy
+Installed-Size: 99364
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.15.3
+Depends: libc++, libopenblas, python, python-numpy
+Filename: pool/main/p/python-scipy/python-scipy_1.15.3_x86_64.deb
+Size: 19152384
+MD5sum: 0e66ebac7535a737dd8a4b4c2a158306
+SHA1: 9f45cb28d18827cc2d277b0b9ba04f8b393a3c8e
+SHA256: b3522f1d2fe7d4bf12a48e58779d381a227483483d54bdc5bbbb26d5978d53dd
+SHA512: 2e0520cb4ae92c3371af5cdd5ad95bced7ba46188dba87381a59d9a617ad7ff6c8182d264f5f1c8ea6696db8bab3fc3ca4e8198afe9f59a691e847449e6e8df5
+Description: Fundamental algorithms for scientific computing in Python
+Homepage: https://scipy.org/
 
 Package: python-scipy
 Installed-Size: 99292

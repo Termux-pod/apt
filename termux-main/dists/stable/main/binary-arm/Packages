@@ -748,17 +748,17 @@ Description: AOSP-based mksh, toybox and iputils for termux-docker
 Homepage: https://source.android.com/
 
 Package: apache-orc
-Installed-Size: 1404
+Installed-Size: 1416
 Maintainer: @termux
 Architecture: arm
-Version: 2.1.1
+Version: 2.1.2
 Depends: libc++, liblz4, libprotobuf, libsnappy, zlib, zstd
-Filename: pool/main/a/apache-orc/apache-orc_2.1.1_arm.deb
-Size: 385208
-MD5sum: 969d3705b1fff1b1a5a4089e34cb939b
-SHA1: 69f5866fc73525cac3f042b73c7ae30f41ca1511
-SHA256: 86cc0d5f7dbbec9ab4d0a8f621fc4a125c5b81c25ea9ab0ee8b9a3d8ada6c4cb
-SHA512: 9216e0a08212c46ba41d6a8756adeb4ed285c9579757eb377959529c362165aae6a9d68f2d79adefb4dc8cc82b4862d5788af63040454b8d85bc4d549a330aae
+Filename: pool/main/a/apache-orc/apache-orc_2.1.2_arm.deb
+Size: 387640
+MD5sum: 942739ff20d4ac407fde7e44ff31bff4
+SHA1: 5cd8b76e59e28974dc1a036ed53ae1d468e31077
+SHA256: cfae50722e6d1ca9ee6c3023cc54bae58de11a5181f17ddb31d512c3b677029a
+SHA512: 0d4468211cde1da54aecfa676c7b9c451453d4e8dfd6fc25bf63c88484da970cafc7bdd9dcc31e84f114fbc15f8ee5b8f3a27319c9f91f6db220239e41d732eb
 Description: Columnar storage for Hadoop workloads
 Homepage: https://orc.apache.org/
 
@@ -3448,6 +3448,23 @@ Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
 
 Package: clang
+Installed-Size: 138560
+Maintainer: @finagolfin
+Architecture: arm
+Version: 20.1.4
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 20.1.4)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_20.1.4_arm.deb
+Size: 29457088
+MD5sum: 961e3c6c59f476a1300c8c9a40c2c092
+SHA1: a76f031a518b99dbd260505d69c8fe19c6e1cac3
+SHA256: a44991c9265ba07e02bf53d1b821e296ce93f2949602da1527f158e549b72870
+SHA512: b6c494f55ac2f1eacf2e9e7d1eee7c457d4494d20b07960dcb0af54f8fb72b057c03d30689f79eb48e4c2245d898e5c39de501880677a3ae0dfc2126f0c451c4
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
+
+Package: clang
 Installed-Size: 138564
 Maintainer: @finagolfin
 Architecture: arm
@@ -6092,21 +6109,6 @@ MD5sum: 01db20b0a689b5854d72ae25fd78de83
 SHA1: 1f5a3440f898fae6b4b3bff1af2cea5ea4642f38
 SHA256: cdd8416e7728e4cbbfecab4c071d1207dd6a9dda3eb58df4820f455bacdf1c68
 SHA512: 502bc23ba150aad658a625070917dd08f059f2a1e1e3088c8c751ea5f6cb31e63eb5329a6461b7d854498fad43088d2207142653736924de39274d1a9481995d
-Description: General-purpose concurrent functional programming language
-Homepage: https://www.erlang.org/
-
-Package: erlang
-Installed-Size: 115064
-Maintainer: @termux
-Architecture: arm
-Version: 27.3.3
-Depends: libc++, openssl, ncurses, zlib
-Filename: pool/main/e/erlang/erlang_27.3.3_arm.deb
-Size: 41043892
-MD5sum: 548d131b9246036a1a88532fac8435fe
-SHA1: b2e8877c069fad4a65e3fbdfaef405beef75fa65
-SHA256: 473d908de673d6c83623df3e636ac00dee97ad21d8bab5418d8675c1e1327f1b
-SHA512: 207d27768b91bf995b1c3f0c0e694d2fab669b327daf2cb09f895def7edee76a09c1c2ef78fa2715e8a6fda773edc2b96f6c13aa09a9aedca2e8d297858fc6f7
 Description: General-purpose concurrent functional programming language
 Homepage: https://www.erlang.org/
 
@@ -13803,6 +13805,22 @@ Package: libcompiler-rt
 Installed-Size: 15200
 Maintainer: @finagolfin
 Architecture: arm
+Version: 20.1.4
+Depends: libc++
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_20.1.4_arm.deb
+Size: 1603388
+MD5sum: 9775a661559dee6f689d5dbd6ab459a2
+SHA1: fb6008afea0a0ec3affcbcaeed66b95006f45865
+SHA256: ca4855633ca971a3a868e0b45aef6496d9126a64ad69d2e4437633e8ab8bb94f
+SHA512: 33a38ab1834c37299520d0d20d6c63481f8e3b87b53097b4a1d1b9b42327d46e9fcee681e9ec5ac459a6d4f3fd23184946aca931fa3dfb188b544ebaf211d05b
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
+
+Package: libcompiler-rt
+Installed-Size: 15200
+Maintainer: @finagolfin
+Architecture: arm
 Version: 20.1.3-1
 Depends: libc++
 Conflicts: ndk-multilib (<< 23b-6)
@@ -16694,6 +16712,24 @@ Package: libllvm
 Installed-Size: 138232
 Maintainer: @finagolfin
 Architecture: arm
+Version: 20.1.4
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_20.1.4_arm.deb
+Size: 30336460
+MD5sum: fab684e40a0a24f7780ef5f7f98dbe6d
+SHA1: 4f273d535122de9bc9386a8af018af85b70d558b
+SHA256: 3b4375859b73fc7098c401c79d8bed90086e3ab1e6b845a0875f487396f610d3
+SHA512: f762744497a672cd79d0b2cdfcde58561f87718de4d55eaa8b81895412f619e475858ee92d6be7b379228507212a56309c3bb54f635e9e435b907558d8a89c30
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
+Installed-Size: 138232
+Maintainer: @finagolfin
+Architecture: arm
 Version: 20.1.3-1
 Replaces: gcc, libclang, libclang-dev, libllvm-dev
 Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
@@ -16706,6 +16742,21 @@ SHA1: 2a881928ca04f2f6f9fad41c4178acf97e95307c
 SHA256: 7a7203f559aaf9ad257df27f18768f42ec5d96bd90456042ee2aec15d6e9b077
 SHA512: 9bbc099836780be938a60185a5278dfee5596c713090f05a076d9c7c19eba44229c4424e183c5de2774bc95ef3a978b6c2f40ea5ec5d31183edb2cbbd318917a
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 808560
+Maintainer: @finagolfin
+Architecture: arm
+Version: 20.1.4
+Depends: libllvm (= 20.1.4)
+Filename: pool/main/libl/libllvm-static/libllvm-static_20.1.4_arm.deb
+Size: 99485044
+MD5sum: 47cf593c8f45e8f05bddde7e34c5d1f5
+SHA1: c59e39734bc3ad1610fcdca2f0355d877e2d18fa
+SHA256: e47fe144ab8c4762f20a200ed1c2b311fb887a5299ec4e37db8e15269609c7ea
+SHA512: a70d35e4b4b72f8aa37df764ebd043d43830464ac27da34ef8bec4467bf36fd7d642eacba58e887db22c7e12930c1b9a602d7d4e491a7db8ea0b4921376e8f59
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -19288,6 +19339,21 @@ Package: libpolly
 Installed-Size: 4412
 Maintainer: @finagolfin
 Architecture: arm
+Version: 20.1.4
+Depends: libllvm (= 20.1.4)
+Filename: pool/main/libp/libpolly/libpolly_20.1.4_arm.deb
+Size: 1197928
+MD5sum: b955176078297d11ca874993611f107a
+SHA1: 39e8da16ee7f58bc588c83184f7434f6dedb0fb4
+SHA256: 8c617e4d8363062a857e4addbe788c938f96934afa1c5cfba5123df2a0468af9
+SHA512: 82ff493f59a15105d6b4f780e3c14e3376ee5dc1ccf06c0c912f546d18ae41dfeb4eb6ce263d3c722516968733889575dcdd8a1bdffe353486b73c09b5584ef6
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
+
+Package: libpolly
+Installed-Size: 4412
+Maintainer: @finagolfin
+Architecture: arm
 Version: 20.1.3-1
 Depends: libllvm (= 20.1.3-1)
 Filename: pool/main/libp/libpolly/libpolly_20.1.3-1_arm.deb
@@ -20531,21 +20597,6 @@ MD5sum: 116f8b297e7ffef26df806e772c43f14
 SHA1: 961d4f57310cdca15ed116b3ba22de1f1637a26f
 SHA256: 53d3dd1bc88ee258adb18cd1e19d43c5dd4803fa1913e7d1f4457249da762576
 SHA512: 6e99220428a7258b075d612512b55c3f6ce98eb4bc2d20fe1dc372656dec4cc4d0dd840ee6e97a489f1d46a5acc1bd54dd042b2413134aaaf446f81c8fbed788
-Description: Very fast, header-only/compiled, C++ logging library
-Homepage: https://github.com/gabime/spdlog
-
-Package: libspdlog
-Installed-Size: 980
-Maintainer: @termux
-Architecture: arm
-Version: 1.15.2
-Depends: libc++, fmt
-Filename: pool/main/libs/libspdlog/libspdlog_1.15.2_arm.deb
-Size: 139156
-MD5sum: 6f95fbbf000ac7b2a5ad344a6e8fa79d
-SHA1: 7701222e894016ff5d23207c551f28f99ed40fae
-SHA256: b8879ddb7693f47904acb0f3c8c2620e102bc83b6fd1efaffc60bc863b3208ba
-SHA512: c2604a52e8f7480a392ec21a1e70ddd892b21f50cb869e97e3107b6595b974c860401bcd932bebbf30d6d6457f55e834fc632730929d2b18021ce83090e34552
 Description: Very fast, header-only/compiled, C++ logging library
 Homepage: https://github.com/gabime/spdlog
 
@@ -23741,6 +23792,21 @@ Package: lld
 Installed-Size: 15656
 Maintainer: @finagolfin
 Architecture: arm
+Version: 20.1.4
+Depends: libllvm (= 20.1.4)
+Filename: pool/main/l/lld/lld_20.1.4_arm.deb
+Size: 2770768
+MD5sum: 4894bba97f4506a3b8edd825ca37dd18
+SHA1: 81c5706c73271325f3dcf71e40a0acf66ef00106
+SHA256: a8964756d0ff7fc44e8ee995cdea8cbd0852fbebc91c900ecdf3f7e36cdc55e1
+SHA512: 7559e674b0295781a235e01bf5a860224a446f8b6f41fff2fabe954919d1847705cc32bd4c14afddcb0f4baa230d1c24d2ee6bf0bf3c12fba7adb936fca93bde
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 15656
+Maintainer: @finagolfin
+Architecture: arm
 Version: 20.1.3-1
 Depends: libllvm (= 20.1.3-1)
 Filename: pool/main/l/lld/lld_20.1.3-1_arm.deb
@@ -23750,6 +23816,23 @@ SHA1: 2145c2e3cf69421daf6cb5e6f0abb6708751229a
 SHA256: a4d8ecce4a1be88569175049d3cc73025b2bd5840c38a613ad3985d4c14671e7
 SHA512: fb14e53f2b95f51d6ab11c493b5066abcd7bf2540d5c658541578393a1566a3037a574baa3c28d01babb63840822dfde8b7a17ffa4f589512830560b7ad957da
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 56040
+Maintainer: @finagolfin
+Architecture: arm
+Version: 20.1.4
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 20.1.4)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_20.1.4_arm.deb
+Size: 14940452
+MD5sum: 0dfe673ccc23894833aba2dec340c2cb
+SHA1: d413a0d399b93cb4d5fd3b7a46b59e318aae873d
+SHA256: 0ea24ab4ed542379990a2f877fd6840397a06f7001f682d40e276a226eec4e6d
+SHA512: e57b863d2da37c7743672f94cb6d1397e5385858822390121a91ca45ab34f0ba63b53f79decc7f2eda3066f55afde16f90a16eca4bc356de9ae2fbc3b1f5e117
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -23832,6 +23915,23 @@ Package: llvm-tools
 Installed-Size: 8340
 Maintainer: @finagolfin
 Architecture: arm
+Version: 20.1.4
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, zstd
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_20.1.4_arm.deb
+Size: 2256380
+MD5sum: 74f95b2fe4b97611bbd476aa2583a400
+SHA1: 812e6481cbfb46ddafed8601a3ff1c616dd36214
+SHA256: a461968db3c9cc935cf349f249276ab9cd59fd923008f1d6e6cd29ad647346e3
+SHA512: a19168b6488a2ec53f21552589bc413ba99541f6058370824f319dd42d064a3e95f4630a7ee71c63f23c5c8ade034620b131a21b63c2033642df9aabd27b613a
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 8340
+Maintainer: @finagolfin
+Architecture: arm
 Version: 20.1.3-1
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, zstd
@@ -23843,6 +23943,21 @@ SHA1: ad3d5bdbf4ca0a65eef59680dfe7bfab56429f35
 SHA256: b1be8e2466e7fdd591538d35c828686ff1c044740025ba4ea824b674d45d3e1e
 SHA512: 2da44a9e9a8b2ed2cc1bd63bf362492a529d19e41711550f647c49afea16ea8ffaade2d92efc175f2ecff311541de3159d603e54d25c9ceb83d4832be050793d
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 84
+Maintainer: @finagolfin
+Architecture: arm
+Version: 20.1.4
+Depends: binutils-gold, libllvm (= 20.1.4)
+Filename: pool/main/l/llvmgold/llvmgold_20.1.4_arm.deb
+Size: 24348
+MD5sum: f85c08608db660b64d71262be21d7f8a
+SHA1: f2c94cad2f96523860c632962484efaea5768621
+SHA256: 084bfb7732a221faf0e22d391fc264c4c30675c5c29839e60079cefec96894c0
+SHA512: 732516bbda58749e81ac55e5eb005318a5fafbfd5eeded687d59f4223947180aab8a7c914da63b753de42e657f7365c846aa493a76cdc0f894b0d56419633015
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -24730,6 +24845,21 @@ SHA256: e5cd292bc728dffd5d51a9e35fbaf1d1944dd29bdf33e253a239e9666a0c178f
 SHA512: ca8bc4aff32a1624d3a35ff1a03f17ba3f084fe1a6da2580efd8da39a1174d71d7be4009c8dce996fe089c07dccc310515de781d527163656d7d9026ed22131c
 Description: Simple CAS and symbolic calculator
 Homepage: https://en.wikipedia.org/wiki/Mathomatic
+
+Package: matplotlib
+Installed-Size: 29600
+Maintainer: @termux
+Architecture: arm
+Version: 3.10.3
+Depends: freetype, libc++, patchelf, ninja, python, python-contourpy, python-numpy, python-pillow, python-pip
+Filename: pool/main/m/matplotlib/matplotlib_3.10.3_arm.deb
+Size: 6885796
+MD5sum: 5e6315542fee31b1bfa9f5c572946a7b
+SHA1: 1109b18cab6572dbbed3a455f81b08a366f13f8a
+SHA256: 9f5df61f1f06ae7a192ad30bc1c99d100da4de53dcd8b7e3a9ae1de90dd496fa
+SHA512: 908671a2b88fefdd51e81129d357d63c3ad5015a320eadc16248aec2cba77710153253af466420f528712ec915cab9c3ccb24124dad3e3657f6fca1c5dcef1b0
+Description: A comprehensive library for creating static, animated, and interactive visualizations in Python
+Homepage: https://matplotlib.org/
 
 Package: matplotlib
 Installed-Size: 29572
@@ -25739,6 +25869,21 @@ SHA256: 3bc9b6ad4c3e89ad5ad8e110860922bc2fd61afc8d2aa9395b852ceaea653d30
 SHA512: d02e25e36ca8e14d3d16c38c45f4a04d1a70ed62f599b0be496aa2129df466a087874f6eacb4f7557db71115b17917554c23454f3938660c5d8ed5efd5eeed3b
 Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
+
+Package: mlir
+Installed-Size: 157068
+Maintainer: @finagolfin
+Architecture: arm
+Version: 20.1.4
+Depends: libc++, ncurses, libllvm (= 20.1.4)
+Filename: pool/main/m/mlir/mlir_20.1.4_arm.deb
+Size: 23735580
+MD5sum: d8394e803fa90115d5ae386929d229ad
+SHA1: 7b06d7a26c255d1219e9bcd419cc6e94a846ba01
+SHA256: aad31d59502958e232f1c63c4b045043a4b54dd42ac2734c8b60fceff080d2eb
+SHA512: d934eb5a3cb9c11771f20b9b8fd687a55736441e3075f89d22b5d2a165b42eb276d627aa81dd112927748a32d02b7a1e1a9943006a7ac263b663ee9df3563ff1
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 157068
@@ -30995,6 +31140,21 @@ Package: python-greenlet
 Installed-Size: 1128
 Maintainer: @termux
 Architecture: arm
+Version: 3.2.2
+Depends: libc++, python
+Filename: pool/main/p/python-greenlet/python-greenlet_3.2.2_arm.deb
+Size: 194412
+MD5sum: 290b1fc7e5bfc1307b02ead1e0bd9e94
+SHA1: 7614397185ca691b25cfb0ef11197f6b44b282e4
+SHA256: a4b553f72a6bd3f0d30c81e3e57922587d08a6725fc8d9439e3e7f873ace9dfd
+SHA512: e6c7ec2b6355fb00e27f591cb7796345d504f19685b7f918396d093f608d90d2b5c0ec95b2af2b84561e6d68ad64aeb92c70344b596bece76f39af24936a50ad
+Description: Lightweight coroutines for in-process concurrent programming
+Homepage: https://github.com/python-greenlet/greenlet
+
+Package: python-greenlet
+Installed-Size: 1128
+Maintainer: @termux
+Architecture: arm
 Version: 3.2.1
 Depends: libc++, python
 Filename: pool/main/p/python-greenlet/python-greenlet_3.2.1_arm.deb
@@ -31188,17 +31348,17 @@ Description: A self-contained Python package of low-level cryptographic primitiv
 Homepage: https://www.pycryptodome.org/
 
 Package: python-pynvim
-Installed-Size: 544
+Installed-Size: 540
 Maintainer: @termux
 Architecture: all
-Version: 0.5.0-1
+Version: 0.5.2
 Depends: python-greenlet, python-msgpack
-Filename: pool/main/p/python-pynvim/python-pynvim_0.5.0-1_all.deb
-Size: 83128
-MD5sum: 81fbe839f00cd07dacf6c3ca3a01fbff
-SHA1: 99d887c3d8fc403dbbedecda03aa8faa54506f72
-SHA256: b68fded0fe46df55fda342b7bd199a4f1701f35582c88929c8fd1f7b66ed19a5
-SHA512: 9ad3ff6b15bf7671840131417819ddb3b8eeccc8187782e51ae40339c5499aed11ac87765d55200bff07204a79e252bfcfef4cf6d8db40fb6489a30582cc38ac
+Filename: pool/main/p/python-pynvim/python-pynvim_0.5.2_all.deb
+Size: 83316
+MD5sum: b0bfdb4fd2caf69d05c6b79f01bf5e3e
+SHA1: 18631607348686409b6ac96fc7d1632072ede304
+SHA256: 536e7bb1a2763c294d94ee0d535e117d4e3392e05120e5f11bf724b842b02bb8
+SHA512: d4b9a220e77d9bc63bae7e4ace3bb4eaaedd29bc7f6808932700f3169ce8a68b579005ab5d26fa26ce48fbaf96f4b81d47acb529128d470094bf035acd5f250e
 Description: Python client for Neovim
 Homepage: https://github.com/neovim/pynvim
 
@@ -32066,13 +32226,13 @@ Package: railway-cli
 Installed-Size: 3816
 Maintainer: @termux
 Architecture: arm
-Version: 4.4.0
-Filename: pool/main/r/railway-cli/railway-cli_4.4.0_arm.deb
-Size: 1686492
-MD5sum: f1ed7ba1e50fe196a0fac27e1a5b1e4c
-SHA1: 07524fd77016053f22fcbefd59256cd86e1fc2f8
-SHA256: 024766ae693a3589296208b7a0038d4f3df145ccf7954e03ff44bee83f3b9b75
-SHA512: 8ad942111c59c5adc0b6c5a4eaeab0cb1a9539db743d80dbd7cb55426f8a5555fe574c8a0b76ee984d608d834f11e2e645aab88bd2e0b22422ab0a67fbaa38f9
+Version: 4.4.1
+Filename: pool/main/r/railway-cli/railway-cli_4.4.1_arm.deb
+Size: 1686956
+MD5sum: 67d5134019d28906528f47347ef7effa
+SHA1: 6af1a80302de71a0f7b2879d7f5468f03ec0052d
+SHA256: 63f37bec2ab994eabfbefa0af1a50c6606523200c78b0ca1b59010c0f6d78c6c
+SHA512: 243801ce4dd3cf1396f737ba868a39db1e2a41e63a83288453e4d83c3b6240b30554bef73e137e6d6d290b7f94f5b3a3d0e52447246343adeed0b18210cf652e
 Description: This is the command line interface for Railway
 Homepage: https://railway.app
 
@@ -32439,14 +32599,14 @@ Package: recoll
 Installed-Size: 3884
 Maintainer: @termux
 Architecture: arm
-Version: 1.43.1
+Version: 1.43.2
 Depends: aspell, file, libc++, libiconv, libxapian, libxml2, libxslt, zlib
-Filename: pool/main/r/recoll/recoll_1.43.1_arm.deb
-Size: 1144696
-MD5sum: 6c2b1ae8f2287373fbf2ce9c455abf8d
-SHA1: 82be1a633acb6d3e0c7c64d6c71eb7ddc76847bd
-SHA256: b69929c609f26704326c75e80b6f15e3cfde62954f7fae45672fc889d85f2969
-SHA512: e7e9f0c43191c3585a37c017c997b6e82348b36cbd686b1a076a2445c75f1d04509fdac03a847d9a2de1c7af012a2009ed5ce3278694c89de686c9a7ae472987
+Filename: pool/main/r/recoll/recoll_1.43.2_arm.deb
+Size: 1145084
+MD5sum: 90af7b449654fba14b3d7b317eaf13d0
+SHA1: d2f7a0be6060ab9aa6a299efe5c2884154f097d2
+SHA256: 065848505c9b545c71d511fa228981caeb1c30340382e2c9f29fd60c55f7ff2b
+SHA512: abd64d8ed24ba12c583fecf65ce67f4a53a3d53348387737b0addfd57a192c387297e597b4246dc587b54b6d2aab98cb5a498de53114cb692a00b2865c8f80c8
 Description: Full-text search for your desktop
 Homepage: https://www.recoll.org/
 
@@ -32454,14 +32614,14 @@ Package: recoll-python
 Installed-Size: 228
 Maintainer: @termux
 Architecture: arm
-Version: 1.43.1
-Depends: python, recoll (= 1.43.1)
-Filename: pool/main/r/recoll-python/recoll-python_1.43.1_arm.deb
-Size: 53872
-MD5sum: a01b8f7c3f0d90f9759b5c91c4aad094
-SHA1: bc5351a4fbda35e8d752aeb2636f5fb980695863
-SHA256: ad5f52671942b3d0f456360edf0be21b88635c4d506f6ecf1899d1da524eccd2
-SHA512: 0a39aa7be31286037b8645b88df3cf2d9bf50c9548ed87c558b27a3f640e22e931cc3160066d215f002aa6ef88db1d26d87ecdba53054466f7658a8d58113724
+Version: 1.43.2
+Depends: python, recoll (= 1.43.2)
+Filename: pool/main/r/recoll-python/recoll-python_1.43.2_arm.deb
+Size: 53880
+MD5sum: e1c708886ee00293b640a2d27285928f
+SHA1: 14b1361ff6e6457654f58d4849d24327cfd39d97
+SHA256: 944a417c75e9339a947650e9a1554f6fc6b8647abf5944f17666c7d73865ad7c
+SHA512: 3aefe61a5ec7b012a3729249de784c7c35f86775d5b54b4fa1a6a9d8cb97638d7e88dbc9c3a5daf37771d8960f39859662c37d90a38c275bb759101a0d65c6ff
 Description: Python interface for Recoll
 Homepage: https://www.recoll.org/
 
@@ -33172,6 +33332,20 @@ SHA256: b0e219c9d8873caca1be942ff197a689e7a9b00e4b939a5be387fda0841596ee
 SHA512: 5a86ec300d20934fe99e21fd0d875f7b7f6d8bb69f92861b35abeba7734a7c9553b0719cd338c1283848105865a4efb4734f1bcb98a66e0f681b8cf85b6af454
 Description: Ruby documentation index
 Homepage: https://www.ruby-lang.org/
+
+Package: ruff
+Installed-Size: 18124
+Maintainer: @termux
+Architecture: arm
+Version: 0.11.9
+Filename: pool/main/r/ruff/ruff_0.11.9_arm.deb
+Size: 6111180
+MD5sum: fccdc5c951d646acdf5be425ddd17f0d
+SHA1: 90b6e213fab941c739e0633d02a1c3bd10967066
+SHA256: 53048ef7217660faff18f082da57cdc7dcafc9c761c1d4e8e7aac679ab28ed64
+SHA512: acc3114a6000cc646336fabcb735f49a4be9962c6151e63fd0d8d86c7a5b7b22e67e3ca79928ce30e728189215edd849da43a3cab7f95ae55cff01cbcc64ab75
+Description: An extremely fast Python linter, written in Rust
+Homepage: https://github.com/charliermarsh/ruff
 
 Package: ruff
 Installed-Size: 18072
@@ -39053,16 +39227,16 @@ Description: Vulkan Extension Layer
 Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
 
 Package: vulkan-headers
-Installed-Size: 31860
+Installed-Size: 31868
 Maintainer: @termux
 Architecture: all
-Version: 1.4.314
-Filename: pool/main/v/vulkan-headers/vulkan-headers_1.4.314_all.deb
-Size: 1564800
-MD5sum: 0b0a2480e56a5a397456fc854d988ad2
-SHA1: 5d632766609fbad801caf9f2ebaa378eb354483c
-SHA256: 54f3d8345cb09b9b0c34fa0c81d48fa1a9a95c509914dba1788d728651cd748c
-SHA512: ee9297cf3faf26bd8ca8f56801b40b48ff12b049f80020526e6087bbd71fced498578c6d2acd0d60ba2a5696b9c87113f68a7ddadd7e5a81b96b12626727a825
+Version: 1.4.315
+Filename: pool/main/v/vulkan-headers/vulkan-headers_1.4.315_all.deb
+Size: 1565788
+MD5sum: 5096cdfdfe227612fb4125341a638048
+SHA1: 725f47cc1b9644ec3aab6a926c3daa9008071a95
+SHA256: a9071636663fcf3ae2131f1ae0ab3b60b566004557a7e7f0824962087ad7b5fe
+SHA512: 19cabd0e93454822bc4b5fba59deee50f9ed815ad5b462ea4668a85ea64ea460023a8b704aa497051ce1f44d354b2d44f322c18db698e9d582f305187896a4e3
 Description: Vulkan Header files and API registry
 Homepage: https://github.com/KhronosGroup/Vulkan-Headers
 
@@ -39114,6 +39288,23 @@ Package: vulkan-loader-generic
 Installed-Size: 452
 Maintainer: @termux
 Architecture: arm
+Version: 1.4.315
+Provides: vulkan-loader-android
+Recommends: vulkan-icd
+Conflicts: vulkan-loader-android
+Filename: pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.4.315_arm.deb
+Size: 108248
+MD5sum: a68408102b001604a5b3b2e922baf4d5
+SHA1: 5fd46a5e0882fc2765159279997df3091732410e
+SHA256: 23bf2f1116196304f969fbbaad5cfd53d6f3113d721bbfef60a514ec98c6c592
+SHA512: 10ca307869acb945de5914acba4403d0414ca0e8476a2749fddafa04fd7e3d8f66501b4d997068beba8588d222ede8062f93ab36171d460a6bbdae4e7786d4f3
+Description: Vulkan Loader
+Homepage: https://github.com/KhronosGroup/Vulkan-Loader
+
+Package: vulkan-loader-generic
+Installed-Size: 452
+Maintainer: @termux
+Architecture: arm
 Version: 1.4.314
 Provides: vulkan-loader-android
 Recommends: vulkan-icd
@@ -39126,6 +39317,21 @@ SHA256: 203e424f641bd9fdfc84590ced36a1ac8c54849cfabc2e483c4ccb7034da7475
 SHA512: 752052a567227a535c5c575c4681c608bac9cbafde02987c3cd832041bd4fcc46efb80b745b6913e577108f02fb8afc9ec9ee2e7095db7b4b90fba925235ae96
 Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
+
+Package: vulkan-tools
+Installed-Size: 1568
+Maintainer: @termux
+Architecture: arm
+Version: 1.4.315
+Depends: libc++, libwayland, libx11, libxcb, vulkan-loader
+Filename: pool/main/v/vulkan-tools/vulkan-tools_1.4.315_arm.deb
+Size: 340352
+MD5sum: 9a94e0adcb64ae2b9ab926f223f43248
+SHA1: ca5cc2c57a742134fe6ddddae4792c552222706a
+SHA256: e154179a10603f05a3f92a39e6efe8d8424e39d53ddb42ceeef80bceedd85835
+SHA512: e1aa7b32c7ce9bd4f797c70c3b2f8717dd94fedecd3968c8cdace1ed907e05cd63bd55790f834d676bb64c285f7c722654abb3bc1e52e9a6cf5ac6edbcf90bad
+Description: Vulkan Tools and Utilities
+Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
 Package: vulkan-tools
 Installed-Size: 1564
@@ -39141,6 +39347,20 @@ SHA256: 7634c680c5e693ebcc19454198e30379c7cffb4433e67b12eee597f4949a0e84
 SHA512: baf7ebfb41d4e614c571ada2becf44429caf6b4f57e7682e4a2d4d6af9a6d86fb71357775da510198a61862a07532e26a69c5bd6cfa4de7a66bb3a77cf030d15
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
+
+Package: vulkan-utility-libraries
+Installed-Size: 5772
+Maintainer: @termux
+Architecture: arm
+Version: 1.4.315
+Filename: pool/main/v/vulkan-utility-libraries/vulkan-utility-libraries_1.4.315_arm.deb
+Size: 527820
+MD5sum: a9a371a0aacebb452a93e26c834dfb09
+SHA1: 7e1f6e10dea855570bcff904756fa62800523b25
+SHA256: 8a7ffff7fe45ae3f61dd28c482dc00436918abcfb6f8bded9e2a973c662ddd39
+SHA512: 7c49e556ce0dc4d3f5738974b13d4a337dd6c9b0b78117f9bd34887779804a2cc6243900b2a1cec3b8e5dfa6aef4f9cc4fb41e0ba040dcfcbb91f91993b104dc
+Description: Utility Libraries for Vulkan
+Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
 
 Package: vulkan-utility-libraries
 Installed-Size: 5768
@@ -40383,20 +40603,6 @@ MD5sum: c0e1f466b77964cf79216b98cf447bc6
 SHA1: 843badee6b2265a960d260b9242e45bb2070094f
 SHA256: fca1b45442c97dd81ebdb144791044a39001a46a86ec3afa3767fa0c9ffe460e
 SHA512: 4d43c12765e53fd144ee7fbae8a1f56ee3a160fe7fd855b7d07fe8397d7547e753838164d958a0c47169354919de3381eff3320de6969e2ccef6ad0f6f3541b6
-Description: A lightweight and portable command-line YAML, JSON and XML processor
-Homepage: https://mikefarah.gitbook.io/yq/
-
-Package: yq
-Installed-Size: 11424
-Maintainer: @termux
-Architecture: arm
-Version: 4.45.2
-Filename: pool/main/y/yq/yq_4.45.2_arm.deb
-Size: 3175516
-MD5sum: 1b4d96ceb22a42d082e04f8c01c81710
-SHA1: 30453c43c95d4c879eff7e08611c9cbdfbd694b1
-SHA256: 26e5820da36ecd775db8c4d5cac433d51bb4c9a68e2342a9f8a92685ca19856e
-SHA512: 72c7f1936310d3821865a678be6db4a95d925c8890dcbad839a875b84ec61524ba12e54a0fe0e8ba57781d79d93cc51cd74bbe4a01b6c726f181801f8a0168ac
 Description: A lightweight and portable command-line YAML, JSON and XML processor
 Homepage: https://mikefarah.gitbook.io/yq/
 

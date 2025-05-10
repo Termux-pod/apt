@@ -6681,21 +6681,6 @@ SHA512: 4c0d33a8ece450ab546d7f86db7989e8d60502f1fefa95c7effb3c09e6ffeeb48514c242
 Description: Open source xHE-AAC encoder
 Homepage: https://gitlab.com/ecodis/exhale
 
-Package: exhale
-Installed-Size: 412
-Maintainer: @DLC01
-Architecture: x86_64
-Version: 1.2.1
-Depends: libc++
-Filename: pool/main/e/exhale/exhale_1.2.1_x86_64.deb
-Size: 140860
-MD5sum: 2ec4f7e2e17e8ae8282b3a384847af41
-SHA1: 3da94fc3c86e0c7bcabbf2ad14283f8d3f72a160
-SHA256: 59a2603b6e6c1a5cfe592160d9e6e8d7bad30c1d5a72584faa7ed92cd657391b
-SHA512: ac36c3cfd46b72a84efde085a240160530db01eeb1aa604ff440abaf6389b4b801febd8fde39e7227c1a1f9f35d0a99a04f3dcf1199f481d0068e38293dcea6b
-Description: Open source xHE-AAC encoder
-Homepage: https://gitlab.com/ecodis/exhale
-
 Package: exiftool
 Installed-Size: 17308
 Maintainer: @termux
@@ -11653,6 +11638,21 @@ SHA256: 1e068ac097292284a8983c9dc7a76de94ced2d67d5f9a1ad6222d82dc0e20c74
 SHA512: 92124720867d87e041ca2ddcac9d27e3aaaed37bcb0dc6b8028d46801aeb44353940bcd81712a4d3f094446640a4b1c27a760ce803faef75982fc2fe3e8c8abe
 Description: Utilities for controlling networking
 Homepage: https://wiki.linuxfoundation.org/networking/iproute2
+
+Package: ipv6calc
+Installed-Size: 6240
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.3.1
+Depends: openssl, perl
+Filename: pool/main/i/ipv6calc/ipv6calc_4.3.1_x86_64.deb
+Size: 1071200
+MD5sum: 7ff686d8dcdffae715c3020c3d85e0d5
+SHA1: d4d669f0f58071067fe8034dae5b5140a07cf543
+SHA256: ac72ca5da84176384acf87df5fbf8cfb4e34ab3bbc3a46e8143b7b6d309ba21f
+SHA512: 5df536fadcf917320a39e39d85a043010861d22fd80e354032d2acbdb45fe79f1f49ca469aa36ce1a933011cd6dce177ae253873e4a4bd037f1b5fb0e9b53301
+Description: Does some format changes and calculations of IPv6 addresses
+Homepage: https://www.deepspace6.net/projects/ipv6calc.html
 
 Package: ipv6calc
 Installed-Size: 6156
@@ -24354,6 +24354,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 48940
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5338-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5338-0_x86_64.deb
+Size: 6424512
+MD5sum: 0a5500d7712e728dc2c8c1a08189d676
+SHA1: 921e08e8595f718704b5ba2c7b90e0b1d2fe44b1
+SHA256: d3e8ace017e48035a666fa8a09d7a1409fc30616c7e06d627f7fa91414e81fd5
+SHA512: 593f39e23c0c4f05f5c537a937fd708bbb0339b4eead8b5d4fbe4dc21752e40e7156ea4d58d26db2b8eb0a4c5ad2f59752253a7a44a94608ecca2bce52102e98
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 48936
 Maintainer: @termux
 Architecture: x86_64
@@ -24369,20 +24385,21 @@ SHA512: 171b5fb09e99d670a12ff50989c7a95366d2fa436ee4e247055cc0612bb72f0fbef50b11
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48936
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5332-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5332-0_x86_64.deb
-Size: 6414188
-MD5sum: 4b81355e3ba6b6c907c975b95f4844cc
-SHA1: bf28774f9ca8a384dfe94bfc27ca1f7676c5c545
-SHA256: 345070d50fa4c9a8f235c957732bd7fb96448c14335f43cfe48b676477852cfa
-SHA512: a98a590369ad3a3079a34bbe73603230a67ba0e3cb22fcd1a2901fae987de79e5737d9c59610db1f31c4c7c8cfeb2d0f7201ac267aae6ac9f56640a4e022962d
-Description: LLM inference in C/C++
+Version: 0.0.0-b5338-0
+Depends: llama-cpp (= 0.0.0-b5338-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5338-0_x86_64.deb
+Size: 68060
+MD5sum: 0f429c72e70d705b0b5b7a429b63ad54
+SHA1: 1fccdfdd719fdc71b420f9224674fbdb208abe41
+SHA256: 2f2e98a40956c3675d274e653b8baa5459f4b07a45b979e0faed502172bdb44b
+SHA512: 60381c77190a14109e075bb6914819683f7436dbdfc7799081b7b102f626b62dfb8c29a81a5e118de69efc106994efccf68a5f66a5c54d980ad9fb9a688d83aa
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24402,21 +24419,21 @@ SHA512: ffd242e5e7e25df7b6f9e2a0d80184b99582ef06678d48661a143bf03c8e8350e5816cd2
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 380
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12900
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5332-0
-Depends: llama-cpp (= 0.0.0-b5332-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5332-0_x86_64.deb
-Size: 68108
-MD5sum: 18462d3d563eed97868fdefd68ed7f8b
-SHA1: 20a51620df34d3389584174d8a60545dd1af25d6
-SHA256: 898ac89d2ccdfd14f059a4441440288482ac45c1ed60d30c250776085ffbd30a
-SHA512: aca921f86dd97cf71b2d6fb379b33b8acb8c9bc6ef0f2268615313736779e5339f04ebd60fb13db63cfab225e9cd8af33b4ce9531308b51a191c57c2581e8cb9
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5338-0
+Depends: llama-cpp (= 0.0.0-b5338-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5338-0_x86_64.deb
+Size: 1007120
+MD5sum: af80112f5726f8b3b77b2b1c76d5ff23
+SHA1: 94a58d57aec7d729e63178260ed6b055260cb0cb
+SHA256: fbaeef65b817c282f990cd9f85dbcbe79005351b05d275afcda3afef273e4c0f
+SHA512: 05a7f8176964b5eeb5b59cd50d02f0fa3ea44dff3de3c5ff352d01d498adfcf86376d7d473873af928d4b1ae4767409062a7a780ed779c5bcc2c4c648796c24b
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24433,23 +24450,6 @@ MD5sum: a5edc21763d786f27d1551ae24d98632
 SHA1: f3096e8fa9b9e14fff5ef1c158e5c6f249f1daf4
 SHA256: 5e3397e1aed0f158834bd8e47dcf3bc99244640342c21c548753d82c3b32b975
 SHA512: 087948f683a6039b0169a6e7973bc9ca31181e630b1d701dea1aba4eb4ce53d358b8b5d5eb595f65cdd1e56e540ee107f668fefcaba5e5f1e8a750bc20850702
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12688
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5332-0
-Depends: llama-cpp (= 0.0.0-b5332-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5332-0_x86_64.deb
-Size: 976408
-MD5sum: 752dbc5b00b16f39b3a14c9c41c0c255
-SHA1: cdd8ac92f2325e91c593d1116a3f1318947daaac
-SHA256: 3705be364ffa81d4359e163ed567c9ccd6bdd2694e4e24ec9461b9bd47912dff
-SHA512: e858a9b0a0e069db10afd61e2069fd2252e8ff78c4f3f88f3d013fe35688310c90e2517694183ae4313277b1565adc24fb8854b2f4537fff5c0f5f041a0f0d7d
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -27085,21 +27085,6 @@ SHA512: 5c1b9fa78ff4df14fcd9d1335cf0f250584e8caefb82b599795578fc6e095df7f3fd27ab
 Description: Maildir indexer/searcher and Emacs client (mu4e)
 Homepage: https://www.djcbsoftware.nl/code/mu/
 
-Package: mu
-Installed-Size: 2320
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.12.10
-Depends: emacs, glib, libc++, libxapian, libgmime
-Filename: pool/main/m/mu/mu_1.12.10_x86_64.deb
-Size: 589932
-MD5sum: c95076fec2f91740f87afd0d7f8684a3
-SHA1: bac26ff5e6a802810a766f425d0aa5892bd74c53
-SHA256: 2d6856b7e1eb0f01ee6413bc86d8f440d2f75d7ee5fdd7187e5ebdc2779e77c6
-SHA512: 7466654d212a63b0023eb1ca4948f8b090c3396c88f3c6bce8bf2955994a6bc2f800f68b59b61860355e36b52f53a7aadef5918401432ed315205a915960522a
-Description: Maildir indexer/searcher and Emacs client (mu4e)
-Homepage: https://www.djcbsoftware.nl/code/mu/
-
 Package: muchsync
 Installed-Size: 304
 Maintainer: @termux
@@ -27742,21 +27727,6 @@ MD5sum: d86f14920b38113d054e89edf3ce670e
 SHA1: 54cdea0cb9464fba872a842c6882cc456717e0c6
 SHA256: 328d5db9a8900d184fda02a38a1844900ca0bd49fcf3c5ac4d7559b485b8bcbd
 SHA512: 15094b178229a7d062692e1d05d43c999311f4ea2e822306efc8f2f56d3055fe0d17923eee5fed18400a6c2b1cf7fa40b7e6646be0ebd5f285261600a9622216
-Description: A version of mutt with added features
-Homepage: https://neomutt.org/
-
-Package: neomutt
-Installed-Size: 5960
-Maintainer: @termux
-Architecture: x86_64
-Version: 20250404
-Depends: gdbm, krb5, libandroid-support, libiconv, libsasl, ncurses, notmuch, openssl, zlib, zstd
-Filename: pool/main/n/neomutt/neomutt_20250404_x86_64.deb
-Size: 1121896
-MD5sum: df86d9cd24ecc8e5cec13fbc3d9e6187
-SHA1: 59f8a0577dfe615b0aa8c1bd099061a0e96d20ef
-SHA256: 811f5993c46074d6528b4df1acb50b2de6afffc2f244dc04ebeeb3cffafbc5a0
-SHA512: 6a976e12d11c4f3531298243a0b68c78c00994e0735062fe3077f144fe502ef0a37fb9124549a27f2e60066ff1bf217ddfd72dd7a9d00ea168a80b298a028326
 Description: A version of mutt with added features
 Homepage: https://neomutt.org/
 

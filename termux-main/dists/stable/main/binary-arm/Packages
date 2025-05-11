@@ -1628,6 +1628,23 @@ Description: A command line utility for calculating BLAKE3 hashes, similar to Co
 Homepage: https://github.com/BLAKE3-team/BLAKE3/tree/master/b3sum
 
 Package: babl
+Installed-Size: 872
+Maintainer: @termux
+Architecture: arm
+Version: 0.1.114
+Replaces: babl-dev
+Depends: littlecms
+Breaks: babl-dev
+Filename: pool/main/b/babl/babl_0.1.114_arm.deb
+Size: 242884
+MD5sum: f0b38320d9c6e2198ae48258043dfecc
+SHA1: a653a4565b406439b198a34a02a026b986b5bebe
+SHA256: 60e145d34f38659c62b58ea0e680d6b9f6402c3a95753b80904c20393ee01b47
+SHA512: f73e84108e401fcd5bd55e7d1ff74a6d180779cc86ef3308f5f8de750ada60511591cfb7cc479bff5187d02e7b8e80b056a0820153d4648367f9d52d21db43be
+Description: Dynamic pixel format translation library
+Homepage: https://gegl.org/babl/
+
+Package: babl
 Installed-Size: 868
 Maintainer: @termux
 Architecture: arm
@@ -7743,6 +7760,23 @@ SHA256: 48c5eb781357e9d38b01e3175984341744dc6a24f2a5819528fa0674583b807e
 SHA512: 9feacedce376615d7486f7be76cc33b05c35279f563c0c13ed834ba813b47aff9802734eee6638e861eb3bfb8bec7f45bf096fddecc915507de4c0888d94bb0d
 Description: Static libraries for gecode
 Homepage: https://github.com/Gecode/gecode
+
+Package: gegl
+Installed-Size: 6380
+Maintainer: @termux
+Architecture: arm
+Version: 0.4.62
+Replaces: gegl-dev
+Depends: babl, ffmpeg, gdk-pixbuf, glib, json-glib, libandroid-support, libc++, libcairo, libjasper, libjpeg-turbo, libpng, libraw, librsvg, libtiff, libwebp, littlecms, openexr, pango, poppler
+Breaks: gegl-dev
+Filename: pool/main/g/gegl/gegl_0.4.62_arm.deb
+Size: 1300284
+MD5sum: 0ff9b4b79253780ae46d57362a223b59
+SHA1: fb98dd4982624791a0c99f6a5cd3a99b0f6b97d4
+SHA256: b9c3548ba530408b3ed8797c73041738570a0f6e93201b0d993b990a6473c350
+SHA512: bf5948c18bc70a9ac1a0205e48007e2d7b3174837778d9ad169f887ecf50ce05b59d037e9ba73d90a5d91e6464ee7ad874f6607b56716a245f52cf4ff0d2ed9b
+Description: Data flow based image processing framework
+Homepage: https://gegl.org/
 
 Package: gegl
 Installed-Size: 6380
@@ -25290,20 +25324,40 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
-Installed-Size: 12828
+Installed-Size: 12988
 Maintainer: @termux
 Architecture: arm
-Version: 25.0.5
-Replaces: libmesa
+Version: 25.1.0-1
+Replaces: libmesa, osmesa
 Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 21), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
 Suggests: mesa-dev
-Conflicts: libmesa, ndk-sysroot (<= 25b)
-Filename: pool/main/m/mesa/mesa_25.0.5_arm.deb
-Size: 3083808
-MD5sum: 0c434a9c50b95c6293e7627ee7d6462f
-SHA1: 487f1b5bc2b47430fcdfdde220058dc36011e60f
-SHA256: 485e98ad8aa83414ad55857e55ccbe73c2a371b461cabf1ad4b9be3ffa91f43f
-SHA512: b44f5e6971e0f3c8b5da5927cea73b397eed0e6165f420db66fd218b7a2b0e8d8805c29dd24ce0fc4019ff1f5397265ae4501452b98579ee129298d5c655ea6c
+Conflicts: libmesa, ndk-sysroot (<= 25b), osmesa
+Breaks: osmesa, osmesa-demos
+Filename: pool/main/m/mesa/mesa_25.1.0-1_arm.deb
+Size: 3098136
+MD5sum: 249330cf02ac6f1281099c67f2d69b0c
+SHA1: 7d840195ff6ea06c07e172962d4688480f5a97a3
+SHA256: 74d892c61cf4f115f36ec33029f430966ff31a58520a8c736ae59c1d69e30dd0
+SHA512: cbbea3cd038e28e58faad53dd400c3245a55d01a5712e84f83eef528c6023a81acd138d183bb0163374f3f83ca627eb9acb716afd691256895f445bb469d440a
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
+Installed-Size: 12904
+Maintainer: @termux
+Architecture: arm
+Version: 25.1.0
+Replaces: libmesa, osmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 21), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b), osmesa
+Breaks: osmesa, osmesa-demos
+Filename: pool/main/m/mesa/mesa_25.1.0_arm.deb
+Size: 3060356
+MD5sum: e9d3f543b3d08941fe0c071ac88949f1
+SHA1: f72bead657a25cc7457312b14333fae9be522547
+SHA256: 132d0c71775b220f290629d84f052e6c8ea270a7a4c5a348983f33f9550d859c
+SHA512: 99a1c0ca3fb295d7137f98068d78811970b26958127b513e7d62b68e32e1c76c1237c3a0d8ca1077cc3f7119b9f78821fb833b0c8f3e70a838d079b11e89f847
 Description: An open-source implementation of the OpenGL specification
 Homepage: https://www.mesa3d.org
 
@@ -25311,34 +25365,69 @@ Package: mesa-dev
 Installed-Size: 168
 Maintainer: @termux
 Architecture: all
-Version: 25.0.5
+Version: 25.1.0-1
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
 Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
-Filename: pool/main/m/mesa-dev/mesa-dev_25.0.5_all.deb
-Size: 25344
-MD5sum: 257a0922f4f840bc9bb11c984a4862a5
-SHA1: 97cc7d32d73a41ed8f575a86ccc6c1c26bc9c835
-SHA256: 758b0fc12fd028d3c414871fa58566653d4a5f2c65ac4b903f4efb89998aac96
-SHA512: 8b30554133a59f00ac9c8067b0322285693c1c90919a70c886dccba76ee2218d7745a33ab216808a6bf3438e5e16af41255814a915b3c7f3835e538fc321c247
+Filename: pool/main/m/mesa-dev/mesa-dev_25.1.0-1_all.deb
+Size: 25328
+MD5sum: ff629b23f4093ffcc96e7a34a70341c7
+SHA1: 45c8b131f25f6dc04bdc27e41d6a74c650cc0833
+SHA256: d1ff265190132cccd044dbb286fa84f23462121ff751bcfa20953fdfa091293a
+SHA512: ca5a04d1cf1afd74ccba1f41104004318c8fc6a6ea29af17358d7b142f5581b6dcbde6c3a86f69841d45d67bda33512905ec48268ffa047fcc4364f81cfca106
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 168
+Maintainer: @termux
+Architecture: all
+Version: 25.1.0
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_25.1.0_all.deb
+Size: 25316
+MD5sum: 089dd00808e27ab9fd11b8b09b74a2c7
+SHA1: be1aed7f4fb3c1e5158e0eb5199d8d50023a5bb1
+SHA256: 30825bb324dd3584617dcf54929cbaa1b511adf54d66fc5a9bb617f47adaa630
+SHA512: a20ff88bb844275306f80b509f6d6c9b10e8504adeabeefdd6ae405b0b63ff3d1a630375dbf0e06aa2d15c0331ba90f4b045aa6683f1efd8b85767dae7f960fd
 Description: Mesa's OpenGL headers
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-freedreno
-Installed-Size: 8296
+Installed-Size: 8640
 Maintainer: @termux
 Architecture: arm
-Version: 25.0.5
+Version: 25.1.0-1
 Replaces: mesa-vulkan-icd-freedreno-dri3
 Provides: mesa-vulkan-icd-freedreno-dri3
 Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, vulkan-loader-generic, zlib, zstd
 Breaks: mesa-vulkan-icd-freedreno-dri3
-Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_25.0.5_arm.deb
-Size: 1337544
-MD5sum: 0bc242099086b211be841a7b89734ce2
-SHA1: f89fdab8c8aca0c630f5b696dbc339e3044bd563
-SHA256: d4fc85d09ca062bf514be33ed20f2f4f0f904eefded73b7ecdc2bf2539618f70
-SHA512: 5fba97cd94063c6705e1b4d2af5ca26be52b95fd4477c4e08ea12345bf19e45871516e10ac2814f137f47dc7780afee291220e220ae75faee08eb51ee355acbb
+Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_25.1.0-1_arm.deb
+Size: 1387612
+MD5sum: 2d95391131413da36d6791553961a168
+SHA1: 0e12de76dd3ba10d339d30db8cce159fc05cee26
+SHA256: 2f000d9d48e1eab89384222cd170491f46704cc9f9e0eee421f136e8b805543a
+SHA512: 2343ebf204679391071d6e4c20561de6fdd7904248b1322e198d87b1aeff3378533e857ba4d4c3b19d2a9fce13145f4c5c75d1224ca492c953cc9beb44f6be77
+Description: Mesa's Freedreno Vulkan ICD
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-freedreno
+Installed-Size: 8640
+Maintainer: @termux
+Architecture: arm
+Version: 25.1.0
+Replaces: mesa-vulkan-icd-freedreno-dri3
+Provides: mesa-vulkan-icd-freedreno-dri3
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, vulkan-loader-generic, zlib, zstd
+Breaks: mesa-vulkan-icd-freedreno-dri3
+Filename: pool/main/m/mesa-vulkan-icd-freedreno/mesa-vulkan-icd-freedreno_25.1.0_arm.deb
+Size: 1387792
+MD5sum: 26d76d01d7dd39d5a225c06222574b96
+SHA1: 104d2988cbd428f4e9124331c4a14d270a7b6e3d
+SHA256: ea1b889aea163b2efd88cd45129338e19ce465dcec790ab830f263c5f9fbdd7c
+SHA512: 9e141d85150bfb4764cd3a9a8ce8da2e0da7da89a52d430dc04d652edbe035db4ca8d352236afc9cbe65db27c9294b5088370d436f45dec2c9ba688738a6bbc7
 Description: Mesa's Freedreno Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -25359,17 +25448,32 @@ Description: An open-source implementation of the OpenGL specification
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
-Installed-Size: 7872
+Installed-Size: 8644
 Maintainer: @termux
 Architecture: arm
-Version: 25.0.5
+Version: 25.1.0-1
 Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
-Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.0.5_arm.deb
-Size: 1430200
-MD5sum: 414241220b9dd398acba1a727a1d35f6
-SHA1: 7659259feeaff281803bee8a856bf7bf0856614e
-SHA256: cfb83c7baa4483990c6042c602300f6d1d83f9c5c3b4b40318504ff4df4edf88
-SHA512: 5378c2031b490fa8a76ab32a53c6bf9e1a8af6caf619aba363ffeef075735b902171de454ad8fa430758db1c533577b3ab67b6bfb98d7dd3befe93ab18df5da3
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.1.0-1_arm.deb
+Size: 1519128
+MD5sum: 2ee582afc546647fee9cbded4d85abeb
+SHA1: 21dac027d714ffa3e98307d93d8c1ec6acfa6ff0
+SHA256: 245b4b42258ba848f5833d96f6d8bab09585e61fc06678768f6a63c1763bfc1f
+SHA512: 8f8e1a4cb0ebe8cf504b2bbcfbc7193ef5cfe0aa349e8d951e3bfdfc4116bcc52f1b4a45ad4d3ee3f398b64e8ed8a935163f5ea69b7db4c469a36d1d66cf8318
+Description: Mesa's Swrast Vulkan ICD
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 8644
+Maintainer: @termux
+Architecture: arm
+Version: 25.1.0
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.1.0_arm.deb
+Size: 1518716
+MD5sum: cceee9fd44088a35e8db413ff1a3e0c1
+SHA1: 6f5f71a5e144ccb49238070d904e643756397aac
+SHA256: 611795abed095d46325848bf8ccf1b50d806b78c86f192566a06f09ec089173f
+SHA512: a8df82a41945279adeaad88d109b51c1b4398ffdd8015d4ed1d6a2163cb465fc35c71d28f61283eafc0733dd26b493a554abcad6cc0e6dafffc431291557e4fc
 Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
@@ -26416,6 +26520,21 @@ SHA256: 73c6ba79d23bf317760b7603a147b45767078e2d0c4585cddfc14190934c2624
 SHA512: 1a887be5a6298bccd52d203289b5ae798dc36bde6974b18081f93d912caaa8fddbe2fd295a4b2e93e747766dcba32e8e0855031b195dec4de5e792927f197b9d
 Description: Video game for color and monochrome text terminals in the genre of Namco's Pac-Man
 Homepage: https://sourceforge.net/projects/myman/
+
+Package: mympd
+Installed-Size: 1244
+Maintainer: @termux
+Architecture: arm
+Version: 21.0.0
+Depends: libflac, libid3tag, liblua54, openssl, pcre2, resolv-conf
+Filename: pool/main/m/mympd/mympd_21.0.0_arm.deb
+Size: 789156
+MD5sum: f221443571bbe54b936cae64d72c6af2
+SHA1: 46b1992fae7647224282d55c8133b888133914ae
+SHA256: 4dd647a5d83d26e9944f9ca58a28e245c9daaab409fc0723ba0eb134237854e9
+SHA512: eef31ef13ec911658dc1ecb8610f918146914bc40400c7c6a25a5155ac5c96d7db2cac4b0f611ced63c782bf45f30928f28e8adb2f3adbd362ffb45034005889
+Description: A standalone and lightweight web-based MPD client
+Homepage: https://jcorporation.github.io/myMPD/
 
 Package: mympd
 Installed-Size: 1256
@@ -36807,6 +36926,21 @@ Description: Command-line time tracker
 Homepage: https://timewarrior.net/
 
 Package: timg
+Installed-Size: 208
+Maintainer: @termux
+Architecture: arm
+Version: 1.6.2
+Depends: ffmpeg, graphicsmagick, libc++, libcairo, libdeflate, libjpeg-turbo, libexif, librsvg, libsixel, poppler, zlib
+Filename: pool/main/t/timg/timg_1.6.2_arm.deb
+Size: 80472
+MD5sum: 30f98c94c1ef0d4d61ebc2246f44a23f
+SHA1: d6f7076b790fba232abb36334c36ad17f63159e6
+SHA256: a0144db59876c96a8072408bfd022222591900a08aa6194e526105a86dd655df
+SHA512: 39558726cc4814450b42a58337f109f8656c73d6162023691ca150b889e03606d277911f0fb7713a017e3d1c788db5e84217085bfb3258dd98a47850cf65e7ef
+Description: A terminal image and video viewer
+Homepage: https://timg.sh/
+
+Package: timg
 Installed-Size: 224
 Maintainer: @termux
 Architecture: arm
@@ -37251,6 +37385,22 @@ Description: Recursive directory lister producing a depth indented listing of fi
 Homepage: http://mama.indstate.edu/users/ice/tree/
 
 Package: tree-sitter
+Installed-Size: 5356
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 0.25.4
+Replaces: libtreesitter
+Breaks: libtreesitter
+Filename: pool/main/t/tree-sitter/tree-sitter_0.25.4_arm.deb
+Size: 1979980
+MD5sum: 44c0d187161adbcd124aba0d74be0cc2
+SHA1: 5182d2c7c89b41ddc1a22a05c941e58fc4b58083
+SHA256: 9d0b85a2f556cedc41bd5d319aad13b03f4db7a1e474b240c4a13d8a51868a6a
+SHA512: 5839d4554c4026ff27bf371630b5092faf291d7b0c4cfbad2fec98636c0940aafea7f3d4914fffa7dd23336df141ad2a5919381c0f0b193ffb850f75be96690c
+Description: An incremental parsing system for programming tools
+Homepage: https://github.com/tree-sitter/tree-sitter
+
+Package: tree-sitter
 Installed-Size: 5336
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: arm
@@ -37396,6 +37546,21 @@ SHA256: 07fec04e984f76758c48d160c50371a3e4de5d36fa7184bae066b8a92df18122
 SHA512: 3144dc0bc60f801cf307a90141ec79755bf71ee9ba3d678c5f056ab4f10aca5a4234369dca8947f68c852855aeb3baa6158e4658e0a63888a2d7cbc9978fc279
 Description: Static libraries for tree-sitter-query
 Homepage: https://github.com/tree-sitter-grammars
+
+Package: tree-sitter-static
+Installed-Size: 256
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 0.25.4
+Depends: tree-sitter (= 0.25.4)
+Filename: pool/main/t/tree-sitter-static/tree-sitter-static_0.25.4_arm.deb
+Size: 79584
+MD5sum: 6ae0a1ab367802bac61b358caad6f780
+SHA1: 98214e408bdf6c172c8d9a1361e62561c086323c
+SHA256: f62b831272f407695fecbff2d92efb03b1f2a080790ee7eddb91b0835829d65a
+SHA512: 64a069f26e4e655b4e27ae4f46c41880100faeb4f4a812d0fa8c0706b1a419e7d95a3e9cce40ef97b86bce25f003d791b28fe3430bfca6a504f6fe520c3986a3
+Description: Static libraries for tree-sitter
+Homepage: https://github.com/tree-sitter/tree-sitter
 
 Package: tree-sitter-static
 Installed-Size: 252
@@ -39397,6 +39562,23 @@ Package: weechat
 Installed-Size: 2160
 Maintainer: @termux
 Architecture: arm
+Version: 4.6.3
+Replaces: weechat-dev
+Depends: libandroid-support, libcurl, libgcrypt, libgnutls, libiconv, ncurses, zlib, zstd
+Breaks: weechat-dev
+Filename: pool/main/w/weechat/weechat_4.6.3_arm.deb
+Size: 799220
+MD5sum: e4ff021d3a26409b6a60044c3f811ff8
+SHA1: a5d2e782af78fc68c1e24badd18997d7a94e086a
+SHA256: 86e0ae10f82c9216c7ee01f15796b2556e566ce01a506a26a2452199de2d9e8e
+SHA512: e7e292a6c8ee1b795c6d6a89925f35e79814f0f33a75d61974ee8a75bdb26d53f9c9027a0459cce965f5fe78788ebecb4559a3e8e5f0152d65930c7169cebf95
+Description: Fast, light and extensible IRC chat client
+Homepage: https://weechat.org/
+
+Package: weechat
+Installed-Size: 2160
+Maintainer: @termux
+Architecture: arm
 Version: 4.6.2
 Replaces: weechat-dev
 Depends: libandroid-support, libcurl, libgcrypt, libgnutls, libiconv, ncurses, zlib, zstd
@@ -39408,6 +39590,21 @@ SHA1: 89505dea83063f815235245c7568a5fc1a5d8c14
 SHA256: 0eea1d8529794edfad01298f7a4bb201740db5bb71274a74c957250ec1c64b2d
 SHA512: 2d1a7dc10f85a0c29f08ee85cc3e2f884a0fa6bd895480dfc0ea8badb15537936a4460b101fe42357e351d9f5ba86c03863c243def3c2f569560369dabcc3f89
 Description: Fast, light and extensible IRC chat client
+Homepage: https://weechat.org/
+
+Package: weechat-lua-plugin
+Installed-Size: 164
+Maintainer: @termux
+Architecture: arm
+Version: 4.6.3
+Depends: liblua53, weechat (= 4.6.3)
+Filename: pool/main/w/weechat-lua-plugin/weechat-lua-plugin_4.6.3_arm.deb
+Size: 40052
+MD5sum: 8bfc7b928909bf001530fe51d6405296
+SHA1: ee4ee6b6f5b8d67862df145b01bf62cde883d3bc
+SHA256: 678212f4e67321418fd51ec5e95e9b6e56d15a6e4d009be807b4855ca5e5fb9d
+SHA512: 2505ee3f3569768632414d5f5583d51549e0d3b3da1795ed008b0619f2ec44e7fc61ac1dd688923d911631b5a2fb5bd6b3eb33182b9f66aa62c60ad7240c9eda
+Description: WeeChat Lua Plugin
 Homepage: https://weechat.org/
 
 Package: weechat-lua-plugin
@@ -39429,6 +39626,21 @@ Package: weechat-perl-plugin
 Installed-Size: 236
 Maintainer: @termux
 Architecture: arm
+Version: 4.6.3
+Depends: perl, weechat (= 4.6.3)
+Filename: pool/main/w/weechat-perl-plugin/weechat-perl-plugin_4.6.3_arm.deb
+Size: 58744
+MD5sum: bfcd48f891a1efcd6a0e6a0d17cff69b
+SHA1: 46a644fd719856f5de97cba05ed91e5ec3e979d5
+SHA256: e3165ad59b893b274b6064ef3b34ce236bad966960604e504f1326b7c69fd61a
+SHA512: dd71043a12afff331e515f60cd4d55138ac55e5ed3a4c2c70d4b0ac465eddbcb571e5c6cebfd140a640a6da61141443fe513f9a7e0c17723c843c976b979a9f7
+Description: WeeChat Perl Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-perl-plugin
+Installed-Size: 236
+Maintainer: @termux
+Architecture: arm
 Version: 4.6.2
 Depends: perl, weechat (= 4.6.2)
 Filename: pool/main/w/weechat-perl-plugin/weechat-perl-plugin_4.6.2_arm.deb
@@ -39444,6 +39656,21 @@ Package: weechat-python-plugin
 Installed-Size: 188
 Maintainer: @termux
 Architecture: arm
+Version: 4.6.3
+Depends: python, weechat (= 4.6.3)
+Filename: pool/main/w/weechat-python-plugin/weechat-python-plugin_4.6.3_arm.deb
+Size: 43864
+MD5sum: 119a40c81c6ac199d766f0834de5686e
+SHA1: d02c0b02529cd793f56ca2372cb004bf0e7c9998
+SHA256: 69f3dfbe30d0bfc38a135a3138a7d233ccf90482adba89267a4471705fe343ed
+SHA512: cf9b0e7a8e0db17f0393aca9df8d9e8fc150603987d21e98ad9f49a7ba0afce94d2194c2d7372a3916d509a30323f52f48e390a5d530aeb093a065b428c87dae
+Description: WeeChat Python3 Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-python-plugin
+Installed-Size: 188
+Maintainer: @termux
+Architecture: arm
 Version: 4.6.2
 Depends: python, weechat (= 4.6.2)
 Filename: pool/main/w/weechat-python-plugin/weechat-python-plugin_4.6.2_arm.deb
@@ -39453,6 +39680,21 @@ SHA1: e507cd0bf1fdb873d05d057d674077615604cd80
 SHA256: 697e80cc8601dbd98ace43a0910008a88238ba501e7abbb01afbcaeb4d0112e1
 SHA512: acbb7efb8c895fc30b0a7e570a70befd01c2dd17e80b407c83126499c2f94e731d96a187ee5d41ce9d8d6440e0abf0a445e5d4b56d29943da4848dba818acec1
 Description: WeeChat Python3 Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-ruby-plugin
+Installed-Size: 180
+Maintainer: @termux
+Architecture: arm
+Version: 4.6.3
+Depends: ruby, weechat (= 4.6.3)
+Filename: pool/main/w/weechat-ruby-plugin/weechat-ruby-plugin_4.6.3_arm.deb
+Size: 45880
+MD5sum: 8abceef93e084afcb3ed5fcc7e235714
+SHA1: 6d1a4c688a9f69abb46f8a3892c57c0192ed8054
+SHA256: 1f75aa16b3d86a3a3f512b66389ee1ca48c1db8df6d6fc858595ac218c08b1b0
+SHA512: 07486cdb48265bb622139edb959349b12896d9dc5e2cb808c47dc99c20d4a9a1ff5f21495ee8e05aae533e9fff462cfe5a50aaf8073dd1dfcb273fc835957b72
+Description: WeeChat Ruby Plugin
 Homepage: https://weechat.org/
 
 Package: weechat-ruby-plugin
@@ -40353,20 +40595,6 @@ MD5sum: 5a156975a7fc10256bce2abe93766dad
 SHA1: bb582acd1900bbc6468facadefdba735843514e8
 SHA256: 461bacf7b45b5ae3a6af782f92d37b0e2fc9175b7282b47c0b7589762a9bdc45
 SHA512: dc27ffeedb5c5c525d2c8cfd8a232cf30693586a2f8127f9ad9fe8150e1e637a7e8fefc037d831627dbba3b24e61d39a83960995d71e546bd40f9c8d3a1f8de7
-Description: A lightweight and portable command-line YAML, JSON and XML processor
-Homepage: https://mikefarah.gitbook.io/yq/
-
-Package: yq
-Installed-Size: 11468
-Maintainer: @termux
-Architecture: arm
-Version: 4.45.3
-Filename: pool/main/y/yq/yq_4.45.3_arm.deb
-Size: 3188220
-MD5sum: c0e1f466b77964cf79216b98cf447bc6
-SHA1: 843badee6b2265a960d260b9242e45bb2070094f
-SHA256: fca1b45442c97dd81ebdb144791044a39001a46a86ec3afa3767fa0c9ffe460e
-SHA512: 4d43c12765e53fd144ee7fbae8a1f56ee3a160fe7fd855b7d07fe8397d7547e753838164d958a0c47169354919de3381eff3320de6969e2ccef6ad0f6f3541b6
 Description: A lightweight and portable command-line YAML, JSON and XML processor
 Homepage: https://mikefarah.gitbook.io/yq/
 

@@ -11884,21 +11884,6 @@ SHA512: d45ae1bf64b3a075cfa07a17b00926d9d902ddef45b0547b45f1c0c2e9d84f7e5bab0551
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14372
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.22.1887
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.1887_aarch64.deb
-Size: 3184136
-MD5sum: 34ed224dcc6d83729781b035c1092140
-SHA1: 5ecaa7d43d61bb6a09d9921ddfc21ea70a2cbbe6
-SHA256: 677ad39616490078c023cb2d7551cb6071d853c8baa3219e4fad6710974892cc
-SHA512: 4ba9b00a6fa83766eff95c15b65fec68884e3e86aa3246a1c846b4ff78a25e3aa5c85b917a1833417fbcf7c457e4e0f1ecc727355de479bbaf0af870a3f058ee
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 752
 Maintainer: Komo @mbekkomo
@@ -24415,6 +24400,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 45180
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5345-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5345-0_aarch64.deb
+Size: 5736860
+MD5sum: 869499711841b79a93fa39602ebbb8f8
+SHA1: a394dabb3a84886ead569f3ca87a46a7ee039fa7
+SHA256: 4e11480ab1ef7f00f665f482034c6786b10d69961261cee00aad960e7a9e51ea
+SHA512: 1b15e7cfa0f6c8d08dcd0f925023ccd9185fc38a39ec2fa53affeddaea0314a842d77bb54ec37d7df3559b6dcfe224fd635aa2af25089526ac0b1bb309cfa537
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 45172
 Maintainer: @termux
 Architecture: aarch64
@@ -24434,6 +24435,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 364
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5345-0
+Depends: llama-cpp (= 0.0.0-b5345-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5345-0_aarch64.deb
+Size: 62548
+MD5sum: c39cc5e9f2b4c2ae63c3a40929ed0387
+SHA1: c50e380f1b6b4622c89bc4d1009389e1be646abb
+SHA256: 6fe04a29ea771efb6a3c4000e33c851bd5c326052159a57f888348b9bcaf35e8
+SHA512: 6d93acc71159391555cf71d33a202ec0d247b851273e1e5269ed4024e2d16ca0e1cc6f675ccbc3d5902c47b7edf86b58fd85f9806719bf02e68dd235064d80e0
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 364
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5342-0
 Depends: llama-cpp (= 0.0.0-b5342-0)
 Recommends: ocl-icd
@@ -24445,6 +24463,23 @@ SHA1: d6570b521873cf3110f5c85443691efdbafaf0f3
 SHA256: 2a1b1a17140a0e094150827dd869972c76b805dfc2c61ddfeb18e60f2cb08a56
 SHA512: e320405eeb31de6962ab3a6a6cbd4fb569d525cde36c77c9c1939d6dad3ebc074cea9bb156ef5efbd274a9cbf76c4d523e04b51b7f55e920f3dea05b96b4ff6d
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12696
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5345-0
+Depends: llama-cpp (= 0.0.0-b5345-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5345-0_aarch64.deb
+Size: 973396
+MD5sum: 8cdc69224714b91fa2e10c187714821c
+SHA1: e390d1016658990f81a5f9f201186db654864889
+SHA256: cc1e5bcc60fbb816cc4fc4ead5c492b00d8a134581ccd1d9c554e4e79c67ad97
+SHA512: 952b4216abda69ba310ac600ce9b58ab55d7f542d2edce404b48a0e9e39de2d74168a573bc79f26dc91d1561fcf08d4c30b0fa82ef3708c786567aa9dd694bbe
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -30934,17 +30969,17 @@ Description: PNG image optimising utility
 Homepage: https://pngquant.org
 
 Package: pocketbase
-Installed-Size: 32480
+Installed-Size: 32528
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.27.2
+Version: 0.28.0
 Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.27.2_aarch64.deb
-Size: 7977540
-MD5sum: b25e94a03834196045563d476738999c
-SHA1: ac6960a824bef9868d5339963dbb24a1076dc7d5
-SHA256: 5f0b59381cd1f7328215551d1caf4d04835557658d1626adf18c2521313eb2a7
-SHA512: efde994369d72de03c756ca2a14dba859c44b25ea5cb86e28c25976a866dfd2bae4fd4d9fa94e834b8170aecb2dd4ee317c0e41a9645a93324183f729e817966
+Filename: pool/main/p/pocketbase/pocketbase_0.28.0_aarch64.deb
+Size: 7988268
+MD5sum: 5b87a266513a3ec12916ab24600679f8
+SHA1: 7b36303fa23b1102b5fa4611bdfa382c3a98a852
+SHA256: e7cf70cb95411f9c89f359c035991b941d888a47715c7b25748087fb495e591f
+SHA512: eab114f88fbcab325e559bda3e16e7d7b99672672366785702e3def8d7a3533bc269f52079a4ef4c6e3de591514a996e214eaa17d11a4c0795f618d988bf40c4
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
@@ -41533,6 +41568,20 @@ SHA256: e6ea8b717cf5aae796caf62937efd3d8463b1df95199edba8a352c419b56f6a2
 SHA512: 3f5dacbc4c767123b8100e4db5ad27faf1ade56f12ed4535348d33af1ac649ec1fdb32b98e0d6cea5253f2f890322ace317b85b091ae4f6112f2f932874a0b84
 Description: Download youtube video in Golang
 Homepage: https://github.com/kkdai/youtube
+
+Package: yq
+Installed-Size: 11416
+Maintainer: @termux
+Architecture: aarch64
+Version: 4.45.4
+Filename: pool/main/y/yq/yq_4.45.4_aarch64.deb
+Size: 3046852
+MD5sum: f98f7983f47ee2470c1add43411058fd
+SHA1: eee5b9af25094794130780c195c598b32b4fe010
+SHA256: 504c62632fa155c78dd6bcd66e67b0b174d55b53f13b101e56f8a08e04e492f4
+SHA512: 577e57dddaa028650aa73cc1b37d0a6637d6b708c1c9174eea53fd7bcb9976b0930f404cb8904f8e02f26814c2bd602bbf4def79b0d6e20e18cf47aba78981a3
+Description: A lightweight and portable command-line YAML, JSON and XML processor
+Homepage: https://mikefarah.gitbook.io/yq/
 
 Package: yq
 Installed-Size: 11416

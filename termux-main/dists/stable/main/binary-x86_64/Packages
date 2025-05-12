@@ -12319,20 +12319,6 @@ SHA512: 1169b5b75c4cd465c609f103c3c1823190e0ad118abfb7dd4594e86eee6444cf1bab3990
 Description: Kubernetes CLI To Manage Your Clusters In Style!
 Homepage: https://k9scli.io
 
-Package: k9s
-Installed-Size: 172932
-Maintainer: Krishna Kanhaiya @kcubeterm
-Architecture: x86_64
-Version: 0.50.5
-Filename: pool/main/k/k9s/k9s_0.50.5_x86_64.deb
-Size: 34651632
-MD5sum: 643ec39d3e804f3a1af29cc5eadffee9
-SHA1: 0e4cf709c445033bbd2dacf3916d067abce583cf
-SHA256: 28585785df12f7b4c2b4b35d312f3f3a8e0b9753aaceeefb05252338bdfd2b22
-SHA512: f8d6fe19243a479576be299dacc9c2ded5843f5934331c3c353205428ff7433eaeed24eff98ec45f385cba7981806e02fca6a81d7c642ab6b6d13805e7fb9452
-Description: Kubernetes CLI To Manage Your Clusters In Style!
-Homepage: https://k9scli.io
-
 Package: kainjow-mustache
 Installed-Size: 88
 Maintainer: @termux
@@ -19900,6 +19886,21 @@ Description: Static libraries for libpngwriter
 Homepage: http://pngwriter.sourceforge.net
 
 Package: libpoco
+Installed-Size: 19032
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.14.2
+Depends: libc++, libexpat, libsqlite, openssl, pcre2, utf8proc, zlib
+Filename: pool/main/libp/libpoco/libpoco_1.14.2_x86_64.deb
+Size: 3066784
+MD5sum: 6bf0af62b9d9cc43c9ee6ef6a818682a
+SHA1: e559b62cd3797b9f32a644984cd3937a6014a531
+SHA256: bcb2fd0202b61318e7ed4f3305668721e1ad276c0f3069d017629895ac91eeda
+SHA512: 698155def67a0cb8185f652ea20ce33a24b3daa5c659c2da913ff744404a90d689eaf6a80dbbfa2a35339539f566c22d8ebfcf5b0b0b157a750fe2529567c1fa
+Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
+Homepage: https://pocoproject.org/
+
+Package: libpoco
 Installed-Size: 19040
 Maintainer: @termux
 Architecture: x86_64
@@ -24356,6 +24357,22 @@ Package: llama-cpp
 Installed-Size: 48960
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5353-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5353-0_x86_64.deb
+Size: 6427688
+MD5sum: ec0e7092ea8d9e4b57f2bb88eb50a1ab
+SHA1: 09f66c8467b966c69a79068b76261c61e455b173
+SHA256: f2d2d4a037e07c8e31e5e6fce9ac856001757b42b28f2c3c1cbcc654954bf923
+SHA512: 7b39f9c4a059c84b475e1d3b0ea8720fc8281979c8b55517a399dcb49cf740e029ca31be33a5c641cbe5871861f91596926a6548d736fe9e72ef2dcdd52e5e45
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48960
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5351-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24368,20 +24385,21 @@ SHA512: ba1416acafc16ba7e5b133b86264cd51ebefb567ad9fed5c4ea7e4d64a98e8f774e5aac1
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48960
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5350-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5350-0_x86_64.deb
-Size: 6420816
-MD5sum: 7e9079065c160f3f66e33aaa2d766057
-SHA1: 2b7b7736d756c75609a7bd3f3a875e6854acb5ac
-SHA256: 466b759e9d3d11d7526660be55953d278f1415efc291ab6651bb82c8a7fd804e
-SHA512: e57e692b9f487343e755ed65a38a7a907a403805a8dada07d7274f461630f8903a57001b2a63f6c54aa30e6fe78b4ec0496daf87c53f73c8a825b0b543db0369
-Description: LLM inference in C/C++
+Version: 0.0.0-b5353-0
+Depends: llama-cpp (= 0.0.0-b5353-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5353-0_x86_64.deb
+Size: 68076
+MD5sum: 147f7399d8c31cd492c1a6b9e7621372
+SHA1: 4fb11921e83585f6163d8ebc4fd6cd4984d12ef8
+SHA256: 1566807ca57d4cd44032b7e5304c052e01317754eb8c57fa58e013fb46894334
+SHA512: fc486cd5e46fd04d86f7c3816cacb316f7311712cd90bf91d87449d758178c69e9ca438439d088a9e5bdc847a158357fb535e60af40c0cca6e235d015fb1b2df
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24401,21 +24419,21 @@ SHA512: 13e3a800a05eeb00c3c7e8872d2864ed245912fcddcba10f0be2a9648d8b27eabc332245
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 380
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12900
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5350-0
-Depends: llama-cpp (= 0.0.0-b5350-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5350-0_x86_64.deb
-Size: 68016
-MD5sum: 049135ec8e2001b7fd21aebbac555472
-SHA1: a7ac5165d8d1c22d6361e9425e194ddaba3a8235
-SHA256: c0ae237ff65f340cd9c6cc5cc38b4123c2d14e2798dc566235a674787cea7fcc
-SHA512: 2c71e64cd4a1b651aab7ad761d68baaf0b6388408f41345f018c6571cb68e5279a328eef284312af85a68ad08e09d26d82c17a796a099a3f6750f3713104bd7f
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5353-0
+Depends: llama-cpp (= 0.0.0-b5353-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5353-0_x86_64.deb
+Size: 1007520
+MD5sum: 29a9c1376f182464d3eeef79e670a4c4
+SHA1: e74ceaa1c3ac9a89ec788afafe8ea8a1072af656
+SHA256: 355807bf0cdc527087ce5795a0f6e1bb1119a817b244066dc156768e0c821795
+SHA512: c03c1e5253498fc883307f93e003d85c4e3e628c7ad16de51d95fc6620c31fe70edb7a1f4b6c4a1345aca2154aa3e13f0fdc3e05a88e461b0ad91d73bb742d67
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24432,23 +24450,6 @@ MD5sum: bec8f24827fef957a4509b7257779ec0
 SHA1: c95ec75161756c52a7ebf4e1966931ccd7768a95
 SHA256: f6249761bdf96da359dccd045cef8dc29c4f2e00e343f1a1192ebbc5e2b3a2d2
 SHA512: faa213366909c8a27eef45dbf17bd7a5779e683be1c56631176b6cb129db2cb0abf240f1aba1ccaa6b325ac8359bf7bb604f7436779100015457247a2217e3e9
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12900
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5350-0
-Depends: llama-cpp (= 0.0.0-b5350-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5350-0_x86_64.deb
-Size: 1010808
-MD5sum: b80c0bef78f8ed75a94abd69def180bd
-SHA1: d31e251d8e6456a812f14d69300112abbc5b92d8
-SHA256: eee430ab253e1b2bb201b5ab0ac767029dd9346ba96391a61eb1e44b008f4c10
-SHA512: 46430fb545fe666b537ef585721d129bcd57f3193f7c681d1a9e29d5bca78def69e2aa0905d7f0fb692a3ab0364ea28ab06037118e717c6224ac383f90bde392
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -26543,6 +26544,21 @@ Description: A pager designed to just do the right thing without any configurati
 Homepage: https://github.com/walles/moar
 
 Package: mold
+Installed-Size: 22064
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.39.1
+Depends: libandroid-spawn, libc++, openssl, zlib, zstd
+Filename: pool/main/m/mold/mold_2.39.1_x86_64.deb
+Size: 1780744
+MD5sum: 090f5316abd390d76db26b68c657afdf
+SHA1: 8d1a9aeba31cc3bfa8eb9939b50b85b16beddbc5
+SHA256: 5223a6c58ac02916ae694eb47c182d5f36088b17903c8c3e51158c9993367ac6
+SHA512: fedc1889d6bc642f4dc3a31d614fe1878b7beb38ccf888ec065ba99fcab2dfcda0b98e3830928228d2ca17db4ef3dcd18e6648ae2ed2c7818d775e371f645f08
+Description: mold: A Modern Linker
+Homepage: https://github.com/rui314/mold
+
+Package: mold
 Installed-Size: 22052
 Maintainer: @termux
 Architecture: x86_64
@@ -28604,6 +28620,20 @@ SHA256: c2618957aa2d1c55f4025eb855b11464c87b7dde10da432a1d9f4ccb2bd7822a
 SHA512: 55e8a984187d9abb06178891ec89ec1adee19d7e1d18ba00efd92e38660fdff009f96ae3dcb9529fc56907755929d18e355a88890407981b3960699d33013bb8
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 20372
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.23.0
+Filename: pool/main/o/oh-my-posh/oh-my-posh_25.23.0_x86_64.deb
+Size: 5322900
+MD5sum: f516a2ddf4dd7af690d8b1f53136cb62
+SHA1: c94cdfbe375d8d32e3c7109ae13834eb29e44612
+SHA256: 59ec0e3d5d6b5df7e919992b867ee6bd77c03ac1ffcc94e19a831e3e26fdc905
+SHA512: a3a07bc646a8ea483644c396f10c568f6490a9e842c339fe6169db912f2649ad0218a84f1c3f368a32ec26fe5954775c74ad02643625a654b6c86185de465b88
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 20360
@@ -34200,6 +34230,21 @@ Description: Systems programming language focused on safety, speed and concurren
 Homepage: https://www.rust-lang.org/
 
 Package: rust-analyzer
+Installed-Size: 38716
+Maintainer: @termux
+Architecture: x86_64
+Version: 20250512
+Depends: rust-src
+Filename: pool/main/r/rust-analyzer/rust-analyzer_20250512_x86_64.deb
+Size: 8603504
+MD5sum: d151549757fd4bd30d9acc12d73b801c
+SHA1: 3670cf412089fe52f0b6f3162bd922b586793d79
+SHA256: 5f5badc8f8bcc1bd0c19589e6a0e6845a18d2bca0699757fe5d2a4e25cd5d68f
+SHA512: a174d8efffb073688f10414d9ebd4be6ccc165314885eeded0b07d88a18095267515b505bb6366cadfa10fcfa491163edd847827c3aafdbfcd9386af2268ba2e
+Description: A Rust compiler front-end for IDEs
+Homepage: https://rust-analyzer.github.io/
+
+Package: rust-analyzer
 Installed-Size: 38536
 Maintainer: @termux
 Architecture: x86_64
@@ -38426,6 +38471,20 @@ SHA256: 0be3e6e8081cd34aac121ed51bbaeafdd9438ed1702a5e8331115bcdbaa955df
 SHA512: 7516abace57ffd5271b0fae5099a6184ee67711ee5045bf1cc7c26fea9a6354eb25d790bec838b9e41a062df2c90d0255da4fb11a9d068c0f22aa802887c8ceb
 Description: A metapackage that provides commonly used treesitter parsers
 Homepage: https://github.com/termux/termux-packages
+
+Package: tree-sitter-query
+Installed-Size: 96
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: x86_64
+Version: 0.6.0
+Filename: pool/main/t/tree-sitter-query/tree-sitter-query_0.6.0_x86_64.deb
+Size: 6720
+MD5sum: e81608712c583bde479a5ddb7d26183a
+SHA1: 44242c93bcb4f69a9969ffece31477d629e961be
+SHA256: df4db11fab835b3ac2badfce495cc6885bc0710afcde460577c5494f966f793f
+SHA512: da7d45c9c9130a5fcf185d710e77c762d5d10891ef58d30490f43f7c2a2811cf528a065900b66c9ccd616ea87af45f118ae109938037630cd4a57980b7b36788
+Description: TS query grammar for tree-sitter
+Homepage: https://github.com/tree-sitter-grammars/tree-sitter-query
 
 Package: tree-sitter-query
 Installed-Size: 96

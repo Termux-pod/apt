@@ -647,6 +647,38 @@ SHA512: 9ee8c6bedb98a39656e6c98f4d7e5a35c79cec42d541d509d8f30a1ac40e9dd956007946
 Description: Static libraries for clutter
 Homepage: https://wiki.gnome.org/Projects/Clutter
 
+Package: code-is-code-oss
+Installed-Size: 64
+Maintainer: @termux-user-repository
+Architecture: arm
+Version: 1.96.0
+Depends: code-oss (= 1.96.0)
+Conflicts: code
+Breaks: code
+Filename: pool/main/c/code-is-code-oss/code-is-code-oss_1.96.0_arm.deb
+Size: 2512
+MD5sum: b908b8d604ebf34f7bfa39ca5ceacc20
+SHA1: 58a9e9032579634a7d8479253aaa4fdbeb21cd91
+SHA256: 77a75f977296a3825f51669dfb2f6614ab74b3ef80a9940b965cffab9179de67
+SHA512: 39efe43ba889fc49722289c9421e8e4de3cc2c8d52da323219fd89b813670d4d782ad12aa0940cbb1fbdeb8b12ca7669ea7ea4f0f1477010ccb687badbdfd66d
+Description: Symlinks code/vscode to code-oss
+Homepage: https://github.com/microsoft/vscode
+
+Package: code-oss
+Installed-Size: 96952
+Maintainer: @termux-user-repository
+Architecture: arm
+Version: 1.96.0
+Depends: electron-for-code-oss, libx11, libxkbfile, libsecret, ripgrep
+Filename: pool/main/c/code-oss/code-oss_1.96.0_arm.deb
+Size: 14787016
+MD5sum: 40be062c34f66b93f7fbadb53d00f515
+SHA1: c4d6f6358784ff08ca2d332dafb1c127f8420d89
+SHA256: 6854e4541352742fc402c542cbd0ad7f0d5251640230aa20fb7527c34430c3e1
+SHA512: 104e7a559a042a6d0c7c507593613f6bd5591efe8d6c632e477b77c9f3c6bf5eaf452d87b24aba9509fddc3a8f916e6cdef33b8124f7d4995898c6df7848c3b5
+Description: Visual Studio Code - OSS
+Homepage: https://github.com/microsoft/vscode
+
 Package: codeblocks
 Installed-Size: 9528
 Maintainer: @termux
@@ -4890,22 +4922,6 @@ SHA512: ad0fe4d50da97c1e39664b695ced0e4e072a48f2df8869e1895737971af7310c3578db7e
 Description: Library for building Telegram clients, used by Telegram Desktop
 Homepage: https://desktop.telegram.org/
 
-Package: libtd-desktop
-Installed-Size: 98196
-Maintainer: @termux
-Architecture: arm
-Version: 5.14.2
-Depends: libc++, readline, openssl (>= 1.1.1), zlib
-Conflicts: libtd, libtd-static
-Filename: pool/main/libt/libtd-desktop/libtd-desktop_5.14.2_arm.deb
-Size: 12832404
-MD5sum: 7b4d6a12d34e810fde064f338194dbec
-SHA1: 0d6b4e57f9e2af66bbfc8de97a1bd180d4ebbcf5
-SHA256: 2f83f33331de423938d746099536ed9984956fcd10575d59f6df1ca31729531e
-SHA512: de1cec5ff3ce4a9b8cfc88f4947edc9b783cee22cc8f959d3296e0ab27fecdc2d252ddb426649a60bfe8b09116e368a3ed2faf58768230b51d9400531a555ef6
-Description: Library for building Telegram clients, used by Telegram Desktop
-Homepage: https://desktop.telegram.org/
-
 Package: libtg-owt
 Installed-Size: 47516
 Maintainer: @termux
@@ -4917,20 +4933,6 @@ MD5sum: 7c851c7f7636f878d76afd8844569583
 SHA1: 8104403693edac236c2f580f9ceeeead650d4ad1
 SHA256: e939c340dd1551e6f8156ffad335df400e21ae1b3704944c0347b6a2d7b467b7
 SHA512: 5e89f8369e4e50fbe521d27afdeacdeb072bb44378cf11670d92bf9fce4365b01c86891b36322d20c1631e16e6e62f85fd060585549301b5740faf4b28ecddb7
-Description: WebRTC libraries (Telegram Fork)
-Homepage: https://desktop.telegram.org/
-
-Package: libtg-owt
-Installed-Size: 47516
-Maintainer: @termux
-Architecture: arm
-Version: 5.14.2
-Filename: pool/main/libt/libtg-owt/libtg-owt_5.14.2_arm.deb
-Size: 6649032
-MD5sum: d13fa9b2523c73d4aecfd3696e4d33d0
-SHA1: ce2bfbc61c9d29c1e0cc42ab9e8724f5e6b2bdd5
-SHA256: c72983e793f1aa7342cdce1e4b364dc07aa939ebaa6216563fdf05df30b1159d
-SHA512: 683492cbf20799574d787981169fc5dff8c81a8133b4f0ef1cf6c9de618cd6a7a6eb1849eeba64e8e6e598bff3cf1cd2ed2a6b98718d30d7c2050bff2da56f83
 Description: WebRTC libraries (Telegram Fork)
 Homepage: https://desktop.telegram.org/
 
@@ -9347,21 +9349,6 @@ SHA512: e1d833b730bd8c105188ed5050555cc5758bedacd6c885a46849ab95cbbeed3c3ca072cf
 Description: Telegram Desktop Client
 Homepage: https://desktop.telegram.org/
 
-Package: telegram-desktop
-Installed-Size: 156752
-Maintainer: @termux
-Architecture: arm
-Version: 5.14.2
-Depends: abseil-cpp, boost, ffmpeg, glib, hicolor-icon-theme, hunspell, kf6-kcoreaddons, libandroid-shmem, libc++, libdispatch, libdrm, liblz4, libminizip, protobuf, librnnoise, libsigc++-3.0, libx11, libxcomposite, libxdamage, libxrandr, libxtst, openal-soft, opengl, openh264, openssl, pipewire, pulseaudio, qt6-qtbase, qt6-qtimageformats, qt6-qtsvg, xxhash, zlib
-Filename: pool/main/t/telegram-desktop/telegram-desktop_5.14.2_arm.deb
-Size: 41697056
-MD5sum: c24137f486896282c62b3231d43a981c
-SHA1: c23b990e6a97c891ca7f5cd56407368154c127b2
-SHA256: 3cc9d8fa46a07493f90d00d0ccb80194691e1ff9597f27cbffbafc3a18b44b30
-SHA512: 1d692aec7f7c92c6988103ccc393d38bd314d27df716a679fb50654b1609fc3866a0efc2c334a5d4a19953efd6e8110c50b546031e45672f59be890ed21ab9a9
-Description: Telegram Desktop Client
-Homepage: https://desktop.telegram.org/
-
 Package: telegram-desktop-static
 Installed-Size: 24
 Maintainer: @termux
@@ -9374,21 +9361,6 @@ MD5sum: 88678bbac8082b68b5b793ab6517d481
 SHA1: d3e41d8eff604d6f6730f8bebaa0dd7a5002ed33
 SHA256: 4bd98f3a4dc8bb5682690e3ab2f16bef9e4a97d52f5ddb26f0c59a5cef5ada0c
 SHA512: 24915db45598fdd1536a4376b9747493b52fa4386c0da311df6d36b5eb003c5ae67fe8457e1e968a2f35762fd85aee52a8a1a2d9fccd4ad7fc7b72f53f9351d2
-Description: Static libraries for telegram-desktop
-Homepage: https://desktop.telegram.org/
-
-Package: telegram-desktop-static
-Installed-Size: 24
-Maintainer: @termux
-Architecture: arm
-Version: 5.14.2
-Depends: telegram-desktop (= 5.14.2)
-Filename: pool/main/t/telegram-desktop-static/telegram-desktop-static_5.14.2_arm.deb
-Size: 756
-MD5sum: 5212e8de9abcfc177dc5686cfa4d4537
-SHA1: 6ce840c9c5102dd322c57c2fbcc2e36af2bd8fad
-SHA256: aaed0a20516912b273f20faf8baa29c04f8a9f8f70dd16f05d9c619976d29d0d
-SHA512: 14087d1a1acdb2351323f4d2fa8a43df56019ce3df221559da1c38726c43e47031d479951ca7ada91c27caeb7b159ff27a91d91506f68e093b2b20af27e8e99c
 Description: Static libraries for telegram-desktop
 Homepage: https://desktop.telegram.org/
 

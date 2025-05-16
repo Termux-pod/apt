@@ -3748,20 +3748,6 @@ SHA512: 00724717b7f82932ad97cf8bcc79bb8d62dabae490923b46198d31bd7dac65fa42b6d5ac
 Description: A tunneling daemon that proxies traffic from the Cloudflare network to your origins
 Homepage: https://github.com/cloudflare/cloudflared
 
-Package: cloudflared
-Installed-Size: 29468
-Maintainer: @termux
-Architecture: x86_64
-Version: 2025.4.2
-Filename: pool/main/c/cloudflared/cloudflared_2025.4.2_x86_64.deb
-Size: 7198892
-MD5sum: fabf68eb23cd90afb87e0be5ef36a533
-SHA1: 055597c762bc82ebf607567de71954b8b92a10d1
-SHA256: 73c13152561e41048a22771f0829afdd270bb890fc6e4ca636e2b22815630e04
-SHA512: 194ad287fab2c1c20dfe80201c91c335c166528947b64e28a9de3a291688d512c0d23a4266e96f6be22ac0932e05052f115bd6f3ff92948dd401818dd27b15a2
-Description: A tunneling daemon that proxies traffic from the Cloudflare network to your origins
-Homepage: https://github.com/cloudflare/cloudflared
-
 Package: clpeak
 Installed-Size: 228
 Maintainer: @termux
@@ -7426,6 +7412,20 @@ SHA256: 0bc12d9c7f97b15dbdcdf83ff3f62adec9b3ee1bcded85174bb25cacf3e0e6e1
 SHA512: 6c0091cfd3bfe5576435c460a6abaf6b5fceb8a1fcfde3624b054ca6cf31581da5b0b58f3f78ee4ede5c293fffdfa5071ed8952d1819608dff6b18cb6e15fe4b
 Description: Software synthesizer based on the SoundFont 2 specifications
 Homepage: https://github.com/FluidSynth/fluidsynth
+
+Package: flyctl
+Installed-Size: 72308
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: x86_64
+Version: 0.3.123
+Filename: pool/main/f/flyctl/flyctl_0.3.123_x86_64.deb
+Size: 16176872
+MD5sum: 376c68b7ff4e10d4a06478eb8c1c191a
+SHA1: c6e9927eeda9c3e97a74a86ea1d70703837cbfa2
+SHA256: 114dfde88c3489bdf09149851ed4c3f74714e89a2f3fcc56ff8ef414f8a06c13
+SHA512: 2fe07b5d7cd77aaa65f646e54954b30f20f78d771b6a93816c5a11ede4b58a3fd78ae6818f3a2abd3fe4fb3573a2b28f4f892252291720d13391646be39ac90a
+Description: Command line tools for fly.io services
+Homepage: https://fly.io
 
 Package: flyctl
 Installed-Size: 72260
@@ -24338,6 +24338,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 50556
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5401-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5401-0_x86_64.deb
+Size: 7089664
+MD5sum: 99d0cec34cf1dd5ef68a7235d5e126f6
+SHA1: 44313838a8c13dcb4aeb227443eaa243e8a5d964
+SHA256: c784435f450fb156ebf5bbaa6eb2d1fa69c05e0bee8ea7fa39cacebd5e8072c6
+SHA512: bc0543567afd8856a14847a3787a74bc3c3c0f0b5ca7ffa29a9cda6baec5ed2683a33cf0e66c39b1e70e492ef0efea63152b7ea47b03b21d4efb0154225e32c0
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 50496
 Maintainer: @termux
 Architecture: x86_64
@@ -24353,20 +24369,21 @@ SHA512: 38f0f396275ef85213f5f8fbf2db07edfc8f838f6f132e04b932f3f8fac4facc9beee1cf
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 49936
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5392-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5392-0_x86_64.deb
-Size: 6511672
-MD5sum: 7b3e94c679308014f40f1695c9c6ea85
-SHA1: 764d9d5190c85000a5163ab2e12f282c6eda9e16
-SHA256: 03d64f80b1cd5462e35641f4ab2f2a771b13181eb80da3675e70ad026bc50bc2
-SHA512: 418f4693e26139bca25a9870e8236b0d15220e77d62c6955306fa9f58466058e0e0cea9a3ca5b309083e0463e3722f7003b59ec641b2071a20416ab92fdc7a28
-Description: LLM inference in C/C++
+Version: 0.0.0-b5401-0
+Depends: llama-cpp (= 0.0.0-b5401-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5401-0_x86_64.deb
+Size: 68108
+MD5sum: 5277365d3772b4c11e76ca5769d826ee
+SHA1: f459296a548bb5bd2d0ed11abd3549987d599169
+SHA256: d9c6d57f8e2e06213e5855c3fa4b83089aeb32fc5310a2a68d1628eae822fa55
+SHA512: 54e7c5889b2c3626314c34f1a374ecca9211748783e2ec777293fc16d595703b7c5028eacd94c38e13ce58b89b0200ab515681a974eaa186ddf58c1696793fe8
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24386,21 +24403,21 @@ SHA512: 93b2f5beee1684d0cd0f60f52bdac4f528a69fb5dcd0249e6b6111ece49b10ed4e73365c
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 380
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12900
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5392-0
-Depends: llama-cpp (= 0.0.0-b5392-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5392-0_x86_64.deb
-Size: 68124
-MD5sum: 6259ff108756bbaec1e43b2722bca07b
-SHA1: ce3ebc02894dece065d16d5769c980339c5d627a
-SHA256: 2350d4e5e95241da772f7248c786a32a20c18ff8a4fbe4482503f63ff541aa95
-SHA512: b956f58e99305a22574c8bd78118cc1df54ad0c40bc13526fce5d004980bbe857af3003ee217acb6b81828a2353fb255cc7b1751373279cb4dcfb869a73fbe04
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5401-0
+Depends: llama-cpp (= 0.0.0-b5401-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5401-0_x86_64.deb
+Size: 1009152
+MD5sum: 7d9450563813258c05c4811d2e3f9438
+SHA1: 9f5ef53371440d94cdc59eaa782568478d4e5cd3
+SHA256: b4ff211a1128cad1549098a787422ac1ca1c02b85a50362dc5c6ce04aea3dc54
+SHA512: aca4495596c5cca1e1b0d33c4049909e274dcfc1d62dbf01a57e2b20f00f61239d20ec4f5257456d3fc079bed5ff1a78356847fdba82ed88f5f905ae39a1460e
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24417,23 +24434,6 @@ MD5sum: 716cf15cf2d39b66afb243a8a85ee94d
 SHA1: 993b42aca5b60c68395688fdaea963f154e66030
 SHA256: 55bcf87e8ba1172386f7136fe1477c9203f624e7f6ac4f7812f83d99665c10d8
 SHA512: 76d830a772176e8551af73e1b1dbaf413f0eed60de4fb1825de0bdc54e10f2d6d67dcfed59b6604d601763e325eb7669364712a685d3fa7edabc978c3ac175d9
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12900
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5392-0
-Depends: llama-cpp (= 0.0.0-b5392-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5392-0_x86_64.deb
-Size: 1008692
-MD5sum: 5994db106b2b2d191a04894123153de3
-SHA1: d999dcd2cb677f64e75b1ca3aaefab6b7771fe9a
-SHA256: e81208ae2faca8fec7bd5de97ec55ab1a9e6f457a13980f0dc40375032802699
-SHA512: 6c2f36e4ad955d75dceba9ade7bafbe4a22482646f372ef1a317a717e11016ac4604c55448bf973f236cf8e4b67703be8e64ca79d2a538bb19ac0ffdde049b50
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -28677,6 +28677,20 @@ Description: The GNU Spreadsheet
 Homepage: https://www.gnu.org/software/oleo/
 
 Package: ollama
+Installed-Size: 37648
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.7.0
+Filename: pool/main/o/ollama/ollama_0.7.0_x86_64.deb
+Size: 9011660
+MD5sum: ab047bf4f19aac084934f8ff1cc7a8d4
+SHA1: 8d988ecd0e1ab25db7b7755ba6e7b70369449899
+SHA256: 082f785d3212f4ef0b6a4097e5a718061befb98a60346d0a93459991b8812c11
+SHA512: 9436f2024ed787c6615b166d033471f1ac3ad509a4628a5e9c75556671e46f17e706903c9d5e8e76beed7f0512693246abab74e8110d73b77b5c2e6a3cd6ef2c
+Description: Get up and running with large language models
+Homepage: https://ollama.com/
+
+Package: ollama
 Installed-Size: 37408
 Maintainer: @termux
 Architecture: x86_64
@@ -32035,17 +32049,17 @@ Description: Static libraries for python-numpy
 Homepage: https://numpy.org/
 
 Package: python-onnxruntime
-Installed-Size: 29052
+Installed-Size: 29748
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.21.1
+Version: 1.22.0
 Depends: abseil-cpp, libc++, protobuf, libre2, python
-Filename: pool/main/p/python-onnxruntime/python-onnxruntime_1.21.1_x86_64.deb
-Size: 5967332
-MD5sum: 60403f14d4cce7ef1c04a464e33b90c2
-SHA1: 55a6eaa1a3ea24b2885370383794ca28382a588a
-SHA256: 2ddc17bf590deb05090945c4e8b835d9e54a56a9a1d5d0ad7b54e2eb4a98271b
-SHA512: 050e67dc84bd9a47d1603982caf674cce2396887638cae25f6937752c3c388af73096b524f0df557fcef1fb8add546893f26c66d4e22dd277db99bdcc22087fb
+Filename: pool/main/p/python-onnxruntime/python-onnxruntime_1.22.0_x86_64.deb
+Size: 6136720
+MD5sum: 21e2300097a861692b509f59f77f7124
+SHA1: d6ac7f8deb35ead673ef5124821e3afc70d170e8
+SHA256: 9015ff21efa1b7bfc286928512840f115c2d97c0bdd6a16ee46f3adcf84d47aa
+SHA512: bdccae1849ec43c8a5f0ce3185cc5cf2a808f0125ce52081cb2f6b3ace1960b2fed614b8e58e95be1024b2bf14ee4330e3fa8668da29796308bc724e8113abdf
 Description: Cross-platform, high performance ML inferencing and training accelerator
 Homepage: https://onnxruntime.ai/
 
@@ -34137,20 +34151,6 @@ MD5sum: 849c3c8d336fd9cbccd2c0b4ea997ca2
 SHA1: a770d5c7ff3793a1a741635630fa413d8df2ac66
 SHA256: a4ceeb1071e664da30520118305bff58bb5e9bb6409a96fc1251db2c8085abe7
 SHA512: 07e716ff4756610102690e476a58acc62c9770d721b0b33a12b98ea0d6cac5901c5a129cd5845f78c22f5979fbafd1482ab3ca99d429a2e39c038c54b952f0d8
-Description: An extremely fast Python linter, written in Rust
-Homepage: https://github.com/charliermarsh/ruff
-
-Package: ruff
-Installed-Size: 30708
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.11.9
-Filename: pool/main/r/ruff/ruff_0.11.9_x86_64.deb
-Size: 7344796
-MD5sum: df73e285b3d52ac4a1c5b6cbbbc89b7c
-SHA1: dc031b37c25043ea63a1957144dfdcdd80d7b47f
-SHA256: bc08cd71dac58d8e87becf6b24632624d62a8dd40a8e07e9eee06f919d712de5
-SHA512: f1d598ba34d533898a56887a3353ba2cf9b0c3c35edb54972b54b907682e29907b4dfec46bf21a150883500ebb91dc479315191c3f1cfad1570e259d458ef694
 Description: An extremely fast Python linter, written in Rust
 Homepage: https://github.com/charliermarsh/ruff
 
@@ -39045,6 +39045,21 @@ Package: ugrep
 Installed-Size: 3128
 Maintainer: @termux
 Architecture: x86_64
+Version: 7.4.3
+Depends: brotli, libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
+Filename: pool/main/u/ugrep/ugrep_7.4.3_x86_64.deb
+Size: 373388
+MD5sum: ecde1da36e39ed24ea30915f4740b26a
+SHA1: 9f469e3be06b2ead4637881c44a99c61ad48a68d
+SHA256: aca83f1cc104417cd2330f38847acf93d31fdcaf08af464f96fc2abaadd5280a
+SHA512: 812bdb4bca8d6d9bc80f7aab352d4d0d91f6a9fcfb8727c23e7c38e45bfa0583ca13895c7de0a269ef85dd9908cdbc0d7c95f4045a6775f89f0ed92109c26014
+Description: A faster, user-friendly and compatible grep replacement
+Homepage: https://github.com/Genivia/ugrep
+
+Package: ugrep
+Installed-Size: 3128
+Maintainer: @termux
+Architecture: x86_64
 Version: 7.4.2
 Depends: brotli, libbz2, libc++, liblz4, liblzma, pcre2, zlib, zstd
 Filename: pool/main/u/ugrep/ugrep_7.4.2_x86_64.deb
@@ -39521,17 +39536,17 @@ Description: Utilities for handling universally unique identifiers
 Homepage: https://en.wikipedia.org/wiki/Util-linux
 
 Package: uv
-Installed-Size: 41272
+Installed-Size: 41304
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.7.3
+Version: 0.7.4
 Depends: zstd
-Filename: pool/main/u/uv/uv_0.7.3_x86_64.deb
-Size: 11219380
-MD5sum: 45c2bc5b2af42a39586ae0bed38c0c8e
-SHA1: 2cad3171041e0e07051b6c3c8d5b9a400d268553
-SHA256: a200fb9bec9c417ad433115957a6294ee3a01fbeb215122e53fd201ab527c4c9
-SHA512: 95014565cad80c3358ae118883ac08d5a9858c1f07fbcebb1e9cd06506362f322176bb83b7c27859c4288a19e056a91a460311a68ffa0de9b3108c02d5e12299
+Filename: pool/main/u/uv/uv_0.7.4_x86_64.deb
+Size: 11089636
+MD5sum: 29cbf92794a534256c8169dd07d1d8d9
+SHA1: aea0f6c19678f58abb0e346d02f687a0e215de35
+SHA256: 042fac4ce9d8f3681d9238f4c6cea51b27770d2b84abc0719175edc7ce495520
+SHA512: ff08a34cd2a321f6f88bb3a470622d11857d68ce80a98bbff615aef8fd0cae2b9ff02032960d4ef447310887623e601dcb0e7d56f2977e89e4ef0dc9450f982f
 Description: An extremely fast Python package installer and resolver, written in Rust.
 Homepage: https://docs.astral.sh/uv/
 

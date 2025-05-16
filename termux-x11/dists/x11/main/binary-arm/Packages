@@ -542,21 +542,6 @@ SHA512: 919258d207fe5d972e5a6e0c48ccbedbc7c7f95463616f0df33bab94532bf8a565d1d428
 Description: Chromium web browser
 Homepage: https://www.chromium.org/Home
 
-Package: chromium
-Installed-Size: 410796
-Maintainer: @licy183
-Architecture: arm
-Version: 136.0.7103.92
-Depends: atk, cups, dbus, fontconfig, gtk3, krb5, libc++, libdrm, libevdev, libxkbcommon, libminizip, libnss, libx11, mesa, openssl, pango, pulseaudio, zlib
-Filename: pool/main/c/chromium/chromium_136.0.7103.92_arm.deb
-Size: 121600076
-MD5sum: b2ecfe45c51540f6ff843a13e4abdde9
-SHA1: eb48c4375d7af20f822de543f2f899959ad79708
-SHA256: c131b6e7c3e6b8c252dc75339586b8a2a0796a1f66236b866dceadb92ef4b8d7
-SHA512: 6a2a55064656f1e560d75761226fc71793dca4bc816187cc1c61402a9b7f058e3198f788ef527b4d3abafef3c571941489cb2ff3c3fee1797a5355ea168f5205
-Description: Chromium web browser
-Homepage: https://www.chromium.org/Home
-
 Package: chromium-host-tools
 Installed-Size: 330420
 Maintainer: @licy183
@@ -666,6 +651,23 @@ Package: code-is-code-oss
 Installed-Size: 64
 Maintainer: @termux-user-repository
 Architecture: arm
+Version: 1.100.2-1
+Depends: code-oss (= 1.100.2-1)
+Conflicts: code
+Breaks: code
+Filename: pool/main/c/code-is-code-oss/code-is-code-oss_1.100.2-1_arm.deb
+Size: 2520
+MD5sum: c1d6260121be518a1bdcbc39a382078a
+SHA1: 80c7e3aaf416d7293c194eb15025c9423165be8b
+SHA256: 731910228163b518855da64fc90746d5fea97549a392e16367196f8ee72f74c1
+SHA512: b1689444e1921c9636cab47b5d6264dc2858baf68cd73cf9117ba8faecc61e7d109adf91c1ebc05147705979ba76d421a0b89fca80bc11b1ece8b7ca7fd0e630
+Description: Symlinks code/vscode to code-oss
+Homepage: https://github.com/microsoft/vscode
+
+Package: code-is-code-oss
+Installed-Size: 64
+Maintainer: @termux-user-repository
+Architecture: arm
 Version: 1.100.2
 Depends: code-oss (= 1.100.2)
 Conflicts: code
@@ -679,21 +681,19 @@ SHA512: dd7f9aaf1a8a80a1806612bd016ca7819691135913e1a55b6c8fdffe01ac5e614a5c1607
 Description: Symlinks code/vscode to code-oss
 Homepage: https://github.com/microsoft/vscode
 
-Package: code-is-code-oss
-Installed-Size: 64
+Package: code-oss
+Installed-Size: 126520
 Maintainer: @termux-user-repository
 Architecture: arm
-Version: 1.100.0
-Depends: code-oss (= 1.100.0)
-Conflicts: code
-Breaks: code
-Filename: pool/main/c/code-is-code-oss/code-is-code-oss_1.100.0_arm.deb
-Size: 2516
-MD5sum: bdd5bd55b4fc59c3bd752df053f5de31
-SHA1: eb1191037e818672a7ba57b3164a67f8b2dde9a4
-SHA256: c8e3b2331f656c1a5de51a2ef9872d88abcf2fcae303ce108f0e20123f6633f0
-SHA512: a8a901b2529dbfd04158310b57316182b3f86937f03dab57efb0d5cbde44d2953778b33317fc97133fd4aa2ed195e9d13a417db88da53e8735afd3d90102cc1c
-Description: Symlinks code/vscode to code-oss
+Version: 1.100.2-1
+Depends: electron-for-code-oss, libx11, libxkbfile, libsecret, ripgrep
+Filename: pool/main/c/code-oss/code-oss_1.100.2-1_arm.deb
+Size: 24723472
+MD5sum: 6124512416ed423a172857aa66db0687
+SHA1: 77b11cec9ba4a1843760917a1030c65c39fdc316
+SHA256: e75afda9b8b1a9c5e869a8b99a65c693cc8e722ba63a905891e6bd7741887491
+SHA512: 40a958ea63b523f283b5c4bd9152b6223fa6d1af9edeb4d66288fc6046671170a34fd0e43aab66dec8460dc05f6942dbde394938acf7c52d6fc2a501eeab8eee
+Description: Visual Studio Code - OSS
 Homepage: https://github.com/microsoft/vscode
 
 Package: code-oss
@@ -708,21 +708,6 @@ MD5sum: 5d881ba8b42941c529940ee53a1b9ada
 SHA1: 2c6b2dc6071fc879b4a41611649ae29c38fc62e0
 SHA256: b4143eb9891ef5d57c5ac03be18de43a4ca9eb95bd692719662c873e47bc7e48
 SHA512: 8bf79b679d8a5586ef2882b95d0180a87cc506d75f3ef103d46ed5d8a67a7f7143c6f6957aa1a681d74a08691835529076987e2cf0c4775deb36456f257e5e92
-Description: Visual Studio Code - OSS
-Homepage: https://github.com/microsoft/vscode
-
-Package: code-oss
-Installed-Size: 98692
-Maintainer: @termux-user-repository
-Architecture: arm
-Version: 1.100.0
-Depends: electron-for-code-oss, libx11, libxkbfile, libsecret, ripgrep
-Filename: pool/main/c/code-oss/code-oss_1.100.0_arm.deb
-Size: 15259252
-MD5sum: 364bf30d5f949ab36048a815c67739db
-SHA1: 40e19ef257c040aca75a2517674e9d6b670322b0
-SHA256: ca97a8a5c5cb5f095ef6ff173f3bedd9689dbd4a295b2b8c195bb9907b3fb9d1
-SHA512: 11a7b1eea887119fc44b98a48572140f0c17895d0eb2dc1942fc39ea1c7e4264eed8c543b8b5ad533d5b12fe8ff1149743ba9943546801f51c51d6690cacefcb
 Description: Visual Studio Code - OSS
 Homepage: https://github.com/microsoft/vscode
 

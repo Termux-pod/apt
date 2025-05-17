@@ -11853,21 +11853,6 @@ SHA512: 4344c30cd4494db0c569957e6f732398f9d7579fc601319b91a89fed2b0045cc09d616ec
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14368
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.1908
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.1908_x86_64.deb
-Size: 3198540
-MD5sum: 200007b927058ba3b1993bed8dad5a80
-SHA1: 134b52ea71ef499033fe9fabbd6204affa9a12dc
-SHA256: 260691c449b581569c5395554c526bd67ede70c63bf5d5ceb1b1b5e6db242607
-SHA512: 30727ab27ffa071b5ed9e6ddc114e35b5133365d334bd819ff360830fe34a0904d84ae08af04cab791d85cc38deae4cf3f963b1f48ee16290e5d0406c02517a0
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 764
 Maintainer: Komo @mbekkomo
@@ -24357,6 +24342,22 @@ Package: llama-cpp
 Installed-Size: 50556
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5412-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5412-0_x86_64.deb
+Size: 7100804
+MD5sum: 12193168cf9b3f754e49e8b5895867fa
+SHA1: 167bfbd1fb37e76722f4d0f89fab145ff241d873
+SHA256: 9eb1f57cc968809a6ee421220b640fe5ddebc923c47d05ee302cdbefa38b3d66
+SHA512: 97e3c6b6c0183f044eee59a00e055700a65ae809230ffa51a0b6b3502c8a055a7f0b46f641f34dc968c4947dce7a6ea757215e136c1c5a16d1fc490339b2c5ab
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 50556
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5410-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24367,6 +24368,23 @@ SHA1: 5e081926743cc90750f9515d943297c4967226cf
 SHA256: b7c3bf831f8fcb2334c1ab92893fad67612a18eb8eb78703d73e2596969ce29a
 SHA512: 2dee5dc0daef40a0d5ab7811a0e5a99c6216cc4edefa9bbbbbd5fa059210eaf086417b1e5a22104fc0511fda32aa4cc177f3d8a365d37f451d0bd89f4f8cde2a
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5412-0
+Depends: llama-cpp (= 0.0.0-b5412-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5412-0_x86_64.deb
+Size: 68096
+MD5sum: 4c5808023547caea8f8b40b51f2fc0c5
+SHA1: 52fb8fefbf4dade6fcea3d221f8db8578714401c
+SHA256: 2e346ae348a02bac48820bae3f5e2981d848d0df6eebb45b68c4726d54f339cf
+SHA512: d5031e55f425b9a34c802a96010f60bc15726275ddf15af59a4dad76c448e921dbb6436f917ce4076f7f4cea9b62c545e3c8e61a383584e4315948a192c061ad
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24384,6 +24402,23 @@ SHA1: f44bc4c7f9e65dc421dbcbdb9591ca4c283a99a2
 SHA256: faa52ef9008f3fa2f8ae1536756dde2bd5592e152694df8832fe46337e0580b0
 SHA512: e6fdad944f1b63ab29eb73cc629010634018cd77b70d3ef0b95669084155cd3c0cb8aa92e7116d8ea7ed55406636c2828396484a132c92d8e891c87e7a470297
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12900
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5412-0
+Depends: llama-cpp (= 0.0.0-b5412-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5412-0_x86_64.deb
+Size: 1009856
+MD5sum: 4c1bbb112814e0d72f56ef9516d3d67c
+SHA1: 23a4448c2036ab1fb1619f417cb2f6ec2b93d1f7
+SHA256: 9d830ef4a015635e63cf2e12da262eff2e3092bfe1d0a6e04810ff016831bfd8
+SHA512: 49ebf8124b70b7db01d9857d6526e752b118eb5bb1abaa831ff74ab8f3edc2469eb35dd4d80b8eeda09c56f2c1013c54d337ecf5bf7b1f2b9ec992a7a755c466
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24987,21 +25022,6 @@ MD5sum: b3a7a9ef2e0ffb11f0b47b4f743a7f25
 SHA1: 28f39ca94b630f52a65c7e485bcf5211076c9d98
 SHA256: d4c73d36b6e09772d637981a74983de7197881f56f0333cda0165a0270534526
 SHA512: e20aaef5fef4b1f26a3edd7f1bfc233655c74ddf0438276cae9019ed0a876af5d818cd8f51949d9c3e711fbe985aa50a940cad51e495bc0592f22f8455709e56
-Description: Bare libuv bindings for lua
-Homepage: https://github.com/luvit/luv
-
-Package: luv
-Installed-Size: 272
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.51.0-0-0
-Depends: libluajit, libuv
-Filename: pool/main/l/luv/luv_1.51.0-0-0_x86_64.deb
-Size: 53452
-MD5sum: 6451572277d3bd9af49454d4a25bfdff
-SHA1: 5f7965412fcdca1144894594a9e03a5ac32b9423
-SHA256: 446f29a3d3189af17000a8f8b7a5a26935767c690ab05b2d2b6f905fe78be70c
-SHA512: 9bab0c2f04b338bb3a8b84d6c4bbed1a8fe633837d5892612f0fdafa2c32e3efff074a27a4fc50e273f1ae16caf7cdf2679503e74c872b14a4dd739bcdd4f09a
 Description: Bare libuv bindings for lua
 Homepage: https://github.com/luvit/luv
 
@@ -26493,6 +26513,20 @@ SHA256: 960a87ffb65c01a0b4d8d9e501a3e70743889ac8cecea4f2ee1353f816b83dc6
 SHA512: 041a22c1603aafded5baab016256f7f59235c0c4e33e15deafa4eab7efd0fb22fb73ab8221d9c055e7f00a0122d659a9076c195f6906508637ddeac623ef51be
 Description: Tool to find files anywhere in the filesystem based on their name
 Homepage: https://pagure.io/mlocate
+
+Package: moar
+Installed-Size: 7736
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.31.6
+Filename: pool/main/m/moar/moar_1.31.6_x86_64.deb
+Size: 2077412
+MD5sum: 6f03349d1b45342d808377d6b690a8b6
+SHA1: 84934537298abddd66c6494328409316f0c16422
+SHA256: 801fe5ee94fa3db894b04134ba19dcbaa63ba4d44f134bf44c6a88d72f25013a
+SHA512: 8756cf996d1fa3e24bc0fc976028889157690c75c4bfbd26f834c274c53341bee4317ac353d06466afe3e75b33f18f9efe002c211a70a0609ec6139a21c88320
+Description: A pager designed to just do the right thing without any configuration
+Homepage: https://github.com/walles/moar
 
 Package: moar
 Installed-Size: 7736
@@ -39518,17 +39552,17 @@ Description: Utilities for handling universally unique identifiers
 Homepage: https://en.wikipedia.org/wiki/Util-linux
 
 Package: uv
-Installed-Size: 41304
+Installed-Size: 41296
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.7.4
+Version: 0.7.5
 Depends: zstd
-Filename: pool/main/u/uv/uv_0.7.4_x86_64.deb
-Size: 11089636
-MD5sum: 29cbf92794a534256c8169dd07d1d8d9
-SHA1: aea0f6c19678f58abb0e346d02f687a0e215de35
-SHA256: 042fac4ce9d8f3681d9238f4c6cea51b27770d2b84abc0719175edc7ce495520
-SHA512: ff08a34cd2a321f6f88bb3a470622d11857d68ce80a98bbff615aef8fd0cae2b9ff02032960d4ef447310887623e601dcb0e7d56f2977e89e4ef0dc9450f982f
+Filename: pool/main/u/uv/uv_0.7.5_x86_64.deb
+Size: 11093876
+MD5sum: 47975341d5f6811d8a6628bf03603985
+SHA1: caeed19e6b1af2163f8014ca3d376407a54ec135
+SHA256: dbd75f8ade2b1957452a84321707ea92d84145402ed81975f7d8b2233933e207
+SHA512: 6bd4b26c0ad7b2b71c23cba2298831287f4c7916e17a80594f0b0ccc4a7672a5fd028d4b9e987399ac7068c0f61e7d14359fd42cf052801931d91d571edfcb52
 Description: An extremely fast Python package installer and resolver, written in Rust.
 Homepage: https://docs.astral.sh/uv/
 

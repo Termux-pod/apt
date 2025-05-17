@@ -3052,21 +3052,6 @@ SHA512: 02e6fa986811316f0fc7b0e60ae885e9a6f999f7877667c90fe5923bad0d34c90675e229
 Description: Cargo C-ABI helpers
 Homepage: https://github.com/lu-zero/cargo-c
 
-Package: cargo-c
-Installed-Size: 98512
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.10.12
-Depends: libcurl, libgit2, libssh2, openssl, zlib
-Filename: pool/main/c/cargo-c/cargo-c_0.10.12_x86_64.deb
-Size: 25902752
-MD5sum: 9fb7370c9985f1c5dee6920fd71df349
-SHA1: 952159f0e20aadc39efc64bef14cdb40fa0914f8
-SHA256: d0932717f33485b23a77d9f38fae8feebd298573c43553aff0dbe00d842180aa
-SHA512: 1ed6bd872bd0a074e216f95f3786260014adcdc95e9f763702b65c99faabcac1475277fd659941ebdfd21879f86df7098927d24830cce5a7a73242524eda709f
-Description: Cargo C-ABI helpers
-Homepage: https://github.com/lu-zero/cargo-c
-
 Package: catdoc
 Installed-Size: 760
 Maintainer: @termux
@@ -12452,21 +12437,6 @@ MD5sum: 8363a54160dafd271dc784e78850b546
 SHA1: 65aa5ed88db2ed5959225c2516b8fed81bf36f58
 SHA256: fe8739e387fb9c453bdfa181b88c120e61263372fae251121c6478ecb31d36b1
 SHA512: 15ff049cb410db9bb358e661528273a344337afda21b71e21429469634c0b973fb4e8bc6b72b19d186911996b5a452d9804064dff2c81f04eae3d074432495ea
-Description: keychain ssh-agent front-end
-Homepage: https://www.funtoo.org/Keychain
-
-Package: keychain
-Installed-Size: 108
-Maintainer: @termux
-Architecture: all
-Version: 2.9.4
-Depends: dash, gnupg
-Filename: pool/main/k/keychain/keychain_2.9.4_all.deb
-Size: 27320
-MD5sum: bde3d75225866837335df7820be0ec25
-SHA1: 47d9fb9bc65e60f3bef2a415494550fbabbfed51
-SHA256: db63c4e7e9e72a55201b785648a2042be71ef3a56e16c8b6ec8e5cca320d6380
-SHA512: 3bc72055edbead6a6572e8f1755dd0412305b99ca05b3449aefe6cd9fcf5b851f946568a179d9618f4de75fc1c0dbe79c4cd45f77bccbcf0cdd7f5fbfda2ab11
 Description: keychain ssh-agent front-end
 Homepage: https://www.funtoo.org/Keychain
 
@@ -24372,6 +24342,22 @@ Package: llama-cpp
 Installed-Size: 50556
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5410-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5410-0_x86_64.deb
+Size: 7093244
+MD5sum: 440bf5fc493ed70eba2f829468958529
+SHA1: 5e081926743cc90750f9515d943297c4967226cf
+SHA256: b7c3bf831f8fcb2334c1ab92893fad67612a18eb8eb78703d73e2596969ce29a
+SHA512: 2dee5dc0daef40a0d5ab7811a0e5a99c6216cc4edefa9bbbbbd5fa059210eaf086417b1e5a22104fc0511fda32aa4cc177f3d8a365d37f451d0bd89f4f8cde2a
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 50556
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5404-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24384,20 +24370,21 @@ SHA512: 18f2620716da4a2f97ecf201eda6dbcded37aa5108a2317048624dcc5515ff025e4c43af
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 50556
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5402-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5402-0_x86_64.deb
-Size: 7102988
-MD5sum: 13490f6955f0a2bba0a32a439ea9abde
-SHA1: 90d59e598c044ee72615630cdeb410b47648fffd
-SHA256: 0f4bb1110ed4a0e7a40cb8a47a2b517ec4d4fd8052f972e1cc94bd6dec2edd64
-SHA512: dc28e6732d77c72a081417ec270183070ae06d26c4c72186f6a50e2fed3e98d72f6bdc7a3b4e20f443012b8a49ff8a29fe43229915cb1955a32e55b6251e5a3c
-Description: LLM inference in C/C++
+Version: 0.0.0-b5410-0
+Depends: llama-cpp (= 0.0.0-b5410-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5410-0_x86_64.deb
+Size: 68080
+MD5sum: e60ab1037c7713d9c591fcfdd2cf57af
+SHA1: f44bc4c7f9e65dc421dbcbdb9591ca4c283a99a2
+SHA256: faa52ef9008f3fa2f8ae1536756dde2bd5592e152694df8832fe46337e0580b0
+SHA512: e6fdad944f1b63ab29eb73cc629010634018cd77b70d3ef0b95669084155cd3c0cb8aa92e7116d8ea7ed55406636c2828396484a132c92d8e891c87e7a470297
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24417,21 +24404,21 @@ SHA512: ff86f0b45ad3b7df2576dc73e6f1bf746a5e3c243eafd82b08da83e0ce358d99f1e0aef8
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 380
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12900
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5402-0
-Depends: llama-cpp (= 0.0.0-b5402-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5402-0_x86_64.deb
-Size: 68104
-MD5sum: ab6dc0269eefd8eea3bd30f1330fb180
-SHA1: ce1440a90e1525c79b51694f73537fd28bab6602
-SHA256: ac15ffe0ecf6aa9d8345090ff8d03631e68799835eed8e60c83fe06f26ba4823
-SHA512: 8cc5e3d8f9c0959b705f202a47fceb040ed85c8aae8279164ca3ffe3287e8ab83c74edc102823e266fa66822e7bc81cccbbc62259308243ef38488bc1e83a12f
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5410-0
+Depends: llama-cpp (= 0.0.0-b5410-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5410-0_x86_64.deb
+Size: 1008996
+MD5sum: 375b3c1077dc8eae8d60bf54ee519f14
+SHA1: 30ea51aa58f70143911637eeae36b3cfdbce551c
+SHA256: 0e0e11ebde2f5c741d6c9f211ebeb1632b382a889e386beb9caf803290ed2c9b
+SHA512: bcab1ceafd600c59cb05a585358295190a7f96286e656aa9ed3ce2f5daa7ef7790134dbe08c0d872b5080d19a7e975336be7a72169a394e90cf2d94f2c67d1e0
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24448,23 +24435,6 @@ MD5sum: cd3ad31b18c7f89cf65368d3441368c5
 SHA1: 2f58b34a0aeac05d52a66790df6889cea10e2c75
 SHA256: 728f888382d7966e7ccb6eea531ae22d54b7b9400630bcab27e8c4fdc357de37
 SHA512: 03261e7a78a7a0f8b62e34e3035d9f0b9c95f5ec51fafd133c93622539a5a53188787e2a4dc97545215df7bec60ceee8182574c4c0858b608e9d7ff4bc00ebbb
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12900
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5402-0
-Depends: llama-cpp (= 0.0.0-b5402-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5402-0_x86_64.deb
-Size: 1006852
-MD5sum: 5ac7168c00870bfb528c3440406a803c
-SHA1: f8e8986cac747b67c9201a2f0753231e9c412f2d
-SHA256: f27a03487ea92df97c2f88b7651458329051765e999fb344c8cc0a3ac496a948
-SHA512: fa5b2bd421c8367e892fc5f4693a11cc714d8b4839b4fd15446ebec46376ebe13714c46332500ffeb29a027fdb0b68757772d05b44780429b4924571fc3c26da
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -38559,20 +38529,6 @@ SHA512: 85f56425f4561f94fa7bc31886c5772255678f4e55d39886bf67e78fcfd7f966e2b032ea
 Description: Tree-sitter parser for Vim help files
 Homepage: https://github.com/neovim/tree-sitter-vimdoc
 
-Package: tree-sitter-vimdoc
-Installed-Size: 232
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: x86_64
-Version: 3.0.1-1
-Filename: pool/main/t/tree-sitter-vimdoc/tree-sitter-vimdoc_3.0.1-1_x86_64.deb
-Size: 19756
-MD5sum: 87389a1305e6531e2a1fb7da2d368cdd
-SHA1: 01f00ba07a6bae71f25ebd991ace3f4194e54c41
-SHA256: 8a2f46082cee0c78062792efecb2d59151e170d1f19586a6acc9343ccdc4f658
-SHA512: c869caff1bb209163a5f1788a623b59aa59d8ead54294146a7d8771220257f455009eb797c482c21c4382d6e2c21125111acd49a633c90b26f9bc971f1cb37ca
-Description: Tree-sitter parser for Vim help files
-Homepage: https://github.com/neovim/tree-sitter-vimdoc
-
 Package: tree-sitter-vimdoc-static
 Installed-Size: 216
 Maintainer: Joshua Kahn @TomJo2000
@@ -38585,21 +38541,6 @@ MD5sum: 023f9df1862c780ac9c388035ddc48db
 SHA1: 48cfddc0661c4f7445c38e0d8286ce02329e0720
 SHA256: 0c6dd6cd31e984dec3cd93e7dbe3d3a95f1ce1c18c699f5abca0c4f3ea455798
 SHA512: 3f5aaeb731275ac6af54af84aaaa80d6dbf221b5972a85abc2b610e5b61f03a3ea1e25be6aca8ca8892e934cde67944588a947ecb66682e1e3dc19af0c96da88
-Description: Static libraries for tree-sitter-vimdoc
-Homepage: https://github.com/neovim/tree-sitter-vimdoc
-
-Package: tree-sitter-vimdoc-static
-Installed-Size: 212
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: x86_64
-Version: 3.0.1-1
-Depends: tree-sitter-vimdoc (= 3.0.1-1)
-Filename: pool/main/t/tree-sitter-vimdoc-static/tree-sitter-vimdoc-static_3.0.1-1_x86_64.deb
-Size: 20164
-MD5sum: e22a1e366eabf450e4005227f5cb0642
-SHA1: 5a125983a2d24b23b050e8f30479669c07ae8b63
-SHA256: f9a043f369d48b1123463d41bd504271fe52b88f48cefad7f7271b19dadd5087
-SHA512: 4a22166a2bf57a324da30aa5ca6667f69bd9fa844d12b2ba9519128a36c81a9a6c7076a1f9bb98f4dddc6fbbdce622b08d35467c8971a3e97e5072061e5fae79
 Description: Static libraries for tree-sitter-vimdoc
 Homepage: https://github.com/neovim/tree-sitter-vimdoc
 
@@ -40810,6 +40751,22 @@ SHA256: 508c9fe271188265cb8f96638ddbd001f23015ba5fd5dee2996216b4c7de8452
 SHA512: 621e8ab6faf6075795a7ee753315c0fe8f0aae12ab6778b78bf625c9aef5f1bc75a84e24ea2937e0945a4afaa31d5444a1a6dc58f875aaa6b2999f675691c563
 Description: An advanced geospatial data analysis platform
 Homepage: https://github.com/jblindsay/whitebox-tools
+
+Package: whois
+Installed-Size: 240
+Maintainer: @termux
+Architecture: x86_64
+Version: 5.6.1
+Depends: libcrypt, libiconv, libidn2
+Conflicts: inetutils (<< 1.9.4-13)
+Filename: pool/main/w/whois/whois_5.6.1_x86_64.deb
+Size: 40296
+MD5sum: 4995b95a00008c4202b3b5b05b82699d
+SHA1: 68d55c9c290454ab0719aa3cfa29b8a21f57c910
+SHA256: c6379363fb93a7f3e3e5cdd4687fcec30901c80eed1650ba90eb66500092fc60
+SHA512: 0de857ceaf23f6b7a9c6e0c197af181249df067a9822e24282f8d79f85841e7f040fddda39361d812da459095889da2215ca68d4270eb76fbb558b316f04920b
+Description: An intelligent Whois client
+Homepage: https://github.com/rfc1036/whois
 
 Package: whois
 Installed-Size: 240

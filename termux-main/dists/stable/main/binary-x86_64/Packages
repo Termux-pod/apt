@@ -11853,21 +11853,6 @@ SHA512: e708287e38521022b0cda405cb28cb6483c72eb2e023897d3c6a667c8a93bfd08c44a870
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14372
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.1917
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.1917_x86_64.deb
-Size: 3200984
-MD5sum: 9577d72c02210df639bf8c75a38e541b
-SHA1: 68c6cd71d6091aad1f31ca4d52c56b19f9e712ed
-SHA256: ed204d0ac7a086b650797761640d75c143a15650fd203a221eb0d3bfcf37028d
-SHA512: 4891f7dc2528873b81a0b1021ee12302eb2943a3593213f78d5dfe22b30093c68bad13b9836731fbcc4ef8389e63c826bc86891d110e2fe3aff544bb4ac154dc
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 764
 Maintainer: Komo @mbekkomo
@@ -24354,6 +24339,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 50620
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5423-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5423-0_x86_64.deb
+Size: 7115132
+MD5sum: d3ba0c0dfb972898b36bc4b359026386
+SHA1: 7cb6e791bc7273e13c97a707253d6b54ef322ce2
+SHA256: b9abaf67ef6cabb2fd1a1e14de36fe4c667a55dde1b601125660e01c1848bfd8
+SHA512: d2b638eaa451cf2cef533f39d2c3df6eac38ec6aec8d4ef1b0c307fc672d3a5fc10ce9fd06d6ff4afe08176044a62f452b7ad910a9033b4f0a65d5ca9d241444
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 50584
 Maintainer: @termux
 Architecture: x86_64
@@ -24373,6 +24374,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5423-0
+Depends: llama-cpp (= 0.0.0-b5423-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5423-0_x86_64.deb
+Size: 68124
+MD5sum: 26efd8edc3ba60261fb590e0a740ab64
+SHA1: 9d3ce4e2dfb4a385a7c2f522ff9187f2980732df
+SHA256: 9b0eafbece6580cfb7f458e34e9f90ef99360540cd1df2dcbd82062b44631a16
+SHA512: 4f998a777752cac103d536d4a1245475cfa8a19b51bd80c9399d278651752955802ad1ee5cfd21217ef87f4429a3f01ce71cfa351f0ea510cd6bf0ab6bb6a329
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 380
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5415-0
 Depends: llama-cpp (= 0.0.0-b5415-0)
 Recommends: ocl-icd
@@ -24384,6 +24402,23 @@ SHA1: 7097e8fa47528e942a1210c8957be605d429cc02
 SHA256: b77a877dac7a3aba970293c0b8666e6eefe61ff6cd2df8e9c70bcb7ed8b0db45
 SHA512: 36023467cbd26c72b71e748eb5a9965211c36ee78a98b82f02012ae049065dc705393e40cec4086e5941fb6b38d886eedc86f18fb64ac99f9417687c871d75e3
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12900
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5423-0
+Depends: llama-cpp (= 0.0.0-b5423-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5423-0_x86_64.deb
+Size: 1010584
+MD5sum: 96fda88101e73a65a6bd89636a040fdc
+SHA1: f6eb11969ff14965049aa17ef7123c2b8961707b
+SHA256: b3dfcadf2ff831684652a0517ac19d076fe04a83b02a96edd5f0548b9de37406
+SHA512: d2dd7d235f41870c05b378606b57fbc1fc069a28981b5b6bf894d91e5b585d043daa0b7dc760a8882ab9d381b8ade0e929506a08bf4f3995faf89b29b86fc1e8
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -26478,6 +26513,20 @@ SHA256: 960a87ffb65c01a0b4d8d9e501a3e70743889ac8cecea4f2ee1353f816b83dc6
 SHA512: 041a22c1603aafded5baab016256f7f59235c0c4e33e15deafa4eab7efd0fb22fb73ab8221d9c055e7f00a0122d659a9076c195f6906508637ddeac623ef51be
 Description: Tool to find files anywhere in the filesystem based on their name
 Homepage: https://pagure.io/mlocate
+
+Package: moar
+Installed-Size: 7736
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.31.7
+Filename: pool/main/m/moar/moar_1.31.7_x86_64.deb
+Size: 2078688
+MD5sum: f776a80db4fc47273bc635635f988b9a
+SHA1: d829bb3a569832fdb1ce599e6f03d8a399252177
+SHA256: bbbf5ced13d7f82348359fb465e200e72fd0dc43dfb82f893a07cbc8c74780b1
+SHA512: 9da7046008557131a9d88c812186c63cb90f22d661f79e2cb93cd605fd9f09b002fb45e59d47e60a7eb183920268f4e4e1a3cfb973a600efb423de6b42328a0a
+Description: A pager designed to just do the right thing without any configuration
+Homepage: https://github.com/walles/moar
 
 Package: moar
 Installed-Size: 7736
@@ -34180,6 +34229,21 @@ Description: Systems programming language focused on safety, speed and concurren
 Homepage: https://www.rust-lang.org/
 
 Package: rust-analyzer
+Installed-Size: 38804
+Maintainer: @termux
+Architecture: x86_64
+Version: 20250519
+Depends: rust-src
+Filename: pool/main/r/rust-analyzer/rust-analyzer_20250519_x86_64.deb
+Size: 8634948
+MD5sum: 46f72e8c6886dbf9a59ab831576a108c
+SHA1: 20aaeabcbc858b03a3f1e901753ff3a7c6aa5b28
+SHA256: af0fe922e42a9a74d47824f99c06bf452dd832bb2a566a7d12572243e1baf5db
+SHA512: 16b2bdc82aaa8b589b13829ff21c95dbd517f2de60315f37a19ff7fd9c1396e412ddf9f90be199b12456d495034809d92a25f29024e7f7ecf4a758a5418667d3
+Description: A Rust compiler front-end for IDEs
+Homepage: https://rust-analyzer.github.io/
+
+Package: rust-analyzer
 Installed-Size: 38716
 Maintainer: @termux
 Architecture: x86_64
@@ -40044,21 +40108,6 @@ MD5sum: 8dc3e3881712db88eb82ae451480cb76
 SHA1: 3fc181a77f01394d811b6cd298be57f2f31f84be
 SHA256: eeabf7488edcb47c00e6b494892dae68aee4be84dd8f9f4e281a60d0ece51c14
 SHA512: 82dc21cf0693b10458bf7d236472e427d074909ce1b79b3a1522583e0287c65beaabf619a6608f1a79e46aae28feeabfeda9ab4409acc12915b4c22baedc6005
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://vtm.netxs.online/
-
-Package: vtm
-Installed-Size: 6636
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.9.99.70
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_0.9.99.70_x86_64.deb
-Size: 1294340
-MD5sum: b5810e0fd027a524a0becbc2d2c81b83
-SHA1: a41ce229b2b00d174610042ee69656274375ce64
-SHA256: 25b7329aae4b608696f3081d0507e14333a6ccaf12e0aecb63bea2956cbadd08
-SHA512: c43850f18b2ccecd2bf7387b7c1fafc59e3bba2f22921e80e048cb84f292248c7a26b4d5e52e76d1ba77bdc2f28fec00dd84eb1fa2f29559d54ef55e9319f7be
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://vtm.netxs.online/
 

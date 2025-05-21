@@ -3391,21 +3391,6 @@ SHA512: 29059849ffaf12739efda75b7d0b2660a16a34d36c6dd507f93bf0aabe7b3a7be98d30ba
 Description: Image-to-text converter supporting a wide range of symbols, etc.
 Homepage: https://hpjansson.org/chafa/
 
-Package: chafa
-Installed-Size: 764
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.16.0
-Depends: freetype, glib, libcairo, libjpeg-turbo, libjxl, librsvg, libtiff, libwebp
-Filename: pool/main/c/chafa/chafa_1.16.0_aarch64.deb
-Size: 169004
-MD5sum: 7d86698d7a507537610402dac3bdedfd
-SHA1: db164cbec172bf9dbb0845a115e7f86a3ba809e1
-SHA256: b7e921f7a61e7931dff67d493c0bbce98055c4de8e7d5357f96189f04bfa16b9
-SHA512: 6481ca951a11d6c81079b8d4376539598c81661b5085924335ad852dfae21efd6fc1cd730594a2a549a560c1c48d12532a1b3950f4ebfbdadc7fbfe45d99d323
-Description: Image-to-text converter supporting a wide range of symbols, etc.
-Homepage: https://hpjansson.org/chafa/
-
 Package: chafa-static
 Installed-Size: 532
 Maintainer: @termux
@@ -3418,21 +3403,6 @@ MD5sum: 953648bf865c3ea7441707afada1d60b
 SHA1: 5b3edb1bae84a8c5265ad813ea3699edb39c669d
 SHA256: 4afa5c70baf12167cd0c756ebffa4873fb5dd70f5d2a646bbe45e3bb6aab8511
 SHA512: 161e85bc54d539dce2eee385f30ee1802fab7d608ce1d7e1db895f33fea37b1f239586f29f6e62a1de3b570870bc9dc20e384e7cf906e02a771282d4a4932001
-Description: Static libraries for chafa
-Homepage: https://hpjansson.org/chafa/
-
-Package: chafa-static
-Installed-Size: 532
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.16.0
-Depends: chafa (= 1.16.0)
-Filename: pool/main/c/chafa-static/chafa-static_1.16.0_aarch64.deb
-Size: 103752
-MD5sum: c4dec9baae720e74448503956b3b1a45
-SHA1: e9e6bb250add3285ff5add67b1a9d5175da19b6c
-SHA256: 300f04087e3ddc0b00e126b638a907b2a2f7edf55afdf743e276ac009284e999
-SHA512: 222dcfabc88d69241c56aa8af170b2e235d8c80f866ab9282fc6bc544f4daf89ff9d3918ab8395a7a49b11f36bb82c946681949d5fe38edce7db27ab0a050ff7
 Description: Static libraries for chafa
 Homepage: https://hpjansson.org/chafa/
 
@@ -8957,6 +8927,23 @@ Package: glib
 Installed-Size: 20960
 Maintainer: @termux
 Architecture: aarch64
+Version: 2.84.2
+Replaces: glib-dev, glib-bin
+Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib, python
+Breaks: glib-dev, glib-bin
+Filename: pool/main/g/glib/glib_2.84.2_aarch64.deb
+Size: 2542796
+MD5sum: d2646b246cf4b1f13b6701000787a0bb
+SHA1: 2e21ab73e18fe57b0d2597fa54ad0700d60a255c
+SHA256: 0912ea790129df8c9e981795dc53ca02311ab71927655c199c6b3849796d18ef
+SHA512: e4f56d7c0b805b6bf1d6e888e60f84f2b7897133b2710bebe83940f0348d506d19cfd87e8da449b99a8092ac6c5924cce021183c10059abb916d7204c843afa0
+Description: Library providing core building blocks for libraries and applications written in C
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib
+Installed-Size: 20960
+Maintainer: @termux
+Architecture: aarch64
 Version: 2.84.1-4
 Replaces: glib-dev, glib-bin
 Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib, python
@@ -8983,6 +8970,21 @@ SHA1: 32a9b4ce0a3842e25e30ff982b3a58c381453651
 SHA256: ee7ed0dfc5298e931f56f4be9b1b9b14419a4ebbd23abbfb13ab998ea46c6d16
 SHA512: db45f6e33507fb99da91773c32e757f30c0b54dd9f88efe1f32023d16896e707a5918044d1fb3245498afe94c61c74d338de6b519d743a55a816016552c37924
 Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-cross
+Installed-Size: 81456
+Maintainer: @termux
+Architecture: all
+Version: 2.84.2
+Depends: glib (= 2.84.2)
+Filename: pool/main/g/glib-cross/glib-cross_2.84.2_all.deb
+Size: 12016272
+MD5sum: e1b6139cfb85cad21b9e433d714f8d41
+SHA1: 10491a2c0115a093226daf216c601b0819aa025f
+SHA256: 355e9f731e33e909e6f65b8157b3c758c9c373af2bbca11ba5b3db4c71778a51
+SHA512: 574a9ca25c5fb5f26968bfe019ecf0275ed8c060fc7a829392b68e402254648e1cb1b3e7c69aaf74f3c0b5ddebf186caa5762bea7915bdf5253c0d76a9e56e6a
+Description: glib for host (NOT for Termux)
 Homepage: https://developer.gnome.org/glib/
 
 Package: glib-cross
@@ -9808,6 +9810,23 @@ Package: gpgme
 Installed-Size: 1140
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.24.3
+Replaces: gpgme-dev
+Depends: gnupg (>= 2.2.9-1), libassuan, libgpg-error
+Breaks: gpgme-dev
+Filename: pool/main/g/gpgme/gpgme_1.24.3_aarch64.deb
+Size: 248976
+MD5sum: d97b0edf687df055bc14f38e94316f5d
+SHA1: 9fd0a4595cea69cee9f9d49bc4dc8b05fbfa139b
+SHA256: facb09ac89a082af15c2b700a128cae27d6d23630f90016a388a2cecc9cd8754
+SHA512: b91cd5cd3611fa82400bd3546dc04e17f6d3f74223c244e8200dfe71396705d2c1b6370d8005815fc114412f6ba416c208583a87da10c9c8015603765c8f0d7e
+Description: Library designed to make access to GnuPG easier
+Homepage: https://www.gnupg.org/related_software/gpgme/
+
+Package: gpgme
+Installed-Size: 1140
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.24.2
 Replaces: gpgme-dev
 Depends: gnupg (>= 2.2.9-1), libassuan, libgpg-error
@@ -9819,6 +9838,21 @@ SHA1: 79880e99c64655b010ad1b45a7cf27ffbe15480c
 SHA256: 38a39cb977bfeb22b27819ebd2dbf9ab28c2cbbfed4e68a54e45df508a30e476
 SHA512: 7bfa20f353613f228efec7fc0780f131b2a29a14a7e8ac2a10b440c71378ec52707363faf38f95810c3b224c50e352acb4438dfe97f2a55f8eaf6e2eaadde8a5
 Description: Library designed to make access to GnuPG easier
+Homepage: https://www.gnupg.org/related_software/gpgme/
+
+Package: gpgme-static
+Installed-Size: 712
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.24.3
+Depends: gpgme (= 1.24.3)
+Filename: pool/main/g/gpgme-static/gpgme-static_1.24.3_aarch64.deb
+Size: 128984
+MD5sum: 6cc409f9778911adede3e33e65280d79
+SHA1: 9da3fbf1e259291ead2a5a5f0f827bc3a02f50b9
+SHA256: 9a44329cacabd4cd3e5396ac80ecc070f5aa1f052daf909169100c00e78ea3d8
+SHA512: 06df7b2e1798e4b1780ba12dbb2a105f938ef0b513ff4f0c26b93b31019e2c54714191f8c22dc471ed8a884ec9d5712bd3ada67c0185d30d7e2088291c858c0e
+Description: Static libraries for gpgme
 Homepage: https://www.gnupg.org/related_software/gpgme/
 
 Package: gpgme-static
@@ -9840,6 +9874,21 @@ Package: gpgmepp
 Installed-Size: 708
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.24.3
+Depends: libc++, gpgme (= 1.24.3)
+Filename: pool/main/g/gpgmepp/gpgmepp_1.24.3_aarch64.deb
+Size: 124392
+MD5sum: d10aac9093a1e400d2d41f8067850190
+SHA1: 3b64d3578dc47b00ba75eebfe0ca8bc0fcb71343
+SHA256: 829ce3fda4be5a516cde1608ee1ca775e15502ddf67d57dd767071894d44eb28
+SHA512: 0c875b32cae80173f2a6f5f581c7f8873c5fcf9bd852696e94b1542b56d62a0c3001af679dfcc3291082e13664e8d8afff213e2a0c3a99c56e0b90cdfce78ed8
+Description: Programmatic C++ library interface to GnuPG
+Homepage: https://www.gnupg.org/related_software/gpgme/
+
+Package: gpgmepp
+Installed-Size: 708
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.24.2
 Depends: libc++, gpgme (= 1.24.2)
 Filename: pool/main/g/gpgmepp/gpgmepp_1.24.2_aarch64.deb
@@ -9849,6 +9898,21 @@ SHA1: 1a19226d1cc16fffcb5c6b5452ca76c147983a87
 SHA256: 8f49587e1eb434a2ab2473a01debb121963f53243d827db49abcccfdc5c06f9d
 SHA512: 82c46c8254cf8e765d905ceb405d265ce6cc4f3444ec6ace917da64f0dac56f46abd3458930a0359b341512c895934c492bcbb58e846522df5bdcb7c547fefa7
 Description: Programmatic C++ library interface to GnuPG
+Homepage: https://www.gnupg.org/related_software/gpgme/
+
+Package: gpgmepp-static
+Installed-Size: 1660
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.24.3
+Depends: gpgmepp, gpgme (= 1.24.3)
+Filename: pool/main/g/gpgmepp-static/gpgmepp-static_1.24.3_aarch64.deb
+Size: 175856
+MD5sum: 4cb8d41a3b45c9068eb5215a26fcd00b
+SHA1: bae69ad171b670ab8bf62773621848a006efb824
+SHA256: ce2e720dd8d52ac946ab5f655bcfd0d22649cefccdfa51e85394a501758b56c6
+SHA512: a9361d44c9c92e195e0e91f5a9c21eb6280e9a77ec862f6fba854c78eab23a5d546c6ec2ed617dca7e69535f2f0624dbda515f48bad8b566280f8557c95056d3
+Description: Static libraries for gpgmepp
 Homepage: https://www.gnupg.org/related_software/gpgme/
 
 Package: gpgmepp-static
@@ -11915,6 +11979,21 @@ Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
 
 Package: jackett
+Installed-Size: 14380
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.22.1933
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.1933_aarch64.deb
+Size: 3184264
+MD5sum: f3568c0defe616ce603fe0148e2b89a9
+SHA1: 541a066d179d466e5b1fa64645e70332fcb692c4
+SHA256: 98cb2a0fc82c458abedf4fcd7dcf979db2f3e082e0581004f48875d966be90f4
+SHA512: cba31e083420e6d851e54e4bd8f131f3e46734cc8106808a70666ff966d04fec8a593796e9e298e7533dd68f66a83ee59bbfb189800b1385bf37489811b6e76b
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
+
+Package: jackett
 Installed-Size: 14388
 Maintainer: @termux
 Architecture: aarch64
@@ -12635,6 +12714,20 @@ SHA256: 19344f33ccea0857358f1ce2a6ae84b0a07e7d10ca748def3dadc64a25a400b4
 SHA512: e40b2f8366b0ae299c7f322c9401aac67519f709a3610c037da5684a9f187779caf5bb8f0d38f905b7b53b07d1b620fdeb1c3ec8e2536fd6679fe8c2073f853e
 Description: Colorize your kubectl output
 Homepage: https://github.com/kubecolor/kubecolor
+
+Package: kubectl
+Installed-Size: 79620
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.33.1
+Filename: pool/main/k/kubectl/kubectl_1.33.1_aarch64.deb
+Size: 14098408
+MD5sum: 7e780dda1da2d20f6ed4596ae73ca53a
+SHA1: d9bd22addc024588953db5a6c7198d992635bc3b
+SHA256: 49e3056d653912c763d3921c49c4b9e947ea78b09da56e576786cd09a68a1e82
+SHA512: 431a5bafdd051cb61e55ff5fcb1d3d28912cbf356ee23f5c61d9e450f1e83e5950d45a1e1faca45de9d4ed6832b542e78d07be120a7e5b26e2e22e2cc446a32c
+Description: Kubernetes.io client binary
+Homepage: https://kubernetes.io/
 
 Package: kubectl
 Installed-Size: 79624
@@ -14863,6 +14956,21 @@ Description: Static libraries for libdb
 Homepage: https://www.oracle.com/database/berkeley-db
 
 Package: libde265
+Installed-Size: 496
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.0.16
+Depends: libc++
+Filename: pool/main/libd/libde265/libde265_1.0.16_aarch64.deb
+Size: 150768
+MD5sum: 1bff2959fa3d02f4f2a53c1a969423d2
+SHA1: 2370e7e11dbda2072213a0fc15d607effa6ecc03
+SHA256: 9b57a936b549f9563f3fbb4d7bc172e465d78e70c8553332b5e3cb9edb561f61
+SHA512: 4502b801fbc04102ced00ac4cb7eec6d84747147af116685ac6d4ceafe245b3375003888169edc457eec2dd4e78b82859695f24f4d79d62ef06c1309f9b5a0c0
+Description: H.265/HEVC video stream decoder library
+Homepage: https://github.com/strukturag/libde265
+
+Package: libde265
 Installed-Size: 504
 Maintainer: @termux
 Architecture: aarch64
@@ -14875,6 +14983,21 @@ SHA1: a169da4b643bb6c1a6f8bf08cdb2a732bac0c1f9
 SHA256: eda2e9d186db0c276730b08be0f895fab666580c67a007df5a31492f33ad0792
 SHA512: 52268e298c53ef5a7f1475d30e71aa020043c469a3e73e4ef90b97c343a2f8c37641b5b4c63eb7ab5274922d29f2afc1a5e33fb704433a28353b66d962af5696
 Description: H.265/HEVC video stream decoder library
+Homepage: https://github.com/strukturag/libde265
+
+Package: libde265-static
+Installed-Size: 1076
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.0.16
+Depends: libde265 (= 1.0.16)
+Filename: pool/main/libd/libde265-static/libde265-static_1.0.16_aarch64.deb
+Size: 184632
+MD5sum: e310849d7c6cae85ef13ecc12feb26cc
+SHA1: 1dcc2021c909d6cf70b5b998e0b2a4a6125b52d9
+SHA256: d1fb12bab0ec0a411f484be34c2e9cad032d7c3b1f9f40e7fce25fe2997f5082
+SHA512: 62ef10227aab90d924e1a5050fb6b8ba048a9d89dcc8ef2da7e54578cb1d5ab8ba486da45db2b06edba828a1daba192b93d5df2430a894e75cc5baf4c3e00bc2
+Description: Static libraries for libde265
 Homepage: https://github.com/strukturag/libde265
 
 Package: libde265-static
@@ -19549,6 +19672,21 @@ Description: GPL reimplementation of libdjb
 Homepage: http://www.fefe.de/libowfat/
 
 Package: libp11
+Installed-Size: 384
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.4.14
+Depends: openssl
+Filename: pool/main/libp/libp11/libp11_0.4.14_aarch64.deb
+Size: 58276
+MD5sum: 3e07a0e6d31c3ed2a3290ec5060ea3e4
+SHA1: 96535071af92ab771ca6c69c0717363b2cd1c521
+SHA256: 2b44055bb88e9dbf33946dc9b1cfe7e94e048e02f3876ce08852b0fa088af84e
+SHA512: fdafc5f1573d34366e5f0b1690c93ed06c469ad62b24de26ee662ea5cb7fb0953372cc73d838b9a4211dcfd98d6c8e88eba3c238a58d8b7cd96a8567caa8c3ab
+Description: PKCS#11 wrapper library
+Homepage: https://github.com/OpenSC/libp11
+
+Package: libp11
 Installed-Size: 360
 Maintainer: @termux
 Architecture: aarch64
@@ -22464,6 +22602,20 @@ Package: liburcu
 Installed-Size: 1368
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.15.3
+Filename: pool/main/libu/liburcu/liburcu_0.15.3_aarch64.deb
+Size: 122344
+MD5sum: b363e0291df1135ae64672e4b1b74285
+SHA1: 549f454d0505372f844a3e0883d98d876b196ecc
+SHA256: b067b4f02ed1347d10d6eb7c8a74c4a6c2db3b9c2bd4191feabc09c44f13f3f8
+SHA512: ac64a091a3ddeebdccf32e1f0cfe49d208f28dd79926a9f719530ee873d01dfb5df53ebf48e0b716fa63d15828b9e149ef499b0ac4c4f792b3d1fb8ae6453fa0
+Description: LGPLv2.1 userspace RCU (read-copy-update) library
+Homepage: https://liburcu.org/
+
+Package: liburcu
+Installed-Size: 1368
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.15.2
 Filename: pool/main/libu/liburcu/liburcu_0.15.2_aarch64.deb
 Size: 122300
@@ -22472,6 +22624,21 @@ SHA1: e42880b4c309fe124e626cf1a832e21c6d589636
 SHA256: 0d0af2556038aa555c588259238f92a091a9a8dc5203daaff1dc69d443f59777
 SHA512: e68ecacadfa5a500e729fd202a67286f858e9acfa0a9a2e37cf99aa3648ab0041fe257da78d7c8c32d06301ed383f404134105067d2e06ca14e766b45b8168de
 Description: LGPLv2.1 userspace RCU (read-copy-update) library
+Homepage: https://liburcu.org/
+
+Package: liburcu-static
+Installed-Size: 436
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.15.3
+Depends: liburcu (= 0.15.3)
+Filename: pool/main/libu/liburcu-static/liburcu-static_0.15.3_aarch64.deb
+Size: 45460
+MD5sum: c0f118f5bfa8aee47aff8df1b825a7eb
+SHA1: ec05fa23222b71e41c31fac51071883d27aca829
+SHA256: cc4dba3e99c7e66aca3fbabcd5d3e1f2c7f27ce453089f7bb04ecb54b2a28dff
+SHA512: 164010404de1d497612ce56471f3c0379400bf7e90b4047a4d22b951e552fe74a157cda6b3e111d68fc0bb2aaac41d9f0b59bbf6ee565cacf4e18555e4aebe71
+Description: Static libraries for liburcu
 Homepage: https://liburcu.org/
 
 Package: liburcu-static
@@ -24433,6 +24600,22 @@ Package: llama-cpp
 Installed-Size: 46660
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5439-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5439-0_aarch64.deb
+Size: 6399612
+MD5sum: 4792f01a7eefde5bd6372c037e0560e2
+SHA1: 604318f4ae290a58d48c182d33d0afa38f8c42e2
+SHA256: b81d872a3bdd14918a30660b25bbebe303e2011f154c4fb9f4ffb91932a68f08
+SHA512: 102e2a16fd2f667246b3ef1660af682fccaebcef209f23c3eedb444babe023a7c0a3e042cb7289c9b7932f6b35cc4b58e6d71effa4059c4a59e1e0026be4dfa0
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 46660
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5438-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24445,20 +24628,21 @@ SHA512: 9ec7c4a4783a9c108eb65294d99d6fbac7506d5b88cdc47d0051344d9e222b57b950636e
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 46660
+Package: llama-cpp-backend-opencl
+Installed-Size: 364
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5437-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5437-0_aarch64.deb
-Size: 6400032
-MD5sum: ff777923dabbe4c170aed4d232e5aa54
-SHA1: e12c78848ece2fe575b3a5653ffc67b3000a0775
-SHA256: ba9359562fe234d3443ca33049fc68f43eab8d04f4a205fcf2acc00066893ea7
-SHA512: 93aeada134772dae9c165ff362a07ec51c0ab87dc61eb79f4b056de71bc41a442444db20e69939b05349422129c440f3bf211d520ad61c9713b890d42fc8c486
-Description: LLM inference in C/C++
+Version: 0.0.0-b5439-0
+Depends: llama-cpp (= 0.0.0-b5439-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5439-0_aarch64.deb
+Size: 62568
+MD5sum: b7eedab4d2fdb8a462b6ef18d800ca0a
+SHA1: eb2c9aaf1d8fb841bbbbec7e537568568da53055
+SHA256: a02fbc1c62bcfd3ee013da11960cb1bc8fea34490e6438f2c071c9058fde6843
+SHA512: 48e31d90ff7a4ce0d11edfda4195582661a09277b4d66771f3d3a138700c44559cebcad6402349ed1c7beb04c1f84979dd18c2c713d5fd43a813f53f8d4a0859
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24478,21 +24662,21 @@ SHA512: 60700f93670cc4717b600722eed1fad17312db04ef411927aaed410485ae14d717b55381
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 364
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12720
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5437-0
-Depends: llama-cpp (= 0.0.0-b5437-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5437-0_aarch64.deb
-Size: 62568
-MD5sum: fea22711e1ca78ac825f179710aaf42b
-SHA1: 0f0146ef7874db68287181e4029b3da0eee343e2
-SHA256: 8dec9ec20cc39fd90b77114c25e7bd151c7fffa9d595b914690fa6ad7ffc4e16
-SHA512: 1e794d7fa8364a0a15f636c9e9ab2b96c0a9ab206e5b4d2b83a210d41dbca1b1176c265a7dc13b64116d08599f49d4d2df6ca58fc35b59029558c971ef6fa1b3
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5439-0
+Depends: llama-cpp (= 0.0.0-b5439-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5439-0_aarch64.deb
+Size: 972836
+MD5sum: c487dc3d80d2fd1e1ba01bfb8b3c7f30
+SHA1: 131bd1cc31dbac2a421046fe9ca1cbacd70c5e88
+SHA256: e120630aa053be32bf6b94e9112bb4b5c354d0fb7211714203d56185882c1f73
+SHA512: 92b6f6fefd9a135ba018e440d205feeea7f595052046e0ea9e06132f6f5fb4c0dde67626881851348dd37ee5e5808f3ba822e3c79e5473f142b9eb7804eed48b
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24509,23 +24693,6 @@ MD5sum: e9cc3fffb703e2a6d74f7e107cf61ff3
 SHA1: 27f94bd0e3e58d350b4208dbb3987d3f1cac19ab
 SHA256: 8d4263d4c291dd90bf4fca2c5d2370e9a0c4fa49cc757466fb110092d65fc48c
 SHA512: cfdda1919f6c47f8bbf4be9152d7c0e5f95accd09b71e9c40760d23de5e4f36a685cccd22209bfe097acd6dd25e73ade81169ede5fdd6c22e4313a74f45d9612
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12720
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5437-0
-Depends: llama-cpp (= 0.0.0-b5437-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5437-0_aarch64.deb
-Size: 977492
-MD5sum: c755ae0e794d63d3ac749a2d91eb963e
-SHA1: 4ccb5cb9525f30737c74ee19de4a5bcc503106c3
-SHA256: 2aac86a3f1e9ec900d0c950342743138694b2378001ddbe0d8939538d0852392
-SHA512: f2dbf447629c838c43f0cb817a8ceb83ab234f0daf8c33f3db89dccb2d9c119863b0b9bb8bb6c8fecac5f3bce17add61401cf1e0e47a85a7df3918b5f4a8277e
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -40219,21 +40386,6 @@ MD5sum: b8a5e7718a19606db20086a5bc468423
 SHA1: bcdea4e3acf33298661c98c4a16dcbdde2b902a4
 SHA256: 5bf42f791ec7127643478ea550058eedeef9bd4ddd0bcf1e2e89c0f9768a56c8
 SHA512: 5f52f52521dbeb4e11153a7dbd4182357590b136aaf8cb71698b572d5e18d77cf40da30b72bdd5f3878e9da43ed60063f568977919f358f7ffbb0afc83b394a2
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://vtm.netxs.online/
-
-Package: vtm
-Installed-Size: 5996
-Maintainer: @termux
-Architecture: aarch64
-Version: 2025.05.20
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_2025.05.20_aarch64.deb
-Size: 1160092
-MD5sum: 043c11054036ea8bfa338adf7a4b0187
-SHA1: e09bb4ccef3bc555329e4322c7f47401f214304d
-SHA256: e699221b44a1f86653cbd1e6927547dc18ee3fe157f57caf32fcb7746d99730c
-SHA512: 88d23276cab0b2dfc9c9ed0d7d6e475b9a7a52ab1601b7dda07e8223ebcfa3d24d03a64ffd6b8cfc191bcae14cb3c9ab7aef814f2a1a8382488baf178f4dfadc
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://vtm.netxs.online/
 

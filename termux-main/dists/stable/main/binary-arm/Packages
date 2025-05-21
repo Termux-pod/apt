@@ -3253,21 +3253,6 @@ SHA512: 00eb068f89aa0fb9d6e33521c42898384d83447f7dae5676663391d8a6ef5b96bf07b8ef
 Description: Image-to-text converter supporting a wide range of symbols, etc.
 Homepage: https://hpjansson.org/chafa/
 
-Package: chafa
-Installed-Size: 612
-Maintainer: @termux
-Architecture: arm
-Version: 1.16.0
-Depends: freetype, glib, libcairo, libjpeg-turbo, libjxl, librsvg, libtiff, libwebp
-Filename: pool/main/c/chafa/chafa_1.16.0_arm.deb
-Size: 155500
-MD5sum: c452e6e6cf5f39098ed4b3e2159acc6f
-SHA1: 0a786ca885b6d5442c72057cc86ab9af275b6558
-SHA256: dbd2be1d32aa183b8957d1bdaa59bca57a219bda5b8892d7bdc97c8d2f2570fa
-SHA512: 60724bb68975317836cadd1f3c3e5a9a4fb61a3b3630d4f99784cfb53ac3e6683d0106830c83d204d56009a2ffdb041fc41575f2e90257f2cebb5155a76ae001
-Description: Image-to-text converter supporting a wide range of symbols, etc.
-Homepage: https://hpjansson.org/chafa/
-
 Package: chafa-static
 Installed-Size: 392
 Maintainer: @termux
@@ -3280,21 +3265,6 @@ MD5sum: e2c3f635847ca21119826aa92e3ca928
 SHA1: 7e32891949b8da9be5354998132a7aff57fe17ff
 SHA256: f961d4faac589957f522a2e449d8c04d4d65054103e8608419291649fd03e4aa
 SHA512: f8905bf27b5b528a0e85ebc27cf9f2f1103dfa368f22dc778289503cb8c0a1ccbeae715c897af788e4828f1c5997d685fd01c6d9a31120f9dab5bc4e6a4dc2be
-Description: Static libraries for chafa
-Homepage: https://hpjansson.org/chafa/
-
-Package: chafa-static
-Installed-Size: 392
-Maintainer: @termux
-Architecture: arm
-Version: 1.16.0
-Depends: chafa (= 1.16.0)
-Filename: pool/main/c/chafa-static/chafa-static_1.16.0_arm.deb
-Size: 98128
-MD5sum: 978cbc8be3f841e47525ae9ece063c86
-SHA1: 1c8c27881a6f523c5c8eee6a658cf808ce189e9a
-SHA256: 08ac1cf3c435fb5b6864cd7888913f45ebfd7b195ff3b3fd0381fb02ceee1474
-SHA512: ee070fe0a4bb8667d86f42119d9dde8dd35192dcc442afbf67a5011f3c5bd94de3af2ac8f28f5e28681bd3ef327487b4168561d7f1fd37af55643f6d6cc6ad15
 Description: Static libraries for chafa
 Homepage: https://hpjansson.org/chafa/
 
@@ -8382,6 +8352,23 @@ Description: A friendly language for building type-safe, scalable systems!
 Homepage: https://gleam.run
 
 Package: glib
+Installed-Size: 19648
+Maintainer: @termux
+Architecture: arm
+Version: 2.84.2
+Replaces: glib-dev, glib-bin
+Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib, python
+Breaks: glib-dev, glib-bin
+Filename: pool/main/g/glib/glib_2.84.2_arm.deb
+Size: 2403260
+MD5sum: 2e6d8ef6d7a2d4f3ba66565c0ce9d23c
+SHA1: 503e90f0f48ff3043df261f94a6f4b8a073c6149
+SHA256: e72a509ab7eb2a158b05c5fc270039131c9975fae6140878371404ac428f1819
+SHA512: 6daea4f4ba354be88919d4887517392e7ce68ed5dde3c6353772ab962dbbb11470012531735b2b6934a581ba32b8ec1e8f02646f02fec4db1dc42ce962968679
+Description: Library providing core building blocks for libraries and applications written in C
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib
 Installed-Size: 19644
 Maintainer: @termux
 Architecture: arm
@@ -8411,6 +8398,21 @@ SHA1: 235b477f87400ae84abf19fa1cd223a728f392b0
 SHA256: d1cff6bcffdc0a4fb2440dc4111e71605b016cf3565a84ed30162b3843aadd09
 SHA512: 0c5f1d9ec473b7aa9fb0035dc759f0cc9f232a44329f8043e27e18ed593a640bc6c7074fdb163bcde870a2566aa1f8c9f0c1953524b7d2738bd3097b3002f199
 Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-cross
+Installed-Size: 81456
+Maintainer: @termux
+Architecture: all
+Version: 2.84.2
+Depends: glib (= 2.84.2)
+Filename: pool/main/g/glib-cross/glib-cross_2.84.2_all.deb
+Size: 12016272
+MD5sum: e1b6139cfb85cad21b9e433d714f8d41
+SHA1: 10491a2c0115a093226daf216c601b0819aa025f
+SHA256: 355e9f731e33e909e6f65b8157b3c758c9c373af2bbca11ba5b3db4c71778a51
+SHA512: 574a9ca25c5fb5f26968bfe019ecf0275ed8c060fc7a829392b68e402254648e1cb1b3e7c69aaf74f3c0b5ddebf186caa5762bea7915bdf5253c0d76a9e56e6a
+Description: glib for host (NOT for Termux)
 Homepage: https://developer.gnome.org/glib/
 
 Package: glib-cross
@@ -9236,6 +9238,23 @@ Package: gpgme
 Installed-Size: 996
 Maintainer: @termux
 Architecture: arm
+Version: 1.24.3
+Replaces: gpgme-dev
+Depends: gnupg (>= 2.2.9-1), libassuan, libgpg-error
+Breaks: gpgme-dev
+Filename: pool/main/g/gpgme/gpgme_1.24.3_arm.deb
+Size: 233604
+MD5sum: acb26509c5516c4d7af5ca53c6acbaa2
+SHA1: 4ad1c1da4f4a195c5a71357e27405a2842999570
+SHA256: 80e7e4bdafa8b73c51478b97f86ea19e995ff355a89aeff7ebee3e6f714b2569
+SHA512: 3897b7f5123e906c71d3e4f681765bc94635908d06531c1ed567a6be7bb59b02f85d04a38df81272cfa1b557a7f41478d5e9f43cf270e08a3f4726bc051013fc
+Description: Library designed to make access to GnuPG easier
+Homepage: https://www.gnupg.org/related_software/gpgme/
+
+Package: gpgme
+Installed-Size: 996
+Maintainer: @termux
+Architecture: arm
 Version: 1.24.2
 Replaces: gpgme-dev
 Depends: gnupg (>= 2.2.9-1), libassuan, libgpg-error
@@ -9247,6 +9266,21 @@ SHA1: 3cefc10dd4dac8d886ddc028e5f3c9e467e0b8f4
 SHA256: 6f06eab937b3509571583d7920f86bd63f77cbd0812e74e6ceed9ea1e5265c2d
 SHA512: 499057ec8d947e997405890dd3e8388bfcba853a2c6d2632814c0d7dfb316a15fd5321f4fb8e517cb0d33af6654b624082a94c7ba0e9d2d43e82af125656f2d6
 Description: Library designed to make access to GnuPG easier
+Homepage: https://www.gnupg.org/related_software/gpgme/
+
+Package: gpgme-static
+Installed-Size: 464
+Maintainer: @termux
+Architecture: arm
+Version: 1.24.3
+Depends: gpgme (= 1.24.3)
+Filename: pool/main/g/gpgme-static/gpgme-static_1.24.3_arm.deb
+Size: 122936
+MD5sum: b34612d7e998384c783226901a682f4b
+SHA1: b9db32e0bf8eb2097e18fc3009994d5fd0e165e3
+SHA256: bb794a5b89905a5e7f70414ce556e7464efdafa1bfefbe9819fb2ac407fdbba8
+SHA512: 82aaa0e2cca3016c58731ceff8a659fd7a85f8d4bb3733f1ef36671041f313597e7ce7ffcf84d63309aafcc3322e5ae1cb048c4939c664336ec9f051d789670f
+Description: Static libraries for gpgme
 Homepage: https://www.gnupg.org/related_software/gpgme/
 
 Package: gpgme-static
@@ -9265,6 +9299,21 @@ Description: Static libraries for gpgme
 Homepage: https://www.gnupg.org/related_software/gpgme/
 
 Package: gpgmepp
+Installed-Size: 556
+Maintainer: @termux
+Architecture: arm
+Version: 1.24.3
+Depends: libc++, gpgme (= 1.24.3)
+Filename: pool/main/g/gpgmepp/gpgmepp_1.24.3_arm.deb
+Size: 101532
+MD5sum: 38e1ff3a049ebbfeac252d64f3333b65
+SHA1: 49836d9332a4b72d9fad88fc9debf1152d324ddf
+SHA256: dd0d27719fd5f54733696d4cdb45c393f7323dc08057b956c461a719a0590b26
+SHA512: 64d4d94957860ae7462473ae85fd49e4f73fe33058ae564b82c7e622f7d6837b83825f1549eb658f99dd20d5b0ebe509da468f51a2e0d336f50149e58682064a
+Description: Programmatic C++ library interface to GnuPG
+Homepage: https://www.gnupg.org/related_software/gpgme/
+
+Package: gpgmepp
 Installed-Size: 552
 Maintainer: @termux
 Architecture: arm
@@ -9277,6 +9326,21 @@ SHA1: e7a7eea431e79d245e214be46e694cb75c99ad52
 SHA256: e18da17bb72b1df93e288d2e909b318a6347e66332b40d1513b90d6693ddccb5
 SHA512: cc605a5405ed64e48b061ddd7ce0e4209c131078b4b68baee57e5a45dd945680b973c2b46fd3303a625ca2952f9fe4a0f9f64a760a6b519bd34f5e50e42ec1a8
 Description: Programmatic C++ library interface to GnuPG
+Homepage: https://www.gnupg.org/related_software/gpgme/
+
+Package: gpgmepp-static
+Installed-Size: 1608
+Maintainer: @termux
+Architecture: arm
+Version: 1.24.3
+Depends: gpgmepp, gpgme (= 1.24.3)
+Filename: pool/main/g/gpgmepp-static/gpgmepp-static_1.24.3_arm.deb
+Size: 193976
+MD5sum: 4a70867c133bfa2263d2460a4ce8c87e
+SHA1: f83678824fd3e52d7da65449bed25fdb4f724366
+SHA256: 32c81428ab22cab955d1fedd051bfd8c930988bbb48e4606202cd0605cecff1e
+SHA512: 0f8154a17e5a095758374b235442cff9892cdb884605643bdd036bf4ea94c6c9a9862f47f00c40aade210fe3828f3fb0fd3715c8940fed8b5f1a6f11d07dd6c7
+Description: Static libraries for gpgmepp
 Homepage: https://www.gnupg.org/related_software/gpgme/
 
 Package: gpgmepp-static
@@ -12023,6 +12087,20 @@ Package: kubectl
 Installed-Size: 75736
 Maintainer: @termux
 Architecture: arm
+Version: 1.33.1
+Filename: pool/main/k/kubectl/kubectl_1.33.1_arm.deb
+Size: 14797236
+MD5sum: 8547e0f6d6d20586cab4e496ad603c95
+SHA1: 25aa412d5759e3f122c61b538659e5dca9396aaa
+SHA256: 922f9126268fb2e88b00c2c5b74f2adbf9938ca43e795cb582e8fb355cb57428
+SHA512: cd112657312515d00155b34c6bdd31e580ebf8aea9ed614cab906b67832f4cd415300cdc895bff53ec1d39cba4689e70cb93f1567736fd7cb193dae67b6f7b4e
+Description: Kubernetes.io client binary
+Homepage: https://kubernetes.io/
+
+Package: kubectl
+Installed-Size: 75736
+Maintainer: @termux
+Architecture: arm
 Version: 1.33.0
 Filename: pool/main/k/kubectl/kubectl_1.33.0_arm.deb
 Size: 14793892
@@ -14186,6 +14264,21 @@ Description: Static libraries for libdb
 Homepage: https://www.oracle.com/database/berkeley-db
 
 Package: libde265
+Installed-Size: 364
+Maintainer: @termux
+Architecture: arm
+Version: 1.0.16
+Depends: libc++
+Filename: pool/main/libd/libde265/libde265_1.0.16_arm.deb
+Size: 129472
+MD5sum: ad6b3a2594ff2bd0d077a1f38082b00d
+SHA1: 5d786da065abb5f5807a7af85f2bcd961705def8
+SHA256: 1a4fcdcd64f2a974bde9fd27df26f47a91db9fae297f64ee7e93c1d7029e3259
+SHA512: 13eda119b80e7b0346ff8b11781fa9106a6235afdac2a181785cb867e006fbf63b9a13d72a415281f29761b92c8c42e8402032f46bf9aca25a87f346d1045ab7
+Description: H.265/HEVC video stream decoder library
+Homepage: https://github.com/strukturag/libde265
+
+Package: libde265
 Installed-Size: 368
 Maintainer: @termux
 Architecture: arm
@@ -14198,6 +14291,21 @@ SHA1: 0557d8a088c69ebe268d2a7bcfda2dc9ee19ce8a
 SHA256: 605cb6d40fb2eaf63731619b3a2d0b70fd49ee4d9e00a1e189dbf65caa2da6f1
 SHA512: 70d9dd338650d94f2a9f2e45897da0347bc81d33e34660d89dadbe3ebd1d16f770f027a1591edf4ad79d7465db00332d58eb4c42e34dd7d2e7460589bbc9fc20
 Description: H.265/HEVC video stream decoder library
+Homepage: https://github.com/strukturag/libde265
+
+Package: libde265-static
+Installed-Size: 960
+Maintainer: @termux
+Architecture: arm
+Version: 1.0.16
+Depends: libde265 (= 1.0.16)
+Filename: pool/main/libd/libde265-static/libde265-static_1.0.16_arm.deb
+Size: 192160
+MD5sum: a45eaec3764340d610ff50c14943c90b
+SHA1: 2c825e39c2f78f3bfa3f6b4cd4d527e7d945b00e
+SHA256: 65c4de65619be80a5ac5b41c158d228755427966c6aa75643770f27ce082c3b1
+SHA512: c21420b529802e7b31a03feb7b7f9e81f746d52ea074f1b0e0e5793c2e495c2023fe663a151bf1788f3f6bcadcda5f76c467dccde4758c9f84c900dd02c6ddf5
+Description: Static libraries for libde265
 Homepage: https://github.com/strukturag/libde265
 
 Package: libde265-static
@@ -18857,6 +18965,21 @@ Description: GPL reimplementation of libdjb
 Homepage: http://www.fefe.de/libowfat/
 
 Package: libp11
+Installed-Size: 284
+Maintainer: @termux
+Architecture: arm
+Version: 0.4.14
+Depends: openssl
+Filename: pool/main/libp/libp11/libp11_0.4.14_arm.deb
+Size: 48532
+MD5sum: 4574325cb8970ef8133ee8a807523340
+SHA1: c418470a99a3169aa0ae08b694709415dbc35922
+SHA256: 0af777387c9f3aab610412c9d968e42ad02821fa6be5173b3018b3016b1f405b
+SHA512: 57047935e4d297336a56a9388d253fdef59d4a0cecbb10f2785a385a6aee5725da0825c0a729515932375ee7cc6f68bba837886270b23e14011180817749bd98
+Description: PKCS#11 wrapper library
+Homepage: https://github.com/OpenSC/libp11
+
+Package: libp11
 Installed-Size: 264
 Maintainer: @termux
 Architecture: arm
@@ -21757,6 +21880,20 @@ Package: liburcu
 Installed-Size: 1284
 Maintainer: @termux
 Architecture: arm
+Version: 0.15.3
+Filename: pool/main/libu/liburcu/liburcu_0.15.3_arm.deb
+Size: 113128
+MD5sum: 11ad0a6e20b434a60000ee5e30b7ceca
+SHA1: 0848f221b679acd04b350289db12627591ca0a50
+SHA256: a2c34c14e2043ccbc8af60ebe644ce4ea3a513897f5458bbef70c1aba81a44a1
+SHA512: 17256c2a839455fae2f131a4f08ad6c8e7b5205f6ce92cdd3a85d3e1356fe8675f6596ae4a85552013c5b57905056f0aa82da9f2c976724dabf9a19e5bacd633
+Description: LGPLv2.1 userspace RCU (read-copy-update) library
+Homepage: https://liburcu.org/
+
+Package: liburcu
+Installed-Size: 1284
+Maintainer: @termux
+Architecture: arm
 Version: 0.15.2
 Filename: pool/main/libu/liburcu/liburcu_0.15.2_arm.deb
 Size: 113120
@@ -21765,6 +21902,21 @@ SHA1: 2f4e88c35f1799cc832d3a975f52e7f7526e2d09
 SHA256: 25056c50758b6578b3f5f7f1f23e0e1d022839f32854a4cb600482baa2d6c2c2
 SHA512: 11cc7d5e32f356d83da26110ab97ef1c80a8d7aa17cb1c565efce3e50bc7f239d6daf123d1c526203380cd89f9d673d8f37bd32985cc56d08f0d8dfe459d710a
 Description: LGPLv2.1 userspace RCU (read-copy-update) library
+Homepage: https://liburcu.org/
+
+Package: liburcu-static
+Installed-Size: 312
+Maintainer: @termux
+Architecture: arm
+Version: 0.15.3
+Depends: liburcu (= 0.15.3)
+Filename: pool/main/libu/liburcu-static/liburcu-static_0.15.3_arm.deb
+Size: 42428
+MD5sum: 8250be3f3c7ea1ed95f9c0ec1c93b2bc
+SHA1: bb00d382ae1c551dd51632d6f5a3759bce5edd21
+SHA256: 5a1abd58ef687947b7d724069f715bfdb171e5eb6a11b0e9f4e6e78581cd25f6
+SHA512: 83dca0b8bfda8d3622080189aa6c7552b8aacac0cb605f2b5732706273d14155787978aae23f11c7d5951d5fb74f2cad884a3ef9a8cb70b9aa1b45451f01d3ca
+Description: Static libraries for liburcu
 Homepage: https://liburcu.org/
 
 Package: liburcu-static
@@ -39050,21 +39202,6 @@ MD5sum: 28145a2fa89e74d49858499e4879976d
 SHA1: a3985cdf2b554ef1baf6b8561ea8c9860ee39ee8
 SHA256: 72c74ca4e77b008ca26c65e17ba76bfd9c089e1c7d90b0befcc0067f2aa9a726
 SHA512: 68da81ab0abb4e1495c0654f6184ce3f2c87db5adece879e63359c898660ac961b4a80dc6294616e692f61512f01152673247da853a440a0363712f711d0e9e8
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://vtm.netxs.online/
-
-Package: vtm
-Installed-Size: 4008
-Maintainer: @termux
-Architecture: arm
-Version: 2025.05.20
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_2025.05.20_arm.deb
-Size: 1126328
-MD5sum: 4354854d92430b93d69a0bd0461c8dd8
-SHA1: 897a441e83551ee7546b78ea246c3ae697c130e4
-SHA256: d7f2018aa1e07995bb41116967135193cab9d01fb60624320c1c67dc80e5c263
-SHA512: fb5373b14f31b10db793b730a3d63f9a15e905be12a66072d0c4e6d56c995d02eeb771f7479df22e274412a625d7e4e6fb0b8c9ba9930668849bb4349d35ede0
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://vtm.netxs.online/
 

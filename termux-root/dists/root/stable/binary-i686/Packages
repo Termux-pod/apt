@@ -252,22 +252,6 @@ SHA512: adad2add03cfa9598851edec0c5bc316523421df84bc47e1e96ee1fb63e44d4a9169e795
 Description: Flexible I/O Tester
 Homepage: https://github.com/axboe/fio
 
-Package: fio
-Installed-Size: 1520
-Maintainer: @termux
-Architecture: i686
-Version: 3.39
-Depends: openssl, libandroid-shmem, libaio
-Suggests: python
-Filename: pool/stable/f/fio/fio_3.39_i686.deb
-Size: 394192
-MD5sum: c94524626d850ea03278a9d4ce6fb9a7
-SHA1: 8b0a878e558e21595637894ad630602230687a49
-SHA256: f1a03123213747e05bdab2d20b3851764ff423b6cf145bdb503abaa519be61bb
-SHA512: 3ea12704f8b5eb2b27e6faae1a4f00ed7b0c0c2b528209185efec0cf147d9e9e6b4e51202edebf4a99e79ec6df3aee848e780bfdc3061f5b86d85c8f85bab9a4
-Description: Flexible I/O Tester
-Homepage: https://github.com/axboe/fio
-
 Package: frida
 Installed-Size: 110844
 Maintainer: Henrik Grimler @Grimler91
@@ -445,6 +429,23 @@ Package: ipset
 Installed-Size: 500
 Maintainer: @termux
 Architecture: i686
+Version: 7.24
+Replaces: ipset-dev
+Depends: libmnl
+Breaks: ipset-dev
+Filename: pool/stable/i/ipset/ipset_7.24_i686.deb
+Size: 80240
+MD5sum: 44e8c269c6eb0257974bc1808970f9f9
+SHA1: 6cd34e279c2859d32aae1f9f5f6c6f168fdca47c
+SHA256: 1e1c7f517ac9a75821407a2ea61328d100be44ccd4f4ed05541facc831800c75
+SHA512: 81346d68a53008715afd50c460bdf14a5c9e86b64e52c536b8e5e042164030d6bd3d7ebbb5ec1586db2b8f93c34cffaf8365e29cc2330da3f10c2f0efd9a5e75
+Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset
+Installed-Size: 500
+Maintainer: @termux
+Architecture: i686
 Version: 7.23
 Replaces: ipset-dev
 Depends: libmnl
@@ -456,6 +457,21 @@ SHA1: 1ff7b01356eaee17024fb21c52171801aed43464
 SHA256: c1d145079107390d45388fee935aa9ebb84f0ea1d12b298ee4fd3d0716d4c328
 SHA512: 3571200a9dd6dddc9ca4950c6227186cd76cf8f760ec6379b4d5c616b89c837de3c610e1c7307aaf214d6e83d42b58dc601a22f450c794b953013fd7890ad770
 Description: Administration tool for kernel IP sets
+Homepage: https://ipset.netfilter.org
+
+Package: ipset-static
+Installed-Size: 256
+Maintainer: @termux
+Architecture: i686
+Version: 7.24
+Depends: ipset (= 7.24)
+Filename: pool/stable/i/ipset-static/ipset-static_7.24_i686.deb
+Size: 48428
+MD5sum: 9c690dce4f720f15e4fa4d46a3045e58
+SHA1: e0f54adf4527dbc58d1d3900783b48caa0d72293
+SHA256: 9c8350a253be47f163cfc057ad15c7da51a669f2d036303fcd9997a395ac087f
+SHA512: 3883caf59beb98e7673997636286f13ba348499f007dafde53727c8b2b49d4798a74ce95a1f1b3ae8c9d00d223319f1264e8a55c474038269e0aa0d521f67642
+Description: Static libraries for ipset
 Homepage: https://ipset.netfilter.org
 
 Package: ipset-static

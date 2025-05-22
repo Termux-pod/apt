@@ -3464,23 +3464,6 @@ SHA512: 333f4804b0424ad50e167a5e9afd1ca1d98c703996762e8a496aec3602ec7df9aac79fc2
 Description: C language frontend for LLVM
 Homepage: https://clang.llvm.org/
 
-Package: clang
-Installed-Size: 138560
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Replaces: libllvm (<< 16.0.0), clangd
-Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 20.1.4)
-Breaks: libllvm (<< 16.0.0), clangd
-Filename: pool/main/c/clang/clang_20.1.4_arm.deb
-Size: 29457088
-MD5sum: 961e3c6c59f476a1300c8c9a40c2c092
-SHA1: a76f031a518b99dbd260505d69c8fe19c6e1cac3
-SHA256: a44991c9265ba07e02bf53d1b821e296ce93f2949602da1527f158e549b72870
-SHA512: b6c494f55ac2f1eacf2e9e7d1eee7c457d4494d20b07960dcb0af54f8fb72b057c03d30689f79eb48e4c2245d898e5c39de501880677a3ae0dfc2126f0c451c4
-Description: C language frontend for LLVM
-Homepage: https://clang.llvm.org/
-
 Package: clblast
 Installed-Size: 8592
 Maintainer: @termux
@@ -10445,6 +10428,21 @@ Description: Command-line wrapper for git that makes you better at GitHub
 Homepage: https://hub.github.com/
 
 Package: hugo
+Installed-Size: 51320
+Maintainer: @termux
+Architecture: arm
+Version: 0.147.5
+Depends: libc++
+Filename: pool/main/h/hugo/hugo_0.147.5_arm.deb
+Size: 11730388
+MD5sum: ab8ec0243973ce0518e3a37bf3266345
+SHA1: adbf8cc10717ba28b43fdd3c8037d2a8d6616e72
+SHA256: 1b5ecd86a4a8327f6fae9dc67ced0cefc4ecea015d0612454163aa1e44406228
+SHA512: 3e70d7a1ce62c8c73d4bdaef05997f959765235217a8aae3509a4a5af284cc9bc5a3711bf61dd18cc0267ce14d060106af7f66e368c22f3849520474254d1388
+Description: A fast and flexible static site generator
+Homepage: https://gohugo.io/
+
+Package: hugo
 Installed-Size: 51264
 Maintainer: @termux
 Architecture: arm
@@ -13833,22 +13831,6 @@ SHA512: 4afed4d4eb57ad5650edf0e14fe864ac1c3ec1bcb25ebe3b17c02690471a3138e7c6d3cc
 Description: Compiler runtime libraries for clang
 Homepage: https://clang.llvm.org/
 
-Package: libcompiler-rt
-Installed-Size: 15200
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Depends: libc++
-Conflicts: ndk-multilib (<< 23b-6)
-Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_20.1.4_arm.deb
-Size: 1603388
-MD5sum: 9775a661559dee6f689d5dbd6ab459a2
-SHA1: fb6008afea0a0ec3affcbcaeed66b95006f45865
-SHA256: ca4855633ca971a3a868e0b45aef6496d9126a64ad69d2e4437633e8ab8bb94f
-SHA512: 33a38ab1834c37299520d0d20d6c63481f8e3b87b53097b4a1d1b9b42327d46e9fcee681e9ec5ac459a6d4f3fd23184946aca931fa3dfb188b544ebaf211d05b
-Description: Compiler runtime libraries for clang
-Homepage: https://clang.llvm.org/
-
 Package: libconfig
 Installed-Size: 352
 Maintainer: @termux
@@ -16728,24 +16710,6 @@ SHA512: ceb9e1de7046216dfbc13432aa02a99b1a8a275c1a8430bcdd94e9c783fdc517026dfa33
 Description: Modular compiler and toolchain technologies library
 Homepage: https://clang.llvm.org/
 
-Package: libllvm
-Installed-Size: 138232
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Replaces: gcc, libclang, libclang-dev, libllvm-dev
-Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
-Conflicts: gcc, clang (<< 3.9.1-3)
-Breaks: libclang, libclang-dev, libllvm-dev
-Filename: pool/main/libl/libllvm/libllvm_20.1.4_arm.deb
-Size: 30336460
-MD5sum: fab684e40a0a24f7780ef5f7f98dbe6d
-SHA1: 4f273d535122de9bc9386a8af018af85b70d558b
-SHA256: 3b4375859b73fc7098c401c79d8bed90086e3ab1e6b845a0875f487396f610d3
-SHA512: f762744497a672cd79d0b2cdfcde58561f87718de4d55eaa8b81895412f619e475858ee92d6be7b379228507212a56309c3bb54f635e9e435b907558d8a89c30
-Description: Modular compiler and toolchain technologies library
-Homepage: https://clang.llvm.org/
-
 Package: libllvm-static
 Installed-Size: 808624
 Maintainer: @finagolfin
@@ -16758,21 +16722,6 @@ MD5sum: 4544560c10f1aa4ae91a648796430b2f
 SHA1: 8e2ac62648ca94d46ed1cc349b897946cf93f948
 SHA256: 083601f575c7335a5c08c715b870ced2ec671ca4db594850acbf64d6862dd1a5
 SHA512: 29323b1e9581c826f9367b222653f2b1b74847ce2b8cee4df2eea204d3d9e2169b3f855e8e6d47a525414672eca6ad475f2d5e97314549c0b4083376700fd1a8
-Description: Static libraries for libllvm
-Homepage: https://clang.llvm.org/
-
-Package: libllvm-static
-Installed-Size: 808560
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Depends: libllvm (= 20.1.4)
-Filename: pool/main/libl/libllvm-static/libllvm-static_20.1.4_arm.deb
-Size: 99485044
-MD5sum: 47cf593c8f45e8f05bddde7e34c5d1f5
-SHA1: c59e39734bc3ad1610fcdca2f0355d877e2d18fa
-SHA256: e47fe144ab8c4762f20a200ed1c2b311fb887a5299ec4e37db8e15269609c7ea
-SHA512: a70d35e4b4b72f8aa37df764ebd043d43830464ac27da34ef8bec4467bf36fd7d642eacba58e887db22c7e12930c1b9a602d7d4e491a7db8ea0b4921376e8f59
 Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
@@ -19349,21 +19298,6 @@ MD5sum: 53f536030c15110b7913bb026a1aac2b
 SHA1: 1b7ba298c45dfb14ae8fcdae8e05705812df976b
 SHA256: 740f3ca6ae8c6009b00037353533230f466ee289ae96eaf34b91fca4224b3e1e
 SHA512: 72d77bf5acb60a234b96b42a2c384621a74681cb80be341f3738fb8e5520bd0f04bbd2bffdc6da52ae2459c3a4ec3f0d9dbbcfebab21e283bf5aa4d72e0b1c37
-Description: High-level loop and data-locality optimizer for clang
-Homepage: https://clang.llvm.org/
-
-Package: libpolly
-Installed-Size: 4412
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Depends: libllvm (= 20.1.4)
-Filename: pool/main/libp/libpolly/libpolly_20.1.4_arm.deb
-Size: 1197928
-MD5sum: b955176078297d11ca874993611f107a
-SHA1: 39e8da16ee7f58bc588c83184f7434f6dedb0fb4
-SHA256: 8c617e4d8363062a857e4addbe788c938f96934afa1c5cfba5123df2a0468af9
-SHA512: 82ff493f59a15105d6b4f780e3c14e3376ee5dc1ccf06c0c912f546d18ae41dfeb4eb6ce263d3c722516968733889575dcdd8a1bdffe353486b73c09b5584ef6
 Description: High-level loop and data-locality optimizer for clang
 Homepage: https://clang.llvm.org/
 
@@ -23805,21 +23739,6 @@ SHA512: 6cecc88fcbab07c1094d1ea3b73cbda1ea0f6179154729070b2be722b9172b5a9217fc39
 Description: LLVM-based linker
 Homepage: https://clang.llvm.org/
 
-Package: lld
-Installed-Size: 15656
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Depends: libllvm (= 20.1.4)
-Filename: pool/main/l/lld/lld_20.1.4_arm.deb
-Size: 2770768
-MD5sum: 4894bba97f4506a3b8edd825ca37dd18
-SHA1: 81c5706c73271325f3dcf71e40a0acf66ef00106
-SHA256: a8964756d0ff7fc44e8ee995cdea8cbd0852fbebc91c900ecdf3f7e36cdc55e1
-SHA512: 7559e674b0295781a235e01bf5a860224a446f8b6f41fff2fabe954919d1847705cc32bd4c14afddcb0f4baa230d1c24d2ee6bf0bf3c12fba7adb936fca93bde
-Description: LLVM-based linker
-Homepage: https://clang.llvm.org/
-
 Package: llvm
 Installed-Size: 56044
 Maintainer: @finagolfin
@@ -23834,23 +23753,6 @@ MD5sum: 7db7941fd0b7d9755b90c631ab6eb8f8
 SHA1: 06daf931deddbce1efdbe90ddf3b476c23a9a20a
 SHA256: 3b0500938d5bb3b4b3841658aa64737e70f8a86fb784cfd3c720c41c576a94ba
 SHA512: e0eb2159164cd9c013cfec26bd67bf7e36df1a13ca103c6d44a7efe488d13bd08ac3c228b7a407fa448f72fdce32dece30b4e6a479f4518bbff8c747518db6a6
-Description: LLVM modular compiler and toolchain executables
-Homepage: https://clang.llvm.org/
-
-Package: llvm
-Installed-Size: 56040
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Replaces: libllvm (<< 11.0.0-1)
-Depends: libllvm (= 20.1.4)
-Breaks: libllvm (<< 11.0.0-1)
-Filename: pool/main/l/llvm/llvm_20.1.4_arm.deb
-Size: 14940452
-MD5sum: 0dfe673ccc23894833aba2dec340c2cb
-SHA1: d413a0d399b93cb4d5fd3b7a46b59e318aae873d
-SHA256: 0ea24ab4ed542379990a2f877fd6840397a06f7001f682d40e276a226eec4e6d
-SHA512: e57b863d2da37c7743672f94cb6d1397e5385858822390121a91ca45ab34f0ba63b53f79decc7f2eda3066f55afde16f90a16eca4bc356de9ae2fbc3b1f5e117
 Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
@@ -23930,23 +23832,6 @@ SHA512: b43c65fe0af2f945f574b19b79fbd7bf1dd46f699a6e91b27a588a86b47de4212b6d09a1
 Description: LLVM Development Tools
 Homepage: https://clang.llvm.org/
 
-Package: llvm-tools
-Installed-Size: 8340
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Replaces: libllvm (<< 16.0.0)
-Depends: libc++, ncurses, zlib, zstd
-Breaks: libllvm (<< 16.0.0)
-Filename: pool/main/l/llvm-tools/llvm-tools_20.1.4_arm.deb
-Size: 2256380
-MD5sum: 74f95b2fe4b97611bbd476aa2583a400
-SHA1: 812e6481cbfb46ddafed8601a3ff1c616dd36214
-SHA256: a461968db3c9cc935cf349f249276ab9cd59fd923008f1d6e6cd29ad647346e3
-SHA512: a19168b6488a2ec53f21552589bc413ba99541f6058370824f319dd42d064a3e95f4630a7ee71c63f23c5c8ade034620b131a21b63c2033642df9aabd27b613a
-Description: LLVM Development Tools
-Homepage: https://clang.llvm.org/
-
 Package: llvmgold
 Installed-Size: 84
 Maintainer: @finagolfin
@@ -23959,21 +23844,6 @@ MD5sum: b3abb33a2fbf30a7f332c92621b1fe64
 SHA1: 2c969ba6cbc35751346ce0e1dec8642ffb547ef1
 SHA256: bbef3393b26293e0fe3cfc575f7e7f14963659d9e8ffe4380118752ddae27cbf
 SHA512: 253cc5af631a7fea9810d067d0e9bb4cd189b860cc9f69aa8a84b0aa6f7780d961f61be58d169f1e410d63f24cb10690fc10dea5f9ae99f74f2e71ba27cd7107
-Description: LLVM gold plugin
-Homepage: https://clang.llvm.org/
-
-Package: llvmgold
-Installed-Size: 84
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Depends: binutils-gold, libllvm (= 20.1.4)
-Filename: pool/main/l/llvmgold/llvmgold_20.1.4_arm.deb
-Size: 24348
-MD5sum: f85c08608db660b64d71262be21d7f8a
-SHA1: f2c94cad2f96523860c632962484efaea5768621
-SHA256: 084bfb7732a221faf0e22d391fc264c4c30675c5c29839e60079cefec96894c0
-SHA512: 732516bbda58749e81ac55e5eb005318a5fafbfd5eeded687d59f4223947180aab8a7c914da63b753de42e657f7365c846aa493a76cdc0f894b0d56419633015
 Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
@@ -25870,21 +25740,6 @@ MD5sum: 58cef43f3fd605203ea7d89836c7ca0c
 SHA1: 0fa1b3fb891aed99e400690357bf6dca6d98083b
 SHA256: 0b1699d92326d7ba3ad0e2e8a4983d12634451f852c53e215b7735dde1d9f52c
 SHA512: 66f0b68255fdb0317840f3973155b3719009b368e57d962d1f0d70d97391c0709755da8cbe32cf5790a13bd0bbaebd4a3033d44a23704846204273170c3b19d2
-Description: A Multi-Level Intermediate Representation for compilers from LLVM
-Homepage: https://clang.llvm.org/
-
-Package: mlir
-Installed-Size: 157068
-Maintainer: @finagolfin
-Architecture: arm
-Version: 20.1.4
-Depends: libc++, ncurses, libllvm (= 20.1.4)
-Filename: pool/main/m/mlir/mlir_20.1.4_arm.deb
-Size: 23735580
-MD5sum: d8394e803fa90115d5ae386929d229ad
-SHA1: 7b06d7a26c255d1219e9bcd419cc6e94a846ba01
-SHA256: aad31d59502958e232f1c63c4b045043a4b54dd42ac2734c8b60fceff080d2eb
-SHA512: d934eb5a3cb9c11771f20b9b8fd687a55736441e3075f89d22b5d2a165b42eb276d627aa81dd112927748a32d02b7a1e1a9943006a7ac263b663ee9df3563ff1
 Description: A Multi-Level Intermediate Representation for compilers from LLVM
 Homepage: https://clang.llvm.org/
 
@@ -31548,6 +31403,23 @@ SHA256: 2990eb3ee52ee3ded3f2a0f8db15a626aabb16f7e7d71a380f5ee8960d404e41
 SHA512: d8e09d4faf8851275b8f6b3e5ebe052f127edd7aa8cf533bcff19a603686dedd6b6af62f9cbe04577791b6de0eb2ca4a75480afb5ec4ad4bb485191bc86aae63
 Description: The Python X Library
 Homepage: https://github.com/python-xlib/python-xlib
+
+Package: python-yt-dlp
+Installed-Size: 23944
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 2025.05.22
+Provides: yt-dlp
+Depends: libc++, libexpat, openssl, python, python-brotli, python-pip, python-pycryptodomex
+Recommends: ffmpeg
+Filename: pool/main/p/python-yt-dlp/python-yt-dlp_2025.05.22_arm.deb
+Size: 4889964
+MD5sum: a885d3bca20cc04b0afabe94e05f8df2
+SHA1: 91b08ad621d9e304b6fb57701ee3d8b88b3b1acc
+SHA256: 580e49a8d5fd9f21ef023e2066de3966861d8c86b0b4541cbb64bdeaa1b99e3f
+SHA512: 684b5c681f68b38a2d7cd281891a284186e5682a2ec728fc5f79f2e694bf1e36d327582b290904c1a1f8e138e2c4fb745a830178d5ce5ddb2cb00d807c002951
+Description: A youtube-dl fork with additional features and fixes
+Homepage: https://github.com/yt-dlp/yt-dlp
 
 Package: python-yt-dlp
 Installed-Size: 23704

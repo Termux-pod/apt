@@ -3507,6 +3507,23 @@ Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
 
 Package: clang
+Installed-Size: 184764
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 20.1.5)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_20.1.5_i686.deb
+Size: 33798132
+MD5sum: 0d5104da2cde46cf40f6b4952b9d6730
+SHA1: 9bbef1f473c16323f37207b5178201d3d650fe5e
+SHA256: d3650f85e17728e50d222e51e50c66c5307168c50e4c68787eec11416db83084
+SHA512: c81cc33858618d4d5aec61fd0f92700956c873d80754315289c7028391535e9c9b0d71fcdcf8ba4117be78fc254a2d9d85089950ea54ec01ce15ae3623922c47
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
+
+Package: clang
 Installed-Size: 184804
 Maintainer: @finagolfin
 Architecture: i686
@@ -11676,6 +11693,21 @@ Package: jackett
 Installed-Size: 14272
 Maintainer: @termux
 Architecture: i686
+Version: 0.22.1938
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.1938_i686.deb
+Size: 3180856
+MD5sum: 806a138cd6ce1107fe5232dcaa50392f
+SHA1: 60bf88cc0f9b24ae638d7c1559d73ae393f7be67
+SHA256: c54a881600f13bdad6e840dba1a6474a64d5d626a9c7dddf65ef4451909d615f
+SHA512: 2a6349d7a22ba634bf82f55b69ed8c122ca54f46eaec596b1065d8da66373c19284dfad0edb2e2641e8beada052bc45f337e2fae6640b6042cfe780d93969006
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
+
+Package: jackett
+Installed-Size: 14272
+Maintainer: @termux
+Architecture: i686
 Version: 0.22.1933
 Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
 Filename: pool/main/j/jackett/jackett_0.22.1933_i686.deb
@@ -14217,6 +14249,22 @@ SHA256: 7cdcfa8867b6c5f75881967b330eb1eff3b64d1cf9e8f8a2a02d0fcbbf7d5d52
 SHA512: 71cc09d9b7b2a5c32a9106921c85ab7215b08283f40e9f1398ff9fe04ab83d30d43cb3ddcf8e261a18ba6b6736ecb1d5cf7c2a3e7874ba2816c3629a1be4675b
 Description: A host of helper utilities for the java.lang API
 Homepage: https://commons.apache.org/proper/commons-lang/
+
+Package: libcompiler-rt
+Installed-Size: 12996
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Depends: libc++
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_20.1.5_i686.deb
+Size: 1387796
+MD5sum: 755ac30019c47090e72b41a8b73e412d
+SHA1: 7eec7352a120f5c9c9e09636f7a3e403e9fd81cb
+SHA256: f5049248e54ebeed0fb8c77d479118ac812165acea41a3e01b896a27bf1c40f6
+SHA512: e3cde53285fd2669a5f29f6fd06a0543aefd7adae6cf47deba3df38611dfdf263f8542d2a1007ea01379dcd6e554101d3006980b73fecc30c2604b4768a2174c
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
 
 Package: libcompiler-rt
 Installed-Size: 13748
@@ -17081,6 +17129,24 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
+Installed-Size: 178292
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_20.1.5_i686.deb
+Size: 34491504
+MD5sum: 648588f42382a2da38b81346285aabc4
+SHA1: 044a0923cf00c589900b3c36402e9599989699c9
+SHA256: 37b4554b788d28e7e284a79436fd2521fc91d284f8edc110ba731ecc95689abe
+SHA512: f0493b76380475572d7881b143c67cbebbda854dcec1daa619de4b1fd50d421ef3a6614d729416b469c396de5251b0ab7ae1284285f369ee3a2dd74ad9423e77
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
 Installed-Size: 177460
 Maintainer: @finagolfin
 Architecture: i686
@@ -17096,6 +17162,21 @@ SHA1: b342e459c731323e4ac0d0539b18b831da5368db
 SHA256: c6ab23bf126597997a1bf288bd37a5d618b7e45b6d68333a8bc71cd2357589be
 SHA512: 03161f0238733a0fa19a78887d0a234b94826efc787527260fdc801da3aa9201ee885395e4050aa52d006c063c8c511db15186f1fff6529160247883fad04889
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 700332
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Depends: libllvm (= 20.1.5)
+Filename: pool/main/libl/libllvm-static/libllvm-static_20.1.5_i686.deb
+Size: 87929580
+MD5sum: c117fcd74b6345298e994ed4d6512f05
+SHA1: 6ea9154a2187c53a71e414fca933e1baba71907f
+SHA256: 822de44276a92c976d614c7ec89f26407ab7f9a0d650249c415318a1ef4afc88
+SHA512: fed76afa470a0077b77e0c2e02730fbcf9fbac7b611917c651ed4012990b4cc05de8c8375964869b7054a289ad51b0d2731a7801ce6012f32bfa27ccf1fe0141
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -19673,6 +19754,21 @@ SHA256: 65d6d94cf5f34c09256eb228ba2e717663cb64a931fcd1d4c256c60dca6645a1
 SHA512: a8a6b3c31736abf70c00df0ddc00b9f0f472bdc3d04282c39a16f61e7c0aad02de2d65ed8c3c8da1e97cbe769be936ce20c95bd45d1b2c3ad50818a94248ff3e
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 5936
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Depends: libllvm (= 20.1.5)
+Filename: pool/main/libp/libpolly/libpolly_20.1.5_i686.deb
+Size: 1414872
+MD5sum: c858c8ff1d18d68e926d00998166e61e
+SHA1: aad77a2db8d75439104060ea5cced500c15820da
+SHA256: a4de0e351bfdb06b1eed69613247b83a26020dd6ba11e7f349ed08a8a0458536
+SHA512: b1282de20520102714591377c612e5cb7587b407c943e0b882f452a8c7f21e05e84164e5a271406b96ffe573b36f1cfb63bf3b4a1a8ac1f6a668b69c96741851
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 5936
@@ -24113,6 +24209,21 @@ Description: A low-level build system, used by the Swift Package Manager
 Homepage: https://github.com/swiftlang/swift-llbuild
 
 Package: lld
+Installed-Size: 16904
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Depends: libllvm (= 20.1.5)
+Filename: pool/main/l/lld/lld_20.1.5_i686.deb
+Size: 2912732
+MD5sum: 0af0400b1b55e2c2ab9a04f67331d9f4
+SHA1: 93ac1662ef7b70ee0f698890ba32ce6f8578226e
+SHA256: 69a3444fb5cff109510136546ba64cc087bb93fbd0c988f79941fdeb52e22a49
+SHA512: 004e3fa9a7321ad5678eee2c9d6d5e4ebe9d567681ab8223428da448bb1688b245339e11c51d7ea5e375d0d6667e8677715e1438fe5cce8fcb7b28f23121190b
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
 Installed-Size: 16908
 Maintainer: @finagolfin
 Architecture: i686
@@ -24125,6 +24236,23 @@ SHA1: afdcca197f526d63ef61275ca6c044366f23cff0
 SHA256: 5f2954f6d641e85b1685cd6117b22f586f71ffb51ce9eeaff1ea1e0d6f62919b
 SHA512: ec57f4e00c7776f3d96ec8bfcbb251b38494adb8ae91f37cdba1c4c5396809ac348df10364d5835a00af129838a383669ad444f3ff127a5b98a6918c577e640b
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 78360
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 20.1.5)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_20.1.5_i686.deb
+Size: 17261876
+MD5sum: 773ab7236bf4227a909966c7c3c5ea45
+SHA1: a8e04339987b9918e8c60ac2453f0e4e2041e927
+SHA256: c63d12a10d23a5a8e5c733508bbf9086e100556b401c103ecc647fffcd64cfb1
+SHA512: b6e8326039de93398a33d6e47e4a1b903e132ce611ccea8559d33e09845f6cbd8baa2aa4c758056ab9e375f95f4d350d3a3719e76258149ada06406b49313f1d
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -24207,6 +24335,23 @@ Package: llvm-tools
 Installed-Size: 12640
 Maintainer: @finagolfin
 Architecture: i686
+Version: 20.1.5
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, zstd
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_20.1.5_i686.deb
+Size: 2625928
+MD5sum: 6aa3f8db3c26d723f5dc5f7d77a42d93
+SHA1: 1997e7f067ce15484347e38ecee415eb65e5171a
+SHA256: 077fac5dda48d9c9d002b48c7d87448aba715e63bdfeb0f4627af78175fca9cc
+SHA512: 07c527429c1f643b952820919a529c77474e9b8658a569b86aa4b4d8c3fd0db65fc5b22554a0ae808520e43da6a0e6b0e7e5d3d6231c63523148ea0a7e29bc92
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 12640
+Maintainer: @finagolfin
+Architecture: i686
 Version: 20.1.4
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, zstd
@@ -24218,6 +24363,21 @@ SHA1: 52ea669e37d9a7bcada8de6e055b13911c05abc7
 SHA256: efeca50079c8d98d3b98b1bdb78f027fda6d034f831f61102a084521fac269fd
 SHA512: 7a6b74844108c9d223d8be549d622bf8ef11e48f33e23d67050eda722b3096a30e993f83eaae20f1f7f07cdf355bfcf2f5ccbed787cdeee85c820862c92fb27d
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 112
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Depends: binutils-gold, libllvm (= 20.1.5)
+Filename: pool/main/l/llvmgold/llvmgold_20.1.5_i686.deb
+Size: 29824
+MD5sum: 109e78d766c43d9b44c4438822ec5404
+SHA1: 8b257b7be876588faa2143dad30dfb1a1c780aa4
+SHA256: ce6ed0273d522c03d168f1aa7da4249707da8a5ba45d6a1d0a65061ed40a0c4f
+SHA512: 884cf29a0baeff2d2c76431d5b38c34bdcd421c47b3acfd89991255a2144308accda1c6a7663461e7b4f56c88818f4c4693f8eb50cc8ab5d1958896c25a84ace
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -24761,24 +24921,6 @@ MD5sum: 605fc9f8775ef8443e56caea17551819
 SHA1: 9ec1e8be4e5f4800848ffa99719a5ba03fdb0f60
 SHA256: 5d4c5d458817567eb30b5925a8f60e7ab71ed86e5773a5deda408c7157b8851a
 SHA512: 6598ba3e88f886f34e45d9fa806491daa6dbdc2e27fb0532c2d890692bfc8d21c1b192f83654107ce19038ca5dab42291467e7d32e5a1a8968c974769ab223bb
-Description: A pluggable transport plugin for Tor
-Homepage: https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports
-
-Package: lyrebird
-Installed-Size: 15980
-Maintainer: @termux
-Architecture: i686
-Version: 0.6.0
-Replaces: obfs4proxy
-Provides: obfs4proxy
-Depends: tor
-Breaks: obfs4proxy
-Filename: pool/main/l/lyrebird/lyrebird_0.6.0_i686.deb
-Size: 4862260
-MD5sum: c6824e90371852bdfbde38baabcae2bb
-SHA1: 192e8b5284d6e09ce34ac953bb85f46bb5dc31a1
-SHA256: af9fff416b29ad2c7ec104223e976b27ee9c32d023a6b978bebdd4546f822a85
-SHA512: d20ee6510fadbb28822ba5984830c873cc841d99fc6b91fc8c3da23ab333f3f2f440f0a2397ef9379912d10a768b64be592a4a7e6ca52d6df869cf1b89396f3e
 Description: A pluggable transport plugin for Tor
 Homepage: https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports
 
@@ -26099,6 +26241,21 @@ SHA256: 69dc50949953e33715326352a2b9857c98d33cb09b16ba5a6366c424e05506a1
 SHA512: 8ba48472d277e40d4c0f4bf94d53dd8e9c0f07661d27084dc9ef8aacc83b980eedee0d921d4c357d2f24fbd22a090879e9673a300e02b8a6422606fcf320e499
 Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
+
+Package: mlir
+Installed-Size: 226904
+Maintainer: @finagolfin
+Architecture: i686
+Version: 20.1.5
+Depends: libc++, ncurses, libllvm (= 20.1.5)
+Filename: pool/main/m/mlir/mlir_20.1.5_i686.deb
+Size: 28311064
+MD5sum: 7de2261d92e0ddf92b40d08bdfd816ff
+SHA1: 43533d22090f2b8af8d15ffe5c01181d118478be
+SHA256: 3bb3789d88dc0f2343f7763ecf51716ba0e1649560bf7a983c8000fbdc4c16e3
+SHA512: b50676d5276d3fda17c723e6929f470eeff4a1bfb5ec41f3484ed3bd92620037123bdc6310860501b13d6f4adf6423adbdabca4ee90fa0f85c1f57a7524016f8
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 226904
@@ -29257,21 +29414,6 @@ MD5sum: 1d4d0135f7517f13a2b3cc26cd4d2ac9
 SHA1: 793c47335fcb68d88822129b98eae94fc7fc8dc6
 SHA256: 9a33505bf74ba8a5439904ec3a1aac7d7c3f9cebc6f0bf97e9f8e5706893c9f3
 SHA512: 82f3183bb2611210d6235bd7797b10c5677d265a6db540ef6cdde274ba83aaa4539c0daa2289b0103f675ced55f3be2de62013e1e0b3e41c92438e67ede865a1
-Description: GNU Parallel is a shell tool for executing jobs in parallel using one or more machines
-Homepage: https://www.gnu.org/software/parallel/
-
-Package: parallel
-Installed-Size: 4784
-Maintainer: @termux
-Architecture: all
-Version: 20250422
-Depends: perl
-Filename: pool/main/p/parallel/parallel_20250422_all.deb
-Size: 2086872
-MD5sum: 6ccfa6b59af19d8ae2941668815b113d
-SHA1: 3758d45d0d32729c769d65151e8a279c01f4db86
-SHA256: 29f7b2ea3ad143d6a11fd77572de97dba3145fc25a28e6c06d7fa29524bd7d40
-SHA512: c39fa143d3c56475d72bfd3970c44a0762cf62f25620c4e7bf7988d349fa74718920429c3338b31ccbfb07dc308ab144dcfc9b95632128267f5a23ce4e96ac7e
 Description: GNU Parallel is a shell tool for executing jobs in parallel using one or more machines
 Homepage: https://www.gnu.org/software/parallel/
 
@@ -32603,13 +32745,13 @@ Package: rclone
 Installed-Size: 81476
 Maintainer: @termux
 Architecture: i686
-Version: 1.69.2
-Filename: pool/main/r/rclone/rclone_1.69.2_i686.deb
-Size: 22129388
-MD5sum: d12edd38b3e7dd1f52d86b569cb47199
-SHA1: 872aafb6c6cabbc4c666f5943ed26ca14b51a0e6
-SHA256: c0dc21b2dbc2bed163bf12bf7c415db25d6e9c2c038bc9f61befca81947ab318
-SHA512: 161494eb41b6b11a54713e65296847e496da605499c7d27294981bd5dc420dede6f41a659bcc9a7c2e1b48dbd947d17d8b153fa85f4fb6210b60359d7197eb0b
+Version: 1.69.3
+Filename: pool/main/r/rclone/rclone_1.69.3_i686.deb
+Size: 22126676
+MD5sum: d5000fa8c0d7267c28cf88a0da1380a2
+SHA1: 3af95081f9692bdf2e9df44c3c409b5c16e1f9a5
+SHA256: 3ce9f230f3657528097b3861cf31ed4c0cecda2987a21d9a4dd2839d03c1d462
+SHA512: c87526bb8c3bfac1c3257bf8ca8b6fdda6cb98baeb63a6450e76558416fcbb3acc7acf506330865328b401473ab21b95138cee0321993c53f9548f3c8d7e1f91
 Description: rsync for cloud storage
 Homepage: https://rclone.org/
 
@@ -39172,27 +39314,6 @@ SHA512: 18c3010b3df5774a615797a06a962e0ea214bc4bd65ba8458073ed6cf7a40094a0a06f84
 Description: Vi IMproved - enhanced vi editor
 Homepage: https://www.vim.org
 
-Package: vim
-Installed-Size: 33532
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: i686
-Version: 9.1.1350
-Replaces: vim-python, vim-runtime
-Provides: vim-python
-Depends: libiconv, ncurses
-Recommends: diffutils, xxd
-Suggests: libluajit, perl, python, ruby, tcl
-Conflicts: vim-gtk
-Breaks: vim-python, vim-runtime
-Filename: pool/main/v/vim/vim_9.1.1350_i686.deb
-Size: 6536460
-MD5sum: 295bd40bb5a958eda61e4c26d2178607
-SHA1: d55dde55ac3f2f91ce4bc2689d3964fb10e03d1a
-SHA256: e962324db2d792ea8594d1e769e4d1ce4f4f93a74ccdce54490d2a09d0336f90
-SHA512: a2bcaa0010b2a0fd5b24595a16972c2f3134283d0b44f98652375c779b97116d6de3a953269c9383be85b6af34fb79a08bd52e342980ed49eff5b3080b765165
-Description: Vi IMproved - enhanced vi editor
-Homepage: https://www.vim.org
-
 Package: virglrenderer
 Installed-Size: 616
 Maintainer: @termux
@@ -40520,20 +40641,6 @@ MD5sum: 66099114118fa7e1bd9004c47dbd0848
 SHA1: 204c35e58ec0a3280a74722b53ba654f43aa4c90
 SHA256: 68e241438e2b7ad465f3d527d950d335c54542da1ebed320db2c446a34fdf694
 SHA512: 8da98610affa7125c9d41e524dbec7b20d77a2ac4a59b5920f56e92016b6ee61e0891600f5a7a364b0bfbaeaec97e7905910540146b9ac0652abf670b3f4c27d
-Description: Hexdump utility from vim
-Homepage: https://www.vim.org
-
-Package: xxd
-Installed-Size: 64
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: i686
-Version: 9.1.1350
-Filename: pool/main/x/xxd/xxd_9.1.1350_i686.deb
-Size: 13048
-MD5sum: 2cf1b07ea4d285b3257ff7bee71126e2
-SHA1: 539fc7ecee06ba43feab26cba5218167300f44db
-SHA256: e4cafc7890b33dca5c05378eaeb0bd070e6a4ff2f269307317588a2253f8d756
-SHA512: 80c49b94b43e0b001049f1491f24e3b695b28fdcd6fd4d2e51ddc3c2c042ec45301cc8ea443daa6b090feaeb3a68d05dff83a75cf9c5b3e8966a2bb16a925cb6
 Description: Hexdump utility from vim
 Homepage: https://www.vim.org
 

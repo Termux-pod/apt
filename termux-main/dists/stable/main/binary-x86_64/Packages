@@ -6508,14 +6508,14 @@ Package: enchant
 Installed-Size: 304
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.8.4
+Version: 2.8.5
 Depends: aspell, glib, hunspell, libc++
-Filename: pool/main/e/enchant/enchant_2.8.4_x86_64.deb
-Size: 60764
-MD5sum: 3c47d4851ece186eff6aaa2276798ec6
-SHA1: 2176deb1e7347387a65eee35a33ca0f9ec54cc60
-SHA256: b1d8483406f150e5aa80d59ec6c463d60fe7551bf82afd4e13f89992a66bec58
-SHA512: e8acd721a8a7add08cf731fac9594898795085d61e99d9ed07635b229bffef3aedd4ca3c128537e53232da42cabd9e0b1e5505061e4874e97597720ec393fd2a
+Filename: pool/main/e/enchant/enchant_2.8.5_x86_64.deb
+Size: 61084
+MD5sum: 4fefb474badb8d44d696b7f0e2420e43
+SHA1: 8d60c447b251d2524811548a3635021a29c7a2c5
+SHA256: 4a01bcd6882318643c41257ab44b9a47648bef04e90a53552f4bbf3b5c38ba3a
+SHA512: e36f8ee1de36409c9e99d1a9738e37cf57210731ab17c799a586fd755751e06bbb00945bb66f8e52e27729f98107af4b93190c3577e2ee834f82ff375862cc63
 Description: Wraps a number of different spelling libraries and programs with a consistent interface
 Homepage: https://rrthomas.github.io/enchant/
 
@@ -6523,14 +6523,14 @@ Package: enchant-static
 Installed-Size: 236
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.8.4
-Depends: enchant (= 2.8.4)
-Filename: pool/main/e/enchant-static/enchant-static_2.8.4_x86_64.deb
-Size: 33776
-MD5sum: 2e9b784280a244b983b7d545d2c95807
-SHA1: 7a16d8a18d09640f6b7ef7bd3fe220c45c5fd0df
-SHA256: 4477271e9ef5e102212730216d82d5668e9262a90be360b77c97b1ff6f33cefb
-SHA512: a60c78ee9b4a70f0050d53504d773703ce7b9986249b8d687db39ff3e1b29dd83e44bf27789025771418868494599991257d7089a80bd358ffa77b6747709189
+Version: 2.8.5
+Depends: enchant (= 2.8.5)
+Filename: pool/main/e/enchant-static/enchant-static_2.8.5_x86_64.deb
+Size: 34116
+MD5sum: 25caddc1ed364723a9340ffb99d60913
+SHA1: 652da2cc3de46e776506f02f08d1cd403add7af7
+SHA256: fe89900a87a71acbb633db355bc84983cf14a266cfe974c39d13149444f11f82
+SHA512: 4d8efe56ea96042a8704a7d62b610791e94267797dcdc3f67a1c95a5bdf40b015f3af4178db9a55b85c939eb8e4233e16062cb72d670c0749f460f2dc73442b5
 Description: Static libraries for enchant
 Homepage: https://rrthomas.github.io/enchant/
 
@@ -24344,6 +24344,22 @@ Package: llama-cpp
 Installed-Size: 49400
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5481-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5481-0_x86_64.deb
+Size: 7177892
+MD5sum: 814d5b052cadc01a2cd8d2827236f40a
+SHA1: 5e558d9f56611bf9b3903d37fefb6aabbd4ad05f
+SHA256: 9a1fc3958662964f5044ef94e21c09e2238290fc84f0f292c6a7c1ec7e3faa7e
+SHA512: 14a881dd3f9ee097568ad2eb07499a9f2e36adbfe62ff49f5316190770202cbe60075da55f2ee136fcae05deb42aa686ecc9fa3d63ade6a9125b5094f74b09f0
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 49400
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5478-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24356,20 +24372,21 @@ SHA512: 18ff417f138807a7c2a51a5d391ed63f73864146b8cdfed4a2179dfbfda9fd0cc2895e43
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51380
+Package: llama-cpp-backend-opencl
+Installed-Size: 384
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5477-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5477-0_x86_64.deb
-Size: 7442480
-MD5sum: 56eb44d3e9ffae81b623e6daaf766229
-SHA1: a7e5d3e3bcd02b2c7ad1a0e129f5439b473eb9fd
-SHA256: 67e54777041b153e247b4c91a531df293a79f407674d33a279efc21788a4d081
-SHA512: 59d0cb2adf9def89d100bc7331d9faa7d642971b99f071ddff2da42d10260500a387b7ccb1ce957a101f485d50bea189c18745ca2ce59f42b651251d3c55bcc1
-Description: LLM inference in C/C++
+Version: 0.0.0-b5481-0
+Depends: llama-cpp (= 0.0.0-b5481-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5481-0_x86_64.deb
+Size: 70864
+MD5sum: 8befc4423518625958310725ec18a548
+SHA1: 6053ab06eba53833a5b1e0e696d4c758997e64e7
+SHA256: ccb8262f4a613f03d13815d8fd7ec29483dea56489507a44f32ddf5d1f747de0
+SHA512: 2925bfadd5c579e7c00da9ad3a0586a0374e6ca13a5b15bd36120487f611a1281e61a943c8b3ce08de8addc346e68f04adddce9e1997b48d58edc9c235fbfa56
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24389,21 +24406,21 @@ SHA512: 3d73c078ec4ab963d9f94ce1f99ce1f0d6c4d65b0846ceb2bbca84153e1fb3d298d2aa7e
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 384
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12952
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5477-0
-Depends: llama-cpp (= 0.0.0-b5477-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5477-0_x86_64.deb
-Size: 70828
-MD5sum: 64f404c005968c2e0e127fe63b122b81
-SHA1: b13f8d8496f1bfe82c3845070b79a6c320abf738
-SHA256: 21da1d49d028782d3fbcaf538e53fc2a34d068daff8a0ba9b84d7bed1b459a53
-SHA512: 25d2ba15a8f844cb40ec152bb4352a3c7cf39b5ba36e90a5030fc1274a272e8f65f49a80baec796c50e163a2b186b7edcb171ac02818eaaca529933042bf8628
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5481-0
+Depends: llama-cpp (= 0.0.0-b5481-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5481-0_x86_64.deb
+Size: 1016816
+MD5sum: 3a3489c361c062c7319f3160cd0ed0ff
+SHA1: 57fdce8526429da643b14fc088fc97abf7b91760
+SHA256: d74ecc1a4f1db7cf8d91815e71edb1aa717019dbe0e7f9cae567a913593cd009
+SHA512: 3f90f11e66a1538b4b0cb10a50b4c846ec7c1d4e681766d5511c0e58d9dfc7f4d1612338eb30b8a8dc9a8bf9a3b8b12a6f7944987cc364f871731231c0afac14
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24420,23 +24437,6 @@ MD5sum: eb6e7165bb071a373b39b2b9f5c4d7a1
 SHA1: 8d3a00b528e22ac6ee076f7c85a7424001388cea
 SHA256: 0929d843e01e3ebe911961815546c8ef63f075d743fe42cefa28c3984b8168b8
 SHA512: 9b931d812eee2bd0b82996a667ed650a42653dba018259696fe73b1cf9dd27750185452c5b934fb2e259b0a7ca4d180094ed5ccae130102613cb37ca5a9fbd50
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12952
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5477-0
-Depends: llama-cpp (= 0.0.0-b5477-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5477-0_x86_64.deb
-Size: 1014412
-MD5sum: 76b77ad402cedc80e797e444bfb71959
-SHA1: 24ba5fc02dbf1fdb997c403892a90eaa65fd0f90
-SHA256: 9996e7e2b2d0bbd33e0c677950024b039c6841dde751aa30c7763b84403c81f2
-SHA512: ee48f863eb62dbcbe5f439f6278d879fc0d3d3b322ff7f0b2f5ab624fa8b325a89b2877461972a3ee44c9b397fda2ef1781ad2216c7c6c1350e730284b01127d
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -25380,22 +25380,6 @@ MD5sum: ba1668593f675ab20284404a59d403ef
 SHA1: 555f4affe9dc61e25dba99a48a664302eccb63f4
 SHA256: 82ca36525ae48c19f9d0a11b5784aaebd49bd5e098da01cf60824276a663a063
 SHA512: 1ba2a4ac5fe8cb0fe926dfe723bdfce27c00c1c67c792bb2f07c40d2c9d43f5084882094e3b10f25d3fd3f8678f114594c1f9bfe1059e2e6a8581e7c61c3d91a
-Description: A community-maintained Python framework for creating mathematical animations
-Homepage: https://manim.community
-
-Package: manim
-Installed-Size: 6256
-Maintainer: Nguyen Khanh @nguynkhn
-Architecture: x86_64
-Version: 0.19.0-1
-Depends: ffmpeg, libcairo, pango, xorgproto, python-numpy, python-pillow, pycairo, python-scipy, python-skia-pathops
-Recommends: texlive-installer
-Filename: pool/main/m/manim/manim_0.19.0-1_x86_64.deb
-Size: 974456
-MD5sum: f5b1e765edc37d05320857394e109e82
-SHA1: 657040c46c7adf5be42952127e7de10f3379dd82
-SHA256: 1b8429a63bce7313c0cd88feae0f906c677f7747549061be42ae69267edcce7f
-SHA512: 0fbf3642dcc1f74997803a03d67b381b0c26707e2bd472b02c37b9ab3bd348a013dc1ac9fe5d75daac4ba2eea2c8da2d910194bb72a83e63b44cc43e29a4b69c
 Description: A community-maintained Python framework for creating mathematical animations
 Homepage: https://manim.community
 
@@ -37665,6 +37649,23 @@ SHA256: c8266830ca901a27d97eb7eaf1c21a00da34f91ef8151016ed00828c2d313c19
 SHA512: 1006eaa958b3ec9252d76e7880806cc7a1ce8961b72a4f10ed0bcdb9d3cfe8dee664ba5d3659811c80a266814ba1fd250ddbe031d4529e472f6e44eb53e034b0
 Description: Tool for analyzing control characters and terminal control sequences
 Homepage: https://www.gnu.org/software/teseq/
+
+Package: tesseract
+Installed-Size: 28684
+Maintainer: @termux
+Architecture: x86_64
+Version: 5.5.1
+Replaces: tesseract-dev
+Depends: fontconfig, glib, harfbuzz, leptonica, libandroid-glob, libandroid-posix-semaphore, libarchive, libc++, libcairo, libcurl, libicu, pango
+Breaks: tesseract-dev
+Filename: pool/main/t/tesseract/tesseract_5.5.1_x86_64.deb
+Size: 9941432
+MD5sum: 95a1b1b789dab90c2bd867607df16fee
+SHA1: 4d9f0aabab69065345f1bb5b685c2e2671435d11
+SHA256: 3d87dec27fb2db5861a0381539309eb56b6147010e2a3c81fca446671ae18f49
+SHA512: f4ba62a5ac6efff127743d2f0952aef807d4979425d1fdc7d531711563555dce1604c76d1a91e4505f03d443ca7efdab55fe8664b1dcff6e20fdf137e5bac8fc
+Description: Tesseract is probably the most accurate open source OCR engine available
+Homepage: https://github.com/tesseract-ocr/tesseract
 
 Package: tesseract
 Installed-Size: 28652

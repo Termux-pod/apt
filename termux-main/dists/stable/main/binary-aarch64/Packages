@@ -7870,16 +7870,16 @@ Description: Static libraries for fwknop
 Homepage: https://www.cipherdyne.org/fwknop/
 
 Package: fx
-Installed-Size: 12812
+Installed-Size: 12940
 Maintainer: @flosnvjx
 Architecture: aarch64
-Version: 36.0.2
-Filename: pool/main/f/fx/fx_36.0.2_aarch64.deb
-Size: 2971148
-MD5sum: 06493753671dc404373c02687d53ba3f
-SHA1: a1e796b559222b85c1dcb688659b0b78f72d3e1a
-SHA256: ea160de605d7de8d19869a6f5543eac15902b5d1915db1e0fd1f35f0e3a92927
-SHA512: 7ccfe13e7060cb6acc2c685169df86fd4fba1fa474384abb0290c20d16920658860d12a5b9aa22bbbee763965728e61aac7c1444e188e8dad2fa7f82d9f6f0ae
+Version: 36.0.3
+Filename: pool/main/f/fx/fx_36.0.3_aarch64.deb
+Size: 2974980
+MD5sum: dc829214f28c82a21fc269be2ed30a97
+SHA1: a99331dd44ea6a9e22ae24ab96a19779a6e58fb3
+SHA256: 430727b5ea4e475e20c0f217d3cbce9908e01aefa68a2da0335dc006b52b6772
+SHA512: 0f17f420b812fe05b3308727d78f73d83fdc8a516d61ecbab88c10ff366cc5a6666ca546070206a58b61a3df742431ba82fa0b32dd5d1349e185119a57780361
 Description: Interactive JSON viewer on your terminal
 Homepage: https://github.com/antonmedv/fx
 
@@ -8472,14 +8472,14 @@ Package: gexiv2
 Installed-Size: 660
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.14.3-1
+Version: 0.14.5
 Depends: exiv2, glib, libc++
-Filename: pool/main/g/gexiv2/gexiv2_0.14.3-1_aarch64.deb
-Size: 90380
-MD5sum: 3c230feb22da88954434b76bd18d02d2
-SHA1: 04f9b91dbba7622d304c173ebdfd149e90a9c2e5
-SHA256: d612998544cc80c3f65f23ca33d3e5eedd05027c9f9a9589e3d39d59dc71c3d1
-SHA512: eaada6491ca725a173d990669ecaf53f571a872c7d7f0545a27688265c15faf39311030df611fd0aa37cd8258d3b91f785ee8b3daa78faac967e276897c29e2d
+Filename: pool/main/g/gexiv2/gexiv2_0.14.5_aarch64.deb
+Size: 89560
+MD5sum: b7c769e485328d3d427e331913d225c1
+SHA1: 1821b4a6bcb4792ed207531ab758913a862cd85b
+SHA256: 6b181c45f99e870ed91807784de59c806531bb8e7df99869c21522f72e48aaf0
+SHA512: 22051f3ecebaee6e959490615a15bd6c163bca8f2447e21542e4fc74a63709bc1429a7bb3f66aff4300759533a4465f87ff220627c93822393642959dafec54e
 Description: A GObject-based Exiv2 wrapper
 Homepage: https://wiki.gnome.org/Projects/gexiv2
 
@@ -24402,6 +24402,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 45756
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5486-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5486-0_aarch64.deb
+Size: 6657840
+MD5sum: 62a451a19e01fc9f4ca2a096d6265c6c
+SHA1: c5b07805ee4b3e2c9a52ea8f2b5d5a26901fc13a
+SHA256: 118cd3afe96770820d539611e21bf3e0828d17eedd63e23532d7cbdc7588ebf4
+SHA512: b2afd36380227ca0d223c4dfe1cc275ec3584a1f2ad2a3a4092227c10afb200ae542b938578214798f146ed9550b8e13edd9d8b81b7472f93d2736dbc254077d
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 45764
 Maintainer: @termux
 Architecture: aarch64
@@ -24417,20 +24433,21 @@ SHA512: 2c0fdf88631400426ffc66497148b52ab7ec731d912c3b01c625ea53c7307c0b03bf2086
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 45764
+Package: llama-cpp-backend-opencl
+Installed-Size: 372
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5478-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5478-0_aarch64.deb
-Size: 6654888
-MD5sum: ad4132955c71556d3b33ed0912d7ec25
-SHA1: 5211cda1b547cacde4542b3d2c0aac5f4d002b86
-SHA256: 66b823cbacee0d2d59e4444bc14eeca2bc2f7afe2b2b5fd0b96bc5c7a4b35bb0
-SHA512: 3f12430a20a0dc138acf14f232751f90eb70b5b3271c6c79ef48484b4b64e3d560dd1d42728d0c00586f411d31de6e1796cf7a02cfcac6e25f8b4f41d6014a5c
-Description: LLM inference in C/C++
+Version: 0.0.0-b5486-0
+Depends: llama-cpp (= 0.0.0-b5486-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5486-0_aarch64.deb
+Size: 64996
+MD5sum: bdf784788e1258e226299069affde928
+SHA1: 05a938940a002f012554817337dc17e394a5b29b
+SHA256: c6d455814b7b521642c5e3da7f259c2379764599d72e1f7161f84fc20d872c79
+SHA512: 236da8548f7438b30aeaed46645a327bfbda9e90270ea19f73a8791bf9e20828d81bc6c24be0a99c9450be5753f9f4c41e78e338cd3e5bf5e06a68fbea15fd9b
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24450,21 +24467,21 @@ SHA512: 1aff363a3662b25ccdd46225bff1149058cee293ab04d04f8ec16fc5cdce1ed232768eaa
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 372
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12720
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5478-0
-Depends: llama-cpp (= 0.0.0-b5478-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5478-0_aarch64.deb
-Size: 64888
-MD5sum: dee6ce4e69853bd9ef1b63f69b884976
-SHA1: 5c3d1f38eab595c5ac7760653a7ccf0d7292d74a
-SHA256: 7d9178e4e405ecf22e29876dd86ca8d199a13e7a4056a2776a83b457d79be582
-SHA512: 7051d8376ff81ec759f70ba61878b40df4e4194fe352f45fa43661b684f1989f43db2b8db83898784709166ac94b27dd9554fcc62bca29676db6ab75968a2180
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5486-0
+Depends: llama-cpp (= 0.0.0-b5486-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5486-0_aarch64.deb
+Size: 976584
+MD5sum: 2e6c2821aa6ce9873dd11769dcea6a14
+SHA1: a99adbeb69bdda4b0799905db9d955fd29cae35a
+SHA256: b0ca64a1d631e95324d9f5b2b1a3c318867d9c4b58396a276da9b3467e85fc25
+SHA512: 200969fc41a16d3571a80b811d047c0380f4bdb68d3b6de6c48621ea8edcf0d578bb1724f5278a2bc840243d48142134350ba55c17dd8a4f80260089ea21e128
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24481,23 +24498,6 @@ MD5sum: 54a391fa407aaf20a0b8ba4f6bac25bd
 SHA1: 1911fab1ebe3eca76684ca5b4b5de935e5089e04
 SHA256: 78d7daa327a84abb46b39be84af3384ab81de2ba62c1ca826032720106dc5c61
 SHA512: 4cb21c510057ce25f5a99b0f84f035eac645d2afbf892d50a334834f0643bbe8efed88ea8b3eb189c8c67f2fa03d6ed4489906fef5d6393473c1ced3af8930ce
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12720
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5478-0
-Depends: llama-cpp (= 0.0.0-b5478-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5478-0_aarch64.deb
-Size: 977436
-MD5sum: f499a249470713eb7894e38daabd5788
-SHA1: b598a4156a9417e4fbe0e268a24ce7a327afae73
-SHA256: 3e6d28ebb5bd73a1c14cc94227065ccb2c4c15bb0a032df2b9869301780d0265
-SHA512: ed775bb0f19dc0cd4fd174354a1c42550b931f4c0feba0d8a4782ddb520b504a5eca1ed98fffc37760350cb7e1f9a498a14735bdd31e4ef1df6d9a8f03ccbc79
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -25513,17 +25513,17 @@ Description: Static libraries for mariadb
 Homepage: https://mariadb.org
 
 Package: marisa
-Installed-Size: 604
+Installed-Size: 608
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.2.6-2
+Version: 0.2.7
 Depends: libc++
-Filename: pool/main/m/marisa/marisa_0.2.6-2_aarch64.deb
-Size: 83680
-MD5sum: 8121412cb68aa3f029530a34533d5840
-SHA1: 027a04caa6879bac010d7935afa946d858d1ffc4
-SHA256: 5a47a2628f1603dce82061318973c569ffa9fa7d343d972df1e777216bd5e589
-SHA512: c3d5e574b85830734c03bfe5c4ab43998a5870844093973a87537a317a1ad1ae1222d1a4c3b0c40863ea6a64cdbad518d3748ed6952784c15a79739fca8edf23
+Filename: pool/main/m/marisa/marisa_0.2.7_aarch64.deb
+Size: 83892
+MD5sum: 5bc3dcde8ac68c837e8bcf589a77da81
+SHA1: 28cdecbd48120ecc2a160f3e1e0d7e6c75cb44b3
+SHA256: 5e964d369590cd5a2e0d82f15138897c0655e0701bf09f6064a63bababe88935
+SHA512: da44551fbe3da7c5892562cb1b43c6628f83f7c4889500fe09439733f050164ad88ae70b60206f545a01c849a50c81a683598badefd1459bc4366de2112c7c2a
 Description: Matching Algorithm with Recursively Implemented StorAge
 Homepage: https://github.com/s-yata/marisa-trie
 
@@ -25531,14 +25531,14 @@ Package: marisa-static
 Installed-Size: 940
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.2.6-2
-Depends: marisa (= 0.2.6-2)
-Filename: pool/main/m/marisa-static/marisa-static_0.2.6-2_aarch64.deb
-Size: 93420
-MD5sum: 1a9614e2c2f6bef102595c60b5e4ed00
-SHA1: 97305cfc527f52db8232ec74b5571a0b7657e03b
-SHA256: f78a98138ba2605a2bf9554bc2e43a0a837870075521dafe446ebf63fb0ccd0c
-SHA512: 9eacb03fd62abd25c2bb22c3afe711288dadce64ff0122b51eb39e69d05156d9d4a37b30ecf0b32c25ff7dd82302e7b3eb8c5a0102e8a545306d30e338e4f8d3
+Version: 0.2.7
+Depends: marisa (= 0.2.7)
+Filename: pool/main/m/marisa-static/marisa-static_0.2.7_aarch64.deb
+Size: 93504
+MD5sum: 9ee6bf3d907a671cde18516e6103bde8
+SHA1: 4951daa600f6e66cb34cf1da9fa9c420c2f61335
+SHA256: 86a54cbc873c9a903efe7fb32978483e1642aa7cc1dd4981fc598cb26c9b2633
+SHA512: dfe30c1a29750341bb2d93ba356a53d0d3b4709f4be4b2ac8ca7aa08762b93a26b3896a27dd6dc2e87e445768c3d2ae70ca1c74efc20cd4060c3e6e4dcb097c0
 Description: Static libraries for marisa
 Homepage: https://github.com/s-yata/marisa-trie
 
@@ -31996,6 +31996,21 @@ Description: Python library for calculating contours in 2D quadrilateral grids
 Homepage: https://contourpy.readthedocs.io/
 
 Package: python-cryptography
+Installed-Size: 4884
+Maintainer: @termux
+Architecture: aarch64
+Version: 45.0.3
+Depends: openssl, python, python-pip
+Filename: pool/main/p/python-cryptography/python-cryptography_45.0.3_aarch64.deb
+Size: 1038052
+MD5sum: 587bdeea47419d3c2cfa5183942e79cc
+SHA1: 8d6c6525930cfcb032169ed631240447f672e2f3
+SHA256: b4f9480780fa3bdecae3cff6f1a20a62484f39d7503c5d6414bd0f898d85d315
+SHA512: 8ed3083bbe169e43cdca5c045962e1baed6c81b9ab289f6e2aa222362fdab305476879967d31a56f1dc9122a5b10d73f0b1f2fa89a72b9fe281d66b8f206fb99
+Description: Provides cryptographic recipes and primitives to Python developers
+Homepage: https://github.com/pyca/cryptography
+
+Package: python-cryptography
 Installed-Size: 4876
 Maintainer: @termux
 Architecture: aarch64
@@ -37777,23 +37792,6 @@ SHA512: fe62784b184c5a135ee06328c116138fc43cb9fe296c0e71c945f84a078e8e62796faab4
 Description: Tesseract is probably the most accurate open source OCR engine available
 Homepage: https://github.com/tesseract-ocr/tesseract
 
-Package: tesseract
-Installed-Size: 28380
-Maintainer: @termux
-Architecture: aarch64
-Version: 5.5.0-2
-Replaces: tesseract-dev
-Depends: fontconfig, glib, harfbuzz, leptonica, libandroid-glob, libandroid-posix-semaphore, libarchive, libc++, libcairo, libcurl, libicu, pango
-Breaks: tesseract-dev
-Filename: pool/main/t/tesseract/tesseract_5.5.0-2_aarch64.deb
-Size: 9704072
-MD5sum: c4ca80439eba7216081263c8f9bb635b
-SHA1: 2d83d243865e42dfae21f31494e806e885ca8e83
-SHA256: 68f1c04ae45813c0065cce20520f9f225938d68f35a1c77feb8650277002578c
-SHA512: b6d3145d161cdd903157fc7801093c5a274cfcb05dfc68e904a9fbf408f271229d3e67f4178bc3f82f75f2ab7473cc99cd200d02970cd332df2f2ae6d970749d
-Description: Tesseract is probably the most accurate open source OCR engine available
-Homepage: https://github.com/tesseract-ocr/tesseract
-
 Package: testssl.sh
 Installed-Size: 3248
 Maintainer: @termux
@@ -38691,14 +38689,14 @@ Package: trurl
 Installed-Size: 96
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.16
+Version: 0.16.1
 Depends: libcurl
-Filename: pool/main/t/trurl/trurl_0.16_aarch64.deb
-Size: 21860
-MD5sum: cc94e685aa0cb01d914663afb0f211a1
-SHA1: 55835a1cf5d43a8e4549bb50e9462266089657af
-SHA256: eed954d6c9f6d1726839c0da12291279d0497e593ff6c24941b93c5da8f063cc
-SHA512: ea551adca7b43dac08652e2f53784af777766230c6f5e93b4e22186131e23c796c1cf026f951c3c1ca8c34dc490c399271308cb2021e079d2f53f23edaf02539
+Filename: pool/main/t/trurl/trurl_0.16.1_aarch64.deb
+Size: 21900
+MD5sum: a495782b3351d6deccb4c3b2a330168e
+SHA1: a9a7c70c120031a14b0d8c1a51ee316eccc04242
+SHA256: 4a309d4c6524d35efeb73887a538df7df093401c312dfd44c3c4d973ab082a58
+SHA512: c2ff004c378feedcd8a6525571e309a5122555a7cf62efa4c83c4616fcfb9644ae229ed18fb0ca2e5859013e7c6c171d5e391fa0bbd8380a7978f33be120712f
 Description: trurl is a command line tool that parses and manipulates URLs
 Homepage: https://curl.se/trurl/
 

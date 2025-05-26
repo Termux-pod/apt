@@ -24341,6 +24341,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 49464
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5488-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5488-0_x86_64.deb
+Size: 7178312
+MD5sum: 99985770019150ab70e0d0efe4d37f56
+SHA1: f16bc8e41de5c0769842ec6ded95c5c824f68ccb
+SHA256: 2afabcd3b5c7917f8daf5082704bef8572e6198f9ef37eaa7371ad6e792bd019
+SHA512: 7b7060e174ca32449fb5fdef5ebb7edb5d92bf5e9ba5ed4c84be3e704786653a55c880d6a490a599d44476b13589c6d3e63b04884091316c084f9eaddc245a94
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 49404
 Maintainer: @termux
 Architecture: x86_64
@@ -24356,20 +24372,21 @@ SHA512: cdc0dbe996224244b46d22d8c84cbe54e6bc71465bc4351454d6755acc0ac507314adf33
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 49400
+Package: llama-cpp-backend-opencl
+Installed-Size: 384
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5481-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5481-0_x86_64.deb
-Size: 7177892
-MD5sum: 814d5b052cadc01a2cd8d2827236f40a
-SHA1: 5e558d9f56611bf9b3903d37fefb6aabbd4ad05f
-SHA256: 9a1fc3958662964f5044ef94e21c09e2238290fc84f0f292c6a7c1ec7e3faa7e
-SHA512: 14a881dd3f9ee097568ad2eb07499a9f2e36adbfe62ff49f5316190770202cbe60075da55f2ee136fcae05deb42aa686ecc9fa3d63ade6a9125b5094f74b09f0
-Description: LLM inference in C/C++
+Version: 0.0.0-b5488-0
+Depends: llama-cpp (= 0.0.0-b5488-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5488-0_x86_64.deb
+Size: 70796
+MD5sum: 65ad8a7c6004ffb31d669ca60ae0c8b3
+SHA1: 44fcd2bcf095622ab51110badaf1950b75a78ac7
+SHA256: f8a4a053f535b6ef7f28bcf55709a784ad41bead6f55192a9f9b79c1af378380
+SHA512: 978b0484db3b3ef3ea8022c9bddb931783f7d47047a380671795780ca29e0fbdf41232394a9fc2a9948f5a65f29765fab2c2b1529576de337f20352dc147b8a8
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24389,21 +24406,21 @@ SHA512: 881017b4ccae84bd012c95c515c2a8388d25b52868625db03c1f326dbab633299304333e
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 384
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12952
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5481-0
-Depends: llama-cpp (= 0.0.0-b5481-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5481-0_x86_64.deb
-Size: 70864
-MD5sum: 8befc4423518625958310725ec18a548
-SHA1: 6053ab06eba53833a5b1e0e696d4c758997e64e7
-SHA256: ccb8262f4a613f03d13815d8fd7ec29483dea56489507a44f32ddf5d1f747de0
-SHA512: 2925bfadd5c579e7c00da9ad3a0586a0374e6ca13a5b15bd36120487f611a1281e61a943c8b3ce08de8addc346e68f04adddce9e1997b48d58edc9c235fbfa56
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5488-0
+Depends: llama-cpp (= 0.0.0-b5488-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5488-0_x86_64.deb
+Size: 1013276
+MD5sum: 38da2c495caf7e9a2abcfef4fc80fa11
+SHA1: a1001aeee05d0ef6d03a24dbc12a0bc3971d7e52
+SHA256: d694d4395d38e303f92c8735ed425869ef18bc5a32ef039d35f54a9cc9908b72
+SHA512: 0ff89d3b0e994cd87d2cb86882945645791535de42e2f8e8b2ce34f18cecee38908ecf46827449d0a5f292f617600d1332a69655aabbdda50be74c7573c5f203
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24420,23 +24437,6 @@ MD5sum: 8c15581f0c1fda1d9654a85b44cc4d9f
 SHA1: 88e866b2deb9a9e1594f4328c931f4fc1f1dbb4e
 SHA256: 7d503d30ca2fdf810e7c6c204919cfd099e5d0d440553b4f5e9f48c0b11c3474
 SHA512: faf5738b0a58adf6eca8f45e8df073b9bf25dbfa50f56de774dcd20acf583bb5a21d96b12a625b6ed12dc45538bf8df3666cbf85eaea2dc801826c50286ca831
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12952
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5481-0
-Depends: llama-cpp (= 0.0.0-b5481-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5481-0_x86_64.deb
-Size: 1016816
-MD5sum: 3a3489c361c062c7319f3160cd0ed0ff
-SHA1: 57fdce8526429da643b14fc088fc97abf7b91760
-SHA256: d74ecc1a4f1db7cf8d91815e71edb1aa717019dbe0e7f9cae567a913593cd009
-SHA512: 3f90f11e66a1538b4b0cb10a50b4c846ec7c1d4e681766d5511c0e58d9dfc7f4d1612338eb30b8a8dc9a8bf9a3b8b12a6f7944987cc364f871731231c0afac14
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -31897,21 +31897,6 @@ MD5sum: c390b3f4f7c758a4b60d184b75db5586
 SHA1: 5762a0c2c0b5d859440bfa290833671244628297
 SHA256: 2aa012fb599d9fb721fdb0764a4b929efdec781e48e728ac75a2bc435ecf2557
 SHA512: 8bb524746dd2f14b14eef7e15a538f8906e2602f24159e397e3f43341548017dd259b2f8f442adfe18d7cad63225523656a18a2634520a65cd4b92e9c67cfa1a
-Description: Provides cryptographic recipes and primitives to Python developers
-Homepage: https://github.com/pyca/cryptography
-
-Package: python-cryptography
-Installed-Size: 5364
-Maintainer: @termux
-Architecture: x86_64
-Version: 45.0.2
-Depends: openssl, python, python-pip
-Filename: pool/main/p/python-cryptography/python-cryptography_45.0.2_x86_64.deb
-Size: 1129916
-MD5sum: bc00f68592590efab4e6fe0f9fdba05c
-SHA1: 4be3e3b8147207cf0bfc1e8172c082181b80d999
-SHA256: 8f6d8c6f9612f4c37003cdcd29d620e47d1b3684cfd237e22cdf68fb2034d7c0
-SHA512: 9ba5fc92736f72257ca26b812b7fe03d36bb867a5fa6a06aaa8c029f123ebb35d8a35ce35ef57dd8efa1bead281b6b67484c0cab0f1384a3d315921ac70cc99a
 Description: Provides cryptographic recipes and primitives to Python developers
 Homepage: https://github.com/pyca/cryptography
 

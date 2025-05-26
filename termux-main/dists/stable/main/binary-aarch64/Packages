@@ -1886,17 +1886,17 @@ Description: A cat(1) clone with wings
 Homepage: https://github.com/sharkdp/bat
 
 Package: bc
-Installed-Size: 256
+Installed-Size: 248
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.08.1
+Version: 1.08.2
 Depends: readline, flex
-Filename: pool/main/b/bc/bc_1.08.1_aarch64.deb
-Size: 78088
-MD5sum: 027043a4afc50aad78d876f6c124921b
-SHA1: 0def171677631c935199bd5eb31e703cf16d4803
-SHA256: 0c4377b5c4ae825131de736eb84c6a46eb2f7971aa7148fe02b345bac1305bda
-SHA512: 75062f3542af36de047e8b7000313dd59f19252128ae7885ec8c5812b45bc7754c317706a837285b3d0fdb63cc6ef71b563ca7ceb90d821a01b1bb7db32c7d37
+Filename: pool/main/b/bc/bc_1.08.2_aarch64.deb
+Size: 75704
+MD5sum: d65785c70ff9a6bb7ab8e562bc77be18
+SHA1: 1de2b8aaef8d76fc3818faf40081cabb484c3581
+SHA256: 76eedd7611b2c0ae823fb7aae8c6275cb572aca346c71a4639b62ab30f433d7f
+SHA512: 1da845909810b289cff44a03bb28cf5a529224278cf87cd2f3202887d743b14b2206dce2ada5033e0c9eca28c59e71eae633445cc51a15bd1f6ba218f17ce4ca
 Description: Arbitrary precision numeric processing language
 Homepage: https://www.gnu.org/software/bc/
 
@@ -11889,14 +11889,14 @@ Package: jackett
 Installed-Size: 14372
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.22.1947
+Version: 0.22.1951
 Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.1947_aarch64.deb
-Size: 3183504
-MD5sum: 22de94ece0d7d73f988aadf59772ef62
-SHA1: ca33ccb0921236493a93776669610228ba7f2968
-SHA256: 3887bf3a4e2e95f2b02e94c3444c52390a58029503835dc6f5d6caeafa97b229
-SHA512: 60526b8fb79c56a3c1e61963f888574c208d69e256e36a276776428756c62f19fbdd1ad3008443ff8ff76ed0c81d1b8549343c434d9c8da1c3b8c82c86bf7e41
+Filename: pool/main/j/jackett/jackett_0.22.1951_aarch64.deb
+Size: 3181820
+MD5sum: db3f28afb29b71ea9f6b987003fb6ce6
+SHA1: 749825f21b53b3c1bbb90d0a24e1129e4428167f
+SHA256: 12f6bf18e0ba0fbad2162d29d0f1131f641c4ebc6fce7a4fc288e2565bd176f6
+SHA512: afc3f746e8d3d88f0f52ef12eb44e93f8df307565a7f5b9d2428eed1d9b425600cea6c8e4952fb5b32db77b53bd2482cffd0ef203e7f605f3a6cd1b3d132888c
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
@@ -24405,6 +24405,22 @@ Package: llama-cpp
 Installed-Size: 45800
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5490-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5490-0_aarch64.deb
+Size: 6657904
+MD5sum: 5d2daaa8f6e7f6212eb47f7508b93e40
+SHA1: a1f2502b4072d06b65ada3073acad00dd3a7ec59
+SHA256: c08081b52288974bc182f6e468ad9396ee9e9865192678e7d46cff4e96ddbaf3
+SHA512: df6f7904b88d0f9914ece3039f28a1df9e983af5658662b9944fd028296e8456052449474ee452896b77dcd8c778a7b3327bc997db1a7837288a5c3205456f40
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 45800
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5488-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24417,20 +24433,21 @@ SHA512: 3e3cf2eb0adbb093f134700d2937f3dabcf58545495ed568c8eac94b9a34f0158cb3e675
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 45756
+Package: llama-cpp-backend-opencl
+Installed-Size: 372
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5486-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5486-0_aarch64.deb
-Size: 6657840
-MD5sum: 62a451a19e01fc9f4ca2a096d6265c6c
-SHA1: c5b07805ee4b3e2c9a52ea8f2b5d5a26901fc13a
-SHA256: 118cd3afe96770820d539611e21bf3e0828d17eedd63e23532d7cbdc7588ebf4
-SHA512: b2afd36380227ca0d223c4dfe1cc275ec3584a1f2ad2a3a4092227c10afb200ae542b938578214798f146ed9550b8e13edd9d8b81b7472f93d2736dbc254077d
-Description: LLM inference in C/C++
+Version: 0.0.0-b5490-0
+Depends: llama-cpp (= 0.0.0-b5490-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5490-0_aarch64.deb
+Size: 64952
+MD5sum: bb48c21effc6d048a7231f864f25585b
+SHA1: e886bfb38dcced2dd971bcdecccc555a3fd1592c
+SHA256: 1277317a6b2d03da96b9d78463e79eee932f69f37d9c184f2651da4ce3913c2e
+SHA512: 705bfcc9e4621f3c85c6a5322528c7ac5798550136f6e4f07fe1603bc3d2dfd319c33d6ac3f42e8ff9cd88cd741ffb87c9e622ef1a1fe00dbd5dfef57dc44e25
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24450,21 +24467,21 @@ SHA512: 4cc50850c5b825d721d1a2116586bf48bb1d515040ebdc04b0c033abb4803158e2ee338a
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 372
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12720
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5486-0
-Depends: llama-cpp (= 0.0.0-b5486-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5486-0_aarch64.deb
-Size: 64996
-MD5sum: bdf784788e1258e226299069affde928
-SHA1: 05a938940a002f012554817337dc17e394a5b29b
-SHA256: c6d455814b7b521642c5e3da7f259c2379764599d72e1f7161f84fc20d872c79
-SHA512: 236da8548f7438b30aeaed46645a327bfbda9e90270ea19f73a8791bf9e20828d81bc6c24be0a99c9450be5753f9f4c41e78e338cd3e5bf5e06a68fbea15fd9b
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5490-0
+Depends: llama-cpp (= 0.0.0-b5490-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5490-0_aarch64.deb
+Size: 976808
+MD5sum: 467d4d50ed67060d701c4c0de1f76582
+SHA1: f8ce93ad97536df6ec0fdf55b6db9fc6d7135709
+SHA256: 4277d7f1bee5b94a20b29e0035d631acfaa67ac9f2c7eb45900fea04b134b83b
+SHA512: 8ab5af20224c69067d395c946d0b04a88b3d66a38499397b4bd63c94a2122b92be57f30e3eb9ec0fb0bee9b6e6800ea1a0a57edafb72c1f484627eadbca1a7fb
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24481,23 +24498,6 @@ MD5sum: bda197a3a10d873e5d95de94dce2ebfd
 SHA1: 203bb8f92adf8e57e3bb86c6ac9d2cc1731b8916
 SHA256: 0a08c417d90d9cf7642631f1fd8e0f7c0b997f362258c78bb470700222ccd09f
 SHA512: d46f9d7c6efa5d75b3c2e3d5b907009906fddf1e208495b5ff7ee135f6dcc56075ce9fafef3c39b077e9d386061ceb95e1e097cbecebe5218e139ae24c4fc5e4
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12720
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5486-0
-Depends: llama-cpp (= 0.0.0-b5486-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5486-0_aarch64.deb
-Size: 976584
-MD5sum: 2e6c2821aa6ce9873dd11769dcea6a14
-SHA1: a99adbeb69bdda4b0799905db9d955fd29cae35a
-SHA256: b0ca64a1d631e95324d9f5b2b1a3c318867d9c4b58396a276da9b3467e85fc25
-SHA512: 200969fc41a16d3571a80b811d047c0380f4bdb68d3b6de6c48621ea8edcf0d578bb1724f5278a2bc840243d48142134350ba55c17dd8a4f80260089ea21e128
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -26639,6 +26639,21 @@ SHA256: 7cd8e407a81d59f593866bd63bb6870e8e2060825e6715c830f409bf4d912954
 SHA512: 2a2ceb12c5f27338a475a895933ddf06fb923678b742cd5930dbe40f072b75d2df3fefe1560e6013d6f8b12b274c3d02a3116aeade02c18c5abe8a07135dc2a8
 Description: A pager designed to just do the right thing without any configuration
 Homepage: https://github.com/walles/moar
+
+Package: mold
+Installed-Size: 22044
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.40.0
+Depends: libandroid-spawn, libc++, openssl, zlib, zstd
+Filename: pool/main/m/mold/mold_2.40.0_aarch64.deb
+Size: 1672540
+MD5sum: dd47b7607bb168a49faf11205577efcd
+SHA1: 3299e7aa19fc470fede3c73a20163047c6ef784e
+SHA256: 78b6ec71edad6ec0f9486eccea0636d12d7a7424edac3ce9c4d191f04b51ecc8
+SHA512: 919a923964e3cd28e6a08b14dfe37abe4a43d9f79c9e8e29d729e3536143007b230e5091069891afea215bb837cdae21f494ab513e933c017dc10841c0e5b39d
+Description: mold: A Modern Linker
+Homepage: https://github.com/rui314/mold
 
 Package: mold
 Installed-Size: 21488
@@ -34340,6 +34355,21 @@ SHA256: 85d195e51b99175a31e60dc3c852bc84fb703203a4c76f9a13535d04d3a1a8ef
 SHA512: c858fc180a0dff532310c488ab213b2c66e45db3b6c3c8564bdb6f049a5a1864ac791e6b1b9cede42a4bc9ac89fe0ee98455951eb90d22b294282f62bb264f3c
 Description: Systems programming language focused on safety, speed and concurrency
 Homepage: https://www.rust-lang.org/
+
+Package: rust-analyzer
+Installed-Size: 34628
+Maintainer: @termux
+Architecture: aarch64
+Version: 20250526
+Depends: rust-src
+Filename: pool/main/r/rust-analyzer/rust-analyzer_20250526_aarch64.deb
+Size: 7404940
+MD5sum: b1ba413abfa531233223e61323360615
+SHA1: 684e1e298de133cb3b17b015917495568d3852df
+SHA256: 62c533dd7ed8eb889ec98725fa3f011f1e57b818e15e9e29c9b35f8ec9a45f77
+SHA512: 52c6c04396c6e60419ae599ca09f2ec09da936d8cafeb31dbde37090d2b4400482ece2c51552830a324378a65bae8a8728e53f4a422e20bebc7a1fbf6bfb588a
+Description: A Rust compiler front-end for IDEs
+Homepage: https://rust-analyzer.github.io/
 
 Package: rust-analyzer
 Installed-Size: 35036

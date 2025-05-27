@@ -7476,16 +7476,16 @@ Description: Software synthesizer based on the SoundFont 2 specifications
 Homepage: https://github.com/FluidSynth/fluidsynth
 
 Package: flyctl
-Installed-Size: 68532
+Installed-Size: 68536
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: aarch64
-Version: 0.3.130
-Filename: pool/main/f/flyctl/flyctl_0.3.130_aarch64.deb
-Size: 14266892
-MD5sum: 07b8201047aca1830d3fae0230fd31c3
-SHA1: 1ba2d34c9d88fc76023e733745d609ddaa7ec64c
-SHA256: 7e09522d65826cc4db9bcd8241b2c4556507f047117daf214212026ab744bf24
-SHA512: 279ca9bc7723e2cc67352e28974c8063758af63514156b61ef04de221671e7035713ec14634aebdf0231e72ff395ee83010d4980794d9a690ba42dca9af47a8e
+Version: 0.3.131
+Filename: pool/main/f/flyctl/flyctl_0.3.131_aarch64.deb
+Size: 14268224
+MD5sum: ce33a2ef9e74f7380b37a8b90ef3e7af
+SHA1: e76445bf8072dda566e7657c76b1a7b2afae8beb
+SHA256: a5e245836c52703b710e3ebdcc0133140b2372bcdb170970e47b4fb386fe4358
+SHA512: df28d60635886787f7558c1150cc8705a99b96a2f2576b5062da843f21b2b3a3444c2feae1e9b1844ae05f59436045fffe35344ef079d26ebfc13611b1f829a2
 Description: Command line tools for fly.io services
 Homepage: https://fly.io
 
@@ -11690,14 +11690,14 @@ Package: iproute2
 Installed-Size: 2852
 Maintainer: @termux
 Architecture: aarch64
-Version: 6.14.0
+Version: 6.15.0
 Depends: libandroid-glob, libandroid-support
-Filename: pool/main/i/iproute2/iproute2_6.14.0_aarch64.deb
-Size: 817040
-MD5sum: 61cc70fcc45b9935a85b7e2a26c0bb88
-SHA1: 3b2220578d3cc7fffeec4316619e8afff9ce7dc5
-SHA256: 0586ee44f10567b0ce575ea99b50ba059ced245d4be46090cd5922083b407c81
-SHA512: d56ec6787fe5a1ee70f41ae27050a8a245242cd2c2a91671ee9d9964b3cbfafdc437cc2c14a6ba6a436cbde2379e40fc0a08f926abe246aa3c8fab9e6b0f8bef
+Filename: pool/main/i/iproute2/iproute2_6.15.0_aarch64.deb
+Size: 818040
+MD5sum: cd3a2b521cb57543ced5c1f22e7b6094
+SHA1: 76fcd3c0cd5a1fa712269de674fb9b51a117ddfe
+SHA256: d8167854b50c72a1cf6fdc0ff78887974b88fafd0d1b465bb2684fac6c4684b6
+SHA512: adfb8c0d871a069e01f086877c58e6fd1be75bd1f4558142a2fe20954ab7e097763f47369590624e66cffef026091191605477534d320fc630d7c1c0d6d35fe9
 Description: Utilities for controlling networking
 Homepage: https://wiki.linuxfoundation.org/networking/iproute2
 
@@ -24402,6 +24402,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 45836
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5501-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5501-0_aarch64.deb
+Size: 6666456
+MD5sum: c4dac7452e49840610de0239d9a5f485
+SHA1: e6ebacc9c2f82cbda4f7531ecf34fe73c87ba25b
+SHA256: 15b13b79a282b1571012cc222c86d4656faaeab76d0331f481b558fbb8ae1049
+SHA512: eabf97d79626cb06091d4f1983a346a5d7b998953498b042736b7349c996d9c75c8163c52ee21588d5f41b76414ffcf82b099fe15faafecdadf4ea6501f43dd1
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 45808
 Maintainer: @termux
 Architecture: aarch64
@@ -24417,20 +24433,21 @@ SHA512: eeeed74d8c7394eba14a11c9412191ed9aad3d2eb9c5073dc9e67509cabccf23218c40cd
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 45800
+Package: llama-cpp-backend-opencl
+Installed-Size: 372
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5493-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5493-0_aarch64.deb
-Size: 6660640
-MD5sum: f3331d4428995664bdca909c02d3fd24
-SHA1: f28e429984bc2b1b2b3337b2efe48f6ab1ed6a9a
-SHA256: 4be5735bd8a630eac8f7bacd96f013c1cf800247870fe1f1ced0b82f68a93aa4
-SHA512: 42259f5e0c026efa632b916f4bc888047dccfaca0486ba051fa4a7e8161796b717d28a3b7cecb5ceac55da1c310daabcc89e6d9b815ae4f10a6634ade7bf9f3b
-Description: LLM inference in C/C++
+Version: 0.0.0-b5501-0
+Depends: llama-cpp (= 0.0.0-b5501-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5501-0_aarch64.deb
+Size: 64924
+MD5sum: 75d04b7730ce71d7f8926247b4517764
+SHA1: f31ba2210f2efdb164366218ad27d44b11159363
+SHA256: 71ca4a09253e2ad1cfa5d02f5dd22ce492f22dae2322ff7934e905ea473749e6
+SHA512: 79b2713ad3f071e210de8dafe72b5e70133d99936dbdb16df73f45d658b2145b1c77a4d706d1e4ed2a420d8f95ad456180c7b20f2a20657cb2b0b08a6c690844
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24450,21 +24467,21 @@ SHA512: 421682628c7baf081e9b7b51237498363d0edcef7001f17813aeb1d3c31b16c17f8f0162
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 372
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12720
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5493-0
-Depends: llama-cpp (= 0.0.0-b5493-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5493-0_aarch64.deb
-Size: 64876
-MD5sum: 52fb557c994db6fcf3c8adf95119dfd2
-SHA1: 1e7ad6b706d3e8b86adbf69faebf9f2a1df9bcc3
-SHA256: 10c1af33efa4cce6bf05b422f5b0c6aba451b945314f42778fb7a313bb169672
-SHA512: da5281a41c32257d5f81d973681b5fe5019e6b68a1cd796cc98879d740856475563e8f6711a9781d9a065ac43329bef612bcc90f854af6fbce07c0b4349ebc0e
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5501-0
+Depends: llama-cpp (= 0.0.0-b5501-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5501-0_aarch64.deb
+Size: 975592
+MD5sum: f5ccde04085eab0401f718d098aae4d5
+SHA1: 7343b9a5fe62a03a99b47ab953b9b596acee78db
+SHA256: 0b8532c5453eefffe3901cd6870351f080e17ddcfd43a194b30392b05831c85e
+SHA512: e4104a3ffacc2646c1dfebdf281e693ed715d8f9b8d6ca62982b60456e12467f00fb97d4e39a62dadb022e9d93a19e1fcc00319974e0b276b9c136fac0c4775f
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24481,23 +24498,6 @@ MD5sum: 931d0aa35cc4e913eae32c8454e4aeec
 SHA1: 319bb5b87e19ec6af0174a4079282d390239bb62
 SHA256: 19ba90589517268808e2f4e67cf860358a387cf5347f33f9c37d0db8b92a567d
 SHA512: 428bc785b3ea2a96a1debc1b7255388d6eaa8e93ca419736ac62a3595aec4016ee8935d7de5d8f92bd23137d8e297f99230ed74868f0839cd19da074bd59d365
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12720
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5493-0
-Depends: llama-cpp (= 0.0.0-b5493-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5493-0_aarch64.deb
-Size: 975692
-MD5sum: 58af113504170817e139127748746d2d
-SHA1: 438ebb6496008b3f03e5cf5c14e7e602599119d7
-SHA256: bdf2b4383e2c3078687a9f1d00ecbe78dde1f24117ef95d99c1cb4da1333006a
-SHA512: 817847a4eb6a4ab201ad3bbe9fc73fdff1a8b97df9fe4ee13a340c441814d68d0740b93cc8760f97dcf021ba7c2fb52d348df0866c2491b0691dd57cfc577ab3
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -36504,21 +36504,6 @@ SHA512: 5611174018749e45b3b4b5e98779521a7f698c587df944cfeaff6667d6db79274e6d0bca
 Description: Debugging utility to monitor system calls and signals received
 Homepage: https://strace.io/
 
-Package: strace
-Installed-Size: 1768
-Maintainer: @termux
-Architecture: aarch64
-Version: 6.14
-Depends: libdw
-Filename: pool/main/s/strace/strace_6.14_aarch64.deb
-Size: 398776
-MD5sum: bddd71958e0c09a8f16a50d241d4cf2b
-SHA1: 91ffa4154d6c751b8361b389ff7278983dfce899
-SHA256: ec8a24e74a368875f9bda9a4d6836ae738c3c2e8448dd47dcbd07190c34ece1b
-SHA512: e30d27d2bd68a28b81f5c98741d3137c5968153f71023f53ccced78d968c659668e777af0dfa5cc7438fd3dc88abca00083f9745f71d4f0ba462b7391196007d
-Description: Debugging utility to monitor system calls and signals received
-Homepage: https://strace.io/
-
 Package: streamripper
 Installed-Size: 168
 Maintainer: @termux
@@ -41959,6 +41944,20 @@ SHA256: 7fbde1f0ff09d014102f5f7cb010df48250198b74dbda628261deb4574352272
 SHA512: 0a66bf488082da2ee3ed0af7576672004dbf4e972350049fe8f270eb6d8c5c9f3b6a62c32af766b3e5191da198e3fa3190136c3a9fc0de5ef716edc28f6ffe5e
 Description: New zlib compatible compressor tools
 Homepage: https://github.com/google/zopfli
+
+Package: zoxide
+Installed-Size: 1104
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.9.8
+Filename: pool/main/z/zoxide/zoxide_0.9.8_aarch64.deb
+Size: 372956
+MD5sum: d96665eb02c7ca17a66368b8634a2377
+SHA1: 338bce5db86c5a9c582bf653871bea28ecf6981c
+SHA256: 87adbd975eb29794140c9f960527d85c164cba7858e65513f3f37d916211dd61
+SHA512: 40a455801a613526d406d581b64f503609b37aea2803869f5d2e14031bb58a7ccbfa3c6bd27b5b24fd8877bc545bdcc799f57685db1617058aa43298b9b96d9c
+Description: A faster way to navigate your filesystem
+Homepage: https://github.com/ajeetdsouza/zoxide
 
 Package: zoxide
 Installed-Size: 1112

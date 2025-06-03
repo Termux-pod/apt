@@ -11189,6 +11189,20 @@ Description: A CLI tool for sr.ht
 Homepage: https://git.sr.ht/~xenrox/hut
 
 Package: hwdata
+Installed-Size: 9792
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.396
+Filename: pool/main/h/hwdata/hwdata_0.396_aarch64.deb
+Size: 1634240
+MD5sum: 4e68ac0a6334958df0f7c29182af3a14
+SHA1: eb001b70397ebbe9e482301ddc4c232d753d9750
+SHA256: 879c7b72bdaad2bf0c05736024d3faf8c8089de2fe142f2aa58febf901a68837
+SHA512: c048eb75c85fc379d137222d9f1522fc94f36da06e4a7db6a928897ae51ec0d893d7aa882bc2569400e029fb19ebe18eaaa53efb1b20dddd4416f3a6f323f130
+Description: Database of hardware identification and configuration data
+Homepage: https://github.com/vcrhonek/hwdata
+
+Package: hwdata
 Installed-Size: 9748
 Maintainer: @termux
 Architecture: aarch64
@@ -11903,6 +11917,21 @@ Package: jackett
 Installed-Size: 14320
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.22.1984
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.1984_aarch64.deb
+Size: 3179988
+MD5sum: 84f5b37cd7ff6f1903c88dd54e0db6fa
+SHA1: 01b7725564c712c2925a4461d88c0f4d2ff48623
+SHA256: 9c07bdbbc41f02a53b4839dcea06da6e2e840c547a09c3ea3ef17e0b9a368f39
+SHA512: 7e11bf5e748ac6646efff03a0451214c379fc8852d05e7e3419fa7037575ff972f934c1ba75cc2e1dc1bd344101b4840963661624fa5481a306b63a22cf49bb3
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
+
+Package: jackett
+Installed-Size: 14320
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.22.1978
 Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
 Filename: pool/main/j/jackett/jackett_0.22.1978_aarch64.deb
@@ -12424,20 +12453,21 @@ SHA512: 2a4b2bc279b7e32fbde61ab6ef2f936d82f0a7950606d9f0fa5cbf871f05a6a0a88cf9fa
 Description: Code editor heavily inspired by Vim
 Homepage: https://kakoune.org/
 
-Package: kakoune
-Installed-Size: 3808
+Package: kakoune-lsp
+Installed-Size: 6996
 Maintainer: @termux
 Architecture: aarch64
-Version: 2024.05.18
-Depends: libc++
-Filename: pool/main/k/kakoune/kakoune_2024.05.18_aarch64.deb
-Size: 745540
-MD5sum: 290d1f4578064853e65bfe9087bb2258
-SHA1: 2a81a461f0cb9d04c1f8ede6082cf98373166316
-SHA256: 2b3c544ceb750dcea7a72a2be77fce7047075a0d1c30599fcdd67a32067ba9e9
-SHA512: c194ae8bc11c7289da32804d5413506c75421318412f2ef4ff3b9189d465146d0ff7e34d7bb3e52bf1781b7cf77437bd9cfb8f9f0dd1ec7726caad6e93aa8a13
-Description: Code editor heavily inspired by Vim
-Homepage: https://kakoune.org/
+Version: 18.2.0
+Replaces: kak-lsp
+Conflicts: kak-lsp
+Filename: pool/main/k/kakoune-lsp/kakoune-lsp_18.2.0_aarch64.deb
+Size: 2111856
+MD5sum: 355b7aaac148af19790f12d55a7b9571
+SHA1: 501ac21b7025ad962782198118930f06de8b3948
+SHA256: e0a1c6c7f001f0e54090771c992a47c4ae41a361f74d9771272c4dacdc49001e
+SHA512: d2857424b15ca3e0a2849b59271896f27228b2ce9e5790d2f95554002f2661de010e6a56ed64601796340bbdff2f2ef5d4f95842791f7a82fe3f5bdcae223b84
+Description: Language Server Protocol Client for the Kakoune editor
+Homepage: https://github.com/kakoune-lsp/kakoune-lsp
 
 Package: kakoune-lsp
 Installed-Size: 7068
@@ -24446,22 +24476,6 @@ SHA512: 3eadaa7e0c816b5469077b4e495b94fe62d559119fb1a69cbc616bd6231408aaa5c716f2
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 58552
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5579-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5579-0_aarch64.deb
-Size: 7456184
-MD5sum: 328f76320c2892fa301d135794b52e74
-SHA1: c2295259270975179e44d3a2f3ac04084bfc30cb
-SHA256: 816c00988df200f1476a4c3a0f59cffa91828da2a96e922ecf9e90baa4e285a4
-SHA512: 3258c95e1b09c5a418f2d1f1370ad438a75c48414cce0f8a474da278a836d0bb9de883d05bc029097aa7a0a6fdf725f186ab6819389e1a738339c9d0d911583e
-Description: LLM inference in C/C++
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-opencl
 Installed-Size: 444
 Maintainer: @termux
@@ -24479,23 +24493,6 @@ SHA512: 2a9b157db2bd23c0506569ee8426c184bbebdc87575e07471fbf01039e3ff089c9c385eb
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 400
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5579-0
-Depends: llama-cpp (= 0.0.0-b5579-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5579-0_aarch64.deb
-Size: 70184
-MD5sum: 0207c640269e69e80c40b062ad61c0df
-SHA1: 414bef63390e97fe2dd78393debc7d1663a45e8c
-SHA256: 1bb645e30fd7015d55c870481da2d6e8a3e68ceed0fb10fb0f1882c89b92d311
-SHA512: 39b7a3a5703e960fc5dfcdf1bd3ed8e002a41e58a58d374dfd75e59da2cff2dcef60b332bcaf2ac0b850fc8496f9b506db6d87f247212b92202738bace96dfda
-Description: OpenCL Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-vulkan
 Installed-Size: 12736
 Maintainer: @termux
@@ -24510,23 +24507,6 @@ MD5sum: 1fa601a360c21f92d39068a06701a59a
 SHA1: 5c430c2e93bb93efdbbf2cb8f372c6ecc5231ba5
 SHA256: 44e7b6bad3bc06ecd740acb4acadaf05939cb1f37cde15a60f73a5d887b32af7
 SHA512: 10778d7c711ad1d3be1b615eef3708f3f0fe2103fc88693388444bb00add48e2c7be75ce8e996b318d792a5cef8422051cf693cee1148bc251338a8afd2f9870
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12736
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5579-0
-Depends: llama-cpp (= 0.0.0-b5579-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5579-0_aarch64.deb
-Size: 985248
-MD5sum: 072c61687867cdb9a2cb8aa130af0cda
-SHA1: 7c9a4d56fc780f136e42403304e1688ed6eb76fa
-SHA256: 471070c92badd21a91927b064548f7eafddabbb48e3341c626d34d902ebe0c4f
-SHA512: b3da967bf2d5788a98402a9731a9dd4837b5ed51b2369d15a9b1d369f74002835b84f9cd50ab26b64969963e3a7855f5ec432a7d8efe9813b45fbe7b7a48979c
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -39710,6 +39690,21 @@ SHA256: 4fbc2a45b8edcf3cb9d3489fd57a105010cfc103d480f564dbee64d8dc02496c
 SHA512: 0698949c25a2fb98f4b5a3d2bf00d523a91d27a88a6105f9de754e5c8c6b06516d384bb2f1e107c19b2efe659f45ff5bcd527451684fdeaf829336b559c5b831
 Description: An extremely fast Python package installer and resolver, written in Rust.
 Homepage: https://docs.astral.sh/uv/
+
+Package: uwsgi
+Installed-Size: 1216
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.0.30
+Depends: libandroid-glob, libandroid-sysv-semaphore, libandroid-utimes, libcap, libcrypt, libjansson, libuuid, libxml2, openssl, pcre2, python
+Filename: pool/main/u/uwsgi/uwsgi_2.0.30_aarch64.deb
+Size: 383404
+MD5sum: cf6b658cee31b4cd3069e6062cb98dcc
+SHA1: 570b3b833f3e0a2528bbd111b9bf6753082861c1
+SHA256: 429429942fa885921fe1da646b66a6068e2929043dde4278445f653f4c09745b
+SHA512: 9c5327f7469bbf28f9882a616f3541cc3ded25c0e1cba9ad7f0a96e7fcff926a9c7ecd03a1e98abdd4866a733585d685607f48e8e2a5148c8931d0c96a0f47cb
+Description: uWSGI application server container
+Homepage: https://projects.unbit.it/uwsgi
 
 Package: uwsgi
 Installed-Size: 1224

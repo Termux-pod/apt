@@ -4749,13 +4749,13 @@ Package: debianutils
 Installed-Size: 108
 Maintainer: @termux
 Architecture: i686
-Version: 5.22
-Filename: pool/main/d/debianutils/debianutils_5.22_i686.deb
-Size: 16996
-MD5sum: 4cf0047fa5076dd3b16b4c52103b03e0
-SHA1: dd63757a2f0df1cc6334baa33c1ada4fa8f63616
-SHA256: 88bfb8c92907b25a3781354caea5d4fccb7988e39c25c1ab95b3a3d99c3e80fc
-SHA512: a3fcf2551baaf44d74e3c9a64fb0233b92b427f09b83bfd4d94aed5834a26d342fd376f6dfe53fd08d92374194be618f98602e9f9f0a1587f2f559c6a375c528
+Version: 5.23.1
+Filename: pool/main/d/debianutils/debianutils_5.23.1_i686.deb
+Size: 16972
+MD5sum: 23beb14e5857d2b94021aaec3ab54f59
+SHA1: 1707090020d1767b4fcc7addd743bef1ca0b652d
+SHA256: 84eddf3d20e1c2c6d7398863516e77773492ec94bf954da89b924ea4d94417c4
+SHA512: 4ecab9f5766c58337cea6b3a7a242f47778d723922ad9f53a1c91369657135770fd2de508b0e1a56f7fdbf2409f5af13c94e7a6badc072586276aab2fbaa0d01
 Description: Small utilities which are used primarily by the installation scripts of Debian packages
 Homepage: https://packages.debian.org/debianutils
 
@@ -10831,6 +10831,21 @@ Description: Command-line wrapper for git that makes you better at GitHub
 Homepage: https://hub.github.com/
 
 Package: hugo
+Installed-Size: 52396
+Maintainer: @termux
+Architecture: i686
+Version: 0.147.8
+Depends: libc++
+Filename: pool/main/h/hugo/hugo_0.147.8_i686.deb
+Size: 13830708
+MD5sum: ae8e1d3313ce48ed8398ae3ff46127f7
+SHA1: 91ae9bf91db4eada53c571251c6985255f99f1a0
+SHA256: f9e90a704456d00137b2364dd13c1d140ed5b09861b1e188fa714d63d4cbee90
+SHA512: 312f140bcf9077f38b25c1e94189e15607673824d69a98797a2713507e27b1f53154c174167a0ee1e5a114eb014db1fe32e581b1e148ac8bf08c09cf58384b76
+Description: A fast and flexible static site generator
+Homepage: https://gohugo.io/
+
+Package: hugo
 Installed-Size: 52404
 Maintainer: @termux
 Architecture: i686
@@ -13396,6 +13411,23 @@ Package: libass
 Installed-Size: 280
 Maintainer: @termux
 Architecture: i686
+Version: 0.17.4
+Replaces: libass-dev
+Depends: fontconfig, fribidi, glib, harfbuzz
+Breaks: libass-dev
+Filename: pool/main/liba/libass/libass_0.17.4_i686.deb
+Size: 90344
+MD5sum: 110c1fffe0b4a16aa64bc6c372d34a1a
+SHA1: eb3e91d6ca6882f2458b0237d4a518dd887ba53a
+SHA256: fa04f9cb6ac02158cdba512be8d58312693b71dc58769d9cc4086234f904dd57
+SHA512: 6bb0cafd54b5b29bec1c0f4bfae8d7d31a42774e754fb923d71a08f3939d1e8f2f420e44e978c0e67afa4e60ce7e032e73afa01bab3d9eb43212a3f2c8635b02
+Description: A portable library for SSA/ASS subtitles rendering
+Homepage: https://github.com/libass/libass
+
+Package: libass
+Installed-Size: 280
+Maintainer: @termux
+Architecture: i686
 Version: 0.17.3
 Replaces: libass-dev
 Depends: fontconfig, fribidi, glib, harfbuzz
@@ -13407,6 +13439,21 @@ SHA1: 955e1a1bf2d0f4ed32ac68338f56192ed0c58a0b
 SHA256: f264abf80bf665684707efa3151b5048347b6ad9866a671ae7e0d839623ec149
 SHA512: b1d375c2dc7dde5e775fb9b408e6eaf2f13fce1b82ef06e4d7221f78f9f3430b2974fb8436dad176fb1a015e74b93bc304a07c18fd17cf4571c5071db729c39f
 Description: A portable library for SSA/ASS subtitles rendering
+Homepage: https://github.com/libass/libass
+
+Package: libass-static
+Installed-Size: 280
+Maintainer: @termux
+Architecture: i686
+Version: 0.17.4
+Depends: libass (= 0.17.4)
+Filename: pool/main/liba/libass-static/libass-static_0.17.4_i686.deb
+Size: 88684
+MD5sum: 29082f209be5e288db68e45cbd5ef470
+SHA1: 02b386c060ce2da7b8822bdc10762c3f36f7ff5f
+SHA256: 37eb2243109d9df2cf10b758d463c05a65c29dd508772c0fb1104eb73a344038
+SHA512: a582c2b42ae76a82924577b73e2f09871d3f0878335e40270ac2a4621da9834f8d5362cca894e0fb9af5800af5ce1d7c8badac6b80d916ea145655ee42222ba5
+Description: Static libraries for libass
 Homepage: https://github.com/libass/libass
 
 Package: libass-static
@@ -25712,6 +25759,25 @@ Package: mesa
 Installed-Size: 16768
 Maintainer: @termux
 Architecture: i686
+Version: 25.1.3
+Replaces: libmesa, osmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 21), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b), osmesa
+Breaks: osmesa, osmesa-demos
+Filename: pool/main/m/mesa/mesa_25.1.3_i686.deb
+Size: 3483880
+MD5sum: 902f72d56ecb432d6786e14da100bc51
+SHA1: 5e7d5fef386caea5eedb363a44770771bc72b8e4
+SHA256: ca1251de63704c961980f5b8b4a8c686b5201da801096f8a4e7f0097ce6d1d65
+SHA512: 71ac538a5fc4b8518a4687255c4a2b83592b02ac3129cad65f2952ff9dcab58473d80b7b7a0df3f2f2aeba9fee64468f32ef419e67bfc9e5cd6fffbfa9d9c21d
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
+Installed-Size: 16768
+Maintainer: @termux
+Architecture: i686
 Version: 25.1.2
 Replaces: libmesa, osmesa
 Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 21), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
@@ -25731,6 +25797,23 @@ Package: mesa-dev
 Installed-Size: 168
 Maintainer: @termux
 Architecture: all
+Version: 25.1.3
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_25.1.3_all.deb
+Size: 25328
+MD5sum: 4d3387b2391615d8fc54f100ab1a0b48
+SHA1: 391d208c7a8427a0f48dd7531a6d58c0fb794ea7
+SHA256: 9beb3dbbc978c14abe86c4fac692cca1a0acc579254d5d69c5e19ad47b8db621
+SHA512: 6c092e3e9749cb3331e4da5ac1a21cd18da9ebf89cfe4fbe6f63e81f8826fc4a2a8d0a4eeb37ca49772cb1a4b93ce5fd6a4c39f0efe190e36f3a724e133d6430
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 168
+Maintainer: @termux
+Architecture: all
 Version: 25.1.2
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -25742,6 +25825,21 @@ SHA1: 7bc37b15dc2b7cd93371f9aba1af19248ba89279
 SHA256: 4451021673bc77e08623a9d9936f60cef6b07d157760b5ee664a694a8a97c96d
 SHA512: 317083f2528815211fc445366b9abbd2df144edb49b45cda84d38587b13a041889de9a58d84718b46e44745c9d92bc602c074ce3090309c527ad743c077d5d35
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 10296
+Maintainer: @termux
+Architecture: i686
+Version: 25.1.3
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.1.3_i686.deb
+Size: 1748532
+MD5sum: ff9c92fd75dfcd8f1062fc948980fdf6
+SHA1: 4cb32d63e755f492856e7f2a8cda5aa06e358ffc
+SHA256: 49d3d39ed452c2069076bbc52fea8b7dbcbdd4686853fad49cf8cf404e55847b
+SHA512: b7ee2f67f5e7d849820e0c49d739482eac0383f8985dc2afd5b45112d0f82b80e2fedd492519956e9b8b0a05b4f8f86879d8cbac51031f3f2213fb7bbfe572eb
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -37622,22 +37720,6 @@ SHA512: 9909533e55bfdca1e29401c9ea0474390b91c2e25198873d6341f0120f9a0a4ba38dc5c9
 Description: An incremental parsing system for programming tools
 Homepage: https://github.com/tree-sitter/tree-sitter
 
-Package: tree-sitter
-Installed-Size: 9340
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: i686
-Version: 0.25.6-1
-Replaces: libtreesitter
-Breaks: libtreesitter
-Filename: pool/main/t/tree-sitter/tree-sitter_0.25.6-1_i686.deb
-Size: 2553848
-MD5sum: 28aad87e0eb5ade62f6dacd6d66c8bfb
-SHA1: 40c39842827036427a0ed94ad9820694aa0e81d3
-SHA256: 21dbc73864d262d612a3b41bc85955b4e52703af738212cd59786d9d087aa05a
-SHA512: ef1be00f04730ab9eef427be7d920ac85b7f6f4c3f6ad231057406237e60e80570265866fc230f5527db5adc0feb73303c5a29ee02a9b220443987dcef363e4b
-Description: An incremental parsing system for programming tools
-Homepage: https://github.com/tree-sitter/tree-sitter
-
 Package: tree-sitter-c
 Installed-Size: 748
 Maintainer: Joshua Kahn @TomJo2000
@@ -37693,20 +37775,6 @@ MD5sum: 09b3c47887203f6255066d719f5da5a4
 SHA1: ed98a1693d3bc69aa21f39f100a0311e5232b319
 SHA256: 0d890915bdb6f780ce13addd2049f09eff08706f81695709513da7c4ee673ffc
 SHA512: 1bc4cdb352d85828146eb665cddb637bc86d6c251575760d06318f847a8f7624b0a43913397ade1eede6b0b9be7a76373498200af067518ae07e3666169236ef
-Description: Lua grammar for tree-sitter
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-lua
-
-Package: tree-sitter-lua
-Installed-Size: 120
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: i686
-Version: 0.3.0-1
-Filename: pool/main/t/tree-sitter-lua/tree-sitter-lua_0.3.0-1_i686.deb
-Size: 12040
-MD5sum: 2475c01802942c4c724276d1df1813ac
-SHA1: 7deca2d335058f1813fb73256628e78e737b2b62
-SHA256: 3dfc4d40eaead20528bd30b4575ed4a3bed8c757517b903432934674ea832615
-SHA512: 355549028e5757f6d8534a91a610dec95d16e8f414028725fc536a499242844d18f2a922f89228503f8c6515c36a148d2425eeb4138552ed561682f819d61d0c
 Description: Lua grammar for tree-sitter
 Homepage: https://github.com/tree-sitter-grammars/tree-sitter-lua
 
@@ -37770,16 +37838,16 @@ Description: A metapackage that provides commonly used treesitter parsers
 Homepage: https://github.com/termux/termux-packages
 
 Package: tree-sitter-query
-Installed-Size: 92
+Installed-Size: 120
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: i686
-Version: 0.6.0
-Filename: pool/main/t/tree-sitter-query/tree-sitter-query_0.6.0_i686.deb
-Size: 6632
-MD5sum: 59637a097b9c75e85fd4fa668c55470f
-SHA1: 23e67e28a10fd0f060714039fb3cb4c9591458b0
-SHA256: 3fb69e3ff84e61ddaabd3de8239e4e7f02567608b2c525b222a3f1ddff5b0784
-SHA512: 96828231bb1a586d280cb48d83e3900fa41b9029a535cd0cf749242c6119f1e29c8de3a3266a6cdd4a1e95b575cb2c4ff8a71998c1a5af474050c32760982bd4
+Version: 0.6.1
+Filename: pool/main/t/tree-sitter-query/tree-sitter-query_0.6.1_i686.deb
+Size: 7624
+MD5sum: 717ee175e7a0768fb4aca582bb8cd49d
+SHA1: 5300a1d72c521a6d6c0a56ebf2d1fd32011f1a99
+SHA256: 3738965023de02a6da0d0abf0af57654abacca6e0150a932caa4f235bdbe07fa
+SHA512: 5d60635f53d9c382f264ef5dd0308f7a6a0890b935bf3037102ecd5267f81aa82a5e03c94305ecfa37c9456e9aef3947cb655b17823752244bbb26cfcbe9f8b5
 Description: TS query grammar for tree-sitter
 Homepage: https://github.com/tree-sitter-grammars/tree-sitter-query
 
@@ -37810,21 +37878,6 @@ MD5sum: a0e802b8aa82570f5958531f8e50adec
 SHA1: 477374fa2df67b3cb77481d3082d62ac453d760c
 SHA256: a79ec2a618e0630d46ee9af629af5d296a722966276c8b5a4ab71fc028ce9388
 SHA512: dfcb3f6c469f7e8bb22077249df07fd3f9383da0b931cbb5044144391ec920f763e485453fc878621ab731525fbba2dfdee00568d58cb2a769f65c95c18204b3
-Description: Static libraries for tree-sitter
-Homepage: https://github.com/tree-sitter/tree-sitter
-
-Package: tree-sitter-static
-Installed-Size: 280
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: i686
-Version: 0.25.6-1
-Depends: tree-sitter (= 0.25.6-1)
-Filename: pool/main/t/tree-sitter-static/tree-sitter-static_0.25.6-1_i686.deb
-Size: 94928
-MD5sum: 1b642a889efeb71482106c61a9dedd44
-SHA1: eb4b7773ed42847ee97cb528f7a9b0c23dd98ea9
-SHA256: 1dbaa236dc933c92f8b837f6eb1e35b2dde36c90de42bf13ddf2c81637e13033
-SHA512: a0d84a8643de1ea7ae3038aa4d239635ff16e24e1ce2b4921ef8ef887515bfa5a4b3dc2ecd38d98cbd519c996ac35e2efa99dfb4d914d9709589cf41cc824e60
 Description: Static libraries for tree-sitter
 Homepage: https://github.com/tree-sitter/tree-sitter
 

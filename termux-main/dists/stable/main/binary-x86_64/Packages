@@ -955,16 +955,16 @@ Description: APT transport for anonymous package downloads via Tor
 Homepage: https://packages.debian.org/apt
 
 Package: aptly
-Installed-Size: 46704
+Installed-Size: 46716
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.6.1
-Filename: pool/main/a/aptly/aptly_1.6.1_x86_64.deb
-Size: 10184720
-MD5sum: 36bb2afb3a9ea28fb6e5b0b4893e7a53
-SHA1: f161e5fc0957838c7032e673215d9fb9416578ec
-SHA256: 86c9a658ce8e43c99a208982b53ce285f333f44392d684e16282209861d69be6
-SHA512: 8ddef684a36eebfeeb6bc237b46b6ed6c0d390578227051f483576473e13d108c975b75d331e6ee18ebb106710edb2bfb869747fa4252c1758fbff2f7e0c23bc
+Version: 1.6.2
+Filename: pool/main/a/aptly/aptly_1.6.2_x86_64.deb
+Size: 10196276
+MD5sum: bdf51914a70fb0bb60d800c5cbed5bd5
+SHA1: fe072d9bbc16324e2767809f29bb5eebe9360c58
+SHA256: d4d06dcf8e0b5d209ae616927a3fd61660260becefd2565b45934022bc23db93
+SHA512: 6f2140faaaa5d925102921745f5caf3b8fc3093cfbc65501950f6814d90f78c9cf44deca26772e714f742424731d67c4f49eeff153b588bd8a7a0bf38057c24a
 Description: A Swiss Army knife for Debian repository management
 Homepage: https://www.aptly.info
 
@@ -19503,17 +19503,17 @@ Description: GPL reimplementation of libdjb
 Homepage: http://www.fefe.de/libowfat/
 
 Package: libp11
-Installed-Size: 384
+Installed-Size: 380
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.4.14
+Version: 0.4.15
 Depends: openssl
-Filename: pool/main/libp/libp11/libp11_0.4.14_x86_64.deb
-Size: 60656
-MD5sum: 9134168d73bb8d7c9dfbb5e5aa6e2fb6
-SHA1: e49660d85af393bac5f4f7c7f7a4af7d51cf2fad
-SHA256: eeff7d0ad0dba0dd7c3107fa96588962f7b392ede04d828b04ece74e18bb5f01
-SHA512: 5a63cf3f0505c68932da966323d69e8a71e4046398849121baaf4a38a8fe006373e4a05b5893c1c694a2c15aa61c7182e199196dace66216369af6e1b2cc9507
+Filename: pool/main/libp/libp11/libp11_0.4.15_x86_64.deb
+Size: 59768
+MD5sum: 170233507e9271bb9ccd8f1a0a5b2c3a
+SHA1: 36c6a36657012c96905ea958cb844c331eb81195
+SHA256: a6963304764247798ae37b6ba0da16328b1cc3c6e423bedd3ef3851242bc4fb7
+SHA512: 5ed2737b717501fac5edcd91ba7e04feb1b1b8eec6efd1efe52527f79c09cb2181a90e8e1cdf8851fcdecf530237613e78648e2dd87763bc1bf39e57415ba432
 Description: PKCS#11 wrapper library
 Homepage: https://github.com/OpenSC/libp11
 
@@ -24384,6 +24384,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 62724
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5615-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5615-0_x86_64.deb
+Size: 8034108
+MD5sum: 765d5fe09a9d91abd149899cfe771e9d
+SHA1: 2cf9ea64302c725fa61ebcbe6bab7d4974a6a043
+SHA256: 2ebb26cd9c3a028ffc1344cc7b0a172e0c702bc85c9123445c87588a541f8c86
+SHA512: 2678d0947974a5996e721da85706023fec4936356861f59803512104c7e8f08e27499557ca9f31468b1abbce827d081e4d67a56e83a2d0e9bb3b73bbad115801
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 62532
 Maintainer: @termux
 Architecture: x86_64
@@ -24399,20 +24415,21 @@ SHA512: 53a5c1b8be62b8d911a0a8b42dfa5fd5ba19ca942e203d4696c03d855e4af96c23107822
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 62532
+Package: llama-cpp-backend-opencl
+Installed-Size: 468
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5608-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5608-0_x86_64.deb
-Size: 8025084
-MD5sum: 3ca69b1c7c06f60e00e16fb2e1758096
-SHA1: d40636601188660fa77fa29d16781af7d1947099
-SHA256: 385f5613a8f85cd5cba806547edbbcd492ffd0dd2f46c9f670d52a8ceef60dbf
-SHA512: c33fc538239c74319b9a8baea4337dd69d4856ed64d1c09106fb1e2c907fce97c33ffd58c85fcf62605a15972a7250f4d15a854182cc6eb206727f56b092dcc9
-Description: LLM inference in C/C++
+Version: 0.0.0-b5615-0
+Depends: llama-cpp (= 0.0.0-b5615-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5615-0_x86_64.deb
+Size: 87440
+MD5sum: dddfc526b04e06b7f28ba6b3c4dc497b
+SHA1: 511f109647b110a7f6a3bb7ec1f07c22c3bf0de6
+SHA256: 1840b298e68d436fa545a5ba07fa496e51f6e236ec7113c805b9242b94fba80e
+SHA512: 179acf255d63ece6d8dddfd770ff17ba01cf04da4c41a584abcafb8c48049f96d538bb151717eedf62b580865928841e7c0dab4382d720ba096ea13b05fdb443
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24432,21 +24449,21 @@ SHA512: 9f9aa977e981285b09838212031c5b3b2577a6f9c1da2a30e85d295f70c8430a5da876e8
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 468
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13000
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5608-0
-Depends: llama-cpp (= 0.0.0-b5608-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5608-0_x86_64.deb
-Size: 87416
-MD5sum: e1857766fffaf1f29c6a3b1ba60a6813
-SHA1: feb54e935d66d37eb1a2a4d3af5711b59c2db0a1
-SHA256: 82a0f68eefb7990ab2830028e01e7a47cc7b7e9153c4f42a097d56b6a8dfaa24
-SHA512: 70f5f4e8b4fd88ba6b872331c3e0c5524a7fd625457404b9091d56750fdd324f218fb28860f619b29b02bf4cba0883be80e55124a12912ec4cdecf9e066b9570
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5615-0
+Depends: llama-cpp (= 0.0.0-b5615-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5615-0_x86_64.deb
+Size: 1028036
+MD5sum: 1e094f0aebcfe0538ebc35b78dbd38f0
+SHA1: 751629b8ef479a9928c2e2dc0dd57c62b09a26f2
+SHA256: b2334151f384321b1d148d3a841766e7235789cbc884efddce5e2c0430626892
+SHA512: be22ad13a712df9bba85e44ab21d37b0ae12d3c2bd924108773ccbe3598331606098dcded3468665390ae141ea8d88d847d674a0f3a9ca27a34532d6ca27b4eb
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24463,23 +24480,6 @@ MD5sum: f64c13636b8ec3d8e21a25da86234ccf
 SHA1: 30a02b94eb3d752fccf15fa5859ac5e8f6efc92b
 SHA256: 088741051123273da02e5469cfffca23dfd1d8d347058f6c679c68cfbd315d21
 SHA512: 2006bb5207fff74ce163b2204fea93917b0ea1595a5f3aaaac3721243117ada8750f476aeb83798e5d073a1e4899399372ecc85e98f9ae4cf3f5447cd3452101
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13000
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5608-0
-Depends: llama-cpp (= 0.0.0-b5608-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5608-0_x86_64.deb
-Size: 1028448
-MD5sum: 9d8ebd0b11b033b381610420d8a7bc0e
-SHA1: 90c5486b78d3dd43acb025195bddf3408817752f
-SHA256: d895cc03127547b15c215894067f06825e73f1861fcf0b108fd1adfb05321693
-SHA512: 0dfedd3a91b8e9d980c075df4ac657f8dda2bfa5826ed0f2ccc0b0f2c2f2ab0037839dee11caf1729cfbfd1535c9a6dcf0ccd0e40e9758c8c988d19da55853e1
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -28481,18 +28481,18 @@ Description: The most efficient usenet downloader
 Homepage: https://nzbget.net/
 
 Package: o-editor
-Installed-Size: 12856
+Installed-Size: 12932
 Maintainer: Alexander F. Rødseth <xyproto@archlinux.org>
 Architecture: x86_64
-Version: 2.69.0
+Version: 2.70.0
 Replaces: o
 Breaks: o
-Filename: pool/main/o/o-editor/o-editor_2.69.0_x86_64.deb
-Size: 4129124
-MD5sum: 24579eac4e1b34d0843bbb405b5835b7
-SHA1: 62fa51e54b140328caace313ad93da1df84ae37f
-SHA256: c9d7f7cb33700cf6af0c38cbaa3ad9edba0e82859999cbdb000080ff2c0f8a17
-SHA512: ae187a423a342bba0febb1d5677f764359943b3d43824456a0325568cf867ecafd2822bc0b4a5642d399bbb2da998df444be229baccf9feb7d5e1e00733ef747
+Filename: pool/main/o/o-editor/o-editor_2.70.0_x86_64.deb
+Size: 4140352
+MD5sum: acd72d1d4cf75455527e8e78fb5a727b
+SHA1: bc979de740628c2b5d6f0eee79153ad8884cbe5b
+SHA256: 9b60a65cdda6b5fc0a5b9a655d63a1fae9cdf628d5de570d5a1781f09752b3d9
+SHA512: c8410dc3135d093459904a9ff7dc882450edb12a4ea644cd0d4d6e42800556a5a05ad1564ed6a6b964c4d66cc4987ae8effca9ebc5b57d0bf8542d5482caf5af
 Description: Small, fast and limited text editor
 Homepage: https://github.com/xyproto/o
 
@@ -28662,20 +28662,6 @@ MD5sum: 383ef002e4a1584ea7ff0033b8651820
 SHA1: 5699eec86e8a29c17aa58880aadcd2ae240d149b
 SHA256: 02f1b627fdc3cdfa745d5c3545e55a34191289d0c12923195823843a4ca826ed
 SHA512: dbde565dc7cc8bf48810f5d4be1cc336ef8ec31f9eace3bcbd63e5b5e1769c82aea66c5aea625889c7f2c3e27d3a63bfbebb7fc1a7b9378369440b1b218d3533
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 20412
-Maintainer: @termux
-Architecture: x86_64
-Version: 26.4.1
-Filename: pool/main/o/oh-my-posh/oh-my-posh_26.4.1_x86_64.deb
-Size: 5336940
-MD5sum: 56c2ffce6f41b58a1a7d2e3663b03337
-SHA1: de0cb80d64aef1d695079fda9c07a1a3d044d1db
-SHA256: 430aa8f9a36df8b68176db02bddc7ec6d6daf6e357652e888df2f24fe23cf5b8
-SHA512: 4d56bf5512c6b472091cf7d9c6cfb0600e40525e24d306e460e23c81af3cd56efaff289c71cef15d0b6c27f7ac241492000f26321891b48a1c803e8272accc6e
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -31867,22 +31853,22 @@ Description: C++ functions matching the interface and behavior of python string 
 Homepage: https://github.com/imageworks/pystring
 
 Package: python
-Installed-Size: 58388
+Installed-Size: 58412
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.12.10
+Version: 3.12.11
 Replaces: python-dev
 Provides: python3
 Depends: gdbm, libandroid-posix-semaphore, libandroid-support, libbz2, libcrypt, libexpat, libffi, liblzma, libsqlite, ncurses, ncurses-ui-libs, openssl, readline, zlib
 Recommends: python-ensurepip-wheels, python-pip
 Suggests: python-tkinter
 Breaks: python2 (<= 2.7.15), python-dev
-Filename: pool/main/p/python/python_3.12.10_x86_64.deb
-Size: 7769432
-MD5sum: 169a994896ee337278d9c9ba5d448c75
-SHA1: 3953babc98ebbf02687d25a9f6cae7b28e520ed3
-SHA256: 193490a4e1c598097f0252fe416f2775efe25ebbdce6c1b3835b1921929befe6
-SHA512: 2dfb193a543086c7d6094182652a1c97dc68166cba0d9d54570a79e6391bf72f30297a171d847414632f09a7026b41ab3fa450abbf0f55bd5747fda375d54373
+Filename: pool/main/p/python/python_3.12.11_x86_64.deb
+Size: 7778564
+MD5sum: 797014f28db565f6b773231dd07c0485
+SHA1: 3f43f05f103e58f2dc20527e50986df8c85fa89a
+SHA256: 4479bcf742c8c305b3baed2e4d6bf0d4be48221c6c513d5d70d5a5201308e9a1
+SHA512: 4bb2ee48c6d025b39fff0f829f8245a2d12caac6112467d762611cbc190fb7f369b4d7bacf5282355c22016e02cd0615045bf54424de9bd80a13c2ec4adfaf88
 Description: Python 3 programming language intended to enable clear programs
 Homepage: https://python.org/
 
@@ -31980,16 +31966,16 @@ Package: python-ensurepip-wheels
 Installed-Size: 1840
 Maintainer: @termux
 Architecture: all
-Version: 3.12.10
+Version: 3.12.11
 Replaces: python (<< 3.11.1-3)
-Depends: python (= 3.12.10)
+Depends: python (= 3.12.11)
 Breaks: python (<< 3.11.1-3)
-Filename: pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.12.10_all.deb
-Size: 1801588
-MD5sum: 6a42477307e2a516d8bd73341502f9c1
-SHA1: 1f5aa79b4410cc827a90ac33243a07cc32a11fa1
-SHA256: 47ac497676f89ee57bb7a2ea67e4cf9b9ee566942800e94be123d742d1b8ae05
-SHA512: e66dfc518db72554a421198c5a1af7ba1a7f5b6576a8a10cd93c1de645f6eb8dc62b3415af441ae670161939498971799a15b07baa3901608199ed02f2922b62
+Filename: pool/main/p/python-ensurepip-wheels/python-ensurepip-wheels_3.12.11_all.deb
+Size: 1801600
+MD5sum: 41487eb69898f9680bb1ffea7a86f908
+SHA1: 16fc6fa8d3353f6334255303acce9082325c47b4
+SHA256: 1b9631f3580b5728f34d5c8ade396c0f361ff2428c4cd4a2da8e9b1d8ee59892
+SHA512: 7aab06dba8cd880314ce0cefa399a5b4b5e932b6ab1d5b72c073b08e49f8baca7bf861362a6cb603e35cee4abf5cb9a23bcc6a3bafb3a9c194a76e34afc7ddff
 Description: Wheels for Python ensurepip
 Homepage: https://python.org/
 
@@ -32280,17 +32266,17 @@ Description: Python bindings for the Skia library's Path Ops
 Homepage: https://github.com/fonttools/skia-pathops
 
 Package: python-static
-Installed-Size: 46952
+Installed-Size: 46972
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.12.10
-Depends: python (= 3.12.10)
-Filename: pool/main/p/python-static/python-static_3.12.10_x86_64.deb
-Size: 6873580
-MD5sum: e30869e1955ba6b8b86603b251115c34
-SHA1: df634ff9676cb53865ee930d232f9c153f670df7
-SHA256: 46993983a33aaf4f8dd5918408968b2ad81e794a4ae98a927c7023735b73e051
-SHA512: 9796d4a01fdcd70a0647c909b997854ce96322d6aa05d99dec6ab0018111abc8b5f137cf158a83ecbb6d363dfe093a47d5915e7511f0f453757c69262a8ddf2c
+Version: 3.12.11
+Depends: python (= 3.12.11)
+Filename: pool/main/p/python-static/python-static_3.12.11_x86_64.deb
+Size: 6891404
+MD5sum: 17281a3019e9b5403930f941d517eef8
+SHA1: d1ea1727bf8d362b36c699a0915e873b86f44470
+SHA256: ed2d55ba2fa4914cd11cdf4ce0902b72906f1a8ac52a287f904d913d8faaa043
+SHA512: ded327edfb25b9512829f3bb2354180eeaae598bf9d2dac2fc7d22d554ed924d40be5212b0ff834ea675a167265172ddc090d40ca89e5538412d3b4f705b46dc
 Description: Static libraries for python
 Homepage: https://python.org/
 
@@ -32313,16 +32299,16 @@ Package: python-tkinter
 Installed-Size: 11052
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.12.10
+Version: 3.12.11
 Replaces: python (<< 3.11.1-3)
-Depends: tcl, tk, python (= 3.12.10)
+Depends: tcl, tk, python (= 3.12.11)
 Breaks: python (<< 3.11.1-3)
-Filename: pool/main/p/python-tkinter/python-tkinter_3.12.10_x86_64.deb
-Size: 1219208
-MD5sum: fe4318ffe80341e6a8f947855767b584
-SHA1: e2a1473387f2db08e2d07d6a470546ca7727ce08
-SHA256: 4ad286795aa4b7805b4c727e103a94295df660f3a8e5327d284fb6dfecce9717
-SHA512: 0dd419ec1c5de8f5c997c8631d1b91a5b510a230170fb67ce72e235adb12133b100e5cc1ccbcef0374563224e542ab752d19076865550de05fac2d39bee5e777
+Filename: pool/main/p/python-tkinter/python-tkinter_3.12.11_x86_64.deb
+Size: 1219212
+MD5sum: 1a5946e050fdbf28733451cf1267cf90
+SHA1: 900a78d12646454ba3d92a259ae37cd0497d2a0f
+SHA256: df1f86c1414b4569eb4b400a2856e1ebd07a4731a03b2d57ba66220cb1170d7b
+SHA512: b1dc99b83040fa3b224f3883ffc374163dd7d4fb7579e9a39555479db996cf72e8eefa6542f7e16feac2777d770d38137bb727711034b7b5fb2416bf16682476
 Description: Tkinter support for Python 3
 Homepage: https://python.org/
 
@@ -41953,6 +41939,20 @@ SHA256: 87bfaef6996264e3aebb1ed3c6d4b2245bbc4f056e70107fa7cb286a18abb1a3
 SHA512: 24ddfb2c7e857b058d9ed89eaa914708e2f3de379e8b8236048fab1761b8e88926f6d85d72c90f10f02749ed5dac0273bd8157c9c406e3dc624591665091cd73
 Description: Programmable file compressor, library and utilities. Based on the PAQ compression algorithm
 Homepage: http://mattmahoney.net/dc/zpaq.html
+
+Package: zrok
+Installed-Size: 147076
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: x86_64
+Version: 1.0.5
+Filename: pool/main/z/zrok/zrok_1.0.5_x86_64.deb
+Size: 34944912
+MD5sum: bb61f0d788b1e89e3b15bb70b947baa5
+SHA1: 602a8416564c537fa73768451ffb9a4f26d7fac2
+SHA256: 330e44c725b5e3e22ee665cc2700c8bb73cde14dce63e168e9396e05999dccf0
+SHA512: 185b0e781fbc8b3df0bdc46f35d8ed93687547d511dd47313333457d62e56d91acb1e178904425ba240709962ff103c202691c75218de01cb593b90ec6d56765
+Description: An open source sharing solution built on OpenZiti.
+Homepage: https://zrok.io/
 
 Package: zrok
 Installed-Size: 146476

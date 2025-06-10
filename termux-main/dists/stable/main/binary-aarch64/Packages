@@ -8877,21 +8877,6 @@ SHA512: 295efd3edfb91d885b084ce3757ee0c5424635b8a2977002811e927e6b86597d1d1f825e
 Description: Git with a cup of tea, painless self-hosted git service
 Homepage: https://gitea.io
 
-Package: gitea
-Installed-Size: 124988
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.23.8
-Depends: dash, git
-Filename: pool/main/g/gitea/gitea_1.23.8_aarch64.deb
-Size: 33360880
-MD5sum: 8863dd5b253c9b9b57d5ce402e8db0fc
-SHA1: 742ff269c79ce29226cb7b6a9804a87d559cb003
-SHA256: feb321d0c6f364e299203e99d7a375f026449e5a94a4042c990d5da831d934ff
-SHA512: c556326206da4eeae7ed3cb8deb54a439e2e9015f122d3ca8aa81ac8788d89879c0093fc02bdaeb7575abfb95dd76532f57851464938899d6a55e94ea2821f3b
-Description: Git with a cup of tea, painless self-hosted git service
-Homepage: https://gitea.io
-
 Package: gitflow-avh
 Installed-Size: 448
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -19837,6 +19822,22 @@ Description: Static libraries for libpipeline
 Homepage: http://libpipeline.nongnu.org/
 
 Package: libpixman
+Installed-Size: 676
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.46.2
+Replaces: libpixman-dev
+Breaks: libpixman-dev
+Filename: pool/main/libp/libpixman/libpixman_0.46.2_aarch64.deb
+Size: 157404
+MD5sum: c5ec2a6335e44d29afc3f1eacccf7085
+SHA1: 0add9f0f7546e03eaa94b3a66f57f4fd193c666c
+SHA256: 2feaa48793344bcc759148eb96d010e8c441d2486368f3921cbdca135c4ca42b
+SHA512: bf5775a47c912bd7429efea11856aa49a3500f3fe27e75a7b472bf6b8df48f1c7d86c7fd546ce3b515dcc341a5067e425c5ba320a741c5b2e9329be9b1795010
+Description: Low-level library for pixel manipulation
+Homepage: https://www.pixman.org/
+
+Package: libpixman
 Installed-Size: 672
 Maintainer: @termux
 Architecture: aarch64
@@ -24463,6 +24464,22 @@ Package: llama-cpp
 Installed-Size: 58792
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5620-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5620-0_aarch64.deb
+Size: 7524188
+MD5sum: 8d86481cbc42f41125dc460b11fed747
+SHA1: 9ef91f4d77e4062eb7c982992e656c320abdd551
+SHA256: 8ed454060da1ae1dc35e45464b29e3f216942edeaffd21c1e9ac2a214e97ee45
+SHA512: 78e52219655dae5c1757cf2b21e1af65fac870dc5e8f195e1a7717365dffa90bcc09e21462f201d988925413a363bce14fe0ef42c0a23175961b8e7d1654d1a0
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 58792
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5618-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24473,6 +24490,23 @@ SHA1: 50d5d2d972a115070c0595def84b52c1f0367615
 SHA256: 5c83ac1bdc0c1929a03e1a0bf842f292c8e13c57002bdc46b4450131b30f170e
 SHA512: f50cfadd13c48d5febfeac2edd299dc4ebcebafdb867f44031762847e95e07cdfe9c84576c009e2c1266da14dea5e5344bb9308ff9307a016d47a00ffc93ff0d
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 444
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5620-0
+Depends: llama-cpp (= 0.0.0-b5620-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5620-0_aarch64.deb
+Size: 79548
+MD5sum: 2b27e6114d4511f4187352419a8d9288
+SHA1: ff8dea05088207e273b8c84a4855b52352a4364e
+SHA256: ac514d288c39d67b06816e9aa3618aff37e26dd41e1fc731e090176b89add01c
+SHA512: 604a1c200d6bde2243e2457036695814d82d4e639ca0298091d20eabc07db986a8af048ecbf8242182e7fe1324f1989a861ca41f19c3c4c28c0a3d911b675e3f
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24490,6 +24524,23 @@ SHA1: 5f466f9403dfed493d47c65acdf35068f289a68a
 SHA256: 7d02143b2fd1ac2cc8a40b950bfa8251711cafd2d05b8025628335b1ee5662b3
 SHA512: 13a5427aa6cecb08e745e0184222a58c6862acfef7c3f376cef51f95c29e12df49942adcad13fc4c10076ebd0375c863fcfedb8c4fbc1efda8022dffa19ebd57
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12764
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5620-0
+Depends: llama-cpp (= 0.0.0-b5620-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5620-0_aarch64.deb
+Size: 986500
+MD5sum: 31d06cdaae702a1f2fdb077ca6edd7f5
+SHA1: 932c45f6fc91a69d646cdee1a5e6fea8269aa4a3
+SHA256: 692b9b2c27921cf1b1645b410739c0c2d2fcfbbb9f3310c01f26d4b840e145af
+SHA512: 2071d3148894cee0e2eadb29113b7f9340606181b9205a8f3733d241b4411559da0180d4432ab3b2e0163d5d7214af62f6b1bd40699d09f59fe9112085cd6b0b
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -28322,6 +28373,25 @@ MD5sum: 5ac07071c8673b7d0a6c2aeeedc0353d
 SHA1: 4ef016b4b831d86ee74c7860ebb039a1d8f8d244
 SHA256: c38e27b880badb1843d0f53ecf776c649d190e38596e5b36ce9fd041c21abceb
 SHA512: a0bd851b6cda0d75483b373064e45cb4afc6d26817524eebd71b3c5a6aaeaa935f8a814794577c32f96b899a1df7b7db9f4425c49b457e36ee552de6f5c2a138
+Description: Open Source, cross-platform JavaScript runtime environment
+Homepage: https://nodejs.org/
+
+Package: nodejs-lts
+Installed-Size: 88032
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: aarch64
+Version: 22.15.1-1
+Replaces: nodejs-current, nodejs-dev
+Depends: libc++, openssl, c-ares, libicu, zlib
+Suggests: clang, make, pkg-config, python
+Conflicts: nodejs, nodejs-current
+Breaks: nodejs-dev
+Filename: pool/main/n/nodejs-lts/nodejs-lts_22.15.1-1_aarch64.deb
+Size: 13137192
+MD5sum: e219370e4d057c4d73874b4cab424684
+SHA1: c6ed747b4c8d8d6f7c3f78c4cabf6881beacaa57
+SHA256: b02516aae7982c8af17c4c63faf730bfee3f5ade68c05e505a5b5fa4e5d02fa3
+SHA512: 4a1a5f69111c091b5723277cd2ae62963c1173ef134b267c8829bc40bc1f79af2fe1a0061ba4fb51a6e1919bd5718a7dec4986f5b0feb363c381121cfa0f7c71
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
@@ -41970,21 +42040,6 @@ MD5sum: e94f3fb3708cd9e3f39c18043ead353f
 SHA1: ce4f929cdbffd427ce974f116da5ea46980ae0ca
 SHA256: 299ba5f3c945f1b6f55086e1052a25c71a02923c0a93d39385c8edce81c59715
 SHA512: 05ac682f89d33cd9280127d02e73b3261a9a9691e1214a3d42d11ae5f5cce97212fa6f8a85e721f50fba1ea390dcf3834627d34f4f69d30645d4492f22727645
-Description: An advanced IRC bouncer
-Homepage: https://znc.in/
-
-Package: znc
-Installed-Size: 8492
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.9.1-2
-Depends: libc++, libicu, libsasl, openssl, zlib
-Filename: pool/main/z/znc/znc_1.9.1-2_aarch64.deb
-Size: 1575876
-MD5sum: 6c773535c82338f78c16f841c1cf0696
-SHA1: fe8432bf19d362e1be29ee59443ac725c3e90f16
-SHA256: ce86fcd138a9aed95a21ecfdfa5bae17cbd1c86b38c0321cd1e59332e9cf0406
-SHA512: b8bd635dfef0428bfde53dc20fc53f141b457bc23a4f14410ea63663146baa1f665fa3be465c35bce46e3adfb79e16330b5633d850f49bbbf7adfc1c6470e60b
 Description: An advanced IRC bouncer
 Homepage: https://znc.in/
 

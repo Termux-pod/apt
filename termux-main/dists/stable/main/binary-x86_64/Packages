@@ -11897,21 +11897,6 @@ SHA512: 87b5ca8bd323ec30a8faa71f29859b9ad05faa16da900d869d862ffc6c62991c0fe2cea1
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14328
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.2008
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2008_x86_64.deb
-Size: 3202000
-MD5sum: 96ac2c084d4e8bf8a0101180266f2fb0
-SHA1: 1689a5e6df84bc404aed3e7adefefac8103d2328
-SHA256: 41082441ab92c7ea85292567d282860c0624340fd3f8f0bf95e89ca532b2df35
-SHA512: b10d3a0b0b0f36338fccd6d33b2564b7f4292188e8dada8a4e6a02e1a31c47bc43edccbef04858dec00944f876618d5a179f82b039e522acfd3dd29dc0f809ca
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 764
 Maintainer: Komo @mbekkomo
@@ -12029,20 +12014,6 @@ MD5sum: 1b4aa37b1d7a365df7c1085628bc7783
 SHA1: d3b0dfb0927a86ee61c3e5a78c775bb431f0350a
 SHA256: 1739b86d013e03631af4edf25c066ec3d39712aadc122e4fb54f0a618dc8b2e5
 SHA512: 70697047cb18bfd3a023d718089106ad36717f61dc196ecb6a20959dc6bcd0573f60cd911300695a08f52f1e76db679f84511931e583d5e61b6fae6ffe7ddc3d
-Description: A CLI for JFrog products
-Homepage: https://jfrog.com/getcli
-
-Package: jfrog-cli
-Installed-Size: 48732
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.76.1
-Filename: pool/main/j/jfrog-cli/jfrog-cli_2.76.1_x86_64.deb
-Size: 10955008
-MD5sum: cffe2c9efc3d420f6ad7fea8ec38549e
-SHA1: 2d5ff39696ea1817d4380d10f901561b326a043e
-SHA256: 56067cf00f5f17733121f0ee340397b9f838f88e1070ebde804df7e0bc597ae1
-SHA512: 9ae3250a5b30b25efd7b7ce1e45ea81354368a6fabe029f774691b49c1d02cfda1c815430ed70ba5cbe342ce3a2f3d65fbb20c9dac0a5d6110ddce7bcaf2e380
 Description: A CLI for JFrog products
 Homepage: https://jfrog.com/getcli
 
@@ -24416,6 +24387,22 @@ Package: llama-cpp
 Installed-Size: 62728
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5648-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5648-0_x86_64.deb
+Size: 8037364
+MD5sum: 65dcbcc1787dc2e93d453bf3b9e225c0
+SHA1: 3f2a0882a15ff0db504ade784936ba1695a69ae3
+SHA256: 810417d824d974682c4013355b321b3e08c15ae9e17ce6dbf96dea2c3413d42f
+SHA512: 7c42be3e4745dc84d45198968a824e65d3a02aaf12e9ef09d72145cdbba7956c6b131fb4bc6c0ecd9da626026ecab720e9c5eb9f697186edddc7600d11ae3ca7
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 62728
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5646-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24428,20 +24415,21 @@ SHA512: 647f538beb60d81f76220bcb0d1828a2b1f94ec05ce674b7030585a1fe78dcf478101f96
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 62728
+Package: llama-cpp-backend-opencl
+Installed-Size: 480
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5640-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5640-0_x86_64.deb
-Size: 8031476
-MD5sum: 145649186c2d818d132a5010d7ceaa07
-SHA1: b30147e9b6883a43f2c4a55107f231c39c51c283
-SHA256: 25a916d4891e2be263f050e67df62ca546e31f1bb391c84d565f859c6c7aca37
-SHA512: fc25559a4ac922879a3e9c1c0b69ad6c701b0cdb240ac8b535ba54d6737024fae2d53c43eaecbdd42e6a28b2b10715cb0afe464e1373a3b4cc67b679f2144a78
-Description: LLM inference in C/C++
+Version: 0.0.0-b5648-0
+Depends: llama-cpp (= 0.0.0-b5648-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5648-0_x86_64.deb
+Size: 88916
+MD5sum: 5b47bbc5601f5e5813f9d4fd18cc450e
+SHA1: 579faddf82e64ba5d5b3c4b929bdc972fabdad91
+SHA256: 1f2e1aa655c122623d8ec6d89a350659b107749b9079dfbdd7bbdbf7392d5050
+SHA512: e7071a863241a6796336e5c8852936b5bc4e70ecd1834ecd8848e4d551cd5328052809247e56d4af240af88b8ecc408ea92083854271f0a9fd8132bcb2ede575
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24461,21 +24449,21 @@ SHA512: a615bca051dcd3e710e2bde614f99073fb8242f8b4decc372d16e6d9f4e0cb614045a300
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 480
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12992
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5640-0
-Depends: llama-cpp (= 0.0.0-b5640-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5640-0_x86_64.deb
-Size: 88968
-MD5sum: 470660487a7fe7e06878cc8a7aae2ccf
-SHA1: 21d5a3ed64afe907158a1c27adaced0257bc1f55
-SHA256: baa93dc977a86c8384c719ce08084cd03ffa391cb6217ea5a59e42266688a2f7
-SHA512: e1ee62f139c35d8bf012ecf3694c1fdaf5479544c4f8d2d8e62f114e2febc129bb691a8181c3f2b0f5aead794e2b04cbecf56fe563c27c0dfdd8629767e6c0e5
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5648-0
+Depends: llama-cpp (= 0.0.0-b5648-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5648-0_x86_64.deb
+Size: 1024396
+MD5sum: 27734f599cddc36c1cb2def62b447d61
+SHA1: b4a6a5b09cdcf5bbd5a0e6f405d7e63a8634dc3d
+SHA256: 48ed3862c5c64a4272ce9b3b1924ac6ca3ae2677a6243ab5012859a29d61db33
+SHA512: 9cbe5d27a8e3c9b308a21da46e0139c4787650afbada162572423d6d27f694724ff4bc8d40b22cf08dd4918f428a1441d570adb88127688d504d4f181cd3124d
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24492,23 +24480,6 @@ MD5sum: 3b7b6e5af6a7a6db7f688e356315382b
 SHA1: 8a80ab0f3f8353fdbf64f6cf2adc54abb8799cbc
 SHA256: 953f6df5ad833571111532e7c57d2f02bd1185efdcbd5a8e1590a06472ae3f48
 SHA512: b645acadc114d3e2d2580dec91a32196148561a63268e2d5f21f740a74c6b218051d4a4535886baf7cfe7d21191733d595f70eb93c149e61efdd3ef2e03e1ca0
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12992
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5640-0
-Depends: llama-cpp (= 0.0.0-b5640-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5640-0_x86_64.deb
-Size: 1027000
-MD5sum: cdff3c5279f3acb85b88dda082280b41
-SHA1: bb94beeec2742f78b5d2f4e5caf810b01983b44d
-SHA256: 56c02d9f50adf177f427ebd5fe9b2ea616243164a294a86a7f693a760177a8b8
-SHA512: 6dfb78d1ae04d5237ff7a1b6bc0246e34e930633e60c13eeddc18b541760bbadcdaeb800c13de36f3d3c64c87643f7c2f26825257f0921f1c81b066a01e83f6e
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -25552,6 +25523,20 @@ SHA256: 08a59d0939f83c6e36697222f65ac5c63d36430d70bb083cf2971a2932e1ba1b
 SHA512: 8eee57cb0f5031b32c136132c4f18714364008f04675409bab60c68d8c03e3d68a822118ade0ac36e645e54ec50a8be677498a2a7000ca4ea17aba30a2975748
 Description: Static libraries for marisa
 Homepage: https://github.com/s-yata/marisa-trie
+
+Package: markdown-flashcards
+Installed-Size: 2632
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.0.1
+Filename: pool/main/m/markdown-flashcards/markdown-flashcards_2.0.1_x86_64.deb
+Size: 850276
+MD5sum: 72d11d1142f88d43e1e674c2978f03a3
+SHA1: 12ed29ae6607e21a52b54d0c08394e787f4a9efd
+SHA256: 304647968654a2ed660f4b0f0711a38f163a726a70178efdea952c4318634e6f
+SHA512: 40cf542d7a2d9f54be5ca507f078c1b45b60fe3c1259156aa69647f119a1e4ca64defffd978c064435a195df8f8d4008b57c8c48c0f8c6de38fdb36d9f8d426b
+Description: Small CLI app to learn with flashcards and spaced repetition
+Homepage: https://github.com/bttger/markdown-flashcards
 
 Package: markdown-flashcards
 Installed-Size: 2140
@@ -27397,21 +27382,6 @@ MD5sum: 98940f1db121a12b26fe47277c0adae4
 SHA1: e30b6ce53595cda72944faa9946f8f9896d0344c
 SHA256: bedfcbded828af97a258a10f8d394a57c8b9cb9d1cad952a5375ea4c7c1707fe
 SHA512: 2de6f14e8a49daee250bfc4e1300430e892e1ddc45e1a48afe82dd5a37870fee51e1650b4782fc65ec85aa80839128d3e8c77899838a85d50c8843d0f818260b
-Description: Small, free and friendly text editor
-Homepage: https://www.nano-editor.org/
-
-Package: nano
-Installed-Size: 924
-Maintainer: @termux
-Architecture: x86_64
-Version: 8.4
-Depends: libandroid-support, ncurses
-Filename: pool/main/n/nano/nano_8.4_x86_64.deb
-Size: 241972
-MD5sum: ebe6c46580a6da59474d5a407363aa0d
-SHA1: 72832c5df396beec9d29f6f2464fbd5150f1980b
-SHA256: 173557eea748dfeab72734ec64d46b8bbd9810bbe025119d7438abb3ddb6537a
-SHA512: 96287ab442b8f4ac46c71fab07677ea7feeed84fc8148acfa1ce6323f522820af61ff8c953ecbac4f6103ae72c4e4be47c66d30fdd4a8ce20611c349fbf9f966
 Description: Small, free and friendly text editor
 Homepage: https://www.nano-editor.org/
 
@@ -40219,6 +40189,21 @@ SHA256: e29a942591cd5dbdd07b116be1a7e022caa26962b98ed2a74a17493c752ba7bb
 SHA512: 35f49cbe436eb7b46eb17d47c8e6f9aa5107484c236664336ec8e9f65034be98310250492fdc3350c0cc8c86a64fdc4fd1d9ff5d472754d138364298a55a6d87
 Description: Ogg Vorbis tools
 Homepage: https://github.com/xiph/vorbis-tools
+
+Package: vtm
+Installed-Size: 6284
+Maintainer: @termux
+Architecture: x86_64
+Version: 2025.06.12b
+Depends: libc++
+Filename: pool/main/v/vtm/vtm_2025.06.12b_x86_64.deb
+Size: 1279004
+MD5sum: a011cc15554659f86ec5ea5bb3c7a2d5
+SHA1: 014bf849c8dd879abdb9850eb16002f512455de9
+SHA256: 23d8d2fb8a8e9df0cff143ee52588809a299b778744a079afc8263f4023374cd
+SHA512: 81ff848947d93bd885df7dd9582f8ccff92a2b9e197bb9b2ab630989663b929da0ca423120b3ffccdafc88eadb7bd3105db8c64b1ae16d0a4d5839508fc4ac4f
+Description: Terminal multiplexer with TUI window manager and multi-party session sharing
+Homepage: https://vtm.netxs.online/
 
 Package: vtm
 Installed-Size: 6284

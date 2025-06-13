@@ -10249,22 +10249,6 @@ SHA512: d4d7e349a4eaf438a8654dfc527cdda96281706b9a29bb4ddd0f291c8821aaafe48c6762
 Description: GStreamer base plug-ins
 Homepage: https://gstreamer.freedesktop.org/
 
-Package: gst-plugins-gl-headers
-Installed-Size: 76
-Maintainer: @termux
-Architecture: all
-Version: 1.26.2
-Depends: gst-plugins-base (= 1.26.2)
-Conflicts: mesa
-Filename: pool/main/g/gst-plugins-gl-headers/gst-plugins-gl-headers_1.26.2_all.deb
-Size: 8216
-MD5sum: bd028822da6dbed962cbed37dba3abd0
-SHA1: a13ce0c70670f5a6fe1ebc1db1ccfe874ba2d742
-SHA256: f5adee52ad0b269a28963cc8810b24f770d7a2e986f495682c474360c45a0d4d
-SHA512: c33da5eb1da89e8ccc141735ec6f3467d6439dcd8e60838eca33b3d51ac563597b19fe8795d6338585fc7d342cbf91e4b227154e8bc404f495fed2d937e15acf
-Description: OpenGL headers for GStreamer plugins
-Homepage: https://gstreamer.freedesktop.org/
-
 Package: gst-plugins-good
 Installed-Size: 5220
 Maintainer: @termux
@@ -11940,21 +11924,6 @@ MD5sum: f61a186f7736c58961ed6985e458d9d4
 SHA1: 7b831ac6d3692b6d2e3609e9a9c79717c32883e7
 SHA256: 258190bd50a593415f1b50e1a33d2dfeba6a5b3c9e0b903d9f49642b56188333
 SHA512: d70ba30ae1794a9dcb4fe139c7c5fd109942280c6fa8632e011c28b17171d4425cab2528d3fac7be1518be82a87d31859823e69e00f954ca6fc3db97c4d442e2
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
-Package: jackett
-Installed-Size: 14328
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.22.2011
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2011_aarch64.deb
-Size: 3182936
-MD5sum: ab6b5bebd2cf53f9d272654f3252e847
-SHA1: f988efbbb9d0d0fa2d19dcd0c74981a1fb71ad51
-SHA256: c2c17005dee2ba0d860050185974fb266e7337acc89df3eed4a8c7d79640474e
-SHA512: c0bde26fb0635ba0ae86b89c631f791ef893333626f920a822586840e28c99e23c4e46a8bc3fb7ce35274b2bf0427011628db497ffbb4ea78ed3c53798553490
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
@@ -19948,6 +19917,23 @@ Package: libpng
 Installed-Size: 524
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.6.49
+Replaces: libpng-dev
+Depends: zlib
+Breaks: libpng-dev
+Filename: pool/main/libp/libpng/libpng_1.6.49_aarch64.deb
+Size: 195516
+MD5sum: 10fc1de26ca29c860a7bf2d6c80b9c66
+SHA1: 050a634ba9fdd5271c06155b985c6618ba206b9b
+SHA256: 2925176e98c8e6fc79274b95833a624fda3de625f6db3d730a5864e3510c0c17
+SHA512: 8e17a57a834395deb5697e464d4353b5ba3a76118cb9cc99ad1ce1c9f93cd7ec802e7897ab8bdd57f4fd58689734dfe024a315f96b155ce1b537005dbe6f0387
+Description: Official PNG reference library
+Homepage: http://www.libpng.org/pub/png/libpng.html
+
+Package: libpng
+Installed-Size: 524
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.6.48
 Replaces: libpng-dev
 Depends: zlib
@@ -19959,6 +19945,21 @@ SHA1: c0767377dbd0fedae1e0f83b8c2e0ee82a97ddb6
 SHA256: f922a8d28e1c1dd39a1d4f243dfce0281413e3bff5a45ee8f09b39b6bf24b4c0
 SHA512: 52795c4a1ec9385ba7fac038de7acdefd158c5eade53f13212d2aff8af34dc14706a9b419c6b5df3921396eeab9435f8d65da4877cc2882a3b3ff265709de1b1
 Description: Official PNG reference library
+Homepage: http://www.libpng.org/pub/png/libpng.html
+
+Package: libpng-static
+Installed-Size: 332
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.6.49
+Depends: libpng (= 1.6.49)
+Filename: pool/main/libp/libpng-static/libpng-static_1.6.49_aarch64.deb
+Size: 86396
+MD5sum: ad84e4ac190a0bb2b47a3b70b299f55e
+SHA1: 5223b45e79830bc080cd1c604e9ecbe584c4b8e3
+SHA256: 3a03c1366773f5f809b665b1dcd88c623373132c5cdb5a4d119f01f4c9d959d0
+SHA512: 2dec01affd6097707cb5810bbd63e8e7f1cd5472bcb04576fc1d716cbcc0ef0beed9cc4db6812b8e429acf3dc751fd7b196d1d99e9926dadd5de91eb7b9d0cb8
+Description: Static libraries for libpng
 Homepage: http://www.libpng.org/pub/png/libpng.html
 
 Package: libpng-static
@@ -24463,6 +24464,22 @@ Package: llama-cpp
 Installed-Size: 58804
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5650-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5650-0_aarch64.deb
+Size: 7522844
+MD5sum: 25bf16366df6a899ba2790cf17c8fab5
+SHA1: f191779dff11804010fae862e1a39168cb9e60a0
+SHA256: 25706f1afc96e1323af23ffda93046651b7b81a2e3fcc62ac76d1c93c0655cc6
+SHA512: 74d6130bea9e986ed4d2ba70ebf293f0b297d680a70f08ad564e6b22126c1f8099afa411ee9bdac97413ef8ae99577cc93122dd16146ee92567866dd41c36866
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 58804
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5649-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24475,20 +24492,21 @@ SHA512: 37a7fb8ecec4cd8464603fa66e79504d212208f119e6a41c3d8cdc10b6b0cb7ae41096d3
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 58804
+Package: llama-cpp-backend-opencl
+Installed-Size: 460
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5648-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5648-0_aarch64.deb
-Size: 7524364
-MD5sum: 0b767b08ada1bc4788b1235740d794ed
-SHA1: 9434d9bf06a76d71b1fa63c6ac32962b38fe1173
-SHA256: da690f8dbade92311fdabc80916f8d676a2a1b0e3a609517a50470fc6f7b6c33
-SHA512: 21bdf31acc4a44aab78ec3751c8b06c542ae2d05ef0b96c68ccad7e3585b1c8455e1858cdddd29c4256fa2cfb6c4fdad00e4da6a3367767221a0f0da6b440406
-Description: LLM inference in C/C++
+Version: 0.0.0-b5650-0
+Depends: llama-cpp (= 0.0.0-b5650-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5650-0_aarch64.deb
+Size: 81116
+MD5sum: 9c5287e69e59508ee7cc15b2a784349d
+SHA1: 71e45a5a5572438cecf52ed80ca9aafb0e766e25
+SHA256: 25162528f10a4391a6985babde71bc39eab4741e016f9d9d75cb9e6e0c3a46ca
+SHA512: c8892d012ba03086569e9578cf978b663cd2202411a5c682468c46ba754e2f38ebf4eb5abb150a63ff313fbf11e82fe285cc8bd35084aeabe49dfdf79171dba9
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24508,21 +24526,21 @@ SHA512: d05ee417dad7fe3c79aaaf7ee8ee59896651f9cb85c5523688d000b3bacb122aea16417f
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 460
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12756
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5648-0
-Depends: llama-cpp (= 0.0.0-b5648-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5648-0_aarch64.deb
-Size: 81168
-MD5sum: c7567764d76828075f17fc14f42a8163
-SHA1: 0e16f8d44e5ef1834b2336c104176797ccd0ae73
-SHA256: ef9e780a57b3228d40476eb2dba14c9825ebf0a8f60c350ab9eb9832b211de5d
-SHA512: 79dd8f4d0084e51ffbfc3e65e599d40e069f37b30457057f9ce38003d67f4557b1b40239a089ae1bb5dd0ff45e7a72a91dac98b035dc7970098ae4bf361768ec
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5650-0
+Depends: llama-cpp (= 0.0.0-b5650-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5650-0_aarch64.deb
+Size: 985112
+MD5sum: 660889f44b5bc31a37aefbddf5db3a6d
+SHA1: deebdbdaf538a30437cd3c444aa5eca84b464976
+SHA256: f2cc7491a0447c18c5a21c2ed190ca1e4f2c462bc906a01e828559d526685b30
+SHA512: 33cc9506963ecc36f5ca21947d188654f4370c37ed197df927fcdc183c30a7ee1223ce0c49112a79557111fb04197fc887fd99e0c11e1d8a9090be6aeb06204f
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24539,23 +24557,6 @@ MD5sum: 2338134d5eb24e24649ae5fe3aaebc1a
 SHA1: 64e83e6d30af9b5b85f40e83abc8dab2a961c310
 SHA256: 3452f4c1ade0252a59691e511ebb96bb06bf24b7d59377bd6af659862fce93cf
 SHA512: 0061cf11464d044f3a8e325da951b9bacfec6e5a0609af171e4a37b8cfe160f0460bc0ea01c42e1ca86b3120a031230dd6364ea2198c26d22aabc729ada04a4a
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12756
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5648-0
-Depends: llama-cpp (= 0.0.0-b5648-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5648-0_aarch64.deb
-Size: 985180
-MD5sum: 828e510f87e44f4d072032076526cb34
-SHA1: 6930d52291c5d9451cafcaaab0cd672890be71a3
-SHA256: 9c3d4e348747b33c3ddeb325266d150a799cdfc97cb3815162c37a6a25c38bc9
-SHA512: e1aeeff127c590e6feda05a2e4bcaef2ade4734c8294a8d8fdd7c80c728331e6110e5bc51d5f7a69f668b59fbf4fce69c7ebbe1e1559a680be476fc2d65446df
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -34408,6 +34409,20 @@ Package: rush
 Installed-Size: 8716
 Maintainer: Krishna kanhaiya @kcubeterm
 Architecture: aarch64
+Version: 0.7.0
+Filename: pool/main/r/rush/rush_0.7.0_aarch64.deb
+Size: 2356896
+MD5sum: 70cf67a5aadebe84a8759fc77dbfa570
+SHA1: ad136610ad004a37da2de27a715a6c2e6842ec0e
+SHA256: 829d72403ad9c13acfe923cc162915813b396b722a78c319d40c593afcfb6825
+SHA512: 734951b1d822c9d08eab5e9f7b829b139521808d7cda85427b95f820ff445d2fdc309ba84bc590acf9ef5d05bf7b9553b6c3e3ea58ba3135920e6770528d6299
+Description: A cross-platform command-line tool for executing jobs in parallel
+Homepage: https://github.com/shenwei356/rush
+
+Package: rush
+Installed-Size: 8716
+Maintainer: Krishna kanhaiya @kcubeterm
+Architecture: aarch64
 Version: 0.6.1
 Filename: pool/main/r/rush/rush_0.6.1_aarch64.deb
 Size: 2357808
@@ -38350,6 +38365,20 @@ Description: toml11 is a C++11 (or later) header-only toml parser/encoder depend
 Homepage: https://github.com/ToruNiina/toml11
 
 Package: topgrade
+Installed-Size: 7300
+Maintainer: @termux
+Architecture: aarch64
+Version: 16.0.4
+Filename: pool/main/t/topgrade/topgrade_16.0.4_aarch64.deb
+Size: 2054976
+MD5sum: 6e7a898b152be4ee339f10d873b9fb72
+SHA1: 47f92fc255c73f6a1c61773327176d2c110ebed4
+SHA256: fc39b352e5983e10a9823aa8092032a2062dab39f49be47f3ec50271de18a31e
+SHA512: b84c8f7ce2273f0e0e2bd8d1549f49b55ee2cf6b8004ab69813fa8e3a4b96ea77ddec532f16c60d85d59afee4d52dc6ca0ec07fa43691084a536391ecd6e3bdd
+Description: Upgrade all the things
+Homepage: https://github.com/topgrade-rs/topgrade/
+
+Package: topgrade
 Installed-Size: 7172
 Maintainer: @termux
 Architecture: aarch64
@@ -38544,22 +38573,6 @@ SHA512: a7acd415874567ba8531e750f40dd97a65e228a56452541af308a6cc2c0b67da7dd29f8a
 Description: An incremental parsing system for programming tools
 Homepage: https://github.com/tree-sitter/tree-sitter
 
-Package: tree-sitter
-Installed-Size: 7872
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.25.6-3
-Replaces: libtreesitter
-Breaks: libtreesitter
-Filename: pool/main/t/tree-sitter/tree-sitter_0.25.6-3_aarch64.deb
-Size: 2013720
-MD5sum: dc17223f0fd84b685a03b41b24770946
-SHA1: 5c6e7b53f33fd17c6bcad6382e06829cf992a12b
-SHA256: 455699343088d2db236d509ec70979bc1c1886bdaf0dabfb1e740e4aeb45fd18
-SHA512: 699c07c9c23f7734bdd93edfa6de59e7eba385f8c2b9d402c7341826eeaeaa34aa30a2f9de2dd71b7ad9c680ea24de90e8af5d0de4032ae291315104cae3d05b
-Description: An incremental parsing system for programming tools
-Homepage: https://github.com/tree-sitter/tree-sitter
-
 Package: tree-sitter-c
 Installed-Size: 692
 Maintainer: Joshua Kahn @TomJo2000
@@ -38571,20 +38584,6 @@ MD5sum: b74526a60ec2cf536929da2a9b38f1b2
 SHA1: d8e29078bbff46a13d5a1eea4522fac07a2d5771
 SHA256: 62ec7041744e516bf3a65e25aa08c6cf12b508e03e82c54805d24fdc1b9d230d
 SHA512: 7b881f141737c63f11148a537d7201c8a0b816b0d5e78b5fb51ae4e9ae545705bcb73088abccce8a639a4483cdad56ab38194d18a8d73af11859ee67ba94b513
-Description: C grammar for tree-sitter
-Homepage: https://github.com/tree-sitter/tree-sitter-c
-
-Package: tree-sitter-c
-Installed-Size: 692
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.24.1-1
-Filename: pool/main/t/tree-sitter-c/tree-sitter-c_0.24.1-1_aarch64.deb
-Size: 48288
-MD5sum: d2b87f747926468c3f50b91cd8b664bc
-SHA1: d6f1a191c4523ed58f3d16c8bdec3f066e70ba06
-SHA256: e6fda0230176f292a9bbe88130c9264399652731c053a2b7f9f7d14bd4577855
-SHA512: 3386c2ee86179dcd0393ea96e1898acadb628bf6b8831c574555ec9fbae1ba2ff0696f6b0ee1d3c0e7388fd51e7f39b1526a3a2d618b5c50291f789c4d5b6639
 Description: C grammar for tree-sitter
 Homepage: https://github.com/tree-sitter/tree-sitter-c
 
@@ -38603,21 +38602,6 @@ SHA512: ca80d5001ce80f0ff7ccf271cee0371493c7ad0c492b1db4e70f6f7b834a12667eac271d
 Description: Static libraries for tree-sitter-c
 Homepage: https://github.com/tree-sitter
 
-Package: tree-sitter-cross-tools
-Installed-Size: 18280
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: all
-Version: 0.25.6-3
-Depends: tree-sitter (= 0.25.6-3)
-Filename: pool/main/t/tree-sitter-cross-tools/tree-sitter-cross-tools_0.25.6-3_all.deb
-Size: 4572284
-MD5sum: 8baa25f20212bd255c714309f96203d0
-SHA1: 458c2e9cde24b71e5272757f7f99acbe9484bfdf
-SHA256: 1ee2bb056b59238204684353bd0f0be693d0be7f221020ec92ad59dea94db3c0
-SHA512: d5aa0c434a720d7a45304e34993129ab1b1c47b4aee0c37f7f525fe6142a1f3aef44ec84b05ec565a6a19536eb07f5ae5ff25611d5901f0577dfaf0e4d9e903a
-Description: Tools for cross build on the host (NOT for Termux)
-Homepage: https://github.com/tree-sitter/tree-sitter
-
 Package: tree-sitter-lua
 Installed-Size: 156
 Maintainer: Joshua Kahn @TomJo2000
@@ -38629,20 +38613,6 @@ MD5sum: 146e4aba910331146aefdae4cc918fc5
 SHA1: 1dbd19118e1211030802cf771992cc3b7ff4aa39
 SHA256: ae8bbd7935c77a1c5250e62f37cb5f85edfddbb24959d3bdd1e09a0760ad85ea
 SHA512: 9618748b4f938ad169cc004e59266f3a9d10a542aa868a61e603f9101dcc1620d0b6b5adc41858b099ea7b7d8e9b980ac78b4cac2734e025c4f4eb9e0017e4a8
-Description: Lua grammar for tree-sitter
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-lua
-
-Package: tree-sitter-lua
-Installed-Size: 156
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.4.0-1
-Filename: pool/main/t/tree-sitter-lua/tree-sitter-lua_0.4.0-1_aarch64.deb
-Size: 13952
-MD5sum: 6162f059e270ac8e407fb73c20eb8e5f
-SHA1: e700da28f6d55a8243263d733efdaa4ffc54761f
-SHA256: 1360076d3524ebb06ea58c248e2126d046b6294faf1e139eb0628723d47446d6
-SHA512: a96adf18665653ce12e0de614c00aba082770b7af22aca6f36c6ae0bdfd01f7105c36fd37434f9613272341c67546746e020fbe90f9cdaa8e05a62ab0ba0cbfc
 Description: Lua grammar for tree-sitter
 Homepage: https://github.com/tree-sitter-grammars/tree-sitter-lua
 
@@ -38672,20 +38642,6 @@ MD5sum: 0f023abfec65da830ddb5cd5847c274d
 SHA1: 6042fa344fbdb4e428201af609771b72708b8ad3
 SHA256: d0c52b3544bb88e1784ff20369ec7a5e0a7a4189353524d7a942d975a0147c80
 SHA512: baf6ac4fd186c2e58402bd6b2374311d2a1ffc7408c9004cd74b09c53c4611bdb9ebea4cff7bf6b8d8d2b05d7cdf93960c05840fee3a4927a3e010662a2c0427
-Description: Markdown grammar for tree-sitter
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-markdown
-
-Package: tree-sitter-markdown
-Installed-Size: 864
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.5.0-2
-Filename: pool/main/t/tree-sitter-markdown/tree-sitter-markdown_0.5.0-2_aarch64.deb
-Size: 89460
-MD5sum: 8ec5ceb3752589e5ce651a799333120b
-SHA1: 902141950627966626642175daf3581a66f20693
-SHA256: b9c00fc2d8b5bd83f94dc570d17dc8569e0cc7d6f398319d1bccf062e7275cf3
-SHA512: a3376e589219e8703d0c6e99b8efef9bdee1b33eea3d6e8313e5a9f09089b4dc5c0e7868bc2016376ed148fffb7c8801c4f16273f6596fef4f7eb44a75023669
 Description: Markdown grammar for tree-sitter
 Homepage: https://github.com/tree-sitter-grammars/tree-sitter-markdown
 
@@ -38719,21 +38675,6 @@ SHA512: d1ccfa8b03a7ccfe972904af68254ad32ddf82b2c1da0d545f6fd34bc95805a7d19f539b
 Description: A metapackage that provides commonly used treesitter parsers
 Homepage: https://github.com/termux/termux-packages
 
-Package: tree-sitter-parsers
-Installed-Size: 4
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: all
-Version: 0.0.4
-Depends: tree-sitter-c, tree-sitter-lua, tree-sitter-markdown, tree-sitter-query, tree-sitter-vimdoc, tree-sitter-vim
-Filename: pool/main/t/tree-sitter-parsers/tree-sitter-parsers_0.0.4_all.deb
-Size: 748
-MD5sum: 58350a5fa52ef819efc9907799af1a30
-SHA1: 9c9c3a19c14a2819c0418dae35abc329ef77dbff
-SHA256: dc3b5704f504e6f9590769232a8dbc46ea71b897cfaee6c722c780b0d611b7f7
-SHA512: 220729c71060e05371d81aea4a318545d4e29628ec4e7ec6ca3ed0052f5e1bdc13ff1fb93209b40820beb8b0ad129a728feb1839ba753938af92f653d1dd8a05
-Description: A metapackage that provides commonly used treesitter parsers
-Homepage: https://github.com/termux/termux-packages
-
 Package: tree-sitter-query
 Installed-Size: 120
 Maintainer: Joshua Kahn @TomJo2000
@@ -38745,20 +38686,6 @@ MD5sum: d89a15dde6eb66ff6eef049f9180a79f
 SHA1: 429bd6660d339a69bd9bba50b5997ed9cbb69583
 SHA256: c16020d85c5f82968663877a9f87dd0fbb827ef36fcb0bdc88be9ee811ccda5c
 SHA512: 42dabd883b83c38ffff4ce1388d83097ddbd96c7559f23b9d58fee137cd401186664619d26c7612bd7cc4f9929ffba97f0c4496052a4acc48a15c36aefffe31d
-Description: TS query grammar for tree-sitter
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-query
-
-Package: tree-sitter-query
-Installed-Size: 120
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.6.1
-Filename: pool/main/t/tree-sitter-query/tree-sitter-query_0.6.1_aarch64.deb
-Size: 7520
-MD5sum: f0818b00d2b14bbea201ed2582a59382
-SHA1: f2d026a464601f458567b645a11be430caf64485
-SHA256: d9a9128a39f6b8eefa1ef7f69cac18b924130ae2aedec90aefd0b379934c2730
-SHA512: 9d27b663cb84495963ceac0fe97f81aa90ae5ff824fa6a63b7e09e4e393af04e23a85aecd1f1c764c895b72b615b76e347ae397a6be90749cb115ff2472f6d36
 Description: TS query grammar for tree-sitter
 Homepage: https://github.com/tree-sitter-grammars/tree-sitter-query
 
@@ -38792,21 +38719,6 @@ SHA512: 89458fe9704ba02708e36cbb61561bda4a24b142cc11e57c959badfa26c901604921860d
 Description: Static libraries for tree-sitter
 Homepage: https://github.com/tree-sitter/tree-sitter
 
-Package: tree-sitter-static
-Installed-Size: 292
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.25.6-3
-Depends: tree-sitter (= 0.25.6-3)
-Filename: pool/main/t/tree-sitter-static/tree-sitter-static_0.25.6-3_aarch64.deb
-Size: 77640
-MD5sum: b272af60d9353f916f328434d75aac41
-SHA1: d8e34fa0be893c8541e823e8514eafe50361e7c2
-SHA256: b6eaf42b9602a7abeaa81ed502b7415aa31b663aa3b035705318f3b1cde2b7ba
-SHA512: 7fc44bf69b4c42cee35c1d1296c27930987a237a97c913ba5ae121f19fadf1a36f8df5239b24a70128c35512262c127a8e67350d382d80e5732e0d23b7d60f23
-Description: Static libraries for tree-sitter
-Homepage: https://github.com/tree-sitter/tree-sitter
-
 Package: tree-sitter-vim
 Installed-Size: 1292
 Maintainer: Joshua Kahn @TomJo2000
@@ -38818,20 +38730,6 @@ MD5sum: ac80565fbc7cc472390573bdc7605494
 SHA1: fd971c060291be0829aa81c6115d01f88932c457
 SHA256: 05b9c520a90519faa322fbf3c74fb61b93c931b446ca9bc87e2db57709d83dae
 SHA512: 9588b70cee9dd7b7bf3c627aa5c38f5ebd3b271be50f3cda47fcc4cdd866643a3d590fb4f6826853742270e4a389a5018dca6fdf497892de60b78be6435ef947
-Description: Vimscript grammar for tree-sitter
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-vim
-
-Package: tree-sitter-vim
-Installed-Size: 1292
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.6.0-1
-Filename: pool/main/t/tree-sitter-vim/tree-sitter-vim_0.6.0-1_aarch64.deb
-Size: 108892
-MD5sum: c56bc284c55dc9c0447b474d66e1e627
-SHA1: e294c39c10bc74edf156140963b895a1c7396ef0
-SHA256: 37354903b2fd16577df6c3a3e70444cce7dbf570ea33fdb56e76294993c79f69
-SHA512: 42f609898927a27153cc73f89c8f236400083985337e0933c1bd37e09fa319b6ee5b6816ac399513e3f67122c75bec93e542b4092267ba2daa7182aac316f632
 Description: Vimscript grammar for tree-sitter
 Homepage: https://github.com/tree-sitter-grammars/tree-sitter-vim
 
@@ -38850,21 +38748,6 @@ SHA512: 63f9620aa052449105a8966ae52fcb941a3c434f1e5b955de34146b60a4ef8606f8ecc24
 Description: Static libraries for tree-sitter-vim
 Homepage: https://github.com/tree-sitter-grammars/tree-sitter-vim
 
-Package: tree-sitter-vim-static
-Installed-Size: 1268
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.6.0-1
-Depends: tree-sitter-vim (= 0.6.0-1)
-Filename: pool/main/t/tree-sitter-vim-static/tree-sitter-vim-static_0.6.0-1_aarch64.deb
-Size: 107976
-MD5sum: 64a3e25c6fea35604ff442431fdf2267
-SHA1: 258d73cedb97babe1902c6fd2802646a0fc6a1ac
-SHA256: 69c9c74fb274a06479cfd3661e95b04f426a8f811a0e1b6b4c95a0f5c8f37985
-SHA512: ff5d45e6e1f5e655031067399312ec8a84d3d9c68538b4921f774f028dab49686f958b813fa8ab70027d653b066101c97e8024b84d5897807d01e6679c450cf4
-Description: Static libraries for tree-sitter-vim
-Homepage: https://github.com/tree-sitter-grammars/tree-sitter-vim
-
 Package: tree-sitter-vimdoc
 Installed-Size: 268
 Maintainer: Joshua Kahn @TomJo2000
@@ -38876,20 +38759,6 @@ MD5sum: 0e8dd08a14dc0764b350e30b244533a0
 SHA1: 363a1f2418a2eb9bfa3f1f62334ac5ce0ad849e7
 SHA256: 26300a64eb80560399627529b06b916831b46b94e1f8aa8eceb5206e8d9a8f8c
 SHA512: a8f23296e489d393442cffa21dcd9e08440a99555c5e38f9bb67dbaff4430992c4f67afaa350d1b7c74932f1f22f51bbdfb1acfdef9cc51795f27bb6195a4c95
-Description: Tree-sitter parser for Vim help files
-Homepage: https://github.com/neovim/tree-sitter-vimdoc
-
-Package: tree-sitter-vimdoc
-Installed-Size: 268
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 4.0.0-1
-Filename: pool/main/t/tree-sitter-vimdoc/tree-sitter-vimdoc_4.0.0-1_aarch64.deb
-Size: 18776
-MD5sum: a454ab10948bb47f9e66dbc735d2a386
-SHA1: c11415c00dbecf47caba9fbba3ab4b8e95d87806
-SHA256: e9fbcac3d801b3a23197f559a0a037a0538de125c5434a82666505106fc1939e
-SHA512: 90867f970c0e9da183e23f75144eb17432f0248551c36f73bac97265ee6c8189f5a3cc0079917f28333eb1c99a4fba766c160cb2cdabb51c6407c92ec6281ccf
 Description: Tree-sitter parser for Vim help files
 Homepage: https://github.com/neovim/tree-sitter-vimdoc
 
@@ -38905,21 +38774,6 @@ MD5sum: 148d6ccf94719b74fda1c1dcaf078195
 SHA1: 15d78eb6215f63e5ecdccfd0e21bfbf696182f0b
 SHA256: b2f374ec59e2da50db414a2e29f37d8e4b07c0bba7ccd2408258978b1d6d460e
 SHA512: eba90e7a1ffb559d17bd18b0b3ccedb861ae7277164d21165a9ea8ff3f56d38510d0ab914973c65e6e3856cd4422a17ea5232f9977460c5980dbfac9afe092fa
-Description: Static libraries for tree-sitter-vimdoc
-Homepage: https://github.com/neovim/tree-sitter-vimdoc
-
-Package: tree-sitter-vimdoc-static
-Installed-Size: 232
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 4.0.0-1
-Depends: tree-sitter-vimdoc (= 4.0.0-1)
-Filename: pool/main/t/tree-sitter-vimdoc-static/tree-sitter-vimdoc-static_4.0.0-1_aarch64.deb
-Size: 18324
-MD5sum: c0cef651bdc1fe22ef034a77b0096f8b
-SHA1: 96a2b247f99a10734fa88d76ef8c51190ca1988b
-SHA256: 09aff8d5fc7c92c26f9ef3321d082fe10b183d79fdc1fdbbe26c512cad7b2ce9
-SHA512: 8b60ef785035d62f597943d9e042e9955daa4acbaba356c7f373a1f49a36ad6ed9b3cc819db5c0c1d096011d2f4439227509861a2b69a2be182fec9b61fb73a9
 Description: Static libraries for tree-sitter-vimdoc
 Homepage: https://github.com/neovim/tree-sitter-vimdoc
 

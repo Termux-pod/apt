@@ -8971,6 +8971,23 @@ Package: glib
 Installed-Size: 20960
 Maintainer: @termux
 Architecture: aarch64
+Version: 2.84.3
+Replaces: glib-dev, glib-bin
+Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib, python
+Breaks: glib-dev, glib-bin
+Filename: pool/main/g/glib/glib_2.84.3_aarch64.deb
+Size: 2545796
+MD5sum: f6c5d69bbaa5532d79e60b43851cfbe4
+SHA1: 0b0bd46d53bc62d2a0c862ac324fd9533df2f314
+SHA256: b1b68046df542385d7b361f7213fc4239ac31b551c9083d174dc380781e8f748
+SHA512: 6f5615a31e527826ab42f6563c31d29809bcf5132be539082362c8708de516c1459395575cf573037aa676647146b6c96feb4a5248058501a3dd9c7ada25d811
+Description: Library providing core building blocks for libraries and applications written in C
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib
+Installed-Size: 20960
+Maintainer: @termux
+Architecture: aarch64
 Version: 2.84.2
 Replaces: glib-dev, glib-bin
 Depends: libandroid-support, libffi, libiconv, pcre2, resolv-conf, zlib, python
@@ -8997,6 +9014,21 @@ SHA1: 32a9b4ce0a3842e25e30ff982b3a58c381453651
 SHA256: ee7ed0dfc5298e931f56f4be9b1b9b14419a4ebbd23abbfb13ab998ea46c6d16
 SHA512: db45f6e33507fb99da91773c32e757f30c0b54dd9f88efe1f32023d16896e707a5918044d1fb3245498afe94c61c74d338de6b519d743a55a816016552c37924
 Description: Programs for the GLib library
+Homepage: https://developer.gnome.org/glib/
+
+Package: glib-cross
+Installed-Size: 81468
+Maintainer: @termux
+Architecture: all
+Version: 2.84.3
+Depends: glib (= 2.84.3)
+Filename: pool/main/g/glib-cross/glib-cross_2.84.3_all.deb
+Size: 12021664
+MD5sum: 7d7c52aa3e5f52efd83adfd0306a99f6
+SHA1: cfa884235b5b93df16309f8fd8acbdc1243c58e4
+SHA256: 7b92e801b90299009683cb1e3c213bc6093e0800f92039679b4a5f3929683f51
+SHA512: cc516b69162d7dca50e4cc0d0618c50e6f825d474957512192f1d7c554261c61d9a95d9bd09e8e7001c81e9073a9f6e610d6611abe39fc8bbb7174c3a103946f
+Description: glib for host (NOT for Termux)
 Homepage: https://developer.gnome.org/glib/
 
 Package: glib-cross
@@ -19930,23 +19962,6 @@ SHA512: 8e17a57a834395deb5697e464d4353b5ba3a76118cb9cc99ad1ce1c9f93cd7ec802e7897
 Description: Official PNG reference library
 Homepage: http://www.libpng.org/pub/png/libpng.html
 
-Package: libpng
-Installed-Size: 524
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.6.48
-Replaces: libpng-dev
-Depends: zlib
-Breaks: libpng-dev
-Filename: pool/main/libp/libpng/libpng_1.6.48_aarch64.deb
-Size: 195476
-MD5sum: 2468081d6d9e048aea530618eea7cec2
-SHA1: c0767377dbd0fedae1e0f83b8c2e0ee82a97ddb6
-SHA256: f922a8d28e1c1dd39a1d4f243dfce0281413e3bff5a45ee8f09b39b6bf24b4c0
-SHA512: 52795c4a1ec9385ba7fac038de7acdefd158c5eade53f13212d2aff8af34dc14706a9b419c6b5df3921396eeab9435f8d65da4877cc2882a3b3ff265709de1b1
-Description: Official PNG reference library
-Homepage: http://www.libpng.org/pub/png/libpng.html
-
 Package: libpng-static
 Installed-Size: 332
 Maintainer: @termux
@@ -19959,21 +19974,6 @@ MD5sum: ad84e4ac190a0bb2b47a3b70b299f55e
 SHA1: 5223b45e79830bc080cd1c604e9ecbe584c4b8e3
 SHA256: 3a03c1366773f5f809b665b1dcd88c623373132c5cdb5a4d119f01f4c9d959d0
 SHA512: 2dec01affd6097707cb5810bbd63e8e7f1cd5472bcb04576fc1d716cbcc0ef0beed9cc4db6812b8e429acf3dc751fd7b196d1d99e9926dadd5de91eb7b9d0cb8
-Description: Static libraries for libpng
-Homepage: http://www.libpng.org/pub/png/libpng.html
-
-Package: libpng-static
-Installed-Size: 332
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.6.48
-Depends: libpng (= 1.6.48)
-Filename: pool/main/libp/libpng-static/libpng-static_1.6.48_aarch64.deb
-Size: 86324
-MD5sum: 3d56e1927acb17916691751b222aa3e8
-SHA1: 50b25ed86d5c18faca78ff1c2b7de962830fd6d0
-SHA256: 7bbb91836cca9932a9d4cca7a9c3a2659561e2d7300137b371d58b819f4b982c
-SHA512: 02c9053f5eebf8e5c6d674bd3f1d9ba3d591df13a1edad0443a53f267bb2dfd674111ee0fea3fb20cd8ca5658c161b3150c77958ee5c64ff532ca1bc5927a467
 Description: Static libraries for libpng
 Homepage: http://www.libpng.org/pub/png/libpng.html
 
@@ -24464,6 +24464,22 @@ Package: llama-cpp
 Installed-Size: 58804
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5662-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5662-0_aarch64.deb
+Size: 7520276
+MD5sum: 1b9947e52cac7ed1bcf58155a217d9d1
+SHA1: fe980e25624bb58d2d62590c53ea6ba9c49bb0e7
+SHA256: 09153a2e43283e2e01e374d4f69e31cbfcb648a504f159dbf2426bb12a324df2
+SHA512: c7a382a54409ea3013e11b86638ad8639669b7a98d367d03a884bfa042d97ce2c094163a476cde8c63420def5119dafb0eb9976faf751fc3890983156ca02b92
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 58804
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5650-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24476,20 +24492,21 @@ SHA512: 74d6130bea9e986ed4d2ba70ebf293f0b297d680a70f08ad564e6b22126c1f8099afa411
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 58804
+Package: llama-cpp-backend-opencl
+Installed-Size: 460
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5649-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5649-0_aarch64.deb
-Size: 7517656
-MD5sum: d8d6ea574270da5e7b242ba768c0a56f
-SHA1: f7d25f495b8f3a4453f16a488761aceeee93a566
-SHA256: ac5bea65af865f03a1a8a4dd9a64b1cdb7ecc2163fd5ca37f57e2c0cac19e8cf
-SHA512: 37a7fb8ecec4cd8464603fa66e79504d212208f119e6a41c3d8cdc10b6b0cb7ae41096d317b7787c66e1ce2aa18796874aeea8837741b55b38966740fbb7995d
-Description: LLM inference in C/C++
+Version: 0.0.0-b5662-0
+Depends: llama-cpp (= 0.0.0-b5662-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5662-0_aarch64.deb
+Size: 81228
+MD5sum: 3725b9f15f762b4c50e5871020347bac
+SHA1: aaeb625dffe15ed11dee84e0b48b05724f166046
+SHA256: fda774f703474f29f538278808bd0b2faac01f7c7add3b5a8830039183dc6aba
+SHA512: 5c6ad55cf01a5c3995877187f7f2ec59ee3e46d2013b1caaba8232db31a91e73dc6939c4f45a5dcaeaa8a991c17803cbee4b7275972caa6db9525ece66527894
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24509,21 +24526,21 @@ SHA512: c8892d012ba03086569e9578cf978b663cd2202411a5c682468c46ba754e2f38ebf4eb5a
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 460
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12756
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5649-0
-Depends: llama-cpp (= 0.0.0-b5649-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5649-0_aarch64.deb
-Size: 81120
-MD5sum: 68f62cc459d662afafbfc2e507241174
-SHA1: c2ccbe868bad14ca3efc24fca70b5985aadf7117
-SHA256: 6beae8affdc300da8331553a5ebb38d75d610ce097fbb9987c205884fb2576fa
-SHA512: d05ee417dad7fe3c79aaaf7ee8ee59896651f9cb85c5523688d000b3bacb122aea16417f5f45355662497e8ceab9e696f23e38213f29ccc6e62db41f58a05447
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5662-0
+Depends: llama-cpp (= 0.0.0-b5662-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5662-0_aarch64.deb
+Size: 984608
+MD5sum: d456cd01cd572d420190c4077b94d59d
+SHA1: 95f3269fe5ba8d91f9b8c711eaeef74d483aef73
+SHA256: f733155e0dcc61cd890fc17f8627babc4705734fe91b9a206317c53d6755ca93
+SHA512: 231d6325823a8e8497654a37b6538b2edfb35f3d991ea1fbfcbc655d5c33ed2805554b9364ff125a00249cd4e02712c6d93abae9386034c93c739872e9d9f50c
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24540,23 +24557,6 @@ MD5sum: 660889f44b5bc31a37aefbddf5db3a6d
 SHA1: deebdbdaf538a30437cd3c444aa5eca84b464976
 SHA256: f2cc7491a0447c18c5a21c2ed190ca1e4f2c462bc906a01e828559d526685b30
 SHA512: 33cc9506963ecc36f5ca21947d188654f4370c37ed197df927fcdc183c30a7ee1223ce0c49112a79557111fb04197fc887fd99e0c11e1d8a9090be6aeb06204f
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12756
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5649-0
-Depends: llama-cpp (= 0.0.0-b5649-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5649-0_aarch64.deb
-Size: 985620
-MD5sum: 2338134d5eb24e24649ae5fe3aaebc1a
-SHA1: 64e83e6d30af9b5b85f40e83abc8dab2a961c310
-SHA256: 3452f4c1ade0252a59691e511ebb96bb06bf24b7d59377bd6af659862fce93cf
-SHA512: 0061cf11464d044f3a8e325da951b9bacfec6e5a0609af171e4a37b8cfe160f0460bc0ea01c42e1ca86b3120a031230dd6364ea2198c26d22aabc729ada04a4a
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -32196,6 +32196,21 @@ Description: Python binding for the libxml2 and libxslt libraries
 Homepage: https://github.com/lxml/lxml
 
 Package: python-msgpack
+Installed-Size: 356
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.1.1
+Depends: libc++, python
+Filename: pool/main/p/python-msgpack/python-msgpack_1.1.1_aarch64.deb
+Size: 70912
+MD5sum: 528c2acc38c8713f0361c9870ad122f1
+SHA1: 5d0a9fc30ac55b0f89adf2d798a396fa135ed5c2
+SHA256: b3aa9434ed2e0333a5f2fb8ddf908f24d932565e83a4770f832125e0c9f658ac
+SHA512: a041f9a549987008c9d1373add53b9c0ba219a55be779c4f9255d4339a7063851d5b666608cd013b90cd96ab3cc20fe1774027ed212bc23a6aadcdc5cc56d527
+Description: MessagePack serializer implementation for Python
+Homepage: https://github.com/msgpack/msgpack-python
+
+Package: python-msgpack
 Installed-Size: 336
 Maintainer: @termux
 Architecture: aarch64
@@ -34416,20 +34431,6 @@ MD5sum: 70cf67a5aadebe84a8759fc77dbfa570
 SHA1: ad136610ad004a37da2de27a715a6c2e6842ec0e
 SHA256: 829d72403ad9c13acfe923cc162915813b396b722a78c319d40c593afcfb6825
 SHA512: 734951b1d822c9d08eab5e9f7b829b139521808d7cda85427b95f820ff445d2fdc309ba84bc590acf9ef5d05bf7b9553b6c3e3ea58ba3135920e6770528d6299
-Description: A cross-platform command-line tool for executing jobs in parallel
-Homepage: https://github.com/shenwei356/rush
-
-Package: rush
-Installed-Size: 8716
-Maintainer: Krishna kanhaiya @kcubeterm
-Architecture: aarch64
-Version: 0.6.1
-Filename: pool/main/r/rush/rush_0.6.1_aarch64.deb
-Size: 2357808
-MD5sum: 3cca2d489f1ee401b70b8605e22e23cc
-SHA1: db4d1feb0a86c3d16bf53457096ab9dece5a34b6
-SHA256: b24cab84d215fdcfa8bb259ce86b3e94b443a46a538f51086144036de2972481
-SHA512: f1c56f794afaba061028159a7b04ddea20eb016f439fe5ded211d6d08f713bb95be6684f47a3a9303e99354c1abb87ae74d8b186a346b7921e322fa3ada7a42c
 Description: A cross-platform command-line tool for executing jobs in parallel
 Homepage: https://github.com/shenwei356/rush
 
@@ -37342,6 +37343,20 @@ Description: Tools for TDB
 Homepage: https://tdb.samba.org/
 
 Package: tdl
+Installed-Size: 47380
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.19.0
+Filename: pool/main/t/tdl/tdl_0.19.0_aarch64.deb
+Size: 8183516
+MD5sum: 1aa9024fa60ae4b06cd433bf4fa32f04
+SHA1: 0d77008ec0f784d090158035ee9825d380c0d6b3
+SHA256: 4ce7aa97a3713aed61002a90a6871264ca8468c45b3c53bd6946bcc20bce09c5
+SHA512: 9ebfacb4763003ce928692d3f5987bdd4282ddad07aebd3ea8f1969f75d1892fc355f417dabea04a8efdebe2b0ea423378d06f4706f67f6c00d8377bd4165255
+Description: Telegram downloader/tools written in Golang
+Homepage: https://docs.iyear.me/tdl/
+
+Package: tdl
 Installed-Size: 46004
 Maintainer: @termux
 Architecture: aarch64
@@ -38375,20 +38390,6 @@ MD5sum: 6e7a898b152be4ee339f10d873b9fb72
 SHA1: 47f92fc255c73f6a1c61773327176d2c110ebed4
 SHA256: fc39b352e5983e10a9823aa8092032a2062dab39f49be47f3ec50271de18a31e
 SHA512: b84c8f7ce2273f0e0e2bd8d1549f49b55ee2cf6b8004ab69813fa8e3a4b96ea77ddec532f16c60d85d59afee4d52dc6ca0ec07fa43691084a536391ecd6e3bdd
-Description: Upgrade all the things
-Homepage: https://github.com/topgrade-rs/topgrade/
-
-Package: topgrade
-Installed-Size: 7172
-Maintainer: @termux
-Architecture: aarch64
-Version: 16.0.3
-Filename: pool/main/t/topgrade/topgrade_16.0.3_aarch64.deb
-Size: 2033684
-MD5sum: c16534ce715ccf8dca12f560b2528ef8
-SHA1: 54780890f3c59d0fee87d421842930728635653c
-SHA256: fb5ea0ec6ae5dba68f3b7236601ac969d98c8a7560abbe6a8f58ab6c7e716eb5
-SHA512: 94e2b9b629046a3fa5423c548fc6cd91ff841b4a89662a64a5a83ae190d6fddfd4c071e8ad8be46a77469883365ab5ec8af7aab840a3bee8e4ffebceedb79399
 Description: Upgrade all the things
 Homepage: https://github.com/topgrade-rs/topgrade/
 
@@ -40390,6 +40391,20 @@ Description: Vulkan Extension Layer
 Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
 
 Package: vulkan-headers
+Installed-Size: 30928
+Maintainer: @termux
+Architecture: all
+Version: 1.4.318
+Filename: pool/main/v/vulkan-headers/vulkan-headers_1.4.318_all.deb
+Size: 1511904
+MD5sum: 864b850c311f4f0f3ab1dae2b45c0154
+SHA1: 2a990a517963358741749e321ebee4fa40a3938b
+SHA256: 6996531802aefbb503cb1fd964fed05e17386cfd5a2903479f7721c1750029f5
+SHA512: 081debfe54f63d52e16193325c1ddd198dece0a657f57fddc3a8715176de1dcc227285a37364a57228d9860164f1bda1157ffd599423ecb7ddeba4d33314b01c
+Description: Vulkan Header files and API registry
+Homepage: https://github.com/KhronosGroup/Vulkan-Headers
+
+Package: vulkan-headers
 Installed-Size: 30836
 Maintainer: @termux
 Architecture: all
@@ -42123,6 +42138,20 @@ SHA256: fa2136657bd34902e35fea998fcb7e4c652b351bf63c5ee00e451f6b637a3f55
 SHA512: d461efcbb0f28848f04c7d4bb37a45246dc799083cb06d22194baa92873f4bd7f466efc6ceaac5b7cc70b8612f61b96c5a66a0683f293eec36db90bbf0d26e53
 Description: Programmable file compressor, library and utilities. Based on the PAQ compression algorithm
 Homepage: http://mattmahoney.net/dc/zpaq.html
+
+Package: zrok
+Installed-Size: 141456
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: aarch64
+Version: 1.0.6
+Filename: pool/main/z/zrok/zrok_1.0.6_aarch64.deb
+Size: 31407392
+MD5sum: fed871ff50517cbc7d85d6b57d325527
+SHA1: 84607ee628315e048f71d87d821598d81940feab
+SHA256: 028bbcc85fba7aea30664236e376e05acb6b46c787dc98dd927f556822ce8f46
+SHA512: 7382b2d52d5317245de0ddb8ccbd6ce589b566cbf21599dead49654d1045cad52560b56d740317a6c11473e7876c4c06ee5ae8ed6f36277158bf527e3687574a
+Description: An open source sharing solution built on OpenZiti.
+Homepage: https://zrok.io/
 
 Package: zrok
 Installed-Size: 141464

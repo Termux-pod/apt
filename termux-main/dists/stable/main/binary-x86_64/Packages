@@ -11881,21 +11881,6 @@ SHA512: d4ab2889e65e7ecebab31d52aceaeb83c5b1ab0c09e0054c62de81a0f8fc9282a3916b85
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14332
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.2016
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2016_x86_64.deb
-Size: 3199624
-MD5sum: bfaf780e3c5365b70b52220db4ca1315
-SHA1: 6dccb7821fcf499a50a19e59febb25fe5eb8051c
-SHA256: 2263ddda54c49dc499d15d940dd987c49e21d931ece32b3edb44949066970b5a
-SHA512: 459af327b9fc6ce86e1b183d862f3e63d065b08445a527661f9ce1c4dce7b43cdec377c4ea5cc7e69eed68e495b9e6b32e8b7aa216e584543ca5d4a0797624ac
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 764
 Maintainer: Komo @mbekkomo
@@ -19292,6 +19277,21 @@ Package: libopenmpt
 Installed-Size: 2352
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.8.1
+Depends: libc++, libflac, libogg, libsndfile, libvorbis, mpg123, pulseaudio, zlib
+Filename: pool/main/libo/libopenmpt/libopenmpt_0.8.1_x86_64.deb
+Size: 667428
+MD5sum: 19b864599714a0fbdb861271cbd6966c
+SHA1: d62cd3bec3d792c2ef93b30a780dc502e497f498
+SHA256: 1312caf26e89a0f87283ef26a1a25f2881c1480b823283b49c3beeb9dcd9ccb6
+SHA512: 472b9243dad7b5b519b4723383b43c36fd34edce692098981bcc719fb17a573a77878daae9e01ec0c4449f0df6f3e9073e78d8e459fcc6d1ca6afa3e504d5c7b
+Description: OpenMPT based module player library and libopenmpt based command-line player
+Homepage: https://lib.openmpt.org/libopenmpt/
+
+Package: libopenmpt
+Installed-Size: 2352
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.8.0
 Depends: libc++, libflac, libogg, libsndfile, libvorbis, mpg123, pulseaudio, zlib
 Filename: pool/main/libo/libopenmpt/libopenmpt_0.8.0_x86_64.deb
@@ -19301,6 +19301,21 @@ SHA1: 986428586c0e593022e4e083e2e32552ae2411d1
 SHA256: cbfa1906c79f8e3d76056bf9b1428d74eee4ed37dc9626fe15201959d0f079bb
 SHA512: 2d1c8d65944f87074343e4c477c9eb80bebd0a4e9111d0e1085ea5a5f1fd60a308d4bf193cbe0a4ccde9d959ea8300fe280a8b1f183f30f92df33ae531e0cfc7
 Description: OpenMPT based module player library and libopenmpt based command-line player
+Homepage: https://lib.openmpt.org/libopenmpt/
+
+Package: libopenmpt-static
+Installed-Size: 15620
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.8.1
+Depends: libopenmpt (= 0.8.1)
+Filename: pool/main/libo/libopenmpt-static/libopenmpt-static_0.8.1_x86_64.deb
+Size: 1387236
+MD5sum: a11ed7b051d5bca8011552029729c81f
+SHA1: f3cf059e8a7d0622616b97a099a8cbde3f334400
+SHA256: d9158a4ca49832e945d203146d9ca7f3fdb24e9211d7b7391ed0853cf0e0bf48
+SHA512: 2c62abe0ffe7d6b9cc230996699eb97b1fc99c762d628538006d041bf14cd8f44cda2073f664223150878bdfebe0588cd0d8a45f3521d752c63d137b01f0ee3d
+Description: Static libraries for libopenmpt
 Homepage: https://lib.openmpt.org/libopenmpt/
 
 Package: libopenmpt-static
@@ -24397,6 +24412,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 62756
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5669-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5669-0_x86_64.deb
+Size: 8040072
+MD5sum: 73a367144e0535603cd4f8a1330a2354
+SHA1: 7982858550423382f972e4021c945163a3d21c60
+SHA256: 94066cda9a49b57687b458d07f2cbe082be26cbe2db2f330d9a9285473f9e977
+SHA512: 2d67602171fc51cf961eb4892fc40f5c65ec82fb7a69a573ea37ab93c531dc84461f7b5f5b2d05df44c825eb2fbfea1079bc15926672a96215591174c192d07e
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 62732
 Maintainer: @termux
 Architecture: x86_64
@@ -24416,6 +24447,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 480
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5669-0
+Depends: llama-cpp (= 0.0.0-b5669-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5669-0_x86_64.deb
+Size: 88988
+MD5sum: 7ba7e4307356eeb6b9858e79106247f9
+SHA1: 515f0be1a7aa100252c4a7d64ae5b57dc596d4fc
+SHA256: 30fc65ced03c3af18a7503d8adc660fd607f832ff36dc9086a92ecffda1b256a
+SHA512: 8acc326af5216ddbc4b69db52c8096048044aa2d88daa54fb4eddc079d4a6afaf2c34fefce59ef01e4f2aa49f6038a46757d0a231721a35163d7a2c77039d27d
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 480
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5662-0
 Depends: llama-cpp (= 0.0.0-b5662-0)
 Recommends: ocl-icd
@@ -24427,6 +24475,23 @@ SHA1: 6682cfab946df0a2f801efd5f749ea3ef96dae37
 SHA256: 1cbca8b8e473608b4d52e5891088d1cde2251c2e9f6b10b512cc6d6e69a6beca
 SHA512: 96b4e40aeeb465d5c602ce6bbcac67d8e0f8f297aa125b9a3fc6ca53fb1f079eadda03b0f2ab1f633a2b50801b48879e0480490104836081004372e48e6117ed
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12992
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5669-0
+Depends: llama-cpp (= 0.0.0-b5669-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5669-0_x86_64.deb
+Size: 1023964
+MD5sum: a28fbdfa5f49e02303e7565be014e993
+SHA1: 3446bd08bf74a6d505f6f51b12bc0cf01d58da80
+SHA256: c9b17f8f792e14c19436afc779e3a52ade3678bbc86df62e35596f122266ab98
+SHA512: 068ce35a57097a303712e98f131051ec81b7c91155a7d4d14260a16dda9fced89bb98b0b937ecf05fb613d2872e6178873cb15460006f46f67e9eafb00a37d3f
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -38468,6 +38533,20 @@ SHA256: c376a86cc6e4e342a57a04994b77e6100542ce8585ed47ded11d4a3ae882617c
 SHA512: d1ccfa8b03a7ccfe972904af68254ad32ddf82b2c1da0d545f6fd34bc95805a7d19f539b46dd282ca8003b24bc1e92569a0ae586c235239a808a58da7bba3785
 Description: A metapackage that provides commonly used treesitter parsers
 Homepage: https://github.com/termux/termux-packages
+
+Package: tree-sitter-query
+Installed-Size: 124
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: x86_64
+Version: 0.6.2
+Filename: pool/main/t/tree-sitter-query/tree-sitter-query_0.6.2_x86_64.deb
+Size: 7564
+MD5sum: 2ed368717a43543e80e1f4a25eef6f17
+SHA1: c268570d85c263033b76ca2b7c292ee9d452de2b
+SHA256: c3965644e96f11ca08c9461527bcdc5eb7a4b699b99d58d3c0d37ebe7a5c808f
+SHA512: f4435e1c0bacd9595fcd4dc78183c2a811b33088f145da2c8d6d98910605a97eb2783ef73148feba29405c3bc0697528689122ae36620d599f8d1f0c8dbee28b
+Description: TS query grammar for tree-sitter
+Homepage: https://github.com/tree-sitter-grammars/tree-sitter-query
 
 Package: tree-sitter-query
 Installed-Size: 120

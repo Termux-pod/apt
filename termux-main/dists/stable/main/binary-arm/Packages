@@ -6636,6 +6636,21 @@ Package: fetchmail
 Installed-Size: 300
 Maintainer: @termux
 Architecture: arm
+Version: 6.5.4
+Depends: openssl
+Filename: pool/main/f/fetchmail/fetchmail_6.5.4_arm.deb
+Size: 144544
+MD5sum: dc1fe56b3dc49355d8480285fe42195d
+SHA1: 0742364bfb4b90d6d4d2d5976e3dadd364d782e7
+SHA256: 395b6f732cfc9a917d6a055c31929f9e3ed0c60f86f89925dbd7f4c3ce9e1913
+SHA512: 60380db5cb11b397ba0990088ce689415b5cfab6bb6a796cec14ba319612c7bead60a3bda5c5d52828f6c7f8ba25f4119f011a784c6cefb96e20db057d4d6238
+Description: A remote-mail retrieval utility
+Homepage: https://www.fetchmail.info/
+
+Package: fetchmail
+Installed-Size: 300
+Maintainer: @termux
+Architecture: arm
 Version: 6.5.3
 Depends: openssl
 Filename: pool/main/f/fetchmail/fetchmail_6.5.3_arm.deb
@@ -6645,6 +6660,23 @@ SHA1: d5da8159a1062b7a5552ae6c89f6bea00867343a
 SHA256: db907090e8c3ad130174e368696e4fb995fb517d16ca599332df5768bcd5b5f5
 SHA512: 4faac39f426b34aa3cd6ec4dbbf73d1a34a3b0369e38e06b133931d98a3b35b4606af97572f78242c7ffbfb8c4e582e1637ca40b1d4f075b313a5788e42f2185
 Description: A remote-mail retrieval utility
+Homepage: https://www.fetchmail.info/
+
+Package: fetchmailconf
+Installed-Size: 156
+Maintainer: @termux
+Architecture: all
+Version: 6.5.4
+Replaces: fetchmail (<< 6.4.33)
+Depends: python, python-tkinter, fetchmail (= 6.5.4)
+Conflicts: fetchmail (<< 6.4.33)
+Filename: pool/main/f/fetchmailconf/fetchmailconf_6.5.4_all.deb
+Size: 24912
+MD5sum: 2b3ea0fac692bc4161eb450cf9c5b807
+SHA1: 8ecd1f39d09881698a0b35f25e771fec3b95f8cd
+SHA256: caa080af3f4aadc16cd1e998304e54f351726100a1f169cac767bd00059fcd1a
+SHA512: ef8cfa921a1f7b8389c284930872caa8b1f797b8cbd25f7c81e28ef7c8302944bd95329da2411a1ab9ec5aeefb72e19d5d5c1bce86f71dde710f82c6176fa2d8
+Description: A GUI configurator for generating fetchmail configuration files
 Homepage: https://www.fetchmail.info/
 
 Package: fetchmailconf
@@ -8376,20 +8408,6 @@ MD5sum: 466599e8af0011465effad84e8d0ad6a
 SHA1: 0b804366339bf95717a531dcd493eeca1fc770fe
 SHA256: 64114f1d4b89b50c4517dc02e8548ad4324289fb4fb886a269d7ef32a818add3
 SHA512: 078262d56732081e62008620f731619140ce512694d881cff0fb8c8f7e9fe639b50dc74f5ef193c7ec5852b5ca2be80a9880465205f493b8e32b42e283abbc40
-Description: A GitLab CLI tool bringing GitLab to your command line
-Homepage: https://gitlab.com/gitlab-org/cli
-
-Package: glab-cli
-Installed-Size: 42648
-Maintainer: @termux
-Architecture: arm
-Version: 1.60.0
-Filename: pool/main/g/glab-cli/glab-cli_1.60.0_arm.deb
-Size: 10573044
-MD5sum: 5f0f8470a0d0f6b7495f0f2c6acd4e64
-SHA1: 6e4a359162139d3861d91ed7f429de8af9fe5052
-SHA256: c7f00d3389e9369bb78ee6836e81fbcbbbfe0bd51d2c043a3379dfc17f565480
-SHA512: d6d12d5711611e235687ce7ad452a3b14d6b8dc9b5d0bd8de17aff6eaaf487bcd105b1b153f0830a28b60f16aa51f34b984986d2f9357b00f844763d286e5043
 Description: A GitLab CLI tool bringing GitLab to your command line
 Homepage: https://gitlab.com/gitlab-org/cli
 
@@ -28483,6 +28501,24 @@ Description: OpenSSH SFTP server subsystem
 Homepage: https://www.openssh.com/
 
 Package: openssl
+Installed-Size: 5848
+Maintainer: @termux
+Architecture: arm
+Version: 1:3.5.0
+Replaces: openssl-tool (<< 1.1.1b-1), openssl-dev
+Depends: ca-certificates, zlib
+Conflicts: libcurl (<< 7.61.0-1)
+Breaks: openssl-tool (<< 1.1.1b-1), openssl-dev
+Filename: pool/main/o/openssl/openssl_1:3.5.0_arm.deb
+Size: 1781656
+MD5sum: ecec60e1676f3736bf45ef260859b3cd
+SHA1: 44ec91e73d8e751e62af2165b9c0fbb170b3cd76
+SHA256: b2547ea1ae0927c28f15bf2d60ae987018cf9cf5db08c42893ca35dee506d924
+SHA512: 36b28a31f5277d50a7c4d118286ebf3f974d2cf3a3d3c1bdfd909e990a0e68cc1e03571d583fb5ffbd5231b612b5764518a170e485f43e90b78c3f9a46efb9a3
+Description: Library implementing the SSL and TLS protocols as well as general purpose cryptography functions
+Homepage: https://www.openssl.org/
+
+Package: openssl
 Installed-Size: 5484
 Maintainer: @termux
 Architecture: arm
@@ -28534,6 +28570,21 @@ Description: Static libraries for openssl-1.1
 Homepage: https://www.openssl.org/
 
 Package: openssl-static
+Installed-Size: 7444
+Maintainer: @termux
+Architecture: arm
+Version: 1:3.5.0
+Depends: openssl (= 1:3.5.0)
+Filename: pool/main/o/openssl-static/openssl-static_1:3.5.0_arm.deb
+Size: 1976760
+MD5sum: 90120e41d7bc8f67a81cacc417ea341d
+SHA1: 76edb1876174f9b75ecb96ff69a5a6cd91b1d1b2
+SHA256: e079327088fd3c271c85da2c009729e87e45ad7ba2524cb5f3608117572b035a
+SHA512: 6e8440f8c84a3f1fe5f791a90c12f37023781ad6065987c09908b6c4c7c98583eabf877c07296d9c3347b6cb544a52b5c43dabbb4da06cca5728e86eabd25b25
+Description: Static libraries for openssl
+Homepage: https://www.openssl.org/
+
+Package: openssl-static
 Installed-Size: 6840
 Maintainer: @termux
 Architecture: arm
@@ -28546,6 +28597,21 @@ SHA1: d73f74f8db513ddc9ea7044d18d7e278e453ee3a
 SHA256: 3b75258d0c007b5d11812120753c954e852bcdc1d1aa94c576da2ca4ff4fd70d
 SHA512: ddfed8081892dec545a88f51fefeaf2c36ac5349017b8e9f771dc9c5455e37a5413ae12bb33e4f910420ead90d1ae963389c15bea4f9fb5a0c6f785b3e8e2a72
 Description: Static libraries for openssl
+Homepage: https://www.openssl.org/
+
+Package: openssl-tool
+Installed-Size: 672
+Maintainer: @termux
+Architecture: arm
+Version: 1:3.5.0
+Depends: openssl (= 1:3.5.0)
+Filename: pool/main/o/openssl-tool/openssl-tool_1:3.5.0_arm.deb
+Size: 262208
+MD5sum: c87fa897ba0d537d1be69ae0c292650d
+SHA1: 13f4fc1004569d2b2a3d7cc0482334a9e4d70ea8
+SHA256: 8e659bb2ee68d154fdcbb19a0cf7841e9191fff5decd55294e6a4ef533e18255
+SHA512: 095e8592f3776181d93ad4dc11e506757282af8c1bc53a5de876131366582224ba14f28bf38ff1565ce198a03d8aa3aa21e67686c2d4447c8e52a513f4de00f5
+Description: The openssl command line cryptographic tool
 Homepage: https://www.openssl.org/
 
 Package: openssl-tool
@@ -32300,6 +32366,20 @@ Description: An alternative implementation of the plan 9 rc shell
 Homepage: https://github.com/rakitzis/rc
 
 Package: rclone
+Installed-Size: 85400
+Maintainer: @termux
+Architecture: arm
+Version: 1.70.0
+Filename: pool/main/r/rclone/rclone_1.70.0_arm.deb
+Size: 20864184
+MD5sum: 66f2b358f8cb0038b45f655b28220351
+SHA1: 3247778dfdf5ef5e8d6dc4635439c452df4457df
+SHA256: b876cdd6538858233548657ad70ee05d96477e787ad49f1283f15fd1c8e5d2be
+SHA512: f34e4d5203109ac538ea61b4ce13d6cc9de167f34750b9739b11d913b8b881e16d7d9d85da5d0e2b7f2980933a310d7f4a90612c45aa09dd88d523cd99cf780b
+Description: rsync for cloud storage
+Homepage: https://rclone.org/
+
+Package: rclone
 Installed-Size: 80220
 Maintainer: @termux
 Architecture: arm
@@ -33852,16 +33932,16 @@ Package: seafile-client
 Installed-Size: 556
 Maintainer: @termux
 Architecture: arm
-Version: 9.0.13
+Version: 9.0.14
 Replaces: seafile-client-dev, ccnet
 Depends: argon2, glib, libcurl, libevent, libjansson, libsearpc, libsqlite, libuuid, libwebsockets, openssl, python, zlib
 Breaks: seafile-client-dev, ccnet
-Filename: pool/main/s/seafile-client/seafile-client_9.0.13_arm.deb
-Size: 154896
-MD5sum: fc49594e6ae5bea071ba1496f6ad5ef4
-SHA1: 55930650d67bdbe87f2730d3155f7dc4dd71439e
-SHA256: a04c2c1dd1aefeca093692055fcb749428494635c7165a1ef615cebcaef7562a
-SHA512: 5447bcb13b1d6efbc132dcd3e06d6d886c4b062708aec139ff44b9a7a4d55bceef9e5801203ee6b942ea6cbfe1f3d436a00c35a069019a15dd94244c08bf2d7a
+Filename: pool/main/s/seafile-client/seafile-client_9.0.14_arm.deb
+Size: 155956
+MD5sum: c994dd02e7dfc85a2f147acf5750a722
+SHA1: ae8147c4c22950a686741e3699462f9153a8f8de
+SHA256: e8ddd2681e0a6eabe06e6abf8ecea975816a6dc949fb5e954097376e55a0220f
+SHA512: f754d49954c0a4a88eb14fe7a9c15751984bd4c18d7ffd63ff7ae15042eebc2066863729a89f62427886e779b6192faab3dda25c31c3d35bb5ee42126766a32f
 Description: Seafile is a file syncing and sharing software with file encryption and group sharing
 Homepage: https://seafile.com
 
@@ -33869,16 +33949,30 @@ Package: seafile-client-static
 Installed-Size: 112
 Maintainer: @termux
 Architecture: arm
-Version: 9.0.13
-Depends: seafile-client (= 9.0.13)
-Filename: pool/main/s/seafile-client-static/seafile-client-static_9.0.13_arm.deb
-Size: 16488
-MD5sum: 3c842511d4b512ca7c375c13800795d5
-SHA1: 8eee4d5a58e1f9a8b035e2e9ce2b00bdd4716d06
-SHA256: e82f55bca69d110854076af6d97f8e6a5d29ee199ee0c9538539710461d951a8
-SHA512: 88fec36be2e33863601dba4f0c5733f57cff0b06c69bcb8809de31cd7ce437232e164b2665dabb673403b1b4960e345f284d453b18586b3d34d215f3f0a433a2
+Version: 9.0.14
+Depends: seafile-client (= 9.0.14)
+Filename: pool/main/s/seafile-client-static/seafile-client-static_9.0.14_arm.deb
+Size: 16460
+MD5sum: 43a6c1659d55252444b8af1b7b61d6b9
+SHA1: b186d6517791d0595d447937ca31249c06fa75ec
+SHA256: 809f29ddf81641c0e793fb83cf9079f10f221a47e0bcb9c65714dcb3fba26d98
+SHA512: f650198ac774d0720616b4338756dc2424bae684db934fbc29c8c4798122e83bdb4ed6859a24e0a02c74b3505036f994f4dd7cb2aa324672111d86c42cc9217c
 Description: Static libraries for seafile-client
 Homepage: https://seafile.com
+
+Package: seanime
+Installed-Size: 67568
+Maintainer: @termux
+Architecture: arm
+Version: 2.8.5
+Filename: pool/main/s/seanime/seanime_2.8.5_arm.deb
+Size: 17293096
+MD5sum: 67f3cdc1cf4a5d89a87dc677ba2bfd2b
+SHA1: 7628c54ccbfa373c7d2008178f3c54050d2d7c69
+SHA256: f434652a151ded2fbfdd816ff4d695c125db30d8c95d7bc3380d14544ef3db3e
+SHA512: 7aeeaa7c8098f42523b58d46612b00026b05d09c4f4c0c91243aad6b9452241fa34c45790c443c320a22d77fadd97111ad8fc3f468cc7a6da2ada15f6d73ee70
+Description: Self-hosted anime and manga server for sea rovers.
+Homepage: https://github.com/5rahim/seanime
 
 Package: seanime
 Installed-Size: 62340
@@ -35213,6 +35307,21 @@ SHA256: 9f7785fb4d5002956c0ab7970c62016f05f7eb96a4afa8584d54253f5313588a
 SHA512: 9461634de588cbcea8ee093d4d4a2218d9947fba8959c67fea4a8ae4d08852f356871453d4af4bc58a28f3ab28ed3c47911a32ad3538dab37441cda0be83529d
 Description: measure character-echo latency and bandwidth for an interactive ssh session
 Homepage: https://github.com/spook/sshping
+
+Package: sslscan
+Installed-Size: 168
+Maintainer: @termux
+Architecture: arm
+Version: 2.2.0
+Depends: openssl (>= 3.5.0)
+Filename: pool/main/s/sslscan/sslscan_2.2.0_arm.deb
+Size: 39456
+MD5sum: 89ba8616dcd73d5f626392e28c4b7d96
+SHA1: 3edb737a669444e4c43829e962fc0fde13fcc180
+SHA256: fcb40fad6b7edac3b8a1a269568e8614e5e4aa1d4da8894fc48e8f01087f607f
+SHA512: 25c2b79eeb5335fbd51e3f0a9a2888f110eb5d2f764e53586cb7aecff0fc75268038466cff1655bc3a5dd95308255ddafd10a6d06c18e511f7e0c77b4013b4da
+Description: Utility to discover supported cipher suites on SSL/TLS enabled servers
+Homepage: https://github.com/rbsec/sslscan
 
 Package: sslscan
 Installed-Size: 168

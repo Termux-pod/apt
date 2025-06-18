@@ -5329,6 +5329,23 @@ Description: A libpcap application that displays various tables of DNS traffic o
 Homepage: https://github.com/measurement-factory/dnstop
 
 Package: dnsutils
+Installed-Size: 7188
+Maintainer: @termux
+Architecture: x86_64
+Version: 9.20.10
+Replaces: dnsutils-dev
+Depends: cmocka, json-c, krb5, libandroid-execinfo, libandroid-glob, libcap, libnghttp2, liburcu, libuv, libxml2, openssl, readline, resolv-conf, zlib
+Breaks: dnsutils-dev
+Filename: pool/main/d/dnsutils/dnsutils_9.20.10_x86_64.deb
+Size: 1861556
+MD5sum: b931788e34c478e6fcaf62637929be3d
+SHA1: 1e685ddf0735ea2cd05254b94d306fcc5e02fa36
+SHA256: a3f15dd6660c8eee22473266c93ac113c7bdeac75256338870409d4098baff1d
+SHA512: 366b72fb5098e3263eaeb8c36271aff843957ab380be8edb81c5ab8032abae1c775e2d984765ae4b2526a1daaaeddd29236b300de669388a0ab8f3524a621b2b
+Description: Clients provided with BIND
+Homepage: https://www.isc.org/bind/
+
+Package: dnsutils
 Installed-Size: 7184
 Maintainer: @termux
 Architecture: x86_64
@@ -7129,21 +7146,6 @@ SHA512: ea7f1b8fb02d5c526b0fb8bbc7b85e303761bc9ab12ab5a4a3eb15fd72e94bb1eefff493
 Description: A remote-mail retrieval utility
 Homepage: https://www.fetchmail.info/
 
-Package: fetchmail
-Installed-Size: 360
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.5.3
-Depends: openssl
-Filename: pool/main/f/fetchmail/fetchmail_6.5.3_x86_64.deb
-Size: 158888
-MD5sum: 521217c8bbd66d6a650a8b9f725a035e
-SHA1: ed1e006e90511de1520f1c227524970a03399d50
-SHA256: 518f65577d25ae4c79dc0f3fc395c1ec52759d645bb40dd6118589e870f62c0f
-SHA512: de8bde051e3e8cbfc36f41ad9fcc5b6eec22bbf6a14affb662d189563ba9ff20d73e4a79a36ed0d414db9371eb4ace3074a882245c835e0197ed8b7d949fde49
-Description: A remote-mail retrieval utility
-Homepage: https://www.fetchmail.info/
-
 Package: fetchmailconf
 Installed-Size: 156
 Maintainer: @termux
@@ -7158,23 +7160,6 @@ MD5sum: 2b3ea0fac692bc4161eb450cf9c5b807
 SHA1: 8ecd1f39d09881698a0b35f25e771fec3b95f8cd
 SHA256: caa080af3f4aadc16cd1e998304e54f351726100a1f169cac767bd00059fcd1a
 SHA512: ef8cfa921a1f7b8389c284930872caa8b1f797b8cbd25f7c81e28ef7c8302944bd95329da2411a1ab9ec5aeefb72e19d5d5c1bce86f71dde710f82c6176fa2d8
-Description: A GUI configurator for generating fetchmail configuration files
-Homepage: https://www.fetchmail.info/
-
-Package: fetchmailconf
-Installed-Size: 156
-Maintainer: @termux
-Architecture: all
-Version: 6.5.3
-Replaces: fetchmail (<< 6.4.33)
-Depends: python, python-tkinter, fetchmail (= 6.5.3)
-Conflicts: fetchmail (<< 6.4.33)
-Filename: pool/main/f/fetchmailconf/fetchmailconf_6.5.3_all.deb
-Size: 24916
-MD5sum: 7d70f84089f8fbaca49438dd87f049dd
-SHA1: 5210cf44fdc5a2cbf5b8623e3f0e4f5dc16d5a2a
-SHA256: 2e7888f1796610505f361bd3e0c6e0319cce20d9cb8e94cd4f4d496e679cc558
-SHA512: e94b910ec4f9603beab742ac525b9cdcff7ad950914aad71282be53acab6f8223d8c3476bca2ddfc4e7adf97584720f77c0418b9ab41c9c17507ef6f4855377f
 Description: A GUI configurator for generating fetchmail configuration files
 Homepage: https://www.fetchmail.info/
 
@@ -8557,6 +8542,21 @@ SHA256: 18887e41a654e95975f3bbde4c39fb4b47d69ddc6948478f593df0eeedf6e51a
 SHA512: c0dcb643579fe6d9dc4c5960e5fc4b1363c2678e12fd809505dd1952bc6b26968d2c01a11a83e7e803223c977a9bb0dceb576123eb1c7c8820f7823cf88d54e1
 Description: The Forth implementation of the GNU project
 Homepage: https://www.gnu.org/software/gforth/
+
+Package: gh
+Installed-Size: 42528
+Maintainer: Krishna kanhaiya @kcubeterm
+Architecture: x86_64
+Version: 2.74.2
+Recommends: openssh
+Filename: pool/main/g/gh/gh_2.74.2_x86_64.deb
+Size: 10427064
+MD5sum: 2aed58e42478eac38aa5a8909b3b3ae4
+SHA1: 3802ed4d1be27c1537adcb36c501800342196d8d
+SHA256: d700784ed04b9b33c688b0125eb9b93014aafaf40585d1d737b52bfc5a061d35
+SHA512: 6293ed10cfccf3e955cb2bc49096d67920e555f9219d7dafc5d2b56077dad5cd7cc2fef82a8eccee1be657d7e4f8599c29f3d574130fc453edbf302accc72d06
+Description: GitHub’s official command line tool
+Homepage: https://cli.github.com/
 
 Package: gh
 Installed-Size: 42448
@@ -24417,6 +24417,22 @@ Package: llama-cpp
 Installed-Size: 62772
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5698-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5698-0_x86_64.deb
+Size: 8044848
+MD5sum: 6c9bb89eb98c545e5b6bc68d74000610
+SHA1: bdb03b55747bd8c34fd96f662eae6c960838a433
+SHA256: 6df1e1b97f0c161e7584fbc51e8bdee3e16bfbd6f029a52380bbb85ad57f6542
+SHA512: 54aa169f80ac650386a73b1de1e4dc821ff436889787e99a72a12655d16dfbda4018eae08d7cd52304731b98ff5b7f58d77222057e20ba8dc66f6e92ab3a9f6e
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 62772
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5696-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24429,20 +24445,21 @@ SHA512: 80255468b1a9b0f7ecb1b22939ce1905204fc89eb286c7b2952118419ddb74075d155288
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 62768
+Package: llama-cpp-backend-opencl
+Installed-Size: 480
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5689-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5689-0_x86_64.deb
-Size: 8038772
-MD5sum: 14bd8e015b5f3cab1d4558cecae60926
-SHA1: 39331f2045eb342fea733e2e989af144e1cb7ea0
-SHA256: 3c74aa5ff3c8f11b8e5c17203a614c8fea716e2714d0b905d1741c7357521770
-SHA512: db4573b5843f535f1a133fc7d1c830edfb15e4dcf289c57a4e194f84e773e5f11caae3c841e3cbe63024d4ec20447b53bd9a8118087033e487e31f1f5b48dcad
-Description: LLM inference in C/C++
+Version: 0.0.0-b5698-0
+Depends: llama-cpp (= 0.0.0-b5698-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5698-0_x86_64.deb
+Size: 88924
+MD5sum: e73c34679568a8ef8389fd8a23963be5
+SHA1: ebcb441c4338e595fe35d52830f3fa3a841926b6
+SHA256: 9c92226591218822416ce662f9b3273b0bb50eb306a23eb35c7cdc39d75656a5
+SHA512: 6e2d73c625f03dd21661c6d3387bd0b8b5f2239de8e022db6c6a79cec7fa28a33f115fc9cacb0f0f431a280a2cace297bbfda480721f95d9c0ed753925a7034c
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24462,21 +24479,21 @@ SHA512: 7fd08cb676922ecb40c36824e5cad97100726007902933f5337081e34e38fd780c5f44e8
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 480
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12992
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5689-0
-Depends: llama-cpp (= 0.0.0-b5689-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5689-0_x86_64.deb
-Size: 88912
-MD5sum: 9e5614f8e6a4a0c79fa69564fcb462c6
-SHA1: d8f9d4f64c5a05b600939da53463c67f9734b51e
-SHA256: e676856e018ff7255c46175b165563068c2bd0c09d98374f6f51666652c4d5f2
-SHA512: 8482fef0070f453fb8a6d9856c9f563f1bcf17da059b8364027b72f9b55d6a506262f88f283c172ddaed404c000d1a14702a8aa10910e53692172976e9d677a4
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5698-0
+Depends: llama-cpp (= 0.0.0-b5698-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5698-0_x86_64.deb
+Size: 1024336
+MD5sum: 442ad704a5c0bc0612af2913464ee6b3
+SHA1: 70ba06da2f1bceae58b6c132f4d8439358ee6d69
+SHA256: 9a6cd46ba1b24a78dc3bc37f826843ecc033a991f3cac1996900d5f8835e3253
+SHA512: 8106c8455fbad583dec94a0a62e7626b93c8f403b34a564c7c2268869a8939a018cdd5ae235d9d91d694bf45cb5425ac3368daee5270a1fa04ec598e3c757873
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24493,23 +24510,6 @@ MD5sum: e8256c1ee8940d0c9c93cc4b21ea1802
 SHA1: 81ce1205ad38ac909ecc9232ea3b1e66e3ad514d
 SHA256: 2f03ee148eb29fea5109fa394bc2219c7bc2bcffdef3fd834959ab6dc7fcb75c
 SHA512: 275d2f4dd0bda1312df2117d4b70b3c42f462b46e7eb3019dd469a32cc95ae7beb23ab97ca35f3d009e5a544d36834eb8ec42dd941243e60be65595365f3e178
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12992
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5689-0
-Depends: llama-cpp (= 0.0.0-b5689-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5689-0_x86_64.deb
-Size: 1025616
-MD5sum: 10e77dfbc5ba9d610b53573563dd87bd
-SHA1: d29a244d02d3d38721147383576fc402a7ec9abf
-SHA256: 6232fa134c24faf39995788850ec2d64175de2cf0ce709c1c4121776736a599b
-SHA512: 9e96a0c8fb707c5075a985541c908838680f4790130788b4ba94303e9537cf5ce4d4ef5071b72953292002a17821cab01580827e0f20b0a58a593b98f5768709
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -26172,6 +26172,25 @@ Description: Static libraries for mercury
 Homepage: https://www.mercurylang.org/
 
 Package: mesa
+Installed-Size: 17000
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.1.4
+Replaces: libmesa, osmesa
+Depends: libandroid-shmem, libc++, libdrm, libglvnd, libllvm (<< 21), libwayland, libx11, libxext, libxfixes, libxshmfence, libxxf86vm, ncurses, vulkan-loader, zlib, zstd
+Suggests: mesa-dev
+Conflicts: libmesa, ndk-sysroot (<= 25b), osmesa
+Breaks: osmesa, osmesa-demos
+Filename: pool/main/m/mesa/mesa_25.1.4_x86_64.deb
+Size: 3596836
+MD5sum: 1fbf3da320dc16a7487b8bb7a609b253
+SHA1: 9bf0b6318566f8103c89ad222b4cbd14454c6537
+SHA256: 7badbb5128bf5bff00ed980d4cee54c0bfe97351b24ebe9b35b71109939a8796
+SHA512: 3e6df1565deea4dfe592aa1eac7a7dd79912b2bfff1a37fa2ec5779a8fd1ef1edc5b50a24b4edebad30d7eabdadf5eca463899d7d793af3cc99919316802c479
+Description: An open-source implementation of the OpenGL specification
+Homepage: https://www.mesa3d.org
+
+Package: mesa
 Installed-Size: 16992
 Maintainer: @termux
 Architecture: x86_64
@@ -26194,6 +26213,23 @@ Package: mesa-dev
 Installed-Size: 168
 Maintainer: @termux
 Architecture: all
+Version: 25.1.4
+Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Depends: libglvnd-dev
+Breaks: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
+Filename: pool/main/m/mesa-dev/mesa-dev_25.1.4_all.deb
+Size: 25332
+MD5sum: 9f5acf0b2414987c084a8cc5b072cfc9
+SHA1: fcd53286a7fa684051a981d9dbb2e5922f55c41d
+SHA256: 804767bc7b2f34d4e4f2502648ba24fc93347ae71a16940527feb7965eaab590
+SHA512: 502fb4f4639ec58f8c16353bf440dba93c344359bc88ab5616b9d9fd84b9cd26cc28117ed2c68940168e6759c5fc696236e6a5941fc5cfa12af95347dfb231e5
+Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-dev
+Installed-Size: 168
+Maintainer: @termux
+Architecture: all
 Version: 25.1.3
 Replaces: mesa (<< 22.3.3-2), ndk-sysroot (<< 25b-3)
 Depends: libglvnd-dev
@@ -26205,6 +26241,21 @@ SHA1: 391d208c7a8427a0f48dd7531a6d58c0fb794ea7
 SHA256: 9beb3dbbc978c14abe86c4fac692cca1a0acc579254d5d69c5e19ad47b8db621
 SHA512: 6c092e3e9749cb3331e4da5ac1a21cd18da9ebf89cfe4fbe6f63e81f8826fc4a2a8d0a4eeb37ca49772cb1a4b93ce5fd6a4c39f0efe190e36f3a724e133d6430
 Description: Mesa's OpenGL headers
+Homepage: https://www.mesa3d.org
+
+Package: mesa-vulkan-icd-swrast
+Installed-Size: 10308
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.1.4
+Depends: libandroid-shmem, libc++, libdrm, libx11, libxcb, libxshmfence, libwayland, ncurses, vulkan-loader-generic, zlib, zstd
+Filename: pool/main/m/mesa-vulkan-icd-swrast/mesa-vulkan-icd-swrast_25.1.4_x86_64.deb
+Size: 1770492
+MD5sum: b0c1406c2f8b55f15f83e6801ee6d262
+SHA1: 0b0eb81fe3c98a6de5551e119c771d435167c277
+SHA256: b32e4a3ad2c57e3b7ab8217c8058d45535dd7eb2b7675950c8107fc31f0370a9
+SHA512: c156967863a721ee18a0c0b76c1068aaadd5e3c5439e8fe2b582f2eae1aaf6ec723e8f5e2ad0ead460675bf44badab190b763deca9be1d98d0b3a8817628da75
+Description: Mesa's Swrast Vulkan ICD
 Homepage: https://www.mesa3d.org
 
 Package: mesa-vulkan-icd-swrast
@@ -28754,6 +28805,20 @@ Description: The GNU Spreadsheet
 Homepage: https://www.gnu.org/software/oleo/
 
 Package: ollama
+Installed-Size: 37612
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.9.2
+Filename: pool/main/o/ollama/ollama_0.9.2_x86_64.deb
+Size: 9025500
+MD5sum: 143a059f60369a49220635900deeacc3
+SHA1: 73e4a0615e3a604756f29a2ffd0a005f56ee0f5f
+SHA256: 1fd0218686863d72486945a183223e4b173df7d8d59be276050cebc4bc7d12e2
+SHA512: 133c9a74515f97ab6f527d50ab3adbe4e3bd69d29535b4a46b663ffbf7fbcbf657f75067db961ed7c69d2b81731a4e659a8c1e4eba66e5b4f5ae71058dd7648c
+Description: Get up and running with large language models
+Homepage: https://ollama.com/
+
+Package: ollama
 Installed-Size: 37744
 Maintainer: @termux
 Architecture: x86_64
@@ -29383,24 +29448,6 @@ SHA512: e2435dc449d1efd1ab417d06453199af90187437cfd6e592de48dc64172cc34f32084fe3
 Description: Library implementing the SSL and TLS protocols as well as general purpose cryptography functions
 Homepage: https://www.openssl.org/
 
-Package: openssl
-Installed-Size: 8412
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:3.4.1
-Replaces: openssl-tool (<< 1.1.1b-1), openssl-dev
-Depends: ca-certificates, zlib
-Conflicts: libcurl (<< 7.61.0-1)
-Breaks: openssl-tool (<< 1.1.1b-1), openssl-dev
-Filename: pool/main/o/openssl/openssl_1:3.4.1_x86_64.deb
-Size: 2052004
-MD5sum: 1c02a6e23a08b0e759bfd1ab9b4b58e4
-SHA1: 6995584c038a0284659bdcc50d58e0a08abbfa77
-SHA256: 2870e7e9e1db1a2014360efc934058d3dd8a0bcfbc803109cd1c7a19c5f5a86b
-SHA512: aaf6f88df10ffafb06f3616b752cf7f87d5beb42b0aff2bdb85530931770c71048113f7e50345eea74d08f4b051f316d50824609ff740c6bd32f089ef924a6a3
-Description: Library implementing the SSL and TLS protocols as well as general purpose cryptography functions
-Homepage: https://www.openssl.org/
-
 Package: openssl-1.1
 Installed-Size: 4816
 Maintainer: @termux
@@ -29449,21 +29496,6 @@ SHA512: 3711d934fe3809ad8e717ab330006b92afd8e79a48a2053ca1831d467af76d7280e268f8
 Description: Static libraries for openssl
 Homepage: https://www.openssl.org/
 
-Package: openssl-static
-Installed-Size: 11368
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:3.4.1
-Depends: openssl (= 1:3.4.1)
-Filename: pool/main/o/openssl-static/openssl-static_1:3.4.1_x86_64.deb
-Size: 2079504
-MD5sum: 2a8b6de5a97623f6a00ce53a563cff1b
-SHA1: 461cfbd45152e5ba1bc31cd0930e0efc00ea1081
-SHA256: 650e2ccdb74b645f73e7acb96428790a01f9022432cb0e1aea43594b2f0e00eb
-SHA512: 5b46938a6482c3f7863904062c7d3c4fae8b6ae471e5f73f0d3de6ce63b13b9e9de22f990b8645c9469cdf12690f08a7de8d22aad44270bd819282b10afdb6fb
-Description: Static libraries for openssl
-Homepage: https://www.openssl.org/
-
 Package: openssl-tool
 Installed-Size: 1016
 Maintainer: @termux
@@ -29476,21 +29508,6 @@ MD5sum: 9cfb030a34677e734dbe5fd3d065b5f3
 SHA1: 97609cff2efa1e53dfa1bd43848729c88f3049b9
 SHA256: 4b58d11630f17c184a5e4b9456560488422298abc7f79efc57d60c1f0e098e43
 SHA512: 2cec256781e230ac43149a7784ad93b5eafe6d22e086ba86fd5827fb952bb335bb78168c81420a664b94c981294f488af8f7ee4b7b5dc60a1af62dddd3e63003
-Description: The openssl command line cryptographic tool
-Homepage: https://www.openssl.org/
-
-Package: openssl-tool
-Installed-Size: 1000
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:3.4.1
-Depends: openssl (= 1:3.4.1)
-Filename: pool/main/o/openssl-tool/openssl-tool_1:3.4.1_x86_64.deb
-Size: 301216
-MD5sum: b7a608fe41f990e9c88e1bad9bdb72ad
-SHA1: 3b1bd05b81b641757b71f4ce391ee75e61a6bc62
-SHA256: 8d1988700d7acef7e7924c0373756c8c63663bd570fb52c4e1c703a9489f16f4
-SHA512: 3385cb1a57feb86e70a0989a9c24d8296d31e084ca32f08366306e6b6d0b7daeaaf86fd00e5cac506c75a5a572f779ed938b9cd38779f61140739834a9e01bb3
 Description: The openssl command line cryptographic tool
 Homepage: https://www.openssl.org/
 
@@ -31585,21 +31602,6 @@ SHA512: b58da91b835411738e16270c821134b83d2d037b9a0bcf4428c29463b0aab5b2c73b15f9
 Description: ProtonMail Bridge application
 Homepage: https://github.com/ProtonMail/proton-bridge
 
-Package: proton-bridge
-Installed-Size: 31016
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.20.0
-Depends: glib, libsecret
-Filename: pool/main/p/proton-bridge/proton-bridge_3.20.0_x86_64.deb
-Size: 8015304
-MD5sum: 1f6684bdba0945b7c3bf2241e9b49f39
-SHA1: 24c4a1c053317d5871bd3eee618c3bf30985817a
-SHA256: 9af96494412cdc7200aa017fd69468d5f30e012753d79907dcb2661fba3583fc
-SHA512: 819ec76d1f74e0a1ebf72adfdac409637e499e4ee81a620a9752f3b0838c2877ab64c53b853ee482cf652f9c996769d8062e0f08fa3f0ed8c9072fd3a929d50e
-Description: ProtonMail Bridge application
-Homepage: https://github.com/ProtonMail/proton-bridge
-
 Package: prover9
 Installed-Size: 9528
 Maintainer: @termux
@@ -33364,20 +33366,6 @@ SHA512: 49831732fd73c4a058089d561470ac405fde680b03d0c85c5badb0789dc4d499ed39c50f
 Description: rsync for cloud storage
 Homepage: https://rclone.org/
 
-Package: rclone
-Installed-Size: 91156
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.69.3
-Filename: pool/main/r/rclone/rclone_1.69.3_x86_64.deb
-Size: 21294328
-MD5sum: e9e44e9f03dc036b3902ab13426a81ad
-SHA1: 870e41dccbaf0d6bf19cc6d922bd32f88b2f6a7b
-SHA256: b8ade4e9dfb553a6493b26b544b7ec6008636a834c76de5d85bc89e7fafec9cd
-SHA512: 456846dab60432f099885f0df0a715830ffff51bd05769b7fc90c5c21113b39e790accd6854c062b3257e853d9a7f9ddd02bbe7a5ae4d0b1646410086ad771f7
-Description: rsync for cloud storage
-Homepage: https://rclone.org/
-
 Package: rcm
 Installed-Size: 124
 Maintainer: @termux
@@ -34974,20 +34962,6 @@ SHA512: 9c2f0f69f41ca475e50d45181f39c93d22b20ba4587ac21e4843c0cacb09b85b2f4f664a
 Description: Self-hosted anime and manga server for sea rovers.
 Homepage: https://github.com/5rahim/seanime
 
-Package: seanime
-Installed-Size: 67856
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.8.4
-Filename: pool/main/s/seanime/seanime_2.8.4_x86_64.deb
-Size: 17585868
-MD5sum: bea95c11e2cc284a264fffb5f26e98a0
-SHA1: 6e483ac3f05b211b7fc0fda68fd3e47611db7127
-SHA256: bb710821ff48e81687b9a0693ae71fa54ce85fdc628a6d671326bb8c6007d00c
-SHA512: 5aee87d4a33ec5ecadf2e500b70b26f8ad3af85ed311d0cea6acee1c08ac91557167d7f147fe99fd185816f0c9f2ff358edefa45e258a2c8797231f4d4f04066
-Description: Self-hosted anime and manga server for sea rovers.
-Homepage: https://github.com/5rahim/seanime
-
 Package: seccure
 Installed-Size: 108
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -36320,21 +36294,6 @@ MD5sum: 730226768eff4640d95d0a5953a84831
 SHA1: 0176de7cf6ea42d30fe6a03068a88d9b60acc049
 SHA256: 19ee1989db63d31cc452d9ee3eb8d55b49574023f14476d99280ccb18c99fdf8
 SHA512: f05fdcf9c656f7093a61301d7c979fd6accc776f1a6d4539a7ad144fed7d256610bf9d5c0916dd2339b6e556225e44833bfbedd3afa961c41924aa01e0f8f4d5
-Description: Utility to discover supported cipher suites on SSL/TLS enabled servers
-Homepage: https://github.com/rbsec/sslscan
-
-Package: sslscan
-Installed-Size: 196
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.1.6
-Depends: openssl
-Filename: pool/main/s/sslscan/sslscan_2.1.6_x86_64.deb
-Size: 42860
-MD5sum: d322f984c772cf4c2d84c0a59a3624c9
-SHA1: aab631b4696251e2f6d16cef6295de79748fe4dd
-SHA256: 2c3aa6d43d194285f6571834305070d29271b8c320d308d42d3cc0b373a04513
-SHA512: 4eb0bdf6d858f644fb57170885db432c30455410d010e6afb1b2d55d20a446881f60e85acf505a2fe1ba5b4daf81b36ed56b69f9c889ba1f8658fcbff8e1b805
 Description: Utility to discover supported cipher suites on SSL/TLS enabled servers
 Homepage: https://github.com/rbsec/sslscan
 

@@ -8051,6 +8051,24 @@ Homepage: https://practical-scheme.net/gauche/
 
 Package: gawk
 Essential: yes
+Installed-Size: 3224
+Maintainer: @termux
+Architecture: x86_64
+Version: 5.3.1-1
+Replaces: gawk-dev
+Depends: libandroid-support, libgmp, libmpfr, readline
+Breaks: gawk-dev
+Filename: pool/main/g/gawk/gawk_5.3.1-1_x86_64.deb
+Size: 807056
+MD5sum: 9af6973c6635b0f5a0ca276d6d51acdb
+SHA1: 92aa5b762c4d967c0d33adb03290788d57ee0fc9
+SHA256: a4d01dc484432ecad21be0336572224292abf9fa610463c42e9a009208e7e5dc
+SHA512: c37e2bb56f0c76b489f5acb32fc9a733043facb07da4f7d53661f803cc74d4f2d642ae147817fd70b6f4bf16af806cfec2385b8269b7d62440e42e8711052768
+Description: Programming language designed for text processing
+Homepage: https://www.gnu.org/software/gawk/
+
+Package: gawk
+Essential: yes
 Installed-Size: 3236
 Maintainer: @termux
 Architecture: x86_64
@@ -8065,6 +8083,21 @@ SHA1: 411249cd43ef4cad4fc7c3bddcaf7cb8d2d5715e
 SHA256: a967c5530e50e7e1b7393111de701d3012e019c1a776f4323ec589d349210066
 SHA512: 6b4d0b453bffbee39d70a1c691fcfef6d69ddca15fe94e23c69c1e4ba3ee4aa53a243e3d02c725c2d961c34b94ade93a08eb6884c761e7d34e45ca8745ddfe87
 Description: Programming language designed for text processing
+Homepage: https://www.gnu.org/software/gawk/
+
+Package: gawk-static
+Installed-Size: 172
+Maintainer: @termux
+Architecture: x86_64
+Version: 5.3.1-1
+Depends: gawk (= 5.3.1-1)
+Filename: pool/main/g/gawk-static/gawk-static_5.3.1-1_x86_64.deb
+Size: 25440
+MD5sum: ca7de7bf6eb31777aba6bd7c7f9c245a
+SHA1: 9b849d25e684f517d320b5aaad525a0a3ea892a7
+SHA256: 4ebd77cfc661cd7f65d9556982df0ea7d06f01bc0386e1d7dcc7d1c065359733
+SHA512: 86f5f41c5afebaffb00f18c91a431920b6ddafd12060576bf80c8d04d4f1db7989b1445b6b57d6e194fbb28eda97361374b4459632a71bbfc3555826620a8c68
+Description: Static libraries for gawk
 Homepage: https://www.gnu.org/software/gawk/
 
 Package: gawk-static
@@ -24397,22 +24430,6 @@ SHA512: 6908a0f934ef92ec08e6968b7bedb85178a25120abe729130e9d61feef661d4148780cdc
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 62840
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5729-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5729-0_x86_64.deb
-Size: 8046444
-MD5sum: 0d45f807bd1c10c717d62f01ccb94dac
-SHA1: f690b6a6a261a4134bd88227daf7bff542754ff9
-SHA256: da2952021e79d459245a0c6145398da8df3f0d1dbc1e39102672ac6743a4c20a
-SHA512: 59a8058838678bbfa73afd8cf62b991a7a9167364aeb27399c8a5e7839415871b3ad77d831242c53a2614c8e3f3896668af0c36fab125af02a0f733be0c24f6a
-Description: LLM inference in C/C++
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-opencl
 Installed-Size: 480
 Maintainer: @termux
@@ -24430,23 +24447,6 @@ SHA512: 8dc414a1058e8173cb420f669d98a0109b4822f44248e8ef21080984b6ccfa11863baa5f
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 480
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5729-0
-Depends: llama-cpp (= 0.0.0-b5729-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5729-0_x86_64.deb
-Size: 88992
-MD5sum: f756df54f54be04ff8fad81d4547c995
-SHA1: eced632180069d10df41ea75c3ef9a78af395f38
-SHA256: 5939db0fdfed996af7b464404a90a3865c95eb2d929fda999c634605683a8bfb
-SHA512: a87ed22d8f60b23e3927e67439d652328fe83cbcda271c3a841265ba855ce0e1f6a7ac728265a145e83d4e6c6130588629a5dfec279ddf2d86442e32caa43f9b
-Description: OpenCL Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-vulkan
 Installed-Size: 12996
 Maintainer: @termux
@@ -24461,23 +24461,6 @@ MD5sum: 00819cec4ce9db17a7e0574ae8a9e831
 SHA1: 6618b2d686c278557331879e15c90a728da1d75b
 SHA256: 5f280c3c8c39942f3263d6efafbf2de0f2d598cf34bd778ef517188e5c17056c
 SHA512: 6db27c3cd1b4332998003e93ddef81739e67e808091a3636722ecd85fca665f39c776b0943ace84745d37586fe551b8c319cb4cf75467b5262601fad73e4255d
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12992
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5729-0
-Depends: llama-cpp (= 0.0.0-b5729-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5729-0_x86_64.deb
-Size: 1025604
-MD5sum: 81b6acd66189379c983928ed6ec6d6d7
-SHA1: 9f6c1268c2e0dc927a50d6510ccb9322d497c35a
-SHA256: 91ee60acf28773120856ae8e152d91fc8ac5b5c8e6c466ae8374a9ea52baa0f1
-SHA512: 185c5bcf6b80b4a956212a8eef93ce95e1fda5fb7c82fde84d0726aa427d41c41a1d726e07272dbe54eab05d81071968a01efcf6d411b824972621cde39557e3
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -29222,6 +29205,23 @@ SHA512: 9a7d6658ab51b9c3ca1a1527c088a5d1371bcebddd17c1c767352006a7f66a4f03799702
 Description: Static libraries for openldap
 Homepage: https://openldap.org
 
+Package: openlist
+Installed-Size: 85932
+Maintainer: 2096779623 <admin@utermux.dev>
+Architecture: x86_64
+Version: 4.0.0
+Replaces: alist
+Provides: alist
+Conflicts: alist
+Filename: pool/main/o/openlist/openlist_4.0.0_x86_64.deb
+Size: 24023024
+MD5sum: 09ac0837a7035024e27dcbc9fed255db
+SHA1: 47dd20b71092d930daa694eeabe3f1582b918b40
+SHA256: f311f0df88e4e97f43ec91b61f43d4764c81aa18631140ce310be8671388e065
+SHA512: 14209fea28a47880b546795484be2d06cf0e8d2f7fa78c2eac179942194b3d720a5aea3926a2a20c0f80fc4592272b3888598f0b3a50e00833177685dcf5aeeb
+Description: A file list program that supports multiple storage
+Homepage: https://oplist.org/
+
 Package: openmpi
 Installed-Size: 8120
 Maintainer: Henrik Grimler @Grimler91
@@ -30962,21 +30962,6 @@ MD5sum: 437748688dee104bd7556c27ea0645a6
 SHA1: 70324f5ac0bd792db67a28c0bc73f7f86fc0f210
 SHA256: a77c72f7ef3a71fe36bb41361fd21f337a9bffb6966af260c59e9d38b5a1d190
 SHA512: 6bf86532f039a8aa1d5edf97ef14ad09d0a915d4772de9bf147943b0e4039848d90738ec7f14646de661d0b36f1ec626e4bbf3c2f586eb792fff67e878d8f1d7
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
-Package: pocketbase
-Installed-Size: 34172
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.28.3
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.28.3_x86_64.deb
-Size: 9366756
-MD5sum: a6fa57c0dd2eb1687780659a443ecea4
-SHA1: f5d612aff23a03a6ffadd36c4414f5123cd861ee
-SHA256: 3fe263a8e86223eeac0dda7aa4d50975c731a4fcd2698e65e32f1b83591bed18
-SHA512: ffa8cf204e61121d49fb8dfdeb91d99d379b10d9a10e742580cffd3dffd74169419e1791fc5e47efc52c422111c525e7908a55758a8a80277abf78d9e29f291f
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 

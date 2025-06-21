@@ -11913,6 +11913,21 @@ Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
 
 Package: jackett
+Installed-Size: 14312
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.22.2035
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.2035_aarch64.deb
+Size: 3179236
+MD5sum: 6c82709190e027c7e892a1e879c57979
+SHA1: 1f8a13b711f84cb5338987faabbecd412a10683f
+SHA256: dfed832cbc84e33f27dd22b762243b1a3770f37a059a269686576b7052dcd2ed
+SHA512: 349ccf5c9d11f6d07020550f34b9e73038f5729205a7b009bc23d1851ffe8288f270863f38272da31ac23e82d3631c7cc846b7b3d58d2996e3e569acea7d53af
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
+
+Package: jackett
 Installed-Size: 14324
 Maintainer: @termux
 Architecture: aarch64
@@ -24446,6 +24461,22 @@ Package: llama-cpp
 Installed-Size: 58908
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5729-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5729-0_aarch64.deb
+Size: 7521772
+MD5sum: 4c046b2defabb6a9e771d2bedbe864b7
+SHA1: 5f78a64d4dc801993273a4bf85021d9d25ff7913
+SHA256: d6aac4ffb6aac1cbd7242edc41799c4e74279237fae3bb74527c7fbff4892a3c
+SHA512: 53c13f202d530e963de6c9d3c45081f5bd2db7f1bf25423366228975b75988926f6184a0a2584a2913e8f71f9e370f4fa65c8a93acecdf316815d33d34774c2a
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 58908
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5726-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24458,20 +24489,21 @@ SHA512: 03fd452af2aa8ac7d15db76778fa70099bd6ba5e9e1642642eae431c9e591b04db2f5f65
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 58904
+Package: llama-cpp-backend-opencl
+Installed-Size: 460
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5722-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5722-0_aarch64.deb
-Size: 7526264
-MD5sum: 843eb8b48c0e12e7a4fe659244d4ed65
-SHA1: b9c03fbe1338e4cf6bb8e82fa4b1acfca04e4c6b
-SHA256: e0eee8cc43f1013f3cdb709c3696d67457e2d70514944dd867bbf723a0284267
-SHA512: 186718e1180231b2b1b5dcf7ebe60ee26daf501db9c75bf3316c1cf7aa35d465b99941677e02aa045a1d5270aca7af8d31ca368334760bedf72ab386ffb7f4fc
-Description: LLM inference in C/C++
+Version: 0.0.0-b5729-0
+Depends: llama-cpp (= 0.0.0-b5729-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5729-0_aarch64.deb
+Size: 81144
+MD5sum: b9e3d6f3ba62bd5a8692f31ab5df5c5a
+SHA1: a175a1022c8833906bd11ca974e98b08436b3545
+SHA256: d6756ad19c69fb050e84b0f97d72029f3b2c39345ca9c13f039bd555ba3e23b8
+SHA512: ad94a771343c418cf6f9e06f849e3fb19086fa2ab142586310009e95cf0d4e2cbc4c797ad1dd6723953de1f57d2886ecebb7615e46d3e52449600472e28c617b
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24491,21 +24523,21 @@ SHA512: d8f66388afb76de5b4714a23d74345af62f93883cb9c83a2b54d984f7ee0683f016edb99
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 460
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12756
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5722-0
-Depends: llama-cpp (= 0.0.0-b5722-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5722-0_aarch64.deb
-Size: 81076
-MD5sum: ed4199ed7fca88e5412d90e0e399c42f
-SHA1: f269c29b138856108259e933dd32458f1ca87634
-SHA256: 870f351958b63922669189698ab7279732e882785dfe376b14c8aca6f09ed0ed
-SHA512: 66dcfa07facc7b7279ceaefd99743bb2492a8d2d7a2f4872d0ad06f0539b2b6d51c45d369e1cd2fa3ee6e1923e95fb62f9279f1a17ba915cd36b3ca4f3be298b
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5729-0
+Depends: llama-cpp (= 0.0.0-b5729-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5729-0_aarch64.deb
+Size: 983688
+MD5sum: b2f9b644b998c54c64d22fd3f01ce919
+SHA1: c7e616f181b33fd74e63e7edccb06b782bdfe3b2
+SHA256: cd40e289020f8af807b27ccabc0b01fd0caad3117c5e03afdd8ef43c576c04ce
+SHA512: 51abaca2ca5e265a915076c57c431787a8b7d919eef7cccf6702a275c3eae674f83c05cfd786decd5415cdc53b17a25241ceea5a5c181f96413ead04a0944fcb
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24522,23 +24554,6 @@ MD5sum: dbbc103580d46dc8937863ce4307b41d
 SHA1: 8309316797d26320d77014f9699e63fac19de18c
 SHA256: 36d7eb57f03bf35a0d545a9d3657cf12c29ff1bfb14c5e6eb06f1dc33f3d5fcf
 SHA512: cfe36d3d8716adc6f66b76cddb1713367d35332ce9de0fe857eb877c5eab31384379d4df0326fae560fdeaf5d3cce7ce7aa81534587d3f36cd54f4bc72c37231
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12756
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5722-0
-Depends: llama-cpp (= 0.0.0-b5722-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5722-0_aarch64.deb
-Size: 984652
-MD5sum: 67a778ea056472d0b5a2910809704992
-SHA1: d4682f83aa62eb37cef9aa179d9def50a27e32a6
-SHA256: fd5c1c1babb21c2e8ecfe3a3b830206c153282c06c8e149459de3bee4934055c
-SHA512: 75345af6ca3cebbdbf5d20273435592a3e6d6e1633b67bd06349f479f2d33ae4cb7fb011c1a4955d21c1d40b37f500be2cb791f349ac3ee94f94b39bc16a6e09
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -40418,23 +40433,6 @@ SHA512: 5d3fe8fee4c236fb4945b45949786a2ca3d5949e76191883565d63fa8c0116ca6206bc2f
 Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
 
-Package: vulkan-loader-generic
-Installed-Size: 640
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.4.318
-Provides: vulkan-loader-android
-Recommends: vulkan-icd
-Conflicts: vulkan-loader-android
-Filename: pool/main/v/vulkan-loader-generic/vulkan-loader-generic_1.4.318_aarch64.deb
-Size: 118656
-MD5sum: 183503ab1421957f15d1f7cdcf6c763e
-SHA1: 832ad332316c625ab3db5735df69c04f4798cfb9
-SHA256: 6a14b4240f649a28d019423ce94ba489bab16864e11ecb92282b4236578be2b8
-SHA512: 427d64686fc8abae19a00bfd24c60a2cf75649666cef49794e37dc7d3fdc4e7c0019f69ac51687fe90ab372cc31bdc1298b714dc062ec98c8fda1f2c77b96541
-Description: Vulkan Loader
-Homepage: https://github.com/KhronosGroup/Vulkan-Loader
-
 Package: vulkan-tools
 Installed-Size: 2044
 Maintainer: @termux
@@ -40450,21 +40448,6 @@ SHA512: f3340c124cc2277a226e3d540fc4af4a5977a62f8271cea012b414003f82d87b7855cffb
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
-Package: vulkan-tools
-Installed-Size: 2040
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.4.318
-Depends: libc++, libwayland, libx11, libxcb, vulkan-loader
-Filename: pool/main/v/vulkan-tools/vulkan-tools_1.4.318_aarch64.deb
-Size: 359860
-MD5sum: 1d51be0791dcee183a442e09937c34b4
-SHA1: 4189f34d65e9670003f11e39aecf60364397f621
-SHA256: 3a321ae62a06ea95aa7967fb1128e6d71b3a2d894dc0ebd9b68a67ca36c24e81
-SHA512: 5bb1bbe0d69ecd9e912216c9d6b7c19d68cefd479e5c718a7953824ffcf7a37b700af81bf4b6cf35e180f9589f4db5c4fae6fae8f1b33aabe51253fdbf3531dd
-Description: Vulkan Tools and Utilities
-Homepage: https://github.com/KhronosGroup/Vulkan-Tools
-
 Package: vulkan-utility-libraries
 Installed-Size: 7180
 Maintainer: @termux
@@ -40476,20 +40459,6 @@ MD5sum: a51ad1a887e79beeb97e92dd436a905e
 SHA1: f691509818fe4df46719a31b7936ca9b25ef96fc
 SHA256: 15b81fed7c64ea2ce765d532ff7b269f6665ce2f36a2c7bee3032ce021ca74c0
 SHA512: 31cf1862fc2516fabd37be963cb0ee8926654aaaff3afc76f135f608e778e133f038d304b39034172d8f62a8c6f9c41d27bd40715673f6a5d29aaacc69ca5592
-Description: Utility Libraries for Vulkan
-Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
-
-Package: vulkan-utility-libraries
-Installed-Size: 7056
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.4.318
-Filename: pool/main/v/vulkan-utility-libraries/vulkan-utility-libraries_1.4.318_aarch64.deb
-Size: 551568
-MD5sum: e25140930b878dca1cd6e8bcf2d1821f
-SHA1: 1b21347e0ca38770a3b903062b64ede9e29a297a
-SHA256: 8def0fafa389ddbb27c967067cc36d7d8b6955f65f92668977f727d43b0f788d
-SHA512: f000544658298dde7e3bb054c7c657369f6508589d810758111509b26fd65eb452713e9edae31e3e8a0606f3a493247b151c5a9a4c4644e1588359f1492041b2
 Description: Utility Libraries for Vulkan
 Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
 

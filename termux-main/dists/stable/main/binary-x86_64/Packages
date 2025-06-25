@@ -8920,20 +8920,6 @@ SHA512: 76cc904e43abb6553e2039f3f8604543fab57c19da205b29f66bcd7c8158bc0b91d35a30
 Description: A GitLab CLI tool bringing GitLab to your command line
 Homepage: https://gitlab.com/gitlab-org/cli
 
-Package: glab-cli
-Installed-Size: 46000
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.60.2
-Filename: pool/main/g/glab-cli/glab-cli_1.60.2_x86_64.deb
-Size: 11437348
-MD5sum: 7be0c7511ffd0738dcddf8f9c8c093c3
-SHA1: b08b91e9273de24b405f6dabcf80688fc203356b
-SHA256: 275a970c610f546c9cf1eb0e95f2db5afa3adf1007db8636f4a242dcd2befe07
-SHA512: ad4fecf51644753567bb88c42100c7d94f8351264fc0fc5539d911b1f74422cc2ae089b0320ad1869a530159307de7617612f6430c524b9377833ad069001148
-Description: A GitLab CLI tool bringing GitLab to your command line
-Homepage: https://gitlab.com/gitlab-org/cli
-
 Package: gleam
 Installed-Size: 18848
 Maintainer: @termux
@@ -9310,21 +9296,6 @@ MD5sum: 9c1e451bbccd13fda9b7bf589cc3062f
 SHA1: 2db6bdc953b3ad2e0531d5a9099453a0cfe76bb5
 SHA256: 8618e4cd7929d030580820536fc085d9e56d3b12f37564c70648ce269d497436
 SHA512: 89d49b8139263887cd9d7978ca989bdc0a6c5ffb829d736d63b827df90287ae8f85de8652174dbf2e5559cbf28292e726c18f6444811a32eca9d872a90864e90
-Description: A framework for secure peer-to-peer networking
-Homepage: https://gnunet.org
-
-Package: gnunet
-Installed-Size: 15740
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.24.2
-Depends: libcurl, libgcrypt, libgnutls, libgpg-error, libidn2, libjansson, libltdl, libmicrohttpd, libsodium, libsqlite, libunistring, zlib
-Filename: pool/main/g/gnunet/gnunet_0.24.2_x86_64.deb
-Size: 5412744
-MD5sum: e5216a1c53425b0cd2d19bc7c6b68296
-SHA1: 55cc4c98ef96fbbdf49f52f8597f0f285e409358
-SHA256: e29c1bfb5787da05ebc2d59195fd321ae1505d834672e5ba30d92f0ddce37c81
-SHA512: 614cd3cdf134e847d118e7d20b881b68e47ab7691abaabe2ab542040aba79ea1f668209bfe54cef3af433594c43719e16a0b5201a1b1aa91816da3ec79aa6b98
 Description: A framework for secure peer-to-peer networking
 Homepage: https://gnunet.org
 
@@ -24457,6 +24428,22 @@ Package: llama-cpp
 Installed-Size: 62796
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5754-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5754-0_x86_64.deb
+Size: 8046368
+MD5sum: 3c9f66cd8b69ad3dbce89917f1a34d7d
+SHA1: e7a1badd4c7ff1fd407997cba1924561a2188596
+SHA256: 1b14e8dded17ad8d2d21b86b9c721a10dc9d53cd032d053b44302d63d786615f
+SHA512: 9ddc4c3161b62f2d1f74753eb2ae9137edc217b5cc1fdaf1e5dd1ed716bd52a9d5e96224aeba3c04ccbd9ecce8943065c775de4042f646022f91f89f3a52bba2
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 62796
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5753-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24467,6 +24454,23 @@ SHA1: c90222d68a57cd5483b8e4b7f4fd0237aa66e394
 SHA256: 554c666de230d108131df3b854c4649720cbb6b5ae59cb4235655216fbb179f1
 SHA512: 6abb15d72b31ab7170d67bac73a058192d0c92fdea68f1efea774f0c217bf235f963ee941e6aa412d1920b6d4cce64d397bcb34f83798cbad37561a3ed5d4ca6
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 480
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5754-0
+Depends: llama-cpp (= 0.0.0-b5754-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5754-0_x86_64.deb
+Size: 88628
+MD5sum: debf1a516a538e807a96c61d1ffc69a0
+SHA1: 94492250194b6eb9586fb4da4a4c7b888c44c5ae
+SHA256: 20dc37be094757ef28b9bca508a71542e60f2689fe028301b45aa78ee7d03802
+SHA512: 56ad264e77c44ff1bff9e22f5185f830ca0e8e66b6a1f138840440464d97463ad050e4f477254fc0863bd37ac3baaa7088bc8ff75af6d0abb4d2ecbbc729d8c0
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24484,6 +24488,23 @@ SHA1: 0dcdff98a47df12defb2a9adbaf0d0be19ae9f84
 SHA256: 8463e49db1b7b25a71496472653711945784a07240f76405033987d966fc7f55
 SHA512: ba67756e70b85db263b86787a8714bd7b3fa35e698bea1c39750cb17a2bdac63aeee583ff515cea6feca5f6d7d00f9e94ae7f30b0666776728722a7f40105cba
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12996
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5754-0
+Depends: llama-cpp (= 0.0.0-b5754-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5754-0_x86_64.deb
+Size: 1030164
+MD5sum: 45eeb3951194e329e1f9fc49d5e4ec07
+SHA1: fc91a03cef7041165c310f2c6dc2533b86a398af
+SHA256: 26e36694647a893b2e59e431537530222ef5b6f3a13544b29c6e6e8cc84b4d53
+SHA512: d9eb8a0cf44c1bdd9f9f9fc909da947716ed063ff42a3e08b340e6d6b3fba3cd6fd503fef4bec0351dfe3bcb11d326f29d7d38b6bf57da417bebdedb7c49611c
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24905,21 +24926,6 @@ MD5sum: bdc82fc0f98cdeaca4be03f7909fda61
 SHA1: 48ef151c856fee6c3d94101b00207fea158b733c
 SHA256: 11348a22935b8eeca672bb49818d2b2f9b7663075213a3926d82df558a67c089
 SHA512: cdad1d59ccce4143cd6660350d273869fe776379c037f4a6de4b506b255890fd8682a77d240463d13af2cff26089818977a250a868f48af38c3c1251606bb053
-Description: Sumneko Lua Language Server coded in Lua
-Homepage: https://github.com/sumneko/lua-language-server
-
-Package: lua-language-server
-Installed-Size: 11140
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: x86_64
-Version: 3.14.0
-Depends: libandroid-spawn, libc++
-Filename: pool/main/l/lua-language-server/lua-language-server_3.14.0_x86_64.deb
-Size: 1715620
-MD5sum: 4eb63da06804a8b38e9c1d9c7a1887cd
-SHA1: 239fd6750f5ccebd07a0eb322e4fb2616cab66c5
-SHA256: 109e5d3ec700de1f0798bd77029f425f6ac73c7b8d9f23ed35ebad2d931518ba
-SHA512: ba03a23a8b999c09d5dd1c337d001ab5bf784df1b09f48f5e59a4b5ef7e68bebda9888327b9da5c1c05db76f7de85840220185a3a086984f4e709e0e38f2adfd
 Description: Sumneko Lua Language Server coded in Lua
 Homepage: https://github.com/sumneko/lua-language-server
 
@@ -26608,6 +26614,20 @@ SHA256: 960a87ffb65c01a0b4d8d9e501a3e70743889ac8cecea4f2ee1353f816b83dc6
 SHA512: 041a22c1603aafded5baab016256f7f59235c0c4e33e15deafa4eab7efd0fb22fb73ab8221d9c055e7f00a0122d659a9076c195f6906508637ddeac623ef51be
 Description: Tool to find files anywhere in the filesystem based on their name
 Homepage: https://pagure.io/mlocate
+
+Package: moar
+Installed-Size: 7836
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.32.0
+Filename: pool/main/m/moar/moar_1.32.0_x86_64.deb
+Size: 2096280
+MD5sum: 6dce087c2b8bb7140e7d0a2f63a31fc6
+SHA1: d0d446ab44e17ed31f5b2272164d22ce64ef423c
+SHA256: 0e48adfe829afb72ad45fd00fa07e74af8e8ae4b269a813ff9729d6cca56c508
+SHA512: 018bb56fc432077a54368c68e0a53d093455182d27f4c7ea783274ec59f7b3e43815ca4df76e6b84d01390d95a9ba1893202bf0f62f14bf70554821b7ada8adb
+Description: A pager designed to just do the right thing without any configuration
+Homepage: https://github.com/walles/moar
 
 Package: moar
 Installed-Size: 7828
@@ -28702,6 +28722,20 @@ Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
 
 Package: oh-my-posh
+Installed-Size: 20452
+Maintainer: @termux
+Architecture: x86_64
+Version: 26.11.0
+Filename: pool/main/o/oh-my-posh/oh-my-posh_26.11.0_x86_64.deb
+Size: 5346104
+MD5sum: 23883acee374d681d01c365ba2f784d2
+SHA1: db56bd9a3da1cecfd09d7cce77d7803cfe47d75f
+SHA256: 23ebc129a13ccaf49ff969bc14c68e181a1ff3d8d51574ac861bc8a93ff2b851
+SHA512: 49530f2dfdf06c4b916bbfa287120c9666dc2d0433bdbc4e3c87d839dbcd097121c2b2633bbbe9853a85830df080780923e0fda87e33d8180ae03cadf375281d
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
+
+Package: oh-my-posh
 Installed-Size: 20448
 Maintainer: @termux
 Architecture: x86_64
@@ -28712,20 +28746,6 @@ MD5sum: dab6b9c7f4f89efa50c398b74d622f2f
 SHA1: ef6e6873c2b6d2fbaab09874343e158e671c2bbd
 SHA256: aa72a106749ae9742c300195be3304eae7c1f818776ecaf9beadea62d21b2683
 SHA512: 89c6442d0311621bb7fa01ef233b9475f7fdb0bcae22cc17b7c704852c12a00e052979d9ea7fa2499a9fb18fa81b6fd6f17a3d4b061731942f3d2b9fc21f3244
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 20504
-Maintainer: @termux
-Architecture: x86_64
-Version: 26.9.0
-Filename: pool/main/o/oh-my-posh/oh-my-posh_26.9.0_x86_64.deb
-Size: 5353996
-MD5sum: 8798685028edd156e9534cb5b28e4115
-SHA1: 4bb4498e05dd8824f4daedb09d66d3a55a05970a
-SHA256: 82bd7d9e331745f92ea5b5470d0250338873a94c6cc03cf5eab103cbf6341035
-SHA512: ccac7a3176caccfc90ecb165d184999b45726ad335725c71472a6ee7aae2c4255063bd197963a6b228a2b7e4a9f7626f59d85989c8af459979b115d1061c49a0
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -35113,6 +35133,22 @@ Description: Full-featured and highly configurable SFTP, HTTP/S, FTP/S and WebDA
 Homepage: https://sftpgo.com/
 
 Package: shaderc
+Installed-Size: 65884
+Maintainer: @termux
+Architecture: x86_64
+Version: 2025.3
+Depends: libc++
+Conflicts: glslang, spirv-tools
+Filename: pool/main/s/shaderc/shaderc_2025.3_x86_64.deb
+Size: 8760032
+MD5sum: 99ac06496d4d65829684ef5f354580ae
+SHA1: 3e0cf6ceaa232245a0e80e14a80a3c5068e38fcb
+SHA256: fba1eac79c03414ee842a4985ee3e1c64efc875558aad4598c0f52da430c0f18
+SHA512: 4b9b8d73d14c1909eca8f2ec52c99b9ed2d4cd1480ebe8fdfadea6be0b2384e9f9933f21482f741436e14e569337d6649c6d7f0ab0f84e6a6a45867048752064
+Description: Collection of tools, libraries, and tests for Vulkan shader compilation
+Homepage: https://github.com/google/shaderc
+
+Package: shaderc
 Installed-Size: 66512
 Maintainer: @termux
 Architecture: x86_64
@@ -39713,21 +39749,6 @@ SHA512: 918ab6fe8a1117edd58f83510b8435eca44d81a14308f07166718d95a2e33ff379268039
 Description: An extremely fast Python package installer and resolver, written in Rust.
 Homepage: https://docs.astral.sh/uv/
 
-Package: uv
-Installed-Size: 42036
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.7.14
-Depends: zstd
-Filename: pool/main/u/uv/uv_0.7.14_x86_64.deb
-Size: 11232876
-MD5sum: c8b027f233d945704da98ad59ffd45c2
-SHA1: 886ca6f9747e3d367ca17cf6a9b94c6bd8dbb298
-SHA256: d86222be36d01a4b44a91be48cf036daad12fa5f0152ec7fd0b0fc9269bfb224
-SHA512: b2e4751576432cda2d9ff013c4414f9a5e2357d00c312a141c9a2ac6c95448f620ebaa2ee7b17354daebda8d7157b959d106df26dd0c66c436baf0f57cfa632b
-Description: An extremely fast Python package installer and resolver, written in Rust.
-Homepage: https://docs.astral.sh/uv/
-
 Package: uwsgi
 Installed-Size: 1244
 Maintainer: @termux
@@ -40510,6 +40531,20 @@ SHA256: cb6ca9bf3af515dbe9a95bf6930085efe2e680ef1f9ba3a99c2c7a586e88ed76
 SHA512: 6895cf091d737923730e2473c148402058f9f50a075ec94c77df44b54856e3b3abcaef3c98273113f0f87d286f4af6bb5298b274137cfbe421dd6430e7bd65e6
 Description: The WebAssembly Binary Toolkit
 Homepage: https://github.com/WebAssembly/wabt
+
+Package: wakatime-cli
+Installed-Size: 15548
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.115.5
+Filename: pool/main/w/wakatime-cli/wakatime-cli_1.115.5_x86_64.deb
+Size: 4019264
+MD5sum: 867ee6607bbf08e6f1bdf2e96fbf45aa
+SHA1: 343f4706a0ac552d2a73c648b833caf096202ddb
+SHA256: c9c76dac130a614e0bc469849ceb5ebc8573b5cf4aa5142fe7d614edc7f38170
+SHA512: b8fe8c1c9f7ec86424a3702a829e4e0fb55ae1ffa3c40bbdfe2309825c191ee33489c9f7572b09879ef2ecec18b1bdc6f6efbef3116a6aa1690eb7e3a3bed15b
+Description: Command line interface used by all WakaTime text editor plugins
+Homepage: https://wakatime.com/plugins/
 
 Package: wakatime-cli
 Installed-Size: 15544

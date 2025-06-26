@@ -6852,23 +6852,6 @@ SHA512: 86421494e0efcf50c697f19f7f60c178309c16190c5624c1c7369b38f872ef47705ad1c3
 Description: A modern replacement for ls
 Homepage: https://github.com/eza-community/eza
 
-Package: eza
-Installed-Size: 1400
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.21.5
-Replaces: exa
-Depends: libgit2
-Breaks: exa
-Filename: pool/main/e/eza/eza_0.21.5_aarch64.deb
-Size: 476976
-MD5sum: a9bd5bda72d9844cca456633aa52b37b
-SHA1: 91109b373030de1a92c204da22f0e3c98deb0d7c
-SHA256: 8585ec1da2d832038836cc4bba43949baf3a0dbf3652789b2b9798a9ac036267
-SHA512: 9ec066e1d825d14a82f969ab61b23bcbd5baa35af51fc98c35cb044b47a29a39818c298855c5c58473a757a919b7353fc8113d050fdd9963ecaa0f1bdc0db430
-Description: A modern replacement for ls
-Homepage: https://github.com/eza-community/eza
-
 Package: fact++
 Installed-Size: 1472
 Maintainer: @termux
@@ -24506,6 +24489,22 @@ Package: llama-cpp
 Installed-Size: 58904
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5760-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5760-0_aarch64.deb
+Size: 7541100
+MD5sum: d4dfe10dd3a1c9536f52c168c98c3941
+SHA1: aec1590e0132e2d31dcc10f501932b833df41981
+SHA256: 1ddf79bed740e7cbdef12b7afbd808a3a4c385528fe13cc8ae719e98aa76ebe0
+SHA512: 667582fe2fb9f7bbdda52837f16f34182cfc0d0ec46b53b36ba34f7e14492bf6da2c7576fe8b8e820196cf35100efc4603f37f672563597133bec1983f68df8a
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 58904
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5757-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24516,6 +24515,23 @@ SHA1: a71adc19dae7d8516c385c981341c97daef64f5c
 SHA256: 52ff4c366e296daeccd7a52d50377693a7f8430b91268b91685c650e4d370e70
 SHA512: 195d3cc14bc95e332ca8aa779fbe354f09466c653ea82587a5c5190644c591384b76ed5937b2cd69a4b7618ea4ef5d21cb88285c8a4cd359cb1f8c38921de629
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 456
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5760-0
+Depends: llama-cpp (= 0.0.0-b5760-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5760-0_aarch64.deb
+Size: 80904
+MD5sum: 4fda690a5329811c99782ede048fab5d
+SHA1: 67edd4fcd9f3204fc71d8b43c00e6416ab0b01d7
+SHA256: 12b809c9a756cd8372d9b57cc8c35aaefbd7603e6f7bca9207d2bd8ae65e3fe0
+SHA512: a92ee533f9e6d93e3b7663a556750945b5a14e90f67866c5ea21ac9c5ae8c55f0d9fdc4308315ff430a1e4284761b14edec8da741cc890fed390fe2d0dc154e7
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24533,6 +24549,23 @@ SHA1: c5af0b39da88a30f905e7f19a421e94e332ffef1
 SHA256: 297582ade4bba51aefed3b13493813e98600057e16b29ef63024b4f4f0cf8d2a
 SHA512: 0c6adc48a18b22b373df944ff980623b18134325faa901812670becd26a9ad174ad75aafe60d4df3c01585f51c1aea9a2d7e3722822ff67167b7258f2111273a
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12760
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5760-0
+Depends: llama-cpp (= 0.0.0-b5760-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5760-0_aarch64.deb
+Size: 987496
+MD5sum: adb92e8202295758b8e8f1b5110bc4e1
+SHA1: c9c3c78eaf53a4419338d20e5ce226a8b1c8a29c
+SHA256: 55b2675125a4a9f6a7ccbaf650c380f586dc438f40575350af1f19a21137e808
+SHA512: 5fc23ea4d4eaafbfc963cc7404635a0bddf0c8d64ba2bad4eefce27e5732d30e93c40eba0965b6cfbc08c22b86238b98a6e173d14d9260bb3c807c947496b3ca
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -26526,20 +26559,6 @@ MD5sum: 3ddcf5964a9536916e818ded3bbc07b4
 SHA1: e7f3753c22cc024bea24ceb54266012627235891
 SHA256: 2c31c0473068a5ee48f1fc5a98faeb83a1eabea2f6eb87c514449074992c0038
 SHA512: 2d97f9108e7ced346b6ecd0b1c328e03a371bcc0d5b4c04dde7fe472386cd369d7282ce82b15b7175d39cf763442e7c7db67ff42091fc93e2aadfc6feaf8195b
-Description: Tool to serve files and dirs over HTTP
-Homepage: https://github.com/svenstaro/miniserve
-
-Package: miniserve
-Installed-Size: 6560
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.29.0
-Filename: pool/main/m/miniserve/miniserve_0.29.0_aarch64.deb
-Size: 2181628
-MD5sum: 7012b0c1ba3a58b3dcf923c2052c8995
-SHA1: 6e657a1261de46c064e95e1c4cc2b2936a019c70
-SHA256: d26102ee2a1ec70279ec2a500226f3809d11757c6cce3ec2775758b637f5f5b3
-SHA512: 15d222061fecc80ef24d59e904033497c1f32a62cd721e53ae7a24446304e0554bf42b1c2a14f4e4d4f59d0f2cb7c16f2337c67fd8f027437e79206f5c51818a
 Description: Tool to serve files and dirs over HTTP
 Homepage: https://github.com/svenstaro/miniserve
 
@@ -28869,6 +28888,20 @@ SHA256: 821a375b8fc2c905435fa388793c69b30c4bc6718ee6f8e576dee775a745af04
 SHA512: 0581c77f04769e92adb78a6aa3daa93f1b916f8d0f2430410baac030d68af9e5a91009d7960e65b9a48c758ef9bc898062c31dc2f0d054d625d0a9c95dd7eb7f
 Description: The GNU Spreadsheet
 Homepage: https://www.gnu.org/software/oleo/
+
+Package: ollama
+Installed-Size: 30840
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.9.3
+Filename: pool/main/o/ollama/ollama_0.9.3_aarch64.deb
+Size: 7288544
+MD5sum: 61e14f8c8d854b522d56a3f57c5e0fb6
+SHA1: 9a30ee083e17ac6ed9ee939ba47b31ccfe033b98
+SHA256: 3c43e7fc82ff2209d774421d6a940e0589a957e8c3ebed3e3cd3dc64fd1d6786
+SHA512: 17efc8fd8167f1ee8dd10e39eb373c219640839087012cae6b75258d9a24bf9d49b7910580433419faf01db995510d23436f55502e73ddbfc97123569d25827e
+Description: Get up and running with large language models
+Homepage: https://ollama.com/
 
 Package: ollama
 Installed-Size: 30616
@@ -32217,6 +32250,21 @@ SHA256: c6d3a0407904896ee7185cb6910d203d01f5aa44dc35064f5a92e4a1b9ebf0d0
 SHA512: 12f8a341da40796edd69e480272971474a5b1a5eae71ad07a4342469632d0a5bafa694105d7cecfb1b03d03f85e8dd044e53d186818b260182dea6be0ecbeb2e
 Description: A straightforward binding of libsass for Python
 Homepage: https://github.com/sass/libsass-python
+
+Package: python-lxml
+Installed-Size: 5000
+Maintainer: @termux
+Architecture: aarch64
+Version: 6.0.0
+Depends: libxml2, libxslt, python, python-pip
+Filename: pool/main/p/python-lxml/python-lxml_6.0.0_aarch64.deb
+Size: 1090620
+MD5sum: c954dd10e49cfb7d9751b1ad354782ba
+SHA1: 8d14b41af7b395d0eb910e8c7e1fe721dcfddc92
+SHA256: 6c296a6f6f56f7480a066e11ab0e18ea863270c6db56d359c9fb4f01a7d0aa01
+SHA512: d464776057d130405482a6e4a0a1704f1fb6c64c08eeca00a748c361bd2db95c6e5a8e6c7f312411496c7ddfc5649663810bdb79a759287e7ab6f3dc2785b88d
+Description: Python binding for the libxml2 and libxslt libraries
+Homepage: https://github.com/lxml/lxml
 
 Package: python-lxml
 Installed-Size: 4316

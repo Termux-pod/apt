@@ -11927,6 +11927,21 @@ Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
 
 Package: jackett
+Installed-Size: 14296
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.22.2056
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.2056_aarch64.deb
+Size: 3178064
+MD5sum: 3ff5c44f18250bb54646c69e0b31b5e4
+SHA1: 9682ba45dd6f859101b29321754a8b97cc7354e3
+SHA256: da57ed4af194dc7bffcfb3c87b594cd0d11d152aa024d976ab14dbabed5abaf3
+SHA512: 56ad8acf401c2ab26999d931d1614d2d8a4dce6345224b102887220b66056b37c66d52e0d5301a4c0aba85f17281c397713f32da3e4795dc86a5bdc6864cadff
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
+
+Package: jackett
 Installed-Size: 14304
 Maintainer: @termux
 Architecture: aarch64
@@ -16319,23 +16334,6 @@ MD5sum: 4b8b13bdc4d466454b35f572a9fe09c3
 SHA1: e7dabc4c933874c5c225e78c9f98f4fa667b8304
 SHA256: 2ce97d74276f358fcab87a21cad649f69c75515ca132481b2a4620587efdc71b
 SHA512: 0a5c5901d9d23c687acd5b04fbff952da9000f512527f3d329183eca703b3a684705691ec6840336fc7df9f6568e913d44c18f954da9969ce122145acfa682fa
-Description: High performance, open source, general RPC framework that puts mobile and HTTP/2 first
-Homepage: https://grpc.io/
-
-Package: libgrpc
-Installed-Size: 23912
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.73.0
-Replaces: libgrpc-dev
-Depends: abseil-cpp, c-ares, ca-certificates, libc++, libprotobuf, libre2, openssl, protobuf, zlib
-Breaks: libgrpc-dev
-Filename: pool/main/libg/libgrpc/libgrpc_1.73.0_aarch64.deb
-Size: 4389680
-MD5sum: 69042aa50bb98265edb3cab454ae8765
-SHA1: 8cb28e8ad3aee517dc0d8da72d7493bd9f5fa27e
-SHA256: cfa1d223d6965a9210bb6b212b5fe3ff0261c8e9a161471976ea38bef2850e51
-SHA512: 45a0836224196554373e605f61ca8d9b6e5c78bf68a0d59938615ae1d51023505a136e93af74c237223c364a2327eb67779cb7bc8f305e2372fe24c1c5d6af5a
 Description: High performance, open source, general RPC framework that puts mobile and HTTP/2 first
 Homepage: https://grpc.io/
 
@@ -24506,6 +24504,22 @@ Package: llama-cpp
 Installed-Size: 58904
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5757-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5757-0_aarch64.deb
+Size: 7551272
+MD5sum: 1557f8632073fc6b9a0d473935dfa3cf
+SHA1: a71adc19dae7d8516c385c981341c97daef64f5c
+SHA256: 52ff4c366e296daeccd7a52d50377693a7f8430b91268b91685c650e4d370e70
+SHA512: 195d3cc14bc95e332ca8aa779fbe354f09466c653ea82587a5c5190644c591384b76ed5937b2cd69a4b7618ea4ef5d21cb88285c8a4cd359cb1f8c38921de629
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 58904
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5756-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24518,20 +24532,21 @@ SHA512: 100d8c91c9d3c40136aa515a30c8dea75bf1e3cce85747c68833509a1584731edc680073
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 58864
+Package: llama-cpp-backend-opencl
+Installed-Size: 456
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5754-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5754-0_aarch64.deb
-Size: 7527388
-MD5sum: d701f0f7a5ec2f151f8931160fc6ef21
-SHA1: a211f59b9f93bf9bc803aca45f6df057305bc630
-SHA256: d16e5a28a0ac6c4492d0aa31e2e54cf32f1bc0fa5098462d926a8f59ccb08eae
-SHA512: 5cd9e3b4db4b83ad8e064e3fe1e6053efed0da1627b640dde5eac90ba4279288bd1efbf7389be08df576d18d590b87886ffd98586176d7ad4b3bc8b6a7e68893
-Description: LLM inference in C/C++
+Version: 0.0.0-b5757-0
+Depends: llama-cpp (= 0.0.0-b5757-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5757-0_aarch64.deb
+Size: 80848
+MD5sum: 924b078d2d76a65fae7df082a0fc2bf3
+SHA1: c5af0b39da88a30f905e7f19a421e94e332ffef1
+SHA256: 297582ade4bba51aefed3b13493813e98600057e16b29ef63024b4f4f0cf8d2a
+SHA512: 0c6adc48a18b22b373df944ff980623b18134325faa901812670becd26a9ad174ad75aafe60d4df3c01585f51c1aea9a2d7e3722822ff67167b7258f2111273a
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24551,21 +24566,21 @@ SHA512: 73e5b178f0653ec71d1988f6a0adb3430b09aa14469477bb6e4aef8957f82aa7aa4a16c6
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 456
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12760
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5754-0
-Depends: llama-cpp (= 0.0.0-b5754-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5754-0_aarch64.deb
-Size: 80924
-MD5sum: 372ebb1692386b1bde176f0b5dbe2a97
-SHA1: 85794ab20a2907e33c3fe760d91a5c0554809d92
-SHA256: 0f876e182bc2d16a37d78fbbd743dda11e1e463fc7aff6e60f3df87e8bc21837
-SHA512: 4766431574c53a289939be0c9b2c76b786c2bac4098646ec4ff1853c3ba5917bbb5a10134744a5ff755e544478300aa1d4157f0b0bb1c5980769b3e7887f237a
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5757-0
+Depends: llama-cpp (= 0.0.0-b5757-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5757-0_aarch64.deb
+Size: 988076
+MD5sum: 277099fd37be5b7b67d01ccb6e32b236
+SHA1: 8b1c98e654c366bb61301d0d2b0c20f612db7a49
+SHA256: 8bce23ac38c1163e1329b0d3a64ec14d3a1589bc207230d283b84b1774be4678
+SHA512: 39402dfb8f4967da3ff52e05bd5c897d9bec93e539429c28e9f3a5d5f4f474a961e45c181215b755648801ede7302eea958a31b96fea46f21b25543274a73757
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24582,23 +24597,6 @@ MD5sum: 1c7028f3807bdeea97fa789eaa949195
 SHA1: ec407fd2a0349b4c102c4789874154e2c69e80a8
 SHA256: d914a6e5d36ab318e3344adc6b91e9fc5be4ec4ba06846e8b7b70aa75ee9880f
 SHA512: 7e64d33a088aaa51a23ed8357db2658c5c8365b34af7650a2d5a073ab6e81c4ce335a67c051405ee5b6cb4437d22805f11b9a7cc3a2e65bc022936377bca06a2
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12760
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5754-0
-Depends: llama-cpp (= 0.0.0-b5754-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5754-0_aarch64.deb
-Size: 987536
-MD5sum: cf621eb656d97d809d8921135305d9fe
-SHA1: edcd69baadccf18afd20449107567d136134307e
-SHA256: 26a29ae701cd361543f5cef9a14336a77302e7f28ccc3e26d1093a4c79542f8b
-SHA512: ab0951d0aca6e7fec0f3ffa8e0b3565d18e14fa50c451834526de22eb0f0618d28a617a85ba0d036efb1708a56e515db92d6371943c3450d3a64b5e348036706
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -26741,6 +26739,20 @@ SHA256: 1fa4bd5208a68a119d8f97b5a9a07cde1dbd248380d81139b2f0a81b3eb5a544
 SHA512: 1e85d5e6b490a900c93a50dc2b92983ad904f140656b07a0fd14d2ceceee29405099c8b79c850be75bdcfd15450a065fa7dadfd2da25361c185b0ef168e65605
 Description: Tool to find files anywhere in the filesystem based on their name
 Homepage: https://pagure.io/mlocate
+
+Package: moar
+Installed-Size: 7644
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.32.1
+Filename: pool/main/m/moar/moar_1.32.1_aarch64.deb
+Size: 1890576
+MD5sum: f8545adac14fa08107dd2a216f4f8751
+SHA1: be803d9a7b1192a4f51f9da5e6fb0c65edc7c8cc
+SHA256: 24af36e3fece181cb7770a80f246e14e5fe8fd915d967f45e2cdffab6416c06b
+SHA512: 5e08b1fa9d7228d84a054323a7962363fec4f0ea1cdcdf701d62a34fb07832ad9189b0a14ea344dc9a760caa776c5bcb59883974d4f0bc82cfd4822265b1c881
+Description: A pager designed to just do the right thing without any configuration
+Homepage: https://github.com/walles/moar
 
 Package: moar
 Installed-Size: 7644
@@ -32224,21 +32236,6 @@ SHA512: a0bc09aa497d33f4f519ed2aaa023990ba209e30f08837ee6d3b72fe8e7b82f84d5e2345
 Description: High performance, open source, general RPC framework that puts mobile and HTTP/2 first
 Homepage: https://grpc.io/
 
-Package: python-grpcio
-Installed-Size: 9972
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.73.0
-Depends: abseil-cpp, c-ares, ca-certificates, libc++, libre2, openssl, python, zlib
-Filename: pool/main/p/python-grpcio/python-grpcio_1.73.0_aarch64.deb
-Size: 2189528
-MD5sum: e533161073a7d68c863488a54b2e8213
-SHA1: 7181394926b11bad25d52212dd14780935b891f1
-SHA256: 69a974a0cbbc6bf0c6440f211aeba8a0fe6a60369cb61c0452900a46accf7cee
-SHA512: 579809e96f2f45117d78ca0b1de57a762e48e998db1a8c912bd56c2ca16900dfea6279c7d055cf40955f554c92fce412dd09b1e391ee3b899090f4b11bbc5454
-Description: High performance, open source, general RPC framework that puts mobile and HTTP/2 first
-Homepage: https://grpc.io/
-
 Package: python-lameenc
 Installed-Size: 108
 Maintainer: @termux
@@ -32664,23 +32661,6 @@ MD5sum: 8d24c75483270c3e8f82347f90f6d9b9
 SHA1: 798f53d026a44d1e148f0098e820a61247afd076
 SHA256: f4ff0e4c8c083e42bf4f301358fd06fc99b09935fbc37d8f6c54b00bdde428d9
 SHA512: c25a10815b8c259217543824f21523969de91b7faadc26e5236be31e34ea1bbbe12e13d2e2acfb45265e729f062f8e602ace052da2f752cc1403b9532cc90e03
-Description: A youtube-dl fork with additional features and fixes
-Homepage: https://github.com/yt-dlp/yt-dlp
-
-Package: python-yt-dlp
-Installed-Size: 24004
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 2025.06.09
-Provides: yt-dlp
-Depends: libc++, libexpat, openssl, python, python-brotli, python-pip, python-pycryptodomex
-Recommends: ffmpeg
-Filename: pool/main/p/python-yt-dlp/python-yt-dlp_2025.06.09_aarch64.deb
-Size: 4913996
-MD5sum: 481f0594bb0f94f3a4e11bf27fa26ade
-SHA1: 1bd8a5692bbdef15305cfd6af29bb2f0eea75560
-SHA256: 53b38c5942e861a5ff853bc85359250e62561e3e3bf8d952bec00b716c963b37
-SHA512: ff058fe2770c2cd3db09922d1feef060381c040e41e88c3d535ce878bf5848c00b8f3caefb358e05a56197ed417701fe04b4328ca078312d7e0a8e948fff82d5
 Description: A youtube-dl fork with additional features and fixes
 Homepage: https://github.com/yt-dlp/yt-dlp
 
@@ -39593,21 +39573,6 @@ MD5sum: bf67d3977fcd54a24e4e44d916ccbfe1
 SHA1: 0057c53f28bda2798d88d606514d89bb915a61c2
 SHA256: a1e8bfcae9595f832284e95e0a82828d4a0b4f484aa47b93db38a89fb20eca48
 SHA512: f5dae84a00bb348f6ca713e3a21cd64c645819724a73ecd5913ebabf3d209c303ff13d3374cd9f7dcd8d07e5e5ce6bf447597f6af40b634370485b2b05dba4c9
-Description: Tool for extracting files from .rar archives
-Homepage: https://www.rarlab.com/
-
-Package: unrar
-Installed-Size: 468
-Maintainer: @termux
-Architecture: aarch64
-Version: 7.1.7
-Depends: libandroid-support, libc++
-Filename: pool/main/u/unrar/unrar_7.1.7_aarch64.deb
-Size: 163348
-MD5sum: 2c2f0ce35dfad0e00632d6068458dcd5
-SHA1: 412fdfec21e190e2bc85b36b4556b5ad604e69b3
-SHA256: 2ce6d5b5f6121e0bef50c3435a553167b3f576f4720f4d421b5817b92879faa1
-SHA512: 6716767c522cf6b4d1507c496bce68b5036fbbaf2bb6f6f8d193d71a05120fb40f8b6f047c19e4c1a8974c56dab24c12e98d46523d8496c24a74d296f9fee796
 Description: Tool for extracting files from .rar archives
 Homepage: https://www.rarlab.com/
 

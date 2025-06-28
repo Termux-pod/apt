@@ -5800,6 +5800,23 @@ Package: dropbear
 Installed-Size: 412
 Maintainer: @termux
 Architecture: i686
+Version: 2025.87-1
+Depends: termux-auth, zlib
+Suggests: openssh-sftp-server
+Conflicts: openssh
+Filename: pool/main/d/dropbear/dropbear_2025.87-1_i686.deb
+Size: 150348
+MD5sum: eb12926728ca74ee069675370d94ef81
+SHA1: df085d8c557932e2df25c069c664ff43db9a6001
+SHA256: c6d2bb1c5da7d9fc4bf6be89eae00a003a3c9777c4c7fea34afbbd0e7ef1225b
+SHA512: 816b5337058452f94801ac397e14ac38eea556e10988c29af000991b5ec8f8c153b77370ecf2c44ced93daf17477a8bca9e12bcd3617f0cb6b6fbaf9dde1f1c5
+Description: Small SSH server and client
+Homepage: https://matt.ucc.asn.au/dropbear/dropbear.html
+
+Package: dropbear
+Installed-Size: 412
+Maintainer: @termux
+Architecture: i686
 Version: 2025.87
 Depends: termux-auth, zlib
 Suggests: openssh-sftp-server
@@ -7365,23 +7382,6 @@ SHA512: 545ae0060129bdc1c9f98a2ab4cf04aefafcc8709d86ae5543cf45ace976cbddc6baf14c
 Description: Library for configuring and customizing font access
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
 
-Package: fontconfig
-Installed-Size: 692
-Maintainer: @termux
-Architecture: i686
-Version: 2.16.2
-Replaces: fontconfig-dev
-Depends: freetype, libexpat, ttf-dejavu
-Breaks: fontconfig-dev
-Filename: pool/main/f/fontconfig/fontconfig_2.16.2_i686.deb
-Size: 127848
-MD5sum: 7655804355fb9595bc748ebc7045c751
-SHA1: 09f6f3221bd39fb159423cf2c322ca38672ed64f
-SHA256: b4ef91b0f95eee125bab200316eb3ecd1e30a2e6ba122d8f7f79aaf3a0bd9262
-SHA512: df8ee6fcc55bb1c7a5335ccf00c60b00273e0e95c49e32d8be0cfe578eafda44f8468ee8fd87320b05c642bac923044cef3812b4a7c4acad96c1965b3ed1c4d5
-Description: Library for configuring and customizing font access
-Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
-
 Package: fontconfig-static
 Installed-Size: 420
 Maintainer: @termux
@@ -7397,21 +7397,6 @@ SHA512: c9cfc2c474435e271e148d29f7d44ec522b5e9561f6842db7447b360a6fbce91881720d7
 Description: Static libraries for fontconfig
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
 
-Package: fontconfig-static
-Installed-Size: 420
-Maintainer: @termux
-Architecture: i686
-Version: 2.16.2
-Depends: fontconfig (= 2.16.2)
-Filename: pool/main/f/fontconfig-static/fontconfig-static_2.16.2_i686.deb
-Size: 121192
-MD5sum: 1c3fe167a3a6b2b13d9f53a5d29dc8bf
-SHA1: 44fb7305fbd12463505a64cf57183998d81fd1a0
-SHA256: ed386c69de6bf9f9e0b1f752e648b1959d1f10c2552f502eeb4dcd83066a868f
-SHA512: 4f5a3e24be5c43db380d81035dbc4a971215565ebe22175068235a3d797d58427c8cfd41bb235cfaa7e1e671e874660c6b0f2e9496751eaf9ada7edf6fcc6d12
-Description: Static libraries for fontconfig
-Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
-
 Package: fontconfig-utils
 Installed-Size: 104
 Maintainer: @termux
@@ -7424,21 +7409,6 @@ MD5sum: b7a125d422c48c44d1fa20b3bf1d04f7
 SHA1: a648f322ee693078fe01c0149d6fcc3d1dcfff07
 SHA256: a07dfafba582de27c4a60ea6602ef7fdee0da23f0968236779cc747ff36b4908
 SHA512: 3b1d1c8dd3d69237c395a03181623bfd587d9257c6cdb3827890ec6cd6d473baa4118073335aeede33a1d9374e4a75e4ba7e8ae24d04bf8d9df299f3da2dfe1b
-Description: Fontconfig binaries
-Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
-
-Package: fontconfig-utils
-Installed-Size: 104
-Maintainer: @termux
-Architecture: i686
-Version: 2.16.2
-Depends: fontconfig (= 2.16.2)
-Filename: pool/main/f/fontconfig-utils/fontconfig-utils_2.16.2_i686.deb
-Size: 14040
-MD5sum: 9736ff38508abe8a7742b66acc6c205b
-SHA1: c682362c4c9d9c0ed392d67e55c1d35385ebac39
-SHA256: 0766a3db37a905043312975794e3e9eb67b02dc735df6dfb31a2d0b022545c64
-SHA512: e7e7600c00777c673a32f637f93d77201bd912ea3f7a4dbfba2bf8ae817fcb829a699c38f8f05f3346f96f4a96d17818442b9aa86ae08a2be24ba93eb9b57929
 Description: Fontconfig binaries
 Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
 
@@ -7773,22 +7743,6 @@ MD5sum: 44634d66ea4aaebf1a8a6f3502fd65a5
 SHA1: 798aa5c7fdc1d806d76af2d7e8db7c5f37faaa6e
 SHA256: ce6b2fae48f0d0d89583a719ea1656620353ecbfcbd25279a38c158a5ceddbe6
 SHA512: a7109f34a972f4609b79b8cab5b77c36857ee08393622eeb0b483ed45ca1238748d9928cdc2c961d3788aee38388778f9c5f27fd7bcebb9744641833469b32fe
-Description: Command-line fuzzy finder
-Homepage: https://junegunn.github.io/fzf/
-
-Package: fzf
-Installed-Size: 4380
-Maintainer: @termux
-Architecture: i686
-Version: 0.62.0
-Depends: bash, findutils, ncurses-utils
-Suggests: tmux
-Filename: pool/main/f/fzf/fzf_0.62.0_i686.deb
-Size: 1462300
-MD5sum: 296d5c80a530a4084c92292eeeb366a4
-SHA1: b9ce53099d2791806879e48da9b3802c6a77abae
-SHA256: 06560793e3f77c98ed7d6bce5b001e1610a10269d7f090efb5224f92e49e45d0
-SHA512: 2171937d27718644725d4161998a957812267dc00c8687bf3bc0049d559e3d63e310b75db6c158dfb0ada249141e504f69aa5914b3285976a011abcc6826fd2d
 Description: Command-line fuzzy finder
 Homepage: https://junegunn.github.io/fzf/
 
@@ -10141,21 +10095,6 @@ MD5sum: da334d0a9d762ba8bd6465a3ec343092
 SHA1: 44a5e14137a61c1e5059f90bd3eae4381e414644
 SHA256: b9f023878b2a10c2af9d494f25ab2ce5b8d9a6afdc15411084b0b9f17dfd21b3
 SHA512: 0570a9c3195504df7bfe3569f0516007a4f6697bbd844e90877e4b21356639ea119e3ea3bd6f2e3c671104639b87558cb4d3c7dc88e29da25d4d8efbb5128b66
-Description: Python bindings for GStreamer
-Homepage: https://gstreamer.freedesktop.org/
-
-Package: gst-python
-Installed-Size: 236
-Maintainer: @termux
-Architecture: i686
-Version: 1.26.2
-Depends: gst-plugins-base, gst-plugins-bad, gstreamer, pygobject, python
-Filename: pool/main/g/gst-python/gst-python_1.26.2_i686.deb
-Size: 38856
-MD5sum: 878a6ee8bff580419bd7cdbef7c29510
-SHA1: 55d319d14dd31c54a9b149956f055cad97c86ed1
-SHA256: e446c6f2e2e7d16c2190c8a0949a257e82a5272c563b24c0ad07dbf47e4c4f6e
-SHA512: 4bbf5338c719bd5d0cb524aea848f3a38bd9aae8f4fe1a59ed53bcb749bb3b0c3ab84dfab64d68ecbbdb3dbdee25f649024fee1b9f645d2e5cd8b993b16f3a2a
 Description: Python bindings for GStreamer
 Homepage: https://gstreamer.freedesktop.org/
 
@@ -19292,6 +19231,20 @@ Package: libosmium
 Installed-Size: 2104
 Maintainer: @termux
 Architecture: all
+Version: 2.22.0-3
+Filename: pool/main/libo/libosmium/libosmium_2.22.0-3_all.deb
+Size: 172776
+MD5sum: ef3fb66d157adaffbf5a5f0fbc17c7fe
+SHA1: df62a00f01e983c34f90903a61de8a35b5c6eb7a
+SHA256: 71a577b0f251d6bd33f6ad46f19b8882a857df9efcf8b38ad382b292e05507da
+SHA512: 6d1b61fecebb7978fc303d8512e207a7fef781287b695728efa7e5e0263352ba2ef7609e300d6b288047479d7b532f0965aac233828c4e2731ff37906ab8c1a2
+Description: Library for reading from and writing to OSM files in XML and PBF formats
+Homepage: https://osmcode.org/libosmium/
+
+Package: libosmium
+Installed-Size: 2104
+Maintainer: @termux
+Architecture: all
 Version: 2.22.0-2
 Filename: pool/main/libo/libosmium/libosmium_2.22.0-2_all.deb
 Size: 172772
@@ -19916,6 +19869,20 @@ SHA256: e8b3ddb6b2ee9b8ff3c67650590d4774b5530844b55241f07433581a2eaf71d4
 SHA512: e6e911a7df0dcd8595672497a12cff451b9c0e45a8a1b37d822d7ccb97d7e1428e95e4d34db2e04c04c1b9dcd6c448cea4bba5b6aaf91bec9adf6bd6d87ca6f5
 Description: Static libraries for libprotobuf-c
 Homepage: https://github.com/protobuf-c/protobuf-c
+
+Package: libprotozero
+Installed-Size: 224
+Maintainer: @termux
+Architecture: i686
+Version: 1.8.0
+Filename: pool/main/libp/libprotozero/libprotozero_1.8.0_i686.deb
+Size: 19656
+MD5sum: d89daf1af796efd95a3c4d06461a7bdf
+SHA1: 55cf3845dcc8523e976288df19ccc32c7f20e070
+SHA256: 8f1a095095b97626207d8905350e6deafd54c03b367be7997ebd6723594340f1
+SHA512: 414537506f5831cac2f86cadea6c12b40ef6bdbbe5cae8da6f4732c40c518644c4e8c484dc36d0052fb3aef9f8b08e8b3eeb531f9c97b3fa419586215f2ec4a8
+Description: Minimalistic protocol buffer decoder and encoder in C++
+Homepage: https://github.com/mapbox/protozero
 
 Package: libprotozero
 Installed-Size: 220
@@ -29182,6 +29149,21 @@ Description: Mesa Off-screen Rendering Library
 Homepage: https://www.mesa3d.org
 
 Package: osmium-tool
+Installed-Size: 2120
+Maintainer: @termux
+Architecture: i686
+Version: 1.18.0-3
+Depends: boost, libbz2, libc++, libexpat, liblz4, zlib
+Filename: pool/main/o/osmium-tool/osmium-tool_1.18.0-3_i686.deb
+Size: 652128
+MD5sum: 51697bc6ab64e0316b33d9bc9c908c8a
+SHA1: 3bb8397a3f853c124912b6e708a1877cd10f762f
+SHA256: 3185cd25b6d2de5e58f8757da6e9b8fa114c4e73e78cb9f656a1ba83d93d32d9
+SHA512: 647032dc405b4d4e3471c5e4ee2680a50016eef8de8afac7ad3b3f0d607f3175e42fe5f5bcbdd7564d4c190279ccb9efd875f3b07b6251f167e09a0babafa91d
+Description: A multipurpose command line tool based on the Osmium Library
+Homepage: https://osmcode.org/osmium-tool/
+
+Package: osmium-tool
 Installed-Size: 2124
 Maintainer: @termux
 Architecture: i686
@@ -32802,20 +32784,6 @@ MD5sum: 4d0c0859d7932623f4e5432f98d379f1
 SHA1: fd3e2bab3170dcff514e55ceb464acaf9d8921d6
 SHA256: 1e2cf9e2a8a5135447f39c758ec506b458f4329cc417bfe1c38bf6edde135359
 SHA512: 6b6c950e7020391aca27c64b5c17ed9dce296489548b796ef04b34d8511534d47f319768283982e1899617875f1995a2d94b9695715fe50579270ad3cc602b35
-Description: rsync for cloud storage
-Homepage: https://rclone.org/
-
-Package: rclone
-Installed-Size: 86628
-Maintainer: @termux
-Architecture: i686
-Version: 1.70.1
-Filename: pool/main/r/rclone/rclone_1.70.1_i686.deb
-Size: 23469340
-MD5sum: da0ed3a14b91f26ba7f36b21f7c1faeb
-SHA1: f1dff63b7af85ed4a49c98f64be864db064042ff
-SHA256: 5a07973cb88002e6540ec2d18609d8d75866da0d34d8e771bc4a897629bc5d44
-SHA512: 9af490fb6f7af67b217f1e08f134675eb207a2a348f10a94ded6682ce0a4b18aafe0095a14dceabdde596eb31157e488981b653d000983598d74b6e2068903fb
 Description: rsync for cloud storage
 Homepage: https://rclone.org/
 
@@ -39028,6 +38996,21 @@ Description: Utilities for handling universally unique identifiers
 Homepage: https://en.wikipedia.org/wiki/Util-linux
 
 Package: uv
+Installed-Size: 40560
+Maintainer: @termux
+Architecture: i686
+Version: 0.7.16
+Depends: zstd
+Filename: pool/main/u/uv/uv_0.7.16_i686.deb
+Size: 11551096
+MD5sum: 168440cbcc7fb0f5e2c4e1525013f3d0
+SHA1: ecef0c24d0a6a7e3aaf7976afe3db9d2a4537e97
+SHA256: 4fcc71936c0d508e7d276336122eac6a40669e3de0bfca74f45fe0663fbbfc56
+SHA512: 7056205bde7b28368f151c0394c78068b113f7eab2c4ca90aa1f25f2dabd26e63e4f69d9dc5801706598736f0100ab7e0ba64df434679842fcc699f1635494ab
+Description: An extremely fast Python package installer and resolver, written in Rust.
+Homepage: https://docs.astral.sh/uv/
+
+Package: uv
 Installed-Size: 39936
 Maintainer: @termux
 Architecture: i686
@@ -39736,21 +39719,6 @@ SHA512: 18fbb68e2144464810b34413aee63ed09872692ce235ac0777899193004f3273978ba8d9
 Description: Vulkan Tools and Utilities
 Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
-Package: vulkan-tools
-Installed-Size: 2256
-Maintainer: @termux
-Architecture: i686
-Version: 1.4.319
-Depends: libc++, libwayland, libx11, libxcb, vulkan-loader
-Filename: pool/main/v/vulkan-tools/vulkan-tools_1.4.319_i686.deb
-Size: 401324
-MD5sum: f8f6fe68ef2a8133917d1aaf163d97a8
-SHA1: 3004f965120feaf3e17f31358f753ad2e49ac909
-SHA256: f608bbb7e6436ab707f339ed6a77c59e022cdb7efec05e228f927c1d14537653
-SHA512: 69779aa61bd2dac72efc97d3ddf733383f8c7f59a6c09ad436e44edd08109e6d66010848f598cf72987067a62726c882cef2ad93d654c5f614a5f2a6cca91a63
-Description: Vulkan Tools and Utilities
-Homepage: https://github.com/KhronosGroup/Vulkan-Tools
-
 Package: vulkan-utility-libraries
 Installed-Size: 6704
 Maintainer: @termux
@@ -39762,20 +39730,6 @@ MD5sum: aa5e71de886020768c79a6e855b5748a
 SHA1: e3fd6b642a94d381cb7f7d94578f6d61094faf1d
 SHA256: 8994906b329cd5e32567534ecdcfa723f66c8bc0850b6a60da48d26a1d3be0c9
 SHA512: b45e95f164d96f3b1f6752f99182a7c81f00f2bb9c19f7d6d52938a5175657b7157299e78cc97f0a1eff170265134938003431225767806df07e6b917d78090d
-Description: Utility Libraries for Vulkan
-Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
-
-Package: vulkan-utility-libraries
-Installed-Size: 6704
-Maintainer: @termux
-Architecture: i686
-Version: 1.4.319
-Filename: pool/main/v/vulkan-utility-libraries/vulkan-utility-libraries_1.4.319_i686.deb
-Size: 568664
-MD5sum: 300138ac39191e6b4337464c56ead611
-SHA1: e696cddffda33aec0eb98b1c42039816ddb44eb2
-SHA256: f3bbddd66fd1ba4f2a5da91ca6d441cf18062d9418c9684a7f352a2f68e01198
-SHA512: 80f8c26f26d0007ee71cf662cdd955b2b48f383714743c2001228fabb94b2d73100448046832eb6952e69f09bc891eb44ad0c6e2cf89dffefb6d49190bbd5352
 Description: Utility Libraries for Vulkan
 Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
 

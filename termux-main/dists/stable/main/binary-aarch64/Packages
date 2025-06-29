@@ -24486,6 +24486,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 58992
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5778-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5778-0_aarch64.deb
+Size: 7569476
+MD5sum: ce6bed18f06353809855dbb6c1c92fc5
+SHA1: 731a2e78cdd3cebac62d9f82e76a7cb2e066a2f4
+SHA256: 65a26c30fbd56219cc3f00fd8f45fa5be237e92c5655003d0ceccca2aac0577e
+SHA512: 5ca46a1841ebe2a4eca1b4857d4027ae3caf50772b7d02f708c42bbb1ab75e309aeb352f8e94b9b987318dea9e9a4f5b58f982e443100eb64b49761c302e7071
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 58940
 Maintainer: @termux
 Architecture: aarch64
@@ -24501,20 +24517,21 @@ SHA512: 48e387cd24e1934d62602c83d3fad2cb774e1988122de1c6bb81ab02c9724aae621a9233
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 58940
+Package: llama-cpp-backend-opencl
+Installed-Size: 456
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5774-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5774-0_aarch64.deb
-Size: 7557404
-MD5sum: e635d2c5c8d7f4b45a84449a65f351c8
-SHA1: 71776791409ae2f41ff2efe625c55c30ad16d5fe
-SHA256: cb40d1d40edeb2c58e7b866044ac42dcf74c32c5cddb477537333caea8c4880e
-SHA512: 9fb03c5a97f9dede6de5de32d96b4dfbf7a40e2f57bb1304b63125dddc8ae81141dceda1066658f78de1418bdc64d24432e340534c29314896e9db7076af7155
-Description: LLM inference in C/C++
+Version: 0.0.0-b5778-0
+Depends: llama-cpp (= 0.0.0-b5778-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5778-0_aarch64.deb
+Size: 80944
+MD5sum: 6102ff7dc664f27c66dc4d22278efc3c
+SHA1: eefbdf1282eff58c0f5095f3b8a9d61dcde3cc84
+SHA256: f30e570bb9e5787b420c5771367642b01a1e136b103dbcbd73a484b012ad0099
+SHA512: 837b6750a1e57f8290a1eb1c58319ab093e1304a2f4502a30c3673b5b8b170f27a5890ec2f05c5d7aa917c682b6e78f45f6f4bf3fdd8092ce6f5595b6f6c283d
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24534,21 +24551,21 @@ SHA512: 2d45c1ead6c48f88a09f784d6e0796835f9983e7914114049df01ccb9dd1734b34522dff
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 456
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12784
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5774-0
-Depends: llama-cpp (= 0.0.0-b5774-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5774-0_aarch64.deb
-Size: 80912
-MD5sum: 49538199f110ebbabd6c705360d5c001
-SHA1: 65aa45eb441786976aa445ec4a358426e3a3cd1a
-SHA256: a1c52b03d92b57bb56c3cdbcc59932736bfcec60d353a14fb2afab42fe92e4d3
-SHA512: 16f903526bf16f8ce10a29af4d821c62f47f346012af9225f4243fa55f3adb044fff391f90e0f9df26234856814664b0eba62c5eeec0a32b3fbddd6196b58027
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5778-0
+Depends: llama-cpp (= 0.0.0-b5778-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5778-0_aarch64.deb
+Size: 990436
+MD5sum: 39c72f0b5682f7bb96db193375bbb74c
+SHA1: ced020c2fbc1f7f511885ded6b59d90d4db37196
+SHA256: 848284cd411c770a1548b4d3cc08415a3fac2b7341ac48ef67e92780d37b17eb
+SHA512: bc3e0f48421bfafd2b5bbb2bed4732a9c6eb4d973fd29734d949e67faab21c226b0ff9a81a5d3aaff86e7ec494b1a3cb291f8a4edec30d89f71f1cf45b278985
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24565,23 +24582,6 @@ MD5sum: 3a53c55b95ece468cd846db9e3087601
 SHA1: 639fdd35820fec06f70c51e1bdb7a238fdf46696
 SHA256: a721e5a77488254ecb099174a6aa6ceaf0f56c342f046522c318c7a72e64ca07
 SHA512: e0e0d8ba1270286554d91d4a2f1bc684e6d02e0149c5ad2024173e4e2d4211295aa5c262380cbe4cab129230f8f2b5b5af0ac32cdaae4acca9a25178c9ed53e6
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12756
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5774-0
-Depends: llama-cpp (= 0.0.0-b5774-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5774-0_aarch64.deb
-Size: 987184
-MD5sum: 6ef8f774e7c274f61b9e8cdd6ec1f335
-SHA1: 0c3d5c8e7b4f2eeb6f972b5b66e64d755c0dc538
-SHA256: b8ced760e99cc6b234ec1480a9f86bb25defe63f2108b823d0414ba11de2dfa3
-SHA512: 98f4120e2249de9f59492c2c50e675988ff269533f89b1918f4cb9daecacbedad25be1febb93c5b15c2f58488add7c82e9d3a964b1fbb31d9fdf11a634670185
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -26739,20 +26739,6 @@ SHA512: b77ab69bad5baf145501622086f77183a5e5ff97e91999886af30c9aa013cfaccc739d00
 Description: A pager designed to just do the right thing without any configuration
 Homepage: https://github.com/walles/moar
 
-Package: moar
-Installed-Size: 7644
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.32.1
-Filename: pool/main/m/moar/moar_1.32.1_aarch64.deb
-Size: 1890576
-MD5sum: f8545adac14fa08107dd2a216f4f8751
-SHA1: be803d9a7b1192a4f51f9da5e6fb0c65edc7c8cc
-SHA256: 24af36e3fece181cb7770a80f246e14e5fe8fd915d967f45e2cdffab6416c06b
-SHA512: 5e08b1fa9d7228d84a054323a7962363fec4f0ea1cdcdf701d62a34fb07832ad9189b0a14ea344dc9a760caa776c5bcb59883974d4f0bc82cfd4822265b1c881
-Description: A pager designed to just do the right thing without any configuration
-Homepage: https://github.com/walles/moar
-
 Package: mold
 Installed-Size: 22064
 Maintainer: @termux
@@ -27442,21 +27428,6 @@ MD5sum: 21ec914db9a801934f93aa2f823e5df7
 SHA1: 7f3b480fab9ab1d92a42a61629f23cf5cbbbd1cb
 SHA256: dd20e69508f355cf3be10c6bf9a21a09f69b8a1a6152589fa657629460f3b219
 SHA512: 916e43969d2188906de4db9b5b0385634360556b11dfd7da51c00a356453440cb55135177fdb438a9151218e3278577cb7f72981a93ca2fe7b2378fc22a69d10
-Description: A standalone and lightweight web-based MPD client
-Homepage: https://jcorporation.github.io/myMPD/
-
-Package: mympd
-Installed-Size: 1516
-Maintainer: @termux
-Architecture: aarch64
-Version: 21.0.1
-Depends: libflac, libid3tag, liblua54, openssl, pcre2, resolv-conf
-Filename: pool/main/m/mympd/mympd_21.0.1_aarch64.deb
-Size: 793940
-MD5sum: 370fa65afd19feb5421073ca8efc1621
-SHA1: 4c5dae3e18cf8988e73679c2fb2565d7b6b03d03
-SHA256: 5e840ef0ad3d2e734f5949ee1d3dd3dd213f8e1009b3cca290ccc8fbe1200283
-SHA512: f9103fad3fe562e841100107fef4c0b18989c13eaef18ed7ca1949b33e6c112506e2b53c1828d42e1a376f8dbb95766199d286afd239acafee86f14c365b506a
 Description: A standalone and lightweight web-based MPD client
 Homepage: https://jcorporation.github.io/myMPD/
 
@@ -28860,20 +28831,6 @@ SHA512: a9576564fdd86a05ffb930768634ef63a038ec5f3385d48a23c953ed9e4740a1de57eecd
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
-Package: oh-my-posh
-Installed-Size: 19380
-Maintainer: @termux
-Architecture: aarch64
-Version: 26.11.0
-Filename: pool/main/o/oh-my-posh/oh-my-posh_26.11.0_aarch64.deb
-Size: 4661744
-MD5sum: 640212c969c7490537e5fdea231ebf57
-SHA1: c1c2a62c8d3480072431deff62f03cf0a5cc63eb
-SHA256: e256732216a4677aee7fff2c90076be5ba47609dd01d09d773efd7afd203d256
-SHA512: 4dbc9211c00ee8bd8af97bcaaf6546b42e955099ce22ed8aab17b7609972152e1150dbd4073b745d098e958e5ef0a56d1b4b0f7128e3e6d16a43cf7cbd83b141
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
 Package: oidn
 Installed-Size: 54248
 Maintainer: @termux
@@ -29432,6 +29389,23 @@ SHA256: d19f1d9534f34842086ab970d11c5c39681a682c44407817a1498f75ce521a6c
 SHA512: b810e74372d17d49e8ae8418624afe5bff928946ffd830aefc7cb1840e171dce926ea9b953984b71e5f9318f2873b50aaaf0da088bc9ec88eeebc5c8513d6b27
 Description: Static libraries for openldap
 Homepage: https://openldap.org
+
+Package: openlist
+Installed-Size: 112428
+Maintainer: 2096779623 <admin@utermux.dev>
+Architecture: aarch64
+Version: 4.0.5
+Replaces: alist
+Provides: alist
+Conflicts: alist
+Filename: pool/main/o/openlist/openlist_4.0.5_aarch64.deb
+Size: 29044756
+MD5sum: d6b666e63ac0edb71addb2749f9debe0
+SHA1: 6c8bd7e3a1794dee3152fab4f5a73f1c324aee69
+SHA256: dd0adc4487e981e92fe50dbf2a320eb9148f87f58e2a9113aedcfc7112a982c2
+SHA512: 2dbd0e506567429648e10c0a2ecefa66bc74a0fa5dbe62f9f33c5a446dfcd4817b45618a394f66bbae59b5193d938478792149d24fb14fb8fc033eec9ff9f708
+Description: A file list program that supports multiple storage
+Homepage: https://oplist.org/
 
 Package: openlist
 Installed-Size: 112428

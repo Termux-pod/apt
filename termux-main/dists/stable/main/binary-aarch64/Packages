@@ -1434,24 +1434,6 @@ SHA512: f263a7c1b0918d4a142d888a7c8f190d976c3a2238568d52faf251ae029dd06b310a92b4
 Description: Assistive Technology Service Provider Interface (AT-SPI)
 Homepage: https://wiki.gnome.org/Accessibility
 
-Package: at-spi2-core
-Installed-Size: 3312
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.56.2
-Replaces: at-spi2-atk (<< 2.46.0), atk (<< 2.46.0), libatk
-Provides: at-spi2-atk, atk
-Depends: dbus, glib, libx11, libxi, libxtst
-Breaks: at-spi2-atk (<< 2.46.0), atk (<< 2.46.0), libatk
-Filename: pool/main/a/at-spi2-core/at-spi2-core_2.56.2_aarch64.deb
-Size: 347848
-MD5sum: b8e3c1741cb9a02d984cbad2a2b12496
-SHA1: d03ff1e04fc78c2ed002f812866396506ab874ea
-SHA256: c5a9fce4a6c4adb59d30823d7540c11e53aacc31bb79d14bfd6487f289724fdf
-SHA512: 149d91d9b187d576a4592367e4facf646f42ee35a5d1d01128d72f0e9cfb6aba2c0f151c67e59622e5b5f5deb18e2818cb3316c614781e58f96e0195930bb90d
-Description: Assistive Technology Service Provider Interface (AT-SPI)
-Homepage: https://wiki.gnome.org/Accessibility
-
 Package: atomicparsley
 Installed-Size: 380
 Maintainer: @termux
@@ -11956,21 +11938,6 @@ MD5sum: 1650a2e0e707d40beb29237197a2eb24
 SHA1: 8c27bc297e7fad71dbe20240156da6c89e91ab01
 SHA256: 0e82022eaf7c288b40aeefec6b31928ace35a6bc8067eddacfdfbb8800548139
 SHA512: 544d7dcce9838e900568ff0ee36a8082a28b836710e85df921634a302b1157002bc12fe056bcbf3d0b96e7af4537cb949a498a27fc893a476976fd12c97d59c6
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
-Package: jackett
-Installed-Size: 14288
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.22.2075
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2075_aarch64.deb
-Size: 3179196
-MD5sum: 676269d4dfe7488e50c1bb2c1a1cdc86
-SHA1: 07a469965fb51b09a3e185719321e24da8d099bc
-SHA256: f3c86dbf5490ddf47f066d8b1b5fa71891115b6aed3a7831dad8e09805f2db13
-SHA512: 261173fafa95641d38f70bd57511e3b7ade383365e718df6b6f61961db464541e41961a2c9ba5e06c48d39e5417d32abaa1c427bb1b2a8c2e90e06d14fb88f86
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
@@ -24522,6 +24489,22 @@ Package: llama-cpp
 Installed-Size: 58940
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5775-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5775-0_aarch64.deb
+Size: 7561008
+MD5sum: e1830aae586b22c5a6dc0e33c93d2e37
+SHA1: 471c828747d880c37c6a781f94ba748c5eedfc85
+SHA256: 660f75b30f99f6959fd72f45fb3b3be2e48dd0b79993029fc3ffacad44ec7c47
+SHA512: 48e387cd24e1934d62602c83d3fad2cb774e1988122de1c6bb81ab02c9724aae621a923349eff32a1b3662bfbf91756a5b1dc872eed24ee514c5adcd331b953e
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 58940
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5774-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24532,6 +24515,23 @@ SHA1: 71776791409ae2f41ff2efe625c55c30ad16d5fe
 SHA256: cb40d1d40edeb2c58e7b866044ac42dcf74c32c5cddb477537333caea8c4880e
 SHA512: 9fb03c5a97f9dede6de5de32d96b4dfbf7a40e2f57bb1304b63125dddc8ae81141dceda1066658f78de1418bdc64d24432e340534c29314896e9db7076af7155
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 456
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5775-0
+Depends: llama-cpp (= 0.0.0-b5775-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5775-0_aarch64.deb
+Size: 80852
+MD5sum: 9d19eba1a0f236e5d493bbbed42e93dc
+SHA1: 890b83cb9f71c1b51b215df4f52aed463a62431f
+SHA256: eec3d4e1d94a3890f3a096fbda1d70ef5faff2ef8bfc3bc0ab2914ceaee22522
+SHA512: 2d45c1ead6c48f88a09f784d6e0796835f9983e7914114049df01ccb9dd1734b34522dff083ee36dca6d26c1966ace71fa4e8a030681a1b59f634d1d7c62ade3
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24549,6 +24549,23 @@ SHA1: 65aa45eb441786976aa445ec4a358426e3a3cd1a
 SHA256: a1c52b03d92b57bb56c3cdbcc59932736bfcec60d353a14fb2afab42fe92e4d3
 SHA512: 16f903526bf16f8ce10a29af4d821c62f47f346012af9225f4243fa55f3adb044fff391f90e0f9df26234856814664b0eba62c5eeec0a32b3fbddd6196b58027
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12756
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5775-0
+Depends: llama-cpp (= 0.0.0-b5775-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5775-0_aarch64.deb
+Size: 985352
+MD5sum: 3a53c55b95ece468cd846db9e3087601
+SHA1: 639fdd35820fec06f70c51e1bdb7a238fdf46696
+SHA256: a721e5a77488254ecb099174a6aa6ceaf0f56c342f046522c318c7a72e64ca07
+SHA512: e0e0d8ba1270286554d91d4a2f1bc684e6d02e0149c5ad2024173e4e2d4211295aa5c262380cbe4cab129230f8f2b5b5af0ac32cdaae4acca9a25178c9ed53e6
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -26712,6 +26729,20 @@ Package: moar
 Installed-Size: 7644
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.32.2
+Filename: pool/main/m/moar/moar_1.32.2_aarch64.deb
+Size: 1890288
+MD5sum: a683abc6c0d91d92321cd7267bd78804
+SHA1: 572a9a16fefecf8ec9ea2e3965a7a34fc56f826f
+SHA256: 5e23c2d97035f80fb21252f4522493687ab9a3f24326ed5441f578c1a2ad1280
+SHA512: b77ab69bad5baf145501622086f77183a5e5ff97e91999886af30c9aa013cfaccc739d001e68cfce12e2e390ae97624f41b83b792e93f09099ba2a02dbe3d768
+Description: A pager designed to just do the right thing without any configuration
+Homepage: https://github.com/walles/moar
+
+Package: moar
+Installed-Size: 7644
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.32.1
 Filename: pool/main/m/moar/moar_1.32.1_aarch64.deb
 Size: 1890576
@@ -27398,6 +27429,21 @@ SHA256: 2c43e6cf3a0cf0e6e7f9dce529966bfbce5ab2f0ea9036dc2c0dfc267db4d401
 SHA512: 6b60ad9101c7d85100f27e3f15fd62dc6b75a791ba5670099e66e33f545e8c42246c58f73636ba91af1800b96aeed147802c673650e1d1b0d87bc0e1259463b3
 Description: Video game for color and monochrome text terminals in the genre of Namco's Pac-Man
 Homepage: https://sourceforge.net/projects/myman/
+
+Package: mympd
+Installed-Size: 1532
+Maintainer: @termux
+Architecture: aarch64
+Version: 22.0.0
+Depends: libflac, libid3tag, liblua54, openssl, pcre2, resolv-conf
+Filename: pool/main/m/mympd/mympd_22.0.0_aarch64.deb
+Size: 800552
+MD5sum: 21ec914db9a801934f93aa2f823e5df7
+SHA1: 7f3b480fab9ab1d92a42a61629f23cf5cbbbd1cb
+SHA256: dd20e69508f355cf3be10c6bf9a21a09f69b8a1a6152589fa657629460f3b219
+SHA512: 916e43969d2188906de4db9b5b0385634360556b11dfd7da51c00a356453440cb55135177fdb438a9151218e3278577cb7f72981a93ca2fe7b2378fc22a69d10
+Description: A standalone and lightweight web-based MPD client
+Homepage: https://jcorporation.github.io/myMPD/
 
 Package: mympd
 Installed-Size: 1516
@@ -28799,6 +28845,20 @@ SHA256: 1bb418007beaa396f704df694e5ca498035318d0b56456b5dd387cc862818679
 SHA512: e1c912aa78d7dcffb4cc92f673a23e255899121791020aa7680fc7a003ccea07b7e0507f8306bdabdba6d662d9dd77a529027ce694a510c7bd028530dac53af0
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 19384
+Maintainer: @termux
+Architecture: aarch64
+Version: 26.12.0
+Filename: pool/main/o/oh-my-posh/oh-my-posh_26.12.0_aarch64.deb
+Size: 4658596
+MD5sum: 810f73d0ded00e01745553541fe91ce4
+SHA1: f86929ba1a22f42f244a91e5d2ba7b7ce4c59d63
+SHA256: 0b244870b48da3f2bf9c6a31fe86b2fa4ae56387918ba48ec617a98a0161193b
+SHA512: a9576564fdd86a05ffb930768634ef63a038ec5f3385d48a23c953ed9e4740a1de57eecdf6f38a8ce754f087821d9c6faa09d61f09a76b365288c98ac0cfaed8
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 19380
@@ -31323,20 +31383,6 @@ MD5sum: b494c2136a48cb9f93ea77bb4872e67a
 SHA1: 9079d19333d5bf83923562e3957a42f0cc03ee57
 SHA256: 16f26bb7917dca488881711f21c8c8230a8399ac1887d6047a809a41b9b1606c
 SHA512: a1c843afdc52b9a4152b5938c47b7af409aaded4342352c5a0577c499137e9d5027e9cf04c054bff54369ff64cec1cfd61ab3310d783c22dac584047342769a3
-Description: A cross-platform MIDI input/output library
-Homepage: https://github.com/PortMidi/portmidi
-
-Package: portmidi
-Installed-Size: 164
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.0.4
-Filename: pool/main/p/portmidi/portmidi_2.0.4_aarch64.deb
-Size: 28444
-MD5sum: 548fe9f2324df7f7276ba38eaaa4758d
-SHA1: b1ee00f3752176a54b6e0380fccf5ab411a30124
-SHA256: 03b2ec61d6bb25c33581fb60903a2e74929231f2e9520d25bd86eb752d0918ff
-SHA512: 28248079a1369405327a8bf65724b7fa6c4771d438045dc4bf6fac404d4996ebabf35889449086a822234f7f2806b71f552f9a00a7512cb09f44867c98c4d3b2
 Description: A cross-platform MIDI input/output library
 Homepage: https://github.com/PortMidi/portmidi
 

@@ -24486,6 +24486,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 59248
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5780-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5780-0_aarch64.deb
+Size: 7578848
+MD5sum: 3ad078a8b2894de7d2bd74b5cacf3f21
+SHA1: ea64cf7c82795d3d972eaa4f7fe44fed47a36f96
+SHA256: f6c5b8be551f3a5955fc0068e0128d027669e2d8ea6c21e28a49e0b39ea334ef
+SHA512: 49f7ce4ee398d4d33b40f89388bce8ff0007ccc3d1336a71a7cb5fbc5fb9fdde9b47f58ce2b251707bf9e510e0f94da08d07bf6b6d759a0901f2c50f2abb3293
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 58992
 Maintainer: @termux
 Architecture: aarch64
@@ -24501,20 +24517,21 @@ SHA512: 5ca46a1841ebe2a4eca1b4857d4027ae3caf50772b7d02f708c42bbb1ab75e309aeb352f
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 58940
+Package: llama-cpp-backend-opencl
+Installed-Size: 456
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5775-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5775-0_aarch64.deb
-Size: 7561008
-MD5sum: e1830aae586b22c5a6dc0e33c93d2e37
-SHA1: 471c828747d880c37c6a781f94ba748c5eedfc85
-SHA256: 660f75b30f99f6959fd72f45fb3b3be2e48dd0b79993029fc3ffacad44ec7c47
-SHA512: 48e387cd24e1934d62602c83d3fad2cb774e1988122de1c6bb81ab02c9724aae621a923349eff32a1b3662bfbf91756a5b1dc872eed24ee514c5adcd331b953e
-Description: LLM inference in C/C++
+Version: 0.0.0-b5780-0
+Depends: llama-cpp (= 0.0.0-b5780-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5780-0_aarch64.deb
+Size: 80912
+MD5sum: 99f3a29164f076df45c21424cfea8665
+SHA1: e9b26663548086f6252240f99cf19a19a293151a
+SHA256: e836259f8bf1bb18fdaa056c645c857c8b0a0171e0a1f6e790b488b7cfa20a58
+SHA512: ecc0199da2edb56b769a11f0235dbe1ebbfb4e15c2d06311fda899c95cd4e988a852ce667024fb6f4d217c5b89c059b717dec2627f843e9d56d0842aa3df8990
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24534,21 +24551,21 @@ SHA512: 837b6750a1e57f8290a1eb1c58319ab093e1304a2f4502a30c3673b5b8b170f27a5890ec
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 456
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12784
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5775-0
-Depends: llama-cpp (= 0.0.0-b5775-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5775-0_aarch64.deb
-Size: 80852
-MD5sum: 9d19eba1a0f236e5d493bbbed42e93dc
-SHA1: 890b83cb9f71c1b51b215df4f52aed463a62431f
-SHA256: eec3d4e1d94a3890f3a096fbda1d70ef5faff2ef8bfc3bc0ab2914ceaee22522
-SHA512: 2d45c1ead6c48f88a09f784d6e0796835f9983e7914114049df01ccb9dd1734b34522dff083ee36dca6d26c1966ace71fa4e8a030681a1b59f634d1d7c62ade3
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5780-0
+Depends: llama-cpp (= 0.0.0-b5780-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5780-0_aarch64.deb
+Size: 990840
+MD5sum: 12c73b356da16d3a4962efb9dcaff2ab
+SHA1: f9cac0b5dbdc576372df14d4178c5a175251fc9d
+SHA256: 04cceab5b93f2555146592b880aa13941fd9c5304ce53846c73358a2f92a3d72
+SHA512: fc51d5245173d355e2005b2dacd32ebc5c576cefc96dd69dab0d3fc1c820cf7c1b602b841e5f0b7c88a2b060dd380437a2071ae45f877c7ec35ff50ece412b88
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24565,23 +24582,6 @@ MD5sum: 39c72f0b5682f7bb96db193375bbb74c
 SHA1: ced020c2fbc1f7f511885ded6b59d90d4db37196
 SHA256: 848284cd411c770a1548b4d3cc08415a3fac2b7341ac48ef67e92780d37b17eb
 SHA512: bc3e0f48421bfafd2b5bbb2bed4732a9c6eb4d973fd29734d949e67faab21c226b0ff9a81a5d3aaff86e7ec494b1a3cb291f8a4edec30d89f71f1cf45b278985
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12756
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5775-0
-Depends: llama-cpp (= 0.0.0-b5775-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5775-0_aarch64.deb
-Size: 985352
-MD5sum: 3a53c55b95ece468cd846db9e3087601
-SHA1: 639fdd35820fec06f70c51e1bdb7a238fdf46696
-SHA256: a721e5a77488254ecb099174a6aa6ceaf0f56c342f046522c318c7a72e64ca07
-SHA512: e0e0d8ba1270286554d91d4a2f1bc684e6d02e0149c5ad2024173e4e2d4211295aa5c262380cbe4cab129230f8f2b5b5af0ac32cdaae4acca9a25178c9ed53e6
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -29404,23 +29404,6 @@ MD5sum: d6b666e63ac0edb71addb2749f9debe0
 SHA1: 6c8bd7e3a1794dee3152fab4f5a73f1c324aee69
 SHA256: dd0adc4487e981e92fe50dbf2a320eb9148f87f58e2a9113aedcfc7112a982c2
 SHA512: 2dbd0e506567429648e10c0a2ecefa66bc74a0fa5dbe62f9f33c5a446dfcd4817b45618a394f66bbae59b5193d938478792149d24fb14fb8fc033eec9ff9f708
-Description: A file list program that supports multiple storage
-Homepage: https://oplist.org/
-
-Package: openlist
-Installed-Size: 112428
-Maintainer: 2096779623 <admin@utermux.dev>
-Architecture: aarch64
-Version: 4.0.4
-Replaces: alist
-Provides: alist
-Conflicts: alist
-Filename: pool/main/o/openlist/openlist_4.0.4_aarch64.deb
-Size: 29043396
-MD5sum: 2342d473d6b7ae875e3e4fbc0ff7ddd1
-SHA1: e1c576d421b654039a65dafe092d26fc255f8abe
-SHA256: 0774b76ff4e5673a6c4ff131cdd65c32a0af493c80cc226d1bd102ba28138ecb
-SHA512: 3429e8a8394fe76ebe37a5d1a9325ff027c08063208e712838c31405238a9ce5f049bc397da5ac98060a3538c67dd710b358887a72cb9e94f51043567d96a9bf
 Description: A file list program that supports multiple storage
 Homepage: https://oplist.org/
 
@@ -39861,17 +39844,17 @@ Description: Utilities for handling universally unique identifiers
 Homepage: https://en.wikipedia.org/wiki/Util-linux
 
 Package: uv
-Installed-Size: 36512
+Installed-Size: 36524
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.7.16
+Version: 0.7.17
 Depends: zstd
-Filename: pool/main/u/uv/uv_0.7.16_aarch64.deb
-Size: 9956520
-MD5sum: 2aa483bb855621103be35dc662539034
-SHA1: f9bed03d1956ecc6c2001a9b8b50310a2f9ff958
-SHA256: 0748de1189c0e7c1a18207ee652c31940501cd88fe20e77fd55d1bb44b0cc544
-SHA512: 6cc5313bd0c63ce22817147e5d380f22fd5f2318cf8f49f63d184945b432551e97e9c59804249e74041ac5869f474bda680ea0bb93856b08b2961ee6d92f3e71
+Filename: pool/main/u/uv/uv_0.7.17_aarch64.deb
+Size: 9962220
+MD5sum: fd54f615ebd9de41af9cb3df006a60e8
+SHA1: d2604b900a0eb399cc411f12bffae6ab20127921
+SHA256: c32d4eedb18a70b946b748c05f5ab4e41fea1a4fad47cf72913be06345b6cf04
+SHA512: 7f72bb7f83ee8efdf8134adcd1b06c9c9ae442e484c609a67cc3ee81f04ba3394b409d8a692a80713bd550b748a4ecc9d03d1e6dd064efa994297d6fe32d4941
 Description: An extremely fast Python package installer and resolver, written in Rust.
 Homepage: https://docs.astral.sh/uv/
 

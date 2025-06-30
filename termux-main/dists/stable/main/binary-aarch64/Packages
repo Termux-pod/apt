@@ -24486,6 +24486,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 59256
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5787-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5787-0_aarch64.deb
+Size: 7583952
+MD5sum: f95a5a6204ea99cd07950d99cb6b16e1
+SHA1: fd6e429c43582cf9cb469c6b30488894a8a9dcb0
+SHA256: 25c80a06eef32e3406df7d81e764c9c6dd11e45bfa503000361c3e5cc81d7e7e
+SHA512: 1244904abbe227e0bfebb7a92317ff62d04ef66468b482f8f50dcb0c49a2fd81742ac953014d54f015edbfa9778d567ddeb850ad0e8f6a47d808c52f602550af
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 59248
 Maintainer: @termux
 Architecture: aarch64
@@ -24501,20 +24517,21 @@ SHA512: b7698f3cb88eec4ecf00173a667914fe92c8f928613c0eae2e602a2d5bce2afb87371248
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 59248
+Package: llama-cpp-backend-opencl
+Installed-Size: 456
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5780-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5780-0_aarch64.deb
-Size: 7578848
-MD5sum: 3ad078a8b2894de7d2bd74b5cacf3f21
-SHA1: ea64cf7c82795d3d972eaa4f7fe44fed47a36f96
-SHA256: f6c5b8be551f3a5955fc0068e0128d027669e2d8ea6c21e28a49e0b39ea334ef
-SHA512: 49f7ce4ee398d4d33b40f89388bce8ff0007ccc3d1336a71a7cb5fbc5fb9fdde9b47f58ce2b251707bf9e510e0f94da08d07bf6b6d759a0901f2c50f2abb3293
-Description: LLM inference in C/C++
+Version: 0.0.0-b5787-0
+Depends: llama-cpp (= 0.0.0-b5787-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5787-0_aarch64.deb
+Size: 80920
+MD5sum: 2ead135fb789333080d8ae548b5e073c
+SHA1: 92f65f13d7a76485a2132a2883b3c6fb7aba2693
+SHA256: 66719dae22a4b5a5781d80fc29fde783b2a46819bf6a49f65406b643247caac5
+SHA512: 228df14e4b0e7177a3c1cc1bfafd6402e68fb85a10af1d7fbb51087450a21170deefc462f328829ed3bf8c86084ee50a034becb5b04a867420a92fea8f414ff5
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24534,21 +24551,21 @@ SHA512: 04b55e9429872ea09ad4fda624cf8d81d55234dfccab93c6f53ebc352364fb3f32c0d4b4
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 456
+Package: llama-cpp-backend-vulkan
+Installed-Size: 12784
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5780-0
-Depends: llama-cpp (= 0.0.0-b5780-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5780-0_aarch64.deb
-Size: 80912
-MD5sum: 99f3a29164f076df45c21424cfea8665
-SHA1: e9b26663548086f6252240f99cf19a19a293151a
-SHA256: e836259f8bf1bb18fdaa056c645c857c8b0a0171e0a1f6e790b488b7cfa20a58
-SHA512: ecc0199da2edb56b769a11f0235dbe1ebbfb4e15c2d06311fda899c95cd4e988a852ce667024fb6f4d217c5b89c059b717dec2627f843e9d56d0842aa3df8990
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5787-0
+Depends: llama-cpp (= 0.0.0-b5787-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5787-0_aarch64.deb
+Size: 991920
+MD5sum: 942e4289060ab04e0181b71a7acf21e5
+SHA1: 30c23fb0f0e1234d50f6e66a6df4e8c1dc59610a
+SHA256: 8d7938c9c8f40ca416c9216c3a5f430451e9e043faec0b27b2161a62be2e47f3
+SHA512: 962894a1f62299ca20f18eeea07446e249ae8d06ee1680eba41e27a9c567b782a19509f42d32168504d423465711f4e740f40c33c515d209103b0e9462cb5d6d
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24565,23 +24582,6 @@ MD5sum: 242467102e9d7569120aeababf7dac06
 SHA1: 19174c602cf19d31a648ec0784b4ea01761476f4
 SHA256: 92f66b64cac3da53ecb4cbf422ac750aa5b2be1d74070dd8b4680cd54e93c74c
 SHA512: 4fe9b54cb087f5dcf7c4695c0e57ca4e31f4dec4194de07b274d64c991b42102823e72072fefbd1a0a3321d8c806f3590b8cff5e7e18c9e4797d7d6afd371d0e
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 12784
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5780-0
-Depends: llama-cpp (= 0.0.0-b5780-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5780-0_aarch64.deb
-Size: 990840
-MD5sum: 12c73b356da16d3a4962efb9dcaff2ab
-SHA1: f9cac0b5dbdc576372df14d4178c5a175251fc9d
-SHA256: 04cceab5b93f2555146592b880aa13941fd9c5304ce53846c73358a2f92a3d72
-SHA512: fc51d5245173d355e2005b2dacd32ebc5c576cefc96dd69dab0d3fc1c820cf7c1b602b841e5f0b7c88a2b060dd380437a2071ae45f877c7ec35ff50ece412b88
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -32745,6 +32745,23 @@ Description: A tiny command line DNS client with support for UDP, TCP, DoT, DoH,
 Homepage: https://github.com/natesales/q
 
 Package: qalc
+Installed-Size: 7652
+Maintainer: @termux
+Architecture: aarch64
+Version: 5.6.0
+Replaces: qalc-dev
+Depends: libc++, libcurl, libgmp, libiconv, libmpfr, libxml2, readline
+Breaks: qalc-dev
+Filename: pool/main/q/qalc/qalc_5.6.0_aarch64.deb
+Size: 1734984
+MD5sum: 5e9a78599d6abd5a8e80320d5b8179e6
+SHA1: ff0d6eced67ccd99ee8655720ac16d55b3a134b3
+SHA256: 6e2ae6aacb96a7bd5607fdb0912f4185a71f0aa9012a94c03662a4a47bbc62fa
+SHA512: 19dce7811fbb52b1c2db173ab4e45d04c15a4e482782d28c27565d42090366f1259f71502ec8d6aebe3a4314ef4f81278a7d1197e0b67ba506d3792f414b8035
+Description: Powerful and easy to use command line calculator
+Homepage: https://qalculate.github.io/
+
+Package: qalc
 Installed-Size: 7596
 Maintainer: @termux
 Architecture: aarch64
@@ -32759,6 +32776,21 @@ SHA1: 1e872df443a28e55176a2efc1184055dbdc9c9b7
 SHA256: 044475b56b7f9a6960fb2685c82a2c890763a1bafe0bcc08a140bf8185d38fce
 SHA512: 2b027b1d91e7099577f756931d1159d99d5d145e0f5256d28c6d23d3c2da570fd061ef84700d2f71ca2516cb5e9e4481b13bbefbcc9790c6029590a3f879952e
 Description: Powerful and easy to use command line calculator
+Homepage: https://qalculate.github.io/
+
+Package: qalc-static
+Installed-Size: 11308
+Maintainer: @termux
+Architecture: aarch64
+Version: 5.6.0
+Depends: qalc (= 5.6.0)
+Filename: pool/main/q/qalc-static/qalc-static_5.6.0_aarch64.deb
+Size: 1693276
+MD5sum: 5d664f958bd51c396dd3b8067cac31ac
+SHA1: 74c08adf9effe8cc8c760d41cca4b12a87efbf42
+SHA256: 8590d7cf03adc30f368df195ce738e890e32a87b7dfcaf838f96913ea99ffc30
+SHA512: 3d72fb30d6a6f0534d6cf4031955512c89eac585ce85ee2116a4766f09be96bcc6e3da84abb66e155885e27372b973e5f01f1af721be677ebc2eff24a364814a
+Description: Static libraries for qalc
 Homepage: https://qalculate.github.io/
 
 Package: qalc-static
@@ -33634,6 +33666,21 @@ SHA256: ad4a61aba9e70aa0930a312ef16aab7741cd5f1725083a7a6cf8dbba319610d9
 SHA512: b119daca12e1b77eee6f5a85138e4954f36b7d48c6f7299c2fad7c804f9b2ec4da1f7d513fae1281620ae6f1092868f43f503ca442277c379c319526c74985b6
 Description: Command line tool to extract the main content from a webpage
 Homepage: https://github.com/eafer/rdrview
+
+Package: re2c
+Installed-Size: 12384
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: aarch64
+Version: 4.3
+Depends: libc++
+Filename: pool/main/r/re2c/re2c_4.3_aarch64.deb
+Size: 817320
+MD5sum: 25c956c4a169d6f585cc31e0ea60555b
+SHA1: 36763f556905c862b13ea9f1ca124564c56befb5
+SHA256: c1a9ef0f2659b464b7a5531af82674b1b7304491d0f6aef7e615dc85a0a93e23
+SHA512: 172b0dc7b1499c2bae625ef2d3cae91ec90985f6d899ba0c922a7150db4343cfd153538e88c7c74ed356762d5ed79383acff7b445a23fa14254f7a89ddae5dd7
+Description: Lexer generator for C, C++ and Go.
+Homepage: https://re2c.org/
 
 Package: re2c
 Installed-Size: 12432
@@ -36655,6 +36702,20 @@ SHA256: 6cf777b2a4d7c04dbacaf9ab3f5c31e30c825d4ad3e7c223b2d7fd26df3afe5e
 SHA512: 8165a32131b48fe6ed4fdc257917d996500f934b010806ce7ede7211aa4a8829f5073529110969ed32ac33e7ee8aafc883cca81ca622f151159f2b1c0d9a5e6d
 Description: A TCP/IP repeater in the application layer
 Homepage: https://www.gcd.org/sengoku/stone/
+
+Package: storj-uplink
+Installed-Size: 17116
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.130.8
+Filename: pool/main/s/storj-uplink/storj-uplink_1.130.8_aarch64.deb
+Size: 4095520
+MD5sum: ff1a725678cf8803481ec798be76d6bf
+SHA1: 7f05cf7b4c72fcc012d6dfd82e55ca5540af7c16
+SHA256: a0114e2a724456522e7b48bc6a3bcb2c8647c51aa581f965eb15df73b89c63d3
+SHA512: 7b68093751cfb7c672e0926d0d7e3d4949c8eb3aa107d76d48c3b987443f5f1cc9f8a5a42efde969970d72391c80662c2f097886acdaf572fdff0dadc0b71076
+Description: Storj DCS Uplink CLI
+Homepage: https://www.storj.io/integrations/uplink-cli
 
 Package: storj-uplink
 Installed-Size: 17100

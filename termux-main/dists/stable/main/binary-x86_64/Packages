@@ -11894,21 +11894,6 @@ SHA512: 90932fcab1770565e7c05bcc02d28e4bb481b9905ecbee32061c387a72f4f18579462b22
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14292
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.2084
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2084_x86_64.deb
-Size: 3196056
-MD5sum: a171741d9d65866b5523fbba501749df
-SHA1: 01f94c293baa05318e795e75c8a1e5b2bb864956
-SHA256: 36f4c3ffd04d9aa96b971833ca35a0cc90d95b603063b58101a9563be8dffd86
-SHA512: 714940b0f158d68f3ea35ede3daf191beb96532b85be59f8ce46268aab4806741d1126dab8e86537d7fb0a6196e916333e480bdc1bddbe577321fbc4d558e23d
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 764
 Maintainer: Komo @mbekkomo
@@ -24443,6 +24428,22 @@ Package: llama-cpp
 Installed-Size: 63188
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5783-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5783-0_x86_64.deb
+Size: 8105612
+MD5sum: d7b38e1e133e694b99cc0ba63683728d
+SHA1: dcca5d0e0c73ac1dbeb3e066623c9e66a0c6e58b
+SHA256: 937c99f1377c1c4a153b26206cb4c156270bcb6475cb8b46ef3f57309f454d11
+SHA512: 0528965121da756671d0ba32dff928145a6eb1a55abad1d9f6fd39aca8f31676c270554a4209b0b899f14b7452953ea42c116769a8208dd9114640123835767a
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 63188
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5780-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -24453,6 +24454,23 @@ SHA1: 82230bbd68c39d4aca58abef6a5951c6c82a096a
 SHA256: 99bc05a78f78871ecbde3be3fdffd99e5d1b221393b235450a5b4822bb67aa7c
 SHA512: d0ef1a8d30d38ac20d7cc0f7b48d3413bcfd6597288b2c10665cc2b55283eb73640f7fb7c23641b8411a5c39a283662106484cc96b25422fe99ff77f7033dc0d
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 480
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5783-0
+Depends: llama-cpp (= 0.0.0-b5783-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5783-0_x86_64.deb
+Size: 88668
+MD5sum: d24cae7eaf64d102ec2806f4275b5761
+SHA1: 8255c6ddef3c7480ac2cd8ad8d61ce453da6e229
+SHA256: 59b3f81e08337bd460b9180e2e604076ed382a414b84a0e9fd6b724c88c7127b
+SHA512: eeb71ced9f672e64c586a8af49d95682d63ef15e33fee7f632d7e195caa9e335bafc49b2b9fef43a73d522975d6cab22096cae0e5e1c1e1e8e238cf45e58117b
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -24470,6 +24488,23 @@ SHA1: f8c2ff0e0133929b2156e7c0b8548e2ef8dfe6c1
 SHA256: 48e2e7bfc96f17b9556c238c71409aa81e5b9c963a0037e21beba165ec2281e6
 SHA512: 6d39d4c6ab1c12517229e77b33a0ab382df58155890e87d7548659133fcffc619b347ea42fa70e3a444009b86664e7fa48ffb6463c7efcc3a2282318344def42
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13024
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5783-0
+Depends: llama-cpp (= 0.0.0-b5783-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5783-0_x86_64.deb
+Size: 1029192
+MD5sum: 860398f6d53b10e03a48362897feed9e
+SHA1: fe78d7b1b05f9384a74b18a110295c368b42e1f3
+SHA256: 1ee1246c92956e15b5e702768a8644ef1509b23f9749cf68ba0d3118f26d6a8c
+SHA512: ed97374bce9b9fa852d70e7615d0ad6e1d335511196dcd37ae1993990902da80f8cc9635c2e182c965fea83f9bac3dc931eec3ab42c2a3d8f86a35d28d04b5fa
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -27801,14 +27836,14 @@ Package: neovim
 Installed-Size: 30752
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: x86_64
-Version: 0.11.2-1
+Version: 0.11.2-2
 Depends: libiconv, libuv, luv, libmsgpack, libvterm (>= 1:0.3-0), libluajit, libunibilium, libandroid-support, lua51-lpeg, tree-sitter, tree-sitter-parsers, utf8proc
-Filename: pool/main/n/neovim/neovim_0.11.2-1_x86_64.deb
-Size: 5803864
-MD5sum: c20732ee87ca9adbe5d34bd28b737d68
-SHA1: 04851f3a90f6698199b36724463edb6f6e4305ec
-SHA256: 0e27cd37c309b90a4b443cebf805ddc4cc56063e44b30400a35765b9aad806bf
-SHA512: bb85c950d89f80516a98b42c0c7a80bf4304d9148f9512367f89d0a581ec3f38f973a70c6b2a15848e39670a248543c19cc7d6c162b5199e5b4ab075b3eb4ae7
+Filename: pool/main/n/neovim/neovim_0.11.2-2_x86_64.deb
+Size: 5804172
+MD5sum: 0f8a918db4828dd987c3f16583e109a4
+SHA1: fbaf599ba171d1a06e33a0f9d114502fdf185abb
+SHA256: e380ba4879cd4b85decc672a744de62c4c07ef0c51a43b4765b4ecd6f54eb2b7
+SHA512: 54427bd1c0cceaa11e5ec4810d09bc054830e09852910840613ae91ae9574a339dec570d07f3997a114b4f70122bdb2981f8ece8202ecb2efdf90263f899aa48
 Description: Ambitious Vim-fork focused on extensibility and agility (nvim)
 Homepage: https://neovim.io/
 
@@ -29700,20 +29735,6 @@ SHA512: 871d33e0fda25b3bdd573da6391fa41c8c6c815273d295f524719db12b944306e040ce84
 Description: Oxc JavaScript linter language server
 Homepage: https://oxc.rs/
 
-Package: oxc-language-server
-Installed-Size: 9408
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.3.0
-Filename: pool/main/o/oxc-language-server/oxc-language-server_1.3.0_x86_64.deb
-Size: 2734824
-MD5sum: b1f2f9b624435213ff74790d7987e0c1
-SHA1: 42110ab95464dfb030f2d607dd1c968bc62b9134
-SHA256: 3d1ea162d1b394a80005dda0c565edcdbd52828d61fbf1841a0ecfb12ca1eafc
-SHA512: 66c3fd31fee0c763455199541738126eb1e70bab1d36e15146d850406df7f485a4bb8d3c864ed3678542732b6fd2edc64475d4c2b3c0d5d25b2599f1e4a0984a
-Description: Oxc JavaScript linter language server
-Homepage: https://oxc.rs/
-
 Package: oxlint
 Installed-Size: 8764
 Maintainer: @termux
@@ -29725,20 +29746,6 @@ MD5sum: 9288919d005fa420315765bb411b99a0
 SHA1: 641d6b6c07952c25623383677468a76ef86558d8
 SHA256: 5b232d7ba4302b321e53c66caf31d6845993852ff3faf3c0ca1884b2c8b0bfad
 SHA512: 536a1a2a49cc8b9af94431872fa21591cb9a9b2786e35fa1649cfe920d8281780cb48a2bad8035517b14af861fb1295c36d3c8690114222aaf3175a657483ec4
-Description: Oxc JavaScript linter
-Homepage: https://oxc.rs/
-
-Package: oxlint
-Installed-Size: 8700
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.3.0
-Filename: pool/main/o/oxlint/oxlint_1.3.0_x86_64.deb
-Size: 2498712
-MD5sum: 5f608e7f944623bbb35302ac9a3d469e
-SHA1: 11736ea4988e7a42e359caa258d5ea7d31eec857
-SHA256: 0c05d18b9260b0c4a0d2a01c71979c3db6bccb13d27c49b3ac736c357855e119
-SHA512: 32039134acb0002a5c7fcde1b975a08c4ce0ee2c50d501bbc24961d57642b89a5f078ed997c4313a1a23b2c4f9a158962200c9c7ab97b4e98f6ced6d0d9a05c8
 Description: Oxc JavaScript linter
 Homepage: https://oxc.rs/
 
@@ -34390,21 +34397,6 @@ SHA512: 6765256be7058f3a61971b5fc638f9920074e85ee42ab559d57219b210eabe5f82dbb3a6
 Description: A Rust compiler front-end for IDEs
 Homepage: https://rust-analyzer.github.io/
 
-Package: rust-analyzer
-Installed-Size: 38332
-Maintainer: @termux
-Architecture: x86_64
-Version: 20250623
-Depends: rust-src
-Filename: pool/main/r/rust-analyzer/rust-analyzer_20250623_x86_64.deb
-Size: 8607412
-MD5sum: 68041f2efac58a02111231405d4ab45b
-SHA1: 974c44935753985c0453806619dc17f8a2e0ed08
-SHA256: 4b4cb4fe7faaa1a5badd4cd425feff7f8a315362279eb46d5f56a0653d2bf9be
-SHA512: 2d1eb95a432de8c49b207948ddd216c04f40421b0b403a3713b9685a2a7e308e457de7ea213efe0c887cdef5df0d0ce27ac5b334906d592dd070c18f28141041
-Description: A Rust compiler front-end for IDEs
-Homepage: https://rust-analyzer.github.io/
-
 Package: rust-bindgen
 Installed-Size: 7492
 Maintainer: @termux
@@ -37163,23 +37155,6 @@ SHA512: 85b88524785dea7b21e626106852b0754bc732bd304a0ef03226e7e63e24070a409b6989
 Description: A Library for reading and editing the meta-data of several popular audio formats.
 Homepage: http://taglib.github.io/
 
-Package: taglib
-Installed-Size: 2360
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.1
-Replaces: taglib-dev
-Depends: libc++, zlib, utf8cpp
-Breaks: taglib-dev
-Filename: pool/main/t/taglib/taglib_2.1_x86_64.deb
-Size: 415084
-MD5sum: 1cb51527d37d1455f2fd85a7b50cbc8f
-SHA1: 4cec83d8bc574c6aa18f0d7c7ea58c128a57dc7f
-SHA256: 7c09bef85295d4efb2c5ef2032aa9caf9851b63de7639c43d2c438656082a5ad
-SHA512: bda6adea8aed3a6661d3da62135af8e76bc205e1954a1746bb70275b790de5312418e5906971da6a2c1a294bcd5f4e4c8035a0613b5448759cf4b9fda6fc1f8d
-Description: A Library for reading and editing the meta-data of several popular audio formats.
-Homepage: http://taglib.github.io/
-
 Package: taplo
 Installed-Size: 12356
 Maintainer: Joshua Kahn @TomJo2000
@@ -39787,20 +39762,6 @@ MD5sum: 803d5173923ae25d392c5532171040c9
 SHA1: ab8ab31ba5da2b8ef65f9cb9a49dc159eab70967
 SHA256: 5197bcb495487e67dbaf5dc23af4480b4083fdcd2bde441d1c563997d4786bf0
 SHA512: 9cba1d07d7c6c9df3120ee2e62300e2179241ec2859fa6463b32f004b1199ab4e6262d1613252c819a87f7c272b187fdac8863366bb0fbc70d97b047c6e3ce86
-Description: A platform for building proxies to bypass network restrictions
-Homepage: https://www.v2fly.org/
-
-Package: v2ray
-Installed-Size: 62152
-Maintainer: @termux
-Architecture: x86_64
-Version: 5.33.0
-Filename: pool/main/v/v2ray/v2ray_5.33.0_x86_64.deb
-Size: 11729212
-MD5sum: 4eceb9d618da09066353f0c19497f90d
-SHA1: 29a3aa288f85b1317f0177de7a89a00f234b4941
-SHA256: f14feb9ef3f31c43191a1671605fe1aec7fce751d884896f158f4dd009f771b1
-SHA512: 39c3932649eb867280d28d3ca3b6445ff878a3656fec5eca774078eb7df29c5421d4da0ff50fec10ce8e11c2e80edc037590309a704cfa134c73450689e6c1a5
 Description: A platform for building proxies to bypass network restrictions
 Homepage: https://www.v2fly.org/
 

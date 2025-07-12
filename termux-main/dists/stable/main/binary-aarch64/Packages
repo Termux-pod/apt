@@ -7748,20 +7748,6 @@ SHA512: c9fe2d219d6571515ec6513fe24714a77d569fc8b8f8621c67d487e40c3878017842c696
 Description: Interactive JSON viewer on your terminal
 Homepage: https://github.com/antonmedv/fx
 
-Package: fx
-Installed-Size: 12940
-Maintainer: @flosnvjx
-Architecture: aarch64
-Version: 37.0.0
-Filename: pool/main/f/fx/fx_37.0.0_aarch64.deb
-Size: 2982928
-MD5sum: 730bc8a37d8be611e944bc20d5b6e956
-SHA1: 84f4c7a7e4ab1a28ecbde82fcfd81b605c640352
-SHA256: 16fe496a7cbc585db97ab3b64171cec10e826acbfcf8de61bdbe4e1f1102d0e6
-SHA512: d2f9763368382ecc1b78c2b5c539e7a106dc05b9dddcf37eacad01c39c1cae132ff0d2a688ee46abfaab8c6c0f2e6e617da6c16c6901960b5f205ee2e8658f23
-Description: Interactive JSON viewer on your terminal
-Homepage: https://github.com/antonmedv/fx
-
 Package: fzf
 Installed-Size: 4836
 Maintainer: @termux
@@ -11610,6 +11596,21 @@ SHA256: 06c991d926219330e7542c89f9d2409a9144abd0460aeed1ff7b936579b6ecb1
 SHA512: cc87f59da4d318420c95f9e1be06dcf5247b50b232f93178d8bbc2059c38fe8de376d6bf072d458c7f7b58dfc9592ab124979d6f469614e1f1b9d23627777f67
 Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
+
+Package: jackett
+Installed-Size: 14268
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.22.2151
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.2151_aarch64.deb
+Size: 3178096
+MD5sum: fc24df804e6be77a7d755c5d9e05fa71
+SHA1: b07bee3d4bc8b0858a4838380f5ad875075596cb
+SHA256: a4b4f57736d65b53e4e4cc387ae4be67c565bac8875a032700d71b0a364f508e
+SHA512: 07998ecbde121f870360458ff742dae17beed7bc6c598d9a0188d90c354db31cfd1ad0dd3f9a72a8f57604f875aba99f8453831359e13e297ce981db06cff6e8
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
 
 Package: jackett
 Installed-Size: 14296
@@ -17864,6 +17865,23 @@ Package: libmosquitto
 Installed-Size: 360
 Maintainer: @termux
 Architecture: aarch64
+Version: 2.0.22
+Replaces: libmosquitto-dev
+Depends: c-ares, libc++, openssl
+Breaks: libmosquitto-dev
+Filename: pool/main/libm/libmosquitto/libmosquitto_2.0.22_aarch64.deb
+Size: 63916
+MD5sum: 246e8f260acf6b868e9da46d14fdf9f5
+SHA1: 692fccb089828630b9226a908d1d787d9c15f403
+SHA256: c1a5acfbd54c001afaa8a2cc8c05347cc193a0273499e307acc0439d3630c2f7
+SHA512: 9b75c64b095a48ceaf300cbae030892651d27852504be609bed8ad39d7e82e05e1d93736c6733e07dd2a2fd331e371596a6a781354c94c71275a90b2400ab8ef
+Description: MQTT library
+Homepage: https://mosquitto.org/
+
+Package: libmosquitto
+Installed-Size: 360
+Maintainer: @termux
+Architecture: aarch64
 Version: 2.0.21
 Replaces: libmosquitto-dev
 Depends: c-ares, libc++, openssl
@@ -23708,22 +23726,6 @@ SHA512: 02e54c01aa782872d724c18faf39156ef2b4d74be7c45f6381138827520b78d2a4df3c9d
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 59624
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5872-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5872-0_aarch64.deb
-Size: 7634072
-MD5sum: 19d12bb3964391b0ca36afc484ea148a
-SHA1: 228e48e86f11bb8100fc145543d06898ed4a853b
-SHA256: 6e201bf1c74aa292b17bd6183f9761f58962383aa8a6176f8adc08af956ddfb3
-SHA512: 3dfa69b37776d6721c10faf5dd8a2f1c488fb8ae01b338ce63f11de5049513768740c96d9dc281742e2193a41b74e2378fd988adb4138e2847bc0cd7a0470c69
-Description: LLM inference in C/C++
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-opencl
 Installed-Size: 492
 Maintainer: @termux
@@ -23741,23 +23743,6 @@ SHA512: 3c1af1dafde0927e1d9c4979ffebc52be849cdd4ad8852a46339fe47cfbb244dcea00254
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 492
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5872-0
-Depends: llama-cpp (= 0.0.0-b5872-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5872-0_aarch64.deb
-Size: 85944
-MD5sum: 6909aaace7ffabf13f8c05afae356152
-SHA1: 6a5a06fac06544836988f4924291688a04f4535d
-SHA256: c7e63cc49dc19cd4de844db61d12a4b280a0897b13e1f1daddff0a718153b17f
-SHA512: 4ab291815f8bfab6b464cffb5e843ffa0daca31b5444f379f5b9c55bf6a3af17df844ab4a4c0713e8501d7159809e24ff012733439f926ba7c6e60f2ba42db7e
-Description: OpenCL Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-vulkan
 Installed-Size: 13008
 Maintainer: @termux
@@ -23772,23 +23757,6 @@ MD5sum: 70caf6d34653fcec7e412f44000f2ccc
 SHA1: c6e7909b50802945992f15da01e5c6616574617a
 SHA256: 778490f3b63b5c1a435884151f55af5354608b24749dfdbdb393b78f98e79967
 SHA512: 82c392e5cc9fb89785035fb81ce1767e3ab7c38c2b45fb454c64133d11a2d06d7ecafd893ad4e0ed7f5a24650e14ded111c0497b73b0495ab0d238687649ccb6
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13008
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5872-0
-Depends: llama-cpp (= 0.0.0-b5872-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5872-0_aarch64.deb
-Size: 1006500
-MD5sum: 806f819a39e268261ed3cbbf5692f062
-SHA1: 9c852d62e8f3a95bf3662e0980ccf753c8c92310
-SHA256: 6ac827ca6e3d01deb08c5382f4fb8fb52081bad00eab16ce2a8bef96bb2777af
-SHA512: 5178ba7c3bfb9e5cda937ca8b9f3ac078a0ea81168c4eeb69bae9eaf6e10e6a245e55f3162c7034be2463a270e85d8aac26b722787e3097976995b0cbd1b0542
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -26126,6 +26094,21 @@ SHA256: 5f59cbb3167c9d12b40983efb2246f9693f2324860e467510f5576d0a64b9760
 SHA512: 23d126efb52d69ba83d883a375dbb4d16b513c16ee1710c743cfd80911a64f8850f7af0c1a2afe80516b5091d8bb0d88fca4fc07b5e2513638a4235ef05c4848
 Description: The mosh Perl script
 Homepage: https://mosh.org
+
+Package: mosquitto
+Installed-Size: 672
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.0.22
+Depends: libwebsockets, libmosquitto (= 2.0.22)
+Filename: pool/main/m/mosquitto/mosquitto_2.0.22_aarch64.deb
+Size: 202368
+MD5sum: 9eb550cba7aabadd024af77c381c4374
+SHA1: 2e230b6a0c89b883a32c5ef2c36a3feda8cef2a4
+SHA256: 0bb6c2b0255bed34aacc0cbcde9dcb7fe3b6e496d881bfa58c8a6ee01d58a975
+SHA512: e47ed40ad08fafd2bbd18d37ed0f370993e299fc5eab0f3df6d8034ae22e48b5a8170a5d68267c920af7b96a7b4f778a349033ef378377d7167ac0c3e7019ded
+Description: MQTT version 3.1/3.1.1 compatible message broker and clients
+Homepage: https://mosquitto.org/
 
 Package: mosquitto
 Installed-Size: 668
@@ -39289,6 +39272,20 @@ SHA256: 0a9c2a679d9356b1fe23d66f4ae7e85f3c70283e51f7516590f8c50050f16395
 SHA512: 694b7505117a8e15d6bc315ac15bdd7a5ab978444fc722511559042452ef569ab0c687a9f6cdb637f1a161edd196d0b30dc4dd5da646d1c2e0a1ac5348dc715b
 Description: Vulkan Extension Layer
 Homepage: https://github.com/KhronosGroup/Vulkan-ExtensionLayer
+
+Package: vulkan-headers
+Installed-Size: 32532
+Maintainer: @termux
+Architecture: all
+Version: 1.4.322
+Filename: pool/main/v/vulkan-headers/vulkan-headers_1.4.322_all.deb
+Size: 1631736
+MD5sum: 020f47bc92d0905ecd63e7c5a874ca78
+SHA1: 2d36b79bf8ece94a250f6f52fcdcbe430e0c3c37
+SHA256: 4366b1abac88b148d8fa4d889a9ff39623518239e9c85ff5bcc44234df36b00f
+SHA512: d8d1fb66d74fdd70311284c323a38b0895f93393d1830e62b1cf9ad038762cdb3f46d25d2f67dc5de345439a19c01e6ecf625850b9e96626135efa15ea276b3d
+Description: Vulkan Header files and API registry
+Homepage: https://github.com/KhronosGroup/Vulkan-Headers
 
 Package: vulkan-headers
 Installed-Size: 33072

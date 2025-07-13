@@ -11596,21 +11596,6 @@ SHA512: 94ded1885b19043ef63ea12664f32bc3130e9f695f11da27a87e2823cf10214ba3ff578f
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14272
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.2151
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2151_x86_64.deb
-Size: 3195988
-MD5sum: b0166d5a953647d032f3ec9baa174411
-SHA1: 14d0e650026ea87cf9c50a33db0dedc000f95085
-SHA256: 3410b66ec4348cc21f6381168249cd414f4280862d97d07368fe2f01aa3409bd
-SHA512: 75647b1cb1c8a3a65c0243fbadc13e50d670f71dcc9e1e8b313003fe67bd7c521932667e258cd1f5125b16fadb4abba63c0cee2c77d9cba5a8a0bd9c2354addf
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: janet
 Installed-Size: 764
 Maintainer: Komo @mbekkomo
@@ -12345,6 +12330,20 @@ SHA256: 4b918518fdf9ff4eac1f8534777f8e23e15308c5ad0a381d75a6e233a8a26930
 SHA512: e53870fb1de726490b050dfca8d5f58b51116403bbac5b507a89d441b09b21c260fe21257f51d3c5e824401b1884a6aec4795fa1ed8b7244831654c77b35e282
 Description: Kubernetes.io client binary
 Homepage: https://kubernetes.io/
+
+Package: kubelogin
+Installed-Size: 16380
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.34.0
+Filename: pool/main/k/kubelogin/kubelogin_1.34.0_x86_64.deb
+Size: 4421412
+MD5sum: 9c9766dc9baf2fed38a4d5aeedabcb03
+SHA1: 3f0d17566f4e16cd32366bc2efa7861366c62051
+SHA256: c0aa46ec3b069eb0ad5544d8040e78dcbc5dd1f49cabb65bf9e8aa7c00135f9c
+SHA512: 6349b6d35c173807733049b4904900c67c2edc84b1cc3d3f88962e11b7c82dd367a5b76147b1f7ddb727e9a0b331de57f0232e065bbe191f176125636310e3b8
+Description: A kubectl plugin for Kubernetes OpenID Connect (OIDC) authentication
+Homepage: https://github.com/int128/kubelogin
 
 Package: kubelogin
 Installed-Size: 16436
@@ -23681,6 +23680,22 @@ Package: llama-cpp
 Installed-Size: 49172
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5888-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5888-0_x86_64.deb
+Size: 6841032
+MD5sum: afd162c9cc9a450893ced1ac35f1dc70
+SHA1: b4d7329b57c86f4d3fc718c972145ffd29e3aac5
+SHA256: 9663e54d79673ee9842fa9b7e27bbccbc330455b6cd95fd0f44aff7fd2d8c73b
+SHA512: c657e39ea1a77afd840a1b989ae2137293e27284b64d03134f6f54a8a92e5dc270ad6d2374dbc7a8f148dd89b467c16c0c505fff2d33448eadd8c6e781a4ee9d
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 49172
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5884-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23691,6 +23706,23 @@ SHA1: a365af97aabf3fd7ed9199c2ebc14d82437e8a90
 SHA256: dec0a9b9b0e34d169b95b693fe8c29155a81b567ffa417787a726a5a911f1613
 SHA512: 05da69a624a70b1156b74feb928c19532e72af03543e29331ba7367ec9227c74fbd435063c79c41429e6dc4f5e4e04a4bcb44bbc57d3195fb7a6448d14bdf33b
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 516
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5888-0
+Depends: llama-cpp (= 0.0.0-b5888-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5888-0_x86_64.deb
+Size: 94536
+MD5sum: b8ff42d4914f8c10f1b83284a0172b0b
+SHA1: 7ae325706be6df6645e985195163d2b7de236335
+SHA256: 13695c54958875fb979a3cf638a491fcd45ad80bf0df52c77ccc590f035c6e79
+SHA512: 2825077d43430f09281d359903815d2828ee9bd3cf8a0119f0497e65bdf316c564ae33c97637efefa805675c9d74da43ad03e672d191efa2f95937f4792cadbc
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23708,6 +23740,23 @@ SHA1: ce23d7de25e397909c86de36ed5316dd4c110230
 SHA256: 09dfadd2ee15ad4f365355ff7ad01c8c87aeb9e98e3d9929377aa646ec7a29f2
 SHA512: 5b573a5f82287f3800ddfe97c3bac1c5c6201b7ed878302cdd52eda0b8fb520cc583e26a1d314b821cf790ee798bb7b19044bf1426a38bbb07608973dff0f44c
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13520
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5888-0
+Depends: llama-cpp (= 0.0.0-b5888-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5888-0_x86_64.deb
+Size: 1072732
+MD5sum: b71e6bc1dab332ef0ecc43129250b43b
+SHA1: c4168e849b0cc976deeb4bd30eb153ce9b351886
+SHA256: 71edfc995637f8d56ae05736fd097a6620cca0d66522b0b37b451bb187a97c73
+SHA512: d3ec02b878a0e8c255fbe11d54488f22fa544f3f35df9bd06377f703c2ed383416aca472519129b37580601026084bbdc6964da54aee7926ab3d3ec52828cb51
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan

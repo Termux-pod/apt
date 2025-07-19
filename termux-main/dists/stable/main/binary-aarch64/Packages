@@ -10989,20 +10989,6 @@ SHA512: 65970c74ceb996caab784e790bae4601ebf3f3fd0c52ac910eb64c2b69b7ae080dca06d5
 Description: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
 Homepage: https://github.com/emersion/hydroxide
 
-Package: hydroxide
-Installed-Size: 8736
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.2.29
-Filename: pool/main/h/hydroxide/hydroxide_0.2.29_aarch64.deb
-Size: 2509396
-MD5sum: 304dc73981f11a181e336e9898cadbf6
-SHA1: f14becddf9969017cea5636f11bc1fb3998d2d14
-SHA256: 85c2fb4d0c299aded47e42596d1d7f47ec7b2faf5f65794e9b4b6e72af430c24
-SHA512: 503d664f91476fc5629efb997e84a9fc4cf4ac3185d8a78d310ca65689214dcc5d64cd81d5867cbef971c9f2e5815b59873178b99b189fa70930552874972185
-Description: A third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
-Homepage: https://github.com/emersion/hydroxide
-
 Package: hyperfine
 Installed-Size: 1248
 Maintainer: @termux
@@ -23783,6 +23769,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 47432
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5942-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5942-0_aarch64.deb
+Size: 6536952
+MD5sum: 64e85f004a913048cd332b03f78994e1
+SHA1: 7d67eac793e1c1b611d929ffbaaedc0d9e009443
+SHA256: fb9ac6142ea1129c21a2eeaeb59d09ea5302b531aa56aee37a0c6a2a9078cb77
+SHA512: 5c571d7d3e34a7790678b845927f233c8955064434e303b992ef98419497be7af28b8a80cac1f86bdb1f4a848b98488aad537fc6ff20621e48f3c9447d38d374
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 47392
 Maintainer: @termux
 Architecture: aarch64
@@ -23802,6 +23804,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 492
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5942-0
+Depends: llama-cpp (= 0.0.0-b5942-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5942-0_aarch64.deb
+Size: 85928
+MD5sum: 3c8da1bc76cb67f5d20071f45fd54d62
+SHA1: 01e09090a3ac16ed5d829f1830f1bf399636f3fe
+SHA256: 0c5e7fb347a5af70a7329cf6f0571d294438407530edd0b83454d9054e7a650c
+SHA512: 331859cdeb3fcfbf4bef61b283acf5fb7664f82816da8cc33c4eff56f186ccbf3cd15a39f492094bc8105f0e3a012b9abc46d2c294708146dde4850b82b15536
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 492
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5937-0
 Depends: llama-cpp (= 0.0.0-b5937-0)
 Recommends: ocl-icd
@@ -23813,6 +23832,23 @@ SHA1: be8527a480bec23985b769dbd0133fed2ad1b79a
 SHA256: abef74f9f1d0cee2b6a2b45b7a8c9196a151ba81fc24a966929eb1a57d4c793a
 SHA512: c814b0c6edaf17d91cb21b1fda26310c7bd90ae109182e5ba03177b522c1e688abbfa0dda71833571e18e1c3016b248a4ddc878d3df53775031fa120bb78758c
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13488
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b5942-0
+Depends: llama-cpp (= 0.0.0-b5942-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5942-0_aarch64.deb
+Size: 1034880
+MD5sum: 645ca7bd9d0779215486c629cafaecc4
+SHA1: a4552f68288f9e147a35bafc572990127f3ff342
+SHA256: 3f71ab8792da12a4f66d65ac7fda825258a44a8524aa4f8d0e40d48896320f2d
+SHA512: 7adf4a582f2ddf152e11107889958f6b4b2f3c66608203fc30c09ab4198f3db967cb175f9e08793dbbaaab4333429fc02e7d8ac3860cf680ced079fd412dbc62
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -30287,21 +30323,6 @@ SHA512: 600046e8470e11962ceb5c185dc3e4ec0352435b1e563929724be26a5c1b8c2109cc96a5
 Description: An open source Go backend
 Homepage: https://github.com/pocketbase/pocketbase
 
-Package: pocketbase
-Installed-Size: 33040
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.28.4
-Depends: resolv-conf
-Filename: pool/main/p/pocketbase/pocketbase_0.28.4_aarch64.deb
-Size: 8433820
-MD5sum: 3fb644b51d0dc6fbbe321213adcfd3fc
-SHA1: 45761528dff2b130e2e47f9ff52582a2bee8113a
-SHA256: 60703038c20aa4c2f16710b11b7c56d1bf70fb541a6795325d3053fa70ad300e
-SHA512: 120a7c81686cdfbc368f2e8fb35efaedff3351e668ed978d1a06c9b9f19bcdad213dd7f72a28bdd6ddca63a9da4f11563e38495af5e5a2a2caad8a62902f287b
-Description: An open source Go backend
-Homepage: https://github.com/pocketbase/pocketbase
-
 Package: poke
 Installed-Size: 3596
 Maintainer: @termux
@@ -34127,6 +34148,20 @@ SHA256: 7e3ad2f6f9dcd17acb2cdbf008fb35b2decb3da67aff03e424fcdf2756375a07
 SHA512: 521f5b5f101482e03382a49078581adf6d2947810402800ee2f862641f229c6fe3e16bac0ff1720b4e6233e5ed5462e520d4a9306cc407166c4a1257b1ab8fbd
 Description: Static libraries for seafile-client
 Homepage: https://seafile.com
+
+Package: seanime
+Installed-Size: 75184
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.9.1
+Filename: pool/main/s/seanime/seanime_2.9.1_aarch64.deb
+Size: 17586804
+MD5sum: 720aef9ef526a2b9d8acb88c102c3451
+SHA1: a43117797b4cf975d7e92fda4d3085855f4938fc
+SHA256: 550a8ca17f5c69599b344839914f135e18a3ad76df242c1405bcfa93f77754f9
+SHA512: cbc07da35778d51dd42d066ed529de29060a894073fb8b7491e5a8da98a0e70f333cf2539e790982ce0e8c1df7f6a42c4fc0a6073b972a8120381de723be210f
+Description: Self-hosted anime and manga server for sea rovers.
+Homepage: https://github.com/5rahim/seanime
 
 Package: seanime
 Installed-Size: 75116
@@ -39495,20 +39530,6 @@ SHA512: 8ec0cc776e48d5caac162a8338d1ed08cc6a5b564bc9851951ab421ca3b6f5d4ca43df70
 Description: Utility Libraries for Vulkan
 Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
 
-Package: vulkan-utility-libraries
-Installed-Size: 7216
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.4.322
-Filename: pool/main/v/vulkan-utility-libraries/vulkan-utility-libraries_1.4.322_aarch64.deb
-Size: 561836
-MD5sum: c29638e0b5f61a902e1f388245b6c6b0
-SHA1: b1ddd7cb6830d135523f1feb51c44514232bffab
-SHA256: a396617b62adb05d4540973fa4c8eb0afcc3223628f2090a853815a72d4668b7
-SHA512: 2ce6285f14c25634565540a17d08235e420eb9ace06bdd9f2ded77fd0ced9606bac0e29f86452a6c2a02a1e4d58193f0ecc8be2b892bb1c8f285ce1dc36b0ca2
-Description: Utility Libraries for Vulkan
-Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
-
 Package: vulkan-validation-layers
 Installed-Size: 22900
 Maintainer: @termux
@@ -39808,6 +39829,23 @@ Package: weechat
 Installed-Size: 2956
 Maintainer: @termux
 Architecture: aarch64
+Version: 4.7.0
+Replaces: weechat-dev
+Depends: libandroid-support, libcurl, libgcrypt, libgnutls, libiconv, ncurses, zlib, zstd
+Breaks: weechat-dev
+Filename: pool/main/w/weechat/weechat_4.7.0_aarch64.deb
+Size: 789612
+MD5sum: 14770b2e903115cd7654210cb3c002d5
+SHA1: be84c6543652810b51bf09bc8a46cba066c2bd7d
+SHA256: 53d2445bcaa6a4615bf1b7c68ddcb39b81857cc2e33a5b529134b5958f921b15
+SHA512: 882b8470317ec290d2f2fc93b7e5831578721e2f80c6020dcd7486865b7b861720a4b4f546e04056ffea58f10fda1135f7dc6fd55611585102b67b2cdc9d5773
+Description: Fast, light and extensible IRC chat client
+Homepage: https://weechat.org/
+
+Package: weechat
+Installed-Size: 2956
+Maintainer: @termux
+Architecture: aarch64
 Version: 4.6.3
 Replaces: weechat-dev
 Depends: libandroid-support, libcurl, libgcrypt, libgnutls, libiconv, ncurses, zlib, zstd
@@ -39819,6 +39857,21 @@ SHA1: f1a73e953b3c80bf9cfaffe488e74fdaba3906b2
 SHA256: 651143a1f736bd01bc94e23e015d88a6c0d2633bb6453cd875e3c1471e9b6454
 SHA512: 63fcee01e2891d41b96df60aaabd8f1f87882989c24aa1209f8001f38df4ec9fa9f759c57daaa0679fcbe0e53e93095db2dee89590dc46bcf4075246353e69c6
 Description: Fast, light and extensible IRC chat client
+Homepage: https://weechat.org/
+
+Package: weechat-lua-plugin
+Installed-Size: 240
+Maintainer: @termux
+Architecture: aarch64
+Version: 4.7.0
+Depends: liblua53, weechat (= 4.7.0)
+Filename: pool/main/w/weechat-lua-plugin/weechat-lua-plugin_4.7.0_aarch64.deb
+Size: 39792
+MD5sum: 9e560274318f8c3eedb77764022fbf57
+SHA1: 62c9ae4e30eec27be7ac7766cd608ccd7dea7dac
+SHA256: a8d6f2991fac544f9f41714f0b667a271598580b899a81aa50a2f9a2a8f51e1c
+SHA512: b4b0420947493a2af656e950bb84e2ae8fa7f16d82d5e45f3cd6c080d02730957b538256160c508b49253e08bd1214fb7a80f5d85d679264e2d91a64f1a26e6d
+Description: WeeChat Lua Plugin
 Homepage: https://weechat.org/
 
 Package: weechat-lua-plugin
@@ -39855,6 +39908,21 @@ Package: weechat-perl-plugin
 Installed-Size: 368
 Maintainer: @termux
 Architecture: aarch64
+Version: 4.7.0
+Depends: perl, weechat (= 4.7.0)
+Filename: pool/main/w/weechat-perl-plugin/weechat-perl-plugin_4.7.0_aarch64.deb
+Size: 61712
+MD5sum: dc4db84bf9a75973eff0ad611890f485
+SHA1: 5a4ccf087cf884caff05e0669bc6a356b2a58fbd
+SHA256: fec7fd231d200d0c94551b1a75f8a7d4208f1912a9bc644e06635b08c26d741c
+SHA512: a0b8e51b041302980782a84a5493dd8fff40e9f0ef9361d265b19d9ad1027ada5f27bdf6e9d14b1d4cd7a500ecc3f49cf8bd685bd76ddf8a418ab9e6014b3c0c
+Description: WeeChat Perl Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-perl-plugin
+Installed-Size: 368
+Maintainer: @termux
+Architecture: aarch64
 Version: 4.6.3
 Depends: perl, weechat (= 4.6.3)
 Filename: pool/main/w/weechat-perl-plugin/weechat-perl-plugin_4.6.3_aarch64.deb
@@ -39870,6 +39938,21 @@ Package: weechat-python-plugin
 Installed-Size: 276
 Maintainer: @termux
 Architecture: aarch64
+Version: 4.7.0
+Depends: python, weechat (= 4.7.0)
+Filename: pool/main/w/weechat-python-plugin/weechat-python-plugin_4.7.0_aarch64.deb
+Size: 43432
+MD5sum: 57bef3fd4fbb9ee6360cd99212cf6801
+SHA1: 1b5b0a8ff538f392f697090633323197991f5d11
+SHA256: 727c9ae0e93902756eae47bd01d07af70c8d1a75d461594900c4e697068ecb57
+SHA512: 5e9d455e57161b11027f15813b2e320c022e2ef855ea8eff102e79492736b60be0208b3cb10e01dfeea3a88e44044a4e8e082df8b8526f1198e3ace04f12f185
+Description: WeeChat Python3 Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-python-plugin
+Installed-Size: 276
+Maintainer: @termux
+Architecture: aarch64
 Version: 4.6.3
 Depends: python, weechat (= 4.6.3)
 Filename: pool/main/w/weechat-python-plugin/weechat-python-plugin_4.6.3_aarch64.deb
@@ -39879,6 +39962,21 @@ SHA1: f00a5aab1424ca5f08c9593447efafa4bef68584
 SHA256: 5c789606897b5589b0f7a019bec084711a30533adcc34d2bccd6aa605646adeb
 SHA512: 59bc87034bd391d3e7ebbc4b9c89a8f50e2563840132a6a01cdafa6aa2f657dd465ca18a9a4fca31dd97185b405cfdaf734b2560ea1cee2912a60efd76296cab
 Description: WeeChat Python3 Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-ruby-plugin
+Installed-Size: 260
+Maintainer: @termux
+Architecture: aarch64
+Version: 4.7.0
+Depends: ruby, weechat (= 4.7.0)
+Filename: pool/main/w/weechat-ruby-plugin/weechat-ruby-plugin_4.7.0_aarch64.deb
+Size: 46392
+MD5sum: 3a28bdb814d9b5f07727dbc3442c497d
+SHA1: 0f99d09dedae5e562003932b77aae8137041d283
+SHA256: 261cd9da7ecc804e519e337c95aedae95754ba750eec2f57380034f2bb731a20
+SHA512: 6ba1e4936cbdd28d14975112aba03772c2657ab03d1140e54dc2fbd76e2d2a7d6cede3e712edac7b9b167a2dc61cf079c667f006500c11644ef90010423d11c2
+Description: WeeChat Ruby Plugin
 Homepage: https://weechat.org/
 
 Package: weechat-ruby-plugin

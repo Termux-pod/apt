@@ -11807,20 +11807,6 @@ SHA512: 89cf573046d12af547607451954eecacab13c6da39058533940dca0734c714ffc48d40d4
 Description: A CLI for JFrog products
 Homepage: https://jfrog.com/getcli
 
-Package: jfrog-cli
-Installed-Size: 46452
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.77.0
-Filename: pool/main/j/jfrog-cli/jfrog-cli_2.77.0_aarch64.deb
-Size: 9693532
-MD5sum: 96dc48b0fd2b753e113eeba1904f3428
-SHA1: e55bf82d156207356cf6facd876925da261e8df3
-SHA256: 720c30d90e21b898e99e16e54ec3121493b2f6f52fb5126f5f8a07f30cf5e830
-SHA512: 4c65ca949b5181bc53f545019ab9b7d6dd99777e52b1bea9c190e243de3267f4758872be48bfba0516238f58e0c35bf44f160e85a0c6ce263984318a4c7e1eb4
-Description: A CLI for JFrog products
-Homepage: https://jfrog.com/getcli
-
 Package: jftui
 Installed-Size: 172
 Maintainer: @termux
@@ -23771,6 +23757,22 @@ Package: llama-cpp
 Installed-Size: 47432
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5954-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5954-0_aarch64.deb
+Size: 6533640
+MD5sum: 2825181adf07bb108b4a435c8c8d1ada
+SHA1: 638111d5e5f884e25a382b6837b09bfc2c774a61
+SHA256: 98b3d4ad0c9d66d4af22a84ecdee8392824092faa9df4f98a34e6bf73c1c07e6
+SHA512: eebc5b5affc7d42be0b19a1b33c6cc91bd46c5cc41638bb1a5843e8c9d76b602c85c5b43ae31f03e57a95467bb10fd7465327991fbf29c93a7bc25c16e1f9700
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 47432
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5950-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23783,20 +23785,21 @@ SHA512: 6a6c04f601391e8b89d7efe5aa57c7135425a227f93340c7e34591ffdb7466f24af7e351
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47432
+Package: llama-cpp-backend-opencl
+Installed-Size: 512
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5943-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5943-0_aarch64.deb
-Size: 6521560
-MD5sum: 990163cef0b0bdf5bea50c09cbcd31d9
-SHA1: 624cf8acfce2afc4c623ae92a2ca347569a21a70
-SHA256: e496b435ea0db18f74cb8960b13d66d5138c711b98b264233cecdd67e232b677
-SHA512: 1aaf6fb280d8e49df4b1e0936e637e7f4bc37bfce73635376784918441b9d21511b09329e5c9656b29ac564e3095bb37f0c4e640cc098f90450b49ebe144f981
-Description: LLM inference in C/C++
+Version: 0.0.0-b5954-0
+Depends: llama-cpp (= 0.0.0-b5954-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5954-0_aarch64.deb
+Size: 89452
+MD5sum: 67349d35358f7b91a07b9d74c76d02ca
+SHA1: 02ba7fe1e0e4f55ce1addaa313e3489cc9382c88
+SHA256: 24c070ea6846b2fa9cfbc43913e1c2d264e1941227ef413e518580af5d09d074
+SHA512: b006e3d242e48c941df6290ff9068697ff3a52372441184cdc66797288f2f7616cf51c29d0ae4c7d4913cb01312c6b94e6f8f6abd2931c45a922b183530f5916
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23816,21 +23819,21 @@ SHA512: f5d5bb65df8841882d14331c8c60752ddfcb240d415fce60cb9bf5335f243f71bdbdcce8
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 492
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13508
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5943-0
-Depends: llama-cpp (= 0.0.0-b5943-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5943-0_aarch64.deb
-Size: 86052
-MD5sum: 3b020e2ba24ee7e59e16831c5807a6be
-SHA1: 7deffd8de94a1759b69bc298c7e264e1d2e15006
-SHA256: 93853dafe5f15b14bac3cfa713dcc1d86ff7069814c58ea5fe4eb2395e7c85f9
-SHA512: 6852669d5b5bf8f4bf48cf0feab7a9a684d43ccddfaa5b877304a848d381aafe24cdf207989ca4b6b835c572a818122e54513e36cc82b01a9374f2e305c5a4d5
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5954-0
+Depends: llama-cpp (= 0.0.0-b5954-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5954-0_aarch64.deb
+Size: 1038980
+MD5sum: 7766505b285c381dbc1dcfdfcb6695c7
+SHA1: 41d53c7677635e81428cd949bd97f9b92d6ba4f4
+SHA256: 652d4c7d4bb02d39a62876d5a10df670ef9e4a8d49863a84c4446bb95d3fdc8e
+SHA512: 58d6c03ef003c0622a4c9f530f44a78eb29b920c1600dfe677932e4fd20d0a33d2acbb97c50320639fdc4870b86c941bba840d5a3952d3bca346ccbe4e35f5c9
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23847,23 +23850,6 @@ MD5sum: 30c6c1741815711d7b82e4be6e2d335d
 SHA1: bc38a19b778d46f4cca683dfdca9acc90c5c1bb7
 SHA256: e008498a1448593b9f5b76cfe6e131bb9e08f4b415623a1b5aa8abbdd9ef3009
 SHA512: fff4df28bc9bb4597fc902f770438de9ed8934f187277b1e321657f3b5a8fea003fee15104ebe18eb74187b1d81bbbf73e2060bd425e3ed306ebe3f9cbe440ef
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13508
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5943-0
-Depends: llama-cpp (= 0.0.0-b5943-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5943-0_aarch64.deb
-Size: 1037804
-MD5sum: bdf62bcd9b6666b33770a37862b41cc6
-SHA1: 556efbfd6caa021be23aadc2336c24072dc8a88d
-SHA256: 3f3d8e535dc8211c5e483da17f67b1b8e04a84c48c97e089ec239b25754b5d5e
-SHA512: 83ed904ad436d4f6f634fcaee4bda1957bab4dc624188b77d5be515ef7786837d9f0d32810d04af0f684a7957dc9c07cbc73917f748ddffda52dec640d8500d5
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -25464,20 +25450,6 @@ SHA512: 922bed53dff26430de7fdb0d6cffabecd33b9a766387deda5b75524a8773447856c9e6b0
 Description: Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy
 Homepage: https://github.com/bluenviron/mediamtx
 
-Package: mediamtx
-Installed-Size: 35440
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.13.0
-Filename: pool/main/m/mediamtx/mediamtx_1.13.0_aarch64.deb
-Size: 8682908
-MD5sum: 8496d41abe62fe3d47002dc05b9597db
-SHA1: 0f3594cbbdf442564f0c5fdf899b543140147b84
-SHA256: 7cfb4c4ad31a921820262acf169068ed05445e1f93aea2de1ff3814880f1cab9
-SHA512: 57d6df6a3a761be75cb00ad0038f8793d4f7743ce51a380eb9053bd1025747b1ad96f75c634334eeac7180b327850af0c0f40a0ae8da4c59a6547c01d7a4de27
-Description: Ready-to-use SRT / WebRTC / RTSP / RTMP / LL-HLS media server and media proxy
-Homepage: https://github.com/bluenviron/mediamtx
-
 Package: megacmd
 Installed-Size: 8288
 Maintainer: @termux
@@ -26017,20 +25989,6 @@ MD5sum: 11d41dab65c87f69daf2fd9511a93c81
 SHA1: 4263eb4111c7b9cd5a8194996af7f7bce96bffba
 SHA256: 64d83aea91d1ae6a7202c266a411a92505a147f708680cbd2d089fdedea6843e
 SHA512: 5bb7cdf721866d8ddd998bd5f1e31eb9b1319ff20ce8e1599edf9f29c3288af8ea5e16bbe09363c032abcdb20baf9ffdf1f8a1b03dd8a46f0bca1b55f983f42f
-Description: A pager designed to just do the right thing without any configuration
-Homepage: https://github.com/walles/moar
-
-Package: moar
-Installed-Size: 7644
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.32.3
-Filename: pool/main/m/moar/moar_1.32.3_aarch64.deb
-Size: 1890296
-MD5sum: 4b2e59500ae2e28c97a481154482b008
-SHA1: e0d8284764166ba8681e9fdfc0ce25d02f2d866b
-SHA256: 992bc9601cd065f09b29074ad399d99ab50a2ac1ab0c7d0e21675d653ccae569
-SHA512: 0d6e83f9a7329bc826e523dcf736a9c7ba581593fa3fc18c8c465359fd50e1239b50e0c4fdddb166543ff67c04be6b35a639a00c0f4a6db3bc437ee1999a94e5
 Description: A pager designed to just do the right thing without any configuration
 Homepage: https://github.com/walles/moar
 
@@ -30905,21 +30863,6 @@ SHA512: 49657322d5a655f252ccc6c25eeea0d042d380b60f69238459d72dac80cbb3ce8fbf21c9
 Description: ProtonMail Bridge application
 Homepage: https://github.com/ProtonMail/proton-bridge
 
-Package: proton-bridge
-Installed-Size: 29692
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.21.1
-Depends: glib, libsecret
-Filename: pool/main/p/proton-bridge/proton-bridge_3.21.1_aarch64.deb
-Size: 7128872
-MD5sum: e4aafbfcbed9af5f156a973977bb180c
-SHA1: 2472826212e3478fa52624c7c95f1c5a729f049a
-SHA256: 80da1a5937f269e312a1c4262f93199d0d5e6daaa22c7304cba56bbffa076eb8
-SHA512: 177e55b8023aedfb5cce6ef62084d03f7544881dc9f94a57b0a77d70e185e362aac2be50a4343071017de742f0b4c94a7336fbbf8c86e9052d1962fd67d331ee
-Description: ProtonMail Bridge application
-Homepage: https://github.com/ProtonMail/proton-bridge
-
 Package: prover9
 Installed-Size: 10080
 Maintainer: @termux
@@ -34205,6 +34148,20 @@ SHA256: 7e3ad2f6f9dcd17acb2cdbf008fb35b2decb3da67aff03e424fcdf2756375a07
 SHA512: 521f5b5f101482e03382a49078581adf6d2947810402800ee2f862641f229c6fe3e16bac0ff1720b4e6233e5ed5462e520d4a9306cc407166c4a1257b1ab8fbd
 Description: Static libraries for seafile-client
 Homepage: https://seafile.com
+
+Package: seanime
+Installed-Size: 75132
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.9.2
+Filename: pool/main/s/seanime/seanime_2.9.2_aarch64.deb
+Size: 17574204
+MD5sum: 0753f7e96bc6fdb396adc0029b366b33
+SHA1: bf6683b59c4108e5301f083a90352c05f1e66a25
+SHA256: d99edac8a9692ec39b8f039733a0427e8a5215165909679cad5c982b2a37dff8
+SHA512: fd64d6d2902c2881a595c2c3884ffe804e54fbf0083519d90572864a1a3b5d31a1687197d49b06de0ad895e9472f48b86be1ac2eceeca11866b45632490dd0ee
+Description: Self-hosted anime and manga server for sea rovers.
+Homepage: https://github.com/5rahim/seanime
 
 Package: seanime
 Installed-Size: 75184
@@ -39572,6 +39529,21 @@ SHA256: 07286b310da8bad3bab60bfe6d40def6f7bce7460a6010eef3c65873bc2ad43e
 SHA512: 8ec0cc776e48d5caac162a8338d1ed08cc6a5b564bc9851951ab421ca3b6f5d4ca43df700c0c22ad316c499194343e872e24d5d8a9c5067be22e9f48dcb0e213
 Description: Utility Libraries for Vulkan
 Homepage: https://github.com/KhronosGroup/Vulkan-Utility-Libraries
+
+Package: vulkan-validation-layers
+Installed-Size: 22960
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.4.323
+Depends: libc++, vulkan-loader
+Filename: pool/main/v/vulkan-validation-layers/vulkan-validation-layers_1.4.323_aarch64.deb
+Size: 4086664
+MD5sum: ac4ed6a2f30aff0c3569a0da43a39ec3
+SHA1: 1e0a00f94aaecb157b7f64cfc13c0b14f7b099e6
+SHA256: 5460c0ea682b1263e044921ebf7e38e9868d64b614eb1392cfa93f7b21f304e4
+SHA512: 542414e7f34e8666564b0556d02e977819801eee20aecfb4f0e4cb5b31ef53d75e78ed740c9a0950a6c7937b0e9b83381e6024068d48518b809f0f22f99358a7
+Description: Vulkan Validation Layers
+Homepage: https://github.com/KhronosGroup/Vulkan-ValidationLayers
 
 Package: vulkan-validation-layers
 Installed-Size: 22900

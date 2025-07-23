@@ -738,6 +738,23 @@ Package: apache2
 Installed-Size: 31756
 Maintainer: @termux
 Architecture: aarch64
+Version: 1:2.4.65
+Replaces: apache2-dev
+Depends: apr, apr-util, libandroid-support, libcrypt, libnghttp2, libuuid, openssl, pcre2, zlib
+Breaks: apache2-dev
+Filename: pool/main/a/apache2/apache2_1:2.4.65_aarch64.deb
+Size: 5016132
+MD5sum: 8260ff344503035287eff9406fd19dff
+SHA1: e3af5902b719bd95ddd2e7dce58e22dd103b97dc
+SHA256: 66c9ac6d4c56d869d8ede997725ea530595c69fc7d69370a54a10fc3f534a2ff
+SHA512: ed25d9d0c542623ae46a677fdf99e351c4871fc94dbd9e4f36fa5ce9082acd68b8e7c7f5bfd244e2792da411460eebc5d6d0712123316db4a68333f678bca69f
+Description: Apache Web Server
+Homepage: https://httpd.apache.org
+
+Package: apache2
+Installed-Size: 31756
+Maintainer: @termux
+Architecture: aarch64
 Version: 1:2.4.64
 Replaces: apache2-dev
 Depends: apr, apr-util, libandroid-support, libcrypt, libnghttp2, libuuid, openssl, pcre2, zlib
@@ -8739,20 +8756,6 @@ MD5sum: ff697965512dfa1939917dddaba60b72
 SHA1: 70fb7d6629a52d959a094508a119c86f2f601645
 SHA256: e3a57d61d9c2250a58302257b0a89706878b0475ce3d2126a67139c8a424c158
 SHA512: 24e96bd92133a5e306009efd64813317b4a223123d640827a03103af134f46ffdb8bf670c3b93d081f101760427fa6f99a0389aecd7caab50d2938d99d4dcafc
-Description: A GitLab CLI tool bringing GitLab to your command line
-Homepage: https://gitlab.com/gitlab-org/cli
-
-Package: glab-cli
-Installed-Size: 44332
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.63.0
-Filename: pool/main/g/glab-cli/glab-cli_1.63.0_aarch64.deb
-Size: 10307920
-MD5sum: 0aa091ecba53d950c6b501afe33c7f71
-SHA1: 7245b2299d6e71b056302484202c13949ed0aa94
-SHA256: 06865c248828c065eebc94cf5d598342bde6771e7158ad418ce23828e65bbd73
-SHA512: e68fd50f36561a66e434ccfb03b4366b0090d957f68c60ddf46f9b2973ec8e29f3a71be0c69a029a5f20a339ab5743e10ff91157b5a895fa90293ce67c56d005
 Description: A GitLab CLI tool bringing GitLab to your command line
 Homepage: https://gitlab.com/gitlab-org/cli
 
@@ -23783,22 +23786,6 @@ SHA512: 351411c48b3938bf2223ee6ad261e25cb4681cb176b683ea1a4c8bc56358f0d762b98780
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47460
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5966-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5966-0_aarch64.deb
-Size: 6559592
-MD5sum: ed61c78ab5776e479126e2f06c6b4934
-SHA1: 49c575ceb2493fdc5546c2c6c86e42262f9c5ee4
-SHA256: f41a984fa159024868eaa8b2766d6b3edc93b8aa05096e3f09fa073ebe859b52
-SHA512: d477d338e410dc12a75e4e68ab4f8cd6e284b9bd671999318cc52aa3ec39f0af73eddab29bd273b3d53db89fd803a24235c78ff3ac1aeeed003b1011965ba85c
-Description: LLM inference in C/C++
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-opencl
 Installed-Size: 512
 Maintainer: @termux
@@ -23816,23 +23803,6 @@ SHA512: 0e15d7f9bbcb8600f8e3f318924e66cd1167dc0f004b788ba0c5ec8fbf53396812a1bf8f
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 512
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5966-0
-Depends: llama-cpp (= 0.0.0-b5966-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5966-0_aarch64.deb
-Size: 89348
-MD5sum: 0927bf5f1c4d4f2d5bdd4c1e8252f342
-SHA1: 16c103ad5768170a400576345b2261f2ae37df9d
-SHA256: 8bc972d287b18a7d4191e0b8aa5e44c684d8272b55a8fb1e90f3dfd4b89b6377
-SHA512: 940392b54f8a1f88d5261de7792dfd98d32b8185e489e6082e41a102e79694e56b6e680dfebad7e0253d0ac814e6cf7c206ccada827e6ad2348bf570edb1965f
-Description: OpenCL Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-vulkan
 Installed-Size: 13508
 Maintainer: @termux
@@ -23847,23 +23817,6 @@ MD5sum: d2e76b659c73e0854c8433761382854d
 SHA1: c4ab98ddfc619ecfbee23a9b32d6c87edfd1daba
 SHA256: e4f1fb9d9d5adb6e652c99477775a976239afdadf2c27fab71cf97f6df52206f
 SHA512: ec64436cf6e1f37155e5e00287b07724c4837d0a04821b83a6855e0f5ede02a5b4022270975030f8cec7aa55ff77a011a39c41cfbf71e639c736747d786194f3
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13508
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5966-0
-Depends: llama-cpp (= 0.0.0-b5966-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5966-0_aarch64.deb
-Size: 1037504
-MD5sum: 595115cb25f44e3165d0ebbdd4e30a1e
-SHA1: 5237b07fdc77091c41b5ba23376594327802cafc
-SHA256: 029df1b684277ab27648b03acc032004a7bb516d8b7d87401da162e43067552b
-SHA512: f16b960db7ac2e604e553766445972e78081599b517db2cad75a9e9e192e092555b3fb0562ee6ad2628b8408c6bc0337ea062d2f7e2eb68ddbcb7a13db8be235
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -40800,20 +40753,6 @@ MD5sum: ff6e1ad7178fa83dfdea486bfaf44305
 SHA1: 93368bc7bac3c3cf3c66963cac9f20aed1674b6d
 SHA256: 45c8ae2c8cef90ff0e2c21cbee2d6949d3f2de9a8850017aa1fd63765ad395e5
 SHA512: 8d3a5d821973a41a9559233179beab3e02b179e87b18126e5023c0785e47eb84110a52429f7bbfd467c61426919c4c69c42d73e0b44172fa44dac1f06abe5aa0
-Description: A lightweight and portable command-line YAML, JSON and XML processor
-Homepage: https://mikefarah.gitbook.io/yq/
-
-Package: yq
-Installed-Size: 11492
-Maintainer: @termux
-Architecture: aarch64
-Version: 4.46.1
-Filename: pool/main/y/yq/yq_4.46.1_aarch64.deb
-Size: 3067364
-MD5sum: e92b931081c7b9f1ecab607c73134381
-SHA1: f7fa5e968dc7b4afd6755fd4cf0650ebe6baec61
-SHA256: 8561fd3abc3bf728db0515f58429fdb41788736a3f04c636e9c8c3d2d2e907bd
-SHA512: 8dba7785ead13fb91554460c97dfc0768758b00cd03a822e3c91aab6cff83198a3fe3045b3ead5074cc57082a10105ee268252ff7f12c4acea329a706c0d60dd
 Description: A lightweight and portable command-line YAML, JSON and XML processor
 Homepage: https://mikefarah.gitbook.io/yq/
 

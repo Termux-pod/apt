@@ -2979,20 +2979,6 @@ SHA512: 64629f663b84879435bc2b0e446087231ac1f6eeb152ba576c8a5c9db4439982a6a9ffc2
 Description: Multi-shell multi-command argument completer
 Homepage: https://carapace.sh/
 
-Package: carapace
-Installed-Size: 64728
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.4.0
-Filename: pool/main/c/carapace/carapace_1.4.0_x86_64.deb
-Size: 8142532
-MD5sum: d7093181d94491571798b6316620a92d
-SHA1: 5718eaa2f5e30cc524b0f2451954363c6dc0d17e
-SHA256: 04a727ff3ff04993d7c8a96cd7f29e6c6b2ed59aa4d068eaea3246770b3d9edb
-SHA512: 142a206ffe4afb16781769b6d61ca441eb6756adf0d2c9f45d5aff9cdd56b62ed9205be4ad033cf558d2ba8e452b5d14e3bd014360a76dc3168023bbce166eee
-Description: Multi-shell multi-command argument completer
-Homepage: https://carapace.sh/
-
 Package: cargo-c
 Installed-Size: 100336
 Maintainer: @termux
@@ -4598,20 +4584,6 @@ MD5sum: 91f3946b2858730e6b8d476c7a1c69b8
 SHA1: 4632b2c123aaff9e99f1dd4d26f90cbb49e854e1
 SHA256: daeb4d77451066fa0aabbc546fdeac8da0d205ace594d972937deff4a8d935e4
 SHA512: 66a3f24344cef77397debea1ef66ba5799b5d5eae1db4325c476f9f2aaacee1a342b9112e9c3418d1e51cce6ba004006f4cf0d5799dc84be48f686b038cab57f
-Description: A simple webserver, implemented in a single .c file.
-Homepage: https://unix4lyfe.org/darkhttpd
-
-Package: darkhttpd
-Installed-Size: 88
-Maintainer: David Paskevic @casept
-Architecture: x86_64
-Version: 1.16
-Filename: pool/main/d/darkhttpd/darkhttpd_1.16_x86_64.deb
-Size: 17072
-MD5sum: b203b9c9afa4e961d68646d8c19c6b61
-SHA1: ba5a5eedcb31f0e24f0be41429d8d5ab8b8a7e35
-SHA256: e4d02ce0549d4660266e34a6ed6ebc255522aac756280f5321718509190b41a8
-SHA512: 0322555167c5c608ef466a7878b3f3948e109717af5ebbd51c424acdcdfe81a7727a8a14054eaebda529f05d09821cc7d08ba257ebd7c27e493b35fe9989d637
 Description: A simple webserver, implemented in a single .c file.
 Homepage: https://unix4lyfe.org/darkhttpd
 
@@ -23766,6 +23738,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 51168
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5984-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5984-0_x86_64.deb
+Size: 7025316
+MD5sum: 9400f4ff89a7c83049b4a8908803804d
+SHA1: 2ed4d675cad119cdfb824ebdcd9d9618f86ed028
+SHA256: 5426e382f8a48a2168713200a5a82279448ac53f2250abbb686efab51a09cd96
+SHA512: cce1546c365178b7a59e8c7bf28bbea69387c8bdec1103b6e194d8f6eabff86fa9734351232692a1ecbdc716dff7434207393c1fb2be5745f7d439d63e0689e7
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 51164
 Maintainer: @termux
 Architecture: x86_64
@@ -23781,20 +23769,21 @@ SHA512: 6befcd0ecf5a9dba8fe33faa5682e21b5a90652b074dc52a81580901ba12047a4ec10278
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51164
+Package: llama-cpp-backend-opencl
+Installed-Size: 540
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5975-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5975-0_x86_64.deb
-Size: 7034996
-MD5sum: e1d0334993e3d7757c3033c7539c7683
-SHA1: 29b14f751a5e117afb2e46ca40538a99d547406f
-SHA256: 0c86e41b06a3903d49ea0306cac43d0f26e6f4281dbd0e0181477c1a3ea8e844
-SHA512: 78c275af031c22b237cd196c852caac48c5f7ac009ab005f5b1cc7d2a2bc537e9e349fbb0078c919ca063fc9b12ad32f656c3d9d1e0fd89f1e231b64f7f16077
-Description: LLM inference in C/C++
+Version: 0.0.0-b5984-0
+Depends: llama-cpp (= 0.0.0-b5984-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5984-0_x86_64.deb
+Size: 98336
+MD5sum: 08bc6cfc95bb3bad2d6164bae1f65eab
+SHA1: 8c2d64fac4fddf4286c3064276df6866c777239d
+SHA256: 20feee0f048493acdbdb7aa5a37e8d0ffb7aef3112bdf5a65306e9d73a0adaa5
+SHA512: 204707fa32d233147c1f7450a19f4aa18adf06ac96d533da77500e1247208410bf1b0d9141a2dad6519a8d622769aa7010990877206eebebfbffc9fab6cd3e56
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23814,21 +23803,21 @@ SHA512: 1bc5432735b63e51eaefa94838635bfb7b5f8117a509d6f2e5975d4798feeca5f4406532
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 540
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13776
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b5975-0
-Depends: llama-cpp (= 0.0.0-b5975-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5975-0_x86_64.deb
-Size: 98348
-MD5sum: f988c3b5a62679d89db564a350da2f72
-SHA1: 7a9721d242ee7ee87f2800c5a0deeb0008485cd5
-SHA256: 8d208f8485d03ed17836f2e37079a5e15df6ffc17a060833f600f378b13ef66f
-SHA512: 7fdc3939a365633914ae8c50d4bc27ebc20d782cb995923bb4887b9221bb27cf84a15fbcd3fe0d4294042c7316bf20cb7333872b30d4b2b68bf985ca8412b3ce
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5984-0
+Depends: llama-cpp (= 0.0.0-b5984-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5984-0_x86_64.deb
+Size: 1080532
+MD5sum: 4c8793fdba22ed82d16cf62468c14b40
+SHA1: fa2081348b2522f0f0530c0d246fdeb24a563b37
+SHA256: f9eac896d1d72fa1153c27c946f8a2a4a7c58d2ad4714fefdb41534352808b12
+SHA512: 900c8f198272f7f90c1ea4d9e86d7511d3eda42cd10ba13b81a5b067335dd6e2e2c4a1b7a2b138f4002a6ab8e2bfbe10ba78b69c813d6d25a0d0b39df0a70599
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23845,23 +23834,6 @@ MD5sum: 018eaff61ad2638f8fd1407122f896f6
 SHA1: 8364d3e9035913e24663466d1f2490b3d51db549
 SHA256: 5c9dddd7108c5774e43f642c2e1f5a688fef26edd1a0f4721904700e3567209d
 SHA512: 24e9ec5dfdb23e6bb40a1f9a82557ddfef9eed5a40ef7a746abdab2e94e437f2c8c14810a8c2331d808fc9d55fef199902a9dad3ccf0cfd75d2a2c2330a10fa1
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13776
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5975-0
-Depends: llama-cpp (= 0.0.0-b5975-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5975-0_x86_64.deb
-Size: 1080996
-MD5sum: c9e7f34d8feab8bbc647b31924f68d7a
-SHA1: 18317d447c823e3f04e266bb69b7b9b6dd19a51b
-SHA256: c6cf3e14057f43f639b84420e0ac7d49fc61a373ee3c972d0e8d8547207faef0
-SHA512: 30dcf0b0bac339cef705442585cade1458534fdaa64642c282ed0d6a6ac3a25abc7c8599d9085cca7bd655ffbd8219aced4e2ff042b1c102de4b0d3ffdeb6c17
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -25968,20 +25940,6 @@ MD5sum: c21c21f7a2709fcb1ee724e7934adefa
 SHA1: 26ccec154132266ee3efc88ce4ce1b605c03ecb2
 SHA256: b39567ec71a845bf2234f30c8f6fd2035f56395be07c5476a5857789b2e3a10d
 SHA512: 59c1e2e2009beaeb79997d0a1748bb3751a0dbbb77402823d116a7012d001ef84ffdda5426a9302bd91bbe8b9ee99721790423f978a43e9c6642d83bc86b3e46
-Description: A pager designed to just do the right thing without any configuration
-Homepage: https://github.com/walles/moar
-
-Package: moar
-Installed-Size: 7844
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.32.5
-Filename: pool/main/m/moar/moar_1.32.5_x86_64.deb
-Size: 2098024
-MD5sum: dc3a0f28137248d5c4ff45c76042567d
-SHA1: f8fe176afa4c353d2d31eb30682d64076760389e
-SHA256: de188211d46fa586a1b94d785adb61af24022aaf4f6dc690d204d55db18b01b9
-SHA512: b2c5e024220a40e03de7a6bb03bec58731b0e87ae63f763a82efadccb72408da2208edc7f0540a8f3fd5f072715f515d5f7ed8f321eec5b6de60eaf10739d237
 Description: A pager designed to just do the right thing without any configuration
 Homepage: https://github.com/walles/moar
 
@@ -28577,6 +28535,23 @@ SHA256: 5911ec2d050de719d9232f827aeffafc4d022368684d9ca8d432f72609bd00a4
 SHA512: 9a7d6658ab51b9c3ca1a1527c088a5d1371bcebddd17c1c767352006a7f66a4f037997021c9e6ce43b01d8e1ebb29e9fb3b34119d0c2795e9ba9dedb8fe5f3b4
 Description: Static libraries for openldap
 Homepage: https://openldap.org
+
+Package: openlist
+Installed-Size: 124800
+Maintainer: 2096779623 <admin@utermux.dev>
+Architecture: x86_64
+Version: 4.0.9
+Replaces: alist
+Provides: alist
+Conflicts: alist
+Filename: pool/main/o/openlist/openlist_4.0.9_x86_64.deb
+Size: 32662416
+MD5sum: e2d61c5285d55d3b7a1443988d645da9
+SHA1: 6eca33ed612d6cbbafa2bd1c336c1a9804f429ee
+SHA256: e8f7368e9f00338351fe713ee9d73fd65e6b5ec568aa91d551cb704c035886c2
+SHA512: df68512854d195cb9e62bbf5c3cbf3e90c32b74a06df0b262037a8d931dd33019adae1060660ef19c38b0fbdf098ebf73596a9f8de69ad50ef153a61ef8d9ca5
+Description: A file list program that supports multiple storage
+Homepage: https://oplist.org/
 
 Package: openlist
 Installed-Size: 121840
@@ -31543,6 +31518,21 @@ Package: python-ruff
 Installed-Size: 180
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.12.5
+Depends: python, python-pip, ruff (= 0.12.5)
+Filename: pool/main/p/python-ruff/python-ruff_0.12.5_x86_64.deb
+Size: 19236
+MD5sum: c944053581199dd1f9c4b33a7a7e8628
+SHA1: 1027787fbb1b2f0a3688fc2522878b4eb09b1b02
+SHA256: c39c325943fabfba0e0cca69f0255dc1735a42d8edd196b8f501b83d77641963
+SHA512: 9930b87e1ca8be1ae87092471efc168aa5be2d143ef9d261aee4629060f564615b383872b9a070c25c7efbf08e0e03106c56c565f21fde30899cdb12535f14ce
+Description: An extremely fast Python linter, written in Rust (Python bindings)
+Homepage: https://github.com/charliermarsh/ruff
+
+Package: python-ruff
+Installed-Size: 180
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.12.4
 Depends: python, python-pip, ruff (= 0.12.4)
 Filename: pool/main/p/python-ruff/python-ruff_0.12.4_x86_64.deb
@@ -33480,6 +33470,20 @@ SHA256: b0e219c9d8873caca1be942ff197a689e7a9b00e4b939a5be387fda0841596ee
 SHA512: 5a86ec300d20934fe99e21fd0d875f7b7f6d8bb69f92861b35abeba7734a7c9553b0719cd338c1283848105865a4efb4734f1bcb98a66e0f681b8cf85b6af454
 Description: Ruby documentation index
 Homepage: https://www.ruby-lang.org/
+
+Package: ruff
+Installed-Size: 34156
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.12.5
+Filename: pool/main/r/ruff/ruff_0.12.5_x86_64.deb
+Size: 8292976
+MD5sum: fade8597657cfe85b1b5d87540afefcd
+SHA1: 32b1cc0dcffd1388e4d04db7d03e76a0c3a2a019
+SHA256: 53bec449233fd884dd18c5688b7eb8e3a156e51c6d9aa99e18f8e8b8f9d77b71
+SHA512: 65946ac02b5f61f7bcf19002ae56c7900d99a431f3f738b9499d435b0c7edb07e3d047c6b70c0497dea17289fdbca1d94a560c5118e590763ee4fee689a3e709
+Description: An extremely fast Python linter, written in Rust
+Homepage: https://github.com/charliermarsh/ruff
 
 Package: ruff
 Installed-Size: 28940
@@ -39343,21 +39347,6 @@ MD5sum: aedd437f0ba7b6f070ff8db464edcab0
 SHA1: 1b03c54207d60f64ae6c4cae951a2bf145ff33e6
 SHA256: 453399333b5525d821d73c24e5ec1baf32ccc08c92ca1e312053967d5d80f040
 SHA512: 65d6281c121a85b86049a5c7f8b740f5d4fb318cc5268c74a8067126cb81ad2d967b5527366b702916bdfe0ca4a2c571eba337717c6c1140095002483c2d15d8
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://github.com/directvt/vtm
-
-Package: vtm
-Installed-Size: 6284
-Maintainer: @termux
-Architecture: x86_64
-Version: 2025.07.22
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_2025.07.22_x86_64.deb
-Size: 1278452
-MD5sum: a82ef67c152758a2dd583c324350e231
-SHA1: f6e4c449337fe506ea65e040d782a86e9718093a
-SHA256: e72c5a90428f5df69fc02bbc6ca2c8dc2ced88c494c61a949d8b26cc4ffcc6f0
-SHA512: d62e8e0e0a5b68916b6d00a92c82af21b614c618e98279a34f80263a99050d4cff65937d3e9dc7fc9aa0815348b94a32024dce36ff73778a338ac000608f1286
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://github.com/directvt/vtm
 

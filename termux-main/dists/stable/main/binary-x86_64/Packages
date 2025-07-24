@@ -751,23 +751,6 @@ SHA512: bb499c572401a391f41a947626f90fa73afdf245b6b06b1ee389c64546d0dde62b25dcd1
 Description: Apache Web Server
 Homepage: https://httpd.apache.org
 
-Package: apache2
-Installed-Size: 31860
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:2.4.64
-Replaces: apache2-dev
-Depends: apr, apr-util, libandroid-support, libcrypt, libnghttp2, libuuid, openssl, pcre2, zlib
-Breaks: apache2-dev
-Filename: pool/main/a/apache2/apache2_1:2.4.64_x86_64.deb
-Size: 5098020
-MD5sum: 3c2c48e7790f38ad8f61b20748bc6cf0
-SHA1: 48fed09eb2adca800294d97222403812827f0050
-SHA256: 28ac6e48c2fc7b0e8e7cb822d11875f36ded1d91f8a746c7312a286f5d691d3d
-SHA512: 83e368181940f03df410197d546ac97835c228c08f448e4e42c72e964baab1a8582de134e789243e73e530f0d56d3734d6e73593fc801df2f080a146e214e44d
-Description: Apache Web Server
-Homepage: https://httpd.apache.org
-
 Package: apkeep
 Installed-Size: 9588
 Maintainer: @termux
@@ -8394,6 +8377,21 @@ SHA256: 18887e41a654e95975f3bbde4c39fb4b47d69ddc6948478f593df0eeedf6e51a
 SHA512: c0dcb643579fe6d9dc4c5960e5fc4b1363c2678e12fd809505dd1952bc6b26968d2c01a11a83e7e803223c977a9bb0dceb576123eb1c7c8820f7823cf88d54e1
 Description: The Forth implementation of the GNU project
 Homepage: https://www.gnu.org/software/gforth/
+
+Package: gh
+Installed-Size: 60132
+Maintainer: Krishna kanhaiya @kcubeterm
+Architecture: x86_64
+Version: 2.76.1
+Recommends: openssh
+Filename: pool/main/g/gh/gh_2.76.1_x86_64.deb
+Size: 13034524
+MD5sum: 130dab5372193f62ad5093a016f14647
+SHA1: 94dcd339f7d06111dd1cab3e42e67070013d0f12
+SHA256: bf5f633d68f71113bf351a70c774f54391af137f6ed7bc1f4be50dda8bdc1846
+SHA512: c827186dc3c5641adaeee5ef8bd987d0d5373beb59ca35e2783a1baa9d828ef90eb473e0ae3095bc04555b1daf2e8a609722f8c0e4a0efcd42e693c8f85789ae
+Description: GitHub’s official command line tool
+Homepage: https://cli.github.com/
 
 Package: gh
 Installed-Size: 42568
@@ -23758,6 +23756,22 @@ Package: llama-cpp
 Installed-Size: 51164
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b5973-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5973-0_x86_64.deb
+Size: 7038252
+MD5sum: d3696a4ff70ef902d9c7a3a2501456c4
+SHA1: 81ed1ab7b4cf732d8e98d0d4659fc225cfa76b8f
+SHA256: 8ba7f494fcfd656312d889c14411908a6aed9388f134e4c22861d9113a7fd3fe
+SHA512: ce6dd029472719da2114640852a39282026eb225749c568a8a1a0638869f544befe6451473c44debf7c5b2fef9ed5823b3af9353397197558d875cafe6eebd0b
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 51164
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b5970-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23768,6 +23782,23 @@ SHA1: 7472eb181dd63087788b9c49748fe3a03257fd29
 SHA256: 257dfe0fb32d9511ea84b009b60e228f849ab460dc4c91ead164bd794b79a963
 SHA512: 4016ec8134c48ab0780fae7bacbd582b620c923fbcb3176615ad9dac9ab6c6ecd96da3ac34f625ca0b24688ee982393bf5b3052677befcbd143bfa58b1743abf
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 540
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5973-0
+Depends: llama-cpp (= 0.0.0-b5973-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5973-0_x86_64.deb
+Size: 98348
+MD5sum: 2ddfe117a56f1a0a82d54adc31442956
+SHA1: 9e4ef01f604e6319bb3405f3e383a1ec7bc893f6
+SHA256: 62c78211306f19ff040d675eb717c3011d30f79d659f91ab0e51bd22d6e9c760
+SHA512: 2d5886533ed4bee94d54f9a3a290658067e21cd43e3cdcda0ca6b35267ebcf1abf9b4f1ad5617d8d9568044b7efd645252b50170dc37bc0c94f19028a5e498db
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23785,6 +23816,23 @@ SHA1: 3755d4403479a20b44cefa5490655734d3ff2a40
 SHA256: 4b605e2e13301eac724d0188c023740dd2d5e5c7fee1e73f8cfedad7d980cad2
 SHA512: 9f5794fb3b4476a888147549a8ad299db1334cbfa6b2cf83a1afc124ebf08f3b8bce808168ea8d4e16fa2d7542a234481dea3ae4b1cefe40987175b45884d694
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13776
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b5973-0
+Depends: llama-cpp (= 0.0.0-b5973-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5973-0_x86_64.deb
+Size: 1081964
+MD5sum: 7793b5019a223210746e74ffed1a056e
+SHA1: 1b993fabfe2fff2a5ca238a963c16ae65604b1d7
+SHA256: ea3cec7ca48fcf0cafefab93114b2e7a96ca9a26f4df5f05cb550ea3e3e98309
+SHA512: c5bc0a51294bbfe0e3f9532b9833bb34365a60d604170e5eac265824c8f993b3af49f3c8fced5eee4cd5fe9c65ff0b4d3f3846a0359512934b123e0de39b786a
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -25703,6 +25751,21 @@ SHA256: 2363724eca612d93651345c6e00dde9f0288f456e614d0a9e9f5b2e930be519f
 SHA512: 5389d00012763733736b02ec1af304ff8dbd96ade0aad8af438dc3030f32d684f29c248c28c0f864dab9292127cb76142fb9e9fe67891f9d5e52ded72a6edb82
 Description: General-purpose software audio FSK modem
 Homepage: http://www.whence.com/minimodem/
+
+Package: minio
+Installed-Size: 117792
+Maintainer: @termux
+Architecture: x86_64
+Version: 2025.07.23.15.54.02
+Depends: resolv-conf
+Filename: pool/main/m/minio/minio_2025.07.23.15.54.02_x86_64.deb
+Size: 29722088
+MD5sum: b65fc183d7adf071d5026a96d7fabe4b
+SHA1: 1355934b1337c1eae96a067b5040282cea718284
+SHA256: 7bd6b044231092387a4d947b99fa41eb8414f4ee6a4e2574e2e957d822fb92b9
+SHA512: 3b9289e885c8965bb033131f7d07c8d83c2ac44f496a09dd7a6c663f6fcd6ff069e9f0c7159f7cabe72ce4499ee4bfed217940a88af506f2722ed5839c1ec40d
+Description: Multi-Cloud Object Storage
+Homepage: https://min.io/
 
 Package: minio
 Installed-Size: 117792
@@ -31267,6 +31330,21 @@ SHA256: 039b779c70ef02c5eda58cbf5ee3dcf57bd6a7df4e43315e0971897f1a0e3736
 SHA512: 759257ef5e69af9b27876cd694aba3fc2c02ea16bc0573b1e835170a66559327b4a118a2fe364eecefeea81cdb454bec870e3c826573f50cd9bb3b0da1d4caa1
 Description: Lightweight coroutines for in-process concurrent programming
 Homepage: https://github.com/python-greenlet/greenlet
+
+Package: python-grpcio
+Installed-Size: 10752
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.74.0
+Depends: abseil-cpp, c-ares, ca-certificates, libc++, libre2, openssl, python, zlib
+Filename: pool/main/p/python-grpcio/python-grpcio_1.74.0_x86_64.deb
+Size: 2509776
+MD5sum: ef580baaa999ad29ff1a999f1aff9940
+SHA1: 2935bc00ae909b7e848d014036f065ef338d8e44
+SHA256: 3734b7a63bde28a31dcc02965e546eabf573b56b9354cadc70979cce8037b5c4
+SHA512: 181973fcfb4381a120f167889759467805ed455dfb918c8a4c28edc47714337e051624f8941ac296651aee1627a3955341e3dba71d18810c930c684246abdd58
+Description: High performance, open source, general RPC framework that puts mobile and HTTP/2 first
+Homepage: https://grpc.io/
 
 Package: python-grpcio
 Installed-Size: 10188

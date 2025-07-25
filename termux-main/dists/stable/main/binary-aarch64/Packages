@@ -16575,21 +16575,6 @@ SHA512: f4a35b0b315923c476d887a801ff09ead82eb9c6cc4542264406803df2a97f0bf48ad498
 Description: A simple .INI file parser written in C
 Homepage: https://github.com/benhoyt/inih
 
-Package: libinih
-Installed-Size: 136
-Maintainer: @termux
-Architecture: aarch64
-Version: 60
-Depends: libc++
-Filename: pool/main/libi/libinih/libinih_60_aarch64.deb
-Size: 23432
-MD5sum: 7e2d6df471a9d344263af69e16ef2932
-SHA1: 1f0824515bdc690b8afc778db662e5f7c1033d0d
-SHA256: 7440e51c9024a2389993e8ffebb6e97329c55d2414cb0f5da71786966d932690
-SHA512: c10dfffd80b20e1209ece75c5f18bbf2e99f7a9cd26baa00b162d257d9068c4a9c1b221fe5baf6488b3baedc653358fc68b756293bb81f49629c168f226b3eb1
-Description: A simple .INI file parser written in C
-Homepage: https://github.com/benhoyt/inih
-
 Package: libiniparser
 Installed-Size: 140
 Maintainer: @termux
@@ -18550,21 +18535,6 @@ SHA512: 94ea1de5e869059fa7efb615f890fda3d962cb4dc0b17f0c50d909ea7ae8ae25a0040744
 Description: HTTP/3 library written in C
 Homepage: https://nghttp2.org/nghttp3/
 
-Package: libnghttp3
-Essential: yes
-Installed-Size: 312
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.10.1
-Filename: pool/main/libn/libnghttp3/libnghttp3_1.10.1_aarch64.deb
-Size: 64092
-MD5sum: ba2891755311afd427c5c81fb8286084
-SHA1: c290b455e31f4466495757e66ce9e71fbd2b49e2
-SHA256: bb19d6165f629dd9dc2618aba1918d12409d76b432d826222f59a258e92bc141
-SHA512: 72cf7dc0c0c470f645336f97240ac965478d2d13cb92dde3603d5cf52f7c58b1d8c22d26307149f755747064d774af8f9a6939df4caf145ffb400b1ee003f4f2
-Description: HTTP/3 library written in C
-Homepage: https://nghttp2.org/nghttp3/
-
 Package: libnghttp3-static
 Installed-Size: 328
 Maintainer: @termux
@@ -18577,21 +18547,6 @@ MD5sum: 533ccdef40b56c22b1860afd12d3db31
 SHA1: e04ad9cdede0a3535359a289cfc2c37bf5752df7
 SHA256: 67c1d7407c1a10b948f2eec6fc35d1c3c4a460c859731fdebf5563b4f1d3ff1d
 SHA512: be414cc44801d45042811bde4e2541de96ab931eaa334ad4f3250cbf0e8067becff4805732cae84eaa8bbf3d5bb64f05fe9b0969aa355673892af8d297db24de
-Description: Static libraries for libnghttp3
-Homepage: https://nghttp2.org/nghttp3/
-
-Package: libnghttp3-static
-Installed-Size: 320
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.10.1
-Depends: libnghttp3 (= 1.10.1)
-Filename: pool/main/libn/libnghttp3-static/libnghttp3-static_1.10.1_aarch64.deb
-Size: 60596
-MD5sum: 0b7ed46712247a8a6a387d411a747208
-SHA1: 3d4760e0beb97bfcb96f3f9629f397e0a5757bc3
-SHA256: 8765cb4fc15b67224869f7f3b89d047fefbec17d2e73c40517c62135be10b418
-SHA512: 605ab954540ca97a6a6f4313840109e793936b317d96111c330f15bfc2369bc1ffce687c8f09cca542a56ae953ca55df7e235fc38e97a8576cedc29cab855158
 Description: Static libraries for libnghttp3
 Homepage: https://nghttp2.org/nghttp3/
 
@@ -23802,6 +23757,22 @@ Package: llama-cpp
 Installed-Size: 47460
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b5994-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5994-0_aarch64.deb
+Size: 6552560
+MD5sum: e49cdc1701141173f331b3ee6264a050
+SHA1: d125cef73d44026518d71b69e0fc0937a7b19354
+SHA256: 32c4aea7a8c583f905e6b202437d51ab3507a91b9efd3cdeb4e17e01020bb7d9
+SHA512: 92b9ec72094aafa096382cb05c20b02532d5ae069cfd2a712e3e2d398cabec2e5e7fe3438515c0705fbab7005ffddfe1fb752a2d930167ab1cd3786d2d446f19
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 47460
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5989-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23814,20 +23785,21 @@ SHA512: 0ba98c7dc3227e88635bb30ee2878e3365b709607890bcccadb5a9a9e44b9e3504c136fc
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47460
+Package: llama-cpp-backend-opencl
+Installed-Size: 520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5985-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5985-0_aarch64.deb
-Size: 6549036
-MD5sum: ea60c96636edc4c7dfca0e9ee456d885
-SHA1: 2176078671b114ec0ce5d0b1241379823dbdc8cc
-SHA256: c1c552030fea2d869c2af4ca3f147420f8b42a7aaae392a6a701267992dcffa7
-SHA512: eaad4a6abf76e44775b4f193142415708943005cfd4088d21453eefeb00daa1a4b3cea651a29a8baf4ba34e26d621cfe6eec0aae670136a423287fb8f9e9b38b
-Description: LLM inference in C/C++
+Version: 0.0.0-b5994-0
+Depends: llama-cpp (= 0.0.0-b5994-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5994-0_aarch64.deb
+Size: 91340
+MD5sum: 92541fe4787be5e70d6facd6ed457f79
+SHA1: 7c824455c01ffb2719323281c9798a99f8ebb2a7
+SHA256: 0ff3b0d31632f27369af85a938af4964824a3ba52b977018ba2e8487a8cc48a2
+SHA512: c72aaa6585846d04d8050e75d5d69317b34835280a50f1f228ababbfad3b8ccf66c0523287862ea094499cd5ded60e7292478cbb429ca34759090d3b0370cf6f
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23847,21 +23819,21 @@ SHA512: 7f3e11b1f737bd2c19d880e67dd2e9d94050b595133fd27d24161cbf1ff8b416ead1cfe5
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 512
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13508
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5985-0
-Depends: llama-cpp (= 0.0.0-b5985-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5985-0_aarch64.deb
-Size: 89564
-MD5sum: 30c2f24b30fe03ca11942bd074c0a804
-SHA1: 33cef26121ab940e194d0f22b9ecfbac6681521c
-SHA256: cd18e17154153fdf3dce19d28c143ca57cf4dfbda6f17d589fe1ff621e0645b6
-SHA512: ea2c8104e16d0d2466fc17181af24c4982c0f93b8a711ed609efa54f8b2326619eb3249e2047fc1a953730e8af71764690e59cdc108d52ac8eb63967ebcc25db
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b5994-0
+Depends: llama-cpp (= 0.0.0-b5994-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5994-0_aarch64.deb
+Size: 1040836
+MD5sum: 4b5341f65ce686fcd51d0009f98b76d3
+SHA1: 3303742cbb094b60cf53eb91e289e4608f806fc2
+SHA256: 469dc633363d17e71ff7f71965dee34c4dd104d602a1428dc4549b17ebdef471
+SHA512: 4471968443f50b8c5d6985efa6b057573ac30b69c3f3d085bd02217a8ff64751793c1e5417769af79e05834ffca070026027e8541f3f9fceb2880d8ea7ab6be5
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23878,23 +23850,6 @@ MD5sum: aec010c00bd1ed62ab61b4498177cba3
 SHA1: 2a2be540220444796f00d95faf4821f9af5dd842
 SHA256: f9b21e1d5caaf23954b534c7a2edb589773644a19772f81a61ba339abdf1d966
 SHA512: cd9553e15346fe5d3e0d5d5cf32418908650566696ce62ad66d466a9b4876b7caac3d91d275d60a55380b8903b84b92ee76a0c844e3bc0ef416c05a2ec152662
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13508
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5985-0
-Depends: llama-cpp (= 0.0.0-b5985-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5985-0_aarch64.deb
-Size: 1038580
-MD5sum: 0d66e7e317de555440b3c1b1daf63824
-SHA1: 9e6e1a521a272fb07ef289e5dc75528f99e46fe6
-SHA256: 307027a8e48d27f8eb43cc7bd730a92104f35b90937214cfa211df7773d41dfb
-SHA512: 241bf4846994908f5ec0d8f54eae3536b2291b9d664643fc1200b496dedf37df213dfabb51ee79f02ff0202efd2d58d9534b6cf29cf0d120519a4e6a3271e9b8
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -33621,17 +33576,18 @@ Description: A cross-platform command-line tool for executing jobs in parallel
 Homepage: https://github.com/shenwei356/rush
 
 Package: rust
-Installed-Size: 264312
+Installed-Size: 158688
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.88.0
+Version: 1.88.0-1
 Depends: clang, libandroid-execinfo, libc++, libllvm (<< 21), lld, openssl, zlib, rust-std-aarch64-linux-android
-Filename: pool/main/r/rust/rust_1.88.0_aarch64.deb
-Size: 54467248
-MD5sum: c7b168f8654636c91a9a05ec94e89f21
-SHA1: 31f30ff272c2b11bcf020e3b0138e152b1a75b93
-SHA256: c00e71748f612d66aa8cc926e144d688d6dd49ad4fe0990cd8a3993a43fbf93c
-SHA512: f9ca1cfe4facb4118aad010d802cb49702ed210f4f060a5f77146ca91894657e352777843f67412c3d7ce8b343066179b5f727c270da7a3fc50c8ade385a633a
+Suggests: rust-analyzer
+Filename: pool/main/r/rust/rust_1.88.0-1_aarch64.deb
+Size: 34536692
+MD5sum: f840acd9f3bb4c181917140225cf7713
+SHA1: c4ac5ff8f91ffdae5b55b52beee3e56b9d1619cd
+SHA256: cce30cf0731704cc880e2a7d68c4c4f71199876843c9f5201fdfd874a8f591c8
+SHA512: 338be1b3cc12f3fe0a543de28d92a174817bc543c90d74378996e0c748562b9eb234afccf74774a3eb6bab90c62e6c3fb63a4fdb301b93a1dc04bcbe5a41f43a
 Description: Systems programming language focused on safety, speed and concurrency
 Homepage: https://www.rust-lang.org/
 
@@ -33665,16 +33621,16 @@ Description: Automatically generates Rust FFI bindings to C (and some C++) libra
 Homepage: https://github.com/rust-lang/rust-bindgen
 
 Package: rust-docs
-Installed-Size: 723136
+Installed-Size: 723140
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
-Filename: pool/main/r/rust-docs/rust-docs_1.88.0_all.deb
-Size: 31769096
-MD5sum: 1ed2acc658818fb16c657b530dab651f
-SHA1: e4b9468739d0f038d4e92eeae2d26946e98cf808
-SHA256: c8b875b0b395b3987efb4cf9f34c40c5be33e4b03f99196886a8e098877c791d
-SHA512: 205015208bd420e6fb6dbeba8f30ea72c847d22144a1273690a4191347dca29f4a85e5c5996909cb052d2354a419059863931e8569cc1cd99045c8b39c783c6e
+Version: 1.88.0-1
+Filename: pool/main/r/rust-docs/rust-docs_1.88.0-1_all.deb
+Size: 31769484
+MD5sum: 6d45e4b52ee708300ed162e5e70025a2
+SHA1: 42b4af6e98e972e4dc76f741920433b832de9c59
+SHA256: b2a127f9e730d33b9160bfcb574e843c7606f084a110120f52bd744209bbcd49
+SHA512: 51349d866c1f793d3ba62c6859563c639d8fd26b42eb691fcad1d9770f4b86e18ded27ab66b35b1a239fb5d42b43d4d855620cfa36bbc6ba82fa82628a75ce9e
 Description: Rust documentation
 Homepage: https://www.rust-lang.org/
 
@@ -33682,15 +33638,15 @@ Package: rust-src
 Installed-Size: 41108
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
+Version: 1.88.0-1
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-src/rust-src_1.88.0_all.deb
-Size: 3256316
-MD5sum: 5fd9ca5c2b6efd33f1bea8369de3d427
-SHA1: c7b6f6d7550aa18babd5ffbdf1443b7fb1cca189
-SHA256: 5bf6bdf79e65b3bf460d9f562209621c6940110e4bb58d67182ee741c5b5da61
-SHA512: 495bf1f555241956081bd1ab3c90bb879dec9efa56a9a345c554361bc62f35dfe85bb89ebcc669806b06e2549231796d7936caebd536a9bbf4852850ae4d73ba
+Filename: pool/main/r/rust-src/rust-src_1.88.0-1_all.deb
+Size: 3256064
+MD5sum: 6de7d53575a4663cc0c6c857f211d4e6
+SHA1: 091eb3d6f950111a401aa81c3c90cd0d3713e1f4
+SHA256: 8695e671189c069f34b30136584d152a97c55226176f85d03e91c1b8a69a3cea
+SHA512: 944ac6a2d8b4ec7400153853e51f83875fe36a089676a624b01f7b2b1da9254a80ff6cce613636a25b0bf2b07932b5ef2f8f03f92cb84c099fe71c4cac2e1c17
 Description: Rust source code files
 Homepage: https://www.rust-lang.org/
 
@@ -33698,15 +33654,15 @@ Package: rust-std-aarch64-linux-android
 Installed-Size: 104916
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
+Version: 1.88.0-1
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.88.0_all.deb
-Size: 24804464
-MD5sum: e62dc8e226523a5fb1bcdba7a160fac9
-SHA1: b64de04eb7bef392e8f169d72bc100c2715e10c8
-SHA256: ff4bbbf21e0a35050dedf0daa979681b955c58987b89ab5ed3133d46bffa11ea
-SHA512: 05412abfddd0649974320c301b3dae7b9b84b494f496a19145473a50daf77c36885fb0840b2296d6f26b2697c310216c82cdaf441e292331b6285caa04ce7e33
+Filename: pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.88.0-1_all.deb
+Size: 24772112
+MD5sum: e24781a4a862141b52ad9c6c968b46af
+SHA1: 774deb9aecd2881ae819f8d492aad65b905d113b
+SHA256: 0851892c12933716760d4afb3366694becc64fe6dfee8f0cdf9aa14fd23f84db
+SHA512: 2727ddcaba9ebe3dbf2e3184002dbd0033c48e80b2edea4bc952d5b5f2f9d0502bb11c3df063233e0e5ca3338043d631dd9796b86b140000ebf2baebeccb7708
 Description: Rust std for target aarch64-linux-android
 Homepage: https://www.rust-lang.org/
 
@@ -33714,15 +33670,15 @@ Package: rust-std-armv7-linux-androideabi
 Installed-Size: 98640
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
+Version: 1.88.0-1
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-armv7-linux-androideabi/rust-std-armv7-linux-androideabi_1.88.0_all.deb
-Size: 24054148
-MD5sum: 6f5ab3461b6e973558504d3a856118f7
-SHA1: cbb30a648f91382a1bf06dd17c44a701fd153b97
-SHA256: b01190129f67d8131985cb52b5369259f1b5eb86c41c77c811cdc6cc610eaf9c
-SHA512: c26f8913cb1ef3b46ca8bd0fba54f065114f571ab7da2febc0c4cb3d8f88379279053d713accf217a9ce4dbe4b8c5ceb1333e17ca00152de0944b01917049d02
+Filename: pool/main/r/rust-std-armv7-linux-androideabi/rust-std-armv7-linux-androideabi_1.88.0-1_all.deb
+Size: 24031752
+MD5sum: a3de6ef38acd51713399f67e7a12ad01
+SHA1: 9fc0a6dc4813e8779aaba4f8f0bc8bf2b00460ab
+SHA256: 54e1568b2dcca28a197eead472490e4a8a844104237b9ff621f560100bfacf24
+SHA512: d41cda84e1f59284e6a5f7e4f74091920363b97b6c05ab240612805ea361164ee9b1877afcd68731734fce481425a558606b717ac725fa9d5bba9f770ca12a51
 Description: Rust std for target armv7-linux-androideabi
 Homepage: https://www.rust-lang.org/
 
@@ -33730,15 +33686,15 @@ Package: rust-std-i686-linux-android
 Installed-Size: 110252
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
+Version: 1.88.0-1
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-i686-linux-android/rust-std-i686-linux-android_1.88.0_all.deb
-Size: 25576156
-MD5sum: ba9d60ab2924fd5d03dd08c0313d8bed
-SHA1: 460f7a2e908026a0b0bced24a372c129ad894b87
-SHA256: 0e4682f1a152aea2a3d2f474f021119106cfefbdb3bb57a4d6970eda9ac22af6
-SHA512: 48be5dfcf95579ddb093668f09eb5d28aa50706d39c70be9853698a969b921a72f8f5084445d7248950ec702cb0d82994abd1514ce8a3d683c64711e2194e74d
+Filename: pool/main/r/rust-std-i686-linux-android/rust-std-i686-linux-android_1.88.0-1_all.deb
+Size: 25598808
+MD5sum: fe7cffa46076ea85e11446af1e8ab37a
+SHA1: 21ae5f2d263f933618b92eb8a1a7d74d0f18494a
+SHA256: a51f146bcded66fbda0c55537b84c4be7598093eebbeb41268e9e10ea9f89a16
+SHA512: 7191dbe6e68c9287a81c83df82ab44a4a0ff1947974eb343b48bb9ff5b9d3757881211727922fe9a0e3bd36dc7caec3d06c41c529222955a110fa09867c740ae
 Description: Rust std for target i686-linux-android
 Homepage: https://www.rust-lang.org/
 
@@ -33746,15 +33702,15 @@ Package: rust-std-wasm32-unknown-unknown
 Installed-Size: 76404
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
+Version: 1.88.0-1
 Replaces: rust-std-wasm32 (<< 1.74.1-1)
 Breaks: rust-std-wasm32 (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-wasm32-unknown-unknown/rust-std-wasm32-unknown-unknown_1.88.0_all.deb
-Size: 18863448
-MD5sum: 13a0d5283e5b7b1e2e0c1c2b6de73e78
-SHA1: 3a128087a72081ab921eae27da35d5ad7dce7989
-SHA256: e01c36c22fa3a8df15638ef91f7d5a9025847c05de90272906495779385cefd2
-SHA512: 6a14db7853306bdbbb4e5e3af256df66fc643d279b3a4508efd8fbbbaf54e48596c70b991cf764a7090399b68a7400559c30ccddab851ce488cb19407a99fc8b
+Filename: pool/main/r/rust-std-wasm32-unknown-unknown/rust-std-wasm32-unknown-unknown_1.88.0-1_all.deb
+Size: 18882960
+MD5sum: b63e918ec965740c80a585c7fd2ed95e
+SHA1: 9f5d04e80afa8f2469e1187d3e7fe5125dc44746
+SHA256: cbff8692beaa684ab8da5f08826cf3b15fb66db00a545010af247027a89bcc8f
+SHA512: cafc823fb9d6153392d51997f9785043ff658453e935744dd41d9eba7ca6a8d42023d7791968eef49cdf1bf0307ab7c09235566a22ea8912c0e8b6f693c87232
 Description: Rust std for target wasm32-unknown-unknown
 Homepage: https://www.rust-lang.org/
 
@@ -33762,13 +33718,13 @@ Package: rust-std-wasm32-wasip1
 Installed-Size: 80296
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
-Filename: pool/main/r/rust-std-wasm32-wasip1/rust-std-wasm32-wasip1_1.88.0_all.deb
-Size: 19883368
-MD5sum: 3998c425e0b7cad96aee6a8f3111143e
-SHA1: c954a45760f933519df0ab203963891e6e04ca0e
-SHA256: 83b281f60042bfea269ead934e96a56ec7b13d53ee456488345e8a4575221581
-SHA512: 607683f5827d36c874b2d43f97a7760caeaa563b6934f10117c31d3fac5f09a466ba14957f9eabd4f589b128417bbeeb395e1c2ca426590b0fd66a9c187c13a3
+Version: 1.88.0-1
+Filename: pool/main/r/rust-std-wasm32-wasip1/rust-std-wasm32-wasip1_1.88.0-1_all.deb
+Size: 19906596
+MD5sum: 98fac20d619912cdcee2091b1ea874a8
+SHA1: f9a8cbb83ddf7d7f348c07d04b2c13842d155cd2
+SHA256: 057ed90c4a6bd2fed71f5c29ef0a237aa28d633704eaaa009b4e5f9d1e569faf
+SHA512: 161187d27e6cee9a38614bfd00e2183efa365aa1492ce18914ad23ec1b3c80cd5a1d7f524d72221bb2677d3da098c3bd71010c899b6fcaa022b3318ebaf92687
 Description: Rust std for target wasm32-wasip1
 Homepage: https://www.rust-lang.org/
 
@@ -33776,13 +33732,13 @@ Package: rust-std-wasm32-wasip2
 Installed-Size: 80992
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
-Filename: pool/main/r/rust-std-wasm32-wasip2/rust-std-wasm32-wasip2_1.88.0_all.deb
-Size: 20047456
-MD5sum: c2382bff1d716df19c8fdce9e88f61b5
-SHA1: 6e3e4085a01ed40c48431f36f22f39831bb52070
-SHA256: 109687cc7117b1f3fd03f97d2d3c7f67ed8d7444358a9d3b6579b7a35d871652
-SHA512: ae6113982034342f6ead74c56b14584b1e22f4654b6b75859d58918eadd405ddd850c383101b475454a8d126bd3545755e58d826936aeff44de0821208d41b87
+Version: 1.88.0-1
+Filename: pool/main/r/rust-std-wasm32-wasip2/rust-std-wasm32-wasip2_1.88.0-1_all.deb
+Size: 20053144
+MD5sum: 3659f37302b297b05b01ad9c24a720c6
+SHA1: 55875b9e8b3da632fcb0fad111c1a5289581518d
+SHA256: df55afacba24594f497344c9410c7cc141232249f7bf06e97b31d486d6fc2c2e
+SHA512: 8b3bea4a0b304fb0ad67777d6ba23b9bdab5d85d713f5271234867a544f8924d00c85cd64faab3d42dcb80d3b0cf392691a8d9f094e67083f55b60f9cdbf5b5f
 Description: Rust std for target wasm32-wasip2
 Homepage: https://www.rust-lang.org/
 
@@ -33790,15 +33746,15 @@ Package: rust-std-x86-64-linux-android
 Installed-Size: 121252
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
+Version: 1.88.0-1
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-x86-64-linux-android/rust-std-x86-64-linux-android_1.88.0_all.deb
-Size: 27179468
-MD5sum: 1e91448a6e9c0d0443c48fa937d9dad6
-SHA1: 3050e4c8e1c85f2d0f6ced305a216357c2207ea7
-SHA256: 96834c5d90f8ab5efa5811ade288b5aae0904b4a785fedb8055c2eb9924545f4
-SHA512: 8b1c3284ada3069be088becf788e6ab3c1e6d31b475943b033fc2b28999c267acba17ad8542af699c813b1ba837f5e1d75875e4e7e20dd67df51627b1559308f
+Filename: pool/main/r/rust-std-x86-64-linux-android/rust-std-x86-64-linux-android_1.88.0-1_all.deb
+Size: 27127032
+MD5sum: 056184cb9b187c1b9e7752e9364059c6
+SHA1: d5845ba348122c9c85889a4d1f10beba99f63cd4
+SHA256: a924b6f24dd75df9d24df4bc52aa7f32d8313770cdc2cbf1c4da4ba960ded699
+SHA512: e7e6c34c4d0b1a89a0e3b9af752f9ec31b0ef86525d0df7e1e0b4f78eaf5ec83aaa17634933a02a76de9f8836788cd5c2d9b13dbc3fc4d3ecff004576ad005a8
 Description: Rust std for target x86_64-linux-android
 Homepage: https://www.rust-lang.org/
 
@@ -33806,15 +33762,15 @@ Package: rustc-dev
 Installed-Size: 264876
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.88.0
+Version: 1.88.0-1
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rustc-dev/rustc-dev_1.88.0_aarch64.deb
-Size: 66789120
-MD5sum: ea69289e923a424cb72f02df15407f0e
-SHA1: 8ba1b8d5bc50431aae5c676d7482bc7f5d9899ee
-SHA256: 7982bdb3be3b3f01273dd9ca9451b16ccf6514c19e64dc91de339b465e3fbf58
-SHA512: 200c12313615deb2c0338ce53eca768168d725842eef675e47437788d7cfd4f145569a4b28ba59e149537fed4cc1e3473ccb01593dc71af2620afbf9da0b547d
+Filename: pool/main/r/rustc-dev/rustc-dev_1.88.0-1_aarch64.deb
+Size: 66749632
+MD5sum: c557a22f12e5c014886bcba087c53a27
+SHA1: 3153795b6010c49ecd4a6a899264464884170e9c
+SHA256: 22e1d022ad84c9d91f6f05b837dc4a238c2685b12849ce14889bcacb0bf4a5a5
+SHA512: 84ffc1396b03990fa3beca97f9d3d7ffc8306b1c5c9aa0336364e9c2a60df9fd10f590c90eb8aaa97f8a49f0441249b45b57e9381f010f05e0eebdf7336a9259
 Description: Rust compiler development libs
 Homepage: https://www.rust-lang.org/
 
@@ -33822,15 +33778,15 @@ Package: rustc-src
 Installed-Size: 38892
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0
+Version: 1.88.0-1
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rustc-src/rustc-src_1.88.0_all.deb
-Size: 4948536
-MD5sum: 5caf58e1d8233dd0ed9388ab03c6efa6
-SHA1: 70cb940d2052dc60cbd8bdeffbf61430b4ee6821
-SHA256: 79a9ef10b063cd738374a14328f520382b0d184f2c5e782714ae36ac273a2402
-SHA512: 41923865e6605bdf9bd0d5301e594f52bc039a914c7e9a0b67ae229578532612187c486774ae6cffaa9cdd2fee513feb4a6dc260f6552214e5a8624026476a71
+Filename: pool/main/r/rustc-src/rustc-src_1.88.0-1_all.deb
+Size: 4948672
+MD5sum: 1e2b6f4a6e533535c6d6db61582ebca5
+SHA1: 6421941973df809f09f9a79250eb44694b8d9427
+SHA256: 085a8c860358d781fce6d5effc5792d914e33c9717d76ee226fdf8511cc5267f
+SHA512: 815b6d8d60149bebb025b6e26f3679f33d1322f7b6f2b4eed74c574c4da9d6a9236ec20b6bd6c8505a9162da36274a41ad71b53b3a90743535d06dba70877cc9
 Description: Rust compiler source code files
 Homepage: https://www.rust-lang.org/
 
@@ -38582,21 +38538,6 @@ MD5sum: 6c5b48ff36ff2f7b36ca60701a818438
 SHA1: 835ced14cb64308a301ab732980cc4f18dfdf13a
 SHA256: e7428f55eac50fa5e4ba47e930f27dae527eea80321017062ccec4ec9171f56e
 SHA512: 4bb86afa9d5cdcfcce158eade741208ec53ad00d7d30f4f099e0211fb6aa0d50ae2cba951a911c1ff78b49f15fff77d162f3b91755b08fe672051ddae7293871
-Description: Tool for extracting files from .rar archives
-Homepage: https://www.rarlab.com/
-
-Package: unrar
-Installed-Size: 468
-Maintainer: @termux
-Architecture: aarch64
-Version: 7.1.8
-Depends: libandroid-support, libc++
-Filename: pool/main/u/unrar/unrar_7.1.8_aarch64.deb
-Size: 163300
-MD5sum: bf67d3977fcd54a24e4e44d916ccbfe1
-SHA1: 0057c53f28bda2798d88d606514d89bb915a61c2
-SHA256: a1e8bfcae9595f832284e95e0a82828d4a0b4f484aa47b93db38a89fb20eca48
-SHA512: f5dae84a00bb348f6ca713e3a21cd64c645819724a73ecd5913ebabf3d209c303ff13d3374cd9f7dcd8d07e5e5ce6bf447597f6af40b634370485b2b05dba4c9
 Description: Tool for extracting files from .rar archives
 Homepage: https://www.rarlab.com/
 

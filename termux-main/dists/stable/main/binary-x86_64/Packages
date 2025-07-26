@@ -2825,6 +2825,24 @@ Description: A program to extract Microsoft cabinet (.CAB) files
 Homepage: https://www.cabextract.org.uk/
 
 Package: cabin
+Installed-Size: 3160
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.13.0
+Replaces: poac
+Depends: fmt, libc++, libcurl, libgit2, libspdlog, libtbb
+Suggests: clang, make, pkg-config
+Conflicts: poac
+Filename: pool/main/c/cabin/cabin_0.13.0_x86_64.deb
+Size: 527500
+MD5sum: e5940768019457b3fd8d865d503cd6b5
+SHA1: fc6f4ad119029ab5ef8ee1cff225181ef3d5cfde
+SHA256: beaf7929b06a7b435fd431482e8f4f4a2753e8fed798aa7effea6678edc18a45
+SHA512: 326bf4799fbea92177cac71841003f8c100a28b027bc9993b329458e0c945b195ddaaa5f432ff7c161305c1b658d6b559bb52ee80b480014ee48c1bd2ed48d49
+Description: A package manager and build system for C++
+Homepage: https://github.com/cabinpkg/cabin
+
+Package: cabin
 Installed-Size: 1552
 Maintainer: @termux
 Architecture: x86_64
@@ -6636,6 +6654,21 @@ SHA256: 8f686ba827f85cb82ce8a9c42e96e5899e36d29c65e725bc7f2c6621e25fe826
 SHA512: 4c0d33a8ece450ab546d7f86db7989e8d60502f1fefa95c7effb3c09e6ffeeb48514c2421f4e4e1ec6483edee288533d8a0371400231d712ba838a0208fc3e7c
 Description: Open source xHE-AAC encoder
 Homepage: https://gitlab.com/ecodis/exhale
+
+Package: exiftool
+Installed-Size: 17396
+Maintainer: @termux
+Architecture: all
+Version: 13.33
+Depends: perl
+Filename: pool/main/e/exiftool/exiftool_13.33_all.deb
+Size: 3643720
+MD5sum: 0f6017aedfdb18eeaea1285af797a180
+SHA1: 89293b5f0e2e62d265f7e8c3c517fe67048f638a
+SHA256: f9586ec1efb1cb3f3d8d608a7f88c2cba283dbd154f59307fdd4f0f64fd86877
+SHA512: cbdac6056627028c5a4fe385c28b5905cf7abf0e3d05889535289d7994aa83d1738a6d3e66899207edce9b0d8a2fdd1fdab0b9b5930a0e17f31903d5d9bf0f4c
+Description: Utility for reading, writing and editing meta information in a wide variety of files.
+Homepage: https://exiftool.org/
 
 Package: exiftool
 Installed-Size: 17360
@@ -23753,22 +23786,6 @@ SHA512: 8f27d1d6080888d6fa15fb88c1d3e461b71e6cd02d95dca0af32b1efedfd7961e9ef190a
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51168
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5989-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5989-0_x86_64.deb
-Size: 7026228
-MD5sum: 658cc3808585733819873336ee0adcdf
-SHA1: a3714bbae9ef4fc3382882064d2e7ccbd6d4866d
-SHA256: 52a3ee02028b49ecfcdcdd8579997f9ac4db87f092ecdd247d17c6c0c0cace03
-SHA512: c5f80955a974d5f57459b711a3038f0d90738eb89cfdada004b8d4753df67a2fb4ceb087a2faf46b0e6708a4bfb0bacf395434cef98efca7af902f29e7f73efe
-Description: LLM inference in C/C++
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-opencl
 Installed-Size: 548
 Maintainer: @termux
@@ -23786,23 +23803,6 @@ SHA512: 4075679632c4eefa29215615747b6fdbaf9c888690cdc7c0d690767280db56b844f3eca5
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 540
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5989-0
-Depends: llama-cpp (= 0.0.0-b5989-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5989-0_x86_64.deb
-Size: 98424
-MD5sum: 711a1bfbbc9d28904678948c6c3f3658
-SHA1: c63ed32ab56fc6c5406f00c0ea678295971b9d82
-SHA256: c203fd4be51659892a4e6ed1d48936b780aed07d0a97782cfa943fd191468d0e
-SHA512: 53aa4899634eb220c3f83cc06dd5da66ca84a22f57f70f4afb928130f46ba26b78d605f866e9e1595e46fd4abd1d361d018a536102143d3c0decc5a1b326e9bc
-Description: OpenCL Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-vulkan
 Installed-Size: 13776
 Maintainer: @termux
@@ -23817,23 +23817,6 @@ MD5sum: cc9c979cff81718f46667662e3368f5a
 SHA1: 974d68221dede9fff135dd8028d7ad547118efd2
 SHA256: 9dc9fa5d4415c216bf7bc783a59d7ea4d35191bdc650a257da00892992248bf7
 SHA512: 4b791137f0851b6c544d7093860f2eefc349376a2bafb1430d969bd39ef43ca5cfdc664cd0a6becb2fbe8e6748b161cde0145ad7ac7fc3d229486c73edd7f421
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13776
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b5989-0
-Depends: llama-cpp (= 0.0.0-b5989-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5989-0_x86_64.deb
-Size: 1086356
-MD5sum: b76b091269f40ea9a6b3dae3f6756c9a
-SHA1: 13c4a431a2c4e5053cbdbde6a5048c8c0446285a
-SHA256: ffc20ce01d84676563b48eb4fa106351d5bb92e89885c6f3b9056a98c778f643
-SHA512: be1b415c41f2ad8c866b89851b8c1161249fffa4d37a5e2edcb03ed6ea44fe33562fb63ac7c1f6e0c9889fec73db9a28b23107075bcbf5fe65af52dad9c47662
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -36525,6 +36508,20 @@ Description: Telegram messenger CLI
 Homepage: https://github.com/vysheng/tg
 
 Package: teleport-tsh
+Installed-Size: 129376
+Maintainer: @termux
+Architecture: x86_64
+Version: 18.1.0
+Filename: pool/main/t/teleport-tsh/teleport-tsh_18.1.0_x86_64.deb
+Size: 23448084
+MD5sum: c66ee73cbac4efc395e0f205ea52da90
+SHA1: 133017055d5decbd57ddd99e78a6a3f86ba597fe
+SHA256: 40cacb2044c7d7ab2374acb7e3fbcaee23f4b8d668f77b7632c235d1586cfe58
+SHA512: 366131b2404fd223f5c7a5e5df4c8d951be5bcc22a9a1ab1b47bf0b82ee522aef04064b36bd0940c6dd1f62a0e187c2fb3fac1909ef99eb79e5692ded20dc5e1
+Description: Secure Access for Developers that doesn't get in the way
+Homepage: https://github.com/gravitational/teleport
+
+Package: teleport-tsh
 Installed-Size: 124152
 Maintainer: @termux
 Architecture: x86_64
@@ -39423,6 +39420,21 @@ SHA256: 846ea47a629ff7f6a90f2a10a8b0f4749801632e2ee8ac2d0ed2aa2ddb9a85ee
 SHA512: 1d856a47927310218ad9d557f2c5acc3f63a7fdadf78802c3488e80a9a881369255396e6bdc42dd45a4c490bf513777f17d0e2e7a6e7b2fada3b4005277616bc
 Description: Vulkan Loader
 Homepage: https://github.com/KhronosGroup/Vulkan-Loader
+
+Package: vulkan-tools
+Installed-Size: 2200
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.4.323
+Depends: libc++, libwayland, libx11, libxcb, vulkan-loader
+Filename: pool/main/v/vulkan-tools/vulkan-tools_1.4.323_x86_64.deb
+Size: 393368
+MD5sum: 2dea83e378462cb6dacd119b5835728a
+SHA1: b75a352abcc7508555d81630227a86aec216d75f
+SHA256: 260fd06081686b178942c2e7ce15b29bf4258ba3fe66185fd5eb46bc158e3bf5
+SHA512: e9171103e9dc8de64e63924ac01dd1a7415990c7740a923985e7092613ba34cd1306fe3fe7d74af1526c14666535ad08d47fa2ec5d7146d132924262a7d75405
+Description: Vulkan Tools and Utilities
+Homepage: https://github.com/KhronosGroup/Vulkan-Tools
 
 Package: vulkan-tools
 Installed-Size: 2204

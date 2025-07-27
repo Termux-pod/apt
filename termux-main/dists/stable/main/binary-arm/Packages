@@ -3824,21 +3824,6 @@ SHA512: b513e820446ab0bdf7234a04600f90b1ed9cf31ed4d2bc8ff1968b76130ca8882abe502b
 Description: Suggest installation of packages in interactive shell sessions
 Homepage: https://github.com/termux/command-not-found
 
-Package: command-not-found
-Installed-Size: 340
-Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
-Architecture: arm
-Version: 3.1-4
-Depends: libc++
-Filename: pool/main/c/command-not-found/command-not-found_3.1-4_arm.deb
-Size: 86892
-MD5sum: f6948c7bb36eb81818e1fcc8818a2aaa
-SHA1: 98c37cf75c1f61ae60d543c98fe4a65a9c232f27
-SHA256: fb7d45aa20aa618061eece918ac69f6cf302f592bb518b312343b7e163a0918c
-SHA512: bb14ed1901cbaae98ca083baa1cce9cfbafe8a25f62acb04b86614f1db572eab1dc238034cec61efb252f812ce86bea73b556c7e5f1b450c21d7ea0ab6a7699f
-Description: Suggest installation of packages in interactive shell sessions
-Homepage: https://github.com/termux/command-not-found
-
 Package: composer
 Installed-Size: 3088
 Maintainer: @termux
@@ -7237,6 +7222,22 @@ Description: Interactive JSON viewer on your terminal
 Homepage: https://github.com/antonmedv/fx
 
 Package: fzf
+Installed-Size: 4500
+Maintainer: @termux
+Architecture: arm
+Version: 0.65.0
+Depends: bash, findutils, ncurses-utils
+Suggests: tmux
+Filename: pool/main/f/fzf/fzf_0.65.0_arm.deb
+Size: 1296892
+MD5sum: 6683261f788aa86eff823b2c0dfd30a0
+SHA1: 36d98127b8c72457d53c272736937c44f23bbfbe
+SHA256: 41215009688b92d19e2dd7eb1a793853f3d95ec4fe7de0f42597fab8afa4f05d
+SHA512: c43bd2c5311b8dca41b91161deb936f2fdbab010e3303fda1cf9a5374c17b7b7deaef20bc897912eb7d294dacd5770ec563710325e6ca7b81a533d5adc97b7f4
+Description: Command-line fuzzy finder
+Homepage: https://junegunn.github.io/fzf/
+
+Package: fzf
 Installed-Size: 4484
 Maintainer: @termux
 Architecture: arm
@@ -9671,23 +9672,6 @@ SHA512: 7dc0d599ecbd69089a06bf50e109f67d80bcaebacc3e72cd1905df6002913ac5f909ded6
 Description: OpenType text shaping engine
 Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
 
-Package: harfbuzz
-Installed-Size: 3520
-Maintainer: @termux
-Architecture: arm
-Version: 11.3.2
-Replaces: harfbuzz-dev
-Depends: freetype, glib, libcairo, libgraphite
-Breaks: harfbuzz-dev
-Filename: pool/main/h/harfbuzz/harfbuzz_11.3.2_arm.deb
-Size: 649064
-MD5sum: 9136fac923048f360f88c64dbc0ed02e
-SHA1: 410f8762b03e3ec92e17e2738b0addae1a2acdc5
-SHA256: c124d0ea3f648efb52f60f0217cd15679831d3feae071493a125ed79821356e9
-SHA512: df0d038e2ef746e4bc8b8387cba3e97b45587244b63fa7ce749218a7f7ff3609705100cf17be93e14041c92f88830f61c2ec1dbf9bd7ec713218cbbd36f11582
-Description: OpenType text shaping engine
-Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
-
 Package: harfbuzz-icu
 Installed-Size: 56
 Maintainer: @termux
@@ -9705,23 +9689,6 @@ SHA512: 96ac140de927430a22c4d2d21584962dbbd4420f4f5123b0d5023d05d0c6e0b44f658583
 Description: OpenType text shaping engine ICU backend
 Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
 
-Package: harfbuzz-icu
-Installed-Size: 56
-Maintainer: @termux
-Architecture: arm
-Version: 11.3.2
-Replaces: harfbuzz (<< 7.0.0)
-Depends: libicu, harfbuzz (= 11.3.2)
-Breaks: harfbuzz (<< 7.0.0)
-Filename: pool/main/h/harfbuzz-icu/harfbuzz-icu_11.3.2_arm.deb
-Size: 4084
-MD5sum: df57652cdcf25cdf7d6cfdefc19970af
-SHA1: 78bdaeda7134e3ed3bc2c172258e7982273eff8c
-SHA256: cfb33d381c5b6162af5d30e32a54afb8c15e831b9db97a9d6332da0312dcfa23
-SHA512: 5521d5221fc2d9bf9d3c923655a28266ceca2accd6bded41ccb2f859159a906db9a0794110640b36022c8b8fb363d89547dec02ffdd8b126ce67636e4f8dd6c0
-Description: OpenType text shaping engine ICU backend
-Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
-
 Package: harfbuzz-utils
 Installed-Size: 208
 Maintainer: @termux
@@ -9734,21 +9701,6 @@ MD5sum: 1781fad61dc5efeb91a8349500d09605
 SHA1: 7dc4e67885afbdabdb7a21e66a2f73d9db28289d
 SHA256: b849dc8ef919c1b12e4f9c45e30747688bdc2be6a98e9fb523c4957ea79449aa
 SHA512: c88a2e1b9a5745c6bd328ebc3eb65c9a8a5930a272c0baa0567a916b0315c719b3a440238c8e28332c04cabcf5ae7dceb07d0defa50b045f1305330697b915cd
-Description: Tools using the harfbuzz library
-Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
-
-Package: harfbuzz-utils
-Installed-Size: 208
-Maintainer: @termux
-Architecture: arm
-Version: 11.3.2
-Depends: harfbuzz (= 11.3.2)
-Filename: pool/main/h/harfbuzz-utils/harfbuzz-utils_11.3.2_arm.deb
-Size: 51556
-MD5sum: 0f64e323c7b09640373cc5ed344e642c
-SHA1: 7cc259195a1bfd4eba29aea12781f6cf68d3d38b
-SHA256: 25953118c25f6c748bc387d039284333cb3f90011133f88781b479fe3f7f19a7
-SHA512: d0fed7a7931fbc761d7fd12cb407e2de4166a4ca4551026e4e740bb71637a9c1032114da712bd58e3c24c0cbf868931efecc5d0e75b419ba7731b2b9cdfd111c
 Description: Tools using the harfbuzz library
 Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
 
@@ -24923,20 +24875,6 @@ SHA512: 5b6a71d42e4dabc6062beab624882d868382e30a64ce3dd6f0678c3513f2f798a5d308fd
 Description: A minimalist and opinionated feed reader
 Homepage: https://miniflux.app/
 
-Package: miniflux
-Installed-Size: 20144
-Maintainer: @termux
-Architecture: arm
-Version: 2.2.10
-Filename: pool/main/m/miniflux/miniflux_2.2.10_arm.deb
-Size: 5316948
-MD5sum: 86bf6c6057a189350f022923d95ae64c
-SHA1: 86fe7babf7c31867b273a60c5e77044ffd18e609
-SHA256: 5ebeafa5f51f41bc8a8992865d4eb04999d61d7dbb11ef65e91daa1b23f44ee7
-SHA512: bb481bc19db92a492fe67c5fc8fc353e730e87559ebc8dbdf1cd44fff69541cd565f775155a45d129e3f038d10068fb099000db23140cdc6bd2b79ebabead149
-Description: A minimalist and opinionated feed reader
-Homepage: https://miniflux.app/
-
 Package: minimodem
 Installed-Size: 84
 Maintainer: @termux
@@ -30021,20 +29959,6 @@ MD5sum: 5bd10b6074ddd68634e3dc6f18b82fa6
 SHA1: b438167018c026d184240cad398f6e1c27c9eaec
 SHA256: c15cfaf7b4aad9e27ff8552298eaaf0458b18036caa3335706077e8de62fcc7b
 SHA512: 01e62c11462fbacd213ea98b8e3590f5d5c37ad02a465075d0ca250300a43c20de91dc7067d8910d2c86929eef69a23bd6b4f91f69c8a8f6895bdfdff038c775
-Description: Terminal-based tool for monitoring the progress of data through a pipeline
-Homepage: https://www.ivarch.com/programs/pv.shtml
-
-Package: pv
-Installed-Size: 484
-Maintainer: @termux
-Architecture: arm
-Version: 1.9.31
-Filename: pool/main/p/pv/pv_1.9.31_arm.deb
-Size: 212676
-MD5sum: 1be4ba4105f525fb69da48cb390e685f
-SHA1: d21b6fc2e87cfa256e43a6656e5140892739dc8f
-SHA256: f6b10deeeadfa2a5a2dd6f6918c1f84c6bf3de9a9749fd736c19831a2805936f
-SHA512: 429b349f2f03f5d1ab0391a94b3a72f5ba6e8fdc487af5715a0f423ff4b70f42cecd811e9dfbb64c9090ccd68588a054afe915d97b097fefb4861180cf05da23
 Description: Terminal-based tool for monitoring the progress of data through a pipeline
 Homepage: https://www.ivarch.com/programs/pv.shtml
 
@@ -38250,6 +38174,21 @@ Package: vtm
 Installed-Size: 4008
 Maintainer: @termux
 Architecture: arm
+Version: 2025.07.27
+Depends: libc++
+Filename: pool/main/v/vtm/vtm_2025.07.27_arm.deb
+Size: 1126544
+MD5sum: cd87cac832663d8fadb115a8630fa75b
+SHA1: b9098853c8b9faec724e4a6460ca6bf7da9e18a6
+SHA256: ac49491986179745222ced3d686f48ab65aaaf7289c5e485739b47321685262a
+SHA512: f1fa729a7d18ba496f34e678294c42b09c5fb3f9aaa025a589923562580990755794221eb8e17d13e5341a0d48d0357b474ffe4b438bf6341bd9c28a27871fda
+Description: Terminal multiplexer with TUI window manager and multi-party session sharing
+Homepage: https://github.com/directvt/vtm
+
+Package: vtm
+Installed-Size: 4008
+Maintainer: @termux
+Architecture: arm
 Version: 2025.07.26
 Depends: libc++
 Filename: pool/main/v/vtm/vtm_2025.07.26_arm.deb
@@ -38483,6 +38422,20 @@ SHA256: 85341eff1e99ebf990f0169cc5b234d79fcefb9754a2b7757fc2b1d1707dc7bb
 SHA512: 85380da378fe6d3818f799a4db7144acde89b7bd51087dea354814868f2f7837ce909c91978a9efa47c37a8506291aa65f81d2263f3d292623a460f3aca669d6
 Description: The WebAssembly Binary Toolkit
 Homepage: https://github.com/WebAssembly/wabt
+
+Package: wakatime-cli
+Installed-Size: 14352
+Maintainer: @termux
+Architecture: arm
+Version: 1.125.1
+Filename: pool/main/w/wakatime-cli/wakatime-cli_1.125.1_arm.deb
+Size: 3664864
+MD5sum: 5f4bcf784fd7fea0fc7ceee2289ac436
+SHA1: cbfa9f8154f8c9c942247e44a75ade1bbfd23a51
+SHA256: a2eb0ea66e27be9643f34e5f947f85c50d18331668c04cf8d918cda92a96b075
+SHA512: 6387896ea68fe2c2abf506d4626357b7ead1bf13aed18683506210ac49a447ca692befe0c93fdcedd9d897d544cf2106266a51be7178d8f59a2f75f215bf3aaf
+Description: Command line interface used by all WakaTime text editor plugins
+Homepage: https://wakatime.com/plugins/
 
 Package: wakatime-cli
 Installed-Size: 14352

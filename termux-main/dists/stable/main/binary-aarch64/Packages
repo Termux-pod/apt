@@ -7794,22 +7794,6 @@ SHA512: 2a40c6b0ac358dbe78dd5f4a084f47f55107ec313e6efd537e7c1db940f318f9d7319365
 Description: Command-line fuzzy finder
 Homepage: https://junegunn.github.io/fzf/
 
-Package: fzf
-Installed-Size: 4836
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.64.0
-Depends: bash, findutils, ncurses-utils
-Suggests: tmux
-Filename: pool/main/f/fzf/fzf_0.64.0_aarch64.deb
-Size: 1285568
-MD5sum: af341be3b619c2d8bcb071eea4243063
-SHA1: d7afa673435ed2800360d40822f0e6fce37a8701
-SHA256: ae6a54205b5b6860ad1f64b54ab702f1eb1101dbfdfcecf2222e81707f182545
-SHA512: c88316abf6e5e0eab50046beafd6a9a4ee3a97e545a7574329e3c3ecca3faa28d67f19ffe7623fdb5ca3a68799f839d26b0e475b2d42676a5db36de62e6794e3
-Description: Command-line fuzzy finder
-Homepage: https://junegunn.github.io/fzf/
-
 Package: fzy
 Installed-Size: 92
 Maintainer: Krishna Kanhaiya @kcubeterm
@@ -11670,21 +11654,6 @@ MD5sum: b2c926e48216d93b6054307307f92214
 SHA1: 9088493cf480489678d15f966b9f18a8f8c22cdd
 SHA256: 203c3c76fea45edefa33bf816d0e045a63d440e43d67cb9c7d65e0b2e84bd3d8
 SHA512: 08570a73a0aaff506d8742127c0aa227cf1df8d2af4921e5599825b248eeb2d8f00a307188982feb2556421d2c01197c562fca90ab978027c58476697062e1f4
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
-Package: jackett
-Installed-Size: 14256
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.22.2196
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2196_aarch64.deb
-Size: 3179600
-MD5sum: 868a45c97a6b2c5169abd1a0b224eb79
-SHA1: 8d12d4b6fe54c978cb213c3ac86c6b44987dad66
-SHA256: 9d951b378cacb05360225ac1251157ff7e278eacde8df62738612d22e93cee6d
-SHA512: 7cab37c2c4a1f742e945e5af7160c1a2e3e9bf6230c2d64f016b421546d4dc93b28927d79c247d0936dca1526c1586c3814cc849ebc660b357f04d17316d5ca4
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
@@ -23788,6 +23757,22 @@ Package: llama-cpp
 Installed-Size: 47460
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6002-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6002-0_aarch64.deb
+Size: 6551568
+MD5sum: 57389f353b374b4425caec0eb9633c89
+SHA1: f18e084727658d6544ed3714b46fa6ac55d50a07
+SHA256: 0cbf2ae32a5eda59c7bb663841b49970065e5677f589f8b43fcbc8d752422c1a
+SHA512: 7a377ee6882585e8703d3da92211820591decbbabf614cd8e9f435d94fb4bff0a9b7c3eaf5fbd5234c5b232d0dcb8b9713269e47e8a97d73ed7b1c1b7a7ebf0d
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 47460
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b5998-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23800,20 +23785,21 @@ SHA512: 63a50898d3a95dda9837092458cbb2e905369ee7d7b693c201bb9677ee02de5bc17bc34e
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47460
+Package: llama-cpp-backend-opencl
+Installed-Size: 520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5997-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b5997-0_aarch64.deb
-Size: 6555044
-MD5sum: a86a363a2ade221b15d5cc06296d6726
-SHA1: cde887a6249e76d186cbd4a8d7cbab4d60eeac31
-SHA256: d4d6f87b3bab768b3c079550a947569003c7933ffc2e183dbe3fd3a94acdf0ab
-SHA512: a275729f5372fb5f232811f7d257305d12bd517e4b03a33c6f700bc376eb7092b5fbd1b21299c637df9dff2a090f0da6557c55215442e5fa89e1fa10c1b67694
-Description: LLM inference in C/C++
+Version: 0.0.0-b6002-0
+Depends: llama-cpp (= 0.0.0-b6002-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6002-0_aarch64.deb
+Size: 91408
+MD5sum: 077cd4c2117f955f224c6eb03aa8576e
+SHA1: 465e7bdc8d47917ec91ead47159c018e83882489
+SHA256: bda560f32edb3ae15b20ecc697fb90011112f1a3ce57691645ee9ba72880e9f9
+SHA512: 9be87c16b1c33c5ec195caddadc612e9fb0b9f8473d7e8d1bd60d35ab4e6c4e73e8e69cb71a3b607156e446b1f63a44fc2d8abc5995f16d21c6dd870b182d223
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23833,21 +23819,21 @@ SHA512: 823c27cac259e05cbc0fa572f033404dc8cb0870785360eecd966b5a9696c0117ff56949
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 520
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b5997-0
-Depends: llama-cpp (= 0.0.0-b5997-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b5997-0_aarch64.deb
-Size: 91404
-MD5sum: dc8c461105acea109af983c732e2b757
-SHA1: 995779c03c0b4283e5d435e0ed6c40bc5896c0a3
-SHA256: 07a2d7018eef5466f93e52bbf8bca4e956f6106bfde10f6bb5f56d8f20034e0e
-SHA512: e8d9d916640ec765a8880fd3494dc8e07813513b7b350484959ab75085752d869b8e7520c7972e1e8315aef9752b1f408f14d1100d4773a646ea4b3218f746ca
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6002-0
+Depends: llama-cpp (= 0.0.0-b6002-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6002-0_aarch64.deb
+Size: 1039408
+MD5sum: b4e06d247fd7e36f33a5206b5982490b
+SHA1: 6ce0f719c9ae610fe5b0c790b272a77f07d4862f
+SHA256: 2306a38b6cc26ee12745684cd77eda8c4098276e3ab4586fde876a3d8e783dc0
+SHA512: 4a6ecd66fe73c8bf6c2705124f9674d864f20c0f67fa94b38cfb7278db4661a863259d6967fe408bd1377e1d9a30d37658053732a8143c322c5ba9550f8bda37
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23864,23 +23850,6 @@ MD5sum: 27ccd9e75928c0d7aa222ebade09ed9d
 SHA1: 02315e710b41f733f1aec6e530acec32b8a326f0
 SHA256: 80e546a9623a658f0fe3531db4f5a5c75d6e2390c1209fca1cbb452c6e47017f
 SHA512: 0d66fbe733edd4614b7beba993a8abdbce0ceff2269b3ef222e54794dd3570daa472d94a64bc559175facafc361557849145fad421ce0165a543742b3e4e04af
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13508
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b5997-0
-Depends: llama-cpp (= 0.0.0-b5997-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b5997-0_aarch64.deb
-Size: 1038868
-MD5sum: 7892339b9f21abb52cc769c15fccd062
-SHA1: a000842c29f76a9bcc5b2497d15b60ce870d9bb0
-SHA256: 8bfdf2140d3a4bfb064fe97d5f5d6fff53cc1a71a7a2525a52acee00137c6a09
-SHA512: f2be30b42af2bb83007b778da75dac0bb7d94b8f2f1e402869cdc196192e42aa5b0802516ba5ba28b99366be6058ba1193448e4337eafb79b18abe60dcda1501
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -39415,21 +39384,6 @@ SHA512: 264949942998becb4993cb202b3e6434da64e88df8e8ec959b90786e2abbb61077443d45
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://github.com/directvt/vtm
 
-Package: vtm
-Installed-Size: 5988
-Maintainer: @termux
-Architecture: aarch64
-Version: 2025.07.26
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_2025.07.26_aarch64.deb
-Size: 1163752
-MD5sum: ff7a889cce3c926e4e465af8e41f29a1
-SHA1: 4b1f008226c294599748ffa72b035c8d537a9979
-SHA256: 6362e63e8b169eabeb2eb5497f7e374b7227d8646bc31aae964646c2065675da
-SHA512: 0da3fb44574007dab58d9126c9bc9ff529b5b94f420574c5956e5baf457d631de8db5eb4ed990a9718237dafb7b2437919807d7a48206dfae181cf7077dae97b
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://github.com/directvt/vtm
-
 Package: vttest
 Installed-Size: 340
 Maintainer: @termux
@@ -39664,20 +39618,6 @@ MD5sum: caae70e3d6a2847257d385251c9d9023
 SHA1: 572d132973b0ead8d28d870d026f18562a2dc3d9
 SHA256: 58c00701cfc56736fc212a80befb99b24b5974ec2ebdb953bacfc7d655d47745
 SHA512: 34953bf114cce0c369e05d51b8749edab49912b3205ede0d2ac898af9e0d40a6313e7ce9406f12a65494f0e73c13f66646893868ca173b2a14de6a760c5b3ec6
-Description: Command line interface used by all WakaTime text editor plugins
-Homepage: https://wakatime.com/plugins/
-
-Package: wakatime-cli
-Installed-Size: 14800
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.124.1
-Filename: pool/main/w/wakatime-cli/wakatime-cli_1.124.1_aarch64.deb
-Size: 3558788
-MD5sum: b53d4327c2c03c52b1391edbfd22f5aa
-SHA1: 3c1e6bf666452677b0da20fa1b69df9d9867f475
-SHA256: 2d9444344a333436c715ca889935941e3d77449824aa57537a50b768cb5ea3b0
-SHA512: 7037451415c2dfc787663f2e8b65a26bf20d24f0ca64b5d3f902ffa34f58d4daeaa07ce4895fca68c012e663607b49ea93665f39fa92b369a8a897b3f9ab081d
 Description: Command line interface used by all WakaTime text editor plugins
 Homepage: https://wakatime.com/plugins/
 

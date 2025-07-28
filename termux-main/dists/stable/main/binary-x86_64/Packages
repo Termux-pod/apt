@@ -265,21 +265,6 @@ SHA512: 63b1c716465832d68a8422752d1a46d5e52b115a799126ab3f22332b113b71342d35cc48
 Description: WHATWG-compliant and fast URL parser written in modern C++
 Homepage: https://github.com/ada-url/ada
 
-Package: ada
-Installed-Size: 1364
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.2.6
-Depends: libc++
-Filename: pool/main/a/ada/ada_3.2.6_x86_64.deb
-Size: 212216
-MD5sum: 49f7ae6c3879c247a71b8f03c28696db
-SHA1: d0f0f21f0fb4aacf177671d3c36e40d619fbc6dc
-SHA256: 18e9e357e2b7ce34190e4fee8e3a062cbe76268c57c45a27c5238f293f6969bc
-SHA512: 732c814b6a921d6b91fa2f1b89db77cf1bcc4b6e18675960cd18128eb766c733b0cfc2cac532f8e9a63931c1ba3a080333a661cc2fab23b2b4cee012acdf5c76
-Description: WHATWG-compliant and fast URL parser written in modern C++
-Homepage: https://github.com/ada-url/ada
-
 Package: adms
 Installed-Size: 800
 Maintainer: @termux
@@ -3570,6 +3555,23 @@ SHA256: 84ebb6306ce2a06eca6203da776beb06f71ef1ca20a2d881e49fe4fee28fcfdd
 SHA512: ecbaaa280ed74fbab0dca236da29114bd516ebd44798f54270c6cebe43c44a024099aae573bee2c792044bd3112b7cdf8a83ab729396a1de02d59d0d9f686de5
 Description: Static libraries for clamav
 Homepage: https://www.clamav.net/
+
+Package: clang
+Installed-Size: 188776
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 20.1.8
+Replaces: libllvm (<< 16.0.0), clangd
+Depends: libcompiler-rt, lld, llvm, ndk-sysroot, libllvm (= 20.1.8)
+Breaks: libllvm (<< 16.0.0), clangd
+Filename: pool/main/c/clang/clang_20.1.8_x86_64.deb
+Size: 31911216
+MD5sum: a37b561e86eea4eb9b37095f1c9b9b35
+SHA1: 3ff301396e5296f1601869bba11e69589ceab119
+SHA256: c73a135d29f18a47e5321488498c86a9674c6234e9bc73cd9be8e60cb6687411
+SHA512: 434738bf71be6e4cd75840d2f8dd3a837d206de405a8bece110776fea2972082edb195c3aa6705400c4f5fd64144bd60fab745209e9356e23723f0bfc605b539
+Description: C language frontend for LLVM
+Homepage: https://clang.llvm.org/
 
 Package: clang
 Installed-Size: 188776
@@ -7278,6 +7280,21 @@ Description: FLAC (Free Lossless Audio Codec) command-line tool
 Homepage: https://xiph.org/flac/
 
 Package: flang
+Installed-Size: 883260
+Maintainer: @termux
+Architecture: x86_64
+Version: 20.1.8
+Depends: libandroid-complex-math-static, libc++, libllvm (= 20.1.8-0), clang (= 20.1.8-0), lld (= 20.1.8-0), mlir (= 20.1.8-0)
+Filename: pool/main/f/flang/flang_20.1.8_x86_64.deb
+Size: 60997900
+MD5sum: ffd8cfed4e38e1d7ec44b2eb5640fe29
+SHA1: 43e85bcdb7c88e88841d91183974dd46cdfac5a1
+SHA256: 22eee3e2e75f66ee99e3c727ce48b312aa24307df9aa64eff07bde51467e9dba
+SHA512: 33e039996076e5bd23759dc085b90b0c13f240e8275a616c2e1c9634bbbe77cc2a9bf14ec4fa21f000d8f8c702152f84d2b50f32a5918eef08581e06983bf35f
+Description: LLVM's Fortran frontend
+Homepage: https://flang.llvm.org/
+
+Package: flang
 Installed-Size: 883268
 Maintainer: @termux
 Architecture: x86_64
@@ -10830,21 +10847,6 @@ SHA512: 96664681570ef0cfa5394d7a6137822cf0b79e02b48b0c505cbbcf75384f810dc6702853
 Description: A fast and flexible static site generator
 Homepage: https://gohugo.io/
 
-Package: hugo
-Installed-Size: 59928
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.148.1
-Depends: libc++
-Filename: pool/main/h/hugo/hugo_0.148.1_x86_64.deb
-Size: 13581992
-MD5sum: ce848e2c0dc4c6cc13e7c3ce2f0c5bac
-SHA1: 22f3c622765131acc293a8d29e11f99c610c7eba
-SHA256: 0b8ba512af0e943c174397c825259de6b2b6d5c716760282c875f000070a3725
-SHA512: bddbc7e812e903947258a705b09bff6df913c69d2c6decb30f90b7f3f5d5da44407f458775569c283b78d03acf2776b79bd6c8a769c35f50e5062705b269e989
-Description: A fast and flexible static site generator
-Homepage: https://gohugo.io/
-
 Package: hummin
 Installed-Size: 6388
 Maintainer: @termux
@@ -14296,6 +14298,22 @@ Package: libcompiler-rt
 Installed-Size: 33880
 Maintainer: @finagolfin
 Architecture: x86_64
+Version: 20.1.8
+Depends: libc++
+Conflicts: ndk-multilib (<< 23b-6)
+Filename: pool/main/libc/libcompiler-rt/libcompiler-rt_20.1.8_x86_64.deb
+Size: 2736728
+MD5sum: 375fbe19e9ec07f06fad13ff57a415bb
+SHA1: 9f01a18e3915945b9de1a883d25c5f6a77c41d9b
+SHA256: d6c26930dc9f0f73b12961aef851c73925b3cd547f234f8ddd50d2082c1abd30
+SHA512: 61b4dc35f377d5b0b9e37cf084913bd5eff0883447dfb26511485c59c19c97727afaeb8f9ddcd2c63c732820a72d9ba612d92236b38bba9a2964bde206a47e0a
+Description: Compiler runtime libraries for clang
+Homepage: https://clang.llvm.org/
+
+Package: libcompiler-rt
+Installed-Size: 33880
+Maintainer: @finagolfin
+Architecture: x86_64
 Version: 20.1.7
 Depends: libc++
 Conflicts: ndk-multilib (<< 23b-6)
@@ -17080,6 +17098,24 @@ Description: Static libraries for libliquid-dsp
 Homepage: https://liquidsdr.org/
 
 Package: libllvm
+Installed-Size: 170128
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 20.1.8
+Replaces: gcc, libclang, libclang-dev, libllvm-dev
+Depends: libc++, libffi, libxml2, ncurses, zlib, zstd
+Conflicts: gcc, clang (<< 3.9.1-3)
+Breaks: libclang, libclang-dev, libllvm-dev
+Filename: pool/main/libl/libllvm/libllvm_20.1.8_x86_64.deb
+Size: 32003184
+MD5sum: d3e0f15d049bedcb161b3e3c7be18f4c
+SHA1: f3ea848bb54341c0fbcb36102c1182222762367e
+SHA256: 3ef6a6824c853b4bff5d158fee2ab1daef7d7cdb0ac84f7ca98a042433d29e61
+SHA512: 7facf38b0f099d8d059f5b4afaffb80777dac58697b287f30f462cea833526c773b7121e1ab286a7d83e678ee6e967f3177a404eef14659f7a5087a43405b113
+Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm
 Installed-Size: 170132
 Maintainer: @finagolfin
 Architecture: x86_64
@@ -17095,6 +17131,21 @@ SHA1: 70787f4ad56de239726cc70f60c92fcd8d7cf511
 SHA256: 825caacde8cbe433e580815ffd2f898ebcae724d3bbfdd192b48cc5f4359ed53
 SHA512: 9c8e3af838dac5d2f6766fe669e487b26e887304e6bdabeda772b40842ddd8f84c227542fe3ca97d03195868a5d7d59ff349738f8b8c489ff97aad4cc8ec66c8
 Description: Modular compiler and toolchain technologies library
+Homepage: https://clang.llvm.org/
+
+Package: libllvm-static
+Installed-Size: 826808
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 20.1.8
+Depends: libllvm (= 20.1.8)
+Filename: pool/main/libl/libllvm-static/libllvm-static_20.1.8_x86_64.deb
+Size: 85424204
+MD5sum: 0786041a025c4bb483fdfd2c1679fab4
+SHA1: eafd05df531e4cfec61af853f99924a8608175d1
+SHA256: e756112e47cdc78eb11f6d96ad90c57a6679fbd43da418a8b158af5e3a6c7c7f
+SHA512: f84e222a8f52e13a1b2e2d277d706a0749ddf1858d64bd5447558cae8f8cf6f08ae81e02efdadc4a798c41ff2a5ca3da2d71f4144dfeaa4eab770d6137d138d5
+Description: Static libraries for libllvm
 Homepage: https://clang.llvm.org/
 
 Package: libllvm-static
@@ -19597,6 +19648,21 @@ SHA256: bcb2fd0202b61318e7ed4f3305668721e1ad276c0f3069d017629895ac91eeda
 SHA512: 698155def67a0cb8185f652ea20ce33a24b3daa5c659c2da913ff744404a90d689eaf6a80dbbfa2a35339539f566c22d8ebfcf5b0b0b157a750fe2529567c1fa
 Description: A comprehensive set of C++ libraries that cover all modern-day programming needs
 Homepage: https://pocoproject.org/
+
+Package: libpolly
+Installed-Size: 5880
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 20.1.8
+Depends: libllvm (= 20.1.8)
+Filename: pool/main/libp/libpolly/libpolly_20.1.8_x86_64.deb
+Size: 1388636
+MD5sum: 23e2feb58161c83ad3164a2a385c4231
+SHA1: c2fa2572b53577a802028960eda9a93d2f987e93
+SHA256: cc0ad1adc1f7a503c2670689d8431cf8fb1335ea43e5295b9278e27e52d245be
+SHA512: cab2a4677f5e6e2ae872503a08e0a18985c359a8170f9bc8dc6371cc303cd25d4ce1eed9cc50770af87de0ad00b0061358677dea20bba6acd1366e552709746d
+Description: High-level loop and data-locality optimizer for clang
+Homepage: https://clang.llvm.org/
 
 Package: libpolly
 Installed-Size: 5880
@@ -23836,6 +23902,21 @@ Package: lld
 Installed-Size: 18812
 Maintainer: @finagolfin
 Architecture: x86_64
+Version: 20.1.8
+Depends: libllvm (= 20.1.8)
+Filename: pool/main/l/lld/lld_20.1.8_x86_64.deb
+Size: 2831444
+MD5sum: 9cb32e6ecd81b5b6fd233b0ae8690c40
+SHA1: e747e881cb70248e69374e945cf752000fabd7d5
+SHA256: c7d47ae18de84c8379eb7a09ca47312c50dbe528aa2b2fd6741b5c9ef4cee133
+SHA512: c89c50dc85b9e753bd1a319a327a1f72effce626b08e0a5281d35776b47e79857f562d1552ce264492dcbe921f4d36f0d5780d0807eccff5286097df19374012
+Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lld
+Installed-Size: 18812
+Maintainer: @finagolfin
+Architecture: x86_64
 Version: 20.1.7
 Depends: libllvm (= 20.1.7)
 Filename: pool/main/l/lld/lld_20.1.7_x86_64.deb
@@ -23845,6 +23926,23 @@ SHA1: 1d6224f222e075d5ffdd99f3ff11e628b7565674
 SHA256: bfe8c93096c54168da6f179628503cb53dbfc25fe225ac8d535e88df0ed41ff6
 SHA512: d4c69a44979886fbcac88f5129cfe667c939513cea151fd03ce39a31c121b026c331381404d3767f46bc1768e33928d78adfc531c8dc7a1a565b778d56ba5cd4
 Description: LLVM-based linker
+Homepage: https://clang.llvm.org/
+
+Package: lldb
+Installed-Size: 25584
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 20.1.8
+Replaces: lldb-dev, lldb-static
+Depends: clang, libandroid-spawn, libc++, libedit, libxml2, python, ncurses-ui-libs, libllvm (= 20.1.8)
+Breaks: lldb-dev, lldb-static
+Filename: pool/main/l/lldb/lldb_20.1.8_x86_64.deb
+Size: 5737552
+MD5sum: 920c3b592b38220c58d2feb7a5188126
+SHA1: 1f1e2b57ef7339a156cde90232b7f73175272c2d
+SHA256: 59ed191973135605954a62aae4b6a1b0d39b5222bbc599798015bca62279ab50
+SHA512: b981fb0d63fafe5525fd5907e075b8f763b86c6d82c4c80cb35ed7d9f19eb28a73c34704916d813f8d4bb902c1c4b3185f1c62c8525aa83f416f96bdcf720440
+Description: LLVM-based debugger
 Homepage: https://clang.llvm.org/
 
 Package: lldb
@@ -23862,6 +23960,23 @@ SHA1: d49729ee2f7e6079faecac42042013275e4f67bf
 SHA256: 718b060cb92244585aa589c2ec82d704d735c3a233318f5bf94c841314316715
 SHA512: ef8d44a45289c048f8884bf95aff3a3e5487523cef06a394342a3c723edfd7f26fb53d03f23b5d65c87c39c5b9cd4ab4b0174c36070aa665098301850ffe9948
 Description: LLVM-based debugger
+Homepage: https://clang.llvm.org/
+
+Package: llvm
+Installed-Size: 74512
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 20.1.8
+Replaces: libllvm (<< 11.0.0-1)
+Depends: libllvm (= 20.1.8)
+Breaks: libllvm (<< 11.0.0-1)
+Filename: pool/main/l/llvm/llvm_20.1.8_x86_64.deb
+Size: 15970764
+MD5sum: 6fd4dc56782819dbe3fe4625fcb5ae1d
+SHA1: 0a8a222261b47dcb166ca312b760b7870d9dc8cf
+SHA256: 50cf68ae1dd2be98915509a0f638b1386dcb65a2b05bfd43c41c8e9ba0d40766
+SHA512: 2e5c046b53d98f23c08b61af941abaaee8a302585ffdd415ac2bf084dc058c8fa2f0644a9df1cf6e40490aec7490af623f1da0686832947764decfe40815cf32
+Description: LLVM modular compiler and toolchain executables
 Homepage: https://clang.llvm.org/
 
 Package: llvm
@@ -23944,6 +24059,23 @@ Package: llvm-tools
 Installed-Size: 12084
 Maintainer: @finagolfin
 Architecture: x86_64
+Version: 20.1.8
+Replaces: libllvm (<< 16.0.0)
+Depends: libc++, ncurses, zlib, zstd
+Breaks: libllvm (<< 16.0.0)
+Filename: pool/main/l/llvm-tools/llvm-tools_20.1.8_x86_64.deb
+Size: 2434900
+MD5sum: 01e118a03fb157bf9303430c8e9dcac5
+SHA1: 5cd5e5cbdfd54e2c84ed2a8962dc0d0111d4837d
+SHA256: 7d4a35a27426d613a56ba22ca29b7f38f28968d744878388e29c597aa98cacdd
+SHA512: 6d7e176646fbaba1b19e479e2b8cb5800b8ce8360e33ff9d6b1cb084bbdcfa03ae5d45c56013d076ccdd782418aa3a6485214e3b68a8547fc26cc33dd7930bb4
+Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvm-tools
+Installed-Size: 12084
+Maintainer: @finagolfin
+Architecture: x86_64
 Version: 20.1.7
 Replaces: libllvm (<< 16.0.0)
 Depends: libc++, ncurses, zlib, zstd
@@ -23955,6 +24087,21 @@ SHA1: fde30ff0be09ba6e5f2461a20071dd816c2d4283
 SHA256: 7724381f9bb6cb4326466aa864a3e3f0e8cd621a61ec7db17617e8ee77ac6323
 SHA512: 383810a618fd4829e281a09f92143ca315612fcefe44c752a9db5016b1c00f13545beb7e72a6a0b2faa994d33edee28c722f158ad1e61d3ed6e616deb6b2bc9a
 Description: LLVM Development Tools
+Homepage: https://clang.llvm.org/
+
+Package: llvmgold
+Installed-Size: 112
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 20.1.8
+Depends: binutils-gold, libllvm (= 20.1.8)
+Filename: pool/main/l/llvmgold/llvmgold_20.1.8_x86_64.deb
+Size: 29060
+MD5sum: 7aa3185d7c599e764235714b67853e27
+SHA1: 5dfbc64981803e16254b172ec241da2e6372e3c6
+SHA256: 774fc6d95ad637335b4cf7d16ef5a5992ce918d0c291e8641e37de142b65e0b1
+SHA512: 1dc17527b1faf96774d431c0e702469340d561d6716505932495be007f167250c2d12f44155297399b1183be2d3abf15be2c659e5a7f72c78a79bf2d56b33b1f
+Description: LLVM gold plugin
 Homepage: https://clang.llvm.org/
 
 Package: llvmgold
@@ -25878,6 +26025,21 @@ SHA256: 989565efaef4dbf77ca1593e714f6e990913cd25eb60b6b33e48a77c6bc8bef5
 SHA512: a28d7ed82edac72419a7ee4a735e5d3c9bb335261fa8e95bdbc74320a6d9d1e5d58c4b2527ee14d9aa71743e84cca68069d3bbd3960b65753b9815ecd9e6e6f8
 Description: command line utility to create BitTorrent metainfo files
 Homepage: https://github.com/Rudde/mktorrent
+
+Package: mlir
+Installed-Size: 210444
+Maintainer: @finagolfin
+Architecture: x86_64
+Version: 20.1.8
+Depends: libc++, ncurses, libllvm (= 20.1.8)
+Filename: pool/main/m/mlir/mlir_20.1.8_x86_64.deb
+Size: 26577732
+MD5sum: 729a3f05d69e8a467fc3b2212592d134
+SHA1: e270eea52292c684120d20a9cb597851a8b68ac1
+SHA256: 9ca6733769b1c6681f94ada9daf5e40be246e5721628a14763f2569fd4d6118e
+SHA512: 5d86c55b9d976eb6aebf90181d47bce1e57b9753f7ca59002c511e31b4efeffb87a6e1f743f646a390b626f08f5bbca292381c3d50145642eefcaa3f9444a50b
+Description: A Multi-Level Intermediate Representation for compilers from LLVM
+Homepage: https://clang.llvm.org/
 
 Package: mlir
 Installed-Size: 210448
@@ -31552,21 +31714,6 @@ SHA512: c9545c59a2570e150e7714fa7c86a907027cdd4b23f902ae30c96642a0aaeb841c47f1db
 Description: Fundamental algorithms for scientific computing in Python
 Homepage: https://scipy.org/
 
-Package: python-scipy
-Installed-Size: 96904
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.16.0
-Depends: libc++, libopenblas, python, python-numpy
-Filename: pool/main/p/python-scipy/python-scipy_1.16.0_x86_64.deb
-Size: 18709508
-MD5sum: db9ae911a68f015fec426df12ddb0618
-SHA1: b9d70045cc2cac0ccb892616372400ca16056e0e
-SHA256: 6f15ccb851736923fd495793d20218458613d446e379be115f658f918c9c4376
-SHA512: 902e8859b030bd265af0079a8a885535ac695498e07765a405ee3bf3473fdc641cab50d25f41c754e01a38633c5a8db304434f47b95c1ac671014214990f7b9a
-Description: Fundamental algorithms for scientific computing in Python
-Homepage: https://scipy.org/
-
 Package: python-skia-pathops
 Installed-Size: 3708
 Maintainer: Nguyen Khanh @nguynkhn
@@ -36001,20 +36148,6 @@ SHA512: ff56884124a7a8d70ef91c81012fc368d41b311be56f6d6ece3aa60ebcade56c92bbe29b
 Description: Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
 Homepage: https://gitlab.com/AOMediaCodec/SVT-AV1
 
-Package: svt-av1
-Installed-Size: 7568
-Maintainer: @termux
-Architecture: x86_64
-Version: 3.0.2
-Filename: pool/main/s/svt-av1/svt-av1_3.0.2_x86_64.deb
-Size: 2043228
-MD5sum: 80c3c4479621d6b3f88e3188f0275c7e
-SHA1: 71accb8a301f08d85ccd105c1b1a7211b851bb0f
-SHA256: 3d3088cbd631c00f3e2714df00dfd4341683d841b1d050b42444f15210712e07
-SHA512: 41b1cc242e9816ee0713c34bcfe29a521b728b2c5f31055ff47cf31964f7ff64f274c31d710d8ac11ef95b72a62df104b882bb67238223c9ee33f7e8fb241d91
-Description: Scalable Video Technology for AV1 (SVT-AV1 Encoder and Decoder)
-Homepage: https://gitlab.com/AOMediaCodec/SVT-AV1
-
 Package: swaks
 Installed-Size: 280
 Maintainer: @termux
@@ -39341,21 +39474,6 @@ MD5sum: 0e3679ae21c40af6d67473fe48460f36
 SHA1: 44676a27aa1679137020de94f11f4192f608d87e
 SHA256: d584216bf9e5d61359b154faf25b432c4b5123e9f079a2f504fb7997e60f6581
 SHA512: edd6ced83f28a4f3b3bf3dd86e886710a95509b725be889e9c813fa9651722f610f902ff83a22d96e0cf6a7e47a7510b407beb8872a24cf687c8e9849f1d8e99
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://github.com/directvt/vtm
-
-Package: vtm
-Installed-Size: 6300
-Maintainer: @termux
-Architecture: x86_64
-Version: 2025.07.27
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_2025.07.27_x86_64.deb
-Size: 1282632
-MD5sum: 3cfd04665c4e988add9e56f908a2fc00
-SHA1: 9a03c95988a900011a734bf32665661747f2d3ab
-SHA256: 32236b9bb98ae4e761fe0b47146d849b6be4e452ef453417edeac790a5816acb
-SHA512: 66d97824f325ba8d1f086d631b816feebc57d750aeea0411ef925928b9c360bb3b0759c228dc7de768bb6667d0973c93225d3a367638ba2086191b49920397c0
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://github.com/directvt/vtm
 

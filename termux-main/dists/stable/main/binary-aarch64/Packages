@@ -11458,21 +11458,6 @@ SHA512: a392f9d2def8cd08227d7e16ca4aca9379dd981a0fc7f70c075a9ac8f4e66f2be61da639
 Description: Utilities for controlling networking
 Homepage: https://wiki.linuxfoundation.org/networking/iproute2
 
-Package: iproute2
-Installed-Size: 2852
-Maintainer: @termux
-Architecture: aarch64
-Version: 6.15.0
-Depends: libandroid-glob, libandroid-support
-Filename: pool/main/i/iproute2/iproute2_6.15.0_aarch64.deb
-Size: 818040
-MD5sum: cd3a2b521cb57543ced5c1f22e7b6094
-SHA1: 76fcd3c0cd5a1fa712269de674fb9b51a117ddfe
-SHA256: d8167854b50c72a1cf6fdc0ff78887974b88fafd0d1b465bb2684fac6c4684b6
-SHA512: adfb8c0d871a069e01f086877c58e6fd1be75bd1f4558142a2fe20954ab7e097763f47369590624e66cffef026091191605477534d320fc630d7c1c0d6d35fe9
-Description: Utilities for controlling networking
-Homepage: https://wiki.linuxfoundation.org/networking/iproute2
-
 Package: ipv6calc
 Installed-Size: 6264
 Maintainer: @termux
@@ -11819,20 +11804,6 @@ MD5sum: 6f9c441c67777154ff07557f7bbe16e1
 SHA1: 72678703a38a454f980a01c68b49599b4b91cb32
 SHA256: 80df5482d4513e06da048d51f4e309ed7a050315f44be0e9f10003cf8bb5731d
 SHA512: adc94a0a6114431ea0e3c376056be60d22162a918bb9eab565a731dccbb13ef013a5a7f83fd06dcb01d46ab7607d8a01f65f881c4ad95f177e487aa5f758f48f
-Description: A CLI for JFrog products
-Homepage: https://jfrog.com/getcli
-
-Package: jfrog-cli
-Installed-Size: 57608
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.78.0
-Filename: pool/main/j/jfrog-cli/jfrog-cli_2.78.0_aarch64.deb
-Size: 12005020
-MD5sum: 5e0c41d2f267a4337928a6900b68f9ec
-SHA1: cef8b0a66f4075680b5090e285a630cc084cc3e6
-SHA256: e2c3b4be53f56596380c1811822f5fb948f6f4b849e139ab9d51cf698a0318d2
-SHA512: 89cf573046d12af547607451954eecacab13c6da39058533940dca0734c714ffc48d40d44f279e2d804cc649da9a10517347979ebef956172439461ce6497b04
 Description: A CLI for JFrog products
 Homepage: https://jfrog.com/getcli
 
@@ -23783,6 +23754,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 47472
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6018-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6018-0_aarch64.deb
+Size: 6558368
+MD5sum: 9db4d2a2105393b2cadd743fda929932
+SHA1: d9c0d6610b46b4759b9972a978c1ce25f781463b
+SHA256: e35021d716f4e4e88a84cf3cf767408f4246cfc510d888a88d53acb334ca521e
+SHA512: 3086d2bea5e8ddc7d385062de962bc31c3aa3ae6cb710e6cbf81b54cba11b31c3a9710a85b6b12960536d10a6733bc559c65e9522da89b2642aceb3e0cbc3eb9
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 47460
 Maintainer: @termux
 Architecture: aarch64
@@ -23798,20 +23785,21 @@ SHA512: 304d4f3d8f210b55542e193d0610ec910e115d015c26952846ba395499a17e8968a73614
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47460
+Package: llama-cpp-backend-opencl
+Installed-Size: 520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6002-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6002-0_aarch64.deb
-Size: 6551568
-MD5sum: 57389f353b374b4425caec0eb9633c89
-SHA1: f18e084727658d6544ed3714b46fa6ac55d50a07
-SHA256: 0cbf2ae32a5eda59c7bb663841b49970065e5677f589f8b43fcbc8d752422c1a
-SHA512: 7a377ee6882585e8703d3da92211820591decbbabf614cd8e9f435d94fb4bff0a9b7c3eaf5fbd5234c5b232d0dcb8b9713269e47e8a97d73ed7b1c1b7a7ebf0d
-Description: LLM inference in C/C++
+Version: 0.0.0-b6018-0
+Depends: llama-cpp (= 0.0.0-b6018-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6018-0_aarch64.deb
+Size: 91428
+MD5sum: 3d936a955fe0d5a298a1b2e48f708a9d
+SHA1: b823100bd73219aa92accb8e7f9158fbbd554bf6
+SHA256: 81651ef57ac745fff17ba01730363deba23d76a6e1c2e9f8dfa5f490e2b6a301
+SHA512: 444c4499c5d3eb70eea9fc3963f08e00c53c654cb7e7553c7aefaaf13e4131868af7a8dd9054c9118293a6b19652f7bd92c8176676ad62ad7924a0f9909ceb00
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23831,21 +23819,21 @@ SHA512: ab1901edd3504e9bcab6377f802dadd2382c388bfd8176544f52cbd485664dc75c474045
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 520
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6002-0
-Depends: llama-cpp (= 0.0.0-b6002-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6002-0_aarch64.deb
-Size: 91408
-MD5sum: 077cd4c2117f955f224c6eb03aa8576e
-SHA1: 465e7bdc8d47917ec91ead47159c018e83882489
-SHA256: bda560f32edb3ae15b20ecc697fb90011112f1a3ce57691645ee9ba72880e9f9
-SHA512: 9be87c16b1c33c5ec195caddadc612e9fb0b9f8473d7e8d1bd60d35ab4e6c4e73e8e69cb71a3b607156e446b1f63a44fc2d8abc5995f16d21c6dd870b182d223
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6018-0
+Depends: llama-cpp (= 0.0.0-b6018-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6018-0_aarch64.deb
+Size: 1041312
+MD5sum: afabd8d2d31a84567743103fe25ef42e
+SHA1: 1158a5c1a85ad06fbdb10e924bc788d976077a22
+SHA256: ee250d7f5cfd6fc53cee25567a31940a7fd352547281813f50e3aa5e88f2f129
+SHA512: 37f87ed28d07f99b35e67fe24035ba44af17da337701ce34c196dab03689db14174c0d099c8287b6e97c7ddbb7f24d484d19304acfb205826d41579fa060d2da
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23862,23 +23850,6 @@ MD5sum: 78b3dc13cb26e00e9b786dd4b36420ce
 SHA1: 35331ee880465cac017a92b518a3c9d7a4dd76a3
 SHA256: 9076278d2e5f8bfa3ee18fd5fa23c9d2974a916725a203a3d92212540b49b8df
 SHA512: b0345a0ed1d424e8df78c6147ec97ec7fdd14c4089641f3d14316dbf97b077c17ff1bcdb091e6104c0feb4bbd6b29b070758a79c2cf44f9ede2f4a2a5ff453df
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13520
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6002-0
-Depends: llama-cpp (= 0.0.0-b6002-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6002-0_aarch64.deb
-Size: 1039408
-MD5sum: b4e06d247fd7e36f33a5206b5982490b
-SHA1: 6ce0f719c9ae610fe5b0c790b272a77f07d4862f
-SHA256: 2306a38b6cc26ee12745684cd77eda8c4098276e3ab4586fde876a3d8e783dc0
-SHA512: 4a6ecd66fe73c8bf6c2705124f9674d864f20c0f67fa94b38cfb7278db4661a863259d6967fe408bd1377e1d9a30d37658053732a8143c322c5ba9550f8bda37
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -28057,6 +28028,20 @@ Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
 
 Package: oh-my-posh
+Installed-Size: 19556
+Maintainer: @termux
+Architecture: aarch64
+Version: 26.17.1
+Filename: pool/main/o/oh-my-posh/oh-my-posh_26.17.1_aarch64.deb
+Size: 4698064
+MD5sum: 19a1cd590cf2f88ba7159b2dfe5fc5a2
+SHA1: 392038c81adab4e09b6e3336f460e25bdaab6007
+SHA256: a75ee84dabc4df6840f756e35844fbcd0cd985b141edb7dbc98f5ff37fd95aba
+SHA512: f3e19b808f2c9f56d95ae6e7d7f2fd1be375170e89a5e797f0eaa015b65cfacf8a096cd74c41a5e55c6c23e4554211e158e11017592deacb10442510edfe5825
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
+
+Package: oh-my-posh
 Installed-Size: 19564
 Maintainer: @termux
 Architecture: aarch64
@@ -30129,6 +30114,21 @@ SHA256: 80e7b6d9e3e3691d34f4e3211e515364be689c8454112c7edb70860ad65d87dd
 SHA512: cdf0897da3b61954cca4a30152fc9ffd818c7290c922831918f721f3577940038cd05400ac0add1e9bb4264817c5cc36e7c51aa343e3caccb32ab09d14b680bb
 Description: A persistent huge storage service, compatible with the vast majority of Redis interfaces
 Homepage: https://github.com/OpenAtomFoundation/pika
+
+Package: pinentry
+Installed-Size: 208
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.3.2
+Depends: libandroid-support, libassuan, libgpg-error, libiconv, ncurses
+Filename: pool/main/p/pinentry/pinentry_1.3.2_aarch64.deb
+Size: 47056
+MD5sum: 1da3d84271d3a9649b18fd02dea507ff
+SHA1: 79bd62920d1b2ab7bf141a7304b249a033f1e2bd
+SHA256: a6af6fd556ebe56e32cbb91f36553da643852b313b321250495bf3ff9079c6a5
+SHA512: c3d13cef86f325029e80af75f3059f53843ec2868088925777f4c69655b2ea092f48993aba7322e5b2ac2fdbae66e9fa36e654046f4320263b6d4f89b76dc908
+Description: Dialog allowing secure password entry
+Homepage: https://www.gnupg.org/related_software/pinentry/index.html
 
 Package: pinentry
 Installed-Size: 208
@@ -37536,20 +37536,6 @@ SHA512: d56693a43f9b97446192264401c530c67cc6bcb06882f15dfb1a1274e59f2d49ef6d9856
 Description: A blazingly fast CLOC (Count Lines Of Code) program
 Homepage: https://github.com/XAMPPRocky/tokei
 
-Package: tokei
-Installed-Size: 4728
-Maintainer: @termux
-Architecture: aarch64
-Version: 13.0.0-alpha.8-0
-Filename: pool/main/t/tokei/tokei_13.0.0-alpha.8-0_aarch64.deb
-Size: 1241272
-MD5sum: 330d3da1536d01a94194fd767e7b1945
-SHA1: ce15b8de5cd0749bee65692c5b378e2c955f8227
-SHA256: a936a5b4e761389b85f64bafb548a750d140e3790f2e904beca31122cae2c5ea
-SHA512: 0298d8142414615bb242e2cb044845e3b91862067366d42d196aaa66da1055cd89cb019ddc5e82af331007688e06c291d13e86644550044bd57032d6c0f8cc24
-Description: A blazingly fast CLOC (Count Lines Of Code) program
-Homepage: https://github.com/XAMPPRocky/tokei
-
 Package: tome2
 Installed-Size: 10996
 Maintainer: @termux
@@ -40936,21 +40922,6 @@ MD5sum: 4337bc292967881bd8d26588e78e5275
 SHA1: b11331b142b5783e58a79b2600560333dcfaff9d
 SHA256: 15e78992e42051d4759cd6530a43598d6d2540cabc5d1bccdc8264a5c0e82663
 SHA512: 82d912ea068c0c3d58c4d149200649ba26348c7df6b3561da8252ac0d55047d352c4d8eb4a52c3fe79fedc645f22621e18e19ae801837db6ae247a13a1e3310f
-Description: An open-source application to synchronize ActiveSync compatible devices and Outlook
-Homepage: https://z-push.org/
-
-Package: z-push
-Installed-Size: 4404
-Maintainer: @termux
-Architecture: all
-Version: 2.7.5
-Depends: apache2, php
-Filename: pool/main/z/z-push/z-push_2.7.5_all.deb
-Size: 505112
-MD5sum: 4ff61a674db2571326e26be0b167e674
-SHA1: 6572f85291a1c2de5bb6b3c1ef8d0fe49538145b
-SHA256: c62a42c838eeba935a6e827cbddc21dc9a11defc342c522af613e3df1ed9f587
-SHA512: 015274cfcc89e32eda0aa4944ccb49aa4ba7805d1976138bbe94e02e6524db3a153ea47767ac744afeaa74181f711f0080dc17ad8cddd80781aadcebda9fce9c
 Description: An open-source application to synchronize ActiveSync compatible devices and Outlook
 Homepage: https://z-push.org/
 

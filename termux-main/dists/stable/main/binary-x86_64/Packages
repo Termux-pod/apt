@@ -3451,18 +3451,18 @@ Description: A human-friendly and fast alternative to cut and (sometimes) awk
 Homepage: https://github.com/theryangeary/choose
 
 Package: chromaprint
-Installed-Size: 240
+Installed-Size: 80
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.5.1-p20221217-2
-Depends: ffmpeg, libc++
-Filename: pool/main/c/chromaprint/chromaprint_1.5.1-p20221217-2_x86_64.deb
-Size: 62736
-MD5sum: 047e50daff90c0b116aa963600030afd
-SHA1: 0415f2228fe99af129849f87d487f8c66b250953
-SHA256: 48f3ddc0bd7de9d330de14575fac6d7fc59d8a62b1221987bb01d91babe6ffcd
-SHA512: baaf4e633bd48b0e914851bdb0783263a01e79c52c4d1724b230616a8ac4d9b1ae5b83eb2a3933e88e60acd64759ac2f58cc3428e3da6060d77b805f6cb44ea9
-Description: C library for generating audio fingerprints used by AcoustID
+Version: 1.5.1-p20250625-0
+Depends: ffmpeg, libchromaprint (= 1.5.1-p20250625-0)
+Filename: pool/main/c/chromaprint/chromaprint_1.5.1-p20250625-0_x86_64.deb
+Size: 19884
+MD5sum: f5b8add6a5acf0e12c150f9cd2101046
+SHA1: 34a0147f7989580ba1b617a14b14fc517104a9f0
+SHA256: 3dd4c88284c8ee611a95a8fcaaa14acacff097ca63a9f1d8d954ae9ee1c3fb79
+SHA512: b4aa203f8053cf2c1b10ba6694d54a8c4842dcb5e31690a355d37cc209e2a9e788899a38563fa88533fc4ed0e259d516dd2f0202757029abd3e0a3fcaabc55cd
+Description: C library for generating audio fingerprints used by AcoustID (fpcalc tool)
 Homepage: https://acoustid.org/chromaprint
 
 Package: chrony
@@ -6445,21 +6445,6 @@ SHA512: a904a97c48121692fe2864119711c5509db4ef43c69a412028fb683802a1b1fbe5845b0e
 Description: Wraps a number of different spelling libraries and programs with a consistent interface
 Homepage: https://rrthomas.github.io/enchant/
 
-Package: enchant
-Installed-Size: 300
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.8.11
-Depends: aspell, glib, hunspell, libc++
-Filename: pool/main/e/enchant/enchant_2.8.11_x86_64.deb
-Size: 60508
-MD5sum: 722e78166218fc81360b1d5f13fc626a
-SHA1: ba403b5bf6f06c80957f6469d1d88dcb03f683e0
-SHA256: 888a6d0ccf47325636f5b100cea08b6ce428c305d259666f69e6d168e12cab79
-SHA512: 498c4dcf13abacbbe448f7b37e998c656e32509ba4127957cc0a1fdc0365b7a80ace4949ab64d6c5a98aca93a616c1776611b8a12c3415aefa290d66a6a8a33b
-Description: Wraps a number of different spelling libraries and programs with a consistent interface
-Homepage: https://rrthomas.github.io/enchant/
-
 Package: enchant-static
 Installed-Size: 164
 Maintainer: @termux
@@ -6472,21 +6457,6 @@ MD5sum: a9e9a468da2b08a7985a9d2e4781b80b
 SHA1: 79209611a085179f7f2cc565b478c09d09ba7a6d
 SHA256: 4e95779b274a67b6915fa85b052a472128603d3ece9fdb7c40b942b6a6a41ee4
 SHA512: b8ee451f2398f12a7f77892886780d05b0db00c514d3397d30eb0516d8f67b9f5d600036554bdec6d28a56bee54cf88bf726353ce28e62f82e7f8a0b5702ef3b
-Description: Static libraries for enchant
-Homepage: https://rrthomas.github.io/enchant/
-
-Package: enchant-static
-Installed-Size: 164
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.8.11
-Depends: enchant (= 2.8.11)
-Filename: pool/main/e/enchant-static/enchant-static_2.8.11_x86_64.deb
-Size: 24936
-MD5sum: 283b90ac18a195bbeda330a88ed967af
-SHA1: 4dceac25595bfcb9d9116bf14ec48d3605b37496
-SHA256: c7f9186cada104f93e47898e6c2fb277d46b1e54e79780285eeace36b85fce8f
-SHA512: 048f532a27341fcb04d7fc0ff8dd1dd17e1ecd905d200e8ced51a71ff7e7379f2d1733619827892f969d2d49b22e2908dcbf614648f61a1759474e566d768376
 Description: Static libraries for enchant
 Homepage: https://rrthomas.github.io/enchant/
 
@@ -7078,17 +7048,17 @@ Package: ffmpeg
 Installed-Size: 39144
 Maintainer: @termux
 Architecture: x86_64
-Version: 7.1.1-4
+Version: 7.1.1-5
 Replaces: ffmpeg-dev
 Depends: fontconfig, freetype, fribidi, game-music-emu, harfbuzz, libaom, libandroid-glob, libandroid-stub, libass, libbluray, libbz2, libdav1d, libgnutls, libiconv, liblzma, libmp3lame, libopencore-amr, libopenmpt, libopus, librav1e, libsoxr, libsrt, libssh, libtheora, libv4l, libvidstab, libvmaf, libvo-amrwbenc, libvorbis, libvpx, libwebp, libx264, libx265, libxml2, libzimg, libzmq, littlecms, ocl-icd, rubberband, svt-av1, xvidcore, zlib
 Conflicts: libav
 Breaks: ffmpeg-dev
-Filename: pool/main/f/ffmpeg/ffmpeg_7.1.1-4_x86_64.deb
-Size: 10913804
-MD5sum: deff009dd16daad1c59f172ad1dce64a
-SHA1: 5e0e061346c1d33832137563d95eb03c2b71b8a8
-SHA256: 52321759ef891a5c45c83ca33b2d1b52f39dd168e1faa56c1cb4ef15b210071a
-SHA512: ebf55f863d49b403ea45a3960eebfcc8c21fb330f401df2a09be5fb9ed13e5fc4a6cf1601f3049b625ac3985be21f9e0752a5ec2569bd2dbd810ba43404da8a4
+Filename: pool/main/f/ffmpeg/ffmpeg_7.1.1-5_x86_64.deb
+Size: 10913864
+MD5sum: 4fe96a6d10be28cb8cef52354eae007a
+SHA1: d37727ebc1a9ba25c2e992c1321b851a28c089de
+SHA256: b0395f2a20b23d883f0037b1957b5a353b3a714c471153795b291953dc201acc
+SHA512: e278fa3ea640932ca0b77b0ccbebe3747fd7d1dbbaecdf5e2dea2934c6d1e34dfdd766e5c2741c443f0141c2eb14d5b51fd1a5dc730a86435ffb5a2bc7252ce2
 Description: Tools and libraries to manipulate a wide range of multimedia formats and protocols
 Homepage: https://ffmpeg.org
 
@@ -7383,6 +7353,20 @@ SHA256: 92d1117b9038cab6ce69effb2d77c4a70e669123bec4aa4f67e10dfe276d7b95
 SHA512: aa514209f79f2d1b93464ea73750855c43b2b8681f155178bb44bd089c8d887cc590920a8d8684ef5e9d13ab72adba9710a2b858c88def5bd536812b9acb48ac
 Description: Software synthesizer based on the SoundFont 2 specifications
 Homepage: https://github.com/FluidSynth/fluidsynth
+
+Package: flyctl
+Installed-Size: 73128
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: x86_64
+Version: 0.3.163
+Filename: pool/main/f/flyctl/flyctl_0.3.163_x86_64.deb
+Size: 16374916
+MD5sum: 885cd85a58baa9fe2e02e590673d32c7
+SHA1: b543ddc0be36e5268e44731181ee8e1f219c207f
+SHA256: 9f597830a6042f8513b5fd52f639df8488fd569d2fcaf93f659f180cb1c34796
+SHA512: 5dd2a6794c625f9847c4f21f0506f37c04f9060e6767f212f62d5f34559bace2dd8247fab4566853b87948d62290ca36f1ea44e43e5baa4686ae47d8e220eb46
+Description: Command line tools for fly.io services
+Homepage: https://fly.io
 
 Package: flyctl
 Installed-Size: 73124
@@ -8746,6 +8730,20 @@ Package: glab-cli
 Installed-Size: 46332
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.65.0
+Filename: pool/main/g/glab-cli/glab-cli_1.65.0_x86_64.deb
+Size: 11517560
+MD5sum: 7060a4366a556911e49b320b2c6e8c6e
+SHA1: 2cdfd5608e18d3f518e49e6e6a856b62d93b673d
+SHA256: 0915bad25ba3f1d10fbe2754969de270568ecfddcdf5a16e1d6b8dd982b21fde
+SHA512: 0969fa04ea6c82ccfb8594c9dbbf9d62d354330aa378073db94ea98e4eeb286ed292979b2cde89ed13dd3fd8bd8efe9b06a03cc431fc45d8883810ac274d013a
+Description: A GitLab CLI tool bringing GitLab to your command line
+Homepage: https://gitlab.com/gitlab-org/cli
+
+Package: glab-cli
+Installed-Size: 46332
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.64.0
 Filename: pool/main/g/glab-cli/glab-cli_1.64.0_x86_64.deb
 Size: 11515724
@@ -10010,17 +10008,17 @@ Description: GStreamer base plug-ins
 Homepage: https://gstreamer.freedesktop.org/
 
 Package: gst-plugins-good
-Installed-Size: 5680
+Installed-Size: 5716
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.26.4
-Depends: glib, gst-plugins-base, gstreamer, libandroid-shmem, libbz2, libcaca, libflac, libjpeg-turbo, libmp3lame, libnettle, libpng, libvpx, libx11, libxext, libxfixes, libxml2, mpg123, pulseaudio, zlib
-Filename: pool/main/g/gst-plugins-good/gst-plugins-good_1.26.4_x86_64.deb
-Size: 1696304
-MD5sum: 9ae87c73be4578385bfac0d526119b04
-SHA1: 52c09615d51e6fbe49643f5975e9d5dbd4d8f3f4
-SHA256: 5c4df2b5359d64405eff63ad476d084fcf703320003ccc2ba49bde40d4bd63ea
-SHA512: ea663cde4c9fdd153d044aee946cd0f4035f29f8e99aad41aef183b74cd5cf1450051e6ec884e1dd686760b81d8bb53310a5cae87787b1d9eab4eeb05b5d8731
+Version: 1.26.4-1
+Depends: glib, gst-plugins-base, gstreamer, libandroid-shmem, libbz2, libcaca, libflac, libjpeg-turbo, libmp3lame, libnettle, libpng, libvpx, libx11, libxext, libxfixes, libxml2, libmpg123, pulseaudio, zlib
+Filename: pool/main/g/gst-plugins-good/gst-plugins-good_1.26.4-1_x86_64.deb
+Size: 1700652
+MD5sum: d473211e86898088dd2c31f0e229d67e
+SHA1: a0ff20fb740d6d2d91444a5de1d27e16a70f76db
+SHA256: 3b383c629bbb36cf8c5f7a4c6fc7ef1e7c008b58ab2767a71e1b2e8b2f09fa5e
+SHA512: 7a7103f29ab8b5f4091a43f1e0004b99a197a026a6ee72e2c1b4e32522344ce1ced8298a884b99eae1dd636eaf2e75986b89782c5c5787934c60c32476fa2770
 Description: GStreamer Good Plug-ins
 Homepage: https://gstreamer.freedesktop.org/
 
@@ -10406,6 +10404,20 @@ SHA256: 5ab57ea26eb428cdb9a3a1d96c29e0e7f45081d5d2b9787d44d91da657929b58
 SHA512: 1c23eef96be79fa90e6a9065bd30766492892da39f4dfd68a0f07a001261c0f7d97484d155202760479b27f7115faa77e3920eac73e51b8a87d7e7e22b27e646
 Description: Helm helps you manage Kubernetes applications
 Homepage: https://helm.sh
+
+Package: helm-ls
+Installed-Size: 60792
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.5.0
+Filename: pool/main/h/helm-ls/helm-ls_0.5.0_x86_64.deb
+Size: 13122348
+MD5sum: cda171b0204c90aa264c3a7983cd1f64
+SHA1: 6c2d89589b50113b71f2cbbf85b88c213e2dd59f
+SHA256: fdba644cdfef04432ecf4e4a2c0ef8586df047ebee8ffd6e5cf26847cd31ed3b
+SHA512: bd58bca571c58d99d3353ef02707130bc004bcc43897b327008f1ffda7b67227a9425bd2836837b8696f0c7bbbf32a1c0d49318854c4ec55b53ee712f4e3c4fa
+Description: Language server for Helm
+Homepage: https://github.com/mrjosh/helm-ls
 
 Package: helm-ls
 Installed-Size: 61532
@@ -11806,6 +11818,20 @@ SHA256: c44080b2e72a7f63889fb024d94794741f252bcb78fcb9420d2fc6e525700e5f
 SHA512: fdc9f00f9907649ebc05d1520969273003585dd36f86d890cd4125c9e6b826c906b751d15c222a587c43a6123c48ca7025c49e50e19e41a267a4bc367c73314b
 Description: Static libraries for jcal
 Homepage: http://nongnu.org/jcal
+
+Package: jfrog-cli
+Installed-Size: 61264
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.78.2
+Filename: pool/main/j/jfrog-cli/jfrog-cli_2.78.2_x86_64.deb
+Size: 13679000
+MD5sum: 22977ab869f9fe1ddad39579424d7df6
+SHA1: f5ab99c6e9d2705179f94e37656aed0663e6d77b
+SHA256: 4a244e29e7d5e1b9141389d8b0986d54242f2892415f50168977c3cf95ec554f
+SHA512: 34715c8d0a66b6978deb5bb9ae749d3b664fcd66c737853519549a6a3bce624cd8d26cfdbaf0371467ba8f733457518bf99da4209f253bccb1cf2fdc24a67e02
+Description: A CLI for JFrog products
+Homepage: https://jfrog.com/getcli
 
 Package: jfrog-cli
 Installed-Size: 61260
@@ -14078,6 +14104,23 @@ SHA256: 95dbf90d6d725b7b3da1af0f7a0826617e87e18e3fa230f6a32de232171a1ecc
 SHA512: 2159fba6cb02bee7c8671e0c2c1736928ed037d1d40066e87a7c900902fdd698474bb4b33bdf5264defdc09636106c10a02e2ca7efd5b4830dc1b2d72f82e199
 Description: A fast and lightweight 2D game physics library
 Homepage: http://chipmunk2d.net
+
+Package: libchromaprint
+Installed-Size: 208
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.5.1-p20250625-0
+Replaces: chromaprint (<< 1.5.1-p20250625)
+Depends: fftw, libc++
+Breaks: chromaprint (<< 1.5.1-p20250625)
+Filename: pool/main/libc/libchromaprint/libchromaprint_1.5.1-p20250625-0_x86_64.deb
+Size: 54152
+MD5sum: 5675c761972a9eb8fe9330877c8427ea
+SHA1: 29cf8b24b6f372b9e46483250dcfe6dd6024b0fe
+SHA256: 6716ffc645cd82a22015824bdd32a05ef33a7a5a3c69fea254d047882af87f5f
+SHA512: e1618aef608f045afa6ec1145b65e3b56dc264dd9a24f0b3a84a9117a2ea638c18e89422559214abe6879ef69232a0cc7d8d2655a4b3db6b86eb1f034c36ee89
+Description: C library for generating audio fingerprints used by AcoustID
+Homepage: https://acoustid.org/chromaprint
 
 Package: libclc
 Installed-Size: 81028
@@ -17721,6 +17764,21 @@ Description: An extremely fast, compact, powerful, embedded, transactional key-v
 Homepage: https://libmdbx.dqdkfa.ru/
 
 Package: libmediainfo
+Installed-Size: 10280
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.07
+Depends: libc++, libcurl, libzen, zlib
+Filename: pool/main/libm/libmediainfo/libmediainfo_25.07_x86_64.deb
+Size: 2885724
+MD5sum: 2d3a940b8c87642f0aeeb6351c86885b
+SHA1: 1d158f33007a268eefdd73b7433559a9feb3ec18
+SHA256: d226af1808c1ced9e2182596e957fb6f46118c2044e21da01f972e61ce45df03
+SHA512: 84132314b1a6345e0c3fdea5e1ae7618feec3c98d995687451f37efb5d3895fa0d17051543d0727e55879815c86ba50d580dac7d6cd152e530bb94661a00a657
+Description: Library for reading information from media files
+Homepage: https://mediaarea.net/en/MediaInfo
+
+Package: libmediainfo
 Installed-Size: 9872
 Maintainer: @termux
 Architecture: x86_64
@@ -17733,6 +17791,21 @@ SHA1: cbe718fc719e6fbb8abe00dd6bc7c38bf7ee04b3
 SHA256: 9b17425d6f9fd8e9f917c3dbbcdf0aca81839a423581a711eba3e3053a957086
 SHA512: 395f64b4066017e153668e6ecc4fe963f366cd7811a816d8df568f5f38e61abed1600731f5145a786bbb5f3b0b17076729ee3eb6d70467304afb1cab047999b3
 Description: Library for reading information from media files
+Homepage: https://mediaarea.net/en/MediaInfo
+
+Package: libmediainfo-static
+Installed-Size: 25232
+Maintainer: @termux
+Architecture: x86_64
+Version: 25.07
+Depends: libmediainfo (= 25.07)
+Filename: pool/main/libm/libmediainfo-static/libmediainfo-static_25.07_x86_64.deb
+Size: 3592076
+MD5sum: b56775a0ce45b5047ec5d880ffaaab42
+SHA1: c018a5a7205bbd7bc2b529a920f8f7a16da1301d
+SHA256: 6067c330be98e533d23cd8c0fa6d2d07d3762df4a00fecf093b3a21b798b6c35
+SHA512: d91ff54d41f627a6458872150344e16b8ec154c7abf0e693b7c7a32d45133c92cbe883f51d6f8c58a31ffa4e0899655b07ab5113d1c840c17f76bcb518f4b71f
+Description: Static libraries for libmediainfo
 Homepage: https://mediaarea.net/en/MediaInfo
 
 Package: libmediainfo-static
@@ -18154,6 +18227,37 @@ SHA256: 5fb67fd81781fb6e9145dabc5031438b80102bb97fe0991b1ccc4ae2dd035dc1
 SHA512: a2e937cfc4d236e633142602cb3c4ce3db71533bddf65174094d1c18d90e0879d2b03d7660c2498bec13f9f9d790771e623a6bebb7aed886307ffb29dbd233aa
 Description: Static libraries for libmpfr
 Homepage: https://www.mpfr.org/
+
+Package: libmpg123
+Installed-Size: 648
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.33.1-1
+Replaces: mpg123 (<< 1.33.1-1)
+Breaks: mpg123 (<< 1.33.1-1)
+Filename: pool/main/libm/libmpg123/libmpg123_1.33.1-1_x86_64.deb
+Size: 186668
+MD5sum: 5edd5657d2382e1ca0cda690a380f1c5
+SHA1: 1d6156bff1101f6359e14ca2c1f4c288dd703e6c
+SHA256: 76359af7cd32c6af11cdb6dbc84cb31f78e839ca8d0fce844e772306435e72f3
+SHA512: 29d8a74efda3ae034e6d5c9496da4c564429641784a4b15bcde216b9564783709dc87d184d4c82d71992dde934cb51a90c51d3d0f4fde253538f2475c2e42aaa
+Description: Fast console MPEG Audio Player and decoder library
+Homepage: https://mpg123.org/
+
+Package: libmpg123-static
+Installed-Size: 648
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.33.1-1
+Depends: libmpg123 (= 1.33.1-1)
+Filename: pool/main/libm/libmpg123-static/libmpg123-static_1.33.1-1_x86_64.deb
+Size: 160912
+MD5sum: 7b22a7a5ff6cda86d6499f60cfa24671
+SHA1: e34d3b1c2dd5c2b3e553dab68f7c579c9a34bde4
+SHA256: 3b89046d95cc206963bc018d95381f0f313bd1557f877b8fe4ef7368598582fe
+SHA512: 0c79ac3d14c9708389df553de9de4d3f8d23e112fbd5b7a40c16df605883afdd6d6516b7e34c612da1d35195e24688e0339ff564b4c53eba0e9bf2c7b85cec0a
+Description: Static libraries for libmpg123
+Homepage: https://mpg123.org/
 
 Package: libmsgpack
 Installed-Size: 240
@@ -18945,32 +19049,32 @@ Description: Application-Level Forward Erasure Correction implementation library
 Homepage: http://openfec.org
 
 Package: libopenmpt
-Installed-Size: 2352
+Installed-Size: 1992
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.8.2
-Depends: libc++, libflac, libogg, libsndfile, libvorbis, mpg123, pulseaudio, zlib
-Filename: pool/main/libo/libopenmpt/libopenmpt_0.8.2_x86_64.deb
-Size: 668104
-MD5sum: 3cf835be21e53903a66d5eec5b2fe86a
-SHA1: a096a2adc9840bb006fda57b758dff14f5f6bb0e
-SHA256: c20bd85a98006a69c1a5124e59a99de97aa4a576cb065be9520b6f298677262e
-SHA512: 0ae437a46777e011f2ecb6f39b36c6290abb40257bfa012697cb2374290d88bcd953f40a996408e7bce83b98aab4a158cf1e13125f7bc3623d4d4762141602f7
-Description: OpenMPT based module player library and libopenmpt based command-line player
+Version: 0.8.2-1
+Depends: libc++, libvorbis, libmpg123, zlib
+Filename: pool/main/libo/libopenmpt/libopenmpt_0.8.2-1_x86_64.deb
+Size: 587328
+MD5sum: 92f8cd4773d42845ba9b101b8af4c45b
+SHA1: 32cb5aa89c6392f841d709e93e496aa9f078cdda
+SHA256: c59b8bb8f2bd8a56fb4bb9dab023e45b94335f1d6dfc9358ef9299ffd6aed839
+SHA512: 1ece68064e50743640c5885690f9c5d4806629f329a147a5a0ad5a1a172041a5a2a1bd03cd47e1b3dd0094b8a3ce2051498e3b39aafb67c835ae843a4079ba8b
+Description: Library to render tracker music formats to a PCM audio stream
 Homepage: https://lib.openmpt.org/libopenmpt/
 
 Package: libopenmpt-static
 Installed-Size: 15628
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.8.2
-Depends: libopenmpt (= 0.8.2)
-Filename: pool/main/libo/libopenmpt-static/libopenmpt-static_0.8.2_x86_64.deb
-Size: 1387120
-MD5sum: 990aa0ea4d22304e3a5acbfd35ed04bf
-SHA1: 87e3a883f8fdcee25091e54d3284777101df97a2
-SHA256: bda90e8b78659d7c01cf58360181bf6b8dc75ba5d5a96152bdfb15932d539e7a
-SHA512: 20c00ee300c16e2481f627952afe16b02521269fcef6dc03efdf380a1da639fc45486c07c473b13b44f82290823a1670cec12620684e1c79bcfed56520fd9747
+Version: 0.8.2-1
+Depends: libopenmpt (= 0.8.2-1)
+Filename: pool/main/libo/libopenmpt-static/libopenmpt-static_0.8.2-1_x86_64.deb
+Size: 1388732
+MD5sum: d39dda9edf10dc88b242cf8eb07b4e8e
+SHA1: 839bd4c3d6a3ddd68898f63e2bd07623d5a7ccf4
+SHA256: 3892265e86f2613ebdc5b1d9638e5af18554e44d5bff549a9617810deb294dbc
+SHA512: ade33d27ab45c61959794d31aaf2a38cc9c8b9ffe837c3fe000b9f88fa740bdc1670c600225c9ce81beb797ee74eeb254284220960e5fd6d6962ad677cff445d
 Description: Static libraries for libopenmpt
 Homepage: https://lib.openmpt.org/libopenmpt/
 
@@ -23772,6 +23876,22 @@ Package: llama-cpp
 Installed-Size: 51104
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b6026-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6026-0_x86_64.deb
+Size: 7029252
+MD5sum: 2785374da1cd0bb28a9727059ceda13b
+SHA1: 778abac4308865db81dc1498c17496e47439bdb0
+SHA256: 09e55e73d30c5be21ef9b795a3d096c782205f84bc995a8a3577050d87dfe7d7
+SHA512: 5a67ef9362d2836526c76c0047f9792d4bb170b26a122b19e982cf8a46f6a0a0f0b7438e83cda24366dd6958a78d85b79467bb854eee8b8096cb517ca25f8ce1
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 51104
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b6020-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23784,20 +23904,21 @@ SHA512: 979f8fe476069ca7322d8d2cf3613bc314c09bfeee9ed8412246a5b8b26913346cb2fe26
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51104
+Package: llama-cpp-backend-opencl
+Installed-Size: 548
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6018-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6018-0_x86_64.deb
-Size: 7038976
-MD5sum: 18c52ebb6e02ec8ab3a9c3fcd2c9fd52
-SHA1: 2e7571c42f0a8344831f5939e71df3e6c5ca1382
-SHA256: 6e7b36f3b60d2a09d50b565dc503274da1f2d41e3d288aa68541eeaef4a4bf39
-SHA512: c566239d2539cb5444c472bf79456ef9c38399adaf48b0d25e1ee023932cc26ff38182e89d22df7d64654b565b25803f2294de3c66130dfb9e5613a9f156115f
-Description: LLM inference in C/C++
+Version: 0.0.0-b6026-0
+Depends: llama-cpp (= 0.0.0-b6026-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6026-0_x86_64.deb
+Size: 100232
+MD5sum: 7ac5da22698dd1d6a57b4a84ede56f3e
+SHA1: b7c7b8b77a32cd92d35a59188495521254ef9473
+SHA256: 7ccc03187733cfe868d22bc4664fa7902eab5c8a0eff64bdfad1aaa4fc8c9854
+SHA512: 67ad37760113ae786087306ffbae49580759304a1ba418128e6b15d4461720e60090ed980f6d13dd4d74dede88989c11cc9ef7251addd123edf7716aa1b83caf
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23817,21 +23938,21 @@ SHA512: 5fa09accf6411c15c98d48cc02f4cb2a9d259cc2e31440288804c04a6516037b47a77564
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 548
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13788
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6018-0
-Depends: llama-cpp (= 0.0.0-b6018-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6018-0_x86_64.deb
-Size: 100256
-MD5sum: eb8efe60011f920cc9a0a56346bac290
-SHA1: 72b9ebc575806950a6cbeb6194b672969790f7f3
-SHA256: 4f865d3a28c9c01599a33298dee51beb4c3903acddf8e3cb0e3ac32c963985d4
-SHA512: 7591952d38069fa85942fd8a92fbd9ca8e9e439aa476cfb65ee8ee9b023428e2ec7c2b55082e3a8c2f9097a153cd45443633918a62f8ef08359b0ae358f7a74d
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6026-0
+Depends: llama-cpp (= 0.0.0-b6026-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6026-0_x86_64.deb
+Size: 1084652
+MD5sum: f07f95f3f1354802dd8b076bd3d9ef8f
+SHA1: 6eb67cd3d04370fb0b86e272649ac9ed9430b605
+SHA256: ccad873095376d6f7c028b92be4e306594294702c5d61955da39d826198e416c
+SHA512: 4321f642bdaec1e40e172400ef71df8a9ee60c047e4e85287c00361498ccdc9c0983df5638d3f6a31dadaeda3a5966fd18c9fb4d00e5b5a03742d39151a28f0d
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23848,23 +23969,6 @@ MD5sum: 30e4756ec2599f5a3c02fb4ac29c04c8
 SHA1: f8f313d2c920ac7ff3156454066cb766c6577961
 SHA256: 28314aa80465e5058a5bd766769534ea1795956c95e1c8ff9766011f8caa992b
 SHA512: 780f405f5ed77d654b894d17a48f5045ea1a99d113c0f93998c44cab07524c1ee2d6d1142d6202db561e303ebf52e2a321502eb835e6712c06b1f0314d79a4da
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13788
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6018-0
-Depends: llama-cpp (= 0.0.0-b6018-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6018-0_x86_64.deb
-Size: 1084124
-MD5sum: e21c1f6ee2bf6f124baf66c52728860d
-SHA1: b8b9dd655dcfe0122b123ae9420fe2d8b13e208e
-SHA256: f8f74160f82c3e95244f1ac4d3952f1415756fdd221d569ead32acf21f1cbcaa
-SHA512: 6587f6130f20a78f055eb0c837cc6ecf7e5ca34eee1d51c69da36609d7dbdb7ce7bdaf4b6cf719ef86b96a5c9b9cb4bd9a22af8663b3f8aabed7d67e2d99c1a1
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -25425,6 +25529,21 @@ Package: mediainfo
 Installed-Size: 136
 Maintainer: @termux
 Architecture: x86_64
+Version: 25.07
+Depends: libandroid-support, libc++, libmediainfo, libzen
+Filename: pool/main/m/mediainfo/mediainfo_25.07_x86_64.deb
+Size: 29584
+MD5sum: d15da2c9b5c469db0951005091943638
+SHA1: 084e79d33791d0a37b979f9edbde2b0c4ecc6728
+SHA256: f7b6a67c376c785891cec0afe0dcb9c836e96b988d6e75e798c06398b3c24fd2
+SHA512: 7a26191d7e1c993308d57087c9bd5dad4ae8906196af1ececb149c729f77ddd0b5d5d6a46a6fd6af4d0bc2d885c7e106a793d79504a7c4a1af6e1ac627a758aa
+Description: Command-line utility for reading information from media files
+Homepage: https://mediaarea.net/en/MediaInfo
+
+Package: mediainfo
+Installed-Size: 136
+Maintainer: @termux
+Architecture: x86_64
 Version: 25.04
 Depends: libandroid-support, libc++, libmediainfo, libzen
 Filename: pool/main/m/mediainfo/mediainfo_25.04_x86_64.deb
@@ -25494,23 +25613,6 @@ MD5sum: 8d80b32f175bcbd69169ad4bf3906e0e
 SHA1: e3545fbff9962d5fc66a6f5e19003cb6762171f6
 SHA256: 372628287c07dc1c04e079b6a6d883212a8c39ecc7af953449aec0bbf019d2bc
 SHA512: e2d333928388f579417e626dd33fd4032aef8627c3ab35834ac3c1cd73240e81370127b9845bc827a4ef73cfb78982a76041cbbf9db3dc45b01455e3ae0d6a32
-Description: Free & open source, high-performance, distributed memory object caching system
-Homepage: https://memcached.org/
-
-Package: memcached
-Installed-Size: 504
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.6.38
-Replaces: memcached-dev
-Depends: libevent, libsasl
-Breaks: memcached-dev
-Filename: pool/main/m/memcached/memcached_1.6.38_x86_64.deb
-Size: 143048
-MD5sum: 4419ec5001abfd56b5cc0c23b3e8778e
-SHA1: 9724710f522f3025e7664bb8619dd3eee02aae4f
-SHA256: ad97f479e37201d3b56225dd2642decabe48de032bdef0e7443913be9ad9aa56
-SHA512: 56136f3879c29200ab4ecd8ab19819733a98ce3a509d87502077741de294f03e34148053f0b7de39c5e311f288974b54de583c28115efa3d27e759987e9cb950
 Description: Free & open source, high-performance, distributed memory object caching system
 Homepage: https://memcached.org/
 
@@ -25991,20 +26093,6 @@ SHA512: dc859937588616117f76e5c59c162a31c498ffb9f6c2fba32b2570dc89ac5a7526a49e41
 Description: A pager designed to just do the right thing without any configuration
 Homepage: https://github.com/walles/moar
 
-Package: moar
-Installed-Size: 7872
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.32.6
-Filename: pool/main/m/moar/moar_1.32.6_x86_64.deb
-Size: 2103600
-MD5sum: c21c21f7a2709fcb1ee724e7934adefa
-SHA1: 26ccec154132266ee3efc88ce4ce1b605c03ecb2
-SHA256: b39567ec71a845bf2234f30c8f6fd2035f56395be07c5476a5857789b2e3a10d
-SHA512: 59c1e2e2009beaeb79997d0a1748bb3751a0dbbb77402823d116a7012d001ef84ffdda5426a9302bd91bbe8b9ee99721790423f978a43e9c6642d83bc86b3e46
-Description: A pager designed to just do the right thing without any configuration
-Homepage: https://github.com/walles/moar
-
 Package: mold
 Installed-Size: 22500
 Maintainer: @termux
@@ -26297,16 +26385,16 @@ Package: mp3gain
 Installed-Size: 100
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.6.2
-Depends: mpg123
-Filename: pool/main/m/mp3gain/mp3gain_1.6.2_x86_64.deb
-Size: 29076
-MD5sum: 28025700b011929fd186f9dfd918017e
-SHA1: 6a5d3e241427c9bf7c81eb1db72a998539a8d244
-SHA256: 6dc4253d5a640ed05568e49b2500d291fd42697cdad464de84bbaf29e1cf48c9
-SHA512: 31a032de71211c4eabe9a5e8871cf4c1fb047207ab6d788ddca7feedbf5174352d9fd2a9dfe2a9a90499fec5a0ee0540bfc5bdc18e83b83b9269349910d4cc3b
+Version: 1.6.2-1
+Depends: libmpg123
+Filename: pool/main/m/mp3gain/mp3gain_1.6.2-1_x86_64.deb
+Size: 29256
+MD5sum: 4913b9ca5a5243bd2f7ea762598e14aa
+SHA1: 7f73a3fa853a93c82b4f36f68c28174c5947cbfe
+SHA256: fab275e3f61957671bffca8b8c8b8b7538be9218df87d4b638f95a3b979ffbe1
+SHA512: 4045a6be5e15c7e928124c5352a6aa8b0c76d4ed34fbb4259a0ebbc04bbd57da729ba70f7091058eaeb27ecc87dda927a38cc278563482ae4115e4ca721cc65f
 Description: Analyzes and adjusts mp3 files so that they have the same volume
-Homepage: http://mp3gain.sourceforge.net/
+Homepage: https://mp3gain.sourceforge.net/
 
 Package: mp3splt
 Installed-Size: 100
@@ -26356,14 +26444,14 @@ Package: mpd
 Installed-Size: 7608
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.24.4
-Depends: chromaprint, dbus, ffmpeg, game-music-emu, libao, libbz2, libc++, libcurl, libexpat, libflac, libicu, libid3tag, libmad, libmp3lame, libmpdclient, libnfs, libogg, libopenmpt, libopus, libsamplerate, libsndfile, libsoxr, libsqlite, libvorbis, libwavpack, mpg123, openal-soft, pcre2, pulseaudio, yajl, zlib, fmt
-Filename: pool/main/m/mpd/mpd_0.24.4_x86_64.deb
-Size: 2847296
-MD5sum: 0a227d84e0736e7953095a99a75f4093
-SHA1: 9c518c9df666e26584d9c7de11644fc3a3dcf4d0
-SHA256: 877b7c7096f5bd10906a684b4cdf475bfa946cc4c27f4f1b568050d2dbf5f2f2
-SHA512: ded17c954eda502d7aaa37f39757f0575995ccdd71fab12774371d89a4b1b544b682c92123cfaed47f640dbc976217cea675b7658e91fcee541cc9a72f1ba4f5
+Version: 0.24.4-1
+Depends: libchromaprint, dbus, ffmpeg, game-music-emu, libao, libbz2, libc++, libcurl, libexpat, libflac, libicu, libid3tag, libmad, libmp3lame, libmpdclient, libnfs, libogg, libopenmpt, libopus, libsamplerate, libsndfile, libsoxr, libsqlite, libvorbis, libwavpack, libmpg123, openal-soft, pcre2, pulseaudio, yajl, zlib, fmt
+Filename: pool/main/m/mpd/mpd_0.24.4-1_x86_64.deb
+Size: 2847140
+MD5sum: 383e22da10f0932f674ddbffadedea74
+SHA1: 167700dc109b1199034f41813feae3b5beb75ebc
+SHA256: 671c476a57f6a6e74e11fa8695636befc51bf3110fe8e447a19313dc8f4c1b63
+SHA512: 5d5204755c119e0857760c3109e83df68628aac846b23c938513ffa21b0e303c5a8031eec0005636d742f6152a28b681056d7e7f5c6566c1411b672996b49288
 Description: Music player daemon
 Homepage: https://www.musicpd.org
 
@@ -26383,18 +26471,18 @@ Description: A Music Player Daemon (MPD) client which submits information about 
 Homepage: https://www.musicpd.org/clients/mpdscribble/
 
 Package: mpg123
-Installed-Size: 964
+Installed-Size: 348
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.33.1
-Depends: pulseaudio
-Filename: pool/main/m/mpg123/mpg123_1.33.1_x86_64.deb
-Size: 282760
-MD5sum: 2f14e1a0537c4a03f7706f58e4dfe542
-SHA1: 6dfa392ff4ddb52813c3e5fffc0d345760424ad5
-SHA256: 74023794333148615de797fc1fb628f9960f65ed872b0645387a213b301d8d32
-SHA512: 42529d32327a7cec8e433f5697f4fee51c5213b1f516ba70ffe0a280c89b6ba5f0188f34eec8a07e886b1af51e18ec20eac4a38188b1cc485ab08d82e696b973
-Description: Fast console MPEG Audio Player and decoder library
+Version: 1.33.1-1
+Depends: pulseaudio, libmpg123 (= 1.33.1-1)
+Filename: pool/main/m/mpg123/mpg123_1.33.1-1_x86_64.deb
+Size: 100920
+MD5sum: 0f8b3c973651910444d9b9abf550b23d
+SHA1: 83477f1cf1962d0a120b989654720c803c229f6f
+SHA256: 3456c725d3b81f938e2a8d32cad119095e1fcc8231e6685cc8a9793a1a5d364f
+SHA512: 245c5028b48db0181a4fec96291f66c8b1d2d98be5f48ca92e7bc596d1e0fd66059a536d381003cba248f20fadec3c55bb8b95b9fbe7c9bb98224ff7f6eaf16b
+Description: Fast console MPEG Audio Player based on libmpg123
 Homepage: https://mpg123.org/
 
 Package: mpg123-static
@@ -26416,14 +26504,14 @@ Package: mplayer
 Installed-Size: 4484
 Maintainer: @termux
 Architecture: x86_64
-Version: 1.5-9
-Depends: ffmpeg, fontconfig, freetype, fribidi, liba52, libass, libbluray, libdvdnav, libdvdread, libiconv, libjpeg-turbo, liblzo, libmad, libmp3lame, libogg, libpng, libtheora, libtwolame, libvorbis, libx11, libx264, libxext, libxss, libxv, mpg123, ncurses, openal-soft, pulseaudio, xvidcore, zlib
-Filename: pool/main/m/mplayer/mplayer_1.5-9_x86_64.deb
-Size: 901092
-MD5sum: 9beed8fe2e8ed34bc4ab4f1cfd80b292
-SHA1: 5ebea7a43c9b13bde354d1a9c8d6c0cf22b8ecf7
-SHA256: 4251e3c28675f9228553a906e8392322b088412e2b6d4c73266fdc61129c9c03
-SHA512: 71e37c0c18d93a65429cfd36c85206ba5c13ce1e45e03d049c4b36994017ba972a676046ebc4f8c0200f95efe16eda614f0ac5c6d3e1242eb06fcf552c7a7a66
+Version: 1.5-10
+Depends: ffmpeg, fontconfig, freetype, fribidi, liba52, libass, libbluray, libdvdnav, libdvdread, libiconv, libjpeg-turbo, liblzo, libmad, libmp3lame, libogg, libpng, libtheora, libtwolame, libvorbis, libx11, libx264, libxext, libxss, libxv, libmpg123, ncurses, openal-soft, pulseaudio, xvidcore, zlib
+Filename: pool/main/m/mplayer/mplayer_1.5-10_x86_64.deb
+Size: 900724
+MD5sum: dcd23e717e10d2427dd5e6e39ba11c09
+SHA1: b46c51428e45b69de074f380af16d7f4f9d1f31c
+SHA256: 03d7a6e1c09c61a2aecad23bd3a0a27bf04a6224a3255dca96323bbff04d303f
+SHA512: 557741da2c4d4d806116f371f6b8f78bb6aecf2bd17b071226405be9f8eabe007a24b0dc08b7f2fea012689828243b601eaf825aaccbb27356e62b51abaa447e
 Description: The Movie Player
 Homepage: https://mplayerhq.hu/
 
@@ -28054,20 +28142,6 @@ SHA512: a453930a8167a63ecbf8497424ef73d31c8bc840bcd0472e2da145e8aad0665e77053d32
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
-Package: oh-my-posh
-Installed-Size: 20636
-Maintainer: @termux
-Architecture: x86_64
-Version: 26.17.1
-Filename: pool/main/o/oh-my-posh/oh-my-posh_26.17.1_x86_64.deb
-Size: 5379936
-MD5sum: b5e8afaa6bb208a1a03cec1f7ea55ab9
-SHA1: 8e41ea9aa69359544cf3d66149670a922bdb4468
-SHA256: ebbed542c9bf2993f360b01b9e7617635b5431033221df664626a3a9712df3a7
-SHA512: 0d3560ee757932d24ce90ebe0ae6cdd0f819c12bb69376753d18a82ccd58cf93c35de5b448f8fa1f371d349ad526d1fa9cfe223ee4eceada7cfb196782365f3b
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
 Package: oidn
 Installed-Size: 54488
 Maintainer: @termux
@@ -28661,6 +28735,23 @@ SHA512: 6c78c3c96771bb10933b95d5edb0523ffa621fc3e25539fec0ef59f22e8a257e734c169d
 Description: Static libraries for openmpi
 Homepage: https://www.open-mpi.org
 
+Package: openmpt123
+Installed-Size: 388
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.8.2-1
+Replaces: libopenmpt (<< 0.8.2-1)
+Depends: libflac, libsndfile, pulseaudio, libopenmpt (= 0.8.2-1)
+Breaks: libopenmpt (<< 0.8.2-1)
+Filename: pool/main/o/openmpt123/openmpt123_0.8.2-1_x86_64.deb
+Size: 109860
+MD5sum: 6b858880f5f62d5e4440f67969ba6eb6
+SHA1: 2f153cef31c68490f4e997cfecbc22333f1ee65d
+SHA256: 5bed8b1649f998f0c0c32937970a4a7dec4bc0e4fd7867b02e85d2f942a7fad6
+SHA512: 52107fe98069aec95e0d02b465677ae8c4097a50c0621bf51709a1eec6a3513085bc2c9a1d0c7c5c3bb632cb9224694a3d9e7defbf5a94b145f24c150de9ab53
+Description: libopenmpt based command-line player for tracker music formats
+Homepage: https://lib.openmpt.org/libopenmpt/
+
 Package: openpgl
 Installed-Size: 1688
 Maintainer: @termux
@@ -29014,20 +29105,6 @@ SHA512: 352931c9f0767eafcfe1a79522c97221ff8ce899084328bd59f3f6cf58c98d6d90a5b8a0
 Description: Oxc JavaScript linter language server
 Homepage: https://oxc.rs/
 
-Package: oxc-language-server
-Installed-Size: 9748
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.8.0-1
-Filename: pool/main/o/oxc-language-server/oxc-language-server_1.8.0-1_x86_64.deb
-Size: 2834596
-MD5sum: c792c9f3d7e7290c9d9ef94a3e1408a3
-SHA1: c2e6fc7e6761b30d122749426931f1ad2f6aead3
-SHA256: 37a80388f2b43a6acbe5caff7d3ab95a7708a082fc6841f8cb90ae9b52658151
-SHA512: 4522fb5ed44bc0b52aab63f8eb8411fb3f55b9b0d4a23fce1a5601adc57689bd769615fb79dcbc778895b8cb6ce5f920c8c3b0dbad1deb21abeb5e07d3b462aa
-Description: Oxc JavaScript linter language server
-Homepage: https://oxc.rs/
-
 Package: oxlint
 Installed-Size: 9104
 Maintainer: @termux
@@ -29039,20 +29116,6 @@ MD5sum: 740f8b3997b4461151330fe3be2588e7
 SHA1: d1c29d787955f16c843fe317c399d32744d541bb
 SHA256: 17d94c42246a069090ae8088aa2485b2fc0ae283d9a366641b95bd13aa9a816e
 SHA512: fad375e8f714d1040fac4b591d4a5fbe99266554661541c99910f33ada4f312ee00a75ef4d8c781f6851dfc4c9766783272ff1bc2d57b8e9a55aed50c5af9aff
-Description: Oxc JavaScript linter
-Homepage: https://oxc.rs/
-
-Package: oxlint
-Installed-Size: 9068
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.8.0-1
-Filename: pool/main/o/oxlint/oxlint_1.8.0-1_x86_64.deb
-Size: 2602200
-MD5sum: f13e27a7c7264f4f44e67ce21790ceb7
-SHA1: 12f4c8407378b4bce4c48299c6dc7dea4ce2df93
-SHA256: fc3efc4391bdc8749deee12e196d5ff33fec641eb2f19e732f5abf5966be9b91
-SHA512: 7a298579788097d9186247f4c1202a235ee09271fbda4f09c378e992a13fe7211b6204b37aee5d89d485e5c3d5bb4a1d7fc9df392b584172b6adbf3b9e8d474e
 Description: Oxc JavaScript linter
 Homepage: https://oxc.rs/
 
@@ -32535,20 +32598,6 @@ SHA512: 56be9c2080d217f06eccbe25dd1b9909e4333afd3132d91d2922f78bcd339cdfef1cff9e
 Description: This is the command line interface for Railway
 Homepage: https://railway.app
 
-Package: railway-cli
-Installed-Size: 6552
-Maintainer: @termux
-Architecture: x86_64
-Version: 4.5.5
-Filename: pool/main/r/railway-cli/railway-cli_4.5.5_x86_64.deb
-Size: 2163084
-MD5sum: 3a3614c1c8e3d9401a3ef26619d7fe68
-SHA1: 470536195b637e72dd8cdc87817772f6235ec872
-SHA256: 0e9438e92946b080bc0cd2ff3981b451b041abcb3df30349d98168f29d14a572
-SHA512: 89a78241f883274beb265e1eeacb30ee4457f7df0c15a6c578111ca172a37b447fbad60515b2149f8db630815137b185adb9893090ec9c4e3bd19d4a2473f86b
-Description: This is the command line interface for Railway
-Homepage: https://railway.app
-
 Package: range-v3
 Installed-Size: 2796
 Maintainer: @termux
@@ -35379,14 +35428,14 @@ Package: squeezelite
 Installed-Size: 124
 Maintainer: @termux
 Architecture: x86_64
-Version: 2.0.0.1517
-Depends: libflac, libmad, libvorbis, mpg123, pulseaudio
-Filename: pool/main/s/squeezelite/squeezelite_2.0.0.1517_x86_64.deb
-Size: 36308
-MD5sum: 51883f464ab3c5ba961e4400394b1639
-SHA1: af584e1e4483d7b64cc46d56963cb93ced5d8639
-SHA256: 133d547a24e5cbe988daba46a5b15eb232ef28927f79d4cfad9c580cc781f6a1
-SHA512: bcb746183fde1b6ae15020210ea10adee60098bfef911601922c0736ccf16bcb118e3500f7d6b09d654b4a37ef014e6fcc77f83309415fed25756d6ab283f075
+Version: 2.0.0.1517-1
+Depends: libflac, libmad, libvorbis, libmpg123, pulseaudio
+Filename: pool/main/s/squeezelite/squeezelite_2.0.0.1517-1_x86_64.deb
+Size: 36332
+MD5sum: 9580fb860f426c9fe5466c5d97e3619d
+SHA1: ee744f7f0dccd24a56a451cb2e24abbc63c8d1b0
+SHA256: d5f5d230c801121c66308cc30c7b25615d07353d8787d2fc78d4b90df099a84a
+SHA512: 3c45fcf8b0b5870503624bb36241121edf6e8734ceab139ba190c596a6bc494f98ede011f8c92b26d6556ca194cecd52bd61ad7bf8e5b21e884f091c2e8b8458
 Description: A small headless Logitech Squeezebox emulator
 Homepage: https://ralph-irving.github.io/squeezelite.html
 
@@ -37444,23 +37493,6 @@ SHA512: ee16d1b84740f1b9a4b664c3008633d117c361f5430b1a9d32fd13c087883404c73832b3
 Description: An integrated language service for Typst
 Homepage: https://myriad-dreamin.github.io/tinymist
 
-Package: tinymist
-Installed-Size: 52328
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: x86_64
-Version: 0.13.14
-Replaces: typst-lsp
-Depends: openssl
-Breaks: typst-lsp
-Filename: pool/main/t/tinymist/tinymist_0.13.14_x86_64.deb
-Size: 15647368
-MD5sum: 76d6c40b844727d7afd12c985e2cfb52
-SHA1: 26b5ae058a914219de09b08825872ec4bb2048e7
-SHA256: ac8be44d5b398ea3437e1a9142cf06364ab2198fd32509d67ab49403c463f0a2
-SHA512: 48dfd2af21c80fd8b5c8ddd4869f867fb4284c54b69d2d32c31936b3779dba0f4b780d63526bd2435074d388c724ec5e3c82af18aaa78e00b5ee0c73c33e3d1c
-Description: An integrated language service for Typst
-Homepage: https://myriad-dreamin.github.io/tinymist
-
 Package: tinyproxy
 Installed-Size: 220
 Maintainer: @termux
@@ -37490,17 +37522,17 @@ Description: Very small scheme implementation
 Homepage: http://tinyscheme.sourceforge.net/home.html
 
 Package: tizonia
-Installed-Size: 9984
+Installed-Size: 9620
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.22.0-18
-Depends: boost, dbus, libandroid-wordexp, libc++, libcurl, libflac, liblog4c, libmad, libmediainfo, libmp3lame, liboggz, libopus, libsndfile, libsqlite, libuuid, libvpx, mpg123, opusfile, pulseaudio, python, taglib
-Filename: pool/main/t/tizonia/tizonia_0.22.0-18_x86_64.deb
-Size: 1578336
-MD5sum: 5fe940ac3a73e3da7d1d1b2ef5819ef1
-SHA1: 67c347acb49bbe68ed1c9442c304bbacca532c57
-SHA256: 24872aec32e297f8e864d8be1e2c8983eae118f24128b6ea31bee85e4df636da
-SHA512: 632d79d34b3e32cf2aa713eef0e97968e2ae093b8038f65093814220c8e9f37b5f59e7befea8116d4b731b565814f7c3a08ad9535cc241334c88e71cbaf759f2
+Version: 0.22.0-19
+Depends: boost, dbus, libandroid-wordexp, libc++, libcurl, libflac, liblog4c, libmad, libmediainfo, libmp3lame, liboggz, libopus, libsndfile, libsqlite, libuuid, libvpx, libmpg123, opusfile, pulseaudio, python, taglib
+Filename: pool/main/t/tizonia/tizonia_0.22.0-19_x86_64.deb
+Size: 1575004
+MD5sum: 943f9c150a0a077ace3a053f9bac2cbb
+SHA1: 73b9ee49e0e326591e5be632c8bba49cdb98dbaf
+SHA256: 1b0cda1763a4a92114d23c0c8862c373bdd01e92a45e33b82a67a70be0d7a041
+SHA512: d7fbc294faa165b1256351d5963280daac8f1c5f1b60e4d11080c1d8e6d9cfb379d374d7de2a7fa1176e24afcbccee4ebcfdcc38838a3df66674b604aae8eef7
 Description: A command-line streaming music client/server for Linux
 Homepage: https://github.com/tizonia/
 
@@ -39197,17 +39229,17 @@ Description: A programmable tool for verification, analysis and transformation o
 Homepage: https://bitbucket.org/verateam/vera
 
 Package: vgmstream
-Installed-Size: 5040
+Installed-Size: 5048
 Maintainer: @termux
 Architecture: x86_64
-Version: 2023
-Depends: ffmpeg, libao, libjansson, libspeex, libvorbis, mpg123
-Filename: pool/main/v/vgmstream/vgmstream_2023_x86_64.deb
-Size: 790980
-MD5sum: 6d323a832488bf1de9d87d60326ff5dd
-SHA1: 8fa0689534247f1521cb2b474fa73bab3f9eb6fb
-SHA256: 6ab941cfa9f7cd7a5a7dd53ee5ed916b1271559518189df701c177ecdccfa437
-SHA512: c720a795eef9cae2088528ef2ab4251430b1763f0d1387b22b8028100ec513bebf8e2269acbad8289d17c51e81de240f6685af1833d9729d0ca11fab34d0e006
+Version: 2023-1
+Depends: ffmpeg, libao, libjansson, libspeex, libvorbis, libmpg123
+Filename: pool/main/v/vgmstream/vgmstream_2023-1_x86_64.deb
+Size: 790968
+MD5sum: 21c51c40d0f3654c8de35a781ed075bc
+SHA1: 84c9335502363d202476d032b218e4a61f55fc98
+SHA256: 79a9bad5841a18151df2229a5b6f782bd7a9c14e3ee4c4acbb92bb5be3658ecd
+SHA512: 702e0b58c38c93c5dd343f70ca185f672b8be875d6d855f4a8f1d3edd327fedd46ade94c786110642fe0b4afafba5318a2f489d7f94c2917ca086fc4487a4360
 Description: A library for playback of various streamed audio formats used in video games
 Homepage: https://github.com/vgmstream/vgmstream
 
@@ -39396,17 +39428,17 @@ Description: A themeable LS_COLORS generator with a rich filetype datebase
 Homepage: https://github.com/sharkdp/vivid
 
 Package: vlc
-Installed-Size: 12732
+Installed-Size: 12740
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.0.21-8
-Depends: chromaprint, dbus, ffmpeg, fluidsynth, fontconfig, freetype, fribidi, glib, gst-plugins-base, gstreamer, harfbuzz, liba52, libandroid-shmem, libandroid-spawn, libaom, libarchive, libass, libbluray, libc++, libcaca, libcairo, libcddb, libdav1d, libdvbpsi, libdvdnav, libdvdread, libebml, libflac, libgcrypt, libgnutls, libgpg-error, libiconv, libidn, libjpeg-turbo, liblua52, libmad, libmatroska, libmpeg2, libnfs, libogg, libopus, libpng, librsvg, libsecret, libsoxr, libssh2, libtheora, libtwolame, libvorbis, libvpx, libx11, libx264, libx265, libxcb, libxml2, mpg123, ncurses, opengl, pulseaudio, samba, taglib, zlib
-Filename: pool/main/v/vlc/vlc_3.0.21-8_x86_64.deb
-Size: 2933380
-MD5sum: 79b43e75f7a08c92765726f1f9f028cb
-SHA1: 14b8ba3a41af6e3dfb64819a5fe7d2cee7a19bb7
-SHA256: d19499190c8da0d8129584f44a4179a058c7a7716aa29e02e9c03a8045e01357
-SHA512: c4bd9b4255de2cd53196c481d66b6c869f913c9e1a680ff64dd7a6b9bcb433df229d4b25a9903de62f5cba02f9fa2acf87f839b1d7d8db1ac650753817c7d4cd
+Version: 3.0.21-9
+Depends: libchromaprint, dbus, ffmpeg, fluidsynth, fontconfig, freetype, fribidi, glib, gst-plugins-base, gstreamer, harfbuzz, liba52, libandroid-shmem, libandroid-spawn, libaom, libarchive, libass, libbluray, libc++, libcaca, libcairo, libcddb, libdav1d, libdvbpsi, libdvdnav, libdvdread, libebml, libflac, libgcrypt, libgnutls, libgpg-error, libiconv, libidn, libjpeg-turbo, liblua52, libmad, libmatroska, libmpeg2, libnfs, libogg, libopus, libpng, librsvg, libsecret, libsoxr, libssh2, libtheora, libtwolame, libvorbis, libvpx, libx11, libx264, libx265, libxcb, libxml2, libmpg123, ncurses, opengl, pulseaudio, samba, taglib, zlib
+Filename: pool/main/v/vlc/vlc_3.0.21-9_x86_64.deb
+Size: 2931876
+MD5sum: 680f939be4027e98ce43054a1b67e7fb
+SHA1: af0350e029726df9520cd60e0a3f86153f30e099
+SHA256: bab617f4620258ad97bb08fe339ce21893881c22eab07fe100bb586e2f3aadcd
+SHA512: b56151afc350bd76602a17869a98767a0fe5ab81db9a96d808a712f2f2c608be17a212c9a5004134782584daac29ca062305ef410a1d21fef1a9cac88603951d
 Description: A popular libre and open source media player and multimedia engine
 Homepage: https://www.videolan.org/
 
@@ -39414,14 +39446,14 @@ Package: vlc-static
 Installed-Size: 1520
 Maintainer: @termux
 Architecture: x86_64
-Version: 3.0.21-8
-Depends: vlc (= 3.0.21-8)
-Filename: pool/main/v/vlc-static/vlc-static_3.0.21-8_x86_64.deb
-Size: 16296
-MD5sum: 3c9d852afc7de9c3d461afbe78aad29c
-SHA1: 8d096d51222a132f9bbc5b4c5adf0ce31ad5f7d4
-SHA256: 3d4d005eaf4d328d9b3d72d52eeb68d1b1a1cb676219f6d5bc02f294254598f0
-SHA512: 6e79049293eee8f4fc56c1f630aaf95726bd3beaf54058a8e319d75d400791e97969ffe63622f4ad90d7cbae40ee51c432a5e15618dde13b9781196159ce7195
+Version: 3.0.21-9
+Depends: vlc (= 3.0.21-9)
+Filename: pool/main/v/vlc-static/vlc-static_3.0.21-9_x86_64.deb
+Size: 16320
+MD5sum: 4050299179872c200e2ff31feb3a2992
+SHA1: f162e7cd7d509be9e70a238427a71c175e86835c
+SHA256: 558c0c994f6f10b6729ba80137ebb34c8971595fba35d10a1ddb739b2680d7a6
+SHA512: e1ceeca41ce25b35da13f503d9aad6bf9aed920afd5e1425c4c6abfe17fc927084a11f7fc3932cdd8ba6142e800729aa165752c472ab22a71be51051e1f775dc
 Description: Static libraries for vlc
 Homepage: https://www.videolan.org/
 
@@ -39692,6 +39724,20 @@ SHA256: cb6ca9bf3af515dbe9a95bf6930085efe2e680ef1f9ba3a99c2c7a586e88ed76
 SHA512: 6895cf091d737923730e2473c148402058f9f50a075ec94c77df44b54856e3b3abcaef3c98273113f0f87d286f4af6bb5298b274137cfbe421dd6430e7bd65e6
 Description: The WebAssembly Binary Toolkit
 Homepage: https://github.com/WebAssembly/wabt
+
+Package: wakatime-cli
+Installed-Size: 15556
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.127.0
+Filename: pool/main/w/wakatime-cli/wakatime-cli_1.127.0_x86_64.deb
+Size: 4026432
+MD5sum: 00a706bc67fd10d042847fcfb71d4dd0
+SHA1: 44f78b4fd2f48571455261534589751186862248
+SHA256: 9d55b84e06f408c6a94996ae2f41cc510163557bf3a056deb6442995fda22ac5
+SHA512: 7322b7893faec57af3cb993d7c2011c4dbcb904a0a4fd05a18f6aef8f780498f401b3d74e74a97db7d03b8b2426c53d261da531f803303e8b9bd171e491e348c
+Description: Command line interface used by all WakaTime text editor plugins
+Homepage: https://wakatime.com/plugins/
 
 Package: wakatime-cli
 Installed-Size: 15556

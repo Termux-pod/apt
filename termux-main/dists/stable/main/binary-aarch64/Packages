@@ -11646,6 +11646,21 @@ Package: jackett
 Installed-Size: 14252
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.22.2208
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.2208_aarch64.deb
+Size: 3179604
+MD5sum: a494986f2fe3805b2a7ffb12d63d0438
+SHA1: 143b136bce7b46392b483b1ab44633af77dd8c3e
+SHA256: 4b36e5ec91413f8439b5e72f03cda3b720da004fd99e4d89d63938057e6a0c33
+SHA512: 01d4cf8566fe98b42d2cb9de4bbec40517f7873b3cd8a34f292ab098e1f42e63358a791fb0c79d5429dae7cba9cc2dc6226ad6c1e1fec2db1793c2801ab152e6
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
+
+Package: jackett
+Installed-Size: 14252
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.22.2207
 Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
 Filename: pool/main/j/jackett/jackett_0.22.2207_aarch64.deb
@@ -23806,6 +23821,22 @@ Package: llama-cpp
 Installed-Size: 47472
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6029-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6029-0_aarch64.deb
+Size: 6550568
+MD5sum: 99f2b29efa1c012ab3ef467396b664ae
+SHA1: 7eb7b7131aa7c57d921dbef87f08417138bf7028
+SHA256: af42ddb29c059fbd0ad0ba4a7ca4eed05390bf21d48a8d8ac52d61299837eeb6
+SHA512: fd15f48e83c15d40239b8dddb7b57a99513fc2a51d0d741b123dec48548d3670543110736bbce72f06d5101c1437c08d5cd54b64444b83649ede9c70a6d01a26
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 47472
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6027-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23818,20 +23849,21 @@ SHA512: e48deba4eff7355e278dea257e3b84648a66e3ad51f05850229524d77bdb7cf57212263f
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47472
+Package: llama-cpp-backend-opencl
+Installed-Size: 520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6026-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6026-0_aarch64.deb
-Size: 6554836
-MD5sum: b22ca6ee718884d384badba6547cc084
-SHA1: 202f73036781016240c342f5a918822df425aa85
-SHA256: 5b6c60095cbc966a45c26936d7e75fabff57cbcf73ca0db17b89c90eb886175a
-SHA512: 6d4c765b0a5c00f3aebba236146619d0fae6603cef10b37eade10cc8b388c55c9041dd9b56b04f92c970905269e2afb38bf0bd1e98ccdacdc811f9f2c0cd77d6
-Description: LLM inference in C/C++
+Version: 0.0.0-b6029-0
+Depends: llama-cpp (= 0.0.0-b6029-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6029-0_aarch64.deb
+Size: 91396
+MD5sum: bd266460caf1930fb2ff224f996f381d
+SHA1: 3b8c39318035f0272a627607a4a4008bf1fde341
+SHA256: a51df09ee4fed78cee737a68ca54943567646feaf4985e4a20f7e1d4b9c50bf9
+SHA512: ef14fcc9ac6a406828cd3030e9a0224c8f0a12df6beb8273a968d75bdfee5f5f448d5518ea8f883e1268849f96284bc3cbb504bb81adb645fde0797534ae3a2c
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23851,21 +23883,21 @@ SHA512: cbc6f271be644386c1bcb44e898aaa0daf08b1871539c292fd7ccd0cfa81dff3c3073cd2
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 520
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6026-0
-Depends: llama-cpp (= 0.0.0-b6026-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6026-0_aarch64.deb
-Size: 91312
-MD5sum: b004e04bce9445ba8351b2d74bb06da9
-SHA1: b224aa8c8fbb728e062aa3aa36f3d97afd67588d
-SHA256: c222f18560ff9652254a86dc1f001016b428becdd7db7c3f7b7e18759ef208b6
-SHA512: 37580a2f5d7ce873b9c65c58f6e5156eb03a3914a2671f0cd7c86860b0adba1040b4a4e512c21ba000481e9ddb7a1e2fc11c54715bf91db6a313570168f856a6
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6029-0
+Depends: llama-cpp (= 0.0.0-b6029-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6029-0_aarch64.deb
+Size: 1040164
+MD5sum: b7e1350d7a41e35c782627661503ee0b
+SHA1: 5a7ca8d07169aa3bc5dcff5fe2677a4cce78344b
+SHA256: 56f34bfee1e79c68afcec667015750c15b30dbf9ad3fde95e2e46f16b0e1c13f
+SHA512: 2610deeaf210ec2b998f1f5dd5b76395464ba720abd1c79624518294ab7d5f93b1488458e044cf574945e00a5c1c36579be3017dc617265b83430248d226bab9
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23882,23 +23914,6 @@ MD5sum: c1e410ff46023dc260bb1c1e865fd4bc
 SHA1: 2bc0bc657ec1409b4b1aaa01396e2c3f92ff7275
 SHA256: a0d6ce86cd104add85fca4d8145d585c5c2146976651356c1aadc67876a5cb7e
 SHA512: 291bb829ccd928f16b4ec88130fb77d9db851b132266a76c317eb46af7e9a58ec28927bf4194bdf2c77f6cc2cee7e64d2db7d0bd4e43806a51a0e87967f0c674
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13520
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6026-0
-Depends: llama-cpp (= 0.0.0-b6026-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6026-0_aarch64.deb
-Size: 1040124
-MD5sum: f622022e0bf92ac182f15aaf8716ea58
-SHA1: 8b445ffa9cb59850bdf905d5ac38f372cb1126c6
-SHA256: bf1c161421f3dd1d2cebb2594a42785f0ad553f4bb33e1f196f24ce9324e3037
-SHA512: b28c4389b9879805469440b63fa03c48987ede16299ae1aac34bed09026070621315edee946c1218c58d9a3183e62ad85ecd837113352e1a749bfe6e891741ff
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -28872,21 +28887,6 @@ SHA512: d35596a8cfddc09d30f9aabb752df7e781a974642fcc6938d9eee78b5fbaf6cef14a3b3d
 Description: Open standard that provides a common set of APIs for developing XR applications
 Homepage: https://www.khronos.org/openxr/
 
-Package: openxr
-Installed-Size: 8768
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.1.49
-Depends: jsoncpp, libc++, libx11, vulkan-icd, libxrandr, libxxf86vm, opengl
-Filename: pool/main/o/openxr/openxr_1.1.49_aarch64.deb
-Size: 1352744
-MD5sum: 3a99862a6ed33134767cf65edc2fde1f
-SHA1: cff93caaad62e94ae76b6ab95aa3cf14f64d60b2
-SHA256: 8d98c4b203a4133c7a3cf6dffb8638bf34f804d1e4e927d0c470edbcf2bca26a
-SHA512: b94c6a084368513f929105042ee12598163a8b74ce121cc614818fbae30c2f7e64062a33656a5d38140f832fff576beafad831d48ef81c3cd473b74defa6798e
-Description: Open standard that provides a common set of APIs for developing XR applications
-Homepage: https://www.khronos.org/openxr/
-
 Package: optipng
 Installed-Size: 136
 Maintainer: @termux
@@ -31687,21 +31687,6 @@ SHA512: ff4db6b6ff9bcb8977b63858df8e6babd4bcc017bb35ebae9ad8098f2b91f8d93507c4a7
 Description: An extremely fast Python linter, written in Rust (Python bindings)
 Homepage: https://github.com/charliermarsh/ruff
 
-Package: python-ruff
-Installed-Size: 180
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.12.5
-Depends: python, python-pip, ruff (= 0.12.5)
-Filename: pool/main/p/python-ruff/python-ruff_0.12.5_aarch64.deb
-Size: 19244
-MD5sum: 88f78a93bee187fb6f9fc529a057adf6
-SHA1: e7327b43b5a8443fc244a2b235f0271dd546ca5b
-SHA256: 1ba94de25b2d8aed41f640f60d4c2d2da71f01c2161a1a0ef0e66b252e84bcfd
-SHA512: ca19e4722f077dd2b8104496885c841cc3c0124ae4ac78626f6c2254c425f139a95bd946cc3567aa1b38eab31d472abc2763163d5984cfb72724d8f5472e405e
-Description: An extremely fast Python linter, written in Rust (Python bindings)
-Homepage: https://github.com/charliermarsh/ruff
-
 Package: python-sabyenc3
 Installed-Size: 176
 Maintainer: @termux
@@ -33655,20 +33640,6 @@ MD5sum: 8fe99cd69eaa3a15ff6e31d3a4c077ca
 SHA1: c435fa7ac7eec3a78fc0658065443d9b72f0dd5f
 SHA256: 90e86124a07f3b9ddbfb38b7fd1a598183391da5837d675454124d2da2a61524
 SHA512: 15c086c5f1d670d424416f932318228d29678fe4c9ffacfdf7cdb5586905950c7c3b7b051fd34b0d9105aa4be6e3c515d4730158a1a427298f40e8d4b774f254
-Description: An extremely fast Python linter, written in Rust
-Homepage: https://github.com/charliermarsh/ruff
-
-Package: ruff
-Installed-Size: 29660
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.12.5
-Filename: pool/main/r/ruff/ruff_0.12.5_aarch64.deb
-Size: 7129240
-MD5sum: 30d1e7994f7ebb450d9cb8c140bf5eba
-SHA1: aa576ae8e4cecb1560cd956ba6c90d3c50b03dd3
-SHA256: f2a62121dc7280bd89aa7bca07e5bda07104810a3b664c15c923f7bbfe51ddd9
-SHA512: 372488b23568d3842e174f5c023fb9ed46c15da6ab8d7d7fe1d8e45774288d8ea2c548703ca4d825e67af0e1e840f89ddab87052e1043ed8dbdc02bec66a173f
 Description: An extremely fast Python linter, written in Rust
 Homepage: https://github.com/charliermarsh/ruff
 
@@ -36739,20 +36710,6 @@ MD5sum: b39e3bf79ef62aeb73f7fcb7f8bda519
 SHA1: 32510622f3326c4add551c25ebd0e2158aa9cda9
 SHA256: cbc17ec23ec30e222977c1fa1a0e6d44a279382071c29185b01313e1589a09ba
 SHA512: 5b8caef70137944fb6a0ded0a16cb328ad9dead8a42b8ce29f3c36edad5a01459648961791e3df7d48a121473905ef6666f4efa50888d44ea7fe50798a435738
-Description: Secure Access for Developers that doesn't get in the way
-Homepage: https://github.com/gravitational/teleport
-
-Package: teleport-tsh
-Installed-Size: 125024
-Maintainer: @termux
-Architecture: aarch64
-Version: 18.1.0
-Filename: pool/main/t/teleport-tsh/teleport-tsh_18.1.0_aarch64.deb
-Size: 20761116
-MD5sum: 73ec86516aa6a9a4c220421da7fdd056
-SHA1: 46942ed418ce113e1ff2121657036bf1dfaaaeb0
-SHA256: e7c827a164b84d70eb0497d1ccea75cfcab07bd0a7e05afa2430f9249d6032c0
-SHA512: 3355d9fb57e90bffa36cb85c727c2661413965c31491823d91dfd905572f6216b1fc94926337e71e687a9d0e69916e9c1bb7eba196b787c1cf833eaa31886d09
 Description: Secure Access for Developers that doesn't get in the way
 Homepage: https://github.com/gravitational/teleport
 
@@ -41298,20 +41255,6 @@ MD5sum: d401e33341e0fe1aa36268bc9e23fd92
 SHA1: 0ab236cac0b06316236fc7a3ebb4be9bb9850d41
 SHA256: 490e386fba5812e3dc37797634ab29c7d2456b32610cccced71081f00f34ddba
 SHA512: 903b7bc68e19c9c4ed9fb311906cb2be3eb5591f62ea290f93c81fd663416d0639cdcf205dc51364eef035e26b72fdbc39f1b491044ff0c531df4e02266c7c61
-Description: An open source sharing solution built on OpenZiti.
-Homepage: https://zrok.io/
-
-Package: zrok
-Installed-Size: 141876
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 1.0.7
-Filename: pool/main/z/zrok/zrok_1.0.7_aarch64.deb
-Size: 31445512
-MD5sum: 3478b348c3c12763cea678859a55b2ca
-SHA1: ef7ba77f3a7b1923a17fc486a3f9b7a40f33dcef
-SHA256: 7f612f570260fdd7814b0f273d46805201da52c173aee342c619b80114f8cd4a
-SHA512: 1bc7cff51b21389a8c5aefeddc06618142d1c66760e9de252d04653e56d73dea4baf5dbd19c3aa490e5c54aae266a9e77117d9cc408d6805f125b3c20980b30b
 Description: An open source sharing solution built on OpenZiti.
 Homepage: https://zrok.io/
 

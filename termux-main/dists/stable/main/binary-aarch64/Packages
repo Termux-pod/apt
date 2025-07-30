@@ -7218,17 +7218,17 @@ Description: Static libraries for finch
 Homepage: https://pidgin.im/
 
 Package: findomain
-Installed-Size: 14240
+Installed-Size: 12720
 Maintainer: @termux
 Architecture: aarch64
-Version: 9.0.4-2
-Depends: resolv-conf
-Filename: pool/main/f/findomain/findomain_9.0.4-2_aarch64.deb
-Size: 3895812
-MD5sum: 699ecea1a1cb7b02ca6796e1e5370d58
-SHA1: 532b3eae2e04a912482eb7843172a4413b4a4b0f
-SHA256: 33b62440fb8d9c4af45daea8fdd310cec0091d2b14e842ca803c6b7a790c7773
-SHA512: 3658e1a448734f932e8c40d5780a19ec92e0cce7a76c08c9b7d82d04408b743ad7f42c29e8a793a20d4d386ff0369eeec0b966abce4be35d54b593011c968af8
+Version: 10.0.0
+Depends: resolv-conf, openssl
+Filename: pool/main/f/findomain/findomain_10.0.0_aarch64.deb
+Size: 3804328
+MD5sum: 87cb787fd5ab09251b1b720d568e3caa
+SHA1: a7ba4ab81fc7a4c925229e5f639b5fd31f9f6cc5
+SHA256: 53f65f92aabe09d890a04626f301e3bf5d6513af3aacf4440f8fdfa7cf3fc18b
+SHA512: ac3652fd8fc120c6481728796d8fc085249789344853849e1a80ac98527b49fde12f56e28eb207f584a0424aab92efa83a3bd4d67604f7844a13209f6cd0bcbd
 Description: Findomain is the fastest subdomain enumerator and the only one written in Rust
 Homepage: https://findomain.app/
 
@@ -11657,21 +11657,6 @@ SHA512: 01d4cf8566fe98b42d2cb9de4bbec40517f7873b3cd8a34f292ab098e1f42e63358a791f
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14252
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.22.2207
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2207_aarch64.deb
-Size: 3179480
-MD5sum: cc528572b625cb7e51c4fbadd3a5f4f8
-SHA1: 9611062dc8fd3ca05a51a788b8709c7892bd1e0b
-SHA256: 78ece83b02f45d598743d9aca03e9803220bf7ccb9663d552899660259f4d259
-SHA512: fbd54cf7cc2a959caa6af45e185aa82d542157ad858dd8c22289ce09ef91e252e855cdc8d5d7a04acea16f7b0881ef3f59c18934e7fe750aa69dab955124a13d
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: jadx
 Installed-Size: 125648
 Maintainer: @termux
@@ -12255,6 +12240,22 @@ SHA256: d122bc1852f20d5a8113f9b5be768906c17be22ff1f472c6766b9ddabb75fce7
 SHA512: 9a4ba8bb1d667a0089f6b041367f55f340b3bd58205ff63ef3da4f9a27a5dc3197eeec3bf24e60ff50f586afba264813b0d4f0a9e881c9b6648d4f8e81341a44
 Description: KBD's showkey utility for examining keycodes
 Homepage: https://kbd-project.org/
+
+Package: kcptun
+Installed-Size: 25044
+Maintainer: @termux
+Architecture: aarch64
+Version: 20250730
+Replaces: kcptun-client, kcptun-server
+Breaks: kcptun-client, kcptun-server
+Filename: pool/main/k/kcptun/kcptun_20250730_aarch64.deb
+Size: 6429588
+MD5sum: 031dfcb6a9f36149010430ba1aac0adf
+SHA1: 91a4195d704b3755796be22c03b72333f71fe0d8
+SHA256: 04efd819162d235d06ec89f378950cd35db695858e264d029bc2cb8dc042d4d9
+SHA512: 36a503ffef751ed4e88a667533ce80139d9afbdab0822c3983f78377df061d69f706f70d69e9560edb3e9abcac1edffbc0f2bfd3f47f493acf1ee05ac260f551
+Description: A Stable & Secure Tunnel based on KCP with N:M multiplexing and FEC
+Homepage: https://github.com/xtaci/kcptun
 
 Package: kcptun
 Installed-Size: 25068
@@ -23821,6 +23822,22 @@ Package: llama-cpp
 Installed-Size: 47472
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6030-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6030-0_aarch64.deb
+Size: 6563548
+MD5sum: e35dbfffd6a8676aab6b3c326db3ad88
+SHA1: 99d8fb94dd3c562f1d620af7b12a05cdd34725cc
+SHA256: 71a6cc4516a804ce15ef255e7259dda48951a8ddd1ec8fbe7151a704bf66908c
+SHA512: 3bca325855f2d75d329851dbc04ad8f64a2a9aa9231b88a8ab6d15f342783d8c490747f539f5e83c1ab558da5323d888a7331d997f3206c8ef990c7dcd325f3b
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 47472
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6029-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23833,20 +23850,21 @@ SHA512: fd15f48e83c15d40239b8dddb7b57a99513fc2a51d0d741b123dec48548d367054311073
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 47472
+Package: llama-cpp-backend-opencl
+Installed-Size: 520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6027-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6027-0_aarch64.deb
-Size: 6541676
-MD5sum: 6a509722fb71fdb82fc2ecf5344a5333
-SHA1: fe44c5e2f51bfb0201f8fc5744a7f7fec4a999d2
-SHA256: fc32fa09927a68f030440f622fabb1bcaac657fa74dd6959c896711649860b2a
-SHA512: e48deba4eff7355e278dea257e3b84648a66e3ad51f05850229524d77bdb7cf57212263fa430faec3b780c7bab76a327d839db4a40f75a022f94cfbc1a97c0ea
-Description: LLM inference in C/C++
+Version: 0.0.0-b6030-0
+Depends: llama-cpp (= 0.0.0-b6030-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6030-0_aarch64.deb
+Size: 91284
+MD5sum: c0b9562be67e858e346d56eb8f734a4b
+SHA1: 02cd85662e8a280cef13f822deb87275f69c18f5
+SHA256: 0e48b3740eb2074382bac70bad594d9817ac31ad93e8694d3ab3ffdf55ac8551
+SHA512: 9e11c98f69eb48fd6ce0865dcfd47d1a51b6ea31c64a74c5977092e75cc9884032a660caabc9f091c6465f7c409e61f9448f3e7ab84af1569402c7d8951650cb
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23866,21 +23884,21 @@ SHA512: ef14fcc9ac6a406828cd3030e9a0224c8f0a12df6beb8273a968d75bdfee5f5f448d5518
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 520
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13520
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6027-0
-Depends: llama-cpp (= 0.0.0-b6027-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6027-0_aarch64.deb
-Size: 91364
-MD5sum: 16fcbbc8224328586433dc3fdfbcb819
-SHA1: 324598123074ee8d67be5de7ec04e683595eceeb
-SHA256: c9551c9899ea28acdfd7672a0a1c0939a784ec4cb355b7a087892eceb874b362
-SHA512: cbc6f271be644386c1bcb44e898aaa0daf08b1871539c292fd7ccd0cfa81dff3c3073cd273be1ada6f3e92eaedce2a9178e55faad20de382cf5b975da0b89085
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6030-0
+Depends: llama-cpp (= 0.0.0-b6030-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6030-0_aarch64.deb
+Size: 1037724
+MD5sum: 6aec3d72d7cc9dc769b3928ca731fbc3
+SHA1: 162a0caf4df0d5cd0d8f87279749f6e6fd4bcbc0
+SHA256: a09f8a39e095dda991e2e5559e0123f391c858691869a5bf3bfb3066e28d3e78
+SHA512: 39e826b1a4d034fd113c7b35233724ad6a1a46f4709e38b760ed2e3174a7d9123b1fbbf3fa3ef4b952a00e7c27292964200287a277e91b35ea8112bb282bc38e
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23897,23 +23915,6 @@ MD5sum: b7e1350d7a41e35c782627661503ee0b
 SHA1: 5a7ca8d07169aa3bc5dcff5fe2677a4cce78344b
 SHA256: 56f34bfee1e79c68afcec667015750c15b30dbf9ad3fde95e2e46f16b0e1c13f
 SHA512: 2610deeaf210ec2b998f1f5dd5b76395464ba720abd1c79624518294ab7d5f93b1488458e044cf574945e00a5c1c36579be3017dc617265b83430248d226bab9
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13520
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6027-0
-Depends: llama-cpp (= 0.0.0-b6027-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6027-0_aarch64.deb
-Size: 1040924
-MD5sum: c1e410ff46023dc260bb1c1e865fd4bc
-SHA1: 2bc0bc657ec1409b4b1aaa01396e2c3f92ff7275
-SHA256: a0d6ce86cd104add85fca4d8145d585c5c2146976651356c1aadc67876a5cb7e
-SHA512: 291bb829ccd928f16b4ec88130fb77d9db851b132266a76c317eb46af7e9a58ec28927bf4194bdf2c77f6cc2cee7e64d2db7d0bd4e43806a51a0e87967f0c674
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -28090,6 +28091,20 @@ SHA256: 1bb418007beaa396f704df694e5ca498035318d0b56456b5dd387cc862818679
 SHA512: e1c912aa78d7dcffb4cc92f673a23e255899121791020aa7680fc7a003ccea07b7e0507f8306bdabdba6d662d9dd77a529027ce694a510c7bd028530dac53af0
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 19552
+Maintainer: @termux
+Architecture: aarch64
+Version: 26.17.3
+Filename: pool/main/o/oh-my-posh/oh-my-posh_26.17.3_aarch64.deb
+Size: 4690728
+MD5sum: 2a36b84c8f8e576fb5eadf5b8f196752
+SHA1: 1408bb2124e175a65094aa05b1295ff63b8d7a74
+SHA256: a2d11c052dc0fb941afa135b575c27600267ee895c96000a8e16d8c9c6846865
+SHA512: 81764554782c4057551edfbcb63bbebe6f82822f6ba906ba1cb1849d71761635da81cfdb40e839c19a797fa3327a80845afe41060b1705fa916ebdcd4d66a5ba
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 19556

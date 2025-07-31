@@ -5813,22 +5813,6 @@ SHA512: e65e7b2744b66060bca2b83c99bda320022e37e8427a24f90d7d2da89fa4d757d521d5db
 Description: Interactive shell for TCL programming language
 Homepage: https://homepages.laas.fr/mallet/soft/shell/eltclsh
 
-Package: eltclsh
-Installed-Size: 188
-Maintainer: @flosnvjx
-Architecture: arm
-Version: 1.19-2
-Depends: libandroid-support, libedit, tcl
-Suggests: tk
-Filename: pool/main/e/eltclsh/eltclsh_1.19-2_arm.deb
-Size: 29460
-MD5sum: b4239eed8c734d322c13dea8b8ad7d14
-SHA1: d80537cd90f1486bce7ed4701074de59ff3d1534
-SHA256: f4ea2a56a20b07c90da1e984c996a6575056dc267b5d1767541803ed671963e6
-SHA512: b128da269a5ec63c6c27b230dd0e09fba316353d4141ad8c328927a3032e10673988d96e751c1c23f02f3f9717c522711b1c01af2c999d8fe2eba4edd73f762e
-Description: Interactive shell for TCL programming language
-Homepage: https://homepages.laas.fr/mallet/soft/shell/eltclsh
-
 Package: elvish
 Installed-Size: 8796
 Maintainer: @termux
@@ -6264,6 +6248,20 @@ SHA256: e379e7d238219c1e0d9c444979a0027f100b0327a1a33a51dcd6656a73dd22a6
 SHA512: de36676b20fc3b3b9043fbdb0aacb8431c4bfb04b4671299cb19eb782400dce13d6a9ea6152de3b166e55e81857eb6f8487e41d120ea355ca3baf2155f650391
 Description: To fastly access files and folders
 Homepage: https://github.com/whjvenyl/fasd
+
+Package: fastfetch
+Installed-Size: 2536
+Maintainer: @termux
+Architecture: arm
+Version: 2.49.0
+Filename: pool/main/f/fastfetch/fastfetch_2.49.0_arm.deb
+Size: 488240
+MD5sum: 573a621a4dc331e9da2b719c8dec8b3e
+SHA1: 4411aad0d8f721c486dd33e1ee32c5b56bade277
+SHA256: 90c8078df9f1a80075d686b8403705968697ad3353afe40699d9a68c0eccd692
+SHA512: 603b6409aa0a3c7ac34fc73888bcdbee63fcc8a8f15d7972248420243e6ebca2a52b26942fa441cccfaf23fd2bd7d393014c5aa6a1df9fafcd92dba276001d73
+Description: A maintained, feature-rich and performance oriented, neofetch like system information tool
+Homepage: https://github.com/fastfetch-cli/fastfetch
 
 Package: fastfetch
 Installed-Size: 2524
@@ -20255,6 +20253,23 @@ Package: libsqlite
 Installed-Size: 1468
 Maintainer: @termux
 Architecture: arm
+Version: 3.50.4
+Replaces: libsqlite-dev
+Depends: zlib
+Breaks: libsqlite-dev
+Filename: pool/main/libs/libsqlite/libsqlite_3.50.4_arm.deb
+Size: 593012
+MD5sum: 488ec6079b581992e5e3f008a5ef0693
+SHA1: b3e578d41766aa19a345b68a4d76c7c7ef918577
+SHA256: 8cfdc684268a507e2d460a9e6df80d9a12502f6ea67f6f646770ecccf531b176
+SHA512: 97d75721d489aae15476ce7e73fd9d94e3ad325096d937a8a5af621c936d6acbabe0f588e6d759e22d6e385f675238390ebee207ffe6ca9adf1dda331a367b65
+Description: Library implementing a self-contained and transactional SQL database engine
+Homepage: https://www.sqlite.org
+
+Package: libsqlite
+Installed-Size: 1468
+Maintainer: @termux
+Architecture: arm
 Version: 3.50.3
 Replaces: libsqlite-dev
 Depends: zlib
@@ -20272,6 +20287,21 @@ Package: libsqlite-static
 Installed-Size: 1056
 Maintainer: @termux
 Architecture: arm
+Version: 3.50.4
+Depends: libsqlite (= 3.50.4)
+Filename: pool/main/libs/libsqlite-static/libsqlite-static_3.50.4_arm.deb
+Size: 512344
+MD5sum: 8c2e76c55bd1b6a2991b5284393849ea
+SHA1: acbe1f8c18a19dfee589f201a7a1147b78919860
+SHA256: f3a8634ff38c83fb3729b064ae28e481fbbd6ce0dd76200294407ecd0849e350
+SHA512: c4f466130f18641fec5d183f8fbcfcf835c318a1d1199b76a6aba514233894bea53124938ea33aaabc708818526efe3ac8a2cd7870d1a6900ed5f6bc8c213a18
+Description: Static libraries for libsqlite
+Homepage: https://www.sqlite.org
+
+Package: libsqlite-static
+Installed-Size: 1056
+Maintainer: @termux
+Architecture: arm
 Version: 3.50.3
 Depends: libsqlite (= 3.50.3)
 Filename: pool/main/libs/libsqlite-static/libsqlite-static_3.50.3_arm.deb
@@ -20281,6 +20311,22 @@ SHA1: 7971cf510490cc66fb1412718e558f50ee25c414
 SHA256: 4e16ecdbe4a042eef40c22e72989fec4491ec6b73140d4d64e3087851c3b1e03
 SHA512: ce9e93bb99a2caf34ab89ab90a314217dc53b4e0458052a54e9a69fc8d17362effdd7d14d93281d32ba3db5c4a3e94d5f32a72cda583fb331e55ba6b1370bf06
 Description: Static libraries for libsqlite
+Homepage: https://www.sqlite.org
+
+Package: libsqlite-tcl
+Installed-Size: 788
+Maintainer: @termux
+Architecture: arm
+Version: 3.50.4
+Depends: tcl, libsqlite (= 3.50.4)
+Breaks: sqlcipher (<< 4.4.2-1), tcl (<< 8.6.10-4)
+Filename: pool/main/libs/libsqlite-tcl/libsqlite-tcl_3.50.4_arm.deb
+Size: 464448
+MD5sum: 1261906a2645ab2dd9fe5aa3aa8e5f0f
+SHA1: 1b0c6343d972ba65c0734a5d52bf541cad2a003f
+SHA256: 718bcc0978e94866dcc00a87e293497ad76b758ede0e6e9d403ffca0a85769db
+SHA512: 7b404473b33f5103fa6a1374424f282ef97c8bef753dc837008e73d81d28f9fe385a8699209ad7f183320ec2ac33e562df89fb9238e8c0291d382fb89174250f
+Description: tcl bindings for SQLite
 Homepage: https://www.sqlite.org
 
 Package: libsqlite-tcl
@@ -27632,6 +27678,23 @@ Description: Static libraries for openldap
 Homepage: https://openldap.org
 
 Package: openlist
+Installed-Size: 117804
+Maintainer: 2096779623 <admin@utermux.dev>
+Architecture: arm
+Version: 4.1.0
+Replaces: alist
+Provides: alist
+Conflicts: alist
+Filename: pool/main/o/openlist/openlist_4.1.0_arm.deb
+Size: 31002056
+MD5sum: 04713cb52f52815b2fa27354721e7cf8
+SHA1: bf80e3211901857640f2db022273a18ceabce4f7
+SHA256: 738a54713312a35d0cd54ca7c6f932a9c0c20a14f5c4e2b266f915773f590cba
+SHA512: 1cf27df33f1c4ad84ca556c30c8017a123c7f713d639e6f97863dbb85df1eee479cd6bbab86e3cd94369af97428232204f5d8f4b813b7d43bb8caf0858529386
+Description: A file list program that supports multiple storage
+Homepage: https://oplist.org/
+
+Package: openlist
 Installed-Size: 117928
 Maintainer: 2096779623 <admin@utermux.dev>
 Architecture: arm
@@ -34218,6 +34281,21 @@ SHA256: e42372470abfe9aee2f0c976c42ed909d64bb81bbfb74441da4a080c47aed75d
 SHA512: 64a8a415a4299d04f1ee7d492bc76ca10f8ba37f62c64cbc096dee918465ba9a1c4b73a313c809ff7a2d4ebf56e2fbc38d69fa164ad9fe1f11e01b8f17956be9
 Description: Static libraries for sqlcipher
 Homepage: https://github.com/sqlcipher/sqlcipher
+
+Package: sqlite
+Installed-Size: 984
+Maintainer: @termux
+Architecture: arm
+Version: 3.50.4
+Depends: readline, zlib
+Filename: pool/main/s/sqlite/sqlite_3.50.4_arm.deb
+Size: 569564
+MD5sum: f7f1cdc818922e3ad41b6bdded8e1ff7
+SHA1: 0759d2724b874e3766ffc89e234da03b07249b70
+SHA256: a269c296eedf489a28d220612b3b7cf28d08d407c34f5f73ee2132986eb3aa91
+SHA512: 7180f5d5dabe920b11f358a0b83f216cb3599b71689f7572cc89fb61d3f3abb523845452752977d0656d05b1ce53086312e3da4642c3ed552eb2c4f333ff7183
+Description: Command line shell for SQLite
+Homepage: https://www.sqlite.org
 
 Package: sqlite
 Installed-Size: 984

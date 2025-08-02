@@ -23790,6 +23790,22 @@ Package: llama-cpp
 Installed-Size: 51392
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b6060-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6060-0_x86_64.deb
+Size: 7072412
+MD5sum: d85de8c5b4359fd621226bc11f38378b
+SHA1: d4a52dc9c9505d3f296f77b6c5281cc173f16bea
+SHA256: 7454228ae3812276ff9f07194c242581ba00cf1f1dffd5cafb22758dc5162bb4
+SHA512: d357bfa8a796f98200ec3d66a19055031c9bbee2718466eb9fe1777522ed980992eacf66f031709049ecf80f9adfb2cc6e0597c2976116307befddb34eca60f8
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 51392
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b6059-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23802,20 +23818,21 @@ SHA512: 8bb067dfae04517c73bbbe6aba12fa2848d33b712ad590d3200c6a6c18637ce36d6957b7
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51320
+Package: llama-cpp-backend-opencl
+Installed-Size: 572
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6057-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6057-0_x86_64.deb
-Size: 7062608
-MD5sum: 36e286698869afff92c358fab17e6b14
-SHA1: f26c858803389764d1dc68c11b4507662bed5983
-SHA256: ec0c5a951929df2228361334bb16206f46b045f645127ca2decb502a27e15d9d
-SHA512: a942950c4be243dd478904d6be019ac93a32237badf9d614b87616c61cdab0fabb757c376be891001341ed496a5a7bdd6fc08703c98da0729e6d6d2e7ce7c1b8
-Description: LLM inference in C/C++
+Version: 0.0.0-b6060-0
+Depends: llama-cpp (= 0.0.0-b6060-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6060-0_x86_64.deb
+Size: 103096
+MD5sum: a87f43de1ed4261e483590043eca1075
+SHA1: 52556df13ded9a197b4439e03064a7f272abcf42
+SHA256: 91d1bc20e7f24164f4801599557897a9508a76f02903112dd762887933a2a504
+SHA512: 8f2bf9cd4646d99c60cfa1fbdf69d08fbdc2bc1f472abe056c91543c8aaefe4716441d7e3d79227408e0e1d07c6549d874e879d0c5d6b0092c2853cc94082091
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23835,21 +23852,21 @@ SHA512: 694b9294e5aff27cbb94e6944403a1658005a1fa8ae79d2a1a4185df274793d94ca9009a
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 572
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13788
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6057-0
-Depends: llama-cpp (= 0.0.0-b6057-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6057-0_x86_64.deb
-Size: 103088
-MD5sum: a105df5e610a8408e60a815bf7c63cb4
-SHA1: 16feaf15b01e5364ca7937d79dd5e75eb233f48f
-SHA256: b537d42c86529902150cb2b2ae77b71af79162baf730fba0fe4a73ba4a2d4037
-SHA512: 4e9e6b1417bc90606fdf14ca18e344025c022f34f5f41214261045ec94f6cf2074d5d3874031bc497b8f143a17513a997e76d014b4c367a162574b3f41d57f6e
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6060-0
+Depends: llama-cpp (= 0.0.0-b6060-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6060-0_x86_64.deb
+Size: 1084968
+MD5sum: cd53a3e4f724981b46879dfa387becc6
+SHA1: ef6d9a1f50513ebd07db87dd35092ffe903e7554
+SHA256: c52cc14224b933a33bed9a4740244deea159e935d183cb8135bc2244d07288a0
+SHA512: 8f62cbbf7fe83c69ca32d4735422e1889c58abc6b4d66b9b2734a31e8daab502b2b36bf075547852c0a1cd7c0c13d85292b4c523ce16703aeb08d97d11c1cdc2
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23866,23 +23883,6 @@ MD5sum: efd6ce4cd863e0d71c3958a3a6acd7ee
 SHA1: 204b74397253087563d7e499b3d048fb78b39034
 SHA256: cae9c8dcf95a22190448ccc7a807ef5e9ad27055fa2822ae5fcf979d79010a32
 SHA512: d2926fdd3c1f6ede909afcf38d359d2936e260614e88f09135f7c5fc83e75a992bcaccced663418508053c78f2d04789242a2e6bee4429d495f2a3e4fe90136b
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13788
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6057-0
-Depends: llama-cpp (= 0.0.0-b6057-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6057-0_x86_64.deb
-Size: 1082700
-MD5sum: 0563b1ca82e3a4bd39e30d5aef8381e3
-SHA1: aa3278392ceffd07939cc6cdfb4cd323851c8b51
-SHA256: 1652e4246485fcd5b0fa1a8f06bb0fe0f8b6d7cb82b843412f938e444076f634
-SHA512: 780934cf27ec86252633ab28fbdd47ff20616182ebd9fc05716aa97d3ed5b06d39d8d41718dc40ef38bc690632ef829be23e0bf79e366a8369e489f9c1b33aad
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -26666,21 +26666,6 @@ MD5sum: 4830db7115e2b40c916c70b77ec6e60a
 SHA1: 28d82f666dc0e8a188b9a50b8190c0f9e00885b7
 SHA256: 655d6e588af0a6930acc146705bae95f2358f7074f1969966cc9290243c5275f
 SHA512: 7727bf4d425b9c23095b855c40d30ea3e5bdc023de65fddd9004e8fce784de26d28e1f44c896a0d637915335ecd2e8949eb735c29deb68f19142d656fa3313c7
-Description: A standalone and lightweight web-based MPD client
-Homepage: https://jcorporation.github.io/myMPD/
-
-Package: mympd
-Installed-Size: 1540
-Maintainer: @termux
-Architecture: x86_64
-Version: 22.0.2
-Depends: libflac, libid3tag, liblua54, openssl, pcre2, resolv-conf
-Filename: pool/main/m/mympd/mympd_22.0.2_x86_64.deb
-Size: 831612
-MD5sum: e6d1fee149f1a0a7a76ee51851a20a17
-SHA1: eeddb44b65dfa8651431b317e351331439a0a2f6
-SHA256: 2c2fba1d14407be9f33870700b97733201f5e58dce2bf3fb2886b5f6c8dc306b
-SHA512: f3713eda9e4a4bdbed2004bcf53502348317b9e0b1498ae2d2b4766fcd4a21e98169352d6df8fff9b0f2d0834c0abc5a469e1c4b7a660e767f56c10caca36431
 Description: A standalone and lightweight web-based MPD client
 Homepage: https://jcorporation.github.io/myMPD/
 
@@ -32509,20 +32494,6 @@ MD5sum: 6d2dc36f85b50395fe72f5bf14be9391
 SHA1: ddb0e2f7dfbc8e362ed9dd67f12757e4e98e7813
 SHA256: 08d02dd3207def8751826e64f71b64c56dab7105907256e0cde69b6a4baf6fcc
 SHA512: 2f7a87845cb04462831cf64d93189249bbc635e7e120ef727ee16386e5fbcd5a986fc06888947131971b4ac8a3d040ade0841ff7b44984a07a6aa9e73830e6cc
-Description: This is the command line interface for Railway
-Homepage: https://railway.app
-
-Package: railway-cli
-Installed-Size: 6548
-Maintainer: @termux
-Architecture: x86_64
-Version: 4.5.6
-Filename: pool/main/r/railway-cli/railway-cli_4.5.6_x86_64.deb
-Size: 2165656
-MD5sum: 157532e7c761219e834f1e7de422d784
-SHA1: bfc86e43b57325fdf8ca3f5cfc0836df680e2227
-SHA256: 13f64f19fec4505b6686f34336a89e6d364c91a32e12532fd98fbbeb0269e5b4
-SHA512: 56be9c2080d217f06eccbe25dd1b9909e4333afd3132d91d2922f78bcd339cdfef1cff9ec7c554151d5ed4b49b4c7f0be9a571df17bbbe5a31fd716d5351156f
 Description: This is the command line interface for Railway
 Homepage: https://railway.app
 

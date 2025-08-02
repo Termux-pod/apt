@@ -1377,6 +1377,24 @@ Package: at-spi2-core
 Installed-Size: 3316
 Maintainer: @termux
 Architecture: x86_64
+Version: 2.56.4
+Replaces: at-spi2-atk (<< 2.46.0), atk (<< 2.46.0), libatk
+Provides: at-spi2-atk, atk
+Depends: dbus, glib, libx11, libxi, libxtst
+Breaks: at-spi2-atk (<< 2.46.0), atk (<< 2.46.0), libatk
+Filename: pool/main/a/at-spi2-core/at-spi2-core_2.56.4_x86_64.deb
+Size: 361200
+MD5sum: 47f902344915c27fe8388faf7b9b0c57
+SHA1: 150b1fb68d15a84832e5b0198a391e53c5761fae
+SHA256: 327d38c087f0224e9f5e65b858ab005226df396cb3e21b68b7d27462dd4bb230
+SHA512: ae7368c4bffe7d2a1e096fa5a95705c5ea8b29f46ad2b2f99b875aa5955d7917b153946ba0e1048dbf382e87ba49e9c7ddb78b5e2b52c674812172d0733ed18b
+Description: Assistive Technology Service Provider Interface (AT-SPI)
+Homepage: https://wiki.gnome.org/Accessibility
+
+Package: at-spi2-core
+Installed-Size: 3316
+Maintainer: @termux
+Architecture: x86_64
 Version: 2.56.3
 Replaces: at-spi2-atk (<< 2.46.0), atk (<< 2.46.0), libatk
 Provides: at-spi2-atk, atk
@@ -5907,6 +5925,20 @@ SHA256: 7a14f40047d69c32d6ddb929aaec294dff4632210040eea3b91e836aced04b0f
 SHA512: f63f915469c0d6e4fba86b2edf0954bc97c1053b309395e5d7445807e3568da1ccc4e3f527f6c51b173271ed772b90e8497144d32703fc1037ec29aff2418d0b
 Description: A small, configurable console text editor
 Homepage: https://craigbarnes.gitlab.io/dte/
+
+Package: dua
+Installed-Size: 2200
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.31.0
+Filename: pool/main/d/dua/dua_2.31.0_x86_64.deb
+Size: 753740
+MD5sum: 5b7a8ed53206ef8145338cf3f93abc2c
+SHA1: bd70e01b9100c022974ea050592263ebedd732ec
+SHA256: 854d00bda026385b1187e4920be07d2ddb55c4563f59fd797a821c6a3de4518d
+SHA512: bb1c73236edf17e0b8f258ab7422c1f35acf19e1ccc9585f7a6a701d96bde2d7ef49ca7beebdf9e3b52e8554b3906abbc7ac0003917891ef20eca1dd35774291
+Description: View disk space usage and delete unwanted data, fast
+Homepage: https://github.com/Byron/dua-cli
 
 Package: dua
 Installed-Size: 2052
@@ -11625,6 +11657,21 @@ SHA256: b3073045763810dcb2a83bac56ec6709f60d9184a78426c0493271a7f7c85dcd
 SHA512: 38f1dea8ca5dd470315154a11485f9266dd570f2d72a2210535d28f9f9b0fb0e0b8c0e8f1cf80a3d546ab2cf65581b03491b159f8c7e78df236ed828949f5d5b
 Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
+
+Package: jackett
+Installed-Size: 14260
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.22.2219
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.2219_x86_64.deb
+Size: 3197372
+MD5sum: ad7635b634d4a5af1ad7ba2c073f4b9e
+SHA1: a11d32264605a015fb3ab4cccf09a7ed8ec8c2e5
+SHA256: d3fbf94fa731433047d3efea83c547d406c914f81ba354b3cdce2bdb6b4f5c30
+SHA512: 1d54f186915430494c36067515302fe05237c534e43a1067d244d968db9e2023a9af0ed4da040c00fd4ef1ac0959a3e0fbf268142456208c14e7ff80430d0d3c
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
 
 Package: jackett
 Installed-Size: 14260
@@ -23802,22 +23849,6 @@ SHA512: d357bfa8a796f98200ec3d66a19055031c9bbee2718466eb9fe1777522ed980992eacf66
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51392
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6059-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6059-0_x86_64.deb
-Size: 7072260
-MD5sum: 75342a0f4ede4c2e2067e020e5fc6278
-SHA1: ec705b7b07923a070d2ff89da67dc2889a084c56
-SHA256: 63f7d4827de582c5eff7ff428b7fd6c79524378c27843391aac763afaa376139
-SHA512: 8bb067dfae04517c73bbbe6aba12fa2848d33b712ad590d3200c6a6c18637ce36d6957b757482e1b94c12527a95a91833fd74adf452c5321f9273de6a2857232
-Description: LLM inference in C/C++
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-opencl
 Installed-Size: 572
 Maintainer: @termux
@@ -23835,23 +23866,6 @@ SHA512: 8f2bf9cd4646d99c60cfa1fbdf69d08fbdc2bc1f472abe056c91543c8aaefe4716441d7e
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 572
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6059-0
-Depends: llama-cpp (= 0.0.0-b6059-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6059-0_x86_64.deb
-Size: 103000
-MD5sum: 909ae7fc99c631de143568d2274e5bd9
-SHA1: 8b04d8c01936485f84eaeab9f3179b97f5d4cae5
-SHA256: 606c76e22d04f5bfacab741b3094fe2e9ab5b21a1df88a017dfae1e668eca15c
-SHA512: 694b9294e5aff27cbb94e6944403a1658005a1fa8ae79d2a1a4185df274793d94ca9009a10ff82e7dbdf522789c576633b59ff2ff98bf6e117e756d481062ed3
-Description: OpenCL Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
 Package: llama-cpp-backend-vulkan
 Installed-Size: 13788
 Maintainer: @termux
@@ -23866,23 +23880,6 @@ MD5sum: cd53a3e4f724981b46879dfa387becc6
 SHA1: ef6d9a1f50513ebd07db87dd35092ffe903e7554
 SHA256: c52cc14224b933a33bed9a4740244deea159e935d183cb8135bc2244d07288a0
 SHA512: 8f62cbbf7fe83c69ca32d4735422e1889c58abc6b4d66b9b2734a31e8daab502b2b36bf075547852c0a1cd7c0c13d85292b4c523ce16703aeb08d97d11c1cdc2
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13788
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6059-0
-Depends: llama-cpp (= 0.0.0-b6059-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6059-0_x86_64.deb
-Size: 1082396
-MD5sum: efd6ce4cd863e0d71c3958a3a6acd7ee
-SHA1: 204b74397253087563d7e499b3d048fb78b39034
-SHA256: cae9c8dcf95a22190448ccc7a807ef5e9ad27055fa2822ae5fcf979d79010a32
-SHA512: d2926fdd3c1f6ede909afcf38d359d2936e260614e88f09135f7c5fc83e75a992bcaccced663418508053c78f2d04789242a2e6bee4429d495f2a3e4fe90136b
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -30324,6 +30321,21 @@ SHA256: 939d07272e2921342dc37bb895cef60c7227eeec8fb9f6c279929a0d484f0524
 SHA512: 18bc9d2bb226095a454146c05607010c35ff66176adbacd1873fd1e866c0c327084952b598488734738803316c7227aecf30ef23bb88c56f67aaa2f691d8491d
 Description: PNG image optimising utility
 Homepage: https://pngquant.org
+
+Package: pocketbase
+Installed-Size: 34264
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.29.1
+Depends: resolv-conf
+Filename: pool/main/p/pocketbase/pocketbase_0.29.1_x86_64.deb
+Size: 9384812
+MD5sum: 64f3395e33422073d2d91a0f65627726
+SHA1: 9beeab42fcfc565888c83b432a879c3e4b0f459c
+SHA256: 6fdf83c0475efb931cefb452abc65f6325a02aaa4cfd224119d6e3b155a09506
+SHA512: 161019a6f51da91a2311d4aae5ebaf68b66e8f0c5c567239009f3b5b92ad515a43025bc1a603503bcfa4a2b07fe130b4cacb403e51229b3fb6bf1713e966b336
+Description: An open source Go backend
+Homepage: https://github.com/pocketbase/pocketbase
 
 Package: pocketbase
 Installed-Size: 34252

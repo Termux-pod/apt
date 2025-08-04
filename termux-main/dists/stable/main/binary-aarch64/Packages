@@ -9519,20 +9519,6 @@ SHA512: 8e609f310fbde9da369d122b3e0edea7e6d899322528a584de1ccac652f235b6a58658c3
 Description: Share your terminal as a web application
 Homepage: https://github.com/sorenisanerd/gotty
 
-Package: gotty
-Installed-Size: 11984
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.5.1
-Filename: pool/main/g/gotty/gotty_1.5.1_aarch64.deb
-Size: 2991224
-MD5sum: 52a1c9a638ace1fc6ba94c6842104887
-SHA1: 60bbf3a2df46b4751a532121e0946c4799106e5d
-SHA256: 0eba03e92fafb96aa86696d0f828e373d866f118e5980f82f937b23012e22958
-SHA512: c01cc1062cb380befb710ab5aeea7e0d149a7e93fafa788eef82d700ab6666ed8f4fb2e72ea071adb7e3de7fd0b7664d33ac937317c6edb546d7e221ba2b4e42
-Description: Share your terminal as a web application
-Homepage: https://github.com/sorenisanerd/gotty
-
 Package: gpac
 Installed-Size: 12884
 Maintainer: @termux
@@ -23817,6 +23803,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 47752
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6082-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6082-0_aarch64.deb
+Size: 6585708
+MD5sum: 0e607d9683d02b9a87dd004cf6658259
+SHA1: f01eda1513d5d9a1527425b3cae83722bc40420e
+SHA256: aa277d4c67b3d6123da3390b1c98598c13d658451af99e61a8249dff8176a797
+SHA512: eabd0b0508d899db5ec1cb35d7558cd70273bcd5d31a364feeaf94cc48ae381e29b48d96c19e6f6749837c01683acb368adb174458ca55cddd5a8a5d1496d1ff
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 47728
 Maintainer: @termux
 Architecture: aarch64
@@ -23836,6 +23838,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 544
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6082-0
+Depends: llama-cpp (= 0.0.0-b6082-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6082-0_aarch64.deb
+Size: 94052
+MD5sum: deb941f85ca1acca67cab4e35319397c
+SHA1: a3a45a83e358a1a52ccb49024441271221eb727d
+SHA256: c195c68e5fb1ce3003f6c2dac8d74acfe1e553266f80a10d2955338719020808
+SHA512: e9e6bda268db3ed06372c9b6ad3101b8a4e3de8cb84351960dbf952600aadaa2aed65f6e44dab8ad9e48131ea8c12afcc0868b2e3ef194e4547945f4224938e7
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 544
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6075-0
 Depends: llama-cpp (= 0.0.0-b6075-0)
 Recommends: ocl-icd
@@ -23847,6 +23866,23 @@ SHA1: 27a1c2624e203aaf008933c80bc88ec99e8a363f
 SHA256: 443d6d5147f7d421e3ce7f976a298684e64a716e9b1c46e174e238766ec656c9
 SHA512: c7678b90fc265bf4cc3b7732ff2bd84d1b8bbb175345c5cd5166f6c3ac4143387eb1ccb8aa3e2a0c7263cfbc12ff5390173930ed64428323e3ccb29678f488fb
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13552
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6082-0
+Depends: llama-cpp (= 0.0.0-b6082-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6082-0_aarch64.deb
+Size: 1041908
+MD5sum: ced99fa4f216a196f7232e94239ed197
+SHA1: 152c6ca5c9729ace9669c5a8e2539333da28ec47
+SHA256: 000ee806bc6f2c61ff13c7db59b79e219f784eadf27955a7e898529ac7ec321b
+SHA512: 8af46f95311ece8dff82d699f0f0682a29bba0a00e7f304f1afba726e119ed4bdded01af45f200bae3ba6a36850d4de4d3a324da7fa62e940eca3ca1eb226e70
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -24517,22 +24553,6 @@ SHA512: 0787ce01d8fc17dde223c01df815b3522e930d3427be54b545bbd8f074b4406ed0d25b01
 Description: A package manager for Lua, similar to luarocks
 Homepage: https://nvim-neorocks.github.io/
 
-Package: lux-cli
-Installed-Size: 15080
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.12.1
-Provides: lx
-Depends: bzip2, gpgme, libgit2, libgpg-error, luajit, openssl, xz-utils
-Filename: pool/main/l/lux-cli/lux-cli_0.12.1_aarch64.deb
-Size: 4793796
-MD5sum: a74d04e38c07089274632f0ccef4ad6f
-SHA1: 889dcdef52bb5e0c84e36856fbe295c199054151
-SHA256: 64be8a21adf1a46150b25e559d15f4ca667db8b77c2d14aef1f49653a4b8a549
-SHA512: 080c5ff8b1e3ad01cc0353da75c44253cd970389d9092ad0c0f9455e0b1ac945658dfd240b1065b374f2a563c29a5cd3c526ddf823ec91d44660dd1c4785e080
-Description: A package manager for Lua, similar to luarocks
-Homepage: https://nvim-neorocks.github.io/
-
 Package: lv2
 Installed-Size: 1444
 Maintainer: @termux
@@ -24740,21 +24760,6 @@ SHA1: a44ee042d87d039d8adfc7b5d302c58a6efa7a54
 SHA256: fc57f56c7a53e08c9803659574228a2d4ef09ab8965b2193d9b817b66da93e76
 SHA512: f3aa46c2d9bb8831e68da25a35e366543589fcc4084c8fcc6e0c07016215e7918ee4ea7f8271630fe0270ed7a228b0b3cfc773f34feb92e21481bdf64fb73ebd
 Description: Mailutils is a swiss army knife of electronic mail handling. 
-Homepage: https://mailutils.org/
-
-Package: mailutils-static
-Installed-Size: 9816
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.19
-Depends: mailutils (= 3.19)
-Filename: pool/main/m/mailutils-static/mailutils-static_3.19_aarch64.deb
-Size: 1642284
-MD5sum: bc337745b1a1815cf301f226b42893f2
-SHA1: a0afaae01652dcb8c7e6861195b99a01f22ea58e
-SHA256: 3f2d8e293618d7b5b4404f499e4c801a997e5f8e597ab79dd0919806877a6c72
-SHA512: d5c1559e514ee53935c1c1063c675b87518e3973982c185f1533b826c7719dfe2969619ae17da9dc2b91436d0b1e758be637b94a66055141b6eb9b2e2b987852
-Description: Static libraries for mailutils
 Homepage: https://mailutils.org/
 
 Package: make
@@ -26411,21 +26416,6 @@ SHA1: 34090323fb6b507c8c50b42e5749f98465c5ffd4
 SHA256: 2d08420290aae3e9a48b596666f0c12c891441e7695248bb113ef11793888368
 SHA512: 1aec2d8a7a9572c05949784f5cba0f3551bf6fbb7e92ef02cb7812c0880a4b3632c1b6d1c61092c37050bf344931e635804c2632e5ac575300cd917c450104a8
 Description: Fast console MPEG Audio Player based on libmpg123
-Homepage: https://mpg123.org/
-
-Package: mpg123-static
-Installed-Size: 616
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.33.1
-Depends: mpg123 (= 1.33.1)
-Filename: pool/main/m/mpg123-static/mpg123-static_1.33.1_aarch64.deb
-Size: 152164
-MD5sum: f06a9335e6c806490c691a5b11df2d23
-SHA1: 7c41e79598edb0ffd968113f7dde339e6d82c0d0
-SHA256: 50840a79ca291ec10d315c4b549a575bf4d0fe28e5e2aeb408ce473b90b5b362
-SHA512: af43ef5b20606a611d40f2787bea8e7a2280ea5f9274468a993b268169806fac563e368af0cb2bc74058740d23921c8fa054e6341c84916ab9c212ec80fe523d
-Description: Static libraries for mpg123
 Homepage: https://mpg123.org/
 
 Package: mplayer
@@ -33668,6 +33658,21 @@ Description: Systems programming language focused on safety, speed and concurren
 Homepage: https://www.rust-lang.org/
 
 Package: rust-analyzer
+Installed-Size: 35352
+Maintainer: @termux
+Architecture: aarch64
+Version: 20250804
+Depends: rust-src
+Filename: pool/main/r/rust-analyzer/rust-analyzer_20250804_aarch64.deb
+Size: 7628348
+MD5sum: 0231366ee6833b5d5d3f2bb48fad4736
+SHA1: 579127d088f6844d1321e00bd31c7c9a1c458fe8
+SHA256: c9ba2b34ebd92d3be51416302e0eab0a92a6cf8ff852743b068bcec35552b472
+SHA512: 7d14551dd8b8274ec5e7184af2fc426658d4d7885cdf0734ffddb0ee9aff4cdd02c6836ae5585dab00a3c80ad92164dc0bce0b9c320322cb94f243c9bb69904a
+Description: A Rust compiler front-end for IDEs
+Homepage: https://rust-analyzer.github.io/
+
+Package: rust-analyzer
 Installed-Size: 35296
 Maintainer: @termux
 Architecture: aarch64
@@ -34698,6 +34703,20 @@ Description: A simple heat transfer simulator in pure Rust
 Homepage: https://github.com/file-acomplaint/simuwaerm
 
 Package: sing-box
+Installed-Size: 32848
+Maintainer: kay9925@outlook.com
+Architecture: aarch64
+Version: 1.12.0
+Filename: pool/main/s/sing-box/sing-box_1.12.0_aarch64.deb
+Size: 7555028
+MD5sum: 7f83acc9e7a981dea7b0f4f283cf2306
+SHA1: 962d8ef66d1cec6451abefe4ba3479434f4d6a84
+SHA256: e23c906a5b8d1e0fc89244c663800e797e6cd6c46843f140ff81c07366f56389
+SHA512: fe6ed327d43699c0336d45df738668b4e6d6b7e8adfff38a386c66bc9efe3faf4268a8ab5f3fc03bdea4441d2c53b326969119b6f2f735218de6329be5ef2b43
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
+
+Package: sing-box
 Installed-Size: 31536
 Maintainer: kay9925@outlook.com
 Architecture: aarch64
@@ -34877,32 +34896,32 @@ Description: Eat as much as you want while avoiding walls
 Homepage: https://github.com/gogakoreli/snake
 
 Package: snapcast-client
-Installed-Size: 892
+Installed-Size: 1684
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.31.0-2
-Depends: pulseaudio, libc++, libexpat, libflac, libopus, libsoxr, libvorbis
-Filename: pool/main/s/snapcast-client/snapcast-client_0.31.0-2_aarch64.deb
-Size: 238756
-MD5sum: 89a4931894411302d8f1f11ad095b00b
-SHA1: e74c4f1f8e30968c319c99b3bf2f285876248315
-SHA256: c16100d15420076a594e80062515b7ab077e44dbed93bfb0c473f36323ffa5bb
-SHA512: 8f8ae3ac458531cf974f73b4264568f45f4130c3884e3a3a33e2ecfc3b2b7fe9560a5374d5a17b5759adc00dcc2234dfa067609ecf186d7e5f4aea4a029fe7f3
+Version: 0.32.0
+Depends: pulseaudio, libc++, libexpat, libflac, libogg, libopus, libsoxr, libvorbis, openssl
+Filename: pool/main/s/snapcast-client/snapcast-client_0.32.0_aarch64.deb
+Size: 436144
+MD5sum: 4f3ef62e770f6b8a53d709cb83e52779
+SHA1: 7b1849485e7d0ce39b13b184601544f4a7476c92
+SHA256: cc4231a55b20b967fc875a2d968220959c41d15af208a09b504b40a885cf0bf2
+SHA512: 0b1ab58db43cc7ed3750772500b170a2ea5904f8ec4fc26f20e522113d8d03aab9109886d30fabef8e96214b6c356fbd1f80d1c1aa98db56006543524805b74d
 Description: A multiroom client-server audio player (client)
 Homepage: https://github.com/badaix/snapcast
 
 Package: snapcast-server
-Installed-Size: 4964
+Installed-Size: 4988
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.31.0-2
-Depends: libc++, libexpat, libflac, libopus, libsoxr, libvorbis
-Filename: pool/main/s/snapcast-server/snapcast-server_0.31.0-2_aarch64.deb
-Size: 883348
-MD5sum: 4e76154748d9b1af626d143ed661b10a
-SHA1: f4832364a1957b7623a7455ec3389b8635929964
-SHA256: 43d66bdc705db7c1b20ebb523f5a02a30745df11d1b4132b33a6e2ce1e2741cf
-SHA512: 778667ecbe87b67b1127f1d7f809fab0d55c13f22689e5af801126496cdd5cef9ee9d94ccd51b390db77927883b0e807681d51e5993470e8e1956f4be3f44a4d
+Version: 0.32.0
+Depends: libc++, libexpat, libflac, libogg, libopus, libsoxr, libvorbis, openssl
+Filename: pool/main/s/snapcast-server/snapcast-server_0.32.0_aarch64.deb
+Size: 892956
+MD5sum: ed9c8ab1a710bcf56e052f0cffcf1068
+SHA1: 4371a340d387d22cf86aef91b834dc8907907300
+SHA256: 07fb53b7fa85c2bcff99812e76fb10bf071d6a577e0c7da64f84d78b7f338a65
+SHA512: 475ab214ea03463780bea4dd4ad95c2b9b54a8c6b1d96d1852dd9e59883366c65e0251552b26fd9bb1960985a2d69a130754c16d682414263f6185787d94a1fc
 Description: A multiroom client-server audio player (server)
 Homepage: https://github.com/badaix/snapcast
 
@@ -37436,23 +37455,6 @@ SHA512: b41f2cbf7fe93856c1428a02679abf26c14514ccfc78966c5c7514139adb1cb537bb3244
 Description: An integrated language service for Typst
 Homepage: https://myriad-dreamin.github.io/tinymist
 
-Package: tinymist
-Installed-Size: 51568
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.13.17
-Replaces: typst-lsp
-Depends: openssl
-Breaks: typst-lsp
-Filename: pool/main/t/tinymist/tinymist_0.13.17_aarch64.deb
-Size: 15602384
-MD5sum: 9e1e05e4f3e5c5db8266b1dcdbd80dee
-SHA1: fb53d99356ba5ae8915a490e5d4c785431ac70cc
-SHA256: cb408f299de6384b28dac32dd7412a19a25d31f0b62b8307cc72cac1ea71bf3e
-SHA512: 335bb9464b3d264d089a40a36fbb7af43c2ad5c55a93723ef1f22d3c09c82d5b776af031e2a6c25ef8c5bb8d890608af36b851734378f5e37add338b095469d0
-Description: An integrated language service for Typst
-Homepage: https://myriad-dreamin.github.io/tinymist
-
 Package: tinyproxy
 Installed-Size: 220
 Maintainer: @termux
@@ -39459,21 +39461,6 @@ MD5sum: 66ee7cc0595022994c84ac602453c9c3
 SHA1: 3f55fbc9829169250dc85b90375b6d9d3c38f534
 SHA256: d9f57facb463d4c9d9f8618f187d8bc7c31d79b8b2406ed8189033ff63b8699a
 SHA512: a2e0e83240ed461715545f4e6cceff1e6cb00c249c55fec5553a5aaa4a405df877ddfdda70426c0c6aecb46a83027985b9c03cc18c26a7c19f0e293fd2236abc
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://github.com/directvt/vtm
-
-Package: vtm
-Installed-Size: 5968
-Maintainer: @termux
-Architecture: aarch64
-Version: 2025.08.03b
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_2025.08.03b_aarch64.deb
-Size: 1160240
-MD5sum: f952d4d1e95fcf950303a71d5404dd08
-SHA1: e57f2bedecf53109550d64cce898b3eeb85fb78a
-SHA256: e7712689bf4fe066bf5cc81d7a9788057dec788a85fee32c3a8122c985a7c8f5
-SHA512: 78f6ffc77f315c7b59e6b048f6af78c93ac044e117ba3fdce0d16b319af58c58c29b7e32b581f431e13cb740529f3f871b4aecd813ba541e9d8b2d2b96cd99a8
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://github.com/directvt/vtm
 

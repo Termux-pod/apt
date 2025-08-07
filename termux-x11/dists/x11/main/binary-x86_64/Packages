@@ -587,21 +587,6 @@ SHA512: 3440c75b605f0e97b3b3d8e595bc9819348377a5f82bccceda903fdea7a69ff82544990d
 Description: Chromium web browser (Host tools)
 Homepage: https://www.chromium.org/Home
 
-Package: chromium-host-tools
-Installed-Size: 368156
-Maintainer: @licy183
-Architecture: x86_64
-Version: 138.0.7204.183
-Depends: atk, cups, dbus, fontconfig, gtk3, krb5, libc++, libdrm, libevdev, libxkbcommon, libminizip, libnss, libx11, mesa, openssl, pango, pulseaudio, zlib
-Filename: pool/main/c/chromium-host-tools/chromium-host-tools_138.0.7204.183_x86_64.deb
-Size: 45832764
-MD5sum: b19754dcdba9162bd160f1ee6a4b3f2d
-SHA1: fa6fa48b7236df86a012bac7d17a719db739a7e8
-SHA256: 151da9881b038c647f6c056501ff662796e951684c2a6ccdcee08de461843fef
-SHA512: d563987501d9d2d5fa48e8cd8aa8c9131128babc892f79b657c386282e9cedeb2c9ab64af7727da8917eedb5e14b82dcc7cbe1310ba2acd5abd3f25051e5e4d0
-Description: Chromium web browser (Host tools)
-Homepage: https://www.chromium.org/Home
-
 Package: clutter
 Installed-Size: 7980
 Maintainer: @termux
@@ -1637,21 +1622,6 @@ SHA512: c716fb5890ac2799764c88e63fbdf32ed267826e16080292d332415c3db03e7969672e78
 Description: Mozilla Firefox web browser
 Homepage: https://www.mozilla.org/firefox
 
-Package: firefox
-Installed-Size: 254020
-Maintainer: @termux
-Architecture: x86_64
-Version: 141.0
-Depends: ffmpeg, fontconfig, freetype, gdk-pixbuf, glib, gtk3, libandroid-shmem, libandroid-spawn, libc++, libcairo, libevent, libffi, libice, libicu, libjpeg-turbo, libnspr, libnss, libpixman, libsm, libvpx, libwebp, libx11, libxcb, libxcomposite, libxdamage, libxext, libxfixes, libxrandr, libxtst, pango, pulseaudio, zlib
-Filename: pool/main/f/firefox/firefox_141.0_x86_64.deb
-Size: 64210612
-MD5sum: 8fc4de374528dde621a665fed0e0109f
-SHA1: 81e6f5b096db67e162d601d2bf0487b795b3b0fa
-SHA256: a1429ef075de9548f25ba24b7365420623d8ac433581ad738b29bdb0a932d2d9
-SHA512: 8c56f6aab4ed30e284eb7a8481619c6a570a430946ee7c9f074ca5a5907743b04fdffc76c25db3deb5fe32178cc756432b3448fc9f598e89d33e892286bc305f
-Description: Mozilla Firefox web browser
-Homepage: https://www.mozilla.org/firefox
-
 Package: firefoxpwa
 Installed-Size: 24268
 Maintainer: @termux
@@ -2635,6 +2605,23 @@ Package: gtk-update-icon-cache
 Installed-Size: 72
 Maintainer: @termux
 Architecture: x86_64
+Version: 3.24.50
+Replaces: gtk3 (<< 3.24.41)
+Depends: gdk-pixbuf, glib
+Breaks: gtk3 (<< 3.24.41)
+Filename: pool/main/g/gtk-update-icon-cache/gtk-update-icon-cache_3.24.50_x86_64.deb
+Size: 12272
+MD5sum: 19f6889ae37a4c8a088f5fc67fc76701
+SHA1: f95b21e5aa277ae335af9d1a0682d29dd4efd726
+SHA256: b2befddd5e344e7e473b2e8b30a24740736e784845e834fd9a03433a961bccba
+SHA512: b13c1014a5f4c7a51618234ea5ff1f47c657e39826a7b14a7cc9e37164fe5b12593bfd1f315bd8c833bdd22f6ca78eefbb74eb2ca07ce58afac149e0f5442895
+Description: GTK+ icon cache updater
+Homepage: https://www.gtk.org/
+
+Package: gtk-update-icon-cache
+Installed-Size: 72
+Maintainer: @termux
+Architecture: x86_64
 Version: 3.24.49-3
 Replaces: gtk3 (<< 3.24.41)
 Depends: gdk-pixbuf, glib
@@ -2738,6 +2725,23 @@ SHA1: 23a854b90dcd1c0f23fc69d9a9fddcf27ed92343
 SHA256: a46ebd0515e5394ee9b9e1716df312a7d51874cf80173a7b680bc2177178225e
 SHA512: 5030871a57c266805001c43ce462b8493bb3eca0688e5f5bf0a80defedf5448213740c2f402fe14e7cbea5d26a379f5bb68531d71a22726c2f42dcaf7d555a49
 Description: Static libraries for gtk2
+Homepage: https://www.gtk.org/
+
+Package: gtk3
+Installed-Size: 31280
+Maintainer: @termux
+Architecture: x86_64
+Version: 3.24.50
+Replaces: libgtk3
+Depends: adwaita-icon-theme, at-spi2-core, coreutils, desktop-file-utils, fontconfig, fribidi, gdk-pixbuf, glib, gtk-update-icon-cache, harfbuzz, libcairo, libepoxy, libwayland, libxcomposite, libxcursor, libxdamage, libxfixes, libxi, libxinerama, libxkbcommon, libxrandr, pango, shared-mime-info, ttf-dejavu
+Conflicts: libgtk3
+Filename: pool/main/g/gtk3/gtk3_3.24.50_x86_64.deb
+Size: 5701016
+MD5sum: f5055b6f70979ff910ace74765d3e665
+SHA1: 3736fda03305b830987c47eba8d9b5fd4b907c1a
+SHA256: b3b7210ad2c6f7907c36054aa1fd5927d0ad6f3d0c4406b15477b90b7fde8ca2
+SHA512: 273e20a75c866efa2aa90e0b560410f55e5d0b99c7bd76404749e370569638b38a07c2d8fa9793f58b025d2ef24875a18b189f3bb867e7cbfc0b71c44f00e469
+Description: GObject-based multi-platform GUI toolkit
 Homepage: https://www.gtk.org/
 
 Package: gtk3
@@ -5461,21 +5465,6 @@ SHA512: 1f4f647af94edf2643c93c7cd0170952674a9315f6bc894ccb386acf20b3727891aa65e7
 Description: An open source voxel game engine.
 Homepage: https://www.luanti.org
 
-Package: luanti
-Installed-Size: 9632
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:5.13.0
-Depends: freetype, jsoncpp, libandroid-spawn, libc++, libcurl, libgmp, libjpeg-turbo, libiconv, libluajit, libpng, libsqlite, libvorbis, libx11, libxi, luanti-common, openal-soft, opengl, xdg-utils, zlib, zstd
-Filename: pool/main/l/luanti/luanti_1:5.13.0_x86_64.deb
-Size: 2805484
-MD5sum: ecd709d34f99a3a3f01c68c7302a5a73
-SHA1: 435195efb5a7350d2e33d3a61b661c0763193bee
-SHA256: be1c69e6cd92ee3f689f5b7ab28ffc4f34f014f16c703c74bd47c93550f17a95
-SHA512: 8c8cea4b10a1d0401536423a293b61e282523694d624edf88aa854e4793357246eb3180128d2815802a4b37b258a77e8aa63e9fa9909d2c622d62582e2a47c6c
-Description: An open source voxel game engine.
-Homepage: https://www.luanti.org
-
 Package: luanti-common
 Installed-Size: 10944
 Maintainer: @termux
@@ -5489,22 +5478,6 @@ MD5sum: b5e7458c147118039fbd609c97cf2932
 SHA1: 42bb43e259fb5450142916f1e959d206e8de6f1a
 SHA256: 7a92c5eafb16b1d23a1089ec219bf83ec87d8f1c39e0c37837562f3f54e24f0e
 SHA512: 90090ba95eae7e12ebf78f9e437ffab5dfc82f5dd37ef6fc94c5fac7389e116143f3977ecbbafa7457f3bd8dee684d1ce67e9d815f97f8c38fd29ac3a7c3aa02
-Description: Common files, including docs, shared between luanti and luanti-server
-Homepage: https://www.luanti.org
-
-Package: luanti-common
-Installed-Size: 10944
-Maintainer: @termux
-Architecture: all
-Version: 1:5.13.0
-Replaces: luanti (<< 1:5.10.0-4)
-Breaks: luanti (<< 1:5.10.0-4)
-Filename: pool/main/l/luanti-common/luanti-common_1:5.13.0_all.deb
-Size: 3363832
-MD5sum: a60f638ef98dd577b85d6f3bef7c557e
-SHA1: 723f341db03a75fa6604dc236aeb9340f6bec1c8
-SHA256: 021d8a8ca0a223ca7e12ec49b87a3fca9e027f689eea55993a23ac1b698d2faf
-SHA512: 60ed12e12a7e3b1cf97c66905b8eb4af60feab85778e75d7c2a9f59f91407f420feb3491faf38a17e28c7833bafe0337ad008a7fbbf4648d2cfcabbe331dfa89
 Description: Common files, including docs, shared between luanti and luanti-server
 Homepage: https://www.luanti.org
 
@@ -5522,23 +5495,6 @@ MD5sum: 83d526258ba8c467317eb56ffe4179ae
 SHA1: 4bb2e745fbff3b770bf310ba6dfc4488cee2ab16
 SHA256: 7334181912585c32bdc42dc78adbd2a3dcb1a47111046efc573b913c705ded90
 SHA512: a291653fb5eeb60fe2a1d6af3505a46a42c19f4dbc9b6c4d22480162fd60b8ba5c171f596a42786199be16563372541b6a65d61798b10f4857711cfcc8e93f2a
-Description: Headless server for the Luanti voxel game engine.
-Homepage: https://www.luanti.org
-
-Package: luanti-server
-Installed-Size: 5444
-Maintainer: @termux
-Architecture: x86_64
-Version: 1:5.13.0
-Replaces: luanti (<< 1:5.10.0-4)
-Depends: jsoncpp, libandroid-spawn, libc++, libcurl, libgmp, libiconv, libluajit, libsqlite, luanti-common, zlib, zstd
-Breaks: luanti (<< 1:5.10.0-4)
-Filename: pool/main/l/luanti-server/luanti-server_1:5.13.0_x86_64.deb
-Size: 1620816
-MD5sum: 2052c1d1915f167798440f5bad45dd6a
-SHA1: d5930fb51f71e2ce0c86725c01e15b6f6446f1cf
-SHA256: 16f12c3bfd423e20e590868a93ca649bf86b8e119585085350741f592dcb8bb3
-SHA512: 20b9f147d7055e1a0685389b33e9c5a433a7d52d412e394ae473de8ab201a103f4a0c84e3550026302b875db210fc8f60591475f779dafad95fd196154a456ef
 Description: Headless server for the Luanti voxel game engine.
 Homepage: https://www.luanti.org
 

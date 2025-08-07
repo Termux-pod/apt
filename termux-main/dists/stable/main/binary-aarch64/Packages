@@ -9250,6 +9250,21 @@ Description: Find visually similar or duplicate images
 Homepage: https://gitlab.com/opennota/findimagedupes
 
 Package: go-musicfox
+Installed-Size: 19744
+Maintainer: @anhoder
+Architecture: aarch64
+Version: 4.6.4
+Depends: libc++, libflac, libvorbis
+Filename: pool/main/g/go-musicfox/go-musicfox_4.6.4_aarch64.deb
+Size: 5231128
+MD5sum: 753ad5ed03e076de8c83f605ab2d2cce
+SHA1: de7af4c32041f14f2fb9231e5fd072033824cbd7
+SHA256: f4a5ad0ccd5bfea3a945128f73249e793aa6f8d28aba9bbb0758e48cfbc4342f
+SHA512: 50fc2f922d9cd8eb5f7bd28c1c50518d6d085338905e7fb02aa5ea570d72021debd9cc1928ad6066ed57369137f8af138cb560cfbfbb1e66bf021d1319af57fc
+Description: A netease music player in terminal.
+Homepage: https://github.com/go-musicfox/go-musicfox
+
+Package: go-musicfox
 Installed-Size: 19816
 Maintainer: @anhoder
 Architecture: aarch64
@@ -23200,6 +23215,21 @@ Package: libxmlb
 Installed-Size: 696
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.3.23
+Depends: glib, liblzma, libstemmer, zstd
+Filename: pool/main/libx/libxmlb/libxmlb_0.3.23_aarch64.deb
+Size: 89816
+MD5sum: 9d3d9ee3406a6ebc228c5628f7ac5d2f
+SHA1: 479996ae9f92a2094160832ed38c9a6adbdf503b
+SHA256: 7fa1d0eefcf57bda7d8310872ba283abb9b375afb117b887cdd66e3b75f04f1e
+SHA512: 4577ccceba4b95f2a6ca36697998e3da0c98cfb4a20455ac94e827fd6636268ee60e9fad8d0b9c9c865314a6375962387d8b3263901da3a8a01d4defd71f527d
+Description: Library to help create and query binary XML blobs
+Homepage: https://github.com/hughsie/libxmlb
+
+Package: libxmlb
+Installed-Size: 696
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.3.22
 Depends: glib, liblzma, libstemmer, zstd
 Filename: pool/main/libx/libxmlb/libxmlb_0.3.22_aarch64.deb
@@ -23822,6 +23852,22 @@ Package: llama-cpp
 Installed-Size: 48020
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6111-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6111-0_aarch64.deb
+Size: 6626812
+MD5sum: 137e293603720186b183e3fad51befc5
+SHA1: 03be9755f219164e40edceccffa9c57699849567
+SHA256: 8fdb88ab5dd79a60076402a3df3ca54d03e992e1a2509c47a96fac172b62c899
+SHA512: 08feb4f98fe661a081cd07dd916e8c1f04bdb11fa652afdff5030aebff703042503f2b449af4488232f7ebbcd96e49259aef505994217713345120e722902e06
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48020
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6109-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23834,20 +23880,21 @@ SHA512: 62c80de14c08adfe6b2ecf7da9c25596333d91e946ef3704e5145bdd4ed42c28b5d9c874
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48020
+Package: llama-cpp-backend-opencl
+Installed-Size: 552
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6106-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6106-0_aarch64.deb
-Size: 6632676
-MD5sum: 0257a5d85fb9ca3d6d040565884a071d
-SHA1: 5635059cd979b40d652c446f8bba60c389fae104
-SHA256: 81189c2bf4ebdc545364ed59e2c98a9cc0a1d35ad19f4eb5641e555d9d29bb4e
-SHA512: 30d12acb75a7cf22f4beb3b15dde2e304069b33483b6b4ba711da367f1db652723d4f7642a9aceee4e7cd753d2f4d0bef2d0ecf1eede3683c24c4c24b57871ab
-Description: LLM inference in C/C++
+Version: 0.0.0-b6111-0
+Depends: llama-cpp (= 0.0.0-b6111-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6111-0_aarch64.deb
+Size: 94752
+MD5sum: 53f7a77926ce3842e542abe419323fbf
+SHA1: 70ea0cb3da7eba7876b521623e46cc9b5e5cd6ac
+SHA256: e50f931951ff088aee9aaea645bac8cc2af26966169b4c034fc9e342455b9efc
+SHA512: c6da3980a0487a42c09cfa1d16b68cab55b2a08c0e114ef5998fb8141dee59a994d4e058475e5955533f372f26e6b99a4639ff6006f502ad312d8ea6ae61cadb
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23867,21 +23914,21 @@ SHA512: 56301956b75450fc07a8ffb8dd2b87c736feafdb37fd4e81bb6ea80f8a46d7880d01a346
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 552
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13960
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6106-0
-Depends: llama-cpp (= 0.0.0-b6106-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6106-0_aarch64.deb
-Size: 94752
-MD5sum: fc91343758bffc0247ced99f735dc7bc
-SHA1: 06cc323366390d4b13ac73f493a3ba9ff869f6f4
-SHA256: e810502f3fc0ad52d92977883ed965fc3641b8e8bd6285bafa1ef1f0b226f7f0
-SHA512: 558759ba28faf6861ffe41478b0bcb99a77d3d304dd08332bdd025fce9d5f3b84a68088607f6a9058e6b50a8f57ab7b34b75dcea3b7451951f59a515a4c09d04
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6111-0
+Depends: llama-cpp (= 0.0.0-b6111-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6111-0_aarch64.deb
+Size: 1078792
+MD5sum: 0d0499817b8242851ad6942b043c5f59
+SHA1: 1c7044fa95cd1ed6d81f3f2df36b6162c2b54eb6
+SHA256: f4b5545b9787826e57c405e7fab347d57bb96ad8695c92f9e3774508b58ada4b
+SHA512: a4a2b839eb6471272935a825476f65ad77470cfede1d7add3b5b8afddb06787050c750de0668884010d1ac443b9cc9781bd79771b7c57c679c59c68af251081e
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23898,23 +23945,6 @@ MD5sum: 62f8ea9ae69e24e60c31fa35f8fb68c2
 SHA1: e5f6913b53ac70ccbc94b4148298b29a419328f4
 SHA256: d055cb129f8db3c40cc66bf3badc59c7c4c742d1369dd7f216fe9e000d19b830
 SHA512: 7d5c8e7f56a1b39c0b6d0c7dbe78128f026e252f9eaa8199bd5253fe4dab893aab66c70d6317ef9dcce121b01c1588abd87484f1c2635736e392f455bc677801
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13960
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6106-0
-Depends: llama-cpp (= 0.0.0-b6106-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6106-0_aarch64.deb
-Size: 1079412
-MD5sum: 19fd3e7857a4ac0df276d9b8ad250419
-SHA1: 992be1d3a2b377ca237344b4f63b15a3866e6a80
-SHA256: a39f2ca47acbc3fc787d998c12023775deb56d554bac87fcf6c0f543735f173a
-SHA512: 40944de386c4e9c5609428d84d9d9b487f2857b143e565d52365ea046d85e4964036a6882d2efdf3c9981cbcb0c3a7ff9887bd0e6757d2aca4ec20414858c04f
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -29029,6 +29059,20 @@ Package: oxc-language-server
 Installed-Size: 8396
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.11.0
+Filename: pool/main/o/oxc-language-server/oxc-language-server_1.11.0_aarch64.deb
+Size: 2402108
+MD5sum: 7c669a6395cd041b4ef3b78ae78c56bc
+SHA1: 0a8360ef5d5b5eb4a9f7127b6a6105ddb9c04d54
+SHA256: 6c54688597684532f6eb8f0d2f725cfe48ddd1be63694498dc9b2b72ec90b4a7
+SHA512: 77cbd4a8d87fda7f92be39bb6f14f6100e7fe1b540915819d478c33a018d32076f2004e3592e1a77c66a0d918a072d27319376bc6f00e5569845ee852232be84
+Description: Oxc JavaScript linter language server
+Homepage: https://oxc.rs/
+
+Package: oxc-language-server
+Installed-Size: 8396
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.10.0
 Filename: pool/main/o/oxc-language-server/oxc-language-server_1.10.0_aarch64.deb
 Size: 2403496
@@ -29037,6 +29081,20 @@ SHA1: 69a76ab0dab01b27b03bb3d33a2351ef6235e17b
 SHA256: b7014d48f6523eff9ca669937ed6ab5ff812e9333fdc71db9f81e46d90095760
 SHA512: 3fc9042d1e78475a75d41a2b000396cc772b10261a41b7487eea3440ce747c8d46c9e2e7fa0649907ba65d55cede4d0389ff6786ab676a633c0cc66de70ac63c
 Description: Oxc JavaScript linter language server
+Homepage: https://oxc.rs/
+
+Package: oxlint
+Installed-Size: 8144
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.11.0
+Filename: pool/main/o/oxlint/oxlint_1.11.0_aarch64.deb
+Size: 2281280
+MD5sum: 2fea12a6941155bb7f22bef3e0b8fdcc
+SHA1: 33cb3198f30bb37cb96bb33f414f3d550dfc43a3
+SHA256: 9d44283e37ab1b35b2d5570383e7b9f97fbea43b6887c2391ca55fad3a5a1698
+SHA512: b2d952e1fb324d64bbe7128347279f830458010f5fc001556dc1db1a7328b3639968df1f0b969cdbc78009d789ca2ffedc415092556ca3a0d4ba31eea05c5a92
+Description: Oxc JavaScript linter
 Homepage: https://oxc.rs/
 
 Package: oxlint
@@ -31416,6 +31474,21 @@ SHA256: 1b9631f3580b5728f34d5c8ade396c0f361ff2428c4cd4a2da8e9b1d8ee59892
 SHA512: 7aab06dba8cd880314ce0cefa399a5b4b5e932b6ab1d5b72c073b08e49f8baca7bf861362a6cb603e35cee4abf5cb9a23bcc6a3bafb3a9c194a76e34afc7ddff
 Description: Wheels for Python ensurepip
 Homepage: https://python.org/
+
+Package: python-greenlet
+Installed-Size: 1240
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.2.4
+Depends: libc++, python
+Filename: pool/main/p/python-greenlet/python-greenlet_3.2.4_aarch64.deb
+Size: 212684
+MD5sum: 1debe65398e19b549d5aaeaea41493a4
+SHA1: da631ed4513acaddfa8b0fa808a49254c555ee0d
+SHA256: d2f7181ac74139d899addba5fc03fd6c43deaa9eb67535dd2d4ae492da46b126
+SHA512: 3daad7fbfad2e1b3431e5b259dfa9a0fa41371b4295776b2a9f48d333cc3bb26a9d2e701d8e26f72ece92c2d608c7893111e33250b5c5f5ccd829dc05fa78b09
+Description: Lightweight coroutines for in-process concurrent programming
+Homepage: https://github.com/python-greenlet/greenlet
 
 Package: python-greenlet
 Installed-Size: 1228
@@ -38877,6 +38950,21 @@ Description: Utilities for handling universally unique identifiers
 Homepage: https://en.wikipedia.org/wiki/Util-linux
 
 Package: uv
+Installed-Size: 38224
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.8.6
+Depends: zstd
+Filename: pool/main/u/uv/uv_0.8.6_aarch64.deb
+Size: 10466628
+MD5sum: 89c10d4f7f2970bab6c4db5aee2162ea
+SHA1: be564b3a672f31cc7d3f01caca5bf87481584494
+SHA256: ab9a771d0668d578bdb9195ea87e11eaed7073b4d383bac10003bdfaf7af41b6
+SHA512: 5f3b2bab1c4dedc64f6262f591d818a88894c30d2f05b5ced0e20e6388c7f8022f9f3fe479cbbf05984cc87a8d28d418005861436bc8985d62e1766f8f3ebbda
+Description: An extremely fast Python package installer and resolver, written in Rust.
+Homepage: https://docs.astral.sh/uv/
+
+Package: uv
 Installed-Size: 37648
 Maintainer: @termux
 Architecture: aarch64
@@ -39678,13 +39766,13 @@ Package: wakatime-cli
 Installed-Size: 14800
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.130.0
-Filename: pool/main/w/wakatime-cli/wakatime-cli_1.130.0_aarch64.deb
-Size: 3555308
-MD5sum: b12c3d4fe9310a18df850fb5f780a314
-SHA1: e522db5aebbd774a1e5f4e4bab8330f41f374483
-SHA256: 04bc9997188f67529b559f07604b40950d6278e17103a0084614ea278ac35536
-SHA512: 5a3953a262610be67ec4b151d30a2fff5a98f0152a81111cb07361f4a78a63ac37f37dc355930813758cffea05ee6512ee7ca94519825722596cbf67fe901577
+Version: 1.130.1
+Filename: pool/main/w/wakatime-cli/wakatime-cli_1.130.1_aarch64.deb
+Size: 3555028
+MD5sum: 529dd81735b352fd1a4883af785d4604
+SHA1: abf73fb3e8cde40c07addc7de8832e5741998550
+SHA256: 5b20d022a575fd7bc8f72d389768c74bbbdf1fff823c78b315ac94fb22872e80
+SHA512: b9a466187ba2877123807934a95abe69c32b61e46798c7211a95c4da3f5647a21b3cf375628ebb21d27f1a4f7591ea5842467b69b5d49b586a2849f7538f7e14
 Description: Command line interface used by all WakaTime text editor plugins
 Homepage: https://wakatime.com/plugins/
 
@@ -39692,13 +39780,13 @@ Package: wakatime-cli
 Installed-Size: 14800
 Maintainer: @termux
 Architecture: aarch64
-Version: 1.129.1
-Filename: pool/main/w/wakatime-cli/wakatime-cli_1.129.1_aarch64.deb
-Size: 3557396
-MD5sum: beacebd2716f9c3f738bdfdb1f7d42d3
-SHA1: 88da8feb39b3438e40719e578575de6ecf3a939b
-SHA256: 3a4a5cbeaf605d037c46e6e5c9be312c261f296331c382b07f0ce4ad60d3ae79
-SHA512: afbed622e80a53e99b7ff112821c13cd9452bf68c749357d2f94dba4ec15134ddcccc65750b11f611f51ba522fd3ce1a0d9a36524dc96bfd926d66f542d28005
+Version: 1.130.0
+Filename: pool/main/w/wakatime-cli/wakatime-cli_1.130.0_aarch64.deb
+Size: 3555308
+MD5sum: b12c3d4fe9310a18df850fb5f780a314
+SHA1: e522db5aebbd774a1e5f4e4bab8330f41f374483
+SHA256: 04bc9997188f67529b559f07604b40950d6278e17103a0084614ea278ac35536
+SHA512: 5a3953a262610be67ec4b151d30a2fff5a98f0152a81111cb07361f4a78a63ac37f37dc355930813758cffea05ee6512ee7ca94519825722596cbf67fe901577
 Description: Command line interface used by all WakaTime text editor plugins
 Homepage: https://wakatime.com/plugins/
 
@@ -40855,21 +40943,6 @@ MD5sum: 80bd4feada06b9f5af178f8e8a9a4d69
 SHA1: c5f0907cde1a18d43650535668f0d49d2c955c45
 SHA256: e36772d59a6ab0af5541a515c156a976cc505d29dbb73572eb3b6c566e62a065
 SHA512: d354731dd788f0403c2003344e889064e768f5d384d0bdf78732ae3077e9dfafbf7202a0fc93cb249eae415f58deb80985bd02cc678e601069b54442e76f8c7a
-Description: A framework for RTL synthesis tools
-Homepage: https://yosyshq.net/yosys/
-
-Package: yosys
-Installed-Size: 42968
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.55-1
-Depends: boost, graphviz, libandroid-glob, libandroid-spawn, libc++, libffi, ncurses, readline, tcl, zlib, python
-Filename: pool/main/y/yosys/yosys_0.55-1_aarch64.deb
-Size: 9945532
-MD5sum: 87bf4e942de1f17226a2319379ce5d91
-SHA1: cca39ddf9594354961c0b3f8e493a3a2f05628ee
-SHA256: 0408e361355a6ebdf0a5a917757b74977c002874d535d62b6914ab339b1d7c9b
-SHA512: 1ea36611e4ba10ea91e5fbd2c04558b0d803fb890c1d65da1360714cb26d01ee33ede0ced8f4afc577e91791411bddf360627bb426e704576c8147002d1f0dc8
 Description: A framework for RTL synthesis tools
 Homepage: https://yosyshq.net/yosys/
 

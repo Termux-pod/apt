@@ -253,6 +253,23 @@ Description: Flexible I/O Tester
 Homepage: https://github.com/axboe/fio
 
 Package: frida
+Installed-Size: 101924
+Maintainer: Henrik Grimler @Grimler91
+Architecture: aarch64
+Version: 17.2.14-1
+Replaces: frida-tools (<< 15.1.24-1), frida-server (<< 15.1.24)
+Conflicts: frida-tools (<< 15.1.24-1)
+Breaks: frida-server (<< 15.1.24)
+Filename: pool/stable/f/frida/frida_17.2.14-1_aarch64.deb
+Size: 30977948
+MD5sum: 8c4437a28a7b49efd5ccc37123c46eb6
+SHA1: 7aa9f7ddc38e4dbb8d30c6a1d233a05f4f6fdf97
+SHA256: 80ce90fce71868f212c18791fc89877b9dfce1ca2127f8f932f1bedb438be10d
+SHA512: ec71ebaede417ca8948dd83ef6d649336f7be8b7d948a19774f99bfb51685ce846ba73a73611edadcaf9fbdc03b699e2fb42a62fa6da597c2e5d250646a65de0
+Description: Dynamic instrumentation toolkit for developers, reverse-engineers, and security researchers
+Homepage: https://www.frida.re/
+
+Package: frida
 Installed-Size: 102008
 Maintainer: Henrik Grimler @Grimler91
 Architecture: aarch64
@@ -270,6 +287,23 @@ Description: Dynamic instrumentation toolkit for developers, reverse-engineers, 
 Homepage: https://www.frida.re/
 
 Package: frida-dev
+Installed-Size: 140040
+Maintainer: Henrik Grimler @Grimler91
+Architecture: aarch64
+Version: 17.2.14-1
+Replaces: frida-server (<< 14.2.13)
+Depends: frida (= 17.2.14-1)
+Conflicts: frida-server (<< 14.2.13)
+Filename: pool/stable/f/frida-dev/frida-dev_17.2.14-1_aarch64.deb
+Size: 33535096
+MD5sum: 559cb6371b997d4cb1fcf9073ce176ff
+SHA1: 680b29762badd3ecbfdd4deac4dbee5f4234e620
+SHA256: 0caafaad13ab0ade14dd66cef20a882ac1e423b5ccc11979b93af64c3042096c
+SHA512: d329c34897d11bb65b5dfce7d85d4016b3d3be204de4d839460af7da83ab89047e51c51a3a966d79812e1043374e494dfe4cb67fba0e1351f63f20c725f0c867
+Description: Development files for frida
+Homepage: https://www.frida.re/
+
+Package: frida-dev
 Installed-Size: 140160
 Maintainer: Henrik Grimler @Grimler91
 Architecture: aarch64
@@ -284,6 +318,23 @@ SHA1: 7e2b4f8d3370c4102a74ed6daedf960a7be5936b
 SHA256: 3b109ee762bcf1b038f116f08605781fda927576ad7c7b3a09f60092f83dab01
 SHA512: 3205192ed2d3bbaf97fcee265e0aca86ec289b9894ed96dbc083b137a10f32009a104a48a042fb99def26431bab9df9235fe5ffcef133d892a685b14d2191151
 Description: Development files for frida
+Homepage: https://www.frida.re/
+
+Package: frida-python
+Installed-Size: 66492
+Maintainer: Henrik Grimler @Grimler91
+Architecture: aarch64
+Version: 17.2.14-1
+Replaces: frida-tools (<< 15.1.24)
+Depends: libandroid-support, python, python-pip, frida (= 17.2.14-1)
+Conflicts: frida-tools (<< 15.1.24)
+Filename: pool/stable/f/frida-python/frida-python_17.2.14-1_aarch64.deb
+Size: 19785124
+MD5sum: 7343e619a7f2b91df37bf212094f0485
+SHA1: 26581a5ce7daa148e2dca5d87e62e30080b16004
+SHA256: 52a2177bdcf60f984fa008ee67c2c91bb7c8eba5e760526022734bdef9ed77a6
+SHA512: b2bf80dded02605a6d3c53ced57b2adfecd1907a3ff383de6957984daed4a1d7175f0a754da53a510814e9c8c9d7bb034bc51cc04b444f5e65aa3448a09ac832
+Description: Python bindings and CLI tools for Frida
 Homepage: https://www.frida.re/
 
 Package: frida-python
@@ -637,21 +688,6 @@ SHA512: 751f087717ac5d6441121ddf0b4632ed51e97ebf9236777d64299518a510e5aec2dc25eb
 Description: A device-mapper library
 Homepage: https://sourceware.org/lvm2/
 
-Package: libdevmapper
-Installed-Size: 588
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.03.33
-Depends: libandroid-support
-Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.33_aarch64.deb
-Size: 169984
-MD5sum: 41079b2816b5cf39eae229332fb522ed
-SHA1: cd0f74e15b69bdc8e9b4dcb74a71b6c2d2db1173
-SHA256: 8ba41bd0d0edf74606970468cbcdd677db0a2d6cca040ec4a69c323edbb76ec7
-SHA512: 58106ff1080d8d175ea88ba5e45fa1047e69f826593e45315a017f76341208015209cc5441fadf01c9eeb3135a1d86187008d6f3e0e11a159bee344143f12b40
-Description: A device-mapper library
-Homepage: https://sourceware.org/lvm2/
-
 Package: libdns-sd
 Installed-Size: 156
 Maintainer: @termux
@@ -815,23 +851,6 @@ MD5sum: 7e31f6de5cfca6bd13d0d058a3fd3fed
 SHA1: 07f6b8b253d4d089f6070c808a4c3f4cda1dc238
 SHA256: 9db38c49ce387fcb94a316f38d74ee57f903657c8e0065138bad49028783c925
 SHA512: eba1f8fa3cd7daa0043dfb722c5fc7f3206c50f9f62e1a5e9d9e71429d94d14acbbaf3dc2308724e5b6e028de74a81d892d1a44c1403b455616bbe8ed2823fe8
-Description: A device-mapper library from LVM2 package
-Homepage: https://sourceware.org/lvm2/
-
-Package: lvm2
-Installed-Size: 2824
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.03.33
-Replaces: libdevmapper-dev
-Depends: libaio, libandroid-support, libblkid, readline
-Breaks: libdevmapper-dev
-Filename: pool/stable/l/lvm2/lvm2_2.03.33_aarch64.deb
-Size: 1065532
-MD5sum: f88230e66aa95f04b2dc98189609768a
-SHA1: a9f193f76efe9965167118f1f27a6797bd0f89e5
-SHA256: 11a90f07e53422e9b5d38237f4bcd3a05cf440cce76426a816da639a028fe502
-SHA512: 5a404d84c9278f3e13eede09414e22f5232272905d79435cf22d02dc7295d933b750ae597086b032ad5a223e80aad9cc6bd0fd7094dfe5a796407123a5c82db0
 Description: A device-mapper library from LVM2 package
 Homepage: https://sourceware.org/lvm2/
 

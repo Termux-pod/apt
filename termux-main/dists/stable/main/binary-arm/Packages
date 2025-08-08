@@ -423,20 +423,6 @@ SHA512: 0eaa60837e266cc932ead1903252e8ba1bf435c98008735498546c9a32b32c7410730210
 Description: Small self-contained web server with Lua, Markdown, QUIC, Redis and PostgreSQL support
 Homepage: https://algernon.roboticoverlords.org/
 
-Package: algernon
-Installed-Size: 37296
-Maintainer: @termux
-Architecture: arm
-Version: 1.17.3
-Filename: pool/main/a/algernon/algernon_1.17.3_arm.deb
-Size: 9105832
-MD5sum: 2a56690b8998ffdc2ad77d7e52d60154
-SHA1: c278ad7cd730916e11eec33e721bbb4e731dd342
-SHA256: 6d7cddda2a0ec4b79406957e95fa8128050ac2e4756c67cba2dc93a2c4e47fcf
-SHA512: d2f62b39fc9bce89ebba0e17676055a42cf0306c0b9952bd2e6b407a5a62f57093e6216a4d5833b4fbea3de8681adf5f1173ffe20bc07b062e2e089c97fae265
-Description: Small self-contained web server with Lua, Markdown, QUIC, Redis and PostgreSQL support
-Homepage: https://algernon.roboticoverlords.org/
-
 Package: alpine
 Installed-Size: 6796
 Maintainer: @termux
@@ -9496,6 +9482,23 @@ SHA1: 0cafc9c6e2b38939b0541ba9c335d9cf30c29cde
 SHA256: 2bbc7041fe4c15810038e06bdfbb8e630a78b30ea96cd94d4ded5a2f12dc94cb
 SHA512: 24ce4ef67d75c66e57b9f56bee55f2cf98cf9afbcc1bc47ecb691c879b3c243dc43c71dfc8d6f9de6fdb5a47c32fc7c9f3ad10e96d6c5e7b01f03e521ab22e38
 Description: Python bindings for GStreamer
+Homepage: https://gstreamer.freedesktop.org/
+
+Package: gstreamer
+Installed-Size: 8532
+Maintainer: @termux
+Architecture: arm
+Version: 1.26.5
+Replaces: gstreamer-dev
+Depends: glib
+Breaks: gstreamer-dev
+Filename: pool/main/g/gstreamer/gstreamer_1.26.5_arm.deb
+Size: 1300672
+MD5sum: 993a28ea9b0871d6f248602faf5eb702
+SHA1: 5c831cd94e1eaf5910ea895c0546823099a6b79b
+SHA256: 109a711cca291fc7c304343c6505a49d14072dd0e7f31b32c714b2dc9c0861a6
+SHA512: 0c3d264cb0d97705afdde068bac85e16b3d84d6e78277f07b99db51a251921e880a60e9c8bf019a476c73bfeee185aa90f98a795f449a8b6da51f27f1958dabe
+Description: Open source multimedia framework
 Homepage: https://gstreamer.freedesktop.org/
 
 Package: gstreamer
@@ -24015,6 +24018,24 @@ Description: MapServer is CGI-based platform for publishing spatial data and int
 Homepage: https://mapserver.org/
 
 Package: mariadb
+Installed-Size: 162316
+Maintainer: @termux
+Architecture: arm
+Version: 2:11.8.3
+Replaces: mariadb-dev
+Depends: libandroid-support, libbz2, libc++, libcrypt, libedit, liblz4, libxml2, liblzma, ncurses, openssl, pcre2, zlib, zstd
+Conflicts: mysql
+Breaks: mariadb-dev
+Filename: pool/main/m/mariadb/mariadb_2:11.8.3_arm.deb
+Size: 11426828
+MD5sum: e4390c2652ec7847084fddada9e83ab0
+SHA1: ad887650b03175e3d9e8324768993d5390a0183b
+SHA256: 59d4803aed42fe37fd5f93d28db532b85a52ffea329cf35ca8e571755efb4ad3
+SHA512: f534e7d1f397b9c26439eaeefb5c2243fefaf1877e8489b8c12bb024d25ec5588000011b54fda59c815e5800bb49ad4a1cf0dbd7dc2d5679759879192aad4b83
+Description: A drop-in replacement for mysql server
+Homepage: https://mariadb.org
+
+Package: mariadb
 Installed-Size: 162312
 Maintainer: @termux
 Architecture: arm
@@ -24030,6 +24051,21 @@ SHA1: e5d000252303c592e40f88af894ddc659a607a18
 SHA256: 0b57100ddfc93ed6957dd121babec37a6baa6777a0a1f3535fdfe39be2608ffb
 SHA512: 10b920dac9b1a9ef757bfeb9440e613ef924fb5ab15df187f97b1a51064c3d760bd019498fe68eab1f5c581e1b375c748bd4d950dcff12bd3b63aeba27970e1e
 Description: A drop-in replacement for mysql server
+Homepage: https://mariadb.org
+
+Package: mariadb-static
+Installed-Size: 1576
+Maintainer: @termux
+Architecture: arm
+Version: 2:11.8.3
+Depends: mariadb (= 2:11.8.3)
+Filename: pool/main/m/mariadb-static/mariadb-static_2:11.8.3_arm.deb
+Size: 397892
+MD5sum: 04b440da023bf450d9b1af4fd7bb1ec5
+SHA1: 67648bacb8f22dd5f252ff2947d7c82f4c600e91
+SHA256: f870cbc83bd320eedf70e13aced2159b853be51f0c7c229379447c8a1328fe4c
+SHA512: 0ecd37900b5107deabb3f80e231c42f52e022a6ba348687255511a8798a3ca7babab2d7c35100218f9b902cb77f2118f1db52a738044be1db0ebba855231c586
+Description: Static libraries for mariadb
 Homepage: https://mariadb.org
 
 Package: mariadb-static
@@ -30563,21 +30599,6 @@ SHA512: 6119a6d186a7e9636952a84711ec7cf0a33a3bbea72a53bbb20123596cd949cfc7663f0e
 Description: An extremely fast Python linter, written in Rust (Python bindings)
 Homepage: https://github.com/charliermarsh/ruff
 
-Package: python-ruff
-Installed-Size: 180
-Maintainer: @termux
-Architecture: arm
-Version: 0.12.7
-Depends: python, python-pip, ruff (= 0.12.7)
-Filename: pool/main/p/python-ruff/python-ruff_0.12.7_arm.deb
-Size: 19220
-MD5sum: 33f3234a2774da09907c939d3ded280c
-SHA1: 2934048448f83684fffe2f219b708b2795d918e4
-SHA256: 95ea2f3aad4a219cf120f91b5c420110c3e6367edec421e27c3bdc5ea69b5f6b
-SHA512: 6ea88aa2670877afcb20632ae3879f0543d514104f9027eef401e7c6e1976a26a93cbcda5d81812db2c1604f11c35c52cee6a6bb6850b73fc91b7f27d61440b6
-Description: An extremely fast Python linter, written in Rust (Python bindings)
-Homepage: https://github.com/charliermarsh/ruff
-
 Package: python-sabyenc3
 Installed-Size: 168
 Maintainer: @termux
@@ -32504,20 +32525,6 @@ SHA512: 01294b866b6fe13b1aa334dbc83b852023ecc569ec247f27b6785c5ec159a3a966800194
 Description: An extremely fast Python linter, written in Rust
 Homepage: https://github.com/charliermarsh/ruff
 
-Package: ruff
-Installed-Size: 20688
-Maintainer: @termux
-Architecture: arm
-Version: 0.12.7
-Filename: pool/main/r/ruff/ruff_0.12.7_arm.deb
-Size: 7149180
-MD5sum: 8345721bbb1d8e7a5a23ba210d21a1d3
-SHA1: 19dda9a379d3a31ed0710a847f2528447864282e
-SHA256: f9ae8598422ab0810b419eacf8cb0c12249728a715f4163cdb835dfa408b881c
-SHA512: 0e35e86424d8c980acf267535d3064d8c36e84869a0e8c78aa56bf6e1e9f1e5550ec7b70c9f731991b82a6b4d8d7d71e27af9812d708d3af87b5275b13b1ba4b
-Description: An extremely fast Python linter, written in Rust
-Homepage: https://github.com/charliermarsh/ruff
-
 Package: runit
 Installed-Size: 264
 Maintainer: Henrik Grimler @Grimler91
@@ -32562,18 +32569,18 @@ Description: A cross-platform command-line tool for executing jobs in parallel
 Homepage: https://github.com/shenwei356/rush
 
 Package: rust
-Installed-Size: 104844
+Installed-Size: 104764
 Maintainer: @termux
 Architecture: arm
-Version: 1.88.0-1
+Version: 1.89.0
 Depends: clang, libandroid-execinfo, libc++, libllvm (<< 21), lld, openssl, zlib, rust-std-armv7-linux-androideabi
 Suggests: rust-analyzer
-Filename: pool/main/r/rust/rust_1.88.0-1_arm.deb
-Size: 33729840
-MD5sum: 6e5473da308f02352da558b445c48bf7
-SHA1: 86b0d40ff26755cf595fd58c2b2ab14ae660ee0e
-SHA256: ba8533850f0296fc63b7b5df32b516144c04fd192e3b78590df024d697cc718f
-SHA512: 2714dc9473aa94e9cbfc920d31f9668366a7821df4443138c9a42610673f491068fe7e81844644158bc3294c3716187418d008e12e0bc7796c4a98d9166481a5
+Filename: pool/main/r/rust/rust_1.89.0_arm.deb
+Size: 33826364
+MD5sum: f4b14922ccbd2a28a56c670f94792ebd
+SHA1: ae46a24b0d6f2940cc52dffefe9e40c6c55ed0fb
+SHA256: 442c3af3391682b08b9c995c86afffc1f03059420ad5d4987ed1dbc6b573665d
+SHA512: e19eebef434a243c566c2624586af2c1c7025d97d3dff9addb305c7c547a6afc0fea8a307ecba9c2d6b228e38528e5d7f5ff517582a919ef55f6a1feea5a1ab3
 Description: Systems programming language focused on safety, speed and concurrency
 Homepage: https://www.rust-lang.org/
 
@@ -32607,172 +32614,172 @@ Description: Automatically generates Rust FFI bindings to C (and some C++) libra
 Homepage: https://github.com/rust-lang/rust-bindgen
 
 Package: rust-docs
-Installed-Size: 723140
+Installed-Size: 726392
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
-Filename: pool/main/r/rust-docs/rust-docs_1.88.0-1_all.deb
-Size: 31769484
-MD5sum: 6d45e4b52ee708300ed162e5e70025a2
-SHA1: 42b4af6e98e972e4dc76f741920433b832de9c59
-SHA256: b2a127f9e730d33b9160bfcb574e843c7606f084a110120f52bd744209bbcd49
-SHA512: 51349d866c1f793d3ba62c6859563c639d8fd26b42eb691fcad1d9770f4b86e18ded27ab66b35b1a239fb5d42b43d4d855620cfa36bbc6ba82fa82628a75ce9e
+Version: 1.89.0
+Filename: pool/main/r/rust-docs/rust-docs_1.89.0_all.deb
+Size: 31897664
+MD5sum: 3fe209daf1e144d0fe77575cc05a3d99
+SHA1: 42f451ed6ff37365e247661a875e2f5eca31830a
+SHA256: 984c962e1b78cf7d3ae17e6595c0f4cf5683dd1da2e08d20e47e4b8fe41a6376
+SHA512: 4375d28d6a28f59aab2e3a28780c92b7022ddc5766cba8e0626e20fc127f899a05a41ea5e6e8def59c4a71ec4fec92242c423788a4915d1b74f0616ee2df5eb4
 Description: Rust documentation
 Homepage: https://www.rust-lang.org/
 
 Package: rust-src
-Installed-Size: 41108
+Installed-Size: 44092
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
+Version: 1.89.0
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-src/rust-src_1.88.0-1_all.deb
-Size: 3256064
-MD5sum: 6de7d53575a4663cc0c6c857f211d4e6
-SHA1: 091eb3d6f950111a401aa81c3c90cd0d3713e1f4
-SHA256: 8695e671189c069f34b30136584d152a97c55226176f85d03e91c1b8a69a3cea
-SHA512: 944ac6a2d8b4ec7400153853e51f83875fe36a089676a624b01f7b2b1da9254a80ff6cce613636a25b0bf2b07932b5ef2f8f03f92cb84c099fe71c4cac2e1c17
+Filename: pool/main/r/rust-src/rust-src_1.89.0_all.deb
+Size: 3573912
+MD5sum: 252a1c2ae205baf170b1f78ab04a41b3
+SHA1: 4a5d3fbe6a35339430fdb1963705d6a1148ea188
+SHA256: 55d6112b72b183175546d16d94171c6aec938b80b2c1decd787de9fa0be95fe5
+SHA512: 42e1c51bd4344485e74844cca84fe50242de49fa31bccaa760ef03d42f6aade443d4364bf255b55cc148e1a7ee1ad92acc490f9d52553cab9db596e6d4ad59f6
 Description: Rust source code files
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-aarch64-linux-android
-Installed-Size: 104916
+Installed-Size: 107068
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
+Version: 1.89.0
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.88.0-1_all.deb
-Size: 24772112
-MD5sum: e24781a4a862141b52ad9c6c968b46af
-SHA1: 774deb9aecd2881ae819f8d492aad65b905d113b
-SHA256: 0851892c12933716760d4afb3366694becc64fe6dfee8f0cdf9aa14fd23f84db
-SHA512: 2727ddcaba9ebe3dbf2e3184002dbd0033c48e80b2edea4bc952d5b5f2f9d0502bb11c3df063233e0e5ca3338043d631dd9796b86b140000ebf2baebeccb7708
+Filename: pool/main/r/rust-std-aarch64-linux-android/rust-std-aarch64-linux-android_1.89.0_all.deb
+Size: 25240060
+MD5sum: 8aa3ed180c077546b28adc87d2e28bda
+SHA1: 1d60abbf2d306d16f71df02411550cf06b953e26
+SHA256: 466de5ab87d471bf2f0605702b154711370e443e33ad79e8cb074e9cf5710fe9
+SHA512: 33d73f5808f5f79dbe9b654c2a9df5400f9fff9a9f15ed9c49b478a4c2abfd23c18077cc5705a789a363a26f1dbd84b275f8fb5cbe50f04dffd9e5847eaa0a91
 Description: Rust std for target aarch64-linux-android
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-armv7-linux-androideabi
-Installed-Size: 98640
+Installed-Size: 100852
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
+Version: 1.89.0
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-armv7-linux-androideabi/rust-std-armv7-linux-androideabi_1.88.0-1_all.deb
-Size: 24031752
-MD5sum: a3de6ef38acd51713399f67e7a12ad01
-SHA1: 9fc0a6dc4813e8779aaba4f8f0bc8bf2b00460ab
-SHA256: 54e1568b2dcca28a197eead472490e4a8a844104237b9ff621f560100bfacf24
-SHA512: d41cda84e1f59284e6a5f7e4f74091920363b97b6c05ab240612805ea361164ee9b1877afcd68731734fce481425a558606b717ac725fa9d5bba9f770ca12a51
+Filename: pool/main/r/rust-std-armv7-linux-androideabi/rust-std-armv7-linux-androideabi_1.89.0_all.deb
+Size: 24445036
+MD5sum: 6ea4d29132ac39d1fbccd061b1e63af2
+SHA1: 2b14d5ae07cc6505820fdb2405c79fd6cc2f59c6
+SHA256: e944f38061c467d98ab1b728042cffdf19dc9ae54aa77c83a005d6ea1381af2c
+SHA512: dfc1d2c78c65ce5aff6df31f770c5bb85914321afe8da3932fe65d52c5e1b0994e39c2ea63677ac456f41d6cf0807b71c8abaf2087ea817b9f4bd81878b2def2
 Description: Rust std for target armv7-linux-androideabi
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-i686-linux-android
-Installed-Size: 110252
+Installed-Size: 112476
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
+Version: 1.89.0
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-i686-linux-android/rust-std-i686-linux-android_1.88.0-1_all.deb
-Size: 25598808
-MD5sum: fe7cffa46076ea85e11446af1e8ab37a
-SHA1: 21ae5f2d263f933618b92eb8a1a7d74d0f18494a
-SHA256: a51f146bcded66fbda0c55537b84c4be7598093eebbeb41268e9e10ea9f89a16
-SHA512: 7191dbe6e68c9287a81c83df82ab44a4a0ff1947974eb343b48bb9ff5b9d3757881211727922fe9a0e3bd36dc7caec3d06c41c529222955a110fa09867c740ae
+Filename: pool/main/r/rust-std-i686-linux-android/rust-std-i686-linux-android_1.89.0_all.deb
+Size: 26046672
+MD5sum: b98278d73b415cd71eb4cff622e42853
+SHA1: 79f67451003f55170ed46c0b9c5f8d50e5137b09
+SHA256: d7486f6e82e0b542517fa8b547c5caf680a7caae382ee7fe9d9592622709706c
+SHA512: f7cf2444c66ff1806f788d16017872fe5573555e34f2906609ea224a3df31ae7e74c6bf1dac778fb24d85cef31c2a050622f45eed504356b3324e5fb14d2d92a
 Description: Rust std for target i686-linux-android
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-wasm32-unknown-unknown
-Installed-Size: 76404
+Installed-Size: 78172
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
+Version: 1.89.0
 Replaces: rust-std-wasm32 (<< 1.74.1-1)
 Breaks: rust-std-wasm32 (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-wasm32-unknown-unknown/rust-std-wasm32-unknown-unknown_1.88.0-1_all.deb
-Size: 18882960
-MD5sum: b63e918ec965740c80a585c7fd2ed95e
-SHA1: 9f5d04e80afa8f2469e1187d3e7fe5125dc44746
-SHA256: cbff8692beaa684ab8da5f08826cf3b15fb66db00a545010af247027a89bcc8f
-SHA512: cafc823fb9d6153392d51997f9785043ff658453e935744dd41d9eba7ca6a8d42023d7791968eef49cdf1bf0307ab7c09235566a22ea8912c0e8b6f693c87232
+Filename: pool/main/r/rust-std-wasm32-unknown-unknown/rust-std-wasm32-unknown-unknown_1.89.0_all.deb
+Size: 19228868
+MD5sum: 586f94a0db982e8d17a51c25db81711b
+SHA1: 0181322307708d6bedb35783d1d5eb24a1a302ca
+SHA256: d1c7c2561afdc240e2c11892abbdec998067cfb2769f8ce4a96d39302f2163a5
+SHA512: 0db2c44524647249a0d823a304c281c0b201f82eea06b0eb82a15e4c360ff34e66f4c28d2c80959b4c7679d114302f1bea0bc3dccc21dde1e25c395af894a754
 Description: Rust std for target wasm32-unknown-unknown
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-wasm32-wasip1
-Installed-Size: 80296
+Installed-Size: 82056
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
-Filename: pool/main/r/rust-std-wasm32-wasip1/rust-std-wasm32-wasip1_1.88.0-1_all.deb
-Size: 19906596
-MD5sum: 98fac20d619912cdcee2091b1ea874a8
-SHA1: f9a8cbb83ddf7d7f348c07d04b2c13842d155cd2
-SHA256: 057ed90c4a6bd2fed71f5c29ef0a237aa28d633704eaaa009b4e5f9d1e569faf
-SHA512: 161187d27e6cee9a38614bfd00e2183efa365aa1492ce18914ad23ec1b3c80cd5a1d7f524d72221bb2677d3da098c3bd71010c899b6fcaa022b3318ebaf92687
+Version: 1.89.0
+Filename: pool/main/r/rust-std-wasm32-wasip1/rust-std-wasm32-wasip1_1.89.0_all.deb
+Size: 20212492
+MD5sum: 465b070a7514b6dfe397d1ed906698b9
+SHA1: ee1170197fd83a4e88c2c1b4402f47fde944abed
+SHA256: 1b8a525b6afb896c21b5e98a980ea9194e5b94141d46a893456d1b4e75ff597f
+SHA512: e1b50c9f11131c604c76ec4bd73db97ffdad1c2dc7afcd686cbc7aeedefcee1b99b749edd3f2a27f73ef80643c7552cf17a396ec8f45f0a9d8720a45045199b9
 Description: Rust std for target wasm32-wasip1
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-wasm32-wasip2
-Installed-Size: 80992
+Installed-Size: 82800
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
-Filename: pool/main/r/rust-std-wasm32-wasip2/rust-std-wasm32-wasip2_1.88.0-1_all.deb
-Size: 20053144
-MD5sum: 3659f37302b297b05b01ad9c24a720c6
-SHA1: 55875b9e8b3da632fcb0fad111c1a5289581518d
-SHA256: df55afacba24594f497344c9410c7cc141232249f7bf06e97b31d486d6fc2c2e
-SHA512: 8b3bea4a0b304fb0ad67777d6ba23b9bdab5d85d713f5271234867a544f8924d00c85cd64faab3d42dcb80d3b0cf392691a8d9f094e67083f55b60f9cdbf5b5f
+Version: 1.89.0
+Filename: pool/main/r/rust-std-wasm32-wasip2/rust-std-wasm32-wasip2_1.89.0_all.deb
+Size: 20411364
+MD5sum: 2e65a9aa36d23941e783690186db321d
+SHA1: d673c9a872b45e5157756bfcc7813ea4fd0c2efa
+SHA256: 07f0f02357d3e369f2ce1e885f6a69fc183c1da96df5be06b0aa1d702e0d6b7a
+SHA512: 96cc3cf97b5aaf911ceac184907c6ba64076120f0b16c954e5bc7c8c543d92bea9acb44d80e9c3157655c16ea3a7785372e8a11a02c06535c1b7e14b6b3f2d66
 Description: Rust std for target wasm32-wasip2
 Homepage: https://www.rust-lang.org/
 
 Package: rust-std-x86-64-linux-android
-Installed-Size: 121252
+Installed-Size: 123624
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
+Version: 1.89.0
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rust-std-x86-64-linux-android/rust-std-x86-64-linux-android_1.88.0-1_all.deb
-Size: 27127032
-MD5sum: 056184cb9b187c1b9e7752e9364059c6
-SHA1: d5845ba348122c9c85889a4d1f10beba99f63cd4
-SHA256: a924b6f24dd75df9d24df4bc52aa7f32d8313770cdc2cbf1c4da4ba960ded699
-SHA512: e7e6c34c4d0b1a89a0e3b9af752f9ec31b0ef86525d0df7e1e0b4f78eaf5ec83aaa17634933a02a76de9f8836788cd5c2d9b13dbc3fc4d3ecff004576ad005a8
+Filename: pool/main/r/rust-std-x86-64-linux-android/rust-std-x86-64-linux-android_1.89.0_all.deb
+Size: 27661416
+MD5sum: e2ae2cd84338ffac828dd8c3475a47e0
+SHA1: 70f7977e464fb78e5712006b9a5a29407d6ab173
+SHA256: 31043131556b40d85944570065f5ed073c3ed2c563b2cadb176f6f23b76f1441
+SHA512: b720c6965137c1593946e38d09a6576a6f589290dd48ca7a0be4997a2a0a168201963d9c2e5a8c99ca2417c3ef49baa94ff0432eeda5000667848b2e1d4cc074
 Description: Rust std for target x86_64-linux-android
 Homepage: https://www.rust-lang.org/
 
 Package: rustc-dev
-Installed-Size: 261616
+Installed-Size: 275728
 Maintainer: @termux
 Architecture: arm
-Version: 1.88.0-1
+Version: 1.89.0
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rustc-dev/rustc-dev_1.88.0-1_arm.deb
-Size: 66251740
-MD5sum: a4a9e681b9805b4706cd893689bf3d8c
-SHA1: 4a9f49b2cf549ccd47c65c109dd4c361a7ddbc42
-SHA256: 230256b235299e14eacf01678cbf185edadfd3aac42a3e3d4bf8dd3d62762763
-SHA512: e9d9e28927363f7412e623df5bcf85714e638db2b633a49d30959bff15213f54f765d451ff197e95e07e5620f4855dd16e1471a13d930ef4cd7481e98c8d9d19
+Filename: pool/main/r/rustc-dev/rustc-dev_1.89.0_arm.deb
+Size: 69570376
+MD5sum: 1db6352a31f1b16e9ee424aaa8e0fb23
+SHA1: 6df4df437f3230cd34bb04a8654510d557cef2e3
+SHA256: f7f196e252a0324eeee2bbd1b34becc6eb940f5210fab4a1c67f78bd470e299f
+SHA512: 2be38b8eb4f102d9f2ff90805080918887197bfeda3dae807d68ff5a168941e311bf1a40b41ca8ac1ef38d412db4727910826a17b634f6bc2fbcaa4e046f9ea7
 Description: Rust compiler development libs
 Homepage: https://www.rust-lang.org/
 
 Package: rustc-src
-Installed-Size: 38892
+Installed-Size: 40044
 Maintainer: @termux
 Architecture: all
-Version: 1.88.0-1
+Version: 1.89.0
 Replaces: rust (<< 1.74.1-1)
 Breaks: rust (<< 1.74.1-1)
-Filename: pool/main/r/rustc-src/rustc-src_1.88.0-1_all.deb
-Size: 4948672
-MD5sum: 1e2b6f4a6e533535c6d6db61582ebca5
-SHA1: 6421941973df809f09f9a79250eb44694b8d9427
-SHA256: 085a8c860358d781fce6d5effc5792d914e33c9717d76ee226fdf8511cc5267f
-SHA512: 815b6d8d60149bebb025b6e26f3679f33d1322f7b6f2b4eed74c574c4da9d6a9236ec20b6bd6c8505a9162da36274a41ad71b53b3a90743535d06dba70877cc9
+Filename: pool/main/r/rustc-src/rustc-src_1.89.0_all.deb
+Size: 5092268
+MD5sum: ab7c7d59e7cd05fbf41b8e499717cf43
+SHA1: 4754d4b17cb98c6e64ee990cd35561e011115a84
+SHA256: ae1b7cd9df17f95c29069d0b01344cf59cb03a50e68295fa822edf8ee9596728
+SHA512: 9c7cd380b636f8c77eaa6e76659ea727cada11a366bb946f8cb492fcf6192472134436bd27e31a2dfa7d4520ae425bdc0810e6cfc9b5c56307184fae0fc5fbce
 Description: Rust compiler source code files
 Homepage: https://www.rust-lang.org/
 
@@ -38080,6 +38087,27 @@ Description: VI Like Emacs - vi work-alike
 Homepage: https://invisible-island.net/vile/
 
 Package: vim
+Installed-Size: 32588
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 9.1.1602
+Replaces: vim-python, vim-runtime
+Provides: vim-python
+Depends: libiconv, ncurses
+Recommends: diffutils, xxd
+Suggests: libluajit, perl, python, ruby, tcl
+Conflicts: vim-gtk
+Breaks: vim-python, vim-runtime
+Filename: pool/main/v/vim/vim_9.1.1602_arm.deb
+Size: 6394700
+MD5sum: a3cf8f23a6fb0c13129285b72f2a3d21
+SHA1: d24f70b44c40445d4d1bf0c5b46b02a129d30856
+SHA256: ae770b715beadf7ee554083196742cde5451c795a76e04f056ef29ea0d8f5bb4
+SHA512: 5c40d8e987b6f6357c153137aa11a53a7e7f389dd24125549b43d0a544a8c3d1bdfbf5106f5bd52656b8f18d821d8459c3233b671852c27c270a3481a425cee0
+Description: Vi IMproved - enhanced vi editor
+Homepage: https://www.vim.org
+
+Package: vim
 Installed-Size: 32548
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: arm
@@ -39038,20 +39066,6 @@ SHA512: a0c83f35c2863dabc36bf3904d47ade7896f3670266774ef2f635b2d4cc908f3e31c78ae
 Description: The personal information dashboard for your terminal
 Homepage: https://wtfutil.com/
 
-Package: wtfutil
-Installed-Size: 79004
-Maintainer: @termux
-Architecture: arm
-Version: 0.45.0
-Filename: pool/main/w/wtfutil/wtfutil_0.45.0_arm.deb
-Size: 15012708
-MD5sum: 16bce221664514e1595caa2a56b86d1d
-SHA1: 8c19797f47071aa26f83f8e69d58f225e9db9581
-SHA256: bcfe88a22946937e8e48432be01e7148da7f2f9e3959b83c9cc2db13757eed0f
-SHA512: 7b37b70db2dc1a553ecef6ecb67da677a2473910d93b918a4d3ac2edda2329a61ea0cb7dba211aa112b8705854a16b86f228ea5b0646cae163c5f7ad2b325da6
-Description: The personal information dashboard for your terminal
-Homepage: https://wtfutil.com/
-
 Package: wuzz
 Installed-Size: 7784
 Maintainer: @termux
@@ -39414,6 +39428,20 @@ SHA256: 36d71afa82d801bf1180c466d89f83f11c0cb179b005ba03e05cfe4b5e639245
 SHA512: f9ecd05fd4c3924dac8ecc75726bfbb8f9809f3a5695a66eb879f2c309cb6a16099b55c0c8f79cb872c193e57b5fc1dd1c3584c18a4003470156b9507e006d5c
 Description: Static libraries for xvidcore
 Homepage: https://www.xvid.com/
+
+Package: xxd
+Installed-Size: 64
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: arm
+Version: 9.1.1602
+Filename: pool/main/x/xxd/xxd_9.1.1602_arm.deb
+Size: 12540
+MD5sum: ba74d4d8beba7c1cffba468e955b1ccd
+SHA1: 054a57d2ca10efacd16e6a0cc3a5ccae4b496dbb
+SHA256: 070c5bff21973f002d5342dd759b345fdabbb28e1382452ab8fabae098eec45e
+SHA512: b00fa4c363cd8b9e7d3a2429b6245f8e0a49a7d6ec52acda8dce9377d6c2f2c1c7c008a3022714d6571a561f0c7be7dac9d75df221728288976d6f17e004884c
+Description: Hexdump utility from vim
+Homepage: https://www.vim.org
 
 Package: xxd
 Installed-Size: 64
@@ -39996,20 +40024,6 @@ MD5sum: 5e95bb7966412d5112916388a2c25de3
 SHA1: 4ec903595c46f6dc7d49b6ee9035fa638c3a2af2
 SHA256: ce89428f5d7e26c245cd9a6c56f487f0f08d986b824080fbc6552e0c871ea16c
 SHA512: 4b3c0308bae48817f91e0b72c452315746a287cc37785fae9c241354c8b9046a2e0339faf283f24ded3a6bfbbf3c5a3e5ba191b52b858437bc333faf0b32a18d
-Description: An open source sharing solution built on OpenZiti.
-Homepage: https://zrok.io/
-
-Package: zrok
-Installed-Size: 135756
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: arm
-Version: 1.0.8
-Filename: pool/main/z/zrok/zrok_1.0.8_arm.deb
-Size: 32370456
-MD5sum: efc50255df13332556fe344fe633b239
-SHA1: 766c56f6beec777dc27508419c96fe99b2462612
-SHA256: d1ccbc239267550b70b82ba5d6b58baf53d769bf50de9e8ee30919417e4023c8
-SHA512: f690219c1f29799f97780ea2672e99af2daf78c3c0bd125103e7037506acc930aa9aac07ac493fc10ba459ca2275486d19b9ce0312bc4d9e5d4170c68f7ec18c
 Description: An open source sharing solution built on OpenZiti.
 Homepage: https://zrok.io/
 

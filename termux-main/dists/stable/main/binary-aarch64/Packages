@@ -1542,21 +1542,6 @@ SHA512: ecfe0785eba638f28b40ebfefe0edd92fadcfdf3d0e1ae124725123f24d6783be1471fc4
 Description: A collection of freely re-usable Autoconf macros
 Homepage: https://www.gnu.org/software/autoconf-archive/
 
-Package: autoconf213
-Installed-Size: 976
-Maintainer: Termux members @termux
-Architecture: all
-Version: 2.13
-Depends: m4, make, perl
-Filename: pool/main/a/autoconf213/autoconf213_2.13_all.deb
-Size: 147040
-MD5sum: 788ff66672d36d0c4831eacdba90c037
-SHA1: 6cd00f2c240db586244de8cb8d378b01629dcf48
-SHA256: 1c83784fb3f327c0a7168ccbe4ac9f03d60ebba9d57d2e08c37ed7f386e44ba3
-SHA512: 838c1e3900980e68542e43fbcb0338dbb2524b877541a98399c83e7d4ad7babc31e20d041ec56000aa0e876b1fc6b3404940e06fcbbaa36c33330e4ed7330ffe
-Description: Creator of shell scripts to configure source code packages (legacy v2.13)
-Homepage: https://www.gnu.org/software/autoconf/autoconf.html
-
 Package: autojump
 Installed-Size: 216
 Maintainer: @termux
@@ -23819,6 +23804,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 48092
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6129-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6129-0_aarch64.deb
+Size: 6634064
+MD5sum: 018a8eb834fb46ac7be5e581fa725e04
+SHA1: 245170da76a3d309ae878483241cbe6231b6485e
+SHA256: a01b116d8698ace63d2679ae8d6aa6d06d6c96baa5f8d727ceeca035d2ff3a84
+SHA512: 6d54561ed430457eb68f5a41882fe312bc2c4c01f01ec4a4ac28c02fae3e8bdd2712de5ed99cc82949b195b89ff01c87c74749d8a817d7dcd95c28053e420604
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 48084
 Maintainer: @termux
 Architecture: aarch64
@@ -23838,6 +23839,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 552
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6129-0
+Depends: llama-cpp (= 0.0.0-b6129-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6129-0_aarch64.deb
+Size: 94700
+MD5sum: 659c1c04657eb24f8e476f2a0bf060ea
+SHA1: 439a21907af45bee75fa985447a42a2d431c9c78
+SHA256: 8e4d9d94896730ca484354596c39df0f7a0b5e4d7fb396d94793312dfc67bef3
+SHA512: 55a0901d460d6e8c0234d18e504118d3f073363e82156c7168327f8d2a1951275f8e3fbca9247936c935c53bc0e339aa273d211289f79bc888efa8dd6e61f38a
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 552
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6123-0
 Depends: llama-cpp (= 0.0.0-b6123-0)
 Recommends: ocl-icd
@@ -23849,6 +23867,23 @@ SHA1: 879162ea273adfc382b9e83c96868295731cb7b1
 SHA256: 78adb8960ac4a7197f60d6598302453fa7988096641cc83074ffdd05e2d0aded
 SHA512: 9600513756a1e873590ea65802db0955452bad8b4f049db38fc6751eaec2f937abfdc9f58646ee4daea2f5d92350d6dabf8f6470d6f9ee1373b41fd9ecf27f56
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13968
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6129-0
+Depends: llama-cpp (= 0.0.0-b6129-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6129-0_aarch64.deb
+Size: 1081092
+MD5sum: 70d9cbc57acf3f056136f09c5eee08ec
+SHA1: ef3d2ffe7f27e5ae0e9b49a87f5d06cb01efb841
+SHA256: 8454f2bc39b756c3cc6a6acb9b6aa7a7b5a24a5955d0ca50a37fedc838247b60
+SHA512: e0d1cd6f5a731f57dba8cd61194f97610c2e667ae88acae0be6df320666ffde9edda8dcf2fbd37d04c172090d403debd1b7de2a138bbdb549566ad5a8039ec72
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -25977,20 +26012,6 @@ SHA256: 1fa4bd5208a68a119d8f97b5a9a07cde1dbd248380d81139b2f0a81b3eb5a544
 SHA512: 1e85d5e6b490a900c93a50dc2b92983ad904f140656b07a0fd14d2ceceee29405099c8b79c850be75bdcfd15450a065fa7dadfd2da25361c185b0ef168e65605
 Description: Tool to find files anywhere in the filesystem based on their name
 Homepage: https://pagure.io/mlocate
-
-Package: moar
-Installed-Size: 7644
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.33.0
-Filename: pool/main/m/moar/moar_1.33.0_aarch64.deb
-Size: 1898712
-MD5sum: 2e419306f13e0b8187576da5145b03dd
-SHA1: ced44be0dca9ee63d5ce32afa90d60b6d07a6aed
-SHA256: 7dbe01416e14d3582ee614682615ed07da9429844360ed68b782f02b9412ad28
-SHA512: 29180b6a291aeb6e84f27adec7d72a87881fc459e3259dda0a249edf32fadcee220b2e724456a84032f83ac0913c9dcc941d42f4fb65c09daae8d24f4de21af5
-Description: A pager designed to just do the right thing without any configuration
-Homepage: https://github.com/walles/moar
 
 Package: mold
 Installed-Size: 22100
@@ -31841,23 +31862,6 @@ SHA512: dded7cc11979ab58923c76e008210994b262c19bb97b79b74ab54b937df7779cb52be972
 Description: A youtube-dl fork with additional features and fixes
 Homepage: https://github.com/yt-dlp/yt-dlp
 
-Package: python-yt-dlp
-Installed-Size: 24104
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 2025.07.21
-Provides: yt-dlp
-Depends: libc++, libexpat, openssl, python, python-brotli, python-pip, python-pycryptodomex
-Recommends: ffmpeg
-Filename: pool/main/p/python-yt-dlp/python-yt-dlp_2025.07.21_aarch64.deb
-Size: 4935292
-MD5sum: ab7dbe03874bdcdfc340884ca4bcc7cc
-SHA1: 11aa61308947e10bef03e8a10202277bc72aa0a8
-SHA256: 5d7ea75a493be956e016a2f98703fd52835d74a3e4ac3d77bc5404b93da22891
-SHA512: e0dff7ca481f597ee40ae2671d634ac1640842bc579348db1c9b9edcbb868476e13d69af51e6db18b55a9049da1e6eec8639ab7783fa0e8f3f9d6bf2073f7821
-Description: A youtube-dl fork with additional features and fixes
-Homepage: https://github.com/yt-dlp/yt-dlp
-
 Package: python2
 Installed-Size: 18772
 Maintainer: @termux
@@ -33671,21 +33675,6 @@ SHA512: cf53ea6181a917b4d1f0bef43110c0a4248f2194ffba5200c085098f2869db7ccef4cb53
 Description: A Rust compiler front-end for IDEs
 Homepage: https://rust-analyzer.github.io/
 
-Package: rust-analyzer
-Installed-Size: 35352
-Maintainer: @termux
-Architecture: aarch64
-Version: 20250804
-Depends: rust-src
-Filename: pool/main/r/rust-analyzer/rust-analyzer_20250804_aarch64.deb
-Size: 7628348
-MD5sum: 0231366ee6833b5d5d3f2bb48fad4736
-SHA1: 579127d088f6844d1321e00bd31c7c9a1c458fe8
-SHA256: c9ba2b34ebd92d3be51416302e0eab0a92a6cf8ff852743b068bcec35552b472
-SHA512: 7d14551dd8b8274ec5e7184af2fc426658d4d7885cdf0734ffddb0ee9aff4cdd02c6836ae5585dab00a3c80ad92164dc0bce0b9c320322cb94f243c9bb69904a
-Description: A Rust compiler front-end for IDEs
-Homepage: https://rust-analyzer.github.io/
-
 Package: rust-bindgen
 Installed-Size: 6384
 Maintainer: @termux
@@ -34712,20 +34701,6 @@ MD5sum: c71fa6b47356cbb153ddce2006e36c19
 SHA1: 3c0a27ac00532e64867f413774e518e4ec529b20
 SHA256: bd5ddc0ecb501d391eebcd2e775b150229a8df982b9f2d92a39e876c00b2aa62
 SHA512: 43ca5bbb0e870158ab2c964ffc75b7d483fbfbec22eea8b2b7d894fc7f7ddb9a862349536af15da337494c93b3d0e28980995dae35dcdc60d70fcf354ea3f0da
-Description: The universal proxy platform
-Homepage: https://sing-box.sagernet.org
-
-Package: sing-box
-Installed-Size: 32848
-Maintainer: kay9925@outlook.com
-Architecture: aarch64
-Version: 1.12.0
-Filename: pool/main/s/sing-box/sing-box_1.12.0_aarch64.deb
-Size: 7555028
-MD5sum: 7f83acc9e7a981dea7b0f4f283cf2306
-SHA1: 962d8ef66d1cec6451abefe4ba3479434f4d6a84
-SHA256: e23c906a5b8d1e0fc89244c663800e797e6cd6c46843f140ff81c07366f56389
-SHA512: fe6ed327d43699c0336d45df738668b4e6d6b7e8adfff38a386c66bc9efe3faf4268a8ab5f3fc03bdea4441d2c53b326969119b6f2f735218de6329be5ef2b43
 Description: The universal proxy platform
 Homepage: https://sing-box.sagernet.org
 

@@ -6763,6 +6763,20 @@ Description: To fastly access files and folders
 Homepage: https://github.com/whjvenyl/fasd
 
 Package: fastfetch
+Installed-Size: 3144
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.50.2
+Filename: pool/main/f/fastfetch/fastfetch_2.50.2_aarch64.deb
+Size: 455912
+MD5sum: d13c66b1a5db3a7f803448cbb22f9c62
+SHA1: 1ee80f08ccfe685c0a1908027f1dcab9e805fbac
+SHA256: eb57d41d010d1c47bd548d45c524d81e930fcbdf28d9d71bb84da7cdb54e3848
+SHA512: b0f93513080b56369fdf833e523e8c86a285f820b1624571116de767a0c5ebb2033deb82f97a97c7865fb3ffc6d33bc0b86bfe5561567244c6969c1e98426e32
+Description: A maintained, feature-rich and performance oriented, neofetch like system information tool
+Homepage: https://github.com/fastfetch-cli/fastfetch
+
+Package: fastfetch
 Installed-Size: 3140
 Maintainer: @termux
 Architecture: aarch64
@@ -11834,21 +11848,6 @@ MD5sum: ab93b29f4334353d145ed1b71e570402
 SHA1: 9f48214b5f72d3fff81d64cb0d797f101e4038ee
 SHA256: 7e6196b34aef3b50c85d6327346caca56fe0bd501db84ffd02b7f9f508d100b2
 SHA512: 02d0473819191c722fa06cecdba4ef809ed191df4eccfd892319568d01dbecca92483646b3c11abd0417d40c2142dedffe01d4e65ea6e4e9b25604ca93a87344
-Description: jftui is a minimalistic, lightweight C99 command line client for the open source Jellyfin media server.
-Homepage: https://github.com/Aanok/jftui
-
-Package: jftui
-Installed-Size: 172
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.7.4
-Depends: libcurl, yajl, mpv
-Filename: pool/main/j/jftui/jftui_0.7.4_aarch64.deb
-Size: 44840
-MD5sum: 7753997338ff43d03332a910924b1eef
-SHA1: 212a8fbd9a1ed63bfc77eb762316dcaeffe1be38
-SHA256: fe8a93ac146db610cf5e4845deb805e6eae90acbb59a01a982fe8bef130b5c49
-SHA512: f4e39e9522bc0562f2a4fd44845c28a62dd5665df1c7c134c3915b47a1bf3b48228390d92a393e5564168f81e071999f200c121918e307fa0bcca476476be3df
 Description: jftui is a minimalistic, lightweight C99 command line client for the open source Jellyfin media server.
 Homepage: https://github.com/Aanok/jftui
 
@@ -23836,6 +23835,22 @@ Package: llama-cpp
 Installed-Size: 48776
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6182-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6182-0_aarch64.deb
+Size: 6707724
+MD5sum: 372bca8887553239e3774a0042fd6b7a
+SHA1: 3321817feaf721a6ab6cd3e9c0ad816fd1ed5ed3
+SHA256: 677e81e22ebe90a74e5e34ac98db929edf502d0360aa86701b2cd1ecb5f9c548
+SHA512: a8fed0f5b41c647d954088d7cff52955c53e1b94be7d2b326f43c0c92b67e0a7edad7277384326c7af455b6435413508b321e13820c28ad5fbf0432371cd979f
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48776
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6181-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23848,20 +23863,21 @@ SHA512: 3395915f0dbe386b812748ca90d0c03d4cbebc6689bf842788c892e8567bbd7076732a2b
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48776
+Package: llama-cpp-backend-opencl
+Installed-Size: 628
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6178-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6178-0_aarch64.deb
-Size: 6707724
-MD5sum: 8f21f1a6f2e7205fec8190fc7281d586
-SHA1: 91f73e80d1fab207d2cb315e33165fe291ba16da
-SHA256: 4dd7eabc53a57a46734e74af3a93b37d256251e55cdaca7910153229b74018b5
-SHA512: 7c649988a24c5e85f534cc4f3d32a0be6a25eb5818cf35b7df5c8de6127ebe65d604beea93ed9b9fbb0bcd7776639afa7ff3337b9f68e0869d4b91a0d78e335a
-Description: LLM inference in C/C++
+Version: 0.0.0-b6182-0
+Depends: llama-cpp (= 0.0.0-b6182-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6182-0_aarch64.deb
+Size: 105276
+MD5sum: 9736a93eb4f9fe3df2acf1e819398792
+SHA1: 0a774a3a0a6f43cbd42861c839b0b6e9f01792a0
+SHA256: 7e6972a7d02ae86a96a24d0c62105a026fe599f9e89a620140a76429e313f7d2
+SHA512: 20b8f6172e72f4ea0cf67afc350e4f304496138278c379129e778f2cb8800e1dfb2fa52969ad03ed748b1333d6f03c2d5a7e1acd8c02e43ae610169f45b3165b
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23881,21 +23897,21 @@ SHA512: da6a3da0f4fbaf5851d0e27d24aa3ad08d7246a215aaa42a37318bcf6c9043d07f996f50
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 576
+Package: llama-cpp-backend-vulkan
+Installed-Size: 14052
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6178-0
-Depends: llama-cpp (= 0.0.0-b6178-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6178-0_aarch64.deb
-Size: 98980
-MD5sum: b4f5e79c604a87e9005a22fece7a3730
-SHA1: 5031b2e714db3d4de2d28d0c4454b5e98290ef82
-SHA256: 5f0451f5e771631908dd0fbffc33395eb98b9ed2d5e3762038a30aecb6d8be6a
-SHA512: 390519bde53fc3f6c3484fcd3d72335d12ff28fb97f5522802e79b809925051722fcd5a3ebb44706bbb9d411bef87c956c75df650494e5f48d61da3a6952f5a2
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6182-0
+Depends: llama-cpp (= 0.0.0-b6182-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6182-0_aarch64.deb
+Size: 1086664
+MD5sum: 5794331c66bff9515ce6fc0fa6bc1596
+SHA1: 16d6be44e1bca76a9912821da720af09f9d2c267
+SHA256: 7334b94439cfc87517b09dd7f78890d5e1b93c1a18bc10179a60baf8ecf05922
+SHA512: 9c5d3a1dd543a751d6deb674841029bdac721dfa642e6681e83357a2ac3e5ea212ddbc2ae7d42c3b788f30e2db5e4794edb0308c766e0eaac503dc0721aa2e8e
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23912,23 +23928,6 @@ MD5sum: 98623b76aa20be851de113bee440cb72
 SHA1: f9ce66431b299a1ac755e9eea77b48a176da1fe6
 SHA256: 5683c7f0469ec2d2d9458586efbf4b11aceebc9d519c74640b96f4f1dc2c0087
 SHA512: 251b0c56df6ddfa77634fd9cab5da387b1b71ab7046dc533fb2c8d173095a7b7b325e331714483598dd46c8b50acb0c9176e8d1bc2713813f54bc00761d76ba7
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13972
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6178-0
-Depends: llama-cpp (= 0.0.0-b6178-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6178-0_aarch64.deb
-Size: 1081192
-MD5sum: f2ff6f422d15747a204a55139fabe8b6
-SHA1: 76e0e9db5be8db152371187547ab737b7c9f29ea
-SHA256: 06e48e7bf6b34730feae1d1ba608c009e58321e13c5114c4f92a628d5e2ae12c
-SHA512: 62439edc5fc13a048fb626997237305a670025d7d43a86a3653f15cc0805e20587b7b34c2135a5137504ecd419f6bc870962ca708b5b2c8654da2d404eee2a4b
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -25046,6 +25045,21 @@ SHA256: 4b401bc92f971de4c19a682834d1011af97fa11176066b6575171c6565eb635e
 SHA512: 285ae31a216036c00c987fd87d3f9c5b271f22fb324081b2a9a1d53697f6d036875f247876da92af7a68aa8bed41e192ba25cd40007b60e6385e86ae8348ec89
 Description: Connect to your mattermost or slack using your IRC-client of choice
 Homepage: https://github.com/42wim/matterircd
+
+Package: mautrix-whatsapp
+Installed-Size: 29592
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.12.4
+Depends: libolm
+Filename: pool/main/m/mautrix-whatsapp/mautrix-whatsapp_0.12.4_aarch64.deb
+Size: 6776780
+MD5sum: e02eaee03f2fbedfc47fd67624838b85
+SHA1: 981e7e1b603128f99a208f21427d455e5a708f9a
+SHA256: d7be7d99b41d4fb4c15503820d9e956a13b5898abd56a04d66e677f3fc2fa621
+SHA512: 98a7fdb61b60f49793e460035a7d1576188991a2ad965091bede6ffc1fb7282455b535035293dd28b607a5b9e3e035d48d7ba83949097541a38bd971ccdfa6be
+Description: A Matrix-WhatsApp puppeting bridge
+Homepage: https://maunium.net/go/mautrix-whatsapp/
 
 Package: mautrix-whatsapp
 Installed-Size: 29464
@@ -26930,16 +26944,16 @@ Description: Disk usage analyzer
 Homepage: https://dev.yorhel.nl/ncdu
 
 Package: ncdu2
-Installed-Size: 788
+Installed-Size: 792
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: aarch64
-Version: 2.8.2
-Filename: pool/main/n/ncdu2/ncdu2_2.8.2_aarch64.deb
-Size: 297020
-MD5sum: 47124f57313c69db1b3488cda9f46170
-SHA1: 869319a2403ba296906dae335652865e2916a26c
-SHA256: 455c5538312abbd6aced7769aaae0686aa0496b827e3ebde84d4fb0d8e63416e
-SHA512: acf98201127bb079e244edf13e4dab4ff31c9a11f9a515077ee340db6258ad10dd696563859c16598cf2ebc5a0c3fdbbb436ec18b22ef64e00d3990cd4956e4f
+Version: 2.9
+Filename: pool/main/n/ncdu2/ncdu2_2.9_aarch64.deb
+Size: 300132
+MD5sum: 399f7ef92af2a80a5f911d0f5c2fd2a6
+SHA1: 5c776877900d4557da9cfc3e85c86666c1ddd818
+SHA256: 171ed57fb4ae75a9457fd7e60c8b4f6ed9d8330fa0c0b7a28b45b8288ed8389a
+SHA512: 3baf79f510643c2655ad495acc42622e1842122a88cdd62d5e7392d8bee00e0363aa75b49b2aa66c2bfa40f7c02eb6702ddb454cf4b4ced1d1b04246ae1f2915
 Description: Disk usage analyzer
 Homepage: https://dev.yorhel.nl/ncdu
 
@@ -34249,6 +34263,20 @@ Description: Static libraries for seafile-client
 Homepage: https://seafile.com
 
 Package: seanime
+Installed-Size: 78564
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.9.6
+Filename: pool/main/s/seanime/seanime_2.9.6_aarch64.deb
+Size: 18387624
+MD5sum: 16221000a2e78f552c1d5ee8a020da44
+SHA1: df53252705498c24eb2426a7b7f49005b9e8c4cb
+SHA256: 07d07e012b0bf4fa8d4dc2e877caac0594d5521d3cd5e2bfcbc72ae43f6f7058
+SHA512: 95f51426323a62143c179792e01c315753df293c83071c327f0945f4df2e0745ecf6bab8ab8d70bbf22a99a8a647facf88dab3b2dd32649f8b3f4029d995c998
+Description: Self-hosted anime and manga server for sea rovers.
+Homepage: https://github.com/5rahim/seanime
+
+Package: seanime
 Installed-Size: 75236
 Maintainer: @termux
 Architecture: aarch64
@@ -37325,6 +37353,21 @@ Description: GNU time program for measuring CPU resource usage
 Homepage: https://www.gnu.org/software/time/
 
 Package: timewarrior
+Installed-Size: 980
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.9.0
+Depends: libandroid-glob, libc++
+Filename: pool/main/t/timewarrior/timewarrior_1.9.0_aarch64.deb
+Size: 272136
+MD5sum: 59aa99cf3dd31dc60b8ad98789d73643
+SHA1: 9bc15f06c9a84e58e94becf4764537f3e0d40748
+SHA256: e774348118df1910e6fb10fa71c6439c407aefd857bd2fc15f46e235c3c75a24
+SHA512: a334c51fd27db21616c9406adcfa696f50623cfdf1743c79a30990a4f85167437d9fc4753c1e53598e21507f1e839478b731a4488fc85108109435d41a289a80
+Description: Command-line time tracker
+Homepage: https://timewarrior.net/
+
+Package: timewarrior
 Installed-Size: 964
 Maintainer: @termux
 Architecture: aarch64
@@ -39694,6 +39737,20 @@ Package: wakatime-cli
 Installed-Size: 14800
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.130.3
+Filename: pool/main/w/wakatime-cli/wakatime-cli_1.130.3_aarch64.deb
+Size: 3555156
+MD5sum: 30ae251a199840618a6ba3678d062b4f
+SHA1: 7f5ac7b6e4ac4776d18673e581b415035211936f
+SHA256: d5ee27ba721f4636ed8000a7d68fe734b76b5f39b63af2f33fc5e1e0804b8504
+SHA512: 8a4da5e5e8bbf6545bf29247fba290ee0d88af3da45fe774caf63726e72dbfd760da45b562ec6eab79279c1447e70d2620705d93f87735d4b9c646d969a43deb
+Description: Command line interface used by all WakaTime text editor plugins
+Homepage: https://wakatime.com/plugins/
+
+Package: wakatime-cli
+Installed-Size: 14800
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.130.1
 Filename: pool/main/w/wakatime-cli/wakatime-cli_1.130.1_aarch64.deb
 Size: 3555028
@@ -40976,21 +41033,6 @@ MD5sum: bda457b6ed9e4f7f8038b327007f1b3b
 SHA1: a136ecab60606412bea81fab4d9ad43204d8d643
 SHA256: 7a9134d09d0065ac7debb469c61433cc5a9ea2a69236c5c68948c6123792828a
 SHA512: 783c1d9a7f17f7d17afc779b57129540d3cc81c079fc1039f8b27fc579ae1895f7160f6881e98061215ddefbcd9784ee5889c05cb8aa12a136ea0497dcbcec70
-Description: Z3 is a theorem prover from Microsoft Research
-Homepage: https://github.com/Z3Prover/z3
-
-Package: z3
-Installed-Size: 47272
-Maintainer: @termux
-Architecture: aarch64
-Version: 4.15.2
-Depends: libc++
-Filename: pool/main/z/z3/z3_4.15.2_aarch64.deb
-Size: 11718556
-MD5sum: c8c2c5c2ddbedcb9178d7b472f1e0a03
-SHA1: 6313cfc3e1f7504c25370259cf3bab01cb496143
-SHA256: f9c038397a02995c30cf778aec2b3c0356daf37b76412da669f790c24b04288b
-SHA512: 3f4320e73145e110bd9b77979f74b87a8107a33799129f0b1aff82c01908bbcce5f2cccad69f9bb152222247353cf24146f0ea61098ce388a1dbf7326821a9ad
 Description: Z3 is a theorem prover from Microsoft Research
 Homepage: https://github.com/Z3Prover/z3
 

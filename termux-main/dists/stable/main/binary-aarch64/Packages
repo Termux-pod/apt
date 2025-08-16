@@ -18765,6 +18765,21 @@ Description: Static libraries for libnspr
 Homepage: https://hg.mozilla.org/projects/nspr
 
 Package: libnss
+Installed-Size: 9648
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.115
+Depends: libnspr, libsqlite
+Filename: pool/main/libn/libnss/libnss_3.115_aarch64.deb
+Size: 1888072
+MD5sum: 09a5a44d482ac1875bcc0aceddf969b7
+SHA1: a2ed306c0040ab3488440dac8f91271f8376c049
+SHA256: 8686d7c843402e09932db0c9ea9b5b8d7993bf253f9e2cb7ba6f6ca5b86e568d
+SHA512: e61a4240e78995ce008315df71b9854492e1fe8223195e2b3930018cc6b32562fb9d712402bab4204b3385de70098662c15e633c53727770002d15f68abf2e33
+Description: Network Security Services (NSS)
+Homepage: https://firefox-source-docs.mozilla.org/security/nss/
+
+Package: libnss
 Installed-Size: 9628
 Maintainer: @termux
 Architecture: aarch64
@@ -23821,6 +23836,22 @@ Package: llama-cpp
 Installed-Size: 48776
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6178-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6178-0_aarch64.deb
+Size: 6707724
+MD5sum: 8f21f1a6f2e7205fec8190fc7281d586
+SHA1: 91f73e80d1fab207d2cb315e33165fe291ba16da
+SHA256: 4dd7eabc53a57a46734e74af3a93b37d256251e55cdaca7910153229b74018b5
+SHA512: 7c649988a24c5e85f534cc4f3d32a0be6a25eb5818cf35b7df5c8de6127ebe65d604beea93ed9b9fbb0bcd7776639afa7ff3337b9f68e0869d4b91a0d78e335a
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48776
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6177-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23833,20 +23864,21 @@ SHA512: f64d972e6c4f4dc372c734efc01b2ba7acf1711802edb618bb0a1c6c00c3b3473c1c9dff
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48204
+Package: llama-cpp-backend-opencl
+Installed-Size: 576
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6153-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6153-0_aarch64.deb
-Size: 6650904
-MD5sum: 5b3f7a5092d068a7f0390e104241ed5f
-SHA1: f2d1296c34c7dd1abe44a486699861d109ce651b
-SHA256: 675f04e7b97048d31457121d77584f3755895db2fe3e95254a54eb56ed577a77
-SHA512: ed25dc3186db5da73adde6576401891d523366dcbeb2bc683fc904f1179017e268ff6803ebc02e117a278817da06a9f109001227503c992d4d7cd18a02266c6a
-Description: LLM inference in C/C++
+Version: 0.0.0-b6178-0
+Depends: llama-cpp (= 0.0.0-b6178-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6178-0_aarch64.deb
+Size: 98980
+MD5sum: b4f5e79c604a87e9005a22fece7a3730
+SHA1: 5031b2e714db3d4de2d28d0c4454b5e98290ef82
+SHA256: 5f0451f5e771631908dd0fbffc33395eb98b9ed2d5e3762038a30aecb6d8be6a
+SHA512: 390519bde53fc3f6c3484fcd3d72335d12ff28fb97f5522802e79b809925051722fcd5a3ebb44706bbb9d411bef87c956c75df650494e5f48d61da3a6952f5a2
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23866,21 +23898,21 @@ SHA512: 2c4206419ecb08143305b94d317dfdfb287c3660dfa579e790ada592e3d7706f5f29c8f1
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 560
+Package: llama-cpp-backend-vulkan
+Installed-Size: 13972
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6153-0
-Depends: llama-cpp (= 0.0.0-b6153-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6153-0_aarch64.deb
-Size: 96340
-MD5sum: 9cee13d5e492347167b1f972ad9e308f
-SHA1: 36111d195e7132cea1e2c8a2e03a72907c28c9ed
-SHA256: cd2ff2d2154ceae3f1602271a3c8b0661f7d1b034a2547532e39c483e9abb299
-SHA512: 35405cf7c80737b0a16342e0b08c9ac350700498bb1bb3730cbe71a76731397c75b2be120edce2ceece7516d26b0a0b03d8804ae46b642f5541d0f9c5cc160b5
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6178-0
+Depends: llama-cpp (= 0.0.0-b6178-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6178-0_aarch64.deb
+Size: 1081192
+MD5sum: f2ff6f422d15747a204a55139fabe8b6
+SHA1: 76e0e9db5be8db152371187547ab737b7c9f29ea
+SHA256: 06e48e7bf6b34730feae1d1ba608c009e58321e13c5114c4f92a628d5e2ae12c
+SHA512: 62439edc5fc13a048fb626997237305a670025d7d43a86a3653f15cc0805e20587b7b34c2135a5137504ecd419f6bc870962ca708b5b2c8654da2d404eee2a4b
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23897,23 +23929,6 @@ MD5sum: 4d55b6387fc899e1616fc0018fa2c744
 SHA1: b4895e498a21ac9eb4d58d2d4eba89447555af52
 SHA256: d98e105b56c4d143933a1df0dad51b32eaf35dafa17f3d0107e1b58ea4c34113
 SHA512: 875346e23ae127de9e3cf531822dc8723494b3402f243649c9d7ad898a73447eea022fc852a10e77735530099709cd2ab9c0c4770209628c84c0844429be08eb
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 13968
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6153-0
-Depends: llama-cpp (= 0.0.0-b6153-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6153-0_aarch64.deb
-Size: 1082120
-MD5sum: 144fb97a432fb68c62fab4208269e13b
-SHA1: c65f6fba475f49073c7eba4862e55cefee9f5ab9
-SHA256: b036272f629d8a97a62ebce84e5d3b24c3851cc198bdb699018e42555ba5c752
-SHA512: 336af6f8350c5f858e165acab8d294e8cc7d626cc4b08b829212ba2062f10c6cca0195291e391b1cd143487260ac76b478c746668a18d8b017625c5fc290a46a
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -27658,21 +27673,21 @@ Description: This project provides a command line tool called nms that recreates
 Homepage: https://github.com/bartobri/no-more-secrets
 
 Package: nodejs
-Installed-Size: 95032
+Installed-Size: 95000
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: aarch64
-Version: 24.5.0
+Version: 24.6.0
 Replaces: nodejs-current, nodejs-dev
 Depends: libc++, openssl, c-ares, libicu, libsqlite, zlib
 Suggests: clang, make, pkg-config, python
 Conflicts: nodejs-lts, nodejs-current
 Breaks: nodejs-dev
-Filename: pool/main/n/nodejs/nodejs_24.5.0_aarch64.deb
-Size: 13621188
-MD5sum: 90576f740755f10170b2f0cfa1d01ca4
-SHA1: 41483d1e0ee2d013f8bc3dfb2fe25832f372ca33
-SHA256: 25fa55ec64471fa618bf5f34c70132c7c86aa8507ced90d87b5d3371a9f07395
-SHA512: 0ec449f6790b2d043ff4e9170a9f02b967c2e72826cbc5d93510792c397db485b550dac4bdd934a48780369e0eafaf58197632f946b2aaf12d2e0c7a037fb670
+Filename: pool/main/n/nodejs/nodejs_24.6.0_aarch64.deb
+Size: 13647836
+MD5sum: 2a0b1dff987b9af68a552848bfc4ca10
+SHA1: 8f5dc2ab3b496add2e23e9df0ecb96b4936c4d14
+SHA256: fe22d2ec627c7cc959a52c02994c46d5ca3c36cff8706eb94911bd5b9dbc1a55
+SHA512: b83459dc921efd567f2f88206437a2f5229310e0aa571120383d8f24d586a2274469ecd399cab7a95d7296f20970cfaa15b111fee244620093620835117e6aa4
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
@@ -27815,6 +27830,21 @@ SHA256: 691890d82dc71bf92b808f83b9f1e17910bc64e0b41b1c67d53cdd0bc2014434
 SHA512: 353a8792bf86779779ab438a1f98976e612261698b0cf7d54b8ee75b1b84303da881c9747ea82ada932372037c568cfedbbcc3c51d118660b7b795cf5746a995
 Description: The classic snake game with textual interface
 Homepage: https://github.com/alexdantas/nSnake
+
+Package: nss-utils
+Installed-Size: 7848
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.115
+Depends: zlib, libnss (= 3.115)
+Filename: pool/main/n/nss-utils/nss-utils_3.115_aarch64.deb
+Size: 1355980
+MD5sum: 877e818082e772df55c0146c4617d541
+SHA1: b93ea9916795c622ce01b5eef1ce23297926540c
+SHA256: fc580685349dca7715d3be2dc45b2614a17e578b4a74b226f626556d78462c3e
+SHA512: a1ba59671ee152d11343e3f923027c8dace1d93905ac6157cacfc463ac636c0aa389858ce6b86b685d8e6b2ae0fb21494a0ea2b70faceb254dd205b06477ba0f
+Description: Tools for NSS
+Homepage: https://firefox-source-docs.mozilla.org/security/nss/
 
 Package: nss-utils
 Installed-Size: 7804

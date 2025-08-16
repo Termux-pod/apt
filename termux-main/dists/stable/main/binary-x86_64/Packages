@@ -11656,21 +11656,6 @@ SHA512: 8229ef1b94ff49d7ba2b6d26b1996251c4c5cff0eb49c5b04564a6b00f75f52809f528db
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14284
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.2288
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2288_x86_64.deb
-Size: 3197348
-MD5sum: 4d656b38c23685352ab2972a057a9bc9
-SHA1: 17cce9a5fa926fc81a31246148b5f2753c936e7c
-SHA256: 6e42b7749426fcef266bd440a23cae5ddca501ce713375e609c60af73ad6b738
-SHA512: 1f63a80198ca34ec2e32bcef23b16527f69d7e27e46e46826a551116dd57e75be8c5e55e53a9b0e650f185619a0656a27e23a6925f2ed132e5a4ba1fff13f1c6
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: jadx
 Installed-Size: 125648
 Maintainer: @termux
@@ -11820,6 +11805,21 @@ SHA256: 0ab651a0feb9f4ef2826aa379a8f0559ceace79a401c273a545dc8d584c54dd0
 SHA512: 9237b9e0c3e417b3e0ba9ed988b3c5f2b585d6861075503b2eeabe51bc8bba84df9dd13ec145aa468c604e5d201086cf674b8b5567c852582cc4036d19cc9f24
 Description: A CLI for JFrog products
 Homepage: https://jfrog.com/getcli
+
+Package: jftui
+Installed-Size: 176
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.7.5
+Depends: libcurl, yajl, mpv
+Filename: pool/main/j/jftui/jftui_0.7.5_x86_64.deb
+Size: 49716
+MD5sum: 5b8e0d51d013b6a576b78a3993c3f318
+SHA1: 969ba31db88a057abf7f0354904413deb826515b
+SHA256: 1891659bc8389ad6ab56d436c132658f2b98bb9c2cc96a5241bb61ed9654f60d
+SHA512: 100b8bb83acf5ff2bf66abd044f11b408a490e9707e1a11511455a413ea33f7b424f9c3b5dd5e743fd691b05f4bac3e56f2e45fb34ed258e14938224fbac16c3
+Description: jftui is a minimalistic, lightweight C99 command line client for the open source Jellyfin media server.
+Homepage: https://github.com/Aanok/jftui
 
 Package: jftui
 Installed-Size: 176
@@ -23820,6 +23820,22 @@ Package: llama-cpp
 Installed-Size: 51564
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b6181-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6181-0_x86_64.deb
+Size: 7190200
+MD5sum: 8d1a47fedb878532580a66990cc2f54d
+SHA1: 809e3cb64b36bc6c5f6343997d00e004e24574a7
+SHA256: f1f380b5d26b9eb15745e0079b29d0b0136179f976aa52efb73472f6d98d7ee1
+SHA512: 37e410765e8b398b086198222522eda8e3160656dda00d4f20dc4402b2cfc852ceac123927c9b664ac955f4f0d09aa891104e40206247fd5a3c0e4a4f6c571f1
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 51564
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b6178-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23830,6 +23846,23 @@ SHA1: b7a16042cdbf31844554e34f92a6e3137a0809ef
 SHA256: dd5e84b26d66c33330dc98f8381710770fd545c1742e156e0cdba67f1f9055b7
 SHA512: 25a483613af0ce8d3e11ca8b96f30b67f1d7e571c3b6ab9b912818b46e63a50fe8154aed57c3cb7a0262317f278cede4d18c3c6b5b8ee0789e294691548ffbf8
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 652
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6181-0
+Depends: llama-cpp (= 0.0.0-b6181-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6181-0_x86_64.deb
+Size: 114336
+MD5sum: b3beab18cac77505c879f4a77b87d0ad
+SHA1: 7edfad2f4d29b77e0368eee29c7e7454928ed15f
+SHA256: 414401094c673cf392d9d5a2936a4d813f52a4f23f594b8ae7c5e5451e76a9a2
+SHA512: 9e2c8b9cc896ee690ed1c3a37ac2e64a911c9025bda39ae71180ef6ee6ba6730baa5ef822b814f6758db70b4ec0b6b16d4e82dfaac2e8f5e3574eb5ae167fc60
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23847,6 +23880,23 @@ SHA1: 88f17ff93a98b5ef60e648d86d07f6d63cecb110
 SHA256: 1c74360ca013469b540a06aa17b889c07c9fa2dd8fa9d4e7fbe1c3d551343a4b
 SHA512: 70a4507e5577b0572e5388f0de3bc7cd5bfab3df8b2706d14152fac54fd5b1d2c40a84d8317c11a84bb61397ad280132a8ba35190ec3ab509abac6e734986a8b
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 14288
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6181-0
+Depends: llama-cpp (= 0.0.0-b6181-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6181-0_x86_64.deb
+Size: 1134956
+MD5sum: 0acb3e4429eda6e4dfde95670ca67f55
+SHA1: 92b879ad081bd1c7e168c73800d6b9dd7599cf5e
+SHA256: a54fde1b0b444e383fd5e445c95dba6239638c402a15f981be3b0df08071ae30
+SHA512: a2a8170db0e274064e8dc513f27707e71c9c48d8eb2700dfd0c5dbd4743b6f22dd8f0434fda5cb853636f0c34f3564c2ded9feffd81c25e9ce99591e0346b746
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -36239,20 +36289,6 @@ SHA512: e5e63ad7d50908459f6bc1a56702f685df27de66cb2dd901c000c190698120ecfecfaa63
 Description: Decentralized file synchronization
 Homepage: https://syncthing.net/
 
-Package: syncthing
-Installed-Size: 28076
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.0.1
-Filename: pool/main/s/syncthing/syncthing_2.0.1_x86_64.deb
-Size: 9042880
-MD5sum: a0c13525375884e4d4fb8e8d43fb8e9f
-SHA1: 8f2b973a1ea6f4a9962b2e186fac7e664a5e174f
-SHA256: f9737cb483e1480a2b5a7bbc0fe4662debecb1c7ab5615199e529ef08fad0d9c
-SHA512: ca2ff496014799907afba0780c4fc8a68764992f8f3b831f370d70bf49a58d9d1d71230313dd0013360019763a7cbf1df181d63d1959122c48c37135b3160cdb
-Description: Decentralized file synchronization
-Homepage: https://syncthing.net/
-
 Package: sysprop
 Installed-Size: 404
 Maintainer: @termux
@@ -40863,6 +40899,21 @@ SHA256: 15e78992e42051d4759cd6530a43598d6d2540cabc5d1bccdc8264a5c0e82663
 SHA512: 82d912ea068c0c3d58c4d149200649ba26348c7df6b3561da8252ac0d55047d352c4d8eb4a52c3fe79fedc645f22621e18e19ae801837db6ae247a13a1e3310f
 Description: An open-source application to synchronize ActiveSync compatible devices and Outlook
 Homepage: https://z-push.org/
+
+Package: z3
+Installed-Size: 47576
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.15.3
+Depends: libc++
+Filename: pool/main/z/z3/z3_4.15.3_x86_64.deb
+Size: 13545908
+MD5sum: 05328797b6f277a085f5a64b0d045d97
+SHA1: eb0ceedf8be9fc8a93001dd50a0542c2edab7e72
+SHA256: 8f8e2638d0f8fd788a1564d8f49d6f78d6d36d0d84906b602baaf7ad313c7226
+SHA512: a7843cebfb4352cdd2792b62396c18c98e858d47adbc76cbece11748a54943367dde504db830774f1ac5cad75d7f850e7b8bfc168d3f7ce2adf2fad15e1e7396
+Description: Z3 is a theorem prover from Microsoft Research
+Homepage: https://github.com/Z3Prover/z3
 
 Package: z3
 Installed-Size: 49424

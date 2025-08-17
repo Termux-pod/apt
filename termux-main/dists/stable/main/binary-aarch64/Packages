@@ -11672,21 +11672,6 @@ SHA512: f6762096900a8bc1133606993742c357fba5e4eef137ff51057ca3025ad24cb5b5bf373d
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14272
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.22.2294
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2294_aarch64.deb
-Size: 3180452
-MD5sum: 5bfcc630da8c5642c0568bc1d9273e75
-SHA1: 5b858ba3fead1d45d3c127fd673ede6cac4e513d
-SHA256: 41613082a8631929da43ee3a7a1272b6f00b0a89ad73b235f10261b6744f21dd
-SHA512: cbe0de1631c54a3332ad507430dc9f71cf048d58c45658c27f29b275de857aebffdf7a258a902dfd3f58f05241b3ba72e2ed8df8d1eb22650cd588bf9f342eae
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: jadx
 Installed-Size: 125648
 Maintainer: @termux
@@ -23685,6 +23670,21 @@ Package: lighttpd
 Installed-Size: 1028
 Maintainer: @termux
 Architecture: aarch64
+Version: 1.4.81
+Depends: libandroid-glob, libandroid-spawn, libbz2, libcrypt, openssl, pcre2, zlib
+Filename: pool/main/l/lighttpd/lighttpd_1.4.81_aarch64.deb
+Size: 262372
+MD5sum: 90b42ff9609db0277b14c2c1c39fd98f
+SHA1: b633adece9d069775920368cdd9af5cd16da0377
+SHA256: 5a32f420c05c4ee3e817b1136d02c5a9cec3537112150608fff215e506955d02
+SHA512: f9a43673aa6a6f3c5a211475260246200372aa3f96a0702de6755a48d6ca16b7aba4b3edfe563149f7b5ed710d1712ccf1d0ae1ea6a148e767e0a872d748fb7c
+Description: Fast webserver with minimal memory footprint
+Homepage: https://www.lighttpd.net
+
+Package: lighttpd
+Installed-Size: 1028
+Maintainer: @termux
+Architecture: aarch64
 Version: 1.4.80
 Depends: libandroid-glob, libandroid-spawn, libbz2, libcrypt, openssl, pcre2, zlib
 Filename: pool/main/l/lighttpd/lighttpd_1.4.80_aarch64.deb
@@ -23836,6 +23836,22 @@ Package: llama-cpp
 Installed-Size: 48780
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6185-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6185-0_aarch64.deb
+Size: 6712300
+MD5sum: b0b20ec05e8f7eb51392792475212872
+SHA1: 87cffd9554733a69167820453fcbfa19027262e8
+SHA256: cb3a3c8f33572bc12493d57eecff4e3c8f5c023ddd12d2201e61bf02e5152874
+SHA512: 6faa4e0473e42a6a51e202a2b885482c28d2219440dc935d43cc05f593876d81acf7117dfab2496c20948fc8df4f8e05ce9c82dbde504eeb0ba975d3abb0b5d0
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48780
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6183-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23846,6 +23862,23 @@ SHA1: ef8d105dfb0d854c931849a8be01f190b74fb0c5
 SHA256: f9a001a437dce5e940215618edaf47ce4f222b1d001ba40bb4f2f7761731520c
 SHA512: 169b98c957809d3ecd21bb18cef3cff70dc08c5fc805f2db537da092a8872d20f2733cd448e449bf2669d2886e2d4a253fd6c0091d3c397b48b3fd3a6208121e
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 628
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6185-0
+Depends: llama-cpp (= 0.0.0-b6185-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6185-0_aarch64.deb
+Size: 105224
+MD5sum: 716cf166ffdecc5cacc6c53d2abcb38a
+SHA1: 9a1135ee0a14481137587c404bee663751b82116
+SHA256: 5194c294c704583584b8dce27a0103ce988055fd9fd125797798ae7ab62fa360
+SHA512: 09eb4a3cd3c3bd53b9a86a162ef98c7231701248d5a15199cc1c2a580e97db5aa85f6f1095cc7c66a3332a539032f49fa5ae6962acc022e00b31195fe00f4eae
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23863,6 +23896,23 @@ SHA1: fe1a8b4c9db65a1bb90570992baf256f5ba4e5ba
 SHA256: fcc9491272bbbe5a6ee96b786fd713b908d894740d0209624ec0c037a67eeff1
 SHA512: 7c8a3881e1ede68e3abf3762198596bbe6b0c0a317f33558c809a2d3cf0caab7380fe1b1855f5c45b21067fcf2b9005dcb646bfbf96629c838f74c37a9d597ae
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 14056
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6185-0
+Depends: llama-cpp (= 0.0.0-b6185-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6185-0_aarch64.deb
+Size: 1088348
+MD5sum: 7822937aaf12595cf3f3f43166325c61
+SHA1: 2cdd460da208cae98ce0917946794732ca46a7e4
+SHA256: 5229d7a5a66627107b2215466f11333139b3ef4451f027a05d01571001ce394c
+SHA512: 0c9e374b273cf2bb607e952ab27b8115eedd8ea02d3a6d96df39ff0cf787c8b3a5c3bbb4794c0eecc2d95d9a871573c8cb27907b75567d1d909edef70a03dad5
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -25991,6 +26041,21 @@ SHA256: 1fa4bd5208a68a119d8f97b5a9a07cde1dbd248380d81139b2f0a81b3eb5a544
 SHA512: 1e85d5e6b490a900c93a50dc2b92983ad904f140656b07a0fd14d2ceceee29405099c8b79c850be75bdcfd15450a065fa7dadfd2da25361c185b0ef168e65605
 Description: Tool to find files anywhere in the filesystem based on their name
 Homepage: https://pagure.io/mlocate
+
+Package: mold
+Installed-Size: 21960
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.40.4
+Depends: libandroid-spawn, libc++, openssl, zlib, zstd
+Filename: pool/main/m/mold/mold_2.40.4_aarch64.deb
+Size: 1637880
+MD5sum: ad21159dda73cf87b78107d921e66831
+SHA1: d30e5d0e2f3cb6423838d6272a50b0c0b979e5de
+SHA256: 310fe18cd990416468440c572d336ef8b7e31a67eb48f5aee857fd7872789764
+SHA512: 92eca50e1509a03c624da5a7560e523ef801eac1d74ef6ba35c53a8a8aba8b3c84fa2ed9d6bf119179daf674139043c419bc378d0dcbea9e00e8f327f079d20e
+Description: mold: A Modern Linker
+Homepage: https://github.com/rui314/mold
 
 Package: mold
 Installed-Size: 22100

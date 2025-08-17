@@ -6776,20 +6776,6 @@ SHA512: b0f93513080b56369fdf833e523e8c86a285f820b1624571116de767a0c5ebb2033deb82
 Description: A maintained, feature-rich and performance oriented, neofetch like system information tool
 Homepage: https://github.com/fastfetch-cli/fastfetch
 
-Package: fastfetch
-Installed-Size: 3140
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.50.1
-Filename: pool/main/f/fastfetch/fastfetch_2.50.1_aarch64.deb
-Size: 455444
-MD5sum: 5a96a1aec724cf8c11ddaa30d82de664
-SHA1: 0952ecdee89c92c8a3fc544dc5be8cae02f4569c
-SHA256: ffa8f31b7dd8d446bcac41af797517b2e68d7e9e11fdcc5b11bf1f14c2ab8e38
-SHA512: b0179683f61bc40f4e3153b2d2fe7efdcdcc65b544c6bb945240d2a89e7a2858d065069d3926dd48609866e557f6d445d3c62d3a24361efd1712f4d9b7ce4127
-Description: A maintained, feature-rich and performance oriented, neofetch like system information tool
-Homepage: https://github.com/fastfetch-cli/fastfetch
-
 Package: fastmod
 Installed-Size: 3308
 Maintainer: @termux
@@ -23832,6 +23818,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 48780
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6183-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6183-0_aarch64.deb
+Size: 6703836
+MD5sum: f7a5d88209b3d783c36ba9a8008f8e82
+SHA1: ef8d105dfb0d854c931849a8be01f190b74fb0c5
+SHA256: f9a001a437dce5e940215618edaf47ce4f222b1d001ba40bb4f2f7761731520c
+SHA512: 169b98c957809d3ecd21bb18cef3cff70dc08c5fc805f2db537da092a8872d20f2733cd448e449bf2669d2886e2d4a253fd6c0091d3c397b48b3fd3a6208121e
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 48776
 Maintainer: @termux
 Architecture: aarch64
@@ -23847,20 +23849,21 @@ SHA512: a8fed0f5b41c647d954088d7cff52955c53e1b94be7d2b326f43c0c92b67e0a7edad7277
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48776
+Package: llama-cpp-backend-opencl
+Installed-Size: 628
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6181-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6181-0_aarch64.deb
-Size: 6706476
-MD5sum: 6b6e23bb8449d4fe9f0757c7c32d758f
-SHA1: 65c187a17fff9cde0cd6c52cd5e5b73bd01daf04
-SHA256: 20c998ee6398ad2622cdcd59da06884688d3c243aa158ad59a3a09ce8023af7f
-SHA512: 3395915f0dbe386b812748ca90d0c03d4cbebc6689bf842788c892e8567bbd7076732a2bc097ed32bee01ab70bb9770e7b0fd6f0a5122e9cd222b23d93fa5d42
-Description: LLM inference in C/C++
+Version: 0.0.0-b6183-0
+Depends: llama-cpp (= 0.0.0-b6183-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6183-0_aarch64.deb
+Size: 105288
+MD5sum: 4f4cab63b8f3533ea34f6a3b00f6186c
+SHA1: fe1a8b4c9db65a1bb90570992baf256f5ba4e5ba
+SHA256: fcc9491272bbbe5a6ee96b786fd713b908d894740d0209624ec0c037a67eeff1
+SHA512: 7c8a3881e1ede68e3abf3762198596bbe6b0c0a317f33558c809a2d3cf0caab7380fe1b1855f5c45b21067fcf2b9005dcb646bfbf96629c838f74c37a9d597ae
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23880,21 +23883,21 @@ SHA512: 20b8f6172e72f4ea0cf67afc350e4f304496138278c379129e778f2cb8800e1dfb2fa529
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 628
+Package: llama-cpp-backend-vulkan
+Installed-Size: 14052
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6181-0
-Depends: llama-cpp (= 0.0.0-b6181-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6181-0_aarch64.deb
-Size: 105204
-MD5sum: 5cc323de26228b07ec69fc8f55713c18
-SHA1: cc1a1ba9c0ab771cc3b8434b48cabf980f576d47
-SHA256: a7eda8c2d7e784546983122f106b2c54b28a3c02b295952ef9c8a82430e74d68
-SHA512: da6a3da0f4fbaf5851d0e27d24aa3ad08d7246a215aaa42a37318bcf6c9043d07f996f503754a526ffc9ae914c460f4b15aca19533abe258587db4d424b2194a
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6183-0
+Depends: llama-cpp (= 0.0.0-b6183-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6183-0_aarch64.deb
+Size: 1086992
+MD5sum: 59d544ea38bf8a7fa2993f32b079f2f5
+SHA1: 32d0b765876a8a8e373ae214e0ee3f3b1ee0ef6c
+SHA256: b2752ab1eedb35ab04bc7330a73322b70e10b3a2c52853b2f3a812b58ad5bc5c
+SHA512: fb1a6662a6e5c3c77349e4cfd45f2b1ba7778abbeeafecf07b6542bbcfcb7961161c2be7eafe028ad152ef0e8d080b41ab7f7a8248e8a499c089818116d3c8cb
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23911,23 +23914,6 @@ MD5sum: 5794331c66bff9515ce6fc0fa6bc1596
 SHA1: 16d6be44e1bca76a9912821da720af09f9d2c267
 SHA256: 7334b94439cfc87517b09dd7f78890d5e1b93c1a18bc10179a60baf8ecf05922
 SHA512: 9c5d3a1dd543a751d6deb674841029bdac721dfa642e6681e83357a2ac3e5ea212ddbc2ae7d42c3b788f30e2db5e4794edb0308c766e0eaac503dc0721aa2e8e
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 14044
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6181-0
-Depends: llama-cpp (= 0.0.0-b6181-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6181-0_aarch64.deb
-Size: 1085304
-MD5sum: 98623b76aa20be851de113bee440cb72
-SHA1: f9ce66431b299a1ac755e9eea77b48a176da1fe6
-SHA256: 5683c7f0469ec2d2d9458586efbf4b11aceebc9d519c74640b96f4f1dc2c0087
-SHA512: 251b0c56df6ddfa77634fd9cab5da387b1b71ab7046dc533fb2c8d173095a7b7b325e331714483598dd46c8b50acb0c9176e8d1bc2713813f54bc00761d76ba7
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -25058,21 +25044,6 @@ MD5sum: e02eaee03f2fbedfc47fd67624838b85
 SHA1: 981e7e1b603128f99a208f21427d455e5a708f9a
 SHA256: d7be7d99b41d4fb4c15503820d9e956a13b5898abd56a04d66e677f3fc2fa621
 SHA512: 98a7fdb61b60f49793e460035a7d1576188991a2ad965091bede6ffc1fb7282455b535035293dd28b607a5b9e3e035d48d7ba83949097541a38bd971ccdfa6be
-Description: A Matrix-WhatsApp puppeting bridge
-Homepage: https://maunium.net/go/mautrix-whatsapp/
-
-Package: mautrix-whatsapp
-Installed-Size: 29464
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.12.3
-Depends: libolm
-Filename: pool/main/m/mautrix-whatsapp/mautrix-whatsapp_0.12.3_aarch64.deb
-Size: 6709724
-MD5sum: 1224945e6eab81d93b5ae7526e9a7d94
-SHA1: cda6c2a51bb9331935b09f612e3b15562e9e3071
-SHA256: 1a9a745c0ffa89f37c36dc3726ec51f228a396a8787a9adae0a70ec664a6d594
-SHA512: 2bb16c16e53dbb74cd7e133af663be6c5bbdfac0a08796a906779c322291a697c26b6ac41c4e1e89bcd81140d28a7bdfbb6a8568a3b367c91e5cb1fbc85aebc4
 Description: A Matrix-WhatsApp puppeting bridge
 Homepage: https://maunium.net/go/mautrix-whatsapp/
 
@@ -34276,20 +34247,6 @@ SHA512: 95f51426323a62143c179792e01c315753df293c83071c327f0945f4df2e0745ecf6bab8
 Description: Self-hosted anime and manga server for sea rovers.
 Homepage: https://github.com/5rahim/seanime
 
-Package: seanime
-Installed-Size: 75236
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.9.4
-Filename: pool/main/s/seanime/seanime_2.9.4_aarch64.deb
-Size: 17595192
-MD5sum: 09d208065dd861764923074afd84f90f
-SHA1: 2964ce106b63186cc9e84b02bae521c36b0571dc
-SHA256: 73f970f72bb9ed4e2ee944cbd19182dc35ea3fc50dad30e902c7e5478d29e454
-SHA512: de7cf140ec045d4d70bfd8e295d1a04e4fca1437163a2259f8e6a5283c69e35f438b855ac3798261524463f4a6fad568c425c4254fb8ca9122a20347fa1bc887
-Description: Self-hosted anime and manga server for sea rovers.
-Homepage: https://github.com/5rahim/seanime
-
 Package: seccure
 Installed-Size: 104
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -37367,21 +37324,6 @@ SHA512: a334c51fd27db21616c9406adcfa696f50623cfdf1743c79a30990a4f85167437d9fc475
 Description: Command-line time tracker
 Homepage: https://timewarrior.net/
 
-Package: timewarrior
-Installed-Size: 964
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.8.0
-Depends: libandroid-glob, libc++
-Filename: pool/main/t/timewarrior/timewarrior_1.8.0_aarch64.deb
-Size: 268204
-MD5sum: 8fb877ac5ac0260cf29c8357fce0cf3f
-SHA1: 21dab8d2db4929b456488d4b3eb061e09dc625e5
-SHA256: c1cd86b12f336b84f492e08519daa10b1d8e974f627514c72b88011bfe485c44
-SHA512: 34f994ea14f51fde6269b0005f580951dea73a50ce1d2597c123cafd14b499a80b7116811060901896da3ba16ad6dd8de794ac8b10446eb725e314a735586678
-Description: Command-line time tracker
-Homepage: https://timewarrior.net/
-
 Package: timg
 Installed-Size: 304
 Maintainer: @termux
@@ -39747,20 +39689,6 @@ SHA512: 8a4da5e5e8bbf6545bf29247fba290ee0d88af3da45fe774caf63726e72dbfd760da45b5
 Description: Command line interface used by all WakaTime text editor plugins
 Homepage: https://wakatime.com/plugins/
 
-Package: wakatime-cli
-Installed-Size: 14800
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.130.1
-Filename: pool/main/w/wakatime-cli/wakatime-cli_1.130.1_aarch64.deb
-Size: 3555028
-MD5sum: 529dd81735b352fd1a4883af785d4604
-SHA1: abf73fb3e8cde40c07addc7de8832e5741998550
-SHA256: 5b20d022a575fd7bc8f72d389768c74bbbdf1fff823c78b315ac94fb22872e80
-SHA512: b9a466187ba2877123807934a95abe69c32b61e46798c7211a95c4da3f5647a21b3cf375628ebb21d27f1a4f7591ea5842467b69b5d49b586a2849f7538f7e14
-Description: Command line interface used by all WakaTime text editor plugins
-Homepage: https://wakatime.com/plugins/
-
 Package: walk
 Installed-Size: 9528
 Maintainer: @termux
@@ -39971,6 +39899,23 @@ Package: weechat
 Installed-Size: 2956
 Maintainer: @termux
 Architecture: aarch64
+Version: 4.7.1
+Replaces: weechat-dev
+Depends: libandroid-support, libcurl, libgcrypt, libgnutls, libiconv, ncurses, zlib, zstd
+Breaks: weechat-dev
+Filename: pool/main/w/weechat/weechat_4.7.1_aarch64.deb
+Size: 789648
+MD5sum: f56113ef705bcf4961c2ecfef459071c
+SHA1: 792d4722bf44e86f69d64eedd1cd4a35d8b2a9d5
+SHA256: aebf9e936641ded12faa6dd7bec118f75b6f099ee51ca75bd7020e461959c005
+SHA512: 2c86845764c0e85135c5bc6a407f7b8f98514ce34822e5fdb57f9de8ea55fcec1ae7521c881e90ed9edd21c62cc63dafe333f269ac6c77c1cd33d32b494c1b3f
+Description: Fast, light and extensible IRC chat client
+Homepage: https://weechat.org/
+
+Package: weechat
+Installed-Size: 2956
+Maintainer: @termux
+Architecture: aarch64
 Version: 4.7.0
 Replaces: weechat-dev
 Depends: libandroid-support, libcurl, libgcrypt, libgnutls, libiconv, ncurses, zlib, zstd
@@ -39982,6 +39927,21 @@ SHA1: be84c6543652810b51bf09bc8a46cba066c2bd7d
 SHA256: 53d2445bcaa6a4615bf1b7c68ddcb39b81857cc2e33a5b529134b5958f921b15
 SHA512: 882b8470317ec290d2f2fc93b7e5831578721e2f80c6020dcd7486865b7b861720a4b4f546e04056ffea58f10fda1135f7dc6fd55611585102b67b2cdc9d5773
 Description: Fast, light and extensible IRC chat client
+Homepage: https://weechat.org/
+
+Package: weechat-lua-plugin
+Installed-Size: 240
+Maintainer: @termux
+Architecture: aarch64
+Version: 4.7.1
+Depends: liblua53, weechat (= 4.7.1)
+Filename: pool/main/w/weechat-lua-plugin/weechat-lua-plugin_4.7.1_aarch64.deb
+Size: 39856
+MD5sum: 68d7d74fd502664903fe2d17a0c246d1
+SHA1: 2933e4b4252d7e27b8c58d137341ddd4bde9fecd
+SHA256: 2ffe6998b5819afe6deafca7d5a9634f5d8dcb958b6d805e652fff2db6ba9f3d
+SHA512: 4b9647c26fcc34f72a70e4569ff4a936bb7d8fefd49b242829f6629e6eb6a7dc8e19890ad2efc816f8f4993dc1005ef92776623ce658818aaada50809656aa11
+Description: WeeChat Lua Plugin
 Homepage: https://weechat.org/
 
 Package: weechat-lua-plugin
@@ -40018,6 +39978,21 @@ Package: weechat-perl-plugin
 Installed-Size: 368
 Maintainer: @termux
 Architecture: aarch64
+Version: 4.7.1
+Depends: perl, weechat (= 4.7.1)
+Filename: pool/main/w/weechat-perl-plugin/weechat-perl-plugin_4.7.1_aarch64.deb
+Size: 61768
+MD5sum: 0d781189920c28ba880b266ada797ecf
+SHA1: 3a7cd6f93c6c0be1ec10305292811b893fb964e3
+SHA256: e9f04d0dc3364429bb1e301cf930bc790beffa532efaae1fc61db2e626e2f44d
+SHA512: d6a0984598f7ec53e7bf7c9369890b460fc36d8c256cb26eeaccb64bd22de688859277d569a6b206f7c367a13e45419c459c6757ed0b2212d18627343b057723
+Description: WeeChat Perl Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-perl-plugin
+Installed-Size: 368
+Maintainer: @termux
+Architecture: aarch64
 Version: 4.7.0
 Depends: perl, weechat (= 4.7.0)
 Filename: pool/main/w/weechat-perl-plugin/weechat-perl-plugin_4.7.0_aarch64.deb
@@ -40033,6 +40008,21 @@ Package: weechat-python-plugin
 Installed-Size: 276
 Maintainer: @termux
 Architecture: aarch64
+Version: 4.7.1
+Depends: python, weechat (= 4.7.1)
+Filename: pool/main/w/weechat-python-plugin/weechat-python-plugin_4.7.1_aarch64.deb
+Size: 43416
+MD5sum: 5aa07e14f934081511c43b2ef191e20a
+SHA1: 90fe4135e76785b92bf583f2290aaf3b3ce5649a
+SHA256: bb660bffbaed6aaf77ca440e418525a3f7e64ed8b4c0b9092ee147d8f8731076
+SHA512: e9a1c9f1edc66ccfabd6908b26ed478bf13a75cf046e574189a42ee435a7b80c555637fc5cf50d26dfb6b6bed8a1bc91e4f745f9a6d5d18e97498cd0d0582f8b
+Description: WeeChat Python3 Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-python-plugin
+Installed-Size: 276
+Maintainer: @termux
+Architecture: aarch64
 Version: 4.7.0
 Depends: python, weechat (= 4.7.0)
 Filename: pool/main/w/weechat-python-plugin/weechat-python-plugin_4.7.0_aarch64.deb
@@ -40042,6 +40032,21 @@ SHA1: 1b5b0a8ff538f392f697090633323197991f5d11
 SHA256: 727c9ae0e93902756eae47bd01d07af70c8d1a75d461594900c4e697068ecb57
 SHA512: 5e9d455e57161b11027f15813b2e320c022e2ef855ea8eff102e79492736b60be0208b3cb10e01dfeea3a88e44044a4e8e082df8b8526f1198e3ace04f12f185
 Description: WeeChat Python3 Plugin
+Homepage: https://weechat.org/
+
+Package: weechat-ruby-plugin
+Installed-Size: 260
+Maintainer: @termux
+Architecture: aarch64
+Version: 4.7.1
+Depends: ruby, weechat (= 4.7.1)
+Filename: pool/main/w/weechat-ruby-plugin/weechat-ruby-plugin_4.7.1_aarch64.deb
+Size: 46272
+MD5sum: b9ea3970844f28ab9667dd2445fb8c9f
+SHA1: e089de291cf89512675682e29c19686e33344255
+SHA256: 52c92908040ee16fbfd8f8de7a1042d1143ced1c029902c6a56062f5ca97b2d5
+SHA512: 6cf90c6499fa79bb39d986552cff30d14945bd6e9ca0eec930e3406341b6bb4e9f0874b340fceba715c097c3c7373f8b81a52f0a4c18bc3ef867026b89e53999
+Description: WeeChat Ruby Plugin
 Homepage: https://weechat.org/
 
 Package: weechat-ruby-plugin

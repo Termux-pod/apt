@@ -9416,23 +9416,6 @@ SHA512: c6ef016309554ac4d9e37ba8d255ca679ab9957c56a7b0a4f5a713faf82a88753b4c1492
 Description: Google C++ testing framework
 Homepage: https://github.com/google/googletest
 
-Package: googletest
-Installed-Size: 1916
-Maintainer: @termux
-Architecture: x86_64
-Version: 1.17.0
-Replaces: libgtest
-Depends: libc++
-Conflicts: libgtest
-Filename: pool/main/g/googletest/googletest_1.17.0_x86_64.deb
-Size: 373592
-MD5sum: ecc61c2102747a74011b865db9332c36
-SHA1: 36ef7e616ee8456840fd73ecf3fbe1c40d58b67f
-SHA256: 883d30bfd9f03fd349e89df781bbceebb2c173d84db7706d0177b0b31c41b57c
-SHA512: 084791e7b7d1553dc4688a453c7d8806d4edb40c4872773e00fbe32704f28b2fcdbd4a49417a34d7305ce34a4c0df455dd8ab48ed5b3309b7b65c80f463ad73b
-Description: Google C++ testing framework
-Homepage: https://github.com/google/googletest
-
 Package: goose
 Installed-Size: 41296
 Maintainer: @termux
@@ -15523,6 +15506,23 @@ Description: Static libraries for libgc
 Homepage: https://www.hboehm.info/gc/
 
 Package: libgcrypt
+Installed-Size: 1528
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.11.2
+Replaces: libgcrypt-dev
+Depends: libgpg-error
+Breaks: libgcrypt-dev
+Filename: pool/main/libg/libgcrypt/libgcrypt_1.11.2_x86_64.deb
+Size: 478168
+MD5sum: e1dd4378100d621721544ca660674cd6
+SHA1: 80aa306b28882794e2d7d49fe535de7cf81a2694
+SHA256: 45a9617450d8bbf19688f3d6eeb329fcb2032866a288176c02fea10cbedfde06
+SHA512: e5b8f3aaa0c66739ec855c62044b57be7b03239e20674f168b17e9aaeb04f06d71fa2b91b89c1b7dff33067fcd9f45326f00d0d9a6b2f90bfd18bb20ab5777a3
+Description: General purpose cryptographic library based on the code from GnuPG
+Homepage: https://www.gnu.org/software/libgcrypt/
+
+Package: libgcrypt
 Installed-Size: 1548
 Maintainer: @termux
 Architecture: x86_64
@@ -15537,6 +15537,21 @@ SHA1: 9444deb8a9e95034a9f82ebbd341da24859b42cc
 SHA256: b8daa70f822667b7a2de1ef9fa8a186677d1613f26d659437868a839d2de2eea
 SHA512: fd48b705fb9d0f53f62869e5ae8670768a6c22f19669c055db15ec548aaeec81012364d5e394b4c62e200a035d21aa4ba8c45535874a93840780c721104e2f40
 Description: General purpose cryptographic library based on the code from GnuPG
+Homepage: https://www.gnu.org/software/libgcrypt/
+
+Package: libgcrypt-static
+Installed-Size: 1596
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.11.2
+Depends: libgcrypt (= 1.11.2)
+Filename: pool/main/libg/libgcrypt-static/libgcrypt-static_1.11.2_x86_64.deb
+Size: 424956
+MD5sum: a5aa8e4c39fc31248c05edf711404126
+SHA1: e75b1f63d5166118d826a8b6eda6f7475c3d0ed8
+SHA256: d6a9154a6ae5d7bef77606121d32db183470aeae41d104a7f9f73c84cab9ab79
+SHA512: effbb675745c73c913bb58b30e97c3b2319dd5c3443ceaacd653c356f4acc1bdaf72a735babf1e202edc55959abf73471dab2e233e5efe823e7ac01098463125
+Description: Static libraries for libgcrypt
 Homepage: https://www.gnu.org/software/libgcrypt/
 
 Package: libgcrypt-static
@@ -23818,6 +23833,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 51576
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6189-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6189-0_x86_64.deb
+Size: 7185484
+MD5sum: 13e4248f240754cf5fbabaa50a3b2a0b
+SHA1: bed00350847019a735df951d2ff34526ff3893fa
+SHA256: 2b4789e6f66483f33dcdbc1404ee61620acebc0938b8f640aa21a40f297e55e0
+SHA512: 8f86bb02aa03353364ddbdbd71ab8d8a0622e35dcd07c436cd130567e59992883f79e282372eb6783f188d6b75d8c9af428f4fe4f993e1c93bf62a14048fa676
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 51572
 Maintainer: @termux
 Architecture: x86_64
@@ -23833,20 +23864,21 @@ SHA512: 10f92bf5641fc73559cbaac10a99a00cd6e07b26af9dae32e92a2e1ebe732aad8241ef3e
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51572
+Package: llama-cpp-backend-opencl
+Installed-Size: 652
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6185-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6185-0_x86_64.deb
-Size: 7183680
-MD5sum: 0f074b31dc9fdbf14f28f6d01a3380c5
-SHA1: 083e9295a0e490a6480033a88ae727fb0dcbf48c
-SHA256: 2c557f92efbc76c2ea1b633f3754119d835d35915edc46dcbf59ad63d32a4e02
-SHA512: 050106703d8817aaae02b47fea9e1c83add126aeeeb4c9d46d1be29a649e28756d77ddbc5f1b8034bf580980aa28f75f32c2348b4fa68dc812ff3be03e58d78b
-Description: LLM inference in C/C++
+Version: 0.0.0-b6189-0
+Depends: llama-cpp (= 0.0.0-b6189-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6189-0_x86_64.deb
+Size: 114336
+MD5sum: ea3ba0f3cfc6490da2a2f8db4c6bc24d
+SHA1: 93eb484ee2b71b9d4ee589e9d42648f74215c701
+SHA256: 8a9c15c8f811ed3f8ea2ffb4252750cb1de160df0ac1af9ddcb6e6b426d57aa0
+SHA512: 80c761503821f44bfccf4f78295dd996becef6df80575923e2e777a1022046d4759e09da94c9474bdba7540a4681fb6810a3beeb9dceb6819de0d32320f77948
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23866,21 +23898,21 @@ SHA512: 420aa0ff32a4268f0a95c70d9f3046bd7d360b1b16df072e5b38bda5f5140848090db11e
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 652
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15480
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6185-0
-Depends: llama-cpp (= 0.0.0-b6185-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6185-0_x86_64.deb
-Size: 114348
-MD5sum: 399427798ba23d2b61c4bf30ce54de3f
-SHA1: 6eae0090b7bfed5824972fa2e59b32ca2b361308
-SHA256: e11753d1f6165dd73e4e7c5740287b462c0a37f357166057069382cca182a641
-SHA512: fca72fd780743d9699dca3c9cbb53b707790a696365f0582f1b017df279fa94ebcccf9b5f4f70aa8923949adf506652a958fa9538597bfb7408895bd3d2419f1
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6189-0
+Depends: llama-cpp (= 0.0.0-b6189-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6189-0_x86_64.deb
+Size: 1280260
+MD5sum: d44b19a78584e9ca107d5368e10fabad
+SHA1: 42b505e352ea78c25b4dd3c6fd9373844e67ad22
+SHA256: 1ecb580ba41b6debfbec4dfc033e0cde3561980f2cc0b4f98c6561373e72177b
+SHA512: 8f795646b3942fa517d3a9b011a83c4731b10ead5eca2ff3ebab3d49c5a6ee8d93e91053d9b79fecb10b80cb6dbe86c2147fe4fe02d8e08492049b446801286b
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23897,23 +23929,6 @@ MD5sum: 059b76184212d774de12c9503b967f92
 SHA1: 90a6fcbaa75cea1863c5d023243b826706d069a5
 SHA256: a40a5028cdc8e2ff48bc34e7c54d85715ca17dc700d2bba8c43ec0afa714c03a
 SHA512: 0dbdc8ac78aa147383c27bbdd144912554ad9d37df29230ca04df504cac3df06e240232fd8ef7a8f130de758ae21385774227ffd7445d236f610726eed0128c6
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 14300
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6185-0
-Depends: llama-cpp (= 0.0.0-b6185-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6185-0_x86_64.deb
-Size: 1142064
-MD5sum: 6c70d8c41ddc179d1c2d4d05a5a4d8e9
-SHA1: 9a4ebb64bd634ef2384dff7bfb40232c83a8babf
-SHA256: 39ce75a3653918e2bde7def5a6785a2789f4fbed5d9122baa081e59dd4da2a06
-SHA512: 3eef9d414e758f5135a97b9f2d5844b56bcec082ca389d61e88209b949f5be92eb652fa287692fc7d6a7e41b149fe3cd1976a6745f025c1d2903f43b115778cf
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -39402,6 +39417,21 @@ SHA256: e29a942591cd5dbdd07b116be1a7e022caa26962b98ed2a74a17493c752ba7bb
 SHA512: 35f49cbe436eb7b46eb17d47c8e6f9aa5107484c236664336ec8e9f65034be98310250492fdc3350c0cc8c86a64fdc4fd1d9ff5d472754d138364298a55a6d87
 Description: Ogg Vorbis tools
 Homepage: https://github.com/xiph/vorbis-tools
+
+Package: vtm
+Installed-Size: 6192
+Maintainer: @termux
+Architecture: x86_64
+Version: 2025.08.17
+Depends: libc++
+Filename: pool/main/v/vtm/vtm_2025.08.17_x86_64.deb
+Size: 1277176
+MD5sum: 8042045b61be69dd1e12c472c4243fa2
+SHA1: e95ba44d6d401a127db6cde70261d38e2aecacbe
+SHA256: 14adda4866faac0955ddcb2b8e1d49eb8499931813497e31cb0cac5d4ce234a7
+SHA512: 1fad3e90b151997703a3fc624de93020af461c8a64928420b28beae18f9c5fa09f4cdbe264bc862adcf1b48a83da8a133de772d61faf13df86867d75c3f03fe7
+Description: Terminal multiplexer with TUI window manager and multi-party session sharing
+Homepage: https://github.com/directvt/vtm
 
 Package: vtm
 Installed-Size: 6192

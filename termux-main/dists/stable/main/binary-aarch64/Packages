@@ -10407,20 +10407,6 @@ SHA512: cd3c516a387c19d8d87e2dddcfe1ff3fa3d15c318f56e62bc051321b815edcb9b59fb369
 Description: Helm helps you manage Kubernetes applications
 Homepage: https://helm.sh
 
-Package: helm
-Installed-Size: 79472
-Maintainer: @termux
-Architecture: aarch64
-Version: 3.18.5
-Filename: pool/main/h/helm/helm_3.18.5_aarch64.deb
-Size: 14392212
-MD5sum: eccfbe5b11ee9a8f273e7a2905b3965f
-SHA1: 0bfbd46c510c874192e240d76cc865a5af7b77ff
-SHA256: c0f40b7ca776ec600e5b5b479257323152dd284bf29fff398bcf8c5ae237e8c9
-SHA512: 88d6696d177d2340d2f6ced6c98474717ba1b50720a2ddf5bbf74fa511651d1fc41bf9580e8ee02713549fc788f03a73f81f7435d28b3b1bcf3d096bcf21ace7
-Description: Helm helps you manage Kubernetes applications
-Homepage: https://helm.sh
-
 Package: helm-ls
 Installed-Size: 58700
 Maintainer: @termux
@@ -11669,6 +11655,21 @@ SHA256: 06c991d926219330e7542c89f9d2409a9144abd0460aeed1ff7b936579b6ecb1
 SHA512: cc87f59da4d318420c95f9e1be06dcf5247b50b232f93178d8bbc2059c38fe8de376d6bf072d458c7f7b58dfc9592ab124979d6f469614e1f1b9d23627777f67
 Description: The JACK low-latency audio server
 Homepage: https://jackaudio.org/
+
+Package: jackett
+Installed-Size: 14288
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.22.2315
+Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
+Filename: pool/main/j/jackett/jackett_0.22.2315_aarch64.deb
+Size: 3178844
+MD5sum: a68e120b67e617ed5f98e59068174ded
+SHA1: d141595779c06492042e69308fca9554e922f159
+SHA256: 89c3574607c5f565db62908f4131facdb567ca8cd8482f2201ed66d6cec17c70
+SHA512: 5af0d06c3ef52074e7ca2bc15c65f74ca4380374c1d9e9c324b1116091eea180f20f717ba78c913bafb7c1f2183d1b6d4e8fc67a5df38f4114397ef7f6f90f42
+Description: API Support for your favorite torrent trackers
+Homepage: https://github.com/jackett/jackett
 
 Package: jackett
 Installed-Size: 14288
@@ -23834,6 +23835,22 @@ Package: llama-cpp
 Installed-Size: 48792
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6210-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6210-0_aarch64.deb
+Size: 6711528
+MD5sum: 96904921fe56ad2abdd24dbd983c23cd
+SHA1: 975029738f93665710b80a3936f958555c2aeb8e
+SHA256: d03b22f17d39c7d041ef4b31c5f7c6a252945b77bb2997418954a7903eb8cfeb
+SHA512: 40359adb58ff89fbb2995471e88657bb527b41f4aed62eb18ec8b7ab8946010ae7ef959288387be186d37553eb0e07bf3345239dc0d1413b2419d4b75189f08d
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48792
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6209-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23846,20 +23863,21 @@ SHA512: af54a353dd7f3c72015a230bc707fe6f0e8595735433b04b3e681d63418dca20f81980e6
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48792
+Package: llama-cpp-backend-opencl
+Installed-Size: 628
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6208-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6208-0_aarch64.deb
-Size: 6705192
-MD5sum: 09d5561e8c43727944181031f6d82d18
-SHA1: 9fd86d3b7c7a82b7793ea06b168c4bb685af6bed
-SHA256: 4c14253a4b1014b92c625fb48ebefbf8b6260bd355ac1feb01e62b731e15915e
-SHA512: 5884cb9ba56b250e26757aa9dc857d302437b3b5f779844189e6cbf30e08c5b9c6b22edaad6c8abf6178ba308378e6f0cf5224dae56d940dc6bea042740f373a
-Description: LLM inference in C/C++
+Version: 0.0.0-b6210-0
+Depends: llama-cpp (= 0.0.0-b6210-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6210-0_aarch64.deb
+Size: 105280
+MD5sum: b9e267040f2e64c4672b911b9a50c9c8
+SHA1: 5e7188313fd5bd93a3f944bd184777d34b77b774
+SHA256: 0059f8a5df5fbf48d5a8528b85d2ae603973dce014b327e9c2f79bfcff74a1de
+SHA512: 08b843b581369b3a2dfb428cbefb2a66b6219dac97a452d54c3a707461fc7554b8f0a8a136e97bccdb3835a79ac77a698ef76a1a27946ee806da8d47727e3a5e
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23879,21 +23897,21 @@ SHA512: e6433cbcf21b0142197daf6cd16c0a7396d5a20ef13afef6ee45794f713e23a3ab0df0a8
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 628
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15376
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6208-0
-Depends: llama-cpp (= 0.0.0-b6208-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6208-0_aarch64.deb
-Size: 105344
-MD5sum: 9a0e91ae6a28923012924b0f1d4efbd5
-SHA1: 27217ba6593b9f610df500703b0bee95df7256c6
-SHA256: ed236ac1fa12707cb6673e3aa98793702c27ec6d7bca9c8fd6c868bd9297ab18
-SHA512: 116833fe7bf15385c29c438d863b521c4b4027922b05c0ed2fb0102b66723ca762b0f0e502d4b2cd9446057319146f0a5992d0a26b0e731cfef6c373386504a5
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6210-0
+Depends: llama-cpp (= 0.0.0-b6210-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6210-0_aarch64.deb
+Size: 1234352
+MD5sum: ae0cbfd584a4b9266e47a7af6c6e55d4
+SHA1: 05f02d317286926442cb13f293ff111b0d9aeec4
+SHA256: 58fcefe865548a4e5319b081754864e6a539a8ebaf24f13a648fc6d5d427c7d6
+SHA512: 9931961f18d5e45c6ea5fb8919b2ad44c80357174d60a77455872a96a3732fb6ab29538898601d10701a4069920231780e93620c66dd126b24f693ab8c8693bf
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23910,23 +23928,6 @@ MD5sum: adf6f0256b9680a89459123f56f0d475
 SHA1: dc6e8a6ef32f33071147316d2fc99a71f72d3fca
 SHA256: e68dcd5f99e36b36adf73aa60cae04574f3e721a6a8ffa8c464664122b1f4b8f
 SHA512: 8cb36aa7502e3a9bcc0c412f3c93f348512de826f6400220a0cd1c0b4f81385f3986de4a0a153a36fdf808316cf902c549d658b395c5c8422fdaee4b01cf26dd
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 15376
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6208-0
-Depends: llama-cpp (= 0.0.0-b6208-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6208-0_aarch64.deb
-Size: 1236988
-MD5sum: ed915926ac6f240a59b15e59f2399f9f
-SHA1: 3cd8ff8b64d5f8cf72e80c38a5e431220c299865
-SHA256: 389c5a493f44ef868fee5615de533d354f17bf6965496983dee3177db9b6be14
-SHA512: 106553111ec087cc80b30deadf62a62434457709de1796be61f3996563ac1db9ec80b3dc7f46565e215f9e8b65202a880534b107b8201d8eaf5ff156ae277058
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -28162,20 +28163,6 @@ SHA512: 0c742386141d7016197b0eaacd0dda6e15b7e268c0658f0c43b8d8965ce34f01ec4c094c
 Description: Get up and running with large language models
 Homepage: https://ollama.com/
 
-Package: ollama
-Installed-Size: 30912
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.11.4
-Filename: pool/main/o/ollama/ollama_0.11.4_aarch64.deb
-Size: 7310764
-MD5sum: 65c7847e4db94b7798fbbb44f10aa775
-SHA1: 4e00ac55e889570d74015efbebe675fa949ea5c4
-SHA256: eb227f1f7f974a612e6943ed9e2bc676eb3397f218f6d16ea907010bfad22a0e
-SHA512: d4fbe64c58e340ce50f6b3c71435f480d4bd1083c8d82ada35b90d6e1abd9d7baf1f2b7ab34ab3d94d37fc428ce6d3d83cb33e02079511f3d58e0bb008127b5c
-Description: Get up and running with large language models
-Homepage: https://ollama.com/
-
 Package: onefetch
 Installed-Size: 13032
 Maintainer: @termux
@@ -30675,17 +30662,17 @@ Description: A multi-client, TLS-only IRC bouncer
 Homepage: https://git.causal.agency/pounce
 
 Package: povray
-Installed-Size: 2960
+Installed-Size: 2556
 Maintainer: @termux
 Architecture: aarch64
-Version: 3.8.0-beta.2-13
+Version: 3.8.0-beta.2-14
 Depends: boost, imath, libc++, libjpeg-turbo, libpng, libtiff, openexr, povray-data, zlib
-Filename: pool/main/p/povray/povray_3.8.0-beta.2-13_aarch64.deb
-Size: 857908
-MD5sum: a81e2d8026066cac215c24a4026ff484
-SHA1: e26bc720b9cec337bbffeaa603ace89abc404063
-SHA256: bd0caf587bac7c4c5f60a6de188a66df08662e2f020dc12363f50ff9d0b22d4e
-SHA512: d9deb33d68523b9d3128b1e51ff79684d62fbcc9a777c11a21732c93bccc8d600f8401d59cc3312c206b1ade31cd0d4ca4075b806a0b3d342136aa92cb8b91eb
+Filename: pool/main/p/povray/povray_3.8.0-beta.2-14_aarch64.deb
+Size: 735784
+MD5sum: b73e54d3d8e7153c4a39b3b0aa8c11a5
+SHA1: 9b75bc4595021158d14a2b2a618a030926099cd5
+SHA256: 9fbfa2fd8c6b81ff2e7b6eae941c2ca029e7d26dc02a9ad997a3395da0a484c1
+SHA512: 494292102144818db0dfba714edc5ed28906912aa57034c0c5699feaab22adddc503f6e3d6eb581d5d344ffc73f22849b30c172264d656b812982e6dbd414c4b
 Description: The Persistence of Vision Raytracer
 Homepage: https://www.povray.org/
 
@@ -30693,15 +30680,15 @@ Package: povray-data
 Installed-Size: 23064
 Maintainer: @termux
 Architecture: all
-Version: 3.8.0-beta.2-13
+Version: 3.8.0-beta.2-14
 Replaces: povray (<< 3.8.0-beta.2-2)
 Breaks: povray (<< 3.8.0-beta.2-2)
-Filename: pool/main/p/povray-data/povray-data_3.8.0-beta.2-13_all.deb
-Size: 10357768
-MD5sum: f8fc407287c4894aa202c56af1e573df
-SHA1: c70920d13fb39d07e69976271d9b0bfd69cd69d9
-SHA256: 8a97c752e9b988ea834530e195ecc87ff4a0b759a122914bb5aec798981b0101
-SHA512: 0a2d5469668e5ff29e394c97bfeec97264927985d73d30b15c4830881e4cf720e97bf68d58259578add0b946dbc6a4a316878a1d7b42e735ba1f97b15199cb41
+Filename: pool/main/p/povray-data/povray-data_3.8.0-beta.2-14_all.deb
+Size: 10356960
+MD5sum: 6c1f0cb38eb3c2c55f61b7e1b6022723
+SHA1: c8567099bd699d90cdfed214ee8764b939e54a7c
+SHA256: f009b14d1aea898e4169a71763f37695e4cd2e81e714e097a86e1f50c62251cf
+SHA512: 88fb00172eee784ba034d728d16034471922ec383d8c56c1d3572ed96574c609bbaab27f0cc175798ccc1c315a956e92dff06058bb6b88a152af1f387fddaee5
 Description: Platform-independent data for povray
 Homepage: https://www.povray.org/
 
@@ -31887,6 +31874,23 @@ Description: The Python X Library
 Homepage: https://github.com/python-xlib/python-xlib
 
 Package: python-yt-dlp
+Installed-Size: 24028
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: aarch64
+Version: 2025.08.20
+Provides: yt-dlp
+Depends: libc++, libexpat, openssl, python, python-brotli, python-pip, python-pycryptodomex
+Recommends: ffmpeg
+Filename: pool/main/p/python-yt-dlp/python-yt-dlp_2025.08.20_aarch64.deb
+Size: 4902320
+MD5sum: 04368bd3d55a25ca980bb8fecb6a0843
+SHA1: 36c31e9a0a38eda72cce33fcfeecee40c82c64b8
+SHA256: 982317f323e668d3a3d964a8d05578f39a3453b99b6fa2a126a9b13d719e6329
+SHA512: f7f87a24b0de2b8332914e42166eba9eb82cd15f13eaaac7954a9cdd7e5c907be25a70fc1a897c625ae3555c0196b5e07e8dd7298095573a3aba3b2c14838b42
+Description: A youtube-dl fork with additional features and fixes
+Homepage: https://github.com/yt-dlp/yt-dlp
+
+Package: python-yt-dlp
 Installed-Size: 24112
 Maintainer: Joshua Kahn @TomJo2000
 Architecture: aarch64
@@ -33011,14 +33015,14 @@ Package: remind
 Installed-Size: 2996
 Maintainer: @termux
 Architecture: aarch64
-Version: 1:06.00.00
+Version: 1:06.00.01
 Depends: libandroid-glob
-Filename: pool/main/r/remind/remind_1:06.00.00_aarch64.deb
-Size: 294588
-MD5sum: e0e867603f182acbde8128c6e1cb402a
-SHA1: 1c185f9a5fc5a9ef0d79c938bc3567b395d063ee
-SHA256: 0dd8c66346d74ca19bb7aecc975d0aa0e19b9d13c449c33ba1823b19394bcc2b
-SHA512: 29b5834776cc0902b23d7db0a373e9b092086c42c8973f72ae5072032c2ecbda843c9306e7d44b5cee79ef29070e028b41af247b9d21c1a501f42057f2119b38
+Filename: pool/main/r/remind/remind_1:06.00.01_aarch64.deb
+Size: 293932
+MD5sum: 6afed9790657b3ed0588c2f14eb6bad6
+SHA1: 7acca0549f05fb75b28af0b96c72ef0df556089f
+SHA256: 52a55cb8eb88b7f3e7e841bd2d8e148fa91e8f3f0a781d24e605cc27d4f76d9c
+SHA512: 3b76c6b47824334902ec1bf42a901b4f5bd56fabbadc21ea20662a439f027bd1ed0d9e54255821e1b875bc3ed44a031974e185c6368040dde6ab67329e5aa471
 Description: Sophisticated calendar and alarm program
 Homepage: https://dianne.skoll.ca/projects/remind/
 
@@ -34744,6 +34748,20 @@ SHA256: a4a6b97a390f64f162f4a2f3cdb29ee275aae75bb8da9b1939bef328d8c78970
 SHA512: de5a6e96592ae0c4b7dace069cef5d3c266b0037cc5bde602e6585e8655771b3ecdd7812df6d6337c053be0c00ff0df03cb15ddfe5070a12708864d3e1131543
 Description: A simple heat transfer simulator in pure Rust
 Homepage: https://github.com/file-acomplaint/simuwaerm
+
+Package: sing-box
+Installed-Size: 32900
+Maintainer: kay9925@outlook.com
+Architecture: aarch64
+Version: 1.12.2
+Filename: pool/main/s/sing-box/sing-box_1.12.2_aarch64.deb
+Size: 7554136
+MD5sum: a78aec920e8477e11ed65201de6a3cba
+SHA1: 2c6d82b5fa56500fe877489c217903177deee1c5
+SHA256: 2db24406f6555d19e17558b3c9075dd79ba54e8c4e403a00819e372f355c517e
+SHA512: 715ac6909d605d3bc65998950efc7f85419b43cf41807372799803d0c5236b57e98740236f715f260569821c8a3182321c4490b3573dd2dbecd1d66a0afe411e
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
 
 Package: sing-box
 Installed-Size: 32844
@@ -37439,31 +37457,31 @@ Description: Flexible, screen-oriented MUD client, for use with any type of MUD
 Homepage: https://tinyfugue.sourceforge.net/
 
 Package: tinygo
-Installed-Size: 106140
+Installed-Size: 105976
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.38.0
+Version: 0.39.0
 Depends: binaryen, golang, libc++, tinygo-common
-Filename: pool/main/t/tinygo/tinygo_0.38.0_aarch64.deb
-Size: 23311328
-MD5sum: fc42c1c8b147bb2b257bd9b25196618e
-SHA1: 8310e5ce51c97f7547c50fb07bcc0361285cadd9
-SHA256: a7d021ea27c6c12939d9e040897251cd5b03bf5c3e3638db01973a8c13a7ea94
-SHA512: 6a563a7791510c752e64e0d68f3aa616dbcba86482d423ef848236baba72cf52051b524f68b3bded0581c49208124976ab9bc62f78bc76230f28bd98ffa534e2
+Filename: pool/main/t/tinygo/tinygo_0.39.0_aarch64.deb
+Size: 23299232
+MD5sum: dc3e061d22c91bcf0d505a5d36e02d61
+SHA1: 979781a18590844a098fa1b21d51d9bfabde9968
+SHA256: 403b3c5ea00f5921057b616217560365986b1fb9290db915eafb81279dd13f45
+SHA512: bf849ed67fe8e533127990814a80dad5cb0d423e5c62ed8ad7411d8b0b9e70075746f4915019c852bd2422a2b3d6e55f4066be608e41906e9179c53bf858c34e
 Description: Go compiler for microcontrollers, WASM, CLI tools
 Homepage: https://tinygo.org
 
 Package: tinygo-common
-Installed-Size: 867840
+Installed-Size: 868136
 Maintainer: @termux
 Architecture: all
-Version: 0.38.0
-Filename: pool/main/t/tinygo-common/tinygo-common_0.38.0_all.deb
-Size: 17837728
-MD5sum: 8190f0d36fd541e804ed7662f2a39c2e
-SHA1: 0184bd20bac3e1eb81d1ad3fba0b69b860735a16
-SHA256: 960904b7129b214e3447e95d7969b783023f3fdbc937fd742948b735f45100c0
-SHA512: 443c5d20a51fb369e7a94f70f16666b8a5dc3f622147b818e5ba836ac91c59faf311c22ec1d6057684aa56777f4d0080efd0e2eea91790450b33d7e668bfb2ee
+Version: 0.39.0
+Filename: pool/main/t/tinygo-common/tinygo-common_0.39.0_all.deb
+Size: 17894752
+MD5sum: f9d7a22e2a7be0c1844e69c257f02466
+SHA1: 2957998bb78ea3aed5276228366a683eaf6f98cb
+SHA256: d9028f166315fb7a63b84a2adf0cee2e80b8da2796ee7ff6e22b680a72ad3519
+SHA512: b32e6b092054e66fbc466a18717b86ea304148b57e1b2440303863084f090d215fa02073eee64572ea8fc6a53e7be3bac98f933ee906c59874ecd067b1394e8f
 Description: TinyGo common files
 Homepage: https://tinygo.org
 

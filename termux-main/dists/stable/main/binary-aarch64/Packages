@@ -10394,6 +10394,20 @@ Description: Prints a friendly greeting
 Homepage: https://www.gnu.org/software/hello/
 
 Package: helm
+Installed-Size: 79484
+Maintainer: @termux
+Architecture: aarch64
+Version: 3.18.6
+Filename: pool/main/h/helm/helm_3.18.6_aarch64.deb
+Size: 14384084
+MD5sum: e7cd9094042a833d8fee684552ec699c
+SHA1: 96e9600ffb4f8940a703e362307993e0e992fe02
+SHA256: 1d7d2615b5e63be33dabd5b8948cf1bb13eaaf13e2679fca1fb3b5c7cd86de30
+SHA512: cd3c516a387c19d8d87e2dddcfe1ff3fa3d15c318f56e62bc051321b815edcb9b59fb3696e54cbaacad8e7f4c37a3d29c84ff90e573a3f0780ee626aad9c01f0
+Description: Helm helps you manage Kubernetes applications
+Homepage: https://helm.sh
+
+Package: helm
 Installed-Size: 79472
 Maintainer: @termux
 Architecture: aarch64
@@ -23820,6 +23834,22 @@ Package: llama-cpp
 Installed-Size: 48792
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6209-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6209-0_aarch64.deb
+Size: 6695228
+MD5sum: 03ff4a3a581e1429fae75defd9c41afb
+SHA1: e9e98a98f9b12ed0820aa2ec6fa16a579d0df4af
+SHA256: b8018e011984c005bc0f7aeb6919d62b3147bc00f282c2236cf0c90cd6752cf4
+SHA512: af54a353dd7f3c72015a230bc707fe6f0e8595735433b04b3e681d63418dca20f81980e60ec7b8df09145c6b9851e3b049ffa18c412bb264c777440c37ad68f5
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48792
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6208-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23832,20 +23862,21 @@ SHA512: 5884cb9ba56b250e26757aa9dc857d302437b3b5f779844189e6cbf30e08c5b9c6b22eda
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48780
+Package: llama-cpp-backend-opencl
+Installed-Size: 628
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6204-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6204-0_aarch64.deb
-Size: 6711840
-MD5sum: 6d0aff2852abec262c925b0ad23d00c9
-SHA1: 66837eae96c5381ca0abd3ca9b422d4b88915736
-SHA256: 78f319b5c988af178ce2c9288e5426c70c86e4c17f2cb08e200be278b41ef844
-SHA512: bf9844a3e78811f83441adc7130797862bfe18e80c6be0370cd996950badf1390c876405ae77f5002060dc9713fd08ae26ffde5ec40ca54a822529c339dc619f
-Description: LLM inference in C/C++
+Version: 0.0.0-b6209-0
+Depends: llama-cpp (= 0.0.0-b6209-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6209-0_aarch64.deb
+Size: 105420
+MD5sum: a74aca1386ae596a342b8c6438de45ad
+SHA1: 6c5d1f95c75225c24e82bc5c33c798e60def0983
+SHA256: 41f7c2ac66b247dc6dbd1dfa6ee8d07840b9125f85bf33080dbf961e272d5447
+SHA512: e6433cbcf21b0142197daf6cd16c0a7396d5a20ef13afef6ee45794f713e23a3ab0df0a8e6f98bd6740ccc4ee8422f5a10a82f583912d009062f0c3ba66a3a60
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23865,21 +23896,21 @@ SHA512: 116833fe7bf15385c29c438d863b521c4b4027922b05c0ed2fb0102b66723ca762b0f0e5
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 628
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15376
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6204-0
-Depends: llama-cpp (= 0.0.0-b6204-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6204-0_aarch64.deb
-Size: 105312
-MD5sum: 1f2f65381b46e78b855465787956ada5
-SHA1: 2178c77cb98ed8c3771ba7f82c528dd3a9c5d6c4
-SHA256: 37ba55b34e5d430378fecaf814c2fb04bd5d974c414f0e45c2e8f676184386e3
-SHA512: 336819a183a75bafcb963eb9e9407e07117c83dba6a1e4ae2728965c9d2dad65a2a924686808a9b232ec80338784d54a9930d75440ffbfa8d774c211d7212a00
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6209-0
+Depends: llama-cpp (= 0.0.0-b6209-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6209-0_aarch64.deb
+Size: 1237000
+MD5sum: adf6f0256b9680a89459123f56f0d475
+SHA1: dc6e8a6ef32f33071147316d2fc99a71f72d3fca
+SHA256: e68dcd5f99e36b36adf73aa60cae04574f3e721a6a8ffa8c464664122b1f4b8f
+SHA512: 8cb36aa7502e3a9bcc0c412f3c93f348512de826f6400220a0cd1c0b4f81385f3986de4a0a153a36fdf808316cf902c549d658b395c5c8422fdaee4b01cf26dd
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23896,23 +23927,6 @@ MD5sum: ed915926ac6f240a59b15e59f2399f9f
 SHA1: 3cd8ff8b64d5f8cf72e80c38a5e431220c299865
 SHA256: 389c5a493f44ef868fee5615de533d354f17bf6965496983dee3177db9b6be14
 SHA512: 106553111ec087cc80b30deadf62a62434457709de1796be61f3996563ac1db9ec80b3dc7f46565e215f9e8b65202a880534b107b8201d8eaf5ff156ae277058
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 15376
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6204-0
-Depends: llama-cpp (= 0.0.0-b6204-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6204-0_aarch64.deb
-Size: 1237132
-MD5sum: 3037209c9b4d3e0a314c9162c5c0d0cd
-SHA1: e317a1eac9d604b0bdc8be4bd6cdb5e355d2c8f5
-SHA256: efc6ab7ef474e73bca6669d6915f1d60978750d94a338a6aacef3f9b214114f6
-SHA512: fc085c3317852d9e172262778745bd6735772a0e83bbfc1943839fb2be62e2b1f2c8fbaad9eae909a54be5030983e047452662dd81bbd61a05d6a10a14865cc3
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -28133,6 +28147,20 @@ SHA256: 821a375b8fc2c905435fa388793c69b30c4bc6718ee6f8e576dee775a745af04
 SHA512: 0581c77f04769e92adb78a6aa3daa93f1b916f8d0f2430410baac030d68af9e5a91009d7960e65b9a48c758ef9bc898062c31dc2f0d054d625d0a9c95dd7eb7f
 Description: The GNU Spreadsheet
 Homepage: https://www.gnu.org/software/oleo/
+
+Package: ollama
+Installed-Size: 31856
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.11.5
+Filename: pool/main/o/ollama/ollama_0.11.5_aarch64.deb
+Size: 7603132
+MD5sum: c61bf3e6d530fdef5f65cb7e43629ce7
+SHA1: dbb255fbdc3c2acdbf1c98b224162d36779ea79e
+SHA256: 5b2a5fc143ff8a596f5791f483512d15434b78b7524c4719a326d2b8dfa036ae
+SHA512: 0c742386141d7016197b0eaacd0dda6e15b7e268c0658f0c43b8d8965ce34f01ec4c094ce390509be841b838247e680b88d6122271c694fbd02b51a268d98d0d
+Description: Get up and running with large language models
+Homepage: https://ollama.com/
 
 Package: ollama
 Installed-Size: 30912
@@ -39462,21 +39490,6 @@ MD5sum: 22c1ff34c96222be6c156cea123a892c
 SHA1: 1cc7c6d880047d9d40694a037bccaa8ca1578be2
 SHA256: 2c10947fab56ba8c645d1aa57a6fb8e128db83f90a775e3333d5712141bb6b33
 SHA512: 3b864ca9d099dff043ea1b0f2f48c1f1dfd21b7d7983144b82fa00f96662ef36d53f9708e425820ad3537bdcda81ca6de375286f6f05abca12e6da8276272e4e
-Description: Terminal multiplexer with TUI window manager and multi-party session sharing
-Homepage: https://github.com/directvt/vtm
-
-Package: vtm
-Installed-Size: 5980
-Maintainer: @termux
-Architecture: aarch64
-Version: 2025.08.17
-Depends: libc++
-Filename: pool/main/v/vtm/vtm_2025.08.17_aarch64.deb
-Size: 1162096
-MD5sum: 042951d1d99291d4f1c4190dee697920
-SHA1: 65baf1df141aa9de7f70fe237058ca9053e97ede
-SHA256: 4198924b56342f596e13e82c65dbabb99b951d04bdd4d3d7d163405c7b90ea6b
-SHA512: 7de82c62bbc71b4025f424a069d5858351ba2cd9b71376e226cedabb07f0ee8a987632736193b789c1debc583248775a0fa631dbbf9c6ae230567912cddecf90
 Description: Terminal multiplexer with TUI window manager and multi-party session sharing
 Homepage: https://github.com/directvt/vtm
 

@@ -11671,21 +11671,6 @@ SHA512: 5af0d06c3ef52074e7ca2bc15c65f74ca4380374c1d9e9c324b1116091eea180f20f717b
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14288
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.22.2311
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2311_aarch64.deb
-Size: 3180180
-MD5sum: 922d9503db0a51b38ec50ceaa9279f40
-SHA1: 538f361515eea144671944c432c7c1ea38738b28
-SHA256: 61d23ff203564f1673f2e217dacc109d06d5a311273a26660d02b8f87aee294f
-SHA512: c97e547fbddd17306bfa568ac51c2371c0e1ed144ec6be1ea7280dbec56fb435b93abf952d153223eb94c9f9b4a2a81cec89aff07bcf251d93dc49ba76a630be
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: jadx
 Installed-Size: 125648
 Maintainer: @termux
@@ -12450,6 +12435,20 @@ SHA256: 54f6ebe34182ccb842d2635cb5a27d292ee25e50c7259b8453ce295427175787
 SHA512: 1922bf1da4e540b647e95bb84aab20c3763194280070552053f0ae77934520f633b1740bcc62f87ee5ace93d449fd40d42678c39c30bf1ed8afb0386fe6452e4
 Description: Kubernetes.io client binary
 Homepage: https://kubernetes.io/
+
+Package: kubelogin
+Installed-Size: 15528
+Maintainer: @termux
+Architecture: aarch64
+Version: 1.34.1
+Filename: pool/main/k/kubelogin/kubelogin_1.34.1_aarch64.deb
+Size: 3860132
+MD5sum: 02c2527e85a0309c6e72d5797515651c
+SHA1: 03ac2294cef225b9122d946e5746215cbae5a98c
+SHA256: 1feaeb86a189502e7b241595aab260ae1132b780611a4341c761c8d8a331dc53
+SHA512: 067796b63a773f401c8b1e9adeaa93c312a669833a1c6d1f8c648051c267702d6da409db70910fe08412a6beb56f7f8a97294c4f46a94644c8cf643cd99a5f69
+Description: A kubectl plugin for Kubernetes OpenID Connect (OIDC) authentication
+Homepage: https://github.com/int128/kubelogin
 
 Package: kubelogin
 Installed-Size: 15516
@@ -23835,6 +23834,22 @@ Package: llama-cpp
 Installed-Size: 48792
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6213-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6213-0_aarch64.deb
+Size: 6712432
+MD5sum: d417323414fd21b8d54a2fa62bde31b5
+SHA1: 5b3f88fd63ea4334db0d7a59b2407e3aca792c14
+SHA256: 4dc2104710e311c738cf2c32fa22cc628afdc44c454c086ea6ad571f1daad33b
+SHA512: bf2488f9c32fbbfd3eddec88ce630d7d7eea74be86491b4bac917e9784b3afeefcfc211c3a504c626e7c38f6a297f9a768808f8d41d7afaa516cc2205bdb9623
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48792
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6210-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23847,20 +23862,21 @@ SHA512: 40359adb58ff89fbb2995471e88657bb527b41f4aed62eb18ec8b7ab8946010ae7ef9592
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48792
+Package: llama-cpp-backend-opencl
+Installed-Size: 628
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6209-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6209-0_aarch64.deb
-Size: 6695228
-MD5sum: 03ff4a3a581e1429fae75defd9c41afb
-SHA1: e9e98a98f9b12ed0820aa2ec6fa16a579d0df4af
-SHA256: b8018e011984c005bc0f7aeb6919d62b3147bc00f282c2236cf0c90cd6752cf4
-SHA512: af54a353dd7f3c72015a230bc707fe6f0e8595735433b04b3e681d63418dca20f81980e60ec7b8df09145c6b9851e3b049ffa18c412bb264c777440c37ad68f5
-Description: LLM inference in C/C++
+Version: 0.0.0-b6213-0
+Depends: llama-cpp (= 0.0.0-b6213-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6213-0_aarch64.deb
+Size: 105236
+MD5sum: 05831de2e5b2808cfc141b79d87affd3
+SHA1: eb4f5f9c7fa791da45f4e42b35175d5cbed62d12
+SHA256: f826095f6313487c7bf52ad045d3690d028b8cab1b4cb95feaadb4410c59cbdf
+SHA512: 072b3159fda63b97f3e725d3454321e3183757f9ab9c6123ffb3cfd5f5aee7c55336d12fd8c2c3f25819c3a792b4cbec72001f0201a1f64d95e3c64dfaf7dc59
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23880,21 +23896,21 @@ SHA512: 08b843b581369b3a2dfb428cbefb2a66b6219dac97a452d54c3a707461fc7554b8f0a8a1
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 628
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15376
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6209-0
-Depends: llama-cpp (= 0.0.0-b6209-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6209-0_aarch64.deb
-Size: 105420
-MD5sum: a74aca1386ae596a342b8c6438de45ad
-SHA1: 6c5d1f95c75225c24e82bc5c33c798e60def0983
-SHA256: 41f7c2ac66b247dc6dbd1dfa6ee8d07840b9125f85bf33080dbf961e272d5447
-SHA512: e6433cbcf21b0142197daf6cd16c0a7396d5a20ef13afef6ee45794f713e23a3ab0df0a8e6f98bd6740ccc4ee8422f5a10a82f583912d009062f0c3ba66a3a60
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6213-0
+Depends: llama-cpp (= 0.0.0-b6213-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6213-0_aarch64.deb
+Size: 1235868
+MD5sum: 3ed0d7078d66e9dd4dd9a4a02efb955e
+SHA1: 1aa90b8f1f9eebd4fc90428d58d183904ae1f63f
+SHA256: 96be8bddf7ace0fe4663b2d8c33a9d919c244c023f3f7068b88a134fd62a86f2
+SHA512: 934530e01e06a91f2c04de0c5bebfa9086b566f0ff9659d4eb14697db9646ca3cfb9f1a4bfc2d6eece53f5c99d82d1bcd47a3f2c29c24f14243d843ed61969ee
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23911,23 +23927,6 @@ MD5sum: ae0cbfd584a4b9266e47a7af6c6e55d4
 SHA1: 05f02d317286926442cb13f293ff111b0d9aeec4
 SHA256: 58fcefe865548a4e5319b081754864e6a539a8ebaf24f13a648fc6d5d427c7d6
 SHA512: 9931961f18d5e45c6ea5fb8919b2ad44c80357174d60a77455872a96a3732fb6ab29538898601d10701a4069920231780e93620c66dd126b24f693ab8c8693bf
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 15376
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6209-0
-Depends: llama-cpp (= 0.0.0-b6209-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6209-0_aarch64.deb
-Size: 1237000
-MD5sum: adf6f0256b9680a89459123f56f0d475
-SHA1: dc6e8a6ef32f33071147316d2fc99a71f72d3fca
-SHA256: e68dcd5f99e36b36adf73aa60cae04574f3e721a6a8ffa8c464664122b1f4b8f
-SHA512: 8cb36aa7502e3a9bcc0c412f3c93f348512de826f6400220a0cd1c0b4f81385f3986de4a0a153a36fdf808316cf902c549d658b395c5c8422fdaee4b01cf26dd
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -27844,6 +27843,21 @@ SHA256: fc580685349dca7715d3be2dc45b2614a17e578b4a74b226f626556d78462c3e
 SHA512: a1ba59671ee152d11343e3f923027c8dace1d93905ac6157cacfc463ac636c0aa389858ce6b86b685d8e6b2ae0fb21494a0ea2b70faceb254dd205b06477ba0f
 Description: Tools for NSS
 Homepage: https://firefox-source-docs.mozilla.org/security/nss/
+
+Package: nudoku
+Installed-Size: 76
+Maintainer: @termux
+Architecture: aarch64
+Version: 6.0.0
+Depends: libcairo, ncurses
+Filename: pool/main/n/nudoku/nudoku_6.0.0_aarch64.deb
+Size: 10724
+MD5sum: 46f64baf0c4a206ea940f657f5166dbe
+SHA1: b78787a94215d18314002a79fda8c177a5bb656a
+SHA256: 673588913867dfafe2bcbb48c99a503236610cdaf8b8e18b357d76909fe4bc66
+SHA512: 764b81dd39b94f346fb08eb5c6c76e0625f542bbb73c7ad15ba8677efc156774ad299007bba2763453c8c62f09d1c49aa8dde497b286f4604b9e462d32a62b69
+Description: ncurses based sudoku game
+Homepage: http://jubalh.github.io/nudoku/
 
 Package: nudoku
 Installed-Size: 76
@@ -31890,23 +31904,6 @@ SHA512: f7f87a24b0de2b8332914e42166eba9eb82cd15f13eaaac7954a9cdd7e5c907be25a70fc
 Description: A youtube-dl fork with additional features and fixes
 Homepage: https://github.com/yt-dlp/yt-dlp
 
-Package: python-yt-dlp
-Installed-Size: 24112
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 2025.08.11
-Provides: yt-dlp
-Depends: libc++, libexpat, openssl, python, python-brotli, python-pip, python-pycryptodomex
-Recommends: ffmpeg
-Filename: pool/main/p/python-yt-dlp/python-yt-dlp_2025.08.11_aarch64.deb
-Size: 4922684
-MD5sum: 79dd6102564c0929908d318f3648d894
-SHA1: 257f1ccc8b7cf57d16bfaa29918a029594506675
-SHA256: 26c63a7c6f0164ea1e0a8f370d299d42cf7c6d144085c921d8f0200b40c4d264
-SHA512: dded7cc11979ab58923c76e008210994b262c19bb97b79b74ab54b937df7779cb52be9728e52be9f44618332b6932c47091796e20f99002158298d60455a974f
-Description: A youtube-dl fork with additional features and fixes
-Homepage: https://github.com/yt-dlp/yt-dlp
-
 Package: python2
 Installed-Size: 18772
 Maintainer: @termux
@@ -34760,20 +34757,6 @@ MD5sum: a78aec920e8477e11ed65201de6a3cba
 SHA1: 2c6d82b5fa56500fe877489c217903177deee1c5
 SHA256: 2db24406f6555d19e17558b3c9075dd79ba54e8c4e403a00819e372f355c517e
 SHA512: 715ac6909d605d3bc65998950efc7f85419b43cf41807372799803d0c5236b57e98740236f715f260569821c8a3182321c4490b3573dd2dbecd1d66a0afe411e
-Description: The universal proxy platform
-Homepage: https://sing-box.sagernet.org
-
-Package: sing-box
-Installed-Size: 32844
-Maintainer: kay9925@outlook.com
-Architecture: aarch64
-Version: 1.12.1
-Filename: pool/main/s/sing-box/sing-box_1.12.1_aarch64.deb
-Size: 7551672
-MD5sum: c71fa6b47356cbb153ddce2006e36c19
-SHA1: 3c0a27ac00532e64867f413774e518e4ec529b20
-SHA256: bd5ddc0ecb501d391eebcd2e775b150229a8df982b9f2d92a39e876c00b2aa62
-SHA512: 43ca5bbb0e870158ab2c964ffc75b7d483fbfbec22eea8b2b7d894fc7f7ddb9a862349536af15da337494c93b3d0e28980995dae35dcdc60d70fcf354ea3f0da
 Description: The universal proxy platform
 Homepage: https://sing-box.sagernet.org
 

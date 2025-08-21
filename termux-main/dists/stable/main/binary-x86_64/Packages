@@ -5226,23 +5226,6 @@ SHA512: d69757288105ab3c72c77d14ebdeb961f97ad2adef68cff63399d945904cc393a2b08381
 Description: Clients provided with BIND
 Homepage: https://www.isc.org/bind/
 
-Package: dnsutils
-Installed-Size: 7188
-Maintainer: @termux
-Architecture: x86_64
-Version: 9.20.11
-Replaces: dnsutils-dev
-Depends: cmocka, json-c, krb5, libandroid-execinfo, libandroid-glob, libcap, libnghttp2, liburcu, libuv, libxml2, openssl, readline, resolv-conf, zlib
-Breaks: dnsutils-dev
-Filename: pool/main/d/dnsutils/dnsutils_9.20.11_x86_64.deb
-Size: 1861788
-MD5sum: 2e2773ca22df1fc212fc4036239b4360
-SHA1: 10df7ed7ff35851b1a6943c483a9655b117ed0b3
-SHA256: 00ddb96b056a90696979e28399d4ab3eb0bf9c7dc7a84468d05b36a6b6df57ed
-SHA512: c5489dbb3c47b47babaaef6df2e735fcd4db22315217c03105dea933b88ffb4a978c512d096a3c99750d4657eecff5a1e6500020500c88c7d0b2307e83c6b7de
-Description: Clients provided with BIND
-Homepage: https://www.isc.org/bind/
-
 Package: docbook-xml
 Installed-Size: 2412
 Maintainer: @termux
@@ -8198,6 +8181,21 @@ SHA256: 96e8dc938e17292d99a15717e2fa2f363c9590539e336b227ee18d85f92ef073
 SHA512: 94232a3d99f620b55d843cbe2d5dd848fc89a1e10de8d1f8619cb97d5ebdfb8d1b7544ead9e76abb031b030621b66e270093251b2909f1130a38826666894a6a
 Description: gengetopt is a tool to write command line option parsing code for C programs
 Homepage: https://www.gnu.org/software/gengetopt/
+
+Package: geographiclib
+Installed-Size: 2896
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.5.1
+Depends: libc++
+Filename: pool/main/g/geographiclib/geographiclib_2.5.1_x86_64.deb
+Size: 542148
+MD5sum: b04ee85c3ad920aa15a9cd22a6c4ee84
+SHA1: 8e832dab8fee780fefbbec1e8c1d1b1c491ef9fa
+SHA256: 5a4787eccf16679bf4a70e6f9bbf101f9d677273560ac8ca6fbbd9da6b2a1d37
+SHA512: beb8015a38fc2af76fbe03a6b47d821e48a315114591ec60056c0c2955eccb92ff2703e2e160deb7c77204aef8e0af9a708c9409b0ab7b71d782be7bb983b9d2
+Description: Utilities and C++ library to solve some geodesic problems
+Homepage: https://geographiclib.sourceforge.io
 
 Package: geographiclib
 Installed-Size: 2916
@@ -23818,6 +23816,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 51604
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6218-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6218-0_x86_64.deb
+Size: 7185148
+MD5sum: 550711a9f5a24edc42ec654619516aa2
+SHA1: 1a76ed2787a5c539cf8a52daa0d185f83a3ef8c2
+SHA256: 78855b7278b9bedc75b54cc616a3ee97b7f19a3e6281b826aff5b31ad8f8632d
+SHA512: 4b3c5344190b553f78dd3d31c1fe3557db053d32f65e4cc5403bb7130389a0c9da74e99a8ec9a8230f195f8a6aa7941e81aab107974df208ac65940edf5e15b6
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 51592
 Maintainer: @termux
 Architecture: x86_64
@@ -23833,20 +23847,21 @@ SHA512: 6084a340197b84f9c0d4d1dae43c19b153380fce5c6e3d6d318228704e227e11a84de4a1
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51592
+Package: llama-cpp-backend-opencl
+Installed-Size: 652
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6213-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6213-0_x86_64.deb
-Size: 7195132
-MD5sum: 4d3fb47be87a415bf62b0969ef964d68
-SHA1: c5b0622f727d606d6b77b02a3ded32c3ae40330a
-SHA256: 3b025a46cfd47beb79a4ee8833be915640d37d76a36255ff1aace5b3b5b88d62
-SHA512: b00fd5ddc4844f06c34f7441a57e781b48ba49e24fab8a7da2c2edc885989f68082145147c032a19a1521a1fb035b505148442c36022927b5c67c75866b372c1
-Description: LLM inference in C/C++
+Version: 0.0.0-b6218-0
+Depends: llama-cpp (= 0.0.0-b6218-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6218-0_x86_64.deb
+Size: 114744
+MD5sum: 7a487d2dd34242ed7245fa3cd93603ce
+SHA1: 5c27ef83a6e2e1fafd20663d4e5c3489104628aa
+SHA256: 9bf64a6de0b1cc8d4a6322d4e887d073581a05aa82092ef6181a3895df71a35e
+SHA512: a00c8d94531e13177062cc5dd4584fb3ca667bdd555fc1d66d9a833b297faf01e1ef632b64166bf1fa978d291468eef7fc08abd02fa0cb47657e1245c1e1d6ca
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23866,21 +23881,21 @@ SHA512: b3479f31cfa88e86d5f81a7aaaf516a6d75dd9fac1fb6bd93e072e3ee2a432f70a888d48
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 652
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15608
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6213-0
-Depends: llama-cpp (= 0.0.0-b6213-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6213-0_x86_64.deb
-Size: 114696
-MD5sum: 80259abe2ce61a9a0c3d890cca9be8f1
-SHA1: 135e87de7aee456ff334d322c481add613760a12
-SHA256: 6ff6759b8192ba29c0c2a3e4d0e542d96764e24c9c5fe539705a06c0e7a37eb8
-SHA512: 083af76e647839c0c3f60077999b1bb85d6f1e5a58620fc9791bc1d66226130eb67b71a1fde7e0297c10539452789d7e94af0308576f8c7d65642aaff510831d
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6218-0
+Depends: llama-cpp (= 0.0.0-b6218-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6218-0_x86_64.deb
+Size: 1287432
+MD5sum: f6e7829a9f3510019523a1450cce5b92
+SHA1: 0af6e3fd6fab46791fd537895852aa984bb7962f
+SHA256: 98093f5f353fa73fca507564466cbafe3db2ab8c57061c6365abafb5116b8966
+SHA512: ae93fe3d7455182edf52c5a1ef7a599d0dbdf90506b9faa8df7484140b9d66019daf020285255fdbfc9bfbf86fc07e47fe385398da2e43e67b879aabdddb1cf4
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23897,23 +23912,6 @@ MD5sum: 66595c6326ebb4b2f8d036135183e730
 SHA1: be766c0ff0ffef58a85255bb124bec47e1170f09
 SHA256: 1fbf8c00123cf92c3dd25651cf7d7abdaa1748f6ed3d47e2bc485ecdb9ab6856
 SHA512: 28f4e4d8b4b698fa67db453681105d2c283977f0bb1b1d7e337772efcdb69acb039373757776560e0d24e6d04a576be420de624a83c07290b6b13e215c6bb793
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 15572
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6213-0
-Depends: llama-cpp (= 0.0.0-b6213-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6213-0_x86_64.deb
-Size: 1280872
-MD5sum: 021e3cf5dc274d3597547416d2e86b51
-SHA1: 6f09f5243c1e16a5200eabfab9ce9ceb75245e1e
-SHA256: d264ac74ad624f8f8a8994243b4bd1cf13bceafb05ed16df1006bcb0d8698d1c
-SHA512: 4e7a939bcc73c95574d052ad46d65a5d08bd83cf62830c4ed2d0302ee8afaffc24b87126317d8bd453a043482e63cea69824e34dfdcc3a14e5b0efb51e2b905c
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -34184,20 +34182,6 @@ SHA512: d9d74a572b6184546badd4c41cae857f2983135e3d09c40b0868a848d80bd956080d86c7
 Description: Self-hosted anime and manga server for sea rovers.
 Homepage: https://github.com/5rahim/seanime
 
-Package: seanime
-Installed-Size: 81628
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.9.6
-Filename: pool/main/s/seanime/seanime_2.9.6_x86_64.deb
-Size: 20387176
-MD5sum: c5c17a088de3ca0932039afd3236dc69
-SHA1: 29445b9a285d4c1325f655e78580840e51b096a2
-SHA256: cc73f45ca48840f6f2d7759304e8b60a044f8ad5e5cd73540bf9e6922d76b852
-SHA512: 1e4577183a1d749f074501fb9cafdc9eea42fb8b496e5ba0fbc81ffe6b0d2a421c98709deae8e96c94476d5281943c999673f887a96386a2c8fd95421996c2ca
-Description: Self-hosted anime and manga server for sea rovers.
-Homepage: https://github.com/5rahim/seanime
-
 Package: seccure
 Installed-Size: 108
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -39744,16 +39728,16 @@ Description: A fast and secure WebAssembly runtime
 Homepage: https://wasmer.io/
 
 Package: wasmtime
-Installed-Size: 42616
+Installed-Size: 43684
 Maintainer: @termux
 Architecture: x86_64
-Version: 35.0.0
-Filename: pool/main/w/wasmtime/wasmtime_35.0.0_x86_64.deb
-Size: 8312584
-MD5sum: d37ea84248e4f66969b92e9567a8c720
-SHA1: 2123374cdb914e360478cd1c40d7ff4a4d23bd4c
-SHA256: 7c5dcff160f59a6a42967ed8c4bad0f269cfe4efbb15b69dd560fccb9a3d94f6
-SHA512: 67b3c9c772cc0d4dc31fb4f47a46b02371bfe266f5cf138119c05e991f51c41be47d97d51e549edb2722d750f3f133658b39036dbdd82d47bd3686fe1301041a
+Version: 36.0.0
+Filename: pool/main/w/wasmtime/wasmtime_36.0.0_x86_64.deb
+Size: 8568528
+MD5sum: bdbbfee29a790502f7bdba4e48348b1d
+SHA1: ea9a6e45be52cf0b9a487ad21245456b6dfc3001
+SHA256: e7fde1a06b13d6ab23ee4238523b633544c58dbfd5200fde1bef89cf20fdfce6
+SHA512: e97b5a6a512d5b9b19c936fdec2f3882d79670f4690d23587bfeadc450f9fef3be61a2cffa0aff8a1c7eaf2c6b9f01b3730272af83669ce02fb150fa67471e80
 Description: A standalone runtime for WebAssembly
 Homepage: https://wasmtime.dev/
 
@@ -41195,6 +41179,20 @@ SHA256: 87bfaef6996264e3aebb1ed3c6d4b2245bbc4f056e70107fa7cb286a18abb1a3
 SHA512: 24ddfb2c7e857b058d9ed89eaa914708e2f3de379e8b8236048fab1761b8e88926f6d85d72c90f10f02749ed5dac0273bd8157c9c406e3dc624591665091cd73
 Description: Programmable file compressor, library and utilities. Based on the PAQ compression algorithm
 Homepage: http://mattmahoney.net/dc/zpaq.html
+
+Package: zrok
+Installed-Size: 149036
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: x86_64
+Version: 1.1.3
+Filename: pool/main/z/zrok/zrok_1.1.3_x86_64.deb
+Size: 35354276
+MD5sum: 1382e794ce2aa554fb8adb01f63e8e9a
+SHA1: 23d875817fd10cf98bf05268736ba2329df953cb
+SHA256: bb176523deb0b02a6920b8afdc8f4c3e9552d9dab172ce04e8a26e4ec98ca6d9
+SHA512: 5e24b48509dad81ac3501c3a92c4d980c3d9b0663942c3b9ffe0044c32b55559d5d23a75dcb475b18346cd769b5dde8fd4b570255f9df2ca27e46c19558874a4
+Description: An open source sharing solution built on OpenZiti.
+Homepage: https://zrok.io/
 
 Package: zrok
 Installed-Size: 148964

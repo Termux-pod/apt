@@ -5227,23 +5227,6 @@ SHA512: 193352af284598031b24cae20d852cac2c1d99515ad6c57dc0c270b685d724ddcb1dcc1b
 Description: Clients provided with BIND
 Homepage: https://www.isc.org/bind/
 
-Package: dnsutils
-Installed-Size: 6884
-Maintainer: @termux
-Architecture: aarch64
-Version: 9.20.11
-Replaces: dnsutils-dev
-Depends: cmocka, json-c, krb5, libandroid-execinfo, libandroid-glob, libcap, libnghttp2, liburcu, libuv, libxml2, openssl, readline, resolv-conf, zlib
-Breaks: dnsutils-dev
-Filename: pool/main/d/dnsutils/dnsutils_9.20.11_aarch64.deb
-Size: 1695452
-MD5sum: f799538bfcab3f947147536f56acc49d
-SHA1: dd69b94aa6f3b45a58145e558ebb00a6fcf5e579
-SHA256: 47789d216bcebafb512a886dd80904e5f405ef8082ea431b60c17f54e110539b
-SHA512: d179c69c9b8c2ddaa51bce1b2d54ded50c9da64e74034a27424f586e4acc42eeaf7a79be643f9ca3b91fd249f1c7829bd516be43c3241af552a43cb828e1c488
-Description: Clients provided with BIND
-Homepage: https://www.isc.org/bind/
-
 Package: docbook-xml
 Installed-Size: 2412
 Maintainer: @termux
@@ -8214,6 +8197,21 @@ SHA256: e9e0eeb9f3af27ec40b31904848ab8ebf70df49e883bb16c00a73a99fd65b480
 SHA512: 998074ed9b687480856e9a12a29bb9c63fbd3ffa97c5ae5d06051d79a56c0480bd261b7d46c78c4143a8c54551fc78027b636a8ab9baf6982bd46ce94cd6b787
 Description: gengetopt is a tool to write command line option parsing code for C programs
 Homepage: https://www.gnu.org/software/gengetopt/
+
+Package: geographiclib
+Installed-Size: 2796
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.5.1
+Depends: libc++
+Filename: pool/main/g/geographiclib/geographiclib_2.5.1_aarch64.deb
+Size: 491348
+MD5sum: 1a3424cf2f8b25d7fedff0163f097f85
+SHA1: 1293af4294d94c161921f40d79c042169692896f
+SHA256: 0904b52509179d1cf4071fee5bae75d00bf1ec917e393b2e130ad41dc3d351f1
+SHA512: 11215cacad09d65bcb2acd1703a3a15d28e97f1424e29089c552464718b42fcdcb4ad4b260c4fab0ba315b4f1a1a3af51758e26e6d6e3f3bb7aad9eb258f2691
+Description: Utilities and C++ library to solve some geodesic problems
+Homepage: https://geographiclib.sourceforge.io
 
 Package: geographiclib
 Installed-Size: 2796
@@ -23834,6 +23832,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 48808
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6218-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6218-0_aarch64.deb
+Size: 6705284
+MD5sum: 3caae7bf299de83dfb8d544a258c4c00
+SHA1: ad4439b7bee3518c74635a2fd01894fe1d2a2b5e
+SHA256: f6226791b21cdca830cbb444653b2ebba11d9a161f8b18d2a7e03e461bae12da
+SHA512: 1b426aa1e76190ac3940d1419c4ab30615a83a0adc28b410d050e2ec1ac26afe5d4220792c36eaee367e47f67e46f96dd89af672c160af6c2eb70ba3c13d8f4a
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 48792
 Maintainer: @termux
 Architecture: aarch64
@@ -23849,20 +23863,21 @@ SHA512: 4a1c89a799978f9caa4f76580c4bdad0bd42beb76b19b50010ff30d2c0f0efb8dce9e459
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48792
+Package: llama-cpp-backend-opencl
+Installed-Size: 628
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6213-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6213-0_aarch64.deb
-Size: 6712432
-MD5sum: d417323414fd21b8d54a2fa62bde31b5
-SHA1: 5b3f88fd63ea4334db0d7a59b2407e3aca792c14
-SHA256: 4dc2104710e311c738cf2c32fa22cc628afdc44c454c086ea6ad571f1daad33b
-SHA512: bf2488f9c32fbbfd3eddec88ce630d7d7eea74be86491b4bac917e9784b3afeefcfc211c3a504c626e7c38f6a297f9a768808f8d41d7afaa516cc2205bdb9623
-Description: LLM inference in C/C++
+Version: 0.0.0-b6218-0
+Depends: llama-cpp (= 0.0.0-b6218-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6218-0_aarch64.deb
+Size: 105224
+MD5sum: ede3aae843935e011b4637b2ab691a54
+SHA1: ac0acb7abf5f4a3a75ebfa9b167a2988b61d072f
+SHA256: 10489a53772c24626720cd3f0614ee598629433b9a68211fcfc8d4caf3387103
+SHA512: 15b55504a03e7f489eca575c5d2fea0acc6020c299c41e93e0ece15140c88a5b22c4b35994fedd4895676de04fda91fe9d881c43940cba877ef027c18c30abdd
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23882,21 +23897,21 @@ SHA512: 9afd194c271bc93754263c966bf0e1b238d8fd30e6d92f61d79413b7fe008411f4667c6b
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 628
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15360
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6213-0
-Depends: llama-cpp (= 0.0.0-b6213-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6213-0_aarch64.deb
-Size: 105236
-MD5sum: 05831de2e5b2808cfc141b79d87affd3
-SHA1: eb4f5f9c7fa791da45f4e42b35175d5cbed62d12
-SHA256: f826095f6313487c7bf52ad045d3690d028b8cab1b4cb95feaadb4410c59cbdf
-SHA512: 072b3159fda63b97f3e725d3454321e3183757f9ab9c6123ffb3cfd5f5aee7c55336d12fd8c2c3f25819c3a792b4cbec72001f0201a1f64d95e3c64dfaf7dc59
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6218-0
+Depends: llama-cpp (= 0.0.0-b6218-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6218-0_aarch64.deb
+Size: 1235660
+MD5sum: 6aeac1143a7bbca1728fe035dddf145d
+SHA1: 1aa0ba6b60ab333dca2ae4f96b8f5ae9e78642c5
+SHA256: 68af734fcf4b7ffb9de261f44d891c803dde000622b305360983c2b93b03d642
+SHA512: cb7860b49923b3fac42bd2904aa0dc359068893e3a8180c880077aab7b90ca429762be366e3b5f6987244384593b465845796f4837d3de91fcf8f18c89a977aa
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23913,23 +23928,6 @@ MD5sum: bb2d8e0400402f7f1c7b51923b2a2ad1
 SHA1: 603496ae43ea21d2a9e780c1daae431f0eb0be0c
 SHA256: fd68f20e11a98df2bc31f2b5f2586ef1015d353dfee01bcfb5ef71aa46eff8e7
 SHA512: 1c0b11f0b7625e7c8185b22c76a4b8c6f9204385baf8f3bce0afa988e6ed3cc36d53c843614dda322e4d1d96d3e3818632a7cfccfb70ad0ec72a0f5c64876d41
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 15376
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6213-0
-Depends: llama-cpp (= 0.0.0-b6213-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6213-0_aarch64.deb
-Size: 1235868
-MD5sum: 3ed0d7078d66e9dd4dd9a4a02efb955e
-SHA1: 1aa90b8f1f9eebd4fc90428d58d183904ae1f63f
-SHA256: 96be8bddf7ace0fe4663b2d8c33a9d919c244c023f3f7068b88a134fd62a86f2
-SHA512: 934530e01e06a91f2c04de0c5bebfa9086b566f0ff9659d4eb14697db9646ca3cfb9f1a4bfc2d6eece53f5c99d82d1bcd47a3f2c29c24f14243d843ed61969ee
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -34263,20 +34261,6 @@ SHA512: 54771b39a05c167732ea3e56b901743bdfeb957c36b33361fc620c06bf2b02a0ccaea8fb
 Description: Self-hosted anime and manga server for sea rovers.
 Homepage: https://github.com/5rahim/seanime
 
-Package: seanime
-Installed-Size: 78564
-Maintainer: @termux
-Architecture: aarch64
-Version: 2.9.6
-Filename: pool/main/s/seanime/seanime_2.9.6_aarch64.deb
-Size: 18387624
-MD5sum: 16221000a2e78f552c1d5ee8a020da44
-SHA1: df53252705498c24eb2426a7b7f49005b9e8c4cb
-SHA256: 07d07e012b0bf4fa8d4dc2e877caac0594d5521d3cd5e2bfcbc72ae43f6f7058
-SHA512: 95f51426323a62143c179792e01c315753df293c83071c327f0945f4df2e0745ecf6bab8ab8d70bbf22a99a8a647facf88dab3b2dd32649f8b3f4029d995c998
-Description: Self-hosted anime and manga server for sea rovers.
-Homepage: https://github.com/5rahim/seanime
-
 Package: seccure
 Installed-Size: 104
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -39808,16 +39792,16 @@ Description: A fast and secure WebAssembly runtime
 Homepage: https://wasmer.io/
 
 Package: wasmtime
-Installed-Size: 35868
+Installed-Size: 37744
 Maintainer: @termux
 Architecture: aarch64
-Version: 35.0.0
-Filename: pool/main/w/wasmtime/wasmtime_35.0.0_aarch64.deb
-Size: 6887556
-MD5sum: baa51bc1fbe3f8c21bba8ab7e3f1f93d
-SHA1: b3092570e8dbb15df4042e4dd1d36edd830c5b5d
-SHA256: 1bb51d6bee9c1b26a27b171300de477a40e3ab8667be650d49da5147cf99f003
-SHA512: 8d5f160d3a4c794ad9500c89968a54e4cef54ede2605a81d3a15af2af23edea60fcd4d76e8dab0c9f8e654383425be6273e6537bc737403676e70bdf8cae0a7b
+Version: 36.0.0
+Filename: pool/main/w/wasmtime/wasmtime_36.0.0_aarch64.deb
+Size: 7129716
+MD5sum: a6b6a2fe00747258266fad433eaa0cbe
+SHA1: f3577c1a81cc35d051dbb2338fd9e16098fe0eaf
+SHA256: 88be2ecfece940a83fa3390c442123b802de44480d5f4e12fec8f40eee319341
+SHA512: 16de01cf29d703b1075d9b387eec84e2f760291f63d392c82437af20f201d7fe07843344f2e23e707f1a0bae67df84e2820968d1e506ce19989078dad9698250
 Description: A standalone runtime for WebAssembly
 Homepage: https://wasmtime.dev/
 
@@ -41259,6 +41243,20 @@ SHA256: fa2136657bd34902e35fea998fcb7e4c652b351bf63c5ee00e451f6b637a3f55
 SHA512: d461efcbb0f28848f04c7d4bb37a45246dc799083cb06d22194baa92873f4bd7f466efc6ceaac5b7cc70b8612f61b96c5a66a0683f293eec36db90bbf0d26e53
 Description: Programmable file compressor, library and utilities. Based on the PAQ compression algorithm
 Homepage: http://mattmahoney.net/dc/zpaq.html
+
+Package: zrok
+Installed-Size: 143344
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: aarch64
+Version: 1.1.3
+Filename: pool/main/z/zrok/zrok_1.1.3_aarch64.deb
+Size: 31745680
+MD5sum: a10a5af90ced14c41ffccbfcc653881d
+SHA1: eda010065cad6884930dff33945cb398d77117bc
+SHA256: d775ba15b36346c75492004f30dc07537b00cbd6c3dda1a6e2678b7d6cde0faf
+SHA512: 92701eeffd2731efcac634028edf8d8cd2a18ef313c67b3df1abb3e558349f72d329bd0c0f87a8436a5d55459d3b9bda85885b12f0458283194c5c21e32f86d2
+Description: An open source sharing solution built on OpenZiti.
+Homepage: https://zrok.io/
 
 Package: zrok
 Installed-Size: 143272

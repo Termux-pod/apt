@@ -7656,21 +7656,6 @@ SHA512: ea2faabe9a54809bc6c26dc18e25adc7663fc183a462d3bf065a6e2f39df008e3897b9b7
 Description: Utilities and C++ library to solve some geodesic problems
 Homepage: https://geographiclib.sourceforge.io
 
-Package: geographiclib
-Installed-Size: 2232
-Maintainer: @termux
-Architecture: arm
-Version: 2.5
-Depends: libc++
-Filename: pool/main/g/geographiclib/geographiclib_2.5_arm.deb
-Size: 458712
-MD5sum: 6b69c0ed286bbd3ea8808241bc4956c9
-SHA1: 6124adb658eb8d1baf01632e86f3f1e85b29d07e
-SHA256: 7c8efeb5d99f3646896b9411a7fd1e84b016d25a12d9a2877ad16a0e70935340
-SHA512: c69f302a5ba98b9fa0283fe769462564675094ace6a51adda3de379d72b2f1c2baecbbfb6f6851b5cade24481661d33f76fe72d6ca20e3097d0c1d3cd708c9a7
-Description: Utilities and C++ library to solve some geodesic problems
-Homepage: https://geographiclib.sourceforge.io
-
 Package: geoip2-database
 Installed-Size: 71704
 Maintainer: Leonid Pliushch <leonid.pliushch@gmail.com>
@@ -9669,6 +9654,23 @@ Description: The Reliable, High Performance TCP/HTTP Load Balancer
 Homepage: https://www.haproxy.org/
 
 Package: harfbuzz
+Installed-Size: 3556
+Maintainer: @termux
+Architecture: arm
+Version: 11.4.2
+Replaces: harfbuzz-dev
+Depends: freetype, glib, libcairo, libgraphite
+Breaks: harfbuzz-dev
+Filename: pool/main/h/harfbuzz/harfbuzz_11.4.2_arm.deb
+Size: 654800
+MD5sum: 8bd35fd7a946fc6e359c0ed8ee09e8fb
+SHA1: e1437cd247149c38389f3c2cc19b7e5b5c281881
+SHA256: b7177898ad4d2fe61150b649aa16174d8c1b87533fdccc8134d1ac1e4cbe6f6c
+SHA512: 028b9e2d5e861afc54c2f1acbcedbfd743de97693e22998a6149ecaea4647447fbe7862933e47eaacc9af80fb8f7c1ec5ed4018581d4357676451d1b51c8724a
+Description: OpenType text shaping engine
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz
 Installed-Size: 3548
 Maintainer: @termux
 Architecture: arm
@@ -9689,6 +9691,23 @@ Package: harfbuzz-icu
 Installed-Size: 56
 Maintainer: @termux
 Architecture: arm
+Version: 11.4.2
+Replaces: harfbuzz (<< 7.0.0)
+Depends: libicu, harfbuzz (= 11.4.2)
+Breaks: harfbuzz (<< 7.0.0)
+Filename: pool/main/h/harfbuzz-icu/harfbuzz-icu_11.4.2_arm.deb
+Size: 4084
+MD5sum: 3382d421d04c6c3db34c8cb95be81664
+SHA1: 1e74eca66158e658eca21a615563d2ce7dfb80fb
+SHA256: 5f801d085c3ab1bf64459aafd81402f19f7c4a646dbbfec90c155d4147c5b2cf
+SHA512: 56f5e23282bed6bacba6f7ce0343c6aa7d6f17a60b1801cc154fbc609125706750f39a5fd5e277731b83b8f9bdab1b33d164e771af8fa96a93e6e91dc771cd72
+Description: OpenType text shaping engine ICU backend
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz-icu
+Installed-Size: 56
+Maintainer: @termux
+Architecture: arm
 Version: 11.4.1
 Replaces: harfbuzz (<< 7.0.0)
 Depends: libicu, harfbuzz (= 11.4.1)
@@ -9700,6 +9719,21 @@ SHA1: b4da6032cc4dcc8cce584d7701e7df1ad8ae7482
 SHA256: 635d0e71991fe1a49e2f457a42000cf3ed440f70aad6a1e5062fb0541b5432cd
 SHA512: c93fd98cb71b92b950111bd929ac60925574490cc0a8381496d79980ab1e21667597820d346caef47ef7ee1d5529f64c900982520dce6bb13ba9cc4cd07a0a0d
 Description: OpenType text shaping engine ICU backend
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz-utils
+Installed-Size: 208
+Maintainer: @termux
+Architecture: arm
+Version: 11.4.2
+Depends: harfbuzz (= 11.4.2)
+Filename: pool/main/h/harfbuzz-utils/harfbuzz-utils_11.4.2_arm.deb
+Size: 51552
+MD5sum: 8cfce284b6010eda64b613a286d80bb1
+SHA1: 4f94574ddf0fc8f05cdb6f38035c1943a775c2a0
+SHA256: 5e7eba4a0df2d120328023e1fc4a7570b0a9014fa8628ceeda8a40650a408196
+SHA512: bea6e2f234df58c321f4fa7583fede7df7bb799bab523c76f54ca39269de620f97e7758022eec1eb7ef90bfcb0a788052435ce5ccd5cad97110d11635a8d2181
+Description: Tools using the harfbuzz library
 Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
 
 Package: harfbuzz-utils
@@ -23717,18 +23751,18 @@ Description: CLI tool to download videos from various websites
 Homepage: https://github.com/iawia002/lux
 
 Package: lux-cli
-Installed-Size: 12916
+Installed-Size: 15976
 Maintainer: @termux
 Architecture: arm
-Version: 0.15.0
+Version: 0.15.4
 Provides: lx
 Depends: bzip2, gpgme, libgit2, libgpg-error, lua54, openssl, xz-utils
-Filename: pool/main/l/lux-cli/lux-cli_0.15.0_arm.deb
-Size: 5697580
-MD5sum: b5ab9ba28b8f32bdc36043864d247661
-SHA1: c22b4b8f6c400b8888bebb10cf888940353698eb
-SHA256: e77f8df5d9a635f83fa4098b0d88c7a6e32e5fe377897d1e699473b2330f8c7b
-SHA512: c8e36b24663b3c185e5695100af0e20ed244b88426e3015ae00104ae9894b4634bfd41b54f82f58334f806d4ec12bce0b13e4bffa6412180a6452e5f21232e12
+Filename: pool/main/l/lux-cli/lux-cli_0.15.4_arm.deb
+Size: 7194668
+MD5sum: 721ba436e89d24e200d731ca8801eaba
+SHA1: ed63a585eaa7c46a238c497d5328499952ccb5c1
+SHA256: 1f70fe1d45f650d9c7597091483bf0ca4c6c3dad95314351d844edf89c7be8c6
+SHA512: c0facf457d5e3bf9fcfc776b3522d2ca1f1d71f50e13f1c796131194c0a696be12168dac41202a3ae0bea382cb8419f8009596ab120f437ac37a77a03b2a7124
 Description: A package manager for Lua, similar to luarocks
 Homepage: https://nvim-neorocks.github.io/
 
@@ -33599,6 +33633,20 @@ Package: sing-box
 Installed-Size: 30524
 Maintainer: kay9925@outlook.com
 Architecture: arm
+Version: 1.12.3
+Filename: pool/main/s/sing-box/sing-box_1.12.3_arm.deb
+Size: 7655080
+MD5sum: 28cbd10c46fa986a23daf4d8b2a7b849
+SHA1: dd3b789fc243591956337c59dc4118f2480ca6f7
+SHA256: c6d3e522d6cb41dfac15ffef1f6fb1267e1dad857fa3c3a9837aa8474f4440a0
+SHA512: 38c4e5226971226565bdc97eb35c2a3c18a9be9deaadc2c7d00329e94c290b4b094c762e8f29cd9a75aa60ebb12beb34eb1de00b62d88eb75ed7b2a3e17a292d
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
+
+Package: sing-box
+Installed-Size: 30524
+Maintainer: kay9925@outlook.com
+Architecture: arm
 Version: 1.12.2
 Filename: pool/main/s/sing-box/sing-box_1.12.2_arm.deb
 Size: 7657236
@@ -35515,6 +35563,20 @@ SHA256: 2250d313b20ac63372c305d0e7c4037f7954f79a104c4e49e248e34f6623810c
 SHA512: 3b8faa20c509e9b6a96d7732d06ef54f33b8b04aeb5c6fd842e23f55efa6119f2cced15b506680f15c6c40c789625d3620d74d29af88f8b0c33cab3997f9b028
 Description: Telegram messenger CLI
 Homepage: https://github.com/vysheng/tg
+
+Package: teleport-tsh
+Installed-Size: 119620
+Maintainer: @termux
+Architecture: arm
+Version: 18.1.6
+Filename: pool/main/t/teleport-tsh/teleport-tsh_18.1.6_arm.deb
+Size: 21632652
+MD5sum: 834fbef3b14b75082d7de84680a679c6
+SHA1: dbf1733d7758a644c8a282159c06393bc7cc3e87
+SHA256: ac293e9f5ba577300b4f8ea589a13b69b1a5abd026f07fa7ecc389b8164effe2
+SHA512: c428ed4f95c308549ce3c0c3904a6afc4759b72f4efb212926a0093ceaf40fb902ba9cd2c1020fd9e79f5bbc4f8fd935064210319035407cbbd86aab8c2476de
+Description: Secure Access for Developers that doesn't get in the way
+Homepage: https://github.com/gravitational/teleport
 
 Package: teleport-tsh
 Installed-Size: 119480
@@ -39985,20 +40047,6 @@ MD5sum: 51f948fe26cee9d8eb6debb1dc9b01c1
 SHA1: 71e98512e03744276c436010a0dd8a7eb996f348
 SHA256: 0ef0edb42bcb2f1de39299af5920d71c002a8403946280f0e7e5e1df9d44204c
 SHA512: 76916f400a6c4d71fbc7660da6e7e75a061f140a061718d76ccddd67825299385a4c40647a7014a56f2adc236cc1700d580f2145093e26ac64c60249ec3272aa
-Description: An open source sharing solution built on OpenZiti.
-Homepage: https://zrok.io/
-
-Package: zrok
-Installed-Size: 135872
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: arm
-Version: 1.1.2
-Filename: pool/main/z/zrok/zrok_1.1.2_arm.deb
-Size: 32423276
-MD5sum: ee53ed824bf9b8fd9d65aac64562f8af
-SHA1: 07088759a2be339e2882cba212c0839cbc34fa5d
-SHA256: d083e947590bde87f6f249166fa2dc616b5f33d9d5a9b353ac8c9626981b1daf
-SHA512: 782abebc680f4c5a4fa7bab85f9d37a5fbce16eb9ea2390418cbec2d59a40b49db30c7129608ff6a9730d112f686b0e17f927453089228fef0c3a7fbf51053d3
 Description: An open source sharing solution built on OpenZiti.
 Homepage: https://zrok.io/
 

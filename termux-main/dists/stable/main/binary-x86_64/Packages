@@ -2843,6 +2843,20 @@ Description: A command-line WebDAV client for Unix
 Homepage: https://notroj.github.io/cadaver/
 
 Package: caddy
+Installed-Size: 54436
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.10.1
+Filename: pool/main/c/caddy/caddy_2.10.1_x86_64.deb
+Size: 12789320
+MD5sum: b0623ce1ed10be3ba5abbcb59cdc3203
+SHA1: 57140a409703e59192ce88099730b71599531c71
+SHA256: 1ef16d5c45812700a3d08e6391dfb373cf439a05034a34afe3518a1dd41c7426
+SHA512: 24ffb55c23e2af53a16f22fa912e91971cdf7dd8bbaea16dfe9c388013e69221dfdfbbfb9dc23964a77466e6f517f5ee1cd3820df2259eeffdb812483e216a2e
+Description: Fast, cross-platform HTTP/2 web server
+Homepage: https://caddyserver.com/
+
+Package: caddy
 Installed-Size: 49784
 Maintainer: @termux
 Architecture: x86_64
@@ -18751,6 +18765,21 @@ Package: libnss
 Installed-Size: 9580
 Maintainer: @termux
 Architecture: x86_64
+Version: 3.115.1
+Depends: libnspr, libsqlite
+Filename: pool/main/libn/libnss/libnss_3.115.1_x86_64.deb
+Size: 1968464
+MD5sum: cac9d2eae95d7462afcde0a4e2ebc788
+SHA1: 53dd454fa1f8a571045cfa9eb46e35035a501087
+SHA256: 63cb02dbcf9df4bbef6c29f1c6d83aed6e671044cd4ddf7c6e6d75af989754d2
+SHA512: b947631765bea10220564939d7492d5152f1851c88d61bae0524b0d5720a901cabaea949f8033489dae676e40d1ab1e242499a6d4721d6b7ddb062b13e09dc55
+Description: Network Security Services (NSS)
+Homepage: https://firefox-source-docs.mozilla.org/security/nss/
+
+Package: libnss
+Installed-Size: 9580
+Maintainer: @termux
+Architecture: x86_64
 Version: 3.115
 Depends: libnspr, libsqlite
 Filename: pool/main/libn/libnss/libnss_3.115_x86_64.deb
@@ -23801,6 +23830,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 51744
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6248-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6248-0_x86_64.deb
+Size: 7190692
+MD5sum: af28c57a427391666320f25b7dca2a2a
+SHA1: ff5fa48a06ec745af3c288dff95b095f133542ca
+SHA256: bb340485b48e057a4415da7270f10d32d9a045b12d761e80ac9afb6d158a9318
+SHA512: 9278309ba3fdcad88843d2ac05c45b65292216c24287fcf33810240789a199b9138b1dfdcf7d454be4605e55312ad7373a021494cae5393907ebc56cd95e4911
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 51624
 Maintainer: @termux
 Architecture: x86_64
@@ -23816,20 +23861,21 @@ SHA512: 2790d0f5bba17581f0a3f7fd16262a0827a7ec0e0ee0c5a66ce47c215eb96e46d4eacb6c
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51628
+Package: llama-cpp-backend-opencl
+Installed-Size: 652
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6240-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6240-0_x86_64.deb
-Size: 7168192
-MD5sum: 3dde575e5a4a333c88c649eeca7e0a2b
-SHA1: bd58c8250c7726d08f2fd64fb3273dc5f48c1a6b
-SHA256: 7ccef89193ffb14c4212b15d46f70fe278038736c9b773e25fa95021eee898c4
-SHA512: e0a2cf48d2d630554ab89985218953841b668f1bc1b6888303a8993871924a727ad998970fcf688ab8bf978d63c966c8e3e1f50ea64987e9beb4bf97fc125076
-Description: LLM inference in C/C++
+Version: 0.0.0-b6248-0
+Depends: llama-cpp (= 0.0.0-b6248-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6248-0_x86_64.deb
+Size: 114692
+MD5sum: b2e7f99203a1f3e1f42c2437069739d8
+SHA1: 2721f4daf06da9e5c35be6cab37b3bbf225a83fa
+SHA256: a7b27e1238434899d5d29d4e0557b59d0d57d8c539e9afe17db678c56e9b72cd
+SHA512: 66ddec6728d3894320820211a4b35f3c0e5b1b1af8cba5a1cbec37b963ca98bdfc9499bac5724b80e79eba5c67c7b533b9fe68544dfb14efbbb00c762041945d
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23849,21 +23895,21 @@ SHA512: aad99493a49692723d0a29a41ea6b7a0ca46cb48a4d3965e9f2f10153d8b84b2fc249567
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 652
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15620
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6240-0
-Depends: llama-cpp (= 0.0.0-b6240-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6240-0_x86_64.deb
-Size: 114708
-MD5sum: 6d559160013f98c59217a64ee83c2858
-SHA1: 806cf1c195d209ba225387716814179b7ca9be98
-SHA256: f771d0967469f0f8dd5456b4060e93095aed397e30ee32ec7016ec489cde624b
-SHA512: ed7d9b2563dba7535093cb7895a75f15f1fb7979491190c173e045f92ab33260012c5c14f25d21770865da912b79e9787b65822efdaa4a9811d9a015ede1af27
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6248-0
+Depends: llama-cpp (= 0.0.0-b6248-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6248-0_x86_64.deb
+Size: 1284880
+MD5sum: e0fb57b4ff0f1450303a80d003f5bc7b
+SHA1: c018c1c90b0a0a5c22a1c62874bd002d45715596
+SHA256: 24d0aed8d3686b9fbabe0b3dc42bb120ae31f8625a52bb6e0d4ec84b73c321fd
+SHA512: 65899b4b8b310be0b57366ddb8c299a88139d65d1814cb9f8c32b86d7084d4c5d52294953706ed958ef28081a01cbfae6d4a2519bed5e05ca75d7d866c3af50e
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23880,23 +23926,6 @@ MD5sum: 79c3f00539b005bf7a0cdd7054975ad2
 SHA1: 1c7fb9eed76f1ab2588baf4af8365ce348251d3d
 SHA256: 94253efca3c0e0b0b05c364f475da4500655ece8a7fb0181369ae77a01057a71
 SHA512: cef635b1f77841d0c6ea1276ed182718e6b32c9843f1f72ca06af8563dba8dcb87e2159b557848e9fe03d0d322b4ae12f549b6d4c068e09d1cc984057801d3ec
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 15620
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6240-0
-Depends: llama-cpp (= 0.0.0-b6240-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6240-0_x86_64.deb
-Size: 1284140
-MD5sum: 2759c14f7a7d737f60a65aebc5395376
-SHA1: 6ccb11afe6e061ef68cc748b4262719de75fc27f
-SHA256: 58eb83108cc5305494e199d0c8b79d53d9fe53cfa68f0032c8fd51249074674f
-SHA512: ce4cdae9b6b050de76895a4c12182ee2825023c6edd75f7c9b490185db4b2a65498aa89a64c5b5d7885feb491134c65e818f768870461f8062e688ea5f6085ba
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -27770,6 +27799,21 @@ Package: nss-utils
 Installed-Size: 7908
 Maintainer: @termux
 Architecture: x86_64
+Version: 3.115.1
+Depends: zlib, libnss (= 3.115.1)
+Filename: pool/main/n/nss-utils/nss-utils_3.115.1_x86_64.deb
+Size: 1454624
+MD5sum: 00fa8d1acf18f7c21d0c3c88da730b42
+SHA1: 08473147c1023a3dc42287fafa6ceca582083b2f
+SHA256: 174a2bc80a709fcad162d68c1d92c5d43042794e98aaaa2ea846d9604b368121
+SHA512: cc35911468684d67010b3cd5cf8ec1df2f5afd64e530b54bdbe775da41853822557992c201931670798ce39b7e602f17961306dc2cd518ee76a238efb211835d
+Description: Tools for NSS
+Homepage: https://firefox-source-docs.mozilla.org/security/nss/
+
+Package: nss-utils
+Installed-Size: 7908
+Maintainer: @termux
+Architecture: x86_64
 Version: 3.115
 Depends: zlib, libnss (= 3.115)
 Filename: pool/main/n/nss-utils/nss-utils_3.115_x86_64.deb
@@ -30737,23 +30781,6 @@ SHA512: 2665c3da7eb62fca1ed0b2e7e9dc2d7aee4878a016bcf2f5242d933cdcbb2c7a7ce14e4a
 Description: Profanity is a console based XMPP client written in C using ncurses and libstrophe, inspired by Irssi
 Homepage: https://profanity-im.github.io
 
-Package: profanity
-Installed-Size: 2120
-Maintainer: Oliver Schmidhauser @Neo-Oli
-Architecture: x86_64
-Version: 0.15.0
-Replaces: profanity-dev
-Depends: glib, gpgme, libandroid-support, libassuan, libcurl, libgcrypt, libgpg-error, libotr, libsignal-protocol-c, libsqlite, libstrophe, ncurses, python, readline
-Breaks: profanity-dev
-Filename: pool/main/p/profanity/profanity_0.15.0_x86_64.deb
-Size: 430088
-MD5sum: 505243a5e78f4feed4a1e92bcffac740
-SHA1: 2616d2f881bd10897b08ac0984fcd39930210a0e
-SHA256: 06858f8a3cf4b19e2da088bc12c4f66470b17d9e9ff1449a0b63d83b3345f8ce
-SHA512: 7263cacc8bb76d5bad28ba2092edb87a76e9ac31bb9a0b2aa7137c5e9b75ceb8f71be50294919c67dad5c558bde2cbdf877d0a0a390afc0d7447d938da2ab558
-Description: Profanity is a console based XMPP client written in C using ncurses and libstrophe, inspired by Irssi
-Homepage: https://profanity-im.github.io
-
 Package: progress
 Installed-Size: 88
 Maintainer: @termux
@@ -31457,21 +31484,6 @@ MD5sum: 18190737d6dc1bd380ab8d91437340dd
 SHA1: 6c93b9642dfca5418eab325bf72c7a4885171f60
 SHA256: 894e7fdb626c7c0b8259047587a515ee93e0b7cb36e26ab48251a66239801d58
 SHA512: 91554167d4521ccfc870439577c3123f7156f35c7a392121e3ee03c9d431f259ae51a38b649917796d71e060cd1249fe29331ea004646aa9fbc020e79164590b
-Description: Python binding for the libxml2 and libxslt libraries
-Homepage: https://github.com/lxml/lxml
-
-Package: python-lxml
-Installed-Size: 5172
-Maintainer: @termux
-Architecture: x86_64
-Version: 6.0.0
-Depends: libxml2, libxslt, python, python-pip
-Filename: pool/main/p/python-lxml/python-lxml_6.0.0_x86_64.deb
-Size: 1132008
-MD5sum: 74622ca71a60a7e2b91f91cb938a6e8f
-SHA1: c51d58c225da80cb4159bb13f793cb6eac8c0602
-SHA256: 4082459007db1fb378b2c323a5e452986a25252126697aebf0c9f59c89d1f686
-SHA512: ca78abe10d1eaf453a3c200f3279085410ce78a14fe8f0245a8da0802e0f83223be77dd045a14c09eaf211175dade484512b2d11374c851f7f8650d6bd93a6d0
 Description: Python binding for the libxml2 and libxslt libraries
 Homepage: https://github.com/lxml/lxml
 
@@ -32649,6 +32661,20 @@ Description: An alternative implementation of the plan 9 rc shell
 Homepage: https://github.com/rakitzis/rc
 
 Package: rclone
+Installed-Size: 98636
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.71.0
+Filename: pool/main/r/rclone/rclone_1.71.0_x86_64.deb
+Size: 22809644
+MD5sum: 3bccbb39f64b67e7579ea55899a071be
+SHA1: b6190bdb2cc2b09b4adafdd0ab268a3ffe075ddd
+SHA256: 050948dc680a56c9fb36ded996e87fbfbec8256b4f9fa4abe16f853461fcbef1
+SHA512: 4c478213f4163e89c0c9f0362e03177edf412c87ed8ce39b5c98cd0b88f9369792a55328860ec5cf0356603ae9a91d7b3727cd0b6fd208f3d23f4e9d7eb540e5
+Description: rsync for cloud storage
+Homepage: https://rclone.org/
+
+Package: rclone
 Installed-Size: 96872
 Maintainer: @termux
 Architecture: x86_64
@@ -33213,21 +33239,6 @@ MD5sum: 174e5a7d81d10180fb2514d12d08a2a9
 SHA1: 33dcd273915e0e7dadffabdab34f3f07ffb2b055
 SHA256: c18d71aac69f9e8adae70b550397ddc9f07ece8a9b2c0bf598a70d6599c1ee8b
 SHA512: be4ef2675d240641cd8ae5ecf519044d1132c15031d96259313d30d0bed186ef9e950c5f6a7e2e2d5b3ae6ea98a02da5b9e045da3bd4561fbae6e22110ef0224
-Description: Wrapper using readline to enable editing of keyboard input for commands
-Homepage: https://github.com/hanslub42/rlwrap
-
-Package: rlwrap
-Installed-Size: 420
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.47
-Depends: ncurses, readline
-Filename: pool/main/r/rlwrap/rlwrap_0.47_x86_64.deb
-Size: 97120
-MD5sum: e433a39d8071c1531721ed7700317c4a
-SHA1: fa715e5a0c8c4cb40a45fb6eebe9700e9b29873b
-SHA256: efd4ddedec1131576ccd293ff2bd71eb51ee6adf42c2e6a921ab2b756709b4b1
-SHA512: 6ed3904880fe73291e1ab887c2ed0734efd1b5ace21e2e04f903dd7361edeb57c99c08c594cb3bbf5ab0c2b96293d606f06ba8506641c392bd65de8365a3c8ce
 Description: Wrapper using readline to enable editing of keyboard input for commands
 Homepage: https://github.com/hanslub42/rlwrap
 
@@ -36334,20 +36345,6 @@ SHA512: 8809db95a0310f23fc01daf28c5905eedd613f038cc45ddd67fdb16a5b3e44bf27cbb267
 Description: Decentralized file synchronization
 Homepage: https://syncthing.net/
 
-Package: syncthing
-Installed-Size: 28076
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.0.2
-Filename: pool/main/s/syncthing/syncthing_2.0.2_x86_64.deb
-Size: 9041008
-MD5sum: 1a5cd0537c8772326f2e113b6e07db68
-SHA1: 6271ffb4e4736f5918e24b63bfd4087fe6dd6b57
-SHA256: 0fc6939288c24658e60de4910744dfa1e1033f8727630d1c511a5a93556d4754
-SHA512: e5e63ad7d50908459f6bc1a56702f685df27de66cb2dd901c000c190698120ecfecfaa6379696cc32e60697b601d5f83d2a85bb37d98a6a3cddb502f7642fb42
-Description: Decentralized file synchronization
-Homepage: https://syncthing.net/
-
 Package: sysprop
 Installed-Size: 404
 Maintainer: @termux
@@ -36566,13 +36563,13 @@ Package: tdl
 Installed-Size: 48732
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.19.1
-Filename: pool/main/t/tdl/tdl_0.19.1_x86_64.deb
-Size: 8963880
-MD5sum: 0581a1f9eb59e0bbd834144a314e25f6
-SHA1: dc3109b3672f3c808fe8065b5bae816752d544b2
-SHA256: 8fcbb32b884a5acc2bf572b5352394c26e2e1784aa82af5636edc92efcfe72ba
-SHA512: 0049935515a0094e8259bc2c9547e077d1e4f5c6c923ca2edb888aa8d2f029045aa707a7c929bb0564e695e583ad687bd899d327a4801a1c890b55a38b4a44be
+Version: 0.19.1-1
+Filename: pool/main/t/tdl/tdl_0.19.1-1_x86_64.deb
+Size: 8977184
+MD5sum: 5086d30a3d3c877a76b761d160d34058
+SHA1: 018c66008c3e856190e86a9f3e01de805a78c1b6
+SHA256: b712e8b1398ece1db2318e20ff5a0fd18ef5e3c6b3a519c5cda43dce1fefc12a
+SHA512: d5cfbf1082b641ad9598e8ff143b91ca6dab0d8500307afbb42ffd43432a6634e50b0671dea894510f0dad9b4c3323e76e74acd121606b8b9bace3228b696ca7
 Description: Telegram downloader/tools written in Golang
 Homepage: https://docs.iyear.me/tdl/
 
@@ -39446,6 +39443,21 @@ SHA256: e29a942591cd5dbdd07b116be1a7e022caa26962b98ed2a74a17493c752ba7bb
 SHA512: 35f49cbe436eb7b46eb17d47c8e6f9aa5107484c236664336ec8e9f65034be98310250492fdc3350c0cc8c86a64fdc4fd1d9ff5d472754d138364298a55a6d87
 Description: Ogg Vorbis tools
 Homepage: https://github.com/xiph/vorbis-tools
+
+Package: vtm
+Installed-Size: 6208
+Maintainer: @termux
+Architecture: x86_64
+Version: 2025.08.23
+Depends: libc++
+Filename: pool/main/v/vtm/vtm_2025.08.23_x86_64.deb
+Size: 1279284
+MD5sum: c3cf4c5a22f37a165290521ff9e28bb8
+SHA1: 521c93d5423186d261bf64a6cc95d399c84c6925
+SHA256: 770b4b040a8f0c8c17cab4bacc6efdd7a8f27be4d519daeb5a1d57301e0a9623
+SHA512: 4307948984096b60e05e6cd07aff4dd9282207660c52af8b5c870cd9db84c6db37c6cd4b73970993f02c50f7e4c0e4823525773d45f6accc194b3f4a4a7b9901
+Description: Terminal multiplexer with TUI window manager and multi-party session sharing
+Homepage: https://github.com/directvt/vtm
 
 Package: vtm
 Installed-Size: 6212

@@ -11655,21 +11655,6 @@ SHA512: df401539be195a201b913f44e1b4601ad77168d36db1628c2cd6449750aae9a4a59b61d7
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
-Package: jackett
-Installed-Size: 14292
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.2319
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2319_x86_64.deb
-Size: 3198232
-MD5sum: ef1b64eea617e95445eb22fe6927e17c
-SHA1: 6184251a6de0ded8594e7cd412134c0710cb0d2a
-SHA256: 1bed0270843f9c14dd336335641014bc9f5b90d965a6077537aa6ccd021c7242
-SHA512: a563320f45014830a8ae824264ec0f63cc30cb08af8faa0010deb5bc54058d56ca0812527b53ad54fa7ef1e87d250e57e787755d723dc8f3d2a1c0785c828199
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
 Package: jadx
 Installed-Size: 125648
 Maintainer: @termux
@@ -23816,6 +23801,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 51624
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6246-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6246-0_x86_64.deb
+Size: 7189828
+MD5sum: cd0d1268f5876641cbeed861b85154da
+SHA1: 107093d735ca94e2f3c9ed021fe2cbac429ddf16
+SHA256: 63c43a0be31fb61d92be4fd0990fa39b49d444bdad029b4486e689c8001d5ae2
+SHA512: 2790d0f5bba17581f0a3f7fd16262a0827a7ec0e0ee0c5a66ce47c215eb96e46d4eacb6ccf09f0a4c84015db6d64a7bb859a38d185a2dc9058aaeeb5f62f4eda
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 51628
 Maintainer: @termux
 Architecture: x86_64
@@ -23835,6 +23836,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 652
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b6246-0
+Depends: llama-cpp (= 0.0.0-b6246-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6246-0_x86_64.deb
+Size: 114716
+MD5sum: 43de28ba7689dd1336e0248bf5b80b5b
+SHA1: 5b8b23c940c2524492ff059b3bf355e02fea0c9d
+SHA256: 469802d10bd7dc3f69df4541d5b87456ae4cf1ba9ff2183e1fff41678762750f
+SHA512: aad99493a49692723d0a29a41ea6b7a0ca46cb48a4d3965e9f2f10153d8b84b2fc249567837326ac9b50330a29993895afaca4f982aa5b1b8d0e066977cf935a
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 652
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b6240-0
 Depends: llama-cpp (= 0.0.0-b6240-0)
 Recommends: ocl-icd
@@ -23846,6 +23864,23 @@ SHA1: 806cf1c195d209ba225387716814179b7ca9be98
 SHA256: f771d0967469f0f8dd5456b4060e93095aed397e30ee32ec7016ec489cde624b
 SHA512: ed7d9b2563dba7535093cb7895a75f15f1fb7979491190c173e045f92ab33260012c5c14f25d21770865da912b79e9787b65822efdaa4a9811d9a015ede1af27
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15620
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6246-0
+Depends: llama-cpp (= 0.0.0-b6246-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6246-0_x86_64.deb
+Size: 1284740
+MD5sum: 79c3f00539b005bf7a0cdd7054975ad2
+SHA1: 1c7fb9eed76f1ab2588baf4af8365ce348251d3d
+SHA256: 94253efca3c0e0b0b05c364f475da4500655ece8a7fb0181369ae77a01057a71
+SHA512: cef635b1f77841d0c6ea1276ed182718e6b32c9843f1f72ca06af8563dba8dcb87e2159b557848e9fe03d0d322b4ae12f549b6d4c068e09d1cc984057801d3ec
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -30686,6 +30721,23 @@ Description: A standalone front-end for the Java decompiler in Procyon Compiler 
 Homepage: https://github.com/mstrobel/procyon
 
 Package: profanity
+Installed-Size: 2084
+Maintainer: Oliver Schmidhauser @Neo-Oli
+Architecture: x86_64
+Version: 0.15.1
+Replaces: profanity-dev
+Depends: glib, gpgme, libandroid-support, libassuan, libcurl, libgcrypt, libgpg-error, libotr, libsignal-protocol-c, libsqlite, libstrophe, ncurses, python, readline
+Breaks: profanity-dev
+Filename: pool/main/p/profanity/profanity_0.15.1_x86_64.deb
+Size: 419752
+MD5sum: 32953aedf2b9d857692af6067ada007a
+SHA1: ff1d35cef706403b4857666b8a8bf15355e30c93
+SHA256: dbfaa9851f688dbdbc9477549112a3f14818eec43d8240ea2c49df75863387f1
+SHA512: 2665c3da7eb62fca1ed0b2e7e9dc2d7aee4878a016bcf2f5242d933cdcbb2c7a7ce14e4a4e359c6e10c9f16cc9d1982f9ad5f94601d820bb7df83e540031b9e0
+Description: Profanity is a console based XMPP client written in C using ncurses and libstrophe, inspired by Irssi
+Homepage: https://profanity-im.github.io
+
+Package: profanity
 Installed-Size: 2120
 Maintainer: Oliver Schmidhauser @Neo-Oli
 Architecture: x86_64
@@ -31392,6 +31444,21 @@ SHA256: a4672079640bc00b38348e55364b7f3fc9cec0601aa6317eaae806ef1094ed8b
 SHA512: f37d8281ef42bef2963dc2703a157331c7d16933836416ab163866a287c36ed288a189842f695aa30a464e62d634b1a9e2451beb84ce61d6b2ea8912b684e4ba
 Description: A lightweight LLVM python binding for writing JIT compilers
 Homepage: https://llvmlite.pydata.org/
+
+Package: python-lxml
+Installed-Size: 5116
+Maintainer: @termux
+Architecture: x86_64
+Version: 6.0.1
+Depends: libxml2, libxslt, python, python-pip
+Filename: pool/main/p/python-lxml/python-lxml_6.0.1_x86_64.deb
+Size: 1118128
+MD5sum: 18190737d6dc1bd380ab8d91437340dd
+SHA1: 6c93b9642dfca5418eab325bf72c7a4885171f60
+SHA256: 894e7fdb626c7c0b8259047587a515ee93e0b7cb36e26ab48251a66239801d58
+SHA512: 91554167d4521ccfc870439577c3123f7156f35c7a392121e3ee03c9d431f259ae51a38b649917796d71e060cd1249fe29331ea004646aa9fbc020e79164590b
+Description: Python binding for the libxml2 and libxslt libraries
+Homepage: https://github.com/lxml/lxml
 
 Package: python-lxml
 Installed-Size: 5172
@@ -33133,6 +33200,21 @@ SHA256: df229329d4b09cd5f57736ad8fbf520b496976bc241507b1fdce39d2d8bae21d
 SHA512: 43b66020d916b2981e00341f43b60d0b969435765d8969fcd51891486b70908986cda0c954f8ab1bbed1983a05dc6569d150ad11ddd4159c3ec4b33c9617a066
 Description: UNIX-like reverse engineering framework and command-line toolset.
 Homepage: https://rizin.re
+
+Package: rlwrap
+Installed-Size: 420
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.47.1
+Depends: ncurses, readline
+Filename: pool/main/r/rlwrap/rlwrap_0.47.1_x86_64.deb
+Size: 97148
+MD5sum: 174e5a7d81d10180fb2514d12d08a2a9
+SHA1: 33dcd273915e0e7dadffabdab34f3f07ffb2b055
+SHA256: c18d71aac69f9e8adae70b550397ddc9f07ece8a9b2c0bf598a70d6599c1ee8b
+SHA512: be4ef2675d240641cd8ae5ecf519044d1132c15031d96259313d30d0bed186ef9e950c5f6a7e2e2d5b3ae6ea98a02da5b9e045da3bd4561fbae6e22110ef0224
+Description: Wrapper using readline to enable editing of keyboard input for commands
+Homepage: https://github.com/hanslub42/rlwrap
 
 Package: rlwrap
 Installed-Size: 420
@@ -36237,6 +36319,20 @@ SHA256: 4e54348b04f909918c928dd08021c59ef2634de90145c59919bb0201206e371c
 SHA512: 1688936b41691aaec522377787ea58e52d939dbac5e0364233e8b94efc60c25601b39441ee6944301d4cfe42673ec03c36cc1e3a68ba43a086eb2fa55facc65b
 Description: Static libraries for swtpm
 Homepage: https://github.com/stefanberger/swtpm
+
+Package: syncthing
+Installed-Size: 28088
+Maintainer: @termux
+Architecture: x86_64
+Version: 2.0.3
+Filename: pool/main/s/syncthing/syncthing_2.0.3_x86_64.deb
+Size: 9050312
+MD5sum: f8c34d52baf06e30192b4ab54d341e86
+SHA1: fe1669e09dd48ae9dfe16bf6bae6b78fb0881458
+SHA256: 16949af77f873e1f0d6f8989bf250db4fc1b4b9c7c7cf6d845d38aebb7171fd3
+SHA512: 8809db95a0310f23fc01daf28c5905eedd613f038cc45ddd67fdb16a5b3e44bf27cbb26754f838a20176aba0ae8f16baed4bca061ea079defbb1d9b4b271320a
+Description: Decentralized file synchronization
+Homepage: https://syncthing.net/
 
 Package: syncthing
 Installed-Size: 28076

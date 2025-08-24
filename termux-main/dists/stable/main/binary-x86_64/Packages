@@ -11457,6 +11457,21 @@ Description: Utilities for controlling networking
 Homepage: https://wiki.linuxfoundation.org/networking/iproute2
 
 Package: ipv6calc
+Installed-Size: 6324
+Maintainer: @termux
+Architecture: x86_64
+Version: 4.3.3
+Depends: openssl, perl
+Filename: pool/main/i/ipv6calc/ipv6calc_4.3.3_x86_64.deb
+Size: 1081100
+MD5sum: d90558981ba26a421524145f036bdef7
+SHA1: 480d54f39b06b6af24a96d6c6280c7c73ea34c7b
+SHA256: 0c0f90419e5609eff11a3050713719fdf6635aece24a4e30707ef144636d7ba2
+SHA512: 5a8d02f4408190c6a70d4c0dfe56db21b23c0efa0baeffdf0689c13401434ef4e7a5157c7747cceb20ab66a8a0db9f861ead3b7b4da235231d1dda2ce180a34e
+Description: Does some format changes and calculations of IPv6 addresses
+Homepage: https://www.deepspace6.net/projects/ipv6calc.html
+
+Package: ipv6calc
 Installed-Size: 6272
 Maintainer: @termux
 Architecture: x86_64
@@ -11652,21 +11667,6 @@ MD5sum: 9013aa4f3de8a1497a45b548f986a475
 SHA1: 13d71b692469ff217e2a9e64c1cbfc786623e8ae
 SHA256: a58e3e239467cbadf54927186ba2def0f79d61a664df43e89a5df4d13e0a7d01
 SHA512: c5e10e0bd38e0a687f72ee4526c56c46fb9d936ccbe7cfb8f0f1d0960665267e6a89c954018cd69e04c2e1219b5cd4b982d79ef018f050721ac2eb1f5d60f6f5
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
-Package: jackett
-Installed-Size: 14292
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.2325
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2325_x86_64.deb
-Size: 3196848
-MD5sum: 627d2484332ef6e7cb71f76e88b98fea
-SHA1: b08aeae09da59d021fba06007eb3a2407f3152b5
-SHA256: 1ca13a3387b133397b9dcd9c644095b36b8e8c89659178f3577ea6c54a3ece04
-SHA512: 0e34845e1dbc823df3114fab8499a8a845a2e5c19ee1ced21a0e30e47c9c101f23d3d381da67ca7b46c2c074ff14bc72d36a18a5c3839bc6015c416888f8d155
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
@@ -23819,6 +23819,22 @@ Package: llama-cpp
 Installed-Size: 51748
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b6262-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6262-0_x86_64.deb
+Size: 7208740
+MD5sum: 16aef9d8a4586826b808ff9ff75ea266
+SHA1: e84e64692441a0169abc1e015b04949b0d5c0978
+SHA256: dcbd3c9f77cae2c939989fd8c2954ac0baf7798103aaa5249368cde7ad709ecd
+SHA512: c5ae8bfe42b27e0c5b85d1a4d505f5bc67d738f6e1a3d830150b15e0244cd05fed7d2fec11e111970b420a4b978e47cdc46e542ae0ac1384aad93b7a4625fe0e
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 51748
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b6258-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23829,6 +23845,23 @@ SHA1: ef99211081d2a9b28fdbee327d299a5a008fc9a7
 SHA256: c899f7a4fbdbddd70944fd7dc5ae3dd64737a56723c7cf0cfbd6a225a4b54e1d
 SHA512: 2503510b78c0ae72557994d0b2ec884b1aa374275399fcb3020fbfda36dc632562895b3b98cba0a2671b1acc7c0e7a9af92cbfd61e32208379c9c238855ed85a
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 652
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6262-0
+Depends: llama-cpp (= 0.0.0-b6262-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6262-0_x86_64.deb
+Size: 114692
+MD5sum: fb02f37c4017dd769869792a9c69f39c
+SHA1: 33de7b610e1dabc8b5f46dba1ab9bdd89fe05b64
+SHA256: f718d656641554295e2d895630b6d52d7b98d174b0d90346ed03cc0f537e306c
+SHA512: fdf3c723b9742a24a636228f613c1268201dc5206020c5c8da0a61240174e021fdb2526164f63634f9cad7b041a8c3e380e7425c7db29b3e93091b54fdadf0a6
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23846,6 +23879,23 @@ SHA1: 722cabd71c1c1368e69c37ab1f39cf5bf28549de
 SHA256: d5dd4bc389beba7e3ff988b5ad7db2185ca2930120e26d2ecf9af51582d48081
 SHA512: 2697b325bf30d50fe6c89da00b6042eced2c2cc2b1f523f1fb9acae820148374a1804d78a73bee8ec290596eec8459dc059dcdcf55f75858aa1d491681c31892
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 15656
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6262-0
+Depends: llama-cpp (= 0.0.0-b6262-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6262-0_x86_64.deb
+Size: 1288284
+MD5sum: aaf048c95b865bbd409e3636a8036fb7
+SHA1: 666928386df41fb61b1f7f92b9906c79247c0ed8
+SHA256: 4c7365c81bd9650fae0b389214ce54dad1ede559ab1653a73f628f4b9376ee7f
+SHA512: ea9e1d04d4e90faac241a898d49ebcdd468a936eda727a3060af5e4173d7d075e2b888b69eea00e937d5c60962f44410dfd64d0cd9822479f3319d21ac95e5fc
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan

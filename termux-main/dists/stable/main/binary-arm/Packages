@@ -9657,6 +9657,23 @@ Package: harfbuzz
 Installed-Size: 3556
 Maintainer: @termux
 Architecture: arm
+Version: 11.4.4
+Replaces: harfbuzz-dev
+Depends: freetype, glib, libcairo, libgraphite
+Breaks: harfbuzz-dev
+Filename: pool/main/h/harfbuzz/harfbuzz_11.4.4_arm.deb
+Size: 654112
+MD5sum: 706e9c78c6c04dea4158b807a215efaf
+SHA1: 70c63ef30670b0f241504a0d925315d8aa212c7f
+SHA256: 0dd299ca5a5f64d6eabf5ac85a27957239505c4210ac310979f311b74809bc41
+SHA512: d5c200181fdd151b67d4b2f0072f11521cc207f7f137ae03b099c23ae6a038fb7fda05046e228cfc572d3367bc53fc1200d617ed595b1df12e645833a94aaae3
+Description: OpenType text shaping engine
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz
+Installed-Size: 3556
+Maintainer: @termux
+Architecture: arm
 Version: 11.4.3
 Replaces: harfbuzz-dev
 Depends: freetype, glib, libcairo, libgraphite
@@ -9674,6 +9691,23 @@ Package: harfbuzz-icu
 Installed-Size: 56
 Maintainer: @termux
 Architecture: arm
+Version: 11.4.4
+Replaces: harfbuzz (<< 7.0.0)
+Depends: libicu, harfbuzz (= 11.4.4)
+Breaks: harfbuzz (<< 7.0.0)
+Filename: pool/main/h/harfbuzz-icu/harfbuzz-icu_11.4.4_arm.deb
+Size: 4080
+MD5sum: 3fd79f2fba05201df21ef3ed4c3800cb
+SHA1: 99922f458c5fa7b7f7bf850544a8af229367e847
+SHA256: a8b59b217d1b32c530d87f506b5b4050d15769f88a084fa5744f77af4cf1b636
+SHA512: 0d9307edcce644d5b4a7659d29db4c3f44ebb08c8a8a584240e38b9d518916d8d59f18a63af15f081c5bca10f60b715a1f07154e9e371529759d993f3fcae014
+Description: OpenType text shaping engine ICU backend
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz-icu
+Installed-Size: 56
+Maintainer: @termux
+Architecture: arm
 Version: 11.4.3
 Replaces: harfbuzz (<< 7.0.0)
 Depends: libicu, harfbuzz (= 11.4.3)
@@ -9685,6 +9719,21 @@ SHA1: 93dc498bb1b8461a727e115589044fd57dcf452f
 SHA256: 859f5a0e1e903e5203305da47ee84e7e3b84801f7120f7eaed0708f9725acfbc
 SHA512: 6596ab351c7083f6cb0342a39ebb0ed3dc3113be8c709e735e12b13392830a79c9a266e99b9301ed8fcef78367fae17211dddcb9462a63e1a17559f1a601bb4b
 Description: OpenType text shaping engine ICU backend
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz-utils
+Installed-Size: 208
+Maintainer: @termux
+Architecture: arm
+Version: 11.4.4
+Depends: harfbuzz (= 11.4.4)
+Filename: pool/main/h/harfbuzz-utils/harfbuzz-utils_11.4.4_arm.deb
+Size: 51564
+MD5sum: b3143343e5a1f5f7fc2b4512eff608e9
+SHA1: cd087a2f6091cfdfa4d8e8758b15fde1b752428d
+SHA256: c6ca6f3f173d9720603ef0a96758adde5198143088c761228423c8cf7f4ea536
+SHA512: ab90648798fcda3e5646fea2e08aa9e2bae6ccfcf31655013a338085b16dd64ab2b64e6524e8222c05d66447c99ee8f30b65e8d20e7f70d002b37cd37242fb54
+Description: Tools using the harfbuzz library
 Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
 
 Package: harfbuzz-utils
@@ -26107,22 +26156,6 @@ SHA512: 3ff57c48c4bb35929116df60f1141b3e3da41255b71584901f97ae85737af65d367de386
 Description: An ncurses Spotify client written in Rust
 Homepage: https://github.com/hrkfdn/ncspot
 
-Package: ncspot
-Installed-Size: 8940
-Maintainer: @termux
-Architecture: arm
-Version: 1.3.0
-Depends: dbus, pulseaudio
-Conflicts: ncspot-mpris
-Filename: pool/main/n/ncspot/ncspot_1.3.0_arm.deb
-Size: 4025464
-MD5sum: e56772d8e2bf3c60fa2014c838861264
-SHA1: dd7c6e8cce0b68e81a96dc8f432ed3cdcd6c2ed2
-SHA256: fcc29cbe195bc15c75283484e387fcade2d130a47906d826c7385128590f380f
-SHA512: 29b346877e766c1ea8602ce2487563cb56e8b1dd2a0dad2a46f188b7aee2eafa8a9e50de39d2d54896ebf0a461597fb9393beda56f991045ee951758979510d9
-Description: An ncurses Spotify client written in Rust
-Homepage: https://github.com/hrkfdn/ncspot
-
 Package: ncurses
 Installed-Size: 1456
 Maintainer: @termux
@@ -26735,18 +26768,18 @@ Package: nodejs
 Installed-Size: 73952
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: arm
-Version: 24.6.0
+Version: 24.6.0-1
 Replaces: nodejs-current, nodejs-dev
 Depends: libc++, openssl, c-ares, libicu, libsqlite, zlib
 Suggests: clang, make, pkg-config, python
 Conflicts: nodejs-lts, nodejs-current
 Breaks: nodejs-dev
-Filename: pool/main/n/nodejs/nodejs_24.6.0_arm.deb
-Size: 12252064
-MD5sum: 117532ff94a6e73fe1d79309ed4cffbd
-SHA1: 28fc559a8e3272a800a4dfe383de2b34d5f94d8d
-SHA256: ca7f2df23f08b33bbba23c7a5ab88ed94956bf46c37e279789be40dff4d920b2
-SHA512: b12df31016a790763a8a49a07f7f56af23deeb16eedc629a9e0f1da9ad0bf0f20e6587ade38c3be3eec44a701ddc53da12623184cdd73af2fac7492c6522a300
+Filename: pool/main/n/nodejs/nodejs_24.6.0-1_arm.deb
+Size: 12247188
+MD5sum: f4d6eaecd3881d558a05e76d9cf8a0ed
+SHA1: 558d5fef04bd3ae9a012e178c767ee173e79742a
+SHA256: e910ab9ec48b74f914875235d89d00debceb5db9e57e9901e1dfed5d00b255bb
+SHA512: ded3b4c333ab5f4d83694303d192b2469c70166912eee89253dce55d45c2f4d347b441fe78ddb639679e2b701385f946acec1a8d030cd261229b1c246b9a6548
 Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
@@ -28187,6 +28220,21 @@ SHA256: 7f3ed09f9d56e0c8333e87733dadd1b8b0295b3807a09db2800580298072c378
 SHA512: f5a04f4b40999f734134f45f2828d776f6570ce46792237adc200344b124d391dc8b7b67fe39e0fc9571bc680a51f6c6d640f5125701760516c169a1c7d08274
 Description: par2cmdline is a PAR 2.0 compatible file verification and repair tool
 Homepage: https://github.com/Parchive/par2cmdline
+
+Package: parallel
+Installed-Size: 4792
+Maintainer: @termux
+Architecture: all
+Version: 20250822
+Depends: perl
+Filename: pool/main/p/parallel/parallel_20250822_all.deb
+Size: 2090064
+MD5sum: 67e737b93b745e6c47335ea463bf2859
+SHA1: 72e1ef1300490e0722ea29011392d55b6268355e
+SHA256: 9e08a3d3dfe4356084ed7f96c329ceff02d6f1a6c3f0de52659b50fe840957bd
+SHA512: d31180caf94001f636d4b899c150237d2b34558c4aa026cc089654058f4ca145e0a699c2fae985ede9c5b48a025f03db5a2fd086b60acae8244dbc41cfaf2c1a
+Description: GNU Parallel is a shell tool for executing jobs in parallel using one or more machines
+Homepage: https://www.gnu.org/software/parallel/
 
 Package: parallel
 Installed-Size: 4720
@@ -32824,21 +32872,6 @@ MD5sum: e1850c56069cecc488dc60f5f22157a1
 SHA1: dd84631367a853db07430670954daa2449e2c736
 SHA256: dfc94ef7e4524482ad9876c0e8d6ce36e53f0fc3ca03caba24dd7207ee47aac9
 SHA512: 7b539669660aad79ad3cff0ebc8fe15326d0d2e21ff1df6ae9fbe6cca4c15a884943d9443d82882310e94494d7d51303fe1a83261ccedf41a606fd6d20a61733
-Description: Fully automated Usenet Binary Downloader
-Homepage: https://sabnzbd.org/
-
-Package: sabnzbd
-Installed-Size: 8260
-Maintainer: @termux
-Architecture: all
-Version: 4.5.2
-Depends: python, python-cryptography, python-sabyenc3, termux-tools, par2, unrar, p7zip, unzip
-Filename: pool/main/s/sabnzbd/sabnzbd_4.5.2_all.deb
-Size: 1109008
-MD5sum: 8fd85851b32d023f48f84a27ca28d668
-SHA1: 334b62f1e7b4b035c48e67ae6b94af6950d6eac4
-SHA256: 56ae7be1be22551404551704a9b8f6d563368d43676b4bfa896592ad42057411
-SHA512: c0480e039cdec4cd931a1aa199d0d1f989825cbc15bef770d930d4a07657ffef664c91dff0ec902b3121f221ba288ba96ae2e3cdb7b8386743166dbbfb834dc4
 Description: Fully automated Usenet Binary Downloader
 Homepage: https://sabnzbd.org/
 
@@ -38565,6 +38598,20 @@ SHA256: be39eb4ddafb43fd9fcac1c148a94487f45823d18182e0ee969453ec88d3ffbc
 SHA512: 4abe2f26ebe1d84a1fd4d0bd69525651eb683e6dce8039d85e86a9d0d7630e479a9c0ae9dee732a2774be2862211c47e14a48d7f3acb808d7ce5b8126c6685a2
 Description: Libc for WebAssembly programs built on top of WASI system calls
 Homepage: https://wasi.dev/
+
+Package: wasm-component-ld
+Installed-Size: 3504
+Maintainer: @termux
+Architecture: arm
+Version: 0.5.16
+Filename: pool/main/w/wasm-component-ld/wasm-component-ld_0.5.16_arm.deb
+Size: 1362924
+MD5sum: 91e3030ef8b839e33bab73adab917df6
+SHA1: 3c1617b355ae5cb71befc32d362a512d6a0e5f36
+SHA256: a54b1da359b34807e3f00bac1e10cd00a812a9cd743ec1c8f4886213e23ffbb4
+SHA512: 7c2c904ab1adc2f44c70c4651dcec9d0d8dfd6f7ab3c25394835e4d7a9c7da0e9c726514f67115d9d281118f5a5d5cd4d47da8c151e127364333f92fe950c36e
+Description: Command line linker for creating WebAssembly components
+Homepage: https://github.com/bytecodealliance/wasm-component-ld
 
 Package: wasm-component-ld
 Installed-Size: 3516

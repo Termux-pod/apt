@@ -3377,20 +3377,6 @@ SHA512: 2ad7a0b7634ceb0fe4d75fb13aeebd6837e84a85671a8b3195d377eabf6083d020a1f21c
 Description: Manage your dotfiles across multiple machines
 Homepage: https://chezmoi.io
 
-Package: chezmoi
-Installed-Size: 38252
-Maintainer: Henrik Grimler @Grimler91
-Architecture: x86_64
-Version: 2.64.0
-Filename: pool/main/c/chezmoi/chezmoi_2.64.0_x86_64.deb
-Size: 9451364
-MD5sum: 08fa505959a55eb34c8ad7ed88d6f208
-SHA1: c8cafbe44e95e17fa820ea714539da758143be66
-SHA256: 0ef6f29cc0e0fee9b5c6e36d21ef77f0979c667ea812222a3009e4a7ef4f891c
-SHA512: b215b1580edaf118ae0ce90284ad0fa8598c1023f617d65fda96730477016d8db1073a75cac15ed20e74d6ee6a277007dd969a45f36aa00afbcb1ae2051bd1d7
-Description: Manage your dotfiles across multiple machines
-Homepage: https://chezmoi.io
-
 Package: chibicc
 Installed-Size: 196
 Maintainer: @termux
@@ -23818,6 +23804,22 @@ Package: llama-cpp
 Installed-Size: 51760
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b6293-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6293-0_x86_64.deb
+Size: 7199244
+MD5sum: 3813b0c7ba3216af5e67ba240d8eebb5
+SHA1: ba7a38eb5ec98b106603ea5a2249df8ed6951ecd
+SHA256: f4aa3c3da62146e8ccd84487c7794345ee34305a225e2972255fb0729c63b37d
+SHA512: 90780a18ba02d5fb4fc65632484d8d0fd7d624db9bde2e1b9115ab2f1943d085c0cf4909972f3c7bcf4111e84ad15a114b12d57e1a33d3577c30845b8e983d20
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 51760
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b6291-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23830,20 +23832,21 @@ SHA512: 2e709f059b845f87b74b22ff6bff4a86a6d3f2873367f7cccc957722c73dbd0194789b6e
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 51756
+Package: llama-cpp-backend-opencl
+Installed-Size: 652
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6283-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6283-0_x86_64.deb
-Size: 7180740
-MD5sum: 32952c6c8fb6e0edde699421f77f436e
-SHA1: 8356cf22f21377d290d2ca1fd88898137c4f3fea
-SHA256: 4ba63470b44cca51491ecebda29ef11d739a0c25f3a64ac10a31c13f3e04cf5c
-SHA512: 936dd555fd622c518345748d3fb28dd5c9aacddcbde9c2af05ed140206a5343db92302d7c11b8a172ab499a71fe8689654674dc0eda334887289ea71214815c7
-Description: LLM inference in C/C++
+Version: 0.0.0-b6293-0
+Depends: llama-cpp (= 0.0.0-b6293-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6293-0_x86_64.deb
+Size: 114872
+MD5sum: ab89b6a8f08f8d49f7a8049ceffc1234
+SHA1: e0ebbd0500a77e63b6878877c57c2b5c7e773b69
+SHA256: 6a7298eac30540a7e730ca17190443ec25d1e37a1ad67095497a22397ce4a9ad
+SHA512: 9cc068a82bea896f3c459dab7f574049fdd056da81ff0f70384cd0062abe7ef3e949b64b323f1e57ace54e352c873eb35c28303d65fd6461e72bec493a244b78
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23863,21 +23866,21 @@ SHA512: 58f5335ffa18293929c3eb132d43a214c8d4b5d5943056edc44e1c5d94c72cd4a6243ea1
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 652
+Package: llama-cpp-backend-vulkan
+Installed-Size: 24576
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6283-0
-Depends: llama-cpp (= 0.0.0-b6283-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6283-0_x86_64.deb
-Size: 114708
-MD5sum: 8f01a56b9b15ff631c4602d3988bca68
-SHA1: c1315e3d48ff5821f8f3418eb2901eba978e59f1
-SHA256: cdf8565e73dcba581f84e679830883748cbca7dfe908db24e6ee8df1650151c9
-SHA512: d18801ae0ed677a47960c16a43c41d474912d9f50ceffda2c91b670c8e156a057442c4df6fcde0eba851250b601adba976da5b1cf32d870a4c5de6a30941ed84
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6293-0
+Depends: llama-cpp (= 0.0.0-b6293-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6293-0_x86_64.deb
+Size: 1829744
+MD5sum: 664eb20dc63e29814b7e2a78b43a98aa
+SHA1: bc2e68f37c1b3df91c96ff0bd869c605f0ee4411
+SHA256: 1789bb69414d16585ff8dd389a8849185b24120ac88a4d7eab977d989bf9b47e
+SHA512: 8574595cd37b1263b3cd8f3ccc5d5cd9ead6c9d3ea20bc4c02b1f9d1fad847ba24fa151fda22bbcc40808fbf962b0aad81202fcc2d5d333a325e3f7874111fe7
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23894,23 +23897,6 @@ MD5sum: a97944ff882f355308730cbbe1a99b69
 SHA1: aedc85c7bfe5183afae7644e62c418c1eef70f27
 SHA256: eca38bc7cd80d9eafb8a37c4924402663e5f47d15fca9f50fda22acc548e8177
 SHA512: a4e70852ee40cffe9163fc624f1cb8605ebbb9902fcefd21a61d658d9daeb11155ba181b73d017d9fe914429d25eba1a68afc481e961bd2ab99448eae3de8d5b
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 24576
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6283-0
-Depends: llama-cpp (= 0.0.0-b6283-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6283-0_x86_64.deb
-Size: 1828632
-MD5sum: eab2f3c60a66536ac71df56128abdc06
-SHA1: 8c94fda79e363f05da9e6313dc565c1fa9f0efd9
-SHA256: 5c12a7a8f27ec39993660848b91e7812e6030f8dc93d065c8620aea5b43859e7
-SHA512: dee76487babdc2b26171db9a725a943b5ffe4d1c9bf192b54bfb647b5d21d3203ebda8a2b104991838eebfc14d024d236cbed814d6baeeb2b18309b4e7ac53f0
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -37406,23 +37392,6 @@ SHA512: a1a6c81b3d1db9faa23cbf4b257638788ddb6c561f27b63cd027d507ebdc2c096626f455
 Description: An integrated language service for Typst
 Homepage: https://myriad-dreamin.github.io/tinymist
 
-Package: tinymist
-Installed-Size: 52364
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: x86_64
-Version: 0.13.22
-Replaces: typst-lsp
-Depends: openssl
-Breaks: typst-lsp
-Filename: pool/main/t/tinymist/tinymist_0.13.22_x86_64.deb
-Size: 15682136
-MD5sum: ebf4616a4ed14879f8bb50f3fe9df644
-SHA1: 2a038fb5aa03067f68a03d2bd9f8d00ebefb5bd1
-SHA256: eaa7f49461f202a97e4c680f8984d7af7532139ed2e0318cbfb1df8d17ca9eda
-SHA512: 4f717d2fa658b22624ad718af968cda2a7de247660c16af7adea16035136869d67bdb227b9d105a9fbc2e058eb1f962cafb00eeba90c43164807008954a2e0f1
-Description: An integrated language service for Typst
-Homepage: https://myriad-dreamin.github.io/tinymist
-
 Package: tinyproxy
 Installed-Size: 220
 Maintainer: @termux
@@ -39406,6 +39375,21 @@ Package: vtm
 Installed-Size: 6204
 Maintainer: @termux
 Architecture: x86_64
+Version: 2025.08.26
+Depends: libc++
+Filename: pool/main/v/vtm/vtm_2025.08.26_x86_64.deb
+Size: 1277360
+MD5sum: 7485b87fc510e1edeecb94220664eeaa
+SHA1: f0090ccf6b4530cd01e927d488b955d777ba6504
+SHA256: 2d52c66a26dc2814bfa0682b1eafbc80a381c35c6d1508f57c168206498a1211
+SHA512: 6f5cf32b3304a6da26abdc01e66a4fadec5324ae80738e23d43e8be8a0abdcc38d213cb55d5f0dbb7c50fb251bf576a74623afbf99e52fab3e8ba6d5a5c71d71
+Description: Terminal multiplexer with TUI window manager and multi-party session sharing
+Homepage: https://github.com/directvt/vtm
+
+Package: vtm
+Installed-Size: 6204
+Maintainer: @termux
+Architecture: x86_64
 Version: 2025.08.24
 Depends: libc++
 Filename: pool/main/v/vtm/vtm_2025.08.24_x86_64.deb
@@ -39610,22 +39594,6 @@ SHA512: 6563714194e860a390b281c17c937d7ea3bfee95cd4b1393d635b5301f13590cc8e4cfe1
 Description: Text based Web browser and pager
 Homepage: https://w3m.sourceforge.net/
 
-Package: w3m
-Installed-Size: 2052
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.5.4
-Depends: libgc, ncurses, openssl, zlib
-Suggests: libsixel, perl
-Filename: pool/main/w/w3m/w3m_0.5.4_x86_64.deb
-Size: 711296
-MD5sum: dfd89ef61ca933e6840266a2145483e1
-SHA1: 22c9d61c8a7ed99954f5283713a87b416e2975d6
-SHA256: eddaf932866b669156d075851633b6ffe65855184f93004836eb5893d40e05cc
-SHA512: 306e551628282eda050a500dea55ad967bd2503fde774388faa94f6604110c944d224d0398b4f16d7d81ff953898dc75917e1d03bb11776352d8ad0b2a77b184
-Description: Text based Web browser and pager
-Homepage: https://w3m.sourceforge.net/
-
 Package: w3m-img
 Installed-Size: 48
 Maintainer: @termux
@@ -39638,21 +39606,6 @@ MD5sum: 5b0a509def1048a186c42ed9330d3ace
 SHA1: 6fd456680e31149c6fa6d4556d90d2c5c01cd6c4
 SHA256: 4a21027d5da378e3e9ab679e87e506423cd70e149bb80b0ca96d24c2411e2f03
 SHA512: 4ab7f2c34af7fe2658736e54f9926372de4418dc97a236e65b73e847e01d023b3782687b9720ff1f440c0745e322984e833df554d1caac4b64fe553810777f47
-Description: Inline image extension support utilities for w3m
-Homepage: https://w3m.sourceforge.net/
-
-Package: w3m-img
-Installed-Size: 48
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.5.4
-Depends: imlib2, libx11, w3m (= 0.5.4)
-Filename: pool/main/w/w3m-img/w3m-img_0.5.4_x86_64.deb
-Size: 5776
-MD5sum: e0ee2aadc7ecd65d98abbb4b9df324bf
-SHA1: dbf0141113d5c8c38f72ac850e60c6bbdca6f04e
-SHA256: 6b89875ad28532628cf36fbbf0f15952fc909fe9b9c5d63d08203c3aaf2afe3a
-SHA512: 52f76fc8e7e4dd004d24b244e91682dfd8f2884af93801aae58716e810ec5861a7eddc7c5cbc846afb843517c5c5088570d3beb760b8f7265f85282c0dd9c284
 Description: Inline image extension support utilities for w3m
 Homepage: https://w3m.sourceforge.net/
 
@@ -39770,20 +39723,6 @@ MD5sum: 2dcdd0a6f62e8cb10b1d0b04f5986fca
 SHA1: a0545d0819ac166d315275aa9d5a1f9cd800b122
 SHA256: fd28fb1bb6e275de2b5547b9e3dfbba89b24d8745b047881771d2ad08df14c57
 SHA512: fac2d2cad7dff6ef11d438e5cbea3faf3fd5f0eb95a47b70de81ce4f6ac3a701cf9a269cac581a0390010dea29dab7f731f1ee334f19fb16d031fd098f633502
-Description: A standalone runtime for WebAssembly
-Homepage: https://wasmtime.dev/
-
-Package: wasmtime
-Installed-Size: 43680
-Maintainer: @termux
-Architecture: x86_64
-Version: 36.0.1
-Filename: pool/main/w/wasmtime/wasmtime_36.0.1_x86_64.deb
-Size: 8561292
-MD5sum: 22939f4bf8c816831ebc95a9d7ea3bc0
-SHA1: 16e39693df59af5b67de1c2bd924b58060cdf270
-SHA256: b225ca544bc9984a2d59243e322c4c3d9eca899ae8eaeb50ecc4129a0102bb80
-SHA512: 23c337d51cf521eca2370a4b92903fd5248a57e8e5966ecd70c830dfac7e9f74c5c3c9731a4f278775f7bb4af908376bad6bd061070e24bc13d940316d122252
 Description: A standalone runtime for WebAssembly
 Homepage: https://wasmtime.dev/
 

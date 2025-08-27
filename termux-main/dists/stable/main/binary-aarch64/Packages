@@ -3377,20 +3377,6 @@ SHA512: 750dc6d069c86a4ac2604a3f1089fce58048662db7f723584c3d3d6589122ae72ca286d6
 Description: Manage your dotfiles across multiple machines
 Homepage: https://chezmoi.io
 
-Package: chezmoi
-Installed-Size: 35944
-Maintainer: Henrik Grimler @Grimler91
-Architecture: aarch64
-Version: 2.64.0
-Filename: pool/main/c/chezmoi/chezmoi_2.64.0_aarch64.deb
-Size: 8269732
-MD5sum: cd55e6c5482ec57b2807ae01d3133a6f
-SHA1: ebb52d3d4054206f90b7887acc03321f170b4d4d
-SHA256: 3786d2eb1221f9ae5b439318323a806bf37c12a16cc7d6c280f90d8ce9b95218
-SHA512: 9f2bd70bc6405bc372c81c65d1fb5a6e74bae391aa96d5e705b9ddb55d209c3d1536b834ccd50d905cd990699c3cfb89319810f55909f5b8d91f41f1dc24cf9d
-Description: Manage your dotfiles across multiple machines
-Homepage: https://chezmoi.io
-
 Package: chicken
 Installed-Size: 10576
 Maintainer: @termux
@@ -23834,6 +23820,22 @@ Package: llama-cpp
 Installed-Size: 48960
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6293-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6293-0_aarch64.deb
+Size: 6739096
+MD5sum: e9080a591ea8ffce96d0e1a9e1ccc839
+SHA1: 371a3fa9ad88dea0e4704a7cfa97b5586faabf2f
+SHA256: f4f1122851b5058ff9f4407fff08cb134f746b8d832f0d112efd9a4124047081
+SHA512: 7144c103c79babe46fc4b8217897a12b6219bd8f3e213b3ec9fd530250d2baf71dbd276747dc553c4efc4f63969715ea37edcc7017951d624b0c9447008dbda7
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 48960
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6291-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23846,20 +23848,21 @@ SHA512: 58b6e25dfcfc0a79ce6d66722b1521905d043d93214f853a3c7400606b88a0c8e72e8002
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48956
+Package: llama-cpp-backend-opencl
+Installed-Size: 628
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6283-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6283-0_aarch64.deb
-Size: 6739448
-MD5sum: 1adc8b132486bb7f5b143e9421507e39
-SHA1: 3a74784ee7f98a5bfdb2fb53fb17122dfc67b4d4
-SHA256: 558300846e14146dd7b3c674f05b4b081b4983ae7d902b07420fb60976596582
-SHA512: 44c32b148865f5c382e445f4d821892c807953062c3ba5413c0f6b39c253be7ce8afd6588e1e6fe51d21ebf94a58227a78f55619c2e4e4525774f036dec4cfd5
-Description: LLM inference in C/C++
+Version: 0.0.0-b6293-0
+Depends: llama-cpp (= 0.0.0-b6293-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6293-0_aarch64.deb
+Size: 105340
+MD5sum: a948fa766c3388024e7b3c33d114af08
+SHA1: d1033860b4738303adffd6409e0c331137c19c62
+SHA256: e7c49212796aaa36ced549ac97cbb5e660bc085529a91e29d565e24cc96b6f3d
+SHA512: a7820af933092f6828c1892132de7524f896cbfc1ee3d42a745f0376ddbea9486a96dc24fee9cc31c799d2263773df0eef63e168ed6efc830c21f192c95b9804
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23879,21 +23882,21 @@ SHA512: e1180f70e53945b5921e5e74171100c46f20e8712f3369337dd1e8fad370222e2d5dcb0c
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 628
+Package: llama-cpp-backend-vulkan
+Installed-Size: 24376
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6283-0
-Depends: llama-cpp (= 0.0.0-b6283-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6283-0_aarch64.deb
-Size: 105388
-MD5sum: 0cec9968f573f295eface6eb9646a564
-SHA1: 1d38ea09e4d7b0d78624388d85930861eeab430e
-SHA256: 6176511c5a58c08fc2f0f342a2aef70156c0d6a65fcdb5408343a49891053c64
-SHA512: 86e864d69ecc4265824d9add115f724e765180a0cb03d12cdab0135f9d1243f36b51d87b1e90b32f7b52d0ba667779d5bbbdfcc573776f408ef053382deb81f6
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6293-0
+Depends: llama-cpp (= 0.0.0-b6293-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6293-0_aarch64.deb
+Size: 1786936
+MD5sum: 2c9f48e31556839f56824ece31077b01
+SHA1: 9438a6a06e478786f53664a9fa2007058ce829b2
+SHA256: 3ef4390e77edf61f62703a3b74b99b69a938b550b08182ddd3d87390e7465108
+SHA512: 236fa806c9a521cdb4e8f7e6c8fdc455842b224777be93b1737e8ac803e0d5a000c8cad0ef28f3655193780889d5ad33ebe11338c2a3ad66ec809ef2f38c74b9
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23910,23 +23913,6 @@ MD5sum: 2fce7c9d112bef04544019d938c9d6ad
 SHA1: ce801974d02aedba68003d64ac6dc2573043a23b
 SHA256: 60f31db1996354257ca6e2552b7aaabb1dba70dee52a25e3258a09fcf88869c6
 SHA512: ac744bfbdbb362f33744404f56504de15899d7e21927f6c0dff5c64d709a362b4b984d4860d2976732407b78735bb53e7df6efae998ee078a5fcdb1f7bb410f8
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 24376
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6283-0
-Depends: llama-cpp (= 0.0.0-b6283-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6283-0_aarch64.deb
-Size: 1782828
-MD5sum: a3731ca36566bbe5c858cad6501d029e
-SHA1: 37779a8926d8bbfcd2c4946098ff34500b900e43
-SHA256: f315977dcd059cc7b5581bbef6336f4ce367a8ca6d5937cc002f9d8e0997aa14
-SHA512: 3663e8dc092fe6a1c8ce4fa121854583d7c978cfa12282becb39c111c84a77cc426e957c46ae19556e14c36c4d21a70f25c284f0dbf4b2d9353e2e777928a22c
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -37470,23 +37456,6 @@ SHA512: 1c49f28189afcebcba88034cc2b607a663a2af472fc3b568676884c1061492e5ac490e37
 Description: An integrated language service for Typst
 Homepage: https://myriad-dreamin.github.io/tinymist
 
-Package: tinymist
-Installed-Size: 47444
-Maintainer: Joshua Kahn @TomJo2000
-Architecture: aarch64
-Version: 0.13.22
-Replaces: typst-lsp
-Depends: openssl
-Breaks: typst-lsp
-Filename: pool/main/t/tinymist/tinymist_0.13.22_aarch64.deb
-Size: 14520884
-MD5sum: f3e62950d26ccacef260bd3c1cc582fb
-SHA1: b6d19baba26b5a8c6145e4a1d124358813311b02
-SHA256: c2f29f41a63df5686a8996191f15186854caa7a995f678e22017be903b0470d3
-SHA512: 9b4f6ba8e8a02acf37fe4644c836287bf7ebcd8d288ccd0427796d8304441dd7b3b689d1159353341ac476f132aae3002f7a6b1811b5c4593c3441f71d1254e8
-Description: An integrated language service for Typst
-Homepage: https://myriad-dreamin.github.io/tinymist
-
 Package: tinyproxy
 Installed-Size: 220
 Maintainer: @termux
@@ -39470,6 +39439,21 @@ Package: vtm
 Installed-Size: 5988
 Maintainer: @termux
 Architecture: aarch64
+Version: 2025.08.26
+Depends: libc++
+Filename: pool/main/v/vtm/vtm_2025.08.26_aarch64.deb
+Size: 1165452
+MD5sum: add6f1dd08c029d596456a87a97ccefe
+SHA1: 5d7879f77024e3000bcf8b779f71bdfd703ba82d
+SHA256: 0bd61490f3f3facef2eac77d97fc00f8cb154ffc3a03266966ea365348e6fc08
+SHA512: 2b4fa94f33c0f20286e89f59cc335e7b426e251c38b7ead5cbfc1c56f897ea95d3e582147ca5c729bc12c7b6fb0d542ed0a47cd90b05f10d77765559d73a11ef
+Description: Terminal multiplexer with TUI window manager and multi-party session sharing
+Homepage: https://github.com/directvt/vtm
+
+Package: vtm
+Installed-Size: 5988
+Maintainer: @termux
+Architecture: aarch64
 Version: 2025.08.24
 Depends: libc++
 Filename: pool/main/v/vtm/vtm_2025.08.24_aarch64.deb
@@ -39674,22 +39658,6 @@ SHA512: 61fdac7539f74109ae45830c0cf8b7cd86d4f9d251615c84923d337820873c08d4f937cf
 Description: Text based Web browser and pager
 Homepage: https://w3m.sourceforge.net/
 
-Package: w3m
-Installed-Size: 2084
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.5.4
-Depends: libgc, ncurses, openssl, zlib
-Suggests: libsixel, perl
-Filename: pool/main/w/w3m/w3m_0.5.4_aarch64.deb
-Size: 715444
-MD5sum: 6c738e198f449c573a14411f2970ffab
-SHA1: af1b4a38c68b272d46e96c4c587f575876ef9ca8
-SHA256: f5fd625f39eb59ff5aac77b14974f9d57559e62a1aba87ae51da45cd7a53fea9
-SHA512: 344b1e0eaae7b6c64872d3141bd9bdda6a647634e7ba394f06225d254eb8e17c9dcdb6d5a4ddecee8546e789a8303576038c28b20c633e98a613aa4440370294
-Description: Text based Web browser and pager
-Homepage: https://w3m.sourceforge.net/
-
 Package: w3m-img
 Installed-Size: 48
 Maintainer: @termux
@@ -39702,21 +39670,6 @@ MD5sum: d1e89c3f0561096307487f59616ee154
 SHA1: 3fb00dd20fdcd6825a52e2ed78e1fe11b77cb3ad
 SHA256: 922c82459773067989796a5334e1da2d76aedc1e68a2888e68d656e5db327d03
 SHA512: 56c107986789fd54b70b7e79b2081e8616be62164057d5e62ca2484fbe83b24ba523c59abd3e34fe11ddade2f8147006e213e38ebd757ec530d89b00493b206e
-Description: Inline image extension support utilities for w3m
-Homepage: https://w3m.sourceforge.net/
-
-Package: w3m-img
-Installed-Size: 48
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.5.4
-Depends: imlib2, libx11, w3m (= 0.5.4)
-Filename: pool/main/w/w3m-img/w3m-img_0.5.4_aarch64.deb
-Size: 5724
-MD5sum: e6cccc0a1e0ccfad334400a906394e6c
-SHA1: 73de7e6191052835872f689a4208d24ffd87a55b
-SHA256: 92ec3aae83d7acb15be88ffc59485dd62b0ec0dd49e5dfb57ad9a43c33050cf8
-SHA512: 5fe3b2870e20d8bed4d362b8c02a7eb08b82b1f2eca716e4cffaefbc0c27b38db2402e719f364b8e922e36df37adf3bbab5571e509615115c13b58e366710dae
 Description: Inline image extension support utilities for w3m
 Homepage: https://w3m.sourceforge.net/
 
@@ -39834,20 +39787,6 @@ MD5sum: 83e0f3d5a5b7ec152f44a6082b595ff6
 SHA1: 5c53701bb61389e7c0c4b3352f078d16e7e948fd
 SHA256: 5321ac8f860aa98f0044102a2ae2d174553b973d5b9ecc9cfbe496a34b7a18c8
 SHA512: db60c00693e5d1dcca3593fe612e5efa68b2c2c1d3489ed0906e1dc9597e44f1416dc5885dd194fbaf0742809cd5352d6c313e8286c02c2dbf820cc29341b522
-Description: A standalone runtime for WebAssembly
-Homepage: https://wasmtime.dev/
-
-Package: wasmtime
-Installed-Size: 37740
-Maintainer: @termux
-Architecture: aarch64
-Version: 36.0.1
-Filename: pool/main/w/wasmtime/wasmtime_36.0.1_aarch64.deb
-Size: 7146316
-MD5sum: 28bbb89300fb100da5dcfed2c41d34e3
-SHA1: d2e7d70ac7b7f8394db2604a3b797e95539555a2
-SHA256: 9a1e12b2e7c43cdd517b89e18f336f33a860ae346f78217a50096795300ead96
-SHA512: 251ff2fa73d4e4648fe48eac72f44d6bfd7d0ba4ebcf6072ab78877a701bc513e02d8598b4098f5126619c4c6367d5368107f55afe3957741c73d79b3479c7b5
 Description: A standalone runtime for WebAssembly
 Homepage: https://wasmtime.dev/
 

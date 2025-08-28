@@ -2279,21 +2279,6 @@ SHA512: 7baa3cd04adef97142ba557edeed977ed77a09ee15ad83cf90ab6bb42c3cfe3644e704b8
 Description: curses based manager for Boinc client
 Homepage: https://sourceforge.net/projects/boinctui/
 
-Package: boinctui
-Installed-Size: 312
-Maintainer: @termux
-Architecture: x86_64
-Version: 2.7.1
-Depends: libandroid-support, libc++, libexpat, ncurses, ncurses-ui-libs, openssl
-Filename: pool/main/b/boinctui/boinctui_2.7.1_x86_64.deb
-Size: 95220
-MD5sum: d7bdbdfd6b993883a2be2a5eb696faff
-SHA1: 978a8b2001a67599a44342feaf6106af9747b541
-SHA256: 26c91fe1c04492fbbf30e62a21344b1a3b60cfb7cd18749d3390e2c45954b2fa
-SHA512: 8cac8c25b675531d2d71765b1d8bef43b643c95a5d5b14305ffb07abcca1a1ce9b618dfd283beb414e96f7dac13acf7291366df1f056b7b92b4576b3083114b6
-Description: curses based manager for Boinc client
-Homepage: https://sourceforge.net/projects/boinctui/
-
 Package: bombadillo
 Installed-Size: 5932
 Maintainer: @termux
@@ -11667,21 +11652,6 @@ MD5sum: 8b4ee6e614441c6f711b995fd187dead
 SHA1: ead34dd688da1a805174f604aa418eb0fc3f3889
 SHA256: 7de9af359d5657d9eff6788d400581d804110eb735555465ed5f21f5611e1e66
 SHA512: d82f33db29bada3e1060d904def3a4012826b68f73944f12b1bfdd32663b1a163ebc57be6984ddfc1f538a6eae238fd0e72406127c57714f0efc8ccc9b6aa1bd
-Description: API Support for your favorite torrent trackers
-Homepage: https://github.com/jackett/jackett
-
-Package: jackett
-Installed-Size: 14324
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.22.2353
-Depends: aspnetcore-runtime-8.0, dotnet-host, dotnet-runtime-8.0
-Filename: pool/main/j/jackett/jackett_0.22.2353_x86_64.deb
-Size: 3200524
-MD5sum: aea4bc8911929a0af70d7385b6c8b8ad
-SHA1: a6d01832c9dc97fe0eefbba5c55f4cb5a4814dc6
-SHA256: cf5eef5fe80203a55a12c02776735eddbde7118369f41cb28b736cf97dfc4089
-SHA512: 9207a8d73804bb854c9b8b5a10284cfc9f2a48b1405843f1284d512e8fa57bebb8e7c1c3b4af06245dfbab29ef22c83215f768a8e0fc28fe05d7e945b6cd380e
 Description: API Support for your favorite torrent trackers
 Homepage: https://github.com/jackett/jackett
 
@@ -23834,6 +23804,22 @@ Package: llama-cpp
 Installed-Size: 51776
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b6307-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6307-0_x86_64.deb
+Size: 7203148
+MD5sum: c1b77a979a78c4697eed114c1cb2c27c
+SHA1: d26caf05e85d33d87635ae80f09e22d304341034
+SHA256: 4333fb680552c7887d259b793661f80eef08e62a8181a851f31c2452ee4b4fb0
+SHA512: 088b58e9147eec06184ba68e87cbec80c8e9cc01737e183af8a69d5fe69f1bf5960405d51d8e8a14eb8e9aeede825dcf39b392a22a19c824c5d746fa3ecce99b
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 51776
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b6301-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23844,6 +23830,23 @@ SHA1: 36fa7cea2c5ad1fd6a1807c6ce9e60155f5e870c
 SHA256: 2fd465e3c8929e1705f4533f16bfbeb0eddad2bd54c7878a9b3216b77319d43e
 SHA512: d2e78b888e2565542bf11b5c641dffb85ad8ebb973633d6feca3478a3c369daea4b78a4af627953ce248964bee57e2245adc5cb09685ff118ede2bfbbec7506f
 Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 664
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6307-0
+Depends: llama-cpp (= 0.0.0-b6307-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6307-0_x86_64.deb
+Size: 117784
+MD5sum: 35e02f2e63e22a4ae84169d9341d42cf
+SHA1: c9794b58ccf638145a42d60ee2d9546e52d7cdf5
+SHA256: 6c6101c160be661a7c5d79785ec462aa3ec73b75bda5fb0d47cfd037d7217d4c
+SHA512: def1999d28acc2cc65a1d5c25cf8a43892c1ad91adc462eac2a5dcb0dca0976926367343bbe358c010c75670ff39ac77069dcbcc1c5f375816f2796c07986b51
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23861,6 +23864,23 @@ SHA1: 8c25d01381bdca5560ac925a17fd12cc62edab2e
 SHA256: 36028170664465b04761690f0a08060126d5fb5dffbdfe25560d67a2f3c69ed7
 SHA512: 4abd960e17f3fbe0e25bd21a9fef8826dc0f92069fe117ebedf8b3b2fc7f7e212083c81bf83dcf86e482c72d1fb2f9c0ee84a3ed0461e6eab668c82f78fce466
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 24576
+Maintainer: @termux
+Architecture: x86_64
+Version: 0.0.0-b6307-0
+Depends: llama-cpp (= 0.0.0-b6307-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6307-0_x86_64.deb
+Size: 1830708
+MD5sum: 24992b1737bcd7725078c8ea569880e9
+SHA1: 87f725b49f16881e10346fd56df0c75c5e36b922
+SHA256: ef93d51a013dcf735d468a8a00f5d8dc9423a76f2a67cc2359a1a5d0cee54296
+SHA512: 2aa74692de472c6cd393c64f8fa4e80684f1ece7d5acfd7b6ccb2bc8a7ff9b43b5d9b52ce006e87468b65037eda290e030e1e590aebea8aed24cf2add38ab331
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -27992,6 +28012,20 @@ SHA256: c2618957aa2d1c55f4025eb855b11464c87b7dde10da432a1d9f4ccb2bd7822a
 SHA512: 55e8a984187d9abb06178891ec89ec1adee19d7e1d18ba00efd92e38660fdff009f96ae3dcb9529fc56907755929d18e355a88890407981b3960699d33013bb8
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 20892
+Maintainer: @termux
+Architecture: x86_64
+Version: 26.19.2
+Filename: pool/main/o/oh-my-posh/oh-my-posh_26.19.2_x86_64.deb
+Size: 5448544
+MD5sum: d32226a566f95d602cbda1b2e28387b6
+SHA1: 85575905edc5bd915fea0ba20e028453d33c7284
+SHA256: 5a41b571610074f77e2e58c5dca11732f53eceff3ef29197e07a65bf98576fdd
+SHA512: 85d8f08d4916fdb56d91b9c8acf7a060b0ee054b24de7829b2b35364a47e246b2d8248060037b7104a6149c854041a9322bb9c894f8077288d52315e5023087d
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 20892
@@ -34622,6 +34656,20 @@ Package: sing-box
 Installed-Size: 34584
 Maintainer: kay9925@outlook.com
 Architecture: x86_64
+Version: 1.12.4
+Filename: pool/main/s/sing-box/sing-box_1.12.4_x86_64.deb
+Size: 8572112
+MD5sum: 94ae015a7192e3a12a8c58a8285cdfc2
+SHA1: 1cc536f1cd5d398c92ba33a2633d1d63d83beb94
+SHA256: 77b171d20a0f384a4175ef294885b1a72a67162610f5c4265d90488425cd6105
+SHA512: 63d76681a399b88da68d4f2f2c56045a173653c1db88f2956ea89f7bc68830c42251e589fb21ca06b88ac7863176671b3c6a81f9d652993bb4b792fad545a17d
+Description: The universal proxy platform
+Homepage: https://sing-box.sagernet.org
+
+Package: sing-box
+Installed-Size: 34584
+Maintainer: kay9925@outlook.com
+Architecture: x86_64
 Version: 1.12.3
 Filename: pool/main/s/sing-box/sing-box_1.12.3_x86_64.deb
 Size: 8568132
@@ -36610,20 +36658,6 @@ MD5sum: 0d0224537113719b55039dfcc7e436e6
 SHA1: 8bd262538f3e61a249ee49dc39ba1fd8a3d3bfd4
 SHA256: 7dae3d0c6007ad750404f7dee3084789b9e3a483af6621c7de4ca31ed0b1f260
 SHA512: 69ac5715513a1100cf0dcef04fbd0f91b3b0b83e9c4ff9e318b680922e8338c7ba8ff21c128c55a5fcd13a65bda18c4e4627ea72dea3b65137ee3579e208d3ca
-Description: Secure Access for Developers that doesn't get in the way
-Homepage: https://github.com/gravitational/teleport
-
-Package: teleport-tsh
-Installed-Size: 129936
-Maintainer: @termux
-Architecture: x86_64
-Version: 18.1.6
-Filename: pool/main/t/teleport-tsh/teleport-tsh_18.1.6_x86_64.deb
-Size: 23511596
-MD5sum: a0b93ce0546094bb9ce1d022d39baef3
-SHA1: b6011aaa31f8e7d802ad602d3092abba5b86654e
-SHA256: a139f35bdfc5f57981262d2d2dccda8f1f77fb678d8c019932e53effa4088a3a
-SHA512: ef8a04f4796caa0029fe1e4bad19a63ca186b5db15d0bf04d9464e510196a0cfa4c08d44e3d2db78d725c40e7170d029e946448496bbe85f8f25a999e2f3b430
 Description: Secure Access for Developers that doesn't get in the way
 Homepage: https://github.com/gravitational/teleport
 

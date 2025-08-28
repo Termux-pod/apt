@@ -7752,13 +7752,13 @@ Package: fx
 Installed-Size: 12940
 Maintainer: @flosnvjx
 Architecture: aarch64
-Version: 39.0.2
-Filename: pool/main/f/fx/fx_39.0.2_aarch64.deb
-Size: 2987428
-MD5sum: c604861ef017c93bce09151eae9edbef
-SHA1: 94c643efd48390a7a16f7ce119baa556b99e9187
-SHA256: 9dd01e09fccf0338eb1e3866822d88bd8b618015fa7023260c2d7ce9de09ce32
-SHA512: e36e8f53990cb651b97ea0e69e5ee63df0d918e2af68677891b55ca990a4c0d24217a4914743c1e1c603143d835a17e642271cdef39b0c97edd8c04d7d169f5f
+Version: 39.0.3
+Filename: pool/main/f/fx/fx_39.0.3_aarch64.deb
+Size: 2987940
+MD5sum: dd5dc1125de5e82277ab824a226b87c8
+SHA1: 801b3fd50aff966b5486c12434ec259bf1f4b9a9
+SHA256: 233c88f226481fe291adfe6d3552048dad2af38d27c9d8ac9da858632ef46886
+SHA512: 507e089a9cc1390ed6522021cf9e313acae391f466a203b9e1e64a6fcc0b5eb7d19b83458c33f88ce7d11a37c1296ca82ac38254975b1711013579dbf7bfb39d
 Description: Interactive JSON viewer on your terminal
 Homepage: https://github.com/antonmedv/fx
 
@@ -23817,6 +23817,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 49040
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6312-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6312-0_aarch64.deb
+Size: 6742640
+MD5sum: 3dc5b72a03ca878d7a25c2bc8617fda6
+SHA1: 5d3cb39b63c58f17c47d71b5ec440e6636318a65
+SHA256: 9cc0d8a48ca801c40f0e5957c774cb7370e822e4daf31e4d4ae8eba6d80e4002
+SHA512: 5a6b2856f1517c453f851ee526dee814b007e49803cc60391a1090692ffe88395a0f27207bc13fc7d2e25d4f107d16d5a55e8b0a0fa70ae94320080ad4c56880
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 48968
 Maintainer: @termux
 Architecture: aarch64
@@ -23832,20 +23848,21 @@ SHA512: 3b57d730c5046f9414c6621948407c6d9cce979356b14053438899d9ac7f4e52e52e8f6f
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 48968
+Package: llama-cpp-backend-opencl
+Installed-Size: 640
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6301-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6301-0_aarch64.deb
-Size: 6733652
-MD5sum: 6474c94d9f9cad51db25e4e359ddf26a
-SHA1: 6ca606778612c22adb795e986f2b9aac33061da4
-SHA256: 24368f3146e1ddc3da743a348e06bd940d588a12056f514738ce18c36ae14ca3
-SHA512: d89543de92e91bbfeb7a990b5a91292cf4cc999135f27b480bd06cae1a4ea7a263a4fef4e387a40b2fc22afb208426a7b23e7da7930fc8c42ded036ca596afdd
-Description: LLM inference in C/C++
+Version: 0.0.0-b6312-0
+Depends: llama-cpp (= 0.0.0-b6312-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6312-0_aarch64.deb
+Size: 108084
+MD5sum: a547d0f40f7fb785adaf071d15dd77f3
+SHA1: ad9443a21a02a6f4132d0fe5e7f79eb2b5fe2678
+SHA256: 7a9742914fbb93181fb3d6007f759a3f2a67a163441762ebdc7c169efb9deb27
+SHA512: 3ae8be982eb6c0e88d2dfcb24f1a9939bddf3fc3e0d55b13797609fb1132d7d2adb8d14a8ddc1e6fb2167993fff219b5b074fdaec8eff3439195e5e89993f5b3
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23865,21 +23882,21 @@ SHA512: 41ab208aa2d9da7a6a7667bef1e481fc4495e96ef31c1ec8b04f55f3c1e31326436f8f66
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 640
+Package: llama-cpp-backend-vulkan
+Installed-Size: 24376
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6301-0
-Depends: llama-cpp (= 0.0.0-b6301-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6301-0_aarch64.deb
-Size: 108092
-MD5sum: 510dd662d7a7e87811e2aadddc9214ab
-SHA1: 328b022faa3daa06541d53c316c20e2343327d4b
-SHA256: 556c8b8a2d500d0740c6271d1380d281cc9418d2d88cd988459d825b73ddea6d
-SHA512: 828b498eeb6e2fb8b4a1749bf36cff7b7e5cb6edfc1388b45542d59d6b0d20cda674a17f359ba4d70246dae9c29aa603cb1e395a5e94867b7af5d0747589b9fe
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6312-0
+Depends: llama-cpp (= 0.0.0-b6312-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6312-0_aarch64.deb
+Size: 1780604
+MD5sum: d8dd2906d36706375418fb4e9c24621c
+SHA1: af1b0a6dad184febe45f328a2e80739500d10d43
+SHA256: 65cf3040d45875d67266534918ae74294226e603252b98c70f0bbbf73c14f431
+SHA512: bd590c5221eb5fbbc1a752f2591ec5b435aab6b80b07657396fcb0b4454fe49e3eee4ccf0465efefae56b2a45a96b67aacbda8b3122b6f27a77649ab459072ae
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23896,23 +23913,6 @@ MD5sum: f5a0f72959db48cb7497d53a87aaada1
 SHA1: a71d542335bf8b6a2a59470f997185b3b8544227
 SHA256: 898377c5be2b33be0a77da2b20d0856981ce2baccf84cc0a9b5a9e3e1f86214f
 SHA512: 1f7d6a7500fe6a4e9b774c94ec9fb5637bfcd51d13d567d68d03fa7399c09ee34d0f3d2b4a5928200330867bd1b396572af07266d19a53cceab1dc4a3e49d2a4
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 24376
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6301-0
-Depends: llama-cpp (= 0.0.0-b6301-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6301-0_aarch64.deb
-Size: 1782536
-MD5sum: 9fff3d109a5af2796eeacd6878c54bd3
-SHA1: 86b7a4cf6bedfe073cdd9ebb126a22883c74d394
-SHA256: 5a81e4df08011c243f808974ceefb514b117926068e02d98e416e7d9ce0d7f43
-SHA512: acdf1b40f0c054aabc1f1114900bb53c9349d6a4480ec74f281b9b8b80b33fbe3bccc0ae3544ef9667086d5249ef95371da8f0e708a989836af9a3703012373b
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -27171,6 +27171,21 @@ Description: Minimal, efficient, statically-typed and meta-programmable systems 
 Homepage: https://nelua.io
 
 Package: neocmakelsp
+Installed-Size: 6456
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.8.25
+Depends: cmake
+Filename: pool/main/n/neocmakelsp/neocmakelsp_0.8.25_aarch64.deb
+Size: 1632592
+MD5sum: 81dd98c65f5e2b051ecd16db3b637e04
+SHA1: 287db786685334ccd2e1b710fe54dcb7ed1927c8
+SHA256: efba880d6f5fc0605bfc5bb47c4bf0e02beaa7aae99f371a0f5e8ac27c62624a
+SHA512: 1628efb77794f7100d7680a571a877230c5ddb8aec77e27ccfcf8d4b9a26558635838dc465b17ea108deb11496620ab2f480281909a49cb19f185bd01eb584fd
+Description: a cmake lsp based on tower-lsp and treesitter
+Homepage: https://neocmakelsp.github.io/
+
+Package: neocmakelsp
 Installed-Size: 6484
 Maintainer: @termux
 Architecture: aarch64
@@ -28073,20 +28088,6 @@ MD5sum: 4079619012d7ea18b51db8d97a5257e2
 SHA1: 4cab6b0a7fe7ef545901845764944ec52a2984a9
 SHA256: cc307550ecc3b63f491bee1d40d4fbd4e721ca86cc7b349f27397f3c90648809
 SHA512: 82180e994c60a88c97adbf2c6a046db820fde7f2d5e9ebfe911a63447330901dfd6a93d44262b0bc2fe594bd0f081194e40cd85ec4dbda7c1379dce0865e5986
-Description: A prompt theme engine for any shell.
-Homepage: https://ohmyposh.dev
-
-Package: oh-my-posh
-Installed-Size: 19808
-Maintainer: @termux
-Architecture: aarch64
-Version: 26.19.1
-Filename: pool/main/o/oh-my-posh/oh-my-posh_26.19.1_aarch64.deb
-Size: 4753708
-MD5sum: 291326b0c01676a9cc82a1be3efa3532
-SHA1: ccb363638a6b4ebfde6d7cc9ff9db069ee40fbd3
-SHA256: 62ab56acc4a2be1119f89894197ae460adad4ae32991d877569b4ae816040373
-SHA512: 4e30a101382247535ed80b98128462dfe6edf653dec33489bbb56062f6099222ab425eb863c6305d5842974ed6b1241c9dfc0f84d8709dc6cd0a17e77ebd13d6
 Description: A prompt theme engine for any shell.
 Homepage: https://ohmyposh.dev
 
@@ -31661,6 +31662,21 @@ Package: python-ruff
 Installed-Size: 180
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.12.11
+Depends: python, python-pip, ruff (= 0.12.11)
+Filename: pool/main/p/python-ruff/python-ruff_0.12.11_aarch64.deb
+Size: 19240
+MD5sum: 308a60f6a9db0f84aeee56ae52809dd7
+SHA1: 6075812dad9f9b15178849f42f00121a9a604dd9
+SHA256: 48e3970e22906257d76cdd3415518f73bc6313eca4bc283bc5b6a0b5980ad6ab
+SHA512: 690e0f14156c7b77284b22fb9852300c045a86594d678962964a0dec9adc3778dcef9a8817712856741514aaefcf4a31c5e698a3db54839bf3ddb3f0b5895c97
+Description: An extremely fast Python linter, written in Rust (Python bindings)
+Homepage: https://github.com/charliermarsh/ruff
+
+Package: python-ruff
+Installed-Size: 180
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.12.10
 Depends: python, python-pip, ruff (= 0.12.10)
 Filename: pool/main/p/python-ruff/python-ruff_0.12.10_aarch64.deb
@@ -33615,6 +33631,20 @@ Description: Ruby documentation index
 Homepage: https://www.ruby-lang.org/
 
 Package: ruff
+Installed-Size: 30804
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.12.11
+Filename: pool/main/r/ruff/ruff_0.12.11_aarch64.deb
+Size: 7224488
+MD5sum: a85b6e17c0150ce96b20c3943e6e953b
+SHA1: 3830a9e522b1f743bffa8c86ab9e9a7be18f8f26
+SHA256: 0b21ffb5352a4b961080d88682b22a31cd20bdc44f50d3e0b7314e70e917bb6c
+SHA512: 90965a9439f5869deb0427f85fc5705f13692bdcc2aab2075d99f26f85d92aa2d83c1fe57b8ca32312a9f907d3389fac83c7780abdf50a0059380d808e3df970
+Description: An extremely fast Python linter, written in Rust
+Homepage: https://github.com/charliermarsh/ruff
+
+Package: ruff
 Installed-Size: 30700
 Maintainer: @termux
 Architecture: aarch64
@@ -34742,20 +34772,6 @@ MD5sum: 61fc80e070156b9d88fdd47216e6ba38
 SHA1: e2fa52301d84cdff7705b9d10fec5086696532dd
 SHA256: 3ec12ae8dfa8c83a9301865d548c04b8251b3f7dd66f9c6d62799159cf7b5162
 SHA512: 6e3f85c17879ff5d49511fd90e366f3c40beff5711bf352452976a392a646db8e04dd851eff30efa5f9fa549d267c620d56267998510a0f8b088138099882ce4
-Description: The universal proxy platform
-Homepage: https://sing-box.sagernet.org
-
-Package: sing-box
-Installed-Size: 32900
-Maintainer: kay9925@outlook.com
-Architecture: aarch64
-Version: 1.12.3
-Filename: pool/main/s/sing-box/sing-box_1.12.3_aarch64.deb
-Size: 7564280
-MD5sum: 071edd67d71c5a8109a232cbab76e6c2
-SHA1: 1876b67fbf826a7a4a2fe2631a9abe85670a275d
-SHA256: 38ca2d413662670999d4a0df8dfd2f70066fb0348d9664dfd08d5aaee62e3543
-SHA512: 9880cab50e67ff7eb52199dc35d189cd0c59cdb9d4da9b65342c1e5df7a9da31efcaefdfab97f8cbdfe068b67f803d293a82bac744ecec030f11c580bd260ba5
 Description: The universal proxy platform
 Homepage: https://sing-box.sagernet.org
 

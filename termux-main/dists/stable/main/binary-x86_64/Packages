@@ -10213,6 +10213,23 @@ Package: harfbuzz
 Installed-Size: 4448
 Maintainer: @termux
 Architecture: x86_64
+Version: 11.4.5
+Replaces: harfbuzz-dev
+Depends: freetype, glib, libcairo, libgraphite
+Breaks: harfbuzz-dev
+Filename: pool/main/h/harfbuzz/harfbuzz_11.4.5_x86_64.deb
+Size: 783360
+MD5sum: 852476b848de5d64849a158335be3d05
+SHA1: 2099b2f06f63e7281edbd3511cda73f5336fe9a9
+SHA256: 61aebbb0ac29c7c0c8ebaa28359e456753d60578d629175442d95aa8c17fb066
+SHA512: ace45b95f7500e2670ac8de4c476515e81e9dea75bced36138bbd46ffc9c8dfae00c447db5be1013f3ca89b440233940fea15281e2a4ae79bdc591c9610c74df
+Description: OpenType text shaping engine
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz
+Installed-Size: 4448
+Maintainer: @termux
+Architecture: x86_64
 Version: 11.4.4
 Replaces: harfbuzz-dev
 Depends: freetype, glib, libcairo, libgraphite
@@ -10230,6 +10247,23 @@ Package: harfbuzz-icu
 Installed-Size: 56
 Maintainer: @termux
 Architecture: x86_64
+Version: 11.4.5
+Replaces: harfbuzz (<< 7.0.0)
+Depends: libicu, harfbuzz (= 11.4.5)
+Breaks: harfbuzz (<< 7.0.0)
+Filename: pool/main/h/harfbuzz-icu/harfbuzz-icu_11.4.5_x86_64.deb
+Size: 4452
+MD5sum: aee778472b3dc0697e25f4287508d0f7
+SHA1: 3e77f1b9a31342d661acc19e202306eae7407d06
+SHA256: 5b152bd0b2a23546d1871f7cf3b9162d5a7323f2b503ce6e6486f4318983c8c2
+SHA512: 0489f42cbc7c9f03507e2c03b4cd6a998fd1a9d3205fe8f447645757ff23f441a8eb60716b4272267276d5bd97b3248c9e16907cfc2466a131b3cd1592c1dbef
+Description: OpenType text shaping engine ICU backend
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz-icu
+Installed-Size: 56
+Maintainer: @termux
+Architecture: x86_64
 Version: 11.4.4
 Replaces: harfbuzz (<< 7.0.0)
 Depends: libicu, harfbuzz (= 11.4.4)
@@ -10241,6 +10275,21 @@ SHA1: 333b5c21d29e56619e82298c3c37a5e88321148d
 SHA256: f1dd9456fa9f10293fcc0cd0a3c7ed0f3bf3b8ca9f46211a662cfc8bb3572cd6
 SHA512: 17a3d47ba417f998bd3b86c51be8080503e460f189363d1c20c4b99b259fc0ac073cfbf66e50b61ebfb09cca5e4ccfc49206126334c56f49ab03f01b1e24934f
 Description: OpenType text shaping engine ICU backend
+Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
+
+Package: harfbuzz-utils
+Installed-Size: 264
+Maintainer: @termux
+Architecture: x86_64
+Version: 11.4.5
+Depends: harfbuzz (= 11.4.5)
+Filename: pool/main/h/harfbuzz-utils/harfbuzz-utils_11.4.5_x86_64.deb
+Size: 58872
+MD5sum: 42ee27aca1e71ef7100aa24f09d71475
+SHA1: bcbb3b459b0d45804798d8222a4572ee9aaaf697
+SHA256: 093f72a79d1f2d29271514466da2489bbef7850f57efa1ae44370e35995bce51
+SHA512: 6c26aad5afa6aa024c64408e37519b9208ca6f7b12046f404ec6481b2086a1c6f210da83ed14c50bd7f37ed3bbcca9c170b59f8ecdea3c66964cecf00f049c45
+Description: Tools using the harfbuzz library
 Homepage: https://www.freedesktop.org/wiki/Software/HarfBuzz/
 
 Package: harfbuzz-utils
@@ -23804,6 +23853,22 @@ Package: llama-cpp
 Installed-Size: 52260
 Maintainer: @termux
 Architecture: x86_64
+Version: 0.0.0-b6323-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6323-0_x86_64.deb
+Size: 7233712
+MD5sum: 8720b7e9c3e06f7c9e829279b79ffecc
+SHA1: 2b11d9c3de3d00f48faa04fc7ca7feddfe50648b
+SHA256: fa7e966bf2f7c9384b8d34d4226bb3a8ef4c9915580da7841f115cfd671b49c8
+SHA512: 92f930393ff335185aa345ad649c2a92ab28dfb5cb84a64154511aa5a5566885b598b43c30f23c9bf3c895b15a1f616c723fc0db3e51953f9feccd9d8c124d22
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
+Installed-Size: 52260
+Maintainer: @termux
+Architecture: x86_64
 Version: 0.0.0-b6322-0
 Depends: libc++, libcurl
 Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
@@ -23816,20 +23881,21 @@ SHA512: e52e75baa0a0acff02ed06c6ca8539cd5a0379067cd6002600f10620e6533d879ca06122
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 52260
+Package: llama-cpp-backend-opencl
+Installed-Size: 664
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6318-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6318-0_x86_64.deb
-Size: 7223904
-MD5sum: 045f5c34e9f8f13d4ff9d298cec363ab
-SHA1: 287d76bd0d1601183d1aa56a7d6f28efdd651cbf
-SHA256: 60d9917d397cc5c7eb9b80fa94907e9b5253e92366e738bf467c093a2c9c3c16
-SHA512: 96d0fde74648b0465c094c4d3ebd0a324a4e22ae56f251e553b81d36d2a1f28492d123f0d062330b03833856f15c2f5fcd6070a8b38b1ae4cc9be3fc14704134
-Description: LLM inference in C/C++
+Version: 0.0.0-b6323-0
+Depends: llama-cpp (= 0.0.0-b6323-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6323-0_x86_64.deb
+Size: 118344
+MD5sum: aee79d8a1756bb9eddc8a48c21003c31
+SHA1: e4d93073bdd26722463e49a7d31d415b85465a9c
+SHA256: 5fd5338553fc5107b5b25d9c0d644bcd1cb92d07e65d7710e32939fff1fcc33d
+SHA512: e2871e569c7f2baa5588c7e30fbd524e062c82b691f38fd4b16ae4b705f97c50b628d728a163f89804a5fd1bd575de4d78ca01f45abe4d0a64e5fc767af93bdc
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23849,21 +23915,21 @@ SHA512: 26f324f6c0939a74b78634fcd364f064e8850c5b7fc0e8106167239abebbcc7516e96fdf
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 664
+Package: llama-cpp-backend-vulkan
+Installed-Size: 24576
 Maintainer: @termux
 Architecture: x86_64
-Version: 0.0.0-b6318-0
-Depends: llama-cpp (= 0.0.0-b6318-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6318-0_x86_64.deb
-Size: 117804
-MD5sum: c97e8f53859a536875e82634bf4227ed
-SHA1: e6119367a68a6ef56300133090cbbd997085abbc
-SHA256: e3c6b1d32f576f1d7c77f47f8d2db3793efb0f6e7813248c866b6dc3cd710632
-SHA512: ef3f3b17a138336aee13afe84454743466a487fc343cce7ad7943b28e7097f23d927d99e7dabed6ec3968a6195881f7ec9ecb95ae18ba672c26d3169fabdd610
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6323-0
+Depends: llama-cpp (= 0.0.0-b6323-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6323-0_x86_64.deb
+Size: 1825620
+MD5sum: 257824cdbe690aff18c8c641af69a1b1
+SHA1: 2aa2d76c05930d6f97111af0a21f3a52e722c996
+SHA256: 144576d762643f32b38397f3ef1af01b4cb110e506f21c95d6a7d1100943dc51
+SHA512: c40d7e341ab0a8c3e6b78d0c6e552c0e7549e9168d059e890ec2c1c2a9edb87093c7570c35fae0cd8aa304fa4b80b130c952a8dbc4f05cdf30c558b629c98aa2
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23880,23 +23946,6 @@ MD5sum: 4aa6607ff790b281a16c452b032fd625
 SHA1: 4427b19c5be04adacc637f06a49640674c2199fd
 SHA256: 23bf2cea84720b31e54544775eed0b76cb87a7099a7188052003c8f7a54085ec
 SHA512: 8dceb5b04710b014c45db84f4e391ef23ddcd6588db3c4993d2f38c415bd71c4eaf9e1518e166f458773300094f94a93e5b927e8ea0f2f6442ae3ee9e3a38653
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 24576
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.0.0-b6318-0
-Depends: llama-cpp (= 0.0.0-b6318-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6318-0_x86_64.deb
-Size: 1832816
-MD5sum: 7124b1b23cef5fb105d9dd778718846f
-SHA1: b0d4373f658910cdae95aa9de45a90b884451763
-SHA256: cc1fea319d3da95f0f9b44653c2bd8d95184d24c5d6268cb28be7fdcd62cd230
-SHA512: 2426ce4216b4ee561dd29a3318fd8bc412131c8cd95da8f0b9992196a453f443814fef87d84e835098653f2227975bfeec77182a07a048ee795513804655651d
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -27627,6 +27676,25 @@ Description: Open Source, cross-platform JavaScript runtime environment
 Homepage: https://nodejs.org/
 
 Package: nodejs-lts
+Installed-Size: 80712
+Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
+Architecture: x86_64
+Version: 22.19.0
+Replaces: nodejs-current, nodejs-dev
+Depends: libc++, openssl, c-ares, libicu, zlib
+Suggests: clang, make, pkg-config, python
+Conflicts: nodejs, nodejs-current
+Breaks: nodejs-dev
+Filename: pool/main/n/nodejs-lts/nodejs-lts_22.19.0_x86_64.deb
+Size: 13521196
+MD5sum: 46d4d4f7e3de5e86363c264c06bbfd32
+SHA1: 3c9db437f02f3f2cd8bd7ad28a2147a807f27136
+SHA256: 7be8be36ba797d0732b27532abe23cd7c04303e1f0b6f194dce3392774f3a82d
+SHA512: 7dd1a33ec52e317a7cb3f0622b872c0615d2c84e68aa8b0d387c29214532e5089725decc073bc9a6d5a586d72ef35a7fd1c57f9d945badeef301b7e07798dae4
+Description: Open Source, cross-platform JavaScript runtime environment
+Homepage: https://nodejs.org/
+
+Package: nodejs-lts
 Installed-Size: 80616
 Maintainer: Yaksh Bariya <thunder-coding@termux.dev>
 Architecture: x86_64
@@ -28012,6 +28080,20 @@ SHA256: c2618957aa2d1c55f4025eb855b11464c87b7dde10da432a1d9f4ccb2bd7822a
 SHA512: 55e8a984187d9abb06178891ec89ec1adee19d7e1d18ba00efd92e38660fdff009f96ae3dcb9529fc56907755929d18e355a88890407981b3960699d33013bb8
 Description: Simple converter from OpenDocument Text to plain text
 Homepage: https://github.com/dstosberg/odt2txt
+
+Package: oh-my-posh
+Installed-Size: 21208
+Maintainer: @termux
+Architecture: x86_64
+Version: 26.20.0
+Filename: pool/main/o/oh-my-posh/oh-my-posh_26.20.0_x86_64.deb
+Size: 5526048
+MD5sum: 355b029a4084cce7e8542c7e503c2fe8
+SHA1: 7ebcf47483ec3fb924aa0cb2ddcf89074a2f4406
+SHA256: 3134d6a53507afe605072a4e8893b7b8cca1f23d5dd1cc192b66131d03c4b74a
+SHA512: 7edce225f8792fa8d77e1732c49f57efc3092dd4f870960c4591481032ed6d135c8c42975e0f8325886b1c2b2289f695fbd32489b392f118ff06a24d3cddaf69
+Description: A prompt theme engine for any shell.
+Homepage: https://ohmyposh.dev
 
 Package: oh-my-posh
 Installed-Size: 20892

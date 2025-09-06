@@ -10164,20 +10164,6 @@ SHA512: f6ef1ec65755a578f1588e43692d37b46dc967341d7ed991225d534a6e0511f8999a71e5
 Description: A tool for creating minimal interactive TUIs for shell scripts
 Homepage: https://github.com/charmbracelet/gum
 
-Package: gum
-Installed-Size: 14276
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.16.2
-Filename: pool/main/g/gum/gum_0.16.2_aarch64.deb
-Size: 3125244
-MD5sum: 2ce785d24bba964bfe62ec98a5114a2d
-SHA1: f63fb084504d36caeeeb13e1c4b509ea229d0fdc
-SHA256: 0926e62ef9c579776844910845cb76d07ac74ec2f2e7a120e27c61a24e86279f
-SHA512: cb1580c8d177d3cf49b5c1a0e57c0f9b388e9c36662215d485fba500fc9a3a9093212d54bea860b9efa4241e34cede7a9eb8dacfd38791478270fe2959893157
-Description: A tool for creating minimal interactive TUIs for shell scripts
-Homepage: https://github.com/charmbracelet/gum
-
 Package: gumbo-parser
 Installed-Size: 392
 Maintainer: Fredrik Fornwall @fornwall
@@ -13518,6 +13504,20 @@ Package: libatomic-ops
 Installed-Size: 1028
 Maintainer: @termux
 Architecture: aarch64
+Version: 7.8.4
+Filename: pool/main/liba/libatomic-ops/libatomic-ops_7.8.4_aarch64.deb
+Size: 87788
+MD5sum: 8ffa8454ca7d7fb93886c64ec5a65e53
+SHA1: 503a92111340f06c2950ee0dcaa62331933cd756
+SHA256: 4fe50af113892c0ea672ea59368911d1a1dfcef0ec5f7a0adcfba2ef40b40b3b
+SHA512: d9390d8d264fe609842bdba867fbf2ffedcca51cec5a26974754c740a7defc66a0d065cb5a49c5905bbb101be5800cecad85c1ad62bfaeb7ffcc5361c07ab9ff
+Description: Provides semi-portable access to hardware-provided atomic memory update operations
+Homepage: https://github.com/bdwgc/libatomic_ops
+
+Package: libatomic-ops
+Installed-Size: 1028
+Maintainer: @termux
+Architecture: aarch64
 Version: 7.8.2
 Filename: pool/main/liba/libatomic-ops/libatomic-ops_7.8.2_aarch64.deb
 Size: 87976
@@ -13527,6 +13527,21 @@ SHA256: 6ff270b2c4e584e93b95189d49fb8a3f9e72758ea98a94fb8019a8b5f89e5ce2
 SHA512: c7cbb1c5afef7eda9f0054823910c83bf49ba72e29a9730cd3b92fae88949bd3ee6b7c3f3c2e9606fd7db5e675bea9a621a95f407856e701f8c2a69154233ae5
 Description: Provides semi-portable access to hardware-provided atomic memory update operations
 Homepage: https://github.com/ivmai/libatomic_ops
+
+Package: libatomic-ops-static
+Installed-Size: 52
+Maintainer: @termux
+Architecture: aarch64
+Version: 7.8.4
+Depends: libatomic-ops (= 7.8.4)
+Filename: pool/main/liba/libatomic-ops-static/libatomic-ops-static_7.8.4_aarch64.deb
+Size: 4236
+MD5sum: c434e6f0bef6b2ead95fe40dda6350bf
+SHA1: 73b179aa514fa13ed81cb387409cce81db61a2e0
+SHA256: cd195690c41f0dea0edb65912e7b53be3451a602fb71815f4a4c28d37b4d1629
+SHA512: a09b4be32b347cf9d5efba25ee6a74bed596e47ec826fc8cb3b1a46c05b1df0c672e33db05ae3dddf446c40d02b9e2e06c0616a0b96dc029e7f63a4c8d38f4b3
+Description: Static libraries for libatomic-ops
+Homepage: https://github.com/bdwgc/libatomic_ops
 
 Package: libatomic-ops-static
 Installed-Size: 52
@@ -23844,6 +23859,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 49940
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6396-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6396-0_aarch64.deb
+Size: 6811528
+MD5sum: b5d9d9c1ba98caea902759c3d1ee7483
+SHA1: 00dd7093e82c7b8da5991981780b6eebd0039e77
+SHA256: f9d86966a881b7b386e81215586d5feab7fefce68b89c9c5a49fc5b8f05d17b4
+SHA512: cf6fdb3ea64536ff882c00b01ad653ed2121b91d9fcf8991ab2515ca9bd35428d2c1ca935f2f8aa47d9ca00a6874ccc0709cc045fc44a3e49a7f6eda7497acbc
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 49868
 Maintainer: @termux
 Architecture: aarch64
@@ -23859,20 +23890,21 @@ SHA512: 5524946773f47222658821bb22b29f077ea92a7ec5a684f318c6463da18a6a895b164a32
 Description: LLM inference in C/C++
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp
-Installed-Size: 49868
+Package: llama-cpp-backend-opencl
+Installed-Size: 644
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6390-0
-Depends: libc++, libcurl
-Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
-Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6390-0_aarch64.deb
-Size: 6821764
-MD5sum: 8562e2ac8291c79dba49c41a58475653
-SHA1: 0c42c3f380421e9a32c504726922198ad9931e94
-SHA256: 8c23151360258d48104e27614d6229d68274b9d069765ae5b491926d813523a1
-SHA512: 2684d88ab90d3167e1ed418f289dd901c57c80c6e0df1a867e6e21fc662f3fd0b47a7eeae6edda5dd81b8ec989b08e53e16fc34f5cff1d345fcc0debaac5dde8
-Description: LLM inference in C/C++
+Version: 0.0.0-b6396-0
+Depends: llama-cpp (= 0.0.0-b6396-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6396-0_aarch64.deb
+Size: 108708
+MD5sum: ddfe38d9fd89e0143ad34c2d9d8e411b
+SHA1: 2e3bd74068bcc9e2d883165d91fba48bc95f51bd
+SHA256: def60d9e95b08cab492e07b5e606126d94a0f3640b1f17f2bac79fdcb315c57e
+SHA512: 33a0b817ebca98ab01e39a95f92cd1b88c319398ac608dbfea3cc5ba269e4ea96dc5d01d8e322f291b74a4a6338465af1d9f3e5b57539ca638f94e89c61c8cbe
+Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-opencl
@@ -23892,21 +23924,21 @@ SHA512: ec8ece985f25d7ce85c56b10181246aceebbbc39def63d1acd1321fefdb5c8f27dfc23f9
 Description: OpenCL Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
-Package: llama-cpp-backend-opencl
-Installed-Size: 644
+Package: llama-cpp-backend-vulkan
+Installed-Size: 25388
 Maintainer: @termux
 Architecture: aarch64
-Version: 0.0.0-b6390-0
-Depends: llama-cpp (= 0.0.0-b6390-0)
-Recommends: ocl-icd
-Suggests: opencl-vendor-driver | clvk
-Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6390-0_aarch64.deb
-Size: 108612
-MD5sum: d1aa9a2bdd9abe3783162cda3fd89fc4
-SHA1: 309032b179935c7aebd9a5bea0c382f6ebfd56ed
-SHA256: 75a95cded6842fd5d2a9d4e7d9d77105ef34e5fba2078e9e9477acc8cb0450b8
-SHA512: db97530323d3915d22db54fa08b4b5f8760ec3154f0b0edb190d2fee6956361df920ee6bf2dd77e83ffca1496f586e90565ac6679cec5624b86fb9d35c3a783f
-Description: OpenCL Backend for LLaMA.cpp
+Version: 0.0.0-b6396-0
+Depends: llama-cpp (= 0.0.0-b6396-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6396-0_aarch64.deb
+Size: 1966716
+MD5sum: 6e901a3b29e3df63f28dddd908cc161e
+SHA1: cb85d169e96e74d1a8c56b1c65c39b957e345ef6
+SHA256: 19f75c9769068509ee86f424511c5f42556ecf826b4f12ea15a72762ce6d9c4b
+SHA512: da5f4baec5cc6a54f63a6f95e2be930791fbf5d226b03ac06fbdc66fb5d2702392e3ff86116a3de570f80add5b61099403832714c7407bd87e1a110f1efe7295
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -23923,23 +23955,6 @@ MD5sum: f55bbe7af4d89e2a7b2dd95c9e138c27
 SHA1: 16dc1cc41f4048c0969a0ac357008e4616c4d990
 SHA256: 8e156bee99775474c1bb8d69c2ca1540e4ef45c9a6c66346ce35743bf9d28c7b
 SHA512: 0372a292939fb1b5aae558e1268428373797e1cda138b27d39ca5b2381f5765bd7f2ec3574eb111ef1bb8160fa82b9923e7f735a627513477c7583956d22ab3d
-Description: Vulkan Backend for LLaMA.cpp
-Homepage: https://github.com/ggml-org/llama.cpp
-
-Package: llama-cpp-backend-vulkan
-Installed-Size: 25388
-Maintainer: @termux
-Architecture: aarch64
-Version: 0.0.0-b6390-0
-Depends: llama-cpp (= 0.0.0-b6390-0)
-Recommends: vulkan-loader
-Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
-Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6390-0_aarch64.deb
-Size: 1961352
-MD5sum: f044bee79d9adcdf941218273e86fff2
-SHA1: d8b9928e6f1067e010f04625c960e1fe9e578471
-SHA256: ba47ff7ad985e1ab43d6a1cc773196afcc249fbb623087a3d580ab6a94266704
-SHA512: be1977346e54fd992bd94125c467a10fe02cd612c56ce43f9880bc087d1f236c3baa915483cfaf65836b18df89fd6fbaa351e8841b475b6d9342540497b2898a
 Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
@@ -27239,21 +27254,6 @@ MD5sum: ebe8e7e480075d2ab95499841873ca2c
 SHA1: 3f16563a5d8147876da4e172b25f4626f4be696c
 SHA256: 180ec70ad76134b8e9114336bd9c0873d5354d2d5c66dfcc6016ff801e39c3ee
 SHA512: 7c6f1bb3f5c2be203fd0c9880d0a4c72b81e6480f2b2a86de5a3e03747fd5501ae0977fe60fff76d8e41def44071974ed9baf7fc5a7d97012bb925cf7c321ddc
-Description: A version of mutt with added features
-Homepage: https://neomutt.org/
-
-Package: neomutt
-Installed-Size: 5920
-Maintainer: @termux
-Architecture: aarch64
-Version: 20250510-1
-Depends: gdbm, krb5, libandroid-support, libiconv, libsasl, ncurses, notmuch, openssl, zlib, zstd
-Filename: pool/main/n/neomutt/neomutt_20250510-1_aarch64.deb
-Size: 1039400
-MD5sum: 88e0ddedb7fbbb81778c24810036987f
-SHA1: 585814a8f2662eadb0422ff33f2531f9da0ba2fa
-SHA256: 689d2c8e9b82fcbdcbfa1609bad2a0d9b6228c4020024248bb2e5a6e168b262b
-SHA512: 493e0e0df7a4b3349a06d9cbb71731473f7a1cc404949ca794b26c8625f35dddd1c4b10fb999a2d0000d95523877aad862715b6f8b2ab172d5a209b3ffa8a079
 Description: A version of mutt with added features
 Homepage: https://neomutt.org/
 
@@ -31929,6 +31929,23 @@ SHA256: 2990eb3ee52ee3ded3f2a0f8db15a626aabb16f7e7d71a380f5ee8960d404e41
 SHA512: d8e09d4faf8851275b8f6b3e5ebe052f127edd7aa8cf533bcff19a603686dedd6b6af62f9cbe04577791b6de0eb2ca4a75480afb5ec4ad4bb485191bc86aae63
 Description: The Python X Library
 Homepage: https://github.com/python-xlib/python-xlib
+
+Package: python-yt-dlp
+Installed-Size: 24068
+Maintainer: Joshua Kahn @TomJo2000
+Architecture: aarch64
+Version: 2025.09.05
+Provides: yt-dlp
+Depends: libc++, libexpat, openssl, python, python-brotli, python-pip, python-pycryptodomex
+Recommends: ffmpeg
+Filename: pool/main/p/python-yt-dlp/python-yt-dlp_2025.09.05_aarch64.deb
+Size: 4910412
+MD5sum: 995fd3baa857dccb6041510e00163c01
+SHA1: 7abfdbd734d848752fc5fb74f9bb0912c4e180d5
+SHA256: accc207628a97db430b57e9bb14ba5126014d2271971b10786de76571121d3b1
+SHA512: 7ae8f068d9ee072ab27ce55d10148ffc865e52a55d464b678c165bce0b4f61edd68b70b86765df10cecfcf39112042a24b3fc9e5b571f96d59d4892f2c6473a6
+Description: A youtube-dl fork with additional features and fixes
+Homepage: https://github.com/yt-dlp/yt-dlp
 
 Package: python-yt-dlp
 Installed-Size: 24032
@@ -36781,20 +36798,6 @@ MD5sum: 131652282e99fda1c9be414921a5e71d
 SHA1: bd3fdca3d7f875f052f69ddf3c2ca00c769dfaee
 SHA256: 0151ac7a8f56ee1f1938d08bdedecba15a6c18c8195cfbc5052c7d2e9ee58290
 SHA512: 7a51e39f83081d84b9f55e5cb234993018f449632923ad902c6ba1ca5c10677fc71a767b851cbf2c648271b145d11a9841e6bbae67f1d3242fca34aa5aebaaf5
-Description: Secure Access for Developers that doesn't get in the way
-Homepage: https://github.com/gravitational/teleport
-
-Package: teleport-tsh
-Installed-Size: 122436
-Maintainer: @termux
-Architecture: aarch64
-Version: 18.1.8
-Filename: pool/main/t/teleport-tsh/teleport-tsh_18.1.8_aarch64.deb
-Size: 20124232
-MD5sum: 3e971869f26bb09114be90b3ef11464c
-SHA1: b841f81fdb34c574d7021077d3dbb4b1149daba2
-SHA256: d8b4a4f69c4ebab2607f2cb375922d0af0694b9f7e9b0c7938697d58239a66d2
-SHA512: d421dd3073fe286b7f0d0e862aa8641fd43eef20339b7f49ac6a2ff6cc10c23a5e8e51520537289e1ed125f4aba84e39c7ebb1d5e8272bf78b2d98c8af859917
 Description: Secure Access for Developers that doesn't get in the way
 Homepage: https://github.com/gravitational/teleport
 

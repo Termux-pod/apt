@@ -191,21 +191,6 @@ SHA512: e2c1a450dd01ba6cc6a2b5295fe2ef603a3884d2d7cfd66e7e27832d9f234664d7a7a24f
 Description: Compose is a tool for defining and running multi-container Docker applications.
 Homepage: https://github.com/docker/compose
 
-Package: docker-compose
-Installed-Size: 65424
-Maintainer: @termux
-Architecture: arm
-Version: 2.39.2
-Depends: docker
-Filename: pool/stable/d/docker-compose/docker-compose_2.39.2_arm.deb
-Size: 12379532
-MD5sum: 5395ec20cb17cb0b991c03fbff3fefa7
-SHA1: ea281ce8fd6968defabe642214f76fa7366822b7
-SHA256: 600e30e637eaf1890ce55df977a2856a2e4badc888fffcef1334a920c7ea2a1d
-SHA512: 0f60a23a18032eef52f39b745c0e1308afc04ef0f6383000c1c6948a8d605d4f114f608d5a92c0e73e3aa083bf3be26d5438d65091cff6d41606f0d13c933049
-Description: Compose is a tool for defining and running multi-container Docker applications.
-Homepage: https://github.com/docker/compose
-
 Package: encfs
 Installed-Size: 944
 Maintainer: @termux
@@ -641,6 +626,21 @@ Package: libdevmapper
 Installed-Size: 500
 Maintainer: @termux
 Architecture: arm
+Version: 2.03.35
+Depends: libandroid-support
+Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.35_arm.deb
+Size: 169448
+MD5sum: 401be321903f2458dcba449224286da2
+SHA1: 89cd70da3a48e09ff255530ed81ed17b1ba40e03
+SHA256: e719a2951813c902dec5c096513b69f1553a9b2252f6ede5cc10cf7c806eac39
+SHA512: bf9f4821e3f4dfefc40756e2008ff45cbbfa0095eee1b388915e2d6e944457ef60f8ec7ef428aefa36b56aeed51a69d79d680926e16531940fee40fa2f4bdba0
+Description: A device-mapper library
+Homepage: https://sourceware.org/lvm2/
+
+Package: libdevmapper
+Installed-Size: 500
+Maintainer: @termux
+Architecture: arm
 Version: 2.03.34
 Depends: libandroid-support
 Filename: pool/stable/libd/libdevmapper/libdevmapper_2.03.34_arm.deb
@@ -802,6 +802,23 @@ Description: x86 emulation library
 Homepage: https://github.com/wfeldt/libx86emu
 
 Package: lvm2
+Installed-Size: 2436
+Maintainer: @termux
+Architecture: arm
+Version: 2.03.35
+Replaces: libdevmapper-dev
+Depends: libaio, libandroid-support, libblkid, readline
+Breaks: libdevmapper-dev
+Filename: pool/stable/l/lvm2/lvm2_2.03.35_arm.deb
+Size: 1100652
+MD5sum: e476e0a2f61d43096392132b4fb3f4b5
+SHA1: 4c36373b39e8b43bf2e85d94eeb125cae272f4d1
+SHA256: 508c0a7bfa0324ed0070464071f4ae6fbb38a42e0fdae74dbb8946e9efc4fc34
+SHA512: 0d95ecc584e31abad5d70637ac15f0d3e3c1c1630fc2ae8e6ea4dd8dbd7239abdadbce865bd0f8ae8dbb5671cbba6850a1bf215d38f89336184465b83ca0471c
+Description: A device-mapper library from LVM2 package
+Homepage: https://sourceware.org/lvm2/
+
+Package: lvm2
 Installed-Size: 2432
 Maintainer: @termux
 Architecture: arm
@@ -863,6 +880,21 @@ SHA256: 5a2064217b1e77e1cca8c6f48388252ec50e4c20598efb68eb46ec27ed9d97da
 SHA512: d3393f1a483ba545197de95157c9965960399cdeba26807e3cef3346d65f3ad885e547625844899665de37dadd7ff80d3fecb1d0a44d8df42f93e96e88bb2c0f
 Description: Utility that makes the maniputation of MAC addresses of network interfaces easier
 Homepage: https://github.com/alobbs/macchanger
+
+Package: minikube
+Installed-Size: 97528
+Maintainer: @termux
+Architecture: arm
+Version: 1.37.0
+Depends: docker, kubectl
+Filename: pool/stable/m/minikube/minikube_1.37.0_arm.deb
+Size: 16381940
+MD5sum: aff174a1fc668f348990be0e1a074255
+SHA1: 5b3f39af36627aa76c791d18736ce01b0bb55ca0
+SHA256: 61f3c67938c9ba39056a11a8a84d956792c9e7b9a151814f0a2e0f336b198e9e
+SHA512: f7323b0e4cf6bba3552fb1535de4c1141b71513e0af9dab4bb35faf4291473d0b6ec33e63b1f3dc790a87e6c0f68cfa62f64622508161008da64e957f0f78520
+Description: minikube implements a local Kubernetes cluster.
+Homepage: https://github.com/kubernetes/minikube
 
 Package: minikube
 Installed-Size: 93672

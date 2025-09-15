@@ -10039,21 +10039,6 @@ SHA512: 10a207826cd12cc41bb48e520185d73e20d116409d6031a4bf22272d50c1f16a91547602
 Description: GStreamer Good Plug-ins
 Homepage: https://gstreamer.freedesktop.org/
 
-Package: gst-plugins-good
-Installed-Size: 5252
-Maintainer: @termux
-Architecture: aarch64
-Version: 1.26.5-1
-Depends: glib, gst-plugins-base, gstreamer, libandroid-shmem, libbz2, libcaca, libflac, libjpeg-turbo, libmp3lame, libnettle, libpng, libvpx, libx11, libxext, libxfixes, libxml2, libmpg123, pulseaudio, zlib
-Filename: pool/main/g/gst-plugins-good/gst-plugins-good_1.26.5-1_aarch64.deb
-Size: 1488736
-MD5sum: 759254fe882c49e75401543f7e080580
-SHA1: 11095f78d9cf9b07e314b9b3f0bb3a8f03fa2b23
-SHA256: 1d0abc2f08e7b5b4b481689c8e0aa1866e43b0252ff541846977e94534a18c59
-SHA512: 0c36b0aa2886913f19319fafccaa8374915ad352c57d2c1a42b4e85b1c2c5c80d765dc5cc1801e28f3bbbef2351c9f1e904c99b14eee1fc12778a4fab07aa6a4
-Description: GStreamer Good Plug-ins
-Homepage: https://gstreamer.freedesktop.org/
-
 Package: gst-plugins-ugly
 Installed-Size: 276
 Maintainer: @termux
@@ -23897,6 +23882,22 @@ Description: Color management utilities
 Homepage: http://www.littlecms.com/
 
 Package: llama-cpp
+Installed-Size: 50528
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6475-0
+Depends: libc++, libcurl
+Suggests: llama-cpp-backend-vulkan, llama-cpp-backend-opencl
+Filename: pool/main/l/llama-cpp/llama-cpp_0.0.0-b6475-0_aarch64.deb
+Size: 6909344
+MD5sum: 6c893a143af82d1a0c0f715c809fac3d
+SHA1: c18ed6882b71e55215eee158baccaecf721cbd15
+SHA256: cda51daa65798665ed75d954ab6a6724e21f2c32b9fa13faa91bd75e45bd6930
+SHA512: 15820db5c743ce12d74a39f21fafb8e9f529ab39f1f06d0e829c63f29b7c4ba55ab6e64fd7aa0a91b5223a628eec18c5450bfb39f1cdda807e8fb49c9b03e4c2
+Description: LLM inference in C/C++
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp
 Installed-Size: 50520
 Maintainer: @termux
 Architecture: aarch64
@@ -23916,6 +23917,23 @@ Package: llama-cpp-backend-opencl
 Installed-Size: 644
 Maintainer: @termux
 Architecture: aarch64
+Version: 0.0.0-b6475-0
+Depends: llama-cpp (= 0.0.0-b6475-0)
+Recommends: ocl-icd
+Suggests: opencl-vendor-driver | clvk
+Filename: pool/main/l/llama-cpp-backend-opencl/llama-cpp-backend-opencl_0.0.0-b6475-0_aarch64.deb
+Size: 108556
+MD5sum: 201987edbadba6e77350bbfb058d8c95
+SHA1: 2104cce6a7d78a16a56d948e6a33c8b90095a531
+SHA256: 7e8b574f22f5590572bccbf178dfa978d0ac490e89af22ddf9c1db7340ec59a8
+SHA512: 0b5d6e412f45ca78c1f6b7ea3fd4e2606923ef0404a734f90ff433c0f079fc77458718cf6a5b754d35e201c393eac6458767fdcada5112403b8a01e530b998ec
+Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-opencl
+Installed-Size: 644
+Maintainer: @termux
+Architecture: aarch64
 Version: 0.0.0-b6471-0
 Depends: llama-cpp (= 0.0.0-b6471-0)
 Recommends: ocl-icd
@@ -23927,6 +23945,23 @@ SHA1: c5a369109c87aea6b9fe9cc6a80e6e02dce09a8a
 SHA256: d85bdf256920b0db1a8abc5cea62d6b1f333e0b4aade701630dca37f4295655f
 SHA512: 42ec329f1135861a49cfa7742316f52aeaa192f520c8e96d369dec79f824a7a499d74fdd08ee0ee2e9b99d23a2bf10889cf19ffc128ca87344231952ef261f57
 Description: OpenCL Backend for LLaMA.cpp
+Homepage: https://github.com/ggml-org/llama.cpp
+
+Package: llama-cpp-backend-vulkan
+Installed-Size: 25392
+Maintainer: @termux
+Architecture: aarch64
+Version: 0.0.0-b6475-0
+Depends: llama-cpp (= 0.0.0-b6475-0)
+Recommends: vulkan-loader
+Suggests: vulkan-loader-generic, mesa-vulkan-icd-freedreno
+Filename: pool/main/l/llama-cpp-backend-vulkan/llama-cpp-backend-vulkan_0.0.0-b6475-0_aarch64.deb
+Size: 2318900
+MD5sum: 89d20c0efd67152db05f9edb83bebc0b
+SHA1: 6b19dd543aef70ebf88785931a96a630a663823b
+SHA256: c3a9c1d8f24c7f81dc661243ccfa861db3ad313991f64b346ffa13514de83542
+SHA512: 4d69ff6fd07a624c4855cbb5438a1ea9ad86397cb302e098cb3a17e8e67f8438ccc54a298c3617ac54a5a7952f36c33a6113a15e1c267c43cca2e78b70ad58a4
+Description: Vulkan Backend for LLaMA.cpp
 Homepage: https://github.com/ggml-org/llama.cpp
 
 Package: llama-cpp-backend-vulkan
@@ -35938,6 +35973,20 @@ SHA256: e12f2a8c6724695f7508e1f6a53c9200817fb5b96951f60ad3e620e6df4befce
 SHA512: c08e4bff29943bc5f69b7202af042ea879b3c6640a81ffd302f8834858cfe7c458fe8cfae9cc579c8deceaf34e6ab3fb4eab0df4848d6d399d2d31c5456c42a9
 Description: An open source STUN server
 Homepage: https://www.stunprotocol.org/
+
+Package: stylua
+Installed-Size: 6456
+Maintainer: @termux
+Architecture: aarch64
+Version: 2.2.0
+Filename: pool/main/s/stylua/stylua_2.2.0_aarch64.deb
+Size: 1664872
+MD5sum: d998a8c94aaf1a19956a1e6d35b5d4fd
+SHA1: db3dfafa22480f7fce630112847cf650dcf6d297
+SHA256: 45eb7a6f29fa0292203fe5b461a0a3706d4c177a22a419f907db4bf4f7805740
+SHA512: 7fe3f64c8bf83349a212b390556ab4eeca336a31b21efa5cf449aeacbb80a9e4fcc8df8e4157ae967147e8c692c2149694d8751e9957c3786eb4eaede2560353
+Description: An opinionated Lua code formatter
+Homepage: https://github.com/JohnnyMorganz/StyLua
 
 Package: stylua
 Installed-Size: 6024

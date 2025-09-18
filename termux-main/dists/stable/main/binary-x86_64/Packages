@@ -2783,6 +2783,20 @@ Package: ca-certificates
 Installed-Size: 268
 Maintainer: @termux
 Architecture: all
+Version: 1:2025.09.09
+Filename: pool/main/c/ca-certificates/ca-certificates_1:2025.09.09_all.deb
+Size: 125648
+MD5sum: 6f37f53eda87f11ffe556eea5cc5c9f4
+SHA1: 8122b5f6f597e6a9e0dc497b458d5b74f7f011d0
+SHA256: 1827ad4abe0a3342d9474fbf0303eb01833ea733ba8b8a5c327c0800b8eb2536
+SHA512: 73de106fbf71ca467310aa84c68ea71158db0efdf2a17bb8e1f251b7a5b85cfa4f7d791d5717b009efb25d4a6cb4b64999ea6791739af9ab92f40aab1acebbd0
+Description: Common CA certificates
+Homepage: https://curl.se/docs/caextract.html
+
+Package: ca-certificates
+Installed-Size: 268
+Maintainer: @termux
+Architecture: all
 Version: 1:2025.08.12
 Filename: pool/main/c/ca-certificates/ca-certificates_1:2025.08.12_all.deb
 Size: 125632
@@ -2791,6 +2805,21 @@ SHA1: e0b595da9743f100b60f25712092f90041d5bbef
 SHA256: 23dc5a50a0a10389abf24d0e2c6b011aca78e2ff50b304b51f76b2a8c8610ebb
 SHA512: a5109980d1b08c38f6e2e5c9c81ce3ddb03c5d6ca6a24b788b2dcc884fd606779e98e7de40dd3f1f0b38d90cdec0ce61da1304e4a5b95641e4a6dd569467694b
 Description: Common CA certificates
+Homepage: https://curl.se/docs/caextract.html
+
+Package: ca-certificates-java
+Installed-Size: 212
+Maintainer: @termux
+Architecture: all
+Version: 1:2025.09.09
+Depends: ca-certificates (= 1:2025.09.09)
+Filename: pool/main/c/ca-certificates-java/ca-certificates-java_1:2025.09.09_all.deb
+Size: 115180
+MD5sum: 507d4165bc439714fc300a1e4a6005f1
+SHA1: 832e48466e9002760a0cea2ccb7df5f391d6c614
+SHA256: 23c3ee95a34e2a563c62da18eb6dd453e6214842df213c4a7e20aab8d76eeb6b
+SHA512: f8e80805086be9ca7f803adbf049c607cb93372d630b6ced8e8aca55622d94919e120080787d465071bb3d9409df3718562827f6e3b459cbf167fdf3d9ee1c25
+Description: Common CA certificates (java keystore format)
 Homepage: https://curl.se/docs/caextract.html
 
 Package: ca-certificates-java
@@ -18250,6 +18279,22 @@ Package: libmpg123
 Installed-Size: 648
 Maintainer: @termux
 Architecture: x86_64
+Version: 1.33.2
+Replaces: mpg123 (<< 1.33.1-1)
+Breaks: mpg123 (<< 1.33.1-1)
+Filename: pool/main/libm/libmpg123/libmpg123_1.33.2_x86_64.deb
+Size: 186688
+MD5sum: 4ac4de82c585ad2d971b3edd97660086
+SHA1: e2851d9987b0ce44c635bd787cd0137cbe6a0145
+SHA256: d2d04b06ce4a5233e9023526ea9d04daba81a1cc597bdb0718576b33b31fd5b1
+SHA512: 3a04c8751f4f645fe14ff3f1f85c129f57bf9a1a0b0a3588d85b300028e7c0dde7ef0d9a78c5b991e98db46aad36e45b302131f2b91ef32cc039d9d5f7c331f8
+Description: Fast console MPEG Audio Player and decoder library
+Homepage: https://mpg123.org/
+
+Package: libmpg123
+Installed-Size: 648
+Maintainer: @termux
+Architecture: x86_64
 Version: 1.33.1-2
 Replaces: mpg123 (<< 1.33.1-1)
 Breaks: mpg123 (<< 1.33.1-1)
@@ -18260,6 +18305,21 @@ SHA1: 4b116fbbe86e687b9f6dd814ba14b3bac5a00507
 SHA256: 6f3bf22c78f50ecca7d7e9f1527617c9a2eeeeeeb0d33c2abd2f3585ff82d750
 SHA512: 38063d29af154be690d4543cc1251ae52ec13b119c5b989d32fbe9b9f02a0711c3dffd296db0769d5ca0dfce20220f1e2a0b55198ceed214732f56c3ef5a952b
 Description: Fast console MPEG Audio Player and decoder library
+Homepage: https://mpg123.org/
+
+Package: libmpg123-static
+Installed-Size: 648
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.33.2
+Depends: libmpg123 (= 1.33.2)
+Filename: pool/main/libm/libmpg123-static/libmpg123-static_1.33.2_x86_64.deb
+Size: 161088
+MD5sum: de8df296933b91ce8a76801de33cb483
+SHA1: e988912e114470b0a2f5dd15727d4ad3465551b7
+SHA256: ccb63db67b76e71506362859a7c7b382ff1bf7823ff80037d9c4665329302427
+SHA512: a033c15060f9f7a5bd4e96edf774924458ce0737656708d1ec2111749783feab5489bb8dc4d4df56e67ee852ab2c08ef7c2ad9377231e1533630e14c2f623e91
+Description: Static libraries for libmpg123
 Homepage: https://mpg123.org/
 
 Package: libmpg123-static
@@ -24610,22 +24670,6 @@ SHA512: d12937a4d0ab84e750f7fd92d2b47753ebda100db51648863bc8122a2e0129778df4d39f
 Description: A package manager for Lua, similar to luarocks
 Homepage: https://nvim-neorocks.github.io/
 
-Package: lux-cli
-Installed-Size: 27432
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.17.1
-Provides: lx
-Depends: bzip2, gpgme, libgit2, libgpg-error, lua54, openssl, xz-utils
-Filename: pool/main/l/lux-cli/lux-cli_0.17.1_x86_64.deb
-Size: 8372360
-MD5sum: a3f61f63db6eb3394392c89887a6a52d
-SHA1: 2cf49f8df1fe8b1c83ae23b64a211b4f28ed0ae8
-SHA256: fb63c3e05223ed402eaad49e1514c837d70e60c0472f5364a775cbb87eca02fa
-SHA512: b3fd38191fa4fe7a470aed51bcd1f4cdb1af327516249bb5d065a7f1dee18e60fa5cfd72fef3c9e2642949d87b83eb414ab991fc1189199ce2782426bac12de4
-Description: A package manager for Lua, similar to luarocks
-Homepage: https://nvim-neorocks.github.io/
-
 Package: lv2
 Installed-Size: 1444
 Maintainer: @termux
@@ -26444,6 +26488,21 @@ SHA256: 7805514143eb1b222fbe8f48e75f83430d2d50fef0465d727a26de9e89023d5a
 SHA512: 294b67e92e4ebc1dbb00ac19901c06138626488d5b3d9db60e9eb898858f085cb2b8f1cc7e35a4d0ff89a6f3a9566d603322978acb9ca809f8f3bf7ddc85dfbf
 Description: A Music Player Daemon (MPD) client which submits information about tracks being played to a scrobbler
 Homepage: https://www.musicpd.org/clients/mpdscribble/
+
+Package: mpg123
+Installed-Size: 344
+Maintainer: @termux
+Architecture: x86_64
+Version: 1.33.2
+Depends: pulseaudio, libmpg123 (= 1.33.2)
+Filename: pool/main/m/mpg123/mpg123_1.33.2_x86_64.deb
+Size: 101472
+MD5sum: 67d41e317d511aca94dce51863f5a4a5
+SHA1: 12335d1417ccc0968ff66cc5db02c2724003cd7d
+SHA256: 0af7e4a5ab6498cd51ce515095a6a919da3adfadac4a636d5771770eee3154f1
+SHA512: dab1b53cc282ad53cd7582e3f00244c38a20f396c6c0792130e5cf5e3aa3306bae96d4e9c4086aec1b3266fd89eb401f9fe62c8018ad864e1819315ce2e0226a
+Description: Fast console MPEG Audio Player based on libmpg123
+Homepage: https://mpg123.org/
 
 Package: mpg123
 Installed-Size: 344
@@ -38958,21 +39017,6 @@ MD5sum: 53d02aaa32ef0caff254d4bc9200d210
 SHA1: 358bd7917a040e5162794b05b7125c7d26e275de
 SHA256: 477611a9a26c0882068c0764caaa02afd6c3285bcbe2909afd1282b5d5b4d157
 SHA512: f116fb2629f933aefc07737ada3e2e29636689b17dbabc17e82288ab613fe45050b7f686ae826bab258b7a98e3fcbea52266395b1fd40a57290294641b5b428d
-Description: An extremely fast Python package installer and resolver, written in Rust.
-Homepage: https://docs.astral.sh/uv/
-
-Package: uv
-Installed-Size: 46160
-Maintainer: @termux
-Architecture: x86_64
-Version: 0.8.17
-Depends: zstd
-Filename: pool/main/u/uv/uv_0.8.17_x86_64.deb
-Size: 12411012
-MD5sum: defb7a89525aad4fc9e98f9beb787748
-SHA1: 2b8b2bc2ea9059e1e07569542af81727a180126c
-SHA256: b2be9a25b7a6db50163299ec1c398cafbe2c147c5f64ab14b9b33a9c46839128
-SHA512: f30ee3158cc086b9c0af8fa8cea74df9ffd548b39c662beeff99bc4b5245e64793e752038fd83cc58fc62678f42cda2c9816cf5b9bbf85b2e2b60134977c74b0
 Description: An extremely fast Python package installer and resolver, written in Rust.
 Homepage: https://docs.astral.sh/uv/
 
